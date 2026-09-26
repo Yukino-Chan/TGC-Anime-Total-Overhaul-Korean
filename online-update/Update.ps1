@@ -24,15 +24,17 @@ function Byte-Hash([byte[]]$Bytes) {
     try { return ([BitConverter]::ToString($sha.ComputeHash($Bytes))).Replace('-','').ToLowerInvariant() }
     finally { $sha.Dispose() }
 }
-function Validate-Channel([byte[]]$Bytes,[byte[]]$Signature) {
+function Validate-Channel([byte[]]$Bytes,[byte[]]$Signature,[switch]$AllowLegacy) {
     if (-not (Test-ChannelSignature $Bytes $Signature $trust.public_key_xml)) { throw '배포 서명이 올바르지 않습니다.' }
     $c=$utf8.GetString($Bytes) | ConvertFrom-Json
-    if ((Assert-Integer $c.schema) -ne 1 -or $c.repository -cne $trust.repository) { throw '지원하지 않는 배포 채널입니다.' }
+    if (((Assert-Integer $c.schema) -ne 2 -and -not ($AllowLegacy -and $c.schema -eq 1)) -or $c.repository -cne $trust.repository) { throw '지원하지 않는 배포 채널입니다.' }
     if ($c.release -cnotmatch '^TGCNV-[0-9]{8}-[0-9]{6}$') { throw '잘못된 배포 이름입니다.' }
     $stamp=[DateTime]::ParseExact($c.release.Substring(6),'yyyyMMdd-HHmmss',[Globalization.CultureInfo]::InvariantCulture)
     $seq=[long]$stamp.ToString('yyyyMMddHHmmss')
     if ((Assert-Integer $c.sequence) -ne $seq) { throw '배포 순서가 올바르지 않습니다.' }
-    if ($c.catalog_url -cne "https://github.com/$($trust.repository)/releases/download/$($c.release)/catalog.json") { throw '잘못된 배포 목록 주소입니다.' }
+    $expectedUrl="https://ghcr.io/v2/yukino-chan/tgcnv-patches/blobs/sha256:$($c.catalog_sha256)"
+    if ($c.schema -eq 1) { $expectedUrl="https://github.com/$($trust.repository)/releases/download/$($c.release)/catalog.json" }
+    if ($c.catalog_url -cne $expectedUrl) { throw '잘못된 배포 목록 주소입니다.' }
     if ((Assert-Integer $c.catalog_bytes) -lt 1 -or $c.catalog_bytes -gt 33554432 -or $c.catalog_sha256 -cnotmatch '^[0-9a-f]{64}$') { throw '잘못된 배포 목록 정보입니다.' }
     return $c
 }
@@ -73,7 +75,7 @@ try {
         if ($GamePath -ine $state.game -or $DocumentsPath -ine $state.documents) { throw '복원은 설치 기록과 같은 경로에서 실행해야 합니다.' }
         Assert-GameClosed
         $saved=Resolve-SafeChild $cache $state.stage
-        $channel=Validate-Channel ([IO.File]::ReadAllBytes((Join-Path $saved 'channel.json'))) ([IO.File]::ReadAllBytes((Join-Path $saved 'channel.sig')))
+        $channel=Validate-Channel ([IO.File]::ReadAllBytes((Join-Path $saved 'channel.json'))) ([IO.File]::ReadAllBytes((Join-Path $saved 'channel.sig'))) -AllowLegacy
         $raw=[IO.File]::ReadAllBytes((Join-Path $saved 'catalog.json'))
         if ($raw.Length -ne $channel.catalog_bytes -or (Byte-Hash $raw) -cne $channel.catalog_sha256) { throw '복원 도구 목록이 손상되었습니다.' }
         $catalog=Read-ValidatedCatalog $raw $trust.repository
@@ -103,11 +105,20 @@ try {
     $profile=Resolve-SafeChild $DocumentsPath 'Paradox Interactive/Victoria II/TGCNV'
     if ($Action -eq 'Update') { Assert-GameClosed }
     Write-Host '최신 배포 서명과 파일 목록을 확인합니다...'
-    $channelBase="https://github.com/$($trust.repository)/releases/download/update-channel"
-    $channelRaw=Receive-LimitedBytes "$channelBase/latest.json" 65536 $trust.repository
-    $signature=Receive-LimitedBytes "$channelBase/latest.sig" 1024 $trust.repository
+    $envelopeRaw=Receive-LimitedBytes 'https://raw.githubusercontent.com/Yukino-Chan/TGC-Anime-Total-Overhaul-Korean/update-feed/channel.json' 131072 $trust.repository
+    $envelope=$utf8.GetString($envelopeRaw) | ConvertFrom-Json
+    if ((Assert-Integer $envelope.schema) -ne 2) { throw '지원하지 않는 채널 형식입니다.' }
+    $channelRaw=[Convert]::FromBase64String($envelope.channel)
+    $signature=[Convert]::FromBase64String($envelope.signature)
+    if ($channelRaw.Length -gt 65536 -or $signature.Length -gt 1024) { throw '서명 채널 크기가 잘못되었습니다.' }
     $channel=Validate-Channel $channelRaw $signature
-    $waterPath=Resolve-SafeChild $cache 'highest-sequence.json'
+    $waterPath=Resolve-SafeChild $cache 'highest-sequence-v2.json'
+    # Preserve the legacy anti-rollback floor while changing storage protocol.
+    $legacyWater=Resolve-SafeChild $cache 'highest-sequence.json'
+    if ([IO.File]::Exists($legacyWater)) {
+        $legacy=Read-Json $legacyWater
+        if ($channel.sequence -lt (Assert-Integer $legacy.sequence)) { throw '이전 업데이트 기록보다 오래된 배포입니다.' }
+    }
     if ([IO.File]::Exists($waterPath)) {
         $water=Read-Json $waterPath
         if ($channel.sequence -lt (Assert-Integer $water.sequence)) { throw '이전에 확인한 버전보다 오래된 배포를 거부했습니다.' }

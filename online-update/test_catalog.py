@@ -79,7 +79,7 @@ class BuildCatalogTests(unittest.TestCase):
         }
         pack = make_pack(self.root, release, payload)
         out = self.root / "base"
-        build_catalog.build(pack, "Owner/Repo", out)
+        build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", out)
         return pack, out / "catalog.json"
 
     def test_first_build_writes_catalog_and_expected_zip_members(self):
@@ -92,7 +92,7 @@ class BuildCatalogTests(unittest.TestCase):
         pack = make_pack(self.root, release, payload)
         out = self.root / "out"
 
-        result = build_catalog.build(pack, "Owner/Repo", out)
+        result = build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", out)
         catalog = result["catalog"]
 
         self.assertEqual(catalog["schema"], 1)
@@ -112,7 +112,7 @@ class BuildCatalogTests(unittest.TestCase):
             self.assertEqual(asset["sha256"], asset_id)
             self.assertTrue(
                 asset["url"].startswith(
-                    f"https://github.com/Owner/Repo/releases/download/{release}/"
+                    "https://ghcr.io/v2/yukino-chan/tgcnv-patches/blobs/sha256:"
                 )
             )
 
@@ -138,7 +138,7 @@ class BuildCatalogTests(unittest.TestCase):
         }
         pack1 = make_pack(self.root, release1, payload1)
         out1 = self.root / "out1"
-        result1 = build_catalog.build(pack1, "Owner/Repo", out1)
+        result1 = build_catalog.build(pack1, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", out1)
         catalog1 = result1["catalog"]
 
         def asset_for(catalog, rel):
@@ -159,7 +159,7 @@ class BuildCatalogTests(unittest.TestCase):
         pack2 = make_pack(self.root, release2, payload2)
         out2 = self.root / "out2"
         result2 = build_catalog.build(
-            pack2, "Owner/Repo", out2, out1 / "catalog.json"
+            pack2, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", out2, out1 / "catalog.json"
         )
         catalog2 = result2["catalog"]
 
@@ -187,11 +187,11 @@ class BuildCatalogTests(unittest.TestCase):
         pack = make_pack(self.root, release, payload)
 
         out1 = self.root / "out1"
-        result1 = build_catalog.build(pack, "Owner/Repo", out1)
+        result1 = build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", out1)
 
         out2 = self.root / "out2"
         result2 = build_catalog.build(
-            pack, "Owner/Repo", out2, out1 / "catalog.json"
+            pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", out2, out1 / "catalog.json"
         )
 
         self.assertEqual(result2["report"]["new"]["files"], 0)
@@ -219,7 +219,7 @@ class BuildCatalogTests(unittest.TestCase):
         )
 
         with self.assertRaises(ValueError):
-            build_catalog.build(pack, "Owner/Repo", self.root / "out")
+            build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", self.root / "out")
 
     def test_sums_tamper_is_rejected(self):
         release = "TGCNV-20240102-030405"
@@ -233,7 +233,7 @@ class BuildCatalogTests(unittest.TestCase):
         sums_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
         with self.assertRaises(ValueError):
-            build_catalog.build(pack, "Owner/Repo", self.root / "out")
+            build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", self.root / "out")
 
     def test_existing_output_is_rejected(self):
         release = "TGCNV-20240102-030405"
@@ -244,7 +244,7 @@ class BuildCatalogTests(unittest.TestCase):
         out.mkdir()
 
         with self.assertRaises(ValueError):
-            build_catalog.build(pack, "Owner/Repo", out)
+            build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", out)
 
     def test_forbidden_payload_path_is_rejected(self):
         release = "TGCNV-20240102-030405"
@@ -255,7 +255,7 @@ class BuildCatalogTests(unittest.TestCase):
         pack = make_pack(self.root, release, payload)
 
         with self.assertRaises(ValueError):
-            build_catalog.build(pack, "Owner/Repo", self.root / "out")
+            build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", self.root / "out")
 
     def test_path_validation_rejects_noncanonical_names(self):
         bad_paths = [
@@ -290,7 +290,7 @@ class BuildCatalogTests(unittest.TestCase):
         )
 
         with self.assertRaises(ValueError):
-            build_catalog.build(pack, "Owner/Repo", self.root / "out2", bad_path)
+            build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", self.root / "out2", bad_path)
 
     def test_previous_catalog_malformed_url_is_rejected(self):
         pack, catalog_path = self._build_valid_catalog()
@@ -306,7 +306,7 @@ class BuildCatalogTests(unittest.TestCase):
         )
 
         with self.assertRaises(ValueError):
-            build_catalog.build(pack, "Owner/Repo", self.root / "out2", bad_path)
+            build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", self.root / "out2", bad_path)
 
     def test_zip_assets_are_deterministic_across_output_dirs(self):
         release = "TGCNV-20240102-030405"
@@ -318,8 +318,8 @@ class BuildCatalogTests(unittest.TestCase):
 
         out1 = self.root / "out1"
         out2 = self.root / "out2"
-        result1 = build_catalog.build(pack, "Owner/Repo", out1)
-        result2 = build_catalog.build(pack, "Owner/Repo", out2)
+        result1 = build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", out1)
+        result2 = build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", out2)
 
         self.assertEqual(result1["catalog"], result2["catalog"])
         self.assertEqual(result1["catalog_sha256"], result2["catalog_sha256"])
@@ -358,7 +358,7 @@ class BuildCatalogTests(unittest.TestCase):
             build_catalog.shutil, "copyfileobj", side_effect=side_effect
         ):
             with self.assertRaises(RuntimeError):
-                build_catalog.build(pack, "Owner/Repo", out)
+                build_catalog.build(pack, "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean", out)
 
         self.assertFalse((out / "catalog.json").exists())
         self.assertFalse((out / "build-report.json").exists())

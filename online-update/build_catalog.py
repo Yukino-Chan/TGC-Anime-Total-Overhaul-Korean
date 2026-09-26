@@ -338,6 +338,8 @@ def _validate_asset_url(url, repository: str, sha256: str) -> str:
         raise ValueError("asset url must be a string")
     if "?" in url or "#" in url:
         raise ValueError(f"asset url must not carry a query or fragment: {url!r}")
+    if repository == "Yukino-Chan/TGC-Anime-Total-Overhaul-Korean" and url == "https://ghcr.io/v2/yukino-chan/tgcnv-patches/blobs/sha256:" + sha256:
+        return url
     prefix = GITHUB_DOWNLOAD_PREFIX.format(repository=repository)
     if not url.startswith(prefix):
         raise ValueError(f"asset url is not a release download of {repository}: {url!r}")
@@ -607,9 +609,7 @@ def build(pack, repository, output, previous_catalog=None):
         new_assets = {}
         for index, members in enumerate(groups):
             asset = _finalize_asset(tmp_dir, index, members)
-            asset["url"] = GITHUB_DOWNLOAD_URL.format(
-                repository=repository, release=release, filename=asset["filename"]
-            )
+            asset["url"] = "https://ghcr.io/v2/yukino-chan/tgcnv-patches/blobs/sha256:" + asset["sha256"]
             new_assets[asset["sha256"]] = asset
             for member in members:
                 by_path[member["path"]]["asset"] = asset["sha256"]

@@ -32,7 +32,7 @@ try {
     }
     $raw=[IO.File]::ReadAllBytes($CatalogPath)
     $cat=Read-ValidatedCatalog $raw $repo
-    $channel=[ordered]@{schema=1;repository=$repo;release=$cat.Release;sequence=[long]($cat.Release.Substring(6).Replace('-',''));catalog_url="https://github.com/$repo/releases/download/$($cat.Release)/catalog.json";catalog_bytes=$raw.Length;catalog_sha256=(Get-Sha256 $CatalogPath)}
+    $channel=[ordered]@{schema=2;repository=$repo;release=$cat.Release;sequence=[long]($cat.Release.Substring(6).Replace('-',''));catalog_url="https://ghcr.io/v2/yukino-chan/tgcnv-patches/blobs/sha256:$(Get-Sha256 $CatalogPath)";catalog_bytes=$raw.Length;catalog_sha256=(Get-Sha256 $CatalogPath)}
     $bytes=$utf8.GetBytes(($channel | ConvertTo-Json -Compress))
     $sha=[Security.Cryptography.SHA256]::Create()
     try {
@@ -40,6 +40,8 @@ try {
         $signer.SetHashAlgorithm('SHA256')
         $sig=$signer.CreateSignature($sha.ComputeHash($bytes))
     } finally { $sha.Dispose() }
+    $envelope=[ordered]@{schema=2;channel=[Convert]::ToBase64String($bytes);signature=[Convert]::ToBase64String($sig)}
+    [IO.File]::WriteAllText((Join-Path $OutputDirectory 'channel.json'),($envelope | ConvertTo-Json -Compress),$utf8)
     $public=$rsa.ToXmlString($false)
     if (-not (Test-ChannelSignature $bytes $sig $public)) { throw 'Self verification failed.' }
     [IO.File]::WriteAllBytes((Join-Path $OutputDirectory 'latest.json'),$bytes)

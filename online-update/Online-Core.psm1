@@ -1,4 +1,109 @@
-﻿# Online-Core.psm1
+﻿function New-OnlineHttpRequest($Uri) { return [Net.HttpWebRequest]::Create($Uri) }
+function Get-GhcrAnonymousPullToken {
+    [CmdletBinding()]
+    [OutputType([bool])]
+    param()
+
+    $now = [DateTime]::UtcNow
+    if ($null -ne $script:GhcrPullToken -and $script:GhcrPullTokenExpiresUtc -gt $now) {
+        return $true
+    }
+
+    $uri = $null
+    if (-not [Uri]::TryCreate($script:GhcrTokenUrl, [UriKind]::Absolute, [ref]$uri)) {
+        throw 'Invalid GHCR token URL.'
+    }
+
+    $request = (New-OnlineHttpRequest $uri)
+    $request.Method = 'GET'
+    $request.AllowAutoRedirect = $false
+    $request.UseDefaultCredentials = $false
+    $request.Credentials = $null
+    $request.UserAgent = 'TGCNV-OnlineUpdate/1.0'
+    $request.Timeout = 30000
+    $request.ReadWriteTimeout = 60000
+    $request.AutomaticDecompression = [Net.DecompressionMethods]::None
+    $request.KeepAlive = $false
+
+    $response = $null
+    $stream = $null
+    $memory = $null
+    try {
+        $response = $request.GetResponse()
+        $status = [int]$response.StatusCode
+        if ($status -ge 300 -and $status -lt 400) {
+            throw "GHCR token endpoint redirected (HTTP $status), which is not allowed."
+        }
+        if ($status -ne 200) {
+            throw "GHCR token endpoint returned HTTP $status."
+        }
+
+        $declared = $response.ContentLength
+        if ($declared -gt $script:GhcrTokenMaxBytes) {
+            throw "GHCR token response is too large ($declared bytes)."
+        }
+
+        $stream = $response.GetResponseStream()
+        $memory = New-Object System.IO.MemoryStream
+        $buffer = New-Object byte[] 8192
+        $total = [long]0
+        while ($true) {
+            $read = $stream.Read($buffer, 0, $buffer.Length)
+            if ($read -le 0) { break }
+            $total += $read
+            if ($total -gt $script:GhcrTokenMaxBytes) {
+                throw "GHCR token response exceeded $($script:GhcrTokenMaxBytes) bytes."
+            }
+            $memory.Write($buffer, 0, $read)
+        }
+
+        $bytes = $memory.ToArray()
+        $utf8 = New-Object System.Text.UTF8Encoding($false, $true)
+        $jsonText = $utf8.GetString($bytes)
+        $obj = $null
+        try { $obj = ConvertFrom-Json -InputObject $jsonText } catch { throw 'GHCR token response is not valid JSON.' }
+        if ($null -eq $obj) { throw 'GHCR token response is empty.' }
+
+        $token = $null
+        $property = $obj.PSObject.Properties['token']
+        if ($null -ne $property) { $token = [string]$property.Value }
+        if ([string]::IsNullOrWhiteSpace($token)) {
+            $property = $obj.PSObject.Properties['access_token']
+            if ($null -ne $property) { $token = [string]$property.Value }
+        }
+        if ([string]::IsNullOrWhiteSpace($token)) {
+            throw 'GHCR token response did not contain a token.'
+        }
+        if ($token.Length -gt $script:GhcrTokenMaxLength) {
+            throw 'GHCR token is unreasonably long.'
+        }
+        if ($token -match '[\x00-\x20\x7f]') {
+            throw 'GHCR token contains whitespace or control characters.'
+        }
+
+        $script:GhcrPullToken = $token
+        $script:GhcrPullTokenExpiresUtc = $now.AddSeconds($script:GhcrTokenCacheSeconds)
+        return $true
+    } finally {
+        if ($null -ne $stream) { $stream.Dispose() }
+        if ($null -ne $memory) { $memory.Dispose() }
+        if ($null -ne $response) { $response.Dispose() }
+    }
+}
+
+$script:GhcrHost                  = 'ghcr.io'
+$script:GhcrFixedRepository       = 'yukino-chan/tgcnv-patches'
+$script:GhcrBlobUrlPattern        = '^https://ghcr\.io/v2/yukino-chan/tgcnv-patches/blobs/sha256:[0-9a-f]{64}$'
+$script:GhcrNamespacePrefix       = '/v2/yukino-chan/tgcnv-patches/'
+$script:ChannelUrl                = 'https://raw.githubusercontent.com/Yukino-Chan/TGC-Anime-Total-Overhaul-Korean/update-feed/channel.json'
+$script:GhcrTokenUrl              = 'https://ghcr.io/token?service=ghcr.io&scope=repository%3Ayukino-chan%2Ftgcnv-patches%3Apull'
+$script:GhcrTokenMaxBytes         = 65536
+$script:GhcrTokenCacheSeconds     = 240
+$script:GhcrTokenMaxLength        = 4096
+$script:GhcrPullToken             = $null
+$script:GhcrPullTokenExpiresUtc   = [DateTime]::MinValue
+
+# Online-Core.psm1
 # Pure helper module for the TGCNV signed online-update channel.
 # SAVE THIS FILE AS UTF-8 WITH BOM: the metadata name '\uc124\uce58 \uc548\ub0b4.txt' must survive PowerShell 5.1 parsing.
 # No execution, no shell-out, no credential use. Every byte-array return uses ',<array>'.
@@ -41,10 +146,12 @@ function Test-AllowedDownloadHost {
     [OutputType([bool])]
     param([Parameter(Mandatory = $true)][string]$HostName)
     if ($HostName -ieq 'github.com') { return $true }
+    if ($HostName -ieq $script:GhcrHost) { return $true }
     if ($HostName.Length -gt $script:AllowedHostSuffix.Length -and
         $HostName.EndsWith($script:AllowedHostSuffix, [StringComparison]::OrdinalIgnoreCase)) { return $true }
     return $false
 }
+
 
 function Assert-NoReparsePoint {
     [CmdletBinding()]
@@ -76,40 +183,86 @@ function Get-BoundedHttpResponse {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory = $true)][string]$Url,
+        [string]$Repository = '',
         [int]$MaxRedirects = 5,
         [int]$TimeoutMilliseconds = 30000,
         [int]$ReadWriteTimeoutMilliseconds = 60000
     )
     if ($MaxRedirects -lt 0) { throw 'MaxRedirects must not be negative.' }
 
+    $isGhcrBlob = $false
+    if ($Repository -ceq 'Yukino-Chan/TGC-Anime-Total-Overhaul-Korean' -and $Url -cmatch $script:GhcrBlobUrlPattern) {
+        $isGhcrBlob = $true
+    }
+
     $current = $Url
     for ($hop = 0; $hop -le $MaxRedirects; $hop++) {
         $uri = $null
         if (-not [Uri]::TryCreate($current, [UriKind]::Absolute, [ref]$uri)) { throw "Invalid URL: '$current'." }
         if ($uri.Scheme -ne 'https' -or -not $uri.IsDefaultPort -or $uri.Fragment) { throw "Only https downloads are allowed: '$current'." }
-        if (-not (Test-AllowedDownloadHost -HostName $uri.Host)) {
-            throw "Downloads are restricted to github.com and *$($script:AllowedHostSuffix): '$($uri.Host)'."
-        }
         if (-not [string]::IsNullOrEmpty($uri.UserInfo)) { throw 'URLs carrying credentials are refused.' }
 
-        $request = [Net.HttpWebRequest]::Create($uri)
-        $request.Method = 'GET'
-        $request.AllowAutoRedirect = $false
-        $request.UseDefaultCredentials = $false
-        $request.Credentials = $null
-        $request.UserAgent = 'TGCNV-OnlineUpdate/1.0'
-        $request.Timeout = $TimeoutMilliseconds
-        $request.ReadWriteTimeout = $ReadWriteTimeoutMilliseconds
-        $request.AutomaticDecompression = [Net.DecompressionMethods]::None
-        $request.KeepAlive = $false
+        if (-not (Test-AllowedDownloadHost -HostName $uri.Host)) {
+            throw "Downloads are restricted to github.com, *$($script:AllowedHostSuffix), and the fixed GHCR namespace: '$($uri.Host)'."
+        }
+        if ($uri.Host -ieq $script:GhcrHost) {
+            if ($Repository -cne 'Yukino-Chan/TGC-Anime-Total-Overhaul-Korean') {
+                throw "GHCR downloads are only allowed for the fixed repository '$($script:GhcrFixedRepository)'."
+            }
+            if ($current -cnotmatch $script:GhcrBlobUrlPattern) {
+                throw "GHCR URL path is outside the allowed namespace: '$($uri.AbsoluteUri)'."
+            }
+        }
 
+        $useAuth = $false
+        if ($hop -eq 0 -and $isGhcrBlob -and $uri.Host -ieq $script:GhcrHost -and $uri.AbsolutePath -match '^/v2/yukino-chan/tgcnv-patches/blobs/sha256:[0-9a-f]{64}$') {
+            $useAuth = $true
+        }
+
+        $authAttempt = 0
         $response = $null
-        try {
-            $response = $request.GetResponse()
-        } catch [Net.WebException] {
-            $failed = $_.Exception.Response
-            if ($null -ne $failed) { $failed.Dispose() }
-            throw
+        while ($true) {
+            $request = (New-OnlineHttpRequest $uri)
+            $request.Method = 'GET'
+            $request.AllowAutoRedirect = $false
+            $request.UseDefaultCredentials = $false
+            $request.Credentials = $null
+            $request.UserAgent = 'TGCNV-OnlineUpdate/1.0'
+            $request.Timeout = $TimeoutMilliseconds
+            $request.ReadWriteTimeout = $ReadWriteTimeoutMilliseconds
+            $request.AutomaticDecompression = [Net.DecompressionMethods]::None
+            $request.KeepAlive = $false
+
+            if ($useAuth) {
+                [void](Get-GhcrAnonymousPullToken)
+                if ($null -eq $script:GhcrPullToken) {
+                    throw 'Failed to obtain an anonymous GHCR pull token.'
+                }
+                $request.Headers['Authorization'] = "Bearer $($script:GhcrPullToken)"
+            }
+
+            try {
+                $response = $request.GetResponse()
+                break
+            } catch [Net.WebException] {
+                $failed = $_.Exception.Response
+                $status = $null
+                if ($null -ne $failed) {
+                    $status = [int]$failed.StatusCode
+                    $failed.Dispose()
+                }
+                if ($status -eq 401 -and $useAuth -and $authAttempt -eq 0) {
+                    $authAttempt++
+                    $script:GhcrPullToken = $null
+                    $script:GhcrPullTokenExpiresUtc = [DateTime]::MinValue
+                    [void](Get-GhcrAnonymousPullToken)
+                    if ($null -eq $script:GhcrPullToken) {
+                        throw 'Failed to refresh GHCR pull token after HTTP 401.'
+                    }
+                    continue
+                }
+                throw
+            }
         }
 
         $status = [int]$response.StatusCode
@@ -134,7 +287,6 @@ function Get-BoundedHttpResponse {
     throw "Too many redirects (limit $MaxRedirects)."
 }
 
-# ---------------------------------------------------------- public surface ----
 
 function Get-Sha256 {
     [CmdletBinding()]
@@ -229,6 +381,23 @@ function Assert-GitHubAssetUrl {
     if (-not [string]::IsNullOrEmpty($uri.UserInfo)) { throw "Userinfo is not allowed: '$Url'." }
     if (-not [string]::IsNullOrEmpty($uri.Query)) { throw "Query strings are not allowed: '$Url'." }
     if (-not [string]::IsNullOrEmpty($uri.Fragment)) { throw "URL fragments are not allowed: '$Url'." }
+
+    # Exact fixed channel envelope URL.
+    if ($Url -ceq $script:ChannelUrl -and $Repository -ceq 'Yukino-Chan/TGC-Anime-Total-Overhaul-Korean') {
+        return $Url
+    }
+
+    # Exact canonical GHCR blob URL for the fixed namespace.
+    if ($uri.Host -ieq $script:GhcrHost) {
+        if ($Repository -cne 'Yukino-Chan/TGC-Anime-Total-Overhaul-Korean') {
+            throw "GHCR asset URLs are only allowed for the fixed repository '$($script:GhcrFixedRepository)'."
+        }
+        if ($Url -cnotmatch $script:GhcrBlobUrlPattern) {
+            throw "Noncanonical GHCR blob URL: '$Url'."
+        }
+        return $Url
+    }
+
     if ($uri.Host -ine 'github.com') { throw "Asset host must be github.com: '$($uri.Host)'." }
 
     $rawPattern = '^https://github\.com/' + [regex]::Escape($Repository) + '/releases/download/[A-Za-z0-9][A-Za-z0-9._-]{0,63}/[A-Za-z0-9][A-Za-z0-9._-]{0,127}$'
@@ -252,6 +421,7 @@ function Assert-GitHubAssetUrl {
 
     return $Url
 }
+
 
 function Receive-VerifiedFile {
     [CmdletBinding()]
@@ -289,7 +459,7 @@ function Receive-VerifiedFile {
     $partialCreated = $false
     try {
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-        $session = Get-BoundedHttpResponse -Url $Url
+        $session = Get-BoundedHttpResponse -Url $Url -Repository $Repository
         $response = $session.Response
 
         $declared = $response.ContentLength
@@ -360,7 +530,7 @@ function Receive-LimitedBytes {
     $memory = $null
     try {
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-        $session = Get-BoundedHttpResponse -Url $Url
+        $session = Get-BoundedHttpResponse -Url $Url -Repository $Repository
         $response = $session.Response
 
         $declared = $response.ContentLength
@@ -544,7 +714,7 @@ function Read-ValidatedCatalog {
         if ([string]$node.PSObject.Properties['sha256'].Value -cne $key) {
             throw "Asset '$key' declares a mismatched sha256."
         }
-        if (-not $assetUrl.EndsWith("/objects-$key.zip", [StringComparison]::Ordinal)) { throw "Asset name mismatch." }
+        if (-not $assetUrl.EndsWith("/objects-$key.zip", [StringComparison]::Ordinal) -and $assetUrl -cne "https://ghcr.io/v2/yukino-chan/tgcnv-patches/blobs/sha256:$key") { throw "Asset name mismatch." }
         $assetTotal += $assetBytes
         if ($assetTotal -gt $script:MaxCatalogBytes) { throw 'Catalog assets exceed the 10 GiB total cap.' }
         $assetTable[$key] = [pscustomobject]@{ Sha256 = $key; Url = $assetUrl; Bytes = $assetBytes }
