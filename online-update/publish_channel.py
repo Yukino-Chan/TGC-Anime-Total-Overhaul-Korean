@@ -57,9 +57,17 @@ def publish(gh, directory, bootstrap, notes):
     ps_env=dict(__import__('os').environ,PSModulePath=str(ps.parent/'Modules'))
     subprocess.run([str(ps),'-NoProfile','-ExecutionPolicy','Bypass','-File',str(verify_script),'-Directory',str(directory)],check=True,env=ps_env)
     release_cache = {}
+    def find_release(t):
+        # GitHub's /releases/tags endpoint omits drafts. Enumerate authenticated
+        # releases so a retry does not create duplicate drafts of the same tag.
+        pages=json.loads(cli('api',f'repos/{REPO}/releases?per_page=100','--paginate','--slurp'))
+        found=[r for page in pages for r in page if r['tag_name']==t]
+        if len(found)>1:raise ValueError(f'Duplicate releases for {t}; inspect before continuing')
+        return found[0] if found else None
     def get_release(t):
         if t not in release_cache:
-            release_cache[t] = api(f'repos/{REPO}/releases/tags/{t}')
+            release_cache[t] = find_release(t)
+            if release_cache[t] is None:raise ValueError(f'Release not found: {t}')
         return release_cache[t]
     local_assets = []
     for ident, asset in catalog['assets'].items():
@@ -76,12 +84,11 @@ def publish(gh, directory, bootstrap, notes):
             if not remote or remote['size'] != asset['bytes'] or remote.get('digest') != 'sha256:'+ident:
                 raise ValueError(f'Reused remote object missing or changed: {name}')
     # Resumption is allowed only when existing asset bytes match exactly.
-    p = subprocess.run([str(gh),'api',f'repos/{REPO}/releases/tags/{tag}'],capture_output=True,text=True,encoding='utf-8')
-    if p.returncode:
-        if '404' not in p.stderr: raise RuntimeError(p.stderr)
+    existing_release=find_release(tag)
+    if existing_release is None:
         cli('release','create',tag,'--repo',REPO,'--draft','--target','master','--title',f'TGC - Anime Total Overhaul (Korean) · {tag}','--notes-file',notes)
     else:
-        release_cache[tag] = json.loads(p.stdout)
+        release_cache[tag] = existing_release
     rel = get_release(tag)
     to_upload = [*local_assets,catalog_path,bootstrap]
     existing = {a['name']:a for a in rel['assets']}
@@ -104,15 +111,13 @@ def publish(gh, directory, bootstrap, notes):
     if rel['draft']:
         cli('release','edit',tag,'--repo',REPO,'--draft=false','--latest=true')
     # Back up a prior signed pointer locally before updating its stable release.
-    p=subprocess.run([str(gh),'api',f'repos/{REPO}/releases/tags/update-channel'],capture_output=True,text=True,encoding='utf-8')
-    if p.returncode:
-        if '404' not in p.stderr: raise RuntimeError(p.stderr)
+    prior=find_release('update-channel')
+    if prior is None:
         channel_notes=directory/'channel-notes.md'
         channel_notes.write_text('Signed update channel. Download the installer from the latest dated release. Payload objects in dated releases are retained for differential updates.\n',encoding='utf-8')
         cli('release','create','update-channel','--repo',REPO,'--draft','--target','master','--title','Signed update channel','--notes-file',channel_notes)
         was_draft=True
     else:
-        prior=json.loads(p.stdout)
         was_draft=prior['draft']
         backup=directory/'previous-channel'
         backup.mkdir(exist_ok=True)
@@ -123,7 +128,7 @@ def publish(gh, directory, bootstrap, notes):
     # Never publish the pointer before all immutable assets have passed checks.
     try:
         cli('release','upload','update-channel',channel_path,directory/'channel/latest.sig','--repo',REPO,'--clobber')
-        channel_release=api(f'repos/{REPO}/releases/tags/update-channel')
+        channel_release=find_release('update-channel')
         for path in (channel_path,directory/'channel/latest.sig'):
             a=next(x for x in channel_release['assets'] if x['name']==path.name)
             if a.get('digest')!='sha256:'+sha(path): raise ValueError('Channel upload verification failed')
