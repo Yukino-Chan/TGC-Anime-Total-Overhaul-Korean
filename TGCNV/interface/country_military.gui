@@ -1,0 +1,2113 @@
+guiTypes = {
+	windowType = {
+		name = "topcolor_military"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=1120 y=768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		orientation="UPPER_LEFT"
+	
+		iconType = {
+			name = "topcolor_icon"
+			spriteType = "GFX_topcolor"
+			position = { x= 0 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+	
+	positionType = {
+		name = "army_pos"
+		position = { x=336 y =20 }
+	}
+	
+	positionType = {
+		name = "navy_pos"
+		position = { x=663 y =20 }
+	}	
+	
+	#########################
+	# MAIN MILITARY WINDOW #
+	#########################
+	
+	windowType = {
+		name = "country_military"
+		backGround =""
+		position = { x=-512 y=-250 }	
+		size = { x=1024 y=632 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		orientation="CENTER"
+		
+		iconType = {
+			name ="main_bg"
+			spriteType = "GFX_main_bg"
+			position = { x= -70 y = -70 }
+			Orientation = "UPPER_LEFT"
+		}
+				
+		iconType = {
+			name ="bg_military"
+			spriteType = "GFX_military_bg"
+			position = { x= 18 y = 9 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		textBoxType = { 
+			name = "headline_military"
+			position = { x = 770 y = -42 }
+			font = "vic_title"
+			text = "MILITARY"	
+			maxWidth = 200
+			maxHeight = 48	
+			format = right
+		}
+		
+		guiButtonType = {
+			name = "close_button"
+			position = { x= -31 y = -7}
+			quadTextureSprite = "GFX_main_close_button"		
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ESCAPE"
+			clicksound = click
+		}
+		
+		iconType = {
+			name ="icon_army"
+			spriteType = "GFX_topbar_army_opaque"
+			position = { x= 348 y = 22 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="icon_navy"
+			spriteType = "GFX_topbar_navy_opaque"
+			position = { x= 676 y = 22 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+
+
+		#Mobilise info.		
+		guiButtonType = {
+			name = "mobilize"
+			quadTextureSprite = "GFX_button_standard_200"
+			buttonFont = "vic_18_black"
+			buttonText = "MOBILISE"
+			Orientation = "UPPER_LEFT"
+			clicksound = click
+			position = { x= 403 y = 549 }
+		}
+		guiButtonType = {
+			name = "demobilize"
+			quadTextureSprite = "GFX_button_standard_200"
+			buttonFont = "vic_18_black"
+			buttonText = "DEMOBILISE"
+			Orientation = "UPPER_LEFT"
+			clicksound = click
+			position = { x= 403 y = 549 }
+		}
+		iconType = {
+			name = "mobilize_progress"
+			spriteType = "GFX_mobilize_progress"
+			position = { x = 408 y = 592 }
+		}
+
+		iconType = {
+			name = "mobilize_progress_frame"
+			spriteType = "GFX_mobilization_progress_frame"
+			position = { x = 406 y = 590 }
+		}
+		
+		instantTextBoxType = { 
+			name = "mobilize_progress_text"
+			position = { x = 393 y = 591 }
+			font = "vic_18_black"
+			maxWidth = 218
+			maxHeight = 20	
+			format = center
+		}
+		
+		instantTextBoxType = { 
+			name = "mob_size_label"
+			position = { x = 635 y = 560 }
+			font = "vic_18_black"
+			text = "MOB_SIZE_LABEL"	
+			maxWidth = 280
+			maxHeight = 20	
+		}
+		instantTextBoxType = { 
+			name = "mob_size"
+			position = { x = 875 y = 560 }
+			font = "vic_18_black"
+			text = "123"	
+			maxWidth = 100
+			maxHeight = 20
+			format = right
+		}
+		instantTextBoxType = { 
+			name = "mob_impact_label"
+			position = { x = 635 y = 592 }
+			font = "vic_18_black"
+			text = "MOB_IMPACT_LABEL"	
+			maxWidth = 280
+			maxHeight = 20	
+		}
+		instantTextBoxType = { 
+			name = "mob_impact"
+			position = { x = 875 y = 592 }
+			font = "vic_18_black"
+			text = "123"	
+			maxWidth = 100
+			maxHeight = 20
+			format = right
+		}
+		
+		
+		################
+		#	Leader window
+		################
+		
+		windowType = {
+			name = "leaders"
+			backGround =""
+			position = { x=20 y=20 }	
+			size = { x=300 y=450 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = "0"
+			verticalBorder = ""
+			fullScreen = no
+			
+			instantTextBoxType = { 
+				name = "generals_label"
+				position = { x = 27 y = 9 }
+				font = "vic_18"
+				text = "MILITARY_GENERALS_LABEL"	
+				maxWidth = 150
+				maxHeight = 20	
+			}
+			instantTextBoxType = { 
+				name = "generals"
+				position = { x = 37 y = 9 }
+				font = "vic_18"
+				text = "11"	
+				maxWidth = 80
+				maxHeight = 20
+				format = right
+			}
+			instantTextBoxType = { 
+				name = "admirals_label"
+				position = { x = 190 y = 9 }
+				font = "vic_18"
+				text = "MILITARY_ADMIRALS_LABEL"	
+				maxWidth = 150
+				maxHeight = 20	
+			}
+			instantTextBoxType = { 
+				name = "admirals"
+				position = { x = 200 y = 9 }
+				font = "vic_18"
+				text = "3"	
+				maxWidth = 80
+				maxHeight = 20
+				format = right
+			}
+			
+			
+			guiButtonType = {
+				name = "sort_leader_prestige"
+				position = { x=10 y = 30 }
+				quadTextureSprite ="GFX_sortbutton_20"
+				buttonText = ""
+				buttonFont = "vic_18_black"
+			}
+			iconType = {
+				name ="sort_prestige_icon"
+				spriteType = "GFX_prestige_icon_2"
+				position = { x=12 y=38 }
+				Orientation = "UPPER_LEFT"
+				#allwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "sort_leader_type"
+				position = { x=31 y = 30 }
+				quadTextureSprite ="GFX_sortbutton_34"
+				buttonText = "MILITARY_SORT_TYPE"
+				buttonFont = "vic_18_black"
+			}
+			guiButtonType = {
+				name = "sort_leader_name"
+				position = { x=64 y = 30 }
+				quadTextureSprite ="GFX_sortbutton_132"
+				buttonText = "MILITARY_SORT_NAME"
+				buttonFont = "vic_18_black"
+			}
+			guiButtonType = {
+				name = "sort_leader_army"
+				position = { x=195 y = 30 }
+				quadTextureSprite ="GFX_sortbutton_108"
+				buttonText = "MILITARY_SORT_ASSIGNMENT"
+				buttonFont = "vic_18_black"
+			}
+			
+		
+			guiButtonType = {
+				name = "new_general"
+				quadTextureSprite = "GFX_button_standard_144"
+				buttonFont = "vic_18_black"
+				buttonText = "MILITARY_CREATE_GENERAL"
+				Orientation = "UPPER_LEFT"
+				clicksound = click
+				position = { x= 11 y = 327 }
+			}	
+			
+			guiButtonType = {
+				name = "new_admiral"
+				quadTextureSprite = "GFX_button_standard_144"
+				buttonFont = "vic_18_black"
+				buttonText = "MILITARY_CREATE_ADMIRAL"
+				Orientation = "UPPER_LEFT"
+				clicksound = click
+				position = { x= 155 y = 327 }
+			}
+			
+			checkboxType = {
+				name = "auto_create"
+				quadTextureSprite = "GFX_checkbox_default"
+				Orientation = "UPPER_LEFT"
+				position = { x= 80 y = 366 }
+			}
+			instantTextBoxType = { 
+				name = "auto_create_text"
+				position = { x = 103 y = 369 }
+				font = "vic_18_black"
+				text = "MILITARY_AUTOCREATE"	
+				maxWidth = 200
+				maxHeight = 20
+				format = left
+			}
+			
+			checkboxType = {
+				name = "auto_assign"
+				quadTextureSprite = "GFX_checkbox_default"
+				Orientation = "UPPER_LEFT"
+				position = { x= 80 y = 386 }
+			}
+			instantTextBoxType = { 
+				name = "auto_assign_text"
+				position = { x = 103 y = 389 }
+				font = "vic_18_black"
+				text = "MILITARY_AUTOASSIGN"	
+				maxWidth = 200
+				maxHeight = 20
+				format = left
+			}
+			
+			listboxType = {
+				name ="leader_listbox"
+				position = { x = 7 y = 60 }
+				backGround=""
+				size = { x=277 y = 264 }
+				Orientation = "UPPER_LEFT"
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 1 y = 1}
+			}
+		}
+		
+		
+		windowType = {
+			name = "stats"
+			backGround =""
+			position = { x=33 y=440 }	
+			size = { x=300 y=150 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = "0"
+			verticalBorder = ""
+			fullScreen = no
+			
+			iconType = {
+				name = "war_exhaustion_icon"
+				position = { x= 5 y = 1}
+				spriteType = "GFX_diplo_we_icon"	
+				scale = 0.6
+			}
+			instantTextBoxType = { 
+				name = "war_exhaustion_desc"
+				position = { x = 27 y = 0 }
+				font = "vic_18_black"
+				text = "MILITARY_WAR_EXHAUSTION"	
+				maxWidth = 160
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			iconType = {
+				name = "supply_consumption_icon"
+				position = { x= 1 y = 18}
+				spriteType = "GFX_unit_supplies_icon"	
+				scale = 1
+			}
+			instantTextBoxType = { 
+				name = "supply_consumption_desc"
+				position = { x = 27 y = 17 }
+				font = "vic_18_black"
+				text = "MILITARY_SUPPLY_CONSUMPTION"	
+				maxWidth = 160
+				maxHeight = 20
+				fixedsize = yes				
+			}
+
+			iconType = {
+				name = "org_regain_icon"
+				position = { x= 3 y = 32}
+				spriteType = "GFX_military_orgregain"	
+			}
+			instantTextBoxType = { 
+				name = "org_regain_desc"
+				position = { x = 27 y = 34 }
+				font = "vic_18_black"
+				text = "MILITARY_ORG_REGAIN"	
+				maxWidth = 160
+				maxHeight = 20
+				fixedsize = yes				
+			}
+
+			iconType = {
+				name = "army_org_icon"
+				position = { x= 3 y = 49}
+				spriteType = "GFX_military_landorg"	
+			}
+			instantTextBoxType = { 
+				name = "army_org_desc"
+				position = { x = 27 y = 51 }
+				font = "vic_18_black"
+				text = "MILITARY_ARMY_ORG"	
+				maxWidth = 160
+				maxHeight = 20
+				fixedsize = yes				
+			}
+			
+			iconType = {
+				name = "navy_org_icon"
+				position = { x= 2 y = 67}
+				spriteType = "GFX_military_navalorg"	
+			}
+			instantTextBoxType = { 
+				name = "navy_org_desc"
+				position = { x = 27 y = 68 }
+				font = "vic_18_black"
+				text = "MILITARY_NAVY_ORG"	
+				maxWidth = 160
+				maxHeight = 20
+				fixedsize = yes				
+			}
+			
+			iconType = {
+				name = "unit_experience_icon"
+				position = { x= 3 y = 82}
+				spriteType = "GFX_military_exp"	
+			}
+			instantTextBoxType = { 
+				name = "unit_experience_desc"
+				position = { x = 27 y = 85 }
+				font = "vic_18_black"
+				text = "MILITARY_UNIT_EXPERIENCE"	
+				maxWidth = 160
+				maxHeight = 20
+				fixedsize = yes				
+			}
+			
+			iconType = {
+				name = "recruit_time_icon"
+				position = { x= 2 y = 100}
+				spriteType = "GFX_military_recruittime"	
+			}
+			instantTextBoxType = { 
+				name = "recruit_time_desc"
+				position = { x = 27 y = 102 }
+				font = "vic_18_black"
+				text = "MILITARY_RECRUIT_TIME"	
+				maxWidth = 160
+				maxHeight = 20
+				fixedsize = yes				
+			}
+			
+			
+			iconType = {
+				name = "combat_width_icon"
+				position = { x= 2 y = 117}
+				spriteType = "GFX_military_cw"	
+			}
+			instantTextBoxType = { 
+				name = "combat_width_desc"
+				position = { x = 27 y = 119 }
+				font = "vic_18_black"
+				text = "MILITARY_COMBAT_WIDTH"	
+				maxWidth = 160
+				maxHeight = 20
+				fixedsize = yes
+			}
+			
+			iconType = {
+				name = "digin_cap_icon"
+				position = { x= 0 y = 132}
+				spriteType = "GFX_military_dugin_icon"		
+			}
+			instantTextBoxType = { 
+				name = "digin_cap_desc"
+				position = { x = 27 y = 136 }
+				font = "vic_18_black"
+				text = "MILITARY_DIG_IN_CAP"	
+				maxWidth = 160
+				maxHeight = 20
+				fixedsize = yes
+			}
+			
+			iconType = {
+				name = "tactics_level_icon"
+				position = { x= 2 y = 152}
+				spriteType = "GFX_military_tactics"	
+			}
+			instantTextBoxType = { 
+				name = "tactics_level_desc"
+				position = { x = 27 y = 153 }
+				font = "vic_18_black"
+				text = "MILITARY_MILITARY_TACTICS"	
+				maxWidth = 160
+				maxHeight = 20
+				fixedsize = yes
+			}
+			
+			
+			instantTextBoxType = { 
+				name = "war_exhaustion"
+				position = { x = 177 y = 0 }
+				font = "vic_18_black"
+				maxWidth = 100
+				maxHeight = 20
+				format = right
+			}
+
+			instantTextBoxType = { 
+				name = "supply_consumption"
+				position = { x = 177 y = 17 }
+				font = "vic_18_black"
+				maxWidth = 100
+				maxHeight = 20	
+				format = right
+			}
+
+			instantTextBoxType = { 
+				name = "org_regain"
+				position = { x = 177 y = 34 }
+				font = "vic_18_black"
+				maxWidth = 100
+				maxHeight = 20
+				format = right	
+			}
+
+			instantTextBoxType = { 
+				name = "army_org"
+				position = { x = 177 y = 51 }
+				font = "vic_18_black"
+				maxWidth = 100
+				maxHeight = 20
+				format = right	
+			}
+			
+			instantTextBoxType = { 
+				name = "navy_org"
+				position = { x = 177 y = 68 }
+				font = "vic_18_black"
+				maxWidth = 100
+				maxHeight = 20
+				format = right
+			}
+			
+			instantTextBoxType = { 
+				name = "unit_experience"
+				position = { x = 177 y = 85 }
+				font = "vic_18_black"
+				maxWidth = 100
+				maxHeight = 20
+				format = right	
+			}
+			
+			instantTextBoxType = { 
+				name = "recruit_time"
+				position = { x = 177 y = 102 }
+				font = "vic_18_black"
+				maxWidth = 100
+				maxHeight = 20
+				format = right	
+			}
+			instantTextBoxType = { 
+				name = "combat_width"
+				position = { x = 177 y = 119 }
+				font = "vic_18_black"
+				maxWidth = 100
+				maxHeight = 20
+				format = right	
+			}
+			instantTextBoxType = { 
+				name = "digin_cap"
+				position = { x = 177 y = 136 }
+				font = "vic_18_black"
+				maxWidth = 100
+				text = "todo"
+				maxHeight = 20
+				format = right	
+			}
+			instantTextBoxType = { 
+				name = "tactics_level"
+				position = { x = 177 y = 153 }
+				font = "vic_18_black"
+				text = "todo"
+				maxWidth = 100
+				maxHeight = 20
+				format = right	
+			}			
+		}
+	
+        guiButtonType = {
+            name = "tg_land_tab"
+            position = { x = 20 y = -28 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_nav_land"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_LAND"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_air_tab"
+            position = { x = 172 y = -28 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_nav_air"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_TAB"
+            clicksound = click
+        }
+
+        windowType = {
+            name = "tg_air_panel"
+            position = { x = 18 y = 9 }
+            size = { x = 988 y = 616 }
+            moveable = 0
+            fullScreen = no
+            orientation = "UPPER_LEFT"
+            iconType = {
+                name = "tg_air_background"
+                spriteType = "GFX_tgcnv_air_ui_main_bg"
+                position = { x = 0 y = 0 }
+                scale = 1
+            }
+
+        instantTextBoxType = {
+            name = "tg_status"
+            position = { x = 16 y = 9 }
+            font = "vic_18"
+            text = "TGC_AIR_START"
+            maxWidth = 952
+            maxHeight = 24
+            fixedsize = yes
+        }
+
+        instantTextBoxType = {
+            name = "tg_resources"
+            position = { x = 18 y = 43 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 946
+            maxHeight = 30
+            fixedsize = yes
+        }
+
+        guiButtonType = {
+            name = "tg_wings"
+            position = { x = 18 y = 78 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_tab_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_WINGS"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_bases"
+            position = { x = 174 y = 78 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_tab_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_BASES"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_production"
+            position = { x = 330 y = 78 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_tab_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_PRODUCTION"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_nuclear"
+            position = { x = 486 y = 78 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_tab_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_NUCLEAR"
+            clicksound = click
+        }
+
+        instantTextBoxType = {
+            name = "tg_heading"
+            position = { x = 18 y = 121 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 302
+            maxHeight = 24
+            fixedsize = yes
+        }
+        instantTextBoxType = {
+            name = "tg_strength_heading"
+            position = { x = 336 y = 121 }
+            font = "vic_18_black"
+            text = " "
+            format = right
+            maxWidth = 78
+            maxHeight = 24
+            fixedsize = yes
+        }
+
+
+        guiButtonType = {
+            name = "tg_row_0"
+            position = { x = 18 y = 149 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_row"
+            buttonFont = "vic_18_black"
+            buttonText = ""
+            clicksound = click
+        }
+
+        iconType = {
+            name = "tg_row_icon_0_0"
+            spriteType = "GFX_tgcnv_unit_interceptor"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_0_1"
+            spriteType = "GFX_tgcnv_unit_tactical_bomber"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_0_2"
+            spriteType = "GFX_tgcnv_unit_strategic_bomber"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_0_3"
+            spriteType = "GFX_tgcnv_unit_flying_bomb"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_0_4"
+            spriteType = "GFX_tgcnv_unit_rocket"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_0_5"
+            spriteType = "GFX_tgcnv_unit_multirole_fighter"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_0_6"
+            spriteType = "GFX_tgcnv_unit_close_air_support"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_0_7"
+            spriteType = "GFX_tgcnv_unit_naval_bomber"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_0_8"
+            spriteType = "GFX_tgcnv_unit_transport"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_0_9"
+            spriteType = "GFX_tgcnv_unit_reconnaissance"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        instantTextBoxType = {
+            name = "tg_row_text_0"
+            position = { x = 60 y = 157 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 260
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+        instantTextBoxType = {
+            name = "tg_row_strength_0"
+            position = { x = 336 y = 157 }
+            font = "vic_18_black"
+            text = " "
+            format = right
+            maxWidth = 78
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+
+
+        guiButtonType = {
+            name = "tg_row_1"
+            position = { x = 18 y = 183 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_row"
+            buttonFont = "vic_18_black"
+            buttonText = ""
+            clicksound = click
+        }
+
+        iconType = {
+            name = "tg_row_icon_1_0"
+            spriteType = "GFX_tgcnv_unit_interceptor"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_1_1"
+            spriteType = "GFX_tgcnv_unit_tactical_bomber"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_1_2"
+            spriteType = "GFX_tgcnv_unit_strategic_bomber"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_1_3"
+            spriteType = "GFX_tgcnv_unit_flying_bomb"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_1_4"
+            spriteType = "GFX_tgcnv_unit_rocket"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_1_5"
+            spriteType = "GFX_tgcnv_unit_multirole_fighter"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_1_6"
+            spriteType = "GFX_tgcnv_unit_close_air_support"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_1_7"
+            spriteType = "GFX_tgcnv_unit_naval_bomber"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_1_8"
+            spriteType = "GFX_tgcnv_unit_transport"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_1_9"
+            spriteType = "GFX_tgcnv_unit_reconnaissance"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        instantTextBoxType = {
+            name = "tg_row_text_1"
+            position = { x = 60 y = 191 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 260
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+        instantTextBoxType = {
+            name = "tg_row_strength_1"
+            position = { x = 336 y = 191 }
+            font = "vic_18_black"
+            text = " "
+            format = right
+            maxWidth = 78
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+
+
+        guiButtonType = {
+            name = "tg_row_2"
+            position = { x = 18 y = 217 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_row"
+            buttonFont = "vic_18_black"
+            buttonText = ""
+            clicksound = click
+        }
+
+        iconType = {
+            name = "tg_row_icon_2_0"
+            spriteType = "GFX_tgcnv_unit_interceptor"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_2_1"
+            spriteType = "GFX_tgcnv_unit_tactical_bomber"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_2_2"
+            spriteType = "GFX_tgcnv_unit_strategic_bomber"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_2_3"
+            spriteType = "GFX_tgcnv_unit_flying_bomb"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_2_4"
+            spriteType = "GFX_tgcnv_unit_rocket"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_2_5"
+            spriteType = "GFX_tgcnv_unit_multirole_fighter"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_2_6"
+            spriteType = "GFX_tgcnv_unit_close_air_support"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_2_7"
+            spriteType = "GFX_tgcnv_unit_naval_bomber"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_2_8"
+            spriteType = "GFX_tgcnv_unit_transport"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_2_9"
+            spriteType = "GFX_tgcnv_unit_reconnaissance"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        instantTextBoxType = {
+            name = "tg_row_text_2"
+            position = { x = 60 y = 225 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 260
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+        instantTextBoxType = {
+            name = "tg_row_strength_2"
+            position = { x = 336 y = 225 }
+            font = "vic_18_black"
+            text = " "
+            format = right
+            maxWidth = 78
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+
+
+        guiButtonType = {
+            name = "tg_row_3"
+            position = { x = 18 y = 251 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_row"
+            buttonFont = "vic_18_black"
+            buttonText = ""
+            clicksound = click
+        }
+
+        iconType = {
+            name = "tg_row_icon_3_0"
+            spriteType = "GFX_tgcnv_unit_interceptor"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_3_1"
+            spriteType = "GFX_tgcnv_unit_tactical_bomber"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_3_2"
+            spriteType = "GFX_tgcnv_unit_strategic_bomber"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_3_3"
+            spriteType = "GFX_tgcnv_unit_flying_bomb"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_3_4"
+            spriteType = "GFX_tgcnv_unit_rocket"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_3_5"
+            spriteType = "GFX_tgcnv_unit_multirole_fighter"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_3_6"
+            spriteType = "GFX_tgcnv_unit_close_air_support"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_3_7"
+            spriteType = "GFX_tgcnv_unit_naval_bomber"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_3_8"
+            spriteType = "GFX_tgcnv_unit_transport"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_3_9"
+            spriteType = "GFX_tgcnv_unit_reconnaissance"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        instantTextBoxType = {
+            name = "tg_row_text_3"
+            position = { x = 60 y = 259 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 260
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+        instantTextBoxType = {
+            name = "tg_row_strength_3"
+            position = { x = 336 y = 259 }
+            font = "vic_18_black"
+            text = " "
+            format = right
+            maxWidth = 78
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+
+
+        guiButtonType = {
+            name = "tg_row_4"
+            position = { x = 18 y = 285 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_row"
+            buttonFont = "vic_18_black"
+            buttonText = ""
+            clicksound = click
+        }
+
+        iconType = {
+            name = "tg_row_icon_4_0"
+            spriteType = "GFX_tgcnv_unit_interceptor"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_4_1"
+            spriteType = "GFX_tgcnv_unit_tactical_bomber"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_4_2"
+            spriteType = "GFX_tgcnv_unit_strategic_bomber"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_4_3"
+            spriteType = "GFX_tgcnv_unit_flying_bomb"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_4_4"
+            spriteType = "GFX_tgcnv_unit_rocket"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_4_5"
+            spriteType = "GFX_tgcnv_unit_multirole_fighter"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_4_6"
+            spriteType = "GFX_tgcnv_unit_close_air_support"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_4_7"
+            spriteType = "GFX_tgcnv_unit_naval_bomber"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_4_8"
+            spriteType = "GFX_tgcnv_unit_transport"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_4_9"
+            spriteType = "GFX_tgcnv_unit_reconnaissance"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        instantTextBoxType = {
+            name = "tg_row_text_4"
+            position = { x = 60 y = 293 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 260
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+        instantTextBoxType = {
+            name = "tg_row_strength_4"
+            position = { x = 336 y = 293 }
+            font = "vic_18_black"
+            text = " "
+            format = right
+            maxWidth = 78
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+
+
+        guiButtonType = {
+            name = "tg_row_5"
+            position = { x = 18 y = 319 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_row"
+            buttonFont = "vic_18_black"
+            buttonText = ""
+            clicksound = click
+        }
+
+        iconType = {
+            name = "tg_row_icon_5_0"
+            spriteType = "GFX_tgcnv_unit_interceptor"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_5_1"
+            spriteType = "GFX_tgcnv_unit_tactical_bomber"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_5_2"
+            spriteType = "GFX_tgcnv_unit_strategic_bomber"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_5_3"
+            spriteType = "GFX_tgcnv_unit_flying_bomb"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_5_4"
+            spriteType = "GFX_tgcnv_unit_rocket"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_5_5"
+            spriteType = "GFX_tgcnv_unit_multirole_fighter"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_5_6"
+            spriteType = "GFX_tgcnv_unit_close_air_support"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_5_7"
+            spriteType = "GFX_tgcnv_unit_naval_bomber"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_5_8"
+            spriteType = "GFX_tgcnv_unit_transport"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_5_9"
+            spriteType = "GFX_tgcnv_unit_reconnaissance"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        instantTextBoxType = {
+            name = "tg_row_text_5"
+            position = { x = 60 y = 327 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 260
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+        instantTextBoxType = {
+            name = "tg_row_strength_5"
+            position = { x = 336 y = 327 }
+            font = "vic_18_black"
+            text = " "
+            format = right
+            maxWidth = 78
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+
+
+        guiButtonType = {
+            name = "tg_row_6"
+            position = { x = 18 y = 353 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_row"
+            buttonFont = "vic_18_black"
+            buttonText = ""
+            clicksound = click
+        }
+
+        iconType = {
+            name = "tg_row_icon_6_0"
+            spriteType = "GFX_tgcnv_unit_interceptor"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_6_1"
+            spriteType = "GFX_tgcnv_unit_tactical_bomber"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_6_2"
+            spriteType = "GFX_tgcnv_unit_strategic_bomber"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_6_3"
+            spriteType = "GFX_tgcnv_unit_flying_bomb"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_6_4"
+            spriteType = "GFX_tgcnv_unit_rocket"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_6_5"
+            spriteType = "GFX_tgcnv_unit_multirole_fighter"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_6_6"
+            spriteType = "GFX_tgcnv_unit_close_air_support"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_6_7"
+            spriteType = "GFX_tgcnv_unit_naval_bomber"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_6_8"
+            spriteType = "GFX_tgcnv_unit_transport"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_6_9"
+            spriteType = "GFX_tgcnv_unit_reconnaissance"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        instantTextBoxType = {
+            name = "tg_row_text_6"
+            position = { x = 60 y = 361 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 260
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+        instantTextBoxType = {
+            name = "tg_row_strength_6"
+            position = { x = 336 y = 361 }
+            font = "vic_18_black"
+            text = " "
+            format = right
+            maxWidth = 78
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+
+
+        guiButtonType = {
+            name = "tg_row_7"
+            position = { x = 18 y = 387 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_row"
+            buttonFont = "vic_18_black"
+            buttonText = ""
+            clicksound = click
+        }
+
+        iconType = {
+            name = "tg_row_icon_7_0"
+            spriteType = "GFX_tgcnv_unit_interceptor"
+            position = { x = 23 y = 389 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_7_1"
+            spriteType = "GFX_tgcnv_unit_tactical_bomber"
+            position = { x = 23 y = 389 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_7_2"
+            spriteType = "GFX_tgcnv_unit_strategic_bomber"
+            position = { x = 23 y = 389 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_7_3"
+            spriteType = "GFX_tgcnv_unit_flying_bomb"
+            position = { x = 23 y = 389 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_7_4"
+            spriteType = "GFX_tgcnv_unit_rocket"
+            position = { x = 23 y = 389 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_7_5"
+            spriteType = "GFX_tgcnv_unit_multirole_fighter"
+            position = { x = 23 y = 389 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_7_6"
+            spriteType = "GFX_tgcnv_unit_close_air_support"
+            position = { x = 23 y = 389 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_7_7"
+            spriteType = "GFX_tgcnv_unit_naval_bomber"
+            position = { x = 23 y = 389 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_7_8"
+            spriteType = "GFX_tgcnv_unit_transport"
+            position = { x = 23 y = 389 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_icon_7_9"
+            spriteType = "GFX_tgcnv_unit_reconnaissance"
+            position = { x = 23 y = 389 }
+            scale = 0.4375
+        }
+
+        instantTextBoxType = {
+            name = "tg_row_text_7"
+            position = { x = 60 y = 395 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 260
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+        instantTextBoxType = {
+            name = "tg_row_strength_7"
+            position = { x = 336 y = 395 }
+            font = "vic_18_black"
+            text = " "
+            format = right
+            maxWidth = 78
+            maxHeight = 16
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	}
+
+
+        iconType = {
+            name = "tg_detail_icon_0"
+            spriteType = "GFX_tgcnv_unit_interceptor"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_detail_icon_1"
+            spriteType = "GFX_tgcnv_unit_tactical_bomber"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_detail_icon_2"
+            spriteType = "GFX_tgcnv_unit_strategic_bomber"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_detail_icon_3"
+            spriteType = "GFX_tgcnv_unit_flying_bomb"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_detail_icon_4"
+            spriteType = "GFX_tgcnv_unit_rocket"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_detail_icon_5"
+            spriteType = "GFX_tgcnv_unit_multirole_fighter"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_detail_icon_6"
+            spriteType = "GFX_tgcnv_unit_close_air_support"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_detail_icon_7"
+            spriteType = "GFX_tgcnv_unit_naval_bomber"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_detail_icon_8"
+            spriteType = "GFX_tgcnv_unit_transport"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_detail_icon_9"
+            spriteType = "GFX_tgcnv_unit_reconnaissance"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        instantTextBoxType = {
+            name = "tg_selection"
+            position = { x = 18 y = 429 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 408
+            maxHeight = 20
+            fixedsize = yes
+        }
+
+        guiButtonType = {
+            name = "tg_previous"
+            position = { x = 18 y = 457 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_PREVIOUS"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_next"
+            position = { x = 282 y = 457 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_NEXT"
+            clicksound = click
+        }
+
+        instantTextBoxType = {
+            name = "tg_rows"
+            position = { x = 452 y = 125 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 514
+            maxHeight = 173
+            fixedsize = yes
+        }
+
+        instantTextBoxType = {
+            name = "tg_target"
+            position = { x = 452 y = 304 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 514
+            maxHeight = 24
+            fixedsize = yes
+        }
+
+        guiButtonType = {
+            name = "tg_dest_prev"
+            position = { x = 452 y = 335 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_TARGET_PREV"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_dest_next"
+            position = { x = 612 y = 335 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_TARGET_NEXT"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_map_target"
+            position = { x = 772 y = 335 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_MAP_TARGET"
+            clicksound = click
+        }
+
+        instantTextBoxType = {
+            name = "tg_choice"
+            position = { x = 452 y = 375 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 510
+            maxHeight = 43
+            fixedsize = yes
+        }
+
+        guiButtonType = {
+            name = "tg_mission_0"
+            position = { x = 452 y = 423 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_MISSION_HOLD"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_mission_1"
+            position = { x = 612 y = 423 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_MISSION_INTERCEPT"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_mission_2"
+            position = { x = 772 y = 423 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_MISSION_GROUND"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_mission_3"
+            position = { x = 452 y = 457 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_MISSION_STRATEGIC"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_mission_4"
+            position = { x = 612 y = 457 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_MISSION_LOGISTICS"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_choice_prev"
+            position = { x = 452 y = 423 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_CHOICE_PREV"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_choice_next"
+            position = { x = 612 y = 423 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_button_144"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_AIR_CHOICE_NEXT"
+            clicksound = click
+        }
+
+        guiButtonType = {
+            name = "tg_apply"
+            position = { x = 612 y = 500 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
+            buttonFont = "vic_18_black"
+            buttonText = ""
+            clicksound = click
+        }
+
+        instantTextBoxType = {
+            name = "tg_apply_text"
+            position = { x = 622 y = 508 }
+            font = "vic_18"
+            text = " "
+            maxWidth = 124
+            maxHeight = 14
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	
+		format = centre
+	}
+
+        guiButtonType = {
+            name = "tg_secondary"
+            position = { x = 772 y = 500 }
+            quadTextureSprite = "GFX_tgcnv_air_ui_cancel_144"
+            buttonFont = "vic_18_black"
+            buttonText = ""
+            clicksound = click
+        }
+
+        instantTextBoxType = {
+            name = "tg_secondary_text"
+            position = { x = 782 y = 508 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 124
+            maxHeight = 14
+            fixedsize = yes
+        
+		borderSize = { x = 0 y = 0 }
+	
+		format = centre
+	}
+
+        instantTextBoxType = {
+            name = "tg_feedback"
+            position = { x = 18 y = 548 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 946
+            maxHeight = 46
+            fixedsize = yes
+        }
+
+        }
+}
+	
+	################
+	#	Army/navy window
+	################
+	
+	windowType = {
+		name = "unit_window"
+		backGround =""
+		position = { x=340 y=20 }	
+		size = { x=300 y=600 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		
+		instantTextBoxType = { 
+			name = "current_count"
+			position = { x = 45 y = 9 }
+			font = "vic_18"
+			text = "3 Armies"	
+			maxWidth = 150
+			maxHeight = 20	
+		}
+		
+		instantTextBoxType = { 
+			name = "under_construction"
+			position = { x = 260 y = 9 }
+			font = "vic_18"
+			text = "(+4)"	
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+		
+		iconType = {
+			name ="cut_down_to_size"
+			spriteType = "GFX_diplo_wargoal_icons"
+			position = { x= 240 y = 5 }
+			frame = 8
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
+			name = "sort_name"
+			position = { x=9 y = 30 }
+			quadTextureSprite ="GFX_sortbutton_200"
+			buttonText = "MILITARY_SORT_NAME"
+			buttonFont = "vic_18_black"
+		}
+		
+		guiButtonType = {
+			name = "sort_strength"
+			position = { x=206 y = 30 }
+			quadTextureSprite ="GFX_sortbutton_120"
+			buttonText = "MILITARY_SORT_STRENGTH"
+			buttonFont = "vic_18_black"
+		}
+				
+		guiButtonType = {
+			name = "build_new"
+			quadTextureSprite = "GFX_button_standard_200"
+			buttonFont = "vic_18_black"
+			buttonText = "DIPLOMACY_ADD_WARGOAL"
+			Orientation = "UPPER_LEFT"
+			clicksound = click
+			position = { x= 67 y = 475 }
+		}
+		
+		listboxType = {
+			name ="unit_listbox"
+			position = { x = 10 y = 60 }
+			backGround=""
+			size = { x=300 y = 409 }
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 1 y = 1}
+		}
+	}	
+	
+	###################
+	#	Unit entry
+	###################
+	
+	windowType = {
+		name = "unit_entry"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=250 y=39 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		
+		guiButtonType = {
+			name ="military_unit_entry_bg"
+			quadTextureSprite = "GFX_military_unit_entry_bg"
+			position = { x= 0 y = -1 }
+		}
+		
+		iconType = {
+			name = "unit_progress"
+			spriteType = "GFX_unitbuild_progress"
+			position = { x= 1 y = 2 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name = "leader"
+			position = { x= 1 y = -1 }
+			spriteType = "GFX_leader_generic0"		
+		}
+		
+		iconType = {
+			name = "unit_strip"
+			spriteType = "GFX_unit_strip"
+			position = { x = 3 y = 3 }
+		}
+		
+		instantTextBoxType = { 
+			name = "name"
+			position = { x = 40 y = 4 }
+			font = "vic_18_black"
+			text = " "	
+			maxWidth = 190
+			maxHeight = 20
+			fixedsize = yes
+			allwaystransparent = yes
+		}
+	
+		instantTextBoxType = { 
+			name = "location"
+			position = { x = 40 y = 22 }
+			font = "Arial12_black"
+			text = " "	
+			maxWidth = 140
+			maxHeight = 20
+			fixedsize = yes
+			allwaystransparent = yes
+		}
+		
+		instantTextBoxType = { 
+			name = "unit_eta"
+			position = { x = 190 y = 22 }
+			font = "Arial12_black"
+			text = " "	
+			maxWidth = 75
+			maxHeight = 20
+			format = right	
+		}
+		guiButtonType = {
+			name = "military_cancel_unit"
+			position = { x=273 y = 7 }
+			quadTextureSprite ="GFX_military_cancel_unit"
+		}
+		
+		instantTextBoxType = { 
+			name = "regiments"
+			position = { x = 205 y = 4 }
+			font = "vic_18_black"
+			text = "128"	
+			maxWidth = 75
+			maxHeight = 20
+			format = right
+		}
+		
+		instantTextBoxType = { 
+			name = "men"
+			position = { x = 205 y = 22 }
+			font = "Arial12_black"
+			text = "370000"	
+			maxWidth = 75
+			maxHeight = 20
+			format = right	
+		}
+	
+		iconType = {
+			name = "morale_progress"
+			spriteType = "GFX_morale_progress"
+			position = { x= 290 y = 30 }
+			Orientation = "UPPER_LEFT"
+			rotation = 1.5708
+		}
+	
+		iconType = {
+			name = "strength_progress"
+			spriteType = "GFX_strength_progress"
+			position = { x= 298 y = 30 }
+			Orientation = "UPPER_LEFT"
+			rotation = 1.5708
+		}
+		
+		iconType = {
+			name = "moving"
+			position = { x= 165 y = 17}
+			spriteType = "GFX_military_moving_icon"		
+		}
+
+		iconType = {
+			name = "digin"
+			position = { x= 185 y = 17}
+			spriteType = "GFX_military_dugin_icon"		
+		}
+
+		iconType = {
+			name = "combat"
+			position = { x= 205 y = 17 }
+			spriteType = "GFX_military_combat_icon"		
+		}
+		
+	}
+	
+	###################
+	#	Leader entry
+	###################
+	
+	windowType = {
+		name = "milview_leader_entry"
+		backGround =""
+		position = { x=10 y=100 }	
+		size = { x=250 y=44 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+			
+		iconType = {
+			name ="military_leader_entry_bg"
+			spriteType = "GFX_military_leader_entry_bg"
+			position = { x= 0 y = -3 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="prestige_bar_frame"
+			spriteType = "GFX_prestige_bar_frame"
+			position = { x = 4 y = 3 }
+			#allwaystransparent = yes
+		}
+		iconType = {
+			name ="leader_prestige_bar"
+			spriteType = "GFX_leader_prestige_progress_bar"
+			position = { x = 14 y = 33 }
+			Orientation = "UPPER_LEFT"
+			rotation = 1.5708
+			#allwaystransparent = yes
+		}	
+		
+		iconType = {
+			name = "leader"
+			position = { x = 16 y = 1 }
+			spriteType = "GFX_leader_generic0"
+		}	
+		
+		instantTextBoxType = { 
+			name = "name"
+			position = { x = 53 y = 1 }
+			font = "vic_18_black"
+			text = " "	
+			maxWidth = 126
+			maxHeight = 10
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = { 
+			name = "background"
+			position = { x = 53 y = 17 }
+			font = "Arial12_black"
+			text = " "	
+			maxWidth = 125
+			maxHeight = 20
+			fixedsize = yes
+		}			
+		
+		instantTextBoxType = { 
+			name = "personality"
+			position = { x = 53 y = 29 }
+			font = "Arial12_black"
+			text = " "	
+			maxWidth = 125
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		checkboxType = {
+			name = "use_leader"
+			quadTextureSprite = "GFX_checkbox_default"
+			Orientation = "UPPER_LEFT"
+			position = { x= 160 y = 17 }
+		}
+			
+		instantTextBoxType = { 
+			name = "army"
+			position = { x = 187 y = 1 }
+			font = "vic_18_black"
+			text = " "	
+			maxWidth = 87
+			maxHeight = 10
+			format = right
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = { 
+			name = "location"
+			position = { x = 187 y = 17 }
+			font = "Arial12_black"
+			text = " "	
+			maxWidth = 87
+			maxHeight = 10
+			format = right
+			fixedsize = yes
+		}
+	}
+}

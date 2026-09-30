@@ -1,0 +1,39 @@
+add_core = FRA
+owner = FRA
+controller = FRA
+add_core = WLL
+trade_goods = coal
+terrain = plains
+life_rating = 35
+#terrain = 
+
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = ammunition_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = cement_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = small_arms_factory
+	upgrade = yes
+}
+state_building = {
+	level = 6
+	building = liquor_distillery
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = glass_factory
+	upgrade = yes
+}

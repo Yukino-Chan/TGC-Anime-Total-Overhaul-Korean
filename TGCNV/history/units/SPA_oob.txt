@@ -1,0 +1,513 @@
+#Sphere of Influence
+#Europe
+POR = {
+	value = -50		#relation
+	level = 1		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+#North America
+MEX = {
+	value = 75		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+UCA = {
+	value = 100		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+#South America
+ECU = {
+	value = 100		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+PEU = {
+	value = 100		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+BOL = {
+	value = 100		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+CHL = {
+	value = 100		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+PRG = {
+	value = 100		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+CLM = {
+	value = 100		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+BRZ = {
+	value = 100		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+URU = {
+	value = 75		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+#Africa
+MOR = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+EGY = {
+	value = 0		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+ASH = {
+	value = 50
+}
+BEN = {
+	value = 50
+}
+DAH = {
+	value = 30
+}
+OYO = {
+	value = 30
+}
+ARO = {
+	value = 40
+}
+CLA = {
+	value = 50
+}
+WRI = {
+	value = 30
+}
+KON = {
+	value = 40
+}
+LOA = {
+	value = 30
+}
+GBU = {
+	value = 50
+}
+TOO = {
+	value = 50
+}
+WOL = {
+	value = 50
+}
+#Asia
+QNG ={
+	value = -10
+	level = 0
+	influence_value = 0
+}
+SUL = {
+	value = 100		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+#Other GP's
+ENG = { value = -75 }
+FRA = { value = 125 }
+AUS = { value = 0 }
+USA = { value = -25 }
+PRU = { value = 0 }
+TUR = { value = 25 }
+RUS = { value = 0 }
+
+#Army
+army = {
+	name = "Guardia Real de Espa…’a"
+	location = 487
+	regiment = {
+		name = "1. Guardia Real"
+		type = guard
+		home = 489
+	}
+	regiment = {
+		name = "2. Guardia Real"
+		type = guard
+		home = 509
+	}
+	regiment = {
+		name = "3. Guardia Real"
+		type = guard
+		home = 4050
+	}
+	regiment = {
+		name = "4. Guardia Real"
+		type = guard
+		home = 495
+	}
+	regiment = {
+		name = "5. Guardia Real"
+		type = guard
+		home = 487
+	}
+}
+army = {
+	name = "Ej…Õrcito del Centro"
+	leader = {
+		name = "Narv…≈ez"
+		date = 1836.1.1
+		type = land
+		personality = efficient
+		background = powerful_friends
+		prestige = 0.0
+	}
+	location = 495
+	regiment = {
+		name = "1. Brigada de Infanter…—a 'El Ramillete'"
+		type = infantry
+		home = 4064
+	}
+	regiment = {
+		name = "2. Brigada de Infanter…—a"
+		type = infantry
+		home = 503
+	}
+	regiment = {
+		name = "3. Brigada de Infanter…—a"
+		type = infantry
+		home = 4064
+	}
+}
+army = {
+	name = "Divisi…◊n del Norte"
+	location = 492
+	regiment = {
+		name = "1. Brigada de Ingenieros"
+		type = engineer
+		home = 487
+	}
+	regiment = {
+		name = "4. Brigada de Infanter…—a"
+		type = infantry
+		home = 492
+	}
+	regiment = {
+		name = "5. Brigada de Infanter…—a"
+		type = infantry
+		home = 492
+	}
+	regiment = {
+		name = "6. Brigada de Infanter…—a"
+		type = infantry
+		home = 4053
+	}
+}
+army = {
+	name = "Ej…Õrcito del Noreste"
+	location = 498
+	regiment = {
+		name = "7. Brigada de Infanter…—a 'San Jorge'"
+		type = infantry
+		home = 4059
+	}
+	regiment = {
+		name = "8. Brigada de Infanter…—a"
+		type = infantry
+		home = 7196
+	}
+	regiment = {
+		name = "9. Brigada de Infanter…—a"
+		type = infantry
+		home = 4043
+	}
+
+	regiment = {
+		name = "10. Brigada de Infanter…—a 'La Granja'"
+		type = infantry
+		home = 483
+	}
+	regiment = {
+		name = "11. Brigada de Infanter…—a"
+		type = infantry
+		home = 4058
+	}
+}
+army = {
+	name = "Reserva de Valencia"
+	location = 503
+	regiment = {
+		name = "12. Brigada de Infanter…—a"
+		type = infantry
+		home = 503
+	}
+	regiment = {
+		name = "13. Brigada de Infanter…—a"
+		type = infantry
+		home = 477
+	}
+}
+army = {
+	name = "Reserva del Sur"
+	location = 509
+	regiment = {
+		name = "14. Brigada de Infanter…—a"
+		type = infantry
+		home = 512
+	}
+	regiment = {
+		name = "15. Brigada de Infanter…—a"
+		type = infantry
+		home = 4075
+	}
+	regiment = {
+		name = "16. Brigada de Infanter…—a"
+		type = infantry
+		home = 4071
+	}
+	regiment = {
+		name = "17. Brigada de Infanter…—a"
+		type = infantry
+		home = 4077
+	}
+	regiment = {
+		name = "18. Brigada de Infanter…—a"
+		type = infantry
+		home = 4076
+	}
+	regiment = {
+		name = "19. Brigada de Infanter…—a"
+		type = infantry
+		home = 4070
+	}
+	regiment = {
+		name = "20. Brigada de Infanter…—a"
+		type = infantry
+		home = 4049
+	}
+	regiment = {
+		name = "1. Granaderos del Rey"
+		type = cuirassier
+		home = 513
+	}
+	regiment = {
+		name = "2. Granaderos del Rey"
+		type = cuirassier
+		home = 4074
+	}
+}
+#Armies disabled because they messed with troop-spawn in Europe (made units fail to spawn)
+#army = {
+#	name = "EjÈrcito de Cuba"
+#	location = 2209
+#
+#	regiment = {
+#		name = "1. Brigada Colonial"
+#		type = infantry
+#		home = 474
+#	}
+#}
+#army = {
+#	name = "EjÈrcito de Puerto Rico"
+#	location = 2222
+#
+#	regiment = {
+#		name = "2. Brigada Colonial"
+#		type = infantry
+#		home = 475
+#	}
+#}
+army = {
+	name = "Ej…Õrcito de Filipinas"
+	location = 1455
+
+	regiment = {
+		name = "1. Brigada Colonial"
+		type = infantry
+		home = 1455
+	}
+}
+army = {
+	name = "Ej…Õrcito de Mindanao"
+	location = 1463
+
+	regiment = {
+		name = "2. Brigada Colonial"
+		type = infantry
+		home = 1463
+	}
+}
+navy = {
+	name = "Armada de Cuba"
+	location = 2212
+
+	ship = {
+		name = "Santiago"
+		type = manowar
+	}
+
+	ship = {
+		name = "Hesp…Õrides"
+		type = manowar
+	}
+
+	ship = {
+		name = "Centinela"
+		type = manowar
+	}
+
+	ship = {
+		name = "Isla de Cuba"
+		type = frigate
+	}
+
+	ship = {
+		name = "Crist…◊bal Col…◊n"
+		type = frigate
+	}
+
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}
+navy = {
+	name = "Armada de Filipinas"
+	location = 1455
+
+	ship = {
+		name = "Alerta"
+		type = manowar
+	}
+
+	ship = {
+		name = "San Fernando"
+		type = manowar
+	}
+
+	ship = {
+		name = "Legazpi"
+		type = manowar
+	}
+
+	ship = {
+		name = "Victoria"
+		type = frigate
+	}
+
+	ship = {
+		name = "Nuestra Se…’ora del Patrocinio"
+		type = frigate
+	}
+
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}
+navy = {
+	name = "Armada Real Espa…’ola"
+	location = 506
+	ship = {
+		name= "San Raimundo"
+		type = manowar
+	}
+	ship = {
+		name= "H…Õroe"
+		type = manowar
+	}
+	ship = {
+		name= "San Pablo"
+		type = manowar
+	}
+	ship = {
+		name= "Ceres"
+		type = frigate
+	}
+	ship = {
+		name= "Gloria"
+		type = frigate
+	}
+	ship = {
+		name= "Nuestra Se…’ora de Asunci…◊n"
+		type = frigate
+	}
+	ship = {
+		name= "Nuestra Se…’ora de Atocha"
+		type = frigate
+	}
+	ship = {
+		name= "Santa Sabina"
+		type = frigate
+	}
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}
+leader = {
+	name = "Francisco Serrano"
+	date = 1833.1.1
+	type = land
+	personality = expert
+	background = war_college
+	prestige = 0.0
+}
+leader = {
+	name = "Leopoldo O'Donnell"
+	date = 1836.1.1
+	type = land
+	personality = efficient
+	background = rising_star
+	prestige = 0.0
+}
+leader = {
+	name = "Ger…◊nimo Vald…Õs"
+	date = 1836.1.1
+	type = land
+	personality = competent
+	background = generals_aide
+	prestige = 0.0
+}
+leader = {
+	name = "Van Halen"
+	date = 1823.1.1
+	type = land
+	personality = merciless
+	background = adventurer
+	prestige = 0.1
+}
+leader = {
+	name = "Jos…Õ Ram…◊n Rodil"
+	date = 1824.1.1
+	type = land
+	personality = merciless
+	background = adventurer
+	prestige = 0.1
+}

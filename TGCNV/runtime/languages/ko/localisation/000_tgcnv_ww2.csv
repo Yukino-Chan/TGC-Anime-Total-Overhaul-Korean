@@ -1,0 +1,751 @@
+CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;ITALIAN;SWEDISH;CZECH;HUNGARIAN;DUTCH;PORTUGUESE;RUSSIAN;FINNISH;x
+tgcnv_ww2_army_doctrine_1930;차량화 작전;;;;;;;;;;;;;x
+tgcnv_ww2_army_doctrine_1930_desc;1930년부터 연구할 수 있는 차량화 작전. 육군 이동 속도 +0.2.;;;;;;;;;;;;;x
+tgcnv_ww2_army_doctrine_1936;제병 협동 교리;;;;;;;;;;;;;x
+tgcnv_ww2_army_doctrine_1936_desc;1936년부터 연구할 수 있는 제병 협동 교리. 전술 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_army_doctrine_1940;종심 작전;;;;;;;;;;;;;x
+tgcnv_ww2_army_doctrine_1940_desc;1940년부터 연구할 수 있는 종심 작전. 육군 조직력 +3.;;;;;;;;;;;;;x
+tgcnv_ww2_army_doctrine_1943;기계화 돌파;;;;;;;;;;;;;x
+tgcnv_ww2_army_doctrine_1943_desc;1943년부터 연구할 수 있는 기계화 돌파. 전술 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_army_doctrine_1945;합동 전구 작전;;;;;;;;;;;;;x
+tgcnv_ww2_army_doctrine_1945_desc;1945년부터 연구할 수 있는 합동 전구 작전. 사기 +10%.;;;;;;;;;;;;;x
+tgcnv_ww2_light_armament_1930;반자동 소총;;;;;;;;;;;;;x
+tgcnv_ww2_light_armament_1930_desc;1930년부터 연구할 수 있는 반자동 소총. 보병 공격 +0.5, 근위병 공격 +0.5.;;;;;;;;;;;;;x
+tgcnv_ww2_light_armament_1936;분대 자동화기;;;;;;;;;;;;;x
+tgcnv_ww2_light_armament_1936_desc;1936년부터 연구할 수 있는 분대 자동화기. HOI3 2차대전기 지도 모델 사용, 보병 방어 +0.5, 근위병 방어 +0.5.;;;;;;;;;;;;;x
+tgcnv_ww2_light_armament_1940;보병 대전차 장비;;;;;;;;;;;;;x
+tgcnv_ww2_light_armament_1940_desc;1940년부터 연구할 수 있는 보병 대전차 장비. 보병 방어 +1.;;;;;;;;;;;;;x
+tgcnv_ww2_light_armament_1943;중간탄약 보병화기;;;;;;;;;;;;;x
+tgcnv_ww2_light_armament_1943_desc;1943년부터 연구할 수 있는 중간탄약 보병화기. 보병 공격 +0.5, 근위병 공격 +0.5.;;;;;;;;;;;;;x
+tgcnv_ww2_light_armament_1945;통합 보병 장비;;;;;;;;;;;;;x
+tgcnv_ww2_light_armament_1945_desc;1945년부터 연구할 수 있는 통합 보병 장비. 보병 조직력 +3, 근위병 조직력 +3.;;;;;;;;;;;;;x
+tgcnv_ww2_heavy_armament_1930;현대 야포;;;;;;;;;;;;;x
+tgcnv_ww2_heavy_armament_1930_desc;1930년부터 연구할 수 있는 현대 야포. 경전차 모집 해금, 포병 공격 +0.5.;;;;;;;;;;;;;x
+tgcnv_ww2_heavy_armament_1936;중형 전차 설계;;;;;;;;;;;;;x
+tgcnv_ww2_heavy_armament_1936_desc;1936년부터 연구할 수 있는 중형 전차 설계. 중형전차 공격 +1, 중형전차 방어 +0.5, 경전차 공격 +1, 경전차 방어 +0.5, 중전차 공격 +1, 중전차 방어 +0.5.;;;;;;;;;;;;;x
+tgcnv_ww2_heavy_armament_1940;대전차 포병;;;;;;;;;;;;;x
+tgcnv_ww2_heavy_armament_1940_desc;1940년부터 연구할 수 있는 대전차 포병. 중전차 모집 해금, 포병 방어 +1.;;;;;;;;;;;;;x
+tgcnv_ww2_heavy_armament_1943;자주포 운용;;;;;;;;;;;;;x
+tgcnv_ww2_heavy_armament_1943_desc;1943년부터 연구할 수 있는 자주포 운용. 포병 이동 속도 +0.2, 포병 지원 +0.25.;;;;;;;;;;;;;x
+tgcnv_ww2_heavy_armament_1945;안정화 사격통제;;;;;;;;;;;;;x
+tgcnv_ww2_heavy_armament_1945_desc;1945년부터 연구할 수 있는 안정화 사격통제. 중형전차 공격 +1, 경전차 공격 +1, 중전차 공격 +1, 포병 공격 +0.5.;;;;;;;;;;;;;x
+tgcnv_ww2_military_science_1930;독립 공군 체계;;;;;;;;;;;;;x
+tgcnv_ww2_military_science_1930_desc;1930년부터 연구할 수 있는 독립 공군 체계. 항공기 생산량 +3%. 독립 공군 확장의 연구 조건: 요격기, 전술폭격기, 정찰기. 생산과 운용 가능 여부는 공군 탭에서 확인한다.;;;;;;;;;;;;;x
+tgcnv_ww2_military_science_1936;전금속 단엽기;;;;;;;;;;;;;x
+tgcnv_ww2_military_science_1936_desc;1936년부터 연구할 수 있는 전금속 단엽기. 항공기 생산량 +3%. 독립 공군 확장의 연구 조건: 다목적 전투기, 근접지원기. 생산과 운용 가능 여부는 공군 탭에서 확인한다.;;;;;;;;;;;;;x
+tgcnv_ww2_military_science_1940;통합 방공 체계;;;;;;;;;;;;;x
+tgcnv_ww2_military_science_1940_desc;1940년부터 연구할 수 있는 통합 방공 체계. 라디오 생산량 +3%. 공군기지와 대공포 건설은 초기 항공학 연구로 해금된다.;;;;;;;;;;;;;x
+tgcnv_ww2_military_science_1943;장거리 항공작전;;;;;;;;;;;;;x
+tgcnv_ww2_military_science_1943_desc;1943년부터 연구할 수 있는 장거리 항공작전. 항공기 생산량 +3%. 독립 공군 확장의 연구 조건: 전략폭격기. 생산과 운용 가능 여부는 공군 탭에서 확인한다.;;;;;;;;;;;;;x
+tgcnv_ww2_military_science_1945;제트 전투기;;;;;;;;;;;;;x
+tgcnv_ww2_military_science_1945_desc;1945년부터 연구할 수 있는 제트 전투기. 항공기 생산량 +5%. 제트 성능 개량의 후속 구현을 위한 연구다.;;;;;;;;;;;;;x
+tgcnv_ww2_army_leadership_1930;참모 무선통신;;;;;;;;;;;;;x
+tgcnv_ww2_army_leadership_1930_desc;1930년부터 연구할 수 있는 참모 무선통신. 육군 조직력 +2.;;;;;;;;;;;;;x
+tgcnv_ww2_army_leadership_1936;작전 참모 제도;;;;;;;;;;;;;x
+tgcnv_ww2_army_leadership_1936_desc;1936년부터 연구할 수 있는 작전 참모 제도. 훈련 경험치 +1.;;;;;;;;;;;;;x
+tgcnv_ww2_army_leadership_1940;전선 항공통제;;;;;;;;;;;;;x
+tgcnv_ww2_army_leadership_1940_desc;1940년부터 연구할 수 있는 전선 항공통제. 육군 조직력 +2.;;;;;;;;;;;;;x
+tgcnv_ww2_army_leadership_1943;통합 군수 참모;;;;;;;;;;;;;x
+tgcnv_ww2_army_leadership_1943_desc;1943년부터 연구할 수 있는 통합 군수 참모. 충원 속도 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_army_leadership_1945;전구 지휘통합;;;;;;;;;;;;;x
+tgcnv_ww2_army_leadership_1945_desc;1945년부터 연구할 수 있는 전구 지휘통합. 육군 조직력 +3.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_doctrine_1930;호송선단 교리;;;;;;;;;;;;;x
+tgcnv_ww2_naval_doctrine_1930_desc;1930년부터 연구할 수 있는 호송선단 교리. 해군 소모 -2%.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_doctrine_1936;기동함대 운용;;;;;;;;;;;;;x
+tgcnv_ww2_naval_doctrine_1936_desc;1936년부터 연구할 수 있는 기동함대 운용. 해군 조직력 +2.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_doctrine_1940;해공 협동 교리;;;;;;;;;;;;;x
+tgcnv_ww2_naval_doctrine_1940_desc;1940년부터 연구할 수 있는 해공 협동 교리. 해군 조직력 +2. 독립 공군 확장의 연구 조건: 해군폭격기. 생산과 운용 가능 여부는 공군 탭에서 확인한다.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_doctrine_1943;통합 대잠전;;;;;;;;;;;;;x
+tgcnv_ww2_naval_doctrine_1943_desc;1943년부터 연구할 수 있는 통합 대잠전. 해군 소모 -2%.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_doctrine_1945;합동 상륙 교리;;;;;;;;;;;;;x
+tgcnv_ww2_naval_doctrine_1945_desc;1945년부터 연구할 수 있는 합동 상륙 교리. 해군 조직력 +3.;;;;;;;;;;;;;x
+tgcnv_ww2_ship_construction_1930;용접 선체;;;;;;;;;;;;;x
+tgcnv_ww2_ship_construction_1930_desc;1930년부터 연구할 수 있는 용접 선체. 해군 선체 +0.1.;;;;;;;;;;;;;x
+tgcnv_ww2_ship_construction_1936;현대 순양함 설계;;;;;;;;;;;;;x
+tgcnv_ww2_ship_construction_1936_desc;1936년부터 연구할 수 있는 현대 순양함 설계. 순양함 함포 화력 +0.5, 순양함 선체 +0.2.;;;;;;;;;;;;;x
+tgcnv_ww2_ship_construction_1940;개량 주력함 설계;;;;;;;;;;;;;x
+tgcnv_ww2_ship_construction_1940_desc;1940년부터 연구할 수 있는 개량 주력함 설계. 전함 선체 +0.3, 드레드노트 선체 +0.3.;;;;;;;;;;;;;x
+tgcnv_ww2_ship_construction_1943;모듈식 조선;;;;;;;;;;;;;x
+tgcnv_ww2_ship_construction_1943_desc;1943년부터 연구할 수 있는 모듈식 조선. 해군 건조 기간 -5일.;;;;;;;;;;;;;x
+tgcnv_ww2_ship_construction_1945;함정 생존성 설계;;;;;;;;;;;;;x
+tgcnv_ww2_ship_construction_1945_desc;1945년부터 연구할 수 있는 함정 생존성 설계. 해군 선체 +0.2.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_engineering_1930;함내 피해통제;;;;;;;;;;;;;x
+tgcnv_ww2_naval_engineering_1930_desc;1930년부터 연구할 수 있는 함내 피해통제. 해군 선체 +0.1.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_engineering_1936;고압 증기기관;;;;;;;;;;;;;x
+tgcnv_ww2_naval_engineering_1936_desc;1936년부터 연구할 수 있는 고압 증기기관. 순양함 이동 속도 +0.5, 드레드노트 이동 속도 +0.5.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_engineering_1940;개량 함정 추진;;;;;;;;;;;;;x
+tgcnv_ww2_naval_engineering_1940_desc;1940년부터 연구할 수 있는 개량 함정 추진. 해군 보급 소모 -2%.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_engineering_1943;자동 소화설비;;;;;;;;;;;;;x
+tgcnv_ww2_naval_engineering_1943_desc;1943년부터 연구할 수 있는 자동 소화설비. 해군 선체 +0.1.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_engineering_1945;통합 손상복구;;;;;;;;;;;;;x
+tgcnv_ww2_naval_engineering_1945_desc;1945년부터 연구할 수 있는 통합 손상복구. 해군 선체 +0.1, 해군 조직력 +2.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_science_1930;무선 방향탐지;;;;;;;;;;;;;x
+tgcnv_ww2_naval_science_1930_desc;1930년부터 연구할 수 있는 무선 방향탐지. 보급 거리 +10%.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_science_1936;개량 음파탐지;;;;;;;;;;;;;x
+tgcnv_ww2_naval_science_1936_desc;1936년부터 연구할 수 있는 개량 음파탐지. 해군 조직력 +2.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_science_1940;레이더 사격통제;;;;;;;;;;;;;x
+tgcnv_ww2_naval_science_1940_desc;1940년부터 연구할 수 있는 레이더 사격통제. 해군 함포 화력 +0.2.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_science_1943;함대 방공통제;;;;;;;;;;;;;x
+tgcnv_ww2_naval_science_1943_desc;1943년부터 연구할 수 있는 함대 방공통제. 해군 조직력 +2.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_science_1945;근접신관 포탄;;;;;;;;;;;;;x
+tgcnv_ww2_naval_science_1945_desc;1945년부터 연구할 수 있는 근접신관 포탄. 해군 함포 화력 +0.2.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_leadership_1930;호송항로 계획;;;;;;;;;;;;;x
+tgcnv_ww2_naval_leadership_1930_desc;1930년부터 연구할 수 있는 호송항로 계획. 해군 조직력 +2.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_leadership_1936;중앙 사격지휘;;;;;;;;;;;;;x
+tgcnv_ww2_naval_leadership_1936_desc;1936년부터 연구할 수 있는 중앙 사격지휘. 해군 함포 화력 +0.1.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_leadership_1940;함대 통신규약;;;;;;;;;;;;;x
+tgcnv_ww2_naval_leadership_1940_desc;1940년부터 연구할 수 있는 함대 통신규약. 해군 조직력 +2.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_leadership_1943;전투 피해훈련;;;;;;;;;;;;;x
+tgcnv_ww2_naval_leadership_1943_desc;1943년부터 연구할 수 있는 전투 피해훈련. 해군 선체 +0.1.;;;;;;;;;;;;;x
+tgcnv_ww2_naval_leadership_1945;합동 해군참모;;;;;;;;;;;;;x
+tgcnv_ww2_naval_leadership_1945_desc;1945년부터 연구할 수 있는 합동 해군참모. 해군 조직력 +3.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_power_1930;고출력 내연기관;;;;;;;;;;;;;x
+tgcnv_ww2_tech_power_1930_desc;1930년부터 연구할 수 있는 고출력 내연기관. 자동차 생산량 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_power_1936;고옥탄가 연료;;;;;;;;;;;;;x
+tgcnv_ww2_tech_power_1936_desc;1936년부터 연구할 수 있는 고옥탄가 연료. 연료 생산량 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_power_1940;개량 산업 터빈;;;;;;;;;;;;;x
+tgcnv_ww2_tech_power_1940_desc;1940년부터 연구할 수 있는 개량 산업 터빈. 공장 처리량 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_power_1943;가스터빈 생산;;;;;;;;;;;;;x
+tgcnv_ww2_tech_power_1943_desc;1943년부터 연구할 수 있는 가스터빈 생산. 항공기 생산량 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_power_1945;광역 전력망;;;;;;;;;;;;;x
+tgcnv_ww2_tech_power_1945_desc;1945년부터 연구할 수 있는 광역 전력망. 공장 처리량 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_mechanization_1930;정밀 공작기계;;;;;;;;;;;;;x
+tgcnv_ww2_mechanization_1930_desc;1930년부터 연구할 수 있는 정밀 공작기계. 기계 부품 생산량 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_mechanization_1936;군수 양산 체계;;;;;;;;;;;;;x
+tgcnv_ww2_mechanization_1936_desc;1936년부터 연구할 수 있는 군수 양산 체계. 소화기 생산량 +3%, 대포 생산량 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_mechanization_1940;통계적 품질관리;;;;;;;;;;;;;x
+tgcnv_ww2_mechanization_1940_desc;1940년부터 연구할 수 있는 통계적 품질관리. 공장 투입량 -1%.;;;;;;;;;;;;;x
+tgcnv_ww2_mechanization_1943;호환식 기체 생산;;;;;;;;;;;;;x
+tgcnv_ww2_mechanization_1943_desc;1943년부터 연구할 수 있는 호환식 기체 생산. 항공기 생산량 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_mechanization_1945;공정 자동제어;;;;;;;;;;;;;x
+tgcnv_ww2_mechanization_1945_desc;1945년부터 연구할 수 있는 공정 자동제어. 공장 처리량 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_metallurgy_1930;경량 합금;;;;;;;;;;;;;x
+tgcnv_ww2_metallurgy_1930_desc;1930년부터 연구할 수 있는 경량 합금. 항공기 생산량 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_metallurgy_1936;균질 압연장갑;;;;;;;;;;;;;x
+tgcnv_ww2_metallurgy_1936_desc;1936년부터 연구할 수 있는 균질 압연장갑. 강철 생산량 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_metallurgy_1940;내열 합금;;;;;;;;;;;;;x
+tgcnv_ww2_metallurgy_1940_desc;1940년부터 연구할 수 있는 내열 합금. 강철 생산량 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_metallurgy_1943;정밀 주조;;;;;;;;;;;;;x
+tgcnv_ww2_metallurgy_1943_desc;1943년부터 연구할 수 있는 정밀 주조. 기계 부품 생산량 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_metallurgy_1945;고성능 절삭합금;;;;;;;;;;;;;x
+tgcnv_ww2_metallurgy_1945_desc;1945년부터 연구할 수 있는 고성능 절삭합금. 강철 생산량 +3%, 기계 부품 생산량 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_infrastructure_1930;근대 군용 비행장;;;;;;;;;;;;;x
+tgcnv_ww2_tech_infrastructure_1930_desc;1930년부터 연구할 수 있는 근대 군용 비행장. 보급 한계 +5%. 공군기지와 대공포 건설은 초기 항공학 연구로 해금된다.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_infrastructure_1936;차량화 보급망;;;;;;;;;;;;;x
+tgcnv_ww2_tech_infrastructure_1936_desc;1936년부터 연구할 수 있는 차량화 보급망. 보급 한계 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_infrastructure_1940;전방 정비 체계;;;;;;;;;;;;;x
+tgcnv_ww2_tech_infrastructure_1940_desc;1940년부터 연구할 수 있는 전방 정비 체계. 충원 속도 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_infrastructure_1943;항공 수송망;;;;;;;;;;;;;x
+tgcnv_ww2_tech_infrastructure_1943_desc;1943년부터 연구할 수 있는 항공 수송망. 보급 한계 +5%. 독립 공군 확장의 연구 조건: 수송기. 생산과 운용 가능 여부는 공군 탭에서 확인한다.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_infrastructure_1945;통합 군수 거점;;;;;;;;;;;;;x
+tgcnv_ww2_tech_infrastructure_1945_desc;1945년부터 연구할 수 있는 통합 군수 거점. 보급 한계 +10%.;;;;;;;;;;;;;x
+tgcnv_ww2_chemistry_and_electricity_1930;산업 전자공학;;;;;;;;;;;;;x
+tgcnv_ww2_chemistry_and_electricity_1930_desc;1930년부터 연구할 수 있는 산업 전자공학. 전기 기계 생산량 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_chemistry_and_electricity_1936;합성 연료;;;;;;;;;;;;;x
+tgcnv_ww2_chemistry_and_electricity_1936_desc;1936년부터 연구할 수 있는 합성 연료. 연료 생산량 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_chemistry_and_electricity_1940;고체 추진제;;;;;;;;;;;;;x
+tgcnv_ww2_chemistry_and_electricity_1940_desc;1940년부터 연구할 수 있는 고체 추진제. 폭약 생산량 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_chemistry_and_electricity_1943;유도 로켓;;;;;;;;;;;;;x
+tgcnv_ww2_chemistry_and_electricity_1943_desc;1943년부터 연구할 수 있는 유도 로켓. 라디오 생산량 +3%, 폭약 생산량 +3%. 독립 공군 확장의 연구 조건: 비행폭탄, 탄도 로켓. 생산과 운용 가능 여부는 공군 탭에서 확인한다.;;;;;;;;;;;;;x
+tgcnv_ww2_chemistry_and_electricity_1945;핵분열 무기 연구;;;;;;;;;;;;;x
+tgcnv_ww2_chemistry_and_electricity_1945_desc;1945년부터 연구할 수 있는 핵분열 무기 연구. 전기 기계 생산량 +5%. 핵무기 생산의 후속 구현을 위한 연구다. 연구만으로 핵탄두를 지급하지 않는다.;;;;;;;;;;;;;x
+tgcnv_ww2_financial_institutions_1930;금융 감독 체계;;;;;;;;;;;;;x
+tgcnv_ww2_financial_institutions_1930_desc;1930년부터 연구할 수 있는 금융 감독 체계. 조세 효율 +1%p.;;;;;;;;;;;;;x
+tgcnv_ww2_financial_institutions_1936;공공 투자 금융;;;;;;;;;;;;;x
+tgcnv_ww2_financial_institutions_1936_desc;1936년부터 연구할 수 있는 공공 투자 금융. 공장 건설 비용 -1%.;;;;;;;;;;;;;x
+tgcnv_ww2_financial_institutions_1940;전시 국채 금융;;;;;;;;;;;;;x
+tgcnv_ww2_financial_institutions_1940_desc;1940년부터 연구할 수 있는 전시 국채 금융. 조세 효율 +1%p.;;;;;;;;;;;;;x
+tgcnv_ww2_financial_institutions_1943;군수 계약 금융;;;;;;;;;;;;;x
+tgcnv_ww2_financial_institutions_1943_desc;1943년부터 연구할 수 있는 군수 계약 금융. 공장 건설 비용 -1%.;;;;;;;;;;;;;x
+tgcnv_ww2_financial_institutions_1945;전후 재건 금융;;;;;;;;;;;;;x
+tgcnv_ww2_financial_institutions_1945_desc;1945년부터 연구할 수 있는 전후 재건 금융. 대출 이자 -0.1%p.;;;;;;;;;;;;;x
+tgcnv_ww2_monetary_system_1930;통화 안정 정책;;;;;;;;;;;;;x
+tgcnv_ww2_monetary_system_1930_desc;1930년부터 연구할 수 있는 통화 안정 정책. 행정 효율 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_monetary_system_1936;관리 통화 체계;;;;;;;;;;;;;x
+tgcnv_ww2_monetary_system_1936_desc;1936년부터 연구할 수 있는 관리 통화 체계. 대출 이자 -0.1%p.;;;;;;;;;;;;;x
+tgcnv_ww2_monetary_system_1940;전시 통화 관리;;;;;;;;;;;;;x
+tgcnv_ww2_monetary_system_1940_desc;1940년부터 연구할 수 있는 전시 통화 관리. 행정 효율 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_monetary_system_1943;국제 청산 협정;;;;;;;;;;;;;x
+tgcnv_ww2_monetary_system_1943_desc;1943년부터 연구할 수 있는 국제 청산 협정. 조세 효율 +1%p.;;;;;;;;;;;;;x
+tgcnv_ww2_monetary_system_1945;국제 통화 협력;;;;;;;;;;;;;x
+tgcnv_ww2_monetary_system_1945_desc;1945년부터 연구할 수 있는 국제 통화 협력. 대출 이자 -0.1%p.;;;;;;;;;;;;;x
+tgcnv_ww2_economic_thought_and_critique_1930;국민소득 회계;;;;;;;;;;;;;x
+tgcnv_ww2_economic_thought_and_critique_1930_desc;1930년부터 연구할 수 있는 국민소득 회계. 공장 투입량 -0.5%.;;;;;;;;;;;;;x
+tgcnv_ww2_economic_thought_and_critique_1936;총수요 관리;;;;;;;;;;;;;x
+tgcnv_ww2_economic_thought_and_critique_1936_desc;1936년부터 연구할 수 있는 총수요 관리. 공장 생산량 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_economic_thought_and_critique_1940;전시 자원 배분;;;;;;;;;;;;;x
+tgcnv_ww2_economic_thought_and_critique_1940_desc;1940년부터 연구할 수 있는 전시 자원 배분. 공장 처리량 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_economic_thought_and_critique_1943;산업 연관 분석;;;;;;;;;;;;;x
+tgcnv_ww2_economic_thought_and_critique_1943_desc;1943년부터 연구할 수 있는 산업 연관 분석. 공장 투입량 -0.5%.;;;;;;;;;;;;;x
+tgcnv_ww2_economic_thought_and_critique_1945;재건 경제 계획;;;;;;;;;;;;;x
+tgcnv_ww2_economic_thought_and_critique_1945_desc;1945년부터 연구할 수 있는 재건 경제 계획. 공장 생산량 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_market_functionality_1930;전국 유통망;;;;;;;;;;;;;x
+tgcnv_ww2_market_functionality_1930_desc;1930년부터 연구할 수 있는 전국 유통망. 공장 투입량 -0.5%.;;;;;;;;;;;;;x
+tgcnv_ww2_market_functionality_1936;전략 물자 비축;;;;;;;;;;;;;x
+tgcnv_ww2_market_functionality_1936_desc;1936년부터 연구할 수 있는 전략 물자 비축. 보급 한계 +2.5%.;;;;;;;;;;;;;x
+tgcnv_ww2_market_functionality_1940;배급과 조달 체계;;;;;;;;;;;;;x
+tgcnv_ww2_market_functionality_1940_desc;1940년부터 연구할 수 있는 배급과 조달 체계. 공장 처리량 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_market_functionality_1943;통합 수송 배분;;;;;;;;;;;;;x
+tgcnv_ww2_market_functionality_1943_desc;1943년부터 연구할 수 있는 통합 수송 배분. 보급 한계 +2.5%.;;;;;;;;;;;;;x
+tgcnv_ww2_market_functionality_1945;무역 재건 협정;;;;;;;;;;;;;x
+tgcnv_ww2_market_functionality_1945_desc;1945년부터 연구할 수 있는 무역 재건 협정. 공장 투입량 -0.5%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_organization_1930;대규모 사업 관리;;;;;;;;;;;;;x
+tgcnv_ww2_tech_organization_1930_desc;1930년부터 연구할 수 있는 대규모 사업 관리. 공장 생산량 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_organization_1936;생산 일정 계획;;;;;;;;;;;;;x
+tgcnv_ww2_tech_organization_1936_desc;1936년부터 연구할 수 있는 생산 일정 계획. 공장 처리량 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_organization_1940;전시 산업 동원;;;;;;;;;;;;;x
+tgcnv_ww2_tech_organization_1940_desc;1940년부터 연구할 수 있는 전시 산업 동원. 공장 처리량 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_organization_1943;작전 연구;;;;;;;;;;;;;x
+tgcnv_ww2_tech_organization_1943_desc;1943년부터 연구할 수 있는 작전 연구. 공장 투입량 -0.5%.;;;;;;;;;;;;;x
+tgcnv_ww2_tech_organization_1945;전환 생산 관리;;;;;;;;;;;;;x
+tgcnv_ww2_tech_organization_1945_desc;1945년부터 연구할 수 있는 전환 생산 관리. 공장 생산량 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_aesthetics_1930;대중 방송 문화;;;;;;;;;;;;;x
+tgcnv_ww2_aesthetics_1930_desc;1930년부터 연구할 수 있는 대중 방송 문화. 위신 보정 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_aesthetics_1936;기록 영화 운동;;;;;;;;;;;;;x
+tgcnv_ww2_aesthetics_1936_desc;1936년부터 연구할 수 있는 기록 영화 운동. 위신 보정 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_aesthetics_1940;전시 시각 문화;;;;;;;;;;;;;x
+tgcnv_ww2_aesthetics_1940_desc;1940년부터 연구할 수 있는 전시 시각 문화. 위신 보정 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_aesthetics_1943;문화 기록 보존;;;;;;;;;;;;;x
+tgcnv_ww2_aesthetics_1943_desc;1943년부터 연구할 수 있는 문화 기록 보존. 위신 보정 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_aesthetics_1945;전후 문화 교류;;;;;;;;;;;;;x
+tgcnv_ww2_aesthetics_1945_desc;1945년부터 연구할 수 있는 전후 문화 교류. 위신 보정 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_philosophy_1930;과학적 검증 방법;;;;;;;;;;;;;x
+tgcnv_ww2_philosophy_1930_desc;1930년부터 연구할 수 있는 과학적 검증 방법. 연구점 보정 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_philosophy_1936;과학철학의 발전;;;;;;;;;;;;;x
+tgcnv_ww2_philosophy_1936_desc;1936년부터 연구할 수 있는 과학철학의 발전. 연구점 보정 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_philosophy_1940;학제간 연구;;;;;;;;;;;;;x
+tgcnv_ww2_philosophy_1940_desc;1940년부터 연구할 수 있는 학제간 연구. 연구점 보정 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_philosophy_1943;협동 연구 체계;;;;;;;;;;;;;x
+tgcnv_ww2_philosophy_1943_desc;1943년부터 연구할 수 있는 협동 연구 체계. 연구점 보정 +5%.;;;;;;;;;;;;;x
+tgcnv_ww2_philosophy_1945;과학 연구 정책;;;;;;;;;;;;;x
+tgcnv_ww2_philosophy_1945_desc;1945년부터 연구할 수 있는 과학 연구 정책. 연구점 보정 +10%.;;;;;;;;;;;;;x
+tgcnv_ww2_social_thought_1930;대중 사회 연구;;;;;;;;;;;;;x
+tgcnv_ww2_social_thought_1930_desc;1930년부터 연구할 수 있는 대중 사회 연구. 교육 효율 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_social_thought_1936;사회 조사 방법;;;;;;;;;;;;;x
+tgcnv_ww2_social_thought_1936_desc;1936년부터 연구할 수 있는 사회 조사 방법. 교육 효율 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_social_thought_1940;민방위 교육;;;;;;;;;;;;;x
+tgcnv_ww2_social_thought_1940_desc;1940년부터 연구할 수 있는 민방위 교육. 교육 효율 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_social_thought_1943;성인 기술 교육;;;;;;;;;;;;;x
+tgcnv_ww2_social_thought_1943_desc;1943년부터 연구할 수 있는 성인 기술 교육. 교육 효율 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_social_thought_1945;사회 재건 정책;;;;;;;;;;;;;x
+tgcnv_ww2_social_thought_1945_desc;1945년부터 연구할 수 있는 사회 재건 정책. 교육 효율 +3%.;;;;;;;;;;;;;x
+tgcnv_ww2_political_thought_1930;현대 공공 행정;;;;;;;;;;;;;x
+tgcnv_ww2_political_thought_1930_desc;1930년부터 연구할 수 있는 현대 공공 행정. 행정 효율 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_political_thought_1936;국가 정책 조정;;;;;;;;;;;;;x
+tgcnv_ww2_political_thought_1936_desc;1936년부터 연구할 수 있는 국가 정책 조정. 행정 효율 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_political_thought_1940;전시 행정 조직;;;;;;;;;;;;;x
+tgcnv_ww2_political_thought_1940_desc;1940년부터 연구할 수 있는 전시 행정 조직. 국가 중점 한도 +1.;;;;;;;;;;;;;x
+tgcnv_ww2_political_thought_1943;연합국 외교 협력;;;;;;;;;;;;;x
+tgcnv_ww2_political_thought_1943_desc;1943년부터 연구할 수 있는 연합국 외교 협력. 월간 외교력 +0.05.;;;;;;;;;;;;;x
+tgcnv_ww2_political_thought_1945;국제 협력 기구;;;;;;;;;;;;;x
+tgcnv_ww2_political_thought_1945_desc;1945년부터 연구할 수 있는 국제 협력 기구. 월간 외교력 +0.05.;;;;;;;;;;;;;x
+tgcnv_ww2_psychology_1930;응용 심리 검사;;;;;;;;;;;;;x
+tgcnv_ww2_psychology_1930_desc;1930년부터 연구할 수 있는 응용 심리 검사. 훈련 경험치 +1.;;;;;;;;;;;;;x
+tgcnv_ww2_psychology_1936;산업 심리학;;;;;;;;;;;;;x
+tgcnv_ww2_psychology_1936_desc;1936년부터 연구할 수 있는 산업 심리학. 공장 생산량 +0.5%.;;;;;;;;;;;;;x
+tgcnv_ww2_psychology_1940;전투 스트레스 연구;;;;;;;;;;;;;x
+tgcnv_ww2_psychology_1940_desc;1940년부터 연구할 수 있는 전투 스트레스 연구. 사기 +2%.;;;;;;;;;;;;;x
+tgcnv_ww2_psychology_1943;인간공학적 설계;;;;;;;;;;;;;x
+tgcnv_ww2_psychology_1943_desc;1943년부터 연구할 수 있는 인간공학적 설계. 훈련 경험치 +1.;;;;;;;;;;;;;x
+tgcnv_ww2_psychology_1945;심리 재활 체계;;;;;;;;;;;;;x
+tgcnv_ww2_psychology_1945_desc;1945년부터 연구할 수 있는 심리 재활 체계. 충원 속도 +1%.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_motor_columns;차량화 행군 종대;;;;;;;;;;;;;x
+tgcnv_ww2_inv_motor_columns_desc;차량화 작전 연구를 완료하면 1930년부터 발견할 수 있다. 육군 이동 속도 +0.1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mobile_supply_drills;이동 보급 훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mobile_supply_drills_desc;차량화 작전 연구를 완료하면 1930년부터 발견할 수 있다. 육군 소모 -1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_combined_arms_exercises;병과 합동 기동훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_combined_arms_exercises_desc;제병 협동 교리 연구를 완료하면 1936년부터 발견할 수 있다. 육군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_infantry_tank_liaison;보전 협동 연락반;;;;;;;;;;;;;x
+tgcnv_ww2_inv_infantry_tank_liaison_desc;제병 협동 교리 연구를 완료하면 1936년부터 발견할 수 있다. 보병 공격 +0.25, 근위병 공격 +0.25. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_echeloned_reserves;제대별 예비대 운용;;;;;;;;;;;;;x
+tgcnv_ww2_inv_echeloned_reserves_desc;종심 작전 연구를 완료하면 1940년부터 발견할 수 있다. 충원 속도 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_breakthrough_exploitation;돌파구 확대 전술;;;;;;;;;;;;;x
+tgcnv_ww2_inv_breakthrough_exploitation_desc;종심 작전 연구를 완료하면 1940년부터 발견할 수 있다. 전술 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mobile_battle_groups;기동 전투단;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mobile_battle_groups_desc;기계화 돌파 연구를 완료하면 1943년부터 발견할 수 있다. 육군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mechanized_pursuit;기계화 추격대;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mechanized_pursuit_desc;기계화 돌파 연구를 완료하면 1943년부터 발견할 수 있다. 중형전차 이동 속도 +0.1, 경전차 이동 속도 +0.1, 중전차 이동 속도 +0.1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_joint_operations_rooms;합동 작전 상황실;;;;;;;;;;;;;x
+tgcnv_ww2_inv_joint_operations_rooms_desc;합동 전구 작전 연구를 완료하면 1945년부터 발견할 수 있다. 육군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_theater_reserve_plans;전구 예비대 계획;;;;;;;;;;;;;x
+tgcnv_ww2_inv_theater_reserve_plans_desc;합동 전구 작전 연구를 완료하면 1945년부터 발견할 수 있다. 사기 +2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_self_loading_rifle_drills;자동장전 소총 사격훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_self_loading_rifle_drills_desc;반자동 소총 연구를 완료하면 1930년부터 발견할 수 있다. 보병 공격 +0.25, 근위병 공격 +0.25. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_rifle_parts_standardization;소총 부품 표준화;;;;;;;;;;;;;x
+tgcnv_ww2_inv_rifle_parts_standardization_desc;반자동 소총 연구를 완료하면 1930년부터 발견할 수 있다. 소화기 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_squad_fire_maneuver;분대 화력과 기동;;;;;;;;;;;;;x
+tgcnv_ww2_inv_squad_fire_maneuver_desc;분대 자동화기 연구를 완료하면 1936년부터 발견할 수 있다. 보병 조직력 +1, 근위병 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_portable_machine_guns;휴대형 기관총;;;;;;;;;;;;;x
+tgcnv_ww2_inv_portable_machine_guns_desc;분대 자동화기 연구를 완료하면 1936년부터 발견할 수 있다. 보병 방어 +0.25, 근위병 방어 +0.25. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_shaped_charge_grenades;성형작약 대전차탄;;;;;;;;;;;;;x
+tgcnv_ww2_inv_shaped_charge_grenades_desc;보병 대전차 장비 연구를 완료하면 1940년부터 발견할 수 있다. 보병 방어 +0.25, 근위병 방어 +0.25. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_antitank_teams;보병 대전차조;;;;;;;;;;;;;x
+tgcnv_ww2_inv_antitank_teams_desc;보병 대전차 장비 연구를 완료하면 1940년부터 발견할 수 있다. 보병 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_intermediate_cartridges;중간탄약 규격화;;;;;;;;;;;;;x
+tgcnv_ww2_inv_intermediate_cartridges_desc;중간탄약 보병화기 연구를 완료하면 1943년부터 발견할 수 있다. 탄약 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_assault_rifle_drills;돌격소총 운용훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_assault_rifle_drills_desc;중간탄약 보병화기 연구를 완료하면 1943년부터 발견할 수 있다. 보병 공격 +0.25, 근위병 공격 +0.25. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_infantry_equipment_sets;보병 장구 통일;;;;;;;;;;;;;x
+tgcnv_ww2_inv_infantry_equipment_sets_desc;통합 보병 장비 연구를 완료하면 1945년부터 발견할 수 있다. 육군 보급 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_platoon_weapons_coordination;소대 화기 협동;;;;;;;;;;;;;x
+tgcnv_ww2_inv_platoon_weapons_coordination_desc;통합 보병 장비 연구를 완료하면 1945년부터 발견할 수 있다. 보병 조직력 +1, 근위병 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_artillery_survey_teams;포병 측량반;;;;;;;;;;;;;x
+tgcnv_ww2_inv_artillery_survey_teams_desc;현대 야포 연구를 완료하면 1930년부터 발견할 수 있다. 포병 공격 +0.25. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_standard_shell_lots;포탄 규격 생산;;;;;;;;;;;;;x
+tgcnv_ww2_inv_standard_shell_lots_desc;현대 야포 연구를 완료하면 1930년부터 발견할 수 있다. 탄약 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_tank_crew_intercom;전차 승무원 인터폰;;;;;;;;;;;;;x
+tgcnv_ww2_inv_tank_crew_intercom_desc;중형 전차 설계 연구를 완료하면 1936년부터 발견할 수 있다. 중형전차 조직력 +1, 경전차 조직력 +1, 중전차 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_welded_tank_hulls;용접 전차 차체;;;;;;;;;;;;;x
+tgcnv_ww2_inv_welded_tank_hulls_desc;중형 전차 설계 연구를 완료하면 1936년부터 발견할 수 있다. 전차 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_antitank_gun_positions;대전차포 진지;;;;;;;;;;;;;x
+tgcnv_ww2_inv_antitank_gun_positions_desc;대전차 포병 연구를 완료하면 1940년부터 발견할 수 있다. 포병 방어 +0.25. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_armor_piercing_shot;철갑탄 가공;;;;;;;;;;;;;x
+tgcnv_ww2_inv_armor_piercing_shot_desc;대전차 포병 연구를 완료하면 1940년부터 발견할 수 있다. 포병 공격 +0.25. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mobile_artillery_observers;기동 포병 관측반;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mobile_artillery_observers_desc;자주포 운용 연구를 완료하면 1943년부터 발견할 수 있다. 포병 지원 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_self_propelled_gun_maintenance;자주포 정비반;;;;;;;;;;;;;x
+tgcnv_ww2_inv_self_propelled_gun_maintenance_desc;자주포 운용 연구를 완료하면 1943년부터 발견할 수 있다. 포병 이동 속도 +0.1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_gun_stabilizer_servos;주포 안정기 서보장치;;;;;;;;;;;;;x
+tgcnv_ww2_inv_gun_stabilizer_servos_desc;안정화 사격통제 연구를 완료하면 1945년부터 발견할 수 있다. 중형전차 공격 +0.25, 경전차 공격 +0.25, 중전차 공격 +0.25. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_ballistic_firing_tables;정밀 탄도 사표;;;;;;;;;;;;;x
+tgcnv_ww2_inv_ballistic_firing_tables_desc;안정화 사격통제 연구를 완료하면 1945년부터 발견할 수 있다. 포병 공격 +0.25. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_aircraft_inspection_depots;항공기 검사창;;;;;;;;;;;;;x
+tgcnv_ww2_inv_aircraft_inspection_depots_desc;독립 공군 체계 연구를 완료하면 1930년부터 발견할 수 있다. 항공기 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_aviation_instrument_standards;항공 계기 표준화;;;;;;;;;;;;;x
+tgcnv_ww2_inv_aviation_instrument_standards_desc;독립 공군 체계 연구를 완료하면 1930년부터 발견할 수 있다. 전기 기계 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_stressed_skin_assembly;응력외피 조립 공정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_stressed_skin_assembly_desc;전금속 단엽기 연구를 완료하면 1936년부터 발견할 수 있다. 항공기 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_airframe_riveting_jigs;기체 리벳 조립 지그;;;;;;;;;;;;;x
+tgcnv_ww2_inv_airframe_riveting_jigs_desc;전금속 단엽기 연구를 완료하면 1936년부터 발견할 수 있다. 기계 부품 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_radar_receiver_production;레이더 수신기 양산;;;;;;;;;;;;;x
+tgcnv_ww2_inv_radar_receiver_production_desc;통합 방공 체계 연구를 완료하면 1940년부터 발견할 수 있다. 라디오 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_air_warning_switchboards;방공 경보 교환기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_air_warning_switchboards_desc;통합 방공 체계 연구를 완료하면 1940년부터 발견할 수 있다. 전기 기계 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_long_range_airframe_tooling;장거리 기체 생산 치구;;;;;;;;;;;;;x
+tgcnv_ww2_inv_long_range_airframe_tooling_desc;장거리 항공작전 연구를 완료하면 1943년부터 발견할 수 있다. 항공기 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_air_navigation_radio_sets;항공 항법 무전기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_air_navigation_radio_sets_desc;장거리 항공작전 연구를 완료하면 1943년부터 발견할 수 있다. 라디오 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_jet_engine_test_benches;제트 엔진 시험대;;;;;;;;;;;;;x
+tgcnv_ww2_inv_jet_engine_test_benches_desc;제트 전투기 연구를 완료하면 1945년부터 발견할 수 있다. 항공기 생산량 +2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_turbine_blade_tooling;터빈 날개 가공 장비;;;;;;;;;;;;;x
+tgcnv_ww2_inv_turbine_blade_tooling_desc;제트 전투기 연구를 완료하면 1945년부터 발견할 수 있다. 기계 부품 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_field_radio_protocols;야전 무선 통신규약;;;;;;;;;;;;;x
+tgcnv_ww2_inv_field_radio_protocols_desc;참모 무선통신 연구를 완료하면 1930년부터 발견할 수 있다. 육군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_portable_radio_lines;휴대 무전기 생산라인;;;;;;;;;;;;;x
+tgcnv_ww2_inv_portable_radio_lines_desc;참모 무선통신 연구를 완료하면 1930년부터 발견할 수 있다. 라디오 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_staff_map_exercises;참모 도상훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_staff_map_exercises_desc;작전 참모 제도 연구를 완료하면 1936년부터 발견할 수 있다. 훈련 경험치 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_standard_operations_orders;작전명령 서식 통일;;;;;;;;;;;;;x
+tgcnv_ww2_inv_standard_operations_orders_desc;작전 참모 제도 연구를 완료하면 1936년부터 발견할 수 있다. 육군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_forward_liaison_officers;전방 연락장교;;;;;;;;;;;;;x
+tgcnv_ww2_inv_forward_liaison_officers_desc;전선 항공통제 연구를 완료하면 1940년부터 발견할 수 있다. 육군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_ground_signal_panels;지상 신호표지 체계;;;;;;;;;;;;;x
+tgcnv_ww2_inv_ground_signal_panels_desc;전선 항공통제 연구를 완료하면 1940년부터 발견할 수 있다. 포병 지원 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_replacement_tracking;보충병 수송 관리;;;;;;;;;;;;;x
+tgcnv_ww2_inv_replacement_tracking_desc;통합 군수 참모 연구를 완료하면 1943년부터 발견할 수 있다. 충원 속도 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_spares_inventory_cards;예비부품 재고 장부;;;;;;;;;;;;;x
+tgcnv_ww2_inv_spares_inventory_cards_desc;통합 군수 참모 연구를 완료하면 1943년부터 발견할 수 있다. 육군 보급 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_joint_staff_colleges;합동 참모대학;;;;;;;;;;;;;x
+tgcnv_ww2_inv_joint_staff_colleges_desc;전구 지휘통합 연구를 완료하면 1945년부터 발견할 수 있다. 훈련 경험치 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_theater_signal_centers;전구 통신소;;;;;;;;;;;;;x
+tgcnv_ww2_inv_theater_signal_centers_desc;전구 지휘통합 연구를 완료하면 1945년부터 발견할 수 있다. 육군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_convoy_station_keeping;호송 대형 유지훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_convoy_station_keeping_desc;호송선단 교리 연구를 완료하면 1930년부터 발견할 수 있다. 해군 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_escort_rotation_plans;호위함 교대 계획;;;;;;;;;;;;;x
+tgcnv_ww2_inv_escort_rotation_plans_desc;호송선단 교리 연구를 완료하면 1930년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_task_force_screens;기동부대 경계진;;;;;;;;;;;;;x
+tgcnv_ww2_inv_task_force_screens_desc;기동함대 운용 연구를 완료하면 1936년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fleet_rendezvous_drills;함대 집결훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fleet_rendezvous_drills_desc;기동함대 운용 연구를 완료하면 1936년부터 발견할 수 있다. 해군 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_air_sea_liaison;해공 연락반;;;;;;;;;;;;;x
+tgcnv_ww2_inv_air_sea_liaison_desc;해공 협동 교리 연구를 완료하면 1940년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_maritime_patrol_airframe_lines;해상초계기 생산 공정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_maritime_patrol_airframe_lines_desc;해공 협동 교리 연구를 완료하면 1940년부터 발견할 수 있다. 항공기 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_escort_search_patterns;호위함 수색 대형;;;;;;;;;;;;;x
+tgcnv_ww2_inv_escort_search_patterns_desc;통합 대잠전 연구를 완료하면 1943년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_convoy_evasive_routes;호송 우회항로;;;;;;;;;;;;;x
+tgcnv_ww2_inv_convoy_evasive_routes_desc;통합 대잠전 연구를 완료하면 1943년부터 발견할 수 있다. 해군 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_landing_wave_timetables;상륙 제파 시간표;;;;;;;;;;;;;x
+tgcnv_ww2_inv_landing_wave_timetables_desc;합동 상륙 교리 연구를 완료하면 1945년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_landing_transport_fittings;상륙 수송선 설비;;;;;;;;;;;;;x
+tgcnv_ww2_inv_landing_transport_fittings_desc;합동 상륙 교리 연구를 완료하면 1945년부터 발견할 수 있다. 증기 수송선 선체 +0.1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_shipyard_welding_jigs;조선소 용접 지그;;;;;;;;;;;;;x
+tgcnv_ww2_inv_shipyard_welding_jigs_desc;용접 선체 연구를 완료하면 1930년부터 발견할 수 있다. 증기선 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_welded_bulkheads;용접 격벽;;;;;;;;;;;;;x
+tgcnv_ww2_inv_welded_bulkheads_desc;용접 선체 연구를 완료하면 1930년부터 발견할 수 있다. 해군 선체 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_cruiser_compartmentation;순양함 구획 분리;;;;;;;;;;;;;x
+tgcnv_ww2_inv_cruiser_compartmentation_desc;현대 순양함 설계 연구를 완료하면 1936년부터 발견할 수 있다. 순양함 선체 +0.1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_cruiser_mount_standardization;순양함 포좌 표준화;;;;;;;;;;;;;x
+tgcnv_ww2_inv_cruiser_mount_standardization_desc;현대 순양함 설계 연구를 완료하면 1936년부터 발견할 수 있다. 순양함 함포 화력 +0.1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_capital_ship_bulkheads;주력함 방수격벽;;;;;;;;;;;;;x
+tgcnv_ww2_inv_capital_ship_bulkheads_desc;개량 주력함 설계 연구를 완료하면 1940년부터 발견할 수 있다. 전함 선체 +0.1, 드레드노트 선체 +0.1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_capital_ship_damage_zones;주력함 피해구역 분리;;;;;;;;;;;;;x
+tgcnv_ww2_inv_capital_ship_damage_zones_desc;개량 주력함 설계 연구를 완료하면 1940년부터 발견할 수 있다. 전함 조직력 +1, 드레드노트 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_prefabricated_hull_sections;선체 블록 사전 제작;;;;;;;;;;;;;x
+tgcnv_ww2_inv_prefabricated_hull_sections_desc;모듈식 조선 연구를 완료하면 1943년부터 발견할 수 있다. 해군 건조 기간 -1일. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_shipyard_workflow_scheduling;조선 공정 일정표;;;;;;;;;;;;;x
+tgcnv_ww2_inv_shipyard_workflow_scheduling_desc;모듈식 조선 연구를 완료하면 1943년부터 발견할 수 있다. 증기선 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_splinter_protection;함내 파편 방호;;;;;;;;;;;;;x
+tgcnv_ww2_inv_splinter_protection_desc;함정 생존성 설계 연구를 완료하면 1945년부터 발견할 수 있다. 해군 선체 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_redundant_ship_services;함내 설비 이중화;;;;;;;;;;;;;x
+tgcnv_ww2_inv_redundant_ship_services_desc;함정 생존성 설계 연구를 완료하면 1945년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_damage_control_parties;함정 응급복구반;;;;;;;;;;;;;x
+tgcnv_ww2_inv_damage_control_parties_desc;함내 피해통제 연구를 완료하면 1930년부터 발견할 수 있다. 해군 선체 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_portable_ship_pumps;이동식 배수펌프;;;;;;;;;;;;;x
+tgcnv_ww2_inv_portable_ship_pumps_desc;함내 피해통제 연구를 완료하면 1930년부터 발견할 수 있다. 해군 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_boiler_feed_controls;보일러 급수 조절기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_boiler_feed_controls_desc;고압 증기기관 연구를 완료하면 1936년부터 발견할 수 있다. 해군 보급 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_high_pressure_steam_seals;고압 증기 밀봉재;;;;;;;;;;;;;x
+tgcnv_ww2_inv_high_pressure_steam_seals_desc;고압 증기기관 연구를 완료하면 1936년부터 발견할 수 있다. 순양함 이동 속도 +0.1, 드레드노트 이동 속도 +0.1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_propeller_pitch_trials;추진기 피치 시험;;;;;;;;;;;;;x
+tgcnv_ww2_inv_propeller_pitch_trials_desc;개량 함정 추진 연구를 완료하면 1940년부터 발견할 수 있다. 해군 이동 속도 +0.1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_engine_room_economizers;기관실 연료 절약장치;;;;;;;;;;;;;x
+tgcnv_ww2_inv_engine_room_economizers_desc;개량 함정 추진 연구를 완료하면 1940년부터 발견할 수 있다. 해군 보급 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_automatic_fire_mains;자동 소화 배관;;;;;;;;;;;;;x
+tgcnv_ww2_inv_automatic_fire_mains_desc;자동 소화설비 연구를 완료하면 1943년부터 발견할 수 있다. 해군 선체 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_magazine_safety_systems;탄약고 안전설비;;;;;;;;;;;;;x
+tgcnv_ww2_inv_magazine_safety_systems_desc;자동 소화설비 연구를 완료하면 1943년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_integrated_repair_stations;통합 함내 수리소;;;;;;;;;;;;;x
+tgcnv_ww2_inv_integrated_repair_stations_desc;통합 손상복구 연구를 완료하면 1945년부터 발견할 수 있다. 해군 선체 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fleet_repair_workshops;함대 정비 공작창;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fleet_repair_workshops_desc;통합 손상복구 연구를 완료하면 1945년부터 발견할 수 있다. 해군 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_direction_finder_calibration;방향탐지기 교정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_direction_finder_calibration_desc;무선 방향탐지 연구를 완료하면 1930년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_maritime_radio_beacons;해상 무선표지;;;;;;;;;;;;;x
+tgcnv_ww2_inv_maritime_radio_beacons_desc;무선 방향탐지 연구를 완료하면 1930년부터 발견할 수 있다. 보급 거리 +2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_sonar_operator_training;음파탐지 운용훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_sonar_operator_training_desc;개량 음파탐지 연구를 완료하면 1936년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_sonar_transducer_production;음파탐지 변환기 생산;;;;;;;;;;;;;x
+tgcnv_ww2_inv_sonar_transducer_production_desc;개량 음파탐지 연구를 완료하면 1936년부터 발견할 수 있다. 전기 기계 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_radar_range_tables;레이더 거리 사표;;;;;;;;;;;;;x
+tgcnv_ww2_inv_radar_range_tables_desc;레이더 사격통제 연구를 완료하면 1940년부터 발견할 수 있다. 해군 함포 화력 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_naval_radar_workshops;함정 레이더 제작소;;;;;;;;;;;;;x
+tgcnv_ww2_inv_naval_radar_workshops_desc;레이더 사격통제 연구를 완료하면 1940년부터 발견할 수 있다. 라디오 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fleet_air_warning_plots;함대 방공 상황도;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fleet_air_warning_plots_desc;함대 방공통제 연구를 완료하면 1943년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_central_aa_directors;중앙 대공 사격지휘기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_central_aa_directors_desc;함대 방공통제 연구를 완료하면 1943년부터 발견할 수 있다. 해군 함포 화력 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_miniature_fuze_circuits;근접신관 소형 회로;;;;;;;;;;;;;x
+tgcnv_ww2_inv_miniature_fuze_circuits_desc;근접신관 포탄 연구를 완료하면 1945년부터 발견할 수 있다. 전기 기계 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_proximity_shell_handling;근접신관탄 운용절차;;;;;;;;;;;;;x
+tgcnv_ww2_inv_proximity_shell_handling_desc;근접신관 포탄 연구를 완료하면 1945년부터 발견할 수 있다. 해군 함포 화력 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_convoy_route_charts;호송항로 도표;;;;;;;;;;;;;x
+tgcnv_ww2_inv_convoy_route_charts_desc;호송항로 계획 연구를 완료하면 1930년부터 발견할 수 있다. 해군 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_merchant_navy_liaison;상선대 연락관;;;;;;;;;;;;;x
+tgcnv_ww2_inv_merchant_navy_liaison_desc;호송항로 계획 연구를 완료하면 1930년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_gunnery_plotting_rooms;포술 계산실;;;;;;;;;;;;;x
+tgcnv_ww2_inv_gunnery_plotting_rooms_desc;중앙 사격지휘 연구를 완료하면 1936년부터 발견할 수 있다. 해군 함포 화력 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_salvo_coordination;함대 일제사격 협동;;;;;;;;;;;;;x
+tgcnv_ww2_inv_salvo_coordination_desc;중앙 사격지휘 연구를 완료하면 1936년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fleet_signal_books;함대 신호규정 통일;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fleet_signal_books_desc;함대 통신규약 연구를 완료하면 1940년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_radio_silence_drills;무선 침묵훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_radio_silence_drills_desc;함대 통신규약 연구를 완료하면 1940년부터 발견할 수 있다. 해군 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_battle_damage_exercises;전투 손상 모의훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_battle_damage_exercises_desc;전투 피해훈련 연구를 완료하면 1943년부터 발견할 수 있다. 해군 선체 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_emergency_command_succession;비상 지휘권 승계;;;;;;;;;;;;;x
+tgcnv_ww2_inv_emergency_command_succession_desc;전투 피해훈련 연구를 완료하면 1943년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_joint_naval_staff_course;합동 해군참모 과정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_joint_naval_staff_course_desc;합동 해군참모 연구를 완료하면 1945년부터 발견할 수 있다. 해군 조직력 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_allied_fleet_procedures;연합함대 공통 절차;;;;;;;;;;;;;x
+tgcnv_ww2_inv_allied_fleet_procedures_desc;합동 해군참모 연구를 완료하면 1945년부터 발견할 수 있다. 해군 함포 화력 +0.05. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fuel_injection_pumps;연료 분사펌프;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fuel_injection_pumps_desc;고출력 내연기관 연구를 완료하면 1930년부터 발견할 수 있다. 자동차 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_engine_dynamometer_testing;엔진 동력계 검사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_engine_dynamometer_testing_desc;고출력 내연기관 연구를 완료하면 1930년부터 발견할 수 있다. 기계 부품 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_catalytic_fuel_processing;촉매 연료 정제;;;;;;;;;;;;;x
+tgcnv_ww2_inv_catalytic_fuel_processing_desc;고옥탄가 연료 연구를 완료하면 1936년부터 발견할 수 있다. 연료 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_aviation_fuel_quality_tests;항공유 품질검사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_aviation_fuel_quality_tests_desc;고옥탄가 연료 연구를 완료하면 1936년부터 발견할 수 있다. 항공기 공장 투입량 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_turbine_governors;산업 터빈 조속기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_turbine_governors_desc;개량 산업 터빈 연구를 완료하면 1940년부터 발견할 수 있다. 공장 처리량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_industrial_heat_recovery;산업 폐열 회수;;;;;;;;;;;;;x
+tgcnv_ww2_inv_industrial_heat_recovery_desc;개량 산업 터빈 연구를 완료하면 1940년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_gas_turbine_compressors;가스터빈 압축기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_gas_turbine_compressors_desc;가스터빈 생산 연구를 완료하면 1943년부터 발견할 수 있다. 항공기 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_turbine_balancing_machines;터빈 균형 검사기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_turbine_balancing_machines_desc;가스터빈 생산 연구를 완료하면 1943년부터 발견할 수 있다. 기계 부품 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_regional_load_dispatch;지역 전력 급전소;;;;;;;;;;;;;x
+tgcnv_ww2_inv_regional_load_dispatch_desc;광역 전력망 연구를 완료하면 1945년부터 발견할 수 있다. 공장 처리량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_grid_protection_relays;전력망 보호 계전기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_grid_protection_relays_desc;광역 전력망 연구를 완료하면 1945년부터 발견할 수 있다. 전기 기계 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_precision_gauges;정밀 측정 게이지;;;;;;;;;;;;;x
+tgcnv_ww2_inv_precision_gauges_desc;정밀 공작기계 연구를 완료하면 1930년부터 발견할 수 있다. 기계 부품 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_hardened_cutting_tools;경화 절삭 공구;;;;;;;;;;;;;x
+tgcnv_ww2_inv_hardened_cutting_tools_desc;정밀 공작기계 연구를 완료하면 1930년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_weapons_transfer_lines;병기 이송 생산라인;;;;;;;;;;;;;x
+tgcnv_ww2_inv_weapons_transfer_lines_desc;군수 양산 체계 연구를 완료하면 1936년부터 발견할 수 있다. 소화기 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_artillery_assembly_fixtures;대포 조립 고정구;;;;;;;;;;;;;x
+tgcnv_ww2_inv_artillery_assembly_fixtures_desc;군수 양산 체계 연구를 완료하면 1936년부터 발견할 수 있다. 대포 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_process_control_charts;공정 관리도;;;;;;;;;;;;;x
+tgcnv_ww2_inv_process_control_charts_desc;통계적 품질관리 연구를 완료하면 1940년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_acceptance_sampling;제품 표본검사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_acceptance_sampling_desc;통계적 품질관리 연구를 완료하면 1940년부터 발견할 수 있다. 공장 생산량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_interchangeable_airframe_parts;기체 부품 호환 규격;;;;;;;;;;;;;x
+tgcnv_ww2_inv_interchangeable_airframe_parts_desc;호환식 기체 생산 연구를 완료하면 1943년부터 발견할 수 있다. 항공기 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_aircraft_subassembly_lines;항공기 부분 조립라인;;;;;;;;;;;;;x
+tgcnv_ww2_inv_aircraft_subassembly_lines_desc;호환식 기체 생산 연구를 완료하면 1943년부터 발견할 수 있다. 항공기 공장 투입량 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_feedback_process_controllers;피드백 공정 조절기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_feedback_process_controllers_desc;공정 자동제어 연구를 완료하면 1945년부터 발견할 수 있다. 공장 처리량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_automatic_machine_feeds;공작기계 자동 이송;;;;;;;;;;;;;x
+tgcnv_ww2_inv_automatic_machine_feeds_desc;공정 자동제어 연구를 완료하면 1945년부터 발견할 수 있다. 기계 부품 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_light_alloy_heat_treatment;경량 합금 열처리;;;;;;;;;;;;;x
+tgcnv_ww2_inv_light_alloy_heat_treatment_desc;경량 합금 연구를 완료하면 1930년부터 발견할 수 있다. 항공기 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_alloy_material_recovery;합금 소재 회수;;;;;;;;;;;;;x
+tgcnv_ww2_inv_alloy_material_recovery_desc;경량 합금 연구를 완료하면 1930년부터 발견할 수 있다. 항공기 공장 투입량 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_armor_plate_heat_treatment;장갑판 열처리;;;;;;;;;;;;;x
+tgcnv_ww2_inv_armor_plate_heat_treatment_desc;균질 압연장갑 연구를 완료하면 1936년부터 발견할 수 있다. 강철 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_armor_plate_inspection;장갑판 품질검사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_armor_plate_inspection_desc;균질 압연장갑 연구를 완료하면 1936년부터 발견할 수 있다. 전차 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_creep_resistant_alloys;고온 변형 저항 합금;;;;;;;;;;;;;x
+tgcnv_ww2_inv_creep_resistant_alloys_desc;내열 합금 연구를 완료하면 1940년부터 발견할 수 있다. 강철 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_alloy_batch_control;합금 배합 관리;;;;;;;;;;;;;x
+tgcnv_ww2_inv_alloy_batch_control_desc;내열 합금 연구를 완료하면 1940년부터 발견할 수 있다. 강철 공장 투입량 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_investment_casting_molds;정밀 주조 주형;;;;;;;;;;;;;x
+tgcnv_ww2_inv_investment_casting_molds_desc;정밀 주조 연구를 완료하면 1943년부터 발견할 수 있다. 기계 부품 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_casting_defect_inspection;주조 결함 검사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_casting_defect_inspection_desc;정밀 주조 연구를 완료하면 1943년부터 발견할 수 있다. 기계 부품 공장 투입량 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_carbide_tool_inserts;초경 공구 인서트;;;;;;;;;;;;;x
+tgcnv_ww2_inv_carbide_tool_inserts_desc;고성능 절삭합금 연구를 완료하면 1945년부터 발견할 수 있다. 기계 부품 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_high_speed_cutting_practice;고속 절삭 공법;;;;;;;;;;;;;x
+tgcnv_ww2_inv_high_speed_cutting_practice_desc;고성능 절삭합금 연구를 완료하면 1945년부터 발견할 수 있다. 공장 처리량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_airfield_drainage;비행장 배수 공사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_airfield_drainage_desc;근대 군용 비행장 연구를 완료하면 1930년부터 발견할 수 있다. 보급 한계 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_airfield_service_roads;비행장 정비 도로;;;;;;;;;;;;;x
+tgcnv_ww2_inv_airfield_service_roads_desc;근대 군용 비행장 연구를 완료하면 1930년부터 발견할 수 있다. 육군 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_truck_dispatch_centers;트럭 배차소;;;;;;;;;;;;;x
+tgcnv_ww2_inv_truck_dispatch_centers_desc;차량화 보급망 연구를 완료하면 1936년부터 발견할 수 있다. 보급 한계 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_standard_cargo_packing;군수 화물 포장 규격;;;;;;;;;;;;;x
+tgcnv_ww2_inv_standard_cargo_packing_desc;차량화 보급망 연구를 완료하면 1936년부터 발견할 수 있다. 육군 보급 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mobile_repair_shops;이동 정비 공작소;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mobile_repair_shops_desc;전방 정비 체계 연구를 완료하면 1940년부터 발견할 수 있다. 충원 속도 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_forward_spares_depots;전방 예비부품 창고;;;;;;;;;;;;;x
+tgcnv_ww2_inv_forward_spares_depots_desc;전방 정비 체계 연구를 완료하면 1940년부터 발견할 수 있다. 육군 소모 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_air_cargo_handling;항공 화물 취급 절차;;;;;;;;;;;;;x
+tgcnv_ww2_inv_air_cargo_handling_desc;항공 수송망 연구를 완료하면 1943년부터 발견할 수 있다. 보급 한계 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_transport_aircraft_servicing;수송기 정비 공정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_transport_aircraft_servicing_desc;항공 수송망 연구를 완료하면 1943년부터 발견할 수 있다. 항공기 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_multimodal_supply_depots;육해공 연계 보급창;;;;;;;;;;;;;x
+tgcnv_ww2_inv_multimodal_supply_depots_desc;통합 군수 거점 연구를 완료하면 1945년부터 발견할 수 있다. 보급 한계 +2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_central_repair_allocation;정비 자원 통합 배분;;;;;;;;;;;;;x
+tgcnv_ww2_inv_central_repair_allocation_desc;통합 군수 거점 연구를 완료하면 1945년부터 발견할 수 있다. 충원 속도 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_industrial_vacuum_tubes;산업용 진공관;;;;;;;;;;;;;x
+tgcnv_ww2_inv_industrial_vacuum_tubes_desc;산업 전자공학 연구를 완료하면 1930년부터 발견할 수 있다. 전기 기계 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_electronic_component_testing;전자부품 검사 공정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_electronic_component_testing_desc;산업 전자공학 연구를 완료하면 1930년부터 발견할 수 있다. 라디오 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fuel_hydrogenation_catalysts;연료 수소화 촉매;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fuel_hydrogenation_catalysts_desc;합성 연료 연구를 완료하면 1936년부터 발견할 수 있다. 연료 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_synthetic_fuel_recovery;합성 연료 회수 공정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_synthetic_fuel_recovery_desc;합성 연료 연구를 완료하면 1936년부터 발견할 수 있다. 연료 공장 투입량 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_propellant_grain_control;추진제 입자 관리;;;;;;;;;;;;;x
+tgcnv_ww2_inv_propellant_grain_control_desc;고체 추진제 연구를 완료하면 1940년부터 발견할 수 있다. 폭약 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_propellant_storage_standards;추진제 저장 규격;;;;;;;;;;;;;x
+tgcnv_ww2_inv_propellant_storage_standards_desc;고체 추진제 연구를 완료하면 1940년부터 발견할 수 있다. 폭약 공장 투입량 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_gyro_guidance_instruments;자이로 유도 계기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_gyro_guidance_instruments_desc;유도 로켓 연구를 완료하면 1943년부터 발견할 수 있다. 전기 기계 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_rocket_propellant_mixing;로켓 추진제 혼합;;;;;;;;;;;;;x
+tgcnv_ww2_inv_rocket_propellant_mixing_desc;유도 로켓 연구를 완료하면 1943년부터 발견할 수 있다. 폭약 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_radiation_measurement_instruments;방사선 측정 계기;;;;;;;;;;;;;x
+tgcnv_ww2_inv_radiation_measurement_instruments_desc;핵분열 무기 연구 연구를 완료하면 1945년부터 발견할 수 있다. 전기 기계 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_isotope_separation_equipment;동위원소 분리 장비;;;;;;;;;;;;;x
+tgcnv_ww2_inv_isotope_separation_equipment_desc;핵분열 무기 연구 연구를 완료하면 1945년부터 발견할 수 있다. 기계 부품 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_bank_balance_audits;은행 대차대조표 감사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_bank_balance_audits_desc;금융 감독 체계 연구를 완료하면 1930년부터 발견할 수 있다. 조세 효율 +0.5%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_deposit_guarantee_rules;예금 보장 규정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_deposit_guarantee_rules_desc;금융 감독 체계 연구를 완료하면 1930년부터 발견할 수 있다. 대출 이자 -0.1%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_development_credit_offices;개발 융자 창구;;;;;;;;;;;;;x
+tgcnv_ww2_inv_development_credit_offices_desc;공공 투자 금융 연구를 완료하면 1936년부터 발견할 수 있다. 공장 건설 비용 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_bond_underwriting;공공채 인수 제도;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_bond_underwriting_desc;공공 투자 금융 연구를 완료하면 1936년부터 발견할 수 있다. 대출 이자 -0.1%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_war_savings_certificates;전시 저축 증서;;;;;;;;;;;;;x
+tgcnv_ww2_inv_war_savings_certificates_desc;전시 국채 금융 연구를 완료하면 1940년부터 발견할 수 있다. 조세 효율 +0.5%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_payroll_bond_subscriptions;급여 연계 국채 청약;;;;;;;;;;;;;x
+tgcnv_ww2_inv_payroll_bond_subscriptions_desc;전시 국채 금융 연구를 완료하면 1940년부터 발견할 수 있다. 대출 이자 -0.1%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_contract_cost_audits;군수 계약 원가 감사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_contract_cost_audits_desc;군수 계약 금융 연구를 완료하면 1943년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_supplier_working_capital;납품업체 운영자금;;;;;;;;;;;;;x
+tgcnv_ww2_inv_supplier_working_capital_desc;군수 계약 금융 연구를 완료하면 1943년부터 발견할 수 있다. 공장 건설 비용 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_reconstruction_credit;재건 장기 융자;;;;;;;;;;;;;x
+tgcnv_ww2_inv_reconstruction_credit_desc;전후 재건 금융 연구를 완료하면 1945년부터 발견할 수 있다. 공장 건설 비용 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_reconstruction_bond_markets;재건채 유통시장;;;;;;;;;;;;;x
+tgcnv_ww2_inv_reconstruction_bond_markets_desc;전후 재건 금융 연구를 완료하면 1945년부터 발견할 수 있다. 대출 이자 -0.1%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_reserve_reporting_standards;지급준비 보고 규격;;;;;;;;;;;;;x
+tgcnv_ww2_inv_reserve_reporting_standards_desc;통화 안정 정책 연구를 완료하면 1930년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_central_bank_discount_policy;중앙은행 할인 정책;;;;;;;;;;;;;x
+tgcnv_ww2_inv_central_bank_discount_policy_desc;통화 안정 정책 연구를 완료하면 1930년부터 발견할 수 있다. 대출 이자 -0.1%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_open_market_operations;공개시장 조작;;;;;;;;;;;;;x
+tgcnv_ww2_inv_open_market_operations_desc;관리 통화 체계 연구를 완료하면 1936년부터 발견할 수 있다. 대출 이자 -0.1%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_treasury_cash_forecasts;국고 현금 수지 예측;;;;;;;;;;;;;x
+tgcnv_ww2_inv_treasury_cash_forecasts_desc;관리 통화 체계 연구를 완료하면 1936년부터 발견할 수 있다. 조세 효율 +0.5%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_wartime_cash_management;전시 국고 현금 관리;;;;;;;;;;;;;x
+tgcnv_ww2_inv_wartime_cash_management_desc;전시 통화 관리 연구를 완료하면 1940년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_revenue_collection_schedules;세입 징수 일정표;;;;;;;;;;;;;x
+tgcnv_ww2_inv_revenue_collection_schedules_desc;전시 통화 관리 연구를 완료하면 1940년부터 발견할 수 있다. 조세 효율 +0.5%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_bilateral_clearing_accounts;양자 청산 계정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_bilateral_clearing_accounts_desc;국제 청산 협정 연구를 완료하면 1943년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_international_settlement_standards;국제 결제 규격;;;;;;;;;;;;;x
+tgcnv_ww2_inv_international_settlement_standards_desc;국제 청산 협정 연구를 완료하면 1943년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_exchange_stabilization_funds;환율 안정 기금;;;;;;;;;;;;;x
+tgcnv_ww2_inv_exchange_stabilization_funds_desc;국제 통화 협력 연구를 완료하면 1945년부터 발견할 수 있다. 대출 이자 -0.1%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_monetary_reporting_cooperation;통화 통계 공동 보고;;;;;;;;;;;;;x
+tgcnv_ww2_inv_monetary_reporting_cooperation_desc;국제 통화 협력 연구를 완료하면 1945년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_national_income_surveys;국민소득 표본조사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_national_income_surveys_desc;국민소득 회계 연구를 완료하면 1930년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_industrial_census_tables;산업 총조사 통계표;;;;;;;;;;;;;x
+tgcnv_ww2_inv_industrial_census_tables_desc;국민소득 회계 연구를 완료하면 1930년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_works_appraisal;공공사업 타당성 평가;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_works_appraisal_desc;총수요 관리 연구를 완료하면 1936년부터 발견할 수 있다. 공장 건설 비용 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_countercyclical_budgeting;경기 대응 예산 편성;;;;;;;;;;;;;x
+tgcnv_ww2_inv_countercyclical_budgeting_desc;총수요 관리 연구를 완료하면 1936년부터 발견할 수 있다. 공장 생산량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_materials_priority_boards;원자재 우선배분 위원회;;;;;;;;;;;;;x
+tgcnv_ww2_inv_materials_priority_boards_desc;전시 자원 배분 연구를 완료하면 1940년부터 발견할 수 있다. 공장 처리량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_industrial_capacity_surveys;산업 생산능력 조사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_industrial_capacity_surveys_desc;전시 자원 배분 연구를 완료하면 1940년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_input_output_tables;산업 연관표;;;;;;;;;;;;;x
+tgcnv_ww2_inv_input_output_tables_desc;산업 연관 분석 연구를 완료하면 1943년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_bottleneck_analysis;생산 병목 분석;;;;;;;;;;;;;x
+tgcnv_ww2_inv_bottleneck_analysis_desc;산업 연관 분석 연구를 완료하면 1943년부터 발견할 수 있다. 공장 처리량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_reconstruction_investment_plans;재건 투자 계획;;;;;;;;;;;;;x
+tgcnv_ww2_inv_reconstruction_investment_plans_desc;재건 경제 계획 연구를 완료하면 1945년부터 발견할 수 있다. 공장 건설 비용 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_civilian_demand_forecasts;민수 수요 예측;;;;;;;;;;;;;x
+tgcnv_ww2_inv_civilian_demand_forecasts_desc;재건 경제 계획 연구를 완료하면 1945년부터 발견할 수 있다. 공장 생산량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_wholesale_inventory_networks;도매 재고 정보망;;;;;;;;;;;;;x
+tgcnv_ww2_inv_wholesale_inventory_networks_desc;전국 유통망 연구를 완료하면 1930년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_standard_shipping_documents;운송 서류 표준화;;;;;;;;;;;;;x
+tgcnv_ww2_inv_standard_shipping_documents_desc;전국 유통망 연구를 완료하면 1930년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_reserve_warehouse_management;비축 창고 관리;;;;;;;;;;;;;x
+tgcnv_ww2_inv_reserve_warehouse_management_desc;전략 물자 비축 연구를 완료하면 1936년부터 발견할 수 있다. 보급 한계 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fuel_stock_rotation;연료 비축분 순환;;;;;;;;;;;;;x
+tgcnv_ww2_inv_fuel_stock_rotation_desc;전략 물자 비축 연구를 완료하면 1936년부터 발견할 수 있다. 연료 생산량 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_ration_distribution_registers;배급 배분 대장;;;;;;;;;;;;;x
+tgcnv_ww2_inv_ration_distribution_registers_desc;배급과 조달 체계 연구를 완료하면 1940년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_bulk_procurement_contracts;물자 일괄 조달 계약;;;;;;;;;;;;;x
+tgcnv_ww2_inv_bulk_procurement_contracts_desc;배급과 조달 체계 연구를 완료하면 1940년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_freight_priority_schedules;화물 우선 수송표;;;;;;;;;;;;;x
+tgcnv_ww2_inv_freight_priority_schedules_desc;통합 수송 배분 연구를 완료하면 1943년부터 발견할 수 있다. 보급 한계 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_rail_port_coordination;철도 항만 연계;;;;;;;;;;;;;x
+tgcnv_ww2_inv_rail_port_coordination_desc;통합 수송 배분 연구를 완료하면 1943년부터 발견할 수 있다. 공장 처리량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_customs_document_unification;통관 서류 통일;;;;;;;;;;;;;x
+tgcnv_ww2_inv_customs_document_unification_desc;무역 재건 협정 연구를 완료하면 1945년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_export_credit_guarantees;수출 신용 보증;;;;;;;;;;;;;x
+tgcnv_ww2_inv_export_credit_guarantees_desc;무역 재건 협정 연구를 완료하면 1945년부터 발견할 수 있다. 공장 생산량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_departmental_cost_accounting;부문별 원가 회계;;;;;;;;;;;;;x
+tgcnv_ww2_inv_departmental_cost_accounting_desc;대규모 사업 관리 연구를 완료하면 1930년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_professional_management_training;전문 경영자 교육;;;;;;;;;;;;;x
+tgcnv_ww2_inv_professional_management_training_desc;대규모 사업 관리 연구를 완료하면 1930년부터 발견할 수 있다. 공장 생산량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_production_progress_boards;생산 진도 관리판;;;;;;;;;;;;;x
+tgcnv_ww2_inv_production_progress_boards_desc;생산 일정 계획 연구를 완료하면 1936년부터 발견할 수 있다. 공장 처리량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_shift_handover_standards;교대 인수인계 규정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_shift_handover_standards_desc;생산 일정 계획 연구를 완료하면 1936년부터 발견할 수 있다. 공장 생산량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_subcontracting_coordination;하청 생산 조정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_subcontracting_coordination_desc;전시 산업 동원 연구를 완료하면 1940년부터 발견할 수 있다. 공장 처리량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_worker_retraining_centers;노동자 전환 교육소;;;;;;;;;;;;;x
+tgcnv_ww2_inv_worker_retraining_centers_desc;전시 산업 동원 연구를 완료하면 1940년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_queue_analysis;대기행렬 분석;;;;;;;;;;;;;x
+tgcnv_ww2_inv_queue_analysis_desc;작전 연구 연구를 완료하면 1943년부터 발견할 수 있다. 공장 처리량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_resource_allocation_models;자원 배분 모형;;;;;;;;;;;;;x
+tgcnv_ww2_inv_resource_allocation_models_desc;작전 연구 연구를 완료하면 1943년부터 발견할 수 있다. 공장 투입량 -0.2%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_civilian_retooling_schedules;민수 전환 설비 계획;;;;;;;;;;;;;x
+tgcnv_ww2_inv_civilian_retooling_schedules_desc;전환 생산 관리 연구를 완료하면 1945년부터 발견할 수 있다. 공장 건설 비용 -0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_conversion_training_programs;전환 생산 교육과정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_conversion_training_programs_desc;전환 생산 관리 연구를 완료하면 1945년부터 발견할 수 있다. 공장 생산량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_radio_programming;공공 라디오 편성;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_radio_programming_desc;대중 방송 문화 연구를 완료하면 1930년부터 발견할 수 있다. 공유 위신 5 (발견 순서에 따라 감소). 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_educational_broadcasts;교육 방송;;;;;;;;;;;;;x
+tgcnv_ww2_inv_educational_broadcasts_desc;대중 방송 문화 연구를 완료하면 1930년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_documentary_film_units;기록 영화 제작단;;;;;;;;;;;;;x
+tgcnv_ww2_inv_documentary_film_units_desc;기록 영화 운동 연구를 완료하면 1936년부터 발견할 수 있다. 공유 위신 5 (발견 순서에 따라 감소). 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mobile_cinema_circuits;이동 영화 상영망;;;;;;;;;;;;;x
+tgcnv_ww2_inv_mobile_cinema_circuits_desc;기록 영화 운동 연구를 완료하면 1936년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_information_posters;공공 안내 포스터;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_information_posters_desc;전시 시각 문화 연구를 완료하면 1940년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_wartime_art_exhibitions;전시 미술 전람회;;;;;;;;;;;;;x
+tgcnv_ww2_inv_wartime_art_exhibitions_desc;전시 시각 문화 연구를 완료하면 1940년부터 발견할 수 있다. 공유 위신 5 (발견 순서에 따라 감소). 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_film_archive_preservation;필름 기록 보존;;;;;;;;;;;;;x
+tgcnv_ww2_inv_film_archive_preservation_desc;문화 기록 보존 연구를 완료하면 1943년부터 발견할 수 있다. 공유 위신 5 (발견 순서에 따라 감소). 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_cultural_collection_catalogs;문화 소장품 목록화;;;;;;;;;;;;;x
+tgcnv_ww2_inv_cultural_collection_catalogs_desc;문화 기록 보존 연구를 완료하면 1943년부터 발견할 수 있다. 위신 +2. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_international_film_exchanges;국제 영화 교류;;;;;;;;;;;;;x
+tgcnv_ww2_inv_international_film_exchanges_desc;전후 문화 교류 연구를 완료하면 1945년부터 발견할 수 있다. 공유 위신 10 (발견 순서에 따라 감소). 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_traveling_art_exhibitions;국제 순회 미술전;;;;;;;;;;;;;x
+tgcnv_ww2_inv_traveling_art_exhibitions_desc;전후 문화 교류 연구를 완료하면 1945년부터 발견할 수 있다. 월간 외교력 +0.025. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_replicable_experiments;실험 재현 절차;;;;;;;;;;;;;x
+tgcnv_ww2_inv_replicable_experiments_desc;과학적 검증 방법 연구를 완료하면 1930년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_scientific_review_seminars;과학 비평 세미나;;;;;;;;;;;;;x
+tgcnv_ww2_inv_scientific_review_seminars_desc;과학적 검증 방법 연구를 완료하면 1930년부터 발견할 수 있다. 공유 위신 5 (발견 순서에 따라 감소). 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_methodology_curricula;연구 방법론 교육과정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_methodology_curricula_desc;과학철학의 발전 연구를 완료하면 1936년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_academic_review_journals;학술 심사 학술지;;;;;;;;;;;;;x
+tgcnv_ww2_inv_academic_review_journals_desc;과학철학의 발전 연구를 완료하면 1936년부터 발견할 수 있다. 공유 위신 5 (발견 순서에 따라 감소). 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_interdisciplinary_seminars;학제간 공동 세미나;;;;;;;;;;;;;x
+tgcnv_ww2_inv_interdisciplinary_seminars_desc;학제간 연구 연구를 완료하면 1940년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_shared_research_libraries;공동 연구 도서관;;;;;;;;;;;;;x
+tgcnv_ww2_inv_shared_research_libraries_desc;학제간 연구 연구를 완료하면 1940년부터 발견할 수 있다. 위신 +2. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_laboratory_documentation_standards;연구실 기록 규격;;;;;;;;;;;;;x
+tgcnv_ww2_inv_laboratory_documentation_standards_desc;협동 연구 체계 연구를 완료하면 1943년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_scientific_liaison_committees;과학 연구 연락위원회;;;;;;;;;;;;;x
+tgcnv_ww2_inv_scientific_liaison_committees_desc;협동 연구 체계 연구를 완료하면 1943년부터 발견할 수 있다. 공유 위신 5 (발견 순서에 따라 감소). 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_research_grant_review;연구비 심사 제도;;;;;;;;;;;;;x
+tgcnv_ww2_inv_research_grant_review_desc;과학 연구 정책 연구를 완료하면 1945년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_international_science_congresses;국제 과학 학술회의;;;;;;;;;;;;;x
+tgcnv_ww2_inv_international_science_congresses_desc;과학 연구 정책 연구를 완료하면 1945년부터 발견할 수 있다. 공유 위신 10 (발견 순서에 따라 감소). 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_community_social_surveys;지역사회 실태조사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_community_social_surveys_desc;대중 사회 연구 연구를 완료하면 1930년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_library_outreach;공공도서관 보급;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_library_outreach_desc;대중 사회 연구 연구를 완료하면 1930년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_representative_sampling;대표 표본 추출;;;;;;;;;;;;;x
+tgcnv_ww2_inv_representative_sampling_desc;사회 조사 방법 연구를 완료하면 1936년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_social_statistics_training;사회 통계 교육;;;;;;;;;;;;;x
+tgcnv_ww2_inv_social_statistics_training_desc;사회 조사 방법 연구를 완료하면 1936년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_civil_defense_courses;민방위 강습;;;;;;;;;;;;;x
+tgcnv_ww2_inv_civil_defense_courses_desc;민방위 교육 연구를 완료하면 1940년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_emergency_relief_registers;긴급 구호 대장;;;;;;;;;;;;;x
+tgcnv_ww2_inv_emergency_relief_registers_desc;민방위 교육 연구를 완료하면 1940년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_evening_technical_schools;야간 기술학교;;;;;;;;;;;;;x
+tgcnv_ww2_inv_evening_technical_schools_desc;성인 기술 교육 연구를 완료하면 1943년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_vocational_course_standards;직업 교육과정 표준화;;;;;;;;;;;;;x
+tgcnv_ww2_inv_vocational_course_standards_desc;성인 기술 교육 연구를 완료하면 1943년부터 발견할 수 있다. 공장 생산량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_veteran_education_programs;제대군인 교육 지원;;;;;;;;;;;;;x
+tgcnv_ww2_inv_veteran_education_programs_desc;사회 재건 정책 연구를 완료하면 1945년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_community_reconstruction_offices;지역사회 재건 사무소;;;;;;;;;;;;;x
+tgcnv_ww2_inv_community_reconstruction_offices_desc;사회 재건 정책 연구를 완료하면 1945년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_civil_service_training;공무원 실무 교육;;;;;;;;;;;;;x
+tgcnv_ww2_inv_civil_service_training_desc;현대 공공 행정 연구를 완료하면 1930년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_standard_administrative_records;행정 문서 규격 통일;;;;;;;;;;;;;x
+tgcnv_ww2_inv_standard_administrative_records_desc;현대 공공 행정 연구를 완료하면 1930년부터 발견할 수 있다. 조세 효율 +0.5%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_interministerial_committees;부처간 정책위원회;;;;;;;;;;;;;x
+tgcnv_ww2_inv_interministerial_committees_desc;국가 정책 조정 연구를 완료하면 1936년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_budget_reporting;공공 예산 보고;;;;;;;;;;;;;x
+tgcnv_ww2_inv_public_budget_reporting_desc;국가 정책 조정 연구를 완료하면 1936년부터 발견할 수 있다. 조세 효율 +0.5%p. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_emergency_administration_plans;비상 행정 계획;;;;;;;;;;;;;x
+tgcnv_ww2_inv_emergency_administration_plans_desc;전시 행정 조직 연구를 완료하면 1940년부터 발견할 수 있다. 행정 효율 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_civil_supply_coordination;민간 보급 조정;;;;;;;;;;;;;x
+tgcnv_ww2_inv_civil_supply_coordination_desc;전시 행정 조직 연구를 완료하면 1940년부터 발견할 수 있다. 보급 한계 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_diplomatic_liaison_missions;외교 연락 사절단;;;;;;;;;;;;;x
+tgcnv_ww2_inv_diplomatic_liaison_missions_desc;연합국 외교 협력 연구를 완료하면 1943년부터 발견할 수 있다. 월간 외교력 +0.025. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_joint_relief_committees;공동 구호위원회;;;;;;;;;;;;;x
+tgcnv_ww2_inv_joint_relief_committees_desc;연합국 외교 협력 연구를 완료하면 1943년부터 발견할 수 있다. 위신 +2. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_international_secretariats;국제기구 사무국;;;;;;;;;;;;;x
+tgcnv_ww2_inv_international_secretariats_desc;국제 협력 기구 연구를 완료하면 1945년부터 발견할 수 있다. 월간 외교력 +0.025. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_multilateral_conference_procedures;다자 회의 절차;;;;;;;;;;;;;x
+tgcnv_ww2_inv_multilateral_conference_procedures_desc;국제 협력 기구 연구를 완료하면 1945년부터 발견할 수 있다. 영향력 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_aptitude_test_batteries;직무 적성 검사;;;;;;;;;;;;;x
+tgcnv_ww2_inv_aptitude_test_batteries_desc;응용 심리 검사 연구를 완료하면 1930년부터 발견할 수 있다. 훈련 경험치 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_instructor_selection_methods;교관 선발 방법;;;;;;;;;;;;;x
+tgcnv_ww2_inv_instructor_selection_methods_desc;응용 심리 검사 연구를 완료하면 1930년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1932년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_industrial_fatigue_studies;산업 피로 연구;;;;;;;;;;;;;x
+tgcnv_ww2_inv_industrial_fatigue_studies_desc;산업 심리학 연구를 완료하면 1936년부터 발견할 수 있다. 공장 생산량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_workplace_training_manuals;현장 작업 교육서;;;;;;;;;;;;;x
+tgcnv_ww2_inv_workplace_training_manuals_desc;산업 심리학 연구를 완료하면 1936년부터 발견할 수 있다. 교육 효율 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1938년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_frontline_rest_rotations;전선 휴식 순환제;;;;;;;;;;;;;x
+tgcnv_ww2_inv_frontline_rest_rotations_desc;전투 스트레스 연구 연구를 완료하면 1940년부터 발견할 수 있다. 조직력 회복 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_combat_stress_counseling;전투 스트레스 상담;;;;;;;;;;;;;x
+tgcnv_ww2_inv_combat_stress_counseling_desc;전투 스트레스 연구 연구를 완료하면 1940년부터 발견할 수 있다. 사기 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1942년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_control_panel_standardization;조작반 배치 표준화;;;;;;;;;;;;;x
+tgcnv_ww2_inv_control_panel_standardization_desc;인간공학적 설계 연구를 완료하면 1943년부터 발견할 수 있다. 공장 생산량 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_crew_task_analysis;승무원 직무 분석;;;;;;;;;;;;;x
+tgcnv_ww2_inv_crew_task_analysis_desc;인간공학적 설계 연구를 완료하면 1943년부터 발견할 수 있다. 훈련 경험치 +1. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1945년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_rehabilitation_clinics;심리 재활 진료소;;;;;;;;;;;;;x
+tgcnv_ww2_inv_rehabilitation_clinics_desc;심리 재활 체계 연구를 완료하면 1945년부터 발견할 수 있다. 충원 속도 +0.5%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x
+tgcnv_ww2_inv_return_to_duty_programs;복무 복귀 훈련;;;;;;;;;;;;;x
+tgcnv_ww2_inv_return_to_duty_programs_desc;심리 재활 체계 연구를 완료하면 1945년부터 발견할 수 있다. 조직력 회복 +1%. 기본 발견 확률 4%, 문해율 60% 이상이면 +2%p, 1947년부터 +2%p.;;;;;;;;;;;;;x

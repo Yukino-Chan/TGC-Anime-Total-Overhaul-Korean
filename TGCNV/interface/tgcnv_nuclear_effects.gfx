@@ -1,0 +1,9 @@
+objectTypes = {
+ EMFXActorType = {
+  name = "tgcnvSortieNuclearExplosion"
+  actorfile = "gfx\anims\TGCNV_NuclearExplosion.xac"
+  idle = "gfx\anims\TGCNV_StrikeStatic.xsm"
+  move = "gfx\anims\TGCNV_StrikeStatic.xsm"
+  scale = 1.0
+ }
+}

@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse, hashlib, json, zipfile
 
 ROOT=Path(__file__).parent
-NAMES=('Update.ps1','Online-Core.psm1')
+NAMES=('Update.ps1','Online-Core.psm1','Language.psm1')
 GUIDE=r'''TGC - Anime Total Overhaul (Korean) — 온라인 설치·업데이트
 
 1. 이 ZIP을 모두 압축 해제하세요. ZIP 안에서 바로 실행하지 마세요.
@@ -65,8 +65,10 @@ def build(trust_path,output):
         if not data.startswith(b'\xef\xbb\xbf'): raise ValueError('PowerShell source needs UTF-8 BOM')
     for name,action in [('Update.cmd','Update'),('Check-Updates.cmd','Check'),('Restore-Update.cmd','Restore')]:
         files[name]=(f'@echo off\r\nsetlocal\r\n"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -NoProfile -STA -ExecutionPolicy Bypass -File "%~dp0Update.ps1" -Action {action} %*\r\nset "result=%errorlevel%"\r\npause\r\nexit /b %result%\r\n').encode('ascii')
+    files['Change-Language.cmd']=('@echo off\r\nsetlocal\r\n"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -NoProfile -STA -ExecutionPolicy Bypass -File "%~dp0Update.ps1" -Action Update -ChooseLanguage %*\r\nset "result=%errorlevel%"\r\npause\r\nexit /b %result%\r\n').encode('ascii')
     files['trust.json']=trust
-    files['온라인 설치 안내.txt']=GUIDE.encode('utf-8-sig')
+    files['온라인 설치 안내.txt']=(GUIDE+'\n언어 선택: 처음 설치할 때 한국어 / English를 선택합니다. 이후 업데이트에도 유지됩니다. 변경하려면 게임 종료 후 Change-Language.cmd를 실행하세요.\n명령줄: Update.cmd -Language en 또는 Update.cmd -Language ko\n').encode('utf-8-sig')
+    files['README-English.txt']=('TGC - Anime Total Overhaul\r\n\r\nExtract the entire ZIP. Close the game and launcher, then run Update.cmd. Select v2game.exe in your Victoria II folder. When the release includes language files, choose Korean or English. Your choice is retained across updates. Run Change-Language.cmd to choose again, or use Update.cmd -Language en. Select TGC - Anime Total Overhaul (English) and TGO - The Grand Orchestra in the launcher. Keep the base game language set to English.\r\n\r\nCheck-Updates.cmd checks updates. Restore-Update.cmd restores the previous installation, including its language choice, offline. Language changes use the same signed update feed and require internet access. Downloads and files are verified before install. Saves are preserved. Backups reside in TGCNV_Backups; updater cache is in %LOCALAPPDATA%\\TGCNV-Updater.\r\nRequires supported Victoria II/DLC, 64-bit Windows and Windows PowerShell 5.1. No Python, Git, Docker or GitHub account is needed.\r\n').encode('utf-8')
     files['SHA256SUMS.txt']=''.join(f'{hashlib.sha256(data).hexdigest()}  {name}\n' for name,data in sorted(files.items())).encode('utf-8')
     output=Path(output)
     with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:

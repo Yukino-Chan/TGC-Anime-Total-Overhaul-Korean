@@ -1,0 +1,25 @@
+objectTypes = {
+    EMFXActorType = {
+        name = "tgcnvAirbaseModel"
+        actorfile = "gfx/anims/TGCNV_HOI4_Airbase.xac"
+        scale = 1.4
+    }
+    EMFXActorType = {
+        name = "tgcnvAntiAirModel"
+        actorfile = "gfx/anims/TGCNV_HOI4_AntiAir.xac"
+        scale = 0.18
+    }
+    arrowType = {
+        name = "tgcnvAirRoute"
+        size = 6.0
+        textureFile = "gfx/mapitems/movearrow.tga"
+        bodytexture = "gfx/mapitems/movearrow.tga"
+        color = { 0.35 0.95 0.55 }
+        colortwo = { 0.35 0.95 0.55 }
+        endAt = 1.0f
+        height = 8.0
+        type = 0
+        heading = 1.0f
+        effect = "gfx/fx/arrow.fx"
+    }
+}

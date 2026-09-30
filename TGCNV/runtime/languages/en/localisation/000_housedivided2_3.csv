@@ -1,0 +1,151 @@
+GREAT_WARS_ENABLED_DESC;Great Wars are discovered.\n;;;;;;;;;;;;x
+GREAT_WARS_DISABLED_DESC;Great Wars are undiscovered yet.\n;;;;;;;;;;;;x
+GREAT_WARS_ENABLE_DESC;Wars can get the status of The Great Wars!;;;;;;;;;;;;x
+GREAT_WAR_NAME;The $ORDER$Great War;;;;;;;;;;;;x
+GW_DISCOVERED_SETUP;When the Great Wars are discovered.;;;;;;;;;;;;x
+GW_DISCOVERED_HEADER;Great Wars discovered!;;;;;;;;;;;;x
+GW_DISCOVERED_1;Great Wars discovered!;;;;;;;;;;;;x
+GW_DISCOVERED_2;From now, each war that includes;;;;;;;;;;;;x
+GW_DISCOVERED_3;at least two great countries;;;;;;;;;;;;x
+GW_DISCOVERED_4;on each side, will get the status of;;;;;;;;;;;;x
+GW_DISCOVERED_5;§YThe Great War§!.;;;;;;;;;;;;x
+GW_DISCOVERED_6;*;*;*;;;;;;;;;;;x
+GW_DISCOVERED_BTN1;OK;D'accord;¿¹K;;;;;;;;;;;x
+GW_DISCOVERED_BTN2;OK;D'accord;¿¹K;;;;;;;;;;;x
+GW_DISCOVERED_BTN3;Go To;Voir;Gehe zu;;;;;;;;;;;x
+GW_DISCOVERED_LOG;Great Wars discovered;;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_SETUP;When our war gains the Great war status.;;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_HEADER;Great War!;;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_1;$WAR$;;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_2;becomes;;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_3;§YThe Great War§W.;;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_4;*;*;*;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_5;*;*;*;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_6;*;*;*;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_BTN1;OK;D'accord;¿¹K;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_BTN2;OK;D'accord;¿¹K;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_BTN3;Go To;Voir;Gehe zu;;;;;;;;;;;x
+WAR_GAIN_GW_STATUS_LOG;$WAR$ becomes §YThe Great War§W;;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_SETUP;When our war lost the Great war status.;;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_HEADER;No longer a Great War!;;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_1;$WAR$;;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_2;is no longer;;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_3;The Great War.;;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_4;*;*;*;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_5;*;*;*;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_6;*;*;*;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_BTN1;OK;D'accord;¿¹K;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_BTN2;OK;D'accord;¿¹K;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_BTN3;Go To;Voir;Gehe zu;;;;;;;;;;;x
+WAR_LOST_GW_STATUS_LOG;$WAR$ is no longer §YThe Great War§W;;;;;;;;;;;;x
+GW_INTERVENE_MIN_RELATIONS;Our relations with §Y$TARGET$§W must be at least §G$MIN$§W. Currently it is §Y$VAL$§W.;;;;;;;;;;;;x
+GW_INTERVENE_MAX_EXHAUSTION;Our war exhaustion cannot be greater than §G$MAX$§W. Currently it is §Y$VAL$§W.;;;;;;;;;;;;x
+great_war_penalty_cb;Great War Capitulation;;;;;;;;;;;;x
+great_war_penalty_cb_desc;Force another §Ycountry§! to disarm and pay reparations to us.;;;;;;;;;;;;x
+great_war_penalty_cb_setup;Disarm $RECIPIENT$ and let them pay for reparations.;;;;;;;;;;;;x
+great_war_penalty_cb_short;Great War Capitulation;;;;;;;;;;;;x
+GREAT_WAR_OBLIGATORY_CB_DESC;Obligatory Great War Casus Belli against all enemies:;;;;;;;;;;;;x
+GREAT_WAR_CB_JUSTIFY_COST_DESC;;¾Ç¸í ºñ¿ëÀÌ§Y¼¼°è´ëÀü§!»óÅÂ·Î ÀÎÇØ ¿ø·¡ ºñ¿ëº¸´Ù §G$PERC$%§!¸¸Å­ °¨¼ÒÇÏ¿´½À´Ï´Ù.;;;;;;;;;;;x
+GREAT_WAR_CB_CONSTRUCTION_SPEED_DESC;At Great War with §Y$TARGET$§W;;;;;;;;;;;;x
+fascist_focus_short;§YFascist§! loyalty;;;;;;;;;;;;x
+reactionary_focus_short;§YReactionary§! loyalty;;;;;;;;;;;;x
+conservative_focus_short;§YConservative§! loyalty;;;;;;;;;;;;x
+socialist_focus_short;§YSocialist§! loyalty;;;;;;;;;;;;x
+communist_focus_short;§YCommunists§! loyalty;;;;;;;;;;;;x
+liberal_focus_short;§YLiberal§! loyalty;;;;;;;;;;;;x
+anarcho_liberal_focus_short;§YRadical§! loyalty;;;;;;;;;;;;x
+automation_focus_short;Encourage Automotive Industry;;;;;;;;;;;;x
+electrical_focus_short;Encourage Electrical Industry;;;;;;;;;;;;x
+chemical_focus_short;Encourage Chemical Industry;;;;;;;;;;;;x
+shipping_focus_short;Encourage Shipping Industry;;;;;;;;;;;;x
+textile_focus_short;Encourage Textile Industry;;;;;;;;;;;;x
+wood_focus_short;Encourage Wood Industry;;;;;;;;;;;;x
+basic_industry_focus_short;Encourage Basic Industry;;;;;;;;;;;;x
+armaments_focus_short;Encourage Armaments Industry;;;;;;;;;;;;x
+consumer_focus_short;Consumer Goods Focus;;;;;;;;;;;;x
+WAR_GOAL_SUCCESS_PRESTIGE_CHANGE;If we complete this wargoal, we will gain $PRES$ prestige.;;;;;;;;;;;;x
+WAR_GOAL_FAILURE_PRESTIGE_CHANGE;If we fail to achieve this wargoal, we will lose $PRES$ prestige.;;;;;;;;;;;;x
+POP_INTERNAL_MIGRATION;§Y$NUM$§! people intend to move to other national provinces.;;;;;;;;;;;;x
+POP_EXTERNAL_MIGRATION;§Y$NUM$§! people intend to move to another country.;;;;;;;;;;;;x
+POP_COLONIAL_MIGRATION;§Y$NUM$§! people intend to move to the colonies.;;;;;;;;;;;;x
+INVESTED_IN_US_SETUP;When a country invests in us;;;;;;;;;;;;x
+INVESTED_IN_US_HEADER;Foreign Investment;;;;;;;;;;;;x
+INVESTED_IN_US_1;$ICOUNTRY$ has invested in us!;;;;;;;;;;;;x
+INVESTED_IN_US_2;$INVESTED_IN_US_MESSAGE$;;;;;;;;;;;;x
+INVESTED_IN_US_3;*;*;*;;;;;;;;;;;x
+INVESTED_IN_US_4;*;*;*;;;;;;;;;;;x
+INVESTED_IN_US_5;*;*;*;;;;;;;;;;;x
+INVESTED_IN_US_6;*;*;*;;;;;;;;;;;x
+INVESTED_IN_US_BTN1;OK;;;;;;;;;;;;x
+INVESTED_IN_US_BTN2;OK;;;;;;;;;;;;x
+INVESTED_IN_US_BTN3;Go to;;;;;;;;;;;;x
+INVESTED_IN_US_LOG;§Y$ICOUNTRY$§! invested in us: $INVESTED_IN_US_MESSAGE$;;;;;;;;;;;;x
+INVESTED_IN_US_BUILD;$INAME$ built in $ILOCATION$ for $IAMOUNT$¤;$INAME$ a construit pour $IAMOUNT$ ¤ en $ILOCATION$;$INAME$ hat in $ILOCATION$ für $IAMOUNT$¤;;;;;;;;;;;x
+INVESTED_IN_US_OPEN;$INAME$ opened in $ILOCATION$ for $IAMOUNT$¤;$INAME$ a ouvert pour $IAMOUNT$ ¤ en $ILOCATION$;INAME$ eröffnete in $ILOCATION$ für $IAMOUNT$¤;;;;;;;;;;;x
+INVESTED_IN_US_UPGRADE;Upgraded $INAME$ in $ILOCATION$ for $IAMOUNT$¤;$INAME$ a fait des améliorations pour $IAMOUNT$ ¤ en $ILOCATION$;Rüstet auf $INAME$ in $ILOCATION$ für $IAMOUNT$¤;;;;;;;;;;;x
+INVESTED_IN_US_UNKNOWN;Invested $IAMOUNT$¤ in us.;;;;;;;;;;;;x
+MODIFY_RELATION_EFFECT;§Y$SOURCE$§!'s relation with §Y$TARGET$§! changed with a value of $VALUE$.;;;;;;;;;;;;x
+PRODUCTION_EXPAND_FACTORY_SHORTCUT_TOOLTIP;§GCtrl+Click§W upgrades all factories of this type which are near their employee limit (§Y$NUMSPECIALFACTORIES$§W).\n§GShift+Click§W upgrades all factories which are near their employee limit (§Y$NUMFACTORIES$§W).;§GCtrl+Clic§! améliore toutes les usines de ce type\n§GMaj+Clic§! améliore toutes les usines;§GStrg+Mausklick§! wertet alle Fabrikanlagen dieses Typs auf\n§GShift+Mausklick§! wertet alle Fabrikanlagen auf;;;;;;;;;;;x
+EVTNAME19355;Great Wars;;;;;;;;;;;;x
+EVTDESC19355;We have before us an ordeal of the most grievous kind. We have before us many, many months of struggle and suffering. You ask, what is our policy? I say it is to wage war by land, sea, and air. War with all our might and with all the strength God has given us, and to wage war against a monstrous tyranny never surpassed in the dark and lamentable catalogue of human crime. That is our policy. You ask, what is our aim? I can answer in one word. It is victory. Victory at all costs-Victory in spite of all terrors-Victory, however long and hard the road may be, for without victory there is no survival. \n \n Growing national pride in countries around the world has reached the point where people will not accept anything less than total victory when Great Powers clash. From now on, any conflict with at least two Great Powers on each side will be regarded as a Great War.;;;;;;;;;;;;x
+EVTOPTA19355;God help us all.;;;;;;;;;;;;x
+AGRESSION_WAR_INDEPENDENCE_NAME;$ORDER$$FIRST$ War of Independence;;;;;;;;;;;;x
+BYE;Belarus;Biélorussie;Weißrussland;;Belarus;;;;;;;;;x
+BYE_ADJ;Byelorussian;biélorusse;Weißrussisch;;Byelorussian;;;;;;;;;x
+UBD;United Baltic Provinces;;;;;;;;;;x
+UBD_ADJ;Baltic;;;;;;;;;;x
+UBD_conservative;German Landtag;;;;;;;;;;;;x
+UBD_liberal;Progressive Union;;;;;;;;;;;;x
+UBD_reactionary;Royalist Faction;;;;;;;;;;;;x
+UBD_anarcho_liberals;;;;;;;;;;;;x
+UBD_socialist;Union of Baltic Workers and Socialists;;;;;;;;;;;;x
+UBD_communist;Baltic Communist Party;;;;;;;;;;;;x
+UBD_fascist;Baltic Fascist Union;;;;;;;;;;;;x
+BYE_conservative;Slavophile;;;;;;;;;;;;x
+BYE_liberal;Westerniser;;;;;;;;;;;;x
+BYE_reactionary;Panslavic;;;;;;;;;;;;x
+BYE_anarcho_liberals;Anarcho-Liberals;;;;;;;;;;;;x
+BYE_socialist;Menshevik;;;;;;;;;;;;x
+BYE_communist;Social Democratic;;;;;;;;;;;;x
+BYE_fascist;Fascists;;;;;;;;;;;;x
+PLC;Polish-Lithuanian Commonwealth;;;;;;;;;x;
+PLC_ADJ;Polish-Lithuanian;;;;;;;;;;x
+PLC_conservative;Narodowa-Demokracja;;;;;;;;;;x
+PLC_liberal;Stronnictwo Patriotyczne;;;;;;;;;;x
+PLC_reactionary;Konfederacja Targowicka;;;;;;;;;;x
+PLC_anarcho_liberal;Stronnictwo Radykalne;;;;;;;;;;x
+PLC_socialist;Partia Socjalistyczna;;;;;;;;;;x
+PLC_communist;Partia Komunistyczna;;;;;;;;;;x
+PLC_fascist;Stronnictwo Narodowe;;;;;;;;;;x
+ARA;Arabia;;;;;;;;;;x
+ARA_ADJ;Arab;;;;;;;;;;x
+ARA_conservative;Al Muhafidh;;;;;;;;;;;;x
+ARA_liberal;Al Mutaharir;;;;;;;;;;;;x
+ARA_reactionary;Al Sa'ud;;;;;;;;;;;;x
+ARA_anarcho_liberals;Anarcho-Liberals;;;;;;;;;;;;x
+ARA_socialist;Al Ishtiraki;;;;;;;;;;;;x
+ARA_communist;Al Shiu'i;;;;;;;;;;;;x
+ARA_fascist;Al Fashi;;;;;;;;;;;;x
+GCO;Gran Colombia;Grande Colombie;;;;;;;;;;;;x
+GCO_ADJ;Gran Colombian;;;;;;;;;;;;x
+form_gran_colombia_title;Form Gran Colombia;;;;;;;;;;x
+form_gran_colombia_desc;Gran Colombia was a political federation established in South America in the wake of Simon Bolivar's successful liberation of the territories of Colombia, Venezuela, and Ecuador from Spanish rule. The federation broke apart in 1831. We are in a position to re-unite the North Andean peoples once more if we proclaim a new Gran Colombia.;;;;;;;;;;;x
+GCO_conservative;Partido Centralista;;;;;;;;;;x
+GCO_conservative_2;Nuevo Partido Centralista;;;;;;;;;;x
+GCO_liberal;Partido Federalista;;;;;;;;;;x
+GCO_liberal_2;Nuevo Partido Federalista;;;;;;;;;;x
+GCO_liberal_3;Partido Autonomista;;;;;;;;;;x
+GCO_anarcho_liberal;Partido Radical;;;;;;;;;;x
+GCO_reactionary;Partido Traditionalista;;;;;;;;;;x
+GCO_socialist;Partido Socialista Revolucionario;;;;;;;;;;x
+GCO_communist;Partido Communista;;;;;;;;;;x
+GCO_fascist;Partido Fascista;;;;;;;;;;x
+arab;Arab;;;;;;;;;;;;x
+form_arabia_title;Form Arabia;;;;;;;;;;;;x
+form_arabia_desc;A united Arab nation under our rule will make a strong and stable ally.;;;;;;;;;;;;x
+IS_EMPTY; has no owner;;;;;;;;;;;;x
+IS_NOT_EMPTY; has an owner;;;;;;;;;;;;x
+EVTNAME111011928;Form Arabia;;;;;;;;;;;;x
+EVTDESC111011928;Through warfare and diplomacy an Arabian union has been created. Shall we join it?;;;;;;;;;;;;x
+EVTOPTA111011928;Of course!;;;;;;;;;;;;x
+EVTOPTB111011928;Never!;;;;;;;;;;;;x

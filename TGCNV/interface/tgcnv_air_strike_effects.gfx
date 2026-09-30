@@ -1,0 +1,38 @@
+# STAGED continuous layered effects; see assets/air-strike-effects/hoi4-reference/manifest.json.
+objectTypes = {
+    EMFXActorType = {
+        name = "tgcnvSortieBomb"
+        actorfile = "gfx\anims\TGCNV_StrikeBomb.xac"
+        idle = "gfx\anims\TGCNV_StrikeStatic.xsm"
+        move = "gfx\anims\TGCNV_StrikeStatic.xsm"
+        scale = 1.0
+    }
+    EMFXActorType = {
+        name = "tgcnvSortieExplosion"
+        actorfile = "gfx\anims\TGCNV_StrikeFire.xac"
+        idle = "gfx\anims\TGCNV_StrikeStatic.xsm"
+        move = "gfx\anims\TGCNV_StrikeStatic.xsm"
+        scale = 1.0
+    }
+    EMFXActorType = {
+        name = "tgcnvSortieSmoke"
+        actorfile = "gfx\anims\TGCNV_StrikeSmoke.xac"
+        idle = "gfx\anims\TGCNV_StrikeStatic.xsm"
+        move = "gfx\anims\TGCNV_StrikeStatic.xsm"
+        scale = 1.0
+    }
+    EMFXActorType = {
+        name = "tgcnvSortieFlash"
+        actorfile = "gfx\anims\TGCNV_StrikeFlash.xac"
+        idle = "gfx\anims\TGCNV_StrikeStatic.xsm"
+        move = "gfx\anims\TGCNV_StrikeStatic.xsm"
+        scale = 1.0
+    }
+    EMFXActorType = {
+        name = "tgcnvSortieDissipate"
+        actorfile = "gfx\anims\TGCNV_StrikeDissipate.xac"
+        idle = "gfx\anims\TGCNV_StrikeStatic.xsm"
+        move = "gfx\anims\TGCNV_StrikeStatic.xsm"
+        scale = 1.0
+    }
+}

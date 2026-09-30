@@ -1,0 +1,949 @@
+political_decisions = {
+# Laws of return
+	law_of_return = {
+		picture = law_of_return
+		potential = {
+			tag = ISR
+			has_unclaimed_cores = no
+	 		NOT = { has_country_flag = law_of_return_issued }
+	 	}
+
+	 	allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			romanticism = 1
+			border_policy = open_borders
+			OR = {
+				money = 50000
+				ai = yes
+			}
+	 	}
+
+	 	effect = {
+			set_country_flag = law_of_return_issued
+			## Pay ##
+				random_owned = {
+					limit = {
+						owner = {
+							NOT = { money = 50000 }
+							NOT = { check_variable = { which = owed_cash_money value = 1 } }
+						}
+					}
+					owner = { set_variable = { which = owed_cash_money value = 50 } }
+				}
+				random_owned = {
+					limit = {
+						owner = {
+							NOT = { money = 50000 }
+							check_variable = { which = owed_cash_money value = 9 }
+						}
+					}
+					owner = { change_variable = { which = owed_cash_money value = 50 } }
+				}
+				random_owned = {
+					limit = { owner = { money = 50000 } }
+					owner = { treasury = -50000 }
+				}
+			set_global_flag = law_of_return_issued
+			any_owned = {
+				limit = { is_core = ISR }
+				add_province_modifier = { name = jewish_farms duration = -1 }
+			}
+		}
+
+	 	ai_will_do = { factor = 1 }
+	}
+
+	armenian_law_of_return = { #maybe turn this into something like israel migration (poptypes)
+		picture = law_of_return
+		potential = {
+			tag = ARM
+	 		NOT = { has_country_flag = armenian_law_of_return_issued }
+		}
+
+		allow = {
+			war = no
+			is_secondary_power = yes
+			owns = 1098
+			owns = 1099
+			owns = 1101
+			has_unclaimed_cores = no
+			nationalism_n_imperialism = 1
+			romanticism = 1
+			border_policy = open_borders
+			OR = {
+				money = 50000
+				ai = yes
+			}
+	 	}
+
+		effect = {
+			set_country_flag = armenian_law_of_return_issued
+			## Pay ##
+				random_owned = {
+					limit = {
+						owner = {
+							NOT = { money = 50000 }
+							NOT = { check_variable = { which = owed_cash_money value = 1 } }
+						}
+					}
+					owner = { set_variable = { which = owed_cash_money value = 50 } }
+				}
+				random_owned = {
+					limit = {
+						owner = {
+							NOT = { money = 50000 }
+							check_variable = { which = owed_cash_money value = 9 }
+						}
+					}
+					owner = { change_variable = { which = owed_cash_money value = 50 } }
+				}
+				random_owned = {
+					limit = { owner = { money = 50000 } }
+					owner = { treasury = -50000 }
+				}
+			set_global_flag = armenian_law_of_return_issued
+			any_owned = {
+				limit = { NOT = { is_core = ARM } any_pop = { has_pop_culture = armenian } }
+				add_province_modifier = { name = armenian_diaspora duration = 1825 }
+			}
+		}
+	}
+
+## Palestine ##
+
+	form_israel = {
+		picture = form_israel
+		potential = {
+			is_greater_power = yes
+			NOT = {
+				EGY_921 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+			}
+			NOT = { has_country_flag = sunni_country }
+			NOT = { has_country_flag = shiite_country }
+			NOT = { has_country_flag = ibadi_country }
+			NOT = { has_country_flag = bektashi_country }
+			NOT = { has_global_flag = israel_has_her_cores }
+		}
+
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+
+		effect = {
+			set_global_flag = israel_has_her_cores
+			set_global_flag = israel_palestine
+
+			prestige = 20
+			EGY_921 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { tag = ENG }
+			}
+			modifier = {
+				factor = 0
+				NOT = { mass_politics = 1 }
+			}
+		}
+	}
+
+	greater_israel = {
+	 	picture = greater_israel
+	 	potential = {
+			tag = ISR
+			has_global_flag = israel_palestine
+			ruling_party_ideology = fascist
+	 		NOT = { has_country_flag = greater_israel }
+	 	}
+
+	 	allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			is_vassal = no
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+	 	}
+
+	 	effect = {
+			set_country_flag = greater_israel
+			badboy = 10
+			EGY_910 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			EGY_1755 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			EGY_915 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			EGY_903 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	greater_minisrael = {
+		picture = map_arabia
+		potential = {
+			tag = ISR
+			has_global_flag = israel_palestine
+			NOT = { has_country_flag = claimed_greater_minisrael }
+			NOT = { has_country_flag = greater_israel }
+			NOT = { ruling_party_ideology = fascist }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			is_disarmed = no
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+			war_policy = jingoism
+			ISR = {
+				all_core = { owned_by = ISR }
+			}
+		}
+
+		effect = {
+			set_country_flag = claimed_greater_minisrael
+			prestige = 20
+			badboy = 10
+			1756 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1757 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			915 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			EGY_910 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+
+	absolute_madman_israel = {
+		picture = map_arabia
+		potential = {
+			tag = ISR
+			has_country_flag = greater_israel
+			is_greater_power = yes
+			all_core = { owned_by = THIS }
+			ruling_party_ideology = fascist
+			NOT = { has_country_flag = absolute_madman_israel }
+		}
+
+		allow = {
+			prestige = 2000
+			military_score = 250
+			war = no
+			is_vassal = no
+			is_disarmed = no
+			nationalism_n_imperialism = 1
+			war_policy = jingoism
+		}
+
+		effect = {
+			set_country_flag = absolute_madman_israel
+			prestige = 40
+			badboy = 25
+			EGY_1762 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			EGY_1771 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			EGY_1745 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			EGY_1755 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			EGY_910 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			EGY_915 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			EGY_903 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1746 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1751 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1153 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1154 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1156 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1158 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1160 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			900 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			905 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			897 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			904 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			931 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			929 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			934 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			898 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			932 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			933 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			935 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.1
+			}
+		}
+	}
+
+## Madagascar ##
+
+	madagascar_plan = {
+		picture = form_israel
+		potential = {
+			is_greater_power = yes
+			NOT = {
+				MAD_2117 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+				MAD_2121 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+			}
+			NOT = { has_country_flag = sunni_country }
+			NOT = { has_country_flag = shiite_country }
+			NOT = { has_country_flag = ibadi_country }
+			NOT = { has_country_flag = bektashi_country }
+			NOT = { has_global_flag = israel_has_her_cores }
+		}
+
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+
+		effect = {
+			set_global_flag = israel_has_her_cores
+			set_global_flag = israel_madagascar
+
+			prestige = 20
+			MAD_2117 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			MAD_2121 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			ISR = { capital = 2115 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { tag = GER }
+			}
+			modifier = {
+				factor = 0
+				NOT = { mass_politics = 1 }
+			}
+		}
+	}
+
+## Andinia ##
+
+	andinia_plan = {
+		picture = form_israel
+		potential = {
+			is_greater_power = yes
+			ARG_2391 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+			ARG_2398 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+			ARG_2400 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+			NOT = {
+				has_global_flag = israel_has_her_cores
+				has_country_flag = sunni_country
+				has_country_flag = shiite_country
+				has_country_flag = ibadi_country
+				has_country_flag = bektashi_country
+			}
+		}
+
+		allow = {
+			revolution_n_counterrevolution = 1
+			money = 50000
+		}
+
+		effect = {
+			treasury = -50000
+			set_global_flag = israel_has_her_cores
+			set_global_flag = israel_andinia
+
+			prestige = 20
+			ARG_2391 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			ARG_2398 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			ARG_2400 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			ISR = {
+				capital = 2396
+				set_country_flag = new_world_nation
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { NOT = { continent = south_america } }
+			}
+			modifier = {
+				factor = 0
+				NOT = { mass_politics = 1 }
+			}
+		}
+	}
+
+	greater_andinia = {
+		picture = conquest_of_the_desert
+		potential = {
+			tag = ISR
+			has_global_flag = israel_andinia
+			NOT = { has_country_flag = claimed_greater_andinia }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			is_disarmed = no
+			nationalism_n_imperialism = 1
+			OR = {
+				is_greater_power = yes
+				AND = {
+					ruling_party_ideology = fascist
+					is_secondary_power = yes
+				}
+			}
+			war_policy = jingoism
+			ISR = {
+				all_core = { owned_by = ISR }
+			}
+		}
+
+		effect = {
+			set_country_flag = claimed_greater_andinia
+			prestige = 20
+			badboy = 10
+			CHL_2333 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			CHL_2334 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+
+## Guiana ##
+
+	guiana_plan = {
+		picture = form_israel
+		potential = {
+			is_greater_power = yes
+			NOT = {
+				ENG_1979 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+			}
+			NOT = { has_country_flag = sunni_country }
+			NOT = { has_country_flag = shiite_country }
+			NOT = { has_country_flag = ibadi_country }
+			NOT = { has_country_flag = bektashi_country }
+			NOT = { has_global_flag = israel_has_her_cores }
+		}
+
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+
+		effect = {
+			set_global_flag = israel_has_her_cores
+			set_global_flag = israel_guiana
+
+			prestige = 20
+			ENG_1979 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			ISR = {
+				capital = 2239
+				set_country_flag = new_world_nation
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = ENG
+			}
+			modifier = {
+				factor = 0
+				NOT = { mass_politics = 1 }
+			}
+		}
+	}
+
+	greater_guiana = {
+		picture = colombia_map
+		potential = {
+			tag = ISR
+			has_global_flag = israel_guiana
+			NOT = { has_country_flag = claimed_greater_guiana }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			is_disarmed = no
+			nationalism_n_imperialism = 1
+			OR = {
+				is_greater_power = yes
+				ruling_party_ideology = fascist
+			}
+			war_policy = jingoism
+			ISR = {
+				all_core = { owned_by = ISR }
+			}
+		}
+
+		effect = {
+			set_country_flag = claimed_greater_guiana
+			prestige = 20
+			badboy = 5
+			ENG_1979 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+
+## Alaska ##
+
+	slattery_report = {
+		picture = form_israel
+		potential = {
+			is_greater_power = yes
+			NOT = {
+				USA_1 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+			}
+			NOT = { has_country_flag = sunni_country }
+			NOT = { has_country_flag = shiite_country }
+			NOT = { has_country_flag = ibadi_country }
+			NOT = { has_country_flag = bektashi_country }
+			NOT = { has_global_flag = israel_has_her_cores }
+		}
+
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+
+		effect = {
+			set_global_flag = israel_has_her_cores
+			set_global_flag = israel_alaska
+
+			prestige = 20
+			USA_1 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			ISR = {
+				capital = 2
+				set_country_flag = new_world_nation
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { continent = north_america }
+				tag = RUS
+			}
+			modifier = {
+				factor = 0
+				NOT = { mass_politics = 1 }
+			}
+		}
+	}
+
+## Uganda ##
+
+	uganda_plan = {
+		picture = form_israel
+		potential = {
+			is_greater_power = yes
+			NOT = {
+				ENG_2019 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+				2028 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+			}
+			NOT = { has_country_flag = sunni_country }
+			NOT = { has_country_flag = shiite_country }
+			NOT = { has_country_flag = ibadi_country }
+			NOT = { has_country_flag = bektashi_country }
+			NOT = { has_global_flag = israel_has_her_cores }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			set_global_flag = israel_has_her_cores
+			set_global_flag = israel_uganda
+
+			prestige = 20
+			ENG_2019 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			2028 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			ISR = {
+				capital = 2028
+				set_country_flag = post_colonial_country
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = ENG
+			}
+			modifier = {
+				factor = 0
+				NOT = { mass_politics = 1 }
+			}
+		}
+	}
+
+	greater_uganda = {
+		picture = map_africa
+		potential = {
+			tag = ISR
+			has_global_flag = israel_uganda
+			NOT = { has_country_flag = claimed_greater_uganda }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			is_disarmed = no
+			nationalism_n_imperialism = 1
+			OR = {
+				is_greater_power = yes
+				ruling_party_ideology = fascist
+			}
+			war_policy = jingoism
+			ISR = {
+				all_core = { owned_by = ISR }
+			}
+		}
+
+		effect = {
+			set_country_flag = claimed_greater_uganda
+			prestige = 20
+			badboy = 10
+			ENG_2024 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			ENG_2026 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+
+## Hokkaido ##
+
+	fugu_plan = {
+		picture = form_israel
+		potential = {
+			is_greater_power = yes
+			NOT = {
+				JAP_1088 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+				1087 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+				1089 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+			}
+			NOT = { has_country_flag = sunni_country }
+			NOT = { has_country_flag = shiite_country }
+			NOT = { has_country_flag = ibadi_country }
+			NOT = { has_country_flag = bektashi_country }
+			NOT = { has_global_flag = israel_has_her_cores }
+		}
+
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+
+		effect = {
+			set_global_flag = israel_has_her_cores
+			set_global_flag = israel_japan
+
+			prestige = 20
+			JAP_1088 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1087 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1089 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			ISR = { capital = 1642 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = JAP
+			}
+			modifier = {
+				factor = 0
+				NOT = { mass_politics = 1 }
+			}
+		}
+	}
+
+	greater_hokkaido = {
+		picture = map_yellow_sea
+		potential = {
+			tag = ISR
+			has_global_flag = israel_japan
+			NOT = { has_country_flag = claimed_greater_hokkaido }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			is_disarmed = no
+			nationalism_n_imperialism = 1
+			OR = {
+				is_greater_power = yes
+				ruling_party_ideology = fascist
+			}
+			war_policy = jingoism
+			ISR = {
+				all_core = { owned_by = ISR }
+			}
+		}
+
+		effect = {
+			set_country_flag = claimed_greater_hokkaido
+			prestige = 20
+			badboy = 5
+			JAP_1086 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+
+## Cyrenaica ##
+
+	cyrenaica_plan = {
+		picture = form_israel
+		potential = {
+			is_greater_power = yes
+			NOT = {
+				TRI_1735 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+			}
+			OR = {
+				tag = TUR
+				NOT = { has_country_flag = sunni_country }
+			}
+			NOT = { has_country_flag = shiite_country }
+			NOT = { has_country_flag = ibadi_country }
+			NOT = { has_country_flag = bektashi_country }
+			NOT = { has_global_flag = israel_has_her_cores }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			TRI_1735 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			prestige = 20
+			set_global_flag = israel_has_her_cores
+			set_global_flag = israel_cyrenaica
+			ISR = { capital = 1735 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					tag = TUR
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { mass_politics = 1 }
+			}
+		}
+	}
+
+## Angola ##
+
+	angola_plan = {
+		picture = form_israel
+		potential = {
+			is_greater_power = yes
+			NOT = {
+				POR_2003 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+				POR_2006 = {
+					NOT = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						empty = yes
+					}
+				}
+			}
+			NOT = { has_country_flag = sunni_country }
+			NOT = { has_country_flag = shiite_country }
+			NOT = { has_country_flag = ibadi_country }
+			NOT = { has_country_flag = bektashi_country }
+			NOT = { has_global_flag = israel_has_her_cores }
+		}
+
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+
+		effect = {
+			set_global_flag = israel_has_her_cores
+			set_global_flag = israel_angola
+
+			prestige = 20
+			POR_2003 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			POR_2006 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			ISR = {
+				capital = 2003
+				set_country_flag = post_colonial_country
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					tag = POR
+					tag = KPB
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { mass_politics = 1 }
+			}
+		}
+	}
+
+	greater_angola = {
+		picture = map_africa
+		potential = {
+			tag = ISR
+			has_global_flag = israel_angola
+			NOT = { has_country_flag = claimed_greater_angola }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			is_disarmed = no
+			nationalism_n_imperialism = 1
+			OR = {
+				is_greater_power = yes
+				ruling_party_ideology = fascist
+			}
+			war_policy = jingoism
+			ISR = {
+				all_core = { owned_by = ISR }
+			}
+		}
+
+		effect = {
+			set_country_flag = claimed_greater_angola
+			prestige = 20
+			badboy = 5
+			POR_2006 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			POR_1999 = { add_core = ISR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+}

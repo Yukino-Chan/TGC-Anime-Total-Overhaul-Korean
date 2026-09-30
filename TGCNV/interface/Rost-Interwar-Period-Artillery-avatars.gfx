@@ -1,0 +1,226 @@
+
+objectTypes = {	
+	
+	
+	EMFXActorType = {
+		name = "PrussianGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+
+	EMFXActorType = {
+		name = "AustriaHungaryGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+
+	EMFXActorType = {
+		name = "UsGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+
+	EMFXActorType = {
+		name = "BritishGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+
+	EMFXActorType = {
+		name = "ChineseGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+
+	EMFXActorType = {
+		name = "JapaneseGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+
+	EMFXActorType = {
+		name = "RussianGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+
+	EMFXActorType = {
+		name = "ItalianGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+
+	EMFXActorType = {
+		name = "SwedishGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+
+	EMFXActorType = {
+		name = "FrenchGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+	EMFXActorType = {
+		name = "SpanishGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+
+	EMFXActorType = {
+		name = "OttomanGCArtillery3"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
+		
+		idle   = "gfx\anims\InterwarArtilleryIdle.xsm"
+		move   = "gfx\anims\InterwarArtilleryMove.xsm"
+		attack = "gfx\anims\InterwarArtilleryAttack.xsm"
+		scale = 6.3
+		
+		attach = {
+			name = "InfantryShadowblob"
+			node = "Root"
+			attachId = 2
+		}		
+		
+	}
+}
+
+
+
+
+
+
+
+
+

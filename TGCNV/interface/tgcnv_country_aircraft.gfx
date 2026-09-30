@@ -1,0 +1,509 @@
+# National models from locally installed HOI3 and HOI4.
+objectTypes = {
+    EMFXActorType = {
+        name = "tgcnvAirGERFighter"
+        actorfile = "gfx\anims\TGCNV_Air_GER_Fighter.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.110128805
+    }
+    EMFXActorType = {
+        name = "tgcnvAirGERBomber"
+        actorfile = "gfx\anims\TGCNV_Air_GER_Bomber.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.150045559
+    }
+    EMFXActorType = {
+        name = "tgcnvAirGERHeavy"
+        actorfile = "gfx\anims\TGCNV_Air_GER_Heavy.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.195501877
+    }
+    EMFXActorType = {
+        name = "tgcnvAirGERCas"
+        actorfile = "gfx\anims\TGCNV_Air_GER_Cas.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 2.02148388
+    }
+    EMFXActorType = {
+        name = "tgcnvAirGERNaval"
+        actorfile = "gfx\anims\TGCNV_Air_GER_Naval.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.17508404
+    }
+    EMFXActorType = {
+        name = "tgcnvAirGERTransport"
+        actorfile = "gfx\anims\TGCNV_Air_GER_Transport.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.41759222
+    }
+    EMFXActorType = {
+        name = "tgcnvAirENGFighter"
+        actorfile = "gfx\anims\TGCNV_Air_ENG_Fighter.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.111040364
+    }
+    EMFXActorType = {
+        name = "tgcnvAirENGBomber"
+        actorfile = "gfx\anims\TGCNV_Air_ENG_Bomber.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.174082256
+    }
+    EMFXActorType = {
+        name = "tgcnvAirENGHeavy"
+        actorfile = "gfx\anims\TGCNV_Air_ENG_Heavy.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.205763004
+    }
+    EMFXActorType = {
+        name = "tgcnvAirENGCas"
+        actorfile = "gfx\anims\TGCNV_Air_ENG_Cas.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.82203805
+    }
+    EMFXActorType = {
+        name = "tgcnvAirENGNaval"
+        actorfile = "gfx\anims\TGCNV_Air_ENG_Naval.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 2.11403095
+    }
+    EMFXActorType = {
+        name = "tgcnvAirENGTransport"
+        actorfile = "gfx\anims\TGCNV_Air_ENG_Transport.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.33099574
+    }
+    EMFXActorType = {
+        name = "tgcnvAirFRAFighter"
+        actorfile = "gfx\anims\TGCNV_Air_FRA_Fighter.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.110623102
+    }
+    EMFXActorType = {
+        name = "tgcnvAirFRABomber"
+        actorfile = "gfx\anims\TGCNV_Air_FRA_Bomber.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.561659191
+    }
+    EMFXActorType = {
+        name = "tgcnvAirFRAHeavy"
+        actorfile = "gfx\anims\TGCNV_Air_FRA_Heavy.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.201124147
+    }
+    EMFXActorType = {
+        name = "tgcnvAirFRACas"
+        actorfile = "gfx\anims\TGCNV_Air_FRA_Cas.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.73185687
+    }
+    EMFXActorType = {
+        name = "tgcnvAirFRANaval"
+        actorfile = "gfx\anims\TGCNV_Air_FRA_Naval.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 2.24061313
+    }
+    EMFXActorType = {
+        name = "tgcnvAirFRATransport"
+        actorfile = "gfx\anims\TGCNV_Air_FRA_Transport.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.33099574
+    }
+    EMFXActorType = {
+        name = "tgcnvAirITAFighter"
+        actorfile = "gfx\anims\TGCNV_Air_ITA_Fighter.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.0986497979
+    }
+    EMFXActorType = {
+        name = "tgcnvAirITABomber"
+        actorfile = "gfx\anims\TGCNV_Air_ITA_Bomber.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.151233327
+    }
+    EMFXActorType = {
+        name = "tgcnvAirITAHeavy"
+        actorfile = "gfx\anims\TGCNV_Air_ITA_Heavy.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.178729748
+    }
+    EMFXActorType = {
+        name = "tgcnvAirITACas"
+        actorfile = "gfx\anims\TGCNV_Air_ITA_Cas.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 2.17733837
+    }
+    EMFXActorType = {
+        name = "tgcnvAirITANaval"
+        actorfile = "gfx\anims\TGCNV_Air_ITA_Naval.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.99482285
+    }
+    EMFXActorType = {
+        name = "tgcnvAirITATransport"
+        actorfile = "gfx\anims\TGCNV_Air_ITA_Transport.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.41759222
+    }
+    EMFXActorType = {
+        name = "tgcnvAirJAPFighter"
+        actorfile = "gfx\anims\TGCNV_Air_JAP_Fighter.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.101830895
+    }
+    EMFXActorType = {
+        name = "tgcnvAirJAPBomber"
+        actorfile = "gfx\anims\TGCNV_Air_JAP_Bomber.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.171912116
+    }
+    EMFXActorType = {
+        name = "tgcnvAirJAPHeavy"
+        actorfile = "gfx\anims\TGCNV_Air_JAP_Heavy.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.19059
+    }
+    EMFXActorType = {
+        name = "tgcnvAirJAPCas"
+        actorfile = "gfx\anims\TGCNV_Air_JAP_Cas.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 2.30342901
+    }
+    EMFXActorType = {
+        name = "tgcnvAirJAPNaval"
+        actorfile = "gfx\anims\TGCNV_Air_JAP_Naval.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 2.69362824
+    }
+    EMFXActorType = {
+        name = "tgcnvAirJAPTransport"
+        actorfile = "gfx\anims\TGCNV_Air_JAP_Transport.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.42198657
+    }
+    EMFXActorType = {
+        name = "tgcnvAirSOVFighter"
+        actorfile = "gfx\anims\TGCNV_Air_SOV_Fighter.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.118213492
+    }
+    EMFXActorType = {
+        name = "tgcnvAirSOVBomber"
+        actorfile = "gfx\anims\TGCNV_Air_SOV_Bomber.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.154452378
+    }
+    EMFXActorType = {
+        name = "tgcnvAirSOVHeavy"
+        actorfile = "gfx\anims\TGCNV_Air_SOV_Heavy.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.165207053
+    }
+    EMFXActorType = {
+        name = "tgcnvAirSOVCas"
+        actorfile = "gfx\anims\TGCNV_Air_SOV_Cas.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 2.00258757
+    }
+    EMFXActorType = {
+        name = "tgcnvAirSOVNaval"
+        actorfile = "gfx\anims\TGCNV_Air_SOV_Naval.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.54315412
+    }
+    EMFXActorType = {
+        name = "tgcnvAirSOVTransport"
+        actorfile = "gfx\anims\TGCNV_Air_SOV_Transport.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.33099574
+    }
+    EMFXActorType = {
+        name = "tgcnvAirUSAFighter"
+        actorfile = "gfx\anims\TGCNV_Air_USA_Fighter.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.118584032
+    }
+    EMFXActorType = {
+        name = "tgcnvAirUSABomber"
+        actorfile = "gfx\anims\TGCNV_Air_USA_Bomber.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.162942612
+    }
+    EMFXActorType = {
+        name = "tgcnvAirUSAHeavy"
+        actorfile = "gfx\anims\TGCNV_Air_USA_Heavy.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.196453251
+    }
+    EMFXActorType = {
+        name = "tgcnvAirUSACas"
+        actorfile = "gfx\anims\TGCNV_Air_USA_Cas.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.69570104
+    }
+    EMFXActorType = {
+        name = "tgcnvAirUSANaval"
+        actorfile = "gfx\anims\TGCNV_Air_USA_Naval.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.41792777
+    }
+    EMFXActorType = {
+        name = "tgcnvAirUSATransport"
+        actorfile = "gfx\anims\TGCNV_Air_USA_Transport.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.33099574
+    }
+    EMFXActorType = {
+        name = "tgcnvAirFINFighter"
+        actorfile = "gfx\anims\TGCNV_Air_FIN_Fighter.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 0.103236469
+    }
+    EMFXActorType = {
+        name = "tgcnvAirHUNCas"
+        actorfile = "gfx\anims\TGCNV_Air_HUN_Cas.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.24706024
+    }
+    EMFXActorType = {
+        name = "tgcnvAirROMCas"
+        actorfile = "gfx\anims\TGCNV_Air_ROM_Cas.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.24706024
+    }
+    EMFXActorType = {
+        name = "tgcnvAirSLOCas"
+        actorfile = "gfx\anims\TGCNV_Air_SLO_Cas.xac"
+        idle = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        move = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        attack = "gfx\anims\TGCNV_CountryAirNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_CountryAirNeutral.xsm" }
+        scale = 1.24706024
+    }
+}

@@ -13,7 +13,7 @@ ROOT=Path(__file__).parent
 def sha(p):
     with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def client_source_sha():
-    return hashlib.sha256(b''.join((ROOT/n).read_bytes() for n in ('Update.ps1','Online-Core.psm1','make_client.py'))).hexdigest()
+    return hashlib.sha256(b''.join((ROOT/n).read_bytes() for n in ('Update.ps1','Online-Core.psm1','Language.psm1','make_client.py'))).hexdigest()
 def _main(base,gh,python=sys.executable):
     base=Path(base).absolute()
     builder.no_reparse_ancestors(base)
@@ -69,6 +69,8 @@ def _main(base,gh,python=sys.executable):
     notes=out/'release-notes.md'
     changes='\n'.join('- '+line for line in manifest.get('change_notes',[]))
     notes.write_text(f"# TGC - Anime Total Overhaul (Korean)\n\n배포: {release} / 엔진: {manifest['engine_version']}\n\nTGC-Online-Installer.zip을 압축 해제하고 Update.cmd를 실행하세요. TGCNV와 TGO를 설치·갱신합니다. Check-Updates.cmd로 확인하고 Restore-Update.cmd로 복원할 수 있습니다.\n\n{changes}\n\n파일·설치 도구 검증과 실제 게임 안정성 검증은 별개입니다. 이 배포의 stability_certified 값: {manifest.get('stability_certified',False)}. 남은 실제 게임 검증 항목은 manifest.json을 확인하세요.\n\n릴리스에는 인스톨러만 제공됩니다. 실제 패치 데이터는 GitHub Packages(GHCR)에서 자동으로 받습니다. 기존 온라인 인스톨러 사용자는 이 새 ZIP을 한 번 다시 받아 실행하세요. GitHub 로그인이나 Docker 설치는 필요하지 않습니다.\n\n[TGC](https://github.com/The-Grand-Combination/The-Grand-Combo) · [TGO](https://github.com/The-Grand-Combination/The-Grand-Orchestra) 제작자 및 음악 출처 표기는 배포 내 문서에 보존됩니다.\n",encoding='utf-8')
+    with notes.open('a',encoding='utf-8') as handle:
+        handle.write('\n[최신 인스톨러 다운로드 / Download latest installer](https://github.com/'+trust['repository']+'/releases/download/installer/TGC-Online-Installer.zip?sha256='+sha(bootstrap)+')\n')
     psrun('Verify-Publication.ps1','-Directory',out)
     publish(gh,out,bootstrap,notes,[online/'releases',online/'ghcr-releases'])
     psrun('Verify-Remote.ps1','-TrustPath',out/'channel/trust.json','-ExpectedRelease',release)

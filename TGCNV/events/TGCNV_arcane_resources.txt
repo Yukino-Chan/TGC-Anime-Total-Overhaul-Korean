@@ -1,0 +1,133 @@
+# Existing-save migration: preserve later strategic discoveries and ownership.
+country_event = {
+	id = 269890
+	title = EVTNAME269890
+	desc = EVTDESC269890
+	picture = "prov_coal"
+	trigger = {
+		exists = yes
+		any_owned_province = {
+			NOT = { has_province_flag = tgcnv_arcane_deposit_20260925 }
+			OR = {
+				AND = { province_id = 3827 trade_goods = wool }
+				AND = { province_id = 258 trade_goods = cattle }
+				AND = { province_id = 3973 trade_goods = cattle }
+				AND = { province_id = 490 trade_goods = grain }
+				AND = { province_id = 3363 trade_goods = wool }
+				AND = { province_id = 849 trade_goods = grain }
+				AND = { province_id = 106 trade_goods = cattle }
+				AND = { province_id = 108 trade_goods = cattle }
+				AND = { province_id = 112 trade_goods = grain }
+				AND = { province_id = 115 trade_goods = cattle }
+				AND = { province_id = 24 trade_goods = timber }
+				AND = { province_id = 2592 trade_goods = timber }
+				AND = { province_id = 103 trade_goods = cattle }
+				AND = { province_id = 2145 trade_goods = cattle }
+				AND = { province_id = 2249 trade_goods = grain }
+				AND = { province_id = 2311 trade_goods = fruit }
+				AND = { province_id = 2329 trade_goods = wool }
+				AND = { province_id = 5968 trade_goods = fruit }
+				AND = { province_id = 1683 trade_goods = fruit }
+				AND = { province_id = 1910 trade_goods = grain }
+				AND = { province_id = 1754 trade_goods = wool }
+				AND = { province_id = 1945 trade_goods = fruit }
+				AND = { province_id = 1804 trade_goods = cattle }
+				AND = { province_id = 1798 trade_goods = cattle }
+				AND = { province_id = 1821 trade_goods = grain }
+				AND = { province_id = 1767 trade_goods = grain }
+				AND = { province_id = 1327 trade_goods = wool }
+				AND = { province_id = 1339 trade_goods = wool }
+				AND = { province_id = 1590 trade_goods = wool }
+				AND = { province_id = 1588 trade_goods = cattle }
+				AND = { province_id = 1629 trade_goods = wool }
+				AND = { province_id = 5183 trade_goods = cattle }
+				AND = { province_id = 1558 trade_goods = grain }
+				AND = { province_id = 1579 trade_goods = wool }
+				AND = { province_id = 1252 trade_goods = wool }
+				AND = { province_id = 1267 trade_goods = wool }
+				AND = { province_id = 1313 trade_goods = fruit }
+				AND = { province_id = 1259 trade_goods = cattle }
+				AND = { province_id = 1428 trade_goods = fruit }
+				AND = { province_id = 4953 trade_goods = grain }
+				AND = { province_id = 1677 trade_goods = fruit }
+				AND = { province_id = 1667 trade_goods = timber }
+				AND = { province_id = 6018 trade_goods = grain }
+				AND = { province_id = 6026 trade_goods = wool }
+				AND = { province_id = 2471 trade_goods = grain }
+				AND = { province_id = 6112 trade_goods = cattle }
+				AND = { province_id = 1637 trade_goods = grain }
+				AND = { province_id = 1461 trade_goods = grain }
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		any_owned_province = {
+			limit = {
+				NOT = { has_province_flag = tgcnv_arcane_deposit_20260925 }
+				OR = {
+					AND = { province_id = 3827 trade_goods = wool }
+					AND = { province_id = 3973 trade_goods = cattle }
+					AND = { province_id = 3363 trade_goods = wool }
+					AND = { province_id = 106 trade_goods = cattle }
+					AND = { province_id = 112 trade_goods = grain }
+					AND = { province_id = 24 trade_goods = timber }
+					AND = { province_id = 103 trade_goods = cattle }
+					AND = { province_id = 2249 trade_goods = grain }
+					AND = { province_id = 2329 trade_goods = wool }
+					AND = { province_id = 1683 trade_goods = fruit }
+					AND = { province_id = 1754 trade_goods = wool }
+					AND = { province_id = 1804 trade_goods = cattle }
+					AND = { province_id = 1821 trade_goods = grain }
+					AND = { province_id = 1327 trade_goods = wool }
+					AND = { province_id = 1590 trade_goods = wool }
+					AND = { province_id = 1629 trade_goods = wool }
+					AND = { province_id = 1558 trade_goods = grain }
+					AND = { province_id = 1252 trade_goods = wool }
+					AND = { province_id = 1313 trade_goods = fruit }
+					AND = { province_id = 1428 trade_goods = fruit }
+					AND = { province_id = 1677 trade_goods = fruit }
+					AND = { province_id = 6018 trade_goods = grain }
+					AND = { province_id = 2471 trade_goods = grain }
+					AND = { province_id = 1637 trade_goods = grain }
+				}
+			}
+			trade_goods = mana_crystal
+			set_province_flag = tgcnv_arcane_deposit_20260925
+		}
+		any_owned_province = {
+			limit = {
+				NOT = { has_province_flag = tgcnv_arcane_deposit_20260925 }
+				OR = {
+					AND = { province_id = 258 trade_goods = cattle }
+					AND = { province_id = 490 trade_goods = grain }
+					AND = { province_id = 849 trade_goods = grain }
+					AND = { province_id = 108 trade_goods = cattle }
+					AND = { province_id = 115 trade_goods = cattle }
+					AND = { province_id = 2592 trade_goods = timber }
+					AND = { province_id = 2145 trade_goods = cattle }
+					AND = { province_id = 2311 trade_goods = fruit }
+					AND = { province_id = 5968 trade_goods = fruit }
+					AND = { province_id = 1910 trade_goods = grain }
+					AND = { province_id = 1945 trade_goods = fruit }
+					AND = { province_id = 1798 trade_goods = cattle }
+					AND = { province_id = 1767 trade_goods = grain }
+					AND = { province_id = 1339 trade_goods = wool }
+					AND = { province_id = 1588 trade_goods = cattle }
+					AND = { province_id = 5183 trade_goods = cattle }
+					AND = { province_id = 1579 trade_goods = wool }
+					AND = { province_id = 1267 trade_goods = wool }
+					AND = { province_id = 1259 trade_goods = cattle }
+					AND = { province_id = 4953 trade_goods = grain }
+					AND = { province_id = 1667 trade_goods = timber }
+					AND = { province_id = 6026 trade_goods = wool }
+					AND = { province_id = 6112 trade_goods = cattle }
+					AND = { province_id = 1461 trade_goods = grain }
+				}
+			}
+			trade_goods = spirit_ore
+			set_province_flag = tgcnv_arcane_deposit_20260925
+		}
+	}
+	option = { name = EVTOPTA269890 ai_chance = { factor = 100 } }
+}

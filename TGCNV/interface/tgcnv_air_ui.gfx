@@ -1,0 +1,77 @@
+spriteTypes = {
+    textSpriteType = {
+        name = "GFX_tgcnv_air_ui_button_144"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_button_144.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    textSpriteType = {
+        name = "GFX_tgcnv_air_ui_primary_144"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_primary_144.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    textSpriteType = {
+        name = "GFX_tgcnv_air_ui_cancel_144"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_cancel_144.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    textSpriteType = {
+        name = "GFX_tgcnv_air_ui_button_111"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_button_111.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    textSpriteType = {
+        name = "GFX_tgcnv_air_ui_primary_111"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_primary_111.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    textSpriteType = {
+        name = "GFX_tgcnv_air_ui_cancel_111"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_cancel_111.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    textSpriteType = {
+        name = "GFX_tgcnv_air_ui_tab_144"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_tab_144.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    textSpriteType = {
+        name = "GFX_tgcnv_air_ui_nav_air"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_nav_air.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    textSpriteType = {
+        name = "GFX_tgcnv_air_ui_nav_land"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_nav_land.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    spriteType = {
+        name = "GFX_tgcnv_air_ui_row"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_row.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    spriteType = {
+        name = "GFX_tgcnv_air_ui_main_bg"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_main_bg.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_air_ui_orders_bg"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_orders_bg.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_air_ui_facility_bg"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_facility_bg.dds"
+        noOfFrames = 1
+    }
+}

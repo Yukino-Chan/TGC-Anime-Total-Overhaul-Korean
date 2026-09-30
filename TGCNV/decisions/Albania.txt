@@ -1,0 +1,42 @@
+#The triggers in the potentials were optmized in this file, be careful messing with them.
+#The optmization was made with a high deegre of accuracy and it's mostly fine, lmao 1 thing
+political_decisions = {
+
+	#Description: Greater Albania includes Kosovo, Ulcinj, and parts of northwestern Greece and western Macedonia.
+	claim_greater_albania = {
+		picture = claim_greater_albania
+
+		potential = {
+			tag = ALB
+			NOT = { has_country_flag = claim_greater_albania }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			is_disarmed = no
+			war_policy = jingoism
+			has_unclaimed_cores = no
+			invention = manifest_destiny
+			invention = nostalgic_romanticism
+		}
+
+		effect = {
+			set_country_flag = claim_greater_albania
+			badboy = 10
+			TUR_802 = { add_core = ALB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Kosovo
+			800 = { add_core = ALB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Ulcinj
+			824 = { add_core = ALB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Janina
+			841 = { add_core = ALB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Micova
+			1780 = { add_core = ALB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Debar
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+}

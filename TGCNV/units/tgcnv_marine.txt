@@ -1,0 +1,26 @@
+tgcnv_marine = {
+	icon = 25
+	priority = 20
+	build_time = 110
+	reconnaissance = 0
+	type = land
+	sprite = NVInfantry
+	active = no
+	unit_type = infantry
+	floating_flag = no
+	primary_culture = yes
+	move_sound = army_move
+	select_sound = army_selected
+	max_strength = 3
+	default_organisation = 40
+	maximum_speed = 4
+	weighted_value = 10
+	supply_consumption = 0.18
+	build_cost = { small_arms = 15 ammunition = 10 canned_food = 15 regular_clothes = 15 }
+	supply_cost = { small_arms = 0.025 ammunition = 0.10 canned_food = 0.09 regular_clothes = 0.01 pharmaceuticals = 0.002 }
+	attack = 5
+	defence = 4
+	discipline = 1.1
+	support = 0
+	maneuver = 2
+}

@@ -1,0 +1,611 @@
+# Completes only empty split halves of already acquired South American frontier provinces.
+# No prestige, population edits, foreign transfers, or future expansion is granted.
+country_event = {
+	id = 269895
+	title = EVTNAME269895
+	desc = EVTDESC269895
+	picture = "conquest_of_the_amazon"
+	trigger = {
+		exists = yes
+		OR = {
+			AND = { owns = 1979 5535 = { empty = yes } }
+			AND = { owns = 2245 5792 = { empty = yes } }
+			AND = { owns = 2246 5793 = { empty = yes } }
+			AND = { owns = 2260 5807 = { empty = yes } }
+			AND = { owns = 2261 5808 = { empty = yes } }
+			AND = { owns = 2263 5810 = { empty = yes } }
+			AND = { owns = 2277 5824 = { empty = yes } }
+			AND = { owns = 2283 5830 = { empty = yes } }
+			AND = { owns = 2284 5831 = { empty = yes } }
+			AND = { owns = 2286 5833 = { empty = yes } }
+			AND = { owns = 2288 5835 = { empty = yes } }
+			AND = { owns = 2289 5836 = { empty = yes } }
+			AND = { owns = 2290 5837 = { empty = yes } }
+			AND = { owns = 2291 5838 = { empty = yes } }
+			AND = { owns = 2298 5845 = { empty = yes } }
+			AND = { owns = 2300 5847 = { empty = yes } }
+			AND = { owns = 2301 5848 = { empty = yes } }
+			AND = { owns = 2302 5849 = { empty = yes } }
+			AND = { owns = 2319 5866 = { empty = yes } }
+			AND = { owns = 2321 5868 = { empty = yes } }
+			AND = { owns = 2328 5875 = { empty = yes } }
+			AND = { owns = 2333 5880 = { empty = yes } }
+			AND = { owns = 2334 5881 = { empty = yes } }
+			AND = { owns = 2335 5882 = { empty = yes } }
+			AND = { owns = 2337 5883 = { empty = yes } }
+			AND = { owns = 2338 5884 = { empty = yes } }
+			AND = { owns = 2343 5889 = { empty = yes } }
+			AND = { owns = 2352 5898 = { empty = yes } }
+			AND = { owns = 2353 5899 = { empty = yes } }
+			AND = { owns = 2354 5900 = { empty = yes } }
+			AND = { owns = 2355 5901 = { empty = yes } }
+			AND = { owns = 2362 5908 = { empty = yes } }
+			AND = { owns = 2364 5910 = { empty = yes } }
+			AND = { owns = 2365 5911 = { empty = yes } }
+			AND = { owns = 2366 5912 = { empty = yes } }
+			AND = { owns = 2367 5913 = { empty = yes } }
+			AND = { owns = 2369 5915 = { empty = yes } }
+			AND = { owns = 2372 5918 = { empty = yes } }
+			AND = { owns = 2377 5923 = { empty = yes } }
+			AND = { owns = 2382 5928 = { empty = yes } }
+			AND = { owns = 2384 5930 = { empty = yes } }
+			AND = { owns = 2390 5936 = { empty = yes } }
+			AND = { owns = 2391 5937 = { empty = yes } }
+			AND = { owns = 2392 5938 = { empty = yes } }
+			AND = { owns = 2393 5939 = { empty = yes } }
+			AND = { owns = 2394 5940 = { empty = yes } }
+			AND = { owns = 2395 5941 = { empty = yes } }
+			AND = { owns = 2396 5942 = { empty = yes } }
+			AND = { owns = 2397 5943 = { empty = yes } }
+			AND = { owns = 2398 5944 = { empty = yes } }
+			AND = { owns = 2399 5945 = { empty = yes } }
+			AND = { owns = 2400 5946 = { empty = yes } }
+			AND = { owns = 2401 5947 = { empty = yes } }
+			AND = { owns = 2404 5950 = { empty = yes } }
+			AND = { owns = 2407 5953 = { empty = yes } }
+			AND = { owns = 2408 5954 = { empty = yes } }
+			AND = { owns = 2415 5961 = { empty = yes } }
+			AND = { owns = 2459 6005 = { empty = yes } }
+			AND = { owns = 2462 6008 = { empty = yes } }
+			AND = { owns = 2532 6075 = { empty = yes } }
+			AND = { owns = 2549 6091 = { empty = yes } }
+			AND = { owns = 3295 6301 = { empty = yes } }
+			AND = { owns = 3296 6302 = { empty = yes } }
+			AND = { owns = 3297 6303 = { empty = yes } }
+			AND = { owns = 3413 6417 = { empty = yes } }
+			AND = { owns = 3414 6418 = { empty = yes } }
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		random_owned = {
+			limit = { 1979 = { owned_by = THIS is_core = THIS } 5535 = { empty = yes } }
+			5535 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 1979 = { owned_by = THIS NOT = { is_core = THIS } } 5535 = { empty = yes } }
+			5535 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2245 = { owned_by = THIS is_core = THIS } 5792 = { empty = yes } }
+			5792 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2245 = { owned_by = THIS NOT = { is_core = THIS } } 5792 = { empty = yes } }
+			5792 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2246 = { owned_by = THIS is_core = THIS } 5793 = { empty = yes } }
+			5793 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2246 = { owned_by = THIS NOT = { is_core = THIS } } 5793 = { empty = yes } }
+			5793 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2260 = { owned_by = THIS is_core = THIS } 5807 = { empty = yes } }
+			5807 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2260 = { owned_by = THIS NOT = { is_core = THIS } } 5807 = { empty = yes } }
+			5807 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2261 = { owned_by = THIS is_core = THIS } 5808 = { empty = yes } }
+			5808 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2261 = { owned_by = THIS NOT = { is_core = THIS } } 5808 = { empty = yes } }
+			5808 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2263 = { owned_by = THIS is_core = THIS } 5810 = { empty = yes } }
+			5810 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2263 = { owned_by = THIS NOT = { is_core = THIS } } 5810 = { empty = yes } }
+			5810 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2277 = { owned_by = THIS is_core = THIS } 5824 = { empty = yes } }
+			5824 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2277 = { owned_by = THIS NOT = { is_core = THIS } } 5824 = { empty = yes } }
+			5824 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2283 = { owned_by = THIS is_core = THIS } 5830 = { empty = yes } }
+			5830 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2283 = { owned_by = THIS NOT = { is_core = THIS } } 5830 = { empty = yes } }
+			5830 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2284 = { owned_by = THIS is_core = THIS } 5831 = { empty = yes } }
+			5831 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2284 = { owned_by = THIS NOT = { is_core = THIS } } 5831 = { empty = yes } }
+			5831 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2286 = { owned_by = THIS is_core = THIS } 5833 = { empty = yes } }
+			5833 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2286 = { owned_by = THIS NOT = { is_core = THIS } } 5833 = { empty = yes } }
+			5833 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2288 = { owned_by = THIS is_core = THIS } 5835 = { empty = yes } }
+			5835 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2288 = { owned_by = THIS NOT = { is_core = THIS } } 5835 = { empty = yes } }
+			5835 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2289 = { owned_by = THIS is_core = THIS } 5836 = { empty = yes } }
+			5836 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2289 = { owned_by = THIS NOT = { is_core = THIS } } 5836 = { empty = yes } }
+			5836 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2290 = { owned_by = THIS is_core = THIS } 5837 = { empty = yes } }
+			5837 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2290 = { owned_by = THIS NOT = { is_core = THIS } } 5837 = { empty = yes } }
+			5837 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2291 = { owned_by = THIS is_core = THIS } 5838 = { empty = yes } }
+			5838 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2291 = { owned_by = THIS NOT = { is_core = THIS } } 5838 = { empty = yes } }
+			5838 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2298 = { owned_by = THIS is_core = THIS } 5845 = { empty = yes } }
+			5845 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2298 = { owned_by = THIS NOT = { is_core = THIS } } 5845 = { empty = yes } }
+			5845 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2300 = { owned_by = THIS is_core = THIS } 5847 = { empty = yes } }
+			5847 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2300 = { owned_by = THIS NOT = { is_core = THIS } } 5847 = { empty = yes } }
+			5847 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2301 = { owned_by = THIS is_core = THIS } 5848 = { empty = yes } }
+			5848 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2301 = { owned_by = THIS NOT = { is_core = THIS } } 5848 = { empty = yes } }
+			5848 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2302 = { owned_by = THIS is_core = THIS } 5849 = { empty = yes } }
+			5849 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2302 = { owned_by = THIS NOT = { is_core = THIS } } 5849 = { empty = yes } }
+			5849 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2319 = { owned_by = THIS is_core = THIS } 5866 = { empty = yes } }
+			5866 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2319 = { owned_by = THIS NOT = { is_core = THIS } } 5866 = { empty = yes } }
+			5866 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2321 = { owned_by = THIS is_core = THIS } 5868 = { empty = yes } }
+			5868 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2321 = { owned_by = THIS NOT = { is_core = THIS } } 5868 = { empty = yes } }
+			5868 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2328 = { owned_by = THIS is_core = THIS } 5875 = { empty = yes } }
+			5875 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2328 = { owned_by = THIS NOT = { is_core = THIS } } 5875 = { empty = yes } }
+			5875 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2333 = { owned_by = THIS is_core = THIS } 5880 = { empty = yes } }
+			5880 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2333 = { owned_by = THIS NOT = { is_core = THIS } } 5880 = { empty = yes } }
+			5880 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2334 = { owned_by = THIS is_core = THIS } 5881 = { empty = yes } }
+			5881 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2334 = { owned_by = THIS NOT = { is_core = THIS } } 5881 = { empty = yes } }
+			5881 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2335 = { owned_by = THIS is_core = THIS } 5882 = { empty = yes } }
+			5882 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2335 = { owned_by = THIS NOT = { is_core = THIS } } 5882 = { empty = yes } }
+			5882 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2337 = { owned_by = THIS is_core = THIS } 5883 = { empty = yes } }
+			5883 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2337 = { owned_by = THIS NOT = { is_core = THIS } } 5883 = { empty = yes } }
+			5883 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2338 = { owned_by = THIS is_core = THIS } 5884 = { empty = yes } }
+			5884 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2338 = { owned_by = THIS NOT = { is_core = THIS } } 5884 = { empty = yes } }
+			5884 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2343 = { owned_by = THIS is_core = THIS } 5889 = { empty = yes } }
+			5889 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2343 = { owned_by = THIS NOT = { is_core = THIS } } 5889 = { empty = yes } }
+			5889 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2352 = { owned_by = THIS is_core = THIS } 5898 = { empty = yes } }
+			5898 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2352 = { owned_by = THIS NOT = { is_core = THIS } } 5898 = { empty = yes } }
+			5898 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2353 = { owned_by = THIS is_core = THIS } 5899 = { empty = yes } }
+			5899 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2353 = { owned_by = THIS NOT = { is_core = THIS } } 5899 = { empty = yes } }
+			5899 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2354 = { owned_by = THIS is_core = THIS } 5900 = { empty = yes } }
+			5900 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2354 = { owned_by = THIS NOT = { is_core = THIS } } 5900 = { empty = yes } }
+			5900 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2355 = { owned_by = THIS is_core = THIS } 5901 = { empty = yes } }
+			5901 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2355 = { owned_by = THIS NOT = { is_core = THIS } } 5901 = { empty = yes } }
+			5901 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2362 = { owned_by = THIS is_core = THIS } 5908 = { empty = yes } }
+			5908 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2362 = { owned_by = THIS NOT = { is_core = THIS } } 5908 = { empty = yes } }
+			5908 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2364 = { owned_by = THIS is_core = THIS } 5910 = { empty = yes } }
+			5910 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2364 = { owned_by = THIS NOT = { is_core = THIS } } 5910 = { empty = yes } }
+			5910 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2365 = { owned_by = THIS is_core = THIS } 5911 = { empty = yes } }
+			5911 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2365 = { owned_by = THIS NOT = { is_core = THIS } } 5911 = { empty = yes } }
+			5911 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2366 = { owned_by = THIS is_core = THIS } 5912 = { empty = yes } }
+			5912 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2366 = { owned_by = THIS NOT = { is_core = THIS } } 5912 = { empty = yes } }
+			5912 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2367 = { owned_by = THIS is_core = THIS } 5913 = { empty = yes } }
+			5913 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2367 = { owned_by = THIS NOT = { is_core = THIS } } 5913 = { empty = yes } }
+			5913 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2369 = { owned_by = THIS is_core = THIS } 5915 = { empty = yes } }
+			5915 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2369 = { owned_by = THIS NOT = { is_core = THIS } } 5915 = { empty = yes } }
+			5915 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2372 = { owned_by = THIS is_core = THIS } 5918 = { empty = yes } }
+			5918 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2372 = { owned_by = THIS NOT = { is_core = THIS } } 5918 = { empty = yes } }
+			5918 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2377 = { owned_by = THIS is_core = THIS } 5923 = { empty = yes } }
+			5923 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2377 = { owned_by = THIS NOT = { is_core = THIS } } 5923 = { empty = yes } }
+			5923 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2382 = { owned_by = THIS is_core = THIS } 5928 = { empty = yes } }
+			5928 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2382 = { owned_by = THIS NOT = { is_core = THIS } } 5928 = { empty = yes } }
+			5928 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2384 = { owned_by = THIS is_core = THIS } 5930 = { empty = yes } }
+			5930 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2384 = { owned_by = THIS NOT = { is_core = THIS } } 5930 = { empty = yes } }
+			5930 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2390 = { owned_by = THIS is_core = THIS } 5936 = { empty = yes } }
+			5936 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2390 = { owned_by = THIS NOT = { is_core = THIS } } 5936 = { empty = yes } }
+			5936 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2391 = { owned_by = THIS is_core = THIS } 5937 = { empty = yes } }
+			5937 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2391 = { owned_by = THIS NOT = { is_core = THIS } } 5937 = { empty = yes } }
+			5937 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2392 = { owned_by = THIS is_core = THIS } 5938 = { empty = yes } }
+			5938 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2392 = { owned_by = THIS NOT = { is_core = THIS } } 5938 = { empty = yes } }
+			5938 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2393 = { owned_by = THIS is_core = THIS } 5939 = { empty = yes } }
+			5939 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2393 = { owned_by = THIS NOT = { is_core = THIS } } 5939 = { empty = yes } }
+			5939 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2394 = { owned_by = THIS is_core = THIS } 5940 = { empty = yes } }
+			5940 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2394 = { owned_by = THIS NOT = { is_core = THIS } } 5940 = { empty = yes } }
+			5940 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2395 = { owned_by = THIS is_core = THIS } 5941 = { empty = yes } }
+			5941 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2395 = { owned_by = THIS NOT = { is_core = THIS } } 5941 = { empty = yes } }
+			5941 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2396 = { owned_by = THIS is_core = THIS } 5942 = { empty = yes } }
+			5942 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2396 = { owned_by = THIS NOT = { is_core = THIS } } 5942 = { empty = yes } }
+			5942 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2397 = { owned_by = THIS is_core = THIS } 5943 = { empty = yes } }
+			5943 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2397 = { owned_by = THIS NOT = { is_core = THIS } } 5943 = { empty = yes } }
+			5943 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2398 = { owned_by = THIS is_core = THIS } 5944 = { empty = yes } }
+			5944 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2398 = { owned_by = THIS NOT = { is_core = THIS } } 5944 = { empty = yes } }
+			5944 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2399 = { owned_by = THIS is_core = THIS } 5945 = { empty = yes } }
+			5945 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2399 = { owned_by = THIS NOT = { is_core = THIS } } 5945 = { empty = yes } }
+			5945 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2400 = { owned_by = THIS is_core = THIS } 5946 = { empty = yes } }
+			5946 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2400 = { owned_by = THIS NOT = { is_core = THIS } } 5946 = { empty = yes } }
+			5946 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2401 = { owned_by = THIS is_core = THIS } 5947 = { empty = yes } }
+			5947 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2401 = { owned_by = THIS NOT = { is_core = THIS } } 5947 = { empty = yes } }
+			5947 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2404 = { owned_by = THIS is_core = THIS } 5950 = { empty = yes } }
+			5950 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2404 = { owned_by = THIS NOT = { is_core = THIS } } 5950 = { empty = yes } }
+			5950 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2407 = { owned_by = THIS is_core = THIS } 5953 = { empty = yes } }
+			5953 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2407 = { owned_by = THIS NOT = { is_core = THIS } } 5953 = { empty = yes } }
+			5953 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2408 = { owned_by = THIS is_core = THIS } 5954 = { empty = yes } }
+			5954 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2408 = { owned_by = THIS NOT = { is_core = THIS } } 5954 = { empty = yes } }
+			5954 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2415 = { owned_by = THIS is_core = THIS } 5961 = { empty = yes } }
+			5961 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2415 = { owned_by = THIS NOT = { is_core = THIS } } 5961 = { empty = yes } }
+			5961 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2459 = { owned_by = THIS is_core = THIS } 6005 = { empty = yes } }
+			6005 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2459 = { owned_by = THIS NOT = { is_core = THIS } } 6005 = { empty = yes } }
+			6005 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2462 = { owned_by = THIS is_core = THIS } 6008 = { empty = yes } }
+			6008 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2462 = { owned_by = THIS NOT = { is_core = THIS } } 6008 = { empty = yes } }
+			6008 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2532 = { owned_by = THIS is_core = THIS } 6075 = { empty = yes } }
+			6075 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2532 = { owned_by = THIS NOT = { is_core = THIS } } 6075 = { empty = yes } }
+			6075 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 2549 = { owned_by = THIS is_core = THIS } 6091 = { empty = yes } }
+			6091 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 2549 = { owned_by = THIS NOT = { is_core = THIS } } 6091 = { empty = yes } }
+			6091 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 3295 = { owned_by = THIS is_core = THIS } 6301 = { empty = yes } }
+			6301 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 3295 = { owned_by = THIS NOT = { is_core = THIS } } 6301 = { empty = yes } }
+			6301 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 3296 = { owned_by = THIS is_core = THIS } 6302 = { empty = yes } }
+			6302 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 3296 = { owned_by = THIS NOT = { is_core = THIS } } 6302 = { empty = yes } }
+			6302 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 3297 = { owned_by = THIS is_core = THIS } 6303 = { empty = yes } }
+			6303 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 3297 = { owned_by = THIS NOT = { is_core = THIS } } 6303 = { empty = yes } }
+			6303 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 3413 = { owned_by = THIS is_core = THIS } 6417 = { empty = yes } }
+			6417 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 3413 = { owned_by = THIS NOT = { is_core = THIS } } 6417 = { empty = yes } }
+			6417 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = { 3414 = { owned_by = THIS is_core = THIS } 6418 = { empty = yes } }
+			6418 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+		random_owned = {
+			limit = { 3414 = { owned_by = THIS NOT = { is_core = THIS } } 6418 = { empty = yes } }
+			6418 = { secede_province = THIS }
+		}
+	}
+	option = { name = EVTOPTA269895 ai_chance = { factor = 100 } }
+}

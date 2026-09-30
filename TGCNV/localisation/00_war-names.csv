@@ -1,0 +1,470 @@
+CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;ITALIAN;SWEDISH;CZECH;HUNGARIAN;DUTCH;PORTUGUESE;RUSSIAN;FINNISH;x
+AGRESSION_CALL_ALLIES_WAR_NAME;$ORDER$$FIRST_COUNTRY$ µ¿¸Í Áö¿ø ÀüÀï;;;;;;;;;;;;;
+AGRESSION_CIVIL_WAR_NAME;$ORDER$$FIRST_COUNTRY$ ³»Àü;$ORDER$ guerre civile $FIRST$;$ORDER$$FIRST$ Bürgerkrieg;;;;;;;;;;;x
+AGRESSION_CIVIL_WAR_NAME_ARC_ENT;$ORDER$ÇÃ¶óÆ¾ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_CIVIL_WAR_NAME_ENG_EIC;µ¿ÀÎµµ È¸»ç Ç×Àï;;;;;;;;;;;;;x
+AGRESSION_CIVIL_WAR_NAME_QNG_TPG;$ORDER$ÅÂÆòÃµ±¹ÀÇ ³­;;;;;;;;;;;;;x
+AGRESSION_CONQUEST_OF_LOUISIANA;·çÀÌÁö¾Ö³ª Á¤º¹ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_OTTOMAN_WAR_NAME;$ORDER$µ¿¹æ À§±â;;;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_OTTOMAN_WAR_NAME_RUS_TUR;µ¿¹æ À§±â;;;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME;$ORDER$$SECOND_COUNTRY$ ±ºÃà ÀüÀï;$ORDER$$FIRST$ guerre d'aggression;$ORDER$$FIRST$er Angriffskrieg;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_CHL_PBC;$ORDER$¿¬¹æ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_ENG_BUR;$ORDER$¿µ±¹-¹ö¸¶ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_FRA_ENG;$ORDER$¿µ±¹-ÇÁ¶û½º ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_FRA_NGF;$ORDER$ÇÁ¶û½º-ÇÁ·ÎÀÌ¼¾ ÀüÀï;$ORDER$ guerre franco-prussienne;$ORDER$Franco-Preussischer Krieg;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_FRA_PRU;$ORDER$ÇÁ¶û½º-ÇÁ·ÎÀÌ¼¾ ÀüÀï;$ORDER$ guerre franco-prussienne;$ORDER$Franco-Preussischer Krieg;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_RUS_HUN;$ORDER$·¯½Ã¾ÆÀÇ Çë°¡¸® °³ÀÔ;;;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_RUS_TUR;$ORDER$Å©¸² ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_CRIMEAN_WAR_NAME_RUS_TUR;$ORDER$Å©¸² ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_DEMOCRACY_WAR_NAME;$ORDER$$SECOND_COUNTRY$ ¹ÎÁÖÁ¤ º¹¿ø ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_EARLY_WAR_CONCESSION_NAME;$ORDER$$STATE$ Á¶Â÷ ÀüÀï;$ORDER$ Guerre de concession de $STATE$;$ORDER$ Krieg der $STATE$-Konzession;;;;;;;;;;;x
+AGRESSION_PUNITIVE_EXPEDITION_WAR_NAME;$ORDER$$SECOND_COUNTRY$ Â¡¹ú ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_PUNITIVE_EXPEDITION_WAR_NAME_ENG_PER;$ORDER$¿µ±¹-Æä¸£½Ã¾Æ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_PUNITIVE_EXPEDITION_WAR_NAME_ENG_QNG;$ORDER$¾ÆÆí ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_PUNITIVE_EXPEDITION_WAR_NAME_ENG_TPG;$ORDER$¾ÆÆí ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_SUBSTATE_STATE_NAME;$ORDER$$STATE$ Á¤º¹ ÀüÀï;$ORDER$$FIRST$ guerre pour $STATE$;$ORDER$$FIRST$er Krieg um $STATE$;;;;;;;;;;;x
+AGRESSION_SYKES_PICOT_WAR_NAME;$ORDER$¼Ò¾Æ½Ã¾Æ ºÐÇÒ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_SYKES_PICOT_WAR_NAME_ENG_TUR;¼Ò¾Æ½Ã¾Æ ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_UNIFICATION_HUMILIATE_NAME;$FIRST_COUNTRY$-$SECOND_COUNTRY$ ÆÐ±Ç ÀüÀï;$FIRST$-$SECOND$ guerre fraternelle;Der $FIRST$-$SECOND$ Bruderkrieg;;;;;;;;;;;x
+AGRESSION_UNIFICATION_HUMILIATE_NAME_AUS_PRU;¿À½ºÆ®¸®¾Æ-ÇÁ·ÎÀÌ¼¾ ÇüÁ¦ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_UNIFICATION_HUMILIATE_NAME_NGF_AUS;¿À½ºÆ®¸®¾Æ-ÇÁ·ÎÀÌ¼¾ ÇüÁ¦ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_UNIFICATION_HUMILIATE_NAME_PRU_AUS;¿À½ºÆ®¸®¾Æ-ÇÁ·ÎÀÌ¼¾ ÇüÁ¦ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_ADD_SPHERE_NAME;$ORDER$$SECOND_COUNTRY$ ¼¼·Â±Ç ÆíÀÔ ÀüÀï;$ORDER$ guerre de la subjugation $SECOND$;$ORDER$Krieg der $SECOND$ Unterjochung;;;;;;;;;;;x
+AGRESSION_WAR_ADD_SPHERE_NAME_ENG_MNP;¸¶´ÏÇª¸£¿¡ ´ëÇÑ ¿µ±¹ÀÇ °³ÀÔ;;;;;;;;;;;;;x
+AGRESSION_WAR_ADD_SPHERE_NAME_FRA_PAP;·Î¸¶ Çõ¸í;;;;;;;;;;;;;x
+AGRESSION_WAR_ALL_CORES_NAME;$ORDER$$FIRST_COUNTRY$ ¿µÅä ¼öº¹ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_ALL_CORES_NAME_ENG_USA;$ORDER$¿µ±¹-¹Ì±¹ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_ALL_CORES_NAME_GER_AUS;$ORDER$µ¶ÀÏ ÅëÀÏ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_ALL_CORES_NAME_GER_KUK;$ORDER$µ¶ÀÏ ÅëÀÏ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_ALL_CORES_NAME_USA_ENG;$ORDER$¿µ±¹-¹Ì±¹ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_ALL_CORES_NAME_USA_MEX;$ORDER$¸ß½ÃÄÚ-¹Ì±¹ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_ALL_CORES_NAME_TUR_BHT;$ORDER$º£µð¸£ Ä­ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_ALL_CORES_NAME_PER_BHT;$ORDER$º£µð¸£ Ä­ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_AUSTRIAN_EMPIRE_NAME;$ORDER$Á¦±¹ ÀçÅëÇÕ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_AUSTRIAN_EMPIRE_NAME_AUS_KRA;$ORDER$Å©¶óÄíÇÁ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_BOXER_NAME;ÀÇÈ­´Ü ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_BRITISH_RAJ_NAME;$ORDER$ÀÎµµ Áö¹è±Ç ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CHINA_REUNIFICATION;$ORDER$Áß±¹ ÅëÀÏ ÀüÀï;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg;;;;;;;;;;;x
+AGRESSION_WAR_CIVIL_WAR_NAME_QNG_TPG;ÅÂÆòÃµ±¹ÀÇ ³­;;;;;;;;;;;;;x
+AGRESSION_WAR_CIVIL_WAR_NAME_TPG_QNG;ÅÂÆòÃµ±¹ÀÇ ³­;;;;;;;;;;;;;x
+AGRESSION_WAR_CIVIL_WAR_NAME_USA_CSA;¹Ì±¹ ³²ºÏ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_COLONIAL_NAME;$ORDER$$STATE$ ½Ä¹ÎÁö ÀüÀï;$ORDER$$FIRST$ guerre coloniale pour $STATE$;$ORDER$$FIRST$ Kolonialkrieg um $STATE$;;;;;;;;;;;x
+AGRESSION_WAR_COLONIAL_RECONQUEST_NAME;$ORDER$$FIRST_COUNTRY$ ½Ä¹ÎÁö ¼öº¹ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_COLONY_NAME;$ORDER$$COUNTRY$ ½Ä¹ÎÁö ÀüÀï;$ORDER$$FIRST$ guerre coloniale pour $STATE$;$ORDER$$FIRST$er Kolonialkrieg um $STATE$;;;;;;;;;;;x
+AGRESSION_WAR_CONCESSION_NAME;$ORDER$$STATE$ ÇÒ¾ç ÀüÀï;$ORDER$ Guerre de concession de $STATE$;$ORDER$ Krieg der $STATE$-Konzession;;;;;;;;;;;x
+AGRESSION_WAR_CONCESSION_NAME_ENG_ASH;$ORDER$¾Æ½¬¾ÈÆ¼ ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_CONCESSION_NAME_ENG_BUR;Á¦2Â÷ ¹ö¸¶ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONCESSION_NAME_FRA_DAI;ÄÚÄ£Â÷ÀÌ³ª ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_CONCESSION_NAME_NET_LAN;Äá½Ã ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME;$ORDER$$SECOND_COUNTRY$ Á¤º¹ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_BHR_QAT;$ORDER$Ä«Å¸¸£-¹Ù·¹ÀÎ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_ENG_LHJ;¾Æµ§ ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_ENG_MUG;ÀÎµµ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_ENG_ORA;º¸¾î ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_ENG_PNJ;$ORDER$¿µ±¹-½ÃÅ© ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_ENG_SIK;¿µ±¹ÀÇ ½ÃÅ´ ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_ENG_TRN;º¸¾î ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_QNG_GUI;¸Ï¿ÀÁ· ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_QNG_NIA;¿°±ºÀÇ ³­;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_QNG_XBI;ÄªÇÏÀÌ µÕ°£ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_RUS_CIR;$ORDER$·¯½Ã¾Æ-Ã¼¸£ÄÉ½º ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_RUS_CPL;$ORDER$Æú¶õµå µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_RUS_DAG;$ORDER$¹«¸®µå ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_SAR_PAP;ÃµÀÎ´ë ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_ANY_NAME_SIC_SYC;$ORDER$½ÃÄ¥¸®¾Æ Çõ¸í;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME;$ORDER$$SECOND_COUNTRY$ Á¤º¹ ÀüÀï;$ORDER$ guerre de l'aggression $FIRST$ sur $SECOND$;$ORDER$Krieg der $FIRST$ Aggression gegen $SECOND$;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME_BRZ_URU;$ORDER$½Ã½ºÇÃ¶óÆ¾ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME_ENG_ASH;È²±Ý ¿ÁÁÂ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME_ENG_ORA;º¸¾î ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME_ENG_TRN;º¸¾î ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME_FRA_TUN;ÇÁ¶û½ºÀÇ Æ¢´ÏÁö Á¤º¹;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME_HAI_DOM;$ORDER$µµ¹Ì´ÏÄ« µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME_SAR_PAP;ÃµÀÎ´ë ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME_TUR_CRE;$ORDER$Å©·¹Å¸ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_DISMANTLE_NAME;$ORDER$$SECOND_COUNTRY$ ÇØÃ¼ ÀüÀï;$ORDER$ Offensive Militaire $FIRST$;$ORDER$ $FIRST$ Angriffskrieg;;;;;;;;;;;x
+AGRESSION_WAR_END_SLAVE_TRADE;³ë¿¹¹«¿ª Á¾½Ä ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_ENFORCE_CLAYTON_TREATY;Å¬·¹ÀÌÆ°-ºÒ¿ö Á¶¾à ÀÌÇà ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_FORALLIES_NAME;$ORDER$$STATE$ µ¿¸Í Áö¿ø ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_FREE_ALLIED_CORE_NAME;$ORDER$$COUNTRY$ ¿µÅä ¼öº¹ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_TAKE_CLAIM;$ORDER$$FIRST_COUNTRY$ Ã»±¸±Ç ÁýÇà ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CLAIM;$ORDER$$FIRST_COUNTRY$ Ã»±¸±Ç ÁýÇà ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_FREE_BALKANS_NAME;$ORDER$¹ßÄ­ ÇØ¹æ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_FREE_NAME;$ORDER$$COUNTRY$ ÇØ¹æ ÀüÀï;$ORDER$$FIRST$ guerre de soutien de $COUNTRY$;$ORDER$$FIRST$ Krieg zur Absicherung von $COUNTRY$;;;;;;;;;;;x
+AGRESSION_WAR_GUNBOAT_NAME;$SECOND_COUNTRY$ ¹«·Â °³ÀÔ;;;;;;;;;;;;;x
+AGRESSION_WAR_HOLY_LAND_NAME;$ORDER$¼ºÁö ÀïÅ» ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_RECLAIM_THE_EMPIRE_NAME;$ORDER$Á¦±¹ Àç°Ç ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME;$ORDER$$SECOND_COUNTRY$ ±¼¿å ÀüÀï;$ORDER$ guerre pour l'honneur $FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg der Ehre;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_AUS_FRA;¶óÀÎ À§±â;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_ENG_ETH;¿µ±¹ÀÇ ¾Æºñ½Ã´Ï¾Æ ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_ENG_GRE;$ORDER$µ· ÆÄ½ÃÇÇÄÚ »ç°Ç;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_ENG_TPG;¿µ±¹ÀÇ Áß±¹ °³ÀÔ;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_ENT_ARC;¾Æ¸£ÇîÆ¼³ª ³»Àü;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_FRA_KOR;ÇÁ¶û½ºÀÇ ÇÑ±¹ ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_QNG_JAP;$ORDER$Ã»ÀÏ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_HUNGARIAN_GAME;Çë°¡¸® ÆÐ±Ç ºÐÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_GREAT_GAME;Áß¾Ó¾Æ½Ã¾Æ ÆÐ±Ç ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_INDEPENDENCE_NAME;$ORDER$$FIRST_COUNTRY$ µ¶¸³ ÀüÀï;$ORDER$$FIRST$ guerre d'indépendance;$ORDER$$FIRST$ Unabhängigkeitskrieg;;;;;;;;;;;x
+AGRESSION_WAR_LIBERATE_BALKANS_NAME;$ORDER$¹ßÄ­ ÇØ¹æ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_LIBERATE_NAME;$ORDER$$COUNTRY$ ÇØ¹æ ÀüÀï;;$ORDER$$FIRST$-$COUNTRY_ADJ$er Befreiungskrieg;;;;;;;;;;;x
+AGRESSION_WAR_LIBERATE_NAME_ITA_TUR;¸®ºñ¾Æ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_MONROE_DOCTRINE_NAME;$ORDER$¸Õ·Î µ¶Æ®¸° ¼öÈ£ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_GENDARME_OF_EUROPE_NAME;$ORDER$$SECOND_COUNTRY$ ¹ÝÇõ¸í °³ÀÔ;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME;$ORDER$$FIRST_COUNTRY$-$SECOND_COUNTRY$ ÀüÀï;$ORDER$ Offensive Militaire $FIRST$;$ORDER$ $FIRST$ Angriffskrieg;;;;;;;;;;;x
+AGRESSION_WAR_NAME_COMMUNISM;$ORDER$$SECOND_COUNTRY$ °ø»êÇõ¸í ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_DEMOCRACY;$ORDER$$SECOND_COUNTRY$ ¹ÝÇõ¸í ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_FASCISM;$ORDER$$SECOND_COUNTRY$ ÆÄ½ÃÁò È®»ê ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_FRA_QNG;$ORDER$Ã»ÇÁ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_REPARATIONS;$ORDER$$SECOND_COUNTRY$ ¹è»ó±Ý ¿ä±¸ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_REPARATIONS_BOL_CHL;$ORDER$ÅÂÆò¾ç ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_REPARATIONS_CHL_PBC;$ORDER$¿¬¹æ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_REPARATIONS_PEU_CHL;$ORDER$ÅÂÆò¾ç ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_TUR_BUL;$ORDER$¹ßÄ­ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_TUR_GRE;$ORDER$¹ßÄ­ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_TUR_ITA;$ORDER$ÀÌÅ»¸®¾Æ-ÅÍÅ° ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_TUR_MON;$ORDER$¹ßÄ­ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NAME_TUR_SER;$ORDER$¹ßÄ­ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NATURAL_BORDERS_NAME;$ORDER$ÇÁ¶û½º ÀÚ¿¬ ±¹°æ È®º¸ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_NEGOTIATE_NAME;$ORDER$$STATE$ ¹ÝÈ¯ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PADRI_WAR;ÆÄµå¸® ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME;$ORDER$$SECOND_COUNTRY$ º¸È£±¹È­ ÀüÀï;$ORDER$ $FIRST$ acquisition de $SECOND_COUNTRY$;$ORDER$ Übernahme von $FIRST$ $SECOND$;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_ENG_ASH;Á¦2Â÷ ¾Æ½¬¾ÈÆ¼ ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_ENG_BEN;$ORDER$º£³Ã ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_ENG_BUR;Á¦3Â÷ ¹ö¸¶ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_ENG_EGY;¿µ±¹-ÀÌÁýÆ® ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_ENG_MNP;$ORDER$¿µ±¹-¸¶´ÏÇª¸£ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_ENG_SOK;$ORDER$³ªÀÌÁö¸®¾Æ ºÏºÎ ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_ENG_SUD;¸¶Èåµð ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_ENG_ZUL;$ORDER$¿µ±¹-ÁÙ·ç ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_FRA_DAH;$ORDER$ÇÁ¶û½º-´ÙÈ£¸Þ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_FRA_DAI;ÅëÅ· ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_FRA_TOO;ÇÁ¶û½ºÀÇ ¼¼³×°¥ Á¤º¹;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_FRA_TUN;ÇÁ¶û½ºÀÇ Æ¢´ÏÁö Á¤º¹;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_JAP_KOR;ÀÏº»ÀÇ ÇÑ±¹ º¸È£±¹È­ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_NET_KLM;$ORDER$¹ÝÀÚ¸£¸¶½Å ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_NET_LAN;Äá½Ã ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME;$ORDER$$SECOND_COUNTRY$ Á¾¼ÓÈ­ ÀüÀï;$ORDER$ guerre de $FIRST$ pour le contrôle de $SECOND_COUNTRY$;$ORDER$ Krieg um die Kontrolle von $FIRST$ über $SECOND_COUNTRY$;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_ENG_AFG;$ORDER$¿µ±¹-¾ÆÇÁ°¡´Ï½ºÅº ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_ENG_BHU;µà¾Æ¸£ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_ENG_IRE;$ORDER$¾ÆÀÏ·£µå µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_ENG_JAM;¸ð¶õÆ® º£ÀÌ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_ENG_PNJ;$ORDER$¿µ±¹-½ÃÅ© ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_ENG_SIK;¿µ±¹ÀÇ ½ÃÅ´ ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_JAP_MCK;¹¬µ§ »ç°Ç;;;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_QNG_KOR;Ã»-ÇÑ±¹ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_TUR_ROM;$ORDER$·ç¸¶´Ï¾Æ µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_TUR_WAL;$ORDER$¿Ð¶óÅ°¾Æ Çõ¸í;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_AMERICA_NAME;$ORDER$¹Ì±¹ ÀçÅëÇÕ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME;$ORDER$$SECOND_COUNTRY$ Áú¼­ È¸º¹ ÀüÀï;$ORDER$$FIRST$ rétablissement de l'ordre dans les provinces de $SECOND$;$ORDER$$FIRST$ Wiederherstellung der Ordnung in den $SECOND$ Provinzen;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME__YUC;$ORDER$À¯Ä«Åº µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_ARG_ENT;$ORDER$ÇÃ¶óÆ¾ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_AUS_KRA;$ORDER$Å©¶óÄíÇÁ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_AUS_LOM;¹Ð¶ó³ëÀÇ 5ÀÏ;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_AUS_VEN;$ORDER$º£³×Ä¡¾Æ Çõ¸í;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_BRZ_URU;$ORDER$½Ã½ºÇÃ¶óÆ¾ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_DEN_SWH;$ORDER$½¶·¹½ººñÈ÷ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_JAP_EZO;ÇÏÄÚ´ÙÅ× ¿øÁ¤;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_KUK_HUN;Á¦2Â÷ Çë°¡¸® Çõ¸í;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_MEX_CHP;$ORDER$Ä¡¾ÆÆÄ½ºÀÇ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_MEX_OAX;$ORDER$¿À¾Ç»çÄ«ÀÇ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_MEX_RGR;$ORDER$¸®¿À ±×¶õµ¥ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_MEX_TBS;$ORDER$Å¸¹Ù½ºÄÚ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_MEX_YUC;$ORDER$À¯Ä«ÅºÀÇ ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_MEX_ZAC;$ORDER$ÀÚÄ«Å×Ä«½º ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_RUS_CIR;$ORDER$·¯½Ã¾Æ-Ã¼¸£ÄÉ½º ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_RUS_CPL;$ORDER$Æú¶õµå µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_SAR_GEN;$ORDER$Á¦³ë¹Ù ¹Ý¶õ;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_TUR_BHT;$ORDER$¿À½º¸¸ÀÇ Äí¸£µð½ºÅº °³ÀÔ;;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_USA_CSA;¹Ì±¹ ³²ºÏ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_RHINE_CRISIS;¶óÀÎ À§±â;;;;;;;;;;;;;x
+AGRESSION_WAR_MEXICO_CONCESSION_RUS;·¯½Ã¾ÆÀÇ Ä¶¸®Æ÷´Ï¾Æ Ä§°ø;;;;;;;;;;;;;x
+AGRESSION_WAR_RUDEBOI_NAME;$ORDER$$SECOND_COUNTRY$ ºÀ¼â ÀüÀï;$ORDER$$FIRST$ guerre de confinement $SECOND$;$ORDER$$FIRST$ Krieg der $SECOND$ Beherrschung;;;;;;;;;;;x
+AGRESSION_WAR_SAHEL_JIHAD_NAME;$ORDER$$FIRST_COUNTRY$ ÁöÇÏµå;;;;;;;;;;;;;x
+AGRESSION_WAR_SONDERBUND;Á¸´õºÐÆ® ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_SUBSTATE_ANNEX_NAME;$ORDER$$COUNTRY$ º´ÇÕ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_TAKE_CORE_NAME;$ORDER$$STATE$ ¼öº¹ ÀüÀï;$ORDER$$FIRST$ aggression pour $STATE$;$ORDER$$FIRST$ Aggression um $STATE$;;;;;;;;;;;x
+AGRESSION_WAR_TAKE_CORE_NAME_NGF_DEN;Á¦2Â÷ ½¶·¹½ººñÈ÷ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_TAKE_NAME;$ORDER$$STATE$ Á¤º¹ ÀüÀï;$ORDER$$FIRST$ guerre de $STATE$;$ORDER$$FIRST$ Krieg von $STATE$;;;;;;;;;;;x
+AGRESSION_WAR_TAKE_SPHERE_NAME;$ORDER$$COUNTRY$ ¼¼·Â±Ç ÀïÅ» ÀüÀï;$ORDER$ guerre $FIRST$-$SECOND$ pour $COUNTRY$;$ORDER$$FIRST$-$SECOND$ Krieg um $COUNTRY$;;;;;;;;;;;x
+AGRESSION_WAR_TREATY_SIGNING;$FIRST_COUNTRY$-$SECOND_COUNTRY$ Á¶¾à °­Á¦ ÀüÀï;;;;;;;;;;;x
+AGRESSION_WAR_UNIFICATION_ANNEX_NAME;$ORDER$$SECOND_COUNTRY$ ÅëÀÏ ÀüÀï;$ORDER$ $FIRST$ libération de $SECOND_COUNTRY$;$ORDER$ $FIRST$ Befreiung von $SECOND_COUNTRY$;;;;;;;;;;;x
+AGRESSION_WAR_UNIFICATION_NAME;$ORDER$$STATE$ ÅëÀÏ ÀüÀï;$ORDER$$FIRST$ libération de $STATE$;$ORDER$$FIRST$ Befreiung von $STATE$;;;;;;;;;;;x
+AGRESSION_WAR_UNIFICATION_NAME_NGF_DEN;Á¦2Â÷ ½¶·¹½ººñÈ÷ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_UNIFICATION_NAME_PRU_DEN;Á¦2Â÷ ½¶·¹½ººñÈ÷ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_UNIFICATION_NAME_AUS_DEN;Á¦2Â÷ ½¶·¹½ººñÈ÷ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_UNIFICATION_NAME_SAR_AUS;$ORDER$ÀÌÅ»¸®¾Æ µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_UNIFICATION_NAME_SAR_KUK;$ORDER$ÀÌÅ»¸®¾Æ µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_WAR_WEBSTER_ASHBURTON;¾Æ·ç½ºÅõÅ© ºÐÀï;;;;;;;;;;;;;x
+AGRESSION_ACW_INTERVENTION;$ORDER$$FIRST_COUNTRY$ÀÇ ³²ºÏÀüÀï °³ÀÔ;;;;;;;;;;;;;x
+GREAT_WAR_NAME;$ORDER$¼¼°è´ëÀü;La $ORDER$ Grande Guerre;Der $ORDER$Großer Krieg;;;;;;;;;;;x
+NORMAL_ACW_INTERVENTION;$FIRST_COUNTRY$ÀÇ ³²ºÏÀüÀï °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_CALL_ALLIES_WAR_NAME;$ORDER$$FIRST_COUNTRY$ µ¿¸Í Áö¿ø ÀüÀï;;;;;;;;;;;;;
+NORMAL_CIVIL_WAR_NAME;$ORDER$$FIRST_COUNTRY$ ³»Àü;$ORDER$ guerre civile $FIRST$;$ORDER$$FIRST$ Bürgerkrieg;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_ARC_ENT;$ORDER$ÇÃ¶óÆ¾ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_CSA_USA;$ORDER$¹Ì±¹ ³²ºÏ ÀüÀï;$ORDER$ guerre de rébellion;$ORDER$Rebellionskrieg;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_ENG_EIC;µ¿ÀÎµµ È¸»ç Ç×Àï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_HAL_NEJ;$ORDER$¾Æ¶óºñ¾Æ ÆÐ±Ç ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_JAP_SAT;»çÃ÷¸¶ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_NEJ_HAL;$ORDER$¾Æ¶óºñ¾Æ ÆÐ±Ç ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_QNG_TPG;ÅÂÆòÃµ±¹ÀÇ ³­;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_SAT_JAP;»çÃ÷¸¶ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_SWI_SDB;Á¸´õºÐÆ® ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_TKG_CHO;$ORDER$º¸½Å ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_TKG_KAG;$ORDER$º¸½Å ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_TKG_SAT;$ORDER$º¸½Å ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_TKG_SEN;$ORDER$º¸½Å ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_TKG_TOS;$ORDER$º¸½Å ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_TKG_YZW;$ORDER$º¸½Å ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_USA_CSA;$ORDER$¹Ì±¹ ³²ºÏ ÀüÀï;$ORDER$ guerre de rébellion;$ORDER$Rebellionskrieg;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_USA_CSA_CSA;$ORDER$ºÏºÎÀÇ Ä§°ø ÀüÀï;$ORDER$ guerre d’agression nordiste;$ORDER$Krieg des Nördlichen Angriffs;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_USA_CSA_USA;$ORDER$³²ºÎÀÇ ¹Ý¶õ ÀüÀï;$ORDER$ guerre de rébellion;$ORDER$Rebellionskrieg;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_USA_FSA;$ORDER$¹Ì±¹ ³²ºÏ ÀüÀï;$ORDER$ guerre de rébellion;$ORDER$Rebellionskrieg;;;;;;;;;;;x
+NORMAL_CONQUEST_OF_CANADA;Äùº¤ ÇØ¹æ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CONQUEST_OF_LOUISIANA;·çÀÌÁö¾Ö³ª Á¤º¹ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_OTTOMAN_WAR_NAME;$ORDER$µ¿¹æ À§±â;;;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_OTTOMAN_WAR_NAME_RUS_TUR;µ¿¹æ À§±â;;;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME;$ORDER$$SECOND_COUNTRY$ ±ºÃà ÀüÀï;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$er Krieg;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_CHL_PBC;$ORDER$¿¬¹æ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_ENG_BUR;$ORDER$¿µ±¹-¹ö¸¶ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_FRA_ENG;$ORDER$¿µ±¹-ÇÁ¶û½º ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_FRA_NGF;$ORDER$ÇÁ¶û½º-ÇÁ·ÎÀÌ¼¾ ÀüÀï;$ORDER$ guerre franco-prussienne;$ORDER$Franco-Preussischer Krieg;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_FRA_PRU;$ORDER$ÇÁ¶û½º-ÇÁ·ÎÀÌ¼¾ ÀüÀï;$ORDER$ guerre franco-prussienne;$ORDER$Franco-Preussischer Krieg;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_RUS_HUN;$ORDER$·¯½Ã¾ÆÀÇ Çë°¡¸® °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_RUS_TUR;$ORDER$Å©¸² ÀüÀï;;;;;;;;;;;;;x
+NORMAL_CRIMEAN_WAR_NAME_RUS_TUR;$ORDER$Å©¸² ÀüÀï;;;;;;;;;;;;;x
+NORMAL_DEMOCRACY_WAR_NAME;$ORDER$$SECOND_COUNTRY$ ¹ÎÁÖÁ¤ º¹¿ø ÀüÀï;;;;;;;;;;;;;x
+NORMAL_EARLY_WAR_CONCESSION_NAME;$ORDER$$STATE$ Á¶Â÷ ÀüÀï;$ORDER$ Guerre de concession de $STATE$;$ORDER$ Krieg der $STATE$-Konzession;;;;;;;;;;;x
+NORMAL_GOLDEN_CIRCLE_DISMANTLEMENT;$ORDER$³²ºÎ¿¬ÇÕ ÆØÃ¢ ÀúÁö ÀüÀï;;;;;;;;;;;;;x
+NORMAL_PUNITIVE_EXPEDITION_WAR_NAME;$ORDER$$SECOND_COUNTRY$ Â¡¹ú ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_PUNITIVE_EXPEDITION_WAR_NAME_ENG_PER;$ORDER$¿µ±¹-Æä¸£½Ã¾Æ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_PUNITIVE_EXPEDITION_WAR_NAME_ENG_QNG;$ORDER$¾ÆÆí ÀüÀï;;;;;;;;;;;;;x
+NORMAL_PUNITIVE_EXPEDITION_WAR_NAME_ENG_TPG;$ORDER$¾ÆÆí ÀüÀï;;;;;;;;;;;;;x
+NORMAL_STOP_FRENCH_COLONIAL_AMBITIONS;ÇÁ¶û½º ½Ä¹Î ÆØÃ¢ ÀúÁö ÀüÀï;;;;;;;;;;;;;x
+NORMAL_SUBSTATE_STATE_NAME;$ORDER$$STATE$ Á¤º¹ ÀüÀï;$ORDER$$FIRST$ conquête de $STATE$;$ORDER$$FIRST$e Eroberung von $STATE$;;;;;;;;;;;x
+NORMAL_SYKES_PICOT_WAR_NAME;$ORDER$¼Ò¾Æ½Ã¾Æ ºÐÇÒ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_SYKES_PICOT_WAR_NAME_ENG_TUR;¼Ò¾Æ½Ã¾Æ ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_TOTAL_WAR_CONQUEST_NAME;$FIRST_COUNTRY$-$SECOND_COUNTRY$ ÃÑ·ÂÀü;Grande Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Gr?er Krieg;;;;;;;;;;;x
+NORMAL_TOTAL_WAR_TAKE_NAME;$FIRST_COUNTRY$-$SECOND_COUNTRY$ ÃÑ·ÂÀü;Grande Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Gr?er Krieg;;;;;;;;;;;x
+NORMAL_UNIFICATION_HUMILIATE_NAME;$FIRST_COUNTRY$-$SECOND_COUNTRY$ ÆÐ±Ç ÀüÀï;$FIRST$-$SECOND$ guerre fraternelle;Der $FIRST$-$SECOND$ Bruderkrieg;;;;;;;;;;;x
+NORMAL_UNIFICATION_HUMILIATE_NAME_AUS_PRU;¿À½ºÆ®¸®¾Æ-ÇÁ·ÎÀÌ¼¾ ÇüÁ¦ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_UNIFICATION_HUMILIATE_NAME_NGF_AUS;¿À½ºÆ®¸®¾Æ-ÇÁ·ÎÀÌ¼¾ ÇüÁ¦ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_UNIFICATION_HUMILIATE_NAME_PRU_AUS;¿À½ºÆ®¸®¾Æ-ÇÁ·ÎÀÌ¼¾ ÇüÁ¦ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_ADD_SPHERE_NAME;$ORDER$$SECOND_COUNTRY$ ¼¼·Â±Ç ÆíÀÔ ÀüÀï;$ORDER$ guerre de la soumission $SECOND$;$ORDER$Krieg der $SECOND$ Unterwerfung;;;;;;;;;;;x
+NORMAL_WAR_ADD_SPHERE_NAME_ENG_CHI;$ORDER$¾ÆÆí ÀüÀï;$ORDER$ guerre de l'opium;$ORDER$Opiumkrieg;;;;;;;;;;;x
+NORMAL_WAR_ADD_SPHERE_NAME_ENG_MNP;¸¶´ÏÇª¸£¿¡ ´ëÇÑ ¿µ±¹ÀÇ °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_ADD_SPHERE_NAME_FRA_PAP;·Î¸¶ Çõ¸í;;;;;;;;;;;;;x
+NORMAL_WAR_ADD_SPHERE_NAME_USA_TKG;Æä¸® Á¦µ¶ÀÇ ÀÏº» ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_ALL_CORES_NAME;$ORDER$$FIRST_COUNTRY$ ¿µÅä ¼öº¹ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_ALL_CORES_NAME_ENG_USA;$ORDER$¿µ±¹-¹Ì±¹ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_ALL_CORES_NAME_GER_AUS;$ORDER$µ¶ÀÏ ÅëÀÏ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_ALL_CORES_NAME_GER_KUK;$ORDER$µ¶ÀÏ ÅëÀÏ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_ALL_CORES_NAME_USA_ENG;$ORDER$¿µ±¹-¹Ì±¹ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_ALL_CORES_NAME_USA_MEX;$ORDER$¸ß½ÃÄÚ-¹Ì±¹ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_AUSTRIAN_EMPIRE_NAME;$ORDER$Á¦±¹ ÀçÅëÇÕ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_AUSTRIAN_EMPIRE_NAME_AUS_KRA;$ORDER$Å©¶óÄíÇÁ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_BOXER_NAME;$ORDER$ÀÇÈ­´Ü ÀüÀï;$ORDER$ rébellion des Boxers;$ORDER$Boxer Aufstand;;;;;;;;;;;x
+NORMAL_WAR_BRITISH_RAJ_NAME;$ORDER$ÀÎµµ Áö¹è±Ç ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CHINA_REUNIFICATION;$ORDER$Áß±¹ ÅëÀÏ ÀüÀï;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg;;;;;;;;;;;x
+NORMAL_WAR_CIVIL_WAR_NAME_USA_CSA;¹Ì±¹ ³²ºÏ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_COLONIAL_NAME;$ORDER$$STATE$ ½Ä¹ÎÁö ÀüÀï;$ORDER$$FIRST$ conquête coloniale de $STATE$;$ORDER$$FIRST$ Kolonialeroberung von $STATE$;;;;;;;;;;;x
+NORMAL_WAR_COLONIAL_RECONQUEST_NAME;$ORDER$$FIRST_COUNTRY$ ½Ä¹ÎÁö ¼öº¹ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_COLONY_NAME;$ORDER$$COUNTRY$ ½Ä¹ÎÁö ÀüÀï;$ORDER$$FIRST$ conquête coloniale de $STATE$;$ORDER$$FIRST$e Kolonialeroberung von $STATE$;;;;;;;;;;;x
+NORMAL_WAR_CONCESSION_NAME;$ORDER$$STATE$ ÇÒ¾ç ÀüÀï;$ORDER$ Guerre de concession de $STATE$;$ORDER$ Krieg der $STATE$-Konzession;;;;;;;;;;;x
+NORMAL_WAR_CONCESSION_NAME_ENG_ASH;¾Æ½¬¾ÈÆ¼ ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_CONCESSION_NAME_ENG_BUR;Á¦2Â÷ ¹ö¸¶ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONCESSION_NAME_FRA_DAI;ÄÚÄ£Â÷ÀÌ³ª ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_CONCESSION_NAME_NET_LAN;Äá½Ã ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME;$ORDER$$SECOND_COUNTRY$ Á¤º¹ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_BHR_QAT;$ORDER$Ä«Å¸¸£-¹Ù·¹ÀÎ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_ENG_LHJ;¾Æµ§ ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_ENG_MUG;ÀÎµµ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_ENG_ORA;º¸¾î ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_ENG_PNJ;$ORDER$¿µ±¹-½ÃÅ© ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_ENG_TRN;º¸¾î ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_QNG_GUI;$ORDER$¸Ï¿ÀÁ· ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_QNG_NIA;$ORDER$¿°±ºÀÇ ³­;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_QNG_XBI;$ORDER$µÕ°£ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_RUS_CIR;$ORDER$·¯½Ã¾Æ-Ã¼¸£ÄÉ½º ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_RUS_CPL;$ORDER$Æú¶õµå µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_RUS_DAG;$ORDER$¹«¸®µå ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_SAR_PAP;ÃµÀÎ´ë ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_ANY_NAME_SIC_SYC;$ORDER$½ÃÄ¥¸®¾Æ Çõ¸í;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME;$ORDER$$SECOND_COUNTRY$ Á¤º¹ ÀüÀï;$ORDER$ conquête de la guerre $SECOND$;$ORDER$Eroberung des $SECOND$ Krieges;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_BRZ_URU;$ORDER$½Ã½ºÇÃ¶óÆ¾ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_ENG_ASH;È²±Ý ¿ÁÁÂ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_ENG_ORA;º¸¾î ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_ENG_TRN;º¸¾î ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_ENG_USA;$ORDER$$SECOND_COUNTRY$ µ¶¸³ ÀüÀï;$ORDER$$SECOND$ guerre d'indépendence;$ORDER$$SECOND$ Unabhängigkeitskrieg;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_FRA_TUN;ÇÁ¶û½ºÀÇ Æ¢´ÏÁö Á¤º¹;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_HAI_DOM;$ORDER$µµ¹Ì´ÏÄ« µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_SAR_PAP;ÃµÀÎ´ë ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_TUR_CRE;$ORDER$Å©·¹Å¸ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_DISMANTLE_NAME;$ORDER$$SECOND_COUNTRY$ ÇØÃ¼ ÀüÀï;Grande Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Größer Krieg;;;;;;;;;;;x
+NORMAL_WAR_END_SLAVE_TRADE;³ë¿¹¹«¿ª Á¾½Ä ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_ENFORCE_CLAYTON_TREATY;Å¬·¹ÀÌÆ°-ºÒ¿ö Á¶¾à ÀÌÇà ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_FORALLIES_NAME;$ORDER$$STATE$ µ¿¸Í Áö¿ø ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_FREE_ALLIED_CORE_NAME;$ORDER$$COUNTRY$ ¿µÅä ¼öº¹ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_FREE_BALKANS_NAME;$ORDER$¹ßÄ­ ÇØ¹æ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_FREE_NAME;$ORDER$$COUNTRY$ ÇØ¹æ ÀüÀï;$ORDER$$FIRST$ guerre de la liberté $COUNTRY_ADJ$;$ORDER$$FIRST$ $COUNTRY_ADJ$ Freiheitskrieg;;;;;;;;;;;x
+NORMAL_WAR_GUNBOAT_NAME;$ORDER$$SECOND_COUNTRY$ ¹«·Â °³ÀÔ;$ORDER$$FIRST$ intervention en $SECOND_COUNTRY$;$ORDER$$FIRST$ Intervention in $SECOND_COUNTRY$;;;;;;;;;;;x
+NORMAL_WAR_GUNBOAT_NAME_ENG_CHI;$ORDER$¾ÆÆí ÀüÀï;$ORDER$ guerre de l'opium;$ORDER$Opiumkrieg;;;;;;;;;;;x
+NORMAL_WAR_GUNBOAT_NAME_FRA_MEX;$ORDER$ÆäÀÌ½ºÆ®¸® ÀüÀï;$ORDER$ guerre de la pâtisserie;$ORDER$Kuchenkrieg;;;;;;;;;;;x
+NORMAL_WAR_HOLY_LAND_NAME;$ORDER$¼ºÁö ÀïÅ» ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RECLAIM_THE_EMPIRE_NAME;$ORDER$Á¦±¹ Àç°Ç ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME;$ORDER$$SECOND_COUNTRY$ ±¼¿å ÀüÀï;$ORDER$ guerre pour l'honneur $FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg der Ehre;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_AUS_FRA;¶óÀÎ À§±â;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_BAM_FRA;ÇÁ¶û½ºÀÇ ¼ö´Ü Á¤º¹;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_ENG_ETH;¿µ±¹ÀÇ ¾Æºñ½Ã´Ï¾Æ ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_ENG_TPG;¿µ±¹ÀÇ Áß±¹ °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_ENT_ARC;¾Æ¸£ÇîÆ¼³ª ³»Àü;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_FRA_KOR;ÇÁ¶û½ºÀÇ ÇÑ±¹ ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_MAS_FRA;ÇÁ¶û½ºÀÇ ¼ö´Ü Á¤º¹;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_PRU_RUS;Å©¸² ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_QNG_JAP;$ORDER$Ã»ÀÏ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_TOU_FRA;ÇÁ¶û½ºÀÇ ¼ö´Ü Á¤º¹;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_WOL_FRA;ÇÁ¶û½ºÀÇ ¼¼³×°¥ Á¤º¹;;;;;;;;;;;;;x
+NORMAL_WAR_HUNGARIAN_GAME;Çë°¡¸® ÆÐ±Ç ºÐÀï;;;;;;;;;;;;;x
+NORMAL_WAR_GREAT_GAME;Áß¾Ó¾Æ½Ã¾Æ ÆÐ±Ç ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_INDEPENDENCE_NAME;$ORDER$$FIRST_COUNTRY$ µ¶¸³ ÀüÀï;$ORDER$$FIRST$ guerre d'indépendance;$ORDER$$FIRST$ Unabhängigkeitskrieg;;;;;;;;;;;x
+NORMAL_WAR_LIBERATE_BALKANS_NAME;$ORDER$¹ßÄ­ ÇØ¹æ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_LIBERATE_NAME;$ORDER$$COUNTRY$ ÇØ¹æ ÀüÀï;$ORDER$$FIRST$ guerre de libération $COUNTRY_ADJ$;$ORDER$$FIRST$-$COUNTRY_ADJ$er Freiheitskrieg;;;;;;;;;;;x
+NORMAL_WAR_LIBERATE_NAME_AUS_EGY;$ORDER$¿À½ºÆ®¸®¾ÆÀÇ ÀÌÁýÆ® °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_LIBERATE_NAME_ENG_EGY;$ORDER$¿µ±¹ÀÇ ÀÌÁýÆ® °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_LIBERATE_NAME_FRA_EGY;$ORDER$ÇÁ¶û½ºÀÇ ÀÌÁýÆ® °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_LIBERATE_NAME_ITA_TUR;¸®ºñ¾Æ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_LIBERATE_NAME_NET_EGY;$ORDER$³×´ú¶õµåÀÇ ÀÌÁýÆ® °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_LIBERATE_NAME_PRU_EGY;$ORDER$ÀÌÁýÆ®¿¡ ´ëÇÑ ÇÁ·ÎÀÌ¼¾ °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_LIBERATE_NAME_RUS_EGY;$ORDER$ÀÌÁýÆ®¿¡ ´ëÇÑ ·¯½Ã¾ÆÀÇ °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_LIBERATE_NAME_SPA_EGY;$ORDER$½ºÆäÀÎÀÇ ÀÌÁýÆ® °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_MONROE_DOCTRINE_NAME;$ORDER$¸Õ·Î µ¶Æ®¸° ¼öÈ£ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_GENDARME_OF_EUROPE_NAME;$ORDER$$SECOND_COUNTRY$ ¹ÝÇõ¸í °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_NAME;$ORDER$$FIRST_COUNTRY$-$SECOND_COUNTRY$ ÀüÀï;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg;;;;;;;;;;;x
+NORMAL_WAR_NAME_COMMUNISM;$ORDER$$SECOND_COUNTRY$ °ø»êÇõ¸í ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_NAME_DEMOCRACY;$ORDER$$SECOND_COUNTRY$ ¹ÝÇõ¸í ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_NAME_ENG_USA;$ORDER$$SECOND_COUNTRY$ µ¶¸³ ÀüÀï;$ORDER$$SECOND$ guerre d'indépendence;$ORDER$$SECOND$ Unabhängigkeitskrieg;;;;;;;;;;;x
+NORMAL_WAR_NAME_FASCISM;$ORDER$$SECOND_COUNTRY$ ÆÄ½ÃÁò È®»ê ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_NAME_FRA_QNG;$ORDER$Ã»ÇÁ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_NAME_REPARATIONS;$ORDER$$SECOND_COUNTRY$ ¹è»ó±Ý ¿ä±¸ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_NAME_REPARATIONS_CHL_PBC;$ORDER$¿¬¹æ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_NATURAL_BORDERS_NAME;$ORDER$ÇÁ¶û½º ÀÚ¿¬ ±¹°æ È®º¸ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_NEGOTIATE_NAME;$ORDER$$STATE$ ¹ÝÈ¯ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_OF_THE_AMERICAS;¾Æ¸Þ¸®Ä« ´ë·ú ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PADRI_WAR;ÆÄµå¸® ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME;$ORDER$$SECOND_COUNTRY$ º¸È£±¹È­ ÀüÀï;$ORDER$ $FIRST$ acquisition de $SECOND$;$ORDER$ Übernahme von $FIRST$ $SECOND$;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_ENG_ASH;Á¦2Â÷ ¾Æ½¬¾ÈÆ¼ ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_ENG_BEN;$ORDER$º£³Ã ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_ENG_BUR;Á¦3Â÷ ¹ö¸¶ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_ENG_EGY;¿µ±¹-ÀÌÁýÆ® ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_ENG_MNP;$ORDER$¿µ±¹-¸¶´ÏÇª¸£ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_ENG_SOK;$ORDER$³ªÀÌÁö¸®¾Æ ºÏºÎ ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_ENG_SUD;¸¶Èåµð ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_ENG_ZUL;$ORDER$¿µ±¹-ÁÙ·ç ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_FRA_DAH;$ORDER$ÇÁ¶û½º-´ÙÈ£¸Þ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_FRA_DAI;ÅëÅ· ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_FRA_TOO;ÇÁ¶û½ºÀÇ ¼¼³×°¥ Á¤º¹;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_FRA_TUN;ÇÁ¶û½ºÀÇ Æ¢´ÏÁö Á¤º¹;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_JAP_KOR;ÀÏº»ÀÇ ÇÑ±¹ º¸È£±¹È­ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_NET_KLM;$ORDER$¹ÝÀÚ¸£¸¶½Å ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_NET_LAN;Äá½Ã ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME;$ORDER$$SECOND_COUNTRY$ Á¾¼ÓÈ­ ÀüÀï;$ORDER$ guerre de $FIRST$ pour le contrôle de $SECOND_COUNTRY$;$ORDER$ Krieg um die Kontrolle von $FIRST$ über $SECOND_COUNTRY$;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_AFG;$ORDER$¿µ±¹-¾ÆÇÁ°¡´Ï½ºÅº ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_BHU;µà¾Æ¸£ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_IRE;$ORDER$¾ÆÀÏ·£µå µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_JAM;¸ð¶õÆ® º£ÀÌ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_ORA;$ORDER$º¸¾î ÀüÀï;$ORDER$ guerre des Boers;$ORDER$Burenkrieg;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_PNJ;$ORDER$¿µ±¹-½ÃÅ© ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_SIK;¿µ±¹ÀÇ ½ÃÅ´ ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_TRN;$ORDER$º¸¾î ÀüÀï;$ORDER$ guerre des Boers;$ORDER$Burenkrieg;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_USA;$ORDER$$SECOND_COUNTRY$ µ¶¸³ ÀüÀï;$ORDER$$SECOND$ guerre d'indépendence;$ORDER$$SECOND$ Unabhängigkeitskrieg;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_JAP_MCK;¹¬µ§ »ç°Ç;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_QNG_KOR;Ã»-ÇÑ±¹ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_QNG_PGG;$ORDER$ÆÇÅ×ÀÌ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_QNG_UYG;$ORDER$µÕ°£ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_TUR_EGY;$ORDER$µ¿¹æ À§±â;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_TUR_ROM;$ORDER$·ç¸¶´Ï¾Æ µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_TUR_WAL;$ORDER$¿Ð¶óÅ°¾Æ Çõ¸í;;;;;;;;;;;;;x
+NORMAL_WAR_REMOVE_WMDS_NAME;$ORDER$$SECOND_COUNTRY$ ´ë·®»ì»ó¹«±â ÇØÃ¼ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_AMERICA_NAME;$ORDER$¹Ì±¹ ÀçÅëÇÕ ÀüÀï;;;;;;;;;;;;;x
+NOMRLA_WAR_RESTORE_NEUTRALITY;$FIRST_COUNTRY$ Áß¸³ ¼öÈ£ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME;$ORDER$$SECOND_COUNTRY$ Áú¼­ È¸º¹ ÀüÀï;$ORDER$$FIRST$ rétablissement de l'ordre dans les provinces de $SECOND$;$ORDER$$FIRST$ Wiederherstellung der Ordnung in den $SECOND$ Provinzen;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_ARG_ENT;$ORDER$ÇÃ¶óÆ¾ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_AUS_HUN;$ORDER$Çë°¡¸® Çõ¸í;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_AUS_KRA;$ORDER$Å©¶óÄíÇÁ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_AUS_LOM;¹Ð¶ó³ëÀÇ 5ÀÏ;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_AUS_VEN;$ORDER$º£³×Ä¡¾Æ Çõ¸í;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_BRZ_URU;$ORDER$½Ã½ºÇÃ¶óÆ¾ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_DEN_SWH;$ORDER$½¶·¹½ººñÈ÷ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_ENG_IRE;$ORDER$¾ÆÀÏ·£µå µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_ENG_NAL;$ORDER$º¸¾î ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_ENG_ORA;$ORDER$º¸¾î ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_ENG_TRN;$ORDER$º¸¾î ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_GON_SHW;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_GON_TIG;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_JAP_EZO;ÇÏÄÚ´ÙÅ× ¿øÁ¤;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_KUK_HUN;Á¦2Â÷ Çë°¡¸® Çõ¸í;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_MEX_CAL;$ORDER$º£¾î ÇÃ·¡±× ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_MEX_CHP;$ORDER$Ä¡¾ÆÆÄ½ºÀÇ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_MEX_OAX;$ORDER$¿À¾Ç»çÄ«ÀÇ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_MEX_RGR;$ORDER$¸®¿À ±×¶õµ¥ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_MEX_TBS;$ORDER$Å¸¹Ù½ºÄÚ ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_MEX_YUC;$ORDER$À¯Ä«Åº µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_MEX_ZAC;$ORDER$ÀÚÄ«Å×Ä«½º ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_RUS_CIR;$ORDER$·¯½Ã¾Æ-Ã¼¸£ÄÉ½º ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_RUS_CPL;$ORDER$Æú¶õµå µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_RUS_POL;$ORDER$Æú¶õµå µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_SAR_GEN;$ORDER$Á¦³ë¹Ù ¹Ý¶õ;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_SHW_GON;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_SHW_TIG;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_TIG_GON;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_TIG_SHW;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_TUR_BHT;$ORDER$¿À½º¸¸ÀÇ Äí¸£µð½ºÅº °³ÀÔ;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_USA_CSA;¹Ì±¹ ³²ºÏ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RHINE_CRISIS;¶óÀÎ À§±â;;;;;;;;;;;;;x
+NORMAL_WAR_RUS_CIR;$ORDER$·¯½Ã¾Æ-Ã¼¸£ÄÉ½º ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_RUS_DAG;$ORDER$¹«¸®µå ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_MEXICO_CONCESSION_RUS;·¯½Ã¾ÆÀÇ Ä¶¸®Æ÷´Ï¾Æ Ä§°ø;;;;;;;;;;;;;x
+NORMAL_WAR_RUDEBOI_NAME;$ORDER$$SECOND_COUNTRY$ ºÀ¼â ÀüÀï;$ORDER$$FIRST$ guerre de confinement $SECOND$;$ORDER$$FIRST$ Krieg der $SECOND$ Beherrschung;;;;;;;;;;;x
+NORMAL_WAR_SAHEL_JIHAD_NAME;$ORDER$$FIRST_COUNTRY$ ÁöÇÏµå;;;;;;;;;;;;;x
+NORMAL_WAR_SONDERBUND;Á¸´õºÐÆ® ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_SUBSTATE_ANNEX_NAME;$ORDER$$COUNTRY$ º´ÇÕ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME;$ORDER$$STATE$ ¼öº¹ ÀüÀï;$ORDER$$FIRST$ libération de $STATE$;$ORDER$$FIRST$ Befreiung von $STATE$;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_CHL_BOL;$ORDER$ÅÂÆò¾ç ÀüÀï;$ORDER$ guerre du Pacifique;$ORDER$Pazifikkrieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_CHL_PEU;$ORDER$ÅÂÆò¾ç ÀüÀï;$ORDER$ guerre du Pacifique;$ORDER$Pazifikkrieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_ENG_USA;$ORDER$$SECOND_COUNTRY$ µ¶¸³ ÀüÀï;$ORDER$$SECOND$ guerre d'indépendence;$ORDER$$SECOND$ Unabhängigkeitskrieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_GON_SHW;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_GON_TIG;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_NGF_DEN;Á¦2Â÷ ½¶·¹½ººñÈ÷ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_RUS_CIR;$ORDER$Ä°Ä«½º ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_RUS_DAG;$ORDER$Ä°Ä«½º ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_SHW_GON;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_SHW_TIG;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_TIG_GON;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_TIG_SHW;Á¦¸Þ³× ¸Þ»çÇÉÆ®;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_TOO_FRA;ÇÁ¶û½ºÀÇ ¼¼³×°¥ Á¤º¹;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_USA_MEX_MEX;$ORDER$¸ß½ÃÄÚ¿¡ ´ëÇÑ ¹Ì±¹ÀÇ Ä§°ø;$ORDER$ guerre américaine d'invasion du Mexique;$ORDER$Amerikanische Invasion von Mexiko;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_USA_MEX_USA;$ORDER$¸ß½ÃÄÚ-¹Ì±¹ ÀüÀï;$ORDER$ guerre mexicano-américaine;$ORDER$Mexikanisch-Amerikanischer Krieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_WOL_FRA;ÇÁ¶û½ºÀÇ ¼¼³×°¥ Á¤º¹;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME;$ORDER$$STATE$ Á¤º¹ ÀüÀï;$ORDER$$FIRST$ conquête de $STATE$;$ORDER$$FIRST$ Eroberung von $STATE$;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_CHL_BOL;$ORDER$ÅÂÆò¾ç ÀüÀï;$ORDER$ guerre du Pacifique;$ORDER$Pazifikkrieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_CHL_PEU;$ORDER$ÅÂÆò¾ç ÀüÀï;$ORDER$ guerre du Pacifique;$ORDER$Pazifikkrieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_ENG_ORA;$ORDER$º¸¾î ÀüÀï;$ORDER$ guerre des Boers;$ORDER$Burenkrieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_ENG_QNG;$ORDER$¾ÆÆí ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_ENG_TRN;$ORDER$º¸¾î ÀüÀï;$ORDER$ guerre des Boers;$ORDER$Burenkrieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_ENG_USA;$ORDER$$SECOND_COUNTRY$ µ¶¸³ ÀüÀï;$ORDER$$SECOND$ guerre d'indépendence;$ORDER$$SECOND$ Unabhängigkeitskrieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_ORA_ENG;$ORDER$º¸¾î ÀüÀï;$ORDER$ guerre des Boers;$ORDER$Burenkrieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_RUS_CIR;$ORDER$Ä°Ä«½º ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_RUS_DAG;$ORDER$Ä°Ä«½º ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_TRN_ENG;$ORDER$º¸¾î ÀüÀï;$ORDER$ guerre des Boers;$ORDER$Burenkrieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_USA_MEX_MEX;$ORDER$¸ß½ÃÄÚ¿¡ ´ëÇÑ ¹Ì±¹ÀÇ Ä§°ø;$ORDER$ guerre américaine d'invasion du Mexique;$ORDER$Amerikanische Invasion von Mexiko;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_USA_MEX_USA;$ORDER$¸ß½ÃÄÚ-¹Ì±¹ ÀüÀï;$ORDER$ guerre mexicano-américaine;$ORDER$Mexikanisch-Amerikanischer Krieg;;;;;;;;;;;x
+NORMAL_WAR_TAKE_SPHERE_NAME;$ORDER$$COUNTRY$ ¼¼·Â±Ç ÀïÅ» ÀüÀï;$ORDER$ guerre de $COUNTRY$;$ORDER$$COUNTRY$ Krieg;;;;;;;;;;;x
+NORMAL_WAR_TREATY_SIGNING;$FIRST_COUNTRY$-$SECOND_COUNTRY$ Á¶¾à °­Á¦ ÀüÀï;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_ANNEX_NAME;$ORDER$$SECOND_COUNTRY$ ÅëÀÏ ÀüÀï;$ORDER$ $FIRST$ libération de $SECOND_COUNTRY$;$ORDER$ $FIRST$ Befreiung von $SECOND_COUNTRY$;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_NAME;$ORDER$$STATE$ ÅëÀÏ ÀüÀï;$ORDER$$FIRST$ libération de $STATE$;$ORDER$$FIRST$ Befreiung von $STATE$;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_NAME_NGF_DEN;Á¦2Â÷ ½¶·¹½ººñÈ÷ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_NAME_NGF_FRA;$ORDER$ÇÁ¶û½º-ÇÁ·ÎÀÌ¼¾ ÀüÀï;$ORDER$ guerre franco-prussienne;$ORDER$Franco-Preussischer Krieg;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_NAME_PRU_FRA;$ORDER$ÇÁ¶û½º-ÇÁ·ÎÀÌ¼¾ ÀüÀï;$ORDER$ guerre franco-prussienne;$ORDER$Franco-Preussischer Krieg;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_NAME_SAR_AUS;$ORDER$ÀÌÅ»¸®¾Æ µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_NAME_SAR_KUK;$ORDER$ÀÌÅ»¸®¾Æ µ¶¸³ ÀüÀï;;;;;;;;;;;;;x
+NORMAL_WAR_WEBSTER_ASHBURTON;¾Æ·ç½ºÅõÅ© ºÐÀï;;;;;;;;;;;;;x
+NORMAL_NEW_WORLD_HEGEMONY;$FIRST_COUNTRY$-$SECOND_COUNTRY$ ½Å´ë·ú ÆÐ±Ç ÀüÀï;;;;;;;;;;;;;x
+AGRESSION_NEW_WORLD_HEGEMONY;$FIRST_COUNTRY$-$SECOND_COUNTRY$ ½Å´ë·ú ÆÐ±Ç ÀüÀï;;;;;;;;;;;;;x

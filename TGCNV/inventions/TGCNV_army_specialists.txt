@@ -1,0 +1,16 @@
+# Independent army unlocks; aviation continues to use the air extension.
+tgcnv_armored_car_development = {
+    limit = { combustion_engine = 1 infiltration = 1 }
+    chance = { base = 100 }
+    effect = { activate_unit = plane }
+}
+tgcnv_airborne_infantry = {
+    limit = { tgcnv_ww2_army_doctrine_1930 = 1 early_aeronautics = 1 }
+    chance = { base = 100 }
+    effect = { activate_unit = tgcnv_paratrooper }
+}
+tgcnv_marine_infantry = {
+    limit = { army_professionalism = 1 post_nelsonian_thought = 1 }
+    chance = { base = 100 }
+    effect = { activate_unit = tgcnv_marine }
+}

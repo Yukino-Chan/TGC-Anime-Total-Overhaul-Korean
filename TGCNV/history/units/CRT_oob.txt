@@ -1,0 +1,39 @@
+USA = {
+	value = -200
+}
+SBA = {
+	value = -80
+}
+army = {
+	name = "EjÉÍrcito de Corrientes"
+	location = 2356
+	regiment = {
+		name= "1. DivisiÉ×n de InfanterÉÑa"
+		type = infantry
+		home = 2356
+	}
+}
+leader = {
+	name = "Rafael LeÉ×n de Atienza"
+	type = land
+	date = 1824.1.1
+	background = gifted_administrator
+	personality = resourceful
+	prestige = 0.08
+}
+leader = {
+	name = "FÉÍlix MarÉÑa GÉ×mez"
+	type = land
+	date = 1827.1.1
+	background = diplomat
+	personality = mediocre
+	prestige = 0.04
+}
+leader = {
+	name = "JosÉÍ LÉ×pez"
+	type = land
+	date = 1827.1.1
+	background = hated
+	personality = keen
+	prestige = 0.02
+}

@@ -1,0 +1,47 @@
+# TGCNV naval candidate. Native construction, movement, combat and repair.
+tgcnv_submarine = {
+ icon = 27
+ naval_icon = 5
+ type = naval
+ sprite = Raider
+ active = no
+ unit_type = light_ship
+ move_sound = steam_move
+ select_sound = steam_selected
+ floating_flag = yes
+ can_build_overseas = no
+ colonial_points = 0
+ priority = 14
+ max_strength = 100
+ default_organisation = 35
+ maximum_speed = 12
+ weighted_value = 5.0
+ build_time = 210
+ build_cost = {
+  steamer_convoy = 80
+  artillery = 45
+  steel = 1100
+  canned_food = 80
+  regular_clothes = 80
+  telephones = 100
+ }
+ min_port_level = 3
+ limit_per_port = -1
+ supply_consumption_score = 8
+ supply_consumption = 0.15
+ supply_cost = {
+  steamer_convoy = 0.3
+  artillery = 0.1
+  canned_food = 0.5
+  fuel = 0.7
+  ammunition = 0.3
+  regular_clothes = 0.3
+  steel = 1
+ }
+ hull = 14
+ gun_power = 4
+ fire_range = 0.35
+ evasion = 0.65
+ torpedo_attack = 24
+}
+

@@ -1,0 +1,1070 @@
+country_event = {
+
+	id = 31300
+
+	title = "EVTNAME31300"
+	desc = "EVTDESC31300"
+	picture = "census"
+
+	trigger = {
+		tag = SWI
+		year = 1837
+		NOT = { year = 1840 }
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1838
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1839
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31300"
+
+		prestige = 4
+		any_pop = { consciousness = 1 }
+	}
+}
+
+country_event = {
+
+	id = 31301
+
+	title = "EVTNAME31301"
+	desc = "EVTDESC31301"
+	picture = "napoleon3"
+
+	trigger = {
+		tag = SWI
+		has_global_flag = LouisNapoleonExtradite
+		year = 1837
+		NOT = {
+			year = 1840
+			war_with = FRA
+			has_country_flag = LouisNapoleonExtradited
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1838
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1840
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31301"
+
+		relation = { who = FRA value = -50 }
+		set_country_flag = LouisNapoleonExtradited
+	}
+}
+
+country_event = {
+
+	id = 31302
+
+	title = "EVTNAME31302"
+	desc = "EVTDESC31302"
+	picture = "telegraph"
+
+	trigger = {
+		tag = SWI
+		year = 1852
+		NOT = { year = 1855 }
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1853
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1854
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31302"
+
+		prestige = 4
+	}
+}
+
+country_event = {
+
+	id = 31303
+
+	title = "EVTNAME31303"
+	desc = "EVTDESC31303"
+	picture = "train"
+
+	trigger = {
+		tag = SWI
+		has_country_flag = democracy_gov
+		year = 1898
+		NOT = { year = 1902 }
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1899
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1900
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31303"
+
+		plurality = 3
+	}
+}
+
+country_event = {
+
+	id = 31304
+
+	title = "EVTNAME31304"
+	desc = "EVTDESC31304"
+	picture = "jews"
+
+	trigger = {
+		tag = SWI
+		has_country_flag = democracy_gov
+		year = 1866
+		NOT = { year = 1869 }
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1867
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1868
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31303"
+
+		plurality = 3
+		any_pop = {
+			limit = { has_pop_religion = jewish }
+			consciousness = 1
+		}
+	}
+}
+
+country_event = {
+
+	id = 31305
+
+	title = "EVTNAME31305"
+	desc = "EVTDESC31305"
+	picture = "liquor"
+
+	trigger = {
+		tag = SWI
+		has_country_flag = democracy_gov
+		year = 1887
+		NOT = { year = 1890 }
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1888
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1889
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31303"
+
+		plurality = 3
+	}
+}
+
+country_event = {
+
+	id = 31306
+
+	title = "EVTNAME31306"
+	desc = "EVTDESC31306"
+	picture = "Upperhouse"
+
+	trigger = {
+		tag = SWI
+		owns = 2568 # Lugano Ticino
+		year = 1890
+		NOT = { year = 1893 }
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1888
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1889
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31306"
+
+		2568 = {
+			any_pop = {
+				scaled_militancy = { factor = 8 ideology = liberal }
+				scaled_consciousness = { factor = 2 ideology = conservative }
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 31307
+
+	title = "EVTNAME31307"
+	desc = "EVTDESC31307"
+	picture = "sisiassassination"
+
+	news = yes
+	news_desc_long = "EVTDESC31307_NEWS_LONG"
+	news_desc_medium = "EVTDESC31307_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC31307_NEWS_SHORT"
+
+	trigger = {
+		tag = SWI
+		year = 1898
+		exists = AUS
+		AUS = {
+			has_country_flag = monarchy_gov
+		}
+		NOT = { year = 1902 }
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1899
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1900
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31307"
+
+		prestige = -50
+	}
+}
+
+country_event = {
+
+	id = 31308
+
+	title = "EVTNAME31308"
+	desc = "EVTDESC31308"
+	picture = "anticorn"
+
+	news = yes
+	news_desc_long = "EVTDESC31308_NEWS_LONG"
+	news_desc_medium = "EVTDESC31308_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC31308_NEWS_SHORT"
+
+	trigger = {
+		tag = SWI
+		has_country_flag = democracy_gov
+		war = no
+		year = 1915
+		NOT = {
+			year = 1918
+			has_country_flag = 1stSocCon
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1916
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1917
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31308"
+
+		plurality = 1
+		set_country_flag = 1stSocCon
+		labourers = { consciousness = 1 }
+		craftsmen = { consciousness = 1 }
+	}
+}
+
+country_event = {
+
+	id = 31309
+
+	title = "EVTNAME31309"
+	desc = "EVTDESC31309"
+	picture = "Prosper"
+
+	trigger = {
+		tag = SWI
+		has_country_flag = democracy_gov
+		war = no
+		year = 1916
+		has_country_flag = 1stSocCon
+		NOT = {
+			year = 1919
+			has_country_flag = 2ndSocCon
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1916
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1917
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31308"
+
+		plurality = 1
+		set_country_flag = 2ndSocCon
+		labourers = { scaled_militancy = { factor = 1 ideology = socialist } }
+		craftsmen = { scaled_militancy = { factor = 1 ideology = socialist } }
+	}
+}
+
+country_event = {
+
+	id = 31310
+
+	title = "EVTNAME31310"
+	desc = "EVTDESC31310"
+	picture = "genevaconvention"
+
+	news = yes
+	news_desc_long = "EVTDESC31310_NEWS_LONG"
+	news_desc_medium = "EVTDESC31310_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC31310_NEWS_SHORT"
+
+	trigger = {
+		tag = SWI
+		has_global_flag = geneva_convention_held
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1864
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1865
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31310"
+
+		prestige = 40
+	}
+}
+#TODO: Let France and Austria intervene in Sonderbund War at risk of angering Britain
+#Sonderbund War
+country_event = {
+	id = 99800
+	title = "EVTNAME99800"
+	desc = "EVTDESC99800"
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = SWI
+		year = 1847
+		ruling_party_ideology = liberal
+		NOT = { has_country_flag = sonderbund }
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = "EVTOPTA99800"
+
+		prestige = -20
+		UTI = {
+			any_country = {
+				limit = {
+					tag = THIS
+					has_country_modifier = neutrality
+				}
+				set_country_flag = was_neutral_before_sonderbund
+			}
+		}
+		remove_country_modifier = neutrality
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				owner = { release_vassal = THIS tech_school = traditional_academic }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		3250 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		609 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		3272 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		606 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		any_country = {
+			limit = { has_country_flag = sonderbund_ally }
+			create_alliance = SDB
+		}
+		war = {
+			target = SDB
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = sonderbund_cb }
+		}
+		set_country_flag = sonderbund
+
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = "EVTOPTB99800"
+
+		prestige = -20
+		UTI = {
+			any_country = {
+				limit = {
+					tag = THIS
+					has_country_modifier = neutrality
+				}
+				set_country_flag = was_neutral_before_sonderbund
+			}
+		}
+		remove_country_modifier = neutrality
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				release_vassal = THIS tech_school = traditional_academic
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		3250 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		609 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		3272 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		606 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		any_country = {
+			limit = { has_country_flag = sonderbund_ally }
+			create_alliance = SDB
+		}
+		war = {
+			target = SDB
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = sonderbund_cb }
+		}
+		set_country_flag = sonderbund
+		change_tag_no_core_switch = SDB
+
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Sonderbund War Aftermath
+country_event = {
+	id = 99799
+	title = "EVTNAME99799"
+	desc = "EVTDESC99799"
+	major = yes
+
+	trigger = {
+		tag = SWI
+		has_country_flag = sonderbund
+		war = no
+		SDB = { exists = no }
+		any_owned_province = { is_core = SDB }
+		has_recently_lost_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA99799"
+
+		prestige = 20
+		random_owned = { 
+			limit = { owner = { has_country_flag = was_neutral_before_sonderbund } }
+			owner = {
+				add_country_modifier = { name = neutrality duration = -1 }
+			}
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = hidden_tooltip
+					has_country_modifier = neutrality
+				}
+			}
+			owner = { country_event = 6016816 }
+		}
+		clr_country_flag = hidden_tooltip
+		political_reform = federalism
+		SDB = { all_core = { remove_core = SDB } }
+	}
+}
+
+#Sonderbund War Aftermath, Sonderbund Victory
+country_event = {
+	id = 99798
+	title = "EVTNAME99799"
+	desc = "EVTDESC99798"
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA99799"
+
+		change_tag_no_core_switch = SWI
+		SDB = { all_core = { remove_core = SDB } }
+		random_owned = { 
+			limit = { owner = { has_country_flag = was_neutral_before_sonderbund } }
+			owner = {
+				add_country_modifier = { name = neutrality duration = -1 }
+			}
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = hidden_tooltip
+					has_country_modifier = neutrality
+				}
+			}
+			owner = { country_event = 6016816 }
+		}
+		clr_country_flag = hidden_tooltip
+		SWI = {
+			political_reform = confederalism
+			government = democracy2
+			set_country_flag = 2nd_republicgov
+			inherit = SDB
+		}
+	}
+}
+
+country_event = {
+	id = 994561
+	title = "EVTNAME994561" #Swiss divided
+	desc = "EVTDESC994561"
+	news = no
+	picture = "theatre"
+	major = yes
+
+	trigger = {
+		tag = SWI
+		all_core = {
+			OR = {
+				owned_by = THIS
+				owner = { vassal_of = THIS }
+			}
+		}
+		war = no
+		has_country_flag = neutrality_violated
+		exists = GER
+		exists = ITA
+		OR = {
+			603 = { is_core = GER }
+			607 = { is_core = FRA }
+			2568 = { is_core = ITA }
+		}
+		NOT = { has_country_flag = swissdivided }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = { set_country_flag = swissdivided }
+
+	option = {
+		name = "EVTOPTA994561"
+
+		prestige = 10
+	}
+
+	option = {
+		name = "EVTOPTB994561"
+
+		FRA = { country_event = 994562 }
+		608 = {
+			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FRA
+		}
+		607 = {
+			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FRA
+		}
+		609 = {
+			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FRA
+		}
+		466 = {
+			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FRA
+		}
+		ITA = { country_event = 994562 }
+		2568 = {
+			add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = ITA
+		}
+		611 = {
+			add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = ITA
+		}
+		465 = {
+			add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = ITA
+		}
+		GER = { country_event = 994562 }
+		GER = { inherit = SWI }
+	}
+}
+
+country_event = {
+	id = 994562
+	title = "EVTNAME994562"
+	desc = "EVTDESC994562"
+	news = no
+	picture = "theatre"
+	major = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA994562"
+
+		prestige = 10
+	}
+}
+
+country_event = {
+	id = 994563
+	title = "EVTNAME994563" #Swiss divided
+	desc = "EVTDESC994563"
+	news = no
+	picture = "theatre"
+	major = yes
+
+	trigger = {
+		tag = SWI
+		NOT = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { vassal_of = THIS }
+				}
+			}
+		}
+		war = no
+		has_country_flag = neutrality_violated
+		exists = GER
+		exists = ITA
+		OR = {
+			603 = { is_core = GER }
+			607 = { is_core = FRA }
+			2568 = { is_core = ITA }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = { set_country_flag = swissdivided }
+
+	option = {
+		name = "EVTOPTA994563"
+
+		prestige = 10
+
+		ai_chance = { factor = 5 }
+	}
+
+	option = {
+		name = "EVTOPTB994563"
+
+		FRA = { country_event = 994562 }
+		608 = {
+			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FRA
+		}
+		607 = {
+			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FRA
+		}
+		609 = {
+			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FRA
+		}
+		466 = {
+			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FRA
+		}
+		ITA = { country_event = 994562 }
+		2568 = {
+			add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = ITA
+		}
+		611 = {
+			add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = ITA
+		}
+		465 = {
+			add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = ITA
+		}
+		GER = { country_event = 994562 }
+		GER = { inherit = SWI }
+
+		ai_chance = { factor = 95 }
+	}
+}
+
+#Infamy on the skies
+country_event = {
+	id = 500058
+	title = "EVTNAME500058"
+	desc = "EVTDESC500058"
+	picture = "bad_badboy"
+	major = yes
+
+	trigger = {
+		ai = no
+		badboy = 2
+		civilized = yes
+		has_country_modifier = kinda_bad_badboy
+		NOT = { has_country_modifier = bad_badboy }
+		NOT = { has_country_modifier = uncivilized_isolationism }
+	}
+
+	mean_time_to_happen = { months = 4 }
+
+	option = {
+		name = "EVTOPTA500058"
+
+		remove_country_modifier = kinda_bad_badboy
+		add_country_modifier = { name = bad_badboy duration = 3600 }
+		any_greater_power = {
+			leave_alliance = THIS
+			relation = { who = THIS value = -400 }
+			casus_belli = { target = THIS type = cut_down_to_size months = 36 }
+			casus_belli = { target = THIS type = dismantle_cb months = 36 }
+		}
+		any_country = {
+			limit = {
+				NOT = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			relation = { who = THIS value = -100 }
+			casus_belli = { target = THIS type = cut_down_to_size months = 24 }
+		}
+	}
+}
+
+#Infamy too high
+country_event = {
+	id = 500059
+	title = "EVTNAME500059"
+	desc = "EVTDESC500059"
+	picture = "bad_badboy"
+
+	trigger = {
+		ai = no
+		badboy = 1.3
+		NOT = { has_country_modifier = uncivilized_isolationism }
+		NOT = {
+			has_country_modifier = kinda_bad_badboy
+			has_country_modifier = bad_badboy
+		}
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	option = {
+		name = "EVTOPTA500059"
+
+		add_country_modifier = { name = kinda_bad_badboy duration = 1825 }
+		any_greater_power = {
+			casus_belli = { target = THIS type = humiliate months = 60 }
+			casus_belli = { target = THIS type = free_peoples months = 12 }
+			relation = { who = THIS value = -100 }
+		}
+	}
+}
+
+## Swiss Partition ##
+
+	#Swiss Partition
+	country_event = {
+		id = 500060
+		title = "EVTNAME500060"
+		desc = "EVTDESC500060"
+		picture = "bad_badboy"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA500060"
+
+			badboy = 3.5
+
+			random_owned = {
+				limit = { owner = { is_culture_group = pan_french } }
+				FROM = {
+					any_owned = {
+						limit = {
+							is_core = SWI
+							region = SWI_607
+						}
+						secede_province = THIS
+						add_province_modifier = {
+							name = core_integration
+							duration = -1
+						}
+					}
+					country_event = 500061
+				}
+			}
+
+			random_owned = {
+				limit = { owner = { is_culture_group = italian } }
+				FROM = {
+					any_owned = {
+						limit = {
+							is_core = SWI
+							region = SWI_2568
+						}
+						secede_province = THIS
+						add_province_modifier = {
+							name = core_integration
+							duration = -1
+						}
+					}
+					country_event = 500061
+				}
+				owner = { add_accepted_culture = romansh }
+			}
+
+			random_owned = {
+				limit = { owner = { is_culture_group = germanic } }
+				FROM = {
+					any_owned = {
+						limit = {
+							is_core = SWI
+							region = SWI_603
+						}
+						secede_province = THIS
+						add_province_modifier = {
+							name = core_integration
+							duration = -1
+						}
+					}
+					country_event = 500061
+				}
+			}
+
+			ai_chance = {
+				factor = 100
+				modifier = {
+					factor = 1.5
+					truce_with = FROM
+					has_recently_lost_war = yes
+				}
+				modifier = {
+					factor = 0.1
+					NOT = { truce_with = FROM }
+				}
+				modifier = {
+					factor = 2.0
+					is_greater_power = no
+				}
+			}
+		}
+
+		option = {
+			name = "EVTOPTB500060"
+
+			prestige = 30
+			badboy = -3.5
+
+			random_owned = {
+				limit = { owner = { is_culture_group = germanic } }
+				FROM = {
+					any_owned = {
+						limit = {
+							is_core = SWI
+							region = SWI_603
+						}
+						add_province_modifier = {
+							name = nationalist_agitation
+							duration = 1095
+						}
+					}
+					country_event = 500062
+				}
+			}
+
+			random_owned = {
+				limit = { owner = { is_culture_group = italian } }
+				FROM = {
+					any_owned = {
+						limit = {
+							is_core = SWI
+							region = SWI_2568
+						}
+						add_province_modifier = {
+							name = nationalist_agitation
+							duration = 1095
+						}
+					}
+					country_event = 500062
+				}
+			}
+
+			random_owned = {
+				limit = { owner = { is_culture_group = pan_french } }
+				FROM = {
+					any_owned = {
+						limit = {
+							is_core = SWI
+							region = SWI_607
+						}
+						add_province_modifier = {
+							name = nationalist_agitation
+							duration = 1095
+						}
+					}
+				}
+			}
+
+			ai_chance = {
+				factor = 0
+				modifier = {
+					factor = 4.0
+					NOT = { truce_with = FROM }
+				}
+				modifier = {
+					factor = 1.5
+					is_greater_power = no
+				}
+			}
+		}
+	}
+
+	#Swiss Partition - FROM Agrees
+	country_event = {
+		id = 500061
+		title = "EVTNAME500061"
+		desc = "EVTDESC500061"
+		picture = "bad_badboy"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA500060"
+
+			badboy = -3.5
+			relation = { who = FROM value = 100 }
+		}
+	}
+
+	#Swiss Partition - FROM Refuses
+	country_event = {
+		id = 500062
+		title = "EVTNAME500062"
+		desc = "EVTDESC500062"
+		picture = "bad_badboy"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA500060"
+
+			badboy = 3.5
+			relation = { who = FROM value = -100 }
+		}
+	}

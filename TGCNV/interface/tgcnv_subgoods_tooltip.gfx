@@ -1,0 +1,1190 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_counter_tg_subgood_coal_anthracite"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\coal\\anthracite.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_coal_bituminous"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\coal\\bituminous.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_coal_lignite"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\coal\\lignite.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fish_freshwater"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fish\\freshwater.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fish_marine"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fish\\marine.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fuel_biofuel"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fuel\\biofuel.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fuel_petroleum_fuel"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fuel\\petroleum_fuel.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_grain_maize"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\grain\\maize.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_grain_rice"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\grain\\rice.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_grain_wheat"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\grain\\wheat.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_iron_hematite"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\iron\\hematite.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_iron_magnetite"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\iron\\magnetite.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_liquor_beer"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\liquor\\beer.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_liquor_spirits"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\liquor\\spirits.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_liquor_wine"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\liquor\\wine.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_precious_goods_rock_salt"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\precious_goods\\rock_salt.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_precious_goods_sea_salt"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\precious_goods\\sea_salt.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_steel_alloy_steel"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\steel\\alloy_steel.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_steel_carbon_steel"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\steel\\carbon_steel.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_wine_juice"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\wine\\juice.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_wine_soft_drink"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\wine\\soft_drink.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_ammunition_rifle_cartridge"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\ammunition\\rifle_cartridge.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_ammunition_artillery_shell"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\ammunition\\artillery_shell.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_ammunition_shot_and_balls"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\ammunition\\shot_and_balls.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_small_arms_service_rifle"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\small_arms\\service_rifle.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_small_arms_sidearm"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\small_arms\\sidearm.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_small_arms_automatic_support_weapon"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\small_arms\\automatic_support_weapon.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_artillery_field_artillery"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\artillery\\field_artillery.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_artillery_heavy_siege_artillery"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\artillery\\heavy_siege_artillery.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_artillery_naval_coastal_gun"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\artillery\\naval_coastal_gun.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_canned_food_canned_meat"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\canned_food\\canned_meat.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_canned_food_canned_fish"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\canned_food\\canned_fish.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_canned_food_mixed_field_ration"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\canned_food\\mixed_field_ration.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_barrels_light_scout_tank"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\barrels\\light_scout_tank.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_barrels_line_battle_tank"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\barrels\\line_battle_tank.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_aeroplanes_wood_fabric_biplane"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\aeroplanes\\wood_fabric_biplane.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_aeroplanes_flying_boat_patrol"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\aeroplanes\\flying_boat_patrol.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_aeroplanes_all_metal_monoplane"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\aeroplanes\\all_metal_monoplane.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_gunpowder_coarse_blasting_powder"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\gunpowder\\coarse_blasting_powder.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_gunpowder_fine_sporting_powder"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\gunpowder\\fine_sporting_powder.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_cotton_upland_short_staple"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\cotton\\upland_short_staple.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_cotton_asiatic_coarse_cotton"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\cotton\\asiatic_coarse_cotton.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_cotton_long_staple_cotton"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\cotton\\long_staple_cotton.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_dye_indigo_plant_dye"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\dye\\indigo_plant_dye.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_dye_madder_root_dye"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\dye\\madder_root_dye.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_dye_cochineal_carmine"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\dye\\cochineal_carmine.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_dye_synthetic_aniline_dye"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\dye\\synthetic_aniline_dye.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_wool_merino_fine_wool"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\wool\\merino_fine_wool.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_wool_longwool_lustrous"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\wool\\longwool_lustrous.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_wool_carpet_coarse_wool"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\wool\\carpet_coarse_wool.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_silk_mulberry_raw_silk"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\silk\\mulberry_raw_silk.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_silk_tussah_wild_silk"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\silk\\tussah_wild_silk.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_silk_spun_silk_waste"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\silk\\spun_silk_waste.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_sulphur_volcanic_sulphur"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\sulphur\\volcanic_sulphur.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_sulphur_pyritic_sulphur"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\sulphur\\pyritic_sulphur.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_sulphur_synthetic_recovered_sulphur"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\sulphur\\synthetic_recovered_sulphur.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_timber_softwood_conifer"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\timber\\softwood_conifer.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_timber_hardwood_broadleaf"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\timber\\hardwood_broadleaf.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_timber_ship_timber"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\timber\\ship_timber.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_timber_pulpwood_roundwood"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\timber\\pulpwood_roundwood.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tropical_wood_teak_deck_timber"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tropical_wood\\teak_deck_timber.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tropical_wood_decorative_tropical_hardwood"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tropical_wood\\decorative_tropical_hardwood.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tropical_wood_general_tropical_timber"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tropical_wood\\general_tropical_timber.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tropical_wood_veneer_peeler_log"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tropical_wood\\veneer_peeler_log.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_rubber_para_latex_rubber"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\rubber\\para_latex_rubber.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_rubber_gutta_percha"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\rubber\\gutta_percha.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_rubber_wild_caoutchouc"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\rubber\\wild_caoutchouc.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_rubber_guayule_shrub_rubber"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\rubber\\guayule_shrub_rubber.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_rubber_buna_synthetic_rubber"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\rubber\\buna_synthetic_rubber.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_oil_crude_petroleum"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\oil\\crude_petroleum.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_oil_synthetic_crude"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\oil\\synthetic_crude.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_precious_metal_gold"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\precious_metal\\gold.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_precious_metal_silver"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\precious_metal\\silver.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_precious_metal_platinum"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\precious_metal\\platinum.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_precious_metal_gems"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\precious_metal\\gems.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_precious_metal_commercial_revenue"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\precious_metal\\commercial_revenue.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_copper_copper_sulphide_ore"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\copper\\copper_sulphide_ore.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_copper_copper_oxide_ore"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\copper\\copper_oxide_ore.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_copper_native_copper"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\copper\\native_copper.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_lead_galena_sulphide_ore"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\lead\\galena_sulphide_ore.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_lead_oxidized_lead_ore"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\lead\\oxidized_lead_ore.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_lead_silver_bearing_lead"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\lead\\silver_bearing_lead.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_spices_pepper"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\spices\\pepper.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_spices_cinnamon"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\spices\\cinnamon.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_spices_cloves"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\spices\\cloves.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_spices_nutmeg"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\spices\\nutmeg.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_spices_allspice"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\spices\\allspice.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_spices_ginger"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\spices\\ginger.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_spices_vanilla"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\spices\\vanilla.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_mana_crystal_raw_mana_shard"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\mana_crystal\\raw_mana_shard.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_mana_crystal_attuned_crystal_core"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\mana_crystal\\attuned_crystal_core.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_mana_crystal_shrine_idol_crystal"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\mana_crystal\\shrine_idol_crystal.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_mana_crystal_grown_mana_lattice"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\mana_crystal\\grown_mana_lattice.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_spirit_ore_unrefined_spirit_matrix"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\spirit_ore\\unrefined_spirit_matrix.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_spirit_ore_elemental_aspect_ore"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\spirit_ore\\elemental_aspect_ore.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_spirit_ore_reliquary_idol_ore"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\spirit_ore\\reliquary_idol_ore.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_cement_portland_cement"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\cement\\portland_cement.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_cement_natural_hydraulic_cement"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\cement\\natural_hydraulic_cement.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_machine_parts_gears_shafts_bearings"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\machine_parts\\gears_shafts_bearings.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_machine_parts_engine_component_set"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\machine_parts\\engine_component_set.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_machine_parts_precision_instrument_part"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\machine_parts\\precision_instrument_part.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_glass_flat_plate_glass"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\glass\\flat_plate_glass.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_glass_container_glass"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\glass\\container_glass.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_glass_fine_tableware_glass"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\glass\\fine_tableware_glass.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_glass_mana_infused_glass"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\glass\\mana_infused_glass.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fertilizer_field_fertilizer"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fertilizer\\field_fertilizer.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fertilizer_horticultural_fertilizer"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fertilizer\\horticultural_fertilizer.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_explosives_industrial_blasting_charge"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\explosives\\industrial_blasting_charge.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_explosives_military_explosive_filler"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\explosives\\military_explosive_filler.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_explosives_demolition_block"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\explosives\\demolition_block.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_clipper_convoy_general_cargo_clipper"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\clipper_convoy\\general_cargo_clipper.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_clipper_convoy_fast_tea_clipper"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\clipper_convoy\\fast_tea_clipper.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_clipper_convoy_coastal_schooner_convoy"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\clipper_convoy\\coastal_schooner_convoy.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_steamer_convoy_tramp_cargo_steamer"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\steamer_convoy\\tramp_cargo_steamer.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_steamer_convoy_ocean_passenger_liner"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\steamer_convoy\\ocean_passenger_liner.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_steamer_convoy_collier_tanker_fleet"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\steamer_convoy\\collier_tanker_fleet.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_electric_gear_dynamo_and_motor"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\electric_gear\\dynamo_and_motor.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_electric_gear_insulated_cable_wire"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\electric_gear\\insulated_cable_wire.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_electric_gear_switchgear_and_relay"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\electric_gear\\switchgear_and_relay.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fabric_cotton_cloth"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fabric\\cotton_cloth.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fabric_woollen_cloth"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fabric\\woollen_cloth.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fabric_blended_cloth"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fabric\\blended_cloth.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_lumber_sawn_softwood_plank"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\lumber\\sawn_softwood_plank.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_lumber_hardwood_board"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\lumber\\hardwood_board.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_lumber_construction_beam"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\lumber\\construction_beam.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_bronze_casting_alloy"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\bronze\\casting_alloy.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_bronze_bearing_alloy"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\bronze\\bearing_alloy.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_bronze_decorative_alloy"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\bronze\\decorative_alloy.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_electric_power_coal_thermal_power"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\electric_power\\coal_thermal_power.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_electric_power_hydro_grid_power"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\electric_power\\hydro_grid_power.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_electric_power_oil_fired_power"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\electric_power\\oil_fired_power.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_electric_power_arcane_mana_power"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\electric_power\\arcane_mana_power.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_magitech_components_mana_conduit_array"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\magitech_components\\mana_conduit_array.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_magitech_components_spirit_capacitor_cell"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\magitech_components\\spirit_capacitor_cell.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_magitech_components_construct_actuator_core"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\magitech_components\\construct_actuator_core.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_paper_writing_printing_paper"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\paper\\writing_printing_paper.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_paper_newsprint_sheet"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\paper\\newsprint_sheet.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_paper_packing_paperboard"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\paper\\packing_paperboard.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_cattle_bovine_livestock"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\cattle\\bovine_livestock.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_cattle_pig_livestock"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\cattle\\pig_livestock.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_cattle_sheep_goat_livestock"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\cattle\\sheep_goat_livestock.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_cattle_poultry_livestock"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\cattle\\poultry_livestock.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fruit_temperate_fruit"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fruit\\temperate_fruit.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fruit_citrus_fruit"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fruit\\citrus_fruit.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fruit_tropical_fruit"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fruit\\tropical_fruit.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_fruit_grapes_dates"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\fruit\\grapes_dates.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tobacco_pipe_smoking_leaf"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tobacco\\pipe_smoking_leaf.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tobacco_cigar_leaf"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tobacco\\cigar_leaf.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tobacco_oriental_tobacco_leaf"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tobacco\\oriental_tobacco_leaf.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tobacco_chewing_snuff_leaf"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tobacco\\chewing_snuff_leaf.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tea_black_tea"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tea\\black_tea.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tea_green_tea"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tea\\green_tea.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tea_brick_tea"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tea\\brick_tea.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_coffee_arabica"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\coffee\\arabica.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_coffee_robusta"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\coffee\\robusta.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_coffee_liberica"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\coffee\\liberica.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_opium_raw_opium_gum"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\opium\\raw_opium_gum.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_opium_dried_poppy_capsule"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\opium\\dried_poppy_capsule.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_automobiles_passenger_car"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\automobiles\\passenger_car.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_automobiles_motor_truck"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\automobiles\\motor_truck.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_automobiles_luxury_motorcar"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\automobiles\\luxury_motorcar.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_telephones_subscriber_handset"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\telephones\\subscriber_handset.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_telephones_exchange_switchboard"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\telephones\\exchange_switchboard.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_telephones_ship_rail_telephone"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\telephones\\ship_rail_telephone.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_regular_clothes_everyday_garment"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\regular_clothes\\everyday_garment.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_regular_clothes_durable_workwear"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\regular_clothes\\durable_workwear.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_regular_clothes_institutional_uniform"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\regular_clothes\\institutional_uniform.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_luxury_clothes_silk_evening_garment"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\luxury_clothes\\silk_evening_garment.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_luxury_clothes_tailored_fine_suit"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\luxury_clothes\\tailored_fine_suit.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_luxury_clothes_ceremonial_couture"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\luxury_clothes\\ceremonial_couture.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_furniture_softwood_household_furniture"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\furniture\\softwood_household_furniture.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_furniture_hardwood_joinery"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\furniture\\hardwood_joinery.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_furniture_bentwood_furniture"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\furniture\\bentwood_furniture.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_luxury_furniture_carved_tropical_cabinet"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\luxury_furniture\\carved_tropical_cabinet.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_luxury_furniture_inlaid_marquetry_piece"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\luxury_furniture\\inlaid_marquetry_piece.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_luxury_furniture_carved_salon_furniture"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\luxury_furniture\\carved_salon_furniture.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_radio_home_receiver_set"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\radio\\home_receiver_set.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_radio_commercial_transmitter"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\radio\\commercial_transmitter.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_radio_field_radio_set"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\radio\\field_radio_set.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_pharmaceuticals_herbal_traditional_remedy"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\pharmaceuticals\\herbal_traditional_remedy.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_pharmaceuticals_patent_medicine"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\pharmaceuticals\\patent_medicine.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_pharmaceuticals_antiseptic_solution"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\pharmaceuticals\\antiseptic_solution.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_pharmaceuticals_spirit_infused_medicine"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\pharmaceuticals\\spirit_infused_medicine.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_soap_household_laundry_soap"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\soap\\household_laundry_soap.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_soap_toilet_cosmetic_soap"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\soap\\toilet_cosmetic_soap.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_soap_industrial_cleaner"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\soap\\industrial_cleaner.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tires_pneumatic_auto_tire"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tires\\pneumatic_auto_tire.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tires_bicycle_tire"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tires\\bicycle_tire.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_tires_solid_industrial_tire"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\tires\\solid_industrial_tire.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_plastics_molded_resin_parts"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\plastics\\molded_resin_parts.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_plastics_insulating_resin_parts"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\plastics\\insulating_resin_parts.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_plastics_resin_sheet_stock"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\plastics\\resin_sheet_stock.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_sugar_refined_white_sugar"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\sugar\\refined_white_sugar.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_sugar_soft_brown_sugar"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\sugar\\soft_brown_sugar.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_sugar_syrup_molasses"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\sugar\\syrup_molasses.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_idol_media_photo_card_print"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\idol_media\\photo_card_print.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_idol_media_fabric_banner_goods"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\idol_media\\fabric_banner_goods.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+  spriteType = {
+    name = "GFX_counter_tg_subgood_idol_media_printed_album_magazine"
+    texturefile = "gfx\\interface\\goods_detail\\tooltip\\idol_media\\printed_album_magazine.dds"
+    noOfFrames = 1
+    norefcount = yes
+  }
+}

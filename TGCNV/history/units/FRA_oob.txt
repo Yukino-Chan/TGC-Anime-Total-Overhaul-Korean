@@ -1,0 +1,1009 @@
+#Sphere of Influence
+LUC = {
+	value = 75
+	level = 3
+	influence_value = 0
+}
+BEL = {
+	value = 125		#relation
+	level = 4		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+LUX = {
+	value = 125		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+NET = {
+	value = -100
+	level = 3
+}
+PAP = {
+	value = 125		#relation
+	level = 4		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+SIC = {
+	value = 125		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+SWI = {
+	value = 125		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+SAR = {
+	value = 125		#relation
+	level = 4		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+GRE = {
+	value = 75	#relation
+	level = 4		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+DAI = {
+	value = 0		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+ABA = {
+	value = 100		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+BOL = {
+	value = 50
+	level = 3
+	influence_value = 45
+}
+PBC = {
+	value = 90
+	level = 3
+	influence_value = 20
+}
+#GPs
+ENG = { value = 25 }
+RUS = { value = -100 }
+AUS = { value = -50 }
+USA = { value = 75 }
+PRU = { value = -50 }
+TUR = { value = -75 }
+SPA = { value = 55 }
+TRZ = { value = -100 }
+
+army = {
+	name = "Garde Royale"
+	location = 425
+	regiment = {
+		name= "1.Garde"
+		type = guard
+		home = 425
+	}
+
+	regiment = {
+		name= "2.Garde"
+		type = guard
+		home = 426
+	}
+
+	regiment = {
+		name= "3.Garde"
+		type = guard
+		home = 3988
+	}
+
+	regiment = {
+		name= "4.Garde"
+		type = guard
+		home = 4001
+	}
+
+	regiment = {
+		name= "1商re Division d'Hussard"
+		type = hussar
+		home = 420
+	}
+
+	regiment = {
+		name= "2商re Division d'Hussard"
+		type = hussar
+		home = 4007
+	}
+
+	regiment = {
+		name= "1.1商re Division d'Artillerie"
+		type = artillery
+		home = 3986
+	}
+
+	regiment = {
+		name= "2.1商re Division d'Artillerie"
+		type = artillery
+		home = 399
+	}
+
+	regiment = {
+		name= "3.1商re Division d'Artillerie"
+		type = artillery
+		home = 453
+	}
+
+	regiment = {
+		name= "4.1商re Division d'Artillerie"
+		type = artillery
+		home = 399
+	}
+}
+
+army = {
+	name = "1er Corps d'Arm赏e"
+	location = 409
+
+	regiment = {
+		name= "1商re Division d'Hussard"
+		type = hussar
+		home = 458
+	}
+
+	regiment = {
+		name= "1.1商me Division d'Infanterie"
+		type = infantry
+		home = 399
+	}
+
+	regiment = {
+		name= "2.1商me Division d'Infanterie"
+		type = infantry
+		home = 2570
+	}
+
+	regiment = {
+		name= "3.1商me Division d'Infanterie"
+		type = infantry
+		home = 404
+	}
+
+	regiment = {
+		name= "2.1商me Division d'Infanterie"
+		type = infantry
+		home = 402
+	}
+
+	regiment = {
+		name= "2.2商re Division d'Infanterie"
+		type = infantry
+		home = 403
+	}
+
+	regiment = {
+		name= "1.1商me Division d'Artillerie"
+		type = artillery
+		home = 399
+	}
+
+	regiment = {
+		name= "2.1商me Division d'Artillerie"
+		type = artillery
+		home = 399
+	}
+
+	regiment = {
+		name= "3.1商me Division d'Artillerie"
+		type = artillery
+		home = 399
+	}
+
+	regiment = {
+		name= "4.1商me Division d'Artillerie"
+		type = artillery
+		home = 399
+	}
+}
+
+army = {
+	name = "2e Corps d'Arm赏e"
+	location = 469
+
+	regiment = {
+		name= "1商me Division d'Cuirasser"
+		type = cuirassier
+		home = 418
+	}
+
+	regiment = {
+		name= "2商re Division d'Cuirasser"
+		type = cuirassier
+		home = 406
+	}
+
+	regiment = {
+		name= "1.7商me Division d'Infanterie"
+		type = infantry
+		home = 415
+	}
+
+	regiment = {
+		name= "2.7商me Division d'Infanterie"
+		type = infantry
+		home = 3977
+	}
+
+	regiment = {
+		name= "3.7商me Division d'Infanterie"
+		type = infantry
+		home = 417
+	}
+
+	regiment = {
+		name= "4.7商me Division d'Infanterie"
+		type = infantry
+		home = 452
+	}
+
+	regiment = {
+		name= "4.1商me Division d'Artillerie"
+		type = artillery
+		home = 4031
+	}
+
+	regiment = {
+		name= "4.2商me Division d'Artillerie"
+		type = artillery
+		home = 434
+	}
+}
+
+army = {
+	name = "3e Corps d'Arm赏e"
+	location = 408
+
+	regiment = {
+		name= "1.5商me Division d'Infanterie"
+		type = infantry
+		home = 439
+	}
+
+	regiment = {
+		name= "2.5商me Division d'Infanterie"
+		type = infantry
+		home = 433
+	}
+
+	regiment = {
+		name= "2.3商me Division d'Infanterie"
+		type = infantry
+		home = 399
+	}
+
+	regiment = {
+		name= "1.1商re Division d'Infanterie"
+		type = infantry
+		home = 438
+	}
+
+	regiment = {
+		name= "5.3商me Division d'Artillerie"
+		type = artillery
+		home = 4022
+	}
+
+	regiment = {
+		name= "3商me Division d'Artillerie"
+		type = artillery
+		home = 429
+	}
+
+	regiment = {
+		name= "4.3商me Division d'Artillerie"
+		type = artillery
+		home = 4023
+	}
+
+	regiment = {
+		name= "3.2商me Division de cavalerie"
+		type = cuirassier
+		home = 460
+	}
+}
+
+army = {
+	name = "Arm赏e d'Afrique"
+
+	leader = {
+		name = "Bertrand Clauzel"
+		date = 1803.1.1
+		type = land
+		personality = inefficient
+		background = elderly
+		prestige = 0.1
+	}
+
+	location = 1705
+
+	regiment = {
+		name= "3.1商re Division de cavalerie"
+		type = dragoon
+		home = 421
+	}
+
+	regiment = {
+		name= "1.4商me Division d'Infanterie"
+		type = infantry
+		home = 425
+	}
+
+	regiment = {
+		name= "2.4商me Division d'Infanterie"
+		type = infantry
+		home = 3984
+	}
+
+	regiment = {
+		name= "1.9商me Division d'Infanterie"
+		type = infantry
+		home = 456
+	}
+
+	regiment = {
+		name= "1商me Division d'Artillerie"
+		type = artillery
+		home = 442
+	}
+
+	regiment = {
+		name= "2商re Division d'Artillerie"
+		type = artillery
+		home = 459
+	}
+
+	regiment = {
+		name= "2.1商re Division d'Artillerie"
+		type = artillery
+		home = 459
+	}
+}
+
+army = {
+	name = "L赏gion 赏trang商re"
+	location = 1700
+
+	regiment = {
+		name= "1er R赏giment 赏tranger"
+		type = guard
+		home = 1700
+	}
+
+	regiment = {
+		name= "1er R赏giment 森tranger de Cavalerie"
+		type = dragoon
+		home = 1704
+	}
+
+	regiment = {
+		name= "2e R赏giment 森tranger"
+		type = guard
+		home = 5261
+	}
+
+	regiment = {
+		name= "5.1商me Division d'Artillerie"
+		type = artillery
+		home = 399
+	}
+
+}
+
+army = {
+	name = "Corps d'Observation"
+	location = 470
+	regiment = {
+		name= "3.3商me Division de cavalerie"
+		type = cuirassier
+		home = 399
+	}
+
+	regiment = {
+		name= "1.10商me Division d'Infanterie"
+		type = infantry
+		home = 408
+	}
+
+	regiment = {
+		name= "1.11商me Division d'Infanterie"
+		type = infantry
+		home = 447
+	}
+
+	regiment = {
+		name= "3.11商me Division d'Infanterie"
+		type = infantry
+		home = 428
+	}
+
+	regiment = {
+		name= "3.10商me Division d'Infanterie"
+		type = infantry
+		home = 444
+	}
+
+	regiment = {
+		name= "2.2商me Division de cavalerie"
+		type = cuirassier
+		home = 4024
+	}
+
+	regiment = {
+		name= "1商me Division d'Artillerie"
+		type = artillery
+		home = 424
+	}
+
+	regiment = {
+		name= "2商re Division d'Artillerie"
+		type = artillery
+		home = 451
+	}
+}
+
+
+army = {
+	name = "1商re Division de cavalerie"
+	location = 5256
+	regiment = {
+		name= "1.1商re Division de cavalerie"
+		type = dragoon
+		home = 422
+	}
+
+	regiment = {
+		name= "2.1商re Division de cavalerie"
+		type = dragoon
+		home = 436
+	}
+
+	regiment = {
+		name= "5.7商me Division d'Infanterie"
+		type = infantry
+		home = 448
+	}
+
+	regiment = {
+		name= "3.8商me Division d'Infanterie"
+		type = infantry
+		home = 473
+	}
+
+	regiment = {
+		name= "3商me Division d'Artillerie"
+		type = artillery
+		home = 449
+	}
+}
+
+army = {
+	name = "Garnison du S赏n赏gal"
+	location = 5339
+	regiment = {
+		name= "1.10商me Division d'Infanterie"
+		type = infantry
+		home = 411
+	}
+
+	regiment = {
+		name= "2.10商me Division d'Infanterie"
+		type = infantry
+		home = 407
+	}
+}
+
+army = {
+	name = "Garnison de C韶te d'Ivoire"
+	location = 1894
+	regiment = {
+		name= "1.11商me Division d'Infanterie"
+		type = infantry
+		home = 467
+	}
+
+	regiment = {
+		name= "2.11商me Division d'Infanterie"
+		type = infantry
+		home = 454
+	}
+}
+
+army = {
+	name = "Garnison de Guyane"
+	location = 2241
+
+	regiment = {
+		name= "1.8商me Division d'Infanterie"
+		type = infantry
+		home = 455
+	}
+
+	regiment = {
+		name= "2.8商me Division d'Infanterie"
+		type = infantry
+		home = 4018
+	}
+}
+
+navy = {
+	name = "Escadre du Nord"
+	location = 420
+	ship = {
+		name= "Couronne"
+		type = manowar
+	}
+
+	ship = {
+		name= "Superbe"
+		type = manowar
+	}
+
+	ship = {
+		name= "Jean Bart"
+		type = manowar
+	}
+
+	ship = {
+		name= "Dix-huit Fructidor"
+		type = manowar
+	}
+
+	ship = {
+		name= "Wagram"
+		type = manowar
+	}
+
+	ship = {
+		name= "Trocadero"
+		type = manowar
+	}
+
+	ship = {
+		name= "Z赏landais"
+		type = manowar
+	}
+
+	ship = {
+		name= "Superbe"
+		type = manowar
+	}
+
+	ship = {
+		name= "Austerlitz"
+		type = manowar
+	}
+
+	ship = {
+		name= "Magnifique"
+		type = manowar
+	}
+
+	ship = {
+		name= "R赏publique Fran伤aise"
+		type = manowar
+	}
+
+	ship = {
+		name= "Conqu赏rant"
+		type = manowar
+	}
+
+	ship = {
+		name= "Neptune"
+		type = manowar
+	}
+
+	ship = {
+		name= "Algerisas"
+		type = manowar
+	}
+
+	ship = {
+		name= "Nestor"
+		type = manowar
+	}
+
+	ship = {
+		name= "Duchesse de Berry"
+		type = frigate
+	}
+
+	ship = {
+		name= "Th赏tis"
+		type = frigate
+	}
+
+	ship = {
+		name= "Astr赏e"
+		type = frigate
+	}
+
+	ship = {
+		name= "Amazone"
+		type = frigate
+	}
+
+	ship = {
+		name= "Clorinde"
+		type = frigate
+	}
+
+	ship = {
+		name= "Maure"
+		type = frigate
+	}
+
+	ship = {
+		name= "Vestale"
+		type = frigate
+	}
+
+	ship = {
+		name= "Magicienne"
+		type = frigate
+	}
+
+	ship = {
+		name= "Marie Th赏rese"
+		type = frigate
+	}
+
+	ship = {
+		name= "Venus"
+		type = frigate
+	}
+
+	ship = {
+		name= "Sir商ne"
+		type = frigate
+	}
+
+	ship = {
+		name= "Atalante"
+		type = frigate
+	}
+
+	ship = {
+		name= "Surveillante"
+		type = frigate
+	}
+
+	ship = {
+		name= "Iphig赏nie"
+		type = frigate
+	}
+
+	ship = {
+		name= "Sultane"
+		type = frigate
+	}
+
+	ship = {
+		name= "1商re Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2商me Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3商me Flotille de Transport"
+		type = clipper_transport
+	}
+
+}
+
+navy = {
+	name = "Escadre de M赏diterran赏e"
+	location = 470
+	ship = {
+		name= "Triton"
+		type = manowar
+	}
+
+	ship = {
+		name= "Etats de Bourgogne"
+		type = manowar
+	}
+
+	ship = {
+		name= "Souverain"
+		type = manowar
+	}
+
+	ship = {
+		name= "Marengo"
+		type = manowar
+	}
+
+	ship = {
+		name= "Ville de Marseilles"
+		type = manowar
+	}
+
+	ship = {
+		name= "Hercule"
+		type = manowar
+	}
+
+	ship = {
+		name= "Montebello"
+		type = manowar
+	}
+
+	ship = {
+		name= "Centaure"
+		type = manowar
+	}
+
+	ship = {
+		name= "Jupiter"
+		type = manowar
+	}
+
+	ship = {
+		name= "Duc d伸Angouleme"
+		type = manowar
+	}
+
+	ship = {
+		name= "Hercules"
+		type = manowar
+	}
+
+	ship = {
+		name= "G赏n赏reux"
+		type = manowar
+	}
+
+	ship = {
+		name= "Diad商me"
+		type = manowar
+	}
+
+	ship = {
+		name= "Couronne"
+		type = manowar
+	}
+
+	ship = {
+		name= "Suffren"
+		type = manowar
+	}
+
+	ship = {
+		name= "Trident"
+		type = manowar
+	}
+
+	ship = {
+		name= "Royal Louis"
+		type = manowar
+	}
+
+	ship = {
+		name= "Commerces de Paris"
+		type = manowar
+	}
+
+	ship = {
+		name= "Terpsichore"
+		type = frigate
+	}
+
+	ship = {
+		name= "Arth赏mise"
+		type = frigate
+	}
+
+	ship = {
+		name= "Belle Gabrielle"
+		type = frigate
+	}
+
+	ship = {
+		name= "Didon"
+		type = frigate
+	}
+
+	ship = {
+		name= "Caroline"
+		type = frigate
+	}
+
+	ship = {
+		name= "Herminie"
+		type = frigate
+	}
+
+	ship = {
+		name= "Melpom商ne"
+		type = frigate
+	}
+
+	ship = {
+		name= "Uranie"
+		type = frigate
+	}
+
+	ship = {
+		name= "Androm商de"
+		type = frigate
+	}
+
+	ship = {
+		name= "Jeanne d伸Arc"
+		type = frigate
+	}
+
+	ship = {
+		name= "Belle Poule"
+		type = frigate
+	}
+
+	ship = {
+		name= "Erigone"
+		type = frigate
+	}
+
+	ship = {
+		name= "Nereide"
+		type = frigate
+	}
+
+	ship = {
+		name= "Gloire"
+		type = frigate
+	}
+
+	ship = {
+		name= "Reine Blanche"
+		type = frigate
+	}
+
+	ship = {
+		name= "4商me Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "5商me Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "6商me Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "7商me Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "8商me Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "9商me Flotille de Transport"
+		type = clipper_transport
+	}
+}
+
+leader = {
+	name = "de la Piconnerie"
+	date = 1836.1.1
+	type = land
+	personality = confident
+	background = professor
+	prestige = 0.1
+}
+
+leader = {
+	name = "Jean-Isidore Harispe"
+	date = 1830.1.1
+	type = land
+	personality = heroic
+	background = natural_born_leader
+	prestige = 0.3
+}
+
+leader = {
+	name = "Guy-Victor Duperr赏"
+	date = 1811.1.1
+	type = sea
+	personality = au_fait
+	background = natural_born_leader
+	prestige = 0.3
+}
+
+leader = {
+	name = "Comte de Castelanne"
+	date = 1823.1.1
+	type = land
+	personality = incapable
+	background = aristocrat
+	prestige = 0.2
+}
+
+leader = {
+	name = "Jacques Achard"
+	date = 1823.1.1
+	type = land
+	personality = relentless
+	background = elderly
+	prestige = 0.2
+}
+
+leader = {
+	name = "Jean-Baptiste Vaillant"
+	date = 1832.1.1
+	type = land
+	personality = lackluster
+	background = bg_engineer
+	prestige = 0.1
+}
+
+leader = {
+	name = "Bernand Pierre Magnan"
+	date = 1835.1.1
+	type = land
+	personality = disorderly
+	background = bootlicker
+	prestige = 0.1
+}
+
+leader = {
+	name = "Baraguey d'Hilliers"
+	date = 1836.1.1
+	type = land
+	personality = active_p
+	background = drillmaster
+	prestige = 0.1
+}
+
+leader = {
+	name = "Comte de Randon"
+	date = 1835.1.1
+	type = land
+	personality = indifferent
+	background = old_school
+	prestige = 0.1
+}
+
+leader = {
+	name = "Charles Baudin"
+	date = 1836.1.1
+	type = sea
+	personality = stouthearted
+	background = unfit
+	prestige = 0.1
+}
+
+leader = {
+	name = "Reille"
+	date = 1836.1.1
+	type = land
+	personality = gallant
+	background = generals_aide
+	prestige = 0.0
+}
+
+leader = {
+	name = "de la Brunerie"
+	date = 1836.1.1
+	type = land
+	personality = stouthearted
+	background = unfit
+	prestige = 0.0
+}

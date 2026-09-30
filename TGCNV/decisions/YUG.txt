@@ -1,0 +1,1440 @@
+political_decisions = {
+
+## Formation ##
+
+	#Description: Any South Slavic country that has influence in Belgrade, Sarajevo and Zagreb can form Yugoslavia.
+	form_yugoslavia = {
+		potential = {
+			is_culture_group = south_slavic
+			NOT = { exists = YUG }
+			NOT = { has_global_flag = yugoslavia_formed }
+			NOT = { has_country_flag = post_colonial_country }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			prestige = 60
+			nationalism_n_imperialism = 1
+			794 = { #Belgrade
+				owner = {
+					OR = {
+						tag = THIS
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+					NOT = { truce_with = THIS }
+					war = no
+				}
+			}
+			783 = { #Sarajevo
+				owner = {
+					OR = {
+						tag = THIS
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+					NOT = { truce_with = THIS }
+					war = no
+				}
+			}
+			771 = { #Zagreb
+				owner = {
+					OR = {
+						tag = THIS
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+					NOT = { truce_with = THIS }
+					war = no
+				}
+			}
+		}
+
+		effect = {
+			set_global_flag = yugoslavia_formed
+			prestige = 40
+			all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			SER = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			MON = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			CRO = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			BOS = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			SLO = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			VOJ = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			random_owned = {
+				limit = { owner = { accepted_culture = north_italian } }
+				owner = { remove_accepted_culture = north_italian }
+			}
+			random_owned = {
+				limit = { owner = { NOT = { government = theocracy } } }
+				owner = {
+					add_accepted_culture = serb
+					add_accepted_culture = croat
+					add_accepted_culture = slovene
+				}
+			}
+			change_tag = YUG
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					NOT = { is_culture_group = south_slavic }
+				}
+				any_owned = {
+					limit = { is_core = YUG }
+					secede_province = THIS
+				}
+			}
+			any_country = {
+				limit = {
+					war = no
+					is_culture_group = south_slavic
+					NOT = { has_country_flag = post_colonial_country }
+					OR = {
+						in_sphere = THIS
+						sphere_owner = { is_sphere_leader_of = THIS }
+						relation = { who = THIS value = 100 }
+					}
+				}
+				country_event = 11120
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Formation by a Great Power
+	create_yugoslavia = {
+		picture = create_yugoslavia
+		potential = {
+			is_greater_power = yes
+			NOT = {
+				exists = YUG
+				is_culture_group = south_slavic
+				has_global_flag = yugoslavia_formed
+				has_global_flag = disable_unite_as_puppet
+				tag = TUR
+				tag = AUS
+				tag = KUK
+				tag = DNB
+				tag = HUN
+				tag = GCF
+				tag = GER
+			}
+			OR = {
+				any_owned_province = { is_core = BOS }
+				any_owned_province = { is_core = CRO }
+				any_owned_province = { is_core = SER }
+				is_sphere_leader_of = BOS
+				is_sphere_leader_of = CRO
+				is_sphere_leader_of = SER
+			}
+		}
+
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			794 = { #Belgrade
+				owner = {
+					OR = {
+						tag = THIS
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+					NOT = { truce_with = THIS }
+					war = no
+				}
+			}
+			783 = { #Sarajevo
+				owner = {
+					OR = {
+						tag = THIS
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+					NOT = { truce_with = THIS }
+					war = no
+				}
+			}
+			771 = { #Zagreb
+				owner = {
+					OR = {
+						tag = THIS
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+					NOT = { truce_with = THIS }
+					war = no
+				}
+			}
+		}
+
+		effect = {
+			set_global_flag = yugoslavia_formed
+			prestige = 40
+			badboy = 3
+			SER = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			CRO = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			BOS = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			any_country = {
+				limit = {
+					OR = {
+						tag = SER
+						tag = CRO
+						tag = BOS
+					}
+					ai = yes
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = {
+					NOT = { is_culture_group = south_slavic }
+					in_sphere = THIS
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+					war = no
+					any_owned_province = { is_core = YUG }
+				}
+				any_owned = {
+					limit = { is_core = YUG	}
+					secede_province = THIS
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = THIS
+					is_core = YUG
+				}
+				remove_core = YUG
+			}
+			release_vassal = YUG
+			create_alliance = YUG
+			diplomatic_influence = {
+				who = YUG
+				value = 400
+			}
+			any_country = {
+				limit = {
+					OR = {
+						tag = AUS
+						tag = KUK
+						tag = DNB
+						tag = HUN
+						tag = TUR
+					}
+					NOT = { tag = THIS }
+				}
+				relation = {
+					who = THIS
+					value = -50
+				}
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+## Inviting Nations to Yugoslavia (Cleanup) ##
+
+	#Group Description: Any nation from BOS, CRO, MCD, MON, SER and SLO can then be invited to YUG by an overlord or itself
+	#Firing the event grants YUG cores on the target regardless, the nation can accept the invite and be annexed or refuse and face war.
+
+	#Description: Bosnia
+	invite_BOS_to_YUG = {
+		picture = map_balkans
+		potential = {
+			OR = {
+				tag = YUG
+				YUG = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			exists = BOS
+			NOT = { has_country_flag = invite_BOS_to_YUG }
+		}
+
+		allow = {
+			war = no
+			NOT = { government = theocracy }
+			BOS = {
+				war = no
+				neighbour = YUG
+				NOT = { truce_with = THIS }
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				OR = {
+					AND = {
+						part_of_sphere = no
+						relation = { who = THIS value = 100 }
+					}
+					in_sphere = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = invite_BOS_to_YUG
+			BOS = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			BOS = { country_event = 11120 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Croatia
+	invite_CRO_to_YUG = {
+		picture = map_balkans
+		potential = {
+			OR = {
+				tag = YUG
+				YUG = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			exists = CRO
+			NOT = { has_country_flag = invite_CRO_to_YUG }
+		}
+
+		allow = {
+			war = no
+			NOT = { government = theocracy }
+			CRO = {
+				war = no
+				neighbour = YUG
+				NOT = { truce_with = THIS }
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				OR = {
+					AND = {
+						part_of_sphere = no
+						relation = { who = THIS value = 100 }
+					}
+					in_sphere = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = invite_CRO_to_YUG
+			CRO = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			CRO = { country_event = 11120 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Macedonia
+	invite_MCD_to_YUG = {
+		picture = map_balkans
+		potential = {
+			OR = {
+				tag = YUG
+				YUG = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			exists = MCD
+			NOT = { has_country_flag = invite_MCD_to_YUG }
+		}
+
+		allow = {
+			war = no
+			NOT = { government = theocracy }
+			MCD = {
+				war = no
+				neighbour = YUG
+				NOT = { truce_with = THIS }
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				OR = {
+					AND = {
+						part_of_sphere = no
+						relation = { who = THIS value = 100 }
+					}
+					in_sphere = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = invite_MCD_to_YUG
+			MCD = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			MCD = { country_event = 11120 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Montenegro
+	invite_MON_to_YUG = {
+		picture = map_balkans
+		potential = {
+			OR = {
+				tag = YUG
+				YUG = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			exists = MON
+			NOT = { has_country_flag = invite_MON_to_YUG }
+		}
+
+		allow = {
+			war = no
+			NOT = { government = theocracy }
+			MON = {
+				war = no
+				neighbour = YUG
+				NOT = { truce_with = THIS }
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				OR = {
+					AND = {
+						part_of_sphere = no
+						relation = { who = THIS value = 100 }
+					}
+					in_sphere = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = invite_MON_to_YUG
+			MON = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			MON = { country_event = 11120 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Serbia
+	invite_SER_to_YUG = {
+		picture = map_balkans
+		potential = {
+			OR = {
+				tag = YUG
+				YUG = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			exists = SER
+			NOT = { has_country_flag = invite_SER_to_YUG }
+		}
+
+		allow = {
+			war = no
+			NOT = { government = theocracy }
+			SER = {
+				war = no
+				neighbour = YUG
+				NOT = { truce_with = THIS }
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				OR = {
+					AND = {
+						part_of_sphere = no
+						relation = { who = THIS value = 100 }
+					}
+					in_sphere = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = invite_SER_to_YUG
+			SER = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			SER = { country_event = 11120 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Slovenia
+	invite_SLO_to_YUG = {
+		picture = map_balkans
+		potential = {
+			OR = {
+				tag = YUG
+				YUG = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			exists = SLO
+			NOT = { has_country_flag = invite_SLO_to_YUG }
+		}
+
+		allow = {
+			war = no
+			NOT = { government = theocracy }
+			SLO = {
+				war = no
+				neighbour = YUG
+				NOT = { truce_with = THIS }
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				OR = {
+					AND = {
+						part_of_sphere = no
+						relation = { who = THIS value = 100 }
+					}
+					in_sphere = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = invite_SLO_to_YUG
+			SLO = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			SLO = { country_event = 11120 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+## Expansion ##
+
+	#Group Description: ALB, BUL and GRE can be invited for higher infamy (4,10,15) and have lower chances of accepting annexation (50%, 25%, 0%).
+
+	#Description: Albania
+	invite_ALB_to_YUG = {
+		picture = map_balkans
+		potential = {
+			OR = {
+				tag = YUG
+				YUG = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			exists = ALB
+			NOT = { has_country_flag = invite_ALB_to_YUG }
+		}
+
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			NOT = { vote_franschise = none_voting }
+			NOT = { religious_policy = moralism }
+			citizenship_policy = full_citizenship
+			citizens_rights = all_voting_pops
+			NOT = { government = theocracy }
+			ALB = {
+				war = no
+				neighbour = YUG
+				NOT = { truce_with = THIS }
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				OR = {
+					AND = {
+						part_of_sphere = no
+						relation = { who = THIS value = 100 }
+					}
+					in_sphere = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = invite_ALB_to_YUG
+			badboy = 4
+			ALB = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			ALB = { country_event = 11120 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Bulgaria
+	invite_BUL_to_YUG = {
+		picture = map_balkans
+		potential = {
+			OR = {
+				tag = YUG
+				YUG = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			exists = BUL
+			NOT = { has_country_flag = invite_BUL_to_YUG }
+		}
+
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			NOT = { government = theocracy }
+			BUL = {
+				war = no
+				neighbour = YUG
+				NOT = { truce_with = THIS }
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				OR = {
+					AND = {
+						part_of_sphere = no
+						relation = { who = THIS value = 100 }
+					}
+					in_sphere = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = invite_BUL_to_YUG
+			badboy = 10
+			BUL = { all_core = { add_core = YUG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			BUL = { country_event = 11120 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Greece ## DISABLED. Way too gamey. If someone wants to make an edgy Balkan Fed path, be my guest, but Greece in YugoSLAVia makes no sense.
+	#invite_GRE_to_YUG = {
+	#	picture = map_balkans
+	#	potential = {
+	#		OR = {
+	#			tag = YUG
+	#			YUG = {
+	#				vassal_of = THIS
+	#				in_sphere = THIS
+	#			}
+	#		}
+	#		exists = GRE
+	#		NOT = { has_country_flag = invite_GRE_to_YUG }
+	#	}
+    #
+	#	allow = {
+	#		war = no
+	#		revolution_n_counterrevolution = 1
+	#		NOT = { government = theocracy }
+	#		GRE = {
+	#			war = no
+	#			neighbour = YUG
+	#			NOT = { truce_with = THIS }
+	#			NOT = { has_country_flag = megali_idea_claimed }
+	#			OR = {
+	#				is_vassal = no
+	#				vassal_of = THIS
+	#			}
+	#			OR = {
+	#				AND = {
+	#					part_of_sphere = no
+	#					relation = { who = THIS value = 100 }
+	#				}
+	#				in_sphere = THIS
+	#				sphere_owner = { is_sphere_leader_of = THIS }
+	#			}
+	#		}
+	#	}
+    #
+	#	effect = {
+	#		set_country_flag = invite_GRE_to_YUG
+	#		badboy = 15
+	#		GRE = { all_core = { add_core = YUG } }
+	#		GRE = { country_event = 11120 }
+	#	}
+    #
+	#	ai_will_do = { factor = 1 }
+	#}
+
+## Embrace cultures ##
+
+	#Description: Accept Bosniak culture.
+	embrace_bosnians_YUG = {
+		picture = embrace_minority
+		potential = {
+			tag = YUG
+			any_owned_province = { culture = bosniak }
+			NOT = {
+				primary_culture = bosniak
+				accepted_culture = bosniak
+			}
+		}
+
+		allow = {
+			prestige = 100
+			has_country_flag = democracy_gov
+			NOT = { vote_franschise = none_voting }
+			NOT = { citizenship_policy = residency }
+			NOT = { religious_policy = moralism }
+			citizenship_policy = full_citizenship
+			citizens_rights = all_voting_pops
+			nationalism_n_imperialism = 1
+			NOT = {
+				any_owned_province = {
+					culture = bosniak
+					average_militancy = 2
+				}
+			}
+		}
+
+		effect = {
+			add_accepted_culture = bosniak
+			prestige = -50
+			any_pop = {
+				limit = { has_pop_culture = bosniak }
+				consciousness = -4
+				militancy = -4
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				consciousness = 4
+				militancy = 4
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	#Description: Accept Pomaks
+	embrace_pomaks_YUG = {
+		picture = embrace_minority
+		potential = {
+		    OR = {
+			tag = YUG
+			tag = BUL
+			}
+			any_owned_province = { culture = pomak }
+			NOT = {
+				primary_culture = bosniak
+				accepted_culture = bosniak
+			}
+		}
+
+		allow = {
+			prestige = 50
+			nationalism_n_imperialism = 1 #need later tech, todo
+			NOT = { vote_franschise = none_voting }
+			NOT = { citizenship_policy = residency }
+			NOT = { religious_policy = moralism }
+			citizenship_policy = full_citizenship
+			citizens_rights = all_voting_pops
+			NOT = {
+				any_owned_province = {
+					culture = pomak
+					average_militancy = 2
+				}
+			}
+		}
+
+		effect = {
+			add_accepted_culture = pomak
+			prestige = -25
+			any_pop = {
+				limit = { has_pop_culture = pomak }
+				consciousness = -4
+				militancy = -4
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				consciousness = 4
+				militancy = 4
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Accept Bulgarian culture.
+	embrace_bulgarians_YUG = {
+		picture = embrace_minority
+		potential = {
+			tag = YUG
+			any_owned_province = { culture = bulgarian }
+			NOT = {
+				primary_culture = bulgarian
+				accepted_culture = bulgarian
+			}
+		}
+
+		allow = {
+			NOT = { government = theocracy }
+			NOT = { vote_franschise = none_voting }
+			citizenship_policy = full_citizenship
+			citizens_rights = all_voting_pops
+			prestige = 100
+			revolution_n_counterrevolution = 1
+			experimental_psychology = 1
+			NOT = {
+				any_owned_province = {
+					culture = bulgarian
+					average_militancy = 2
+				}
+			}
+		}
+
+		effect = {
+			add_accepted_culture = bulgarian
+			prestige = -50
+			any_pop = {
+				limit = { has_pop_culture = bulgarian }
+				consciousness = -4
+				militancy = -4
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				consciousness = 8
+				militancy = 6
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Accept Greek culture.
+	#embrace_greeks_YUG = {
+		#picture = embrace_minority
+		#potential = {
+			#tag = YUG
+			#any_owned_province = { culture = greek }
+			#NOT = {
+				#primary_culture = greek
+				#accepted_culture = greek
+			#}
+		#}
+
+		#allow = {
+			#prestige = 100
+			#revolution_n_counterrevolution = 1
+			#social_science = 1
+			#psychoanalysis = 1
+			#NOT = {
+				#any_owned_province = {
+					#culture = greek
+					#average_militancy = 2
+				#}
+			#}
+		#}
+
+		#effect = {
+			#add_accepted_culture = greek
+			#prestige = -50
+			#any_pop = {
+				#limit = { has_pop_culture = greek }
+				#consciousness = -4
+				#militancy = -4
+			#}
+			#any_pop = {
+				#limit = {
+					#is_primary_culture = no
+					#is_accepted_culture = no
+				#}
+				#consciousness = 4
+				#militancy = 4
+			#}
+		#}
+
+		#ai_will_do = { factor = 1 }
+	#}
+
+	#Description: Accept Albanian culture.
+	embrace_albanians_YUG = {
+		picture = embrace_minority
+		potential = {
+			tag = YUG
+			any_owned_province = { culture = albanian }
+			NOT = {
+				primary_culture = albanian
+				accepted_culture = albanian
+			}
+		}
+
+		allow = {
+			prestige = 100
+			NOT = { government = theocracy }
+			NOT = { vote_franschise = none_voting }
+			citizenship_policy = full_citizenship
+			citizens_rights = all_voting_pops
+			mass_politics = 1
+			social_science = 1
+			behaviorism = 1
+			NOT = {
+				any_owned_province = {
+					culture = albanian
+					average_militancy = 2
+				}
+			}
+		}
+
+		effect = {
+			add_accepted_culture = albanian
+			prestige = -50
+			any_pop = {
+				limit = { has_pop_culture = albanian }
+				consciousness = -4
+				militancy = -4
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				consciousness = 9
+				militancy = 8
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+## Dissolution ##
+
+	#Description: If Yugoslavia is only left with Serbian cores, it will turn into Serbia and all Yugoslavia cores will be removed.
+	end_of_yugoslavia_serbia = {
+		picture = form_yugoslavia
+		potential = {
+			tag = YUG
+			NOT = {
+				exists = SER
+				any_owned_province = {
+					NOT = {
+						is_core = SER
+					}
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						is_core = SER
+					}
+				}
+			}
+		}
+
+		effect = {
+			random_owned = {
+				limit = { province_id = 794 }
+				owner = { capital = 794 }
+			}
+			prestige = 10
+			primary_culture = serb
+			remove_accepted_culture = croat
+			remove_accepted_culture = slovene
+			remove_accepted_culture = bosniak
+			remove_accepted_culture = albanian
+			remove_accepted_culture = bulgarian
+			all_core = { remove_core = YUG }
+			change_tag = SER
+			any_pop = {
+				limit = { has_pop_culture = serb }
+				militancy = -4
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If Yugoslavia is only left with Croatian cores, it will turn into Croatia and all Yugoslavia cores will be removed.
+	end_of_yugoslavia_croatia = {
+		picture = form_yugoslavia
+		potential = {
+			tag = YUG
+			NOT = {
+				exists = CRO
+				any_owned_province = {
+					NOT = {
+						is_core = CRO
+					}
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						is_core = CRO
+					}
+				}
+			}
+		}
+
+		effect = {
+			random_owned = {
+				limit = { province_id = 771 }
+				owner = { capital = 771 }
+			}
+			prestige = 10
+			primary_culture = croat
+			remove_accepted_culture = serb
+			remove_accepted_culture = slovene
+			remove_accepted_culture = bosniak
+			remove_accepted_culture = albanian
+			remove_accepted_culture = bulgarian
+			all_core = { remove_core = YUG }
+			change_tag = CRO
+			any_pop = {
+				limit = { has_pop_culture = croat }
+				militancy = -4
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If Yugoslavia is only left with Slovenian cores, it will turn into Slovenia and all Yugoslavia cores will be removed.
+	end_of_yugoslavia_slovenia = {
+		picture = form_yugoslavia
+		potential = {
+			tag = YUG
+			NOT = {
+				exists = SLO
+				any_owned_province = {
+					NOT = {
+						is_core = SLO
+					}
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						is_core = SLO
+					}
+				}
+			}
+		}
+
+		effect = {
+			random_owned = {
+				limit = { province_id = 768 }
+				owner = { capital = 768 }
+			}
+			prestige = 10
+			primary_culture = slovene
+			remove_accepted_culture = croat
+			remove_accepted_culture = serb
+			remove_accepted_culture = bosniak
+			remove_accepted_culture = albanian
+			remove_accepted_culture = bulgarian
+			all_core = { remove_core = YUG }
+			change_tag = SLO
+			any_pop = {
+				limit = { has_pop_culture = slovene }
+				militancy = -4
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If Yugoslavia is only left with Bosnian cores, it will turn into Bosnia and all Yugoslavia cores will be removed.
+	end_of_yugoslavia_bosnia = {
+		picture = form_yugoslavia
+		potential = {
+			tag = YUG
+			NOT = {
+				exists = BOS
+				any_owned_province = {
+					NOT = {
+						is_core = BOS
+					}
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						is_core = BOS
+					}
+				}
+			}
+		}
+
+		effect = {
+			random_owned = {
+				limit = { province_id = 783 }
+				owner = { capital = 783 }
+			}
+			prestige = 10
+			primary_culture = bosniak
+			remove_accepted_culture = croat
+			remove_accepted_culture = slovene
+			remove_accepted_culture = serb
+			remove_accepted_culture = albanian
+			remove_accepted_culture = bulgarian
+			all_core = { remove_core = YUG }
+			change_tag = BOS
+			any_pop = {
+				limit = { has_pop_culture = bosniak }
+				militancy = -4
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If Yugoslavia is only left with Albanian cores, it will turn into Albania and all Yugoslavia cores will be removed.
+	end_of_yugoslavia_albania = {
+		picture = form_yugoslavia
+		potential = {
+			tag = YUG
+			NOT = {
+				exists = ALB
+				any_owned_province = {
+					NOT = {
+						is_core = ALB
+					}
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						is_core = ALB
+					}
+				}
+			}
+		}
+
+		effect = {
+			random_owned = {
+				limit = { province_id = 849 }
+				owner = { capital = 849 }
+			}
+			prestige = 10
+			primary_culture = albanian
+			remove_accepted_culture = croat
+			remove_accepted_culture = slovene
+			remove_accepted_culture = bosniak
+			remove_accepted_culture = serb
+			remove_accepted_culture = bulgarian
+			all_core = { remove_core = YUG }
+			change_tag = ALB
+			any_pop = {
+				limit = { has_pop_culture = albanian }
+				militancy = -4
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If Yugoslavia is only left with Montenegrin cores, it will turn into Montenegro and all Yugoslavia cores will be removed.
+	end_of_yugoslavia_montenegro = {
+		picture = form_yugoslavia
+		potential = {
+			tag = YUG
+			NOT = {
+				exists = MON
+				any_owned_province = {
+					NOT = {
+						is_core = MON
+					}
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						is_core = MON
+					}
+				}
+			}
+		}
+
+		effect = {
+			random_owned = {
+				limit = { province_id = 2583 }
+				owner = { capital = 2593 }
+			}
+			prestige = 10
+			primary_culture = serb
+			remove_accepted_culture = croat
+			remove_accepted_culture = slovene
+			remove_accepted_culture = bosniak
+			remove_accepted_culture = albanian
+			remove_accepted_culture = bulgarian
+			all_core = { remove_core = YUG }
+			change_tag = MON
+			any_pop = {
+				limit = { has_pop_culture = serb }
+				militancy = -4
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If Yugoslavia is only left with Bulgarian cores, it will turn into Bulgaria and all Yugoslavia cores will be removed.
+	end_of_yugoslavia_bulgaria = {
+		picture = form_yugoslavia
+		potential = {
+			tag = YUG
+			NOT = {
+				exists = BUL
+				any_owned_province = {
+					NOT = {
+						is_core = BUL
+					}
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						is_core = BUL
+					}
+				}
+			}
+		}
+
+		effect = {
+			random_owned = {
+				limit = { province_id = 809 }
+				owner = { capital = 809 }
+			}
+			prestige = 10
+			primary_culture = bulgarian
+			remove_accepted_culture = croat
+			remove_accepted_culture = slovene
+			remove_accepted_culture = bosniak
+			remove_accepted_culture = albanian
+			remove_accepted_culture = serb
+			all_core = { remove_core = YUG }
+			change_tag = BUL
+			any_pop = {
+				limit = { has_pop_culture = bulgarian }
+				militancy = -4
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If Yugoslavia is only left with Greek cores, it will turn into Greece and all Yugoslavia cores will be removed.
+	#end_of_yugoslavia_greece = {
+		#picture = form_yugoslavia
+		#potential = {
+			#tag = YUG
+			#NOT = { exists = GRE any_owned_province = { NOT = { is_core = GRE } } }
+		#}
+
+		#allow = {
+			#war = no
+			#NOT = { any_owned_province = { NOT = { is_core = GRE } } }
+		#}
+
+		#effect = {
+			#random_owned = {
+				#limit = { province_id = 809 }
+				#owner = { capital = 809 }
+			#}
+			#prestige = 10
+			#primary_culture = greek
+			#remove_accepted_culture = croat
+			#remove_accepted_culture = slovene
+			#remove_accepted_culture = bosniak
+			#remove_accepted_culture = albanian
+			#remove_accepted_culture = serb
+			#remove_accepted_culture = bulgarian
+			#all_core = { remove_core = YUG }
+			#change_tag = BUL
+			#any_pop = {
+				#limit = { has_pop_culture = bulgarian }
+				#militancy = -4
+			#}
+		#}
+
+		#ai_will_do = { factor = 1 }
+	#}
+
+## Other ##
+
+	#Description: Form the State of Slovenes, Croats and Serbs out of Slovenia, Croatia and Bosnia, which historically formed after the collapse of Austria-Hungary and joined the Kingdom of Serbia.
+	# form_sks = {
+		# potential = {
+			# OR = {
+				# tag = SLO
+				# tag = CRO
+			# }
+			# NOT = { exists = SKS }
+			# NOT = { has_global_flag = sks_formed }
+			# NOT = { has_country_flag = post_colonial_country }
+		# }
+
+		# allow = {
+			# war = no
+			# is_vassal = no
+			# #prestige = 60
+			# #nationalism_n_imperialism = 1
+			# 768 = {
+				# owner = {
+					# OR = {
+						# tag = THIS
+						# in_sphere = THIS
+						# vassal_of = THIS
+						# has_country_flag = newly_released_nation
+					# }
+					# OR = {
+						# is_vassal = no
+						# vassal_of = THIS
+					# }
+					# NOT = { truce_with = THIS }
+					# war = no
+				# }
+			# }
+			# 771 = {
+				# owner = {
+					# OR = {
+						# tag = THIS
+						# in_sphere = THIS
+						# vassal_of = THIS
+						# has_country_flag = newly_released_nation
+					# }
+					# OR = {
+						# is_vassal = no
+						# vassal_of = THIS
+					# }
+					# NOT = { truce_with = THIS }
+					# war = no
+				# }
+			# }
+		# }
+
+		# effect = {
+			# set_global_flag = sks_formed
+			# prestige = 20
+			# all_core = { add_core = SKS }
+			# CRO = { all_core = { add_core = SKS } }
+			# BOS = { all_core = { add_core = SKS } }
+			# SLO = { all_core = { add_core = SKS } }
+			# random_owned = {
+				# limit = { owner = { accepted_culture = north_italian } }
+				# owner = { remove_accepted_culture = north_italian }
+			# }
+			# random_owned = {
+				# limit = { owner = { NOT = { government = theocracy } } }
+				# owner = {
+					# add_accepted_culture = serb
+					# add_accepted_culture = croat
+					# add_accepted_culture = slovene
+				# }
+			# }
+			# change_tag = SKS
+			# any_country = {
+				# limit = {
+					# OR = {
+						# in_sphere = THIS
+						# vassal_of = THIS
+					# }
+					# NOT = { is_culture_group = south_slavic }
+				# }
+				# any_owned = {
+					# limit = { is_core = SKS }
+					# secede_province = THIS
+				# }
+			# }
+			# any_country = {
+				# limit = {
+					# war = no
+					# OR = {
+						# tag = CRO
+						# tag = SLO
+						# tag = BOS
+					# }
+					# OR = {
+						# in_sphere = THIS
+						# sphere_owner = { is_sphere_leader_of = THIS }
+						# relation = { who = THIS value = -5 }
+					# }
+				# }
+				# country_event = 11120
+			# }
+		# }
+
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+}

@@ -1,0 +1,133 @@
+#The triggers in the potentials were optmized in this file, be careful messing with them.
+#The optmization was made with a high deegre of accuracy and it's mostly fine
+political_decisions = {
+	greater_afghanistan = {
+		picture = form_durrani_empire
+
+		potential = {
+			primary_culture = pashtun
+			NOT = { has_country_flag = greater_afghanistan }
+			NOT = { has_global_flag = extra_flavour_disabled }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			AFG = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			OR = {
+				prestige = 50
+				rank = 16
+			}
+			OR = {
+				tag = AFG
+				AFG = {	exists = no }
+			}
+		}
+
+		effect = {
+			set_country_flag = greater_afghanistan
+			AFG = {
+				all_core = {
+					add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				}
+			}
+			KAL_1221 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Baluchistan
+			1218 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Peshawar
+			1219 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Quetta
+			1223 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Chitral
+			badboy = 4
+			prestige = 10
+			any_country = {
+				limit = {
+					tag = THIS
+					NOT = { tag = AFG }
+				}
+				change_tag = AFG
+				capital = 1209
+			}
+			any_country = {
+				limit = {
+					OR = {
+						any_owned_province = { region = KAL_1221 }
+						owns = 1218
+						owns = 1219
+						owns = 1223
+					}
+				}
+				relation = {
+					who = THIS
+					value = -100
+				}
+			}
+		}
+	}
+
+	form_durrani_empire = {
+		picture = form_durrani_empire
+
+		potential = {
+			has_country_flag = greater_afghanistan
+			NOT = { has_global_flag = durrani_formed }
+			NOT = { tag = PAK }
+            NOT = { tag = CRL }
+			NOT = { has_country_flag = post_colonial_country }
+			NOT = { has_global_flag = extra_flavour_disabled }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			all_core = {
+				owned_by = THIS
+			}
+			prestige = 100
+		}
+
+		effect = {
+			set_global_flag = durrani_formed
+			badboy = 8
+			prestige = 10
+			all_core = {
+				add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				remove_core = THIS
+			}
+			change_tag = DUR
+			SIN_1288 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Sindh
+			1147 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Mashad
+			1148 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Birjand
+			1227 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Lahore
+			1228 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Multan
+			1229 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Sialkot
+			1230 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Attock
+			1231 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Bahawalpur
+			1232 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Shahpur
+			1236 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Delhi
+			1237 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Panipat
+			any_country = {
+				limit = {
+					OR = {
+						any_owned_province = { region = SIN_1288 }
+						owns = 1147
+						owns = 1148
+						owns = 1227
+						owns = 1228
+						owns = 1229
+						owns = 1230
+						owns = 1231
+						owns = 1232
+						owns = 1236
+						owns = 1237
+					}
+				}
+				relation = {
+					who = THIS
+					value = -100
+				}
+			}
+		}
+	}
+}

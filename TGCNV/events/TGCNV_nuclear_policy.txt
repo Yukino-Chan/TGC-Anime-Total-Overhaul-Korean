@@ -1,0 +1,229 @@
+# Rank review and costly nuclear development. No event grants warheads.
+country_event = {
+	id = 269810
+	title = EVTNAME269810
+	desc = EVTDESC269810
+	picture = "tgcnv_nuclear_treaty_anime"
+	trigger = {
+		exists = yes
+		NOT = { rank = 5 }
+		NOT = { has_country_flag = tgcnv_np_initialized }
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		set_country_flag = tgcnv_np_initialized
+		set_variable = { which = tgca_np_treaty value = 1 }
+		set_variable = { which = tgca_np_withdrawn value = 0 }
+		set_variable = { which = tgca_np_review value = 0 }
+		clr_country_flag = tgcnv_np_withdrawn
+		clr_country_flag = tgcnv_np_review
+		remove_country_modifier = tgcnv_nuclear_outside_treaty
+		remove_country_modifier = tgcnv_nuclear_non_proliferation
+		add_country_modifier = { name = tgcnv_nuclear_non_proliferation duration = -1 }
+		# Completed knowledge and existing stock remain sealed. Active projects stop.
+		clr_country_flag = tgcnv_np_theory_running
+		clr_country_flag = tgcnv_np_reactor_running
+		clr_country_flag = tgcnv_np_test_running
+		remove_country_modifier = tgcnv_np_theory_work
+		remove_country_modifier = tgcnv_np_reactor_work
+		remove_country_modifier = tgcnv_np_test_work
+	}
+	option = {
+		name = EVTOPTA269810
+		ai_chance = { factor = 100 }
+
+	}
+}
+country_event = {
+	id = 269811
+	title = EVTNAME269811
+	desc = EVTDESC269811
+	picture = "tgcnv_nuclear_great_powers_anime"
+	trigger = {
+		exists = yes
+		rank = 5
+		NOT = { has_country_flag = tgcnv_np_p5 }
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		set_country_flag = tgcnv_np_initialized
+		set_country_flag = tgcnv_np_p5
+		clr_country_flag = tgcnv_np_withdrawn
+		clr_country_flag = tgcnv_np_review
+		set_variable = { which = tgca_np_treaty value = 0 }
+		set_variable = { which = tgca_np_withdrawn value = 0 }
+		set_variable = { which = tgca_np_review value = 0 }
+		remove_country_modifier = tgcnv_nuclear_non_proliferation
+		remove_country_modifier = tgcnv_nuclear_outside_treaty
+	}
+	option = {
+		name = EVTOPTA269811
+		ai_chance = { factor = 100 }
+
+	}
+}
+country_event = {
+	id = 269812
+	title = EVTNAME269812
+	desc = EVTDESC269812
+	picture = "tgcnv_nuclear_rank_loss_anime"
+	trigger = {
+		exists = yes
+		has_country_flag = tgcnv_np_p5
+		NOT = { rank = 5 }
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		clr_country_flag = tgcnv_np_p5
+		set_country_flag = tgcnv_np_review
+		set_variable = { which = tgca_np_review value = 1 }
+		set_variable = { which = tgca_np_withdrawn value = 0 }
+		set_variable = { which = tgca_np_treaty value = 1 }
+		remove_country_modifier = tgcnv_nuclear_non_proliferation
+		add_country_modifier = { name = tgcnv_nuclear_non_proliferation duration = -1 }
+	}
+	option = {
+		name = EVTOPTA269812
+		ai_chance = { factor = 90 }
+		any_country = {
+			limit = {
+				tag = THIS
+				NOT = { rank = 5 }
+				has_country_flag = tgcnv_np_review
+			}
+			set_variable = { which = tgca_np_treaty value = 1 }
+			set_variable = { which = tgca_np_withdrawn value = 0 }
+			set_variable = { which = tgca_np_review value = 0 }
+			clr_country_flag = tgcnv_np_withdrawn
+			clr_country_flag = tgcnv_np_review
+			remove_country_modifier = tgcnv_nuclear_outside_treaty
+			remove_country_modifier = tgcnv_nuclear_non_proliferation
+			add_country_modifier = { name = tgcnv_nuclear_non_proliferation duration = -1 }
+			# Completed knowledge and existing stock remain sealed. Active projects stop.
+			clr_country_flag = tgcnv_np_theory_running
+			clr_country_flag = tgcnv_np_reactor_running
+			clr_country_flag = tgcnv_np_test_running
+			remove_country_modifier = tgcnv_np_theory_work
+			remove_country_modifier = tgcnv_np_reactor_work
+			remove_country_modifier = tgcnv_np_test_work
+		}
+	}
+	option = {
+		name = EVTOPTB269812
+		ai_chance = { factor = 10 modifier = { factor = 0 badboy = 0.4 } }
+		any_country = {
+			limit = {
+				tag = THIS
+				NOT = { rank = 5 }
+				has_country_flag = tgcnv_np_review
+			}
+			badboy = 50
+			set_country_flag = tgcnv_np_initialized
+			set_country_flag = tgcnv_np_withdrawn
+			clr_country_flag = tgcnv_np_review
+			set_variable = { which = tgca_np_treaty value = 0 }
+			set_variable = { which = tgca_np_withdrawn value = 1 }
+			set_variable = { which = tgca_np_review value = 0 }
+			remove_country_modifier = tgcnv_nuclear_non_proliferation
+			remove_country_modifier = tgcnv_nuclear_outside_treaty
+			add_country_modifier = { name = tgcnv_nuclear_outside_treaty duration = -1 }
+		}
+	}
+}
+country_event = {
+	id = 269813
+	title = EVTNAME269813
+	desc = EVTDESC269813
+	picture = "tgcnv_nuclear_theory_anime"
+	trigger = {
+		exists = yes
+		OR = { rank = 5 has_country_flag = tgcnv_np_withdrawn }
+		NOT = { has_country_flag = tgcnv_np_review }
+		NOT = { has_country_modifier = tgcnv_nuclear_non_proliferation }
+		has_country_flag = tgcnv_np_theory_running
+		NOT = { has_country_modifier = tgcnv_np_theory_work }
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		clr_country_flag = tgcnv_np_theory_running
+		set_country_flag = tgcnv_np_theory_ready
+	}
+	option = {
+		name = EVTOPTA269813
+		ai_chance = { factor = 100 }
+
+	}
+}
+country_event = {
+	id = 269814
+	title = EVTNAME269814
+	desc = EVTDESC269814
+	picture = "tgcnv_nuclear_reactor_anime"
+	trigger = {
+		exists = yes
+		OR = { rank = 5 has_country_flag = tgcnv_np_withdrawn }
+		NOT = { has_country_flag = tgcnv_np_review }
+		NOT = { has_country_modifier = tgcnv_nuclear_non_proliferation }
+		has_country_flag = tgcnv_np_reactor_running
+		NOT = { has_country_modifier = tgcnv_np_reactor_work }
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		clr_country_flag = tgcnv_np_reactor_running
+		set_country_flag = tgcnv_np_reactor_ready
+	}
+	option = {
+		name = EVTOPTA269814
+		ai_chance = { factor = 100 }
+
+	}
+}
+country_event = {
+	id = 269815
+	title = EVTNAME269815
+	desc = EVTDESC269815
+	picture = "tgcnv_nuclear_test_anime"
+	trigger = {
+		exists = yes
+		OR = { rank = 5 has_country_flag = tgcnv_np_withdrawn }
+		NOT = { has_country_flag = tgcnv_np_review }
+		NOT = { has_country_modifier = tgcnv_nuclear_non_proliferation }
+		has_country_flag = tgcnv_np_test_running
+		NOT = { has_country_modifier = tgcnv_np_test_work }
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		clr_country_flag = tgcnv_np_test_running
+		set_country_flag = tgcnv_np_test_ready
+	}
+	option = {
+		name = EVTOPTA269815
+		ai_chance = { factor = 100 }
+
+	}
+}
+country_event = {
+	id = 269816
+	title = EVTNAME269816
+	desc = EVTDESC269816
+	picture = "tgcnv_nuclear_certification_anime"
+	trigger = {
+		exists = yes
+		OR = { rank = 5 has_country_flag = tgcnv_np_withdrawn }
+		NOT = { has_country_flag = tgcnv_np_review }
+		NOT = { has_country_modifier = tgcnv_nuclear_non_proliferation }
+		invention = tgcnv_nuclear_weapons
+		has_country_flag = tgcnv_np_test_ready
+		NOT = { has_country_flag = tgcnv_np_certified }
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		set_country_flag = tgcnv_np_certified
+		set_variable = { which = tgca_np_weaponized value = 1 }
+	}
+	option = {
+		name = EVTOPTA269816
+		ai_chance = { factor = 100 }
+
+	}
+}

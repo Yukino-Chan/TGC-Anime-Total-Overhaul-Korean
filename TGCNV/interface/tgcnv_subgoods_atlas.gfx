@@ -1,0 +1,20 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_tgcnv_subgoods_normal"
+    texturefile = "gfx\\interface\\goods_detail\\atlas_normal.dds"
+    noOfFrames = 199
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgoods_big"
+    texturefile = "gfx\\interface\\goods_detail\\atlas_big.dds"
+    noOfFrames = 199
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgoods_small"
+    texturefile = "gfx\\interface\\goods_detail\\atlas_small.dds"
+    noOfFrames = 199
+    loadType = "INGAME"
+  }
+}

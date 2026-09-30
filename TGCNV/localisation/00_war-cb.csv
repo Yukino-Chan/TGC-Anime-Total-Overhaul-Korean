@@ -1,0 +1,434 @@
+CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;ITALIAN;SWEDISH;CZECH;HUNGARIAN;DUTCH;PORTUGUESE;RUSSIAN;FINNISH;x
+acquire_all_cores;¸ğµç ÄÚ¾î¸¦ È¹µæÇÏ¼¼¿ä;;;;;;;;;;;;;x
+acquire_all_cores_desc;¸ğµç ÀûÀ» È¹µæÇÏ¼¼¿ä§YÁÖ§W¿ì¸®°¡ ÀÖ´Â °÷§YÇÙ½É Áö¹æ§W;;;;;;;;;;;;;x
+acquire_all_cores_setup;¸ğµç ÇÙ½É Áö¹æÀ» È¹µæÇÏ¼¼¿ä$RECIPIENT$;;;;;;;;;;;;;x
+acquire_all_cores_short;¸ğµç ÄÚ¾î¸¦ È¹µæÇÏ¼¼¿ä$RECIPIENT$;;;;;;;;;;;;;x
+acquire_any_state;Ãëµæ;Prendre territoire clé;Kernprovinz erwerben;;;;;;;;;;;x
+acquire_any_state_desc;ÀûÀ» ¾òÀ¸¼¼¿ä§Y.§W;Prendre un §YÉtat§W ennemi o?nous avons des §Yprovinces principales§W;Erobern Sie einen feindlichen §YStaat§W, in dem wir §YKernprovinzen§W haben.;;;;;;;;;;;x
+acquire_any_state_setup;$STATE$ È¹µæ: ´ë»ó±¹ $RECIPIENT$;Prendre État clé $STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;x
+acquire_any_state_short;$STATE$ È¹µæ;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;x
+acquire_core_state;ÄÚ¾î È¹µæ;Prendre territoire clé;Kernprovinz erwerben;;;;;;;;;;;x
+acquire_core_state_desc;¿ì¸®³ª¶óÀÇ §YÇÙ½É ÁÖ§W°¡ ÀÖ´Â §YÁö¿ª§WÀ» Àû±¹À¸·ÎºÎÅÍ È¹µæÇÏ½Ê½Ã¿À;Prendre un §YÉtat§W ennemi où nous avons des §Yprovinces principales§W;Erobern Sie einen feindlichen §YStaat§W, in dem wir §YKernprovinzen§W haben.;;;;;;;;;;;x
+acquire_core_state_setup;ÄÚ¾î È¹µæ$STATE$ $RECIPIENT$;Prendre État clé $STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;x
+acquire_core_state_short; $STATE$(À»)¸¦ È¹µæ;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;x
+acquire_state;¿µÅä¿ä±¸;Prendre État;$STATE$ erwerben;;;;;;;;;;;x
+acquire_state_desc;Àû±¹¿¡¼­ §YÁö¿ª§WÀ» È¹µæÇÏ½Ê½Ã¿À;;;;;;;;;;;;;x
+acquire_state_setup;$STATE$ È¹µæ: ´ë»ó±¹ $RECIPIENT$;;;;;;;;;;;;;x
+acquire_state_short;$STATE$(À»)¸¦ È¹µæ;;;;;;;;;;;;;x
+acquire_substate_core_region;ÇÏÀ§ »óÅÂÀÇ ÇÙ½É ¿µ¿ªÀ» È¹µæÇÏ¼¼¿ä;Acquérir une région comme Sous-État;Beschafft eine Unterstaatsregion;;;;;;;;;;;x
+acquire_substate_core_region_desc;ÀûÀ¸·ÎºÎÅÍ ÇÙ½É ¿µ¿ªÀ» È¹µæÇÏ¼¼¿ä§Y¼­ºê½ºÅ×ÀÌÆ®§W;Acquérir une région d'un §YSous-État§W ennemi;Beschafft eine Region des Feindes §Ysubstate§W;;;;;;;;;;;x
+acquire_substate_core_region_setup;$STATE$ È¹µæ: ´ë»ó±¹ $RECIPIENT$;Prendre $STATE$ de $RECIPIENT$;$STATE$ von $RECIPIENT$ erobern.;;;;;;;;;;;x
+acquire_substate_core_region_short;$STATE$ È¹µæ;Prendre $STATE$;$STATE$ erobern;;;;;;;;;;;x
+acquire_substate_colony;¾Æ±¹°¡ ±º¶ôÀ» È¹µæ;Acquérir une région comme Sous-État;Beschafft eine Unterstaatsregion;;;;;;;;;;;x
+acquire_substate_colony_desc;ÀûÀ¸·ÎºÎÅÍ ½Ä¹ÎÁö¸¦ È¹µæÇÏ¼¼¿ä§Y¼­ºê½ºÅ×ÀÌÆ®§W;Acquérir une région d'un §YSous-État§W ennemi;Beschafft eine Region des Feindes §Ysubstate§W;;;;;;;;;;;x
+acquire_substate_colony_setup;$STATE$ È¹µæ: ´ë»ó±¹ $RECIPIENT$;Prendre $STATE$ de $RECIPIENT$;$STATE$ von $RECIPIENT$ erobern.;;;;;;;;;;;x
+acquire_substate_colony_short;$STATE$ È¹µæ;Prendre $STATE$;$STATE$ erobern;;;;;;;;;;;x
+acquire_substate_region;Á¾¼Ó±¹ Áö¿ª ¿ä±¸;Acquérir une région comme Sous-État;Beschafft eine Unterstaatsregion;;;;;;;;;;;x
+acquire_substate_region_desc;Àû±¹ÀÇ §YÁ¾¼Ó±¹§WÀ¸·ÎºÎÅÍ Áö¿ªÀ» ¿ä±¸ÇÕ´Ï´Ù;Acquérir une région d'un §YSous-État§W ennemi;Beschafft eine Region des Feindes §Ysubstate§W;;;;;;;;;;;x
+acquire_substate_region_setup;$STATE$ È¹µæ: ´ë»ó±¹ $RECIPIENT$;Prendre $STATE$ de $RECIPIENT$;$STATE$ von $RECIPIENT$ erobern.;;;;;;;;;;;x
+acquire_substate_region_short;$STATE$(À»)¸¦ ¿ä±¸ÇÕ´Ï´Ù.;Prendre $STATE$;$STATE$ erobern;;;;;;;;;;;x
+acw_intervention;¹Ì±¹ ³»ÀüÀ» ³¡³»¼¼¿ä.;;;;;;;;;;;;;x
+acw_intervention_desc;ÀÌ °¥µîÀº ¿ì¸®ÀÇ ¸éÈ­ ¼öÀÔ¿¡ ½É°¢ÇÑ Å¸°İÀ» ÁÖ°í ÀÖÀ¸¸ç °¡´ÉÇÑ ÇÑ »¡¸® Á¾°áµÇ¾î¾ß ÇÑ´Ù.;;;;;;;;;;;;;x
+acw_intervention_setup;¹Ì±¹ ³²ºÏÀüÀï¿¡ °³ÀÔ.;;;;;;;;;;;;;x
+acw_intervention_short;¹Ì±¹ ³²ºÏÀüÀï¿¡ °³ÀÔ;;;;;;;;;;;;;x
+add_to_sphere;¼¼·Â±Ç ÆíÀÔ;ajouter à la sphère;In Einflusssphäre aufnehmen;;;;;;;;;;;x
+add_to_sphere_desc;¾î´À ³ª¶ó¸¦ ¿ì¸®³ª¶óÀÇ §Y¼¼·Â±Ç§W¿¡ ÆíÀÔÇØÁÖ¼¼¿ä;Ajouter un pays à notre §Ysphère d'influence§W;Fügen Sie das Land Ihrer §YEinflusssphäre§W hinzu.;;;;;;;;;;;x
+add_to_sphere_setup;$RECIPIENT$À» ¼¼·Â±Ç¿¡ ÆíÀÔ;ajouter $RECIPIENT$ à la sphère d'influence;$RECIPIENT$ in Einflusssphäre aufnehmen;;;;;;;;;;;x
+add_to_sphere_short;$RECIPIENT$À» ¼¼·Â±Ç¿¡ ÆíÀÔ;ajouter $RECIPIENT$ à la sphère d'influence;$RECIPIENT$ in Einflusssphäre aufnehmen;;;;;;;;;;;x
+annex_africa;Scramble for Africa—Demand State;;;;;;;;;;;;;x
+annex_africa_desc;Èû Áà.§Y¹Ì¹®¸í±¹§W°­´ë±¹ È¸ÀÇ¿¡¼­ Á¤ÇØÁø ±ÔÄ¢¿¡ µû¶ó ¿µÅä¸¦ Á¡·ÉÇÏ±â À§ÇØ. ÁÖÀÇ: ºñ¿ë 1.;;;;;;;;;;;;;x
+scramble_for_china;Áß±¹¿ë ½ºÅ©·¥ºí;;;;;;;;;;;;;x
+scramble_for_china_desc;Èû Áà.§Y¹Ì¹®¸í±¹§W°­´ë±¹ È¸ÀÇ¿¡¼­ Á¤ÇØÁø ±ÔÄ¢¿¡ µû¶ó ¿µÅä¸¦ Á¡·ÉÇÏ±â À§ÇØ¼­¿ä.;;;;;;;;;;;;;x
+annex_africa_full;Scramble for Africa—Annex;;;;;;;;;;;;;x
+annex_africa_full_desc;Èû Áà.§Y¹Ì¹®¸í±¹§W°­´ë±¹ È¸ÀÇ¿¡¼­ Á¤ÇØÁø ±ÔÄ¢¿¡ µû¶ó º¸È£±¹ÀÌ µÇ±â À§ÇØ¼­;;;;;;;;;;;;;x
+annex_africa_full_setup;$RECIPIENT$ º´ÇÕ(¿­°­È¸ÀÇ ±ÔÁ¤¿¡ µû¸§);;;;;;;;;;;;;x
+annex_africa_full_short;$RECIPIENT$ º´ÇÕ;;;;;;;;;;;;;x
+annex_africa_setup;±×°É ¿ä±¸ÇÏ¼¼¿ä.$RECIPIENT$°­´ë±¹ È¸ÀÇ¿¡¼­ Á¤ÇÑ ±ÔÄ¢¿¡ µû¶ó ¿µÅä¸¦ Á¡·ÉÇÑ´Ù.;;;;;;;;;;;;;x
+annex_africa_short;±×°É ¿ä±¸ÇÏ¼¼¿ä.$RECIPIENT$°­´ë±¹ È¸ÀÇ¿¡¼­ Á¤ÇÑ ±ÔÄ¢¿¡ µû¶ó ¿µÅä¸¦ Á¡·ÉÇÑ´Ù.;;;;;;;;;;;;;x
+annex_core_country;Áú¼­ È¸º¹;Rétablir l'ordre;Stellen Sie die Ordnung wieder her;;;;;;;;;;;x
+annex_core_country_desc;¸ğµç ¿µÅä°¡ ¿ì¸®³ª¶óÀÇ ÇÙ½É ÄÚ¾î¸¦ °¡Áö°íÀÖ´Â §YÅ¸±¹§WÀ» ÅëÇÕÇÕ½Ã´Ù.;Annexez un §Ypays§W étranger dont toutes les provinces sont vos territoires clés.;Annektieren Sie alle Provinzen eines ausländischen §YLandes§W, die zu Ihren Kernprovinzen gehören.;;;;;;;;;;;x
+annex_core_country_setup;$RECIPIENT$ ÇÕº´;Annexer $RECIPIENT$;Annektieren Sie $RECIPIENT$;;;;;;;;;;;x
+annex_core_country_short;$RECIPIENT$ ÇÕº´;Annexer $RECIPIENT$;Annektieren Sie $RECIPIENT$;;;;;;;;;;;x
+become_independent;µ¶¸³ÇÏ±â;Devenir indépendant;Werdet unabhängig;;;;;;;;;;;x
+become_independent_desc;¹«·ÂÀ» ÅëÇØ ´ç½ÅÀÇ ±ºÁÖ·ÎºÎÅÍ µ¶¸³À» ¼±¾ğ;;Erklärt mit Waffengewalt Eure Unabhängigkeit von Eurem Herrscher;;;;;;;;;;;x
+become_independent_setup;$ACTOR$(Àº)´Â $RECIPIENT$·ÎºÎÅÍ ÇØ¹æµÇ¾î µ¶¸³±¹ÀÌ µË´Ï´Ù.;$ACTOR$ est libéré de $RECIPIENT$ et devient indépendant.;$ACTOR$ wird von $RECIPIENT$ befreit und wird unabhängig.;;;;;;;;;;;x
+become_independent_short;$ACTOR$(Àº)´Â $RECIPIENT$·ÎºÎÅÍ ÇØ¹æµË´Ï´Ù;$ACTOR$ est libéré de $RECIPIENT$;$ACTOR$ wird von $RECIPIENT$ befreit;;;;;;;;;;;x
+call_allies_cb;¿¬ÇÕ±ºÀ» ±ººñ·Î ºÎ¸£¼¼¿ä.;;;;;;;;;;;;;
+call_allies_cb_desc;µ¿¸Í±¹¿¡°Ô ÁøÇà ÁßÀÎ ÀüÀï¿¡ ÇÕ·ùÇÏ¶ó°í ÀüÈ­ÇÏ½Ê½Ã¿À.;;;;;;;;;;;;;
+call_allies_cb_setup;µ¿¸Í±¹¿¡°Ô ÀüÈ­ÇÏ¿© ÁøÇà ÁßÀÎ ÀüÀï¿¡ Âü¿©ÇÏ½Ê½Ã¿À.;;;;;;;;;;;;;
+call_allies_cb_short;µ¿¸Í±¹¿¡°Ô ÁøÇà ÁßÀÎ ÀüÀï¿¡ ÇÕ·ùÇÏ¶ó°í ÀüÈ­ÇÏ½Ê½Ã¿À.;;;;;;;;;;;;;
+caucasus_war;Äù¾î ´Ù°Ô½ºÅº;;;;;;;;;;;;;x
+caucasus_war_desc;¿ì¸®´Â ´Ù°Ô½ºÅ¸´ÏÀÇ ¹İ¶õÀ» Ãæµ¹½ÃÅ°°í ±× Áö¿ªÀ» ¿ÏÀüÈ÷ ÇÕº´ÇÒ °ÍÀÔ´Ï´Ù.;;;;;;;;;;;;;x
+caucasus_war_setup;Äù¾î ´Ù°Ô½ºÅº.;;;;;;;;;;;;;x
+caucasus_war_short;Äù¾î ´Ù°Ô½ºÅº;;;;;;;;;;;;;x
+cb_sykes_picot;¾Æ½Ã¾Æ ¹Ì½Ã ÇùÁ¤;;;;;;;;;;;;;x
+cb_sykes_picot_desc;¼³¸íÀÌ ÀÖ´Ù¸é, ¿©±â°¡ ¼³¸íÀÇ ±æÀÌ¾ß.;;;;;;;;;;;;;x
+cb_sykes_picot_setup;¾Æ¶ø Áö¹æÀ» Á¡·ÉÇÏ¼¼¿ä;;;;;;;;;;;;;x
+cb_sykes_picot_short;¾Æ¶ø Áö¹æÀ» Á¡·ÉÇÏ¼¼¿ä;;;;;;;;;;;;;x
+china_acquire_state;Áß±¹ ÅëÀÏ;Prendre État;$STATE$ erwerben;;;;;;;;;;;x
+china_acquire_state_desc;Áß±¹ÀÎÀ» ¾òÀ¸¼¼¿ä§Y.§W;Prendre un §YÉtat§W ennemi;Erobern Sie einen feindlichen §YStaat§W.;;;;;;;;;;;x
+china_acquire_state_setup;$STATE$ È¹µæ: ´ë»ó±¹ $RECIPIENT$;Prendre $STATE$ de $RECIPIENT$;$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;x
+china_acquire_state_short;$STATE$ È¹µæ;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;x
+circassian_war;ÄâÀÌ¾î ¼­Ä¿½º;;;;;;;;;;;;;x
+circassian_war_desc;¿ì¸®°¡ ÄÚÄ«¼­½º¿¡ ´ëÇÑ ¿ÏÀüÇÑ Áö¹è¸¦ ¿øÇÑ´Ù¸é ¿ì¸®´Â ÀÌ·¯ÇÑ ¹®¸íÈ­µÇÁö ¾ÊÀº ºÎÁ·µéÀ» ÆÄ±«ÇØ¾ß ÇÑ´Ù.;;;;;;;;;;;;;x
+circassian_war_setup;ÄâÀÌ¾î ¼­Ä¿½º.;;;;;;;;;;;;;x
+circassian_war_short;ÄâÀÌ¾î ¼­Ä¿½º;;;;;;;;;;;;;x
+civil_war;³»Àü;Guerre civile;Bürgerkrieg;;;;;;;;;;;x
+civil_war_desc;´ç½ÅÀÇ ³ª¶ó´Â ³»Àü »óÅÂ¿¡ ÀÖ½À´Ï´Ù.;Votre nation est en guerre civile;Ihre Nation befindet sich in einem Bürgerkrieg.;;;;;;;;;;;x
+civil_war_setup;´Ù½Ã °°Àº ±ê¹ß ¾Æ·¡¿¡ ¿ì¸® ³ª¶ó¸¦ ÀçÅëÀÏÇÏ´Â °ÍÀ¸·Î ÀüÀïÀ» Áß´ÜÇÕ´Ï´Ù.;Mettez fin à la guerre en réunifiant notre nation sous une même bannière.;Beenden Sie den Krieg durch die Wiedervereinigung unserer Nation unter einer gemeinsamen Flagge.;;;;;;;;;;;x
+civil_war_short;±¹°¡¸¦ ÅëÇÕÇÏÀÚ!;Unifier la nation;Einen Sie die Nation!;;;;;;;;;;;x
+claim_holy_land;·¹¹İÆ®¸¦ ÁÖÀåÇÏ¼¼¿ä;Prendre territoire cl?Kernprovinz erwerben;;;;;;;;;;;;x
+claim_holy_land_desc;»óÅÂ¿¡¼­ »óÅÂ¸¦ ¾òÀ¸¼¼¿ä§Y·¹¹İÆ®´Â§WÁö±İÀº ±× »ç¶÷ÀÌ ¹ö¸° °ÍÀÔ´Ï´Ù.§Y¿À½º¸¸ Á¦±¹§W;Prendre un §YÉtat§W ennemi o?nous avons des §Yprovinces principales§W;Erobern Sie einen feindlichen §YStaat§W, in dem wir §YKernprovinzen§W haben.;;;;;;;;;;;x
+claim_holy_land_setup;$STATE$ È¹µæ: ´ë»ó±¹ $RECIPIENT$;Prendre État cl?$STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;x
+claim_holy_land_short;$STATE$ È¹µæ;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;x
+reclaim_the_empire;Á¦±¹¼ºÀ» µÇÃ£À¸¼¼¿ä;Unifier la nation;Einen Sie die Nation!;;;;;;;;;;;x
+reclaim_the_empire_desc;Á¦±¹¿¡ ¼ÓÇß´ø ±¹°¡¸¦ È¹µæÇÏ¼¼¿ä;;;;;;;;;;;x
+reclaim_the_empire_setup;$STATE$ È¹µæ: ´ë»ó±¹ $RECIPIENT$;Prendre État cl?$STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;x
+reclaim_the_empire_short;$STATE$ È¹µæ;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;x
+colonial_competition;½Ä¹ÎÁö Ã»±¸±ÇÀ» °üÃ¶ÇÑ´Ù.;;Koloniale Ansprüche druchsetzen;;;;;;;;;;;x
+colonial_competition_desc;§Y½Ä¹ÎÁö Áö¿ª§!À» ¿ä±¸;;Erhalte §YKoloniale Region§!;;;;;;;;;;;x
+colonial_competition_setup;$REGION$ÀÇ ½Ä¹ÎÁö¸¦ ¿ä±¸;;Erhalte die Kolonie $REGION$;;;;;;;;;;;x
+colonial_competition_short;$REGION$ÀÇ ½Ä¹ÎÁö¸¦ ¿ä±¸;;Erhalte die Kolonie $REGION$;;;;;;;;;;;x
+colonial_conquest;½Ä¹ÎÁö Á¤º¹;;;;;;;;;;;;;x
+colonial_conquest_desc;ÀûÀ» ¾òÀ¸¼¼¿ä§Y.§W¿ì¸®°¡ ÀÖ´Â °÷§Y½Ä¹ÎÁö ÁÖÀå.§W, ÇÏÁö¸¸ ÀÌ°ÍÀº ¿ì¸®¿¡°Ô ¹«ÀÛÀ§·Î ¸¹Àº ¾çÀ» ÁÙ °ÍÀÔ´Ï´Ù.§R.§W §R0.5~2.§W.;;;;;;;;;;;;;x
+colonial_conquest_setup;$STATE$ È¹µæ: ´ë»ó±¹ $RECIPIENT$;;;;;;;;;;;;;x
+colonial_conquest_short;$STATE$ È¹µæ;;;;;;;;;;;;;x
+colonial_reconquest_cb;½Ä¹ÎÁö Á¤º¹;;;;;;;;;;;;;x
+colonial_reconquest_cb_desc;°­Á¦·Î.§Y¹İÇ×ÀûÀÎ ±º¶ô§W´Ù½Ã Á¢È÷µµ·Ï.;;;;;;;;;;;;;x
+colonial_reconquest_cb_setup;$RECIPIENT$ º´ÇÕ(¹İÇ×ÀûÀÎ ½Ä¹ÎÁö);;;;;;;;;;;;;x
+colonial_reconquest_cb_short;$RECIPIENT$ º´ÇÕ;;;;;;;;;;;;;x
+conquest;Á¤º¹ÀüÀï;Conquête;Annektieren;;;;;;;;;;;x
+conquest_triggered;Á¤º¹;Conquête;Annektieren;;;;;;;;;;;x
+conquest_any;Á¤º¹;;;;;;;;;;;;;x
+conquest_any_desc;ÄùÀÌÄ¿.§YÀû±¹§W;;;;;;;;;;;;;x
+conquest_any_setup;$RECIPIENT$ º´ÇÕ;;;;;;;;;;;;;x
+conquest_any_short;$RECIPIENT$ º´ÇÕ;;;;;;;;;;;;;x
+conquest_desc;´ÜÀÏ »óÅÂ ºÎ¼Ó¼­§Y³ª¶ó.§W;Annexer un §Ypays§W à un seul État;Annektieren Sie ein Einzelstaat-§YLand§W;;;;;;;;;;;x
+conquest_low;¹Ì¼º³â Á¤º¹;;;;;;;;;;;;;x
+conquest_low_desc;ºÎ¼Ó¼­.§Y³ª¶ó.§WÁ¤º¹¿¡ ÀÇÇÑ ÀÛÀº ±Ô¸ğ¿Í ÀÎ±¸.;;;;;;;;;;;;;x
+conquest_low_setup;ºÎ¼Ó¼Ò±¹.$RECIPIENT$;;;;;;;;;;;;;x
+conquest_low_short;$RECIPIENT$ º´ÇÕ;;;;;;;;;;;;;x
+conquest_setup;$RECIPIENT$ ÇÕº´;Annexer $RECIPIENT$;$RECIPIENT$ annektieren;;;;;;;;;;;x
+conquest_short;$RECIPIENT$ ÇÕº´;Annexer $RECIPIENT$;$RECIPIENT$ annektieren;;;;;;;;;;;x
+conquest_triggered_setup;$RECIPIENT$ º´ÇÕ;Annexer $RECIPIENT$;$RECIPIENT$ annektieren;;;;;;;;;;;x
+conquest_triggered_short;$RECIPIENT$ º´ÇÕ;Annexer $RECIPIENT$;$RECIPIENT$ annektieren;;;;;;;;;;;x
+cut_down_to_size;±ººñÁ¦ÇÑ;Réduire;Größe reduzieren;;;;;;;;;;;x
+cut_down_to_size_boxer;º¹¼­ ¹İ¶õÀ» ³»·Á³õÀ¸¼¼¿ä;Mettre fin à la révolte des Boxers;Schlage den Boxeraufstand nieder;;;;;;;;;;;x
+cut_down_to_size_boxer_desc;´Ù¸¥ §Y±¹°¡§W ¸¦ ¹«ÀåÇØÁ¦ ½ÃÅ°°í ÀüÀï ¹è»ó±İÀ» ¿ì¸®¿¡°Ô ÁöºÒÇÏ°Ô ÇÕ´Ï´Ù;Forcrer un autre §Ypays§W à désarmer et à nous payer des réparations;Zwinge ein anderes §YLand§W, abzurüsten und Reparationen an uns zu zahlen;;;;;;;;;;;x
+cut_down_to_size_boxer_setup;Áß±¹¿¡°Ô ÀÇÈ­´ÜÀÇ ¹üÁË ÇàÀ§¿¡ ´ëÇÑ º¸»óÀ» ¿äÃ»ÇÕ´Ï´Ù.;;Zwinge China, für die Verbrechen der Boxer-Rebellen zu büßen.;;;;;;;;;;;x
+cut_down_to_size_boxer_short;Force China to pay for the Boxer’s crimes.;;Zwinge China, für die Verbrechen der Boxer zu büßen.;;;;;;;;;;;x
+cut_down_to_size_desc;§YÅ¸±¹§W¿¡ ±ººñÁ¦ÇÑ°ú ´õºÒ¾î ¹è»ó±İÀ» °­Á¦ÇÏ½Ê½Ã¿À;Obliger un autre §Ypays§W à se désarmer et à nous verser des compensations;Zwischen Sie ein anderes §YLand§W zur Abrüstung und zu Reparationszahlungen an uns.;;;;;;;;;;;x
+cut_down_to_size_ottoman;·¯-ÅÍÅ° ÀüÀï;;;;;;;;;;;;;x
+cut_down_to_size_ottoman_desc;¼³¸íÀÌ ÀÖ´Ù¸é, ¿©±â°¡ ¼³¸íÀÇ ±æÀÌ¾ß.;;;;;;;;;;;;;x
+cut_down_to_size_ottoman_setup;¹ßÄ­ ¹İµµ¸¦ ÀÚÀ¯·Ó°Ô.;;;;;;;;;;;;;x
+cut_down_to_size_ottoman_short;¹ßÄ­ ¹İµµ¸¦ ÀÚÀ¯·Ó°Ô.;;;;;;;;;;;;;x
+cut_down_to_size_setup;$RECIPIENT$¿¡ ±ººñ¸¦ Á¦ÇÑÇÏ´Ù;Réduire $RECIPIENT$;Reduzieren Sie die Größe von $RECIPIENT$;;;;;;;;;;;x
+cut_down_to_size_short;$RECIPIENT$¿¡ ±ººñ¸¦ Á¦ÇÑÇÏ´Ù;Réduire $RECIPIENT$;Reduzieren Sie die Größe von $RECIPIENT$;;;;;;;;;;;x
+cut_down_to_size_taiping;Áß±¹À¸·ÎÀÇ ÁÖ¹®À» ´Ù½Ã º¹±¸ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+cut_down_to_size_taiping_desc;¼³¸íÀÌ ÀÖ´Ù¸é, ¿©±â°¡ ¼³¸íÀÇ ±æÀÌ¾ß.;;;;;;;;;;;;;x
+cut_down_to_size_taiping_setup;Áß±¹À¸·ÎÀÇ ÁÖ¹®À» ´Ù½Ã º¹±¸ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+cut_down_to_size_taiping_short;Áß±¹À¸·ÎÀÇ ÁÖ¹®À» ´Ù½Ã º¹±¸ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+demand_concession_casus_belli;ÅäÁö ¿ä±¸;Demande de concession;Konzession verlangen;;;;;;;;;;;x
+demand_concession_casus_belli_desc;§Yºñ¹®¸í±¹§W¿¡°Ô ½Ä¹Î ÅäÁö¸¦ ¸¸µé±â À§ÇØ Áö¿ª ºĞ¸®¸¦ °­¿äÇÕ´Ï´Ù.;Obligez un §Ypays non civilisé§W à faire sécession d'un territoire pour former une concession coloniale.;Zwingen Sie ein §Yunzivilisiertes Land§W, Gebiete zur Gründung einer Kolonialkonzession abzuspalten.;;;;;;;;;;;x
+demand_concession_casus_belli_setup;½Ä¹Î ÅäÁö¸¦ ¸¸µé±â À§ÇØ $RECIPIENT$¿¡°Ô ÅäÁö ºĞ¸®¸¦ ¿ä±¸ÇÕ´Ï´Ù.;Demandez à ce que $RECIPIENT$ fasse sécession d'un territoire pour former une concession coloniale.;Verlangen Sie, dass $RECIPIENT$ Gebiete zur Gründung einer Kolonialkonzession abspaltet.;;;;;;;;;;;x
+demand_concession_casus_belli_short;$STATE$(À»)¸¦ ¿ä±¸ÇÏ±â;Demander $STATE$;Fordern Sie $STATE$;;;;;;;;;;;x
+dismantle_cb;ÇØÃ¼ ³×ÀÌ¼Ç;Grande Guerre;Gesamtkrieg;;;;;;;;;;;x
+dismantle_cb_add;ÇØÃ¼ ³×ÀÌ¼Ç;Grande Guerre;Größer Krieg;;;;;;;;;;;x
+dismantle_cb_add_desc;Àû¿¡°Ô ÈûÀ» °¡ÇÕ´Ï´Ù§YÅ« Èû.§W±×µéÀÇ Á¦±¹À» ÇØÃ¼ÇÏ°í ¹è»ó±İÀ» ÁöºÒÇÏ±â À§ÇØ;Obliger un autre §Ypays§W à se désarmer et à nous verser des compensations;Zwischen Sie ein anderes §YLand§W zur Abrüstung und zu Reparationszahlungen an uns.;;;;;;;;;;;x
+dismantle_cb_add_new;ÇØÃ¼ ³×ÀÌ¼Ç;Grande Guerre;Größer Krieg;;;;;;;;;;;x
+dismantle_cb_add_new_desc;Àû¿¡°Ô ÈûÀ» °¡ÇÕ´Ï´Ù§YÅ« Èû.§W±×µéÀÇ Á¦±¹À» ÇØÃ¼ÇÏ°í ¹è»ó±İÀ» ÁöºÒÇÏ±â À§ÇØ;Obliger un autre §Ypays§W à se désarmer et à nous verser des compensations;Zwischen Sie ein anderes §YLand§W zur Abrüstung und zu Reparationszahlungen an uns.;;;;;;;;;;;x
+dismantle_cb_add_new_setup;Èû.$RECIPIENT$±×µéÀÇ Á¦±¹À» ÇØÃ¼ÇÏ±â À§ÇØ;Réduire $RECIPIENT$;Reduzieren Sie die Größe von $RECIPIENT$;;;;;;;;;;;x
+dismantle_cb_add_new_short;Èû.$RECIPIENT$±×µéÀÇ Á¦±¹À» ÇØÃ¼ÇÏ±â À§ÇØ;Réduire $RECIPIENT$;Reduzieren Sie die Größe von $RECIPIENT$;;;;;;;;;;;x
+dismantle_cb_add_setup;Èû.$RECIPIENT$±×µéÀÇ Á¦±¹À» ÇØÃ¼ÇÏ±â À§ÇØ;Réduire $RECIPIENT$;Reduzieren Sie die Größe von $RECIPIENT$;;;;;;;;;;;x
+dismantle_cb_add_short;Èû.$RECIPIENT$±×µéÀÇ Á¦±¹À» ÇØÃ¼ÇÏ±â À§ÇØ;Réduire $RECIPIENT$;Reduzieren Sie die Größe von $RECIPIENT$;;;;;;;;;;;x
+dismantle_cb_desc;Àû¿¡°Ô ÈûÀ» °¡ÇÕ´Ï´Ù§YÅ« Èû.§W±×µéÀÇ Á¦±¹À» ÇØÃ¼ÇÏ°í ¹è»ó±İÀ» ÁöºÒÇÏ±â À§ÇØ;Obliger un autre §Ypays§W à se désarmer et à nous verser des compensations;Zwischen Sie ein anderes §YLand§W zur Abrüstung und zu Reparationszahlungen an uns.;;;;;;;;;;;x
+dismantle_cb_setup;Èû.$RECIPIENT$±×µéÀÇ Á¦±¹À» ÇØÃ¼ÇÏ±â À§ÇØ;Réduire $RECIPIENT$;Reduzieren Sie die Größe von $RECIPIENT$;;;;;;;;;;;x
+dismantle_cb_short;Èû.$RECIPIENT$±×µéÀÇ Á¦±¹À» ÇØÃ¼ÇÏ±â À§ÇØ;Réduire $RECIPIENT$;Reduzieren Sie die Größe von $RECIPIENT$;;;;;;;;;;;x
+dismantle_factories;ÇØÃ¼ »ê¾÷;;Reißt Forts ab;;;;;;;;;;;x
+dismantle_factories_desc;°øÀåÀ» ÇØÃ¼ÇÏ°í ¸ğµç °ø»ç¿Í Ã¤¿ëÀ» Ãë¼ÒÇÕ´Ï´Ù.\n\n§YÂü°í:§RÄÚµù ÇÑ°è ¶§¹®¿¡ ÀÌ CB´Â ÇÑ ¹ø¿¡ ÇÑ ±¹°¡¿Í¸¸ ÀÛµ¿ÇÕ´Ï´Ù. ¸¸¾à ´ç½ÅÀÌ ±×°ÍÀ» ÇÑ ±¹°¡ ÀÌ»ó¿¡ Ãß°¡ÇÏ·Á¸é º°µµ·Î ÆòÈ­·Î¿öÁÖ¼¼¿ä.§W;;Reißt Forts und Marinestützpunkte ab.;;;;;;;;;;;x
+dismantle_factories_setup;°øÀåÀ» ÇØÃ¼ÇÏ°í ¸ğµç °ø»ç¿Í Ã¤¿ëÀ» Ãë¼ÒÇÕ´Ï´Ù.$STATE$;;Reißt Forts und Marinestützpunkte in $STATE$ ab;;;;;;;;;;;x
+dismantle_factories_short;ÇØÃ¼ »ê¾÷.$STATE$;;Reißt Bauten in $STATE$ ab;;;;;;;;;;;x
+dismantle_forts;¿ä»õ Ã¶°Å ;;Reißt Forts ab;;;;;;;;;;;x
+dismantle_forts_desc;¿ä»õ ¹× ÇØ±º ±âÁö Ã¶°Å. ;;Reißt Forts und Marinestützpunkte ab.;;;;;;;;;;;x
+dismantle_forts_setup;ÁÖ ¾ÈÀÇ ¸ğµç ¿ä»õ¿Í ÇØ±º ±âÁö Ã¶°Å  $STATE$;;Reißt Forts und Marinestützpunkte in $STATE$ ab;;;;;;;;;;;x
+dismantle_forts_short;ÁÖ ¾ÈÀÇ ¸ğµç °Ç¹° Ã¶°Å $STATE$;;Reißt Bauten in $STATE$ ab;;;;;;;;;;;x
+end_slave_trade;´ë¼­¾ç ³ë¿¹ ¹«¿ªÀ» ³¡³»¼¼¿ä;;;;;;;;;;;;;x
+end_slave_trade_desc;³ë¿¹ ¹«¿ªÀº ÀÌÁ¦ ³¡³ª¾ß ÇÕ´Ï´Ù. ¼ö ¼¼±â Àü À¯·´ ¿­°­µéÀÌ ±×µéÀÇ È²±İ±â¿¡ ±×·¯Çßµí ¿ì¸®µµ ÇÑ¶§ ´ë¼­¾ç ³ë¿¹ ¹«¿ªÀ¸·Î ÀÌµæÀ» º¸¾ÒÀ¸³ª, ³ë¿¹ ¹«¿ªÀº ±Ù´ë¿¡ ¾î¿ï¸®´Â Á¦µµ°¡ ¾Æ´Õ´Ï´Ù. ¿ì¸®´Â ´Ù½Ã ÇÑ ¹ø ±×°Í¿¡ Á¾ÁöºÎ¸¦ Âï¾î ¿ª»çÀÇ Ã¥Àå ¼Ó¿¡ ¹¯¾î¾ß ÇÕ´Ï´Ù.;;;;;;;;;;;;;x
+end_slave_trade_setup;´ë¼­¾ç ³ë¿¹ ¹«¿ªÀ» ³¡³»¼¼¿ä;;;;;;;;;;;;;x
+end_slave_trade_short;´ë¼­¾ç ³ë¿¹ ¹«¿ªÀ» ³¡³»¼¼¿ä;;;;;;;;;;;;;x
+enforce_clayton_treaty;Å¬·¹ÀÌÆ°-ºÒ¿ö Á¶¾àÀ» ½ÃÇàÇÏ¼¼¿ä.;;;;;;;;;;;;;x
+enforce_clayton_treaty_desc;Å¬·¹ÀÌÆ°-ºÒ¿ö Á¶¾àÀ» ½ÃÇàÇÏ¼¼¿ä.;;;;;;;;;;;;;x
+enforce_clayton_treaty_setup;Å¬·¹ÀÌÆ°-ºÒ¿ö Á¶¾àÀ» ½ÃÇàÇÏ¼¼¿ä.;;;;;;;;;;;;;x
+enforce_clayton_treaty_short;Å¬·¹ÀÌÆ°-ºÒ¿ö Á¶¾àÀ» ½ÃÇàÇÏ¼¼¿ä.;;;;;;;;;;;;;x
+establish_protectorate_casus_belli;º¸È£±¹ ¼³¸³;Établir un protectorat;Protektorat gründen;;;;;;;;;;;x
+establish_protectorate_casus_belli_desc;¿ì¸®°¡ º¸È£ÇÒ¼ö ÀÖµµ·Ï ÀÌ §Yºñ¹®¸í±¹§WÀ» ÇÕº´ÇÕ´Ï´Ù.;Annexez un §Ypays non civilisé§W en l'obligeant à devenir l'un de nos protectorats.;Annektieren Sie ein §Yunzivilisiertes Land§W, indem Sie es zwingen, eines Ihrer Protektorate zu werden.;;;;;;;;;;;x
+establish_protectorate_casus_belli_setup;¿ì¸®°¡ º¸È£ÇÒ¼ö ÀÖµµ·Ï ÀÌ $RECIPIENT$(À»)¸¦ ÇÕº´½ÃÅµ´Ï´Ù.;Annexez $RECIPIENT$ en établissant un protectorat.;Annektieren Sie $RECIPIENT$ durch die Gründung eines Protektorats.;;;;;;;;;;;x
+establish_protectorate_casus_belli_short;$RECIPIENT$ ÇÕº´;Annexer $RECIPIENT$;Annektieren Sie $RECIPIENT$;;;;;;;;;;;x
+establish_protectorate_casus_belli_triggered;º¸È£ ±¸¿ªÀ» ¼³Á¤ÇÕ´Ï´Ù.;Établir un protectorat;Protektorat gründen;;;;;;;;;;;x
+establish_protectorate_casus_belli_triggered_desc;ºÎ¼Ó¼­.§Y¹Ì¹®¸í±¹§W±×µéÀ» ¿ì¸®ÀÇ º¸È£ÀÚ°¡ µÇµµ·Ï °­¿äÇÔÀ¸·Î½á¿ä.;Annexez un §Ypays non civilisé§W en l'obligeant à devenir l'un de nos protectorats.;Annektieren Sie ein §Yunzivilisiertes Land§W, indem Sie es zwingen, eines Ihrer Protektorate zu werden.;;;;;;;;;;;x
+establish_protectorate_casus_belli_triggered_setup;$RECIPIENT$¿¡ º¸È£·ÉÀ» ¼ö¸³ÇÏ¿© º´ÇÕ;Annexez $RECIPIENT$ en établissant un protectorat.;Annektieren Sie $RECIPIENT$ durch die Gründung eines Protektorats.;;;;;;;;;;;x
+establish_protectorate_casus_belli_triggered_short;$RECIPIENT$ º´ÇÕ;Annexer $RECIPIENT$;Annektieren Sie $RECIPIENT$;;;;;;;;;;;x
+free_allied_cores;ÇÁ¸® ¿¬ÇÕ ÄÚ¾î;Peuple libre;Freies Volk;;;;;;;;;;;x
+free_allied_cores_desc;¸®º£ÀÌÆ® ÄÚ¾î¿¡ ¼ÓÇÏ´Â ÄÚ¾î§Y¿¬ÇÕ±º.§W´ç½ÅÀÇ ¿µ¿ª¿¡¼­;Libérer un §Ypays§W de ses oppresseurs;Befreien Sie ein §YLand§W von seinen Unterdrückern.;;;;;;;;;;;x
+free_allied_cores_setup;$STATE$ ¹İÈ¯: ¼ö·É±¹ $THIRD$, ´ë»ó±¹ $RECIPIENT$;Prendre $STATE$ à $RECIPIENT$ pour le rendre à $THIRD$;Geben Sie $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;;;;;;;;;;x
+free_allied_cores_short;$THIRD$ÀÌ(°¡) $STATE$ È¹µæ;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;;;;;;;;;;x
+free_balkans;ÀÚÀ¯ ¹ßÄ­;Peuple libre;Freies Volk;;;;;;;;;;;x
+free_balkans_desc;»ìÀ» »©¼¼¿ä.§Y¹ßÄ­ ¹İµµÀÇ Àü±¹.§W±×°ÍÀÇ ¾ï¾ĞÀÚ·ÎºÎÅÍ;Libérer un §Ypays§W de ses oppresseurs;Befreien Sie ein §YLand§W von seinen Unterdrückern.;;;;;;;;;;;x
+free_balkans_setup;¹«·á.$THIRD$ÅëÁ¦¿¡¼­$RECIPIENT$;Prendre $STATE$ ?$RECIPIENT$ pour le rendre ?$THIRD$;Geben Sie $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;;;;;;;;;;x
+free_balkans_short;ÀÚÀ¯·Î¿ö.$THIRD$;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;;;;;;;;;;x
+free_peoples;ÇØ¹æ;Peuple libre;Freies Volk;;;;;;;;;;;x
+free_peoples_desc;¾ĞÁ¦·ÎºÎÅÍ §Y³ª¶ó§W¸¦ Ç®¾îÁÖ½Ê½Ã¿À;Libérer un §Ypays§W de ses oppresseurs;Befreien Sie ein §YLand§W von seinen Unterdrückern.;;;;;;;;;;;x
+free_peoples_setup;$STATE$ ¹İÈ¯: ¼ö·É±¹ $THIRD$, ´ë»ó±¹ $RECIPIENT$;Prendre $STATE$ à $RECIPIENT$ pour le rendre à $THIRD$;Geben Sie $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;;;;;;;;;;x
+free_peoples_short;$THIRD$(ÀÌ)°¡ $STATE$(À»)¸¦ È¹µæ;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;;;;;;;;;;x
+french_conquest_of_canada_france;Äùº¤ ÇØ¹æ;;;;;;;;;;;;;x
+french_conquest_of_canada_france_desc;¿µ±¹ÀÇ ¾ï¾Ğ ¼Ó¿¡¼­ »ì°í ÀÖ´Â ¿ì¸® ÇüÁ¦¸¦ ÇØ¹æ½ÃÄÑ¾ß ÇÕ´Ï´Ù!;;;;;;;;;;;;;x
+french_conquest_of_canada_france_setup;Äùº¤ ÇØ¹æ;;;;;;;;;;;;;x
+french_conquest_of_canada_france_short;Äùº¤ ÇØ¹æ;;;;;;;;;;;;;x
+french_conquest_of_canada_uk;ÇÁ¶û½º ½Ä¹Î Áö¹èÀÇ ºĞÀ§±â¸¦ ±Å¶ó.;;;;;;;;;;;;;x
+french_conquest_of_canada_uk_desc;ÇÁ¶û½º ½Ä¹ÎÁöÀÇ ²ŞÀ» ±× ÀÌ»óµµ ¾Æ´Ñ °ÍÀ¸·Î °£Á÷ÇÏ¼¼¿ä.;;;;;;;;;;;;;x
+french_conquest_of_canada_uk_setup;ÇÁ¶û½º ½Ä¹ÎÁöÀÇ Áö¹è±ÇÀ» ¾ò½À´Ï´Ù;;;;;;;;;;;;;x
+french_conquest_of_canada_uk_short;ÇÁ¶û½º ½Ä¹ÎÁöÀÇ Áö¹è±ÇÀ» ¾ò½À´Ï´Ù;;;;;;;;;;;;;x
+french_conquest_of_louisiana_france;·çÀÌÁö¾È ¿ª;;;;;;;;;;;;;x
+french_conquest_of_louisiana_france_desc;¿ì¸®ÀÇ ¿µÅäÀÎ ·çÀÌÁö¾Ö³×ÀÇ ¿ª»ç ÀüÃ¼¸¦ Á¤º¹ÇÏ¼¼¿ä.;;;;;;;;;;;;;x
+french_conquest_of_louisiana_france_setup;·çÀÌÁö¾È ¿ª.;;;;;;;;;;;;;x
+french_conquest_of_louisiana_france_short;·çÀÌÁö¾È ¿ª;;;;;;;;;;;;;x
+french_conquest_of_louisiana_usa;·çÀÌÁö¾Ö³ª, ·çÀÌÁö¾Ö³ª;;;;;;;;;;;;;x
+french_conquest_of_louisiana_usa_desc;·çÀÌÁö¾Ö³ª´Â ¿ì¸®ÀÇ °ÍÀÌ°í ¿ì¸®´Â ÇÁ¶û½ºÀÇ Ä§·«À¸·ÎºÎÅÍ ÀÚ½ÅÀ» ¹æ¾îÇØ¾ß ÇÕ´Ï´Ù.;;;;;;;;;;;;;x
+french_conquest_of_louisiana_usa_setup;·çÀÌÁö¾Ö³ª, ·çÀÌÁö¾Ö³ª.;;;;;;;;;;;;;x
+french_conquest_of_louisiana_usa_short;·çÀÌÁö¾Ö³ª, ·çÀÌÁö¾Ö³ª;;;;;;;;;;;;;x
+golden_circle_dismantling;CSA¸¦ ÆÄ±«ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+golden_circle_dismantling_desc;°ñµç ¼­Å¬ÀÇ ¾ß¸¸ÀûÀÎ ±â»ç´ÔµéÀ» ¸ØÃç¶ó.;;;;;;;;;;;;;x
+golden_circle_dismantling_setup;CSA¸¦ ÆÄ±«ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+golden_circle_dismantling_short;CSA¸¦ ÆÄ±«ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+great_game_cb;±× À§´ëÇÑ °ÔÀÓ;Réduire;Größe reduzieren;;;;;;;;;;;x
+great_game_cb_desc;·¯½Ã¾Æ¿Í ¿µ±¹ Á¦±¹ »çÀÌÀÇ ´ë°ÔÀÓÀº ¸ğµç »ç¶÷ÀÌ ¸ğµç °ÍÀ» ¿ä±¸ÇÒ °ÍÀ» ¿ä±¸ÇÑ´Ù.§Y¹Ì¹®¸í±¹§WÁß¾Ó¾Æ½Ã¾Æ°¡ Áß¾Ó¾Æ½Ã¾Æ·Î ¹Ù²ï´Ù.§YÀÎÇü.§W´Ù¸¥ »ç¶÷ÀÌ ¶È°°ÀÌ ÇÏÁö ¾Êµµ·Ï ÇÏ±â À§ÇØ¼­¿ä.;Obliger un autre §Ypays§W ?se désarmer et ?nous verser des compensations;Zwischen Sie ein anderes §YLand§W zur Abrüstung und zu Reparationszahlungen an uns.;;;;;;;;;;;x
+great_game_cb_setup;$RECIPIENT$(Àº)´Â $ACTOR$ÀÇ ±«·Ú±¹ÀÌ µË´Ï´Ù.;$RECIPIENT$ devient satellite de $ACTOR$;$RECIPIENT$ wird eine Marionette von $ACTOR$;;;;;;;;;;;x
+great_game_cb_short;$RECIPIENT$(Àº)´Â $ACTOR$ÀÇ ±«·Ú±¹ÀÌ µË´Ï´Ù.;$RECIPIENT$ devient satellite de $ACTOR$;$RECIPIENT$ wird eine Marionette von $ACTOR$;;;;;;;;;;;x
+great_war_install_communism;°ø»êÁÖÀÇ¸¦ ¼³Ä¡ÇÏ¼¼¿ä;Installez le communisme;Bringen Sie Kommunismus an;;;;;;;;;;;x
+great_war_install_communism_desc;Install a §Yfriendly communist government§W in the country’s capital;Install a §Yfriendly communist government§W in the country's capital;Install a §Yfriendly communist government§W in the country's capital;;;;;;;;;;;x
+great_war_install_communism_setup;°ø»êÁÖÀÇ Á¤ºÎ¸¦ ¼³Ä¡ÇÏ¼¼¿ä.$RECIPIENT$;Install a communist government in $RECIPIENT$;Install a communist government in $RECIPIENT$;;;;;;;;;;;x
+great_war_install_communism_short;°ø»êÁÖÀÇ Á¤ºÎ¸¦ ¼³Ä¡ÇÏ¼¼¿ä.$RECIPIENT$;Install a communist government in $RECIPIENT$;Install a communist government in $RECIPIENT$;;;;;;;;;;;x
+great_war_install_democracy;¹ÎÁÖÁÖÀÇ ¼³Ä¡;Installez la démocratie;Verursachen Sie Demokratie;;;;;;;;;;;x
+great_war_install_democracy_desc;Install a §Yfriendly democracy§W in the country’s capital;Install a §Yfriendly democracy§W in the target country's capital;Install a §Yfriendly democracy§W in the target country's capital;;;;;;;;;;;x
+great_war_install_democracy_setup;Ä£ÀıÇÑ ¹ÎÁÖÁÖÀÇ¸¦ ¼³Ä¡ÇÏ¼¼¿ä$RECIPIENT$;Install a friendly democracy in $RECIPIENT$;Install a friendly democracy in $RECIPIENT$;;;;;;;;;;;x
+great_war_install_democracy_short;Ä£ÀıÇÑ ¹ÎÁÖÁÖÀÇ¸¦ ¼³Ä¡ÇÏ¼¼¿ä$RECIPIENT$;Install a friendly democracy in $RECIPIENT$;Install a friendly democracy in $RECIPIENT$;;;;;;;;;;;x
+great_war_install_fascism;ÆÄ½ÃÁòÀ» ¼³Ä¡ÇÏ¼¼¿ä;Installez le fascisme;Bringen Sie Faschismus an;;;;;;;;;;;x
+great_war_install_fascism_desc;Install a §Yfriendly fascist government§W in the country’s capital;Install a §Yfriendly fascist government§W in the country's capital;Install a §Yfriendly fascist government§W in the country's capital;;;;;;;;;;;x
+great_war_install_fascism_setup;ÆÄ½Ã½ºÆ® Á¤ºÎ¸¦ ¼³Ä¡ÇÏ¼¼¿ä.$RECIPIENT$;Install a fascist government in $RECIPIENT$;Install a fascist government in $RECIPIENT$;;;;;;;;;;;x
+great_war_install_fascism_short;ÆÄ½Ã½ºÆ® Á¤ºÎ¸¦ ¼³Ä¡ÇÏ¼¼¿ä.$RECIPIENT$;Install a fascist government in $RECIPIENT$;Install a fascist government in $RECIPIENT$;;;;;;;;;;;x
+great_war_penalty_cb;´ëÀüÀï Á¤º¹;Capitulation dans une Grande Guerre;Großkriegskapitulation;;;;;;;;;;;x
+great_war_penalty_cb_desc;´Ù¸¥ §Y±¹°¡§! (À»)¸¦ ¹«ÀåÇØÁ¦ ½ÃÅ°°í ¿ì¸®¿¡°Ô ÀüÀï¹è»ó±İÀ» ÁöºÒÅä·Ï ÇÕ´Ï´Ù.;Contraindre un autre §Ypays§! à désarmer et à nous payer des réparations.;Zwingt die andere §YNation§! zur Entwaffnung und der Zahlung von Kriegsreperationen an uns.;;;;;;;;;;;x
+great_war_penalty_cb_setup;$RECIPIENT$(À»)¸¦ ¹«ÀåÇØÁ¦ ½ÃÅ°°í ÀüÀï¹è»ó±İÀ» ÁöºÒÅä·Ï ÇÕ´Ï´Ù.;Désarmer $RECIPIENT$ et le faire payer des réparations.;Entwaffnet $RECIPIENT$ and zwingt sie zur Zahlung von Kriegsreperationen;;;;;;;;;;;x
+great_war_penalty_cb_short;¼¼°è´ëÀü Á¶°ÇºÎ Ç×º¹;Capitulation dans une Grande Guerre;Großkriegskapitulation;;;;;;;;;;;x
+gunboat;Â÷°ü »óÈ¯;Rembourser les dettes;Schulden tilgen;;;;;;;;;;;x
+gunboat_desc;ÀÌµé¿¡°Ô Â÷°üÀÇ »óÈ¯ Àç°³¸¦ °­Á¦ÇÕ´Ï´Ù.;Les forcer à reprendre le remboursement des dettes contractées envers nous.;Sie zwingen, ihre Schuldenrückzahlungen weiterzuführen.;;;;;;;;;;;x
+gunboat_setup;ÀÌµé¿¡°Ô Â÷°üÀÇ »óÈ¯À» °­Á¦ÇÕ´Ï´Ù.;Nous les forceront à honorer les dettes contractées envers nous.;Werden sie zwingen, uns ihre Schulden zurückzuzahlen.;;;;;;;;;;;x
+gunboat_short;Â÷°ü »óÈ¯;Rembourser les dettes;Schulden tilgen;;;;;;;;;;;x
+humiliate;À§½Å½ÇÃß;Humilier;Erniedrigen;;;;;;;;;;;x
+humiliate_desc;§YÀû±¹§W¿¡ ±¼¿åÀ» ÁÜÀ¸·Î½á ¾Æ±ºÀÇ ½Ç·ÂÀ» °ú½ÃÇÏ°í ¿ì¸®³ª¶óÀÇ §YÀ§½Å§WÀ» ³ô¿© Àû±¹ÀÇ À§½ÅÀ» ÀúÇÏ½ÃÄÑ ÁÖ½Ê½Ã¿À.;Afficher notre puissance militaire en humiliant un §Ypays§W ennemi et en augmentant notre §Yprestige§W tout en réduisant le leur;Zeigen Sie unsere Militärmacht durch Erniedrigung eines feindlichen §YLandes§W, wodurch Sie unser §YPrestige§W steigern und ihres verringern.;;;;;;;;;;;x
+humiliate_setup;$RECIPIENT$¿¡ ±¼¿åÀ» ÁÖ¾ú´Ù;Humilier $RECIPIENT$;$RECIPIENT$ erniedrigen;;;;;;;;;;;x
+humiliate_short;$RECIPIENT$¿¡ ±¼¿åÀ» ÁÖ¾ú´Ù;Humilier $RECIPIENT$;$RECIPIENT$ erniedrigen;;;;;;;;;;;x
+hungarian_game_escalation1;Çë°¡¸®¸¦ ¸¸µé¾î¶ó;;;;;;;;;;;;;x
+hungarian_game_escalation1_desc;Çë°¡¸®¿¡ ÁÂÃÊµÈ µ¶ÀÏ±ºÀ» ±¸ÃâÇÏ¼¼¿ä!;;;;;;;;;;;;;x
+hungarian_game_escalation1_setup;Çë°¡¸®¿¡ ÁÂÃÊµÈ µ¶ÀÏ±ºÀ» ±¸ÃâÇÏ¼¼¿ä!;;;;;;;;;;;;;x
+hungarian_game_escalation1_short;Çë°¡¸®¿¡ ÁÂÃÊµÈ µ¶ÀÏ±ºÀ» ±¸ÃâÇÏ¼¼¿ä!;;;;;;;;;;;;;x
+the_great_game_eng;±× À§´ëÇÑ °ÔÀÓ¿¡¼­ ½Â¸®ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+the_great_game_eng_desc;Áß¾Ó¾Æ½Ã¾Æ¿¡¼­ ·¯½Ã¾ÆÀÇ ¿µÇâ·ÂÀ» ¸ô¾Æ³»¼¼¿ä;;;;;;;;;;;;;x
+the_great_game_eng_setup;Áß¾Ó¾Æ½Ã¾Æ¿¡¼­ ·¯½Ã¾ÆÀÇ ¿µÇâ·ÂÀ» ¸ô¾Æ³»¼¼¿ä;;;;;;;;;;;;;x
+the_great_game_eng_short;Áß¾Ó¾Æ½Ã¾Æ¸¦ Áö¹èÇÏ¼¼¿ä;;;;;;;;;;;;;x
+the_great_game_rus;±× À§´ëÇÑ °ÔÀÓ¿¡¼­ ½Â¸®ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+the_great_game_rus_desc;Áß¾Ó¾Æ½Ã¾Æ¿¡¼­ ¿µ±¹ÀÇ ¿µÇâ·ÂÀ» ¸ô¾Æ³»¼¼¿ä;;;;;;;;;;;;;x
+the_great_game_rus_setup;Áß¾Ó¾Æ½Ã¾Æ¿¡¼­ ¿µ±¹ÀÇ ¿µÇâ·ÂÀ» ¸ô¾Æ³»¼¼¿ä;;;;;;;;;;;;;x
+the_great_game_rus_short;Áß¾Ó¾Æ½Ã¾Æ¸¦ Áö¹èÇÏ¼¼¿ä;;;;;;;;;;;;;x
+install_communism;°ø»êÁÖÀÇ¸¦ ¼³Ä¡ÇÏ¼¼¿ä;Installez le communisme;Bringen Sie Kommunismus an;;;;;;;;;;;x
+install_communism_desc;Install a §Yfriendly communist government§W in the country’s capital;Install a §Yfriendly communist government§W in the country's capital;Install a §Yfriendly communist government§W in the country's capital;;;;;;;;;;;x
+install_allied_puppet_government;¿ìÈ£Àû ±«·Ú Á¤ºÎ ¼ö¸³;;;;;;;;;;;;;x
+install_allied_puppet_government_desc;±¹°¡ÀÇ ¼öµµ¿¡ ¿ìÈ£Àû ±«·Ú Á¤ºÎ§W¸¦ ¼ö¸³ÇÕ´Ï´Ù.;;;;;;;;;;;;;x
+install_allied_puppet_government_setup;$RECIPIENT$¿¡ ¿ìÈ£Àû ±«·Ú Á¤ºÎ¸¦ ¼ö¸³ÇÕ´Ï´Ù.;;;;;;;;;;;;;x
+install_allied_puppet_government_short;$RECIPIENT$¿¡ ¿ìÈ£Àû ±«·Ú Á¤ºÎ¸¦ ¼ö¸³ÇÕ´Ï´Ù.;;;;;;;;;;;;;x
+install_communism_setup;°ø»êÁÖÀÇ Á¤ºÎ¸¦ ¼³Ä¡ÇÏ¼¼¿ä.$RECIPIENT$;Install a communist government in $RECIPIENT$;Install a communist government in $RECIPIENT$;;;;;;;;;;;x
+install_communism_short;°ø»êÁÖÀÇ Á¤ºÎ¸¦ ¼³Ä¡ÇÏ¼¼¿ä.$RECIPIENT$;Install a communist government in $RECIPIENT$;Install a communist government in $RECIPIENT$;;;;;;;;;;;x
+install_democracy;¹ÎÁÖÁÖÀÇ ¼³Ä¡;Installez la démocratie;Verursachen Sie Demokratie;;;;;;;;;;;x
+install_democracy_desc;Install a §Yfriendly democracy§W in the country’s capital;Install a §Yfriendly democracy§W in the target country's capital;Install a §Yfriendly democracy§W in the target country's capital;;;;;;;;;;;x
+install_democracy_setup;Ä£ÀıÇÑ ¹ÎÁÖÁÖÀÇ¸¦ ¼³Ä¡ÇÏ¼¼¿ä$RECIPIENT$;Install a friendly democracy in $RECIPIENT$;Install a friendly democracy in $RECIPIENT$;;;;;;;;;;;x
+install_democracy_short;Ä£ÀıÇÑ ¹ÎÁÖÁÖÀÇ¸¦ ¼³Ä¡ÇÏ¼¼¿ä$RECIPIENT$;Install a friendly democracy in $RECIPIENT$;Install a friendly democracy in $RECIPIENT$;;;;;;;;;;;x
+install_fascism;ÆÄ½ÃÁòÀ» ¼³Ä¡ÇÏ¼¼¿ä;Installez le fascisme;Bringen Sie Faschismus an;;;;;;;;;;;x
+install_fascism_desc;Install a §Yfriendly fascist government§W in the country’s capital;Install a §Yfriendly fascist government§W in the country's capital;Install a §Yfriendly fascist government§W in the country's capital;;;;;;;;;;;x
+install_fascism_setup;ÆÄ½Ã½ºÆ® Á¤ºÎ¸¦ ¼³Ä¡ÇÏ¼¼¿ä.$RECIPIENT$;Install a fascist government in $RECIPIENT$;Install a fascist government in $RECIPIENT$;;;;;;;;;;;x
+install_fascism_short;ÆÄ½Ã½ºÆ® Á¤ºÎ¸¦ ¼³Ä¡ÇÏ¼¼¿ä.$RECIPIENT$;Install a fascist government in $RECIPIENT$;Install a fascist government in $RECIPIENT$;;;;;;;;;;;x
+liberate_country;±¹°¡ ÇØ¹æ ;;Befreit das Land;;;;;;;;;;;x
+liberate_country_desc;»ìÀ» »©¼¼¿ä.§YÀü±¹.§W±×°ÍÀÇ ¾ï¾ĞÀÚµé·ÎºÎÅÍ;;Befreit ein §Yganzes Land§W von seinen Unterdrückern;;;;;;;;;;;x
+liberate_country_setup;¸®ÅÏ.$STATE$ÇØ.$THIRD$ $RECIPIENT$;Prendre $STATE$ à $RECIPIENT$ pour le rendre à $THIRD$;Gebt $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;;;;;;;;;;x
+liberate_country_short;$THIRD$ ÀÎ¼ö $STATE$;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;;;;;;;;;;x
+liberate_puppet;±¹°¡ ÇØ¹æ ÈÄ ±«·ÚÈ­;;Befreit das Land;;;;;;;;;;;x
+liberate_puppet_desc;¾ï¾Ğ±¹À¸·ÎºÎÅÍ §Y±¹°¡ ÀüÃ¼§W¸¦ ÇØ¹æÇÏ¿© ±«·Ú±¹À¸·Î ¸¸µì´Ï´Ù.\n\n§YÁÖÀÇ: §RÁ¸ÀçÇÏÁö ¾Ê´Â ´Ù¸¥ ±¹°¡¿¡ ´ëÇØ ÀÏ¹İÀûÀÎ ¹ÎÁ· ÇØ¹æ ¶Ç´Â ±¹°¡ ÇØ¹æ ÀüÀï ¸íºĞ°ú ÇÔ²² »ç¿ëÇÏÁö ¸¶½Ê½Ã¿À.§W;;Befreit ein §Yganzes Land§W von seinen Unterdrückern;;;;;;;;;;;x
+liberate_puppet_setup;$STATE$À»(¸¦) $THIRD$¿¡ ¹İÈ¯ÇÏ°í $RECIPIENT$ÀÇ Áö¹è¿¡¼­ ÇØ¹æ¡¤±«·ÚÈ­ÇÕ´Ï´Ù.;Prendre $STATE$ à $RECIPIENT$ pour le rendre à $THIRD$;Gebt $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;;;;;;;;;;x
+liberate_puppet_short;$THIRD$ÀÌ(°¡) $STATE$À»(¸¦) È¹µæÇÏ°í ±«·Ú±¹ÀÌ µÊ;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;;;;;;;;;;x
+make_puppet;±«·Ú±¹ ¼ö¸³;Créer un pays satellite;Erschafft eine Marionette;;;;;;;;;;;x
+make_puppet_desc;±«·Ú±¹À¸·Î ¸¸µì´Ï´Ù;Devenir un satellite;Werdet eine Marionette;;;;;;;;;;;x
+make_puppet_setup;$RECIPIENT$(Àº)´Â $ACTOR$ÀÇ ±«·Ú±¹ÀÌ µË´Ï´Ù;$RECIPIENT$ devient satellite de $ACTOR$;$RECIPIENT$ wird eine Marionette von $ACTOR$;;;;;;;;;;;x
+make_puppet_short;$RECIPIENT$(Àº)´Â $ACTOR$ÀÇ ±«·Ú±¹ÀÌ µË´Ï´Ù;$RECIPIENT$ devient satellite de $ACTOR$;$RECIPIENT$ wird eine Marionette von $ACTOR$;;;;;;;;;;;x
+monroe_doctrine;¸Õ·Î µ¶Æ®¸°;Peuple libre;Freies Volk;;;;;;;;;;;x
+monroe_doctrine_desc;µå¶óÀÌºê ¾Æ¿ô.§YÀ¯·´ÀÇ ½Ä¹ÎÁö ±Ç·Â.§W¾Æ¸Ş¸®Ä«¿¡¼­ ¿Â;Libérer un §Ypays§W de ses oppresseurs;Befreien Sie ein §YLand§W von seinen Unterdrückern.;;;;;;;;;;;x
+monroe_doctrine_setup;$STATE$ ¹İÈ¯: ¼ö·É±¹ $THIRD$, ´ë»ó±¹ $RECIPIENT$;Prendre $STATE$ ?$RECIPIENT$ pour le rendre ?$THIRD$;Geben Sie $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;;;;;;;;;;x
+monroe_doctrine_short;$THIRD$ÀÌ(°¡) $STATE$ È¹µæ;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;;;;;;;;;;x
+gendarme_of_europe;µ¶Àç¸¦ ¼³Ä¡ÇÏ¼¼¿ä;Peuple libre;Freies Volk;;;;;;;;;;;x
+gendarme_of_europe_desc;À¯·´ÀÇ ÀüÁ¦Á¤À» ¼öÈ£ÇÏ´Â °ÍÀº ¿ì¸®ÀÇ ¼Ò¸íÀÔ´Ï´Ù. Çõ¸í ±¹°¡µé¿¡ ´ëÇÑ ÀüÀï ¸íºĞÀÌ Á¤´çÈ­µÇ¾ú½À´Ï´Ù!;Libérer un §Ypays§W de ses oppresseurs;Befreien Sie ein §YLand§W von seinen Unterdrückern.;;;;;;;;;;;x
+gendarme_of_europe_setup;Çõ¸í°¡µéÀ» ¸ô¾Æ³»¼¼¿ä.$RECIPIENT$!;Prendre $STATE$ ?$RECIPIENT$ pour le rendre ?$THIRD$;Geben Sie $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;;;;;;;;;;x
+gendarme_of_europe_short;$RECIPIENT$Àı´ë ±ºÁÖÁ¦¸¦ ¼³Ä¡ÇÕ´Ï´Ù;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;;;;;;;;;;x
+monroe2;Á¦±¹ Á¦±¹À» ¸ô¾Æ³»¼¼¿ä;Peuple libre;Freies Volk;;;;;;;;;;;;x;;;;;;;;;;;;;;
+monroe2_desc;¾Æ¸Ş¸®Ä« ´ë·ú¿¡¼­ Ä§ÀÔÀÚµéÀ» ¸ô¾Æ³»¼¼¿ä;Libérer un §Ypays§W de ses oppresseurs;Befreien Sie ein §YLand§W von seinen Unterdrückern.;;;;;;;;;;;x
+monroe2_short;½Å´ë·úÀÇ ½Ä¹ÎÁö º¸À¯¸¦ Ã¼Æ÷ÇÏ¼¼¿ä;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;;;;;;;;;;;x;;;;;;;;;;;;;;
+monroe2_setup;½Å´ë·úÀÇ ½Ä¹ÎÁö º¸À¯¸¦ Ã¼Æ÷ÇÏ¼¼¿ä;Prendre $STATE$ ?$RECIPIENT$ pour le rendre ?$THIRD$;Geben Sie $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;;;;;;;;;;;x;;;;;;;;;;;;;;
+negotiated_transfer;Çù»óµÈ ÀÌ¼Û;;;;;;;;;;;;;x
+negotiated_transfer_desc;±¹°¡³ª ½Ä¹ÎÁö Áö¿ªÀ» À¯¸í, À§½Å, Áø°í¿¡ ¿µÇâÀ» ¹ÌÄ¡Áö ¾Ê´Â ´Ù¸¥ ³ª¶ó·Î ÀÌÀüÇÑ´Ù.;;;;;;;;;;;;;x
+negotiated_transfer_setup;ÀÌ¼Û.$STATE$¿ì¸®³ª¶ó¿¡¼­.$RECIPIENT$;;;;;;;;;;;;;x
+negotiated_transfer_short;$RECIPIENT$¹Ş½À´Ï´Ù.$STATE$¿ì¸®ÇÑÅ×¼­.;;;;;;;;;;;;;x
+oriental_crisis;µ¿¾çÀÇ À§±â;Peuple libre;Freies Volk;;;;;;;;;;;x
+oriental_crisis_desc;ÀÚÀ¯·Î¿ö.§Y¿ÀÅä¸¸ ¿µÅä.§WÀÌÁıÆ®ÀÇ ÅëÁ¦¿¡¼­;Libérer un §Ypays§W de ses oppresseurs;Befreien Sie ein §YLand§W von seinen Unterdrückern.;;;;;;;;;;;x
+oriental_crisis_setup;$STATE$ ¹İÈ¯: ¼ö·É±¹ $THIRD$, ´ë»ó±¹ $RECIPIENT$;Prendre $STATE$ ?$RECIPIENT$ pour le rendre ?$THIRD$;Geben Sie $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;;;;;;;;;;x
+oriental_crisis_short;$THIRD$ÀÌ(°¡) $STATE$ È¹µæ;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;;;;;;;;;;x
+padri_war_cb;ÆÄµå¸® ¿ö;;;;;;;;;;;;;x
+padri_war_cb_desc;¼­ºÎ ¼ö¸¶Æ®¶ó¸¦ È¹µæÇÏ¼¼¿ä;;;;;;;;;;;;;x
+padri_war_cb_setup;¼­ºÎ ¼ö¸¶Æ®¶ó¿¡¼­ È¹µæ$RECIPIENT$;;;;;;;;;;;;;x
+padri_war_cb_short;¼­ºÎ ¼ö¸¶Æ®¶ó¸¦ È¹µæÇÏ¼¼¿ä;;;;;;;;;;;;;x
+crimean_war_cb;µ¿ºÎ À§±â;;;;;;;;;;;;;x
+crimean_war_cb_desc;±âµ¶±³ÀÎÀ» º¸È£ÇÏ°í ¿À½º¸¸ Á¦±¹À» Áö¹èÇÕ´Ï´Ù.;;;;;;;;;;;;;x
+crimean_war_cb_setup;¿À½º¸¸ Á¦±¹ÀÇ ±âµ¶±³ÀÎÀ» º¸È£ÇÏ¶ó.;;;;;;;;;;;;;x
+crimean_war_cb_short;·¯½Ã¾Æ´Â ±âµ¶±³ÀÎÀÇ ¼öÈ£ÀÚÀÔ´Ï´Ù.;;;;;;;;;;;;;x
+crimean_war_defender_cb;µ¿ºÎ À§±â;;;;;;;;;;;;;x
+crimean_war_defender_desc;ÇÁ¶û½º´Â ±âµ¶±³ÀÎÀÇ ¼öÈ£ÀÚÀÔ´Ï´Ù.;;;;;;;;;;;;;x
+crimean_war_defender_setup;¿À½º¸¸ Á¦±¹ÀÇ ±âµ¶±³ÀÎÀ» º¸È£ÇÏ¶ó.;;;;;;;;;;;;;x
+crimean_war_defender_short;ÇÁ¶û½º´Â ±âµ¶±³ÀÎÀÇ ¼öÈ£ÀÚÀÔ´Ï´Ù.;;;;;;;;;;;;;x
+place_in_the_sun;½Ä¹ÎÁö ÀïÅ»;Une place au soleil;Ein Platz an der Sonne;;;;;;;;;;;x
+place_in_the_sun_desc;Àû±¹¿¡¼­ §Y½Ä¹Î Áö¿ª§WÀ» È¹µæÇÏ½Ê½Ã¿À;Prendre un §YÉtat colonial§W ennemi;Erobern Sie einen feindlichen §YKolonialstaat§W.;;;;;;;;;;;x
+place_in_the_sun_setup;È¹µæ ±º¶ô$STATE$ $RECIPIENT$;Prendre colonie $STATE$ de $RECIPIENT$;Kolonie $STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;x
+place_in_the_sun_short;$STATE$(À»)¸¦ ÀïÅ»;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;x
+release_puppet;±«·Ú±¹ ÇØ¹æ;Libérer un État fantoche;Marionettenstaat entlassen;;;;;;;;;;;x
+release_puppet_AI;±«·Ú±¹ ÇØ¹æ;Libérer un État fantoche;Marionettenstaat entlassen;;;;;;;;;;;x
+release_puppet_AI_desc;Á¾ÁÖ±¹À¸·ÎºÎÅÍ §Y±¹°¡§W¸¦ ÇØ¹æÇÕ´Ï´Ù.;Libérer un §Ypays§W de sa nation souveraine;Entlassen Sie ein §YLand§W von seinem Herrenland.;;;;;;;;;;;x
+release_puppet_AI_setup;$THIRD$À»(¸¦) $RECIPIENT$ÀÇ Áö¹è¿¡¼­ ÇØ¹æÇÕ´Ï´Ù.;Libérer $THIRD$ de $RECIPIENT$;Entlassen Sie $THIRD$ aus $RECIPIENT$;;;;;;;;;;;x
+release_puppet_AI_short;$THIRD$ ÇØ¹æ;$THIRD$ est libéré;$THIRD$ wurde entlassen;;;;;;;;;;;x
+release_puppet_desc;Á¾ÁÖ±¹À¸·ÎºÎÅÍ §Y±¹°¡§W¸¦ ÇØ¹æÇÕ´Ï´Ù.;Libérer un §Ypays§W de sa nation souveraine;Entlassen Sie ein §YLand§W von seinem Herrenland.;;;;;;;;;;;x
+release_puppet_setup;$THIRD$À»(¸¦) $RECIPIENT$ÀÇ Áö¹è¿¡¼­ ÇØ¹æÇÕ´Ï´Ù.;Libérer $THIRD$ de $RECIPIENT$;Entlassen Sie $THIRD$ aus $RECIPIENT$;;;;;;;;;;;x
+release_puppet_short;$THIRD$ ÇØ¹æ;$THIRD$ est libéré;$THIRD$ wurde entlassen;;;;;;;;;;;x
+restore_america;¾Æ¸Ş¸®Ä­ ÄÚ¾î¸¦ È¹µæÇÏ¼¼¿ä;Prendre territoire cl?Kernprovinz erwerben;;;;;;;;;;;;x
+restore_america_desc;ÀûÀ» ¾òÀ¸¼¼¿ä§Y.§W¸ñÇ¥¸¦ °¡Áö°í§Y¹Ì±¹À» º¹¿øÇÑ´Ù.§W;Prendre un §YÉtat§W ennemi o?nous avons des §Yprovinces principales§W;Erobern Sie einen feindlichen §YStaat§W, in dem wir §YKernprovinzen§W haben.;;;;;;;;;;;x
+restore_america_setup;ÄÚ¾î È¹µæ$STATE$ $RECIPIENT$;Prendre État cl?$STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;x
+restore_america_short;$STATE$ È¹µæ;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;x
+restore_austrian_empire;¿À½ºÆ®¸®¾Æ ÄÚ¾î È¹µæ;Prendre territoire cl?Kernprovinz erwerben;;;;;;;;;;;;x
+restore_austrian_empire_desc;ÀûÀ» ¾òÀ¸¼¼¿ä§Y.§W¿À½ºÆ®¸®¾Æ°¡ ÀÖ´Â °÷§YÀüÅëÀûÀ¸·Î Áö¹è¸¦ ¹Ş¾Ò½À´Ï´Ù.§W;Prendre un §YÉtat§W ennemi o?nous avons des §Yprovinces principales§W;Erobern Sie einen feindlichen §YStaat§W, in dem wir §YKernprovinzen§W haben.;;;;;;;;;;;x
+restore_austrian_empire_setup;ÄÚ¾î È¹µæ$STATE$ $RECIPIENT$;Prendre État cl?$STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;x
+restore_austrian_empire_short;$STATE$ È¹µæ;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;x
+restore_british_raj;¿µ±¹ ¶óÁî¸¦ ÁÖÀåÇÏ¶ó.;Réduire;Größe reduzieren;;;;;;;;;;;x
+restore_british_raj_desc;Àû±¹ §Y±¹°¡§W¸¦ ±«·ÚÈ­ÇÏ¿© Á¤´çÇÑ §Y¿µ±¹·É ÀÎµµ§W ¿µÅä·Î µÇµ¹¸³´Ï´Ù.;Obliger un autre §Ypays§W ?se désarmer et ?nous verser des compensations;Zwischen Sie ein anderes §YLand§W zur Abrüstung und zu Reparationszahlungen an uns.;;;;;;;;;;;x
+restore_british_raj_setup;$RECIPIENT$(Àº)´Â $ACTOR$ÀÇ ±«·Ú±¹ÀÌ µË´Ï´Ù.;$RECIPIENT$ devient satellite de $ACTOR$;$RECIPIENT$ wird eine Marionette von $ACTOR$;;;;;;;;;;;x
+restore_british_raj_short;$RECIPIENT$(Àº)´Â $ACTOR$ÀÇ ±«·Ú±¹ÀÌ µË´Ï´Ù.;$RECIPIENT$ devient satellite de $ACTOR$;$RECIPIENT$ wird eine Marionette von $ACTOR$;;;;;;;;;;;x
+restore_neutrality;Áß¸³¼ºÀ» È¸º¹ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+restore_neutrality_desc;ÀÌ ±¹°¡´Â ±¹°¡ÀÇ Áß¸³¼ºÀ» Ä§ÇØÇÏ¿´°í ±× °á°ú¿¡ Á÷¸éÇÏ¿©¾ß ÇÑ´Ù.;;;;;;;;;;;;;x
+restore_neutrality_setup;Áß¸³¼º È¸º¹.;;;;;;;;;;;;;x
+restore_neutrality_short;Áß¸³¼º È¸º¹.;;;;;;;;;;;;;x
+mexico_concession_rus;Ä¶¸®Æ÷´Ï¾Æ À§±â;;;;;;;;;;;x
+mexico_concession_rus_desc;¾ËÅ¸ Ä¶¸®Æ÷´Ï¾ÆÀÇ ¿µÅä¸¦ Äİ·Î¶óµµ °­À¸·Î ºÀ¼âÇÕ´Ï´Ù.;;;;;;;;;;;x
+mexico_concession_rus_setup;¾ËÅ¸ Ä¶¸®Æ÷´Ï¾ÆÀÇ ¿µÅä¸¦ Äİ·Î¶óµµ °­À¸·Î ºÀ¼âÇÕ´Ï´Ù.;;;;;;;;;;;x
+mexico_concession_rus_short;¾ËÅ¸ Ä¶¸®Æ÷´Ï¾Æ¸¦ Äİ·Î¶óµµ °­À¸·Î °¡¼¼¿ä.;;;;;;;;;;;x
+rhine_crisis_french;¶óÀÎ À§±â;;;;;;;;;;;;;x
+rhine_crisis_french_desc;ÇÁ¶û½ºÀÇ ÀÚ¿¬ °æ°è·Î ¶óÀÎÀÇ ¿ŞÂÊ ÀºÇàÀ» ¾ÈÀüÇÏ°Ô º¸È£ÇÕ´Ï´Ù.;;;;;;;;;;;;;x
+rhine_crisis_french_setup;ÇÁ¶û½º ÀÚ¿¬ ±¹°æÀÇ ¹®Á¦¸¦ Á¤¸®ÇÏ¼¼¿ä.;;;;;;;;;;;;;x
+rhine_crisis_french_short;¶óÀÎ·£µå¸¦ ¾ÈÀüÇÏ°Ô º¸È£ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+rhine_crisis_german;¶óÀÎ À§±â;;;;;;;;;;;;;x
+rhine_crisis_german_desc;¶óÀÎÀÇ ¿ŞÂÊ ÀºÇà¿¡ ´ëÇÑ ÇÁ¶û½ºÀÎÀÇ ÁÖÀåÀ» Áß´ÜÇÏ°í º¸´Ù ¾ÈÀüÇÑ ±¹°æ¼±À» ±¸ÃàÇÏ½Ê½Ã¿À.;;;;;;;;;;;;;x
+rhine_crisis_german_setup;¶óÀÎ¶õµå¿¡¼­ ÇÁ¶û½ºÀÇ Ä§·«¿¡ ´ëÀÀÇÕ´Ï´Ù.;;;;;;;;;;;;;x
+rhine_crisis_german_short;¶óÀÎ·£µå¸¦ »ó´ëÇØ.;;;;;;;;;;;;;x
+rude_boy;ºÀ¼â;Confinement;Beherrschung;;;;;;;;;;;x
+rude_boy_desc;§YÀÌ ³ª¶ó§W°¡ ±¹Á¦»çÈ¸¿¡¼­ °¡ÀåÇÏ°í ÀÖ´Â ¹®¸íÀÎÀÇ °¡¸éÀ» ¸ğµÎ ¹ş°Ü±âÀ§ÇØ, ÀÌ ³ª¶óÀÇ ¾ß½ÉÀ» Å«ÆøÀ¸·Î ¶³¾î¶ß¸®´Â °ÍÀ» ½ÇÇàÇÕ´Ï´Ù.;Obligez un autre §Ypays§W, qui s'est débarrassé de tout faux-semblant de conduite civilisée au royaume des affaires internationales, à limiter considérablement ses ambitions.;Zwingen Sie ein anderes §YLand§W, das bezüglich internationaler Beziehungen sämtliche Vortäuschungen zivilisierten Benehmens über Bord geworfen hat, seine Ambitionen drastisch zu reduzieren.;;;;;;;;;;;x
+rude_boy_setup;$RECIPIENT$ (À»)¸¦ ºÀ¼âÇÏ±â À§ÇØ, ÀÌ ³ª¶óÀÇ ¿µÅä, À§½Å, ±×¸®°í ±º»ç·ÂÀ» ¾ø¾ÖÁÖ½Ê½Ã¿ä.;Confinez $RECIPIENT$ en réduisant son territoire, son prestige et son armée.;Halten Sie $RECIPIENT$ in Schach, indem Sie ihr Territorium, Prestige und Militär reduzieren.;;;;;;;;;;;x
+rude_boy_short;$RECIPIENT$ ºÀ¼â;Contenir $RECIPIENT$;Halten Sie $RECIPIENT$ in Schach.;;;;;;;;;;;x
+sahel_jihad_cb;»çÇï ÁöÇÏµå;Prendre territoire cl?Kernprovinz erwerben;;;;;;;;;;;;x
+sahel_jihad_cb_desc;ºÒ·ûÀ» ÀúÁö¸£¼¼¿ä§Y.§W;Prendre un §YÉtat§W ennemi o?nous avons des §Yprovinces principales§W;Erobern Sie einen feindlichen §YStaat§W, in dem wir §YKernprovinzen§W haben.;;;;;;;;;;;x
+sahel_jihad_cb_setup;$STATE$ È¹µæ: ´ë»ó±¹ $RECIPIENT$;Prendre État cl?$STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;x
+sahel_jihad_cb_short;$STATE$ È¹µæ;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;x
+sonderbund_cb;¿¬¹æÈ­ ¹æÁö;;;;;;;;;;;;;x
+sonderbund_cb_desc;½ºÀ§½º°¡ ¿¬¹æ °øÈ­±¹À¸·Î °¡´Â ±æÀ» °è¼Ó °¡´Â °ÍÀ» ¹æÁöÇÑ´Ù.;;;;;;;;;;;;;x
+sonderbund_cb_setup;¿¹¹æ.$RECIPIENT$¿¬¹æÁ¦¿¡¼­.;;;;;;;;;;;;;x
+sonderbund_cb_short;¿¬¹æÈ­ ¹æÁö;;;;;;;;;;;;;x
+status_quo;ÁöÀ§ Äõ¿À;;;;;;;;;;;;;x
+status_quo_desc;ÇÑÂÊ Áø¿µÀÌ §YÀüÀï ¸ñÀû§WÀ» ´Ş¼ºÇÏ´Â °ÍÀ» ¸·±â À§ÇØ ÀüÀï¿¡ °³ÀÔÇÏ½Ê½Ã¿À.;Tenter de participer à une guerre en négligeant les différents camps pour atteindre les §Yobjectifs de guerre§W;Versuchen Sie, in einen Krieg zu intervenieren und beiden Seiten die Erreichung ihrer §YKriegsziele§W zu verwehren.;;;;;;;;;;;x
+status_quo_setup;¿ì¸®ÀÇ Èñ¸ÁÀº Çö»óÀ» À¯ÁöÇÏ±â ¸¸ÇÏ¸éµË´Ï´Ù;Nous demandons juste à ce qu'on nous laisse tranquilles.;Wir wollen nur in Ruhe gelassen werden.;;;;;;;;;;;x
+status_quo_short;¿ø»ó È¸º¹;Statu quo;Status Quo;;;;;;;;;;;x
+take_capital;Ä³ÇÇÅĞÀ» °¡Á®°¡¼¼¿ä.;;;;;;;;;;;;;x
+take_capital_desc;¼öµµ Áö¿ªÀ» ¼±ÅÃÇÏ¼¼¿ä.§Y³ª¶ó.§WÀÚº»À» ´Ù¸¥ °÷À¸·Î ¿Å±âµµ·Ï °­¿äÇÕ´Ï´Ù.;;;;;;;;;;;;;x
+take_capital_setup;¼öµµ±ÇÀ» °¡Á®°¡¼¼¿ä$STATE$.$RECIPIENT$;;;;;;;;;;;;;x
+take_capital_short;Ä³ÇÇÅĞÀ» °¡Á®°¡¿ä.$RECIPIENT$;;;;;;;;;;;;;x
+take_from_sphere;¼¼·Â±Ç ÀÌÅ»;Prendre à la sphère d'influence;Aus Einflusssphäre entfernen;;;;;;;;;;;x
+take_from_sphere_desc;Remove a country from someone’s §YSphere of Influence§W and add it to our own;Supprimer un pays de la §Ysphère d'influence§W de quelqu'un et l'ajouter à la nôtre;Entfernen Sie ein Land aus einer anderen §YEinflusssphäre§W und fügen Sie es Ihrer eigenen hinzu.;;;;;;;;;;;x
+take_from_sphere_setup;Take $THIRD$ from $RECIPIENT$’s sphere of influence;Prendre $THIRD$ à la sphère d'influence de $RECIPIENT$;$THIRD$ aus Einflusssphäre von $RECIPIENT$ entfernen;;;;;;;;;;;x
+take_from_sphere_short;$THIRD$¸¦ ¼¼·Â±Ç¿¡¼­ ÀÌÅ»;Prendre $THIRD$ à la sphère d'influence;$THIRD$ aus Einflusssphäre entfernen;;;;;;;;;;;x
+take_puppet;±«·Ú±¹ Å»Ãë;;;;;;;;;;;;;x
+take_puppet_desc;Á¾ÁÖ±¹À¸·ÎºÎÅÍ §Y±¹°¡§W¸¦ »©¾Ñ½À´Ï´Ù.;;;;;;;;;;;;;x
+take_puppet_setup;$THIRD$À»(¸¦) $RECIPIENT$¿¡°Ô¼­ »©¾Ñ½À´Ï´Ù.;;;;;;;;;;;;;x
+take_puppet_short;$THIRD$ Å»Ãë;;;;;;;;;;;;;x
+treaty_port_casus_belli;Â¡¹úÀû Ãß°İ;;;;;;;;;;;;;x
+treaty_port_casus_belli_desc;Force a §Ycountry§W to negotiate an §Yunequal treaty§W, which includes a §Ytreaty port§W if there’s one available.;;;;;;;;;;;;;x
+treaty_port_casus_belli_setup;Force a §Ycountry§W to negotiate an §Yunequal treaty§W, which includes a §Ytreaty port§W if there’s one available;;;;;;;;;;;;;x
+treaty_port_casus_belli_short;ºÒÆòµîÇÑ Á¶¾àÀ» Çù»óÇÑ´Ù.;;;;;;;;;;;;;x
+test_end_war;Á¶¾àÀ» Çù»óÇÏ¼¼¿ä;;;;;;;;;;;;;x
+test_end_war_desc;Á¶¾àÀ» Çù»óÇÏ¼¼¿ä;;;;;;;;;;;;;x
+test_end_war_setup;Á¶¾àÀ» Çù»óÇÏ¼¼¿ä;;;;;;;;;;;;;x
+test_end_war_short;Á¶¾àÀ» Çù»óÇÏ¼¼¿ä;;;;;;;;;;;;;x
+unification_add_to_sphere;ÅëÀÏÀº ¿µÅä¿¡ ´õÇÕ´Ï´Ù;ajouter à la sphère;In Einflusssphäre aufnehmen;;;;;;;;;;;x
+unification_add_to_sphere_desc;±¹°¡ Ãß°¡.§Y¿ì¸® ¹®È­ ±×·ìÀÇ.§W¿ì¸®ÇÑÅ×.§Y¿µÇâ·ÂÀÇ ¿µ¿ª§W;Ajouter un pays à notre §Ysphère d'influence§W;Fügen Sie das Land Ihrer §YEinflusssphäre§W hinzu.;;;;;;;;;;;x
+unification_add_to_sphere_setup;$RECIPIENT$À»(¸¦) ¿µÇâ±Ç¿¡ ÆíÀÔ;ajouter $RECIPIENT$ à la sphère d'influence;$RECIPIENT$ in Einflusssphäre aufnehmen;;;;;;;;;;;x
+unification_add_to_sphere_short;$RECIPIENT$À»(¸¦) ¿µÇâ±Ç¿¡ ÆíÀÔ;ajouter $RECIPIENT$ à la sphère d'influence;$RECIPIENT$ in Einflusssphäre aufnehmen;;;;;;;;;;;x
+unification_annex_casus_belli;ÅëÀÏ ÀüÀï;Guerre d'unification;Vereinigungskrieg;;;;;;;;;;;x
+unification_annex_casus_belli_desc;¿ì¸® §Y¹®È­ Áö¿ª§W¿¡ ÄÚ¾î ¿µ¿ª¿¡ ÇØ´çÇÏ´Â Áö¿ªÀ» ÇØ¹æÇÏÀÚ.;Libérez un territoire clé de notre §Yunion culturelle§W.;Befreien Sie das Kerngebiet unserer §YKulturunion§W;;;;;;;;;;;x
+unification_annex_casus_belli_setup;¿ì¸® §Y¹®È­ Áö¿ª§W¿¡ ÄÚ¾î ¿µ¿ª¿¡ ÇØ´çÇÏ´Â Áö¿ªÀ» ÇØ¹æÇÏÀÚ.;Libérez un territoire clé de notre §Yunion culturelle§W.;Befreien Sie das Kerngebiet unserer §YKulturunion§W;;;;;;;;;;;x
+unification_annex_casus_belli_short;ÇÕº´;Annexion;Annektierung;;;;;;;;;;;x
+unification_casus_belli;ÅëÀÏ ÀüÀï;Guerre d'unification;Vereinigungskrieg;;;;;;;;;;;x
+unification_casus_belli_desc;¿ì¸®ÀÇ ÄÚ¾î §Y¹®È­ Áö¿ª§WÀ» ÇØ¹æ½ÃÅ°ÀÚ.;Libérer un territoire clé de notre §Yunion culturelle§W;Befreien Sie das Kerngebiet unserer §YKulturunion§W;;;;;;;;;;;x
+unification_casus_belli_setup;¿ì¸®ÀÇ ÄÚ¾î §Y¹®È­ Áö¿ª§WÀ» ÇØ¹æ½ÃÅ°ÀÚ.;Libérez un territoire clé de notre §Yunion culturelle§W.;Befreien Sie das Kerngebiet unserer §YKulturunion§W;;;;;;;;;;;x
+unification_casus_belli_short;$STATE$ ÇØ¹æ;Libérer $STATE$;Befreien Sie $STATE$;;;;;;;;;;;x
+unification_GP_humiliate;ÅëÀÏ ±¼¿å;Humilier;Erniedrigen;;;;;;;;;;;x
+unification_GP_humiliate_desc;Àû¿¡°Ô ±¼¿åÀ» ÁÖ¾î ¿ì¸® ±º´ëÀÇ ÀÇÁö¸¦ º¸¿©ÁÖ¼¼¿ä§Y¿ì¸® ¹®È­ ±×·ìÀÇ ´õ Å« Èû§W, µû¶ó¼­ ¿ì¸®ÀÇ °¡Ä¡¸¦ Áõ°¡½ÃÅµ´Ï´Ù.§YÀ§½Å.§W±×µéÀÇ ¸öÀ» ³·Ãß¸é¼­;Afficher notre puissance militaire en humiliant un §Ypays§W ennemi et en augmentant notre §Yprestige§W tout en réduisant le leur;Zeigen Sie unsere Militärmacht durch Erniedrigung eines feindlichen §YLandes§W, wodurch Sie unser §YPrestige§W steigern und ihres verringern.;;;;;;;;;;;x
+unification_GP_humiliate_setup;$RECIPIENT$ ±¼¿å ÁÖ±â;Humilier $RECIPIENT$;$RECIPIENT$ erniedrigen;;;;;;;;;;;x
+unification_GP_humiliate_short;$RECIPIENT$ ±¼¿å ÁÖ±â;Humilier $RECIPIENT$;$RECIPIENT$ erniedrigen;;;;;;;;;;;x
+unification_humiliate_cb;ÆĞ±ÇÀÇ È®¸³;Imposer l'hégémonie;Vorherrschaft durchsetzen;;;;;;;;;;;x
+unification_humiliate_cb_desc;´ç½ÅÀÇ ³ª¶óÀÇ ÁÖ¿ä ¹ÎÁ·¿¡ °üÇØ¼­´Â ´ç½ÅÀÇ ³ª¶ó¿¡ ÅëÄ¡±ÇÀÌ ÀÖÀ½À» ´Ù¸¥ ¿­°­±¹¿¡°Ô ÀÎÁ¤Åä·Ï ÇÏ½Ê½Ã¿À. ´ç½Å ³ª¶óÀÇ ÁÖ¿ä ¹ÎÁ·ÀÌ »ç´Â Áö¿ª¿¡¼­ ´Ù¸¥ ³ª¶óÀÇ ¿µÇâ·ÂÀº ¿ÏÀüÈ÷ ¼Ò¸êµÉ °ÍÀÔ´Ï´Ù.;Force une autre Grande Puissance à vous concéder la primauté dans votre union culturelle commune. Toute son influence sur les pays de la zone sera perdue.;Zwingen Sie eine andere Großmacht, Ihre Führung Ihrer gemeinsamen Kulturunion zu akzeptieren. Der Einfluss der anderen Macht über Länder in dieser Region geht dadurch verloren.;;;;;;;;;;;x
+unification_humiliate_cb_setup;´Ù¸¥ ¿­°­ ±¹°¡¿¡°Ô, ´ç½Å ³ª¶óÀÇ ÁÖ¿ä ¹ÎÁ·¿¡ °üÇØ¼­´Â ´ç½ÅÀÇ ³ª¶ó°¡ ÅëÄ¡±ÇÀÌ ÀÖ´Ù´Â °ÍÀ» ÀÎÁ¤ÇÏ°Ô ÇÏ½Ê½Ã¿À.;Force une autre Grande Puissance à vous concéder la primauté dans votre union culturelle commune.;Zwingen Sie eine andere Großmacht, Ihre Führung Ihrer gemeinsamen Kulturunion zu akzeptieren.;;;;;;;;;;;x
+unification_humiliate_cb_short;ÆĞ±ÇÀÇ ÀÎ¿ë;Admettre l'hégémonie;Vorherrschaft anerkennen;;;;;;;;;;;x
+unification_release_puppet_cb;¹®È­Àû Ä£Á·±¹°¡ ÇØ¹æ;;Befreit kulturelle Sippschaft;;;;;;;;;;;x
+unification_release_puppet_cb_desc;¿ì¸®ÀÇ ¹®È­Àû Ä£Á·±¹°¡µéÀ» ¿Ü±¹ÀÎÀÇ ÅëÁ¦·ÎºÎÅÍ ÇØ¹æ½ÃÅ°°í ±×µéÀ» ´ç½ÅÀÇ ¿µÇâ±Ç¿¡ Ãß°¡½ÃÅµ´Ï´Ù.;;Befreit unsere kulturelle Sippschaft aus der Kontrolle der Fremden und fügt sie Eurem Einflussbereich hinzu;;;;;;;;;;;x
+unification_release_puppet_cb_setup;$THIRD$ ·ÎºÎÅÍ $RECIPIENT$ ¸¦ ÇØ¹æ½ÃÅ°°í ±×µéÀ» ´ç½ÅÀÇ ¿µÇâ±Ç¿¡ Ãß°¡½ÃÅµ´Ï´Ù.;;Befreit $THIRD$ von $RECIPIENT$ und fügt sie Eurem Einflussbereich hinzu;;;;;;;;;;;x
+unification_release_puppet_cb_short;$THIRD$¸¦ ÇØ¹æ½ÃÅ´;;$THIRD$ wurde befreit;;;;;;;;;;;x
+uninstall_communist_gov_cb;°ø»êÁÖÀÇ Ã¼Á¦¸¦ ÇØÁ¦ÇÑ´Ù;Révoquer le Communisme;Kommunismus absetzen;;;;;;;;;;;x
+uninstall_communist_gov_cb_desc;°ø»êÁÖÀÇ Á¤ºÎ¸¦ ÇØ»êÇÑ´Ù.;Révoquer le gouvernement communiste.;Die kommunistische Regierung absetzen.;;;;;;;;;;;x
+uninstall_communist_gov_cb_setup;°ø»êÁÖÀÇ Á¤ºÎ¸¦ ÇØ»êÇÑ´Ù.;Révoquer le gouvernement communiste.;Die kommunistische Regierung absetzen.;;;;;;;;;;;x
+uninstall_communist_gov_cb_short;°ø»êÁÖÀÇ Ã¼Á¦¸¦ ÇØÁ¦ÇÑ´Ù.;Révoquer le Communisme.;Kommunismus absetzen;;;;;;;;;;;x
+USS_monroe;¹Ì¶õ´Ù µ¶Æ®¸°;Peuple libre;Freies Volk;;;;;;;;;;;;x;;;;;;;;;;;;;;
+USS_monroe_desc;¿Ü±¹ÀÇ Áö¹èÇÏ¿¡ ÀÖ´Â ¶óÆ¾ ¹ÎÁ·À» ÇØ¹æ!;Libérer un §Ypays§W de ses oppresseurs;Befreien Sie ein §YLand§W von seinen Unterdrückern.;;;;;;;;;;;x
+USS_monroe_short;½Å´ë·úÀÇ ½Ä¹ÎÁö º¸À¯¹°À» ÇØ¹æÇÑ´Ù.;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;;;;;;;;;;;x;;;;;;;;;;;;;;
+USS_monroe_setup;½Å´ë·úÀÇ ½Ä¹ÎÁö º¸À¯¹°À» ÇØ¹æÇÑ´Ù.;Prendre $STATE$ ?$RECIPIENT$ pour le rendre ?$THIRD$;Geben Sie $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;;;;;;;;;;;x;;;;;;;;;;;;;;
+war_of_the_americas_usa;USSA ÇØÃ¼;;;;;;;;;;;;;x
+war_of_the_americas_usa_desc;³²¹Ì´Â °¨È÷ ¿ì¸®¿¡°Ô µµÀüÇß°í, ÀÌÁ¦ ±×µéÀº °á°ú¿¡ Á÷¸éÇÒ °ÍÀÔ´Ï´Ù!;;;;;;;;;;;;;x
+war_of_the_americas_usa_setup;¹Ì±¹À» ÇØÃ¼ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+war_of_the_americas_usa_short;¹Ì±¹À» ÇØÃ¼ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+war_of_the_americas_ussa;¹Ì±¹À» ÇØÃ¼ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+war_of_the_americas_ussa_desc;¿ì¸®´Â °°Àº ´ë·úÀ» °øÀ¯ÇÏ´Â ±×·¯ÇÑ °æÀïÀÚ¸¦ ¿ë³³ÇÒ ¼ö ¾ø½À´Ï´Ù.;;;;;;;;;;;;;x
+war_of_the_americas_ussa_setup;¹Ì±¹À» ÇØÃ¼ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+war_of_the_americas_ussa_short;¹Ì±¹À» ÇØÃ¼ÇÏ¼¼¿ä;;;;;;;;;;;;;x
+war_reparations;ºñ±³;;;;;;;;;;;;;x
+war_reparations_desc;¼ö¿ä.§Y¹è»ó.§W $RECIPIENT$.;;;;;;;;;;;;;x
+war_reparations_setup;¼ö¿ä.§Y¹è»ó.§W $RECIPIENT$.;;;;;;;;;;;;;x
+war_reparations_short;¿ä±¸ ºñ±³;;;;;;;;;;;;;x
+webster_ashburton_cb;ÇÁ·±Æ¼¾î º¸¾È;;;;;;;;;;;;;x
+webster_ashburton_cb_desc;Ä³³ª´Ù¿Í ¹Ì±¹ÀÇ ±¹°æ¿¡ ´ëÇÑ ¿ì¸®ÀÇ °ßÇØ¸¦ °üÃ¶ÇÑ´Ù.;;;;;;;;;;;;;x
+webster_ashburton_cb_setup;¿ì¸®ÀÇ ±¹°æÀ» ¿ì¸®¿Í ÇÔ²² ³¢¿öÁÖ¼¼¿ä.$RECIPIENT$;;;;;;;;;;;;;x
+webster_ashburton_cb_short;±¹°æ ºĞÀï ÇØ°á;;;;;;;;;;;;;x
+take_claimed_land;Ã»±¸¼­ ¹ßºÎ;;;;;;;;;;;;;x
+take_claimed_land_desc;Ã»±¸µÈ ¶¥À» °­Á¦·Î °¡Á®°¡¼¼¿ä.;;;;;;;;;;;;;x
+take_claimed_land_setup;Ã»±¸µÈ ¶¥À» °­Á¦·Î °¡Á®°¡.;;;;;;;;;;;;;x
+take_claimed_land_short;Ã»±¸µÈ ¶¥À» °­Á¦·Î °¡Á®°¡.;;;;;;;;;;;;;x
+new_world_hegemony_desc;»õ·Î¿î ¼¼°èÀÇ ¼±µÎ ¼¼·ÂÀÌ µÇ¼¼¿ä.;;;;;;;;;;;;;x
+new_world_hegemony_setup;»õ·Î¿î ¼¼°èÀÇ ¼±µÎ ¼¼·ÂÀÌ µÇ¼¼¿ä.;;;;;;;;;;;;;x
+new_world_hegemony_short;»õ·Î¿î ¼¼°èÀÇ ¼±µÎ ¼¼·ÂÀÌ µÇ¼¼¿ä.;;;;;;;;;;;;;x
+new_world_hegemony;½Å¼¼°è Çì°Ô¸ğ´Ï;;;;;;;;;;;;;

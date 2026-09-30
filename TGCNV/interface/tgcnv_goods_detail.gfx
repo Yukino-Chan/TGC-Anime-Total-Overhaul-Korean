@@ -1,0 +1,1190 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_tgcnv_subgood_coal_anthracite"
+    texturefile = "gfx\\interface\\goods_detail\\coal\\anthracite.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_coal_bituminous"
+    texturefile = "gfx\\interface\\goods_detail\\coal\\bituminous.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_coal_lignite"
+    texturefile = "gfx\\interface\\goods_detail\\coal\\lignite.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fish_freshwater"
+    texturefile = "gfx\\interface\\goods_detail\\fish\\freshwater.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fish_marine"
+    texturefile = "gfx\\interface\\goods_detail\\fish\\marine.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fuel_biofuel"
+    texturefile = "gfx\\interface\\goods_detail\\fuel\\biofuel.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fuel_petroleum_fuel"
+    texturefile = "gfx\\interface\\goods_detail\\fuel\\petroleum_fuel.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_grain_maize"
+    texturefile = "gfx\\interface\\goods_detail\\grain\\maize.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_grain_rice"
+    texturefile = "gfx\\interface\\goods_detail\\grain\\rice.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_grain_wheat"
+    texturefile = "gfx\\interface\\goods_detail\\grain\\wheat.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_iron_hematite"
+    texturefile = "gfx\\interface\\goods_detail\\iron\\hematite.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_iron_magnetite"
+    texturefile = "gfx\\interface\\goods_detail\\iron\\magnetite.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_liquor_beer"
+    texturefile = "gfx\\interface\\goods_detail\\liquor\\beer.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_liquor_spirits"
+    texturefile = "gfx\\interface\\goods_detail\\liquor\\spirits.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_liquor_wine"
+    texturefile = "gfx\\interface\\goods_detail\\liquor\\wine.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_precious_goods_rock_salt"
+    texturefile = "gfx\\interface\\goods_detail\\precious_goods\\rock_salt.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_precious_goods_sea_salt"
+    texturefile = "gfx\\interface\\goods_detail\\precious_goods\\sea_salt.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_steel_alloy_steel"
+    texturefile = "gfx\\interface\\goods_detail\\steel\\alloy_steel.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_steel_carbon_steel"
+    texturefile = "gfx\\interface\\goods_detail\\steel\\carbon_steel.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_wine_juice"
+    texturefile = "gfx\\interface\\goods_detail\\wine\\juice.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_wine_soft_drink"
+    texturefile = "gfx\\interface\\goods_detail\\wine\\soft_drink.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_ammunition_rifle_cartridge"
+    texturefile = "gfx\\interface\\goods_detail\\ammunition\\rifle_cartridge.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_ammunition_artillery_shell"
+    texturefile = "gfx\\interface\\goods_detail\\ammunition\\artillery_shell.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_ammunition_shot_and_balls"
+    texturefile = "gfx\\interface\\goods_detail\\ammunition\\shot_and_balls.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_small_arms_service_rifle"
+    texturefile = "gfx\\interface\\goods_detail\\small_arms\\service_rifle.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_small_arms_sidearm"
+    texturefile = "gfx\\interface\\goods_detail\\small_arms\\sidearm.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_small_arms_automatic_support_weapon"
+    texturefile = "gfx\\interface\\goods_detail\\small_arms\\automatic_support_weapon.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_artillery_field_artillery"
+    texturefile = "gfx\\interface\\goods_detail\\artillery\\field_artillery.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_artillery_heavy_siege_artillery"
+    texturefile = "gfx\\interface\\goods_detail\\artillery\\heavy_siege_artillery.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_artillery_naval_coastal_gun"
+    texturefile = "gfx\\interface\\goods_detail\\artillery\\naval_coastal_gun.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_canned_food_canned_meat"
+    texturefile = "gfx\\interface\\goods_detail\\canned_food\\canned_meat.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_canned_food_canned_fish"
+    texturefile = "gfx\\interface\\goods_detail\\canned_food\\canned_fish.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_canned_food_mixed_field_ration"
+    texturefile = "gfx\\interface\\goods_detail\\canned_food\\mixed_field_ration.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_barrels_light_scout_tank"
+    texturefile = "gfx\\interface\\goods_detail\\barrels\\light_scout_tank.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_barrels_line_battle_tank"
+    texturefile = "gfx\\interface\\goods_detail\\barrels\\line_battle_tank.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_aeroplanes_wood_fabric_biplane"
+    texturefile = "gfx\\interface\\goods_detail\\aeroplanes\\wood_fabric_biplane.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_aeroplanes_flying_boat_patrol"
+    texturefile = "gfx\\interface\\goods_detail\\aeroplanes\\flying_boat_patrol.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_aeroplanes_all_metal_monoplane"
+    texturefile = "gfx\\interface\\goods_detail\\aeroplanes\\all_metal_monoplane.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_gunpowder_coarse_blasting_powder"
+    texturefile = "gfx\\interface\\goods_detail\\gunpowder\\coarse_blasting_powder.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_gunpowder_fine_sporting_powder"
+    texturefile = "gfx\\interface\\goods_detail\\gunpowder\\fine_sporting_powder.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_cotton_upland_short_staple"
+    texturefile = "gfx\\interface\\goods_detail\\cotton\\upland_short_staple.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_cotton_asiatic_coarse_cotton"
+    texturefile = "gfx\\interface\\goods_detail\\cotton\\asiatic_coarse_cotton.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_cotton_long_staple_cotton"
+    texturefile = "gfx\\interface\\goods_detail\\cotton\\long_staple_cotton.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_dye_indigo_plant_dye"
+    texturefile = "gfx\\interface\\goods_detail\\dye\\indigo_plant_dye.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_dye_madder_root_dye"
+    texturefile = "gfx\\interface\\goods_detail\\dye\\madder_root_dye.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_dye_cochineal_carmine"
+    texturefile = "gfx\\interface\\goods_detail\\dye\\cochineal_carmine.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_dye_synthetic_aniline_dye"
+    texturefile = "gfx\\interface\\goods_detail\\dye\\synthetic_aniline_dye.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_wool_merino_fine_wool"
+    texturefile = "gfx\\interface\\goods_detail\\wool\\merino_fine_wool.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_wool_longwool_lustrous"
+    texturefile = "gfx\\interface\\goods_detail\\wool\\longwool_lustrous.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_wool_carpet_coarse_wool"
+    texturefile = "gfx\\interface\\goods_detail\\wool\\carpet_coarse_wool.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_silk_mulberry_raw_silk"
+    texturefile = "gfx\\interface\\goods_detail\\silk\\mulberry_raw_silk.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_silk_tussah_wild_silk"
+    texturefile = "gfx\\interface\\goods_detail\\silk\\tussah_wild_silk.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_silk_spun_silk_waste"
+    texturefile = "gfx\\interface\\goods_detail\\silk\\spun_silk_waste.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_sulphur_volcanic_sulphur"
+    texturefile = "gfx\\interface\\goods_detail\\sulphur\\volcanic_sulphur.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_sulphur_pyritic_sulphur"
+    texturefile = "gfx\\interface\\goods_detail\\sulphur\\pyritic_sulphur.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_sulphur_synthetic_recovered_sulphur"
+    texturefile = "gfx\\interface\\goods_detail\\sulphur\\synthetic_recovered_sulphur.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_timber_softwood_conifer"
+    texturefile = "gfx\\interface\\goods_detail\\timber\\softwood_conifer.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_timber_hardwood_broadleaf"
+    texturefile = "gfx\\interface\\goods_detail\\timber\\hardwood_broadleaf.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_timber_ship_timber"
+    texturefile = "gfx\\interface\\goods_detail\\timber\\ship_timber.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_timber_pulpwood_roundwood"
+    texturefile = "gfx\\interface\\goods_detail\\timber\\pulpwood_roundwood.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tropical_wood_teak_deck_timber"
+    texturefile = "gfx\\interface\\goods_detail\\tropical_wood\\teak_deck_timber.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tropical_wood_decorative_tropical_hardwood"
+    texturefile = "gfx\\interface\\goods_detail\\tropical_wood\\decorative_tropical_hardwood.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tropical_wood_general_tropical_timber"
+    texturefile = "gfx\\interface\\goods_detail\\tropical_wood\\general_tropical_timber.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tropical_wood_veneer_peeler_log"
+    texturefile = "gfx\\interface\\goods_detail\\tropical_wood\\veneer_peeler_log.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_rubber_para_latex_rubber"
+    texturefile = "gfx\\interface\\goods_detail\\rubber\\para_latex_rubber.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_rubber_gutta_percha"
+    texturefile = "gfx\\interface\\goods_detail\\rubber\\gutta_percha.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_rubber_wild_caoutchouc"
+    texturefile = "gfx\\interface\\goods_detail\\rubber\\wild_caoutchouc.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_rubber_guayule_shrub_rubber"
+    texturefile = "gfx\\interface\\goods_detail\\rubber\\guayule_shrub_rubber.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_rubber_buna_synthetic_rubber"
+    texturefile = "gfx\\interface\\goods_detail\\rubber\\buna_synthetic_rubber.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_oil_crude_petroleum"
+    texturefile = "gfx\\interface\\goods_detail\\oil\\crude_petroleum.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_oil_synthetic_crude"
+    texturefile = "gfx\\interface\\goods_detail\\oil\\synthetic_crude.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_precious_metal_gold"
+    texturefile = "gfx\\interface\\goods_detail\\precious_metal\\gold.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_precious_metal_silver"
+    texturefile = "gfx\\interface\\goods_detail\\precious_metal\\silver.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_precious_metal_platinum"
+    texturefile = "gfx\\interface\\goods_detail\\precious_metal\\platinum.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_precious_metal_gems"
+    texturefile = "gfx\\interface\\goods_detail\\precious_metal\\gems.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_precious_metal_commercial_revenue"
+    texturefile = "gfx\\interface\\goods_detail\\precious_metal\\commercial_revenue.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_copper_copper_sulphide_ore"
+    texturefile = "gfx\\interface\\goods_detail\\copper\\copper_sulphide_ore.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_copper_copper_oxide_ore"
+    texturefile = "gfx\\interface\\goods_detail\\copper\\copper_oxide_ore.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_copper_native_copper"
+    texturefile = "gfx\\interface\\goods_detail\\copper\\native_copper.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_lead_galena_sulphide_ore"
+    texturefile = "gfx\\interface\\goods_detail\\lead\\galena_sulphide_ore.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_lead_oxidized_lead_ore"
+    texturefile = "gfx\\interface\\goods_detail\\lead\\oxidized_lead_ore.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_lead_silver_bearing_lead"
+    texturefile = "gfx\\interface\\goods_detail\\lead\\silver_bearing_lead.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_spices_pepper"
+    texturefile = "gfx\\interface\\goods_detail\\spices\\pepper.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_spices_cinnamon"
+    texturefile = "gfx\\interface\\goods_detail\\spices\\cinnamon.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_spices_cloves"
+    texturefile = "gfx\\interface\\goods_detail\\spices\\cloves.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_spices_nutmeg"
+    texturefile = "gfx\\interface\\goods_detail\\spices\\nutmeg.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_spices_allspice"
+    texturefile = "gfx\\interface\\goods_detail\\spices\\allspice.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_spices_ginger"
+    texturefile = "gfx\\interface\\goods_detail\\spices\\ginger.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_spices_vanilla"
+    texturefile = "gfx\\interface\\goods_detail\\spices\\vanilla.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_mana_crystal_raw_mana_shard"
+    texturefile = "gfx\\interface\\goods_detail\\mana_crystal\\raw_mana_shard.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_mana_crystal_attuned_crystal_core"
+    texturefile = "gfx\\interface\\goods_detail\\mana_crystal\\attuned_crystal_core.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_mana_crystal_shrine_idol_crystal"
+    texturefile = "gfx\\interface\\goods_detail\\mana_crystal\\shrine_idol_crystal.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_mana_crystal_grown_mana_lattice"
+    texturefile = "gfx\\interface\\goods_detail\\mana_crystal\\grown_mana_lattice.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_spirit_ore_unrefined_spirit_matrix"
+    texturefile = "gfx\\interface\\goods_detail\\spirit_ore\\unrefined_spirit_matrix.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_spirit_ore_elemental_aspect_ore"
+    texturefile = "gfx\\interface\\goods_detail\\spirit_ore\\elemental_aspect_ore.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_spirit_ore_reliquary_idol_ore"
+    texturefile = "gfx\\interface\\goods_detail\\spirit_ore\\reliquary_idol_ore.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_cement_portland_cement"
+    texturefile = "gfx\\interface\\goods_detail\\cement\\portland_cement.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_cement_natural_hydraulic_cement"
+    texturefile = "gfx\\interface\\goods_detail\\cement\\natural_hydraulic_cement.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_machine_parts_gears_shafts_bearings"
+    texturefile = "gfx\\interface\\goods_detail\\machine_parts\\gears_shafts_bearings.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_machine_parts_engine_component_set"
+    texturefile = "gfx\\interface\\goods_detail\\machine_parts\\engine_component_set.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_machine_parts_precision_instrument_part"
+    texturefile = "gfx\\interface\\goods_detail\\machine_parts\\precision_instrument_part.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_glass_flat_plate_glass"
+    texturefile = "gfx\\interface\\goods_detail\\glass\\flat_plate_glass.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_glass_container_glass"
+    texturefile = "gfx\\interface\\goods_detail\\glass\\container_glass.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_glass_fine_tableware_glass"
+    texturefile = "gfx\\interface\\goods_detail\\glass\\fine_tableware_glass.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_glass_mana_infused_glass"
+    texturefile = "gfx\\interface\\goods_detail\\glass\\mana_infused_glass.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fertilizer_field_fertilizer"
+    texturefile = "gfx\\interface\\goods_detail\\fertilizer\\field_fertilizer.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fertilizer_horticultural_fertilizer"
+    texturefile = "gfx\\interface\\goods_detail\\fertilizer\\horticultural_fertilizer.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_explosives_industrial_blasting_charge"
+    texturefile = "gfx\\interface\\goods_detail\\explosives\\industrial_blasting_charge.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_explosives_military_explosive_filler"
+    texturefile = "gfx\\interface\\goods_detail\\explosives\\military_explosive_filler.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_explosives_demolition_block"
+    texturefile = "gfx\\interface\\goods_detail\\explosives\\demolition_block.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_clipper_convoy_general_cargo_clipper"
+    texturefile = "gfx\\interface\\goods_detail\\clipper_convoy\\general_cargo_clipper.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_clipper_convoy_fast_tea_clipper"
+    texturefile = "gfx\\interface\\goods_detail\\clipper_convoy\\fast_tea_clipper.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_clipper_convoy_coastal_schooner_convoy"
+    texturefile = "gfx\\interface\\goods_detail\\clipper_convoy\\coastal_schooner_convoy.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_steamer_convoy_tramp_cargo_steamer"
+    texturefile = "gfx\\interface\\goods_detail\\steamer_convoy\\tramp_cargo_steamer.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_steamer_convoy_ocean_passenger_liner"
+    texturefile = "gfx\\interface\\goods_detail\\steamer_convoy\\ocean_passenger_liner.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_steamer_convoy_collier_tanker_fleet"
+    texturefile = "gfx\\interface\\goods_detail\\steamer_convoy\\collier_tanker_fleet.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_electric_gear_dynamo_and_motor"
+    texturefile = "gfx\\interface\\goods_detail\\electric_gear\\dynamo_and_motor.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_electric_gear_insulated_cable_wire"
+    texturefile = "gfx\\interface\\goods_detail\\electric_gear\\insulated_cable_wire.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_electric_gear_switchgear_and_relay"
+    texturefile = "gfx\\interface\\goods_detail\\electric_gear\\switchgear_and_relay.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fabric_cotton_cloth"
+    texturefile = "gfx\\interface\\goods_detail\\fabric\\cotton_cloth.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fabric_woollen_cloth"
+    texturefile = "gfx\\interface\\goods_detail\\fabric\\woollen_cloth.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fabric_blended_cloth"
+    texturefile = "gfx\\interface\\goods_detail\\fabric\\blended_cloth.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_lumber_sawn_softwood_plank"
+    texturefile = "gfx\\interface\\goods_detail\\lumber\\sawn_softwood_plank.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_lumber_hardwood_board"
+    texturefile = "gfx\\interface\\goods_detail\\lumber\\hardwood_board.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_lumber_construction_beam"
+    texturefile = "gfx\\interface\\goods_detail\\lumber\\construction_beam.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_bronze_casting_alloy"
+    texturefile = "gfx\\interface\\goods_detail\\bronze\\casting_alloy.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_bronze_bearing_alloy"
+    texturefile = "gfx\\interface\\goods_detail\\bronze\\bearing_alloy.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_bronze_decorative_alloy"
+    texturefile = "gfx\\interface\\goods_detail\\bronze\\decorative_alloy.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_electric_power_coal_thermal_power"
+    texturefile = "gfx\\interface\\goods_detail\\electric_power\\coal_thermal_power.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_electric_power_hydro_grid_power"
+    texturefile = "gfx\\interface\\goods_detail\\electric_power\\hydro_grid_power.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_electric_power_oil_fired_power"
+    texturefile = "gfx\\interface\\goods_detail\\electric_power\\oil_fired_power.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_electric_power_arcane_mana_power"
+    texturefile = "gfx\\interface\\goods_detail\\electric_power\\arcane_mana_power.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_magitech_components_mana_conduit_array"
+    texturefile = "gfx\\interface\\goods_detail\\magitech_components\\mana_conduit_array.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_magitech_components_spirit_capacitor_cell"
+    texturefile = "gfx\\interface\\goods_detail\\magitech_components\\spirit_capacitor_cell.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_magitech_components_construct_actuator_core"
+    texturefile = "gfx\\interface\\goods_detail\\magitech_components\\construct_actuator_core.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_paper_writing_printing_paper"
+    texturefile = "gfx\\interface\\goods_detail\\paper\\writing_printing_paper.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_paper_newsprint_sheet"
+    texturefile = "gfx\\interface\\goods_detail\\paper\\newsprint_sheet.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_paper_packing_paperboard"
+    texturefile = "gfx\\interface\\goods_detail\\paper\\packing_paperboard.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_cattle_bovine_livestock"
+    texturefile = "gfx\\interface\\goods_detail\\cattle\\bovine_livestock.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_cattle_pig_livestock"
+    texturefile = "gfx\\interface\\goods_detail\\cattle\\pig_livestock.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_cattle_sheep_goat_livestock"
+    texturefile = "gfx\\interface\\goods_detail\\cattle\\sheep_goat_livestock.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_cattle_poultry_livestock"
+    texturefile = "gfx\\interface\\goods_detail\\cattle\\poultry_livestock.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fruit_temperate_fruit"
+    texturefile = "gfx\\interface\\goods_detail\\fruit\\temperate_fruit.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fruit_citrus_fruit"
+    texturefile = "gfx\\interface\\goods_detail\\fruit\\citrus_fruit.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fruit_tropical_fruit"
+    texturefile = "gfx\\interface\\goods_detail\\fruit\\tropical_fruit.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_fruit_grapes_dates"
+    texturefile = "gfx\\interface\\goods_detail\\fruit\\grapes_dates.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tobacco_pipe_smoking_leaf"
+    texturefile = "gfx\\interface\\goods_detail\\tobacco\\pipe_smoking_leaf.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tobacco_cigar_leaf"
+    texturefile = "gfx\\interface\\goods_detail\\tobacco\\cigar_leaf.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tobacco_oriental_tobacco_leaf"
+    texturefile = "gfx\\interface\\goods_detail\\tobacco\\oriental_tobacco_leaf.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tobacco_chewing_snuff_leaf"
+    texturefile = "gfx\\interface\\goods_detail\\tobacco\\chewing_snuff_leaf.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tea_black_tea"
+    texturefile = "gfx\\interface\\goods_detail\\tea\\black_tea.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tea_green_tea"
+    texturefile = "gfx\\interface\\goods_detail\\tea\\green_tea.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tea_brick_tea"
+    texturefile = "gfx\\interface\\goods_detail\\tea\\brick_tea.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_coffee_arabica"
+    texturefile = "gfx\\interface\\goods_detail\\coffee\\arabica.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_coffee_robusta"
+    texturefile = "gfx\\interface\\goods_detail\\coffee\\robusta.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_coffee_liberica"
+    texturefile = "gfx\\interface\\goods_detail\\coffee\\liberica.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_opium_raw_opium_gum"
+    texturefile = "gfx\\interface\\goods_detail\\opium\\raw_opium_gum.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_opium_dried_poppy_capsule"
+    texturefile = "gfx\\interface\\goods_detail\\opium\\dried_poppy_capsule.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_automobiles_passenger_car"
+    texturefile = "gfx\\interface\\goods_detail\\automobiles\\passenger_car.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_automobiles_motor_truck"
+    texturefile = "gfx\\interface\\goods_detail\\automobiles\\motor_truck.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_automobiles_luxury_motorcar"
+    texturefile = "gfx\\interface\\goods_detail\\automobiles\\luxury_motorcar.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_telephones_subscriber_handset"
+    texturefile = "gfx\\interface\\goods_detail\\telephones\\subscriber_handset.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_telephones_exchange_switchboard"
+    texturefile = "gfx\\interface\\goods_detail\\telephones\\exchange_switchboard.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_telephones_ship_rail_telephone"
+    texturefile = "gfx\\interface\\goods_detail\\telephones\\ship_rail_telephone.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_regular_clothes_everyday_garment"
+    texturefile = "gfx\\interface\\goods_detail\\regular_clothes\\everyday_garment.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_regular_clothes_durable_workwear"
+    texturefile = "gfx\\interface\\goods_detail\\regular_clothes\\durable_workwear.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_regular_clothes_institutional_uniform"
+    texturefile = "gfx\\interface\\goods_detail\\regular_clothes\\institutional_uniform.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_luxury_clothes_silk_evening_garment"
+    texturefile = "gfx\\interface\\goods_detail\\luxury_clothes\\silk_evening_garment.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_luxury_clothes_tailored_fine_suit"
+    texturefile = "gfx\\interface\\goods_detail\\luxury_clothes\\tailored_fine_suit.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_luxury_clothes_ceremonial_couture"
+    texturefile = "gfx\\interface\\goods_detail\\luxury_clothes\\ceremonial_couture.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_furniture_softwood_household_furniture"
+    texturefile = "gfx\\interface\\goods_detail\\furniture\\softwood_household_furniture.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_furniture_hardwood_joinery"
+    texturefile = "gfx\\interface\\goods_detail\\furniture\\hardwood_joinery.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_furniture_bentwood_furniture"
+    texturefile = "gfx\\interface\\goods_detail\\furniture\\bentwood_furniture.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_luxury_furniture_carved_tropical_cabinet"
+    texturefile = "gfx\\interface\\goods_detail\\luxury_furniture\\carved_tropical_cabinet.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_luxury_furniture_inlaid_marquetry_piece"
+    texturefile = "gfx\\interface\\goods_detail\\luxury_furniture\\inlaid_marquetry_piece.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_luxury_furniture_carved_salon_furniture"
+    texturefile = "gfx\\interface\\goods_detail\\luxury_furniture\\carved_salon_furniture.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_radio_home_receiver_set"
+    texturefile = "gfx\\interface\\goods_detail\\radio\\home_receiver_set.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_radio_commercial_transmitter"
+    texturefile = "gfx\\interface\\goods_detail\\radio\\commercial_transmitter.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_radio_field_radio_set"
+    texturefile = "gfx\\interface\\goods_detail\\radio\\field_radio_set.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_pharmaceuticals_herbal_traditional_remedy"
+    texturefile = "gfx\\interface\\goods_detail\\pharmaceuticals\\herbal_traditional_remedy.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_pharmaceuticals_patent_medicine"
+    texturefile = "gfx\\interface\\goods_detail\\pharmaceuticals\\patent_medicine.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_pharmaceuticals_antiseptic_solution"
+    texturefile = "gfx\\interface\\goods_detail\\pharmaceuticals\\antiseptic_solution.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_pharmaceuticals_spirit_infused_medicine"
+    texturefile = "gfx\\interface\\goods_detail\\pharmaceuticals\\spirit_infused_medicine.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_soap_household_laundry_soap"
+    texturefile = "gfx\\interface\\goods_detail\\soap\\household_laundry_soap.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_soap_toilet_cosmetic_soap"
+    texturefile = "gfx\\interface\\goods_detail\\soap\\toilet_cosmetic_soap.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_soap_industrial_cleaner"
+    texturefile = "gfx\\interface\\goods_detail\\soap\\industrial_cleaner.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tires_pneumatic_auto_tire"
+    texturefile = "gfx\\interface\\goods_detail\\tires\\pneumatic_auto_tire.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tires_bicycle_tire"
+    texturefile = "gfx\\interface\\goods_detail\\tires\\bicycle_tire.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_tires_solid_industrial_tire"
+    texturefile = "gfx\\interface\\goods_detail\\tires\\solid_industrial_tire.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_plastics_molded_resin_parts"
+    texturefile = "gfx\\interface\\goods_detail\\plastics\\molded_resin_parts.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_plastics_insulating_resin_parts"
+    texturefile = "gfx\\interface\\goods_detail\\plastics\\insulating_resin_parts.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_plastics_resin_sheet_stock"
+    texturefile = "gfx\\interface\\goods_detail\\plastics\\resin_sheet_stock.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_sugar_refined_white_sugar"
+    texturefile = "gfx\\interface\\goods_detail\\sugar\\refined_white_sugar.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_sugar_soft_brown_sugar"
+    texturefile = "gfx\\interface\\goods_detail\\sugar\\soft_brown_sugar.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_sugar_syrup_molasses"
+    texturefile = "gfx\\interface\\goods_detail\\sugar\\syrup_molasses.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_idol_media_photo_card_print"
+    texturefile = "gfx\\interface\\goods_detail\\idol_media\\photo_card_print.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_idol_media_fabric_banner_goods"
+    texturefile = "gfx\\interface\\goods_detail\\idol_media\\fabric_banner_goods.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+  spriteType = {
+    name = "GFX_tgcnv_subgood_idol_media_printed_album_magazine"
+    texturefile = "gfx\\interface\\goods_detail\\idol_media\\printed_album_magazine.dds"
+    noOfFrames = 1
+    loadType = "INGAME"
+  }
+}

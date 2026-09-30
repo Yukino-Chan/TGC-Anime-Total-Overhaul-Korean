@@ -1,0 +1,835 @@
+MIL_FROM_TROOPS;Soldiers & Army;;;;;;;;;x;;;
+MIL_FROM_CAP_SHIPS;Capital Ships;;;;;;;;;x;;;
+MIL_FROM_LEADERS;Leaders;;;;;;;;;x;;;
+OCCUPATION_SCORE;Occupation:;;;;;;;;;x;;;
+BLOCKADE_SCORE;Blockade:;;;;;;;;;x;;;
+OUTLINER_TOOLTIP_EMPLOYED;§Y$COUNT$§! Employed in factories (§Y$PERC$§!%);;;;;;;;;x;;;
+TRADE_SUPPLY_NEED_A;$VAL$ to supply army each day.\n;;;;;;;;;x;;;
+TRADE_SUPPLY_NEED_N;$VAL$ to supply navy each day.\n;;;;;;;;;x;;;
+DIPLOMACY_CANNOT_SET_PRIO_WAR;We cannot influence this nation while we have a war with them.;;;;;;;;;x;;;
+DIPLOMACY_INFLUENCE_NOT_WORTH;We are already influencing this country at maximum, and there is no other country influencing it. No points are spent for now.;;;;;;;;;x;;;
+COLONY_ABORT_HEADER;When our colonization has been aborted.;Lorsque notre colonisation à été abandonnée;Sobald unsere Kolonisierung abgebrochen wurde.;;;;;;;;x;;;
+COLONY_ABORT_1;Colonization Aborted!;Abandon de la colonisation !;Kolonisierung Abgebrochen!;;;;;;;;x;;;
+COLONY_ABORT_2;$MONARCHTITLE$, our colony in;$MONARCHTITLE$, notre colonie en;$MONARCHTITLE$, unsere Kolonie in;;;;;;;;x;;;
+COLONY_ABORT_3;§Y$TARGET$§b.;§Y$TARGET$§b.;§Y$TARGET$§b.;;;;;;;;x;;;
+COLONY_ABORT_4;has been aborted!;a été abandonnée !;wurde vorzeitig abgebrochen!;;;;;;;;x;;;
+COLONY_ABORT_5;We can no longer colonize this region.;Nous ne pouvons plus coloniser cette région.;Wir können diese Region nicht länger kolonisieren.;;;;;;;;x;;;
+COLONY_ABORT_6;*;*;*;*;*;*;*;;;;;;;x
+COLONY_ABORT_BTN1;OK;D'accord;¿¹;*;Aceptar;*;*;;;;;;;x
+COLONY_ABORT_BTN2;OK;;;;;;;;;;x
+COLONY_ABORT_BTN3;Go To;;;;;;;;;x
+COLONY_ABORT_MAP;Colony Aborted!;;;;;;;;;x;;;
+COLONY_ABORT_SETUP;When colonization is aborted.;;;;;;;;;x;;;
+COLONY_ABORT_LOG;Colonization of $TARGET$ has been aborted.;.;;;;;;;;x;;;
+DIPRELCH_VALID_CB;Valid Casus Belli;;;;;;;;;x;;;
+BRIGADES_COMPARE_GREATER;Brigades comparison factor of two countries is at least §Y$VAL$§W;;;;;;;;;x;;;
+BRIGADES_COMPARE_SMALLER;Brigades comparison factor of two countries is less than §Y$VAL$§W;;;;;;;;;x;;;
+CONFIRM_CREATE_STATE_DESC2;(All local effects will be removed.);;;;;;;;;x;;;
+UNIT_ENABLE_REBEL_HUNT;Hunt Rebels;;;;;;;;;;;x
+UNIT_DISABLE_REBEL_HUNT;(hunting rebels);;;;;;;;;;;x
+UNIT_REBEL_HUNT_WILL_HUNT;§GArmy is ready for rebel hunting.§W;;;;;;;;;;;;x
+UNIT_REBEL_HUNT_IS_BUSY;§RArmy is currently busy and will not hunt any rebels right now.§W;;;;;;;;;;;x
+UNIT_REBEL_HUNT_LOW_MORALE;§RArmy has too low morale and will not hunt any rebels right now.§W;;;;;;;;;;;x
+UNIT_REBEL_HUNT_NO_VALID;§REnemy rebels has been detected, but our army will not attack them, because they are too strong for us, or couldn't find a safe path to get there.§W;;;;;;;;;;;x
+NOT_RELEASE_AT_WAR;§R(It is not possible to release nations when at war.)§W;;;;;;;;;x;;;
+COLONY_SUCCESS_5;§Y$PRESTIGE$§W prestige gained.;;;;;;;;;;;;x
+COLONY_SUCCESS_6;(Base value §Y$BASE$§W x §Y$PROV$§W provinces.);;;;;;;;;;;;x
+COUNTRY_PUPPETS_LIST;Puppets:;;;;;;;;;;;;x
+POLL_ESTIMATED_ELECTION;In an election we estimate the following result.;;;;;;;;;x;;;
+MODIFIER_MOVEMENT_COST;Troop Movement Cost;;;;;;;;;x;;;
+SPEED_IMPACT_ON_CB;Speed of generation is changed by §Y$VAL$§W.;;;;;;;;;x;;;
+TERR_COMB_WIDTH_DEC;Combat width is reduced by §Y$VAL$§W% in this terrain.;;;;;;;;;x;;;
+MODIFIER_BOOST_STRONGEST_PARTY;Strength of Strongest Party;;;;;;;;x;;;
+PEACEDEMANDDESC;$COUNTRY$ is demanding a peace on the following terms:;;;;;;;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_SETUP;When our war justification process is no longer valid.;Quand notre justification de guerre n'est plus valide.;Sobald unser Prozess der Kriegsrechtfertigung nicht länger gültig ist.;;;;;;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_HEADER;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_1;War Justification;Casus Belli;Kriegsrechtfertigung;;;;;;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_2;Our attempt to justify war using;Notre tentative de justifier la guerre par le;Unser Versuch, den Krieg zu rechtfertigen mittels;;;;;;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_3;§Y$CASUS$§! Casus Belli;Casus Belli §Y$CASUS$§!;§Y$CASUS$§! Casus Belli;;;;;;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_4;against;contre;gegen;;;;;;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_5;$TARGET$;$TARGET$;$TARGET$;;$TARGET$;;;;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_6;is no longer valid!;n'est plus valide !;ist nicht länger gültig!;;;;;;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_LOG;Our war justification process against $TARGET$ is no longer valid.;La justification de notre guerre contre $TARGET$ n'est plus valide.;Unser Prozess der Kriegsrechtfertigung gegenüber $TARGET$ ist nicht länger gültig.;;;;;;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_BTN1;OK;D'accord;¿¹;OK;¿¹;OK;Rendben;¿¹;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_BTN2;OK;D'accord;¿¹;OK;¿¹;OK;Rendben;¿¹;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_BTN3;Go to;Voir;Gehe zu;IdŸ do;Ir allí;Andare;Ugrás;Pøejít na;;;;;;x
+CB_JUSTIFY_NO_LONGER_VALID_MAP;*;*;*;*;*;*;*;;;;;;;x
+NO_ALLOWED_COUNTRIES;(There is no applicable country).;;;;;;;;;;;;x
+NO_ALLOWED_STATES;(There are no applicable states).;;;;;;;;;;;;x
+HAS_LESS_STATE_THAN;Has number of States <;;;;;;;;;;;;x
+HAS_STATES_GREATER_EQ;Has number of States >=;;;;;;;;;;;;x
+HAVE_MORE_SUBSTATES_THEN;Have more substates than ;;;;;;;;;;;;x
+HAVE_LESS_SUBSTATES_THEN;Have less substates than ;;;;;;;;;;;;x
+HAVE_MORE_VASSALS_THAN;Have more puppets than ;;;;;;;;;;;;x
+HAS_UNION_TAG;has culture union;;;;;;;;;;;;x
+HAS_NO_UNION_TAG;has NO culture union;;;;;;;;;;;;x
+HAS_CULTURE_UNION;Has culture union;;;;;;;;;;;;x
+HAS_NOT_CULTURE_UNION;Has NO culture union;;;;;;;;;;;;x
+IS_STATE_CAPITAL;is state capital;est la capitale de l'État;ist Landeshauptstadt;;;;;;;;;;;x
+IS_NOT_STATE_CAPITAL;is NOT state capital;n'est pas la capitale de l'État;ist KEINE Landeshauptstadt;;;;;;;;;;;x
+SUBSIDIZE_ALL_TOOLTIP;Subsidize all factories on the list.;Subventionner toutes les usines de la liste.;Alle Fabrikanlagen von dieser Liste werden bezuschusst.;;;;;;;;;;;x
+UNSUBSIDIZE_ALL_TOOLTIP;Cancel subsidies for all factories on the list.;Annuler les subventions pour toutes les usines de la liste.;Bezuschussung aller Fabrikanlagen von dieser Liste abbrechen.;;;;;;;;;;;x
+OPEN_ALL_TOOLTIP;Open all factories on the list.;Ouvrir toutes les usines de la liste.;Alle Fabrikanlagen von dieser Liste öffnen.;;;;;;;;;;;x
+CLOSE_ALL_TOOLTIP;Close all factories on the list.;Fermer toutes les usines de la liste.;Alle Fabrikanlagen von dieser Liste schließen.;;;;;;;;;;;x
+ON_ENACT_UNCIV_REFORM;When enacted:;Lorsqu'elle a été promulguée :;Sobald beschlossen:;;;;;;;;;;;x
+EFFECT_BUILD_IN_CAPITAL_DESC;§Y$BLD$? construction will take place in: §Y$PROVS$?\n;§Y$BLD$§! constructions sont prévues en §Y$PROVS$§!;§Y$BLD$§! Bau wird in: §Y$PROVS$§! beginnen;;;;;;;;;;;x
+TRIGGER_BUILD_IN_CAPITAL_DESC;§RConstruction is not allowed for now.§W;§RLa construction n'est pas autorisée pour le moment.§!;§RBau ist derzeit nicht gestattet.§!;;;;;;;;;;;x
+DIPLOMACY_CB_INFO;War Justification;Casus Belli;Kriegsrechtfertigung;;;;;;;;;;;x
+COLONIZE_MAX_SLOTS;No more than §Y$NUM$§W countries can compete for province colonization.;Pas plus de §Y$NUM$§! pays peuvent être en concurrencer pour la colonisation de la province.;Es können nicht mehr als §Y$NUM$§! Länder um die Kolonisierung einer Provinz kämpfen.;;;;;;;;;;;x
+RIGHT_CLICK_TO_REMOVE_NF;§YRight mouse click§! to remove the current focus.;§YClic droit§! pour supprimer la cause nationale actuelle;§YRechte Maustaste klicken§!, um den gegenwärtigen Fokus zu entfernen. ;;;;;;;;;;;x
+CONFIRM_REMOVE_COLONY_NF_TITLE;Remove Colonization National Focus;Supprimer la cause nationale de colonisation;Den nationalen Fokus der Kolonisierung entfernen ;;;;;;;;;;;x
+CONFIRM_REMOVE_COLONY_NF_DESC;Your colonization progress will be lost. Do you want to remove the national focus?;La progression de votre colonisation va être perdue. Voulez-vous supprimer la cause nationale ?;Euer Kolonisierungs-Prozess wird verloren gehen. Möchtet Ihr den nationalen Fokus entfernen?;;;;;;;;;;;x
+CB_ALLOWED_INSTALL_COMMUNIST_GOV_TYPE;Install communist government;Installer un gouvernement communiste;Kommunistische Regierung einsetzen;;;;;;;;;;;x
+po_install_communist_gov_type;Install communist government;Installer un gouvernement communiste;Kommunistische Regierung einsetzen;;;;;;;;;;x;
+install_communist_gov_cb;Installer le Communisme;Installer le Communisme;Kommunismus einsetzen;;;;;;;;;;;x
+install_communist_gov_cb_desc;Installer le gouvernement communiste.;Installer le gouvernement communiste.;Setzt die kommunistische Regierung ein.;;;;;;;;;;;x
+install_communist_gov_cb_setup;Installer le gouvernement communiste. En cas de reussite, le pays sera automatiquement ajoute a notre sphere d'influence.;Installer le gouvernement communiste. En cas de réussite, le pays sera automatiquement ajouté à notre sphère d'influence.;Setzt die kommunistische Regierung ein. Sobald dies erreicht wurde, wird das Land automatisch unserer Sphäre zugefügt. ;;;;;;;;;;;x
+install_communist_gov_cb_short;Installer le Communisme;Installer le Communisme;Kommunismus einsetzen;;;;;;;;;;;x
+CB_ALLOWED_UNINSTALL_COMMUNIST_GOV_TYPE;Uninstall communist government;Révoquer le gouvernement communiste;Kommunistische Regierung absetzen;;;;;;;;;;;x
+po_uninstall_communist_gov_type;Uninstall communist government;Révoquer le gouvernement communiste;Kommunistische Regierung absetzen;;;;;;;;;;x;
+uninstall_communist_gov_cb;Uninstall communism;Révoquer le Communisme;Kommunismus absetzen;;;;;;;;;;;x
+uninstall_communist_gov_cb_desc;Uninstall the communist government.;Révoquer le gouvernement communiste.;Die kommunistische Regierung absetzen.;;;;;;;;;;;x
+uninstall_communist_gov_cb_setup;Uninstall the communist government.;Révoquer le gouvernement communiste.;Die kommunistische Regierung absetzen.;;;;;;;;;;;x
+uninstall_communist_gov_cb_short;Uninstall communism.;Révoquer le Communisme.;Kommunismus absetzen;;;;;;;;;;;x
+NF_OVERWRITE_HEADER;To set the new national focus §Y$NF$§W you must remove another one.;Pour adopter la nouvelle cause nationale §Y$NF$§! vous devez en supprimer une autre.;Um den neuen nationalen Fokus auf §Y$NF$§! setzen zu können, müsst Ihr einen anderen entfernen. ;;;;;;;;;;;x
+NF_OVERWRITE_ENTRY;§Y$NF$§W\nin §G$STATE$§W;§Y$NF$§!\nen §G$STATE$§!;§Y$NF$§!\nin §G$STATE$§!;;;;;;;;;;;x
+PRESTIGE_MORALE_BONUS;Morale bonus: §Y$VAL$§W;Bonus du moral : §Y$VAL$§!;Moral-Bonus: §Y$VAL$§!;;;;;;;;;;;x
+PRESTIGE_MAX_ORG_BONUS;Organization bonus: §Y$VAL$§W;Bonus pour l''organisation : §Y$VAL$§!;Organizationsbonus: §Y$VAL$§!;;;;;;;;;;;x
+PRESTIGE_PENALTY_ON_LEADER_TRANSFER_TITLE;Prestige penalty.;Pénalité de prestige.;Prestige-Strafe.;;;;;;;;;;;x
+PRESTIGE_PENALTY_ON_LEADER_TRANSFER_DESC;Our country will suffer §R$VAL$§W prestige loss, if we unassign the current leader §Y$NAME$§W from that unit, while at war.\nDo you still want to do that?;Notre pays perdra §R$VAL$§! de prestige si nous retirons le commandant actuel §Y$NAME$§! de cette unité en temps la guerre.\nVoulez-vous vraiment le faire ?;Unser Land wird einen Prestige-Verlust von §R$VAL$§! erleiden, wenn wir den derzeitigen Führer §Y$NAME$§! dieser Einheit während des Krieges entfernen.\nMöchtet Ihr dennoch fortfahren?;;;;;;;;;;;x
+REORG_PANEL_BALANCE_UNITS;Balance;Équilibre;Guthaben;;;;;;;;;;;x
+INVEST_PROJECT_NOT_ENOUGH_MONEY;§RWe have not enough funds to do that.§W;§RNous n'avons pas assez de fonds pour ça.§!;§RWir haben keine ausreichenden Mittel, um dies zu tun.§!;;;;;;;;;;;x
+INVEST_PROJECT_SHORTCUT_MAX;§RCtrl + Left mouse click§W to invest max amount into this project. (§Y$AMOUNT$§W¤);§RCtrl + Clic gauche§! pour investir le montant maximum dans ce projet (§Y$AMOUNT$§! ¤);§RCtrl + Linke Maustaste klicken§!, um die maximale Summe in dieses Projekt zu investieren. (§Y$AMOUNT$§!¤);;;;;;;;;;;x
+INVEST_PROJECT_SHORTCUT_MAX_ALL;§RShift + Left mouse click§W to invest max amount in all projects. (§Y$AMOUNT$§W¤);§RMaj + Clic gauche§! pour investir le montant maximum dans tous les projets (§Y$AMOUNT$§! ¤);§RShift + Linke Maustaste klicken§!, um die maximale Summe in alle Projekte zu investieren. (§Y$AMOUNT$§!¤);;;;;;;;;;;x
+INVEST_PROJECT_CONFIRM;Invest;Investissement;Investieren;;;;;;;;;;;x
+INVEST_PROJECT_MAX;Max;Maximum;Max.;;;;;;;;;;;x
+INVEST_PROJECT_TITLE;Invest into project: '§Y$PROJ$§W' at §Y$LOC$§W;Investir dans le projet : ""§Y$PROJ$§!"" à §Y$LOC$§!;In dieses Projekt investieren: "§Y$PROJ$§!" bei §Y$LOC$§!;;;;;;;;;;;x
+INVEST_PROJECT_TOOLTIP_YOUR_BUDGET;Your current budget.;Votre budget actuel.;Euer derzeitiges Budget.;;;;;;;;;;;x
+INVEST_PROJECT_TOOLTIP_PROJECT_BUDGET;Project budget is §Y$BUD$§W out of §Y$TOT$§W needed.\nYou decide to invest §Y$INV$§W into this project.;Le budget du projet est §Y$BUD$§! sur les §Y$TOT$§! nécessaires.\nVous décidez d'investir  §Y$INV$§! dans ce projet.;Projektbudget beträgt §Y$BUD$§! von §Y$TOT$§! benötigt.\nIhr entscheidet euch dazu, §Y$INV$§! in dieses Projekt zu investieren.;;;;;;;;;;;x
+INVEST_PROJECT_TOOLTIP_APPLY;Apply your investment.;Appliquer votre investissement.;Eure Investierung abschließen.;;;;;;;;;;;x
+MIL_MULTI_CONSTRUCTION_TOOLTIP;§YLeft click + SHIFT§W to build all.;§YClic gauche + Maj§! pour tout construire.;§YLinksklick + SHIFT§!, um alles zu bauen.;;;;;;;;;;;x
+MIL_CONSTRUCTION_CANCEL_ALL_SHORT;Cancel All;Tout annuler;Alles abbrechen;;;;;;;;;;;x
+MIL_CONSTRUCTION_CANCEL_ALL;Cancel all constructions;Annuler toutes les constructions;Alle Errichtungen abbrechen;;;;;;;;;;;x
+MIL_CONSTRUCTION_CANCEL_ALL_WARNING_TITLE;Cancel all constructions.;Annuler toutes les constructions.;Alle Errichtungen abbrechen.;;;;;;;;;;;x
+MIL_CONSTRUCTION_CANCEL_ALL_WARNING_DESC;Are you sure, that you want to cancel all military constructions?;Êtes-vous certain de vouloir annuler toutes nos constructions militaires ?;Seid Ihr Euch sicher, dass Ihr alle militärischen Errichtungen abbrechen möchtet?;;;;;;;;;;;x
+SORT_BY_PRESTIGE;Sort by prestige;Tri par prestige;Nach Prestige sortieren;;;;;;;;;;;x
+SORT_BY_NAME;Sort by name;Tri par nom;Nach Namen sortieren;;;;;;;;;;;x
+SORT_BY_SELECTED;Sort by selected;Tri par sélections;Nach Auswahl sortieren;;;;;;;;;;;x
+ATTACKUSREBEL_SETUP;When one of our land units is attacked by the Rebels;Quand une de nos unités terrestres subit une attaque des rebelles;Sobald eine unserer Ländereinheiten von den Rebellen angegriffen wird;;;;;;;;;;x;
+ATTACKUSREBEL_HEADER;Our Chief of Staff reports that;Notre chef d'état-major rapporte que;Unser Stabschef berichtet:;;Nuestro jefe de estado mayor informa de que;;;;;;;;;x
+ATTACKUSREBEL_1;Our forces are under attack!;Nos forces sont attaquées !;Unsere Truppen werden angegriffen!;;¡Están atacando a nuestras fuerzas!;;;;;;;;;x
+ATTACKUSREBEL_2;$MONARCHTITLE$, we have been attacked in;$MONARCHTITLE$, nous avons été attaqués dans la province de;$MONARCHTITLE$, wir werden in;;$MONARCHTITLE$, hemos sido atacados en;;;;;;;;;x
+ATTACKUSREBEL_3;$PROV$.;$PROV$.;$PROV$ angegriffen.;;$PROV$.;;;;;;;;;x
+ATTACKUSREBEL_4;Hostile forces from $ATTACKER$ have engaged us with;Les forces ennemies de $ATTACKER$ ont engagé le combat contre nous.;Feindliche Truppen von $ATTACKER$ greifen uns an.;;Fuerzas hostiles de $ATTACKER$ han entablado combate con nosotros con;;;;;;;;;x
+ATTACKUSREBEL_5;*;*;*;;*;;;;;;;;;x
+ATTACKUSREBEL_6;*;*;*;;*;;;;;;;;;x
+ATTACKUSREBEL_LOG;We have been attacked in $PROV$.;Nous avons été attaqués dans la province de $PROV$.;Wir wurden in $PROV$ angegriffen.;;Hemos sido atacados en $PROV$.;;;;;;;;;x
+ATTACKUSREBEL_BTN1;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+ATTACKUSREBEL_BTN2;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+ATTACKUSREBEL_BTN3;Go To;Voir;Gehe zu;;Ir allí;;;;;;;;;x
+ATTACKUSREBEL_MAP;Under attack!;Nous sommes attaqués !;Wird angegriffen;;¡Nos atacan!;;;;;;;;;x
+ATTACKTHEMREBEL_SETUP;When one of our land units attacks the rebellion.;Quand une de nos unités terrestres attaque la rébellion;Sobald eine unserer Ländereinheiten die Rebellen angreift.;;;;;;;;;;;x
+ATTACKTHEMREBEL_HEADER;Our Chief of Staff reports that;Notre chef d'état-major rapporte que;Unser Stabschef berichtet:;;Nuestro jefe de estado mayor informa de que;;;;;;;;;x
+ATTACKTHEMREBEL_1;We have engaged the Enemy!;nous avons attaqué l'ennemi !;Aufeinandertreffen mit dem Feind!;;¡Hemos entablado combate con el enemigo!;;;;;;;;;x
+ATTACKTHEMREBEL_2;$MONARCHTITLE$, we have reports that battle has commenced in;$MONARCHTITLE$, nous vous informons que la bataille a commencé dans la province de;Uns wird gemeldet, dass eine Schlacht in;;$MONARCHTITLE$, nos informan que ha comenzado la batalla en;;;;;;;;;x
+ATTACKTHEMREBEL_3;$PROV$.;$PROV$.;$PROV$ begonnen hat.;;$PROV$.;;;;;;;;;x
+ATTACKTHEMREBEL_4;We are attacking forces of $DEFENDER$ and attempting to dislodge their defences. We have engaged with;Nous sommes les forces d'attaque de $DEFENDER$ et nous tentons de déloger leurs défenses. Nous avons engagé le combat avec ;Wir greifen Truppen aus $DEFENDER$ an und versuchen, sie aus ihren Stellungen zu werfen. Wir befinden uns im Kampf mit;;Atacamos a la fuerza $DEFENDER$, en un intento de desbaratar sus defensas. Hemos entablado ;;;;;;;;;x
+ATTACKTHEMREBEL_5;*;$ATTUNIT$\n;*;;combate con: $ATTUNIT$\n;;;;;;;;;x
+ATTACKTHEMREBEL_6;*;*;*;;atacando a: $DEFUNIT$;;;;;;;;;x
+ATTACKTHEMREBEL_LOG;We have attacked the enemy in $PROV$.;Nous avons attaqué l'ennemi dans la province de $PROV$.;Wir haben den Feind in $PROV$ angegriffen.;;Hemos atacado al enemigo en $PROV$.;;;;;;;;;x
+ATTACKTHEMREBEL_BTN1;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+ATTACKTHEMREBEL_BTN2;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+ATTACKTHEMREBEL_BTN3;Go To;Voir;Gehe zu;;Ir allí;;;;;;;;;x
+ATTACKTHEMREBEL_MAP;Attack Commenced;*;*;;*;;;;;;;;;x
+SIEGEUSREBEL_SETUP;When the rebellion begins to occupy our province;Quand les rebelles occupent notre province;Sobald die Rebellen damit beginnen, unsere Provinzen einzunehmen.;;;;;;;;;;;x
+SIEGEUSREBEL_HEADER;$MESSENGER$;$MESSENGER$;$MESSENGER$;;$MESSENGER$;;;;;;;;;x
+SIEGEUSREBEL_1;Our Province is beginning to be occupied;L'occupation de notre province commence;Unsere Provinz befindet sich unter Belagerung;;Están empezando a ocupar nuestra provincia;;;;;;;;;x
+SIEGEUSREBEL_2;$MONARCHTITLE$,;$MONARCHTITLE$,;$MONARCHTITLE$;;$MONARCHTITLE$,;;;;;;;;;x
+SIEGEUSREBEL_3;$PROV$;$PROV$;$PROV$;;han empezado a ocupar;;;;;;;;;x
+SIEGEUSREBEL_4;is beginning to be occupied. Fear not! The forces of;est occupée. Ne craignez rien ! Les forces de;wird gerade vom Feind belagert. Doch fürchtet nichts!\nDie Truppen von;;$PROV$. ¡No hay nada que temer! Las fuerzas de;;;;;;;;;x
+SIEGEUSREBEL_5;$ATTACKER$;$ATTACKER$;$ATTACKER$;;$ATTACKER$;;;;;;;;;x
+SIEGEUSREBEL_6;will soon be driven off by the might of our armies.;seront bientôt repoussées par nos puissantes armées.;werden schon bald von der Macht unserer Armeen vertrieben werden.;;pronto serán expulsadas por el poder de nuestros ejércitos.;;;;;;;;;x
+SIEGEUSREBEL_LOG;$PROV$ is beginning to be occupied.;$PROV$ est occupée.;$PROV$ wird gerade vom Feind belagert.;;Han empezado a ocupar $PROV$.;;;;;;;;;x
+SIEGEUSREBEL_BTN1;OK;D'accord;¿¹;;¿¹;;;;;;;;;x
+SIEGEUSREBEL_BTN2;OK;D'accord;¿¹;;¿¹;;;;;;;;;x
+SIEGEUSREBEL_BTN3;Go To;Voir;Gehe zu;;Ir allí;;;;;;;;;x
+SIEGEUSREBEL_MAP;*;*;*;;*;;;;;;;;;x
+SIEGETHEMREBEL_SETUP;When we begin to occupy the province controlled by rebellion.;Quand nous occupons une province ennemie;Sobald wir beginnen, eine von den Rebellen kontrollierte Provinz zu besetzen.;;Cuando empezamos a ocupar una de las provincias de nuestro enemigo;;;;;;;;;x
+SIEGETHEMREBEL_HEADER;$MESSENGER$;$MESSENGER$;$MESSENGER$;;$MESSENGER$;;;;;;;;;x
+SIEGETHEMREBEL_1;Their province is beginning to be occupied;Leur province est occupée;Ihre Provinz wird belagert werden;;Se ha empezado a ocupar su provincia;;;;;;;;;x
+SIEGETHEMREBEL_2;$MONARCHTITLE$, we have started to occupy;$MONARCHTITLE$, nous occupons;$MONARCHTITLE$, wir haben die Belagerung von folgender Provinz begonnen: ;;$MONARCHTITLE$, hemos iniciado la ocupación de;;;;;;;;;x
+SIEGETHEMREBEL_3;$PROV$.;$PROV$.;$PROV$.;$PROV$.;$PROV$.;$PROV$.;$PROV$ könnyûszerrel bevehetõ erõdjét.;$PROV$.;;;;;;x
+SIEGETHEMREBEL_4;It won't take long before our forces have wrenched it out of the clutches of;Nos forces auront bientôt débarrassé cette province de;Es wird nicht lange dauern, bis unsere Truppen sie;;Nuestras fuerzas no tardarán en arrancarla de las garras de;;;;;;;;;x
+SIEGETHEMREBEL_5;$DEFENDER$.;$DEFENDER$.;$DEFENDER$ entrissen haben.;;$DEFENDER$.;;;;;;;;;x
+SIEGETHEMREBEL_6;They will look forward to our enlightened government.;Sa population attend impatiemment d'être guidée par notre gouvernement.;Sie werden sich auf unsere aufgeklärte Regierung freuen.;;Esperan con anhelo nuestro gobierno.;;;;;;;;;x
+SIEGETHEMREBEL_LOG;We have begun to occupy $PROV$.;Nous occupons $PROV$.;Wir haben mit der Belagerung von $PROV$ begonnen.;;Hemos empezado a ocupar $PROV$.;;;;;;;;;x
+SIEGETHEMREBEL_BTN1;OK;D'accord;¿¹;;¿¹;;;;;;;;;x
+SIEGETHEMREBEL_BTN2;OK;D'accord;¿¹;;¿¹;;;;;;;;;x
+SIEGETHEMREBEL_BTN3;Go To;Voir;Gehe zu;;Ir allí;;;;;;;;;x
+SIEGETHEMREBEL_MAP;*;*;*;;*;;;;;;;;;x
+REMOVE_RANDOM_ECO_REFORMS_EFFECT;Suppression de §R$VAL$§! reformes economiques.\n;Suppression de §R$VAL$§! réformes économiques.\n;§R$VAL$§! ökonomische Reformen entfernen.\n;;;;;;;;;;;x
+REMOVE_RANDOM_MIL_REFORMS_EFFECT;Suppression de §R$VAL$§! reformes militaires.\n;Suppression de §R$VAL$§! réformes militaires.\n;§R$VAL$§! militärische Reformen entfernen.\n;;;;;;;;;;;x
+PRODUCTION_FACTORY_PURE_INCOME;Last day's pure income: $VALUE$;Revenu net du jour dernier : $VALUE$;Reines Einkommen des letzten Tages: $VALUE$;;;;;;;;;;;x
+PRODUCTION_FACTORY_MARKET_SPENDINGS;Market spending: $VALUE$;Dépenses sur les marchés : $VALUE$;Ausgaben auf dem Markt: $VALUE$;;;;;;;;;;;x
+PRODUCTION_FACTORY_POP_PAYCHECKS;Workers and capitalists pay checks: $VALUE$;Rémunérations des travailleurs et du capital : $VALUE$;Gehaltsscheck von Arbeitern und Kapitalisten: $VALUE$;;;;;;;;;;;x
+PRODUCTION_FACTORY_TOTAL_BALANCE;Last day's balance: $VALUE$;Solde du jour dernier : $VALUE$;Kontostand des Vortags: $VALUE$;;;;;;;;;;;x
+PRODUCTION_FACTORY_TODAY_PROFIT;Last day's profitability: $VALUE$;Profit du jour dernier: $VALUE$;Rentabilität des Vortags: $VALUE$;;;;;;;;;;;x
+PRODUCTION_FACTORY_PROFITABILITY;Avg. profitability (last $DAYS$ days): $VALUE$;Profit moyen (derniers $DAYS$ jours) : $VALUE$;Durschnittl. Rentabilität (der letzten $DAYS$ Tage): $VALUE$;;;;;;;;;;;x
+PRODUCTION_FACTORY_CURRENT_BUDGET;Current factory budget: $VALUE$;Budget actuel des usines : $VALUE$;Derzeitiges Fabrikanlagen-Budget: $VALUE$;;;;;;;;;;;x
+PRODUCTION_FACTORY_INVESTMENT;From investments: $VALUE$;Des investissements : $VALUE$;Aus Investitionen: $VALUE$;;;;;;;;;;;x
+PRODUCTION_FACTORY_SUBSIDIES;From investments: $VALUE$;Des investissements : $VALUE$;Aus Investitionen: $VALUE$;;;;;;;;;;;x
+INFLUENCE_OVERFLOW_TOOLTIP;We are spending §Y$VALUE$§W of influence points each day, to reduce the influence of other countries.;Nous utilisons chaque jour §Y$VALUE$§! points d'influence pour réduire l'influence des pays étrangers.;Wir verbrauchen jeden Tag §Y$VALUE$§! Einfluss-Punkte, um den Einfluss anderer Länder zu reduzieren. ;;;;;;;;;;;x
+TRADE_FLOW_PRODUCED;§YProduced by:§W;§YProduit par :§W;§YProduziert von:§W;;;;;;;;;;;x
+TRADE_FLOW_USED;§YUsed by:§W;§YUtilisé par :§W;§YBenutzt von:§W;;;;;;;;;;;x
+TRADE_FLOW_MAY_BE_USED;§YMay be used for:§W;§YPeut être utilisé par :§W;§YKann genutzt werden für:§W;;;;;;;;;;;x
+TRADE_FLOW_TOTAL_PRODUCED;§YTotal Produced:§W;§YProduction totale :§W;§YInsgesamt produziert:§W;;;;;;;;;;;x
+TRADE_FLOW_TOTAL_USED;§YTotal Used:§W;§YUtilisation totale :§W;§YGesamter Verbrauch:§W;;;;;;;;;;;x
+TRADE_FLOW_RGO_NAME;RGO;EAM;RGOs;;;;;;;;;;;x
+TRADE_FLOW_DESC_RGO;Our $POP$ are $ACTION$ $AMOUNT$ $RESOURCE$ each day.;Nos $POP$ $ACTION$ $AMOUNT$ $RESOURCE$ par jour.;Unsere $POP$ betragen $ACTION$ $AMOUNT$ $RESOURCE$ pro Tag.;;;;;;;;;;;x
+TRADE_FLOW_DESC_RGO_ACTION_MINING;mining;extraient;Bergbau;;;;;;;;;;;x
+TRADE_FLOW_DESC_RGO_ACTION_FARMING;farming;produisent;Landwirtschaft;;;;;;;;;;;x
+TRADE_FLOW_DESC_ARTISAN;Our Artisans are producing $AMOUNT$ $RESOURCE$ each day.;Nos artisans produisent $AMOUNT$ de $RESOURCE$ chaque jour.;Unsere Handwerker produzieren $AMOUNT$ $RESOURCE$ pro Tag.;;;;;;;;;;;x
+TRADE_FLOW_DESC_FACTORY;Our $FACTORY$ in $STATE$ is producing $AMOUNT$ $RESOURCE$ each day.;Notre $FACTORY$ en $STATE$ produit $AMOUNT$ de $RESOURCE$ par jour.;Unsere $FACTORY$ in $STATE$ produziert $AMOUNT$ $RESOURCE$ pro Tag.;;;;;;;;;;;x
+TRADE_FLOW_CONSUME_DESC_ARTISAN;Artisans are using $AMOUNT$ $RESOURCE$, to produce $OUTPUT$.;Les artisans utilisent $AMOUNT$ de $RESOURCE$ pour une producion de $OUTPUT$.;Handwerker verwenden $AMOUNT$ $RESOURCE$, um $OUTPUT$ zu produzieren.;;;;;;;;;;;x
+TRADE_FLOW_CONSUME_DESC_RGO;$POP$ are using $AMOUNT$ $RESOURCE$ to produce $OUTPUT$.;Les $POP$ utilisent $AMOUNT$ de $RESOURCE$ pour une producion de $OUTPUT$.;$POP$ verwenden $AMOUNT$ $RESOURCE$, um $OUTPUT$ zu produzieren.;;;;;;;;;;;x
+TRADE_FLOW_CONSUME_DESC_FACTORY;Our $FACTORY$ in $STATE$ is using $AMOUNT$ $RESOURCE$ for an input and/or maintenance requirement.;Unsere $FACTORY$ in $STATE$ verwendet $AMOUNT$ $RESOURCE$ als Eingangs- und/ oder Instandhaltungsvoraussetzungen.;;;;;;;;;;;x
+TRADE_FLOW_CONSUME_DESC_POPS;Our $POP$ are using $AMOUNT$ $RESOURCE$ as part of their daily needs.;Nos $POP$ utilisent $AMOUNT$ de $RESOURCE$ au titre de leurs besoins quotidiens.;Unsere $POP$ verwenden $AMOUNT$ $RESOURCE$ als Teil ihres täglichen Bedarfs.;;;;;;;;;;;x
+TRADE_FLOW_CONSUME_DESC_MILITARY;Our armies are using $AMOUNT$ $RESOURCE$ as a daily supply consumption.;Unsere Armee benötigt $AMOUNT$ $RESOURCE$ für ihren täglichen Vorratsverbrauch.;;;;;;;;;;;x
+TRADE_FLOW_MAY_USE_MILITARY_DESC;$INPUT$ may be used by our armies as a daily supply consumption.;$INPUT$ peuvent être utilisés quotidiennement par nos armées pour leur ravitaillement.;$INPUT$ kann von unseren Armeen für ihren täglichen Vorratsverbrauch verwendet werden.;;;;;;;;;;;x
+TRADE_FLOW_MAY_USE_DESC;$INPUT$ may be used by $PRODUCER$ to produce $OUTPUT$.;$INPUT$ peuvent être utilisés par les $PRODUCER$ pour une production de $OUTPUT$.;$INPUT$ kann durch $PRODUCER$ verwendet werden, um $OUTPUT$ zu produzieren.;;;;;;;;;;;x
+TRADE_FLOW_MILITARY_SUPPLY;Military Consumption;Consommation militaire;Militärischer Verbrauch;;;;;;;;;;;x
+TRADE_FLOW_CURRENT_PRICE;Current Price:;Prix courant :;Derzeitiger Preis:;;;;;;;;;;;x
+TRADE_FLOW_DETAILS;Details;Détai;»ó¼¼;;;;;;;;;;;;x
+TRADE_FLOW_PART_OF_WORLD_PROD;§Y$PERC$%§W of world production.;§Y$PERC$ %§W de la production mondiale.;§Y$PERC$%§W der Weltproduktion.;;;;;;;;;;;x
+EMIGRATION_AT_PROVINCE_TOOLTIP;(§R$TOTALEMI$§W) §YEmigrations to:§W\n$EMILIST$\n(§G$TOTALIMM$§W) §YImmigrations from:§W\n$IMMLIST$;(§R$TOTALEMI$§!) §YÉmigration vers §!\n$EMILIST$\n(§G$TOTALIMM$§!) §YImmigration de §!\n$IMMLIST$;(§R$TOTALEMI$§!) §YAuswanderer nach:§!\n$EMILIST$\n(§G$TOTALIMM$§!) §YEinwanderer von:§!\n$IMMLIST$;;;;;;;;;;;x
+NO_MIGRATIONS_FOUND1_TOOLTIP;Province belongs to: §Y$COUNTRY$§W;La Province appartient à : §Y$COUNTRY$§!;Provinz gehört zu: §Y$COUNTRY$§!;;;;;;;;;;;x
+NO_MIGRATIONS_FOUND2_TOOLTIP;No migration between countries has been noticed.;Aucune migration relevée entre pays;Es konnte keine Abwanderung zwischen Ländern festgestellt werden.;;;;;;;;;;;x
+NO_MIGRATIONS_FOUND3_TOOLTIP;(Select province to see details);(Sélectionner une province pour voir les détails);(Für weitere Details, wähle eine Provinz);;;;;;;;;;;x
+PROVINCE_VIEW_BUILD_ALL_TOOLTIP;(Click + CTRL to build in all provinces in state);(Clic + Ctrl pour construire dans toutes les provinces de l'État);(Klick + CTRL, um in allen Provinzen des Staates zu bauen);;;;;;;;;;;x
+EMIGRATION_ENTRY_TOOLTIP;§R$NUM$§W to §Y$PROV$§W;§R$NUM$§! vers §Y$PROV$§!;§R$NUM$§! nach §Y$PROV$§!;;;;;;;;;;;x
+IMMIGRATION_ENTRY_TOOLTIP;§G$NUM$§W from §Y$PROV$§W;§G$NUM$§! de §Y$PROV$§!;§G$NUM$§! von §Y$PROV$§!;;;;;;;;;;;x
+CB_GENERATION_SPEED_BONUS_ON_COLONY_COMPETITION;Competing with §Y$COUNTRY$§W for colonizing §Y$REGION$§W, speed bonus §Y$BONUS$§W.;Compétition avec §Y$COUNTRY$§! pour coloniser §Y$REGION$§!, bonus de vitesse de §Y$BONUS$§!.;Tretet gegen §Y$COUNTRY$§! an, um §Y$REGION$§! Zu kolonisieren, Geschwindigkeitsbonus §Y$BONUS$§!.;;;;;;;;;;;x
+CB_GENERATION_BONUS_TOOLTIP;The CB generation speed bonus §Y$BONUS$§W between competing countries: §Y$COUNTRIES$§W;Bonus de vitesse de génération des CB de §Y$BONUS$§! entre les pays concurrents : §Y$COUNTRIES$§!;Der CB Generationen-Geschwindigkeitsbonus §Y$BONUS$§! bei einem Kampf zwischen: §Y$COUNTRIES$§!;;;;;;;;;;;x
+CB_GENERATION_BONUS_TROOPS_PRESENCE_TOOLTIP;(§Y$BONUS$§W for presence of opponents' troops);(§Y$BONUS$§! du fait de la présence de troupes ennemies);(§Y$BONUS$§! für die Anwesenheit gegnerischer Truppen);;;;;;;;;;;x
+CB_GENERATION_BONUS_OPPONENT_TROOPS_PRESENCE;(§Y$BONUS$§W for §Y$FOR$§W against §Y$AGAINST$§W for presence of their troops);(§Y$BONUS$§! pour §Y$FOR$§! contre §Y$AGAINST$§! du fait de la présence de leurs troupes);(§Y$BONUS$§! für §Y$FOR$§! gegen §Y$AGAINST$§! für die Gegenwart ihrer Truppen);;;;;;;;;;;x
+MODIFIER_CB_GENERATION_SPEED_MODIFIER;Casus Belli acquisition speed;Vitesse d'obtention des Casus Belli;Casus Belli Beschaffungsgeschwindigkeit;;;;;;;;;;;x
+NOT_CONSTRUCTING_CASUS_BELLI_AGAINST;Not acquiring war justification against;Pas d'obtention de Casus Belli contre ;Keine Kriegsrechtfertigung beschafft gegen:;;;;;;;;;;;x
+MODIFIER_MOBILIZATION_IMPACT;Mobilization impact;Impact de la mobilisation;Mobilisationsauswirkung;;;;;;;;;;;x
+MOBILIZATION_IMPACT_LIMIT_DESC;Mobilization impact §Y$IMPACT$§W from §Y$POLICY$§W war policy, limits the number of mobilized units to §Y$UNITS$§W.;L'impact sur la mobilisation de §Y$IMPACT$§! de la politique de guerre §Y$POLICY$§! limite le nombre d'unités mobilisées à §Y$UNITS$§!.;Mobilisationsauswirkung §Y$IMPACT$§! der §Y$POLICY$§! Kriegsregelung, schränkt die Menge der mobilisierten Einheiten auf §Y$UNITS$§! ein.;;;;;;;;;;;x
+MOBILIZATION_IMPACT_LIMIT_DESC2;(Current number of raised regiments: §Y$CURR$§W, multiplied by §Y$IMPACT$§W);(Nombre actuel de régiments levés §Y$CURR$§! par §Y$IMPACT$§!);(Gegenwärtige Anzahl aufgestellter Regimente §Y$CURR$§! by §Y$IMPACT$§!);;;;;;;;;;;x
+CONSTRUCTING_CASUS_BELLI_AGAINST;Acquiring war justification against;Obtention d'un casus belli contre ;Beschaffung einer Kriegsrechtfertigung gegen:;;;;;;;;;;;x
+TRIGGER_CB_CREATION_NOT_DISCOVERED;Not producing war justifications;Pas de production de CB;Kriegsrechtfertigungen werden nicht produziert;;;;;;;;;;;x
+TRIGGER_CB_CREATION_DISCOVERED;Are trying to produce a war justification;;;;;;;;;;;;x
+TRIGGER_CB_PROGRESS_LESS;War justification progress: §Y$PERCENTAGE$§W;Progression de CB : §Y$PERCENTAGE$§W;Fortschritt der Kriegsrechtfertigung: §Y$PERCENTAGE$§W;;;;;;;;;;;x
+TRIGGER_CB_PROGRESS_ATLEAST;War justification progress below: §Y$PERCENTAGE$§W;Progression de CB en dessous de §Y$PERCENTAGE$§W;Fortschritt der Kriegsrechtfertigung unter: §Y$PERCENTAGE$§W;;;;;;;;;;;x
+TRIGGER_IS_CONSTRUCTING_CB;Acquiring war justification for: §Y$TYPE$§W;Obtention de CB pour §Y$TYPE$§W;Beschaffung einer Kriegsrechtfertigung für: §Y$TYPE$§W;;;;;;;;;;;x
+TRIGGER_IS_NOT_CONSTRUCTING_CB;Not acquiring war justification for: §Y$TYPE$§W;Pas d'obtention de CB pour §Y$TYPE$§W;Keine Beschaffung einer Kriegsrechtfertigung für: §Y$TYPE$§W;;;;;;;;;;;x
+NEED_RELATION_LESS;Relations are too high - we need to be below §Y$LIMIT$§W but are currently at §Y$VAL$§W;Les relations sont trop bonnes, nous avons besoin d'être en-dessous de §Y$LIMIT$§W mais sommes à §Y$VAL$§W;Die Beziehungen sind zu gut,  wir müssen unter §Y$LIMIT$§W kommen, sind jedoch bei §Y$VAL$§W;;;;;;;;;;;x
+ALREADY_MAKING_CB;We are already preparing a justification for war with §Y$TARGET$§W;Nous sommes déjà en train de préparer un CB contre §Y$TARGET$§W;Wir bereiten gerade eine Rechtfertigung für einen Krieg mit §Y$TARGET$§W vor;;;;;;;;;;;x
+MAKE_CB_BUTTON;Justify war;Justifier la guerre;Krieg rechtfertigen;;;;;;;;;;;x
+MAKE_CB_DESC;Produce a justification for war with them;;;;;;;;;;;;x
+MAKE_CBTITLE;Justify War;Justifier la guerre;Rechtfertigt den Krieg;;;;;;;;;;;x
+MAPMODE_11;RGO Output Map mode;;;;;;;;;;;;x
+MAPMODE_12;Population Density Map Mode;Densité de population;Bevölkerungsdichte;;;;;;;;;;;x
+MAPMODE_13;Culture Map Mode;Nationalité;Nationalität;;;;;;;;;;;x
+MAPMODE_14;Sphere of Influence Map Mode;Sphère d'influence;Einflussbereich;;;;;;;;;;;x
+MAPMODE_15;Supply Limit Map Mode;Limite de ravitaillement;Vorratslimit;;;;;;;;;;;x
+MAPMODE_16;Party Loyalty Map Mode;Loyauté partisane;Parteiloyalität;;;;;;;;;;;x
+MAPMODE_17;Ranking Map Mode;Rang;Rangliste;;;;;;;;;;;x
+MAPMODE_18;Migrations Map Mode;Migrations;Abwanderung;;;;;;;;;;;x
+MAPMODE_20;Relations Map Mode;Relations;Beziehungen;;;;;;;;;;;x
+WORLD_RANKING;World ranking:;Rang mondial :;Weltrangliste:;;;;;;;;;;;x
+WORLD_RANKING_SECONDARY_POWER;§Y$COUNTRY$§W is a Secondary Power.;§Y$COUNTRY$§W est une puissance secondaire.;§Y$COUNTRY$§W ist eine zweirangige Macht.;;;;;;;;;;;x
+POPULATION_DENSITY_AT_PROVINCE;Total population in §Y$PROV$§W:;Population totale en §Y$PROV$§W :;Gesamtbevölkerung in §Y$PROV$§W:;;;;;;;;;;;x
+NATIONALITY_MAJORITY_AT_PROVINCE;The national majority in §Y$PROV$§W are:;La majorité nationale en §Y$PROV$§W est :;Die nationale Mehrheit in §Y$PROV$§W haben:;;;;;;;;;;;x
+SPHERE_OF_INFL_GREAT_POWER;§Y$COUNTRY$§W is a Great Power.;§Y$COUNTRY$§W est une grande puissance.;§Y$COUNTRY$§W ist eine große Macht.;;;;;;;;;;;x
+SPHERE_OF_INFL_IS_IN_SPHERE;§Y$COUNTRY1$§W is in the sphere of §Y$COUNTRY2$§W.;§Y$COUNTRY1$§W est dans la sphère de §Y$COUNTRY2$§W.;§Y$COUNTRY1$§W befindet sich im Wirkungsbereich von §Y$COUNTRY2$§W.;;;;;;;;;;;x
+SPHERE_OF_INFL_IS_INFL_BY;§Y$COUNTRY$§W is influenced by:;§Y$COUNTRY$§W est influencé par : ;§Y$COUNTRY$§W wird beeinflusst von:;;;;;;;;;;;x
+PARTY_LOYALTY_EFFECT_DESC;Loyalty towards §Y$PARTY$§W in §Y$PROV$§W will be $OPERATOR$ §Y$VALUE$§W.;La loyauté au §Y$PARTY$§W en §Y$PROV$§W sera de $OPERATOR$ §Y$VALUE$§W.;Die Loyalität gegenüber §Y$PARTY$§W in §Y$PROV$§W wird $OPERATOR$ §Y$VALUE$§W sein.;;;;;;;;;;;x
+PARTY_LOYALTY_EFFECT_OPERATOR_ADD;increased by;;;;;;;;;;;;x
+PARTY_LOYALTY_EFFECT_OPERATOR_REM;decreased by;;;;;;;;;;;;x
+PARTY_LOYALTY_EFFECT_OPERATOR_MUL;multiplied by;;;;;;;;;;;;x
+PARTY_LOYALTY_EFFECT_OPERATOR_SET;set to;;;;;;;;;;;;x
+PARTY_LOYALTY_DESC_HEADER;Party loyalty in §Y$PROV$§W:;Loyauté du parti en §Y$PROV$§W :;Parteiloyalität in §Y$PROV$§W:;;;;;;;;;;;x
+PARTY_LOYALTY_DESC_NEUTRAL;Neutral;Neutre;Neutral;;;;;;;;;;;x
+PARTY_POPULARITY;Party Popularity;;;;;;;;;;;;x
+PRICE_HISTORY_TIME_RANGE;Last $MONTHS$ months;;;;;;;;;;;;x
+party_loyalty_focus;Party Loyalty;;;;;;;;;;;;x
+fascist_focus;Steer party loyalty towards §Yfascist§!;Loyauté envers le parti §Yfasciste§! ;Parteiloyalität gegenüber §Yfascist§! ;;;;;;;;;;;x
+reactionary_focus;Steer party loyalty towards §Yreactionary§!;Loyauté envers le parti §Yréactionnaire§! ;Parteiloyalität gegenüber §Yreactionary§! ;;;;;;;;;;;x
+conservative_focus;Steer party loyalty towards §Yconservative§!;Loyauté envers le parti §Yconservateur§! ;Parteiloyalität gegenüber §Yconservative§! ;;;;;;;;;;;x
+socialist_focus;Steer party loyalty towards §Ysocialist§!;Loyauté envers le parti §Ysocialiste§! ;Parteiloyalität gegenüber §Ysocialist§! ;;;;;;;;;;;x
+communist_focus;Steer party loyalty towards §Ycommunist§!;Loyauté envers le parti §Ycommuniste§! ;Parteiloyalität gegenüber §Ycommunist§! ;;;;;;;;;;;x
+liberal_focus;Steer party loyalty towards §Yliberal§!;Loyauté envers le parti §Ylibéral§! ;Parteiloyalität gegenüber §Yliberal§! ;;;;;;;;;;;x
+anarcho_liberal_focus;Steer party loyalty towards §Yradical§!;Loyauté envers le parti §Ylibertaire§! ;Parteiloyalität gegenüber §Yanarcho-liberal§! ;;;;;;;;;;;x
+NATIONAL_FOCUS_PARTY_LOYALTY_DESC;Daily loyalty change by: §Y$VAL$§W.;Loyauté évoluant de §Y$VAL$§W par jour.;Tägliche Änderung der Loyalität um: §Y$VAL$§W.;;;;;;;;;;;x
+PARTY_WITH_IDEOLOGY_NOT_EXIST;There is no active party with §Y$IDEOLOGY$§W ideology.;Il n'y a pas de parti actif avec l'idéologie §Y$IDEOLOGY$§W;Es gibt keine aktive Partei mit einer §Y$IDEOLOGY$§W Weltanschauung.;;;;;;;;;;;x
+NATIONAL_FOCUS_PARTY_LOYALTY_EFFECT;From national focus, daily change $VAL$ towards $PARTY$.;Par l'effet de la cause nationale, évolution quotidienne de $VAL$ envers $PARTY$.;Seitens des nationalen Fokus, tägliche Änderung $VAL$ in Richtung $PARTY$.;;;;;;;;;;;x
+SUBSTATE_OF_NOCOLOR;Substate of;;;;;;;;;;;;x
+SUBSTATE;Substate;;;;;;;;;;;;x
+SUBSTATE_JOIN_WAR_DESC;is a substate of §Y$COUNTRY$§W and will always join its wars.;est un sous-état de §Y$COUNTRY$§W et se joidra toujours à ses guerres.;ist ein Unterstaat von §Y$COUNTRY$§W und wird immer an dessen Kriegen teilnehmen. ;;;;;;;;;;;x
+IS_NOT_SUBSTATE_OF;Is NOT a substate of;;;;;;;;;;;;x
+IS_SUBSTATE_OF;Is a substate of;;;;;;;;;;;;x
+IS_NOT_SUBSTATE;Is NOT a substate;;;;;;;;;;;;x
+IS_SUBSTATE;Is a substate;;;;;;;;;;;;x
+ANY_SUBSTATE;Any substate of;;;;;;;;;;;;x
+acquire_substate_region;Acquire substate region;;;;;;;;;;;;x
+acquire_substate_region_desc;Acquire a region from enemy §Ysubstate§W;Acquérir une région d'un §YSous-État§W ennemi;Beschafft eine Region des Feindes §Ysubstate§W;;;;;;;;;;;x
+acquire_substate_region_short;Acquire $STATE$;;;;;;;;;;x
+acquire_substate _region_setup;Demand $STATE$ from $RECIPIENT$;;;;;;;;;;x
+become_independent;Become Independent;;;;;;;;;;;;x
+become_independent_short;$ACTOR$ is released from $RECIPIENT$;;;;;;;;;;;;x
+become_independent_setup;$ACTOR$ is released from $RECIPIENT$ and becomes independent.;;;;;;;;;;;;x
+#become_independent_desc;µ¶¸³ÇÏ±â.;Devenir ind?endant.;Werdet unabh?gig.;;;;;;;;;;;x
+make_puppet;Make puppet;Créer un pays satellite;Erschafft eine Marionette;;;;;;;;;;;x
+make_puppet_short;$RECIPIENT$ becomes a puppet of $ACTOR$;;;;;;;;;;;;x
+make_puppet_setup;$RECIPIENT$ becomes a puppet of $ACTOR$;;;;;;;;;;;;x
+make_puppet_desc;Become a puppet;;;;;;;;;;;;x
+RALLY_POINT_INFO;If you enable the §Yrally point§W in this province, then all nearest units will head this way when recruiting is done.\n(See recruitment map mode for more details.);;;;;;;;;;;;x
+RALLY_POINT_ENABLE_INFO;Enable or Disable this province as a rally point.;;;;;;;;;;;;x
+RALLY_POINT_MERGE_INFO;Enable or Disable units merging at destination.\n(Armies will merge up to the local supply limit.);;;;;;;;;;;x
+RALLY_POINT_PROVINCE_INFO;$PROV$ is a §Yrally point§W;$PROV$ est un §Ypoint de ralliement§!;$PROV$ ist ein §YSammelpunkt§!;;;;;;;;;;;x
+RALLY_POINT_PROVINCE_MERGE_INFO;All recruited units will merge up to §Y$LIMIT$§W when arrive here.;Toutes les unités recrutées fusionneront jusqu'à §Y$LIMIT$§! quand elles arriveront ici.;Alle rekrutierten Einheiten werden bis zu einer Menge von §Y$LIMIT$§! zusammengeführt, sobald sie ankommen.;;;;;;;;;;;x
+CB_ALLOWED_MAKE_PUPPET;Make a Puppet;;;;;;;;;;;x;
+DIPLOMACY_NEGOTIATE_SUBSTATE;We are not allowed to negotiate with §YSubstates§W;Nous ne sommes pas autorisés à négocier avec les §Ysous-états§W;Uns ist es nicht gestattet, mit §YUnterstaaten§W zu verhandeln;;;;;;;;;;;x
+DIPLOMACY_NEGOTIATE_WE_SUBSTATE;We are not allowed to negotiate with countries if we are a §YSubstate§W;Nous ne sommes pas autorisés à négocier avec les autres pays si nous sommes un §Ysous-état§W;Falls wir ein §YUnterstaat§W sind, ist es uns nicht gestattet, mit Ländern zu verhandeln.;;;;;;;;;;;x
+DECL_WAR_NO_SUBSTATE;We are not allowed to declare war against §Ysubstates§W or §Yneutral nations§W;Nous ne sommes pas autorisés à déclarer à la guerre aux §Ysous-états§W;Wir dürfen §YUnterstaaten§W nicht den Krieg erklären.;;;;;;;;;;;x
+DIPLO_WE_SUBSTATE;We are a substate of theirs;;;;;;;;;;;;x
+DIPLO_THEY_SUBSTATE;They are a substate of our nation;;;;;;;;;;;;x
+SELECT_CB_CREATION_TYPE;Select the type of justification we want to manufacture;;;;;;;;;;;;x
+CB_CREATION_DETAIL;Manufacture a justification for declaring war with the §Y$TYPE$§W war goal. This will take roughly §Y$DAYS$§W days.\nIf we are detected early the maximum amount of infamy we can acquire is §R$BADBOY$§W.;;;;;;;;;;;x
+CB_MANUFACTURE_TECH;War justification efficiency;;;;;;;;;;;;x
+CB_CREATE_TECH;War justification efficiency: $VAL$;;;;;;;;;;;;x
+SUPPRESSION_TECH_DESC;Suppression efficiency: $VAL$;;;;;;;;;;;;x
+CB_CREATION_TIME_DAYS;It will take roughly §Y$DAYS$§W days to justify this war;Cela prendra environ §Y$DAYS$§! jours pour justifier cette guerre;Es wird ungefähr §Y$DAYS$§! brauchen, den Krieg zu rechtfertigen;;;;;;;;;;;x
+CB_NOT_ON_PUPPETS;We can't justify war against §Ypuppets§W, §Ysubstates§W or §Yneutral nations§W.;Nous ne pouvons pas justifier une guerre contre des §Ysatellites§W ou des §Ysous-états§W.;Wir können keinen Krieg gegen §YMarionetten§W and §YUnterstaaten§W führen.;;;;;;;;;;;x
+CB_NOT_ON_SPHERES;We can't justify war against a country that is in our sphere.;;;;;;;;;;;;x
+NO_WAR_JUSTIFICATION;We are missing a valid justification for declaring war on them.;;;;;;;;;;;;x
+NOT_HOSTILE_BUILD;Not Hostile;;;;;;;;;;;;x
+ACW_NAME;Une Maison Divisee;Une Maison Divisée;Ein geteiltes Haus;;;;;;;;;;;x
+ACW_DESC;Civil war rages in North America as the Conferate States attempt to secede from the Union. The outcome is uncertain, but already this promises to be a new type of war as both sides have access to railroads, telegraphs, and repeating rifles. Meanwhile, in Europe, Great Britain is experimenting with the first iron-hulled steam-driven warship, a combination which promises to revolutionise the war at sea. World wide the industrial revolution is gathering speed as more and more nations start to industrialise. The times they are a-changing.;La Guerre Civile fait rage en Amérique du Nord alors que les États Confédérés tentent de faire sécession de l'Union. Le dénouement est incertain, mais avec l'accès qu'ont les deux camps aux chemins de fer, aux télégraphes et aux fusils à répétition, ce sera une guerre d'un nouveau type. Pendant ce temps, en Europe, la Grande-Bretagne est en train d’expérimenter le premier navire de guerre avec coque en acier et propulsion à vapeur, combinaison qui promet de révolutionner le cours de la guerre navale. Dans le monde entier, la révolution industrielle gagne du terrain et de plus en plus de pays commencent à s'industrialiser. Les temps changent...;Der Sezessionskrieg tobt in Nordamerika, da die konföderierten Staaten versuchen, sich von der Union abzuspalten. Der Ausgang ist ungewiss, doch es verspricht schon jetzt eine neue Art des Krieges zu werden, da beide Seiten Zugriff auf Eisenbahn, Telegram;;;;;;;;;;;
+EVTNAME90000;The $CB_TARGET_NAME_ADJ$ menace;;;;;;;;;;;;x
+EVTDESC90000;As everyone knows, $CB_TARGET_NAME$ is out to get us. It's only a matter of time before they launch an unprovoked attack, so it is only reasonable that we take steps to pre-emptively defend ourselves. As luck would have it, a report detailing their nefarious schemes has recently been 'leaked' to the press, and the public have rallied to our cause.;;;;;;;;;;;;x
+EVTOPTA90000;They're coming right for us!;;;;;;;;;;;;x
+EVTNAME90001;Mission to $CB_TARGET_NAME$;;;;;;;;;;;;x
+EVTDESC90001;In a rather embarrassing blunder, several of our soldiers in the uniform of $CB_TARGET_NAME$ have been caught while trying to sneak across the border. While the rumours that their task was to stage a border incident to justify our invasion are totally unfounded, it would be wise not to provide any fresh fuel for the fire right now.;;;;;;;;;;;;x
+EVTOPTA90001;What are you talking about?;;;;;;;;;;;;x
+EVTNAME90002;The tyranny of $CB_TARGET_NAME$;;;;;;;;;;;;x
+EVTDESC90002;For too long people have suffered under the malign influence of $CB_TARGET_NAME$. For the good of all involved we must reveal the evidence of $CB_TARGET_NAME$'s mismanagement to the world and bring their Sphere members under our wing for their own good.;;;;;;;;;;;;x
+EVTOPTA90002;We will save them!;;;;;;;;;;;;x
+EVTNAME90003;The tyranny of $CB_TARGET_NAME$;;;;;;;;;;;;x
+EVTDESC90003;Despite having very much non-made-up proof that $CB_TARGET_NAME$ are up to no good there seems to be no public or international support for rescuing the poor lesser nations from their sphere of influence.;;;;;;;;;;;;x
+EVTOPTA90003;Fools!;;;;;;;;;;;;x
+EVTNAME90004;Protecting the $CB_TARGET_NAME_ADJ$;;;;;;;;;;;;x
+EVTDESC90004;Without the protection of a Great Power such as ourselves anything could happen to $CB_TARGET_NAME$. In order to protect them they must be added to our Sphere of Influence, despite any short-term objections they might have. After all, if they any sense they would be Great powers too.;;;;;;;;;;;;x
+EVTOPTA90004;We're here to help you.;;;;;;;;;;;;x
+EVTNAME90005;The $CB_TARGET_NAME_ADJ$ Fiasco;;;;;;;;;;;;x
+EVTDESC90005;Although we only want to help $CB_TARGET_NAME$ by adding them to our sphere of influence they have gotten very worked up about it. While unseemly to all involved, their behaviour has rather turned international opinion against forcefully requesting they join us in our prosperity.;;;;;;;;;;;;x
+EVTOPTA90005;Good call.;;;;;;;;;;;;x
+EVTNAME90006;An end to $CB_TARGET_NAME_ADJ$ Imperialism;;;;;;;;;;;;x
+EVTDESC90006;Why should $CB_TARGET_NAME$ get all the prime colonial land? It's downright unfair, that's what it is! They probably aren't even properly exploit-educating the native population! Something must be done we deserve our place in the sun!;.;;;;;;;;;;;x
+EVTOPTA90006;Good call.;;;;;;;;;;;;x
+EVTNAME90007;Colonial Setback;;;;;;;;;;;;x
+EVTDESC90007;Despite the modest nature of our just demands, there seems to be no international support for re-adjusting the colonial balance between ourselves and $CB_TARGET_NAME$. While this is a setback, we have no doubt that one day we will possess and empire that the sun never sets on.;;;;;;;;;;;;x
+EVTOPTA90007;Good call.;;;;;;;;;;;;x
+EVTNAME90008;It's time to act!;;;;;;;;;;;;x
+EVTDESC90008;$CB_TARGET_NAME$ is getting too big for their boots, as all can agree. For too long they have been strutting around the world stage, thinking they can do as they will. Thankfully, at last the rest of the world agrees, and our population is solidly behind us: $CB_TARGET_NAME$ must be taken down a peg or two.;;;;;;;;;;;;x
+EVTOPTA90008;Good call.;;;;;;;;;;;;x
+EVTNAME90009;Misguided fools!;;;;;;;;;;;;x
+EVTDESC90009;While the hubris of $CB_TARGET_NAME$ is evident to us, apparently others fail to see it. Their so-called 'sovereignty' apparently allows them to have their own army and to do as they will without deferring to us. It has even been implied that we are the arrogant ones!;;;;;;;;;;;;x
+EVTOPTA90009;Good call.;;;;;;;;;;;;x
+VOTER_ISSUES;Voter Issues;Questions électorales;Wählerprobleme;;;;;;;;;;;x
+OL_VIEW_NATFOCUS;Toggles §YNational Focus§W view;Active la vue §YCause nationale§W;Schaltet die Ansicht zu §YNationalem Fokus§W um;;;;;;;;;;;x
+OL_VIEW_NATFOCUS_HEADER;National Focus;Cause nationale;Nationaler Fokus;;;;;;;;;;;x
+OL_VIEW_NATFOCUS_TOOLTIP;National Focus (§Y$FOCUS$§W) in §Y$STATE$§W;Cause nationale (§Y$FOCUS$§!) en §Y$STATE$§!;Nationaler Fokus (§Y$FOCUS$§!) in §Y$STATE$§!;;;;;;;;;;;x
+OL_VIEW_RALLYPOINTS;Toggles §YRally Points§W view;Active la vue §YPoints de ralliement§W;Schaltet die Ansicht zu §YSammelpunkten§W um;;;;;;;;;;;x
+OL_VIEW_RALLYPOINTS_HEADER;Rally Points;Points de ralliement;Sammelpunkte;;;;;;;;;;;x
+OL_VIEW_RALLYPOINTS_TOOLTIP;All nearby recruited units will head towards §Y$PROV$§W;Toutes les unités regroupées à proximité vont marcher sur §Y$PROV$§!;Alle in der Nähe rekrutierten Einheiten werden sich Richtung §Y$PROV$§! begeben;;;;;;;;;;;x
+OL_VIEW_RALLYPOINTS_MERGE_TOOLTIP;and will try to merge up to §Y$LIMIT$§W when arrive here.; et vont tenter de fusionner à concurrence de §Y$LIMIT$§! quand elles y arriveront.;und werden zu einer Menge von §Y$LIMIT$§! zusammengeführt, sobald sie ankommen.;;;;;;;;;;;x
+OL_VIEW_MERGE_ON;§G(Merge ON)§W;§G(Fusion Act.)§!;§G(Zusammenführen ANSCHALTEN)§!;;;;;;;;;;;x
+OL_VIEW_MERGE_OFF;§Y(Merge OFF)§W;§Y(Fusion Dés.)§!;§Y(Zusammenführen AUSSCHALTEN)§!;;;;;;;;;;;x
+OUR_CB_DETECTED_SETUP;When our war justification process is detected;Quand notre tentative de justification de guerre est détectée;Sobald unser Prozess der Kriegsrechtfertigung aufgedeckt wird;;;;;;;;;;;x
+OUR_CB_DETECTED_HEADER;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;;;;;;x
+OUR_CB_DETECTED_1;War Justification;Justification de guerre;Kriegsrechtfertigung;;;;;;;;;;;x
+OUR_CB_DETECTED_2;Our attempt to justify war using;Notre tentative de justifier la guerre par;Unser Versuch, den Krieg zu rechtfertigen, ;;;;;;;;;;;x
+OUR_CB_DETECTED_3;§Y$CASUS$§! Casus Belli;le Casus Belli §Y$CASUS$§!;mithilfe des §Y$CASUS$§! Casus Belli;;;;;;;;;;;x
+OUR_CB_DETECTED_4;against;contre;gegen;;;;;;;;;;;x
+OUR_CB_DETECTED_5;$TARGET$;$TARGET$;$TARGET$;;$TARGET$;;;;;;;;;x
+OUR_CB_DETECTED_6;was detected! This costs us §R$BADBOY$§! infamy;a été détectée ! Cela nous coûte §R$BADBOY$§! d'infamie.;wurde entlarvt. Dies kostet uns  §R$BADBOY$§! Schande;;;;;;;;;;;x
+OUR_CB_DETECTED_LOG;Our war justification process against $TARGET$ was detected.;Notre tentative de justification de guerre contre $TARGET$ a été détectée.;Unser Prozess der Kriegsrechtfertigung gegen $TARGET$ wurde entlarvt.;;;;;;;;;;;x
+OUR_CB_DETECTED_BTN1;OK;D'accord;¿¹;OK;¿¹;OK;Rendben;¿¹;;;;;;x
+OUR_CB_DETECTED_BTN2;OK;D'accord;¿¹;OK;¿¹;OK;Rendben;¿¹;;;;;;x
+OUR_CB_DETECTED_BTN3;Go To;Voir;Gehe zu;IdŸ do;Ir allí;Andare;Ugrás;Pøejít na;;;;;;x
+OUR_CB_DETECTED_MAP;*;*;*;*;*;*;*;;;;;;;x
+CB_TOWARDS_US_DETECTED_SETUP;A war justification process against us is detected;Une tentative de justification de guerre contre nous est détectée;Ein Prozess der Kriegsrechtfertigung gegen uns wurde entlarvt.;;;;;;;;;;;x
+CB_TOWARDS_US_DETECTED_HEADER;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;;;;;;x
+CB_TOWARDS_US_DETECTED_1;War Justification;;;;;;;;;;;;x
+CB_TOWARDS_US_DETECTED_2;An attempt to justify war using;;;;;;;;;;;;x
+CB_TOWARDS_US_DETECTED_3;§Y$CASUS$§W Casus Belli;;;;;;;;;;;;x
+CB_TOWARDS_US_DETECTED_4;against us by;;;;;;;;;;;;x
+CB_TOWARDS_US_DETECTED_5;$COUNTRY$;;;;;;;;;;x
+CB_TOWARDS_US_DETECTED_6;was detected!;;;;;;;;;;;;x
+CB_TOWARDS_US_DETECTED_LOG;A war justification process against us by $COUNTRY$ was detected;;;;;;;;;;;;x
+CB_TOWARDS_US_DETECTED_BTN1;OK;;;;;;;x
+CB_TOWARDS_US_DETECTED_BTN2;OK;;;;;;;x
+CB_TOWARDS_US_DETECTED_BTN3;Go To;;;;;;;x
+CB_TOWARDS_US_DETECTED_MAP;*;*;*;*;*;*;*;;;;;;;x
+OTHERS_CB_DETECTED_SETUP;A war justification process against someone is detected;A war justification process against someone is detected;Ein Prozess der Kriegsrechtfertigung gegen jemanden wurde entlarvt.;;;;;;;;;;;x
+OTHERS_CB_DETECTED_HEADER;$MONARCHTITLE$;;;;;;;x
+OTHERS_CB_DETECTED_1;War Justification;;;;;;;;;;;x
+OTHERS_CB_DETECTED_2;An attempt to justify war using;;;;;;;;;;;x
+OTHERS_CB_DETECTED_3;§Y$CASUS$§W Casus Belli;;;;;;;;;;;x
+OTHERS_CB_DETECTED_4;against $TARGET$ by;;;;;;;;;;;x
+OTHERS_CB_DETECTED_5;$COUNTRY$;;;;;;;;;x
+OTHERS_CB_DETECTED_6;was detected!;;;;;;;;;;;;x
+OTHERS_CB_DETECTED_LOG;A war justification process against $TARGET$ by $COUNTRY$ was detected;;;;;;;;;;;;x
+OTHERS_CB_DETECTED_BTN1;OK;;;;;;;x
+OTHERS_CB_DETECTED_BTN2;OK;;;;;;;x
+OTHERS_CB_DETECTED_BTN3;Go To;;;;;;x
+OTHERS_CB_DETECTED_MAP;*;*;*;*;*;*;*;;;;;;;x
+CB_gen_plus;CB generation speed increased;Augmentation de la vitesse de génération des CB;CB Generationengeschwindigkeit erhöht ;;;;;;;;;;;x
+CB_gen_minus;CB generation speed decreased;Diminution de la vitesse de génération des CB;CB Generationengeschwindigkeit reduziert;;;;;;;;;;;x
+CB_gen_plus_desc;Justifying wars can be done faster;Justifier des guerres peut se faire plus rapidement;Die Rechtfertigung eines Krieges kann schneller erledigt werden;;;;;;;;;;;x
+CB_gen_minus_desc;Justifying wars now takes longer;Justifier des guerres prend maintenant plus de temps;Die Rechtfertigung eines Krieges dauert nun länger;;;;;;;;;;;x
+BUILDING_AT_MAX_TERRAIN;Level $CURR$/$MAX$ (§R$TERRAINMOD$§W $TERRAIN$);Niveau $CURR$/$MAX$ (§R$TERRAINMOD$§! $TERRAIN$);Level $CURR$/$MAX$ (§R$TERRAINMOD$§! $TERRAIN$);;;;;;;;;;;x
+PRODUCTION_INVEST;Foreign Investment;Invest. à l'étranger;Ausländische Investition;;;;;;;;;;;x
+PRODUCTION_TAB_INVEST;Shows overview of investment in foreign countries;Montrer l'aperçu des investissements à l'étranger;Zeigt eine Übersicht der Investitionen im Ausland;;;;;;;;;;;x
+FLAG_SUBMENU_INTERESTING;Set country as interesting.;Définir le pays comme intéressant.;Markiert das Land als interessant.;;;;;;;;;;;x
+FLAG_SUBMENU_NOTINTERESTING;Set country as §Ynot§W interesting.;Définir le pays comme §Ypas§! intéressant.;Markiert das Land als §Ynicht§! interessant.;;;;;;;;;;;x
+MESSAGE_TYPE_INTERESTING;Interesting;Intéressant;Interessant;;;;;;;;;;;x
+MESSAGE_TYPE_NOT_INTERESTING;Other;Autre;Anderes;;;;;;;;;;;x
+MESSAGE_SEARCH;Search:;Chercher;Suchen:;;;;;;;;;;;x
+MESSAGE_BUTTON_SEARCH;Search;Chercher;Suche ;;;;;;;;;;;x
+MESSAGE_BUTTON_CLEAR;Clear;Effacer;Löschen;;;;;;;;;;;x
+MESSAGE_SEARCH_TOOLTIP;Enter key words separated by §Yspace§W to filter the list.;Entrez les mot-clefs séparés par §YEspace§! pour filtrer la liste.;Trennt Schlüsselwörter mithilfe der §YLeertaste§!, um die Liste zu filtern. ;;;;;;;;;;;x
+SIDEMENU_menubar_msg_settings;Click to open message filter settings.;Clic gauche pour sélectionner les filtres de messages;Klicken, um die Einstellungen des Nachrichtenfilters zu öffnen.;;;;;;;;;;;x
+RULE_BUILD_FACTORY_INVEST;Build foreign factory;Construire une usine à l'étranger;Eine ausländische Fabrikanlage bauen;;;;;;;;;;;x
+RULE_EXPAND_FACTORY_INVEST;Expand foreign factory;Agrandir une usine à l'étranger;Eine ausländische Fabrikanlage ausbauen;;;;;;;;;;;x
+RULE_OPEN_FACTORY_INVEST;Open foreign factory;Ouvrir une usine à l'étranger;Eine ausländische Fabrikanlage eröffnen;;;;;;;;;;;x
+RULE_BUILD_RAILWAY_INVEST;Investors can build foreign railways;Les investisseurs peuvent construire des chemins de fer à l'étranger;Investoren können eine ausländische Eisenbahnlinie bauen;;;;;;;;;;;x
+RULE_CAN_INVEST_IN_POP_PROJECTS;Invest in pop projects;Investir dans des projets;In Pop-Projekte investieren;;;;;;;;;;;x
+RULE_POP_BUILD_FACTORY_INVEST;Investors can build foreign factory;Des investisseurs peuvent construire une usine à l'étranger;Investoren können eine ausländische Fabrikanlage bauen;;;;;;;;;;;x
+RULE_POP_EXPAND_FACTORY_INVEST;Investors can expand foreign factory;Des investisseurs peuvent agrandir une usine à l'étranger;Investoren können eine ausländische Fabrikanlage erweitern;;;;;;;;;;;x
+RULE_POP_OPEN_FACTORY_INVEST;Investors can open foreign factory;Des investisseurs peuvent ouvrir une usine à l'étranger;Investoren können eine ausländische Fabrikanlage eröffnen;;;;;;;;;;;x
+PRODUCTION_OUR_INVEST;Our investment: $AMOUNT$¤ ($PERCENTAGE$%);Notre investissement : $AMOUNT$ ¤ ($PERCENTAGE$ %);Unsere Investition: $AMOUNT$¤ ($PERCENTAGE$%);;;;;;;;;;;x
+MSG_FILTER_HEADER;Messages filter settings;Filtres de messages;Nachrichtenfilter-Einstellungen;;;;;;;;;;;x
+MSG_FILTER_TITLE;We are interested in:;Sommes intéressés par;Wir interessieren uns für:;;;;;;;;;;;x
+MSG_FILTER_DESELECT;Deselect All;Tout déselectionner;Alle Markierungen aufheben;;;;;;;;;;;x
+MSG_FILTER_BEST_GUESS;Best Guess;Les plus utiles;Einschätzung;;;;;;;;;;;x
+MSG_FILTER_ENEMIES;Enemies;Ennemis;Feinde;;;;;;;;;;;x
+MSG_FILTER_ALLIES;Allies;Alliés;Verbündete;;;;;;;;;;;x
+MSG_FILTER_NEIGHBOURS;Neighbours;;;;;;;;;;;;x
+MSG_FILTER_SPHERE;Sphere;;;;;;;;;;;;x
+PRODUCTION_BROWSE_INVEST;Other;;;;;;;;;;;;x
+DIPLOMACY_OPINION_INVESTMENT;§Y$GP_ADJ$§W investment: §Y$VALUE$§W¤;Investissement §Y$GP_ADJ$§W : §Y$VALUE$§! ¤;§Y$GP_ADJ$§W Investition: §Y$VALUE$§!¤;;;;;;;;;;;x
+MSG_FILTER_TOOLTIP_HEADER;In message filter settings window, you can select countries that you are interested in. All the messages and alerts will be shown only for those important countries.;;;;;;;;;;;;x
+MSG_FILTER_TOOLTIP_DELAYED;§YLeft click§W replaces current selection.\n§YRight click§W adds to current selection.\n§YLeft click + SHIFT§W toggles filter.;§YClic gauche§! remplace la sélection actuelle.\n§YClic droit§! ajoute à la sélection actuelle.\n§YClic gauche + Maj§! alterne le filtre.;§YLinksklick§! Ersetzt die aktuelle Auswahl.\n§YRechtsklick§! Ergänzt die aktuelle Auswahl.\n§YLinksklick + SHIFT§! Schaltet den Filter um.;;;;;;;;;;;x
+MSG_FILTER_TOOLTIP_DESELECT;Deselect all countries from the list.;;;;;;;;;;;;x
+MSG_FILTER_TOOLTIP_BESTGUESS;Select countries by using best guess method.;;;;;;;;;;;;x
+MSG_FILTER_TOOLTIP_ENEMIES;Select countries that are your enemies.;;;;;;;;;;;;x
+MSG_FILTER_TOOLTIP_ALLIES;Select countries that are your allies.;;;;;;;;;;;;x
+MSG_FILTER_TOOLTIP_NEIGHBOURS;Select countries that are your neighbours.;;;;;;;;;;;;x
+MSG_FILTER_TOOLTIP_SPHERE;Select countries that are in your sphere. (if you are a great power);;;;;;;;;;;;x
+MSG_FILTER_TOOLTIP_CONTINENT;Select countries that owns any province on the continent.;;;;;;;;;;;;x
+PRODUCTION_NOT_DESTROY_FACTORY_B ECAUSE_FOREIGN_TOOLTIP;We do not have the right to do that in a foreign country.;;;;;;;;;;;;x
+INVESTMENT_PENALTY_FACTOR;Other national investors;;;;;;;;;;;;x
+SPHERE_SHARE_NOT_IN_SPHERE;Not in a sphere so free to sell on the world market;;;;;;;;;;;;x
+SPHERE_SHARE_UNCIV;Uncivilized nation, will make §Y$PERCENTAGE$%§W of all resources available on leader's market;Nation non civilisée, laissera disponibles §Y$PERCENTAGE$ %§! de toutes les ressources sur les marchés dominants;Unzivilisierte Nation, §Y$PERCENTAGE$%§! aller Ressourcen werden auf dem Markt des Anführers bereitgestellt;;;;;;;;;;;x
+SPHERE_SHARE_2NDRANK;Second rank nation, will make §Y$PERCENTAGE$%§W of all resources available on leader's market (Base: §Y$BASE_PERCENTAGE$%§W);Nation de second rang, laissera disponibles §Y$PERCENTAGE$ %§! de toutes les ressources sur les marchés dominants (Base : §Y$BASE_PERCENTAGE$ %§!);Zweitrangige Nation, §Y$PERCENTAGE$%§! aller Ressourcen werden auf dem Markt des Anführers bereitgestellt (Basis: §Y$BASE_PERCENTAGE$%§!);;;;;;;;;;;x
+SPHERE_SHARE_CIV;Civilized nation, will make §Y$PERCENTAGE$%§W of all resources available on leader's market (Base: §Y$BASE_PERCENTAGE$%§W);Nation civilisée, laissera disponibles §Y$PERCENTAGE$ %§! de toutes les ressources sur les marchés dominants (Base : §Y$BASE_PERCENTAGE$ %§!);Zivilisierte Nation, §Y$PERCENTAGE$%§! aller Ressourcen werden auf dem Markt des Anführers bereitgestellt (Basis: §Y$BASE_PERCENTAGE$%§!);;;;;;;;;;;x
+RULE_ALLOW_FOREIGN_INVESTMENT;Allow foreign investment;Autoriser les investissements étrangers;Erlaubt ausländische Investitionen;;;;;;;;;;;x
+POLITICS_DECISIONS_TAB;Decisions;Décisions;Entscheidungen;;;;;;;;;;;x
+POLITICS_MOVEMENTS_TAB;Movements;Mouvements;Bewegungen;;;;;;;;;;;x
+EVTNAME90100;Longing for a Free Press;;;;;;;;;;;;x
+EVTNAME90102;Longing for Public Meetings;;;;;;;;;;;;x
+EVTNAME90104;Longing for Trade Unions;;;;;;;;;;;;x
+EVTDESC90100;The People long for a Free Press, and as our neighbours adopt this reform it makes their longing all the stronger.;;;;;;;;;;;;x
+EVTOPTA90100;Perhaps we can work something out;;;;;;;;;;;;x
+EVTOPTB90100;Never!;;;;;;;;;;;;x
+EVTDESC90102;The People long for the right to Public Meetings, and as our neighbours adopt this reform it makes their longing all the stronger.;;;;;;;;;;;x
+EVTDESC90104;The People long for Trade Unions, and as our neighbours adopt this reform it makes their longing all the stronger.;;;;;;;;;;;;x
+EVTNAME90101;Broken Promises;;;;;;;;;;;;x
+EVTDESC90101;Despite our promise to reform the press, nothing has changed and the people are somewhat upset.;;;;;;;;;;;;x
+EVTOPTA90101;How depressing;;;;;;;;;;;;x
+EVTDESC90103;Despite our promise to allow public meetings, nothing has changed and the people are somewhat upset.;;;;;;;;;;;;x
+EVTOPTA90103;I hate crowds;;;;;;;;;;;;x
+EVTDESC90105;Despite our promise to allow trade unions, nothing has changed and the people are somewhat upset.;;;;;;;;;;;;x
+EVTOPTA90105;Better dead than red!;;;;;;;;;;;;x
+MOVEMENT_RADICALISM_BASE;Base: §R$VAL$§W;Base: §R$VAL$§ %§!;Basis: §R$VAL$§%§!;;;;;;;;;;;x
+MOVEMENT_RADICALISM_ACCUMULATED;Suppression: §R$VAL$§W;Répression : §R$VAL$§ %§!;Unterdrückung: §R$VAL$§%§!;;;;;;;;;;;x
+MOVEMENT_RADICALISM_GRANTED_REFORMS;Granted reforms: §G$VAL$§W;Réformes accordées : §G$VAL$§ %§!;Gewährte Reformen: §G$VAL$§%§!;;;;;;;;;;;x
+MOVEMENT_RADICALISM_CULTURE;$CULTURE$: $VAL$;$CULTURE$: $VAL$;$CULTURE$: $VAL$;;;;;;;;;;;x
+ALREADY_SUPPRESSED;Movement is not radical and can't be suppressed;;;;;;;;;;;;x
+EVTNAME90900;The Middle Kingdom;;;;;;;;;;;;x
+EVTDESC90900;We are now sufficiently advanced for the European barbarians to regard us as 'Civilised', and so they must respect our right to centralise and reject foreign influence throughout China.;;;;;;;;;;;;x
+EVTOPTA90900;We are united again;;;;;;;;;;;;x
+EVTDESC90901;The Liyue's new status has led them to demand we submit to their authority, accepting will mean an end to our independent existence.;;;;;;;;;;;;x
+EVTOPTA90901;We are united again;;;;;;;;;;;;x
+EVTOPTA90910;Wagons West!;;;;;;;;;;;;x
+SUPPRESSION_POINTS;Suppression points;Points de répression;Unterdrückungspunkte;;;;;;;;;;;x
+school_reforms;School System;Système d'éducation;Schulsystem;;;;;;;;;;;x
+no_schools;No School System;Système inexistant;Kein Schulsystem;;;;;;;;;;;x
+low_schools;Basic School System;Système de base;Einfaches Schulsystem;;;;;;;;;;;x
+acceptable_schools;Acceptable School System;Système acceptable;Akzeptables Schulsystem;;;;;;;;;;;x
+good_schools;Good School System;Système de bon niveau;Gutes Schulsystem;;;;;;;;;;;x
+no_schools_l;No School System;Système d'éducation inexistant;Kein Schulsystem;;;;;;;;;;;x
+low_schools_l;Basic School System;Système d'éducation de base;Einfaches Schulsystem;;;;;;;;;;;x
+acceptable_schools_l;Acceptable School System;Système d'éducation acceptable;Akzeptables Schulsystem;;;;;;;;;;;x
+good_schools_l;Good School System;Système d'éducation de bon niveau;Gutes Schulsystem;;;;;;;;;;;x
+no_schools_desc;There's no organized school system or budget for education. The scarce literacy gain that is achieved comes from religious schools or it is based on informal community teaching, though these places get some funding, indirectly, from the government. Higher education institutions are either non-existent or completely religious and medieval.\n§RIf average literacy is more than 25%, education funding needs to be more than 10%. If it is 50%, funding needs to be at least 20%. If it is 75%, funding needs to be at least 30%. Otherwise literacy will start to fall.§W;Pas d'écoles publiques.;Keine öffentlichen Schulen.;;;;;;;;;;;x
+low_schools_desc;A rudimentary school system exists in the capital and a few important cities but enrolment is completely optional. Schools limits themselves to teaching pupils how to read and write. There's no government agency to inspect schools and they have no common standards for teaching, with the few courses that exist being overcrowded. Private schools are commonly in the same conditions. Teachers don't have professional formation and are often just literate men, while pupils often leave school without being properly schooled.\n§YFor the full effects of this reform, your education spending should be at least 30%.§W\n§RIf average literacy is more than 25%, education funding needs to be more than 10%. If it is 50%, funding needs to be at least 20%. If it is 75%, funding needs to be at least 30%. Otherwise literacy will start to fall.§W;Les écoles publiques sont rares.;Öffentliche Schulen sind nicht verbreitet.;;;;;;;;;;;x
+acceptable_schools_desc;Schools can be found in every major and most of the medium cities. A government agency exists to ensure quality standards in education and to inspect that proper facilities are used for it. Enrolment is encouraged and sometimes it's outright mandatory, but it's not properly enforced and pupils often don't go to school for a variety of reasons. Children are also taught math and a few other subjects. Education institutions for teenagers are starting to appear, and secular, higher education institutions for adults are common. Teachers are formally trained, but oftentimes poorly.\n§YFor the full effects of this reform, your education spending should be at least 40%.§W\n§RIf average literacy is more than 25%, education funding needs to be more than 10%. If it is 50%, funding needs to be at least 20%. If it is 75%, funding needs to be at least 30%. Otherwise literacy will start to fall.§W;Les écoles publiques sont fréquentes.;Öffentliche Schulen sind verbreitet.;;;;;;;;;;;x
+good_schools_desc;Schools can be found in almost every city. Government agencies take education with the utmost seriousness, and enrolment is mandatory and tightly controlled. Children and teenagers are taught a variety of subjects besides reading and writing and teachers are taught pedagogy during their formation. Literacy campaigns for adults and the elderly are a part of the government's effort to eradicate illiteracy. Higher education institutions are considered good, with opportunities for the poor classes to enrol.\n§YFor the full effects of this reform, your education spending should be at least 50%.\nA fully funded education provides a bonus to this reform.§W\n§RIf average literacy is more than 25%, education funding needs to be more than 10%. If it is 50%, funding needs to be at least 20%. If it is 75%, funding needs to be at least 30%. Otherwise literacy will start to fall.§W;Il y a beaucoup d'écoles publiques.;Es gibt wirklich viele öffentliche Schulen.;;;;;;;;;;;x
+NATIONALIST_UNION_MOVEMENT;$COUNTRY_ADJ$ Unification Movement;;;;;;;;;;;;x
+NATIONALIST_LIBERATION_MOVEMENT;$COUNTRY$ Liberation Movement;;;;;;;;;;;;x
+SUPRESSION_MONTHLY_GAIN;Monthly gain: §G$VAL$§W;Gain mensuel : §G$VAL$§!;Monatlicher Zuwach: §G$VAL$§!;;;;;;;;;;;x
+MODIFIER_EDUCATION_EFFICIENCY;Education Efficiency;;;;;;;;;;;;x
+MODIFIER_SUPPRESSION_POINT_GAIN;Suppression point gain;;;;;;;;;;;;x
+NOT_SOCIAL_MOVEMENT_STRENGTH_TR;Social movement strength is lower than §Y$VAL$§W.\n;Mouvement social dont la force est inférieure à §Y$VAL$§W.\n;Die Stärke der sozialen Bewegung ist niedriger als §Y$VAL$§W.\n;;;;;;;;;;;
+SOCIAL_MOVEMENT_STRENGTH_TR;Social movement strength is higher than §Y$VAL$§W.\n;Mouvement social dont la force est supérieure à §Y$VAL$§W.\n;Die Stärke der sozialen Bewegung ist größer als §Y$VAL$§W.\n;;;;;;;;;;;
+NOT_POLITICAL_MOVEMENT_STRENGTH_TR;Political movement strength is lower than §Y$VAL$§W.\n;Mouvement politique dont la force est inférieure à §Y$VAL$§W.\n;Die Stärke der politischen Bewegung ist niedriger als §Y$VAL$§W.\n;;;;;;;;;;;
+POLITICAL_MOVEMENT_STRENGTH_TR;Political movement strength is higher than §Y$VAL$§W.\n;Mouvement politique dont la force est supérieure à §Y$VAL$§W.\n;Die Stärke der politischen Bewegung ist größer als §Y$VAL$§W.\n;;;;;;;;;;;
+SUPPRESS;Suppress;;;;;;;;;;;;x
+SUPPRESSION_DESC;Suppress this movement. This will cost $VAL$ points and make the movement likely to be more radical (§R+$HIT$§W) in the future.;Réprimer ce mouvement. Cela coûtera $VAL$ points et rendra le mouvement plus radical (§R+$HIT$§!) dans le futur.;Unterdrückt diese Bewegungt. Dies kostet $VAL$ Punkte und erhöht die Chancen, dass diese Bewegung in Zukunft (§R+$HIT$§!)radikaler wird.;;;;;;;;;;;x
+CANT_SUPPRESS_DESC;We need more points to be able to suppress this movement. We have §R$VAL$§W suppression points and it requires §Y$NEED$§W.;Nous avons besoin de plus de points pour pouvoir réprimer ce mouvement. Nous avons §R$VAL$§! points de répression et il en faut §Y$NEED$§!.;Wir benötigen mehr Punkte um diese Bewegung unterdrücken zu können. Wir haben §R$VAL$§! Unterdrückungspunkte, benötigen jedoch  §Y$NEED$§!.;;;;;;;;;;;
+REFORM_MOVEMENT_DESC;Movement calling for the enactment of §Y$REFORM$§!;Mouvement appelant à l'avènement de §Y$REFORM$§!;Bewegung für die Verabschiedung von §Y$REFORM$§!;;;;;;;;;;;x
+NATIONALIST_UNION_MOVEMENT_DESC;Movement calling for the forming of §Y$COUNTRY$§W;Mouvement appelant à la formation de §Y$COUNTRY$§!;Bewegung für die Gründung von §Y$COUNTRY$§!;;;;;;;;;;;x
+NATIONALIST_LIBERATION_MOVEMENT_DESC;Movement calling for the liberation of §Y$COUNTRY$§W;Mouvement appelant à la libération de §Y$COUNTRY$§!;Bewegung für die Befreiung von §Y$COUNTRY$§!;;;;;;;;;;;x
+SUPPRESSION_LABEL_DESC;Suppression points measure your governments power to suppress popular movements;;;;;;;;;;;;x
+MOVEMENT_REFORM_SUPPORT;There is a popular movement of size $VAL$ lobbying for the enactment of this reform.;;;;;;;;;;;;x
+movement_no_slavery;Abolitionist Movement;;;;;;;;;;;;x
+movement_yes_slavery;Pro-Enslavement League;;;;;;;;;;;;x
+movement_landed_voting;Suffrage Movement;;;;;;;;;;;;x
+movement_wealth_weighted_voting;Suffrage Movement;;;;;;;;;;;;x
+movement_wealth_voting;Suffrage Movement;;;;;;;;;;;;x
+movement_universal_weighted_voting;Suffrage Movement;;;;;;;;;;;;x
+movement_universal_voting;Suffrage Movement;;;;;;;;;;;;x
+movement_party_appointed;Campaign for Political Representation;;;;;;;;;;;;x
+movement_appointed;Campaign for Political Representation;;;;;;;;;;;;x
+movement_state_equal_weight;Campaign for Political Representation;;;;;;;;;;;;x
+movement_population_equal_weight;Campaign for Political Representation;;;;;;;;;;;;x
+movement_first_past_the_post;Campaign for Political Representation;;;;;;;;;;;;x
+movement_jefferson_method;Campaign for Political Representation;;;;;;;;;;;;x
+movement_proportional_representation;Campaign for Political Representation;;;;;;;;;;;;x
+movement_no_meeting;Campaign for the abolishment of Public Meetings;;;;;;;;;;;;x
+movement_yes_meeting;Campaign for Public Meetings;;;;;;;;;;;;x
+movement_censored_press;Campaign for more Press Freedom;;;;;;;;;;;;x
+movement_free_press;Campaign for Free Press;;;;;;;;;;;;x
+movement_state_controlled;Campaign for State Controlled Unions;;;;;;;;;;;;x
+movement_non_socialist;Campaign for Non-Socialist Unions;;;;;;;;;;;;x
+movement_all_trade_unions;Campaign for Free Trade unions;;;;;;;; ;;;;x
+movement_harassment;Voters Rights Movement;;;;;;;;;;;;x
+movement_gerrymandering;Voters Rights Movement;;;;;;;;;;;;x
+movement_non_secret_ballots;Voters Rights Movement;;;;;;;;;;;;x
+movement_secret_ballots;Voters Rights Movement;;;;;;;;;;;;x
+movement_trinket_wage;Minimum Wage Movement;;;;;;;;;;;;x
+movement_low_minimum_wage;Minimum Wage Movement;;;;;;;;;;;;x
+movement_acceptable_minimum_wage;Minimum Wage Movement;;;;;;;;;;;;x
+movement_good_minimum_wage;Minimum Wage Movement;;;;;;;;;;;;x
+movement_fourteen_hours;Maximum Work Hours Movement;;;;;;;;;;;;x
+movement_twelve_hours;Maximum Work Hours Movement;;;;;;;;;;;;x
+movement_ten_hours;Maximum Work Hours Movement;;;;;;;;;;;;x
+movement_eight_hours;Maximum Work Hours Movement;;;;;;;;;;;;x
+movement_trinket_safety;Campaign for Safe Working Conditions;;;;;;;;;;;;x
+movement_low_safety;Campaign for Safe Working Conditions;;;;;;;;;;;;x
+movement_acceptable_safety;Campaign for Safe Working Conditions;;;;;;;;;;;;x
+movement_good_safety;Campaign for Safe Working Conditions;;;;;;;;;;;;x
+movement_trinket_subsidies;Campaign for Unemployment Subsidies;;;;;;;;;;;;x
+movement_low_subsidies;Campaign for Unemployment Subsidies;;;;;;;;;;;;x
+movement_acceptable_subsidies;Campaign for Unemployment Subsidies;;;;;;;;;;;;x
+movement_good_subsidies;Campaign for Unemployment Subsidies;;;;;;;;;;;;x
+movement_trinket_pensions;Campaign for Old Age Security;;;;;;;;;;;;x
+movement_low_pensions;Campaign for Old Age Security;;;;;;;;;;;;x
+movement_acceptable_pensions;Campaign for Old Age Security;;;;;;;;;;;;x
+movement_good_pensions;Campaign for Old Age Security;;;;;;;;;;;;x
+movement_trinket_health_care;Universal Health Care Movement;;;;;;;;;;;;x
+movement_low_health_care;Universal Health Care Movement;;;;;;;;;;;;x
+movement_acceptable_health_care;Universal Health Care Movement;;;;;;;;;;;;x
+movement_good_health_care;Universal Health Care Movement;;;;;;;;;;;;x
+movement_low_schools;Common School Movement;;;;;;;;;;;;x
+movement_acceptable_schools;Common School Movement;;;;;;;;;;;;x
+movement_good_schools;Common School Movement;;;;;;;;;;;;x
+POLITICS_MOVEMENTS;Movements;Mouvements;Bewegungen;;;;;;;;;;;x
+POLITICS_ECONOMIC_REFORMS;Economic Reforms;;;;;;;;;;;;x
+POLITICS_MILITARY_REFORMS;Military Reforms;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_USA_CSA_CSA;$ORDER$War of Northern Aggression;;;;;;;;;;;;x
+NORMAL_CIVIL_WAR_NAME_USA_CSA_USA;$ORDER$War of the Rebellion;;;;;;;;;;;;x
+NORMAL_WAR_GUNBOAT_NAME;$ORDER$$FIRST$ intervention in $SECOND_COUNTRY$;;;;;;;;;;;;x
+NORMAL_WAR_GUNBOAT_NAME_FRA_MEX;$ORDER$Pastry War;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_USA_MEX_USA;$ORDER$Mexican-American War;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_USA_MEX_MEX;$ORDER$American Invasion of Mexico;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_USA_MEX_USA;$ORDER$Mexican-American War;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_USA_MEX_MEX;$ORDER$American Invasion of Mexico;;;;;;;;;;;;x
+NORMAL_WAR_GUNBOAT_NAME_ENG_CHI;$ORDER$Opium War;;;;;;;;;;;;x
+NORMAL_WAR_ADD_SPHERE_NAME_ENG_CHI;$ORDER$Opium War;;;;;;;;;;;;x
+NORMAL_WAR_INDEPENDENCE_NAME;$ORDER$$FIRST$ War of Independence;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_CHL_PEU;$ORDER$War of the Pacific;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_CHL_PEU;$ORDER$War of the Pacific;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_CHL_BOL;$ORDER$War of the Pacific;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_CHL_BOL;$ORDER$War of the Pacific;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_ENG_TRN;The Boer War;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_ENG_ORA;The Boer War;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_ENG_TRN;$ORDER$Boer War;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_ENG_ORA;$ORDER$Boer War;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_ORA_ENG;$ORDER$Boer War;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_TRN_ENG;$ORDER$Boer War;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_TRN;$ORDER$Boer War;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_ORA;$ORDER$Boer War;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME;$ORDER$War of $FIRST$ Control Over $SECOND_COUNTRY$;;;;;;;;;;;;x
+NORMAL_WAR_BOXER_NAME;$ORDER$Boxer Rebellion;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_ENG_ USA;$ORDER$$SECOND$ War of Independence;;;;;;;;;;;;x
+NORMAL_WAR_NAME_ENG_USA;$ORDER$$SECOND$ War of Independence;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_NAME_ENG_USA;$ORDER$$SECOND$ War of Independence;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_ENG_USA;$ORDER$$SECOND$ War of Independence;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_ENG_USA;$ORDER$$SECOND$ War of Independence;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME;$ORDER$$FIRST$-$SECOND$ War of Honour;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_NAME_PRU_FRA;$ORDER$Franco-Prussian War;;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_NAME_NGF_FRA;$ORDER$Franco-Prussian War;;;;;;;;;;;;x
+CAN_INVEST_IN_RAILROADS;Allowed to invest in railroads;;;;;;;;;;;;x
+land_reform;Land Reform;;;;;;;;;;;;x
+land_reform_l;Land Reform;;;;;;;;;;;;x
+no_land_reform;No Land Reform;;;;;;;;;;;;x
+yes_land_reform;Land Reform;;;;;;;;;;;;x
+no_land_reform_desc;The land is owned and used by the traditional elites in a hereditary way, the way they want, like the old days.;;;;;;;;;;;;x
+yes_land_reform_desc;Redistribution of land rights resulting in more effective farming and mining.;;;;;;;;;;;;x
+admin_reform;Administrative Reform;;;;;;;;;;;;x
+admin_reform_l;Administrative Reform;;;;;;;;;;;;x
+no_admin_reform;No Administrative Reform;;;;;;;;;;;;x
+yes_admin_reform;Administrative Reform;;;;;;;;;;;;x
+no_admin_reform_desc;No administrative reform. The country bureaucracy works like the old days, if it exists at all.;;;;;;;;;;;;x
+yes_admin_reform_desc;Our administration is now modern and efficient.;;;;;;;;;;;;x
+finance_reform;Financial Reform;;;;;;;;;;;;x
+finance_reform_l;Financial Reform;;;;;;;;;;;;x
+no_finance_reform;No Financial Reform;;;;;;;;;;;;x
+yes_finance_reform;Enact Financial Reform;;;;;;;;;;;;x
+finance_reform_two;International Debt;;;;;;;;;;;;x
+no_finance_reform_desc;Our financial institutions and economy are run like the old days.;;;;;;;;;;;;x
+yes_finance_reform_desc;We started to modernize our financial institutions.;;;;;;;;;;;;x
+finance_reform_two_desc;We modernized a great part of our financial institutions and now we can borrow money from other nations.;;;;;;;;;;;;x
+education_reform;Basic Education;;;;;;;;;;;;x
+education_reform_l;Basic Education;;;;;;;;;;;;x
+no_education_reform;No Education Reform;;;;;;;;;;;;x
+yes_education_reform;Reformed System;;;;;;;;;;;;x
+no_education_reform_desc;Our country doesn't have schools and education is largely disorganized.;;;;;;;;;;;;x
+yes_education_reform_desc;A basic organized education system is now present in our country;;;;;;;;;;;;x
+transport_improv;Transportation System;;;;;;;;;;;;x
+transport_improv_l;Transportation System;;;;;;;;;;;;x
+no_transport_improv;Not Improved;;;;;;;;;;;;x
+yes_transport_improv;Improved;;;;;;;;;;;;x
+no_transport_improv_desc;The transportation system is primitive.;;;;;;;;;;;;x
+yes_transport_improv_desc;The transportation system is being modernized. At least in the capital.;;;;;;;;;;;;x
+pre_indust;Early Industrialisation;;;;;;;;;;;;x
+pre_indust_l;Early Industrialisation;;;;;;;;;;;;x
+no_pre_indust;Stick to the Old Ways;;;;;;;;;;;;x
+yes_pre_indust;Industrial Progress;;;;;;;;;;;;x
+no_pre_indust_desc;We have no need of industry.;;;;;;;;;;;;x
+yes_pre_indust_desc;Construct some basic factories with the help of foreign advisors. Could this be the beginning of an industrial revolution?;;;;;;;;;;;;x
+industrial_construction;Industrial Construction;;;;;;;;;;;;x
+industrial_construction_l;Industrial Construction;;;;;;;;;;;;x
+no_industrial_construction;No Industrial Construction;;;;;;;;;;;;x
+yes_industrial_construction;Industrial Construction;;;;;;;;;;;;x
+no_industrial_construction_desc;No advanced factories.;;;;;;;;;;;;x
+yes_industrial_construction_desc;Foreign advisors assist us in building more advanced factories.;;;;;;;;;;;;x
+foreign_training;Training Methods;;;;;;;;;;;;x
+foreign_training_l;Training Methods;;;;;;;;;;;;x
+no_foreign_training;Local Training Methods;;;;;;;;;;;;x
+yes_foreign_training;Foreign Training Methods;;;;;;;;;;;;x
+no_foreign_training_desc;Troops are trained in the traditional manner.;;;;;;;;;;;;x
+yes_foreign_training_desc;Troops trained by foreign military advisors or using foreign techniques.;;;;;;;;;;;;x
+foreign_weapons;Weapon Designs;;;;;;;;;;;;x
+foreign_weapons_l;Weapon Designs;;;;;;;;;;;;x
+no_foreign_weapons;Local Weapons;;;;;;;;;;;;x
+yes_foreign_weapons;Imported Weapons;;;;;;;;;;;;x
+no_foreign_weapons_desc;Traditional weapons are used in our armies.;;;;;;;;;;;;x
+yes_foreign_weapons_desc;This is my BOOMSTICK!;;;;;;;;;;;;x
+military_constructions;Military Constructions;;;;;;;;;;;;x
+military_constructions_l;Military Constructions;;;;;;;;;;;;x
+no_military_constructions;Simple Constructions;;;;;;;;;;;;x
+yes_military_constructions;Advanced Constructions;;;;;;;;;;;;x
+no_military_constructions_desc;Fortifications are built in our traditional way or not built at all.;;;;;;;;;;;;x
+yes_military_constructions_desc;Forts are built in the western style and their construction is supervised by foreigners.;;;;;;;;;;;;x
+foreign_officers;Officer Training;;;;;;;;;;;;x
+foreign_officers_l;Officer Training;;;;;;;;;;;;x
+no_foreign_officers;Local Officer Training;;;;;;;;;;;;x
+yes_foreign_officers;Foreign Officer Training;;;;;;;;;;;;x
+no_foreign_officers_desc;Local officers lead our troops and are trained in our traditional ways.;;;;;;;;;;;;x
+yes_foreign_officers_desc;Our troops are now trained, assisted and sometimes led by foreign officers.;;;;;;;;;;;;x
+army_schools;Army Training;;;;;;;;;;;;x
+army_schools_l;Army Training;;;;;;;;;;;;x
+no_army_schools;Ad Hoc;;;;;;;;;;;;x
+yes_army_schools;Army Schools;;;;;;;;;;;x
+no_army_schools_desc;We learn on the field of battle.;;;;;;;;;;;;x
+yes_army_schools_desc;Officers are trained in professional army academies before leading men into battle.;;;;;;;;;;;;x
+foreign_naval_officers;Naval Officers;;;;;;;;;;;;x
+foreign_naval_officers_l;Naval Officers;;;;;;;;;;;;x
+no_foreign_naval_officers;Local Naval Officers;;;;;;;;;;;;x
+yes_foreign_naval_officers;Foreign Naval Officers;;;;;;;;;;;;x
+no_foreign_naval_officers_desc;Local officers command our ships.;;;;;;;;;;;;x
+yes_foreign_naval_officers_desc;Foreign officers advise our captains.;;;;;;;;;;;;x
+naval_schools;Naval Training;;;;;;;;;;;;x
+naval_schools_l;Naval Training;;;;;;;;;;;;x
+no_naval_schools;Ad Hoc;;;;;;;;;;;;x
+yes_naval_schools;Navy Schools;;;;;;;;;;;;x
+no_naval_schools_desc;Our naval officers are trained in the field of battler or knowledge is transmitted informally.;;;;;;;;;;;;x
+yes_naval_schools_desc;Our naval officers are trained in special naval academies and are taught by foreigners in the arts of naval warfare.;;;;;;;;;;;;x
+foreign_navies;Foreign Ships;;;;;;;;;;;;x
+foreign_navies_l;Foreign Ships;;;;;;;;;;;;x
+no_foreign_navies;Locally Produced Ships;;;;;;;;;;;;x
+yes_foreign_navies;Imported Ships;;;;;;;;;;;;x
+no_foreign_navies_desc;Locally manufactured ships.;;;;;;;;;;;;x
+yes_foreign_navies_desc;We import strong ships designs from the west.;;;;;;;;;;;;x
+cut_down_to_size_boxer;Put down Boxer Rebellion;Mettre fin à la révolte des Boxers;Schlage den Boxeraufstand nieder;;;;;;;;;;;x
+cut_down_to_size_boxer_desc;Force another §Ycountry§W to disarm and pay reparations to us;Forcrer un autre §Ypays§W à désarmer et à nous payer des réparations;Zwinge ein anderes §YLand§W, abzurüsten und Reparationen an uns zu zahlen;;;;;;;;;;;x
+NUMBER_OF_REBELS_READY;§YRebel brigades ready to join in a rising§W;§YBrigades rebelles prêtes à se joindre à un soulèvement§!;§YRebellenbrigaden kurz vor Beitritt zu einer Auflehnung§!;;;;;;;;;;;x
+NUMBER_OF_REBELS_ACTIVE;§YRebel brigades active in revolt§W;§YBrigades rebelles actives dans la révolte§!;§YRebellenbrigaden in Aufständen aktiv§!;;;;;;;;;;;x
+TECH_YEAR_MODIFIER;Cost modifier from years known: $VAL$;Modificateur du coût pour les années connues : $VAL$;Kostenmodifikator durch bekannte Jahre: $VAL$;;;;;;;;;;;x
+ECONOMICREFORM_SETUP;When enacting an economic reform;En adoptant une réforme économique;Beim Verabschieden einer Wirtschaftsreform;;;;;;;;;;;x
+ECONOMICREFORM_HEADER;Political News in $COUNTRY$;Nouvelles politiques en $COUNTRY$;Politische Neuigkeiten in $COUNTRY$;;;;;;;;;;;x
+ECONOMICREFORM_1;Economic Reforms in $COUNTRY$;Réformes économiques en $COUNTRY$;Wirtschaftsreformen $COUNTRY$;;;;;;;;;;;x
+ECONOMICREFORM_2;$MONARCHTITLE$, we have now enacted;$MONARCHTITLE$, nous avons adopté;$MONARCHTITLE$, wir haben nun verabschiedet:;;;;;;;;;;;x
+ECONOMICREFORM_3;$ISSUE$;$ISSUE$;$ISSUE$;;$ISSUE$;;;;;;;;;x
+ECONOMICREFORM_4;in;en;in;;;;;;;;;;;x
+ECONOMICREFORM_5;$CATEGORY$;$CATEGORY$;$CATEGORY$;;;;;;;;;;;x
+ECONOMICREFORM_6;*;*;*;;*;;;;;;;;;x
+ECONOMICREFORM_LOG;We enacted $ISSUE$ in $CATEGORY$.;Nous avons adopté $ISSUE$ en $CATEGORY$.;Wir haben $ISSUE$ in $CATEGORY$ verabschiedet.;;;;;;;;;;;x
+ECONOMICREFORM_BTN1;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+ECONOMICREFORM_BTN2;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+ECONOMICREFORM_BTN3;Go To;Voir;Gehe zu;;Ir allí;;;;;;;;;x
+ECONOMICREFORM_MAP;*;*;*;;*;;;;;;;;;x
+ECONOMICREFORM_BAD_SETUP;When removing an economic reform;Annulation d'une réforme économique;Beim Entfernen einer Wirtschaftsreform;;;;;;;;;;;x
+ECONOMICREFORM_BAD_HEADER;Political News in $COUNTRY$;Nouvelle politique en $COUNTRY$;Politische Neuigkeiten in $COUNTRY$;;;;;;;;;;;x
+ECONOMICREFORM_BAD_1;Economic Reforms Revoked in $COUNTRY$;Réformes économiques révoquées in $COUNTRY$;Wirtschaftsreformen widerrufen in $COUNTRY$;;;;;;;;;;;x
+ECONOMICREFORM_BAD_2;$MONARCHTITLE$, we have now revoked benefits in;$MONARCHTITLE$, nous avons renoncé aux bénéfices de;$MONARCHTITLE$, wir haben nun Vorteile widerrufen in;;;;;;;;;;;x
+ECONOMICREFORM_BAD_3;$CATEGORY$;$CATEGORY$;$CATEGORY$;;$CATEGORY$;;;;;;;;;x
+ECONOMICREFORM_BAD_4;from $OLD$ to $ISSUE$.;de $OLD$ pour $ISSUE$.;von $OLD$ auf $ISSUE$.;;;;;;;;;;;x
+ECONOMICREFORM_BAD_5;*;*;*;;*;;;;;;;;;x
+ECONOMICREFORM_BAD_6;*;*;*;;*;;;;;;;;;x
+ECONOMICREFORM_BAD_LOG;We revoked $OLD$ in $CATEGORY$ to $ISSUE$.;Nous avons annulé $OLD$ en $CATEGORY$ pour $ISSUE$.;Wir haben $OLD$ in $CATEGORY$ auf $ISSUE$ widerrufen.;;;;;;;;;;;x
+ECONOMICREFORM_BAD_BTN1;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+ECONOMICREFORM_BAD_BTN2;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+ECONOMICREFORM_BAD_BTN3;Go To;Voir;Gehe zu;;Ir allí;;;;;;;;;x
+ECONOMICREFORM_BAD_MAP;*;*;*;;*;;;;;;;;;x
+MILITARYREFORM_SETUP;When enacting a military reform;En adoptant une réforme militaire;Beim Verabschieden einer Militärreform;;;;;;;;;;;x
+MILITARYREFORM_HEADER;Political News in $COUNTRY$;Nouvelle politique en $COUNTRY$;Politische Neuigkeiten in $COUNTRY$;;;;;;;;;;;x
+MILITARYREFORM_1;Military Reforms in $COUNTRY$;Réformes militaires en $COUNTRY$;Militärreformen in $COUNTRY$;;;;;;;;;;;x
+MILITARYREFORM_2;$MONARCHTITLE$, we have now enacted;$MONARCHTITLE$, nous avons adopté;$MONARCHTITLE$, wir haben nun verabschiedet:;;;;;;;;;;;x
+MILITARYREFORM_3;$ISSUE$;$ISSUE$;$ISSUE$;;$ISSUE$;;;;;;;;;x
+MILITARYREFORM_4;in;en;in;;;;;;;;;;;x
+MILITARYREFORM_5;$CATEGORY$;$CATEGORY$;$CATEGORY$;;;;;;;;;;;x
+MILITARYREFORM_6;*;*;*;;*;;;;;;;;;x
+MILITARYREFORM_LOG;We enacted $ISSUE$ in $CATEGORY$.;Nous avons adopté $ISSUE$ en $CATEGORY$.;Wir haben $ISSUE$ in $CATEGORY$ verabschiedet.;;;;;;;;;;;x
+MILITARYREFORM_BTN1;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+MILITARYREFORM_BTN2;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+MILITARYREFORM_BTN3;Go To;Voir;Gehe zu;;Ir allí;;;;;;;;;x
+MILITARYREFORM_MAP;*;*;*;;*;;;;;;;;;x
+MILITARYREFORM_BAD_SETUP;When removing a military reform;Annulation d'une réforme militaire;Beim Widerruf einer Militärreform;;;;;;;;;;;x
+MILITARYREFORM_BAD_HEADER;Political News in $COUNTRY$;Nouvelle politique en $COUNTRY$;Politische Neuigkeiten in $COUNTRY$;;;;;;;;;;;x
+MILITARYREFORM_BAD_1;Military Reforms Revoked in $COUNTRY$;Réformes militaires annulées en $COUNTRY$;Militärreformen in $COUNTRY$ widerrufen;;;;;;;;;;;x
+MILITARYREFORM_BAD_2;$MONARCHTITLE$, we have now revoked benefits in;$MONARCHTITLE$, nous avons renoncé aux bénéfices de;$MONARCHTITLE$, wir haben nun Vorteile widerrufen in;;;;;;;;;;;x
+MILITARYREFORM_BAD_3;$CATEGORY$;$CATEGORY$;$CATEGORY$;;$CATEGORY$;;;;;;;;;x
+MILITARYREFORM_BAD_4;from $OLD$ to $ISSUE$.;de $OLD$ pour $ISSUE$.;von $OLD$ auf $ISSUE$.;;;;;;;;;;;x
+MILITARYREFORM_BAD_5;*;*;*;;*;;;;;;;;;x
+MILITARYREFORM_BAD_6;*;*;*;;*;;;;;;;;;x
+MILITARYREFORM_BAD_LOG;We revoked $OLD$ in $CATEGORY$ to $ISSUE$.;Nous avons supprimé $OLD$ en $CATEGORY$ pour $ISSUE$.;Wir haben $OLD$ in $CATEGORY$ auf $ISSUE$ widerrufen.;;;;;;;;;;;x
+MILITARYREFORM_BAD_BTN1;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+MILITARYREFORM_BAD_BTN2;OK;D'accord;¿¹;;Aceptar;;;;;;;;;x
+MILITARYREFORM_BAD_BTN3;Go To;Voir;Gehe zu;;Ir allí;;;;;;;;;x
+MILITARYREFORM_BAD_MAP;*;*;*;;*;;;;;;;;;x
+MODIFIER_CIVILIZATION_PROGRESS;Civilization Progress;;;;;;;;;;;;x
+SUPPRESSION_TECH;Suppression efficiency;;;;;;;;;;;;x
+REFORM_RESEARCH_COST;Research Cost: §Y$COST$§!;;;;;;;;;;;;x
+POLITICS_CIVILIZE;Westernize;;;;;;;;;;;;x
+CIVILIZE_DESC;Fully embrace western ideas. This will give us access to the technological advances of our sphere leader;;;;;;;;;;;;x
+CIVILIZE_NO_MASTER_DESC;Fully embrace western ideas. This will give us access to the technological advances from around the world;;;;;;;;;;;;x
+INFLUENCE_RELATION;Relations;;;;;;;;;;;;x
+NO_CIV_PROGRESS;We have made no progress towards westernization. We need to enact military or economic reforms;;;;;;;;;;;;x
+RESEARCH_POINTS_LABEL;Research Points:;;;;;;;;;;;;x
+MODIFIER_UNCIV_ECONOMIC;Economic reform cost;;;;;;;;;;;;x
+MODIFIER_UNCIV_MILITARY;Military reform cost;;;;;;;;;;;;x
+MODIFIER_SELF_UNCIV_ECONOMIC;Economic reform cost;;;;;;;;;;;;x
+MODIFIER_SELF_UNCIV_MILITARY;Military reform cost;;;;;;;;;;;;x
+MODIFIER_LAND_UNIT_START_EXPERIENCE;Land Starting Experience;;;;;;;;;;;;x
+MODIFIER_NAVAL_UNIT_START_EXPERIENCE;Naval Starting Experience;;;;;;;;;;;;x
+MODIFIER_ADMINISTRATIVE_EFFICIENCY;Administrative Efficiency;;;;;;;;;;;;x
+ARMY_TECHNOLOGY_LEVELS;Army Tech: $VAL$/$MAX$;;;;;;;;;;;;x
+NAVY_TECHNOLOGY_LEVELS;Naval Tech: $VAL$/$MAX$;;;;;;;;;;;;x
+MODIFIER_TARIFF_EFFICIENCY;Tariff Efficiency;;;;;;;;;;;;x
+MODIFIER_MAX_LOAN_AMOUNT;Max loan amount;;;;;;;;;;;;x
+PROD_YOUR_CURRENT_BUDGET;Your current budget:;:;;;;;;;;;;;x
+PROD_YOUR_INVESTMENT;Your investment:;;;;;;;;;;;;x
+MODIFIER_LAND_ATTACK;Land unit attack;;;;;;;;;;;;x
+MODIFIER_NAVAL_ATTACK;Naval unit attack;;;;;;;;;;;;x
+MODIFIER_LAND_DEFENSE;Land unit defence;;;;;;;;;;;;x
+MODIFIER_NAVAL_DEFENSE;Naval unit defence;;;;;;;;;;;;x
+free_press_promised;Free press promised;;;;;;;;;;;;x
+yes_meeting_promised;Right to public meetings promised;;;;;;;;;;;;x
+trade_unions_promised;Trade unions promised;;;;;;;;;;;;x
+free_press_promised_desc;We have told the people they will have a Free press - they will expect us to make good our word soon.;;;;;;;;;;;;x
+yes_meeting_promised_desc;We have told the people they will have the right to Public meetings, they will expect us to make good our word soon;;;;;;;;;;;;x
+trade_unions_promised_desc;We have told the people they will have Trade unions - they will expect us to make good our word soon.;;;;;;;;;;;;x
+recent_safari;Recent safari;;;;;;;;;;;;x
+recent_safari2;Too many safaris;;;;;;;;;;;;x
+recent_safari_desc;We have had a safari recently;;;;;;;;;;;;x
+recent_safari2_desc;Altogether too many safaris have been had recently;;;;;;;;;;;;x
+unciv_reactionary_rebels_title;Reactionary;;;;;;;;;;;;x
+unciv_reactionary_rebels_name;$COUNTRY$ Reactionaries;;;;;;;;;;;x;
+unciv_reactionary_rebels_desc;Reactionary rebels long to live in the traditional manner of their ancestors and reject all notion of copying the mannerisms of Europeans.;;;;;;;;;;;;x
+unciv_reactionary_rebels_army;$COUNTRY_ADJ$ Army;;;;;;;;;;;;x
+SET_ECONOMIC_REFORM_EFFECT;Economic reform selected: §Y$NAME$§W.\n;;;;;;;;;;;;x
+SET_MILITARY_REFORM_EFFECT;Military reform selected: §Y$NAME$§W.\n;;;;;;;;;;;;x
+NATIONALIZE_INDUSTRY_EFFECT;Perform Nationalization\n;;;;;;;;;;;x
+DIPLOMACY_ALMOST_WESTERN_NATION_STATUS;Partially Westernized Nation;;;;;;;;;;;;x
+DIPLOMACY_PRIMITIVENATION_STATUS;Primitive Nation;;;;;;;;;;;;x
+UNCIV_CANT_RESEARCH;Westernize to be able to research;;;;;;;;;;;;x
+TB_NATIONALFOCUS_CULTURE;§Y$NUM$§W people of primary/accepted cultures give us §Y$FOCUS$§W focus points;;;;;;;;;;;;x
+meiji_restoration_boost;Meiji reformation.;;;;;;;;;;;;x
+meiji_restoration_boost_desc;Progress in the name of the Emperor!;;;;;;;;;;;;x
+OTHER_PORT;This is a naval base that we do not have access to;;;;;;;;;;;;x
+MODIFIER_UNCIV_ECONOMIC_UH;Upper house support;;;;;;;;;;;;x
+MODIFIER_UNCIV_MILITARY_UH;Upper house support;;;;;;;;;;;;x
+MOVEMENT_RADICALISM_ADJUST;§Y$MOVEMENT$§W Radicalism: $AMOUNT$;;;;;;;;;;;;x
+MILITARY_REFORM_COST_DESC;Cost modifier for military reforms:;;;;;;;;;;;;x
+ECONOMIC_REFORM_COST_DESC;Cost modifier for economic reforms:;:;;;;;;;;;;;x
+MAPMODE_19;Civilization Level;;;;;;;;;;;;x
+CHI_absolute_monarchy;Empire of China;;;;;;;;;;;;x
+EVTOPTB23212;Keep looking at the sky!;;;;;;;;;;;;x
+LOSE_CIVILIZED_EFFECT;We shall be known as an §YUncivilized Nation§W\n;;;;;;;;;;;;x
+french_growth_nerf;Low Birth Rates;;;;;;;;;;;;x
+french_growth_nerf_desc;A combination of many factors has led to low fertility rates amongst our people.;:;;;;;;;;;;;x
+EVTNAME37226;Population decline;;;;;;;;;;;;x
+EVTDESC37226;After a very long period of being the most populous nation in Europe, Kivotos had an extremely low birth rate for most of the 19th and 20th centuries for reasons still not understood. By the end of the Victorian era they would find itself eclipsed by Green Winter, Gehenna, the Trinity, and Siracusa in terms of total population.;;;;;;;;;;;;x
+EVTOPTA37226;This is quite a blow!;;;;;;;;;;;;x
+nationalize_title;Nationalize the Industry;;;;;;;;;;;;x
+nationalize_desc;No more will the foreign dogs grow fat off of the sweat of our people! The time has come to seize all assets owned by outsiders, to be cared for by the state.;;;;;;;;;;;;x
+EVTNAME90950;The $FROMCOUNTRY_ADJ$ Nationalization Program;;;;;;;;;;;;x
+EVTDESC90950;In these decisive days in the history of mankind, these days in which truth struggles to have itself recognized in the international chaos where powers of evil domination and imperialism have prevailed, $FROMCOUNTRY$ stands firmly to preserve its sovereignty and its dignity against imperialistic schemes of a number of nations who have uncovered their desires for domination and supremacy. In these days and in such circumstances $FROMCOUNTRY$ has resolved to show the world that when nations decide to preserve their sovereignty, they will do that all right and that when these nations are fully determined to defend their rights and maintain their dignity, they will undoubtedly succeed in achieving their ends.\n A spokesperson of the $FROMCOUNTRY_ADJ$ government announced the nationalization of all foreign investments in the country. Great Powers and investors demonstrated their outrage at their decision and some in our own government are calling for harsh measures to set an example.;;;;;;;;;;;;x
+EVTOPTA90950;$COUNTRY_ADJ$ investments need to be protected.;;;;;;;;;;;;x
+EVTOPTB90950;We respect $FROMCOUNTRY_ADJ$ sovereignty.;;;;;;;;;;;;x
+MOVEMENT_RADICALISM;Movement Radicalism;;;;;;;;;;;;x
+MOVEMENT_RADICALISM_DESC;This describes how much the people of the movement trust the political process in your country to get them what they want. A movement with a high value (§Y100§W) will convert to a rebel uprising if not suppressed;;;;;;;;;;;;x
+NUMBER_MOVEMENT_SUPPORTERS;Number of supporters;;;;;;;;;;;;x
+NUMBER_MOVEMENT_SUPPORTERS_DESC;The larger the movement the harder it is to suppress. If you enact a reform with less support all movements with more support will become more radical;;;;;;;;;;;;x
+PRODUCTION_CLOSE_FACTORY_BECAUSE_FOREIGN_TOOLTIP;Cannot close foreign factory\n;;;;;;;;;;;;x
+CAN_NATIONALIZE;Have foreign investors;;;;;;;;;;;;x
+IS_NOT_IN_A_SPHERE;Not in a sphere of influence.;;;;;;;;;;;;x
+ACTIVATE_TECH_EFFECT;Activate technology: §Y$NAME$§W;;;;;;;;;;;;x
+TECHNOLOGYVIEW_NO_RESEARCH_UNCIV_TOOLTIP;High level technology is only available to civilized nations. By westernizing in the §Ypolitics tab§W you can acquire base technology and start researching on your own instead.;;;;;;;;;;;x
+RELATION_BETWEEN;Current relation between $COUNTRY1$ and $COUNTRY2$: $RELATION$;;;;;;;;;;;;x
+ADD_RELATIVE_INCOME_EFFECT;Treasury: £$VALUE$;Trésor :  $VALUE$ ¤;Schatzkammer: $VALUE$¤;;;;;;;;;;;x
+CORRUPTION_LESS_THAN;Corruption less than ;;;;;;;;;;;;x
+CORRUPTION_MORE_THAN;Corruption more than ;;;;;;;;;;;;x
+MOVEMENT_RADICALISM_FROM_SIZE;Population support: $VAL$ ;;;;;;;;;;;;x
+dar_al_funun;The Dar al-Funun.;;;;;;;;;;;x
+dar_al_funun_desc;The first modern university in Persia.;;;;;;;;;;;x
+BOL_2305;Atacama;;;;;;;;;;;x
+BOL_2314;Villa Imperial de Potosi Province;;;;;;;;;;;x
+serfdom_not_abolished;Serfdom not abolished;;;;;;;;;;;;x
+XIN;Xinjiang;Xinjiang;Xinjiang;;;;;;;;;;;x
+YNN;Yunnan;Yunnan;Yunnan;;;;;;;;;;;x
+GXI;Guangxi;Guangxi;Guangxi;;;;;;;;;;;x
+MCK;Manchuria;Mandchourie;Manchuria;;;;;;;;;;;x
+LEADERSHIP;Leadership;;;;;;;;;;;;x
+XBI;Xibei San Ma;Qinghai;Qinghai;;;;;;;;;;;x
+EVTNAME23213;The Mountains of Madness;;;;;;;;;x;;
+EVTDESC23213;Our expedition to the South Pole has awoken something horrible. In the ruins of a vast alien city they discovered things unidentifiable as either plants or animals. Things that ruled the Earth in the ancient past. Things that are returning and are filled with unspeakable hungers.;;;;;;;;;;x;;
+EVTOPTA23213;Well this isn't good...;;;;;;;;x;;

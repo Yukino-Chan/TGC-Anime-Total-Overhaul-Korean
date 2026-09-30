@@ -1,0 +1,74 @@
+political_decisions = {
+
+	#Description: Rename Christiania back to Oslo.
+	name_oslo = {
+		picture = declare_republic_of_neuchatel
+		potential = {
+			owns = 313
+			is_culture_group = scandinavian
+			NOT = { has_global_flag = oslo_is_back }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			OR = {
+				mass_politics = 1
+				year = 1925
+			}
+		}
+
+		effect = {
+			set_global_flag = oslo_is_back
+			prestige = 4
+			313 = { change_province_name = "¿À½½·Î" }
+		}
+	}
+
+	#Description: Claim Greater Norway, including Greenland, Iceland, the Faroe Islands, Orkney and Shetland, northern Finland and northern Karelia, and parts of Sweden
+	greater_norway = {
+		picture = dreams_of_empire
+		potential = {
+			tag = NOR
+			NOT = { has_country_flag = greater_norway }
+		}
+
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			OR = {
+				ruling_party_ideology = fascist
+				is_greater_power = yes
+				AND = {
+					is_secondary_power = yes
+					war_policy = jingoism
+					invention = manifest_destiny
+					invention = nostalgic_romanticism
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = greater_norway
+			badboy = 10
+			GRN = { all_core = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			ICL = { all_core = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			253 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Faroe Islands
+			1724 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Orkney and Shetland
+			982 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Petsamo
+			2587 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Kola
+			338 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Tornel
+			3379 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Kuolajaarvi
+			319 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Ostersund
+			330 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Borls
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+}

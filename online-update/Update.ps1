@@ -4,11 +4,14 @@ param(
     [ValidateSet('Check','Update','Restore')][string]$Action='Update',
     [string]$GamePath,
     [string]$DocumentsPath,
-    [string]$BackupId
+    [string]$BackupId,
+    [ValidateSet('Auto','ko','en')][string]$Language='Auto',
+    [switch]$ChooseLanguage
 )
 Set-StrictMode -Version 3.0
 $ErrorActionPreference='Stop'
 Import-Module (Join-Path $PSScriptRoot 'Online-Core.psm1') -Force -DisableNameChecking
+Import-Module (Join-Path $PSScriptRoot 'Language.psm1') -Force -DisableNameChecking
 $utf8=[Text.UTF8Encoding]::new($false)
 $mutex=$null
 function Save-Json($Path,$Value) {
@@ -48,16 +51,19 @@ function Validate-Files($Catalog,$Root) {
     }
     Write-Progress -Activity '파일 검증' -Completed
 }
-function Invoke-Setup($Root,$Mode) {
+function Invoke-Setup($Root,$Mode,[string]$Lang) {
     $args=@('-NoProfile','-STA','-ExecutionPolicy','Bypass','-File',(Join-Path $Root 'Setup.ps1'),'-Action',$Mode)
     if ($Mode -ne 'Verify') {
         $args+=@('-GamePath',$GamePath,'-DocumentsPath',$DocumentsPath)
         if ($Mode -eq 'Restore' -and $BackupId) { $args+=@('-BackupId',$BackupId) }
+        if ($Mode -eq 'Install' -and $Lang) { $args+=@('-Language',$Lang) }
     }
     & "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe" @args
     if ($LASTEXITCODE -ne 0) { throw "설치 도구가 실패했습니다 ($Mode). 위 오류와 복원 안내를 확인하세요." }
 }
 try {
+    if ($Action -ne 'Update' -and ($Language -ne 'Auto' -or $ChooseLanguage)) { throw 'Language selection applies only to Update.' }
+    if ($ChooseLanguage -and $Language -ne 'Auto') { throw 'Use either -ChooseLanguage or -Language.' }
     $trust=Read-Json (Join-Path $PSScriptRoot 'trust.json')
     if ($trust.schema -ne 1 -or $trust.repository -cne 'Yukino-Chan/TGC-Anime-Total-Overhaul-Korean') { throw '지원하지 않는 업데이트 설정입니다.' }
     $cache=Join-Path ([Environment]::GetFolderPath('LocalApplicationData')) 'TGCNV-Updater'
@@ -103,6 +109,8 @@ try {
     if (-not $DocumentsPath) { throw '문서 폴더를 지정하세요 (-DocumentsPath).' }
     $DocumentsPath=[IO.Path]::GetFullPath($DocumentsPath)
     $profile=Resolve-SafeChild $DocumentsPath 'Paradox Interactive/Victoria II/TGCNV'
+    $installedLang=Read-InstalledLanguage (Join-Path $GamePath 'mod/TGCNV')
+    if (-not $installedLang) { $installedLang='ko' }
     if ($Action -eq 'Update') { Assert-GameClosed }
     Write-Host '최신 배포 서명과 파일 목록을 확인합니다...'
     $envelopeRaw=Receive-LimitedBytes 'https://raw.githubusercontent.com/Yukino-Chan/TGC-Anime-Total-Overhaul-Korean/update-feed/channel.json' 131072 $trust.repository
@@ -129,6 +137,18 @@ try {
     $catalog=Read-ValidatedCatalog $catalogRaw $trust.repository
     if ($catalog.Release -cne $channel.release) { throw '배포 번호가 일치하지 않습니다.' }
     Save-Json $waterPath @{sequence=$channel.sequence;catalog_sha256=$channel.catalog_sha256}
+    $fileIndex=@{}
+    foreach ($f in $catalog.Files) { $fileIndex[$f.Path]=$f }
+    $packHasLanguage=$fileIndex.ContainsKey('payload/game/mod/TGCNV/runtime/languages/catalog.json')
+    $requestedLang=$null
+    if ($Action -eq 'Update') {
+        if ($ChooseLanguage) {
+            if (-not $packHasLanguage) { throw 'This release does not offer English / 이 배포는 영문을 지원하지 않습니다.' }
+            $requestedLang=Show-LanguagePicker -Current $installedLang
+        } elseif ($Language -ne 'Auto') { $requestedLang=$Language }
+        if (-not $packHasLanguage -and ($requestedLang -eq 'en' -or (-not $requestedLang -and $installedLang -eq 'en'))) { throw 'English is unavailable; your preference was preserved.' }
+    }
+    $languageChange=($null -ne $requestedLang) -and ($requestedLang -cne $installedLang)
     $reuse=@{}
     $missing=New-Object 'System.Collections.Generic.HashSet[string]'
     $changed=0
@@ -140,6 +160,25 @@ try {
         if ($f.Path.StartsWith('payload/game/')) { $candidate=Resolve-SafeChild $GamePath $f.Path.Substring(13) }
         elseif ($f.Path.StartsWith('payload/profile/')) { $candidate=Resolve-SafeChild $profile $f.Path.Substring(16) }
         elseif ($previousPack) { $candidate=Resolve-SafeChild $previousPack $f.Path }
+        # Only the signed incoming catalog can authorize an intentional variant.
+        # A cached or installed language file is never trusted merely by equality.
+        if ($installedLang -eq 'en' -and $candidate -and [IO.File]::Exists($candidate)) {
+            $variantRel=Get-LanguageVariantPath $f.Path 'en'
+            if ($variantRel -and $fileIndex.ContainsKey($variantRel)) {
+                $v=$fileIndex[$variantRel]
+                if ((Get-Item -LiteralPath $candidate).Length -eq $v.Bytes -and (Get-Sha256 $candidate) -ceq $v.Sha256) {
+                    $canonicalRel=Get-LanguageVariantPath $f.Path 'ko'
+                    $candidate=Resolve-SafeChild $GamePath $canonicalRel.Substring(13)
+                }
+            } elseif ($f.Path -cin @('payload/game/mod/TGCNV.mod','payload/game/mod/TGO.mod') -and $previousPack) {
+                $canonical=Resolve-SafeChild $previousPack $f.Path
+                if ([IO.File]::Exists($canonical) -and (Get-Sha256 $canonical) -ceq $f.Sha256) {
+                    $converted=if ($f.Path -ceq 'payload/game/mod/TGO.mod') { Convert-MusicDescriptor ([IO.File]::ReadAllBytes($canonical)) 'en' } else { Convert-ModDescriptor ([IO.File]::ReadAllBytes($canonical)) 'en' }
+                    $expected=Byte-Hash $converted
+                    if ((Get-Sha256 $candidate) -ceq $expected) { $candidate=$canonical }
+                }
+            }
+        }
         if ($candidate -and [IO.File]::Exists($candidate) -and (Get-Item -LiteralPath $candidate).Length -eq $f.Bytes -and (Get-Sha256 $candidate) -ceq $f.Sha256) { $reuse[$f.Path]=$candidate }
         else {
             [void]$missing.Add($f.Asset)
@@ -155,7 +194,7 @@ try {
     if ($Action -eq 'Check') { exit 0 }
     # Even when all target files match, run the installer if no online installation
     # receipt exists: it also configures launcher/bootstrap files outside payload.
-    if ($changed -eq 0 -and $state -and $state.status -eq 'installed' -and $state.release -ceq $catalog.Release -and $state.game -ieq $GamePath -and $state.documents -ieq $DocumentsPath) {
+    if ($changed -eq 0 -and -not $languageChange -and $state -and $state.status -eq 'installed' -and $state.release -ceq $catalog.Release -and $state.game -ieq $GamePath -and $state.documents -ieq $DocumentsPath) {
         Write-Host '최신 배포가 설치되어 있습니다.'
         exit 0
     }
@@ -191,8 +230,11 @@ try {
     $state=@{schema=1;release=$catalog.Release;stage=$stageRel;game=$GamePath;documents=$DocumentsPath;status='prepared'}
     Save-Json $statePath $state
     Write-Host '기존 모드·캐시를 백업한 뒤 업데이트를 설치합니다. 세이브는 유지합니다.'
-    Invoke-Setup $pack 'Install'
+    $langArg=$null
+    if ($packHasLanguage) { $langArg=if ($requestedLang) { $requestedLang } else { 'Auto' } }
+    Invoke-Setup $pack 'Install' $langArg
     $state.status='installed'
+    $state.language=Read-InstalledLanguage (Join-Path $GamePath 'mod/TGCNV')
     Save-Json $statePath $state
     Write-Host '업데이트 완료. 이전 상태가 필요하면 Restore-Update.cmd를 실행하세요.'
 } catch {

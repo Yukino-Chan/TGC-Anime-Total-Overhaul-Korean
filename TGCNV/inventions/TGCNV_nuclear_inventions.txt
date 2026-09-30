@@ -1,0 +1,31 @@
+# Expensive decision/event projects, not research alone, unlock these inventions.
+# Existing saves with the old reactor invention still require the full weapons
+# certification chain. Inventions and tests never award a usable warhead.
+tgcnv_mana_nuclear_power = {
+	limit = {
+		tgcnv_ww2_chemistry_and_electricity_1943 = 1
+		tgcnv_ww2_chemistry_and_electricity_1945 = 1
+		has_country_flag = tgcnv_np_reactor_ready
+		OR = { rank = 5 has_country_flag = tgcnv_np_withdrawn }
+		NOT = { has_country_flag = tgcnv_np_review }
+		NOT = { has_country_modifier = tgcnv_nuclear_non_proliferation }
+	}
+	news = no
+	chance = { base = 100 }
+	effect = { activate_building = nuclear_power_plant }
+}
+
+tgcnv_nuclear_weapons = {
+	limit = {
+		tgcnv_ww2_chemistry_and_electricity_1943 = 1
+		tgcnv_ww2_chemistry_and_electricity_1945 = 1
+		invention = tgcnv_mana_nuclear_power
+		has_country_flag = tgcnv_np_test_ready
+		OR = { rank = 5 has_country_flag = tgcnv_np_withdrawn }
+		NOT = { has_country_flag = tgcnv_np_review }
+		NOT = { has_country_modifier = tgcnv_nuclear_non_proliferation }
+	}
+	news = no
+	chance = { base = 100 }
+	effect = { shared_prestige = 20 }
+}

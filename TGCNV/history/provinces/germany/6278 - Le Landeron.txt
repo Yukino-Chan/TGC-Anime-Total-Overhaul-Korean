@@ -1,0 +1,17 @@
+add_core = FRA
+add_core = GER
+owner = FRA
+controller = FRA
+trade_goods = grain
+terrain = plains
+life_rating = 32
+#terrain = farmlands
+
+party_loyalty = {
+	ideology = conservative
+	loyalty_value = 1
+}
+party_loyalty = {
+	ideology = liberal
+	loyalty_value = 30
+}

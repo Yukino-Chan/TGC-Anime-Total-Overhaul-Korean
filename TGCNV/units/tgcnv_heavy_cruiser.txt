@@ -1,0 +1,48 @@
+# TGCNV naval candidate. Native construction, movement, combat and repair.
+tgcnv_heavy_cruiser = {
+ icon = 28
+ naval_icon = 8
+ type = naval
+ sprite = Cruiser
+ active = no
+ unit_type = big_ship
+ capital = yes
+ move_sound = steam_move
+ select_sound = steam_selected
+ floating_flag = yes
+ can_build_overseas = no
+ colonial_points = 0
+ priority = 40
+ max_strength = 100
+ default_organisation = 45
+ maximum_speed = 17
+ weighted_value = 35.0
+ build_time = 330
+ build_cost = {
+  steamer_convoy = 300
+  artillery = 600
+  steel = 8000
+  canned_food = 80
+  regular_clothes = 80
+  telephones = 100
+ }
+ min_port_level = 4
+ limit_per_port = 1
+ supply_consumption_score = 35
+ supply_consumption = 0.15
+ supply_cost = {
+  steamer_convoy = 0.3
+  artillery = 0.1
+  canned_food = 0.5
+  fuel = 3.0
+  ammunition = 0.3
+  regular_clothes = 0.3
+  steel = 1
+ }
+ hull = 85
+ gun_power = 55
+ fire_range = 0.75
+ evasion = 0.15
+ torpedo_attack = 6
+}
+

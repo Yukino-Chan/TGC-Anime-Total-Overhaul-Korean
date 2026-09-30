@@ -465,9 +465,18 @@ def _upload_asset(gh, bootstrap, clobber):
         raise _gh_failure(proc, "gh release upload")
 
 
+def _public_asset_url(url, sha_hex):
+    if len(sha_hex) != 64 or any(c not in '0123456789abcdef' for c in sha_hex):
+        raise PublishError('Invalid installer SHA-256')
+    parts = urllib.parse.urlsplit(url)
+    query = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query) if k != 'sha256']
+    query.append(('sha256', sha_hex))
+    return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
+
+
 def _download_public_asset(url, sha_hex, size):
     data = _fetch_public_with_retries(
-        url,
+        _public_asset_url(url, sha_hex),
         max_bytes=MAX_BOOTSTRAP_BYTES,
         expected_sha256=sha_hex,
         expected_size=size,
@@ -548,7 +557,8 @@ def _publish_release(gh, bootstrap, notes_text, bootstrap_sha, bootstrap_size):
         "tag": INSTALLER_RELEASE_TAG,
         "release_id": release_id,
         "asset_name": INSTALLER_ASSET_NAME,
-        "asset_url": asset_url,
+        "asset_url": _public_asset_url(asset_url, bootstrap_sha),
+        "canonical_asset_url": asset_url,
         "sha256": bootstrap_sha,
         "bytes": bootstrap_size,
         "draft": bool(release.get("draft")),

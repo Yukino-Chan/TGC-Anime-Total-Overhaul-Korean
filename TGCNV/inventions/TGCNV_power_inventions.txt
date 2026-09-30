@@ -1,0 +1,23 @@
+# Existing nv_electrical_grid still unlocks the original coal station.
+# Independent inventions also reach saves where that discovery already happened.
+nv_oil_fired_generation = {
+	limit = {
+		electricity = 1
+		combustion_engine = 1
+		invention = nv_electrical_grid
+	}
+	news = no
+	chance = { base = 100 }
+	effect = { activate_building = oil_power_plant }
+}
+
+nv_hydroelectric_generation = {
+	limit = {
+		electricity = 1
+		steam_turbine = 1
+		invention = nv_electrical_grid
+	}
+	news = no
+	chance = { base = 100 }
+	effect = { activate_building = hydro_power_plant }
+}

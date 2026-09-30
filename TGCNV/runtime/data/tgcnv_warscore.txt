@@ -1,0 +1,6 @@
+# TGCNV peace cost: floor of each province's value when a war goal demands states
+# (po_demand_state, po_transfer_provinces). The native floor 1.000 means at least
+# 2.8% war score per province before the CB's peace_cost_factor.
+# 0.404 = 2,703 vanilla land provinces / 6,691 TGCNV land provinces,
+# so a province now costs at least 1.13% (x peace_cost_factor).
+province_floor = 0.404

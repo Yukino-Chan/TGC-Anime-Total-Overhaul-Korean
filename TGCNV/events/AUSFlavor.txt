@@ -1,0 +1,3108 @@
+country_event = {
+
+	id = 31501
+	title = "EVTNAME31501"
+	desc = "EVTDESC31501"
+	picture = "smoking"
+
+	trigger = { 
+		primary_culture = south_german
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1837
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1838
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31501"
+
+		rich_strata = { consciousness = 1 }
+	}
+}
+
+country_event = {
+
+	id = 31502
+	title = "EVTNAME31502"
+	desc = "EVTDESC31502"
+	picture = "Ferdinand"
+	news = yes
+	news_desc_long = "EVTDESC31502_NEWS_LONG"
+	news_desc_medium = "EVTDESC31502_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC31502_NEWS_SHORT"
+
+	trigger = { 
+		primary_culture = south_german
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		year = 1842
+		has_country_flag = monarchy_gov
+		NOT = { year = 1845 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1843
+		}
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1844
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31502"
+
+		ruling_party_ideology = conservative
+		upper_house = {
+			ideology = reactionary
+			value = 0.3
+		}
+		rich_strata = {
+			ideology = {
+				value = reactionary
+				factor = 0.3
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				factor = -2
+				ideology = conservative
+			}
+			scaled_militancy = {
+				factor = 4
+				ideology = liberal
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 31503
+	title = "EVTNAME31503"
+	desc = "EVTDESC31503"
+	picture = "Budapest"
+
+
+	trigger = { 
+		primary_culture = south_german
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		year = 1842
+		NOT = {
+			exists = HUN
+			year = 1848
+			has_country_flag = HungarianLanguage
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1843
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1844
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31503"
+
+		set_country_flag = HungarianLanguage
+		any_pop = {
+			limit = {
+				location = { is_core = HUN }
+				has_pop_culture = hungarian
+			}
+			militancy = -2
+			consciousness = -1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = slovak
+					has_pop_culture = croat
+					has_pop_culture = romanian
+				}
+			}
+			militancy = 2
+			consciousness = 1
+		}
+	}
+}
+
+country_event = {
+
+	id = 31504
+	title = "EVTNAME31504"
+	desc = "EVTDESC31504"
+	picture = "Ilija"
+	news = yes
+	news_desc_long = "EVTDESC31504_NEWS_LONG"
+	news_desc_medium = "EVTDESC31504_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC31504_NEWS_SHORT"
+
+	trigger = { 
+		primary_culture = south_german
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		year = 1843
+		OR = {
+			ruling_party_ideology = reactionary
+			ruling_party_ideology = conservative
+		}
+		NOT = {
+			exists = CRO
+			exists = SLO #Slovenia
+			year = 1852
+			has_country_flag = IlyaGarashinin
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1844
+		}
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1845
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31504"
+
+		set_country_flag = IlyaGarashinin
+		any_pop = {
+			limit = { has_pop_culture = serb }
+			militancy = 4
+			consciousness = 2
+		}
+		any_owned = {
+			limit = { culture = serb }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 365
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = croat
+					has_pop_culture = slovene
+				}
+			}
+			militancy = 2
+			consciousness = 1
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					culture = croat
+					culture = slovene
+				}
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 180
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 31505
+	title = "EVTNAME31505"
+	desc = "EVTDESC31505"
+	picture = "Sisi"
+	news = yes
+	news_desc_long = "EVTDESC31505_NEWS_LONG"
+	news_desc_medium = "EVTDESC31505_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC31505_NEWS_SHORT"
+
+	trigger = { 
+		primary_culture = south_german
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		year = 1897
+		has_country_flag = monarchy_gov
+		NOT = { year = 1900 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1898
+		}
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1899
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31502"
+
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_consciousness = {
+				factor = -2
+				ideology = conservative
+			}
+			scaled_consciousness = {
+				factor = -2
+				ideology = reactionary
+			}
+			militancy = -3
+		}
+	}
+}
+
+country_event = {
+
+	id = 31506
+	title = "EVTNAME31506"
+	desc = "EVTDESC31506"
+	picture = "theatre"
+
+	trigger = { 
+		primary_culture = south_german
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		year = 1911
+		expressionism = 1
+		NOT = { year = 1914 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1912
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1913
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA31502"
+
+		prestige = 6
+	}
+}
+
+country_event = {
+
+	id = 31507 #see 35400 for LOM parallel event
+	title = "EVTNAME35400"
+	desc = "EVTDESC35400"
+	picture = "Verdi"
+
+	trigger = { 
+		primary_culture = south_german
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		year = 1842
+		NOT = {	exists = LOM }
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1843
+		}
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1844
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA35400"
+		prestige = 30
+		any_pop = {
+			limit = { has_pop_culture = north_italian }
+			consciousness = 3
+			militancy = 6
+		}
+		any_owned = {
+			limit = { is_core = LOM }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 365
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 31508 # Committee for Polish Independance
+	title = "EVTNAME32501"
+	desc = "EVTDESC32501"
+	picture = "PopeLeo"
+
+	trigger = {
+		OR = {
+			owns = 699 # Posen
+			owns = 706 # Warsaw
+			owns = 714 # Tarnow
+		}
+		year = 1846
+		NOT = {
+			has_country_flag = committee_polish_independence
+			year = 1850
+			primary_culture = polish
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1847
+		}
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1848
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32501"
+
+		set_country_flag = committee_polish_independence
+		any_pop = {
+			limit = { has_pop_culture = polish }
+			militancy = 6
+			consciousness = 2
+		}
+		any_owned = {
+			limit = { culture = polish }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 365
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 31509 #Galicia and Lodomeria, the poorest region of Europe
+	title = "EVTNAME31509"
+	desc = "EVTDESC31509"
+	picture = "starving"
+
+	trigger = {
+		OR = {
+			owns = 704
+			owns = 705
+		}
+		year = 1875
+		NOT = {
+			primary_culture = polish
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1880
+		}
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1885
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31509"
+		set_country_flag = goloty_i_glodomerji
+		any_owned = {
+			limit = { is_core = GLM }
+			add_province_modifier = {
+				name = goloty_i_glodomerji
+				duration = 12775
+			}
+		}
+	}
+}
+
+
+country_event = {
+
+	id = 98007 # Hungarian revolutionaries demand free press
+	title = "EVTNAME98007"
+	desc = "EVTDESC98007"
+	picture = "revolution"
+
+	trigger = { 
+		primary_culture = south_german
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		OR = {
+			has_country_flag = liberal_revolution_in_progress
+			has_country_modifier = springtime_of_nations
+		}
+		NOT = {
+			exists = HUN
+			press_rights = free_press
+			has_global_flag = hungarian_revolution_occurred
+		}
+		any_state = {
+			any_owned_province = {
+				is_core = HUN
+				culture = hungarian
+			}
+			average_consciousness = 3
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			any_state = {
+				any_owned_province = {
+					is_core = HUN
+					culture = hungarian
+				}
+				average_militancy = 2
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA98007"
+
+		political_reform = free_press
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_militancy = {
+				factor = 2
+				ideology = reactionary
+			}
+		}
+		any_pop = {
+			limit = { has_pop_culture = hungarian }
+			militancy = 4
+			consciousness = 2
+		}
+		any_owned = {
+			limit = { culture = hungarian }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 365
+			}
+		}
+
+		ai_chance = { factor = 60 }
+	}
+
+	option = {
+		name = "EVTOPTB98007"
+
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_militancy = {
+				factor = -2
+				ideology = reactionary
+			}
+		}
+		any_pop = {
+			limit = { has_pop_culture = hungarian }
+			dominant_issue = {
+				factor = 0.2
+				value = free_press
+			}
+			militancy = 6
+			consciousness = 3
+		}
+		any_owned = {
+			limit = { culture = hungarian }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 548
+			}
+		}
+
+		ai_chance = { factor = 40 }
+	}
+}
+
+country_event = {
+
+	id = 98008 # Attempted Czech Coup
+
+	title = "EVTNAME98008"
+	desc = "EVTDESC98008"
+	news = yes
+	news_title = "EVTNAME98008_NEWS_TITLE"
+	news_desc_long = "EVTDESC98008_NEWS_LONG"
+	news_desc_medium = "EVTDESC98008_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC98008_NEWS_SHORT"
+	picture = "revolution"
+
+	trigger = { 
+		primary_culture = south_german
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		year = 1849
+		NOT = {
+			exists = BOH
+			exists = CZH
+		}
+		any_state = {
+			any_owned_province = {
+				is_core = CZH
+				culture = czech
+			}
+			average_consciousness = 3
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA98008"
+		any_pop = {
+			limit = {
+				location = { is_core = CZH }
+				has_pop_culture = czech
+			}
+			militancy = 6
+			consciousness = 3
+		}
+		any_owned = {
+			limit = { culture = czech }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 365
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 90016 # Archduke Ferdinand's Assassination
+
+	title = "EVTNAME90016"
+	desc = "EVTDESC90016"
+	news = yes
+	news_title = "EVTNAME90016_NEWS_TITLE"
+	news_desc_long = "EVTDESC90016_NEWS_LONG"
+	news_desc_medium = "EVTDESC90016_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC90016_NEWS_SHORT"
+	picture = "franz_ferdinand_assassination"
+	major = yes
+
+	trigger = {
+		year = 1914
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		has_country_flag = monarchy_gov
+		war = no
+		is_disarmed = no
+		OR = {
+			is_greater_power = yes
+			in_sphere = GER
+			in_sphere = GCF
+			in_sphere = NGF
+			in_sphere = PRU
+		}
+		exists = SER
+		SER = {
+			is_disarmed = no
+			neighbour = THIS
+		}
+		any_owned_province = {
+			is_core = SER
+			average_militancy = 4
+		}
+		NOT = {
+			has_country_flag = ferdinand_assassinated
+			revolt_percentage = .25
+			truce_with = SER
+			is_sphere_leader_of = SER
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		set_country_flag = ferdinand_assassinated
+	}
+
+	option = {
+		name = "EVTOPTA90016"
+
+		any_owned = {
+			limit = { culture = serb }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 365
+			}
+		}
+		any_pop = {
+			limit = {
+				location = { is_core = SER }
+				has_pop_culture = serb
+			}
+			militancy = 6
+		}
+		relation = {
+			who = SER
+			value = -200
+		}
+		leave_alliance = SER
+		war = {
+			target = SER
+			call_ally = yes
+			attacker_goal = { casus_belli = conquest_any }
+		}
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = -6
+			dominant_issue = {
+				factor = 0.05
+				value = jingoism
+			}
+		}
+
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.5
+				SER = { in_sphere = RUS }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB90016"
+
+		prestige = -50
+		any_owned = {
+			limit = { culture = serb }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 365
+			}
+		}
+		any_pop = {
+			limit = {
+				location = { is_core = SER }
+				has_pop_culture = serb
+			}
+			militancy = 6
+		}
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = 4
+			consciousness = 2
+			ideology = {
+				value = fascist
+				factor = 0.1
+			}
+		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 0.5
+				in_sphere = GER
+			}
+			modifier = {
+				factor = 0.5
+				in_sphere = GCF
+			}
+		}
+	}
+}
+
+## Krakow Uprising ##
+
+	country_event = {
+
+		id = 600050
+		title = "EVTNAME600050"
+		desc = "EVTDESC600050"
+		picture = "krakow_uprising"
+
+		trigger = {
+			tag = AUS
+			has_global_flag = krakow_uprising
+		}
+
+		mean_time_to_happen = { days = 1 }
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA600050" #Talk with the other powers
+
+			random_country = {
+				limit = {
+					owns = 549
+					OR = {
+						tag = PRU
+						tag = NGF
+						tag = GER
+						tag = GCF
+					}
+				}
+				country_event = 600052
+			}
+			RUS = { country_event = 600052 }
+			
+			any_owned = {
+				limit = { is_core = GLM }
+				add_province_modifier = { name = polish_revolt duration = 1080 }
+			}
+
+			ai_chance = {
+				factor = 0.95
+				modifier = {
+					factor = 0
+					KRA = { ai = no }
+				}
+			}
+		}
+
+		option = {
+			name = "EVTOPTB600050" #Suppress the Poles! Occupy Krakow!
+
+			6573 = { add_core = GLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			badboy = 10
+			prestige = -10
+			any_pop = { limit = { has_pop_culture = polish } militancy = 3 consciousness = 5 }
+			random_country = {
+				limit = {
+					OR = {
+						tag = AUS
+						tag = RUS
+						tag = NGF
+						tag = PRU
+					}
+					exists = yes
+					NOT = { tag = THIS }
+				}
+				relation = { who = THIS value = -150 }
+			}
+			random_country = {
+				limit = {
+					OR = {
+						tag = AUS
+						tag = RUS
+						tag = NGF
+						tag = PRU
+					}
+					exists = yes
+					NOT = { tag = THIS }
+				}
+				relation = { who = THIS value = -150 }
+			}
+
+			ai_chance = {
+				factor = 0.04
+				modifier = {
+					factor = 0
+					badboy = 0.5
+				}
+				modifier = {
+					factor = 0
+					KRA = { ai = no }
+				}
+			}
+		}
+
+		option = {
+			name = "EVTOPTC600050" #Ignore the Poles. They are harmless.
+
+			prestige = -80
+			any_pop = {
+				limit = { has_pop_culture = polish }
+				militancy = 4
+				consciousness = 6
+			}
+			set_global_flag = krakow_succeeded
+
+			ai_chance = {
+				factor = 0.01
+				modifier = { factor = 100 KRA = { ai = no } }
+			}
+		}
+	}
+
+	country_event = {
+
+		id = 600052
+		title = "EVTNAME600052"
+		desc = "EVTDESC600052"
+		picture = "krakow_uprising"
+
+		is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA600052" #Yes
+
+			random_owned = {
+				limit = { owner = { primary_culture = north_german } }
+				owner = { set_global_flag = prussia_agrees }
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = russian } }
+				owner = { set_global_flag = russia_agrees }
+			}
+
+			ai_chance = {
+				factor = 0.99
+				modifier = {
+					factor = 0.75
+					NOT = { relation = { who = AUS value = 0 } }
+				}
+				modifier = {
+					factor = 0.9
+					NOT = { relation = { who = AUS value = 50 } }
+				}
+			}
+		}
+
+		option = {
+			name = "EVTOPTB600052" #No
+
+			random_owned = {
+				limit = { owner = { primary_culture = north_german } }
+				owner = { set_global_flag = prussia_disagrees set_country_flag = prussia_disagrees }
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = russian } }
+				owner = { set_global_flag = russia_disagrees set_country_flag = russia_disagrees }
+			}
+			relation = { who = AUS value = -100 }
+			any_pop = {
+				limit = { is_culture_group = polish_culture_group }
+				militancy = 7
+				consciousness = 9
+			}
+
+			ai_chance = {
+				factor = 0.01
+				modifier = {
+					factor = 1.5
+					NOT = { relation = { who = AUS value = 0 } }
+				}
+				modifier = {
+					factor = 1.75
+					NOT = { relation = { who = AUS value = 50 } }
+				}
+			}
+		}
+	}
+
+	country_event = {
+
+		id = 600054
+		title = "EVTNAME600054"
+		desc = "EVTDESC600054"
+		picture = "polish_uprising_aus"
+
+		trigger = {
+			tag = AUS
+			has_global_flag = krakow_uprising
+			has_global_flag = prussia_agrees
+			has_global_flag = russia_agrees
+		}
+
+		mean_time_to_happen = { days = 4 }
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA600054" #to krakow!
+
+			clr_global_flag = prussia_agrees
+			clr_global_flag = russia_agrees
+			prestige = 20
+			badboy = 3
+			6573 = { add_core = GLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			any_pop = {
+				limit = { has_pop_culture = polish }
+				militancy = 1
+				consciousness = 5
+			}
+			casus_belli = { target = KRA type = conquest months = 100 }
+			ai_chance = { factor = 100 }
+		}
+
+		option = {
+			name = "EVTOPTB600054" # refuse to take action
+
+			clr_global_flag = prussia_agrees
+			clr_global_flag = russia_agrees
+			clr_country_flag = prussia_disagrees
+			clr_country_flag = russia_disagrees
+			prestige_factor = -0.3
+			any_pop = {
+				limit = { has_pop_culture = polish }
+				militancy = 4
+				consciousness = 6
+			}
+			set_global_flag = krakow_succeeded
+
+			ai_chance = { factor = 0 }
+		}
+	}
+
+	country_event = {
+
+		id = 600055
+		title = "EVTNAME600055"
+		desc = "EVTDESC600055"
+		picture = "polish_uprising_aus"
+
+		trigger = {
+			tag = AUS
+			OR = {
+				AND = {
+					has_global_flag = krakow_uprising
+					has_global_flag = prussia_disagrees
+					has_global_flag = russia_agrees
+				}
+				AND = {
+					has_global_flag = krakow_uprising
+					has_global_flag = prussia_agrees
+					has_global_flag = russia_disagrees
+				}
+				AND = {
+					has_global_flag = krakow_uprising
+					has_global_flag = prussia_disagrees
+					has_global_flag = russia_disagrees
+				}
+			}
+		}
+
+		mean_time_to_happen = { days = 4 }
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA600055" #We don't care
+
+			clr_global_flag = prussia_agrees
+			clr_global_flag = russia_agrees
+			clr_country_flag = prussia_disagrees
+			clr_country_flag = russia_disagrees
+			6573 = { add_core = GLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			casus_belli = { target = KRA type = conquest months = 100 }
+			badboy = 7
+			any_pop = {
+				limit = { has_pop_culture = polish }
+				militancy = 6
+				consciousness = 7
+			}
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = russia_disagrees
+						has_country_flag = prussia_disagrees
+					}
+				}
+				relation = { who = THIS value = -80 }
+				casus_belli = {	target = THIS type = humiliate months = 12 }
+			}
+
+			ai_chance = {
+				factor = 0.97
+				modifier = { factor = 0.5 is_disarmed = yes }
+				modifier = { factor = 0 badboy = 0.6 }
+			}
+		}
+
+		option = {
+			name = "EVTOPTB600055" # refuse to take action
+
+			clr_global_flag = prussia_agrees
+			clr_global_flag = russia_agrees
+			clr_country_flag = prussia_disagrees
+			clr_country_flag = russia_disagrees
+			prestige_factor = -0.2
+			any_pop = {
+				limit = { has_pop_culture = polish }
+				militancy = 4
+				consciousness = 6
+			}
+			set_global_flag = krakow_succeeded
+
+			ai_chance = {
+				factor = 0.02
+				modifier = { factor = 2 is_disarmed = yes }
+			}
+		}
+	}
+
+	country_event = {
+
+		id = 600056
+		title = "EVTNAME600056"
+		desc = "EVTDESC600056"
+		picture = "krakow_uprising"
+
+		trigger = {
+			OR = {	#r's note: day 1 country flag assignment?
+				tag = RUS
+				tag = PRU
+				tag = AUS
+				tag = KUK
+			}
+			NOT = { any_owned_province = { has_province_modifier = polish_spirit } }
+			KRA = { war = no exists = yes }
+			has_global_flag = krakow_succeeded
+			NOT = { year = 1870 }
+			any_owned_province = { any_core = { primary_culture = polish } }
+			NOT = { exists = POL }
+		}
+
+		mean_time_to_happen = { months = 24 }
+
+		option = {
+			name = "EVTOPTA600056"
+
+			random_owned = {
+				limit = { owner = { ai = yes } }
+				owner = { casus_belli = { target = KRA type = conquest months = 36 } }
+			}
+			any_owned = {
+				limit = { any_core = { primary_culture = polish } }
+				add_province_modifier = { name = polish_spirit duration = 180 }
+			}
+		}
+	}
+
+	country_event = {
+
+		id = 60055557
+		title = "EVTNAME60055557"
+		desc = "EVTDESC60055557"
+		picture = "polish_uprising_aus"
+
+		trigger = { 
+			primary_culture = south_german
+			OR = {
+				tag = AUS
+				tag = KUK
+			}
+			OR = {
+				has_global_flag = krakow_uprising
+				has_global_flag = krakow_succeeded
+			}
+			debt_law = serfdom
+		}
+
+		mean_time_to_happen = { months = 1 }
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA60055557"
+
+			set_country_flag = serfdom_abolished_generic
+			#clr_global_flag = krakow_uprising
+			clr_global_flag = serfdom_not_abolished
+			political_reform = peonage
+			labourers = {
+				money = 5
+				consciousness = 1
+				militancy = -2
+			}
+			farmers = {
+				money = 5
+				consciousness = 1
+				militancy = -2
+			}
+			aristocrats = {
+				consciousness = 3
+				militancy = 2
+				money = -50
+			}
+			any_owned = {
+				limit = {
+					has_pop_type = labourers
+					has_pop_type = serfs
+				}
+				serfs = { pop_type = labourers }
+			}
+			any_owned = {
+				limit = {
+					has_pop_type = farmers
+					has_pop_type = serfs
+				}
+				serfs = { pop_type = farmers }
+			}
+			add_country_modifier = { name = redemption_payments duration = 1800 } #this is to represent Austria partially expecting reimbursmenet for serf land while in some areas the government paid for it in full
+			ai_chance = { factor = 80 }
+		}
+
+		option = {
+			name = "EVTOPTB60055557"
+
+			set_country_flag = serfdom_abolished_generic
+			#clr_global_flag = krakow_uprising
+			political_reform = peonage
+			farmers = {
+				consciousness = 3
+				militancy = 2
+			}
+			labourers = {
+				consciousness = 3
+				militancy = 2
+			}
+			serfs = {
+				consciousness = 3
+				militancy = 2
+			}
+			aristocrats = {
+				consciousness = -1
+				militancy = -2
+			}
+			any_owned = {
+				limit = {
+					has_pop_type = labourers
+					has_pop_type = serfs
+				}
+				serfs = { pop_type = labourers }
+			}
+			any_owned = {
+				limit = {
+					has_pop_type = farmers
+					has_pop_type = serfs
+				}
+				serfs = { pop_type = farmers }
+			}
+			add_country_modifier = { name = redemption_payments duration = 1800 } #this is to represent Austria partially expecting reimbursmenet for serf land while in some areas the government paid for it in full
+			ai_chance = { factor = 20 }
+		}
+
+		option = {
+			name = "EVTOPTC60055557"
+
+			set_country_flag = serfdom_abolished_generic
+			#clr_global_flag = krakow_uprising
+			political_reform = peonage
+			farmers = {
+				money = 5
+				consciousness = 1
+				militancy = -2
+			}
+			labourers = {
+				money = 5
+				consciousness = 1
+				militancy = -2
+			}
+			serfs = {
+				money = 5
+				consciousness = 1
+				militancy = -2
+			}
+			aristocrats = { money = 50 }
+			add_tax_relative_income = -0.75
+			any_owned = {
+				limit = {
+					has_pop_type = labourers
+					has_pop_type = serfs
+				}
+				serfs = { pop_type = labourers }
+			}
+			any_owned = {
+				limit = {
+					has_pop_type = farmers
+					has_pop_type = serfs
+				}
+				serfs = { pop_type = farmers }
+			}
+			add_country_modifier = { name = redemption_payments duration = 1800 } #this is to represent Austriam aristocracy getting part of their land reimbursed, while in some areas the government paid for it in full instead of serfs
+			ai_chance = { factor = 0 }
+		}
+
+		option = {
+			name = "EVTOPTD60055557"
+
+			#clr_global_flag = krakow_uprising
+			serfs = {
+				consciousness = 9
+				militancy = 4
+			}
+			aristocrats = {
+				consciousness = -9
+				militancy = -4
+			}
+
+			ai_chance = { factor = 0 }
+		}
+	}
+
+country_event = {
+
+	id = 60055558
+	title = "EVTNAME60055558"
+	desc = "EVTDESC60055558"
+	picture = "croatian_settlement"
+
+	trigger = {
+		tag = KUK
+		any_owned_province = { is_core = CRO }
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA60055558"
+
+		CRO = { all_core = { remove_core = HUN } }
+		any_pop = {
+			limit = { has_pop_culture = croat }
+			militancy = -2
+		}
+	}
+}
+
+country_event = {
+
+	id = 60055559
+	title = "EVTNAME60055559"
+	desc = "EVTDESC60055559"
+	picture = "danishgovernment"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA60055559"
+
+		3286 = { #Szombathely
+			remove_core = AUS
+			remove_core = GER
+			remove_core = GCF
+			add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = HUN
+			remove_province_modifier = integration_refusal
+			remove_province_modifier = core_integration
+			remove_province_modifier = national_assimilation
+			remove_province_modifier = national_assimilation_rejection
+			remove_province_modifier = national_assimilation_acceptance
+			remove_province_modifier = national_assimilation_complete
+			any_pop = { limit = { has_pop_culture = south_german } move_pop = 623 }
+			change_province_name = "¼Ø¹öÆ®ÇìÀÌ"
+		}
+		624 = { #Eisenstadt
+			remove_core = HUN
+			add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FROM
+			remove_province_modifier = integration_refusal
+			remove_province_modifier = core_integration
+			remove_province_modifier = national_assimilation
+			remove_province_modifier = national_assimilation_rejection
+			remove_province_modifier = national_assimilation_acceptance
+			remove_province_modifier = national_assimilation_complete
+			any_pop = { limit = { has_pop_culture = hungarian } move_pop = 3286 }
+		}
+		623 = { #Ödenburg
+			remove_core = HUN
+			add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FROM
+			remove_province_modifier = integration_refusal
+			remove_province_modifier = core_integration
+			remove_province_modifier = national_assimilation
+			remove_province_modifier = national_assimilation_rejection
+			remove_province_modifier = national_assimilation_acceptance
+			remove_province_modifier = national_assimilation_complete
+			any_pop = { limit = { has_pop_culture = hungarian } move_pop = 3286 }
+		}
+		3282 = { #Olsnitz
+			remove_core = HUN
+			add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = FROM
+			remove_province_modifier = integration_refusal
+			remove_province_modifier = core_integration
+			remove_province_modifier = national_assimilation
+			remove_province_modifier = national_assimilation_rejection
+			remove_province_modifier = national_assimilation_acceptance
+			remove_province_modifier = national_assimilation_complete
+			any_pop = { limit = { has_pop_culture = hungarian } move_pop = 3286 }
+		}
+		relation = { who = FROM value = 110 }
+		badboy = -2
+		FROM = { badboy = -2 }
+
+		ai_chance = { factor = 0.95 }
+	}
+
+	option = {
+		name = "EVTOPTB60055559"
+
+		relation = { who = FROM value = -110 }
+
+		ai_chance = {
+			factor = 0.05
+			modifier = {
+				factor = 0.1
+				NOT = { relation = { who = FROM value = -190 } }
+			}
+		}
+	}
+}
+
+#The Abdication of Ferdinand I
+country_event = {
+	id = 99990
+	title = "EVTNAME99990"
+	desc = "EVTDESC99990"
+	major = yes
+
+	trigger = {
+		tag = AUS
+		has_global_flag = hungarian_revolution_occurred
+		war_with = HUN
+		has_country_flag = monarchy_gov
+		NOT = { has_global_flag = franz_joseph_i }
+		NOT = { year = 1870 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 15
+		}
+		modifier = {
+			factor = 0.1
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 0.5
+			RUS = { war_with = HUN }
+		}
+		modifier = {
+			factor = 0.1
+			PRU = { war_with = THIS }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA99990"
+
+		prestige = -20
+		war_exhaustion = -25
+		add_country_modifier = {
+			name = emergency_wartime_austria
+			duration = 1085
+		}
+		set_global_flag = franz_joseph_i
+	}
+}
+
+
+#Loser of the Brother's War
+country_event = {
+	id = 99996
+	title = "EVTNAME99996"
+	desc = "EVTDESC99996"
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA99996"
+
+		war_exhaustion = -5
+		relation = { #Normalize Relations with victor
+			who = FROM
+			value = 200
+		}
+		random_country = {
+			limit = { tag = FROM }
+			set_country_flag = brothers_war_winner
+			remove_country_modifier = brothers_war_aggressor
+		}
+		any_country = {
+			limit = {
+				is_culture_group = THIS
+				exists = yes
+				is_greater_power = no
+				NOT = { vassal_of = THIS }
+				is_substate = no
+			}
+			relation = { who = THIS value = -400 }
+			diplomatic_influence = { who = THIS value = -400 }
+			diplomatic_influence = { who = FROM value = 400 }
+			leave_alliance = THIS
+			end_military_access = THIS
+			create_alliance = FROM
+		}
+		add_country_modifier = {
+			name = diplomatic_isolation
+			duration = 1825
+		}
+		LIE = { #Ideally this would be an event that fires for Liechtenstein
+			set_country_flag = neutrality_candidate
+			add_country_modifier = { name = neutrality duration = -1 }
+			clr_country_flag = german_confederation_member
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = hidden_tooltip
+				}
+			}
+			LIE = { country_event = 6016816 }
+		}
+		clr_country_flag = hidden_tooltip
+		remove_country_modifier = brothers_war_aggressor
+		set_country_flag = brothers_war_loser
+		clr_country_flag = german_confederation_member
+	}
+}
+
+#Peace of Prague (Austria AI Only)
+country_event = {
+	id = 99810
+	title = "EVTNAME99810"
+	desc = "EVTDESC99810"
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPT99810"
+
+		war_exhaustion = 10
+		prestige = -500
+		relation = { #Normalize Relation
+			who = FROM
+			value = 200
+		}
+		any_country = {
+			limit = {
+				OR = {
+					is_culture_group = THIS
+					tag = LBG
+				}
+				exists = yes
+				is_greater_power = no
+				in_sphere = THIS
+				is_substate = no
+			}
+			relation = {
+				who = THIS
+				value = -400
+			}
+			country_event = 99811
+			leave_alliance = THIS
+			end_military_access = THIS
+			create_alliance = FROM
+		}
+
+		# Rhineland is released, if still owned by Prussia
+		random_country = {
+			limit = {
+				tag = RHI
+				exists = yes
+				vassal_of = PRU
+			}
+			PRU = { release_vassal = RHI }
+			FROM = {
+				diplomatic_influence = { who = RHI value = 400 }
+				create_vassal = RHI
+			}
+			RHI = { prestige = -200 }
+		}
+		random_owned = {
+			limit = {
+				575 = { owned_by = PRU } # Koln
+				NOT = { exists = RHI }
+			}
+			PRU = { release = RHI }
+			FROM = {
+				diplomatic_influence = { who = RHI value = 400 }
+				create_vassal = RHI
+				create_alliance = RHI
+			}
+			RHI = { prestige = -200 }
+		}
+
+		# Westfalen is released, if still owned by Prussia
+		random_country = {
+			limit = {
+				tag = WES
+				exists = yes
+				vassal_of = PRU
+			}
+			PRU = { release_vassal = WES }
+			FROM = {
+				diplomatic_influence = { who = WES value = 400 }
+				create_vassal = WES
+				create_alliance = WES
+			}
+			WES = { prestige = -200 }
+		}
+		random_owned = {
+			limit = {
+				580 = { owned_by = PRU } # Dortmund
+				NOT = { exists = WES }
+			}
+			owner = { release = WES }
+			FROM = {
+				diplomatic_influence = { who = WES value = 400 }
+				create_vassal = WES
+			}
+			WES = { prestige = -200 }
+		}
+
+		#Siliesia is scededed to Austria
+		random_owned = {
+			limit = {
+				682 = { owned_by = PRU } # Breslau
+				NOT = { exists = SLS }
+			}
+			owner = {
+				any_owned = {
+					limit = { is_core = SLS }
+					secede_province = AUS
+				}
+			}
+		}
+
+		#Hohenzollern-Sigmaringen is seceded to Austria
+		random_owned = {
+			limit = {
+				594 = { owned_by = PRU }
+				NOT = { exists = SGM }
+			}
+			594 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_594  } secede_province = AUS  } } }
+		}
+
+		random_country = {
+			limit = {
+				tag = SGM
+				exists = yes
+			}
+			annex_to = AUS
+		}
+
+		#Hohenzollern-Hechingen is seceded to Austria
+		random_owned = {
+			limit = {
+				3415 = { owned_by = PRU }
+				NOT = { exists = HOH }
+			}
+			3415 = { secede_province = AUS }
+		}
+
+		random_country = {
+			limit = {
+				tag = HOH
+				exists = yes
+			}
+			annex_to = AUS
+		}
+
+		# Saxony Province is given to Saxony
+		random_owned = {
+			limit = {
+				687 = { owned_by = PRU }  # Gorlitz
+				PRU = { truce_with = SAX }
+				SAX = { exists = yes }
+			}
+			owner = {
+				any_owned = {
+					limit = { region = SAX_558 }
+					secede_province = SAX
+				}
+			}
+		}
+		random_owned = {
+			limit = { owner = { has_country_modifier = zollervein } }
+			owner = { remove_country_modifier = zollervein }
+		}
+	}
+}
+
+country_event = {
+	id = 99811
+	title = "EVTNAME99810"
+	desc = "EVTDESC99810"
+	picture = "administration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA99996"
+		random_country = {
+			limit = { has_country_flag = ai_demand_sigmaringen }
+			diplomatic_influence = { who = THIS value = 400 }
+			relation = { who = THIS value = 400 }
+		}
+		FROM = {
+			diplomatic_influence = { who = THIS value = -400 }
+			release_vassal = THIS
+			leave_alliance = THIS
+		}
+	}
+}
+
+country_event = {
+	id = 99812
+	title = "EVTNAME99812"
+	desc = "EVTDESC99812"
+	picture = "hungarian_revolution_1848"
+
+	trigger = {
+		tag = KUK
+		owns = 641
+		war = no
+		is_greater_power = no
+		OR = {
+			is_secondary_power = no
+			is_disarmed = yes
+		}
+		NOT = { has_global_flag = 2nd_hungarian_revoultion }
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "EVTOPTA99812"
+
+		release = HUN
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = HUN
+					is_core = CRO
+				}
+				NOT = { is_core = DLM }
+			}
+			secede_province = HUN
+		}
+		relation = { who = HUN value = -100 }
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = -5
+		}
+		HUN = {
+			capital = 641
+			political_reform = mandatory_service
+			government = hms_government
+			political_reform = non_secret_ballots
+			political_reform = universal_weighted_voting
+			political_reform = population_equal_weight
+			political_reform = free_press
+			political_reform = yes_meeting
+			clr_country_flag = communist_gov
+			clr_country_flag = absolute_monarchy_gov
+			clr_country_flag = semi_constitutional_monarchy_gov
+			set_country_flag = constitutional_monarchy_gov
+			clr_country_flag = democracy_gov
+			clr_country_flag = presidential_dictatorship_gov
+			clr_country_flag = fascist_gov
+			clr_country_flag = anarcho_liberal_gov
+			small_arms = 400
+			regular_clothes = 400
+			leadership = 40
+			canned_food = 500
+			treasury = 35000
+			add_country_modifier = { name = begin_revolution duration = 365 }
+			add_country_modifier = { name = no_more_war duration = 20 }
+			any_pop = {
+				limit = { has_pop_culture = hungarian }
+				militancy = -8
+			}
+			any_owned = {
+				limit = { is_core = ROM }
+				any_pop = {
+					limit = { has_pop_culture = romanian }
+					militancy = 6
+				}
+				add_province_modifier = { name = nationalist_agitation duration = 1095 }
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = SER
+						is_core = VOJ
+					}
+				}
+				any_pop = {
+					limit = { has_pop_culture = serb }
+					militancy = 6
+				}
+				add_province_modifier = { name = nationalist_agitation duration = 1095 }
+			}
+		}
+		add_country_modifier = { name = no_more_war duration = 20 }
+		HUN = { country_event = { id=998120 days=20 } }
+		set_global_flag = 2nd_hungarian_revoultion
+	}
+}
+
+country_event = {
+	id = 998120
+	title = "EVTNAME99813"
+	desc = "EVTDESC99813"
+	picture = "administration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA998121"
+
+		KUK = {
+			release_vassal = HUN
+			war = {
+				target = HUN
+				attacker_goal = { casus_belli = annex_core_country }
+				defender_goal = { casus_belli = status_quo }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 99813
+	title = "EVTNAME99813"
+	desc = "EVTDESC99813"
+	picture = "administration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA99813"
+
+		prestige = 10
+		any_greater_power = {
+			limit = {
+				NOT = { tag = PRU }
+				alliance_with = THIS
+			}
+			leave_alliance = THIS
+		}
+		relation = {
+			who = FROM
+			value = 100
+		}
+		TGC_VENETIA_1866 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		create_alliance = FROM
+		war = {
+			target = AUS
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 729
+			}
+			call_ally = yes
+		}
+		set_country_flag = prussian_italian_alliance
+
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 2
+				NOT = { war_exhaustion = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB99813"
+
+		prestige = -10
+		clr_country_flag = prussian_italian_alliance
+
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { war_exhaustion = 10 }
+			}
+			modifier = {
+				factor = 2
+				war_exhaustion = 10
+			}
+			modifier = {
+				factor = 4
+				war_exhaustion = 20
+			}
+		}
+	}
+}
+
+# Austrian Silesia
+country_event = {
+
+	id = 203998
+	title = "EVTNAME203998"
+	desc = "EVTDESC203998"
+	picture = "ferdinand"
+
+	trigger = {
+		owns = 682
+		owns = 684
+		owns = 2584
+		owns = 689
+		OR = {
+			tag = AUS
+			tag = KUK
+			tag = DNB
+		}
+		has_country_flag = monarchy_gov
+	}
+
+	mean_time_to_happen = {
+		years = 6
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA203998"
+
+		prestige = 20
+		add_accepted_culture = north_german
+		any_owned = {
+			limit = { is_core = SLS }
+			add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			remove_core = PRU
+			remove_core = NGF
+		}
+	}
+}
+
+## Eisenstadt ##
+
+	country_event = {
+
+		id = 203977
+		title = "EVTNAME203977"
+		desc = "EVTDESC203977"
+		picture = "ferdinand"
+
+		trigger = { 
+			primary_culture = south_german
+			OR = {
+				tag = AUS
+				tag = KUK
+				tag = SGF
+			}
+			HUN = {
+				owns = 624
+				vassal_of = THIS
+			}
+			has_country_flag = monarchy_gov
+		}
+
+		fire_only_once = yes
+
+		mean_time_to_happen = {
+			years = 5
+		}
+
+		option = {
+			name = "EVTOPTA203977"
+
+			HUN = { country_event = { id = 203978 days = 0 } }
+			TGC_TERRITORY_624 = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+
+			ai_chance = { factor = 35 }
+		}
+
+		option = {
+			name = "EVTOPTB203977"
+
+			HUN = { country_event = { id = 203979 days = 0 } }
+			TGC_TERRITORY_624 = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+
+			ai_chance = { factor = 55 }
+		}
+
+		option = {
+			name = "EVTOPTC203977"
+
+			prestige = 4
+
+			ai_chance = { factor = 10 }
+		}
+	}
+
+	country_event = {
+
+		id = 203978
+		title = "EVTNAME203978"
+		desc = "EVTDESC203978"
+		picture = "administration"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA203978"
+
+			AUS = { country_event = { id = 203980 days = 0 } }
+
+			ai_chance = { factor = 95 }
+		}
+
+		option = {
+			name = "EVTOPTB203978"
+
+			AUS = { country_event = { id = 203981 days = 0 } }
+
+			ai_chance = { factor = 5 }
+		}
+	}
+
+	country_event = {
+
+		id = 203980
+		title = "EVTNAME203980"
+		desc = "EVTDESC203980"
+		picture = "administration"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA203980"
+
+			624 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_624  }
+				add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				remove_core = HUN
+				secede_province = AUS
+			 } } }
+			778 = {
+				add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				remove_core = THIS
+				secede_province = HUN
+			}
+		}
+	}
+
+	country_event = {
+
+		id = 203981
+		title = "EVTNAME203981"
+		desc = "EVTDESC203981"
+		picture = "administration"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA203981"
+
+			prestige = -10
+
+			ai_chance = { factor = 55 }
+		}
+
+		option = {
+			name = "EVTOPTB203981"
+
+			badboy = 8
+			release_vassal = HUN
+			diplomatic_influence = { who = HUN value = -200 }
+			relation = { who = HUN value = -200 }
+			casus_belli = {
+				target = HUN
+				type = conquest
+				months = 1
+			}
+			war = {
+				target = HUN
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = become_independent }
+			}
+			set_country_flag = magyarwarnumber1
+
+			ai_chance = { factor = 45 }
+		}
+	}
+
+	country_event = {
+
+		id = 203979
+		title = "EVTNAME203979"
+		desc = "EVTDESC203979"
+		picture = "administration"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA203979"
+
+			TGC_TERRITORY_624 = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			AUS = { country_event = { id = 203982 days = 0 } }
+
+			ai_chance = { factor = 75 }
+		}
+
+		option = {
+			name = "EVTOPTB203979"
+
+			AUS = { country_event = { id = 203983 days = 0 } }
+
+			ai_chance = { factor = 25 }
+		}
+	}
+
+	country_event = {
+
+		id = 203982
+		title = "EVTNAME203981"
+		desc = "EVTDESC203981"
+		picture = "administration"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTB203981"
+
+			badboy = 12
+			release_vassal = HUN
+			diplomatic_influence = { who = HUN value = -200 }
+			relation = { who = HUN value = -200 }
+			casus_belli = {
+				target = HUN
+				type = conquest
+				months = 1
+			}
+			war = {
+				target = HUN
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = become_independent }
+			}
+			set_country_flag = magyarwarnumber1
+
+			ai_chance = { factor = 80 }
+		}
+
+		option = {
+			name = "EVTOPTA203981"
+
+			prestige = -30
+
+			ai_chance = { factor = 20 }
+		}
+
+	}
+
+	country_event = {
+
+		id = 203989
+		title = "EVTNAME203989"
+		desc = "EVTDESC203989"
+		picture = "administration"
+
+		trigger = {
+			has_country_flag = magyarwarnumber1
+			HUN = {
+				NOT = {
+					controls = 619
+					controls = 641
+					controls = 635
+				}
+				war_with = AUS
+			}
+			NOT = { has_country_flag = huncivilwarloss }
+		}
+
+		mean_time_to_happen = {
+			days = 20
+		}
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA203989"
+
+			badboy = 6
+			inherit = HUN
+			inherit = BAN
+			inherit = CRO
+			inherit = SLO
+			inherit = SIE
+			791 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			652 = { remove_core = SIE }
+			653 = { remove_core = SIE }
+			AUS_2538 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			TGC_TERRITORY_779 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			793 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			TGC_TERRITORY_777 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = BAN
+						is_core = SLV
+						is_core = SIE
+						is_core = CRO
+					}
+				}
+				remove_core = HUN
+			}
+			release_vassal = BAN
+			create_alliance = BAN
+			diplomatic_influence = { who = BAN value = 200 }
+			relation = { who = BAN value = 200 }
+			BAN = { add_accepted_culture = serb }
+			778 = { remove_core = CRO }
+			770 = { remove_core = CRO }
+			AUS_780 = { remove_core = CRO }
+			release_vassal = CRO
+			create_alliance = CRO
+			diplomatic_influence = { who = CRO value = 200 }
+			relation = { who = CRO value = 200 }
+			release_vassal = SLV
+			create_alliance = SLV
+			diplomatic_influence = { who = SLV value = 200 }
+			relation = { who = SLV value = 200 }
+			release_vassal = SIE
+			create_alliance = SIE
+			diplomatic_influence = { who = SIE value = 200 }
+			relation = { who = SIE value = 200 }
+			SIE = {
+				primary_culture = north_german
+				add_accepted_culture = south_german
+				add_accepted_culture = romanian
+			}
+			TGC_TERRITORY_624 = {
+				add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				remove_core = HUN
+			}
+			623 = {
+				add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				remove_core = HUN
+			}
+			778 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			770 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			AUS_780 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			release_vassal = HUN
+			create_alliance = HUN
+			diplomatic_influence = { who = HUN value = 200 }
+			relation = { who = HUN value = 200 }
+			set_global_flag = huncivilwarloss
+
+			ai_chance = { factor = 65 }
+		}
+
+		option = {
+			name = "EVTOPTB203989"
+
+			prestige = 10
+			badboy = -2
+			inherit = HUN
+			TGC_TERRITORY_624 = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = HUN }
+			623 = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = HUN }
+			create_vassal = HUN
+			create_alliance = HUN
+			diplomatic_influence = { who = HUN value = 200 }
+			relation = { who = HUN value = 200 }
+
+			ai_chance = { factor = 20 }
+		}
+
+		option = {
+			name = "EVTOPTC203989"
+
+			prestige = 10
+			badboy = 12
+			inherit = HUN
+			TGC_TERRITORY_624 = {
+				add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				remove_core = HUN
+			}
+			623 = {
+				add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				remove_core = HUN
+			}
+
+			ai_chance = { factor = 15 }
+		}
+	}
+
+	country_event = {
+
+		id = 203983
+		title = "EVTNAME203980"
+		desc = "EVTDESC203980"
+		picture = "administration"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA203980"
+
+			624 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_624  }
+				add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				remove_core = HUN
+				secede_province = AUS
+			 } } }
+		}
+	}
+
+country_event = {
+
+	id = 201432
+	title = "EVTNAME201432"
+	desc = "EVTDESC201432"
+	picture = "administration"
+
+	trigger = {
+		tag = SIE
+		is_vassal = no
+		is_culture_group = germanic
+	}
+
+	mean_time_to_happen = {
+		years = 6
+	}
+
+	option = {
+		name = "EVTOPTA201432"
+
+		primary_culture = romanian
+		remove_accepted_culture = south_german
+		remove_accepted_culture = north_german
+
+		ai_chance = { factor = 75 }
+	}
+
+	option = {
+		name = "EVTOPTB201432"
+
+		any_pop = {
+			limit = { culture = romanian }
+			militancy = 10
+			consciousness = 5
+		}
+
+		ai_chance = { factor = 25 }
+	}
+
+}
+
+country_event = {
+	id = 201437
+	title = "EVTNAME201437"
+	desc = "EVTDESC201437"
+	#picture = "Kossuth"
+
+	trigger = {
+		tag = AUS
+		owns = 641
+		has_country_modifier = springtime_of_nations
+		NOT = {
+			HUN = { involved_in_crisis = yes }
+			exists = HUN
+			has_global_flag = hungarian_revolution_occurred
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA201437"
+
+		prestige = -10
+		release_vassal = HUN
+		create_alliance = HUN
+		diplomatic_influence = { who = HUN value = 200 }
+		relation = { who = HUN value = 200 }
+		HUN = {
+			add_country_modifier = { name = small_country_draft duration = 1095 }
+			add_country_modifier = { name = new_country duration = 1095 }
+		}
+
+		ai_chance = { 
+			factor = 5 
+			modifier = {
+				factor = 20
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0
+				OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+				}
+			}
+			}
+	}
+
+	option = {
+		name = "EVTOPTB201437"
+
+		prestige = 4
+
+		ai_chance = { factor = 95 }
+	}
+}
+
+country_event = {
+	id = 201499
+	title = "EVTNAME201499"
+	desc = "EVTDESC201499"
+	picture = "greatpowers"
+
+	trigger = { 
+		primary_culture = south_german
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		LVN = {
+			exists = yes
+			vassal_of = THIS
+		}
+		ITA = {
+			exists = yes
+			vassal_of = THIS
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA201499"
+
+		ITA = {
+			prestige = -30
+			relation = { who = THIS value = -100 }
+		}
+		LVN = {
+			prestige = -30
+			relation = { who = THIS value = -100 }
+		}
+
+		ai_chance = { factor = 60 }
+	}
+
+	option = {
+		name = "EVTOPTB201499"
+
+		prestige = 30
+		ITA = {
+			inherit = LVN
+			prestige = 20
+		}
+
+		ai_chance = { factor = 40 }
+	}
+}
+
+## Uzhorod ##
+
+	country_event = {
+		id = 201500
+		title = "EVTNAME201500"
+		desc = "EVTDESC201500"
+		picture = "greatpowers"
+
+		trigger = {
+			owns = 950
+			NOT = {
+				tag = HUN
+				tag = GLM
+				tag = RUT
+				tag = SLO
+			}
+			exists = HUN
+			HUN = { vassal_of = THIS }
+			NOT = { exists = GLM }
+			NOT = {
+				owns = 648
+				owns = 651
+				owns = 661
+				owns = 953
+				owns = 951
+				owns = 705
+				owns = 637
+			}
+		}
+
+		mean_time_to_happen = {
+			months = 3
+		}
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA201500"
+
+			prestige = -10
+			950 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_950  } secede_province = HUN  } } }
+
+			ai_chance = { factor = 75 }
+		}
+
+		option = {
+			name = "EVTOPTB201500"
+
+			prestige = -10
+			950 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_950  } secede_province = RUT  } } }
+			create_vassal = RUT
+
+			ai_chance = { factor = 25 }
+		}
+	}
+
+	country_event = {
+		id = 201501
+		title = "EVTNAME201500"
+		desc = "EVTDESC201500"
+		picture = "greatpowers"
+
+		trigger = {
+			owns = 950
+			NOT = {
+				tag = HUN
+				tag = GLM
+				tag = RUT
+				tag = SLO
+			}
+			exists = GLM
+			exists = SLO
+			HUN = { vassal_of = THIS }
+			NOT = {
+				owns = 648
+				owns = 651
+				owns = 661
+				owns = 953
+				owns = 951
+				owns = 705
+				owns = 637
+			}
+		}
+
+		mean_time_to_happen = {
+			months = 3
+		}
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTC201500"
+
+			prestige = -10
+			950 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_950  } secede_province = SLO  } } }
+		}
+
+		option = {
+			name = "EVTOPTD201500"
+
+			prestige = -10
+			950 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_950  } secede_province = RUT  } } }
+			create_vassal = RUT
+		}
+
+		option = {
+			name = "EVTOPTE201500"
+
+			prestige = -10
+			950 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_950  } secede_province = GLM  } } }
+		}
+	}
+
+	country_event = {
+		id = 201606
+		title = "EVTNAME201500"
+		desc = "EVTDESC201500"
+		picture = "greatpowers"
+
+		trigger = {
+			owns = 950
+			NOT = {
+				tag = HUN
+				tag = GLM
+				tag = RUT
+				tag = SLO
+			}
+			NOT = { HUN = { vassal_of = THIS } }
+			NOT = {
+				owns = 648
+				owns = 651
+				owns = 661
+				owns = 953
+				owns = 951
+				owns = 705
+				owns = 637
+			}
+		}
+
+		mean_time_to_happen = {
+			months = 3
+		}
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTB201500"
+
+			prestige = -10
+			950 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_950  } secede_province = RUT  } } }
+			create_vassal = RUT
+		}
+	}
+
+## Joining Switzerland ## TODO where is this triggered
+
+	# Audax Validator "." Ignore_NEXT
+	country_event = {
+		id = 960601
+		title = "EVTNAME960601"
+		desc = "EVTDESC960601"
+		picture = "greatpowers"
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA960601"
+
+			prestige = 10
+			TGC_TERRITORY_614 = { add_core = SWI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			AUS = { 614 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_614  } secede_province = SWI  } } } }
+			KUK = { 614 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_614  } secede_province = SWI  } } } }
+			DNB = { 614 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_614  } secede_province = SWI  } } } }
+		}
+	}
+
+	# Audax Validator "." Ignore_NEXT
+	country_event = {
+		id = 960602
+		title = "EVTNAME960602"
+		desc = "EVTDESC960602"
+		picture = "greatpowers"
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA960602"
+
+			prestige = 10
+			FRA = {
+				466 = {
+					secede_province = SWI
+					add_core = SWI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				}
+				465 = {
+					secede_province = SWI
+					add_core = SWI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				}
+				721 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_721  }
+					secede_province = SWI
+					add_core = SWI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+					remove_core = FRA
+				 } } }
+			}
+		}
+	}
+
+country_event = {
+	id = 203900
+	title = "EVTNAME203900"
+	desc = "EVTDESC203900"
+	picture = "ferdinand"
+
+	trigger = {
+		owns = 603
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		has_country_flag = monarchy_gov
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA203900"
+
+		prestige = 10
+		aristocrats = { militancy = -1 }
+		603 = {
+			add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			life_rating = 5
+		}
+	}
+}
+
+country_event = {
+	id = 203901
+	title = "EVTNAME203901"
+	desc = "EVTDESC203901"
+	picture = "ferdinand"
+
+	trigger = {
+		owns = 951
+		owns = 662
+		owns = 663
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		year = 1849
+		has_country_flag = monarchy_gov
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA203901"
+
+		prestige = 10
+		662 = {
+			add_core = BKV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			remove_core = GLM
+		}
+		663 = {
+			add_core = BKV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			remove_core = GLM
+		}
+
+		ai_chance = { factor = 75 }
+	}
+
+	option = {
+		name = "EVTOPTB203901"
+
+		ai_chance = { factor = 25 }
+	}
+}
+
+## The Südtirol Compromise ##
+
+	#Description: Start - Compromise with Italy?
+	country_event = {
+		id = 110089
+		title = "EVTNAME110089"
+		desc = "EVTDESC110089"
+		picture = "map_trentin"
+
+		trigger = {
+			owns = 734 # Trentin
+			owns = 735 # Bozen
+			OR = {
+				tag = AUS
+				tag = KUK
+				tag = DNB
+				tag = SGF
+				tag = GER
+				tag = GCF
+			}
+			nationalism_n_imperialism = 1
+			NOT = { has_global_flag = trentino_tirol_compromise }
+			ITA = {
+				exists = yes
+				relation = { who = THIS value = 0 }
+				NOT = { is_greater_power = yes }
+				OR = {
+					AND = {
+						has_recently_lost_war = yes
+						truce_with = THIS
+					}
+					in_sphere = THIS
+				}
+			}
+		}
+
+		mean_time_to_happen = { months = 12 }
+
+		fire_only_once = yes
+
+		# The land is rightfully theirs - compromise
+		option = {
+			name = "EVTOPTA110089"
+
+			set_global_flag = trentino_tirol_compromise
+			badboy = -1
+
+			ITA = { country_event = 110088 }
+
+			any_pop = { dominant_issue = { value = pacifism	factor = 0.05 }	}
+
+			any_greater_power = {
+				limit = { capital_scope = { continent = europe } }
+				relation = { who = THIS value = 25 }
+			}
+		}
+
+		# The land is rightfully ours - don't compromise
+		option = {
+			name = "EVTOPTB110089"
+
+			prestige = 10
+
+			ITA = { country_event = 110084 }
+
+			any_pop = { dominant_issue = { value = jingoism	factor = 0.05 }	}
+
+			any_greater_power = {
+				limit = { capital_scope = { continent = europe } }
+				relation = { who = THIS value = -25 }
+			}
+		}
+	}
+
+	#Description: Triggered for Italy if the Germans wants to compromise
+	country_event = {
+		id = 110088
+		title = "EVTNAME110088"
+		desc = "EVTDESC110088"
+		picture = "map_trentin"
+
+		is_triggered_only = yes
+
+		# Accept the compromise
+		option = {
+			name = "EVTOPTA110088"
+
+			relation = { who = FROM value = 200 }
+			diplomatic_influence = { who = FROM value = 100 }
+			FROM = { remove_core = 734 }
+			remove_core = 735
+			734 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_734  } secede_province = THIS  } } }
+		}
+
+		# Refuse the compromise and continue claiming all of South Tyrol
+		option = {
+			name = "EVTOPTA110088"
+
+			random_owned = {
+				limit = { 734 = { is_core = THIS } }
+				owner = { badboy = 2 }
+			}
+			random_owned = {
+				limit = { NOT = { 734 = { is_core = THIS } } }
+				owner = { badboy = 5 }
+				AUS_734 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			}
+
+			relation = { who = FROM value = -200 }
+			diplomatic_influence = { who = FROM value = -100 }
+		}
+	}
+
+	#Description: Triggered for Italy if the Germans doesn't want to compromise
+	country_event = {
+		id = 110084
+		title = "EVTNAME110084"
+		desc = "EVTDESC110084"
+		picture = "map_trentin"
+
+		is_triggered_only = yes
+
+		# Protest
+		option = {
+			name = "EVTOPTA110084"
+
+			prestige = -10
+
+			relation = { who = FROM value = -200 }
+			diplomatic_influence = { who = FROM value = -100 }
+		}
+
+		# Go to war
+		option = {
+			name = "EVTOPTB110084"
+
+			badboy = 2
+
+			relation = { who = FROM value = -200 }
+			diplomatic_influence = { who = FROM value = -100 }
+
+			war = {
+				target = FROM
+				attacker_goal = { casus_belli = acquire_core_state state_province_id = 734 }
+				defender_goal = { casus_belli = humiliate }
+			}
+		}
+	}
+
+## Vienna Taken ##
+
+	country_event = {
+
+		id = 9988891
+		title = "EVTNAME9988891"
+		desc = "EVTDESC9988891"
+		picture = banquet
+
+		trigger = {
+			tag = HUN
+			owns = 619
+			exists = AUS
+			owns = 641
+		}
+
+		mean_time_to_happen = {
+			months = 1
+		}
+
+		option = {
+			name = "EVTOPTA9988891"
+
+			prestige = 10
+			AUS = { country_event = 9988892 }
+
+			ai_chance = {
+				factor = 40
+				modifier = {
+					factor = 0
+					AUS_771 = { owned_by = HUN }
+				}
+			}
+		}
+
+		option = {
+			name = "EVTOPTB9988891"
+
+			prestige = 20
+			AUS = { country_event = 9988893 }
+
+			ai_chance = { factor = 60 }
+		}
+	}
+
+	country_event = {
+
+		id = 9988892
+		title = "EVTNAME9988892"
+		desc = "EVTDESC9988892"
+		picture = banquet
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA9988892"
+
+			prestige = -10
+			HUN = { country_event = 9988894 }
+		}
+	}
+
+	country_event = {
+
+		id = 9988893
+		title = "EVTNAME9988892"
+		desc = "EVTDESC9988893"
+		picture = banquet
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA9988892"
+
+			prestige = -10
+			HUN = { country_event = 9988895 }
+		}
+	}
+
+	country_event = {
+
+		id = 9988894
+		title = "EVTNAME9988894"
+		desc = "EVTDESC9988894"
+		picture = banquet
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA9988894"
+
+			AUS_774 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			AUS_771 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			AUS = {
+				any_owned = {
+					limit = { is_core = HUN }
+					secede_province = HUN
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = HUN
+					is_core = AUS
+				}
+				remove_core = AUS
+			}
+			any_owned = {
+				limit = { is_core = AUS }
+				secede_province = AUS
+			}
+		}
+	}
+
+	country_event = {
+
+		id = 9988895
+		title = "EVTNAME9988894"
+		desc = "EVTDESC9988894"
+		picture = banquet
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA9988894"
+
+			AUS_774 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			AUS_771 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			AUS_780 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			AUS = {
+				any_owned = {
+					limit = { is_core = HUN }
+					secede_province = HUN
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = HUN
+					is_core = AUS
+				}
+				remove_core = AUS
+			}
+			any_owned = {
+				limit = { is_core = AUS }
+				secede_province = AUS
+			}
+			AUS = { capital = 619 }
+		}
+	}
+
+
+
+#Visit in Venice
+country_event = {
+
+	id = 202047
+	title = "EVTNAME202047"
+	desc = "EVTDESC202047"
+	picture = "Sisi"
+
+	trigger = {
+		owns = 6601
+		OR = {
+			tag = AUS
+			tag = KUK
+		}
+		OR = {
+			has_country_flag = absolute_monarchy_gov
+			has_country_flag = semi_constitutional_monarchy_gov
+		}
+		year = 1856
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA202047"
+
+		prestige = -2
+		any_pop = {
+			limit = { has_pop_culture = north_italian }
+			consciousness = 1
+		}
+	}
+}

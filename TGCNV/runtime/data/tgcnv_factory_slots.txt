@@ -1,0 +1,6 @@
+# TGCNV factory slots (engine factory_slots, 2026-09-29)
+# enabled = no restores the native 8 factories per state.
+enabled = yes
+# Factories per state (8..32). Production rows keep 8 cards; `factory_scroll`
+# in interface/country_production.gui scrolls through the rest.
+limit = 12

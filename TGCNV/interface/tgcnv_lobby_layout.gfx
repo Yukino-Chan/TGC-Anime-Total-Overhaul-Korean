@@ -1,0 +1,44 @@
+spriteTypes = {
+    textSpriteType = {
+        name = "GFX_tgcnv_lobby_sort_country"
+        texturefile = "gfx\\interface\\tgcnv_lobby_sort_country.dds"
+        noOfFrames = 1
+        loadType = "FRONTEND"
+    }
+    spriteType = {
+        name = "GFX_tgcnv_lobby_sort_rank"
+        texturefile = "gfx\\interface\\tgcnv_lobby_sort_rank.dds"
+        noOfFrames = 1
+        loadType = "FRONTEND"
+    }
+    spriteType = {
+        name = "GFX_tgcnv_lobby_rank_badge"
+        texturefile = "gfx\\interface\\tgcnv_lobby_rank_badge.dds"
+        noOfFrames = 1
+        loadType = "FRONTEND"
+    }
+    spriteType = {
+        name = "GFX_tgcnv_lobby_portrait"
+        texturefile = "gfx\\interface\\tgcnv_lobby_portrait.dds"
+        noOfFrames = 4
+        loadType = "FRONTEND"
+    }
+    spriteType = {
+        name = "GFX_tgcnv_lobby_sort_prestige"
+        texturefile = "gfx\\interface\\tgcnv_lobby_sort_prestige.dds"
+        noOfFrames = 1
+        loadType = "FRONTEND"
+    }
+    spriteType = {
+        name = "GFX_tgcnv_lobby_sort_industry"
+        texturefile = "gfx\\interface\\tgcnv_lobby_sort_industry.dds"
+        noOfFrames = 1
+        loadType = "FRONTEND"
+    }
+    spriteType = {
+        name = "GFX_tgcnv_lobby_sort_military"
+        texturefile = "gfx\\interface\\tgcnv_lobby_sort_military.dds"
+        noOfFrames = 1
+        loadType = "FRONTEND"
+    }
+}

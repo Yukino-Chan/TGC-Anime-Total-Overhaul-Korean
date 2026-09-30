@@ -1,0 +1,63 @@
+# Extension simulation data, not native building definitions.
+# Rocket ranges/strategic attack use installed HOI3 TFH flying_bomb/flying_rocket.
+# Accuracy, damage fractions, costs, reactor rates and AI weights are provisional.
+# WWII missiles cannot deliver nuclear weapons. No rocket test site is required.
+schema = 1
+repair_per_day = 0.010
+maximum_stockpile = 10000
+profiles = {
+    strategic_bombing = {
+        nuclear = no
+        facilities = { infrastructure = 0.030 industry = 0.070 rgo = 0.040 fort = 0.010 naval_base = 0.020 air_base = 0.040 radar = 0.030 rocket_site = 0.020 reactor = 0.010 }
+        unit_strength = 0.000 unit_organisation = 0.000 population = 0.000
+        morale = 0.010 diplomatic_cost = 0.000 fallout_days = 0
+        fallout_output = 0.000 fallout_supply = 0.000 fallout_growth = 0.000 fallout_movement = 0.000
+    }
+    logistics = {
+        nuclear = no
+        facilities = { infrastructure = 0.120 industry = 0.000 rgo = 0.010 fort = 0.000 naval_base = 0.020 air_base = 0.020 radar = 0.000 rocket_site = 0.000 reactor = 0.000 }
+        unit_strength = 0.000 unit_organisation = 0.000 population = 0.000
+        morale = 0.005 diplomatic_cost = 0.000 fallout_days = 0
+        fallout_output = 0.000 fallout_supply = 0.000 fallout_growth = 0.000 fallout_movement = 0.000
+    }
+    rocket = {
+        nuclear = no
+        facilities = { infrastructure = 0.070 industry = 0.100 rgo = 0.060 fort = 0.010 naval_base = 0.030 air_base = 0.050 radar = 0.050 rocket_site = 0.030 reactor = 0.020 }
+        unit_strength = 0.000 unit_organisation = 0.000 population = 0.000
+        morale = 0.030 diplomatic_cost = 0.000 fallout_days = 0
+        fallout_output = 0.000 fallout_supply = 0.000 fallout_growth = 0.000 fallout_movement = 0.000
+    }
+    fission = {
+        nuclear = yes
+        facilities = { infrastructure = 0.700 industry = 0.800 rgo = 0.600 fort = 0.800 naval_base = 0.750 air_base = 0.850 radar = 0.900 rocket_site = 0.800 reactor = 0.800 }
+        unit_strength = 0.700 unit_organisation = 0.900 population = 0.050
+        morale = 0.250 diplomatic_cost = 0.100 fallout_days = 30
+        fallout_output = 0.250 fallout_supply = 0.150 fallout_growth = 0.100 fallout_movement = 0.100
+    }
+}
+rockets = {
+    flying_bomb = {
+        range_km = 250 strategic_attack = 80.000 accuracy = 0.450 interceptability = 1.000
+        reload_hours = 24 capacity = 1000 nuclear_capable = no requires_site = no profile = rocket
+        production = { days = 30 money = 1000 ammunition = 200 fuel = 100 technologies = { tgcnv_ww2_chemistry_and_electricity_1943 = yes } }
+    }
+    rocket = {
+        range_km = 380 strategic_attack = 110.000 accuracy = 0.600 interceptability = 0.000
+        reload_hours = 24 capacity = 1000 nuclear_capable = no requires_site = no profile = rocket
+        production = { days = 40 money = 1500 ammunition = 250 fuel = 230 technologies = { tgcnv_ww2_chemistry_and_electricity_1943 = yes } }
+    }
+}
+nuclear = {
+    # Existing verified TGCNV technology chain. No unlock grants free warheads.
+    research = { tgcnv_ww2_chemistry_and_electricity_1943 = yes tgcnv_ww2_chemistry_and_electricity_1945 = yes }
+    reactor = { days = 365 money = 100000 ammunition = 0 fuel = 0 technologies = { tgcnv_ww2_chemistry_and_electricity_1945 = yes } }
+    warhead = { days = 180 money = 50000 ammunition = 1000 fuel = 500 technologies = { tgcnv_ww2_chemistry_and_electricity_1945 = yes } }
+    output_per_reactor = 1.000
+    bomber_range_km = 1400 bomber_interceptability = 1.000 profile = fission
+}
+# Optional launch infrastructure API. Default WWII weapons operate from airbases.
+launcher = { days = 90 money = 10000 ammunition = 100 fuel = 50 technologies = { tgcnv_ww2_chemistry_and_electricity_1943 = yes } }
+ai = {
+    industry = 100 airbase = 50 port = 50 infrastructure = 20 population = 1 units = 40 capital = 200
+    nuclear_threshold = 1000 nuclear_reserve = 1 diplomacy = 100 victory = 100
+}

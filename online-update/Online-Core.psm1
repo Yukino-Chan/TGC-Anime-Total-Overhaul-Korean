@@ -113,6 +113,7 @@ $ErrorActionPreference = 'Stop'
 
 $script:UpdateMutexName   = 'Local\TGCNV_OnlineUpdate'
 $script:MetadataNames     = @('manifest.json','Setup.ps1','Setup.cmd','Restore.cmd','Verify.cmd','설치 안내.txt','SHA256SUMS.txt')
+$script:OptionalMetadataNames = @('Language.psm1')
 $script:TGCNVRoots        = @('common','decisions','events','gfx','history','interface','inventions','localisation','map','news','poptypes','runtime','sound','technologies','units')
 $script:TGCNVRootFiles    = @('settings.txt','tgcnv_extension.json')
 $script:TGORootFiles      = @('opening_music.md','victoria1_music.md','victoria1_music_manifest.json')
@@ -610,7 +611,7 @@ function Test-CatalogPath {
     [OutputType([bool])]
     param([Parameter(Mandatory = $true)][string]$Path)
 
-    if ($script:MetadataNames -contains $Path) { return $true }
+    if ($script:MetadataNames -contains $Path -or $script:OptionalMetadataNames -contains $Path) { return $true }
 
     if (-not $Path.StartsWith('payload/', [StringComparison]::Ordinal)) { return $false }
     $Path = $Path.Substring(8)

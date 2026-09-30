@@ -1,0 +1,8 @@
+spriteTypes = {
+	# TGCNV: empty header cell of the industry window (batch 18_production)
+	spriteType = {
+		name = "GFX_tgcnv_prod_header_gap"
+		texturefile = "gfx\\interface\\tgcnv_prod_header_gap.dds"
+		noOfFrames = 1
+	}
+}

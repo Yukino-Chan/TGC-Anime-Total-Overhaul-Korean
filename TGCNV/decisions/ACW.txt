@@ -1,0 +1,1261 @@
+#The triggers in the potentials were optmized in this file, be careful messing with them.
+#The optmization was made with a high deegre of accuracy and it's mostly fine,
+
+political_decisions = {
+
+	#Description: The CSA, FSA, UK or Canada can burn the White House when at war with the USA, lowering their prestige and increasing their war exhaustion.
+	burn_the_white_house = {
+		picture = washington_burning
+		potential = {
+			war_with = USA
+			OR = {
+				tag = CAN
+				is_greater_power = yes
+			}
+			NOT = { is_culture_group = american_cultures }
+			NOT = { has_global_flag = white_house_burned }
+			USA = { owns = 2146 } # Washington D.C.
+		}
+
+		allow = {
+			controls = 2146
+		}
+
+		effect = {
+			badboy = 3
+			set_global_flag = white_house_burned
+			USA = {
+				prestige = -20
+				war_exhaustion = 10
+				plurality = -5
+				country_event = 182000
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.85
+			}
+		}
+	}
+
+	#Description: If the White House was burnt down, the USA can rebuild it.
+	rebuild_the_white_house = {
+		picture = washington_burning
+		potential = {
+			tag = USA
+			owns = 2146 # Washington D.C.
+			capital = 2146
+			government = democracy
+			has_global_flag = white_house_burned
+		}
+
+		allow = {
+			war = no
+			controls = 2146
+			money = 50000
+		}
+
+		effect = {
+			prestige = 20
+			money = -50000
+			clr_global_flag = white_house_burned
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: A Greater Power at war with the USA can destroy the Statue of Liberty, lowering their prestige and increasing their war exhaustion.
+	destroy_the_statue_of_liberty = {
+		picture = liberty_enlightening_the_world
+		potential = {
+			war_with = USA
+			OR = {
+				tag = CAN
+				is_greater_power = yes
+			}
+			NOT = {
+				is_culture_group = american_cultures
+				tag = FRA
+			}
+			revolution_n_counterrevolution = 1
+			232 = { owned_by = USA }
+			NOT = {	has_global_flag = statue_of_liberty_destroyed }
+		}
+
+		allow = {
+			controls = 232
+			invention = nitroglycerin
+		}
+
+		effect = {
+			badboy = 3
+			set_global_flag = statue_of_liberty_destroyed
+			USA = { country_event = 188244 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { relation = { who = USA value = -150 } }
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.85
+			}
+			modifier = {
+				factor = 0
+				NOT = { ruling_party_ideology = fascist }
+			}
+		}
+	}
+
+	#Description: If the USA doesn't exist, any American Great Power that owns all of the continental USA that isn't empty or owned by a non-American country, can reform the USA.
+	restore_the_union = {
+		picture = switch_to_liberty
+		potential = {
+			USA = { exists = no }
+			is_greater_power = yes
+			is_culture_group = american_cultures
+		}
+
+		allow = {
+			war = no
+			USA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = { NOT = { is_culture_group = american_cultures } }
+						owner = { in_sphere = THIS }
+						owner = { vassal_of = THIS }
+						empty = yes
+						region = USA_1 # Alaska
+						region = HAW_658 # Hawaii
+					}
+				}
+			}
+			FSA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = { NOT = { is_culture_group = american_cultures } }
+						owner = { in_sphere = THIS }
+						owner = { vassal_of = THIS }
+						empty = yes
+						region = USA_1 # Alaska
+						region = HAW_658 # Hawaii
+					}
+				}
+			}
+			CSA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = { NOT = { is_culture_group = american_cultures } }
+						owner = { in_sphere = THIS }
+						owner = { vassal_of = THIS }
+						empty = yes
+						region = USA_1 # Alaska
+						region = HAW_658 # Hawaii
+					}
+				}
+			}
+		}
+
+		effect = {
+			clr_global_flag = alt_american_civil_war_has_happened
+			prestige = 40
+			all_core = {
+				remove_core = THIS
+				add_core = USA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			change_tag = USA
+			any_country = {
+				limit = {
+					NOT = { is_greater_power = yes }
+					is_culture_group = THIS
+					in_sphere = THIS
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+				}
+				country_event = 11101 # Generic inheritance event
+			}
+			add_accepted_culture = yankee
+			add_accepted_culture = dixie
+			add_accepted_culture = texan
+		}
+	}
+
+## USA ##
+
+	#Description: If the USA blockades most of the CSA's ports, they can enact the Anaconda plan, increasing their war exhaustion until peace or they secure their ports.
+	enact_anaconda_plan = {
+		potential = {
+			OR = {
+				war_with = CSA
+				war_with = FSA
+			}
+			tag = USA
+			OR = {
+				CSA = {	any_owned_province = { has_building = naval_base } }
+				FSA = {	any_owned_province = { has_building = naval_base } }
+			}
+			NOT = { has_global_flag = anaconda_plan_active }
+		}
+
+		allow = {
+			OR = {
+				CSA = { blockade = 0.8 }
+				FSA = { blockade = 0.8 }
+			}
+			
+		}
+
+		effect = {
+			CSA = { add_country_modifier = { name = anaconda_plan duration = -1 } }
+			FSA = { add_country_modifier = { name = anaconda_plan duration = -1 } }
+			set_global_flag = anaconda_plan_active
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If the USA blockades most of the FSA's ports, they can enact the Anaconda plan, increasing their war exhaustion until peace or they secure their ports.
+#	fsa_enact_anaconda_plan = {
+#		picture = enact_anaconda_plan
+#		potential = {
+#			war_with = FSA
+#			tag = USA
+#			FSA = {	any_owned_province = { has_building = naval_base } }
+#			NOT = { has_global_flag = anaconda_plan_active }
+#		}
+#
+#		allow = {
+#			FSA = { blockade = 0.8 }
+#		}
+#
+#		effect = {
+#			FSA = { add_country_modifier = { name = anaconda_plan duration = -1 } }
+#			set_global_flag = anaconda_plan_active
+#		}
+#	}
+
+	#Description: Terrorize the Confederate population of the south, reducing their population and giving them war exhaustion.
+	shermans_march_to_the_sea = {
+		potential = {
+			war_with = CSA
+			tag = USA
+			NOT = { has_country_flag = sherman_marched_to_the_sea }
+			CSA = {
+				owns = 201 # Atlanta
+				owns = 2555 # Augusta
+				owns = 204 # Savannah
+			}
+		}
+
+		allow = {
+			controls = 201
+			controls = 2555
+			controls = 204
+		}
+
+		effect = {
+			set_country_flag = sherman_marched_to_the_sea
+			badboy = 2
+			201 = { any_pop = { reduce_pop = 0.70 } }
+			2555 = { any_pop = { reduce_pop = 0.90 } }
+			204 = { any_pop = { reduce_pop = 0.90 } }
+			CSA = { war_exhaustion = 4 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Terrorize the Confederate population of the south, reducing their population and giving them war exhaustion.
+	fsa_shermans_march_to_the_sea = {
+		picture = shermans_march_to_the_sea
+		potential = {
+			war_with = FSA
+			tag = USA
+			NOT = { has_country_flag = sherman_marched_to_the_sea }
+			FSA = {
+				owns = 243 # Boston
+				owns = 245 # Worchester
+				owns = 241 # Hartford
+			}
+		}
+		allow = {
+			controls = 243
+			controls = 245
+			controls = 241
+		}
+
+		effect = {
+			set_country_flag = sherman_marched_to_the_sea
+			badboy = 2
+			243 = {	any_pop = { reduce_pop = 0.70 } }
+			245 = { any_pop = { reduce_pop = 0.90 } }
+			241 = { any_pop = { reduce_pop = 0.90 } }
+			FSA = { war_exhaustion = 4 }
+		}
+	}
+
+	#Description: If the CSA is defeated or close to defeat, the USA can free the slaves.
+	emancipation_proclamation = {
+		picture = emancipation_proclamation
+		potential = {
+			tag = USA
+			NOT = {
+				slavery = no_slavery
+				has_country_flag = the_slavery_debate
+			}
+			OR = {
+				war_with = CSA
+				AND = {
+					NOT = { exists = CSA }
+					has_global_flag = american_civil_war_has_happened
+				}
+			}
+		}
+
+		allow = {
+			prestige = 70
+			CSA = {
+				OR = {
+					exists = no
+					national_provinces_occupied = 0.40
+				}
+			}
+		}
+
+		effect = {
+			prestige = 10
+			political_reform = no_slavery
+			any_pop = {
+				limit = { has_pop_culture = yankee }
+				consciousness = -5
+				militancy = -5
+			}
+			any_greater_power = { relation = { who = USA value = 30 } }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Reduce war exhaustion.
+	bixby_letter = {
+		picture = bixby_letter
+		potential = {
+			war_with = CSA
+			tag = USA
+			NOT = { has_country_flag = bixby_letter_sent }
+		}
+
+		allow = {
+			war_exhaustion = 6
+		}
+
+		effect = {
+			set_country_flag = bixby_letter_sent
+			war_exhaustion = -2
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If the CSA has fled to Cuba, but the USA won the war, they can remove CSA cores.
+	USA_restore_CUB = {
+		picture = guantanamo_bay
+		potential = {
+			tag = USA
+			CSA = { has_country_flag = csa_flee_cub }
+			CUB = { all_core = { is_core = CSA } }
+			CUB = { all_core = { is_core = USA } }	
+		}
+
+		allow = {
+			war = no
+			CUB = { all_core = { owned_by = USA } }
+		}
+
+		effect = {
+			prestige = 10
+			CUB = { all_core = { remove_core = CSA } }
+			CSA = {
+				capital = 60
+				remove_accepted_culture = caribeno
+			}
+			country_event = {
+				id = 56277 # Puppet Cuba or keep it as part of the Union
+				days = 0
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: After the civil war, the USA can reintegrate the south.
+	enact_radical_reconstruction = {
+		potential = {
+			tag = USA
+			war = no
+			has_global_flag = american_civil_war_has_happened
+			NOT = {
+				exists = CSA
+				has_global_flag = alt_american_civil_war_has_happened
+				has_country_flag = has_used_radical_reconstruction
+			}
+			owns = 211 # Lynchburg
+			owns = 195 # Tuscaloosa
+			owns = 139 # New Orleans
+		}
+
+		allow = {
+			state_n_government = 1
+		}
+
+		effect = {
+			war_exhaustion = -10
+			add_country_modifier = {
+				name = global_baby_boom
+				duration = 365
+			}
+			any_pop = { militancy = -3 }
+			remove_country_modifier = the_slavery_debate_modifier
+			remove_accepted_culture = dixie
+			remove_accepted_culture = texan
+			any_owned = {
+				limit = { is_core = CSA }
+				add_province_modifier = { name = reconstruction duration = 2555 }
+			}
+			any_pop = {
+				limit = { has_pop_culture = dixie }
+				consciousness = -3
+				militancy = -3
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = dixie
+					type = soldiers
+				}
+				reduce_pop = 0.7
+				pop_type = farmers
+			}
+			any_country = {
+				limit = {
+					tag = TEX
+					has_country_flag = fra_loui_texas_join_csa
+					is_vassal = no
+					exists = yes
+					ai = yes
+				}
+				create_vassal = USA
+				create_alliance = USA
+			}
+			diplomatic_influence = {
+				who = TEX
+				value = 400
+			}
+			any_owned = {
+				limit = { produces = cotton }
+				remove_province_modifier = king_cotton
+			}
+			set_country_flag = has_used_radical_reconstruction
+
+			random_owned = {
+				limit = {
+					OR = {
+						region = MEX_2138 # Sonora
+						region = MEX_2139 # Baja California
+						region = MEX_2142 # Chihuahua
+						region = MEX_2156 # Sinaloa
+					}
+					NOT = { has_global_flag = sonora_is_a_state }
+				}
+				owner = { country_event = 44379 }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: After the civil war, the USA can reintegrate the north.
+	fsa_enact_radical_reconstruction = {
+		picture = enact_radical_reconstruction
+		potential = {
+			tag = USA
+			war = no
+			has_global_flag = alt_american_civil_war_has_happened
+			NOT = {
+				exists = FSA
+				has_country_flag = has_used_radical_reconstruction
+			}
+			owns = 232 # New York City
+			owns = 243 # Boston
+			owns = 223 # Philadelphia
+		}
+
+		allow = {
+			NOT = { average_militancy = 4 }
+		}
+
+		effect = {
+			war_exhaustion = -3
+			any_pop = {
+				limit = { has_pop_culture = yankee }
+				consciousness = -5
+				militancy = -5
+			}
+			any_state = {
+				limit = { is_slave = no }
+				is_slave = yes
+			}
+			clr_global_flag = alt_american_civil_war_has_happened
+			set_country_flag = has_used_radical_reconstruction
+		}
+	}
+
+	## Capital ##
+
+		#Description: After the civil war, the USA can restore their capital in Washington.
+		restore_washington_capital = {
+			potential = {
+				tag = USA
+				NOT = {
+					capital = 2146
+					has_global_flag = alt_american_civil_war_has_happened
+				}
+				owns = 2146
+			}
+
+			allow = {
+				controls = 2146
+			}
+
+			effect = {
+				capital = 2146
+				prestige = 10
+			}
+		}
+
+		#Description: The FSA or USA can move their capital to Boston if they don't own Washington DC.
+		move_capital_to_philadelphia = {
+			picture = restore_washington_capital
+			potential = {
+				owns = 223 # Philadelphia
+				NOT = { capital = 223 }
+				OR = {
+					tag = FSA
+					AND = {
+						tag = USA
+						NOT = { owns = 2146 } # Washington D.C.
+					}
+				}	
+			}
+
+			allow = {
+				controls = 223
+			}
+
+			effect = {
+				capital = 223
+			}
+		}
+
+		#Description: The FSA or USA can move their capital to Boston if they own neither Washington DC or Philadelphia.
+		move_capital_to_boston = {
+			picture = restore_washington_capital
+			potential = {
+				owns = 243 # Boston
+				OR = {
+					AND = {
+						tag = FSA
+						NOT = { owns = 223 } # Philadelphia
+					}
+					AND = {
+						tag = USA
+						NOT = { owns = 2146 } # Washington D.C.
+						NOT = { owns = 223 } # Philadelphia
+					}
+				}
+				NOT = { capital = 243 }
+			}
+
+			allow = {
+				controls = 243
+			}
+
+			effect = {
+				capital = 243
+			}
+		}
+
+## CSA ##
+
+	#Description: If the CSA wins the Civil War, the USA can recognize their independence and gain relations with them.
+	right_to_secede = {
+		picture = reform_csa
+		potential = {
+			exists = CSA
+			tag = USA
+			has_global_flag = american_civil_war_has_happened
+			NOT = { has_global_flag = right_to_secede }
+		}
+
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			OR = {
+				CSA = { military_score = THIS }
+				war_exhaustion = 60
+				is_greater_power = no
+			}
+		}
+
+		effect = {
+			prestige = -50
+			war_exhaustion = -10
+			set_global_flag = right_to_secede
+			CSA = {
+				prestige = 40
+				any_owned = {
+					limit = {
+						is_core = CSA
+						is_core = USA
+					}
+					remove_core = USA
+				}
+			}
+			relation = {
+				who = CSA
+				value = 200
+			}
+			any_country = {
+				limit = {
+					is_greater_power = yes
+					NOT = { tag = CSA }
+				}
+				relation = {
+					who = THIS
+					value = 50
+				}
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If the CSA has won the Civil War, they can declare full independence, gaining prestige and losing militancy.
+	second_declaration_of_independence = {
+		picture = reform_csa
+		potential = {
+			tag = CSA
+			has_global_flag = american_civil_war_has_happened
+			NOT = { has_global_flag = declaration2 }
+		}
+
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			prestige = 60
+			set_global_flag = declaration2
+			any_pop = {
+				limit = { has_pop_culture = dixie }
+				militancy = -10
+			}
+			war_exhaustion = -10
+			any_country = {
+				limit = {
+					is_greater_power = yes
+					NOT = { tag = USA }
+				}
+				relation = {
+					who = THIS
+					value = 50
+				}
+			}
+			USA = {
+				prestige = -60
+				remove_accepted_culture = dixie
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If the USA owns Cuba and it is a slave state, it can join the CSA.
+	csa_join_cub = {
+		picture = guantanamo_bay
+		potential = {
+			tag = CSA
+			CUB = { all_core = { owned_by = USA } }
+			has_global_flag = american_civil_war_has_happened
+			SPA_2209 = { is_slave = yes }
+			NOT = { has_country_flag = CSA_join_cub }
+		}
+
+		allow = {
+			war_with = USA
+		}
+
+		effect = {
+			USA = {
+				country_event = {
+					id = 72881 # All USA owned Cuba cores will secede to the CSA
+					days = 1
+				}
+			}
+			add_accepted_culture = caribeno
+			CUB = { all_core = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			set_country_flag = csa_join_cub
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If the CSA is in dire straits, but they own Cuba, they can flee there and abandon the continent to the USA.
+	csa_flee_cub = {
+		picture = guantanamo_bay
+		potential = {
+			tag = CSA
+			CUB = { all_core = { owned_by = THIS } }
+			NOT = { has_country_flag = csa_flee_cub }
+			national_provinces_occupied = .80
+			war_with = USA
+		}
+
+		allow = {
+			any_owned_province = {
+				is_core = CUB
+				NOT = { controlled_by = USA }
+			}
+		}
+
+		effect = {
+			set_country_flag = csa_flee_cub
+			prestige = -40
+			capital = 2209 # Havana
+			USA = {
+				country_event = {
+					id = 56278 # Continue the war or let them be in Cuba
+					days = 1
+				}
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: The CSA and Texas can, if at war, enlist some slaves to become soldiers.
+	enlist_coloured_troops = {
+		picture = coloured_troops
+		potential = {
+			war = yes
+			slavery = yes_slavery
+			OR = {
+				tag = CSA
+				tag = TEX
+			}
+			NOT = { has_country_flag = coloured_troops }
+		}
+
+		allow = {
+			war_exhaustion = 25
+		}
+
+		effect = {
+			small_arms = 25
+			regular_clothes = 25
+			canned_food = 25
+			random_pop = {
+				limit = {
+					pop_type = slaves
+					has_pop_culture = afro_american
+				}
+				pop_type = soldiers
+			}
+			random_pop = {
+				limit = {
+					pop_type = slaves
+					has_pop_culture = afro_american
+				}
+				pop_type = soldiers
+			}
+			war_exhaustion = -5
+			set_country_flag = coloured_troops
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: The CSA can, if at war with the USA, enlist some Cherokee to become soldiers.
+	first_cherokee_mounted_rifles = {
+		picture = first_cherokee_mounted_rifles
+		potential = {
+			tag = CSA
+			NOT = { has_country_flag = first_cherokee_mounted_rifles }
+			any_pop = {
+				type = farmers
+				has_pop_culture = cherokee
+			}
+			war_with = USA
+		}
+
+		allow = {
+			war_exhaustion = 4
+		}
+
+		effect = {
+			small_arms = 25
+			regular_clothes = 25
+			canned_food = 25
+			random_pop = {
+				limit = {
+					type = farmers
+					has_pop_culture = cherokee
+				}
+				pop_type = soldiers
+			}
+			war_exhaustion = -1
+			set_country_flag = first_cherokee_mounted_rifles
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: The CSA can form the Irish brigade, gaining stockpiles and turning a farmer pop into soldiers.
+	form_kellys_irish_brigade = {
+		picture = form_kellys_irish_brigade
+		potential = {
+			tag = CSA
+			NOT = { has_country_flag = kellys_irish_brigade }
+			war_with = USA
+			is_vassal = no
+		}
+
+		allow = {
+			war_exhaustion = 4
+		}
+
+		effect = {
+			small_arms = 25
+			regular_clothes = 25
+			canned_food = 25
+			random_pop = {
+				limit = {
+					pop_type = farmers
+					has_pop_culture = dixie
+				}
+				pop_type = soldiers
+			}
+			war_exhaustion = -1
+			set_country_flag = kellys_irish_brigade
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: The CSA can, if at war with the USA, get their historic generals, military stockpiles and a buff to land unit stats.
+	raise_the_bonnie_blue_flag = {
+		potential = {
+			tag = CSA
+			NOT = { has_country_flag = bonnie_blue_flag }
+			war_with = USA
+			is_vassal = no
+		}
+
+
+		effect = {
+			set_country_flag = bonnie_blue_flag
+			small_arms = 100
+			regular_clothes = 100
+
+			add_country_modifier = {
+				name = the_bonnie_blue_flag
+				duration = 365
+			}
+
+			define_general = {
+				name = "Robert E. Lee"
+				personality = audacious
+				background = war_college
+			}
+			define_general = {
+				name = "Thomas ‘Stonewall’ Jackson"
+				personality = unflinching
+				background = dauntless
+			}
+			define_general = {
+				name = "J.E.B. Stuart"
+				personality = brilliant
+				background = aristocrat
+			}
+			define_general = {
+				name = "James Longstreet"
+				personality = efficient
+				background = armchair_general
+			}
+			define_general = {
+				name = "Pierre Beauregard"
+				personality = expert
+				background = gifted_administrator
+			}
+			# Audax Validator "." Ignore_NEXT
+			define_admiral = {
+				name = "Franklin Buchanan"
+				personality = balanced_p
+				background = nationalist
+			}
+			# Audax Validator "." Ignore_NEXT
+			define_admiral = {
+				name = "Catesby ap Roger Jones"
+				personality = skilled
+				background = rising_star
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: The CSA can threaten denying cotton trade to the great powers to give them a reason to intervene against the USA.
+	king_cotton = {
+		picture = king_cotton
+		potential = {
+			tag = CSA
+			NOT = { has_country_flag = haskingcotton }
+			war_with = USA
+			is_vassal = no
+		}
+
+		allow = {
+			cotton = 500
+		}
+
+		effect = {
+			set_country_flag = haskingcotton
+			prestige = 10
+			cotton = -500
+			any_greater_power = {
+				limit = { NOT = { tag = USA } }
+				casus_belli = {
+					target = USA
+					type = acw_intervention
+					months = 24
+				}
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+## FSA ##
+
+	#Description: If the FSA wins the Civil war, the USA can recognize their independence and gain relations with them.
+	FSA_right_to_secede = {
+		picture = form_fsa
+		potential = {
+			tag = USA
+			exists = FSA
+			has_global_flag = alt_american_civil_war_has_happened
+			NOT = { has_global_flag = fsa_right_to_secede }
+		}
+
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			OR = {
+				FSA = { military_score = THIS }
+				war_exhaustion = 60
+				is_greater_power = no
+			}
+		}
+
+		effect = {
+			prestige = -50
+			war_exhaustion = -10
+			set_global_flag = fsa_right_to_secede
+			FSA = {
+				prestige = 40
+				any_owned = {
+					limit = {
+						is_core = FSA
+						is_core = USA
+					}
+					remove_core = USA
+				}
+			}
+			relation = {
+				who = FSA
+				value = 200
+			}
+			any_country = {
+				limit = {
+					is_greater_power = yes
+					NOT = { tag = FSA }
+				}
+				relation = {
+					who = THIS
+					value = 50
+				}
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: If the FSA has won the Civil War, they can declare full independence, gaining prestige and losing militancy.
+	FSA_second_declaration_of_independence = {
+		picture = form_fsa
+		potential = {
+			tag = FSA
+			has_global_flag = alt_american_civil_war_has_happened
+			NOT = { has_global_flag = declaration3 }
+		}
+
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			prestige = 60
+			set_global_flag = declaration3
+			any_pop = {
+				limit = { has_pop_culture = yankee }
+				militancy = -10
+			}
+			war_exhaustion = -10
+			any_country = {
+				limit = {
+					is_greater_power = yes
+					NOT = { tag = USA }
+				}
+				relation = {
+					who = THIS
+					value = 50
+				}
+			}
+			USA = { prestige = -60 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: FSA or any of the American minors can, when fighting against the USA, get stockpiles and jingoism.
+	raise_the_flag_of_freedom = {
+		picture = switch_to_liberty
+		potential = {
+			war_with = USA
+			is_culture_group = american_cultures
+			NOT = { has_country_flag = flag_of_freedom }
+		}
+
+
+		effect = {
+			set_country_flag = flag_of_freedom
+			any_pop = {
+				limit = { is_primary_culture = yes }
+				militancy = -4
+				dominant_issue = {
+					factor = 0.05
+					value = jingoism
+				}
+			}
+			leadership = 40
+			small_arms = 100
+			regular_clothes = 100
+		}
+	}
+
+## Recognition ##
+
+	#Description: Greater Powers can recognize the CSA, hurting relations with the USA.
+	recognize_the_csa = {
+		picture = reform_csa
+		potential = {
+			exists = CSA
+			is_greater_power = yes
+			has_global_flag = american_civil_war_has_happened
+			CSA = { NOT = { in_sphere = USA } }
+			NOT = {
+				has_country_flag = recognize_the_csa
+				has_global_flag = alt_american_civil_war_has_happened
+				tag = CSA
+				tag = USA
+				tag = FSA
+			}
+			exists = USA
+		}
+
+		allow = {
+			nationalism_n_imperialism = 1
+			OR = {
+				AND = {
+					NOT = { CSA = { national_provinces_occupied = 0.30 } }
+					NOT = {  relation = { who = USA value = 50 } }
+				}
+				AND = {
+					has_global_flag = declaration2
+					NOT = { has_global_flag = right_to_secede }
+				}
+			}
+		}
+
+		effect = {
+			prestige = 2
+			set_country_flag = recognize_the_csa
+			CSA = { prestige = 10 }
+			USA = { prestige = -10 }
+			relation = { who = CSA value = 100 }
+			diplomatic_influence = { who = CSA value = 25 }
+			relation = { who = USA value = -100 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				alliance_with = USA
+			}
+			modifier = {
+				factor = 0
+				relation = { who = USA value = 100 }
+			}
+		}
+	}
+
+	#Description: Greater Powers can recognize the FSA, hurting relations with the USA.
+	recognize_the_fsa = {
+		picture = form_fsa
+		potential = {
+			exists = FSA
+			is_greater_power = yes
+			has_global_flag = alt_american_civil_war_has_happened
+			FSA = { NOT = { in_sphere = USA } }
+			NOT = {
+				has_country_flag = recognize_the_fsa
+				has_global_flag = american_civil_war_has_happened
+				tag = CSA
+				tag = USA
+				tag = FSA
+			}
+			exists = USA
+		}
+
+		allow = {
+			nationalism_n_imperialism = 1
+			OR = {
+				AND = {
+					NOT = { FSA = { national_provinces_occupied = 0.30 } }
+					NOT = { relation = { who = USA value = 50 } }
+				}
+				AND = {
+					has_global_flag = declaration3
+					NOT = { has_global_flag = fsa_right_to_secede }
+				}
+			}
+		}
+
+		effect = {
+			prestige = 2
+			set_country_flag = recognize_the_fsa
+			FSA = { prestige = 10 }
+			USA = { prestige = -10 }
+			relation = { who = FSA value = 100 }
+			diplomatic_influence = { who = FSA value = 25 }
+			relation = { who = USA value = -100 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				alliance_with = USA
+			}
+			modifier = {
+				factor = 0
+				relation = { who = USA value = 100 }
+			}
+		}
+	}
+
+## Kentucky ##
+
+	#Description: Kentucky can rejoin the USA if they won or if the CSA declined them # TODO change localization to reflect the latter situation
+	UKY_join_USA = {
+		picture = liberty_enlightening_the_world
+		potential = {
+			tag = UKY
+			has_global_flag = american_civil_war_has_happened
+			USA = {
+				war = no
+				neighbour = THIS
+			}
+			OR = {
+				CSA = { exists = no }
+				CSA = { has_country_flag = declined_kentucky }
+			}
+			NOT = { CSA = { in_sphere = USA } }
+			NOT = { has_country_flag = join_USA }
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			remove_country_modifier = neutrality
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = { release_vassal = THIS tech_school = traditional_academic }
+			}
+			clr_country_flag = hidden_tooltip
+			USA = { country_event = 16402 }
+			set_country_flag = join_USA
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Description: Kentucky can join the CSA if they won
+	UKY_join_CSA = {
+		picture = liberty_enlightening_the_world
+		potential = {
+			tag = UKY
+			CSA = { exists = yes }
+			has_global_flag = american_civil_war_has_happened
+			CSA = {
+				war = no
+				neighbour = THIS
+				has_recently_lost_war = no
+			}
+			NOT = { has_country_flag = join_CSA }
+			NOT = { CSA = { in_sphere = USA } }
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			remove_country_modifier = neutrality
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = { release_vassal = THIS tech_school = traditional_academic }
+			}
+			clr_country_flag = hidden_tooltip
+			CSA = { country_event = 16402 }
+			set_country_flag = join_CSA
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+}

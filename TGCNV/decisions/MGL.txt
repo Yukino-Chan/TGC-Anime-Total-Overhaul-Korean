@@ -1,0 +1,70 @@
+political_decisions = {
+	
+#from Irredentism.txt
+	claim_greater_mongolia = {
+		picture = claim_greater_mongolia
+		potential = {
+			tag = MGL
+			NOT = { has_country_flag = claim_greater_mongolia }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			rank = 16
+			prestige = 90
+		}
+
+		effect = {
+			badboy = 20
+			set_country_flag = claim_greater_mongolia
+			1075 = { #Irkutsk
+				add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			1078 = { #Chita
+				add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			1079 = { #Nerchinsk
+				add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			1488 = { #Gansu
+				add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			1490 = { #Lanzhou
+				add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			1491 = { #Ningxia
+				add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			1532 = { #Guihua Tumed
+				add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			1534 = { #Ulaan Chab Chuulghan
+				add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			1535 = { #Yeke Juu Chuulghan
+				add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			1596 = { #Tulta
+				add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			}
+			1002 = { add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			2670 = { add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			2671 = { add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1075 = { add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1469 = { add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1599 = { add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1557 = { add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1600 = { add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1595 = { add_core = MGL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.02
+			}
+		}
+	}
+}

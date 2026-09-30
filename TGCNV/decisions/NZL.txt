@@ -1,0 +1,36 @@
+political_decisions = {
+
+#from MiniMod-AST.txt
+
+	claim_NZ_interior = {
+		potential = {
+			has_country_flag = is_new_zealand
+			NOT = { has_country_flag = claim_interior }
+		}
+		allow = {
+			civilized = yes
+			OR = {
+				2511 = { empty = yes }
+				2513 = { empty = yes }
+				2514 = { empty = yes }
+				2515 = { empty = yes }
+			}
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					2511 = { empty = yes }
+					2515 = { empty = yes }
+					2513 = { empty = yes }
+					2514 = { empty = yes }
+				}
+				2515 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_2515  } secede_province = THIS  } } }
+				2514 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_2514  } secede_province = THIS  } } }
+				2513 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_2513  } secede_province = THIS  } } }
+				2511 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_2511  } secede_province = THIS  } } }
+			}
+			prestige = 10
+			set_country_flag = claim_interior
+		}
+	}
+}

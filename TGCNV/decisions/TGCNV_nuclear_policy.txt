@@ -1,0 +1,132 @@
+# Nuclear policy: rank = 5 means current rank at most five.
+political_decisions = {
+	tgcnv_np_leave_treaty = {
+		picture = "tgcnv_nuclear_leave_treaty_anime"
+		potential = {
+			exists = yes
+			NOT = { rank = 5 }
+			NOT = { has_country_flag = tgcnv_np_withdrawn }
+			NOT = { has_country_flag = tgcnv_np_review }
+			tgcnv_ww2_chemistry_and_electricity_1943 = 1
+		}
+		allow = {
+			civilized = yes
+			is_vassal = no
+		}
+		effect = {
+			badboy = 50
+			set_country_flag = tgcnv_np_initialized
+			set_country_flag = tgcnv_np_withdrawn
+			clr_country_flag = tgcnv_np_review
+			set_variable = { which = tgca_np_treaty value = 0 }
+			set_variable = { which = tgca_np_withdrawn value = 1 }
+			set_variable = { which = tgca_np_review value = 0 }
+			remove_country_modifier = tgcnv_nuclear_non_proliferation
+			remove_country_modifier = tgcnv_nuclear_outside_treaty
+			add_country_modifier = { name = tgcnv_nuclear_outside_treaty duration = -1 }
+		}
+		ai_will_do = { factor = 0.1 modifier = { factor = 0 NOT = { rank = 16 } } modifier = { factor = 0 badboy = 0.4 } }
+	}
+	tgcnv_np_rejoin_treaty = {
+		picture = "tgcnv_nuclear_rejoin_treaty_anime"
+		potential = {
+			exists = yes
+			NOT = { rank = 5 }
+			has_country_flag = tgcnv_np_withdrawn
+			NOT = { has_country_flag = tgcnv_np_review }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_variable = { which = tgca_np_treaty value = 1 }
+			set_variable = { which = tgca_np_withdrawn value = 0 }
+			set_variable = { which = tgca_np_review value = 0 }
+			clr_country_flag = tgcnv_np_withdrawn
+			clr_country_flag = tgcnv_np_review
+			remove_country_modifier = tgcnv_nuclear_outside_treaty
+			remove_country_modifier = tgcnv_nuclear_non_proliferation
+			add_country_modifier = { name = tgcnv_nuclear_non_proliferation duration = -1 }
+			# Completed knowledge and existing stock remain sealed. Active projects stop.
+			clr_country_flag = tgcnv_np_theory_running
+			clr_country_flag = tgcnv_np_reactor_running
+			clr_country_flag = tgcnv_np_test_running
+			remove_country_modifier = tgcnv_np_theory_work
+			remove_country_modifier = tgcnv_np_reactor_work
+			remove_country_modifier = tgcnv_np_test_work
+		}
+		ai_will_do = { factor = 0 }
+	}
+	tgcnv_np_begin_theory = {
+		picture = "tgcnv_nuclear_begin_theory_anime"
+		potential = {
+			exists = yes
+			tgcnv_ww2_chemistry_and_electricity_1943 = 1
+			NOT = { has_country_flag = tgcnv_np_theory_ready }
+			NOT = { has_country_flag = tgcnv_np_theory_running }
+		}
+		allow = {
+			OR = { rank = 5 has_country_flag = tgcnv_np_withdrawn }
+			NOT = { has_country_flag = tgcnv_np_review }
+			NOT = { has_country_modifier = tgcnv_nuclear_non_proliferation }
+			civilized = yes
+			is_vassal = no
+			literacy = 0.70
+			money = 250000
+		}
+		effect = {
+			money = -250000
+			set_country_flag = tgcnv_np_theory_running
+			add_country_modifier = { name = tgcnv_np_theory_work duration = 1095 }
+		}
+		ai_will_do = { factor = 1 modifier = { factor = 0 war = yes } }
+	}
+	tgcnv_np_begin_reactor = {
+		picture = "tgcnv_nuclear_begin_reactor_anime"
+		potential = {
+			exists = yes
+			has_country_flag = tgcnv_np_theory_ready
+			NOT = { has_country_flag = tgcnv_np_reactor_ready }
+			NOT = { has_country_flag = tgcnv_np_reactor_running }
+		}
+		allow = {
+			OR = { rank = 5 has_country_flag = tgcnv_np_withdrawn }
+			NOT = { has_country_flag = tgcnv_np_review }
+			NOT = { has_country_modifier = tgcnv_nuclear_non_proliferation }
+			civilized = yes
+			is_vassal = no
+			tgcnv_ww2_chemistry_and_electricity_1945 = 1
+			money = 500000
+		}
+		effect = {
+			money = -500000
+			set_country_flag = tgcnv_np_reactor_running
+			add_country_modifier = { name = tgcnv_np_reactor_work duration = 730 }
+		}
+		ai_will_do = { factor = 1 modifier = { factor = 0 war = yes } }
+	}
+	tgcnv_np_begin_test = {
+		picture = "tgcnv_nuclear_begin_test_anime"
+		potential = {
+			exists = yes
+			invention = tgcnv_mana_nuclear_power
+			NOT = { has_country_flag = tgcnv_np_test_ready }
+			NOT = { has_country_flag = tgcnv_np_test_running }
+		}
+		allow = {
+			OR = { rank = 5 has_country_flag = tgcnv_np_withdrawn }
+			NOT = { has_country_flag = tgcnv_np_review }
+			NOT = { has_country_modifier = tgcnv_nuclear_non_proliferation }
+			civilized = yes
+			is_vassal = no
+			has_country_flag = tgcnv_np_reactor_ready
+			money = 250000
+		}
+		effect = {
+			money = -250000
+			set_country_flag = tgcnv_np_test_running
+			add_country_modifier = { name = tgcnv_np_test_work duration = 365 }
+		}
+		ai_will_do = { factor = 1 modifier = { factor = 0 war = yes } }
+	}
+}

@@ -1,0 +1,50 @@
+PBC = {
+	value = -25
+}
+UCA = {
+	value = -25
+}
+MEX = {
+	value = -25
+}
+leader = {
+	name = "JosÉÍ Antonio PÉÅez"
+	type = land
+	date="1836.1.1"
+	personality = hellbent
+	background = cavalry_school
+}
+army = {
+	name = "EjÉÍrcito de Venezuela"
+	location = 5811
+	regiment = {
+		name= "1. DivisiÉ×n de InfanterÉÑa"
+		type = infantry
+		home = 2264
+	}
+	regiment = {
+		name= "2. DivisiÉ×n de InfanterÉÑa"
+		type = infantry
+		home = 5811
+	}
+	regiment = {
+		name= "3. DivisiÉ×n de InfanterÉÑa"
+		type = infantry
+		home = 2267
+	}
+	regiment = {
+		name= "1. DivisiÉ×n de CaballerÉÑa"
+		type = cavalry
+		home = 2268
+	}
+	regiment = {
+		name= "2. DivisiÉ×n de CaballerÉÑa"
+		type = cavalry
+		home = 2269
+	}
+	regiment = {
+		name= "3. DivisiÉ×n de CaballerÉÑa"
+		type = cavalry
+		home = 5815
+	}
+}

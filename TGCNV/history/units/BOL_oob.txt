@@ -1,0 +1,57 @@
+CHL = {
+	value = -150
+}
+BRZ = {
+	value = -50
+}
+ECU = {
+	value = -25
+}
+CLM = {
+	value = -25
+}
+VNZ = {
+	value = -25
+}
+SPU = {
+	value = 200
+}
+PEU = {
+	value = -100
+}
+# Armies & Leaders
+leader = {
+	name = "Andr…Õs de Santa Cruz"
+	type = land
+	date = 1821.1.8
+	personality = arrogant
+	background = old_school
+}
+
+leader = {
+	name = "Jose Ballivi…≈n"
+	type = land
+	date = 1836.1.1
+	background = generals_aide
+	personality = bold
+}
+
+army = {
+	name = "Ej…Õrcito de Bolivia"
+	location = 2293
+	regiment = {
+		name= "1. Brigada de Infanteria"
+		type = infantry
+		home = 2313
+	}
+	regiment = {
+		name= "1. Brigada de Milicianos"
+		type = irregular
+		home = 2310
+	}
+	regiment = {
+		name= "2. Brigada de Milicianos"
+		type = irregular
+		home = 2310
+	}
+}

@@ -1,0 +1,308 @@
+# goods types, organized by category
+
+military_goods = {
+	ammunition = { 
+		cost = 14
+		color = { 208 202 127 } 
+		available_from_start = no
+	}
+	small_arms = { 
+		cost = 32
+		color = { 189 118 22 }
+		available_from_start = no
+	}
+	artillery = { 
+		cost = 52
+		color = { 145 130 86 }
+		available_from_start = no
+	}
+	canned_food = { 
+		cost = 17.61 # 2026-09-29 price: was 11
+		color = { 255 39 12 }
+	}
+	barrels = {	
+		cost = 98.00 
+		color = { 55 41 9 }
+		available_from_start = no 
+	}
+	aeroplanes = { 
+		cost = 110.00 
+		color = { 221 213 182 }
+		available_from_start = no
+	}
+
+	# TGCNV RESOURCE EXPANSION BEGIN - PDM-inspired military intermediate
+	gunpowder = {
+		cost = 10.5
+		color = { 63 58 48 }
+	}
+	# TGCNV RESOURCE EXPANSION END
+}
+
+raw_material_goods = {
+	cotton = { 
+		cost = 1.67 # 2026-09-29 price: was 0.5
+		color = { 255 255 255 }
+	}
+	dye = {	
+		cost = 12.00
+		color = { 69 0 182 }
+	}
+	wool = { 
+		cost = 0.98 # 2026-09-29 price: was 0.7
+		color = { 234 195 158 }
+	}
+	silk = { 
+		cost = 10.0
+		color = { 125 158 43 }
+	}
+	coal = { 
+		cost = 2.1
+		color = { 11 29 77 }
+	}
+	sulphur = { 
+		cost = 5
+		color = { 181 228 102 }
+	}
+	iron = { 
+		cost = 2.5
+		color = { 111 111 111 }
+	}
+	timber = { 
+		cost = 0.9
+		color = { 146 72 17 }
+	}
+	tropical_wood = { 
+		cost = 3.5
+		color = { 213 177 118 }
+	}
+	rubber = { 
+		cost = 7.0
+		color = { 123 110 86 }
+	}
+	oil = { 
+		cost = 12.0
+		color = { 0 0 0 }
+	}
+	precious_metal = { 
+		cost = 8
+		tradeable = no
+		money = yes	
+		color = { 253 199 110 }
+	}
+
+	# TGCNV RESOURCE EXPANSION BEGIN - historical and anime-fantasy RGOs
+	copper = {
+		cost = 4.8
+		color = { 184 94 52 }
+	}
+	lead = {
+		cost = 4.4
+		color = { 76 83 94 }
+	}
+	spices = {
+		cost = 4.0
+		color = { 181 82 43 }
+	}
+	mana_crystal = {
+		cost = 9.0
+		color = { 91 104 234 }
+	}
+	spirit_ore = {
+		cost = 8.0
+		color = { 105 208 183 }
+	}
+	# TGCNV RESOURCE EXPANSION END
+}
+
+industrial_goods = {
+	steel = { 
+		cost = 4.7
+		color = { 95 128 147 }
+		available_from_start = no
+	}
+	cement = { 
+		cost = 16.0
+		color = { 185 187 164 }
+	}
+	machine_parts = { 
+		cost = 39
+		color = { 177 198 196 }
+		available_from_start = no
+	}
+	glass = { 
+		cost = 2.5
+		color = { 201 200 199 }
+	}
+	fuel = { 
+		cost = 25.00 
+		available_from_start = no
+		color = { 145 110 89 }
+	}
+	fertilizer = { 
+		cost = 9.6
+		color = { 133 101 35 }
+	}
+	explosives = { 
+		cost = 19
+		color = { 192 68 20 }
+		available_from_start = no
+	}
+	clipper_convoy = { 
+		cost = 40.2 # 2026-09-29 price: was 34.9
+		overseas_penalty = yes
+		color = { 21 65 30 }
+	}
+	steamer_convoy = { 
+		cost = 60.00
+		available_from_start = no
+		overseas_penalty = yes
+		color = { 76 18 0 }
+	}
+	electric_gear = { 
+		cost = 16.00 
+		available_from_start = no
+		color = { 255 255 0 }
+	}
+	fabric = { 
+		cost = 2.62 # 2026-09-29 price: was 1.7
+		color = { 186 50 40 }
+	}
+	lumber = { 
+		cost = 0.8
+		color = { 180 94 26 }
+	}
+
+	# TGCNV RESOURCE EXPANSION BEGIN - secondary and magitech industries
+	bronze = {
+		cost = 9.0
+		color = { 177 120 57 }
+	}
+	electric_power = {
+		cost = 6.0
+		color = { 100 196 239 }
+		available_from_start = no
+	}
+	magitech_components = {
+		cost = 45.0
+		color = { 199 94 229 }
+		available_from_start = no
+	}
+	# TGCNV RESOURCE EXPANSION END
+}
+
+consumer_goods = {
+	precious_goods = { 
+		cost = 3.33 # 2026-09-29 price: was 1.5
+		tradeable = yes
+		money = no	
+		color = { 247 241 61 }
+	}
+	paper = { 
+		cost = 3.4
+		color = { 216 185 77 }
+	}
+	cattle = { 
+		cost = 1.4
+		color = { 84 227 40 }
+	}
+	fish = { 
+		cost = 1.14 # 2026-09-29 price: was 1.1
+		color = { 128 98 73 }
+	}
+	fruit = {
+		cost = 1.33 # 2026-09-29 price: was 1
+		color = { 255 0 0 }
+	}
+	grain = { 
+		cost = 2.11 # 2026-09-29 price: was 0.5
+		color = { 219 157 36 }
+	}
+	tobacco = {	
+		cost = 2 # 2026-09-29 price: was 1.1
+		color = { 100 69 30 }
+	}
+	tea = {	
+		cost = 2.6
+		color = { 201 135 15 }
+	}
+	coffee = { 
+		cost = 2.29 # 2026-09-29 price: was 2.1
+		color = { 27 19 7 }
+	}
+	opium = { 
+		cost = 3.5 # 2026-09-29 price: was 2.7
+		color = { 114 162 47 }
+	}
+	automobiles = {	
+		cost = 70.00 
+		available_from_start = no
+		color = { 61 67 64 }
+	}
+	telephones = { 
+		cost = 16.00
+		available_from_start = no
+		color = { 123 112 54 }
+	}
+	wine = {
+		cost = 9.77 # 2026-09-29 price: was 9
+		available_from_start = no
+		color = { 123 0 54 }
+	}
+	liquor = { 
+		cost = 5.84 #Vanilla is 6.4 | 2026-09-29 price: was 3.8
+		color = { 76 5 0 }
+	}
+	regular_clothes = { 
+		cost = 9.25 # 2026-09-29 price: was 6
+		color = { 217 17 19 }
+	}
+	luxury_clothes = { 
+		cost = 56.3 # 2026-09-29 price: was 51
+		color = { 234 227 40 }
+	}
+	furniture = {
+		cost = 4.9
+		color = { 173 129 40 }
+	}
+	luxury_furniture = { 
+		cost = 59.00
+		color = { 255 140 184 }
+	}
+	radio = { 
+		cost = 16.00 
+		available_from_start = no
+		color = { 129 63 6 }
+	}
+	pharmaceuticals = {
+		cost = 7.19 # 2026-09-29 price: was 7
+		color = { 129 63 6 }
+	}
+	soap = { #WASH YOU FILTHY MASSES WASH
+		cost = 6.65 # 2026-09-29 price: was 6.5
+		color = { 129 63 6 }
+	}
+	tires = {
+		cost = 15.00 
+		available_from_start = no
+		color = { 129 63 6 }
+	}
+	plastics = {
+		cost = 5.00
+		available_from_start = no
+		color = { 129 63 6 }
+	}
+
+	# TGCNV RESOURCE EXPANSION BEGIN - processed food and anime media
+	sugar = {
+		cost = 3.19 # 2026-09-29 price: was 2.4
+		color = { 241 232 207 }
+		available_from_start = no
+	}
+	idol_media = {
+		cost = 23.7 # 2026-09-29 price: was 22.0
+		color = { 245 100 168 }
+		available_from_start = no
+	}
+	# TGCNV RESOURCE EXPANSION END
+}

@@ -1,0 +1,2053 @@
+# Silence tracks removed: seven silent files were selected at weight 0.1 and caused quiet gaps.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+####################################################################################################################################
+
+# Generic Peace
+
+# Generic Western songs for times of peace.
+# Some are weighted to certain countries, for instance Villa Lobos, which will play more often for Brazil.
+# But overall, any western nation, civized or NOT , will be able to play those songs
+
+song = {
+	name = "Peace/Villa Lobos - Fuga, Poco apressado.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+
+		modifier = { factor = 2 OR = { primary_culture = brazilian tag = KPB } }	# Brazil gets Villa Lobos more often
+	}
+} 
+
+song = {
+	name = "Peace/Villa Lobos - Ponteio.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+
+		modifier = { factor = 2 OR = { primary_culture = brazilian tag = KPB } }
+	}
+} 
+
+song = {
+	name = "Peace/Villa Lobos - Giga.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 0 is_greater_power = no NOT = { has_country_flag = generic_songs_enabled } } # This one is too epic, great power only
+
+		
+		modifier = { factor = 2 OR = { primary_culture = brazilian tag = KPB } }
+	}
+}
+
+song = {
+	name = "Peace/Villa Lobos - Conversa II.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+
+		modifier = { factor = 2 OR = { primary_culture = brazilian tag = KPB } }	
+	}
+}
+
+song = {
+	name = "Peace/Villa Lobos - O trenzinho do Caipira.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+
+		modifier = { factor = 2 OR = { primary_culture = brazilian tag = KPB } }
+		modifier = { factor = 0 NOT = { year = 1900 has_country_flag = song_bypass } }
+		modifier = { factor = 2 industrial_score = 150 }
+	}
+}
+
+song = {
+	name = "Peace/Villa Lobos - Aria, Modinha.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		
+		modifier = { factor = 5 war_exhaustion = 20 }  # This is sad and slow, so it will more often when war exhaustion is high after a war
+		modifier = { factor = 1.5 OR = { primary_culture = brazilian tag = KPB } }
+	}
+} 
+
+song = {
+	name = "Peace/Villa Lobos - Canto da Nossa Terra.mp3"
+	chance = {
+		factor = 0.5
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 5 war_exhaustion = 20 }
+		modifier = { factor = 1.5 OR = { primary_culture = brazilian tag = KPB } }
+	}
+} 
+
+song = {
+	name = "Peace/Theodoro Valcarel - Concierto Indio I. Allegro festivo.mp3"
+	chance = {
+		factor = 0.5
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = generic_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 2 is_primary_culture = peruvian }
+		modifier = { factor = 2 capital_scope = { continent = south_america } NOT = { primary_culture = brazilian } }
+	}
+} 
+
+song = {
+	name = "Peace/Theodoro Valcarcel - Concierto indio II. Cantabile.mp3"
+	chance = {
+		factor = 0.5
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = generic_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 2 war_exhaustion = 10 }
+		modifier = { factor = 2 is_primary_culture = peruvian }
+		modifier = { factor = 2 capital_scope = { continent = south_america } NOT = { primary_culture = brazilian } }
+	}
+} 
+
+song = {                                                               
+	name = "Peace/Offenbach - Duo for Two Cellos - Allegreto.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = generic_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+	}
+}
+
+song = {
+	name = "Peace/Offenbach - Duo for Two Cellos - Andante.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = generic_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+	}
+}
+
+song = {
+	name = "Peace/Maurice Ravel - Bolero - 1.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 3 is_primary_culture = french }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = generic_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+	}
+}
+
+song = {
+	name = "Peace/Maurice Ravel - Bolero - 2.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 3 is_primary_culture = french }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = generic_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+	}
+}
+
+song = {
+	name = "Peace/Maurice Ravel - Bolero - 3.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = generic_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 3 is_primary_culture = french }
+		modifier = { factor = 0 is_greater_power = no NOT = { has_country_flag = song_bypass } }  # This part sounds way too epic, so Great Power only
+	}
+}
+
+song = {
+	name = "Peace/Wagner - The Mastersingers of Nuremberg.mp3"
+	chance = {
+		factor = 0.5
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		
+		modifier = { factor = 0 is_greater_power = no NOT = { has_country_flag = song_bypass } }
+		modifier = { factor = 4 is_culture_group = german } #German gets Wagner more often
+	}
+} 
+
+song = {
+	name = "Peace/Alberto Nepomuceno - Batuque.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		
+		modifier = { factor = 0 OR = { has_country_flag = monarchy_gov has_country_flag = song_bypass } } #Nepomuceno was a BIG anti monarchy guy
+		modifier = { factor = 2 primary_culture = brazilian }
+	}
+} 
+
+song = {
+	name = "Peace/Alberto Nepomuceno - Sinfonia em Sol menor - Con Fuoco.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 0 OR = { has_country_flag = monarchy_gov has_country_flag = song_bypass } } #Nepomuceno was a BIG anti monarchy guy
+		modifier = { factor = 2 primary_culture = brazilian }
+	}
+} 
+
+song = {
+	name = "Peace/Camargo Guarnieri - Brasília - Energico trionfante.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 2 primary_culture = brazilian }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 0 NOT = { year = 1900 has_country_flag = song_bypass } }
+		modifier = { factor = 0 is_greater_power = no NOT = { has_country_flag = song_bypass } }
+	}
+}
+
+
+####################################################################################################################################
+
+# Generic War
+
+# Generic warsongs for western nations
+
+song = {
+	name = "War/Wagner - Ride of the Valkyries.mp3"
+	chance = {
+		modifier = { factor = 0.1 war = yes } # This one is way too gliche, but it's too good NOT to have
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 5 is_culture_group = german }
+		modifier = { factor = 5 tag = PRU }
+	}
+}
+
+song = {
+	name = "War/Villa Lobos - Lembrancas do sertao.mp3"
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 2 OR = { primary_culture = brazilian tag = KPB } }
+	}
+}
+
+song = {
+	name = "War/Vivaldi - 06 Concerto No. 2 in G Minor, RV 315 Summer III. Presto.mp3"
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+	}
+}
+
+song = {
+	name = "War/Theodoro Valcarel - Concierto indio IV. Danzante, assai agitato.mp3"
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 2 is_primary_culture = peruvian }
+		modifier = { factor = 2 capital_scope = { continent = south_america } NOT = { primary_culture = brazilian } }
+	}
+} 
+
+song = {
+	name = "War/Dvorak - From the New World - 1.mp3"
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+	}
+}
+
+song = {
+	name = "War/Camargo Guarnieri - Brasilia - Allegro energico.mp3"
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { factor = 2 OR = { primary_culture = brazilian tag = KPB } } 
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+	}
+}
+
+song = {
+	name = "War/Camargo Guarnieri - Symphony No. 5 - Allegro.mp3"
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { factor = 2 OR = { primary_culture = brazilian tag = KPB } } 
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+	}
+}
+####################################################################################################################################
+
+# Brazil
+
+# Brazil is a western nation (for the most part lol), so it will benefit from the generic list, but there are some exclusive brazillian songs
+
+song = {
+	name = "Brazil/Garota de Ipanema.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 is_greater_power = no NOT = { has_country_flag = brazilian_songs_enabled } }
+		modifier = { factor = 0 NOT = { OR = { tag = BRZ tag = RIO has_country_flag = brazilian_songs_enabled } } }
+		modifier = { factor = 0 NOT = { year = 1930 } }
+	}
+}
+
+song = {
+	name = "Brazil/Cesar Guerra-Peixe, Clóvis Pereira - Mourão.mp3"
+	chance = {
+		modifier = { factor = 0.5 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = brazilian_songs_enabled }
+			NOT = { primary_culture = brazilian }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+			}
+		}
+
+		modifier = { factor = 2 OR = { primary_culture = brazilian } }
+		modifier = {
+			factor = 2 
+			has_country_flag = can_form_ceq
+		}
+	}
+} 
+
+
+####################################################################################################################################
+
+# Japan
+
+# Uncivilized Japan will only play edo period or older folk music with folk instruments, mostly koto.
+# Once Japan westernizes, most edo songs have their chance to play heavily reduced, but they are never really gone.
+# Japan will never play generic western music from the main playlist.
+
+# Currently, Japan music will play to all asian countries. I know it's bit generic, buts its better than nothing.
+
+song = {
+	name = "Japan/Peace/Haru No Umi - 1.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0.2 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0.5 civilized = yes }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Haru No Umi - 2.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0.2 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+					has_country_flag = asian_songs_only
+				}
+			}
+		}
+		modifier = { factor = 0.5 civilized = yes }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Godanginuta - 1.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0.2 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+					has_country_flag = asian_songs_only
+				}
+			}
+		}
+		modifier = { factor = 0.1 civilized = yes }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Godanginuta - 2.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0.2 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+					has_country_flag = asian_songs_only
+				}
+			}
+		}
+		modifier = { factor = 0.1 civilized = yes }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Godanginuta - 3.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0.2 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+					has_country_flag = asian_songs_only
+				}
+			}
+		}
+		modifier = { factor = 0.1 civilized = yes }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Godanginuta - 4.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0.2 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+					has_country_flag = asian_songs_only
+				}
+			}
+		}
+		modifier = { factor = 0.1 civilized = yes }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Tegoto - 1.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0.2 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+					has_country_flag = asian_songs_only
+				}
+			}
+		}
+		modifier = { factor = 0.2 civilized = yes }
+	}
+}
+
+# Japanese War songs
+# Kinda hard to do honestly
+
+song = {
+	name = "Japan/War/The Plight of the Samurai - 1.mp3"  #This one has low quality, gotta find a better version
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0 civilized = yes }
+	}
+}
+
+song = {
+	name = "Japan/War/The Plight of the Samurai - 2.mp3"
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0 civilized = yes }
+	}
+}
+
+song = {
+	name = "Japan/War/Tegoto - 2.mp3"
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0.5 civilized = yes }
+	}
+}
+
+song = {
+	name = "Japan/War/Koto Concerto - Genji IV - Floating Bridge of Dreams.mp3"
+	chance = {
+		modifier = { factor = 20 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0 civilized = no }
+	}
+}
+
+song = {
+	name = "Japan/War/Doki no sakura.mp3"
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { factor = 0 civilized = no }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+	}
+}  
+
+# Westernized Japan, post edo music
+
+# Once Japan westernizes, it will play mixed orchestra songs with both western and folk instruments.
+# The songs were chosen to show westernization, but are unique enough to have their obvious distinct japanese feel.
+# Westernized war marches are mostly avoided, they sound way too western and NOT japanese on the slighest.
+
+song = {
+	name = "Japan/Peace/Inno Meiji - Kosaku Yamada - 1.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0 civilized = no }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Inno Meiji - Kosaku Yamada - 2.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0 civilized = no }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Inno Meiji - Kosaku Yamada - 3.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0 civilized = no }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Inno Meiji - Kosaku Yamada - 4.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0 civilized = no }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Koto Concerto - Genji III - Maiden on the Bridge.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0 civilized = no }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Koto Concerto - Genji I - Cicada Shell.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0 civilized = no }
+	}
+}
+
+song = {
+	name = "Japan/Peace/Koto Concerto - Genji V - Vanished Into the Clouds.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = far_east_asian
+					is_culture_group = east_asian
+					is_culture_group = southeast_asian
+					has_country_flag = asian_songs_enabled
+				}
+			}
+		}
+		modifier = { factor = 0 civilized = no }
+	}
+}
+
+####################################################################################################################################
+
+# Mongol Empire
+
+# The Mongols are going to get the same treatment as japan, but still under work
+song = {
+	name = "Mongolia/In Praise of Gengis Khan.mp3"
+	chance = {
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 war = no NOT = { has_country_flag = war_songs_bypass } }
+		modifier = { factor = 0 NOT = { tag = MGL } }
+	}
+}
+
+
+####################################################################################################################################
+
+# Peru
+
+
+song = {
+	name = "Latin America/Peru/El Condor Pasa.mp3"
+	chance = {
+		modifier = { factor = 2 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0 
+			NOT = { 
+				OR = {
+					primary_culture = peruvian
+					primary_culture = bolivian
+					primary_culture = ecuadorian
+					has_country_flag = peruvian_songs_enabled
+				}
+			} 
+		}
+	}
+}
+
+song = {
+	name = "Latin America/Peru/El Condor Pasa Extended.mp3"
+	chance = {
+		modifier = { factor = 0.1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0 
+			NOT = { 
+				OR = {
+					primary_culture = peruvian
+					primary_culture = bolivian
+					primary_culture = ecuadorian
+					has_country_flag = peruvian_songs_enabled
+				}
+			} 
+		}
+	}
+}
+
+song = {
+	name = "Latin America/Peru/Marinera y Tondero.mp3"
+	chance = {
+		modifier = { factor = 2 }
+		modifier = { factor = 0 NOT = { primary_culture = peruvian has_country_flag = peruvian_songs_enabled } }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+	}
+}
+
+song = {
+	name = "Latin America/Peru/El Plebeyo.mp3"
+	chance = {
+		modifier = { factor = 2 }
+		modifier = { factor = 0 NOT = { primary_culture = peruvian has_country_flag = peruvian_songs_enabled } }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+	}
+}
+
+song = {
+	name = "Latin America/Peru/Tarantela D'Apres Lucas Ruiz De Ribayaz.mp3"
+	chance = {
+		modifier = { factor = 2 }
+		modifier = { factor = 3 primary_culture = peruvian has_country_flag = peruvian_songs_enabled }
+		modifier = { 
+			factor = 0 
+			NOT = { 
+				OR = {
+					primary_culture = peruvian
+					primary_culture = bolivian
+					primary_culture = ecuadorian
+					has_country_flag = peruvian_songs_enabled
+				}
+			} 
+		}
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+	}
+}
+
+song = {
+	name = "Latin America/Peru/Xacaras - Lucas Ruiz de Ribayaz.mp3"
+	chance = {
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 2 primary_culture = peruvian }
+		modifier = { factor = 2 primary_culture = spanish }
+		modifier = { factor = 2 OR = { government = fascist_dictatorship government = absolute_monarchy government = presidential_dictatorship } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = peruvian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian	
+			}
+		}
+	}
+}
+
+song = {
+	name = "Latin America/Peru/Lanchas para Baylar.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { 
+			factor = 0 
+			NOT = { 
+				OR = {
+					primary_culture = peruvian
+					primary_culture = bolivian
+					primary_culture = ecuadorian
+					has_country_flag = peruvian_songs_enabled
+				}
+			} 
+		}
+	}
+}
+
+song = {
+	name = "Latin America/Peru/Juan de Araujo - Recordad Jilguerillos.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 5 primary_culture = peruvian }
+		modifier = { factor = 1 primary_culture = spanish }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 is_greater_power = no NOT = { has_country_flag = generic_songs_enabled } }
+		modifier = { factor = 0 NOT = { OR = { government = absolute_monarchy government = fascist_dictatorship has_country_flag = generic_songs_enabled } } }
+		modifier = { 
+			factor = 0 
+			NOT = { 
+				OR = {
+					primary_culture = peruvian
+					primary_culture = bolivian
+					primary_culture = ecuadorian
+					primary_culture = spanish
+					has_country_flag = peruvian_songs_enabled
+				}
+			} 
+		}
+	}
+}
+
+song = {
+	name = "Latin America/Peru/La Flor de la Canela.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 NOT = { primary_culture = peruvian has_country_flag = peruvian_songs_enabled } }
+		modifier = { factor = 0.1 year = 1865 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+	}
+}
+
+song = {
+	name = "Latin America/Peru/Marcha a Moran.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 NOT = { primary_culture = peruvian has_country_flag = peruvian_songs_enabled } }
+		modifier = { factor = 10 war = yes }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 			
+			NOT = { has_country_flag = peruvian_songs_enabled }
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian	
+			}
+		}
+	}
+}
+
+
+####################################################################################################################################
+
+# Bolivia
+
+song = {
+	name = "Latin America/Bolivia/Alma crucena.mp3"
+	chance = {
+		factor = 0.5
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 NOT = { primary_culture = bolivian has_country_flag = bolivian_songs_enabled } }
+	}
+}
+
+song = {
+	name = "Latin America/Bolivia/Potosino Soy.mp3"
+	chance = {
+		factor = 0.5
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 NOT = { primary_culture = bolivian has_country_flag = bolivian_songs_enabled } }
+	}
+}
+
+song = {
+	name = "Latin America/Bolivia/Chovena, Carnavalito, Carnaval De Ulises.mp3"
+	chance = {
+		factor = 0.5
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 NOT = { primary_culture = bolivian has_country_flag = bolivian_songs_enabled } }
+	}
+}
+
+song = {
+	name = "Latin America/Bolivia/Sonata Chiquitana IV - Allegro.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 2 OR = { primary_culture = bolivian has_country_flag = bolivian_songs_enabled } }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+	}
+}
+
+song = {
+	name = "Latin America/Bolivia/Sonata Chiquitana IV - Andante.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 2 OR = { primary_culture = bolivian has_country_flag = bolivian_songs_enabled } }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+	}
+}
+
+song = {
+	name = "Latin America/Bolivia/Sonata Chiquitana IV - Minueto.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 2 OR = { primary_culture = bolivian has_country_flag = bolivian_songs_enabled } }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+	}
+}
+
+song = {
+	name = "Latin America/Bolivia/Oh! Cochabamba.mp3"
+	chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 NOT = { primary_culture = bolivian has_country_flag = bolivian_songs_enabled } }
+	}
+}
+
+####################################################################################################################################
+
+# Argentina
+
+song = {
+	name = "Latin America/Argentina/Suite Norteña - Chamamé.mp3"
+	chance = {
+		modifier = { factor = 2 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 
+			NOT = { has_country_flag = argentinian_songs_enabled }			
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 0.2 NOT = { primary_culture = argentinian has_country_flag = argentinian_songs_enabled } }
+	}
+} 
+
+song = {
+	name = "Latin America/Argentina/Suite Norteña, Chacarera.mp3"
+	chance = {
+		modifier = { factor = 2 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 
+			NOT = { has_country_flag = argentinian_songs_enabled }			
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 0.2 NOT = { primary_culture = argentinian has_country_flag = argentinian_songs_enabled } }
+	}
+} 
+
+song = {
+	name = "Latin America/Argentina/Vidala, Suite N1 de Impresiones Norteñas.mp3"
+	chance = {
+		modifier = { factor = 2 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }
+		modifier = { #Exclusive music groups
+			factor = 0 
+			NOT = { has_country_flag = argentinian_songs_enabled }			
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 0.2 NOT = { primary_culture = argentinian has_country_flag = argentinian_songs_enabled } }
+	}
+} 
+
+song = {
+	name = "Latin America/Argentina/Gato folclore.mp3"
+	chance = {
+		modifier = { factor = 0.2 }
+		modifier = { factor = 0 war = yes NOT = { has_country_flag = warsong_bypass } }
+		modifier = { factor = 0 has_country_flag = asian_songs_only }		
+		modifier = { #Exclusive music groups
+			factor = 0 
+			NOT = { has_country_flag = argentinian_songs_enabled }			
+			OR = {
+				is_culture_group = far_east_asian
+				is_culture_group = east_asian
+				is_culture_group = southeast_asian
+				
+			}
+		}
+		modifier = { factor = 0 NOT = { primary_culture = argentinian has_country_flag = argentinian_songs_enabled } }
+	}
+} 
+
+# Victoria I repertoire expansion - 2026-09-26
+# See VICTORIA1_MUSIC.md for performances and source references.
+
+# 8.550129-2.mp3 - Amadeus Quartet
+song = {
+    name = "Victoria1/Haydn - Emperor Quartet II.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.550142-2.mp3 - Philharmonia Hungarica / Antal Dorati
+song = {
+    name = "Victoria1/Kodaly - Viennese Musical Clock.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.550235-1.mp3 - Vienna Philharmonic, Wiener Singverein / Herbert von Karajan
+song = {
+    name = "Victoria1/Mozart - Requiem Kyrie.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.550235-3.mp3 - Vienna Philharmonic, Wiener Singverein / Herbert von Karajan
+song = {
+    name = "Victoria1/Mozart - Requiem Dies Irae.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.550370-1.mp3 - Deutsche Oper Berlin Orchestra and Chorus / Donald Runnicles
+song = {
+    name = "Victoria1/Wagner - Tannhauser Festive March.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.550370-4.mp3 - London Symphony Orchestra / Richard Bonynge
+song = {
+    name = "Victoria1/Meyerbeer - Coronation March.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.550370-9.mp3 - USSR State Symphony Orchestra / Yevgeny Svetlanov
+song = {
+    name = "Victoria1/Tchaikovsky - Coronation March.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.550727-1.mp3 - Berlin Philharmonic / Herbert von Karajan
+song = {
+    name = "Victoria1/Bizet - Carmen Prelude.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.550944-14.mp3 - Moscow State Philharmonic Academy Orchestra, Russian State Academy Choir / Igor Markevitch
+song = {
+    name = "Victoria1/Verdi - Requiem Sanctus.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.550945-3.mp3 - Moscow State Philharmonic Academy Orchestra, Russian State Academy Choir / Igor Markevitch
+song = {
+    name = "Victoria1/Verdi - Libera Me Dies Irae.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.550999-7.mp3 - London Symphony Orchestra / Colin Davis
+song = {
+    name = "Victoria1/Berlioz - Le Corsaire.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.553018-11.mp3 - USSR State Maly Symphony Orchestra / Yuri Simonov
+song = {
+    name = "Victoria1/Verdi - I Vespri Siciliani Overture.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.553052-9.mp3 - Gothenburg Symphony Orchestra / Neeme Jarvi
+song = {
+    name = "Victoria1/Berwald - Symphony 4 Scherzo.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.553089-11.mp3 - Berlin Philharmonic / Claudio Abbado
+song = {
+    name = "Victoria1/Verdi - La Forza Del Destino Overture.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.553200-8.mp3 - USSR State Academic Symphony Orchestra / Yevgeny Svetlanov
+song = {
+    name = "Victoria1/Mendelssohn - Italian Saltarello.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.553596-1.mp3 - Bolshoi Theatre Orchestra / Boris Khaikin
+song = {
+    name = "thecoronation_titletheme.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.553596-16.mp3 - Berlin Philharmonic / Herbert von Karajan
+song = {
+    name = "Victoria1/Grieg - Sigurd Jorsalfar Homage March.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.553597-4.mp3 - USSR Ministry of Culture Symphony Orchestra / Gennady Rozhdestvensky
+song = {
+    name = "Victoria1/Berlioz - March To The Scaffold.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.554267-12.mp3 - Finnish Guards Band / Elias Seppala
+song = {
+    name = "Victoria1/Traditional - Bjorneborg March.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.554267-19.mp3 - Royal Swedish Army Band / Mats Janhagen
+song = {
+    name = "Victoria1/Harteveld - Marcia Carolus Rex.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.554267-5.mp3 - Royal Swedish Army Band / Mats Janhagen
+song = {
+    name = "Victoria1/Traditional - Finnish Cavalry March.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.554518-10.mp3 - Vienna Philharmonic / Lorin Maazel
+song = {
+    name = "Victoria1/Strauss II - Indigo March.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.554518-3.mp3 - USSR Ministry of Culture Symphony Orchestra / Pavel Kogan
+song = {
+    name = "Victoria1/Strauss II - Thunder And Lightning.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.554521-10.mp3 - Vienna Philharmonic / Willi Boskovsky
+song = {
+    name = "Victoria1/Strauss II - Napoleon March.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.554843-13.mp3 - USSR State Symphony Orchestra / Yevgeny Svetlanov
+song = {
+    name = "Victoria1/Mussorgsky - Sorochintsy Fair Hopak.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.554844-1.mp3 - USSR State Academic Symphony Orchestra / Yevgeny Svetlanov
+song = {
+    name = "Victoria1/Rimsky Korsakov - Sadko Introduction.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.554844-14.mp3 - USSR State Symphony Orchestra / Yevgeny Svetlanov
+song = {
+    name = "Victoria1/Tchaikovsky - Maid Of Orleans Entracte.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.554844-8.mp3 - Bolshoi Theatre Orchestra / Yevgeny Svetlanov
+song = {
+    name = "Victoria1/Dargomyzhsky - Rusalka Gypsy Dance.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.555386-3.mp3 - Hong Kong Philharmonic Orchestra / Varujan Kojian
+song = {
+    name = "Victoria1/Wagner - Rule Britannia Overture.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.555386-4.mp3 - Royal Scottish National Orchestra / Neeme Jarvi
+song = {
+    name = "Victoria1/Wagner - Imperial March.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.557217-1.mp3 - USSR State Symphony Orchestra / Yevgeny Svetlanov
+song = {
+    name = "Victoria1/Glinka - Ruslan And Lyudmila Overture.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.557217-15.mp3 - Berlin Philharmonic / Herbert von Karajan
+song = {
+    name = "Victoria1/Strauss I - Radetzky March.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.557217-8.mp3 - Grand Symphony Orchestra of All-Union Radio and Television / Gennady Rozhdestvensky
+song = {
+    name = "Victoria1/Strauss II - Tritsch Tratsch Polka.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.559058-1.mp3 - United States Marine Band / Jason K. Fettig
+song = {
+    name = "Victoria1/Sousa - Hands Across The Sea.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.559058-5.mp3 - United States Marine Band / John R. Bourgeois
+song = {
+    name = "Victoria1/Sousa - Mars And Venus.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.559059-1.mp3 - United States Marine Band / Jason K. Fettig
+song = {
+    name = "Victoria1/Sousa - Royal Welch Fusiliers.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.559059-12.mp3 - United States Marine Band / Jason K. Fettig
+song = {
+    name = "Victoria1/Sousa - King Cotton.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+
+# 8.559200-9.mp3 - United States Marine Band / Jason K. Fettig
+song = {
+    name = "Victoria1/Sousa - Semper Fidelis.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = war_songs_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 0 has_country_flag = asian_songs_only }
+        modifier = {
+            factor = 0
+            NOT = { OR = { has_country_flag = generic_songs_enabled has_country_flag = all_songs_enabled } }
+            OR = {
+                is_culture_group = far_east_asian
+                is_culture_group = east_asian
+                is_culture_group = southeast_asian
+            }
+        }
+    }
+}
+

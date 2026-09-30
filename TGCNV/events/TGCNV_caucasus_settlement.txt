@@ -1,0 +1,44 @@
+# Migrates only the two omitted Quba descendants in an early legacy campaign.
+# Updated event32513 marks new games so later legitimate acquisitions are untouched.
+country_event = {
+    id = 269896
+    title = EVTNAME269896
+    desc = EVTDESC269896
+    picture = "caucasian_war"
+    fire_only_once = yes
+    trigger = {
+        tag = RUS
+        war = no
+        NOT = { year = 1846 }
+        NOT = { has_country_flag = tgcnv_caucasus_settlement_updated }
+        CIR = { exists = no }
+        DAG = { exists = no }
+        TCA = {
+            exists = yes
+            war = no
+            OR = { vassal_of = RUS substate_of = RUS }
+        }
+        1103 = { owned_by = TCA controlled_by = TCA is_core = RUS }
+        4659 = { owned_by = TCA controlled_by = TCA is_core = RUS }
+        any_owned_province = {
+            OR = { province_id = 6622 province_id = 6859 }
+            controlled_by = RUS
+            is_core = AZB
+            NOT = { is_core = RUS }
+        }
+    }
+    mean_time_to_happen = { days = 1 }
+    immediate = {
+        any_owned = {
+            limit = {
+                OR = { province_id = 6622 province_id = 6859 }
+                controlled_by = RUS
+                is_core = AZB
+                NOT = { is_core = RUS }
+            }
+            secede_province = TCA
+        }
+        set_country_flag = tgcnv_caucasus_settlement_updated
+    }
+    option = { name = EVTOPTA269896 ai_chance = { factor = 100 } }
+}

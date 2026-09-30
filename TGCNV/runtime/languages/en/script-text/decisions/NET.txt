@@ -1,0 +1,334 @@
+political_decisions = {
+	embrace_the_boer = {
+		picture = embrace_the_boer
+		potential = {
+			tag = NET
+			NOT = { has_country_flag = boer_accepted }
+			any_owned_province = {
+			OR = {
+				is_core = SAF
+				is_core = NAL
+				is_core = TRN
+				is_core = ORA
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			money = 100000
+			any_owned_province = { has_pop_culture = boer }
+		}
+
+		effect = {
+			set_country_flag = boer_accepted
+			treasury = -100000
+			add_accepted_culture = boer
+			any_pop = {
+				limit = { has_pop_culture = boer }
+				militancy = -7
+				consciousness = -4
+				money = 10
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	annex_limburg_NET = {
+		picture = treaty_signing
+		potential = {
+			tag = NET
+			is_our_vassal = LBG
+			LBG = { exists = yes }
+			OR = {
+				revolution_n_counterrevolution = 1
+				PRU = { exists = yes is_greater_power = no }
+				has_country_flag = limburg_crisis_NET
+				AND = {
+					is_greater_power = yes
+					year = 1850
+					OR = {
+						is_sphere_leader_of = LBG
+						LBG = { part_of_sphere = no }
+					}
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			OR = {
+				any_neighbor_country = {
+					has_country_flag = limburg_crisis
+					NOT = { has_country_modifier = preparations_for_war }
+				}
+				AND = {
+					is_greater_power = yes
+					OR = {
+						is_sphere_leader_of = LBG
+						LBG = { part_of_sphere = no }
+					}
+				}
+				AND = {
+					is_greater_power = yes
+					any_neighbor_country = {
+						has_country_flag = limburg_crisis
+						is_greater_power = no
+					}
+				}
+				AND = {
+					year = 1880
+					LBG = { part_of_sphere = no }
+				}
+			}
+		}
+
+		effect = {
+			any_country = { release = LBG leave_alliance = LBG }
+			3313 = { remove_core = LBG }
+			381 = { remove_core = LBG change_province_name = "Maastricht" }
+			any_country = { limit = { has_country_flag = limburg_crisis } clr_country_flag = limburg_crisis }
+			clr_country_flag = limburg_crisis
+			inherit = LBG
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	appoint_thorbecke = {
+		picture = thorbecke_reforms
+		potential = {
+			tag = NET
+			has_country_flag = thorbecke
+			NOT = { year = 1860 }
+			has_country_flag = semi_constitutional_monarchy_gov
+			has_global_flag = liberal_revolution_somewhere
+			NOT = {
+				has_country_modifier = willem_i_legacy
+				has_country_flag = thorbecke_reforms
+			}
+		}
+
+		allow = {
+			war = no
+			OR = {
+				average_militancy = 3
+				num_of_revolts = 1
+				average_consciousness = 5
+			}
+		}
+
+		effect = {
+			set_country_flag = thorbecke_reforms
+			prestige = 10
+			add_country_modifier = {
+				name = thorbecke_reforms
+				duration = 7300
+			}
+			political_reform = wealth_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = state_equal_weight
+			political_reform = open_borders
+			remove_country_modifier = global_liberal_agitation
+			country_event = 10051
+			any_owned = {
+				limit = { is_colonial = no }
+				remove_province_modifier = liberal_agitation
+				any_pop = {
+					scaled_militancy = {
+						ideology = liberal
+						factor = -6
+					}
+					scaled_consciousness = {
+						ideology = liberal
+						factor = -6
+					}
+					scaled_militancy = {
+						ideology = conservative
+						factor = -3
+					}
+					scaled_militancy = {
+						ideology = reactionary
+						factor = 6
+					}
+				}
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+#from MiniMod-NET
+	form_greater_netherlands = {
+		potential = {
+			tag = NET
+			NOT = { has_country_flag = form_greater_netherlands }
+			NOT = { NET = { owns = 387 } }
+			year = 1860
+		}
+
+		allow = {
+			war = no
+			is_greater_power = yes
+			FLA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
+				}
+			}
+			WLL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = form_greater_netherlands
+			prestige = 40
+			FLA = { all_core = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			inherit = BEL
+			inherit = WLL
+			inherit = FLA
+			release_vassal = WLL
+			create_alliance = WLL
+			diplomatic_influence = {
+				who = WLL
+				value = 300
+			}
+			WLL = {
+				all_core = {
+					remove_core = THIS
+				}
+			}
+			release_vassal = LUX
+			create_alliance = LUX
+			diplomatic_influence = {
+				who = LUX
+				value = 300
+			}
+			add_accepted_culture = dutch
+		}
+	}
+
+	accepting_walloon_people = {
+		potential = {
+			tag = NET
+			NOT = { has_country_flag = accepting_walloon_people }
+			year = 1860
+		}
+
+		allow = {
+			war = no
+			is_greater_power = yes
+			FLA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
+				}
+			}
+			WLL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = accepting_walloon_people
+			prestige = -30
+			any_pop = {
+				limit = {
+					has_pop_culture = dutch
+				}
+				militancy = 2
+				consciousness = 3
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = french
+				}
+				militancy = 2
+				consciousness = 3
+			}
+			add_accepted_culture = french
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				year = 1880
+			}
+			modifier = {
+				factor = 0
+				NOT = { average_militancy = 7 }
+			}
+		}
+	}
+#from MISC_Flavour
+	claim_artois = {
+		picture = NET_claim_artois
+		potential = {
+			tag = NET
+			OR = {
+				AND = {
+					owns = 394 #Wallonia
+					owns = 387 #Flanders
+					owns = 397 #Luxembourg
+				}
+				AND = {
+					owns = 387 #Brussels
+					owns = 392 #Namur
+					owns = 397 #Luxembourg
+				}
+			}
+			NOT = { has_country_flag = artois_claimed }
+		}
+
+		allow = {
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			war_policy = jingoism
+			OR = {
+				has_country_flag = absolute_monarchy_gov
+				government = fascist_dictatorship
+			}
+		}
+
+		effect = {
+			badboy = 5
+			set_country_flag = artois_claimed
+			FRA_404 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			405 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			400 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			399 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			relation = { who = FRA value = -400 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+}

@@ -1,0 +1,63 @@
+SPA = {
+	value = 100
+}
+USA = {
+	value = -200
+}
+BRZ = {
+	value = -200
+}
+URU = {
+	value = -200
+}
+ARC = {
+	value = -200
+}
+CHL = {
+	value = -200
+}
+BOL = {
+	value = -200
+}
+PBC = {
+	value = -400
+}
+CRT = {
+	value = -200
+}
+ENT = {
+	value = -200
+}
+SBA = {
+	value = -200
+}
+RGS = {
+	value = -200
+}
+
+army = {
+	name = "Ej…Õrcito del Paraguay"
+	location = 2340
+	regiment = {
+		name= "1.1ra Divisi…◊n de Infanter…—a"
+		type = infantry
+		home = 2340
+	}
+	regiment = {
+		name= "2.2ra Divisi…◊n de Infanter…—a"
+		type = infantry
+		home = 2340
+	}
+	regiment = {
+		name= "3.3ra Divisi…◊n de Infanter…—a"
+		type = infantry
+		home = 2340
+	}
+}
+leader = {
+	name = "Domingo Francisco S…≈nchez"
+	type = land
+	date = 1836.1.1
+	background = school_of_the_bayonet
+	personality = impetuous
+}

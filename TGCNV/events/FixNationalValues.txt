@@ -1,0 +1,398 @@
+country_event = {
+	id = 909090000
+	title = "EVTNAME909090000"
+	desc = "EVTDESC909090000"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = NGF
+			tag = PRU
+		}
+		NOT = {
+			nationalvalue = nv_prussia
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090000"
+		GER = { nationalvalue = nv_prussia }
+		NGF = { nationalvalue = nv_prussia }
+		PRU = { nationalvalue = nv_prussia }
+	}
+}
+
+country_event = {
+	id = 909090001
+	title = "EVTNAME909090001"
+	desc = "EVTDESC909090001"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = ENG
+		}
+		NOT = {
+			nationalvalue = nv_britain
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090001"
+		ENG = { nationalvalue = nv_britain }
+	}
+}
+
+country_event = {
+	id = 909090002
+	title = "EVTNAME909090002"
+	desc = "EVTDESC909090002"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = VFR
+		}
+		NOT = {
+			nationalvalue = nv_france 
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090002"
+		FRA = { nationalvalue = nv_france }
+		VFR = { nationalvalue = nv_france }
+	}
+}
+
+country_event = {
+	id = 909090003
+	title = "EVTNAME909090003"
+	desc = "EVTDESC909090003"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = AUS
+            tag = KUK
+            tag = DNB
+		}
+		NOT = {
+			nationalvalue = nv_austria 
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090003"
+		AUS = { nationalvalue = nv_austria }
+		KUK = { nationalvalue = nv_austria }
+		DNB = { nationalvalue = nv_austria }
+	}
+}
+
+country_event = {
+	id = 909090004
+	title = "EVTNAME909090004"
+	desc = "EVTDESC909090004"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = SAR
+                                    tag = ITA
+		}
+		NOT = {
+			nationalvalue = nv_italia 
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090004"
+		SAR = { nationalvalue = nv_italia }
+		ITA = { nationalvalue = nv_italia }
+	}
+}
+
+country_event = {
+	id = 909090005
+	title = "EVTNAME909090005"
+	desc = "EVTDESC909090005"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = USA
+		}
+		NOT = {
+			nationalvalue = nv_usa 
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090005"
+		USA = { nationalvalue = nv_usa }
+	}
+}
+
+country_event = {
+	id = 909090006
+	title = "EVTNAME909090006"
+	desc = "EVTDESC909090006"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = RUS
+		}
+		NOT = {
+			nationalvalue = nv_russia 
+            government = proletarian_dictatorship
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090006"
+		RUS = { nationalvalue = nv_russia }
+	}
+}
+
+country_event = {
+	id = 909090007
+	title = "EVTNAME909090007"
+	desc = "EVTDESC909090007"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = JAP
+		}
+		NOT = {
+			nationalvalue = nv_japan 
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090007"
+		JAP = { nationalvalue = nv_japan }
+	}
+}
+
+country_event = {
+	id = 909090008
+	title = "EVTNAME909090008"
+	desc = "EVTDESC909090008"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		AND = {
+			tag = RUS
+            government = proletarian_dictatorship
+		}
+		NOT = {
+			nationalvalue = nv_soviet
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090008"
+		RUS = { nationalvalue = nv_soviet }
+	}
+}
+
+country_event = {
+	id = 909090009
+	title = "EVTNAME909090009"
+	desc = "EVTDESC909090009"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = QNG
+			tag = CHI
+			tag = KMT
+		}
+		NOT = {
+			nationalvalue = nv_china
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090009"
+		QNG = { nationalvalue = nv_china }
+		CHI = { nationalvalue = nv_china }
+		KMT = { nationalvalue = nv_china }
+	}
+}
+
+country_event = {
+	id = 909090010
+	title = "EVTNAME909090010"
+	desc = "EVTDESC909090010"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		tag = NET
+		NOT = {
+			nationalvalue = nv_netherlands
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090010"
+		NET = { nationalvalue = nv_netherlands }
+	}
+}
+
+country_event = {
+	id = 909090011
+	title = "EVTNAME909090011"
+	desc = "EVTDESC909090011"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		tag = BEL
+		NOT = {
+			nationalvalue = nv_belgium
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090011"
+		BEL = { nationalvalue = nv_belgium }
+	}
+}
+
+country_event = {
+	id = 909090012
+	title = "EVTNAME909090012"
+	desc = "EVTDESC909090012"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		tag = SPA
+		NOT = {
+			nationalvalue = nv_spain
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090012"
+		SPA = { nationalvalue = nv_spain }
+	}
+}
+
+country_event = {
+	id = 909090013
+	title = "EVTNAME909090013"
+	desc = "EVTDESC909090013"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		tag = POR
+		NOT = {
+			nationalvalue = nv_portugal
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090013"
+		POR = { nationalvalue = nv_portugal }
+	}
+}
+
+country_event = {
+	id = 909090014
+	title = "EVTNAME909090014"
+	desc = "EVTDESC909090014"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		tag = TUR
+		NOT = {
+			nationalvalue = nv_ottoman
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090014"
+		TUR = { nationalvalue = nv_ottoman }
+	}
+}
+
+country_event = {
+	id = 909090015
+	title = "EVTNAME909090015"
+	desc = "EVTDESC909090015"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		tag = KOR
+		NOT = {
+			nationalvalue = nv_korea
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090015"
+		KOR = { nationalvalue = nv_korea }
+	}
+}
+
+country_event = {
+	id = 909090016
+	title = "EVTNAME909090016"
+	desc = "EVTDESC909090016"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		tag = SWE
+		NOT = {
+			nationalvalue = nv_sweden
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090016"
+		SWE = { nationalvalue = nv_sweden }
+	}
+}
+
+country_event = {
+	id = 909090017
+	title = "EVTNAME909090017"
+	desc = "EVTDESC909090017"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		tag = DEN
+		NOT = {
+			nationalvalue = nv_denmark
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090017"
+		DEN = { nationalvalue = nv_denmark }
+	}
+}
+
+country_event = {
+	id = 909090018
+	title = "EVTNAME909090018"
+	desc = "EVTDESC909090018"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		tag = TKG
+		NOT = {
+			nationalvalue = nv_tokugawa
+		}
+	}
+
+	option = {
+		name = "EVTOPTA909090018"
+		TKG = { nationalvalue = nv_tokugawa }
+	}
+}

@@ -1,0 +1,77 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_tgcnv_air_command_green"
+        texturefile = "gfx\\interface\\tgcnv_air\\air_command_green.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_province_airbase"
+        texturefile = "gfx\\interface\\tgcnv_air\\province_airbase.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_province_anti_air"
+        texturefile = "gfx\\interface\\tgcnv_air\\province_anti_air.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_round_airbase"
+        texturefile = "gfx\\interface\\tgcnv_air\\province_airbase_round.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_round_aa"
+        texturefile = "gfx\\interface\\tgcnv_air\\province_aa_round.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_unit_interceptor"
+        texturefile = "gfx\\interface\\tgcnv_air\\unit_interceptor.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_unit_tactical_bomber"
+        texturefile = "gfx\\interface\\tgcnv_air\\unit_tactical_bomber.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_unit_strategic_bomber"
+        texturefile = "gfx\\interface\\tgcnv_air\\unit_strategic_bomber.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_unit_flying_bomb"
+        texturefile = "gfx\\interface\\tgcnv_air\\unit_flying_bomb.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_unit_rocket"
+        texturefile = "gfx\\interface\\tgcnv_air\\unit_rocket.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_unit_multirole_fighter"
+        texturefile = "gfx\\interface\\tgcnv_air\\unit_multirole_fighter.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_unit_close_air_support"
+        texturefile = "gfx\\interface\\tgcnv_air\\unit_close_air_support.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_unit_naval_bomber"
+        texturefile = "gfx\\interface\\tgcnv_air\\unit_naval_bomber.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_unit_transport"
+        texturefile = "gfx\\interface\\tgcnv_air\\unit_transport.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_tgcnv_unit_reconnaissance"
+        texturefile = "gfx\\interface\\tgcnv_air\\unit_reconnaissance.dds"
+        noOfFrames = 1
+    }
+}

@@ -1,0 +1,35 @@
+tgcnv_destroyer_commissioning = {
+ limit = { tgcnv_ww2_naval_engineering_1930 = 1 }
+ news = no
+ chance = { base = 100 }
+ effect = { activate_unit = tgcnv_destroyer }
+}
+
+tgcnv_submarine_commissioning = {
+ limit = { tgcnv_ww2_naval_engineering_1930 = 1 }
+ news = no
+ chance = { base = 100 }
+ effect = { activate_unit = tgcnv_submarine }
+}
+
+tgcnv_heavy_cruiser_commissioning = {
+ limit = { tgcnv_ww2_naval_engineering_1930 = 1 }
+ news = no
+ chance = { base = 100 }
+ effect = { activate_unit = tgcnv_heavy_cruiser }
+}
+
+tgcnv_light_carrier_commissioning = {
+ limit = { tgcnv_ww2_naval_engineering_1930 = 1 }
+ news = no
+ chance = { base = 100 }
+ effect = { activate_unit = tgcnv_light_carrier }
+}
+
+tgcnv_fleet_carrier_commissioning = {
+ limit = { tgcnv_ww2_naval_engineering_1936 = 1 }
+ news = no
+ chance = { base = 100 }
+ effect = { activate_unit = tgcnv_fleet_carrier }
+}
+

@@ -1,0 +1,35 @@
+MEX = {
+	value = -25
+}
+VNZ = {
+	value = -25
+}
+CLM = {
+	value = -25
+}
+leader = {
+	name = "Francisco MorazÉÅn"
+	type = land
+	date = 1836.1.1
+	personality = stout
+	background = generals_aide
+}
+army = {
+	name = "EjÉÍrcito Federal"
+	location = 2186
+	regiment = {
+		name= "1. DivisiÉ×n de InfanterÉÑa"
+		type = infantry
+		home = 2191
+	}
+	regiment = {
+		name= "2. DivisiÉ×n de InfanterÉÑa"
+		type = infantry
+		home = 2193
+	}
+	regiment = {
+		name= "3. DivisiÉ×n de InfanterÉÑa"
+		type = infantry
+		home = 2186
+	}
+}

@@ -1,0 +1,106 @@
+# TGCNV RESOURCE EXPANSION BEGIN
+# Factory unlock inventions for the 64-good economy extension.
+
+nv_powder_mills = {
+	limit = { high_pressure_steam_engine = 1 }
+	news = no
+	chance = {
+		base = 8
+		modifier = {
+			factor = -10
+			civilized = no
+		}
+	}
+	effect = {
+		activate_building = gunpowder_factory
+	}
+}
+
+nv_nonferrous_metallurgy = {
+	limit = { high_pressure_steam_engine = 1 }
+	news = no
+	chance = {
+		base = 7
+		modifier = {
+			factor = 1.5
+			invention = nv_powder_mills
+		}
+		modifier = {
+			factor = -10
+			civilized = no
+		}
+	}
+	effect = {
+		activate_building = bronze_factory
+	}
+}
+
+nv_sugar_refining = {
+	limit = { piston_steam_engine = 1 }
+	news = no
+	chance = {
+		base = 9
+		modifier = {
+			factor = -10
+			civilized = no
+		}
+	}
+	effect = {
+		activate_building = sugar_refinery
+	}
+}
+
+nv_electrical_grid = {
+	limit = { electricity = 1 }
+	news = no
+	chance = {
+		base = 7
+		modifier = {
+			factor = -10
+			civilized = no
+		}
+	}
+	effect = {
+		activate_building = electric_power_plant
+	}
+}
+
+nv_magitech_industry = {
+	limit = {
+		electricity = 1
+		assembly_line = 1
+		invention = nv_electrical_grid
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = {
+			factor = -10
+			civilized = no
+		}
+	}
+	effect = {
+		activate_building = magitech_components_factory
+	}
+}
+
+nv_idol_media_industry = {
+	limit = {
+		assembly_line = 1
+		invention = nv_magitech_industry
+		invention = bakelite
+	}
+	news = no
+	chance = {
+		base = 5
+		modifier = {
+			factor = -10
+			civilized = no
+		}
+	}
+	effect = {
+		activate_building = idol_media_studio
+	}
+}
+
+# TGCNV RESOURCE EXPANSION END

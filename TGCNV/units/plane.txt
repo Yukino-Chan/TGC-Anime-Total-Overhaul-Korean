@@ -1,0 +1,25 @@
+# Save-compatible ID: former army aircraft are now armored cars.
+plane = {
+    icon = 19
+    type = land
+    sprite = NVArmoredCar
+    active = no
+    unit_type = cavalry
+    floating_flag = yes
+    primary_culture = yes
+    priority = 45
+    max_strength = 3
+    default_organisation = 30
+    maximum_speed = 7
+    weighted_value = 7
+    build_time = 90
+    build_cost = { automobiles = 8 small_arms = 8 canned_food = 10 regular_clothes = 10 fuel = 5 steel = 20 }
+    supply_consumption = 0.15
+    supply_cost = { automobiles = 0.05 small_arms = 0.04 canned_food = 0.06 fuel = 0.15 ammunition = 0.08 }
+    reconnaissance = 4
+    attack = 6
+    defence = 4
+    discipline = 1
+    support = 0
+    maneuver = 3
+}

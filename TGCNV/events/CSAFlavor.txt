@@ -1,0 +1,578 @@
+## Submarine ##
+
+	#Description: The H. L. Hunley - the CSA submarine - choose how much money to give
+	country_event = {
+		id = 110056
+		title = "EVTNAME110056"
+		desc = "EVTDESC110056"
+		picture = "CSA_hunley"
+
+		trigger = {
+			tag = CSA
+			has_global_flag = american_civil_war_has_happened
+			war = yes
+		}
+
+		mean_time_to_happen = {
+			months = 36
+		}
+
+		fire_only_once = yes
+
+		# Give them more than they estimated.
+		option = {
+			name = "EVTOPTA110056"
+
+			treasury = -15000
+			random_list = {
+				70 = { CSA = { country_event = 110057 } }
+				20 = { CSA = { country_event = 110058 } }
+				10 = { CSA = { country_event = 110059 } }
+			}
+
+			ai_chance = {
+				factor = 25
+				modifier = { factor = 0 NOT = { money = 15100 } }
+				modifier = { factor = 100 money = 15000 }
+			}
+		}
+
+		# Give them the amount estimated.
+		option = {
+			name = "EVTOPTB110056"
+
+			treasury = -10000
+			random_list = {
+				35 = { CSA = { country_event = 110057 } }
+				45 = { CSA = { country_event = 110058 } }
+				20 = { CSA = { country_event = 110059 } }
+			}
+
+			ai_chance = {
+				factor = 25
+				modifier = { factor = 0 NOT = { money = 10100 } }
+				modifier = { factor = 100 NOT = { money = 15100 } money = 10100 }
+			}
+		}
+
+		# Give them less than they estimated.
+		option = {
+			name = "EVTOPTC110056"
+
+			treasury = -5000
+			random_list = {
+				20 = { CSA = { country_event = 110057 } }
+				35 = { CSA = { country_event = 110058 } }
+				45 = { CSA = { country_event = 110059 } }
+			}
+
+			ai_chance = {
+				factor = 25
+				modifier = { factor = 0 NOT = { money = 5100 } }
+				modifier = { factor = 100 NOT = { money = 10100 } money = 5100 }
+			}
+		}
+
+		# We have more urgent affairs.
+		option = {
+			name = "EVTOPTD110056"
+
+			prestige = -10
+
+			ai_chance = {
+				factor = 25
+				modifier = { factor = 100 NOT = { money = 5100 } }
+			}
+		}
+	}
+
+	#Description: H. L. Hunley - Success
+	country_event = {
+
+		id = 110057
+		title = "EVTNAME110057"
+		desc = "EVTDESC110057"
+		picture = "CSA_hunley_success"
+
+		is_triggered_only = yes
+
+		# Nothing can stop the Dixie spirit!
+		option = {
+			name = "EVTOPTA110057"
+
+			prestige = 30
+			add_country_modifier = { name = submarine_warfare duration = 730 }
+		}
+	}
+
+	#Description: H. L. Hunley - Mixed Results
+	country_event = {
+
+		id = 110058
+		title = "EVTNAME110058"
+		desc = "EVTDESC110058"
+		picture = "CSA_hunley_mixed"
+
+		is_triggered_only = yes
+
+		# Progress is built on failure.
+		option = {
+			name = "EVTOPTA110058"
+
+			prestige = 10
+		}
+	}
+
+	#Description: H. L. Hunley - Failure
+	country_event = {
+
+		id = 110059
+		title = "EVTNAME110059"
+		desc = "EVTDESC110059"
+		picture = "CSA_hunley_failure"
+
+		is_triggered_only = yes
+
+		# I knew it! Do not trust looney aventurers!
+		option = {
+			name = "EVTOPTA110059"
+			prestige = -30
+		}
+	}
+
+## Cotton ##
+
+	#Description: A New Menace - boll weevils arrive
+	country_event = {
+		id = 188100
+		title = "EVTNAME188100"
+		desc = "EVTDESC188100"
+		picture = "weevils"
+
+		trigger = {
+			capital_scope = { continent = north_america }
+			any_owned_province = { trade_goods = cotton }
+			year = 1890
+			NOT = { has_country_flag = boll_weevils_arrived }
+		}
+
+		mean_time_to_happen = {
+			months = 150
+			modifier = {
+				factor = 0.75
+				slavery = yes_slavery
+			}
+		}
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA188100"
+
+			set_country_flag = boll_weevils_arrived
+		}
+	}
+
+	#Description: Boll Weevil Infestation - replace cotton with another RGO or not?
+	province_event = {
+			
+		id = 188000
+		title = "EVTNAME188000"
+		desc = "EVTDESC188000"
+		picture = "prov_cotton"
+
+		trigger = {
+			trade_goods = cotton
+			OR = {
+				any_pop = {
+					pop_type = slaves
+					militancy = 4
+				}
+				NOT = {
+					unemployment_by_type = {
+						type = farmers
+						value = 0.6
+					}
+				}
+				owned_by = USA
+				owned_by = CSA
+				owned_by = MEX
+			}
+			continent = north_america
+			controlled_by = THIS
+			province_control_days = 730
+			has_country_flag = boll_weevils_arrived
+			NOT = {
+				has_province_modifier = boll_weevils
+				has_province_modifier = boll_weevils_switched
+			}
+			year = 1892
+		}
+
+		mean_time_to_happen = {
+			months = 120
+		}
+
+		option = {
+			name = "EVTOPTA188000"
+
+			trade_goods = coffee
+			add_province_modifier = { name = boll_weevils_switched duration = 700 }
+
+			ai_chance = { factor = 10 }
+		}
+
+		option = {
+			name = "EVTOPTB188000"
+
+			trade_goods = grain
+			add_province_modifier = { name = boll_weevils_switched duration = 700 }
+
+			ai_chance = { factor = 5 }
+		}
+
+		option = {
+			name = "EVTOPTC188000"
+
+			trade_goods = fruit
+			add_province_modifier = { name = boll_weevils_switched duration = 700 }
+
+			ai_chance = { factor = 5 }
+		}
+
+		option = {
+			name = "EVTOPTD188000"
+
+			trade_goods = tobacco
+			add_province_modifier = { name = boll_weevils_switched duration = 700 }
+
+			ai_chance = { factor = 20 }
+		}
+
+		option = {
+			name = "EVTOPTE188000"
+
+			add_province_modifier = { name = boll_weevils duration = 730 }
+
+			ai_chance = { factor = 60 }
+		}
+	}
+
+## Slavery ##
+
+	#Description: Illegal Slave Importation
+	country_event = {
+		id = 8629614
+		title = EVTNAME8629614
+		desc = EVTDESC8629614
+		picture = anti_slavery_society
+
+		trigger = {
+			tag = CSA
+			OR = {
+				slavery = yes_slavery
+				slavery = freedom_of_womb
+			}
+			has_global_flag = american_civil_war_has_happened
+			war = no
+			is_independant = yes
+		}
+
+		mean_time_to_happen = {
+			months = 200
+			modifier = {
+				factor = 0.85
+				ruling_party_ideology = reactionary
+			}
+		}
+
+		fire_only_once = yes
+
+		# Stop the illegal importation
+		option = {
+			name = EVTOPTA8629614
+			plurality = -2
+			any_pop = {
+				limit = { type = capitalists }
+				militancy = 3
+				consciousness = 3
+			}
+			any_pop = {
+				limit = { type = aristocrats }
+				militancy = 3
+				consciousness = 3
+			}
+
+			ai_chance = { factor = 50 }
+		}
+
+		# Let it continue
+		option = {
+			name = EVTOPTB8629614
+
+			badboy = 2
+
+			ai_chance = {
+				factor = 50
+				modifier = {
+					factor = 0
+					badboy = 0.92
+				}
+			}
+		}
+	}
+
+## Sonora Purchase ##
+
+	#Description: Triggered for Mexico if the CSA wants to buy Sonora
+	country_event = {
+		id = 44377
+		title = "EVTNAME44377"
+		desc = "EVTDESC44377"
+		picture = "deliberation"
+
+		is_triggered_only = yes
+
+		# Accept
+		option = {
+			name = EVTOPTA44377
+
+			set_global_flag = csa_bought_pacific
+			plurality = -1
+			treasury = 300000
+			CSA = { treasury = -300000 }
+			relation = { who = CSA value = 50 }
+			relation = { who = USA value = -50 }
+			MEX_2138 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = THIS } # Sonora
+			MEX_2139 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = THIS } # Baja California
+			MEX_2142 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = THIS } # Chihuahua
+			MEX_2156 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = THIS } # Sinaloa
+			random_owned = {
+				limit = { province_id = 102 }
+				add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				remove_core = THIS
+			}
+			random_owned = {
+				limit = { province_id = 2662 }
+				add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				remove_core = THIS
+			}
+			any_owned = {
+				limit = { is_core = CSA }
+				secede_province = CSA
+				add_province_modifier = { name = nationalist_agitation duration = 1095 }
+			}
+			any_pop = {
+				limit = { is_primary_culture = yes }
+				militancy = 2.5
+				consciousness = 3
+			}
+
+			ai_chance = { factor = 60 }
+		}
+
+		# Refuse
+		option = {
+			name = EVTOPTB44377
+
+			prestige = 30
+			any_pop = { militancy = -2 }
+
+			CSA = { country_event = 44378 }
+
+			ai_chance = {
+				factor = 40
+				modifier = {
+					factor = 0.1
+					NOT = { plurality = 10 }
+				}
+				modifier = {
+					factor = 0.5
+					in_sphere = CSA
+				}
+				modifier = {
+					factor = 0.8
+					alliance_with = CSA
+				}
+				modifier = {
+					factor = 0.1
+					NOT = { money = 100000 }
+				}
+			}
+		}
+	}
+
+	#Description: Triggered for the CSA if the Mexico refuses to sell Sonora
+	country_event = {
+		id = 44378
+		title = "EVTNAME44378"
+		desc = "EVTDESC44378"
+		picture = "deliberation"
+
+		is_triggered_only = yes
+
+		# Go to war to take it
+		option = {
+			name = EVTOPTA44378
+
+			badboy = 8
+			MEX_2138 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Sonora
+			MEX_2139 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Baja California
+			MEX_2142 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Chihuahua
+			MEX_2156 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Sinaloa
+			random_country = {
+				limit = { tag = MEX owns = 102 NOT = { owns = 100 } }
+				102 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			}
+			random_country = {
+				limit = { tag = MEX owns = 2662 NOT = { owns = 38 } }
+				2662 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			}
+			relation = { who = MEX value = -200 }
+			diplomatic_influence = { who = MEX value = -200 }
+			war = {
+				target = MEX
+				attacker_goal = { casus_belli = acquire_all_cores }
+			}
+
+			ai_chance = { factor = 20 }
+		}
+
+		# Back down
+		option = {
+			name = EVTOPTB44378
+
+			prestige = -30
+			plurality = -1
+			rich_strata = { militancy = 2 consciousness = 2 }
+			scaled_militancy = { issue = pro_military factor = 4 }
+			scaled_militancy = { issue = jingoism factor = 5 }
+			scaled_consciousness = { issue = pro_military factor = 4 }
+			scaled_consciousness = { issue = jingoism factor = 5 }
+
+			ai_chance = { factor = 80 }
+		}
+	}
+
+	#Description: Triggered for the USA after the ACW if the CSA had purchased Sonora
+	country_event = {
+		id = 44379
+		title = "EVTNAME44379"
+		desc = "EVTDESC44379"
+		picture = "deliberation"
+
+		trigger = {
+			tag = USA
+			has_global_flag = american_civil_war_has_happened
+			has_global_flag = csa_bought_pacific
+			any_owned_province = {
+				OR = {
+					region = MEX_2138 # Sonora
+					region = MEX_2142 # Chihuahua
+					region = MEX_2156 # Sinaloa
+					# Not Baja California since those cores can be obtained by Gadsden purchase as well
+				}
+				is_core = CSA
+			}
+			NOT = { exists = CSA }
+			NOT = { has_global_flag = sonora_is_a_state }
+		}
+
+		mean_time_to_happen = {
+			days = 5
+		}
+
+		fire_only_once = yes
+
+		# Integrate the territories
+		option = {
+			name = EVTOPTA44379
+
+			badboy = 8
+			plurality = -1
+			MEX_2138 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Sonora
+			MEX_2139 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Baja California
+			MEX_2142 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Chihuahua
+			MEX_2156 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Sinaloa
+			102 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			2662 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			set_global_flag = sonora_is_a_state
+
+			random_country = {
+				limit = {
+					tag = MEX
+					exists = yes
+					is_vassal = no
+				}
+				relation = { who = THIS value = -100 }
+			}
+
+			ai_chance = {
+				factor = 20
+				modifier = {
+					factor = 0
+					badboy = 0.68
+				}
+				modifier = {
+					factor = 0
+					war_policy = pacifism
+				}
+			}
+		}
+
+		# Return them to Mexico
+		option = {
+			name = EVTOPTB44379
+
+			badboy = -5
+			treasury = -50000
+			plurality = 1
+			any_pop = {
+				limit = {
+					is_culture_group = american_cultures
+					location = {
+						OR = {
+							region = MEX_2138 # Sonora
+							region = MEX_2139 # Baja California
+							region = MEX_2142 # Chihuahua
+							region = MEX_2156 # Sinaloa
+						}
+						owned_by = THIS
+					}
+				}
+				move_pop = 60
+				militancy = 6
+				consciousness = 5
+			}
+			MEX_2138 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = MEX remove_core = THIS remove_core = CSA } # Sonora
+			MEX_2139 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = MEX remove_core = THIS remove_core = CSA } # Baja California
+			MEX_2142 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = MEX remove_core = THIS remove_core = CSA } # Chihuahua
+			MEX_2156 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = MEX remove_core = THIS remove_core = CSA } # Sinaloa
+
+			relation = { who = MEX value = 150 }
+			diplomatic_influence = { who = MEX value = 150 }
+
+			scaled_militancy = { issue = pro_military factor = 4 }
+			scaled_militancy = { issue = jingoism factor = 4 }
+
+			ai_chance = {
+				factor = 80
+				modifier = {
+					factor = 0.5
+					average_militancy = 4
+				}
+				modifier = {
+					factor = 0.5
+					average_militancy = 7
+				}
+				modifier = {
+					factor = 0
+					NOT = { money = 100000 }
+				}
+			}
+		}
+	}
+
+## Caribbean Purchase ##
+
+	# IDs 44380-44400

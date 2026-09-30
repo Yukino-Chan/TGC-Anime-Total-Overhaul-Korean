@@ -1,0 +1,92 @@
+spriteTypes = {	
+	
+
+	spriteType = {
+		name = "GFX_bg_tech"
+		texturefile = "gfx\\interface\\tgcnv_ww2\\research_panel_v1.dds"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	
+		
+	spriteType = {
+		name = "GFX_no_tech_image"
+		texturefile = "gfx\\pictures\tech\\noimage.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_tech_start_research"
+		texturefile = "gfx\\interface\\tech_start_research.tga"
+		noOfFrames = 4
+	}
+	# ImageGen research button artwork, packed to the 20px native row pitch.
+	spriteType = {
+		name = "GFX_tgcnv_tech_start_research_compact"
+		texturefile = "gfx\\interface\\tgcnv_ww2\\research_rows_v1.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_tech_invention_entry"
+		texturefile = "gfx\\interface\\tech_invention_entry.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_tech_folder_progress_overlay"
+		texturefile = "gfx\\interface\\tech_folder_progress_overlay.tga"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_tech_folder_army"
+		texturefile = "gfx\\interface\\tgcnv_ww2\\research_folders_v1.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_tech_plusminus"
+		texturefile = "gfx\\interface\\tech_plusminus.tga"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_tech_folder_strip"
+		texturefile = "gfx\\interface\\tech_folder_strip.tga"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_tech_invention_strip"
+		texturefile = "gfx\\interface\\tech_invention_strip.tga"
+		noOfFrames = 3
+	}
+	
+	spriteType = {
+		name = "GFX_bg_one_tech"
+		texturefile = "gfx\\interface\\tech_4state_bg.tga"
+		loadType = "INGAME"
+		norefcount = yes
+		noOfFrames = 4
+	}
+	
+	progressbartype = {
+		name = "GFX_research_progress"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\tech_progress1.tga"
+		textureFile2 = "gfx\\interface\\tech_progress2.tga"
+		size = { x = 256 y = 28 }
+		effectFile = "gfx\\FX\\progress.fx"
+	}
+	
+	progressbartype = {
+		name = "GFX_folder_progress"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\folder_progress1.tga"
+		textureFile2 = "gfx\\interface\\folder_progress2.tga"
+		size = { x = 134 y = 10 }
+		effectFile = "gfx\\FX\\progress.fx"
+		allwaystransparent = yes
+	}
+}

@@ -1,0 +1,252 @@
+# Numeric TFH base reference. Not final Vic2 campaign balance.
+schema = 1
+units = {
+    infantry = {
+        soft_attack = 2.000
+        hard_attack = 0.670
+        softness = 1.000
+        defensiveness = 4.000
+        toughness = 3.000
+        armor = 0.000
+        piercing = 1.000
+        air_attack = 0.330
+        air_defence = 2.000
+        suppression = 1.000
+        combat_width = 1.000
+    }
+    irregular = {
+        soft_attack = 0.670
+        hard_attack = 0.000
+        softness = 1.000
+        defensiveness = 3.000
+        toughness = 0.670
+        armor = 0.000
+        piercing = 0.000
+        air_attack = 0.000
+        air_defence = 2.000
+        suppression = 0.330
+        combat_width = 1.000
+    }
+    guard = {
+        soft_attack = 2.000
+        hard_attack = 0.670
+        softness = 1.000
+        defensiveness = 5.000
+        toughness = 4.000
+        armor = 0.000
+        piercing = 1.000
+        air_attack = 0.330
+        air_defence = 2.000
+        suppression = 1.000
+        combat_width = 1.000
+    }
+    artillery = {
+        soft_attack = 2.400
+        hard_attack = 1.000
+        softness = 0.900
+        defensiveness = 1.670
+        toughness = 1.000
+        armor = 0.000
+        piercing = 0.000
+        air_attack = 0.100
+        air_defence = 1.500
+        suppression = 0.000
+        combat_width = 0.250
+    }
+    engineer = {
+        soft_attack = 0.330
+        hard_attack = 0.670
+        softness = 0.900
+        defensiveness = 3.000
+        toughness = 1.670
+        armor = 0.000
+        piercing = 0.000
+        air_attack = 0.000
+        air_defence = 2.000
+        suppression = 0.330
+        combat_width = 0.250
+    }
+    cavalry = {
+        soft_attack = 1.670
+        hard_attack = 0.000
+        softness = 1.000
+        defensiveness = 2.000
+        toughness = 2.670
+        armor = 0.000
+        piercing = 0.500
+        air_attack = 0.330
+        air_defence = 1.600
+        suppression = 1.000
+        combat_width = 1.000
+    }
+    cuirassier = {
+        soft_attack = 1.670
+        hard_attack = 0.000
+        softness = 1.000
+        defensiveness = 2.000
+        toughness = 2.670
+        armor = 0.000
+        piercing = 0.500
+        air_attack = 0.330
+        air_defence = 1.600
+        suppression = 1.000
+        combat_width = 1.000
+    }
+    dragoon = {
+        soft_attack = 1.670
+        hard_attack = 0.000
+        softness = 1.000
+        defensiveness = 2.000
+        toughness = 2.670
+        armor = 0.000
+        piercing = 0.500
+        air_attack = 0.330
+        air_defence = 1.600
+        suppression = 1.000
+        combat_width = 1.000
+    }
+    hussar = {
+        soft_attack = 1.670
+        hard_attack = 0.000
+        softness = 1.000
+        defensiveness = 2.000
+        toughness = 2.670
+        armor = 0.000
+        piercing = 0.500
+        air_attack = 0.330
+        air_defence = 1.600
+        suppression = 1.000
+        combat_width = 1.000
+    }
+    tank = {
+        soft_attack = 2.330
+        hard_attack = 2.330
+        softness = 0.150
+        defensiveness = 3.500
+        toughness = 4.000
+        armor = 5.000
+        piercing = 5.000
+        air_attack = 0.330
+        air_defence = 0.800
+        suppression = 0.000
+        combat_width = 2.000
+    }
+    tgcnv_light_tank = {
+        soft_attack = 1.670
+        hard_attack = 0.670
+        softness = 0.300
+        defensiveness = 2.330
+        toughness = 3.330
+        armor = 2.000
+        piercing = 2.000
+        air_attack = 0.330
+        air_defence = 1.000
+        suppression = 0.330
+        combat_width = 2.000
+    }
+    tgcnv_heavy_tank = {
+        soft_attack = 4.330
+        hard_attack = 5.000
+        softness = 0.100
+        defensiveness = 5.000
+        toughness = 4.000
+        armor = 8.000
+        piercing = 8.000
+        air_attack = 0.330
+        air_defence = 0.600
+        suppression = 0.000
+        combat_width = 2.000
+    }
+    plane = {
+        soft_attack = 2.000
+        hard_attack = 0.330
+        softness = 0.450
+        defensiveness = 2.000
+        toughness = 2.670
+        armor = 1.000
+        piercing = 1.000
+        air_attack = 0.100
+        air_defence = 1.000
+        suppression = 1.000
+        combat_width = 0.250
+    }
+    tgcnv_paratrooper = {
+        soft_attack = 1.670
+        hard_attack = 0.200
+        softness = 1.000
+        defensiveness = 4.000
+        toughness = 4.000
+        armor = 0.000
+        piercing = 0.500
+        air_attack = 0.100
+        air_defence = 2.500
+        suppression = 0.670
+        combat_width = 1.000
+    }
+    tgcnv_marine = {
+        soft_attack = 1.670
+        hard_attack = 0.330
+        softness = 1.000
+        defensiveness = 3.500
+        toughness = 3.670
+        armor = 0.000
+        piercing = 0.500
+        air_attack = 0.330
+        air_defence = 2.500
+        suppression = 0.670
+        combat_width = 1.000
+    }
+}
+# TGCNV research increments below are provisional balance, not HOI3 source values.
+technologies = {
+    tgcnv_ww2_light_armament_1930 = {
+        infantry = { soft_attack = 0.500 }
+        guard = { soft_attack = 0.500 }
+        tgcnv_paratrooper = { soft_attack = 0.500 }
+        tgcnv_marine = { soft_attack = 0.500 }
+    }
+    tgcnv_ww2_light_armament_1936 = {
+        infantry = { soft_attack = 0.500 defensiveness = 0.500 }
+        guard = { soft_attack = 0.500 }
+        tgcnv_paratrooper = { soft_attack = 0.500 defensiveness = 0.500 }
+        tgcnv_marine = { soft_attack = 0.500 defensiveness = 0.500 }
+    }
+    tgcnv_ww2_light_armament_1940 = {
+        infantry = { hard_attack = 1.000 piercing = 2.000 }
+        guard = { hard_attack = 1.000 piercing = 2.000 }
+        tgcnv_paratrooper = { hard_attack = 1.000 piercing = 2.000 }
+        tgcnv_marine = { hard_attack = 1.000 piercing = 2.000 }
+    }
+    tgcnv_ww2_heavy_armament_1936 = {
+        tank = { armor = 1.000 piercing = 1.000 }
+        tgcnv_light_tank = { armor = 0.500 }
+    }
+    tgcnv_ww2_heavy_armament_1940 = {
+        artillery = { hard_attack = 2.000 piercing = 4.000 }
+    }
+    tgcnv_ww2_heavy_armament_1943 = {
+        tank = { toughness = 1.000 }
+        tgcnv_heavy_tank = { armor = 2.000 piercing = 2.000 }
+    }
+    tgcnv_ww2_heavy_armament_1945 = {
+        tank = { piercing = 2.000 }
+        tgcnv_heavy_tank = { piercing = 2.000 }
+    }
+    tgcnv_ww2_military_science_1940 = {
+        infantry = { air_attack = 0.500 air_defence = 0.500 }
+        irregular = { air_attack = 0.500 air_defence = 0.500 }
+        guard = { air_attack = 0.500 air_defence = 0.500 }
+        artillery = { air_attack = 0.500 air_defence = 0.500 }
+        engineer = { air_attack = 0.500 air_defence = 0.500 }
+        cavalry = { air_attack = 0.500 air_defence = 0.500 }
+        cuirassier = { air_attack = 0.500 air_defence = 0.500 }
+        dragoon = { air_attack = 0.500 air_defence = 0.500 }
+        hussar = { air_attack = 0.500 air_defence = 0.500 }
+        tank = { air_attack = 0.500 air_defence = 0.500 }
+        tgcnv_light_tank = { air_attack = 0.500 air_defence = 0.500 }
+        tgcnv_heavy_tank = { air_attack = 0.500 air_defence = 0.500 }
+        plane = { air_attack = 0.500 air_defence = 0.500 }
+        tgcnv_paratrooper = { air_attack = 0.500 air_defence = 0.500 }
+        tgcnv_marine = { air_attack = 0.500 air_defence = 0.500 }
+    }
+}

@@ -1,0 +1,2052 @@
+## Tech Power ##
+
+	piston_steam_engine = {
+		area = tech_power
+		year = 1836
+		cost = 3600
+
+		# activate_building = fabric_factory
+		rgo_goods_output = { coal = 0.05 }
+		rgo_goods_output = { iron = 0.05 }
+		rgo_goods_output = { oil = 0.05 }
+		rgo_goods_output = { precious_metal = 0.05 }
+		rgo_goods_output = { sulphur = 0.05 }
+		farm_rgo_eff = 0.1
+		rgo_size = { cattle = 0.05 }
+		rgo_size = { grain = 0.05 }
+		rgo_size = { fruit = 0.05 }
+		rgo_size = { fish = 0.05 }
+
+		ai_chance = {
+			factor = 1.5
+			modifier = {
+				factor = 2
+				OR = {
+					big_producer = grain
+					big_producer = cotton
+					big_producer = cattle
+					big_producer = tea
+					big_producer = coffee
+					big_producer = silk
+					big_producer = tobacco
+					big_producer = fruit
+				}
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 2
+				tag = BRZ
+			}
+			modifier = {
+				factor = 2
+				year = 1845
+			}
+			modifier = {
+				factor = 1.5
+				industrial_score = 10
+			}
+			modifier = {
+				factor = 1.5
+				industrial_score = 25
+			}
+			modifier = {
+				factor = 2
+				has_country_modifier = ts_industrial
+			}
+		}
+	}
+
+	high_pressure_steam_engine = {
+		area = tech_power
+		year = 1836
+		cost = 7200
+
+		rgo_goods_output = { coal = 0.05 }
+		rgo_goods_output = { iron = 0.05 }
+		rgo_goods_output = { oil = 0.05 }
+		rgo_goods_output = { precious_metal = 0.05 }
+		rgo_goods_output = { sulphur = 0.05 }
+		farm_rgo_eff = 0.15
+		rgo_size = { cattle = 0.05 }
+		rgo_size = { grain = 0.05 }
+		rgo_size = { fruit = 0.05 }
+		rgo_size = { fish = 0.05 }
+
+		ai_chance = {
+			factor = 1.5
+			modifier = {
+				factor = 2
+				OR = {
+					big_producer = grain
+					big_producer = cotton
+					big_producer = cattle
+					big_producer = tea
+					big_producer = coffee
+					big_producer = silk
+					big_producer = tobacco
+					big_producer = fruit
+				}
+			}
+			modifier = {
+				factor = 2
+				year = 1850
+			}
+			modifier = {
+				factor = 2
+				tag = BRZ
+			}
+			modifier = {
+				factor = 2
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 1.5
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.25
+				industrial_score = 100
+			}
+			modifier = {
+				factor = 1.5
+				industrial_score = 150
+			}
+		}
+	}
+
+	compound_steam_engines = {
+		area = tech_power
+		year = 1836
+		cost = 10800
+
+		rgo_goods_output = { coal = 0.1 }
+		rgo_goods_output = { iron = 0.1 }
+		rgo_goods_output = { oil = 0.1 }
+		rgo_goods_output = { precious_metal = 0.1 }
+		rgo_goods_output = { sulphur = 0.1 }
+		farm_rgo_eff = 0.15
+		rgo_size = { cattle = 0.1 }
+		rgo_size = { grain = 0.1 }
+		rgo_size = { fruit = 0.1 }
+		rgo_size = { fish = 0.1 }
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				OR = {
+					big_producer = grain
+					big_producer = cotton
+					big_producer = cattle
+					big_producer = tea
+					big_producer = coffee
+					big_producer = silk
+					big_producer = tobacco
+					big_producer = fruit
+				}
+			}
+			modifier = {
+				factor = 2
+				year = 1865
+			}
+			modifier = {
+				factor = 2
+				tag = BRZ
+			}
+			modifier = {
+				factor = 2
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.5
+				industrial_score = 200
+			}
+			modifier = {
+				factor = 2
+				industrial_score = 250
+			}
+		}
+	}
+
+	steam_turbine = {
+		area = tech_power
+		year = 1850
+		cost = 14400
+
+		rgo_goods_output = { coal = 0.15 }
+		rgo_goods_output = { iron = 0.15 }
+		rgo_goods_output = { oil = 0.15 }
+		rgo_goods_output = { precious_metal = 0.15 }
+		rgo_goods_output = { sulphur = 0.15 }
+		farm_rgo_eff = 0.16
+		rgo_size = { cattle = 0.1 }
+		rgo_size = { grain = 0.1 }
+		rgo_size = { fruit = 0.1 }
+		rgo_size = { fish = 0.1 }
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				OR = {
+					big_producer = grain
+					big_producer = cotton
+					big_producer = cattle
+					big_producer = tea
+					big_producer = coffee
+					big_producer = silk
+					big_producer = tobacco
+					big_producer = fruit
+				}
+			}
+			modifier = {
+				factor = 2
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 2
+				tag = BRZ
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 2
+				year = 1880
+			}
+			modifier = {
+				factor = 1.5
+				industrial_score = 400
+			}
+			modifier = {
+				factor = 2
+				industrial_score = 500
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	combustion_engine = {
+		area = tech_power
+		year = 1880
+		cost = 18000
+
+		rgo_goods_output = { coal = 0.15 }
+		rgo_goods_output = { iron = 0.15 }
+		rgo_goods_output = { oil = 0.15 }
+		rgo_goods_output = { precious_metal = 0.15 }
+		rgo_goods_output = { sulphur = 0.15 }
+		farm_rgo_eff = 0.2
+		rgo_size = { cattle = 0.15 }
+		rgo_size = { grain = 0.15 }
+		rgo_size = { fruit = 0.15 }
+		rgo_size = { fish = 0.15 }
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 2
+				OR = {
+					big_producer = grain
+					big_producer = cotton
+					big_producer = cattle
+					big_producer = tea
+					big_producer = coffee
+					big_producer = silk
+					big_producer = tobacco
+					big_producer = fruit
+				}
+			}
+			modifier = {
+				factor = 2
+				year = 1900
+			}
+			modifier = {
+				factor = 2
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 2
+				industrial_score = 500
+			}
+			modifier = {
+				factor = 2
+				industrial_score = 750
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	electrical_power_generation = {
+		area = tech_power
+		year = 1885
+		cost = 21600
+
+		rgo_goods_output = { coal = 0.3 }
+		rgo_goods_output = { iron = 0.3 }
+		rgo_goods_output = { oil = 0.15 }
+		rgo_goods_output = { precious_metal = 0.15 }
+		rgo_goods_output = { sulphur = 0.15 }
+		farm_rgo_eff = 0.2
+		factory_throughput = 0.1
+		rgo_size = { cattle = 0.15 }
+		rgo_size = { grain = 0.15 }
+		rgo_size = { fruit = 0.15 }
+		rgo_size = { fish = 0.15 }
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				OR = {
+					big_producer = grain
+					big_producer = cotton
+					big_producer = cattle
+					big_producer = tea
+					big_producer = coffee
+					big_producer = silk
+					big_producer = tobacco
+					big_producer = fruit
+				}
+			}
+			modifier = {
+				factor = 3
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1000
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1500
+			}
+			modifier = {
+				factor = 1.4
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	advanced_turbine_generators = {
+		area = tech_power
+		year = 1900
+		cost = 31600
+
+		mine_rgo_eff = 0.15
+		farm_rgo_eff = 0.2
+		factory_throughput = 0.15
+		rgo_size = { cattle = 0.15 }
+		rgo_size = { grain = 0.15 }
+		rgo_size = { fruit = 0.15 }
+		rgo_size = { fish = 0.15 }
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				OR = {
+					big_producer = grain
+					big_producer = cotton
+					big_producer = cattle
+					big_producer = tea
+					big_producer = coffee
+					big_producer = silk
+					big_producer = tobacco
+					big_producer = fruit
+				}
+			}
+			modifier = {
+				factor = 3
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1000
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1500
+			}
+			modifier = {
+				factor = 1.4
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+# TGCNV WWII BEGIN tech_power
+tgcnv_ww2_tech_power_1930 = {
+	area = tech_power
+	year = 1930
+	cost = 34000
+
+	factory_goods_output = { automobiles = 0.03 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_tech_power_1936 = {
+	area = tech_power
+	year = 1936
+	cost = 37000
+
+	factory_goods_output = { fuel = 0.05 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_tech_power_1940 = {
+	area = tech_power
+	year = 1940
+	cost = 40000
+
+	factory_throughput = 0.02
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_tech_power_1943 = {
+	area = tech_power
+	year = 1943
+	cost = 43000
+
+	factory_goods_output = { aeroplanes = 0.03 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_tech_power_1945 = {
+	area = tech_power
+	year = 1945
+	cost = 46000
+
+	factory_throughput = 0.03
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+# TGCNV WWII END tech_power
+
+## Mechanization ##
+
+	mechanical_production = {
+		area = mechanization
+		year = 1836
+		cost = 3600
+
+		# activate_building = regular_clothes_factory
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 1.2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1
+			}
+			modifier = {
+				factor = 0.9 #0.1
+				NOT = { literacy = 0.2 }
+			}
+			modifier = {
+				factor = 1.05
+				literacy = 0.6
+			}
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 10
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	interchangeable_parts = {
+		area = mechanization
+		year = 1836
+		cost = 7200
+
+		factory_throughput = 0.05
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 3
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 2
+				industrial_score = 20
+			}
+			modifier = {
+				factor = 0.5 #0.5
+				NOT = { literacy = 0.2 }
+			}
+			modifier = {
+				factor = 1.05
+				literacy = 0.6
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 50
+			}
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+		}
+	}
+
+	semi_automatization = {
+		area = mechanization
+		year = 1836
+		cost = 10800
+
+		factory_throughput = 0.05
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 8
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 100
+				is_greater_power = yes
+				OR = {
+					1755 = {
+						OR = {
+							owner = { in_sphere = THIS }
+							owned_by = THIS
+						}
+					}
+					369 = {
+						OR = {
+							owner = { in_sphere = THIS }
+							owned_by = THIS
+						}
+					}
+					1723 = {
+						OR = {
+							owner = { in_sphere = THIS }
+							owned_by = THIS
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 100
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 150
+			}
+			modifier = {
+				factor = 0.9 #0.1
+				NOT = { literacy = 0.2 }
+			}
+			modifier = {
+				factor = 1.05
+				literacy = 0.6
+			}
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+		}
+	}
+
+	pneumatic_and_hydraulics = {
+		area = mechanization
+		year = 1850
+		cost = 14400
+
+		factory_throughput = 0.1
+		factory_cost = -0.1
+
+		ai_chance = {
+			factor = 1.1
+			modifier = {
+				factor = 1.2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 250
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 400
+			}
+			modifier = {
+				factor = 0.9 #0.1
+				NOT = { literacy = 0.2 }
+			}
+			modifier = {
+				factor = 1.05
+				literacy = 0.6
+			}
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	assembly_line = {
+		area = mechanization
+		year = 1870
+		cost = 18000
+
+		factory_throughput = 0.1
+		factory_cost = -0.1
+
+		ai_chance = {
+			factor = 1.05
+			modifier = {
+				factor = 1.2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 500
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 750
+			}
+			modifier = {
+				factor = 3
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	shift_work = {
+		area = mechanization
+		year = 1900
+		cost = 21600
+
+		rgo_output = 0.05
+		factory_throughput = 0.1
+
+		ai_chance = {
+			factor = 1.1
+			modifier = {
+				factor = 1.2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1000
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1500
+			}
+			modifier = {
+				factor = 3
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	assembly_line_mechanization = {
+		area = mechanization
+		year = 1910
+		cost = 31600
+
+		factory_throughput = 0.2
+
+		ai_chance = {
+			factor = 1.1
+			modifier = {
+				factor = 1.2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1000
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1500
+			}
+			modifier = {
+				factor = 3
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+# TGCNV WWII BEGIN mechanization
+tgcnv_ww2_mechanization_1930 = {
+	area = mechanization
+	year = 1930
+	cost = 34000
+
+	factory_goods_output = { machine_parts = 0.05 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_mechanization_1936 = {
+	area = mechanization
+	year = 1936
+	cost = 37000
+
+	factory_goods_output = { small_arms = 0.03 }
+	factory_goods_output = { artillery = 0.03 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_mechanization_1940 = {
+	area = mechanization
+	year = 1940
+	cost = 40000
+
+	factory_input = -0.01
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_mechanization_1943 = {
+	area = mechanization
+	year = 1943
+	cost = 43000
+
+	factory_goods_output = { aeroplanes = 0.05 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_mechanization_1945 = {
+	area = mechanization
+	year = 1945
+	cost = 46000
+
+	factory_throughput = 0.03
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+# TGCNV WWII END mechanization
+
+
+## Metallurgy ##
+
+	hot_blast = {
+		area = metallurgy
+		year = 1836
+		cost = 3600
+
+		# activate_building = steel_factory
+
+		rgo_goods_output = { iron = 0.4 }
+		rgo_goods_output = { coal = 0.4 }
+		rgo_goods_output = { sulphur = 0.2 }
+
+		ai_chance = {
+			factor = 4
+			modifier = {
+				factor = 5
+				big_producer = coal
+			}
+			modifier = {
+				factor = 5
+				big_producer = iron
+			}
+			modifier = {
+				factor = 1.8
+				big_producer = sulphur
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = { produces = coal }
+			}
+			modifier = {
+				factor = 1.5
+				any_owned_province = { produces = iron }
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = sulphur }
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = precious_metal }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_country_modifier = ts_industrial
+					tag = RUS
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					literacy = 0.4
+					big_producer = coal
+					big_producer = iron
+				}
+			}
+		}
+	}
+
+	mechanized_mining = {
+		area = metallurgy
+		year = 1840
+		cost = 7200
+
+		rgo_goods_output = { iron = 0.4 }
+		rgo_goods_output = { coal = 0.4 }
+		rgo_goods_output = { sulphur = 0.2 }
+
+		rgo_size = { iron = 0.25 }
+		rgo_size = { coal = 0.25 }
+		rgo_size = { sulphur = 0.25 }
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 20
+				is_greater_power = yes
+				OR = {
+					tag = NGF
+					tag = GER
+					tag = PRU
+					tag = FRA
+					tag = AUS
+					tag = KUK
+					tag = RUS
+				}
+			}
+			modifier = {
+				factor = 5
+				big_producer = coal
+			}
+			modifier = {
+				factor = 5
+				big_producer = iron
+			}
+			modifier = {
+				factor = 5
+				big_producer = steel
+			}
+			modifier = {
+				factor = 1.8
+				big_producer = sulphur
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = { produces = coal }
+			}
+			modifier = {
+				factor = 1.5
+				any_owned_province = { produces = iron }
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = sulphur }
+			}
+			modifier = {
+				factor = 5
+				is_greater_power = yes
+				OR = {
+					industrial_score = 10
+					tag = RUS
+				}
+				any_owned_province = {
+					OR = {
+						produces = iron
+						produces = coal
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = precious_metal }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_country_modifier = ts_industrial
+					tag = RUS
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					literacy = 0.4
+					big_producer = coal
+					big_producer = iron
+				}
+			}
+		}
+	}
+
+	regenerative_furnaces = {
+		area = metallurgy
+		year = 1850
+		cost = 10800
+
+		rgo_goods_output = { iron = 0.3 }
+		rgo_goods_output = { coal = 0.3 }
+		rgo_goods_output = { sulphur = 0.2 }
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 20
+				OR = {
+					tag = NGF
+					tag = GER
+					tag = PRU
+					tag = FRA
+					tag = RUS
+				}
+			}
+			modifier = {
+				factor = 5
+				big_producer = coal
+			}
+			modifier = {
+				factor = 5
+				big_producer = iron
+			}
+			modifier = {
+				factor = 5
+				big_producer = steel
+			}
+			modifier = {
+				factor = 1.8
+				big_producer = sulphur
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = { produces = coal }
+			}
+			modifier = {
+				factor = 1.5
+				any_owned_province = { produces = iron }
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = sulphur }
+			}
+			modifier = {
+				factor = 5
+				is_greater_power = yes
+				OR = {
+					industrial_score = 10
+					tag = RUS
+				}
+				any_owned_province = {
+					OR = {
+						produces = iron
+						produces = coal
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = precious_metal }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_country_modifier = ts_industrial
+					tag = RUS
+				}
+			}
+
+			modifier = {
+				factor = 0.25
+				NOT = {
+					literacy = 0.4
+					big_producer = coal
+					big_producer = iron
+				}
+			}
+		}
+	}
+
+	drilling_and_blasting = {
+		area = metallurgy
+		year = 1870
+		cost = 14400
+
+		rgo_goods_output = { iron = 0.5 }
+		rgo_goods_output = { coal = 0.5 }
+		rgo_goods_output = { sulphur = 0.2 }
+
+		rgo_size = { coal = 0.5 }
+		rgo_size = { iron = 0.5 }
+		rgo_size = { sulphur = 0.5 }
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 40
+				is_greater_power = yes
+				OR = {
+					tag = FRA
+					tag = ENG
+					tag = USA
+					tag = NGF
+					tag = GER
+					tag = PRU
+					tag = RUS
+				}
+			}
+			modifier = {
+				factor = 5
+				big_producer = coal
+			}
+			modifier = {
+				factor = 5
+				big_producer = iron
+			}
+			modifier = {
+				factor = 10
+				big_producer = steel
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = { produces = coal }
+			}
+			modifier = {
+				factor = 1.5
+				any_owned_province = { produces = iron }
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = sulphur }
+			}
+			modifier = {
+				factor = 5
+				is_greater_power = yes
+				OR = {
+					industrial_score = 10
+					tag = RUS
+				}
+				any_owned_province = {
+					OR = {
+						produces = iron
+						produces = coal
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = precious_metal }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_country_modifier = ts_industrial
+					tag = RUS
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					literacy = 0.4
+					big_producer = coal
+					big_producer = iron
+				}
+			}
+		}
+	}
+
+	advanced_metallurgy = { #buff this one and related inventions if there isn't enough coal to cover ships
+		area = metallurgy
+		year = 1890
+		cost = 18000
+
+		rgo_goods_output = { iron = 0.6 }
+		rgo_goods_output = { coal = 0.6 }
+		rgo_goods_output = { sulphur = 0.2 }
+
+		rgo_size = { coal = 0.25 }
+		rgo_size = { iron = 0.25 }
+		rgo_size = { sulphur = 0.25 }
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 20
+				is_greater_power = yes
+				OR = {
+					tag = FRA
+					tag = NGF
+					tag = GER
+					tag = PRU
+					tag = RUS
+				}
+			}
+			modifier = {
+				factor = 5
+				big_producer = coal
+			}
+			modifier = {
+				factor = 3
+				big_producer = iron
+			}
+			modifier = {
+				factor = 1.8
+				big_producer = sulphur
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = { produces = coal }
+			}
+			modifier = {
+				factor = 1.5
+				any_owned_province = { produces = iron }
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = sulphur }
+			}
+			modifier = {
+				factor = 5
+				is_greater_power = yes
+				OR = {
+					industrial_score = 10
+					tag = RUS
+				}
+				any_owned_province = {
+					OR = {
+						produces = iron
+						produces = coal
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = precious_metal }
+			}
+			modifier = {
+				factor = 3
+				OR = {
+					has_country_modifier = ts_industrial
+					tag = RUS
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					literacy = 0.4
+					big_producer = coal
+					big_producer = iron
+				}
+			}
+		}
+	}
+
+	electric_furnace = {
+		area = metallurgy
+		year = 1900
+		cost = 21600
+
+		rgo_goods_output = { iron = 0.6 }
+		rgo_goods_output = { coal = 0.6 }
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 10
+				big_producer = coal
+			}
+			modifier = {
+				factor = 10
+				big_producer = iron
+			}
+			modifier = {
+				factor = 2
+				big_producer = sulphur
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = { produces = coal }
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = { produces = iron }
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = sulphur }
+			}
+			modifier = {
+				factor = 5
+				is_greater_power = yes
+				OR = {
+					industrial_score = 10
+					tag = RUS
+				}
+				any_owned_province = {
+					OR = {
+						produces = iron
+						produces = coal
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = precious_metal }
+			}
+			modifier = {
+				factor = 3
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					literacy = 0.4
+					big_producer = coal
+				}
+			}
+		}
+	}
+
+	advanced_steel_alloys = {
+		area = metallurgy
+		year = 1910
+		cost = 31600
+
+		rgo_goods_output = { iron = 0.5 }
+		rgo_goods_output = { coal = 0.75 }
+
+		factory_goods_output = { steel = 0.1 }
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 10
+				big_producer = coal
+			}
+			modifier = {
+				factor = 10
+				big_producer = iron
+			}
+			modifier = {
+				factor = 2
+				big_producer = sulphur
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = { produces = coal }
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = { produces = iron }
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = sulphur }
+			}
+			modifier = {
+				factor = 5
+				is_greater_power = yes
+				OR = {
+					industrial_score = 10
+					tag = RUS
+				}
+				any_owned_province = {
+					OR = {
+						produces = iron
+						produces = coal
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				any_owned_province = { produces = precious_metal }
+			}
+			modifier = {
+				factor = 3
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					literacy = 0.4
+					big_producer = coal
+				}
+			}
+		}
+	}
+# TGCNV WWII BEGIN metallurgy
+tgcnv_ww2_metallurgy_1930 = {
+	area = metallurgy
+	year = 1930
+	cost = 34000
+
+	factory_goods_output = { aeroplanes = 0.03 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_metallurgy_1936 = {
+	area = metallurgy
+	year = 1936
+	cost = 37000
+
+	factory_goods_output = { steel = 0.05 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_metallurgy_1940 = {
+	area = metallurgy
+	year = 1940
+	cost = 40000
+
+	factory_goods_output = { steel = 0.03 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_metallurgy_1943 = {
+	area = metallurgy
+	year = 1943
+	cost = 43000
+
+	factory_goods_output = { machine_parts = 0.05 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_metallurgy_1945 = {
+	area = metallurgy
+	year = 1945
+	cost = 46000
+
+	factory_goods_output = { steel = 0.03 }
+	factory_goods_output = { machine_parts = 0.03 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+# TGCNV WWII END metallurgy
+
+
+## Tech Infrastructure ##
+
+	experimental_railroad = {
+		area = tech_infrastructure
+		year = 1836
+		cost = 3600
+
+		# activate_building = railroad
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 10
+				is_greater_power = yes
+				OR = {
+					tag = NGF
+					tag = GER
+					tag = PRU
+					tag = AUS
+					tag = KUK
+				}
+			}
+			modifier = {
+				factor = 1.1
+				capital_scope = { continent = europe }
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					rank = 16
+					literacy = 0.4
+				}
+			}
+			modifier = {
+				factor = 6
+				is_greater_power = yes
+				year = 1845
+			}
+			modifier = {
+				factor = 2
+				literacy = 0.4
+			}
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+		}
+	}
+
+	early_railroad = {
+		area = tech_infrastructure
+		year = 1840
+		cost = 7200
+
+		# max_railroad = 1
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 10
+				is_greater_power = yes
+				OR = {
+					tag = NGF
+					tag = GER
+					tag = PRU
+					tag = AUS
+					tag = KUK
+				}
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					rank = 16
+					literacy = 0.4
+				}
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+				year = 1855
+			}
+			modifier = {
+				factor = 2
+				literacy = 0.4
+			}
+			modifier = {
+				factor = 1.1
+				capital_scope = { continent = europe }
+			}
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+		}
+	}
+
+	iron_railroad = {
+		area = tech_infrastructure
+		year = 1850
+		cost = 10800
+
+		# max_railroad = 1
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 20
+				OR = {
+					tag = AUS
+					tag = KUK
+				}
+			}
+			modifier = {
+				factor = 1.5
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+				year = 1865
+			}
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 1.4
+				has_country_modifier = ts_prussian
+			}
+		}
+	}
+
+	steel_railroad = {
+		area = tech_infrastructure
+		year = 1870
+		cost = 14400
+
+		# max_railroad = 1
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 1.5
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+				year = 1885
+			}
+			modifier = {
+				factor = 1.1
+				capital_scope = { continent = europe }
+			}
+			modifier = {
+				factor = 3
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 4
+				has_country_modifier = ts_prussian
+			}
+		}
+	}
+
+	integral_rail_system = {
+		area = tech_infrastructure
+		year = 1898
+		cost = 18000
+
+		#max_railroad = 1
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 1.5
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+				year = 1905
+			}
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 1.4
+				has_country_modifier = ts_prussian
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	limited_access_roads = {
+		area = tech_infrastructure
+		year = 1915
+		cost = 21600
+
+		# max_railroad = 1
+
+		ai_chance = {
+			factor = 4.5 #Was 3
+			modifier = {
+				factor = 1.5
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 1.4
+				has_country_modifier = ts_prussian
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	high_ways_free_ways = {
+		area = tech_infrastructure
+		year = 1925
+		cost = 31600
+
+		# max_railroad = 1
+		supply_limit = 0.50
+
+		ai_chance = {
+			factor = 4.5 #Was 3
+			modifier = {
+				factor = 1.5
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 1.4
+				has_country_modifier = ts_prussian
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+# TGCNV WWII BEGIN tech_infrastructure
+tgcnv_ww2_tech_infrastructure_1930 = {
+	area = tech_infrastructure
+	year = 1930
+	cost = 34000
+
+	supply_limit = 0.05
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_tech_infrastructure_1936 = {
+	area = tech_infrastructure
+	year = 1936
+	cost = 37000
+
+	supply_limit = 0.05
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_tech_infrastructure_1940 = {
+	area = tech_infrastructure
+	year = 1940
+	cost = 40000
+
+	reinforce_rate = 0.02
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_tech_infrastructure_1943 = {
+	area = tech_infrastructure
+	year = 1943
+	cost = 43000
+
+	supply_limit = 0.05
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_tech_infrastructure_1945 = {
+	area = tech_infrastructure
+	year = 1945
+	cost = 46000
+
+	supply_limit = 0.10
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+# TGCNV WWII END tech_infrastructure
+
+
+## Chemistry and Electricity ##
+
+	basic_chemistry = {
+		area = chemistry_and_electricity
+		year = 1836
+		cost = 3600
+
+		# activate_building = fertilizer_factory
+
+		ai_chance = {
+			factor = 30 #Was 20
+			modifier = {
+				factor = 2
+				has_country_modifier = ts_industrial
+			}
+		}
+	}
+
+	medicine = {
+		area = chemistry_and_electricity
+		year = 1836
+		cost = 7200
+
+		supply_limit = 0.25
+
+		ai_chance = {
+			factor = 50 #Was 10
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 30
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.03
+				has_country_modifier = ts_army
+			}
+		}
+	}
+
+	inorganic_chemistry = {
+		area = chemistry_and_electricity
+		year = 1850
+		cost = 10800
+
+		supply_limit = 0.25
+
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 5
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 100
+				is_greater_power = yes
+				OR = {
+					1755 = {
+						OR = {
+							owner = { in_sphere = THIS }
+							owned_by = THIS
+						}
+					}
+					369 = {
+						OR = {
+							owner = { in_sphere = THIS }
+							owned_by = THIS
+						}
+					}
+					1723 = {
+						OR = {
+							owner = { in_sphere = THIS }
+							owned_by = THIS
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				industrial_score = 100
+			}
+			modifier = {
+				factor = 2
+				year = 1860
+			}
+			modifier = {
+				factor = 2
+				year = 1870
+			}
+			modifier = {
+				factor = 3
+				industrial_score = 150
+			}
+			modifier = {
+				factor = 5
+				has_country_modifier = ts_prussian
+			}
+		}
+	}
+
+	organic_chemistry = {
+		area = chemistry_and_electricity
+		year = 1870
+		cost = 14400
+
+		supply_limit = 0.25
+
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 5
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 2
+				industrial_score = 400
+			}
+			modifier = {
+				factor = 2
+				year = 1875
+			}
+			modifier = {
+				factor = 4
+				year = 1880
+			}
+			modifier = {
+				factor = 2
+				industrial_score = 500
+			}
+			modifier = {
+				factor = 5
+				has_country_modifier = ts_prussian
+			}
+			modifier = {
+				factor = 0.5
+				is_greater_power = no
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	electricity = {
+		area = chemistry_and_electricity
+		year = 1880
+		cost = 18000
+
+		supply_limit = 0.50
+
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 8
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 2
+				year = 1890
+			}
+			modifier = {
+				factor = 4
+				year = 1900
+			}
+			modifier = {
+				factor = 2
+				industrial_score = 500
+			}
+			modifier = {
+				factor = 2
+				industrial_score = 750
+			}
+			modifier = {
+				factor = 5
+				has_country_modifier = ts_prussian
+			}
+		}
+	}
+
+	synthetic_polymers = {
+		area = chemistry_and_electricity
+		year = 1900
+		cost = 21600
+
+		supply_limit = 0.50
+
+		ai_chance = {
+			factor = 1.1
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1000
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1500
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+
+	advanced_polymers = {
+		area = chemistry_and_electricity
+		year = 1910
+		cost = 31600
+
+		supply_limit = 0.50
+
+		ai_chance = {
+			factor = 1.1
+			modifier = {
+				factor = 1.02
+				has_country_modifier = ts_industrial
+			}
+			modifier = {
+				factor = 2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1000
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 1500
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { literacy = 0.4 }
+			}
+		}
+	}
+# TGCNV WWII BEGIN chemistry_and_electricity
+tgcnv_ww2_chemistry_and_electricity_1930 = {
+	area = chemistry_and_electricity
+	year = 1930
+	cost = 34000
+
+	factory_goods_output = { electric_gear = 0.03 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_chemistry_and_electricity_1936 = {
+	area = chemistry_and_electricity
+	year = 1936
+	cost = 37000
+
+	factory_goods_output = { fuel = 0.05 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_chemistry_and_electricity_1940 = {
+	area = chemistry_and_electricity
+	year = 1940
+	cost = 40000
+
+	factory_goods_output = { explosives = 0.03 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_chemistry_and_electricity_1943 = {
+	area = chemistry_and_electricity
+	year = 1943
+	cost = 43000
+
+	factory_goods_output = { radio = 0.03 }
+	factory_goods_output = { explosives = 0.03 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+
+tgcnv_ww2_chemistry_and_electricity_1945 = {
+	area = chemistry_and_electricity
+	year = 1945
+	cost = 46000
+
+	factory_goods_output = { electric_gear = 0.05 }
+
+	ai_chance = {
+		factor = 1.0
+	}
+}
+# TGCNV WWII END chemistry_and_electricity
+

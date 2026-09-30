@@ -1,0 +1,25 @@
+# Locally owned HOI4 missile meshes. Neutral root; runtime flight path.
+objectTypes = {
+    EMFXActorType = {
+        name = "tgcnvSortieFlyingBomb"
+        actorfile = "gfx\anims\TGCNV_HOI4_FlyingBomb.xac"
+        idle = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        move = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        attack = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        scale = 0.17
+    }
+    EMFXActorType = {
+        name = "tgcnvSortieBallisticRocket"
+        actorfile = "gfx\anims\TGCNV_HOI4_BallisticRocket.xac"
+        idle = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        move = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        attack = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        scale = 0.19
+    }
+}

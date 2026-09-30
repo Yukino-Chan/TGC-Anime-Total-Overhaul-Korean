@@ -1,0 +1,36 @@
+
+army = {
+	name = "Imam's Army"
+	location = 1053
+	regiment = {
+		name= "1. Brigade"
+		type = infantry
+		home = 1053
+	}
+	regiment = {
+		name= "2. Brigade"
+		type = infantry
+		home = 6432
+	}
+	regiment = {
+		name= "3. Brigade"
+		type = infantry
+		home = 3430
+	}
+	regiment = {
+		name= "1. Riders"
+		type = cavalry
+		home = 3430
+	}
+	
+leader = {
+	name = "Imam Shamil"
+	picture = arab_general_4
+	type = land
+	date = 1836.1.1
+	background = school_of_defense
+	personality = implacable
+	prestige = 0.9
+	}
+}
+

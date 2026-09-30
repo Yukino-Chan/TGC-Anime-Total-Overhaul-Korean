@@ -53,6 +53,7 @@ MANIFEST_NAME = "manifest.json"
 SUMS_NAME = "SHA256SUMS.txt"
 METADATA_NAMES = ("Setup.ps1", "Setup.cmd", "Restore.cmd", "Verify.cmd", "설치 안내.txt")
 ROOT_FILES = frozenset((MANIFEST_NAME, SUMS_NAME) + METADATA_NAMES)
+OPTIONAL_ROOT_FILES = frozenset(("Language.psm1",))
 
 CATALOG_KEYS = frozenset({"schema", "release", "engine_version", "manifest_sha256", "files", "assets"})
 FILE_KEYS = frozenset({"path", "bytes", "sha256", "asset"})
@@ -173,7 +174,7 @@ def validate_paths(paths):
 
 
 def allowed_path(path):
-    if path in ROOT_FILES:
+    if path in ROOT_FILES | OPTIONAL_ROOT_FILES:
         return True
     p = path.lower().split('/')
     if any(x.startswith('.') or x == '_backups' for x in p):
@@ -548,7 +549,7 @@ def build(pack, repository, output, previous_catalog=None):
     entries, snapshot_before = _snapshot(pack)
 
     top_level = {rel.split("/", 1)[0] for rel in entries}
-    if top_level != set(ROOT_FILES) | {PAYLOAD_DIR}:
+    if not (set(ROOT_FILES) | {PAYLOAD_DIR}).issubset(top_level) or not top_level.issubset(set(ROOT_FILES) | set(OPTIONAL_ROOT_FILES) | {PAYLOAD_DIR}):
         raise ValueError(
             "pack must contain exactly the release root files plus a payload/ tree; found: "
             + ", ".join(sorted(top_level))
@@ -573,6 +574,11 @@ def build(pack, repository, output, previous_catalog=None):
         raise ValueError("pack contains no payload files")
     _validate_manifest(manifest, release, entries, payload_paths)
     _verify_sums(pack / SUMS_NAME, entries)
+    language_catalog = 'payload/game/mod/TGCNV/runtime/languages/catalog.json'
+    if language_catalog in entries and 'Language.psm1' not in entries:
+        raise ValueError('Language-enabled packs require Language.psm1.')
+    if 'Language.psm1' in (pack / 'Setup.ps1').read_text(encoding='utf-8-sig') and 'Language.psm1' not in entries:
+        raise ValueError('Setup imports Language.psm1 but the module is missing.')
 
     previous = {}
     previous_assets = {}

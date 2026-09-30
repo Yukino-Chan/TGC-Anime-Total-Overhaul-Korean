@@ -1,0 +1,44 @@
+ECU = {
+	truce_until = 1837.1.1
+	value = -50
+}
+PBC = {
+	value = -25
+}
+UCA = {
+	value = -25
+}
+MEX = {
+	value = -25
+}
+leader = {
+	name = "Francisco de Paula Santander"
+	type = land
+	date="1836.1.1"
+	personality = coolminded
+	background = natural_born_leader
+}
+army = {
+	name = "Ej…Õrcito de Colombia"
+	location = 2253
+	regiment = {
+		name= "1. Brigada de Infanter…—a"
+		type = infantry
+		home = 2247
+	}
+	regiment = {
+		name= "2. Brigada de Infanter…—a"
+		type = infantry
+		home = 2252
+	}
+	regiment = {
+		name= "3. Brigada de Infanter…—a"
+		type = infantry
+		home = 5799
+	}
+	regiment = {
+		name= "4. Brigada de Infanter…—a"
+		type = infantry
+		home = 2250
+	}
+}

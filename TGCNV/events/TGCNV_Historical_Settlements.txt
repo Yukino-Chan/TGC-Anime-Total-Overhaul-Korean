@@ -1,0 +1,38 @@
+# Treaty completion, including saves made before the province-split fixes.
+country_event = {
+    id = 9592600
+    title = "TGC_TURIN_TITLE"
+    desc = "TGC_TURIN_DESC"
+    picture = "treaty"
+    trigger = {
+        year = 1860
+        OR = { tag = SAR tag = SVY tag = ITA }
+        OR = { ai = yes has_country_flag = plombieres_implemented }
+        NOT = { has_global_flag = tgcnv_turin_completed }
+        NOT = { has_global_flag = plombieres_refused }
+        war = no
+        FRA = { exists = yes war = no }
+        OR = {
+            has_country_flag = plombieres_implemented
+            AND = {
+                owns = 726
+                OR = { has_country_flag = plombieres in_sphere = FRA alliance_with = FRA }
+                relation = { who = FRA value = 1 }
+            }
+        }
+        any_owned_province = { OR = { region = TGC_SAVOY_1860 region = TGC_NICE_1860 } NOT = { is_core = FRA } }
+    }
+    mean_time_to_happen = { days = 10 }
+    option = {
+        name = "TGC_TURIN_ACCEPT"
+        set_global_flag = tgcnv_turin_completed
+        any_owned = {
+            limit = { OR = { region = TGC_SAVOY_1860 region = TGC_NICE_1860 } NOT = { is_core = FRA } }
+            remove_core = SAR
+            remove_core = SVY
+            remove_core = ITA
+            add_core = FRA
+            secede_province = FRA
+        }
+    }
+}

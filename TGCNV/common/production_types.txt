@@ -1,0 +1,2162 @@
+
+### Factories #####################################################################################
+
+factory_template = {
+	efficiency = {
+		cement = 0.25 #if no cement, work at 75% efficiency #cost = 4 
+		machine_parts = 0.025 # was 0.01 cost = 0.91		# = 4.91/d
+	}
+
+	owner = {
+		poptype = capitalists
+		effect = input
+		effect_multiplier = -2.5
+	}
+
+	employees = {
+		{
+			poptype = craftsmen
+			effect = throughput
+			amount = 0.8
+		}
+		{
+			poptype = clerks
+			effect = output
+			effect_multiplier = 1.5
+			amount = 0.2
+		}
+
+	}
+	type = factory
+	workforce = 5000
+}
+
+cheap_factory_template = {
+	efficiency = {
+		cement = 0.125 #if no cement, work at 75% efficiency #cost = 2/level
+	}
+
+	owner = {
+		poptype = capitalists
+		effect = input
+		effect_multiplier = -1.5
+	}
+
+	employees = {
+		{
+			poptype = craftsmen
+			effect = throughput
+			amount = 0.8
+		}
+		{
+			poptype = clerks
+			effect = output
+			effect_multiplier = 1.5
+			amount = 0.2
+		}
+
+	}
+	type = factory
+	workforce = 5000
+}
+
+machine_part_user_template = {
+	efficiency = {
+		cement = 0.25 #if no cement, work at 75% efficiency #cost = 4/l
+	}
+
+	owner = {
+		poptype = capitalists
+		effect = input
+		effect_multiplier = -2.5
+	}
+
+	employees = {
+		{
+			poptype = craftsmen
+			effect = throughput
+			amount = 0.8
+		}
+		{
+			poptype = clerks
+			effect = output
+			effect_multiplier = 1.5
+			amount = 0.2
+		}
+
+	}
+	type = factory
+	workforce = 5000
+}
+
+cement_template = {
+	efficiency = {
+		iron = 1.15 #if no cement, work at 75% efficiency #cost = 6.3
+		machine_parts = 0.025 # was 0.01 cost = 0.91		#7.21/day/level for both
+	}
+
+	owner = {
+		poptype = capitalists
+		effect = input
+		effect_multiplier = -2.5
+	}
+
+	employees = {
+		{
+			poptype = craftsmen
+			effect = throughput
+			amount = 0.8
+		}
+		{
+			poptype = clerks
+			effect = output
+			effect_multiplier = 1.5
+			amount = 0.2
+		}
+
+	}
+	type = factory
+	workforce = 5000
+}
+
+# TGCNV POWER EFFICIENCY BEGIN
+# Power demand scales with level and active throughput. Extension 0.6.3.0 sets electricity shortage output to 50..100%.
+# Keep original templates for power generators and the existing hard-power magitech recipe.
+powered_factory_template = {
+	efficiency = {
+		electric_power = 0.2 # Optional maintenance: shortage lowers output, never a hard power input.
+		cement = 0.25 #if no cement, work at 75% efficiency #cost = 4 
+		machine_parts = 0.025 # was 0.01 cost = 0.91		# = 4.91/d
+	}
+
+	owner = {
+		poptype = capitalists
+		effect = input
+		effect_multiplier = -2.5
+	}
+
+	employees = {
+		{
+			poptype = craftsmen
+			effect = throughput
+			amount = 0.8
+		}
+		{
+			poptype = clerks
+			effect = output
+			effect_multiplier = 1.5
+			amount = 0.2
+		}
+
+	}
+	type = factory
+	workforce = 5000
+}
+
+powered_cheap_factory_template = {
+	efficiency = {
+		electric_power = 0.1 # Optional maintenance: shortage lowers output, never a hard power input.
+		cement = 0.125 #if no cement, work at 75% efficiency #cost = 2/level
+	}
+
+	owner = {
+		poptype = capitalists
+		effect = input
+		effect_multiplier = -1.5
+	}
+
+	employees = {
+		{
+			poptype = craftsmen
+			effect = throughput
+			amount = 0.8
+		}
+		{
+			poptype = clerks
+			effect = output
+			effect_multiplier = 1.5
+			amount = 0.2
+		}
+
+	}
+	type = factory
+	workforce = 5000
+}
+
+powered_machine_part_user_template = {
+	efficiency = {
+		electric_power = 0.3 # Optional maintenance: shortage lowers output, never a hard power input.
+		cement = 0.25 #if no cement, work at 75% efficiency #cost = 4/l
+	}
+
+	owner = {
+		poptype = capitalists
+		effect = input
+		effect_multiplier = -2.5
+	}
+
+	employees = {
+		{
+			poptype = craftsmen
+			effect = throughput
+			amount = 0.8
+		}
+		{
+			poptype = clerks
+			effect = output
+			effect_multiplier = 1.5
+			amount = 0.2
+		}
+
+	}
+	type = factory
+	workforce = 5000
+}
+
+powered_cement_template = {
+	efficiency = {
+		electric_power = 0.4 # Optional maintenance: shortage lowers output, never a hard power input.
+		iron = 1.15 #if no cement, work at 75% efficiency #cost = 6.3
+		machine_parts = 0.025 # was 0.01 cost = 0.91		#7.21/day/level for both
+	}
+
+	owner = {
+		poptype = capitalists
+		effect = input
+		effect_multiplier = -2.5
+	}
+
+	employees = {
+		{
+			poptype = craftsmen
+			effect = throughput
+			amount = 0.8
+		}
+		{
+			poptype = clerks
+			effect = output
+			effect_multiplier = 1.5
+			amount = 0.2
+		}
+
+	}
+	type = factory
+	workforce = 5000
+}
+# TGCNV POWER EFFICIENCY END
+
+
+############# LATE GAME FACTORIES
+
+aeroplane_factory = {
+	template = powered_machine_part_user_template
+	input_goods = {
+		machine_parts = 0.555  #1.11	#38.69
+		electric_gear = 1 #2	#32
+		tires = 0.25 #1			#7
+		lumber = 1.65 #3.3 		#3.3	total input+maint = 90
+	}
+	output_goods = aeroplanes
+	value = 0.455 #0.91		#100
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
+	}
+	bonus = {
+		trigger = { has_building = electric_gear_factory }
+		value = 0.25
+	}
+}
+
+barrel_factory = {
+	template = powered_machine_part_user_template
+	input_goods = {
+		automobiles = 0.15 #0.3	#21
+		machine_parts = 0.5 #1	#29.2
+		electric_gear = 0.425 #0.85	#16
+		steel = 1 #2		#7
+	}
+	output_goods = barrels
+	value = 0.5 #1.0			#98	total input+maint = 83
+	bonus = {
+		trigger = { has_building = automobile_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.05
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.1
+	}
+}
+
+automobile_factory = {
+	template = powered_machine_part_user_template
+	input_goods = {
+		machine_parts = 0.525 #1.05	#36.5
+		electric_gear = 0.75 #1.5	#24
+		tires = 0.25 #1		#7
+		steel = 1.125 #2.25		#10.58	total input+maint = 89
+	}
+
+	output_goods = automobiles
+	value = 0.715 #1.43			#100
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = electric_gear_factory }
+		value = 0.05
+	}
+}
+
+radio_factory = {
+	template = powered_factory_template
+	input_goods = {
+		plastics = 9
+		glass = 1 #10 		#29
+		electric_gear = 1.5 #3	#48	total input+maint = 87
+	}
+	output_goods = radio
+	value = 3.25 #6.5			#104
+	bonus = {
+		trigger = { has_building = electric_gear_factory }
+		value = 0.15
+	}
+		bonus = {
+		trigger = { has_building = glass_factory }
+		value = 0.1
+	}
+}
+
+telephone_factory = {
+	template = powered_factory_template
+	input_goods = {
+		glass = 7.5 #15 		#43.5
+		electric_gear = 1.25 #2.5	#40 	total input+maint = 93.5
+	}
+	output_goods = telephones
+	value = 3.25 #6.5			#104
+		bonus = {
+		trigger = { has_building = electric_gear_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = glass_factory }
+		value = 0.1
+	}
+}
+
+#plastic_telephone_factory = {
+#	template = factory_template
+#	input_goods = {
+#		glass = 2
+#		plastic = 14
+#		electric_gear = 1.25
+#	}
+#	output_goods = telephones
+#	value = 4.25
+#		bonus = {
+#		trigger = { has_building = electric_gear_factory }
+#		value = 0.15
+#	}
+#	bonus = {
+#		trigger = { has_building = glass_factory }
+#		value = 0.1
+#	}
+#}
+
+############# STRATEGIC FACTORIES
+
+electric_gear_factory = {
+	template = powered_factory_template
+	input_goods = {
+		tires = 1 #4		#28
+		coal = 2.5 #5		#11.5
+		steel = 2.5 #5		#23.5	total input+maint = 73
+		# TGCNV RESOURCE EXPANSION: bronze conductors; electric gear bootstraps the grid
+		bronze = 0.3
+	}
+	output_goods = electric_gear
+	value = 2.75 #5.5			#88
+	bonus = {
+		trigger = { trade_goods_in_state = rubber }
+		value = 0.05
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.05
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.15
+	}
+
+	# Optional arcane maintenance; core recipe and power demand remain unchanged.
+	efficiency = {
+		electric_power = 0.2
+		cement = 0.25
+		machine_parts = 0.025
+		mana_crystal = 0.10
+		spirit_ore = 0.10
+	}
+}
+
+machine_parts_factory = {
+	template = powered_factory_template
+	input_goods = {
+		steel = 8 #9		#21.15
+		coal = 4 #5		#7	total input+maint = 28.15 + 4.91 = 33.06
+	}
+	output_goods = machine_parts
+	value = 2 #2	#54.7 #buffed
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.2
+	}
+}
+
+synthetic_oil_factory = {
+	template = powered_factory_template
+	input_goods = {
+		coal = 6 #12		#27.6	total input+maint = 39
+	}
+	output_goods = oil
+	value = 1.25 #2.5			#30
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.25
+	}
+}
+
+synthetic_sulphur_factory = {
+	template = powered_factory_template
+	input_goods = {
+		coal = 5.5 #11		#25.3
+		iron = 0.5 #1		#3.5 	total input+maint = 40.2
+	}
+	output_goods = sulphur
+	value = 1.25 #2.5			#15
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.20
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = iron }
+		value = 0.05
+	}
+}
+
+############# ADVANCED FACTORIES
+
+fuel_refinery = {
+	template = powered_factory_template
+	input_goods = {
+		oil = 1.25 #2.5			#30	total input+maint = 40
+	}
+	output_goods = fuel
+	value = 1 #2			#50
+	bonus = {
+		trigger = {
+			OR = {
+				trade_goods_in_state = oil
+				has_building = synthetic_oil_factory
+				}
+			}
+		value = 0.25
+	}
+}
+
+steamer_shipyard = {
+	template = powered_factory_template
+	input_goods = {
+		lumber = 5 #10    #5
+		steel = 8 #22	 #51.7
+		coal = 8	#25	#28.75
+		machine_parts = 0.125 #4.56 total input+maint = 90.01 + 4.91
+	}
+	output_goods = steamer_convoy
+	is_coastal = yes
+	value = 1.8	#3.2		#99
+	bonus = {
+		trigger = { has_building = lumber_mill }
+		value = 0.125
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.125
+	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.125
+	}
+}
+
+############# LUXURY GOODS FACTORIES
+
+luxury_clothes_factory = {
+	template = powered_factory_template
+	input_goods = {
+		regular_clothes = 3 #was 0.45	#2.61
+		silk = 9 #was 1.95		#19.5	total input+maint = 22.11 + 4.91 = 27.02
+	}
+	output_goods = luxury_clothes
+	value = 3 #was 0.5, RC up 50%, silk 15%, output 50%			#27.5
+	bonus = {
+		trigger = { has_building = regular_clothes_factory }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = silk }
+		value = 0.05
+	}
+
+	# Optional arcane maintenance; core recipe and power demand remain unchanged.
+	efficiency = {
+		electric_power = 0.2
+		cement = 0.25
+		machine_parts = 0.025
+		spirit_ore = 0.10
+	}
+}
+
+luxury_furniture_factory = {
+	template = powered_factory_template
+	input_goods = {
+		furniture = 5 #2	 	#45.08
+		tropical_wood = 17 #7.5 #8.1	total input+maint = 53.18
+	}
+	output_goods = luxury_furniture
+	value = 2.8 #1.1 #output 27% furn 20% trop 11.76%		#64.9
+	bonus = {
+		trigger = { has_building = furniture_factory }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = tropical_wood }
+		value = 0.05
+	}
+
+	# Optional arcane maintenance; core recipe and power demand remain unchanged.
+	efficiency = {
+		electric_power = 0.2
+		cement = 0.25
+		machine_parts = 0.025
+		spirit_ore = 0.12
+	}
+}
+
+############# MEDIUM FACTORIES
+
+steel_factory = {
+	template = powered_factory_template
+	input_goods = {
+		iron = 11 #18		#70
+		coal = 3 #5		#11.5	total input+maint = 81.5
+	}
+
+	output_goods = steel
+	value = 12 #19		#89.3, was 20 - 94
+	bonus = {
+		trigger = { trade_goods_in_state = iron }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.15
+	}
+}
+
+artillery_factory = {
+	template = powered_factory_template
+	input_goods = {
+		explosives = 0.75 #1		#20
+		steel = 6 #8		#37.6	#
+		# TGCNV RESOURCE EXPANSION: bronze gun fittings and castings
+		bronze = 1.0
+	}
+	output_goods = artillery
+	value = 1.3 #1.5			# buffed to 1.3
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { has_building = explosives_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = bronze_factory }
+		value = 0.1
+	}
+}
+
+clipper_shipyard = { #tgc - cut in half
+	template = powered_factory_template 
+	input_goods = {
+		fabric = 20 #100		#45
+		lumber = 50	#100	#50
+		steel = 10	#30	# 70.5		total input+maint = 165.5+ maint: 4.91 = 170.41
+	}
+	output_goods = clipper_convoy
+	is_coastal = yes
+	value = 5.0	#9.6		#output 175
+	bonus = {
+		trigger = { has_building = fabric_factory }
+		value = 0.05
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = lumber_mill }
+		value = 0.1
+	}
+}
+
+small_arms_factory = {
+	template = powered_factory_template
+	input_goods = {
+		ammunition = 1.4 #2.0	#35
+		steel = 2.2 #3.0		#14.1		total input+maint = 60
+	}
+	output_goods = small_arms
+	value = 1.6 #2.2			#74
+
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = ammunition_factory }
+		value = 0.15
+	}
+}
+
+############# COMMON FACTORIES
+
+furniture_factory = {
+	template = powered_factory_template
+	input_goods = {
+		lumber = 20 #40		#40 total input+maint = 50
+	}
+	output_goods = furniture
+	value = 6 #12			#58.8
+	bonus = {
+		trigger = { has_building = lumber_mill }
+		value = 0.25
+	}
+}
+
+paper_mill = {
+	template = powered_factory_template
+	input_goods = {
+		lumber = 25 #50		#45	total input+maint = 55
+	}
+	output_goods = paper
+	value = 10 #20			#68
+	bonus = {
+		trigger = { has_building = lumber_mill }
+		value = 0.25
+	}
+}
+
+regular_clothes_factory = {
+	template = powered_factory_template
+	input_goods = {
+		fabric = 35 #35		#31.5	total input+maint = 31.5 + 4.91
+	}
+	output_goods = regular_clothes
+	value = 15 #15			#43.5
+	bonus = {
+		trigger = { has_building = fabric_factory }
+		value = 0.25
+	}
+}
+
+explosives_factory = {
+	template = powered_factory_template
+	input_goods = {
+		fertilizer = 1.5 #3		#30
+		ammunition = 0.4 #0.8	#14	total input+maint = 54
+	}
+	output_goods = explosives
+	value = 1.55 #3			#60
+	bonus = {
+		trigger = { has_building = fertilizer_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = ammunition_factory }
+		value = 0.1
+	}
+}
+
+############# CHEAP FACTORIES
+
+ammunition_factory = {
+	template = powered_cheap_factory_template
+	input_goods = {
+		# TGCNV RESOURCE EXPANSION: propellant and projectile metal
+		gunpowder = 0.45
+		lead = 1.2
+		steel = 1.25
+	}
+	output_goods = ammunition
+	value = 1.6 #2.2			#buffed to 1.2
+	bonus = {
+		trigger = { has_building = gunpowder_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = lead }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.2
+	}
+}
+
+canned_food_factory = {
+	template = powered_cheap_factory_template
+	input_goods = {
+		steel = 0.4
+		cattle = 4
+		grain = 6
+		fish = 5
+	}
+	output_goods = canned_food
+	value = 4
+	bonus = {
+		trigger = { trade_goods_in_state = grain }
+		value = 0.075
+	}
+	bonus = {
+		trigger = {
+			OR = {
+				trade_goods_in_state = fish
+				trade_goods_in_state = cattle
+			}
+		}
+		value = 0.075
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.15
+	}
+}
+
+dye_factory = {
+	template = powered_factory_template #used to becheap_factory_template
+	input_goods = {
+		coal = 4.5 #9		#20.7	total input+maint = Used to be 24.7 now 30.7
+	}
+	output_goods = dye
+	value = 1.75 #3.5			#Used to be 30 (2.5) now 36
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.25
+	}
+}
+
+
+liquor_distillery = {
+	template = powered_cheap_factory_template
+	input_goods = {
+		grain = 5 #10		#22
+		fruit = 2.5 #5		#9
+		glass = 6.5 #13		#37.7	total input+maint = 72.7
+	}
+	output_goods = liquor
+	value = 8.5 #17			#74.8
+	bonus = {
+		trigger = { has_building = glass_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = grain }
+		value = 0.05
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = fruit }
+		value = 0.05
+	}
+}
+
+winery = {
+	template = powered_cheap_factory_template
+	input_goods = {
+		fruit = 5 #5		#9
+		glass = 5 #5		#14.5	total input+maint = 27.5
+	}
+	output_goods = wine
+	value = 4 #3.5			#34
+	bonus = {
+		trigger = { has_building = glass_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = fruit }
+		value = 0.1
+	}
+}
+
+############# BASIC FACTORIES
+
+lumber_mill = {
+	template = powered_factory_template
+	input_goods = {
+		timber = 50 #100		#90	total input+maint = 100
+	}
+	output_goods = lumber
+
+	value = 60 #110			#110
+	bonus = {
+		trigger = { trade_goods_in_state = timber }
+		value = 0.25
+	}
+}
+
+fabric_factory = {
+	template = powered_factory_template
+	input_goods = { 
+		cotton = 15 #60		# 15                          
+		wool = 10
+		dye = 1 #2			# 12 total input+maint = 27 + 4.91         
+	}
+	output_goods = fabric
+	value = 22.5 #60			#40.5
+	bonus = {
+		trigger = { trade_goods_in_state = cotton }
+		value = 0.125
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = wool }
+		value = 0.125
+	}
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = dye_factory
+				trade_goods_in_state = dye
+				}
+			}
+		value = 0.125
+	}
+}
+
+cement_factory = {
+	template = powered_cement_template
+	input_goods = {
+		coal = 6 #12		#27.6		total input+maint = 37
+	}
+	output_goods = cement
+	value = 1.75 #3.5			#48
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.25
+	}
+}
+
+glass_factory = {
+	template = powered_factory_template
+	input_goods = {
+		coal = 3.5
+		timber = 5
+		precious_goods = 0.05 # salt (soda-ash flux abstraction)
+	}
+	output_goods = glass
+	value = 9 #18			#52.2
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.25
+	}
+
+	# Optional arcane maintenance; core recipe and power demand remain unchanged.
+	efficiency = {
+		electric_power = 0.2
+		cement = 0.25
+		machine_parts = 0.025
+		mana_crystal = 0.10
+	}
+}
+
+fertilizer_factory = {
+	template = powered_factory_template
+	input_goods = {
+		sulphur = 3 #6		#36		total input+maint = 46
+	}
+	output_goods = fertilizer
+	value = 2.5 #5			#50
+	bonus = {
+		trigger = { trade_goods_in_state = sulphur }
+		value = 0.25
+	}
+}
+
+soap_factory = {
+	template = powered_factory_template
+	input_goods = {
+		cattle = 1
+		paper = 1
+		precious_goods = 0.10 # salt (salting-out of soap)
+	}
+	output_goods = soap
+	value = 5
+	bonus = {
+		trigger = { trade_goods_in_state = cattle }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = paper_mill }
+		value = 0.1
+	}
+}
+
+pharmaceuticals_factory = {
+	template = powered_factory_template
+	input_goods = {
+		explosives = 0.4
+		glass = 1
+		fruit = 1
+	}
+	output_goods = pharmaceuticals
+	value = 4
+	bonus = {
+		trigger = { has_building = explosives_factory }
+		value = 0.1
+	}
+
+	# Optional arcane maintenance; core recipe and power demand remain unchanged.
+	efficiency = {
+		electric_power = 0.2
+		cement = 0.25
+		machine_parts = 0.025
+		mana_crystal = 0.15
+	}
+}
+
+tires_factory = {
+	template = powered_factory_template
+	input_goods = {
+		rubber = 2
+		explosives = 0.2
+	}
+	output_goods = tires
+	value = 2
+	bonus = {
+		trigger = { has_building = explosives_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = rubber }
+		value = 0.15
+	}
+}
+
+plastics_factory = {
+	template = powered_factory_template
+	input_goods = {
+		oil = 4.5
+		explosives = 1
+	}
+	output_goods = plastics
+	value = 20
+	bonus = {
+		trigger = { has_building = explosives_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = oil }
+		value = 0.15
+	}
+}
+
+
+### RGOs #####################################################################################
+
+RGO_template_farmers = {
+
+	owner = {
+		poptype = aristocrats
+		effect = output
+	}
+
+	employees = {
+		{
+			poptype = farmers
+			effect = throughput
+			amount = 1
+		}
+
+		{
+			poptype = serfs
+			effect = throughput
+			amount = 1
+		}
+
+		{
+			poptype = pioneers
+			effect = throughput
+			amount = 1
+			effect_multiplier = 1
+		}
+
+		{
+			poptype = slaves
+			effect = throughput
+			amount = 1
+			effect_multiplier = 1.3
+		}
+
+		#{
+		#	poptype = nomads
+		#	effect = throughput
+		#	amount = 1
+		#	effect_multiplier = 0.5
+		#}
+	}
+
+	type = rgo
+	workforce = 40000
+}
+
+RGO_template_labourers = {
+	owner = {
+		poptype = aristocrats
+		effect = output
+	}
+
+	employees = {
+		{
+			poptype = labourers
+			effect = throughput
+			amount = 1
+		}
+
+		{
+			poptype = serfs
+			effect = throughput
+			amount = 1
+		}
+
+		{
+			poptype = slaves
+			effect = throughput
+			amount = 1
+			effect_multiplier = 1.3
+		}
+
+		{
+			poptype = pioneers
+			effect = throughput
+			amount = 1
+			effect_multiplier = 1
+		}
+
+		#{
+		#	poptype = nomads
+		#	effect = throughput
+		#	amount = 1
+		#	effect_multiplier = 0.5
+		#}
+	}
+
+	type = rgo
+	workforce = 40000
+}
+
+# TGCNV expanded-resource mines deliberately employ only labourers. Existing
+# TGC mines keep their original serf/slave/pioneer compatibility.
+RGO_template_tgcnv_labourers_only = {
+	owner = {
+		poptype = aristocrats
+		effect = output
+	}
+
+	employees = {
+		{
+			poptype = labourers
+			effect = throughput
+			amount = 1
+		}
+	}
+
+	type = rgo
+	workforce = 40000
+}
+
+## Basic needs
+
+sheep_ranch = {
+	template = RGO_template_farmers
+	output_goods = wool
+	value = 4.1 #5
+	farm = yes
+}
+
+cattle_ranch = {
+	template = RGO_template_farmers
+	output_goods = cattle
+	value = 3.2 #1.8
+	farm = yes
+}
+orchard = {
+	template = RGO_template_farmers
+	output_goods = fruit
+	value = 3 #2.8
+	farm = yes
+}
+
+grain_farm = {
+	template = RGO_template_farmers
+	output_goods = grain
+	value = 1.9 #1.8
+	farm = yes
+}
+
+coal_mine = {
+	template = RGO_template_labourers
+	output_goods = coal
+	value = 3.3 #2.4
+	mine = yes
+}
+
+coffee_plantation = {
+	template = RGO_template_farmers
+	output_goods = coffee
+	value = 1.75	#1.5
+	farm = yes
+}
+
+cotton_plantation = {
+	template = RGO_template_farmers
+	output_goods = cotton
+	value = 2.4 #1.8
+	farm = yes
+}
+
+dye_plantation = {
+	template = RGO_template_farmers
+	output_goods = dye
+	value = 0.22
+	farm = yes
+}
+
+fishing_wharf = {
+	template = RGO_template_farmers
+	output_goods = fish
+	value = 3.5 #2.2
+	farm = yes
+}
+
+iron_mine = {
+	template = RGO_template_labourers
+	output_goods = iron
+	value = 3
+	mine = yes
+}
+
+oil_rig = {
+	template = RGO_template_labourers
+	output_goods = oil
+	value = 1
+	mine = yes
+}
+
+opium_plantation = {
+	template = RGO_template_farmers
+	output_goods = opium
+	value = 0.7
+	farm = yes
+}
+
+precious_metal_mine = {
+	template = RGO_template_labourers
+	output_goods = precious_metal
+	value = 3
+	mine = yes
+}
+
+precious_goods_market = {
+	template = RGO_template_labourers
+	output_goods = precious_goods
+	value = 1.5
+	mine = yes
+}
+
+rubber_lodge = {
+	template = RGO_template_labourers
+	output_goods = rubber
+	value = 0.75
+	farm = yes
+}
+
+silkworm_ranch = {
+	template = RGO_template_farmers
+	output_goods = silk
+	value = 0.65 #0.25
+	farm = yes
+}
+
+sulphur_mine = {
+	template = RGO_template_labourers
+	output_goods = sulphur
+	value = 3.2
+	mine = yes
+}
+
+tea_plantation = {
+	template = RGO_template_farmers
+	output_goods = tea
+	value = 1.75	#1.75
+	farm = yes
+}
+
+timber_lodge = {
+	template = RGO_template_labourers
+	output_goods = timber
+	value = 7.5 #8
+	farm = yes
+}
+
+tobacco_plantation = {
+	template = RGO_template_farmers
+	output_goods = tobacco
+	value = 2 #2.5
+	farm = yes
+}
+
+tropical_wood_lodge = {
+	template = RGO_template_labourers
+	output_goods = tropical_wood
+	value = 4
+	farm = yes
+}
+
+### Artisans #####################################################################################
+
+artisan_luxury_clothes = {
+	input_goods = {
+		regular_clothes = 1.25	#5.22 | 2026-09-29 rebalance: was 3.6
+		silk = 2.72		#39	total input+maint = 42.9 | 2026-09-29 rebalance: was 7.8
+	}
+	output_goods = luxury_clothes
+	value = 1			#65 | 2026-09-29 rebalance: was 8
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_luxury_furniture = {
+	input_goods = {
+		furniture = 2.79	 	#45.08 | 2026-09-29 rebalance: was 8
+		tropical_wood = 10.5 #8.1	total input+maint = 53.18 | 2026-09-29 rebalance: was 30
+	}
+	output_goods = luxury_furniture
+	value = 1.1		#64.9 | 2026-09-29 rebalance: was 8
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+############# MEDIUM FACTORIES
+
+artisan_steel = {
+	input_goods = {
+		iron = 26.5		#70 | 2026-09-29 rebalance: was 22
+		coal = 7.23		#11.5	total input+maint = 81.5 | 2026-09-29 rebalance: was 6
+	}
+
+	output_goods = steel 		#94
+	value = 20 #this one had more iron added but nerfed output | 2026-09-29 rebalance: was 22
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_artillery = {
+	input_goods = {
+		explosives = 0.822		#20 | 2026-09-29 rebalance: was 1
+		steel = 6.57			#37.6	total input+maint = 57.6+maint | 2026-09-29 rebalance: was 8
+		# TGCNV RESOURCE EXPANSION: traditional bronze castings
+		bronze = 1.23	# 2026-09-29 rebalance: was 1.5
+	}
+	output_goods = artillery
+	value = 1.5		#was 1.5	#71.5
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_clipper = {
+	input_goods = {
+		fabric = 54.2		#90 | 2026-09-29 rebalance: was 40
+		lumber = 135.5		#90 | 2026-09-29 rebalance: was 100
+		steel = 27.1		#141		total input+maint = 321+maint | 2026-09-29 rebalance: was 20
+	}
+	output_goods = clipper_convoy
+	is_coastal = yes
+	value = 9.6		#336 | 2026-09-29 rebalance: was 17
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_small_arms = {
+	input_goods = {
+		ammunition = 2.02	#35 | 2026-09-29 rebalance: was 2.0
+		steel = 3.03		#14.1		total input+maint = 60 | 2026-09-29 rebalance: was 3.0
+	}
+	output_goods = small_arms
+	value = 2		#74 | 2026-09-29 rebalance: was 4
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+############# COMMON FACTORIES
+
+artisan_furniture = {
+	input_goods = {
+		lumber = 47.5		#20 | 2026-09-29 rebalance: was 40
+	}
+	output_goods = furniture
+	value = 12			#58.8 | 2026-09-29 rebalance: was 15
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_paper = {
+	input_goods = {
+		lumber = 56.2		#45	total input+maint = 55 | 2026-09-29 rebalance: was 50
+	}
+	output_goods = paper
+	value = 20			#68 | 2026-09-29 rebalance: was 30
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_regular_clothes = {
+	input_goods = {
+		fabric = 43.8	#was 81 | 2026-09-29 rebalance: was 45
+	}
+	output_goods = regular_clothes
+	value = 15		#87 | 2026-09-29 rebalance: was 20
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_explosives = {
+	input_goods = {
+		fertilizer = 3.14		#30 | 2026-09-29 rebalance: was 3
+		ammunition = 0.836	#14	total input+maint = 54 | 2026-09-29 rebalance: was 0.8
+	}
+	output_goods = explosives
+	value = 3		#60 | 2026-09-29 rebalance: was 5
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+############# CHEAP FACTORIES
+
+artisan_ammunition = {
+	input_goods = {
+		# TGCNV RESOURCE EXPANSION: hand-loaded cartridges
+		gunpowder = 1.37	# 2026-09-29 rebalance: was 2.2
+		lead = 1.87	# 2026-09-29 rebalance: was 3
+		iron = 1.87	# 2026-09-29 rebalance: was 3
+	}
+	output_goods = ammunition
+	value = 3			#52.5 | 2026-09-29 rebalance: was 4
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_canned_food = {
+	input_goods = {
+		steel = 1.33 		#4.7 | 2026-09-29 rebalance: was 1
+		cattle = 18.6 	#24 | 2026-09-29 rebalance: was 14
+		grain = 18.6 		#26.4 | 2026-09-29 rebalance: was 14
+		fish = 9.3	#18	total input+maint = 85 | 2026-09-29 rebalance: was 7
+	}
+	output_goods = canned_food
+	value = 6			#96 | 2026-09-29 rebalance: was 7
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_liquor = {
+	input_goods = {
+		grain = 10		#22
+		glass = 8.04		#23.2	total input+maint = 55 | 2026-09-29 rebalance: was 8
+	}
+	output_goods = liquor
+	value = 10			#64
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_winery = {
+
+	input_goods = {
+		fruit = 8.67		#18 | 2026-09-29 rebalance: was 18
+		glass = 14		#29	total input+maint = 57 | 2026-09-29 rebalance: was 29
+	}
+	output_goods = wine
+	value = 7		#67.9 | 2026-09-29 rebalance: was 24
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+############# BASIC FACTORIES
+
+artisan_lumber = {
+	input_goods = {
+		timber = 72.7		#90 | 2026-09-29 rebalance: was 90
+	}
+	output_goods = lumber
+
+	value = 100			#100
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_fabric = {
+	input_goods = {
+		cotton = 30.4 #30 | 2026-09-29 rebalance: was 30
+		dye = 3.04	#36 #66 + 10? = 76 | 2026-09-29 rebalance: was 3
+	}
+	output_goods = fabric
+	value = 45			#81
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_cement = {
+	input_goods = {
+		coal = 13.1		#27.6		total input+maint = 37 | 2026-09-29 rebalance: was 10
+	}
+	output_goods = cement
+	value = 3		#48 | 2026-09-29 rebalance: was 5
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_glass = {
+	input_goods = {
+		coal = 13.1		#32.2		total input+maint = 42 | 2026-09-29 rebalance: was 12
+		precious_goods = 0.11 # salt (soda-ash flux abstraction) | 2026-09-29 rebalance: was 0.10
+	}
+	output_goods = glass
+	value = 18			#52.2
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_fertilizer = {
+	input_goods = {
+		sulphur = 6.91		#42 | 2026-09-29 rebalance: was 7
+	}
+	output_goods = fertilizer
+	value = 5			#50
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_fabric_wool = {
+	input_goods = {
+		wool = 40 #46 | 2026-09-29 rebalance: was 25
+		dye = 3.21	#24 | 2026-09-29 rebalance: was 2
+	}
+	output_goods = fabric
+	value = 40			#81
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_soap = {
+	input_goods = {
+		cattle = 13.4	# 2026-09-29 rebalance: was 8
+		paper = 8.04	# 2026-09-29 rebalance: was 4.8
+		precious_goods = 0.218 # salt (salting-out of soap) | 2026-09-29 rebalance: was 0.13
+	}
+	output_goods = soap
+	value = 10			#nerfed | 2026-09-29 rebalance: was 6.5
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_pharmaceuticals = {
+	input_goods = {
+		tea = 13.3	# 2026-09-29 rebalance: was 9
+		glass = 2.96	# 2026-09-29 rebalance: was 2
+		fruit = 2.96	# 2026-09-29 rebalance: was 2
+	}
+	output_goods = pharmaceuticals
+	value = 9		#81 | 2026-09-29 rebalance: was 15
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_machine_parts = {
+	input_goods = {
+		steel = 10.3	# 2026-09-29 rebalance: was 10
+		iron = 5.13		#70.5 | 2026-09-29 rebalance: was 5
+		coal = 5.13		#14	total input+maint = 84.5 | 2026-09-29 rebalance: was 5
+	}
+	output_goods = machine_parts
+	value = 2.5			#91.25 | 2026-09-29 rebalance: was 10
+
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+
+	type = artisan
+
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+#DEPRECATED ARTISANS
+#artisan_aeroplane = {
+#	input_goods = {
+#		machine_parts = 1.11	#38.69
+#		electric_gear = 2	#32
+#		rubber = 1			#7
+#		lumber = 3.3 		#3.3	total input+maint = 90
+#	}
+#	output_goods = aeroplanes
+#	value = 0.91			#100
+#
+#	owner = {
+#		poptype = artisans
+#		effect = output
+#	}
+#
+#	type = artisan
+#
+#	workforce = 10000
+#}
+
+# TGCNV RESOURCE EXPANSION BEGIN
+# Original TGC-scale implementation inspired by the PDM team's additional-goods
+# production topology. No PDM code is copied; values are rebalanced for TGC.
+
+### TGCNV FACTORIES ##########################################################################
+
+gunpowder_factory = {
+	template = powered_cheap_factory_template
+	input_goods = {
+		coal = 1.5
+		sulphur = 0.75
+	}
+	output_goods = gunpowder
+	value = 1.3
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = sulphur }
+		value = 0.15
+	}
+}
+
+bronze_factory = {
+	template = powered_factory_template
+	input_goods = {
+		coal = 1.0
+		copper = 1.4
+	}
+	output_goods = bronze
+	value = 1.75
+	bonus = {
+		trigger = { trade_goods_in_state = copper }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.1
+	}
+}
+
+electric_power_plant = {
+	template = factory_template
+	input_goods = {
+		coal = 4.0
+	}
+	output_goods = electric_power
+	value = 3.25
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.15
+	}
+}
+
+sugar_refinery = {
+	template = powered_factory_template
+	input_goods = {
+		fruit = 10
+	}
+	output_goods = sugar
+	value = 6.75
+	bonus = {
+		trigger = { trade_goods_in_state = fruit }
+		value = 0.25
+	}
+}
+
+magitech_components_factory = {
+	template = machine_part_user_template
+	input_goods = {
+		mana_crystal = 0.6
+		spirit_ore = 0.6
+		electric_gear = 0.75
+		electric_power = 0.4
+	}
+	output_goods = magitech_components
+	value = 0.75
+	bonus = {
+		trigger = { trade_goods_in_state = mana_crystal }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = spirit_ore }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = electric_gear_factory }
+		value = 0.15
+	}
+}
+
+idol_media_studio = {
+	template = powered_factory_template
+	input_goods = {
+		paper = 1.5
+		fabric = 2.0
+		plastics = 1.25
+		magitech_components = 0.15
+	}
+	output_goods = idol_media
+	value = 1.35
+	bonus = {
+		trigger = { has_building = paper_mill }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = plastics_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = magitech_components_factory }
+		value = 0.15
+	}
+}
+
+### TGCNV RGOS ###############################################################################
+
+copper_mine = {
+	template = RGO_template_labourers
+	output_goods = copper
+	value = 1.45
+	mine = yes
+}
+
+lead_mine = {
+	template = RGO_template_labourers
+	output_goods = lead
+	value = 1.55
+	mine = yes
+}
+
+spice_plantation = {
+	template = RGO_template_farmers
+	output_goods = spices
+	value = 1.1
+	farm = yes
+}
+
+mana_crystal_mine = {
+	template = RGO_template_labourers
+	output_goods = mana_crystal
+	value = 0.65
+	mine = yes
+}
+
+spirit_ore_mine = {
+	template = RGO_template_labourers
+	output_goods = spirit_ore
+	value = 0.75
+	mine = yes
+}
+
+### TGCNV ARTISANS ###########################################################################
+
+artisan_gunpowder = {
+	input_goods = {
+		coal = 5.75	# 2026-09-29 rebalance: was 3.5
+		sulphur = 3.29	# 2026-09-29 rebalance: was 2.0
+	}
+	output_goods = gunpowder
+	value = 3.8	# 2026-09-29 rebalance: was 1.9
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+	type = artisan
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_bronze = {
+	input_goods = {
+		coal = 4.05	# 2026-09-29 rebalance: was 2.5
+		copper = 5.19	# 2026-09-29 rebalance: was 3.2
+	}
+	output_goods = bronze
+	value = 5.2	# 2026-09-29 rebalance: was 2.6
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+	type = artisan
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_electric_power = {
+	input_goods = {
+		coal = 19.4	# 2026-09-29 rebalance: was 8.0
+	}
+	output_goods = electric_power
+	value = 9.5	# 2026-09-29 rebalance: was 4.75
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+	type = artisan
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_sugar = {
+	input_goods = {
+		fruit = 34.3	# 2026-09-29 rebalance: was 20
+	}
+	output_goods = sugar
+	value = 20	# 2026-09-29 rebalance: was 10
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+	type = artisan
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_magitech_components = {
+	input_goods = {
+		mana_crystal = 1.3	# 2026-09-29 rebalance: was 1.5
+		spirit_ore = 1.3	# 2026-09-29 rebalance: was 1.5
+		electric_gear = 1.3	# 2026-09-29 rebalance: was 1.5
+		electric_power = 0.869	# 2026-09-29 rebalance: was 1.0
+	}
+	output_goods = magitech_components
+	value = 1.5	# 2026-09-29 rebalance: was 1.35
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+	type = artisan
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+artisan_idol_media = {
+	input_goods = {
+		paper = 2.6	# 2026-09-29 rebalance: was 3.0
+		fabric = 3.46	# 2026-09-29 rebalance: was 4.0
+		plastics = 2.6	# 2026-09-29 rebalance: was 3.0
+		magitech_components = 0.433	# 2026-09-29 rebalance: was 0.5
+	}
+	output_goods = idol_media
+	value = 3	# 2026-09-29 rebalance: was 2.7
+	owner = {
+		poptype = artisans
+		effect = output
+	}
+	type = artisan
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+
+# TGCNV RESOURCE EXPANSION END
+
+# TGCNV NUCLEAR FACTORY BEGIN
+# Existing electric_power output keeps the native 64-good database unchanged.
+# Nuclear warheads are extension-owned byproducts of verified actual output.
+nuclear_power_plant = {
+	template = factory_template
+	input_goods = {
+		mana_crystal = 1.0
+		spirit_ore = 1.0
+		machine_parts = 0.05
+		magitech_components = 0.10
+	}
+	output_goods = electric_power
+	value = 6.5
+}
+# TGCNV NUCLEAR FACTORY END
+#
+#artisan_barrel = {
+#	input_goods = {
+#		automobiles = 0.3	#21
+#		machine_parts = 1	#29.2
+#		electric_gear = 0.85	#16
+#		steel = 2		#7
+#	}
+#	output_goods = barrels
+#	value = 1.0			#98	total input+maint = 83
+#
+#	owner = {
+#		poptype = artisans
+#		effect = output
+#	}
+#
+#	type = artisan
+#
+#	workforce = 10000
+#}
+#
+#artisan_automobile = {
+#	input_goods = {
+#		machine_parts = 1.05	#36.5
+#		electric_gear = 1.5	#24
+#		rubber = 1		#7
+#		steel = 2.25		#10.58	total input+maint = 89
+#	}
+#
+#	output_goods = automobiles
+#	value = 1.43			#100
+#
+#	owner = {
+#		poptype = artisans
+#		effect = output
+#	}
+#
+#	type = artisan
+#
+#	workforce = 10000
+#}
+#
+#artisan_radio = {
+#	input_goods = {
+#		glass = 10 		#29
+#		electric_gear = 3	#48		total input+maint = 87
+#	}
+#	output_goods = radio
+#	value = 6.5			#104
+#
+#	owner = {
+#		poptype = artisans
+#		effect = output
+#	}
+#
+#	type = artisan
+#
+#	workforce = 10000
+#}
+
+#artisan_telephone = {
+#	input_goods = {
+#		glass = 15 		#43.5
+#		electric_gear = 2.5	#40 	total input+maint = 93.5
+#	}
+#	output_goods = telephones
+#	value = 6.5			#104
+#
+#	owner = {
+#		poptype = artisans
+#		effect = output
+#	}
+#
+#	type = artisan
+#
+#	workforce = 10000
+#}
+
+############# STRATEGIC FACTORIES
+
+#artisan_electric_gear = {
+#	input_goods = {
+#		rubber = 4		#28
+#		coal = 5		#11.5
+#		steel = 5		#23.5	total input+maint = 73
+#	}
+#	output_goods = electric_gear
+#	value = 5.5			#88
+#
+#	owner = {
+#		poptype = artisans
+#		effect = output
+#	}
+#
+#	type = artisan
+#
+#	workforce = 10000
+#}
+
+############# ADVANCED FACTORIES
+
+#artisan_fuel = {
+#	input_goods = {
+#		oil = 2.5			#30	total input+maint = 40
+#	}
+#	output_goods = fuel
+#	value = 2			#50
+#
+#	owner = {
+#		poptype = artisans
+#		effect = output
+#	}
+#
+#	type = artisan
+#
+#	workforce = 10000
+#}
+
+#artisan_steamer = {
+#	input_goods = {
+#		lumber = 10      #10
+#		steel = 22		#103.4
+#		coal = 25		#57.5
+#		machine_parts = 0.25 #9.125 total input+maint = 180.025 +maint
+#	}
+#	output_goods = steamer_convoy
+#	is_coastal = yes
+#	value = 3.5			#192.5
+#
+#	owner = {
+#		poptype = artisans
+#		effect = output
+#	}
+#
+#	type = artisan
+#
+#
+#	workforce = 10000
+#}
+
+# TGCNV DIVERSIFIED POWER BEGIN - appended; existing production ordinals preserved.
+oil_power_plant = {
+	template = factory_template
+	input_goods = { oil = 1.2 }
+	output_goods = electric_power
+	value = 3.75
+	bonus = {
+		trigger = { trade_goods_in_state = oil }
+		value = 0.15
+	}
+}
+
+hydro_power_plant = {
+	template = factory_template
+	# Turbine and generator upkeep; no combustible fuel and no self-power input.
+	# A state-scale civil-works abstraction, not a river-location simulation.
+	input_goods = { machine_parts = 0.015 electric_gear = 0.03 }
+	output_goods = electric_power
+	value = 1.75
+}
+# TGCNV DIVERSIFIED POWER END
+
+
+# TGCNV ARCANE RESOURCE USES BEGIN
+# Alternative artisan routes retain the original ordinary-material recipes.
+artisan_mana_glass = {
+	input_goods = { coal = 8.15 mana_crystal = 1.16 precious_goods = 0.116 }	# 2026-09-29 rebalance: was coal 7, mana_crystal 1, precious_goods 0.10
+	output_goods = glass
+	value = 18
+	owner = { poptype = artisans effect = output }
+	type = artisan
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+artisan_spirit_medicine = {
+	input_goods = { tea = 8.82 glass = 2.94 fruit = 2.94 spirit_ore = 1.47 }	# 2026-09-29 rebalance: was tea 6, glass 2, fruit 2, spirit_ore 1
+	output_goods = pharmaceuticals
+	value = 9	# 2026-09-29 rebalance: was 15
+	owner = { poptype = artisans effect = output }
+	type = artisan
+	workforce = 10000	# 2026-09-29 rebalance: was 5000
+}
+# TGCNV ARCANE RESOURCE USES END
+
+# TGCNV INDUSTRIAL BIOFUEL
+biofuel_refinery = {
+	template = powered_factory_template
+	input_goods = {
+		grain = 7.1 # 2026-09-29 price: was 30 (grain 0.5 -> 2.11)
+		coal = 0.5
+	}
+	output_goods = fuel
+	value = 1
+	bonus = {
+		trigger = {
+			trade_goods_in_state = grain
+		}
+		value = 0.10
+	}
+}

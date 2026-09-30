@@ -1,0 +1,78 @@
+political_decisions = {
+
+#####################
+# Venetian Republic #
+#####################
+
+	repubblica_di_venezia = {
+		picture = "repubblica_di_venezia"
+		potential = {
+			tag = VEN
+			is_vassal = no
+			has_country_flag = monarchy_gov
+			NOT = { has_country_flag = repubblica_di_venezia }
+		}
+
+		allow = {
+			ideological_thought = 1
+		}
+
+		effect = {
+			prestige = 10
+			government = democracy
+			political_reform = wealth_weighted_voting
+			political_reform = yes_meeting
+			political_reform = censored_press
+			set_country_flag = repubblica_di_venezia
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#####################
+# Venetian ambition #
+#####################
+
+	venetian_ambition = {
+		picture = "venetian_ambition"
+		potential = {
+			tag = VEN
+			NOT = { has_country_flag = venetian_ambition }
+		}
+
+		allow = {
+			is_greater_power = yes
+			romanticism = 1
+			nationalism_n_imperialism = 1
+			prestige = 100
+			military_score = 50
+			OR = 	{
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = conservative
+				ruling_party_ideology = fascist
+			}
+		}
+
+		effect = {
+			set_country_flag = venetian_ambition
+			prestige = 60
+			727 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			728 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			729 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6601 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			730 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			731 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			732 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			733 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			770 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			780 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			781 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			2582 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			826 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			827 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			badboy = 5
+		}
+	}
+}

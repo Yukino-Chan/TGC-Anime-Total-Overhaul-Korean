@@ -1,0 +1,14 @@
+army = {
+	name = "Army of the Emirate of Trarza"
+	location = 5331
+	regiment = {
+		name= "Emir's Guards"
+		type = irregular
+		home = 1776
+	}
+	regiment = {
+		name= "Maures Warriors"
+		type = irregular
+		home = 5331
+	}
+}

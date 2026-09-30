@@ -1,0 +1,26 @@
+# Real locally owned HOI4 aircraft; assets/hoi4-sortie-motion/models.py.
+# Neutral Root XSM: the runtime alone supplies position and attitude.
+objectTypes = {
+    EMFXActorType = {
+        name = "tgcnvSortieFighter"
+        actorfile = "gfx\anims\TGCNV_HOI4_SortieFighter.xac"
+        idle = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        move = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        attack = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        scale = 0.1
+    }
+    EMFXActorType = {
+        name = "tgcnvSortieBomber"
+        actorfile = "gfx\anims\TGCNV_HOI4_SortieBomber.xac"
+        idle = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        move = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        attack = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm"
+        animation = { name = "air_attack" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        animation = { name = "bomb_attack" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        animation = { name = "evade" file = "gfx\anims\TGCNV_HOI4_SortieNeutral.xsm" }
+        scale = 0.13
+    }
+}

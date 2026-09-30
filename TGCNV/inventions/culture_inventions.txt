@@ -1,0 +1,5060 @@
+## Aesthetics ##
+
+	# Classicism and Early Romanticism
+
+		carlism = {
+			limit = {
+				is_culture_group = iberian
+				classicism_n_early_romanticism = 1
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					ruling_party_ideology = reactionary
+				}
+				modifier = {
+					factor = 2
+					NOT = { has_country_flag = absolute_monarchy_gov }
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = carlist_rebels value = 0.75 }
+				rebel_org_gain = { faction = christino_rebels value = 0.75 }
+			}
+		}
+
+		luxury_clothes_factories = {
+			limit = { classicism_n_early_romanticism = 1 }
+
+			news = no
+
+			chance = {
+				base = 5
+				modifier = {
+					factor = -10
+					civilized = no
+				}
+			}
+
+			effect = {
+				activate_building = luxury_clothes_factory
+			}
+		}
+
+	# Romanticism
+
+		romanticist_art = {
+			limit = { romanticism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					average_consciousness = 3
+				}
+				modifier = {
+					factor = 2
+					prestige = 30
+				}
+				modifier = {
+					factor = -2
+					OR = {
+						invention = romanticist_literature
+						invention = romanticist_music
+					}
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		romanticist_literature = {
+			limit = { romanticism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					average_consciousness = 3
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_order
+				}
+				modifier = {
+					factor = -2
+					OR = {
+						invention = romanticist_art
+						invention = romanticist_music
+					}
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		romanticist_music = {
+			limit = { romanticism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					is_greater_power = no
+				}
+				modifier = {
+					factor = 2
+					#plurality = 5
+				}
+				modifier = {
+					factor = -2
+					OR = {
+						invention = romanticist_art
+						invention = romanticist_literature
+					}
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+	# Realism
+
+		realist_art = {
+			limit = { realism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					average_consciousness = 3
+				}
+				modifier = {
+					factor = -2
+					OR = {
+						invention = realist_literature
+						invention = realist_music
+					}
+				}
+			}
+
+				effect = { shared_prestige = 1 }
+			}
+
+		realist_literature = {
+			limit = { realism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					is_greater_power = no
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_equality
+				}
+				modifier = {
+					factor = -1
+					OR = {
+						invention = realist_art
+						invention = realist_music
+					}
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		realist_music = {
+			limit = { realism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = -2
+					OR = {
+						invention = realist_art
+						invention = realist_literature
+					}
+				}
+				modifier = {
+					factor = 2
+					idealism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+	# Impressionism
+
+		impressionist_art = {
+			limit = { impressionism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = -2
+					OR = {
+						invention = impressionist_literature
+						invention = impressionist_music
+					}
+				}
+
+				modifier = {
+					factor = 2
+					ideological_thought = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 30
+			}
+		}
+
+		impressionist_literature = {
+			limit = { impressionism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = -2
+					OR = {
+						invention = impressionist_art
+						invention = impressionist_music
+					}
+				}
+				modifier = {
+					factor = 2
+					positivism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 30
+			}
+		}
+
+		impressionist_music = {
+			limit = { impressionism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = -2
+					OR = {
+						invention = impressionist_art
+						invention = impressionist_literature
+					}
+				}
+				modifier = {
+					factor = 2
+					empiricism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 30
+			}
+		}
+
+	# Expressionism
+
+		expressionist_art = {
+			limit = { expressionism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = -2
+					OR = {
+						invention = expressionist_literature
+						invention = expressionist_music
+					}
+				}
+				modifier = {
+					factor = 2
+					nationalism_n_imperialism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 40
+			}
+		}
+
+		expressionist_literature = {
+			limit = { expressionism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = -2
+					OR = {
+						invention = expressionist_art
+						invention = expressionist_music
+					}
+				}
+				modifier = {
+					factor = 2
+					experimental_psychology = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 40
+			}
+		}
+
+		expressionist_music = {
+			limit = { expressionism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = -2
+					OR = {
+						invention = expressionist_art
+						invention = expressionist_literature
+					}
+				}
+				modifier = {
+					factor = 2
+					phenomenology_n_hermeneutic = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 40
+			}
+		}
+
+	# Mass Culture and the Avant Garde
+
+		avantgarde_art = {
+			limit = { mass_culture_n_the_avant_garde = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = -2
+					OR = {
+						invention = avantgarde_literature
+						invention = avantgarde_music
+					}
+				}
+				modifier = {
+					factor = 2
+					social_alienation = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		avantgarde_literature = {
+			limit = { mass_culture_n_the_avant_garde = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = -2
+					OR = {
+						invention = avantgarde_art
+						invention = avantgarde_music
+					}
+				}
+				modifier = {
+					factor = 2
+					anti__rationalism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		avantgarde_music = {
+			limit = { mass_culture_n_the_avant_garde = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = -2
+					OR = {
+						invention = avantgarde_art
+						invention = avantgarde_literature
+					}
+				}
+				modifier = {
+					factor = 2
+					invention = jazz
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		jazz = {
+			limit = { modernism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					great_war_experience = 1
+				}
+				modifier = {
+					factor = 2
+					invention = biased_multiculturalism
+				}
+				modifier = {
+					factor = 1
+					any_owned_province = { any_pop = { is_culture_group = african_diaspora_cultures } }
+				}
+				modifier = {
+					factor = 1
+					any_owned_province = { any_pop = { has_pop_culture = afro_american } }
+				}
+				modifier = {
+					factor = 0.2
+					OR = {
+						any_greater_power = { invention = jazz }
+						any_neighbor_country = { invention = jazz }
+					}
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		modern_design = {
+			limit = { modernism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					social_science = 1
+				}
+				modifier = {
+					factor = 2
+					invention = sociology
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		socialist_realism = {
+			limit = { mass_culture_n_the_avant_garde = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					has_country_flag = communist_gov
+				}
+				modifier = {
+					factor = 2
+					ruling_party_ideology = socialist
+				}
+				modifier = {
+					factor = 2
+					invention = dogma_of_mass_action
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		surrealism = {
+			limit = { modernism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					anti__rationalism = 1
+				}
+				modifier = {
+					factor = 2
+					invention = dogma_of_violence
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+## Philosophy ##
+
+	# Late Enlightenment Philosophy
+
+	# Idealism
+
+		early_archaeology = {
+			limit = { idealism = 1 }
+
+			chance = {
+				base = 1
+				modifier = {
+					factor = 1
+					functionalism = 1
+				}
+				modifier = {
+					factor = 1
+					invention = i_empiricism
+				}
+				modifier = {
+					factor = 2
+					has_country_modifier = local_excavations
+				}
+				modifier = {
+					factor = 2
+					has_country_modifier = egyptian_excavations
+				}
+			}
+
+			effect = {
+				shared_prestige = 5
+			}
+		}
+
+		hegelian_idealism = {
+			limit = { idealism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					romanticism = 1
+				}
+				modifier = {
+					factor = 2
+					phenomenalism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		neokantian_idealism = {
+			limit = { idealism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					ideological_thought = 1
+				}
+				modifier = {
+					factor = 2
+					functionalism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		proto_existentialism = {
+			limit = { idealism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = romanticist_literature
+				}
+				modifier = {
+					factor = 2
+					functionalism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+	# Empiricism
+
+		i_empiricism = {
+			limit = { empiricism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					phenomenalism = 1
+				}
+				modifier = {
+					factor = 2
+					scientific_management = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		pragmatism = {
+			limit = { empiricism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					realism = 1
+				}
+				modifier = {
+					factor = 2
+					positivism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		scientific_forestry = {
+			limit = { empiricism = 1 }
+
+			news = no
+
+			chance = {
+				base = 5
+				modifier = {
+					factor = 2
+					realism = 1
+				}
+				modifier = {
+					factor = 2
+					positivism = 1
+				}
+			}
+
+			effect = {
+				rgo_goods_throughput = { timber = 0.25 }
+			}
+		}
+
+	# Analytic Philosophy
+
+		i_analytic_philosophy = {
+			limit = { analytic_philosophy = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					impressionism = 1
+				}
+				modifier = {
+					factor = 2
+					biologism = 1
+				}
+				modifier = {
+					factor = 1
+					#plurality = 5
+				}
+			}
+
+			effect = {
+				shared_prestige = 30
+			}
+		}
+
+		logical_positivism = {
+			limit = { analytic_philosophy = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					impressionism = 1
+				}
+				modifier = {
+					factor = 2
+					biologism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 30
+			}
+		}
+
+		modern_archaeology = {
+			limit = {
+				analytic_philosophy = 1
+				invention = early_archaeology
+			}
+
+			chance = {
+				base = 1
+				modifier = {
+					factor = 1
+					invention = modern_logics
+				}
+				modifier = {
+					factor = 1
+					invention = darwinism
+				}
+				modifier = {
+					factor = 1
+					has_country_modifier = egyptian_excavations
+				}
+				modifier = {
+					factor = 1
+					has_country_modifier = inca_excavations
+				}
+				modifier = {
+					factor = 1
+					has_country_modifier = maya_excavations
+				}
+				modifier = {
+					factor = 1
+					has_country_modifier = mesopotamian_excavations
+				}
+				modifier = {
+					factor = 1
+					has_country_modifier = minoan_excavations
+				}
+				modifier = {
+					factor = 1
+					has_country_modifier = mycenaean_excavations_modifier
+				}
+				modifier = {
+					factor = 1
+					has_country_modifier = pompeji_excavations
+				}
+			}
+
+			effect = {
+				shared_prestige = 15
+			}
+		}
+
+		modern_logics = {
+			limit = { analytic_philosophy = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					functionalism = 1
+				}
+				modifier = {
+					factor = 2
+					state_n_government = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 30
+			}
+		}
+
+		philosophy_of_language = {
+			limit = { analytic_philosophy = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					colonial_nation = yes
+				}
+				modifier = {
+					factor = 2
+					nationalism_n_imperialism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 30
+			}
+		}
+
+	# Phenomenology and Hermeneutic
+
+		hermeneutics = {
+			limit = { phenomenology_n_hermeneutic = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					social_science = 1
+				}
+				modifier = {
+					factor = 2
+					invention = darwinism
+				}
+			}
+
+			effect = {
+				shared_prestige = 40
+			}
+		}
+
+		phenomenology = {
+			limit = { phenomenology_n_hermeneutic = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = expressionist_literature
+				}
+				modifier = {
+					factor = 2
+					social_science = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 40
+			}
+		}
+
+	# Anti-Rationalism
+
+		existentialism = {
+			limit = { anti__rationalism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = expressionist_literature
+				}
+				modifier = {
+					factor = 2
+					invention = dogma_of_violence
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		futurism = {
+			limit = { anti__rationalism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = stainless_steel
+				}
+				modifier = {
+					factor = 2
+					synthetic_polymers = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		nihilism_and_the_will = {
+			limit = { anti__rationalism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = national_fraternity
+				}
+				modifier = {
+					factor = 2
+					invention = social_anthropology
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		quantum_theory = {
+			limit = { anti__rationalism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					average_consciousness = 5
+				}
+				modifier = {
+					factor = 2
+					invention = phenomenology
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		logical_investigations = {
+			limit = { ontology = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					average_consciousness = 5
+				}
+				modifier = {
+					factor = 2
+					invention = phenomenology
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+## Social Thought ##
+
+	# Malthusian Thought
+
+		inclosure = {
+			limit = { malthusian_thought = 1 }
+
+			news = no
+
+			chance = {
+				base = 5
+				modifier = {
+					factor = 2
+					invention = sharp_n_roberts_power_loom
+				}
+			}
+
+			effect = {
+				rgo_goods_throughput = { cattle = 0.05 }
+				rgo_goods_throughput = { wool = 0.05 }
+			}
+		}
+
+		regenerative_forestry = {
+			limit = { malthusian_thought = 1 }
+
+			news = no
+
+			chance = {
+				base = 5
+			}
+
+			effect = {
+				rgo_goods_throughput = { timber = 0.1 }
+			}
+		}
+
+		sunday_schools = {
+			limit = { malthusian_thought = 1 }
+
+			news = no
+
+			chance = {
+				base = 3
+			}
+
+			effect = {
+				education_efficiency = 0.05
+			}
+		}
+
+		thomas_robert_malthus ={
+			limit = {
+				malthusian_thought = 1
+				
+				NOT = { nationalvalue = nv_equality }
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					civilized = no
+				}
+			}
+
+			effect = {
+				pop_growth = 0.0001
+			}
+		}
+
+	# Positivism
+
+		curriculum = {
+			limit = { functionalism = 1 }
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 2
+					invention = infant_schools
+				}
+				modifier = {
+					factor = 2
+					invention = state_education
+				}
+				modifier = {
+					factor = 1
+					invention = philosophy_of_language
+				}
+			}
+
+			effect = {
+				education_efficiency = 0.025
+			}
+		}
+
+		infant_schools = {
+			limit = { positivism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					realism = 1
+				}
+				modifier = {
+					factor = 2
+					invention = sunday_schools
+				}
+				modifier = {
+					factor = 1
+					idealism = 1
+				}
+			}
+
+			effect = {
+				education_efficiency = 0.025
+			}
+		}
+
+		state_education = {
+			limit = { positivism = 1 }
+
+			news = no
+
+			chance = {
+				base = 1
+				modifier = {
+					factor = 4
+					invention = infant_schools
+				}
+			}
+
+			effect = {
+				education_efficiency = 0.05
+			}
+		}
+
+	# Functionalism
+
+		grammar_schools = {
+			limit = { functionalism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 1
+					invention = state_education
+				}
+				modifier = {
+					factor = 1
+					invention = curriculum
+				}
+				modifier = {
+					factor = 1
+					invention = infant_schools
+				}
+			}
+
+			effect = {
+				education_efficiency = 0.05
+			}
+		}
+
+		heinrich_schliemann = {
+			limit = {
+				functionalism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = jg_taylor
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		jg_taylor = {
+			limit = {
+				functionalism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+	# Biologism
+
+	high_schools = {
+			limit = { biologism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					invention = grammar_schools
+				}
+			}
+
+			effect = {
+				education_efficiency = 0.15
+			}
+		}
+
+		darwinism = {
+			limit = { biologism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					impressionism = 1
+				}
+				modifier = {
+					factor = 2
+					invention = genetics_heredity
+				}
+				modifier = {
+					factor = 1
+					invention = philosophy_of_language
+				}
+			}
+
+			effect = {
+				education_efficiency = 0.25
+			}
+		}
+
+		social_darwinism = {
+			limit = { biologism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = darwinism
+				}
+				modifier = {
+					factor = 2
+					invention = national_fraternity
+				}
+			}
+
+			effect = {
+				war_exhaustion = -0.05
+			}
+		}
+
+	# Social Science
+
+		emile_dirkheim = {
+			limit = {
+				social_science = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = darwinism
+				}
+				modifier = {
+					factor = 2
+					social_alienation = 1
+				}
+			}
+
+			effect = {
+				education_efficiency = 0.05
+				shared_prestige = 10
+			}
+		}
+
+		ferdinand_de_saussure = {
+			limit = {
+				social_science = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = darwinism
+				}
+			}
+
+			effect = {
+				shared_prestige = 30
+				diplomatic_points = 0.25
+			}
+		}
+
+		flinders_petrie = {
+			limit = {
+				social_science = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = jg_taylor
+				}
+				modifier = {
+					factor = 2
+					invention = heinrich_schliemann
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		franz_boas = {
+			limit = {
+				social_science = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 3
+					invention = social_anthropology
+				}
+			}
+
+			effect = {
+				colonial_prestige = 0.2
+				shared_prestige = 10
+			}
+		}
+
+		max_weber = {
+			limit = {
+				social_science = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = emile_dirkheim
+				}
+				modifier = {
+					factor = 2
+					invention = karl_marx
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+				education_efficiency = 0.05
+				political_reform_desire = 0.05
+			}
+		}
+
+		political_science = {
+			limit = { social_science = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					revolution_n_counterrevolution = 1
+				}
+				modifier = {
+					factor = 1
+					military_directionism = 1
+				}
+				modifier = {
+					factor = 1
+					naval_directionism = 1
+				}
+			}
+
+			effect = {
+				core_pop_consciousness_modifier = 0.01
+				shared_prestige = 5
+			}
+		}
+
+		social_anthropology = {
+			limit = { social_science = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = darwinism
+				}
+				modifier = {
+					factor = 2
+					assembly_line = 1
+				}
+			}
+
+			effect = {
+				colonial_prestige = 0.2
+			}
+		}
+
+		social_psychology = {
+			limit = { social_science = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					experimental_psychology = 1
+				}
+				modifier = {
+					factor = 2
+					behaviorism = 1
+				}
+			}
+
+			effect = {
+				core_pop_consciousness_modifier = 0.01
+				shared_prestige = 5
+			}
+		}
+
+		sociology = {
+			limit = { social_science = 1 }
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					analytic_philosophy = 1
+				}
+				modifier = {
+					factor = 2
+					scientific_management = 1
+				}
+			}
+
+			effect = {
+				core_pop_consciousness_modifier = 0.01
+				shared_prestige = 5
+			}
+		}
+
+	# Social Alienation
+
+		arthur_evans = {
+			limit = {
+				social_alienation = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = franz_boas
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		branislaw_malinowski = {
+			limit = {
+				social_alienation = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = franz_boas
+				}
+			}
+
+			effect = {
+				# Audax Validator "." Ignore_NEXT
+				influence = 0.1
+				shared_prestige = 10
+			}
+		}
+
+		cl_wooley = {
+			limit = {
+				social_alienation = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = arthur_evans
+				}
+			}
+
+			effect = {
+				shared_prestige = 50
+			}
+		}
+
+		marcel_mauss = {
+			limit = {
+				social_alienation = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = franz_boas
+				}
+			}
+
+			effect = {
+				education_efficiency = 0.05
+				shared_prestige = 10
+			}
+		}
+
+		scholarships = {
+			limit = { social_psychology = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = high_schools
+				}
+				modifier = {
+					factor = 3
+					invention = grammar_schools
+				}
+				modifier = {
+					factor = 5
+					invention = darwinism
+				}
+			}
+
+			effect = {
+				education_efficiency = 0.05
+			}
+		}
+
+		the_decline_of_the_west_and_the_lost_generation = {
+			limit = { social_alienation = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					great_war_experience = 1
+				}
+				modifier = {
+					factor = 2
+					invention = mission_to_civilize
+				}
+			}
+
+			effect = {
+				core_pop_consciousness_modifier = 0.05
+			}
+		}
+
+		the_revolt_of_the_masses = {
+			limit = { social_alienation = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					revolution_n_counterrevolution = 1
+				}
+				modifier = {
+					factor = 2
+					great_war_experience = 1
+				}
+			}
+
+			effect = {
+				#plurality = 0.05
+				war_exhaustion = -0.05
+			}
+		}
+
+## Political Thought ##
+
+	# Enlightenment Thought
+
+		caste_privileges = {
+			limit = {
+				enlightenment_thought = 1
+				is_culture_group = pan_british
+				year = 1850
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					religious_policy = moralism
+				}
+				modifier = {
+					factor = 5
+					year = 1855
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = indian_sepoys value = 0.25 }
+			}
+		}
+
+		declaration_of_the_rights_of_man = {
+			limit = { enlightenment_thought = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					ruling_party_ideology = liberal
+				}
+				modifier = {
+					factor = 5
+					average_militancy = 4
+				}
+				modifier = {
+					factor = -9
+					civilized = no
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = liberal_rebels value = 0.25 }
+				rebel_org_gain = { faction = nationalist_rebels value = 0.50 }
+				rebel_org_gain = { faction = separatist_rebels value = 0.50 }
+			}
+		}
+
+		pig_fat_cartridges = {
+			limit = {
+				enlightenment_thought = 1
+				is_culture_group = pan_british
+				year = 1860
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					religious_policy = moralism
+				}
+				modifier = {
+					factor = 5
+					year = 1865
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = indian_sepoys value = 0.25 }
+			}
+		}
+
+		sati_abolished = {
+			limit = {
+				enlightenment_thought = 1
+				is_culture_group = pan_british
+				year = 1855
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					religious_policy = moralism
+				}
+				modifier = {
+					factor = 5
+					year = 1860
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = indian_sepoys value = 0.25 }
+			}
+		}
+
+		power_of_tradition = {
+			limit = {
+				enlightenment_thought = 1
+				OR = {
+					nationalvalue = nv_liberty
+					nationalvalue = nv_equality
+					nationalvalue = nv_productivity
+				}
+				civilization_progress = 0.50
+				civilized = no
+			}
+
+			news = no
+
+			chance = {
+				base = 3
+				modifier = {
+					factor = 5
+					part_of_sphere = yes
+				}
+				modifier = {
+					factor = 5
+					enlightenment_thought = 1
+				}
+				modifier = {
+					factor = 5
+					late_enlightenment_philosophy = 1
+				}
+				modifier = {
+					factor = -2
+					nationalvalue = nv_liberty
+				}
+				modifier = {
+					factor = 5
+					nationalvalue = nv_productivity
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = unciv_reactionary_rebels value = 0.25 }
+			}
+		}
+
+		spirit_of_freedom = {
+			limit = { enlightenment_thought = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 5
+					nationalvalue = nv_liberty
+				}
+				modifier = {
+					factor = 5
+					nationalvalue = nv_equality
+				}
+				modifier = {
+					factor = 5
+					year = 1847
+				}
+				modifier = {
+					factor = -12
+					civilized = no
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = liberal_rebels value = 0.25 }
+			}
+		}
+
+	# Ideological Thought
+
+		atheism = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 1
+					has_country_modifier = ts_culture
+				}
+				modifier = {
+					factor = 1
+					ruling_party_ideology = socialist
+				}
+				modifier = {
+					factor = 2
+					pro_atheism = 20
+				}
+			}
+
+			effect = {
+				#plurality = 0.02
+			}
+		}
+
+		authoritarianism = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 5
+					OR = {
+						ruling_party_ideology = reactionary
+						AND = {
+							has_country_flag = absolute_monarchy_gov
+							ruling_party_ideology = conservative
+						}
+					}
+				}
+			}
+
+			effect = {
+				core_pop_consciousness_modifier = -0.02
+			}
+		}
+
+		collectivism = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					nationalvalue = nv_equality
+				}
+				modifier = {
+					factor = 1
+					ruling_party_ideology = socialist
+				}
+			}
+
+			effect = {
+				#plurality = 0.02
+			}
+		}
+
+		determinism = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 1
+					ruling_party_ideology = socialist
+				}
+				modifier = {
+					factor = 1
+					socialist = 0.2
+				}
+				modifier = {
+					factor = 1
+					has_country_modifier = ts_culture
+				}
+			}
+
+			effect = {
+				#plurality = 0.02
+			}
+		}
+
+		egalitarianism = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					nationalvalue = nv_equality
+				}
+				modifier = {
+					factor = 2
+					has_country_flag = democracy_gov
+				}
+				modifier = {
+					factor = 1
+					NOT = {
+						ruling_party_ideology = reactionary
+						ruling_party_ideology = conservative
+					}
+				}
+			}
+
+			effect = {
+				#plurality = 0.02
+			}
+		}
+
+		individualism = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					nationalvalue = nv_liberty
+				}
+				modifier = {
+					factor = 1
+					average_consciousness = 2
+				}
+			}
+
+			effect = {
+				#plurality = 0.03
+				suppression_points_modifier = -0.05
+			}
+		}
+
+		political_religion = {
+			limit = { ideological_thought = 1 }
+
+			news = no
+
+			chance = {
+				base = 3
+				modifier = {
+					factor = 2
+					religious_policy = moralism
+				}
+				modifier = {
+					factor = -2
+					religious_policy = secularized
+				}
+				modifier = {
+					factor = -3
+					religious_policy = pro_atheism
+				}
+			}
+
+			effect = {
+				political_reform_desire = 0.1
+				#plurality = 0.1
+			}
+		}
+
+		rationalism = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 3
+				modifier = {
+					factor = 2
+					literacy = 0.5
+				}
+				modifier = {
+					factor = 2
+					average_consciousness = 1
+				}
+			}
+
+			effect = {
+				#plurality = 0.03
+			}
+		}
+
+		secularization = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 1
+				modifier = {
+					factor = 3
+					nationalvalue = nv_equality
+				}
+				modifier = {
+					factor = 1
+					OR = {
+						ruling_party_ideology = socialist
+						ruling_party_ideology = liberal
+					}
+				}
+			}
+
+			effect = {
+				#plurality = 0.03
+			}
+		}
+
+		social_conscience = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					nationalvalue = nv_equality
+				}
+				modifier = {
+					factor = 3
+					average_consciousness = 2
+				}
+			}
+
+			effect = {
+				#plurality = 0.02
+				suppression_points_modifier = -0.05
+			}
+		}
+
+		social_justice = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					nationalvalue = nv_equality
+				}
+				modifier = {
+					factor = 1
+					OR = {
+						ruling_party_ideology = liberal
+						ruling_party_ideology = socialist
+					}
+				}
+			}
+
+			effect = {
+				#plurality = 0.02
+			}
+		}
+
+		traditionalism = {
+			limit = {
+				ideological_thought = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 3
+					ruling_party_ideology = reactionary
+				}
+				modifier = {
+					factor = 2
+					ruling_party_ideology = conservative
+				}
+				modifier = {
+					factor = 2
+					has_country_flag = absolute_monarchy_gov
+				}
+				modifier = {
+					factor = 1
+					has_country_flag = semi_constitutional_monarchy_gov
+				}
+			}
+
+			effect = {
+				core_pop_consciousness_modifier = -0.01
+			}
+		}
+
+	# State and Government
+
+		anticlericalism = {
+			limit = {
+				state_n_government = 1
+				invention = clericalism_vs._anticlericalism
+				NOT = { invention = clericalism }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					average_consciousness = 3
+				}
+				modifier = {
+					factor = 1
+					OR = {
+						nationalvalue = nv_productivity
+						nationalvalue = nv_liberty
+					}
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_equality
+				}
+			}
+
+			effect = {
+				#plurality = 0.02
+				core_pop_consciousness_modifier = 0.03
+			}
+		}
+
+		aristocracy = {
+			limit = {
+				state_n_government = 1
+				invention = meritocracy_vs._aristocracy
+				NOT = { invention = meritocracy }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					NOT = { average_consciousness = 3 }
+				}
+				modifier = {
+					factor = 3
+					has_country_flag = absolute_monarchy_gov
+				}
+				modifier = {
+					factor = 4
+					OR = {
+						nationalvalue = nv_order
+						nationalvalue = nv_autocracy
+					}
+				}
+				modifier = {
+					factor = 5
+					nationalvalue = nv_productivity
+				}
+			}
+
+			effect = {
+				political_reform_desire = -0.05
+				social_reform_desire = -0.05
+			}
+		}
+
+		bureaucracy = {
+			limit = {
+				state_n_government = 1
+				invention = bureaucracy_vs._nepotism
+				NOT = { invention = nepotism }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					average_consciousness = 3
+				}
+				modifier = {
+					factor = 3
+					has_country_flag = democracy_gov
+				}
+				modifier = {
+					factor = 4
+					OR = {
+						nationalvalue = nv_liberty
+						nationalvalue = nv_productivity
+					}
+				}
+				modifier = {
+					factor = 5
+					nationalvalue = nv_equality
+				}
+			}
+
+			effect = {
+				political_reform_desire = 0.10
+			}
+		}
+
+		provincial_bureaucracy = { #this is a slight help to overpopulated countries with many states
+			limit = {
+				state_n_government = 1
+				
+				is_greater_power = yes
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 4
+					total_pops = 20000000 #80mil total #Consider removing England
+					number_of_states = 40 #Russia
+				}
+			}
+
+			effect = {
+				max_national_focus = 2
+			}
+		}
+
+		bureaucracy_vs._nepotism = {
+			limit = { state_n_government = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					nationalvalue = nv_order
+				}
+				modifier = {
+					factor = 1
+					average_consciousness = 2
+				}
+			}
+
+			effect = {
+				social_reform_desire = 0.05
+				shared_prestige = 5
+			}
+		}
+
+		clericalism = {
+			limit = {
+				state_n_government = 1
+				invention = clericalism_vs._anticlericalism
+				NOT = { invention = anticlericalism }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					NOT = { average_consciousness = 3 }
+				}
+				modifier = {
+					factor = 1
+					OR = {
+						nationalvalue = nv_order
+						nationalvalue = nv_autocracy
+					}
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_productivity
+				}
+			}
+
+			effect = {
+				core_pop_militancy_modifier = -0.01
+				core_pop_consciousness_modifier = -0.03
+			}
+		}
+
+		clericalism_vs._anticlericalism = {
+			limit = {
+				state_n_government = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					NOT = { moralism = 10 }
+				}
+				modifier = {
+					factor = 1
+					average_militancy = 3
+				}
+			}
+
+			effect = {
+				#plurality = 0.03
+			}
+		}
+
+		constitutionalism = {
+			limit = {
+				state_n_government = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 3
+				modifier = {
+					factor = 2
+					has_country_flag = constitutional_monarchy_gov
+				}
+				modifier = {
+					factor = 1
+					NOT = { political_parties = underground_parties }
+				}
+			}
+
+			effect = {
+				#plurality = 0.03
+				suppression_points_modifier = -0.05
+			}
+		}
+
+		establishment = {
+			limit = {
+				state_n_government = 1
+				invention = populism_vs._establishment
+				NOT = { invention = populism }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					NOT = { average_consciousness = 3 }
+				}
+				modifier = {
+					factor = 1
+					OR = {
+						nationalvalue = nv_order
+						nationalvalue = nv_autocracy
+					}
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_productivity
+				}
+			}
+
+			effect = {
+				social_reform_desire = -0.05
+			}
+		}
+
+		hierarchical_order = {
+			limit = {
+				state_n_government = 1
+				has_country_flag = monarchy_gov
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 1
+				modifier = {
+					factor = 3
+					has_country_flag = absolute_monarchy_gov
+				}
+				modifier = {
+					factor = 2
+					has_country_flag = semi_constitutional_monarchy_gov
+				}
+			}
+
+			effect = {
+				core_pop_militancy_modifier = -0.01
+				core_pop_consciousness_modifier = 0.01
+			}
+		}
+
+		meritocracy = {
+			limit = {
+				state_n_government = 1
+				invention = meritocracy_vs._aristocracy
+				NOT = { invention = aristocracy }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					average_consciousness = 3
+				}
+				modifier = {
+					factor = 3
+					has_country_flag = democracy_gov
+				}
+				modifier = {
+					factor = 4
+					nationalvalue = nv_liberty
+				}
+				modifier = {
+					factor = 5
+					nationalvalue = nv_equality
+				}
+			}
+
+			effect = {
+				#plurality = 0.02
+				political_reform_desire = 0.05
+				social_reform_desire = 0.05
+			}
+		}
+
+		meritocracy_vs._aristocracy = {
+			limit = {
+				state_n_government = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 1
+					literacy = 0.4
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_liberty
+				}
+			}
+
+			effect = {
+				#plurality = 0.04
+			}
+		}
+
+		nepotism = {
+			limit = {
+				state_n_government = 1
+				invention = bureaucracy_vs._nepotism
+				NOT = { invention = bureaucracy }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					NOT = { average_consciousness = 3 }
+				}
+				modifier = {
+					factor = 3
+					has_country_flag = absolute_monarchy_gov
+				}
+				modifier = {
+					factor = 4
+					OR = {
+						nationalvalue = nv_order
+						nationalvalue = nv_autocracy
+					}
+				}
+			}
+
+			effect = {
+				political_reform_desire = -0.10
+			}
+		}
+
+		paternalism = {
+			limit = { state_n_government = 1 }
+
+			news = no
+
+			chance = {
+				base = 1
+				modifier = {
+					factor = 2
+					NOT = { average_consciousness = 3.0 }
+				}
+				modifier = {
+					factor = 2
+					vote_franschise = landed_voting
+				}
+			}
+
+			effect = {
+				org_regain = 0.05
+			}
+		}
+
+		populism = {
+			limit = {
+				state_n_government = 1
+				invention = populism_vs._establishment
+				NOT = { invention = establishment }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					average_consciousness = 3
+				}
+				modifier = {
+					factor = 1
+					OR = {
+						nationalvalue = nv_liberty
+						nationalvalue = nv_productivity
+					}
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_equality
+				}
+			}
+
+			effect = {
+				social_reform_desire = 0.05
+			}
+		}
+
+		populism_vs._establishment = {
+			limit = { state_n_government = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					average_consciousness = 3
+				}
+				modifier = {
+					factor = 1
+					nationalvalue = nv_order
+				}
+			}
+
+			effect = {
+				political_reform_desire = 0.05
+				shared_prestige = 5
+			}
+		}
+
+	# Nationalism and Imperialism
+
+		national_fraternity = {
+			limit = {
+				nationalism_n_imperialism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					is_greater_power = yes
+				}
+				modifier = {
+					factor = 2
+					prestige = 200
+				}
+			}
+
+			effect = {
+				war_exhaustion = -0.05
+				#plurality = 0.02
+			}
+		}
+
+		biased_multiculturalism = {
+			limit = { nationalism_n_imperialism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 1
+					ruling_party_ideology = reactionary
+				}
+				modifier = {
+					factor = 2
+					ruling_party_ideology = conservative
+				}
+				modifier = {
+					factor = 1
+					nationalvalue = nv_order
+				}
+			}
+
+			effect = {
+				colonial_migration = 0.05
+			}
+		}
+
+		manifest_destiny = {
+			limit = {
+				nationalism_n_imperialism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					nationalvalue = nv_liberty
+				}
+				modifier = {
+					factor = -1
+					nationalvalue = nv_order
+				}
+				modifier = {
+					factor = 2
+					ruling_party_ideology = liberal
+				}
+			}
+
+			effect = {
+				war_exhaustion = -0.05
+				morale = 0.1
+			}
+		}
+
+		expansionism = {
+			limit = {
+				nationalism_n_imperialism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					is_greater_power = yes
+				}
+				modifier = {
+					factor = 2
+					badboy = 1
+				}
+			}
+
+			effect = {
+				war_exhaustion = -0.05
+			}
+		}
+
+		mission_to_civilize = {
+			limit = {
+				state_n_government = 1
+				year = 1860
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = -75
+					NOT = { year = 1860 }
+				}
+				modifier = {
+					factor = 25
+					nationalism_n_imperialism = 1
+				}
+				modifier = {
+					factor = 25
+					market_regulations = 1
+				}
+				modifier = {
+					factor = 25
+					naval_statistics = 1
+				}
+				modifier = {
+					factor = 10
+					any_greater_power = { invention = mission_to_civilize }
+				}
+				modifier = {
+					factor = 10
+					any_neighbor_country = { invention = mission_to_civilize }
+				}
+			}
+
+			effect = {
+				colonial_prestige = 0.2
+				diplomatic_points = 0.2
+				colonial_life_rating = -10
+			}
+		}
+
+		self_determination = {
+			limit = {
+				nationalism_n_imperialism = 1
+				
+				is_vassal = yes
+			}
+
+			chance = {
+				base = 3
+				modifier = {
+					factor = 3
+					part_of_sphere = yes
+				}
+				modifier = {
+					factor = 5
+					is_secondary_power = yes
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = independence_rebels value = 0.50 }
+			}
+		}
+
+		separatism = {
+			limit = {
+				nationalism_n_imperialism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					average_militancy = 3
+				}
+				modifier = {
+					factor = 2
+					average_consciousness = 2
+				}
+			}
+
+			effect = {
+				seperatism = 0.5
+				rebel_org_gain = { faction = nationalist_rebels value = 0.33 }
+			}
+		}
+
+		turkish_nationalism = {
+			limit = {
+				primary_culture = turkish
+				nationalism_n_imperialism = 1
+				has_country_flag = turkish_nationalism_activated
+			}
+
+			chance = {
+				base = 10
+			}
+
+			effect = {
+				rebel_org_gain = { faction = turkish_nationalist_rebels value = 1.00 }
+			}
+		}
+
+	# Revolution and Counterrevolution
+
+		anti_egalitarianism = {
+			limit = { revolution_n_counterrevolution = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					nationalvalue = nv_order
+				}
+				modifier = {
+					factor = 3
+					ruling_party_ideology = reactionary
+				}
+			}
+
+			effect = {
+				war_exhaustion = -0.05
+				enable_crime = citizen_guard
+			}
+		}
+
+		dogma_of_mass_action = {
+			limit = { revolution_n_counterrevolution = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					nationalvalue = nv_equality
+				}
+				modifier = {
+					factor = 3
+					ruling_party_ideology = socialist
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = communist_rebels value = 0.25 }
+			}
+		}
+
+		dogma_of_violence = {
+			limit = { revolution_n_counterrevolution = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					average_consciousness = 3
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_order
+				}
+			}
+
+			effect = {
+				enable_crime = anarchic_bomb_throwers
+			}
+		}
+
+		nostalgic_romanticism = {
+			limit = { revolution_n_counterrevolution = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					average_consciousness = 2
+				}
+				modifier = {
+					factor = 1
+					is_greater_power = yes
+				}
+			}
+
+			effect = {
+				war_exhaustion = -0.05
+				rebel_org_gain = { faction = reactionary_rebels value = 0.50 }
+			}
+		}
+
+		rhetoric_of_hate = {
+			limit = { revolution_n_counterrevolution = 1 }
+
+			news = no
+
+			chance = {
+				base = 3
+				modifier = {
+					factor = 1
+					year = 1900
+				}
+				modifier = {
+					factor = 2
+					OR = {
+						ruling_party_ideology = fascist
+						ruling_party_ideology = communist
+					}
+				}
+				modifier = {
+					factor = -1
+					nationalvalue = nv_liberty
+				}
+				modifier = {
+					factor = -3
+					NOT = { year = 1900 }
+				}
+			}
+
+			effect = {
+				war_exhaustion = -0.05
+				soldier_to_pop_loss = 0.01
+			}
+		}
+
+		secret_police = {
+			limit = { revolution_n_counterrevolution = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					OR = {
+						ruling_party_ideology = fascist
+						ruling_party_ideology = communist
+					}
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_order
+				}
+			}
+
+			effect = {
+				suppression_points_modifier = 0.25
+				rebel_org_gain = { faction = all value = -0.25 }
+			}
+		}
+
+		terrorism = {
+			limit = { revolution_n_counterrevolution = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					ruling_party_ideology = socialist
+				}
+				modifier = {
+					factor = 3
+					OR = {
+						ruling_party_ideology = fascist
+						ruling_party_ideology = communist
+					}
+				}
+				modifier = {
+					factor = -1
+					nationalvalue = nv_liberty
+				}
+			}
+
+			effect = {
+				enable_crime = terrorist_cells
+			}
+		}
+
+		the_dark_continent = {
+			limit = {
+				revolution_n_counterrevolution = 1
+				
+				year = 1890
+			}
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = -60
+					NOT = { year = 1890 }
+				}
+				modifier = {
+					factor = -100
+					NOT = {
+						has_global_flag = berlin_conference
+						year = 1890
+					}
+				}
+				modifier = {
+					factor = -100
+					NOT = { is_greater_power = yes }
+					OR = {
+						has_country_flag = zaire_master
+						has_country_flag = historical_congo
+						has_country_flag = civilizing_congo
+						has_country_modifier = integrating_colony
+					}
+				}
+				modifier = {
+					factor = 20
+					biologism = 1
+				}
+				modifier = {
+					factor = 20
+					military_logistics = 1
+				}
+				modifier = {
+					factor = 20
+					steel_steamers = 1
+				}
+				modifier = {
+					factor = 10
+					any_greater_power = { invention = the_dark_continent }
+				}
+				modifier = {
+					factor = 10
+					any_neighbor_country = { invention = the_dark_continent }
+				}
+				modifier = {
+					factor = -10
+					is_greater_power = no
+					is_secondary_power = yes
+				}
+				modifier = {
+					factor = -10
+					NOT = { rank = 16 }
+				}
+			}
+
+			effect = {
+				colonial_life_rating = -5
+			}
+		}
+
+		mass_party = {
+			limit = { revolution_n_counterrevolution = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					ruling_party_ideology = socialist
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_equality
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = socialist_rebels value = 0.50 }
+			}
+		}
+
+		womens_suffrage_movement = {
+			limit = { revolution_n_counterrevolution = 1 }
+
+			news = no
+
+			chance = {
+				base = 3
+				modifier = {
+					factor = 2
+					OR = {
+						nationalvalue = nv_liberty
+						nationalvalue = nv_equality
+					}
+				}
+				modifier = {
+					factor = 3
+					ruling_party_ideology = liberal
+				}
+			}
+
+			effect = {
+				mobilisation_economy_impact = -0.2
+			}
+		}
+
+	# Mass Politics
+
+		vanguard_party = {
+			limit = { mass_politics = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 1
+					ruling_party_ideology = socialist
+				}
+				modifier = {
+					factor = 2
+					ruling_party_ideology = communist
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = communist_rebels value = 0.75 }
+			}
+		}
+
+		lenin = {
+			limit = {
+				mass_politics = 1
+				NOT = { invention = mussolini }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 3
+					ruling_party_ideology = communist
+				}
+				modifier = {
+					factor = 2
+					OR = {
+						nationalvalue = nv_order
+						nationalvalue = nv_productivity
+					}
+				}
+				modifier = {
+					factor = 3
+					nationalvalue = nv_equality
+					nationalvalue = nv_liberty
+				}
+				modifier = {
+					factor = -3
+					ruling_party_ideology = fascist
+				}
+				modifier = {
+					factor = 1
+					economic_policy = planned_economy
+				}
+			}
+
+			effect = {
+				social_reform_desire = 0.05
+			}
+		}
+
+		mass_line = {
+			limit = { mass_politics = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 10
+					NOT = { industrial_score = 100 }
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = communist_rebels value = 0.5 }
+			}
+		}
+
+		mussolini = {
+			limit = {
+				mass_politics = 1
+				NOT = { invention = lenin }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 3
+				modifier = {
+					factor = -3
+					ruling_party_ideology = communist
+				}
+				modifier = {
+					factor = -2
+					OR = {
+						nationalvalue = nv_productivity
+						nationalvalue = nv_liberty
+					}
+				}
+				modifier = {
+					factor = -3
+					nationalvalue = nv_equality
+				}
+			}
+
+			effect = {
+				political_reform_desire = -0.1
+				social_reform_desire = -0.2
+				rebel_org_gain = { faction = fascist_rebels value = 0.5 }
+			}
+		}
+
+		paramilitary_groups = {
+			limit = { mass_politics = 1 }
+
+			news = no
+
+			chance = {
+				base = 3
+				modifier = {
+					factor = 2
+					war_exhaustion = 3
+				}
+				modifier = {
+					factor = 2
+					average_militancy = 3
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = fascist_rebels value = 0.25 }
+			}
+		}
+
+		the_doctrine_of_fascism = {
+			limit = { mass_politics = 1 }
+
+			news = no
+
+			chance = {
+				base = -4
+				modifier = {
+					factor = 2
+					anti__rationalism = 1
+				}
+				modifier = {
+					factor = 5
+					mass_culture_n_the_avant_garde = 1
+				}
+				modifier = {
+					factor = 1
+					invention = nihilism_and_the_will
+				}
+				modifier = {
+					factor = 1
+					invention = futurism
+				}
+				modifier = {
+					factor = 1
+					invention = existentialism
+				}
+				modifier = {
+					factor = 2
+					invention = rhetoric_of_hate
+				}
+				modifier = {
+					factor = 2
+					invention = dogma_of_violence
+				}
+				modifier = {
+					factor = 2
+					invention = dogma_of_mass_action
+				}
+				modifier = {
+					factor = 2
+					ruling_party_ideology = fascist
+				}
+				modifier = {
+					factor = 1
+					nationalvalue = nv_order
+				}
+				modifier = {
+					factor = 2
+					invention = paramilitary_groups
+				}
+				modifier = {
+					factor = 3
+					average_militancy = 4
+				}
+			}
+
+			effect = {
+				rebel_org_gain = { faction = fascist_rebels value = 0.75 }
+			}
+		}
+
+		police_state = {
+			limit = { the_police_state = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 3
+					OR = {
+						ruling_party_ideology = fascist
+						ruling_party_ideology = communist
+					}
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_order
+				}
+			}
+
+			effect = {
+				suppression_points_modifier = 0.25
+				rebel_org_gain = { faction = all value = -0.25 }
+			}
+		}
+
+		trotsky = {
+			limit = {
+				mass_politics = 1
+				NOT = { invention = mussolini }
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 3
+					ruling_party_ideology = communist
+				}
+				modifier = {
+					factor = -3
+					ruling_party_ideology = fascist
+				}
+				modifier = {
+					factor = 2
+					nationalvalue = nv_productivity
+					}
+				modifier = {
+					factor = 3
+					nationalvalue = nv_equality
+					nationalvalue = nv_liberty
+				}
+			}
+
+			effect = {
+				social_reform_desire = 0.05
+			}
+		}
+
+## Psychology ##
+
+	# Introspectionism
+
+	# Associationism
+
+		alexander_bain = {
+			limit = {
+				associationism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = john_stuart_mill
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		soren_kierkegaard = {
+			limit = {
+				associationism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		thomas_brown = {
+			limit = {
+				associationism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = alexander_bain
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		william_hamilton = {
+			limit = {
+				associationism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+	# Phenomenalism
+
+		alfred_binet = {
+			limit = {
+				phenomenalism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 1
+					invention = francis_galton
+				}
+				modifier = {
+					factor = 3
+					year = 1890
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+				core_pop_consciousness_modifier = 0.03
+			}
+		}
+
+		charles_spearman = {
+			limit = {
+				phenomenalism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 1
+					invention = francis_galton
+				}
+				modifier = {
+					factor = 3
+					invention = alfred_binet
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		eugenics = {
+			limit = { phenomenalism = 1 }
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 4
+					year = 1890
+				}
+				modifier = {
+					factor = -4
+					civilized = no
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+				pop_growth = -0.0001
+				non_accepted_pop_consciousness_modifier = 0.001
+				core_pop_consciousness_modifier = 0.02
+			}
+		}
+
+		francis_galton = {
+			limit = {
+				phenomenalism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = darwinism
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+	# Psychoanalysis
+
+		alfred_adler = {
+			limit = {
+				psychoanalysis = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = freud
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		anna_freud = {
+			limit = {
+				psychoanalysis = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 4
+					year = 1920
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		freud = {
+			limit = { psychoanalysis = 1 }
+
+			news = no
+
+			chance = {
+				base = 5
+			}
+
+			effect = {
+				shared_prestige = 5
+				core_pop_militancy_modifier = -0.01
+				core_pop_consciousness_modifier = 0.03
+			}
+		}
+
+		jung = {
+			limit = { psychoanalysis = 1 }
+
+			news = no
+
+			chance = {
+				base = 1
+				modifier = {
+					factor = 5
+					invention = freud
+				}
+			}
+
+			effect = {
+				shared_prestige = 5
+				core_pop_militancy_modifier = -0.01
+				core_pop_consciousness_modifier = 0.03
+			}
+		}
+
+		karen_horney = {
+			limit = {
+				psychoanalysis = 1
+				
+			}
+
+			news = no
+			chance = {
+				base = 0
+				modifier = {
+					factor = 1
+					invention = freud
+				}
+				modifier = {
+					factor = 3
+					year = 1920
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+	# Experimental Psychology
+
+		edward_titchener = {
+			limit = {
+				experimental_psychology = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = wilhelm_wundt
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		gs_hall = {
+			limit = {
+				experimental_psychology = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					biologism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		hermann_ebbinghaus = {
+			limit = {
+				experimental_psychology = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					biologism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		mary_calkins = {
+			limit = {
+				experimental_psychology = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 1
+					invention = william_james
+				}
+				modifier = {
+					factor = 3
+					year = 1890
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		neurology = {
+			limit = {
+				experimental_psychology = 1
+				
+			}
+			news = no
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					medicine = 1
+				}
+			}
+			effect = {
+				shared_prestige = 50
+				core_pop_militancy_modifier = -0.01
+			}
+		}
+
+		the_nancy_school = {
+			limit = {
+				experimental_psychology = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+			}
+
+			effect = {
+				shared_prestige = 30
+				core_pop_militancy_modifier = -0.01
+			}
+		}
+
+		wilhelm_wundt = {
+			limit = {
+				experimental_psychology = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+			}
+
+			effect = {
+				shared_prestige = 30
+			}
+		}
+
+		william_james = {
+			limit = {
+				experimental_psychology = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					functionalism = 1
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+	# Behaviorism
+
+		cinematographic_propaganda = {
+			limit = {
+				behaviorism = 1
+				invention = the_talkies
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 5
+					war = yes
+				}
+				modifier = {
+					factor = 10
+					OR = {
+						ruling_party_ideology = fascist
+						ruling_party_ideology = communist
+					}
+				}
+			}
+
+			effect = {
+				war_exhaustion = -0.25
+				core_pop_militancy_modifier = -0.05
+				core_pop_consciousness_modifier = -0.05
+			}
+		}
+
+		ec_tolman = {
+			limit = {
+				behaviorism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = jb_watson
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		el_thorndike = {
+			limit = {
+				behaviorism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		emile_coue = {
+			limit = {
+				psychodynamics = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = the_nancy_school
+				}
+			}
+
+			effect = {
+				shared_prestige = 30
+				core_pop_militancy_modifier = -0.01
+			}
+		}
+
+		ivan_pavlov = {
+			limit = {
+				behaviorism = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		jb_watson = {
+			limit = {
+				psychodynamics = 1
+				
+			}
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					invention = ivan_pavlov
+				}
+			}
+
+			effect = {
+				shared_prestige = 10
+			}
+		}
+
+		mass_advertising = {
+			limit = { behaviorism = 1 }
+
+			news = no
+
+			chance = {
+				base = 2
+				modifier = {
+					factor = 7
+					nationalvalue = nv_liberty
+				}
+				modifier = {
+					factor = 2
+					has_country_flag = democracy_gov
+				}
+				modifier = {
+					factor = 1
+					has_country_flag = constitutional_monarchy_gov
+				}
+			}
+
+			effect = {
+				education_efficiency = 0.2
+				suppression_points_modifier = -0.05
+				core_pop_consciousness_modifier = 0.01
+			}
+		}
+
+		military_psychology = {
+			limit = { behaviorism = 1 }
+
+			news = no
+
+			chance = {
+				base = 0
+				modifier = {
+					factor = 5
+					invention = jung
+				}
+				modifier = {
+					factor = 5
+					war = yes
+				}
+			}
+
+			effect = {
+				soldier_to_pop_loss = 0.01
+			}
+		}
+
+		national_radio_networks = {
+			limit = { mass_politics = 1 }
+
+			news = no
+
+			chance = {
+				base = 3
+				modifier = {
+					factor = 5
+					year = 1920
+				}
+				modifier = {
+					factor = -1
+					NOT = { press_rights = free_press }
+				}
+				modifier = {
+					factor = -3
+					NOT = { invention = vacuum_tube }
+				}
+				modifier = {
+					factor = -5
+					NOT = { invention = bakelite }
+				}
+			}
+
+			effect = {
+				activate_building = radio_factory
+				suppression_points_modifier = -0.05
+				core_pop_consciousness_modifier = 0.01
+			}
+		}
+
+		the_talkies = {
+			limit = { behaviorism = 1 }
+
+			news = no
+			chance = {
+				base = 2
+				modifier = {
+					factor = 2
+					nationalvalue = nv_liberty
+				}
+				modifier = {
+					factor = 2
+					average_consciousness = 3
+				}
+			}
+
+			effect = {
+				shared_prestige = 40
+				suppression_points_modifier = -0.05
+				core_pop_consciousness_modifier = 0.01
+			}
+		}
+		
+    # Unique
+	
+		united_italian = {
+			limit = {
+				nationalism_n_imperialism = 1
+				nationalvalue = nv_italia
+			}
+
+			chance = {
+				base = 100
+			}
+
+			effect = {
+				max_national_focus = 4
+				factory_goods_output = {
+					fabric = 0.08
+				}
+				factory_goods_output = {
+					luxury_clothes = 0.06
+				}
+				factory_goods_output = {
+					clipper_convoy = 0.05
+				}
+				factory_goods_output = {
+					steamer_convoy = 0.05
+				}
+				morale = 0.3
+				army_base = {
+					attack = 3
+					defence = 3
+				}
+				guard = {
+					default_organisation = 5
+				}
+			}
+		}
+
+		tsarism = {
+			limit = { 
+				classicism_n_early_romanticism = 1
+				nationalvalue = nv_russia
+			}
+
+			chance = {
+				base = 100
+			}         
+
+			effect = {
+				colonial_migration = 1
+				farm_rgo_eff = 0.25
+				mine_rgo_eff = 0.25
+				reinforce_rate = 0.8
+				army_base = {
+					discipline = 0.25
+					build_time = -25
+					default_organisation = 5
+				}
+				morale = 0.4
+			}
+		}
+
+		red_army = {
+			limit = { 
+				revolution_n_counterrevolution = 1
+				nationalvalue = nv_soviet 
+			}          
+
+			chance = { 
+				base = 100
+			}
+
+			effect = {
+				rgo_goods_output = {
+					coal = 0.45
+				}
+				rgo_goods_output = {
+					iron = 0.45
+				}
+				rgo_goods_output = {
+					oil = 0.9
+				}
+				factory_goods_output = {
+					steel = 0.04
+				}
+				factory_goods_output = {
+					automobiles = 0.04
+				}
+				factory_goods_output = {
+					aeroplanes = 0.04
+				}
+				factory_goods_output = {
+					artillery = 0.05
+				}
+				factory_goods_output = {
+					small_arms = 0.05
+				}
+				factory_goods_output = {
+					ammunition = 0.05
+				}
+				reinforce_rate = 0.8
+				morale = 0.6
+				military_tactics = 0.9
+				dig_in_cap = 6
+				army_base = {
+					discipline = 0.45
+					build_time = -30
+					default_organisation = 3.0
+				}
+			}
+		}
+
+# TGCNV WWII INVENTIONS BEGIN
+# Native additive discovery chances. Each invention requires its own research.
+tgcnv_ww2_inv_public_radio_programming = {
+	limit = {
+		tgcnv_ww2_aesthetics_1930 = 1
+		year = 1930
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1932 }
+	}
+	effect = {
+		shared_prestige = 5
+	}
+}
+
+tgcnv_ww2_inv_educational_broadcasts = {
+	limit = {
+		tgcnv_ww2_aesthetics_1930 = 1
+		year = 1930
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1932 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_documentary_film_units = {
+	limit = {
+		tgcnv_ww2_aesthetics_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+	}
+	effect = {
+		shared_prestige = 5
+	}
+}
+
+tgcnv_ww2_inv_mobile_cinema_circuits = {
+	limit = {
+		tgcnv_ww2_aesthetics_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_public_information_posters = {
+	limit = {
+		tgcnv_ww2_aesthetics_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_wartime_art_exhibitions = {
+	limit = {
+		tgcnv_ww2_aesthetics_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+	}
+	effect = {
+		shared_prestige = 5
+	}
+}
+
+tgcnv_ww2_inv_film_archive_preservation = {
+	limit = {
+		tgcnv_ww2_aesthetics_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+	}
+	effect = {
+		shared_prestige = 5
+	}
+}
+
+tgcnv_ww2_inv_cultural_collection_catalogs = {
+	limit = {
+		tgcnv_ww2_aesthetics_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+
+tgcnv_ww2_inv_international_film_exchanges = {
+	limit = {
+		tgcnv_ww2_aesthetics_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+	}
+	effect = {
+		shared_prestige = 10
+	}
+}
+
+tgcnv_ww2_inv_traveling_art_exhibitions = {
+	limit = {
+		tgcnv_ww2_aesthetics_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+	}
+	effect = {
+		diplomatic_points = 0.025
+	}
+}
+
+tgcnv_ww2_inv_replicable_experiments = {
+	limit = {
+		tgcnv_ww2_philosophy_1930 = 1
+		year = 1930
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1932 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_scientific_review_seminars = {
+	limit = {
+		tgcnv_ww2_philosophy_1930 = 1
+		year = 1930
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1932 }
+	}
+	effect = {
+		shared_prestige = 5
+	}
+}
+
+tgcnv_ww2_inv_methodology_curricula = {
+	limit = {
+		tgcnv_ww2_philosophy_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_academic_review_journals = {
+	limit = {
+		tgcnv_ww2_philosophy_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+	}
+	effect = {
+		shared_prestige = 5
+	}
+}
+
+tgcnv_ww2_inv_interdisciplinary_seminars = {
+	limit = {
+		tgcnv_ww2_philosophy_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_shared_research_libraries = {
+	limit = {
+		tgcnv_ww2_philosophy_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+
+tgcnv_ww2_inv_laboratory_documentation_standards = {
+	limit = {
+		tgcnv_ww2_philosophy_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_scientific_liaison_committees = {
+	limit = {
+		tgcnv_ww2_philosophy_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+	}
+	effect = {
+		shared_prestige = 5
+	}
+}
+
+tgcnv_ww2_inv_research_grant_review = {
+	limit = {
+		tgcnv_ww2_philosophy_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_international_science_congresses = {
+	limit = {
+		tgcnv_ww2_philosophy_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+	}
+	effect = {
+		shared_prestige = 10
+	}
+}
+
+tgcnv_ww2_inv_community_social_surveys = {
+	limit = {
+		tgcnv_ww2_social_thought_1930 = 1
+		year = 1930
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1932 }
+	}
+	effect = {
+		administrative_efficiency = 0.005
+	}
+}
+
+tgcnv_ww2_inv_public_library_outreach = {
+	limit = {
+		tgcnv_ww2_social_thought_1930 = 1
+		year = 1930
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1932 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_representative_sampling = {
+	limit = {
+		tgcnv_ww2_social_thought_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+	}
+	effect = {
+		administrative_efficiency = 0.005
+	}
+}
+
+tgcnv_ww2_inv_social_statistics_training = {
+	limit = {
+		tgcnv_ww2_social_thought_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_civil_defense_courses = {
+	limit = {
+		tgcnv_ww2_social_thought_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_emergency_relief_registers = {
+	limit = {
+		tgcnv_ww2_social_thought_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+	}
+	effect = {
+		administrative_efficiency = 0.005
+	}
+}
+
+tgcnv_ww2_inv_evening_technical_schools = {
+	limit = {
+		tgcnv_ww2_social_thought_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_vocational_course_standards = {
+	limit = {
+		tgcnv_ww2_social_thought_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+	}
+	effect = {
+		factory_output = 0.005
+	}
+}
+
+tgcnv_ww2_inv_veteran_education_programs = {
+	limit = {
+		tgcnv_ww2_social_thought_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_community_reconstruction_offices = {
+	limit = {
+		tgcnv_ww2_social_thought_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+	}
+	effect = {
+		administrative_efficiency = 0.005
+	}
+}
+
+tgcnv_ww2_inv_civil_service_training = {
+	limit = {
+		tgcnv_ww2_political_thought_1930 = 1
+		year = 1930
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1932 }
+	}
+	effect = {
+		administrative_efficiency = 0.005
+	}
+}
+
+tgcnv_ww2_inv_standard_administrative_records = {
+	limit = {
+		tgcnv_ww2_political_thought_1930 = 1
+		year = 1930
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1932 }
+	}
+	effect = {
+		tax_eff = 0.5
+	}
+}
+
+tgcnv_ww2_inv_interministerial_committees = {
+	limit = {
+		tgcnv_ww2_political_thought_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+	}
+	effect = {
+		administrative_efficiency = 0.005
+	}
+}
+
+tgcnv_ww2_inv_public_budget_reporting = {
+	limit = {
+		tgcnv_ww2_political_thought_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+	}
+	effect = {
+		tax_eff = 0.5
+	}
+}
+
+tgcnv_ww2_inv_emergency_administration_plans = {
+	limit = {
+		tgcnv_ww2_political_thought_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+	}
+	effect = {
+		administrative_efficiency = 0.005
+	}
+}
+
+tgcnv_ww2_inv_civil_supply_coordination = {
+	limit = {
+		tgcnv_ww2_political_thought_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+	}
+	effect = {
+		supply_limit = 0.01
+	}
+}
+
+tgcnv_ww2_inv_diplomatic_liaison_missions = {
+	limit = {
+		tgcnv_ww2_political_thought_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+	}
+	effect = {
+		diplomatic_points = 0.025
+	}
+}
+
+tgcnv_ww2_inv_joint_relief_committees = {
+	limit = {
+		tgcnv_ww2_political_thought_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+
+tgcnv_ww2_inv_international_secretariats = {
+	limit = {
+		tgcnv_ww2_political_thought_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+	}
+	effect = {
+		diplomatic_points = 0.025
+	}
+}
+
+tgcnv_ww2_inv_multilateral_conference_procedures = {
+	limit = {
+		tgcnv_ww2_political_thought_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+	}
+	effect = {
+		influence = 0.01
+	}
+}
+
+tgcnv_ww2_inv_aptitude_test_batteries = {
+	limit = {
+		tgcnv_ww2_psychology_1930 = 1
+		year = 1930
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1932 }
+	}
+	effect = {
+		regular_experience_level = 1
+	}
+}
+
+tgcnv_ww2_inv_instructor_selection_methods = {
+	limit = {
+		tgcnv_ww2_psychology_1930 = 1
+		year = 1930
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1932 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_industrial_fatigue_studies = {
+	limit = {
+		tgcnv_ww2_psychology_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+	}
+	effect = {
+		factory_output = 0.005
+	}
+}
+
+tgcnv_ww2_inv_workplace_training_manuals = {
+	limit = {
+		tgcnv_ww2_psychology_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+	}
+	effect = {
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_frontline_rest_rotations = {
+	limit = {
+		tgcnv_ww2_psychology_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+	}
+	effect = {
+		org_regain = 0.01
+	}
+}
+
+tgcnv_ww2_inv_combat_stress_counseling = {
+	limit = {
+		tgcnv_ww2_psychology_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+	}
+	effect = {
+		morale = 0.01
+	}
+}
+
+tgcnv_ww2_inv_control_panel_standardization = {
+	limit = {
+		tgcnv_ww2_psychology_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+	}
+	effect = {
+		factory_output = 0.005
+	}
+}
+
+tgcnv_ww2_inv_crew_task_analysis = {
+	limit = {
+		tgcnv_ww2_psychology_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+	}
+	effect = {
+		regular_experience_level = 1
+	}
+}
+
+tgcnv_ww2_inv_rehabilitation_clinics = {
+	limit = {
+		tgcnv_ww2_psychology_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+	}
+	effect = {
+		reinforce_rate = 0.005
+	}
+}
+
+tgcnv_ww2_inv_return_to_duty_programs = {
+	limit = {
+		tgcnv_ww2_psychology_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+	}
+	effect = {
+		org_regain = 0.01
+	}
+}
+
+# TGCNV WWII INVENTIONS END

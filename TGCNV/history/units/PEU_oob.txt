@@ -1,0 +1,47 @@
+ECU = {
+	value = -100
+}
+
+leader = {
+	name = "Felipe Santiago Salaverry"
+	type = land
+	date = 1836.1.1
+	background = generals_aide
+	personality = bold
+}
+
+leader = {
+	name = "Agustin Gamarra"
+	type = land
+	date = 1809.1.1
+	background = war_college
+	personality = imperious
+}
+
+navy = {
+	name = "Marina de Guerra del Peru"
+	location = 2292
+	ship = {
+		name= "Monteagudo"
+		type = frigate
+	}
+	ship = {
+		name= "Santa Maria"
+		type = frigate
+	}
+}
+
+army = {
+	name = "Ej…Õrcito Restaurador del Peru"
+	location = 2292
+	regiment = {
+		name= "1. Brigada de Infanter…—a"
+		type = infantry
+		home = 2295
+	}
+	regiment = {
+		name= "2. Brigada de Infanter…—a"
+		type = infantry
+		home = 2295
+	}
+}

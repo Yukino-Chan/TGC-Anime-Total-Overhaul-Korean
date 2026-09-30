@@ -1,0 +1,25 @@
+ECU = {
+	value = -75
+}
+
+USA = {
+	value = -75
+}
+
+leader = {
+	name = "Luis Jos…Õ de Orbegoso"
+	type = land
+	date = 1836.1.1
+	personality = timid
+	background = aristocrat
+}
+
+army = {
+	name = "Ej…Õrcito de South Peru"
+	location = 2295
+	regiment = {
+		name= "1. Brigada de Infanteria"
+		type = infantry
+		home = 2299
+	}
+}
