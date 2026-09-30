@@ -434,7 +434,7 @@ guiTypes = {
 				size = { x=870 y = 456 }
 				Orientation = "UPPER_LEFT"
 				spacing = 2
-				scrollbartype = "standardlistbox_slider"
+				scrollbartype = "tgcnv_production_list_slider"
 				borderSize = {x = 1 y = 1}
 			}
 		}
@@ -772,7 +772,7 @@ guiTypes = {
 			backGround=""
 			size = { x= 942 y = 440 }
 			Orientation = "UPPER_LEFT"
-			scrollbartype = "standardlistbox_slider"
+			scrollbartype = "tgcnv_production_list_slider"
 		}
 		
 		### LISTBOXES
@@ -782,7 +782,7 @@ guiTypes = {
 			backGround=""
 			size = { x= 942 y = 323 }
 			Orientation = "UPPER_LEFT"
-			scrollbartype = "standardlistbox_slider"
+			scrollbartype = "tgcnv_production_list_slider"
 		}
 
 		listboxType = 	{
@@ -791,7 +791,7 @@ guiTypes = {
 			backGround=""
 			size = { x= 942 y = 504 }
 			Orientation = "UPPER_LEFT"
-			scrollbartype = "standardlistbox_slider"
+			scrollbartype = "tgcnv_production_list_slider"
 		}	
 
 		windowType = {
@@ -812,7 +812,7 @@ guiTypes = {
 				backGround=""
 				size = { x= 942 y = 570 }
 				Orientation = "UPPER_LEFT"
-				scrollbartype = "standardlistbox_slider"
+				scrollbartype = "tgcnv_production_list_slider"
 			}	
 		}
 	}
@@ -1140,8 +1140,8 @@ guiTypes = {
 			track = "track"
 			leftbutton = "left"
 			rightbutton = "right"
-			size = { x = 300 y = 16 }
-			position = { x = 596 y = 130 }
+			size = { x = 300 y = 20 }
+			position = { x = 596 y = 128 }
 			priority = 100
 			minValue = 0
 			maxValue = 4
@@ -1150,23 +1150,23 @@ guiTypes = {
 			horizontal = 1
 			guiButtonType = {
 				name = "slider"
-				quadTextureSprite = "GFX_slider_circle"
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_hthumb"
 				position = { x = 0 y = 0 }
 			}
 			guiButtonType = {
 				name = "track"
-				quadTextureSprite = "GFX_bg_horizontal_slider_300wide"
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_htrack"
 				position = { x = 0 y = 0 }
 			}
 			guiButtonType = {
 				name = "left"
-				quadTextureSprite = "GFX_slider_left"
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_left"
 				position = { x = 0 y = 0 }
 			}
 			guiButtonType = {
 				name = "right"
-				quadTextureSprite = "GFX_slider_right"
-				position = { x = 0 y = 220 }
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_right"
+				position = { x = 280 y = 0 }
 			}
 		}
 	}
@@ -1266,8 +1266,8 @@ guiTypes = {
 			track = "track"
 			leftbutton = "left"
 			rightbutton = "right"
-			size = { x = 300 y = 16 }
-			position = { x = 596 y = 130 }
+			size = { x = 300 y = 20 }
+			position = { x = 596 y = 128 }
 			priority = 100
 			minValue = 0
 			maxValue = 4
@@ -1276,23 +1276,23 @@ guiTypes = {
 			horizontal = 1
 			guiButtonType = {
 				name = "slider"
-				quadTextureSprite = "GFX_slider_circle"
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_hthumb"
 				position = { x = 0 y = 0 }
 			}
 			guiButtonType = {
 				name = "track"
-				quadTextureSprite = "GFX_bg_horizontal_slider_300wide"
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_htrack"
 				position = { x = 0 y = 0 }
 			}
 			guiButtonType = {
 				name = "left"
-				quadTextureSprite = "GFX_slider_left"
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_left"
 				position = { x = 0 y = 0 }
 			}
 			guiButtonType = {
 				name = "right"
-				quadTextureSprite = "GFX_slider_right"
-				position = { x = 0 y = 220 }
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_right"
+				position = { x = 280 y = 0 }
 			}
 		}
 	}
@@ -1338,7 +1338,7 @@ guiTypes = {
 			size = { x=322 y = 338 }
 			Orientation = "UPPER_LEFT"
 			spacing = 2
-			scrollbartype = "standardlistbox_slider"
+			scrollbartype = "tgcnv_production_list_slider"
 		}
 		
 		

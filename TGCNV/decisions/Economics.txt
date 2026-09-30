@@ -60,7 +60,7 @@ political_decisions = {
 		effect = {
 			set_global_flag = kyrgyzstan_commodities
 			treasury = -50000
-			1203 = { trade_goods = coal add_province_modifier = { name = plantation duration = -1 } }
+			HOP_1203 = { trade_goods = coal add_province_modifier = { name = plantation duration = -1 } }
 			1190 = { trade_goods = cotton add_province_modifier = { name = plantation duration = -1 } }
 			1189 = { trade_goods = coal add_province_modifier = { name = plantation duration = -1 } } #Bishkek
 		}

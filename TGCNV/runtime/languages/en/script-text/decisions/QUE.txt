@@ -25,8 +25,8 @@ political_decisions = {
 			regular_clothes = 50
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = RPL }
 			2625 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = RPL }
-			76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = RPL }
-			3451 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = RPL }
+			HOP_76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = RPL }
+			HOP_3451 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = RPL }
 			58 = { state_scope = { change_region_name = "Southern Quebec Province" } }
 		}
 

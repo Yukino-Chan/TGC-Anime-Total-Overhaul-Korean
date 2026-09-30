@@ -1694,7 +1694,7 @@
 					3395 = { owned_by = THIS }
 					year = 1900
 				}
-				3445 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				HOP_3445 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			}
 			random_owned = {
 				limit = {
@@ -1702,7 +1702,7 @@
 					3391 = { owned_by = THIS }
 					year = 1900
 				}
-				3408 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				HOP_3408 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			}
 			random_owned = {
 				limit = {
@@ -1730,7 +1730,7 @@
 					3391 = { owned_by = THIS }
 					year = 1885
 				}
-				3390 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				HOP_3390 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			}
 			random_owned = {
 				limit = {
@@ -1745,14 +1745,14 @@
 					3391 = { empty = yes }
 					4 = { owned_by = THIS }
 				}
-				3391 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				HOP_3391 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			}
 			random_owned = {
 				limit = {
 					3 = { empty = yes }
 					1 = { owned_by = THIS }
 				}
-				3 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				HOP_3 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			}
 		}
 	}
@@ -4172,7 +4172,7 @@
 
 			prestige = 6
 			set_global_flag = new_england_rename
-			247 = {	state_scope = { change_region_name = "인디펜던스주" } }
+			247 = {	 }
 			USA_247 = {
 				any_pop = {
 					militancy = 3

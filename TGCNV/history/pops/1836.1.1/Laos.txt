@@ -1,609 +1,603 @@
-#Laos Region (700000)
-#under the rule of Luang Prabang in 1836
-#Luang Prabang (240000/60000 POPS)
 1356 = {
-	aristocrats = {
+aristocrats = {
 		culture = lao
 		religion = theravada
 		size = 400
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = lao
 		religion = theravada
 		size = 38
 	}
-	officers = {
+officers = {
 		culture = lao
 		religion = theravada
 		size = 50
 	}
-	clergymen = {
+clergymen = {
 		culture = lao
 		religion = theravada
 		size = 213
 	}
-	artisans = {
+artisans = {
 		culture = lao
 		religion = theravada
 		size = 1075
 	}
-	soldiers = {
+soldiers = {
 		culture = lao
 		religion = theravada
 		size = 550
 	}
-	farmers = {
+farmers = {
 		culture = lao
 		religion = theravada
 		size = 9970
 	}
-	aristocrats = {
+aristocrats = {
 		culture = khmu
 		religion = animist
 		size = 150
 	}
-	clergymen = {
+clergymen = {
 		culture = khmu
 		religion = animist
 		size = 75
 	}
-	artisans = {
+artisans = {
 		culture = khmu
 		religion = animist
 		size = 400
 	}
-	soldiers = {
+soldiers = {
 		culture = khmu
 		religion = animist
 		size = 88
 	}
-	farmers = {
+farmers = {
 		culture = khmu
 		religion = animist
 		size = 14288
 	}
-
-	slaves = {
+slaves = {
 		culture = khmu
 		religion = animist
 		size = 3000
 	}
 }
 
-4913 = {
-	aristocrats = {
-		culture = lao
-		religion = theravada
-		size = 400
-	}
-	bureaucrats = {
-		culture = lao
-		religion = theravada
-		size = 37
-	}
-	officers = {
-		culture = lao
-		religion = theravada
-		size = 50
-	}
-	clergymen = {
-		culture = lao
-		religion = theravada
-		size = 212
-	}
-	artisans = {
-		culture = lao
-		religion = theravada
-		size = 1075
-	}
-	soldiers = {
-		culture = lao
-		religion = theravada
-		size = 550
-	}
-	farmers = {
-		culture = lao
-		religion = theravada
-		size = 9970
-	}
-	aristocrats = {
-		culture = khmu
-		religion = animist
-		size = 150
-	}
-	clergymen = {
-		culture = khmu
-		religion = animist
-		size = 75
-	}
-	artisans = {
-		culture = khmu
-		religion = animist
-		size = 400
-	}
-	soldiers = {
-		culture = khmu
-		religion = animist
-		size = 87
-	}
-	farmers = {
-		culture = khmu
-		religion = animist
-		size = 14287
-	}
-
-	slaves = {
-		culture = khmu
-		religion = animist
-		size = 3000
-	}
-}
-#Vientiane (88000/22000 POPS)
 1357 = {
-	aristocrats = {
+aristocrats = {
 		culture = lao
 		religion = theravada
 		size = 126
 	}
-	clergymen = {
+clergymen = {
 		culture = lao
 		religion = theravada
 		size = 76
 	}
-	artisans = {
+artisans = {
 		culture = lao
 		religion = theravada
 		size = 376
 	}
-	soldiers = {
+soldiers = {
 		culture = lao
 		religion = theravada
 		size = 76
 	}
-	farmers = {
+farmers = {
 		culture = lao
 		religion = theravada
 		size = 5004
 	}
-	aristocrats = {
+aristocrats = {
 		culture = khmu
 		religion = animist
 		size = 63
 	}
-	clergymen = {
+clergymen = {
 		culture = khmu
 		religion = animist
 		size = 38
 	}
-	artisans = {
+artisans = {
 		culture = khmu
 		religion = animist
 		size = 176
 	}
-	soldiers = {
+soldiers = {
 		culture = khmu
 		religion = animist
 		size = 38
 	}
-	farmers = {
+farmers = {
 		culture = khmu
 		religion = animist
 		size = 3541
 	}
-	slaves = {
+slaves = {
 		culture = khmu
 		religion = animist
 		size = 1502
 	}
 }
 
-4914 = {
-	aristocrats = {
-		culture = lao
-		religion = theravada
-		size = 124
-	}
-	clergymen = {
-		culture = lao
-		religion = theravada
-		size = 74
-	}
-	artisans = {
-		culture = lao
-		religion = theravada
-		size = 374
-	}
-	soldiers = {
-		culture = lao
-		religion = theravada
-		size = 74
-	}
-	farmers = {
-		culture = lao
-		religion = theravada
-		size = 4996
-	}
-	aristocrats = {
-		culture = khmu
-		religion = animist
-		size = 62
-	}
-	clergymen = {
-		culture = khmu
-		religion = animist
-		size = 37
-	}
-	artisans = {
-		culture = khmu
-		religion = animist
-		size = 174
-	}
-	soldiers = {
-		culture = khmu
-		religion = animist
-		size = 37
-	}
-	farmers = {
-		culture = khmu
-		religion = animist
-		size = 3534
-	}
-	slaves = {
-		culture = khmu
-		religion = animist
-		size = 1498
-	}
-}
-#Savannakhet (80000/20000 POPS)
-1361 = {
-	aristocrats = {
-		culture = lao
-		religion = theravada
-		size = 125
-	}
-	clergymen = {
-		culture = lao
-		religion = theravada
-		size = 75
-	}
-	artisans = {
-		culture = lao
-		religion = theravada
-		size = 375
-	}
-	soldiers = {
-		culture = lao
-		religion = theravada
-		size = 75
-	}
-	labourers = {
-		culture = lao
-		religion = theravada
-		size = 6850
-	}
-	aristocrats = {
-		culture = vietnamese
-		religion = mahayana
-		size = 50
-	}
-	clergymen = {
-		culture = vietnamese
-		religion = mahayana
-		size = 25
-	}
-	artisans = {
-		culture = vietnamese
-		religion = mahayana
-		size = 125
-	}
-	soldiers = {
-		culture = vietnamese
-		religion = mahayana
-		size = 25
-	}
-	labourers = {
-		culture = vietnamese
-		religion = mahayana
-		size = 2275
-	}
-}
-
-4918 = {
-	aristocrats = {
-		culture = lao
-		religion = theravada
-		size = 125
-	}
-	clergymen = {
-		culture = lao
-		religion = theravada
-		size = 75
-	}
-	artisans = {
-		culture = lao
-		religion = theravada
-		size = 375
-	}
-	soldiers = {
-		culture = lao
-		religion = theravada
-		size = 75
-	}
-	labourers = {
-		culture = lao
-		religion = theravada
-		size = 6850
-	}
-	aristocrats = {
-		culture = vietnamese
-		religion = mahayana
-		size = 50
-	}
-	clergymen = {
-		culture = vietnamese
-		religion = mahayana
-		size = 25
-	}
-	artisans = {
-		culture = vietnamese
-		religion = mahayana
-		size = 125
-	}
-	soldiers = {
-		culture = vietnamese
-		religion = mahayana
-		size = 25
-	}
-	labourers = {
-		culture = vietnamese
-		religion = mahayana
-		size = 2275
-	}
-}
-#Salavan (168000/42000 POPS)
-1362 = {
-	aristocrats = {
-		culture = lao
-		religion = theravada
-		size = 225
-	}
-	clergymen = {
-		culture = lao
-		religion = theravada
-		size = 125
-	}
-	artisans = {
-		culture = lao
-		religion = theravada
-		size = 600
-	}
-	soldiers = {
-		culture = lao
-		religion = theravada
-		size = 550
-	}
-	farmers = {
-		culture = lao
-		religion = theravada
-		size = 10548
-	}
-	aristocrats = {
-		culture = vietnamese
-		religion = mahayana
-		size = 163
-	}
-	clergymen = {
-		culture = vietnamese
-		religion = mahayana
-		size = 88
-	}
-	artisans = {
-		culture = vietnamese
-		religion = mahayana
-		size = 450
-	}
-	soldiers = {
-		culture = vietnamese
-		religion = mahayana
-		size = 88
-	}
-	farmers = {
-		culture = vietnamese
-		religion = mahayana
-		size = 5713
-	}
-	slaves = {
-		culture = vietnamese
-		religion = mahayana
-		size = 2500
-	}
-}
-
-4919 = {
-	aristocrats = {
-		culture = lao
-		religion = theravada
-		size = 225
-	}
-	clergymen = {
-		culture = lao
-		religion = theravada
-		size = 125
-	}
-	artisans = {
-		culture = lao
-		religion = theravada
-		size = 600
-	}
-	soldiers = {
-		culture = lao
-		religion = theravada
-		size = 550
-	}
-	farmers = {
-		culture = lao
-		religion = theravada
-		size = 10548
-	}
-	aristocrats = {
-		culture = vietnamese
-		religion = mahayana
-		size = 162
-	}
-	clergymen = {
-		culture = vietnamese
-		religion = mahayana
-		size = 87
-	}
-	artisans = {
-		culture = vietnamese
-		religion = mahayana
-		size = 450
-	}
-	soldiers = {
-		culture = vietnamese
-		religion = mahayana
-		size = 87
-	}
-	farmers = {
-		culture = vietnamese
-		religion = mahayana
-		size = 5712
-	}
-	slaves = {
-		culture = vietnamese
-		religion = mahayana
-		size = 2500
-	}
-}
-#under the rule of Siam in 1836
-#Xaignabouli (64000/16000 POPS)
 1360 = {
-	aristocrats = {
+aristocrats = {
 		culture = lao
 		religion = theravada
 		size = 139
 	}
-	clergymen = {
+clergymen = {
 		culture = lao
 		religion = theravada
 		size = 76
 	}
-	artisans = {
+artisans = {
 		culture = lao
 		religion = theravada
 		size = 377
 	}
-	soldiers = {
+soldiers = {
 		culture = lao
 		religion = theravada
 		size = 38
 	}
-	farmers = {
+farmers = {
 		culture = lao
 		religion = theravada
 		size = 4157
 	}
-	soldiers = {
+soldiers = {
 		culture = lao
 		religion = theravada
 		size = 38
 	}
-	farmers = {
+farmers = {
 		culture = khmu
 		religion = theravada
 		size = 3193
 	}
 }
 
-4917 = {
-	aristocrats = {
+1361 = {
+aristocrats = {
 		culture = lao
 		religion = theravada
-		size = 136
+		size = 125
 	}
-	clergymen = {
+clergymen = {
 		culture = lao
 		religion = theravada
-		size = 74
+		size = 75
 	}
-	artisans = {
+artisans = {
 		culture = lao
 		religion = theravada
-		size = 373
+		size = 375
 	}
-	soldiers = {
+soldiers = {
 		culture = lao
 		religion = theravada
-		size = 37
+		size = 75
 	}
-	farmers = {
+labourers = {
 		culture = lao
 		religion = theravada
-		size = 4143
+		size = 6850
 	}
-	soldiers = {
-		culture = lao
-		religion = theravada
-		size = 37
+aristocrats = {
+		culture = vietnamese
+		religion = mahayana
+		size = 50
 	}
-	farmers = {
-		culture = khmu
-		religion = theravada
-		size = 3182
+clergymen = {
+		culture = vietnamese
+		religion = mahayana
+		size = 25
+	}
+artisans = {
+		culture = vietnamese
+		religion = mahayana
+		size = 125
+	}
+soldiers = {
+		culture = vietnamese
+		religion = mahayana
+		size = 25
+	}
+labourers = {
+		culture = vietnamese
+		religion = mahayana
+		size = 2275
 	}
 }
-#Pakse (60000/15000 POPS)
+
+1362 = {
+aristocrats = {
+		culture = lao
+		religion = theravada
+		size = 225
+	}
+clergymen = {
+		culture = lao
+		religion = theravada
+		size = 125
+	}
+artisans = {
+		culture = lao
+		religion = theravada
+		size = 600
+	}
+soldiers = {
+		culture = lao
+		religion = theravada
+		size = 550
+	}
+farmers = {
+		culture = lao
+		religion = theravada
+		size = 10548
+	}
+aristocrats = {
+		culture = vietnamese
+		religion = mahayana
+		size = 163
+	}
+clergymen = {
+		culture = vietnamese
+		religion = mahayana
+		size = 88
+	}
+artisans = {
+		culture = vietnamese
+		religion = mahayana
+		size = 450
+	}
+soldiers = {
+		culture = vietnamese
+		religion = mahayana
+		size = 88
+	}
+farmers = {
+		culture = vietnamese
+		religion = mahayana
+		size = 5713
+	}
+slaves = {
+		culture = vietnamese
+		religion = mahayana
+		size = 2500
+	}
+}
+
 1363 = {
-	aristocrats = {
+aristocrats = {
 		culture = lao
 		religion = theravada
 		size = 139
 	}
-	clergymen = {
+clergymen = {
 		culture = lao
 		religion = theravada
 		size = 76
 	}
-	artisans = {
+artisans = {
 		culture = lao
 		religion = theravada
 		size = 378
 	}
-	soldiers = {
+soldiers = {
 		culture = lao
 		religion = theravada
 		size = 63
 	}
-	farmers = {
+farmers = {
 		culture = lao
 		religion = theravada
 		size = 6887
 	}
 }
 
-4920 = {
-	aristocrats = {
+4913 = {
+aristocrats = {
 		culture = lao
 		religion = theravada
-		size = 136
+		size = 400
 	}
-	clergymen = {
+bureaucrats = {
+		culture = lao
+		religion = theravada
+		size = 37
+	}
+officers = {
+		culture = lao
+		religion = theravada
+		size = 50
+	}
+clergymen = {
+		culture = lao
+		religion = theravada
+		size = 212
+	}
+artisans = {
+		culture = lao
+		religion = theravada
+		size = 1075
+	}
+soldiers = {
+		culture = lao
+		religion = theravada
+		size = 550
+	}
+farmers = {
+		culture = lao
+		religion = theravada
+		size = 9970
+	}
+aristocrats = {
+		culture = khmu
+		religion = animist
+		size = 150
+	}
+clergymen = {
+		culture = khmu
+		religion = animist
+		size = 75
+	}
+artisans = {
+		culture = khmu
+		religion = animist
+		size = 400
+	}
+soldiers = {
+		culture = khmu
+		religion = animist
+		size = 87
+	}
+farmers = {
+		culture = khmu
+		religion = animist
+		size = 14287
+	}
+slaves = {
+		culture = khmu
+		religion = animist
+		size = 3000
+	}
+}
+
+4914 = {
+aristocrats = {
+		culture = lao
+		religion = theravada
+		size = 124
+	}
+clergymen = {
 		culture = lao
 		religion = theravada
 		size = 74
 	}
-	artisans = {
+artisans = {
+		culture = lao
+		religion = theravada
+		size = 374
+	}
+soldiers = {
+		culture = lao
+		religion = theravada
+		size = 74
+	}
+farmers = {
+		culture = lao
+		religion = theravada
+		size = 4996
+	}
+aristocrats = {
+		culture = khmu
+		religion = animist
+		size = 62
+	}
+clergymen = {
+		culture = khmu
+		religion = animist
+		size = 37
+	}
+artisans = {
+		culture = khmu
+		religion = animist
+		size = 174
+	}
+soldiers = {
+		culture = khmu
+		religion = animist
+		size = 37
+	}
+farmers = {
+		culture = khmu
+		religion = animist
+		size = 3534
+	}
+slaves = {
+		culture = khmu
+		religion = animist
+		size = 1498
+	}
+}
+
+4917 = {
+aristocrats = {
+		culture = lao
+		religion = theravada
+		size = 136
+	}
+clergymen = {
+		culture = lao
+		religion = theravada
+		size = 74
+	}
+artisans = {
+		culture = lao
+		religion = theravada
+		size = 373
+	}
+soldiers = {
+		culture = lao
+		religion = theravada
+		size = 37
+	}
+farmers = {
+		culture = lao
+		religion = theravada
+		size = 4143
+	}
+soldiers = {
+		culture = lao
+		religion = theravada
+		size = 37
+	}
+farmers = {
+		culture = khmu
+		religion = theravada
+		size = 3182
+	}
+}
+
+4918 = {
+aristocrats = {
+		culture = lao
+		religion = theravada
+		size = 125
+	}
+clergymen = {
+		culture = lao
+		religion = theravada
+		size = 75
+	}
+artisans = {
+		culture = lao
+		religion = theravada
+		size = 375
+	}
+soldiers = {
+		culture = lao
+		religion = theravada
+		size = 75
+	}
+labourers = {
+		culture = lao
+		religion = theravada
+		size = 6850
+	}
+aristocrats = {
+		culture = vietnamese
+		religion = mahayana
+		size = 50
+	}
+clergymen = {
+		culture = vietnamese
+		religion = mahayana
+		size = 25
+	}
+artisans = {
+		culture = vietnamese
+		religion = mahayana
+		size = 125
+	}
+soldiers = {
+		culture = vietnamese
+		religion = mahayana
+		size = 25
+	}
+labourers = {
+		culture = vietnamese
+		religion = mahayana
+		size = 2275
+	}
+}
+
+4919 = {
+aristocrats = {
+		culture = lao
+		religion = theravada
+		size = 225
+	}
+clergymen = {
+		culture = lao
+		religion = theravada
+		size = 125
+	}
+artisans = {
+		culture = lao
+		religion = theravada
+		size = 600
+	}
+soldiers = {
+		culture = lao
+		religion = theravada
+		size = 550
+	}
+farmers = {
+		culture = lao
+		religion = theravada
+		size = 10548
+	}
+aristocrats = {
+		culture = vietnamese
+		religion = mahayana
+		size = 162
+	}
+clergymen = {
+		culture = vietnamese
+		religion = mahayana
+		size = 87
+	}
+artisans = {
+		culture = vietnamese
+		religion = mahayana
+		size = 450
+	}
+soldiers = {
+		culture = vietnamese
+		religion = mahayana
+		size = 87
+	}
+farmers = {
+		culture = vietnamese
+		religion = mahayana
+		size = 5712
+	}
+slaves = {
+		culture = vietnamese
+		religion = mahayana
+		size = 2500
+	}
+}
+
+4920 = {
+aristocrats = {
+		culture = lao
+		religion = theravada
+		size = 136
+	}
+clergymen = {
+		culture = lao
+		religion = theravada
+		size = 74
+	}
+artisans = {
 		culture = lao
 		religion = theravada
 		size = 372
 	}
-	soldiers = {
+soldiers = {
 		culture = lao
 		religion = theravada
 		size = 62
 	}
-	farmers = {
+farmers = {
 		culture = lao
 		religion = theravada
 		size = 6813

@@ -1,334 +1,331 @@
-#Republica Dominicana (111000) #La Española
-#Ruled by Republica Dominicana 1836
-#Santo Domingo (45000/28000 POPS)
 2214 = {
-	aristocrats = {
+aristocrats = {
 		culture = afro_antillean
 		religion = catholic
 		size = 101
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = afro_antillean
 		religion = catholic
 		size = 31
 	}
-	clergymen = {
+clergymen = {
 		culture = afro_antillean
 		religion = catholic
 		size = 51
 	}
-	artisans = {
+artisans = {
 		culture = afro_antillean
 		religion = catholic
 		size = 502
 	}
-	soldiers = {
+soldiers = {
 		culture = afro_antillean
 		religion = catholic
 		size = 71
 	}
-	farmers = {
+farmers = {
 		culture = afro_antillean
 		religion = catholic
 		size = 2756
 	}
-	soldiers = {
+soldiers = {
 		culture = caribeno
 		religion = catholic
 		size = 2005
 	}
-	farmers = {
+farmers = {
 		culture = caribeno
 		religion = catholic
 		size = 6013
 	}
-	farmers = {
+farmers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 2506
 	}
 }
 
+2216 = {
+aristocrats = {
+		culture = afro_antillean
+		religion = catholic
+		size = 50
+	}
+clergymen = {
+		culture = afro_antillean
+		religion = catholic
+		size = 50
+	}
+artisans = {
+		culture = afro_antillean
+		religion = catholic
+		size = 250
+	}
+farmers = {
+		culture = afro_antillean
+		religion = catholic
+		size = 650
+	}
+farmers = {
+		culture = caribeno
+		religion = catholic
+		size = 1500
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 500
+	}
+}
+
+3328 = {
+aristocrats = {
+		culture = afro_antillean
+		religion = catholic
+		size = 50
+	}
+clergymen = {
+		culture = afro_antillean
+		religion = catholic
+		size = 35
+	}
+artisans = {
+		culture = afro_antillean
+		religion = catholic
+		size = 250
+	}
+soldiers = {
+		culture = afro_antillean
+		religion = catholic
+		size = 265
+	}
+farmers = {
+		culture = afro_antillean
+		religion = catholic
+		size = 1400
+	}
+soldiers = {
+		culture = caribeno
+		religion = catholic
+		size = 750
+	}
+farmers = {
+		culture = caribeno
+		religion = catholic
+		size = 2250
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1000
+	}
+}
+
+3330 = {
+aristocrats = {
+		culture = afro_antillean
+		religion = catholic
+		size = 101
+	}
+clergymen = {
+		culture = afro_antillean
+		religion = catholic
+		size = 86
+	}
+artisans = {
+		culture = afro_antillean
+		religion = catholic
+		size = 554
+	}
+soldiers = {
+		culture = afro_antillean
+		religion = catholic
+		size = 267
+	}
+farmers = {
+		culture = afro_antillean
+		religion = catholic
+		size = 1510
+	}
+soldiers = {
+		culture = caribeno
+		religion = catholic
+		size = 755
+	}
+farmers = {
+		culture = caribeno
+		religion = catholic
+		size = 2769
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1510
+	}
+}
+
 5766 = {
-	aristocrats = {
+aristocrats = {
 		culture = afro_antillean
 		religion = catholic
 		size = 99
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = afro_antillean
 		religion = catholic
 		size = 29
 	}
-	clergymen = {
+clergymen = {
 		culture = afro_antillean
 		religion = catholic
 		size = 49
 	}
-	artisans = {
+artisans = {
 		culture = afro_antillean
 		religion = catholic
 		size = 498
 	}
-	soldiers = {
+soldiers = {
 		culture = afro_antillean
 		religion = catholic
 		size = 69
 	}
-	farmers = {
+farmers = {
 		culture = afro_antillean
 		religion = catholic
 		size = 2744
 	}
-	soldiers = {
+soldiers = {
 		culture = caribeno
 		religion = catholic
 		size = 1995
 	}
-	farmers = {
+farmers = {
 		culture = caribeno
 		religion = catholic
 		size = 5987
 	}
-	farmers = {
+farmers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 2494
 	}
 }
-#La Vega (12000/6000 POPS)
-2216 = {
-	aristocrats = {
-		culture = afro_antillean
-		religion = catholic
-		size = 50
-	}
-	clergymen = {
-		culture = afro_antillean
-		religion = catholic
-		size = 50
-	}
-	artisans = {
-		culture = afro_antillean
-		religion = catholic
-		size = 250
-	}
-	farmers = {
-		culture = afro_antillean
-		religion = catholic
-		size = 650
-	}
-	farmers = {
-		culture = caribeno
-		religion = catholic
-		size = 1500
-	}
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 500
-	}
-}
 
 5768 = {
-	aristocrats = {
+aristocrats = {
 		culture = afro_antillean
 		religion = catholic
 		size = 50
 	}
-	clergymen = {
+clergymen = {
 		culture = afro_antillean
 		religion = catholic
 		size = 50
 	}
-	artisans = {
+artisans = {
 		culture = afro_antillean
 		religion = catholic
 		size = 250
 	}
-	farmers = {
+farmers = {
 		culture = afro_antillean
 		religion = catholic
 		size = 650
 	}
-	farmers = {
+farmers = {
 		culture = caribeno
 		religion = catholic
 		size = 1500
 	}
-	farmers = {
+farmers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 500
-	}
-}
-#San Cristobal (24000/12000 POPS)
-3328 = {
-	aristocrats = {
-		culture = afro_antillean
-		religion = catholic
-		size = 50
-	}
-	clergymen = {
-		culture = afro_antillean
-		religion = catholic
-		size = 35
-	}
-	artisans = {
-		culture = afro_antillean
-		religion = catholic
-		size = 250
-	}
-	soldiers = {
-		culture = afro_antillean
-		religion = catholic
-		size = 265
-	}
-	farmers = {
-		culture = afro_antillean
-		religion = catholic
-		size = 1400
-	}
-	soldiers = {
-		culture = caribeno
-		religion = catholic
-		size = 750
-	}
-	farmers = {
-		culture = caribeno
-		religion = catholic
-		size = 2250
-	}
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1000
 	}
 }
 
 6330 = {
-	aristocrats = {
+aristocrats = {
 		culture = afro_antillean
 		religion = catholic
 		size = 50
 	}
-	clergymen = {
+clergymen = {
 		culture = afro_antillean
 		religion = catholic
 		size = 35
 	}
-	artisans = {
+artisans = {
 		culture = afro_antillean
 		religion = catholic
 		size = 250
 	}
-	soldiers = {
+soldiers = {
 		culture = afro_antillean
 		religion = catholic
 		size = 265
 	}
-	farmers = {
+farmers = {
 		culture = afro_antillean
 		religion = catholic
 		size = 1400
 	}
-	soldiers = {
+soldiers = {
 		culture = caribeno
 		religion = catholic
 		size = 750
 	}
-	farmers = {
+farmers = {
 		culture = caribeno
 		religion = catholic
 		size = 2250
 	}
-	farmers = {
+farmers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 1000
 	}
 }
-#Saint-François de Macorix (30000/15000 POPS)
-3330 = {
-	aristocrats = {
-		culture = afro_antillean
-		religion = catholic
-		size = 101
-	}
-	clergymen = {
-		culture = afro_antillean
-		religion = catholic
-		size = 86
-	}
-	artisans = {
-		culture = afro_antillean
-		religion = catholic
-		size = 554
-	}
-	soldiers = {
-		culture = afro_antillean
-		religion = catholic
-		size = 267
-	}
-	farmers = {
-		culture = afro_antillean
-		religion = catholic
-		size = 1510
-	}
-	soldiers = {
-		culture = caribeno
-		religion = catholic
-		size = 755
-	}
-	farmers = {
-		culture = caribeno
-		religion = catholic
-		size = 2769
-	}
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1510
-	}
-}
 
 6332 = {
-	aristocrats = {
+aristocrats = {
 		culture = afro_antillean
 		religion = catholic
 		size = 99
 	}
-	clergymen = {
+clergymen = {
 		culture = afro_antillean
 		religion = catholic
 		size = 84
 	}
-	artisans = {
+artisans = {
 		culture = afro_antillean
 		religion = catholic
 		size = 546
 	}
-	soldiers = {
+soldiers = {
 		culture = afro_antillean
 		religion = catholic
 		size = 263
 	}
-	farmers = {
+farmers = {
 		culture = afro_antillean
 		religion = catholic
 		size = 1490
 	}
-	soldiers = {
+soldiers = {
 		culture = caribeno
 		religion = catholic
 		size = 745
 	}
-	farmers = {
+farmers = {
 		culture = caribeno
 		religion = catholic
 		size = 2731
 	}
-	farmers = {
+farmers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 1490

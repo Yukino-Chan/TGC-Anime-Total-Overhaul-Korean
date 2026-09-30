@@ -176,7 +176,7 @@ country_event = {
 		NZL = { all_core = { remove_core = ENG } }
 		NZL = { all_core = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 		# ENG = { any_owned = { limit = { is_core = THIS } secede_province = THIS } } # NZL maybe?
-		2509 = { secede_province = THIS }
+		HXP_2509 = { secede_province = THIS }
 		2510 = { secede_province = THIS }
 		2511 = { secede_province = THIS }
 		2512 = { secede_province = THIS }

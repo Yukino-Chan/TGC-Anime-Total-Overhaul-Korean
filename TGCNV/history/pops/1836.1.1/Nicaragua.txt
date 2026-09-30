@@ -1,532 +1,539 @@
-#Nicaragua Region (292000)
-#Ruled by Central America 1836
-#Villa de Santiago de Managua (192000/49000 POPS)
 2197 = {
-	aristocrats = {
+aristocrats = {
 		culture = central_american
 		religion = catholic
 		size = 525
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = central_american
 		religion = catholic
 		size = 50
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	officers = {
+officers = {
 		culture = central_american
 		religion = catholic
 		size = 38
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 238
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	artisans = {
+artisans = {
 		culture = central_american
 		religion = catholic
 		size = 1199
 	}
-	soldiers = {
+soldiers = {
 		culture = central_american
 		religion = catholic
 		size = 737
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	farmers = {
+farmers = {
 		culture = central_american
 		religion = catholic
 		size = 19984
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	farmers = {
+farmers = {
 		culture = nahua
 		religion = catholic
 		size = 1712
 	}
 }
 
-5749 = {
-	aristocrats = {
-		culture = central_american
-		religion = catholic
-		size = 525
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	bureaucrats = {
-		culture = central_american
-		religion = catholic
-		size = 50
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	officers = {
-		culture = central_american
-		religion = catholic
-		size = 37
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	clergymen = {
-		culture = central_american
-		religion = catholic
-		size = 237
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	artisans = {
-		culture = central_american
-		religion = catholic
-		size = 1201
-	}
-	soldiers = {
-		culture = central_american
-		religion = catholic
-		size = 738
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	farmers = {
-		culture = central_american
-		religion = catholic
-		size = 20016
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	farmers = {
-		culture = nahua
-		religion = catholic
-		size = 1713
-	}
-}
-
-#Granada (32000/8000 POPS)
 2198 = {
-	aristocrats = {
+aristocrats = {
 		culture = central_american
 		religion = catholic
 		size = 101
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 41
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	artisans = {
+artisans = {
 		culture = central_american
 		religion = catholic
 		size = 201
 	}
-	soldiers = {
+soldiers = {
 		culture = central_american
 		religion = catholic
 		size = 41
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	farmers = {
+farmers = {
 		culture = central_american
 		religion = catholic
 		size = 3204
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	artisans = {
+artisans = {
 		culture = chibchan
 		religion = animist
 		size = 21
 	}
-	farmers = {
+farmers = {
 		culture = chibchan
 		religion = animist
 		size = 401
 	}
 }
 
-5750 = {
-	aristocrats = {
-		culture = central_american
-		religion = catholic
-		size = 99
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	clergymen = {
-		culture = central_american
-		religion = catholic
-		size = 39
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	artisans = {
-		culture = central_american
-		religion = catholic
-		size = 199
-	}
-	soldiers = {
-		culture = central_american
-		religion = catholic
-		size = 39
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	farmers = {
-		culture = central_american
-		religion = catholic
-		size = 3196
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	artisans = {
-		culture = chibchan
-		religion = animist
-		size = 19
-	}
-	farmers = {
-		culture = chibchan
-		religion = animist
-		size = 399
-	}
-}
-
-#Santiago de los Caballeros de León (48000/14000 POPS)
 2199 = {
-	aristocrats = {
+aristocrats = {
 		culture = central_american
 		religion = catholic
 		size = 163
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 63
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	artisans = {
+artisans = {
 		culture = central_american
 		religion = catholic
 		size = 550
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	soldiers = {
+soldiers = {
 		culture = central_american
 		religion = catholic
 		size = 75
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	farmers = {
+farmers = {
 		culture = central_american
 		religion = catholic
 		size = 4996
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	farmers = {
+farmers = {
 		culture = nahua
 		religion = catholic
 		size = 1150
 	}
 }
 
+2200 = {
+aristocrats = {
+		culture = central_american
+		religion = catholic
+		size = 5
+	}
+clergymen = {
+		culture = central_american
+		religion = catholic
+		size = 8
+	}
+artisans = {
+		culture = central_american
+		religion = catholic
+		size = 8
+	}
+soldiers = {
+		culture = central_american
+		religion = catholic
+		size = 5
+	}
+farmers = {
+		culture = central_american
+		religion = catholic
+		size = 60
+	}
+soldiers = {
+		culture = afro_caribbean
+		religion = catholic
+		size = 50
+	}
+farmers = {
+		culture = afro_caribbean
+		religion = catholic
+		size = 135
+	}
+farmers = {
+		culture = afro_caribbean
+		religion = animist
+		size = 95
+	}
+farmers = {
+		culture = miskito
+		religion = animist
+		size = 1135
+	}
+}
+
+3501 = {
+aristocrats = {
+		culture = central_american
+		religion = catholic
+		size = 13
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+clergymen = {
+		culture = central_american
+		religion = catholic
+		size = 5
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+artisans = {
+		culture = central_american
+		religion = catholic
+		size = 25
+	}
+soldiers = {
+		culture = central_american
+		religion = catholic
+		size = 5
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+farmers = {
+		culture = central_american
+		religion = catholic
+		size = 400
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+artisans = {
+		culture = chibchan
+		religion = animist
+		size = 3
+	}
+farmers = {
+		culture = chibchan
+		religion = animist
+		size = 50
+	}
+}
+
+3502 = {
+aristocrats = {
+		culture = central_american
+		religion = catholic
+		size = 13
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+clergymen = {
+		culture = central_american
+		religion = catholic
+		size = 5
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+artisans = {
+		culture = central_american
+		religion = catholic
+		size = 25
+	}
+soldiers = {
+		culture = central_american
+		religion = catholic
+		size = 5
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+farmers = {
+		culture = central_american
+		religion = catholic
+		size = 400
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+artisans = {
+		culture = chibchan
+		religion = animist
+		size = 25
+	}
+farmers = {
+		culture = chibchan
+		religion = animist
+		size = 50
+	}
+}
+
+5749 = {
+aristocrats = {
+		culture = central_american
+		religion = catholic
+		size = 525
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+bureaucrats = {
+		culture = central_american
+		religion = catholic
+		size = 50
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+officers = {
+		culture = central_american
+		religion = catholic
+		size = 37
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+clergymen = {
+		culture = central_american
+		religion = catholic
+		size = 237
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+artisans = {
+		culture = central_american
+		religion = catholic
+		size = 1201
+	}
+soldiers = {
+		culture = central_american
+		religion = catholic
+		size = 738
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+farmers = {
+		culture = central_american
+		religion = catholic
+		size = 20016
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+farmers = {
+		culture = nahua
+		religion = catholic
+		size = 1713
+	}
+}
+
+5750 = {
+aristocrats = {
+		culture = central_american
+		religion = catholic
+		size = 99
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+clergymen = {
+		culture = central_american
+		religion = catholic
+		size = 39
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+artisans = {
+		culture = central_american
+		religion = catholic
+		size = 199
+	}
+soldiers = {
+		culture = central_american
+		religion = catholic
+		size = 39
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+farmers = {
+		culture = central_american
+		religion = catholic
+		size = 3196
+		militancy = 9
+		rebel_type = nationalist_rebels
+	}
+artisans = {
+		culture = chibchan
+		religion = animist
+		size = 19
+	}
+farmers = {
+		culture = chibchan
+		religion = animist
+		size = 399
+	}
+}
+
 5751 = {
-	aristocrats = {
+aristocrats = {
 		culture = central_american
 		religion = catholic
 		size = 162
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 62
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	artisans = {
+artisans = {
 		culture = central_american
 		religion = catholic
 		size = 550
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	soldiers = {
+soldiers = {
 		culture = central_american
 		religion = catholic
 		size = 75
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	farmers = {
+farmers = {
 		culture = central_american
 		religion = catholic
 		size = 5004
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	farmers = {
+farmers = {
 		culture = nahua
 		religion = catholic
 		size = 1150
 	}
 }
 
-#owned by the Miskito Kingdom in 1836
-#Bluefields (12000/3000 POPS)
-2200 = {
-	aristocrats = {
-		culture = central_american
-		religion = catholic
-		size = 5
-	}
-	clergymen = {
-		culture = central_american
-		religion = catholic
-		size = 8
-	}
-	artisans = {
-		culture = central_american
-		religion = catholic
-		size = 8
-	}
-	soldiers = {
-		culture = central_american
-		religion = catholic
-		size = 5
-	}
-	farmers = {
-		culture = central_american
-		religion = catholic
-		size = 60
-	}
-	soldiers = {
-		culture = afro_caribbean
-		religion = catholic
-		size = 50
-	}
-	farmers = {
-		culture = afro_caribbean
-		religion = catholic
-		size = 135
-	}
-
-	farmers = {
-		culture = afro_caribbean
-		religion = animist
-		size = 95
-	}
-
-	farmers = {
-		culture = miskito
-		religion = animist
-		size = 1135
-	}
-}
-
 5752 = {
-	aristocrats = {
+aristocrats = {
 		culture = central_american
 		religion = catholic
 		size = 5
 	}
-	clergymen = {
+clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 7
 	}
-	artisans = {
+artisans = {
 		culture = central_american
 		religion = catholic
 		size = 7
 	}
-	soldiers = {
+soldiers = {
 		culture = central_american
 		religion = catholic
 		size = 5
 	}
-	farmers = {
+farmers = {
 		culture = central_american
 		religion = catholic
-		size = 60
+		size = 59
 	}
-	soldiers = {
+soldiers = {
 		culture = afro_caribbean
 		religion = catholic
 		size = 50
 	}
-	farmers = {
+farmers = {
 		culture = afro_caribbean
 		religion = catholic
-		size = 135
+		size = 134
 	}
-
-	farmers = {
+farmers = {
 		culture = afro_caribbean
 		religion = animist
-		size = 95
+		size = 94
 	}
-
-	farmers = {
+farmers = {
 		culture = miskito
 		religion = animist
-		size = 1135
+		size = 1125
 	}
-}
-
-#Rio San Juan (4000/1000 POPS)
-3501 = {
-	aristocrats = {
+farmers = {
 		culture = central_american
 		religion = catholic
-		size = 13
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 1
 	}
-	clergymen = {
-		culture = central_american
+farmers = {
+		culture = afro_caribbean
 		religion = catholic
-		size = 5
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 1
 	}
-	artisans = {
-		culture = central_american
-		religion = catholic
-		size = 25
-	}
-	soldiers = {
-		culture = central_american
-		religion = catholic
-		size = 5
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	farmers = {
-		culture = central_american
-		religion = catholic
-		size = 400
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	artisans = {
-		culture = chibchan
+farmers = {
+		culture = afro_caribbean
 		religion = animist
-		size = 3
+		size = 1
 	}
-	farmers = {
-		culture = chibchan
+farmers = {
+		culture = miskito
 		religion = animist
-		size = 50
+		size = 10
 	}
 }
 
 6508 = {
-	aristocrats = {
+aristocrats = {
 		culture = central_american
 		religion = catholic
 		size = 12
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 5
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	artisans = {
+artisans = {
 		culture = central_american
 		religion = catholic
 		size = 25
 	}
-	soldiers = {
+soldiers = {
 		culture = central_american
 		religion = catholic
 		size = 5
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	farmers = {
+farmers = {
 		culture = central_american
 		religion = catholic
 		size = 400
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	artisans = {
+artisans = {
 		culture = chibchan
 		religion = animist
 		size = 2
 	}
-	farmers = {
-		culture = chibchan
-		religion = animist
-		size = 50
-	}
-}
-
-# San Juan del Norte (4000/1000 POPS)
-3502 = {
-	aristocrats = {
-		culture = central_american
-		religion = catholic
-		size = 13
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	clergymen = {
-		culture = central_american
-		religion = catholic
-		size = 5
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	artisans = {
-		culture = central_american
-		religion = catholic
-		size = 25
-	}
-	soldiers = {
-		culture = central_american
-		religion = catholic
-		size = 5
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	farmers = {
-		culture = central_american
-		religion = catholic
-		size = 400
-		militancy = 9
-		rebel_type = nationalist_rebels
-	}
-	artisans = {
-		culture = chibchan
-		religion = animist
-		size = 25
-	}
-	farmers = {
+farmers = {
 		culture = chibchan
 		religion = animist
 		size = 50
@@ -534,45 +541,45 @@
 }
 
 6509 = {
-	aristocrats = {
+aristocrats = {
 		culture = central_american
 		religion = catholic
 		size = 12
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 5
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	artisans = {
+artisans = {
 		culture = central_american
 		religion = catholic
 		size = 25
 	}
-	soldiers = {
+soldiers = {
 		culture = central_american
 		religion = catholic
 		size = 5
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	farmers = {
+farmers = {
 		culture = central_american
 		religion = catholic
 		size = 400
 		militancy = 9
 		rebel_type = nationalist_rebels
 	}
-	artisans = {
+artisans = {
 		culture = chibchan
 		religion = animist
 		size = 25
 	}
-	farmers = {
+farmers = {
 		culture = chibchan
 		religion = animist
 		size = 50

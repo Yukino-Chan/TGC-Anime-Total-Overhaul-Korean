@@ -4464,7 +4464,7 @@ political_decisions = {
 				3368 = { change_province_name = "Cucapa Mountains" state_scope = { change_region_name = "Nizhnyaya Kaliforniya Province" } }
 				#Washington
 				78 = { change_province_name = "Nikopol" state_scope = { change_region_name = "Nizhniy Oregon Province" } }
-				13 = { change_province_name = "Alexandropol" state_scope = { change_region_name = "Severniy Oregon Province" } }
+				13 = { change_province_name = "Alexandropol"  }
 				15 = { change_province_name = "Port Kuznetsov" }
 				2598 = { change_province_name = "Ostrov Korolevy Aleksandry" }
 				14 = { change_province_name = "Novyy Krym" }
@@ -4771,7 +4771,7 @@ political_decisions = {
 				limit = {
 					OR = {
 						province_id = 975 #Aleksandrovka
-						province_id = 976 #Mariupol
+						region = HXP_976 #Mariupol
 						#province_id = 978 #Kharkov moved to other Basin decision
 						province_id = 979 #Novocherkassk
 						#province_id = 3496 #Pavlovgrad
@@ -4795,7 +4795,7 @@ political_decisions = {
 				limit = {
 					OR = {
 						province_id = 975 #Yuzovka Donetsk
-						province_id = 976 #Mariupol
+						region = HXP_976 #Mariupol
 						province_id = 979 #Novocherkassk
 						province_id = 973 #Melitopol
 					}
@@ -5379,7 +5379,7 @@ political_decisions = {
 			1208 = { add_core = TAJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1189 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			TGC_TERRITORY_1190 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			1203 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HOP_1203 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 
 		ai_will_do = { factor = 1 }

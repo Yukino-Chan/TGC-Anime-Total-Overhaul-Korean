@@ -2325,6 +2325,7 @@
 			#if any Congress Poland cores owned, re-add cores to Russia
 			any_owned = {
 				limit = {
+                    region = TGC_CONGRESS_POLAND
 					OR = {
 						region = RUS_706
 						region = RUS_715
@@ -2336,6 +2337,21 @@
 					owner = { truce_with = RUS }
 				}
 				add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+				
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						region = RUS_706
+						region = RUS_715
+						province_id = 707
+						province_id = 719
+					}
+					NOT = { province_id = 6573 }
+					NOT = { is_core = RUS }
+					owner = { truce_with = RUS }
+				}
+				
 				add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
 
@@ -2546,9 +2562,9 @@
 					truce_with = THIS
 					owns = 360
 				}
-				695 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				HXP_695 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				697 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				698 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				HXP_698 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
 
 			#if Austria has a truce, release Bavaria as its puppet
@@ -3041,22 +3057,10 @@
 						is_core = PLC
 					}
 				}
-				RUS_706 = {
-					remove_core = RUS
-					add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
-				}
-				RUS_715 = {
-					remove_core = RUS
-					add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
-				}
-				707 = {
-					remove_core = RUS
-					add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
-				}
-				719 = {
-					remove_core = RUS
-					add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
-				}
+				TGC_CONGRESS_POLAND = {
+                    remove_core = RUS
+                    add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+                }
 			}
 
 			#if any Polish cores owned, re-add cores to Germany

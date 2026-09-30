@@ -12871,7 +12871,7 @@
 				tag = USA
 				has_country_flag = mexico_integration_succeeded
 				any_owned_province = {
-					province_id = 2158 # Zacatecas
+					region = HXP_2158 # Zacatecas
 					is_colonial = no
 					OR = {
 						AND = {
@@ -13310,7 +13310,7 @@
 				tag = USA
 				has_country_flag = mexico_integration_succeeded
 				any_owned_province = {
-					province_id = 2165 # Villahermosa
+					region = HXP_2165 # Villahermosa
 					is_colonial = no
 					OR = {
 						AND = {
@@ -13395,7 +13395,7 @@
 
 				set_country_flag = TBS_created
 				prestige = -50
-				2165 = { add_core = TBS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Villahermosa
+				HXP_2165 = { add_core = TBS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Villahermosa
 				any_state = {
 					limit = {
 						any_owned_province = {

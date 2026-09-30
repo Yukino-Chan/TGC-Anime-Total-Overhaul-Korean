@@ -972,17 +972,17 @@
 			random_owned = {
 				limit = { owner = { tag = ARC } }
 				2370 = { add_core = ARC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				3353 = { add_core = ARC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				HOP_3353 = { add_core = ARC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
 			random_owned = {
 				limit = { owner = { tag = ARG } }
 				2370 = { add_core = ARG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				3353 = { add_core = ARG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				HOP_3353 = { add_core = ARG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
 			random_owned = {
 				limit = { owner = { tag = LPL } }
 				2370 = { add_core = LPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				3353 = { add_core = LPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				HOP_3353 = { add_core = LPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
 			random_owned = {
 				limit = {
@@ -999,7 +999,7 @@
 					war = {
 						target = PBC
 						attacker_goal = {
-							casus_belli = acquire_core_state
+							casus_belli = ho_acquire_core_state_arg_2369
 							state_province_id = 2370
 						}
 						call_ally = yes
@@ -2075,7 +2075,7 @@
 				remove_province_modifier = national_assimilation_acceptance
 				remove_province_modifier = national_assimilation_complete
 			}
-			3353 = { remove_core = BOL remove_core = PBC }
+			HOP_3353 = { remove_core = BOL remove_core = PBC }
 			2370 = { remove_core = BOL remove_core = PBC }
 			2315 = { remove_core = THIS }
 			FROM = { country_event = 4661008 }

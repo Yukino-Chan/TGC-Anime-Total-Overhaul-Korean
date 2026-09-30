@@ -1228,7 +1228,7 @@
 		picture = "prov_oil"
 
 		trigger = {
-			province_id = 26		# Calgary
+			region = HXP_26		# Calgary
 			NOT = { trade_goods = oil }
 			NOT = { has_province_modifier = switched_production }
 			year = 1913

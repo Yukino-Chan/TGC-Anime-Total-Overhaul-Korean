@@ -1,0 +1,42 @@
+# Enforce the limited Congress-Poland identity even after legacy/third-party core grants.
+country_event = {
+    id = 9592930
+    title = TGC_CPL_SCOPE_REPAIR_TITLE
+    desc = TGC_CPL_SCOPE_REPAIR_DESC
+    picture = deliberation
+    trigger = {
+        tag = CPL
+        OR = {
+            any_core = { NOT = { region = TGC_CONGRESS_POLAND } }
+            any_owned_province = { NOT = { region = TGC_CONGRESS_POLAND } has_province_modifier = core_integration }
+        }
+    }
+    mean_time_to_happen = { days = 1 }
+    immediate = {
+        all_core = { limit = { NOT = { region = TGC_CONGRESS_POLAND } } remove_core = CPL }
+        any_owned = { limit = { NOT = { region = TGC_CONGRESS_POLAND } } remove_province_modifier = core_integration }
+    }
+    option = { name = OK }
+}
+
+# Queued only by the audited save converter after matching the exact erroneous war.
+# The engine performs peace cleanup of armies, occupations and coalition participants.
+country_event = {
+    id = 9592931
+    title = TGC_INVALID_REINTEGRATION_REPAIR_TITLE
+    desc = TGC_INVALID_REINTEGRATION_REPAIR_DESC
+    picture = treaty
+    is_triggered_only = yes
+    trigger = { tag = AUS has_country_flag = tgcnv_invalid_bihac_war_repair_20260930 }
+    immediate = {
+        clr_country_flag = tgcnv_invalid_bihac_war_repair_20260930
+        random_owned = {
+            limit = {
+                owner = { tag = AUS war_with = TUR war_with = RUS }
+                TUR = { NOT = { any_owned_province = { region = TGC_AUSTRIAN_REINTEGRATION } } }
+            }
+            owner = { end_war = RUS }
+        }
+    }
+    option = { name = OK }
+}

@@ -141,7 +141,7 @@ country_event = {
 				2396 = { empty = yes }
 				5942 = { empty = yes }
 			}
-			5942 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } }
+			HXP_5942 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } }
 		}
 		random_owned = {
 			limit = {

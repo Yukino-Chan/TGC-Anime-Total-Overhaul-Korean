@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = { name = "GFX_tgcnv_prod_scroll_hthumb" texturefile = "gfx/interface/tgcnv_prod_scroll_hthumb.dds" noOfFrames = 4 }
+	spriteType = { name = "GFX_tgcnv_prod_scroll_left" texturefile = "gfx/interface/tgcnv_prod_scroll_left.dds" noOfFrames = 4 }
+	spriteType = { name = "GFX_tgcnv_prod_scroll_right" texturefile = "gfx/interface/tgcnv_prod_scroll_right.dds" noOfFrames = 4 }
+	spriteType = { name = "GFX_tgcnv_prod_scroll_vthumb" texturefile = "gfx/interface/tgcnv_prod_scroll_vthumb.dds" noOfFrames = 4 }
+	spriteType = { name = "GFX_tgcnv_prod_scroll_up" texturefile = "gfx/interface/tgcnv_prod_scroll_up.dds" noOfFrames = 4 }
+	spriteType = { name = "GFX_tgcnv_prod_scroll_down" texturefile = "gfx/interface/tgcnv_prod_scroll_down.dds" noOfFrames = 4 }
+	spriteType = { name = "GFX_tgcnv_prod_scroll_htrack" texturefile = "gfx/interface/tgcnv_prod_scroll_htrack.dds" }
+	corneredTileSpriteType = { name = "GFX_tgcnv_prod_scroll_vtrack" texturefile = "gfx/interface/tgcnv_prod_scroll_vtrack.dds" size = { x=6 y=6 } borderSize = { x=2 y=2 } }
+}

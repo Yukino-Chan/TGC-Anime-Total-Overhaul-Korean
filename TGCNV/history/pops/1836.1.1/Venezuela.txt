@@ -1,1834 +1,1819 @@
-#Venezuela 1836 (850000)
-#Caracas Region (300000)
-#Ruled by Venezuela 1836
-#Caracas (225000/47000 POPS)
-2264= {
-	aristocrats = {
+2249 = {
+artisans = {
+		culture = colombian
+		religion = catholic
+		size = 100
+	}
+farmers = {
+		culture = colombian
+		religion = catholic
+		size = 400
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 475
+	}
+soldiers = {
+		culture = arawak
+		religion = animist
+		size = 25
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 1000
+	}
+}
+
+2264 = {
+aristocrats = {
 		culture = venezuelan
 		religion = catholic
 		size = 563
 	}
-
-	bureaucrats = {
+bureaucrats = {
 		culture = venezuelan
 		religion = catholic
 		size = 63
 	}
-
-	officers = {
+officers = {
 		culture = venezuelan
 		religion = catholic
 		size = 50
 	}
-
-	clergymen = {
+clergymen = {
 		culture = venezuelan
 		religion = catholic
 		size = 200
 	}
-
-	artisans = {
+artisans = {
 		culture = venezuelan
 		religion = catholic
 		size = 1025
 	}
-
-	soldiers = {
+soldiers = {
 		culture = venezuelan
 		religion = catholic
 		size = 2250
 	}
-
-	farmers = {
+farmers = {
 		culture = venezuelan
 		religion = catholic
 		size = 9500
 	}
-
-	clergymen = {
+clergymen = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 25
 	}
-
-	artisans = {
+artisans = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 275
 	}
-
-	soldiers = {
+soldiers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 550
 		militancy = 4
 	}
-
-	farmers = {
+farmers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 4500
 		militancy = 4
 	}
-
-	slaves = {
+slaves = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 2000
 		militancy = 2
 	}
-
-	clergymen = {
+clergymen = {
 		culture = carib
 		religion = animist
 		size = 100
 	}
-
-	farmers = {
+farmers = {
 		culture = carib
 		religion = animist
 		size = 2400
 	}
 }
 
-5811= {
-	aristocrats = {
+2265 = {
+artisans = {
 		culture = venezuelan
 		religion = catholic
-		size = 562
+		size = 475
 	}
-
-	bureaucrats = {
+soldiers = {
 		culture = venezuelan
-		religion = catholic
-		size = 62
-	}
-
-	officers = {
-		culture = venezuelan
-		religion = catholic
-		size = 50
-	}
-
-	clergymen = {
-		culture = venezuelan
-		religion = catholic
-		size = 200
-	}
-
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 1025
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 2250
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 9500
-	}
-
-	clergymen = {
-		culture = afro_caribeno
 		religion = catholic
 		size = 25
 	}
-
-	artisans = {
-		culture = afro_caribeno
+farmers = {
+		culture = venezuelan
 		religion = catholic
-		size = 275
+		size = 1500
 	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 550
-		militancy = 4
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 4500
-		militancy = 4
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 2000
-		militancy = 2
-	}
-
-	clergymen = {
-		culture = carib
+artisans = {
+		culture = arawak
 		religion = animist
-		size = 100
+		size = 450
 	}
-
-	farmers = {
-		culture = carib
+soldiers = {
+		culture = arawak
 		religion = animist
-		size = 2400
+		size = 50
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 2500
 	}
 }
-#Todos los Santos de Calabozo (30000/9000 POPS)
-2266= {
-	artisans = {
+
+2266 = {
+artisans = {
 		culture = venezuelan
 		religion = catholic
 		size = 250
 	}
-
-	soldiers = {
+soldiers = {
 		culture = venezuelan
 		religion = catholic
 		size = 250
 	}
-
-	farmers = {
+farmers = {
 		culture = venezuelan
 		religion = catholic
 		size = 1000
 	}
-
-	artisans = {
+artisans = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 750
 	}
-
-	artisans = {
+artisans = {
 		culture = carib
 		religion = animist
 		size = 150
 	}
-
-	farmers = {
+farmers = {
 		culture = carib
 		religion = animist
 		size = 2100
 	}
 }
 
-5813= {
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 250
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 250
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 1000
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 750
-	}
-
-	artisans = {
-		culture = carib
-		religion = animist
-		size = 150
-	}
-
-	farmers = {
-		culture = carib
-		religion = animist
-		size = 2100
-	}
-}
-#Nueva Barcelona del Cerro Santo (45000/12000 POPS)
-2267= {
-	artisans = {
+2267 = {
+artisans = {
 		culture = venezuelan
 		religion = catholic
 		size = 500
 	}
-
-	soldiers = {
+soldiers = {
 		culture = venezuelan
 		religion = catholic
 		size = 750
 	}
-
-	farmers = {
+farmers = {
 		culture = venezuelan
 		religion = catholic
 		size = 1750
 	}
-
-	artisans = {
+artisans = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 600
 	}
-
-	soldiers = {
+soldiers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 150
 	}
-
-	farmers = {
+farmers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 1000
 	}
-
-	artisans = {
+artisans = {
 		culture = carib
 		religion = animist
 		size = 250
 	}
-
-	farmers = {
+farmers = {
 		culture = carib
 		religion = animist
 		size = 1000
 	}
 }
 
-5814= {
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 500
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 750
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 1750
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 600
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 150
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1000
-	}
-
-	artisans = {
-		culture = carib
-		religion = animist
-		size = 250
-	}
-
-	farmers = {
-		culture = carib
-		religion = animist
-		size = 1000
-	}
-}
-#Lago de Maracaibo (Zulia) Region (200000)
-#Ruled by Venezuela 1836
-#Nueva Valencia del Rey (90000/28000 POPS)
-2268= {
-	aristocrats = {
+2268 = {
+aristocrats = {
 		culture = venezuelan
 		religion = catholic
 		size = 501
 	}
-
-	bureaucrats = {
+bureaucrats = {
 		culture = venezuelan
 		religion = catholic
 		size = 151
 	}
-
-	clergymen = {
+clergymen = {
 		culture = venezuelan
 		religion = catholic
 		size = 101
 	}
-
-	artisans = {
+artisans = {
 		culture = venezuelan
 		religion = catholic
 		size = 1002
 	}
-
-	soldiers = {
+soldiers = {
 		culture = venezuelan
 		religion = catholic
 		size = 1753
 	}
-
-	farmers = {
+farmers = {
 		culture = venezuelan
 		religion = catholic
 		size = 4005
 	}
-
-	artisans = {
+artisans = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 1002
 	}
-
-	soldiers = {
+soldiers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 501
 		militancy = 4
 	}
-
-	farmers = {
+farmers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 2003
 		militancy = 4
 	}
-
-	slaves = {
+slaves = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 1002
 		militancy = 2
 	}
-
-	artisans = {
+artisans = {
 		culture = arawak
 		religion = animist
 		size = 501
 	}
-
-	soldiers = {
+soldiers = {
 		culture = arawak
 		religion = animist
 		size = 251
 	}
-
-	farmers = {
+farmers = {
 		culture = arawak
 		religion = animist
 		size = 1252
 	}
 }
 
-5815= {
-	aristocrats = {
-		culture = venezuelan
-		religion = catholic
-		size = 499
-	}
-
-	bureaucrats = {
-		culture = venezuelan
-		religion = catholic
-		size = 149
-	}
-
-	clergymen = {
-		culture = venezuelan
-		religion = catholic
-		size = 99
-	}
-
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 998
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 1747
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 3995
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 998
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 499
-		militancy = 4
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1997
-		militancy = 4
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 998
-		militancy = 2
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 499
-	}
-
-	soldiers = {
-		culture = arawak
-		religion = animist
-		size = 249
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 1248
-	}
-}
-#Ruled by Colombia 1836
-#Maracaibo (60000/24000 POPS)
-2270= {
-	aristocrats = {
-		culture = colombian
-		religion = catholic
-		size = 589
-	}
-
-	clergymen = {
-		culture = colombian
-		religion = catholic
-		size = 50
-	}
-
-	artisans = {
-		culture = colombian
-		religion = catholic
-		size = 491
-	}
-
-	soldiers = {
-		culture = colombian
-		religion = catholic
-		size = 99
-	}
-
-	farmers = {
-		culture = colombian
-		religion = catholic
-		size = 2697
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 589
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 148
-		militancy = 4
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 2206
-		militancy = 4
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 981
-		militancy = 2
-	}
-
-	artisans = {
-		culture = chibchan
-		religion = animist
-		size = 638
-	}
-
-	soldiers = {
-		culture = chibchan
-		religion = animist
-		size = 99
-	}
-
-	farmers = {
-		culture = chibchan
-		religion = animist
-		size = 1961
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 246
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 981
-	}
-}
-
-5817= {
-	aristocrats = {
-		culture = colombian
-		religion = catholic
-		size = 611
-	}
-
-	clergymen = {
-		culture = colombian
-		religion = catholic
-		size = 50
-	}
-
-	artisans = {
-		culture = colombian
-		religion = catholic
-		size = 509
-	}
-
-	soldiers = {
-		culture = colombian
-		religion = catholic
-		size = 101
-	}
-
-	farmers = {
-		culture = colombian
-		religion = catholic
-		size = 2803
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 611
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 152
-		militancy = 4
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 2294
-		militancy = 4
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1019
-		militancy = 2
-	}
-
-	artisans = {
-		culture = chibchan
-		religion = animist
-		size = 662
-	}
-
-	soldiers = {
-		culture = chibchan
-		religion = animist
-		size = 101
-	}
-
-	farmers = {
-		culture = chibchan
-		religion = animist
-		size = 2039
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 254
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 1019
-	}
-}
-#San Cristobal (20000/10000 POPS)
-2271= {
-	clergymen = {
-		culture = venezuelan
-		religion = catholic
-		size = 25
-	}
-
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 550
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 150
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 1000
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 200
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 525
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1000
-	}
-
-	artisans = {
-		culture = chibchan
-		religion = animist
-		size = 200
-	}
-
-	soldiers = {
-		culture = chibchan
-		religion = animist
-		size = 50
-	}
-
-	farmers = {
-		culture = chibchan
-		religion = animist
-		size = 750
-	}
-
-	farmers = {
-		culture = carib
-		religion = animist
-		size = 550
-	}
-}
-
-5818= {
-	clergymen = {
-		culture = venezuelan
-		religion = catholic
-		size = 25
-	}
-
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 550
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 150
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 1000
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 200
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 525
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1000
-	}
-
-	artisans = {
-		culture = chibchan
-		religion = animist
-		size = 200
-	}
-
-	soldiers = {
-		culture = chibchan
-		religion = animist
-		size = 50
-	}
-
-	farmers = {
-		culture = chibchan
-		religion = animist
-		size = 750
-	}
-
-	farmers = {
-		culture = carib
-		religion = animist
-		size = 550
-	}
-}
-#Santa Ana de Coro (30000/14000 POPS)
-2272= {
-	clergymen = {
-		culture = venezuelan
-		religion = catholic
-		size = 201
-	}
-
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 501
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 51
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 1752
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 726
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 26
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1251
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 701
-	}
-
-	soldiers = {
-		culture = arawak
-		religion = animist
-		size = 51
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 1752
-	}
-}
-
-5819= {
-	clergymen = {
-		culture = venezuelan
-		religion = catholic
-		size = 199
-	}
-
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 499
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 49
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 1748
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 724
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 24
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1249
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 699
-	}
-
-	soldiers = {
-		culture = arawak
-		religion = animist
-		size = 49
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 1748
-	}
-}
-#Los Llanos (Apure) Region (70000)
-#Ruled by Venezuela 1836
-#Barinas (30000/10000 POPS)
-2265= {
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 475
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 25
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 1500
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 450
-	}
-
-	soldiers = {
-		culture = arawak
-		religion = animist
-		size = 50
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 2500
-	}
-}
-
-5812= {
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 475
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 25
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 1500
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 450
-	}
-
-	soldiers = {
-		culture = arawak
-		religion = animist
-		size = 50
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 2500
-	}
-}
-#Guanare (30000/14000 POPS)
-2273= {
-	aristocrats = {
-		culture = venezuelan
-		religion = catholic
-		size = 400
-	}
-
-	clergymen = {
-		culture = venezuelan
-		religion = catholic
-		size = 100
-	}
-
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 800
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 200
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 2250
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 500
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 725
-	}
-
-	soldiers = {
-		culture = arawak
-		religion = animist
-		size = 25
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 2000
-	}
-}
-
-5820= {
-	aristocrats = {
-		culture = venezuelan
-		religion = catholic
-		size = 400
-	}
-
-	clergymen = {
-		culture = venezuelan
-		religion = catholic
-		size = 100
-	}
-
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 800
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 200
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 2250
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 500
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 725
-	}
-
-	soldiers = {
-		culture = arawak
-		religion = animist
-		size = 25
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 2000
-	}
-}
-#El Viento (10000/4000 POPS)
-2249= {
-	artisans = {
-		culture = colombian
-		religion = catholic
-		size = 100
-	}
-
-	farmers = {
-		culture = colombian
-		religion = catholic
-		size = 400
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 475
-	}
-
-	soldiers = {
-		culture = arawak
-		religion = animist
-		size = 25
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 1000
-	}
-}
-
-5796= {
-	artisans = {
-		culture = colombian
-		religion = catholic
-		size = 100
-	}
-
-	farmers = {
-		culture = colombian
-		religion = catholic
-		size = 400
-	}
-
-	artisans = {
-		culture = arawak
-		religion = animist
-		size = 475
-	}
-
-	soldiers = {
-		culture = arawak
-		religion = animist
-		size = 25
-	}
-
-	farmers = {
-		culture = arawak
-		religion = animist
-		size = 1000
-	}
-}
-#Orinoco Region (100000)
-#Ruled by Venezuela 1836
-#Cumana (65000/18000 POPS)
-2269= {
-	artisans = {
+2269 = {
+artisans = {
 		culture = venezuelan
 		religion = catholic
 		size = 1002
 	}
-
-	farmers = {
+farmers = {
 		culture = venezuelan
 		religion = catholic
 		size = 2505
 	}
-
-	artisans = {
+artisans = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 752
 	}
-
-	soldiers = {
+soldiers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 752
 	}
-
-	farmers = {
+farmers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 2255
 	}
-
-	artisans = {
+artisans = {
 		culture = carib
 		religion = animist
 		size = 251
 	}
-
-	farmers = {
+farmers = {
 		culture = carib
 		religion = animist
 		size = 1503
 	}
 }
 
-5816= {
-	artisans = {
-		culture = venezuelan
+2270 = {
+aristocrats = {
+		culture = colombian
 		religion = catholic
-		size = 998
+		size = 589
 	}
-
-	farmers = {
-		culture = venezuelan
+clergymen = {
+		culture = colombian
 		religion = catholic
-		size = 2495
+		size = 50
 	}
-
-	artisans = {
+artisans = {
+		culture = colombian
+		religion = catholic
+		size = 491
+	}
+soldiers = {
+		culture = colombian
+		religion = catholic
+		size = 99
+	}
+farmers = {
+		culture = colombian
+		religion = catholic
+		size = 2697
+	}
+artisans = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 748
+		size = 589
 	}
-
-	soldiers = {
+soldiers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 748
+		size = 148
+		militancy = 4
 	}
-
-	farmers = {
+farmers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 2245
+		size = 2206
+		militancy = 4
 	}
-
-	artisans = {
-		culture = carib
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 981
+		militancy = 2
+	}
+artisans = {
+		culture = chibchan
 		religion = animist
-		size = 249
+		size = 638
 	}
-
-	farmers = {
-		culture = carib
+soldiers = {
+		culture = chibchan
 		religion = animist
-		size = 1497
+		size = 99
 	}
-}
-#San Fernando de Maturin (35000/10000 POPS)
-2276= {
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 250
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 1750
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 250
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1500
-	}
-
-	artisans = {
-		culture = carib
+farmers = {
+		culture = chibchan
 		religion = animist
-		size = 250
+		size = 1961
 	}
-
-	farmers = {
-		culture = carib
+artisans = {
+		culture = arawak
 		religion = animist
-		size = 1000
+		size = 246
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 981
 	}
 }
 
-5823= {
-	artisans = {
+2271 = {
+clergymen = {
 		culture = venezuelan
 		religion = catholic
-		size = 250
+		size = 25
 	}
-
-	farmers = {
+artisans = {
 		culture = venezuelan
 		religion = catholic
-		size = 1750
+		size = 550
 	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 250
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1500
-	}
-
-	artisans = {
-		culture = carib
-		religion = animist
-		size = 250
-	}
-
-	farmers = {
-		culture = carib
-		religion = animist
-		size = 1000
-	}
-}
-#Amazonas-Bolivar (Spanish Guayana) Region (180000)
-#Ruled by Venezuela 1836
-#San Fernando de Atabapo (50000/14000 POPS)
-2274= {
-	aristocrats = {
+soldiers = {
 		culture = venezuelan
 		religion = catholic
 		size = 150
 	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 1000
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 200
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 525
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1000
+	}
+artisans = {
+		culture = chibchan
+		religion = animist
+		size = 200
+	}
+soldiers = {
+		culture = chibchan
+		religion = animist
+		size = 50
+	}
+farmers = {
+		culture = chibchan
+		religion = animist
+		size = 750
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 550
+	}
+}
 
-	clergymen = {
+2272 = {
+clergymen = {
+		culture = venezuelan
+		religion = catholic
+		size = 201
+	}
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 501
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 51
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 1752
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 726
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 26
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1251
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 701
+	}
+soldiers = {
+		culture = arawak
+		religion = animist
+		size = 51
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 1752
+	}
+}
+
+2273 = {
+aristocrats = {
+		culture = venezuelan
+		religion = catholic
+		size = 400
+	}
+clergymen = {
 		culture = venezuelan
 		religion = catholic
 		size = 100
 	}
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 800
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 200
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 2250
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 500
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 725
+	}
+soldiers = {
+		culture = arawak
+		religion = animist
+		size = 25
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 2000
+	}
+}
 
-	artisans = {
+2274 = {
+aristocrats = {
+		culture = venezuelan
+		religion = catholic
+		size = 150
+	}
+clergymen = {
+		culture = venezuelan
+		religion = catholic
+		size = 100
+	}
+artisans = {
 		culture = venezuelan
 		religion = catholic
 		size = 250
 	}
-
-	farmers = {
+farmers = {
 		culture = venezuelan
 		religion = catholic
 		size = 1000
 	}
-
-	artisans = {
+artisans = {
 		culture = amazonian
 		religion = animist
 		size = 1000
 	}
-
-	farmers = {
+farmers = {
 		culture = amazonian
 		religion = animist
 		size = 1750
 	}
-
-	artisans = {
+artisans = {
 		culture = yanomami
 		religion = animist
 		size = 250
 	}
-
-	farmers = {
+farmers = {
 		culture = yanomami
 		religion = animist
 		size = 2000
 	}
-
-	farmers = {
+farmers = {
 		culture = carib
 		religion = animist
 		size = 500
 	}
 }
 
-5821= {
-	aristocrats = {
-		culture = venezuelan
-		religion = catholic
-		size = 150
-	}
-
-	clergymen = {
+2275 = {
+aristocrats = {
 		culture = venezuelan
 		religion = catholic
 		size = 100
 	}
+clergymen = {
+		culture = venezuelan
+		religion = catholic
+		size = 100
+	}
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 750
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 50
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 2375
+	}
+artisans = {
+		culture = amazonian
+		religion = animist
+		size = 1000
+	}
+farmers = {
+		culture = amazonian
+		religion = animist
+		size = 2875
+	}
+artisans = {
+		culture = carib
+		religion = animist
+		size = 250
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 1500
+	}
+}
 
-	artisans = {
+2276 = {
+artisans = {
 		culture = venezuelan
 		religion = catholic
 		size = 250
 	}
-
-	farmers = {
+farmers = {
 		culture = venezuelan
 		religion = catholic
-		size = 1000
-	}
-
-	artisans = {
-		culture = amazonian
-		religion = animist
-		size = 1000
-	}
-
-	farmers = {
-		culture = amazonian
-		religion = animist
 		size = 1750
 	}
-
-	artisans = {
-		culture = yanomami
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 250
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1500
+	}
+artisans = {
+		culture = carib
 		religion = animist
 		size = 250
 	}
-
-	farmers = {
-		culture = yanomami
-		religion = animist
-		size = 2000
-	}
-
-	farmers = {
+farmers = {
 		culture = carib
-		religion = animist
-		size = 500
-	}
-}
-#Angostura (70000/18000 POPS)
-2275= {
-		aristocrats = {
-		culture = venezuelan
-		religion = catholic
-		size = 100
-	}
-
-	clergymen = {
-		culture = venezuelan
-		religion = catholic
-		size = 100
-	}
-
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 750
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 50
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 2375
-	}
-
-	artisans = {
-		culture = amazonian
 		religion = animist
 		size = 1000
 	}
-
-	farmers = {
-		culture = amazonian
-		religion = animist
-		size = 2875
-	}
-
-	artisans = {
-		culture = carib
-		religion = animist
-		size = 250
-	}
-
-	farmers = {
-		culture = carib
-		religion = animist
-		size = 1500
-	}
 }
 
-5822= {
-		aristocrats = {
-		culture = venezuelan
-		religion = catholic
-		size = 100
-	}
-
-	clergymen = {
-		culture = venezuelan
-		religion = catholic
-		size = 100
-	}
-
-	artisans = {
-		culture = venezuelan
-		religion = catholic
-		size = 750
-	}
-
-	soldiers = {
-		culture = venezuelan
-		religion = catholic
-		size = 50
-	}
-
-	farmers = {
-		culture = venezuelan
-		religion = catholic
-		size = 2375
-	}
-
-	artisans = {
-		culture = amazonian
-		religion = animist
-		size = 1000
-	}
-
-	farmers = {
-		culture = amazonian
-		religion = animist
-		size = 2875
-	}
-
-	artisans = {
-		culture = carib
-		religion = animist
-		size = 250
-	}
-
-	farmers = {
-		culture = carib
-		religion = animist
-		size = 1500
-	}
-}
-#Piedra del Cocuy (30000/8000 POPS)
-2277= {
-	clergymen = {
+2277 = {
+clergymen = {
 		culture = venezuelan
 		religion = catholic
 		size = 76
 	}
-
-	artisans = {
+artisans = {
 		culture = venezuelan
 		religion = catholic
 		size = 176
 	}
-
-	farmers = {
+farmers = {
 		culture = venezuelan
 		religion = catholic
 		size = 501
 	}
-
-	artisans = {
+artisans = {
 		culture = arawak
 		religion = animist
 		size = 251
 	}
-
-	farmers = {
+farmers = {
 		culture = arawak
 		religion = animist
 		size = 501
 	}
-
-	artisans = {
+artisans = {
 		culture = amazonian
 		religion = animist
 		size = 251
 	}
-
-	farmers = {
+farmers = {
 		culture = amazonian
 		religion = animist
 		size = 901
 	}
-
-	artisans = {
+artisans = {
 		culture = yanomami
 		religion = animist
 		size = 251
 	}
-
-	farmers = {
+farmers = {
 		culture = yanomami
 		religion = animist
 		size = 1101
 	}
 }
 
-5824= {
-	clergymen = {
+2278 = {
+clergymen = {
+		culture = colombian
+		religion = catholic
+		size = 50
+	}
+artisans = {
+		culture = colombian
+		religion = catholic
+		size = 200
+	}
+farmers = {
+		culture = colombian
+		religion = catholic
+		size = 500
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 250
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 500
+	}
+artisans = {
+		culture = amazonian
+		religion = animist
+		size = 250
+	}
+farmers = {
+		culture = amazonian
+		religion = animist
+		size = 750
+	}
+artisans = {
+		culture = yanomami
+		religion = animist
+		size = 250
+	}
+farmers = {
+		culture = yanomami
+		religion = animist
+		size = 1500
+	}
+}
+
+5796 = {
+artisans = {
+		culture = colombian
+		religion = catholic
+		size = 70
+	}
+farmers = {
+		culture = colombian
+		religion = catholic
+		size = 282
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 335
+	}
+soldiers = {
+		culture = arawak
+		religion = animist
+		size = 18
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 705
+	}
+}
+
+5811 = {
+aristocrats = {
+		culture = venezuelan
+		religion = catholic
+		size = 562
+	}
+bureaucrats = {
+		culture = venezuelan
+		religion = catholic
+		size = 62
+	}
+officers = {
+		culture = venezuelan
+		religion = catholic
+		size = 50
+	}
+clergymen = {
+		culture = venezuelan
+		religion = catholic
+		size = 200
+	}
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 1025
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 2250
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 9500
+	}
+clergymen = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 25
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 275
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 550
+		militancy = 4
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 4500
+		militancy = 4
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 2000
+		militancy = 2
+	}
+clergymen = {
+		culture = carib
+		religion = animist
+		size = 100
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 2400
+	}
+}
+
+5812 = {
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 475
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 25
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 1500
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 450
+	}
+soldiers = {
+		culture = arawak
+		religion = animist
+		size = 50
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 2500
+	}
+}
+
+5813 = {
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 250
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 250
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 1000
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 750
+	}
+artisans = {
+		culture = carib
+		religion = animist
+		size = 150
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 2100
+	}
+}
+
+5814 = {
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 500
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 750
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 1750
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 600
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 150
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1000
+	}
+artisans = {
+		culture = carib
+		religion = animist
+		size = 250
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 1000
+	}
+}
+
+5815 = {
+aristocrats = {
+		culture = venezuelan
+		religion = catholic
+		size = 499
+	}
+bureaucrats = {
+		culture = venezuelan
+		religion = catholic
+		size = 149
+	}
+clergymen = {
+		culture = venezuelan
+		religion = catholic
+		size = 99
+	}
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 998
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 1747
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 3995
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 998
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 499
+		militancy = 4
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1997
+		militancy = 4
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 998
+		militancy = 2
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 499
+	}
+soldiers = {
+		culture = arawak
+		religion = animist
+		size = 249
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 1248
+	}
+}
+
+5816 = {
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 998
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 2495
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 748
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 748
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 2245
+	}
+artisans = {
+		culture = carib
+		religion = animist
+		size = 249
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 1497
+	}
+}
+
+5817 = {
+aristocrats = {
+		culture = colombian
+		religion = catholic
+		size = 376
+	}
+clergymen = {
+		culture = colombian
+		religion = catholic
+		size = 31
+	}
+artisans = {
+		culture = colombian
+		religion = catholic
+		size = 313
+	}
+soldiers = {
+		culture = colombian
+		religion = catholic
+		size = 62
+	}
+farmers = {
+		culture = colombian
+		religion = catholic
+		size = 1725
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 376
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 94
+		militancy = 4
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1412
+		militancy = 4
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 627
+		militancy = 2
+	}
+artisans = {
+		culture = chibchan
+		religion = animist
+		size = 407
+	}
+soldiers = {
+		culture = chibchan
+		religion = animist
+		size = 62
+	}
+farmers = {
+		culture = chibchan
+		religion = animist
+		size = 1255
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 156
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 627
+	}
+}
+
+5818 = {
+clergymen = {
+		culture = venezuelan
+		religion = catholic
+		size = 25
+	}
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 550
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 150
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 1000
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 200
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 525
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1000
+	}
+artisans = {
+		culture = chibchan
+		religion = animist
+		size = 200
+	}
+soldiers = {
+		culture = chibchan
+		religion = animist
+		size = 50
+	}
+farmers = {
+		culture = chibchan
+		religion = animist
+		size = 750
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 550
+	}
+}
+
+5819 = {
+clergymen = {
+		culture = venezuelan
+		religion = catholic
+		size = 199
+	}
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 499
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 49
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 1748
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 724
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 24
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1249
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 699
+	}
+soldiers = {
+		culture = arawak
+		religion = animist
+		size = 49
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 1748
+	}
+}
+
+5820 = {
+aristocrats = {
+		culture = venezuelan
+		religion = catholic
+		size = 400
+	}
+clergymen = {
+		culture = venezuelan
+		religion = catholic
+		size = 100
+	}
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 800
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 200
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 2250
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 500
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 725
+	}
+soldiers = {
+		culture = arawak
+		religion = animist
+		size = 25
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 2000
+	}
+}
+
+5821 = {
+aristocrats = {
+		culture = venezuelan
+		religion = catholic
+		size = 150
+	}
+clergymen = {
+		culture = venezuelan
+		religion = catholic
+		size = 100
+	}
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 250
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 1000
+	}
+artisans = {
+		culture = amazonian
+		religion = animist
+		size = 1000
+	}
+farmers = {
+		culture = amazonian
+		religion = animist
+		size = 1750
+	}
+artisans = {
+		culture = yanomami
+		religion = animist
+		size = 250
+	}
+farmers = {
+		culture = yanomami
+		religion = animist
+		size = 2000
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 500
+	}
+}
+
+5822 = {
+aristocrats = {
+		culture = venezuelan
+		religion = catholic
+		size = 100
+	}
+clergymen = {
+		culture = venezuelan
+		religion = catholic
+		size = 100
+	}
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 750
+	}
+soldiers = {
+		culture = venezuelan
+		religion = catholic
+		size = 50
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 2375
+	}
+artisans = {
+		culture = amazonian
+		religion = animist
+		size = 1000
+	}
+farmers = {
+		culture = amazonian
+		religion = animist
+		size = 2875
+	}
+artisans = {
+		culture = carib
+		religion = animist
+		size = 250
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 1500
+	}
+}
+
+5823 = {
+artisans = {
+		culture = venezuelan
+		religion = catholic
+		size = 250
+	}
+farmers = {
+		culture = venezuelan
+		religion = catholic
+		size = 1750
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 250
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1500
+	}
+artisans = {
+		culture = carib
+		religion = animist
+		size = 250
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 1000
+	}
+}
+
+5824 = {
+clergymen = {
 		culture = venezuelan
 		religion = catholic
 		size = 74
 	}
-
-	artisans = {
+artisans = {
 		culture = venezuelan
 		religion = catholic
 		size = 174
 	}
-
-	farmers = {
+farmers = {
 		culture = venezuelan
 		religion = catholic
 		size = 499
 	}
-
-	artisans = {
+artisans = {
 		culture = arawak
 		religion = animist
 		size = 249
 	}
-
-	farmers = {
+farmers = {
 		culture = arawak
 		religion = animist
 		size = 499
 	}
-
-	artisans = {
+artisans = {
 		culture = amazonian
 		religion = animist
 		size = 249
 	}
-
-	farmers = {
+farmers = {
 		culture = amazonian
 		religion = animist
 		size = 899
 	}
-
-	artisans = {
+artisans = {
 		culture = yanomami
 		religion = animist
 		size = 249
 	}
-
-	farmers = {
+farmers = {
 		culture = yanomami
 		religion = animist
 		size = 1099
 	}
 }
-#San Carlos del Rio Negro (30000/8500 POPS)
-2278= {
-	clergymen = {
+
+5825 = {
+clergymen = {
 		culture = colombian
 		religion = catholic
 		size = 50
 	}
-
-	artisans = {
+artisans = {
 		culture = colombian
 		religion = catholic
 		size = 200
 	}
-
-	farmers = {
+farmers = {
 		culture = colombian
 		religion = catholic
 		size = 500
 	}
-
-	artisans = {
+artisans = {
 		culture = arawak
 		religion = animist
 		size = 250
 	}
-
-	farmers = {
+farmers = {
 		culture = arawak
 		religion = animist
 		size = 500
 	}
-
-	artisans = {
+artisans = {
 		culture = amazonian
 		religion = animist
 		size = 250
 	}
-
-	farmers = {
+farmers = {
 		culture = amazonian
 		religion = animist
 		size = 750
 	}
-
-	artisans = {
+artisans = {
 		culture = yanomami
 		religion = animist
 		size = 250
 	}
-
-	farmers = {
+farmers = {
 		culture = yanomami
 		religion = animist
 		size = 1500
 	}
 }
 
-5825= {
-	clergymen = {
+7400 = {
+aristocrats = {
 		culture = colombian
 		religion = catholic
-		size = 50
+		size = 94
 	}
-
-	artisans = {
+clergymen = {
 		culture = colombian
 		religion = catholic
-		size = 200
+		size = 8
 	}
-
-	farmers = {
+artisans = {
 		culture = colombian
 		religion = catholic
-		size = 500
+		size = 79
 	}
-
-	artisans = {
+soldiers = {
+		culture = colombian
+		religion = catholic
+		size = 16
+	}
+farmers = {
+		culture = colombian
+		religion = catholic
+		size = 431
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 94
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 23
+		militancy = 4
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 353
+		militancy = 4
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 157
+		militancy = 2
+	}
+artisans = {
+		culture = chibchan
+		religion = animist
+		size = 102
+	}
+soldiers = {
+		culture = chibchan
+		religion = animist
+		size = 16
+	}
+farmers = {
+		culture = chibchan
+		religion = animist
+		size = 314
+	}
+artisans = {
 		culture = arawak
 		religion = animist
-		size = 250
+		size = 39
 	}
-
-	farmers = {
+farmers = {
 		culture = arawak
 		religion = animist
-		size = 500
+		size = 157
 	}
+}
 
-	artisans = {
-		culture = amazonian
-		religion = animist
-		size = 250
+7401 = {
+aristocrats = {
+		culture = colombian
+		religion = catholic
+		size = 94
 	}
-
-	farmers = {
-		culture = amazonian
-		religion = animist
-		size = 750
+clergymen = {
+		culture = colombian
+		religion = catholic
+		size = 7
 	}
-
-	artisans = {
-		culture = yanomami
-		religion = animist
-		size = 250
+artisans = {
+		culture = colombian
+		religion = catholic
+		size = 78
 	}
-
-	farmers = {
-		culture = yanomami
+soldiers = {
+		culture = colombian
+		religion = catholic
+		size = 15
+	}
+farmers = {
+		culture = colombian
+		religion = catholic
+		size = 431
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 94
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 23
+		militancy = 4
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 353
+		militancy = 4
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 157
+		militancy = 2
+	}
+artisans = {
+		culture = chibchan
 		religion = animist
-		size = 1500
+		size = 102
+	}
+soldiers = {
+		culture = chibchan
+		religion = animist
+		size = 15
+	}
+farmers = {
+		culture = chibchan
+		religion = animist
+		size = 313
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 39
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 157
+	}
+}
+
+7402 = {
+aristocrats = {
+		culture = colombian
+		religion = catholic
+		size = 47
+	}
+clergymen = {
+		culture = colombian
+		religion = catholic
+		size = 4
+	}
+artisans = {
+		culture = colombian
+		religion = catholic
+		size = 39
+	}
+soldiers = {
+		culture = colombian
+		religion = catholic
+		size = 8
+	}
+farmers = {
+		culture = colombian
+		religion = catholic
+		size = 216
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 47
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 12
+		militancy = 4
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 176
+		militancy = 4
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 78
+		militancy = 2
+	}
+artisans = {
+		culture = chibchan
+		religion = animist
+		size = 51
+	}
+soldiers = {
+		culture = chibchan
+		religion = animist
+		size = 8
+	}
+farmers = {
+		culture = chibchan
+		religion = animist
+		size = 157
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 20
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 78
+	}
+}
+
+7466 = {
+artisans = {
+		culture = colombian
+		religion = catholic
+		size = 30
+	}
+farmers = {
+		culture = colombian
+		religion = catholic
+		size = 118
+	}
+artisans = {
+		culture = arawak
+		religion = animist
+		size = 140
+	}
+soldiers = {
+		culture = arawak
+		religion = animist
+		size = 7
+	}
+farmers = {
+		culture = arawak
+		religion = animist
+		size = 295
 	}
 }

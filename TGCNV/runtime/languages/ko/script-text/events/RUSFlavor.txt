@@ -688,7 +688,7 @@
 			random_owned = {
 				limit = { owner = { NOT = { primary_culture = japanese } } }
 				owner = {
-					1 = { state_scope = { change_region_name = "알래스카주" } }
+					1 = {  }
 					1 = { change_province_name = "싯카" }
 					2 = { change_province_name = "주노" }
 					3 = { change_province_name = "코디액" }
@@ -709,7 +709,7 @@
 			random_owned = {
 				limit = { owner = { primary_culture = japanese } }
 				owner = {
-					1 = { state_scope = { change_region_name = "호쿠시마주" } }
+					1 = {  }
 					1 = { change_province_name = "시토카" }
 					2 = { change_province_name = "스티킨" }
 					3 = { change_province_name = "고디아쿠" }
@@ -6279,7 +6279,7 @@ country_event = {
 		name = "EVTOPTC500188" #"Odessa" #Odessa
 
 		capital_scope = { any_pop = { consciousness = 2 } }
-		968 = { trade_goods = precious_metal add_province_modifier = { name = recently_built_city duration = 700 } add_province_modifier = { name = capital_of_the_motherland duration = -1 } any_pop = { militancy = -1 } }
+		HXP_968 = { trade_goods = precious_metal add_province_modifier = { name = recently_built_city duration = 700 } add_province_modifier = { name = capital_of_the_motherland duration = -1 } any_pop = { militancy = -1 } }
 		capital = 968
 
 		ai_chance = { factor = 2 }
@@ -6469,11 +6469,11 @@ country_event = {
 		    war = {
 			target = QNG
 			attacker_goal = { #Manchuria
-							casus_belli = acquire_any_state
+							casus_belli = h45_acquire_any_state_chi_1552
 							state_province_id = 1553
 						}
 			attacker_goal = { 
-							casus_belli = acquire_any_state
+							casus_belli = h45_acquire_any_state_chi_1479
 							state_province_id = 1479
 						}
 			#attacker_goal = { 
@@ -7152,7 +7152,7 @@ country_event = {
 		name = "EVTOPTA500221"
 		any_owned = {
 			limit = {
-				province_id = 1785
+				region = HOP_1785
 			}
 			remove_core = THIS
 		}
@@ -7218,7 +7218,7 @@ country_event = {
 		FROM = {
 			any_owned = {
 				limit = {
-					province_id = 1785
+					region = HOP_1785
 				}
 				secede_province = THIS
 			}
@@ -7395,7 +7395,7 @@ country_event = {
 		money = 250000
 		any_owned = {
 			limit = {
-				province_id = 1785
+				region = HOP_1785
 			}
 			remove_core = THIS
 		}
@@ -7455,7 +7455,7 @@ country_event = {
 		FROM = {
 			any_owned = {
 				limit = {
-					province_id = 1785
+					region = HOP_1785
 				}
 				secede_province = THIS
 			}

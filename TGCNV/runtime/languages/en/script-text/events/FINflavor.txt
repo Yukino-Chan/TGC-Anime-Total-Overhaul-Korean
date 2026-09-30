@@ -148,7 +148,7 @@
 			any_owned = {
 				limit = {
 					NOT = {
-						province_id = 339
+						region = HXP_339
 						province_id = 343
 						province_id = 348
 						province_id = 346
@@ -192,7 +192,7 @@
 			any_owned = {
 				limit = {
 					NOT = {
-						province_id = 339
+						region = HXP_339
 						province_id = 343
 						province_id = 348
 						province_id = 346
@@ -253,7 +253,7 @@
 		option = {
 			name = "EVTOPTA61106"
 
-			340 = { infrastructure = 2 }
+			HXP_340 = { infrastructure = 2 }
 		}
 	}
 
@@ -364,8 +364,8 @@
 			name = "EVTOPTA61101"
 
 			336 = { trade_goods = timber }
-			339 = { trade_goods = timber }
-			340 = {
+			HXP_339 = { trade_goods = timber }
+			HXP_340 = {
 				trade_goods = timber
 				add_province_modifier = { name = sawmill_town duration = 7300 }
 			}
@@ -766,7 +766,7 @@
 				relation = { who = THIS value = -25 }
 			}
 			diplomatic_influence = { who = FIN value = 200 }
-			339 = { remove_core = RUS }
+			HXP_339 = { remove_core = RUS }
 			982 = {
 				remove_core = RUS
 				add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -816,7 +816,7 @@
 				militancy = 3
 			}
 			339 = {
-				secede_province = RUS
+				HXP_339 = { secede_province = RUS }
 				change_province_name = "Vyborg"
 			}
 		}

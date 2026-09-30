@@ -1847,7 +1847,7 @@
 						war = {
 							target = AUS
 							attacker_goal = {
-								casus_belli = free_peoples
+								casus_belli = hx_free_peoples_hst_ven
 								country = SAR
 								state_province_id = 729
 							}
@@ -1890,7 +1890,7 @@
 						war = {
 							target = KUK
 							attacker_goal = {
-								casus_belli = free_peoples
+								casus_belli = hx_free_peoples_hst_ven
 								country = SAR
 								state_province_id = 729
 							}
@@ -1933,7 +1933,7 @@
 						war = {
 							target = AUS
 							attacker_goal = {
-								casus_belli = free_peoples
+								casus_belli = hx_free_peoples_hst_ven
 								country = SVY
 								state_province_id = 729
 							}
@@ -1976,7 +1976,7 @@
 						war = {
 							target = KUK
 							attacker_goal = {
-								casus_belli = free_peoples
+								casus_belli = hx_free_peoples_hst_ven
 								country = SVY
 								state_province_id = 729
 							}
@@ -3163,7 +3163,7 @@
 				10 = {
 					762 = { secede_province = SYC }
 					764 = { secede_province = SYC }
-					763 = { secede_province = SYC }
+					HXP_763 = { secede_province = SYC }
 					prestige = -10
 					war = {
 						target = SYC
@@ -3218,7 +3218,7 @@
 
 			762 = { secede_province = SYC }
 			764 = { secede_province = SYC }
-			763 = { secede_province = SYC }
+			HXP_763 = { secede_province = SYC }
 			change_tag_no_core_switch = SYC
 			SIC = {
 				prestige = -10
@@ -3364,7 +3364,7 @@
 				prestige = 10
 				war = {
 					target = FROM
-					attacker_goal = { casus_belli = unification_casus_belli state_province_id = 727 }
+					attacker_goal = { casus_belli = h45_unification_casus_belli_hst_lom state_province_id = 727 }
 					defender_goal = { casus_belli = status_quo }
 					call_ally = no
 				}
@@ -3557,8 +3557,8 @@
 				SAR = {
 					war = {
 						target = AUS
-						attacker_goal = { casus_belli = unification_casus_belli state_province_id = 727 }
-						defender_goal = { casus_belli = acquire_state state_province_id = 726 }
+						attacker_goal = { casus_belli = h45_unification_casus_belli_hst_lom state_province_id = 727 }
+						defender_goal = { casus_belli = h45_acquire_state_hst_lom state_province_id = 726 }
 						call_ally = no
 					}
 				}
@@ -5059,7 +5059,7 @@ country_event = {
 					war = {
 						target = TUR
 						attacker_goal = {
-							casus_belli = acquire_any_state
+							casus_belli = ho_acquire_any_state_tri_1731
 							state_province_id = 1731
 						}
 						call_ally = yes
@@ -5075,7 +5075,7 @@ country_event = {
 					war = {
 						target = TUR
 						attacker_goal = {
-							casus_belli = acquire_any_state
+							casus_belli = ho_acquire_any_state_tri_1731
 							state_province_id = 1731
 						}
 					}
@@ -5090,7 +5090,7 @@ country_event = {
 					war = {
 						target = TUR
 						attacker_goal = {
-							casus_belli = place_in_the_sun
+							casus_belli = ho_place_in_the_sun_tri_1731
 							state_province_id = 1731
 						}
 						call_ally = yes
@@ -5106,7 +5106,7 @@ country_event = {
 					war = {
 						target = TUR
 						attacker_goal = {
-							casus_belli = place_in_the_sun
+							casus_belli = ho_place_in_the_sun_tri_1731
 							state_province_id = 1731
 						}
 					}

@@ -1311,7 +1311,7 @@ political_decisions = {
 			badboy = 5
 			set_country_flag = incite_yucatan_revolt
 			2181 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Maybe not?
-			2165 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Maybe not?
+			HXP_2165 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Maybe not?
 			MEX = {
 				release = YUC
 				country_event = 5578766

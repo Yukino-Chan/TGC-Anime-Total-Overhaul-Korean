@@ -1,448 +1,423 @@
-#Taiwan Region (2980000)
-#under the rule of China in 1836
-#Tainan (1452000/363000 POPS) #now part of Taiwan
 1485 = {
-	aristocrats = {
+aristocrats = {
 		culture = han_chinese
 		religion = confucian
 		size = 763
 	}
-	clergymen = {
+clergymen = {
 		culture = han_chinese
 		religion = confucian
 		size = 663
 	}
-	artisans = {
+artisans = {
 		culture = han_chinese
 		religion = confucian
 		size = 3300
 	}
-	soldiers = {
+soldiers = {
 		culture = han_chinese
 		religion = confucian
 		size = 663
 	}
-	farmers = {
+farmers = {
 		culture = han_chinese
 		religion = confucian
 		size = 60613
 	}
-	slaves = {
+slaves = {
 		culture = han_chinese
 		religion = confucian
 		size = 10000
 	}
-	aristocrats = {
+aristocrats = {
 		culture = han_chinese
 		religion = mahayana
 		size = 1750
 	}
-	clergymen = {
+clergymen = {
 		culture = han_chinese
 		religion = mahayana
 		size = 1250
 	}
-	artisans = {
+artisans = {
 		culture = han_chinese
 		religion = mahayana
 		size = 6250
 	}
-	soldiers = {
+soldiers = {
 		culture = han_chinese
 		religion = mahayana
 		size = 1250
 	}
-	farmers = {
+farmers = {
 		culture = han_chinese
 		religion = mahayana
 		size = 82388
 	}
-
-
-	serfs = {
+serfs = {
 		culture = han_chinese
 		religion = mahayana
 		size = 1000
 	}
 }
 
-5041 = {
-	aristocrats = {
-		culture = han_chinese
-		religion = confucian
-		size = 762
-	}
-	clergymen = {
-		culture = han_chinese
-		religion = confucian
-		size = 662
-	}
-	artisans = {
-		culture = han_chinese
-		religion = confucian
-		size = 3300
-	}
-	soldiers = {
-		culture = han_chinese
-		religion = confucian
-		size = 662
-	}
-	farmers = {
-		culture = han_chinese
-		religion = confucian
-		size = 60612
-	}
-	slaves = {
-		culture = han_chinese
-		religion = confucian
-		size = 10000
-	}
-	aristocrats = {
-		culture = han_chinese
-		religion = mahayana
-		size = 1750
-	}
-	clergymen = {
-		culture = han_chinese
-		religion = mahayana
-		size = 1250
-	}
-	artisans = {
-		culture = han_chinese
-		religion = mahayana
-		size = 6250
-	}
-	soldiers = {
-		culture = han_chinese
-		religion = mahayana
-		size = 1250
-	}
-	farmers = {
-		culture = han_chinese
-		religion = mahayana
-		size = 82387
-	}
-
-
-	serfs = {
-		culture = han_chinese
-		religion = mahayana
-		size = 1000
-	}
-}
-#Taitung (67k - 268k) #now part of Taiwan
-2562 = {
-	farmers = {
-		culture = formosan
-		religion = animist
-		size = 9488
-	}
-
-	slaves = {
-		culture = formosan
-		religion = animist
-		size = 9987
-	}
-
-	soldiers = {
-		culture = formosan
-		religion = animist
-		size = 2497
-	}
-
-	aristocrats = {
-		culture = formosan
-		religion = animist
-		size = 500
-	}
-
-	aristocrats = {
-		culture = han_chinese
-		religion = confucian
-		size = 75
-	}
-
-	clergymen = {
-		culture = han_chinese
-		religion = confucian
-		size = 50
-	}
-	artisans = {
-		culture = han_chinese
-		religion = confucian
-		size = 375
-	}
-	soldiers = {
-		culture = han_chinese
-		religion = confucian
-		size = 650
-	}
-	farmers = {
-		culture = han_chinese
-		religion = mahayana
-		size = 5456
-	}
-}
-
-6103 = {
-	farmers = {
-		culture = formosan
-		religion = animist
-		size = 9512
-	}
-
-	slaves = {
-		culture = formosan
-		religion = animist
-		size = 10013
-	}
-
-	soldiers = {
-		culture = formosan
-		religion = animist
-		size = 2503
-	}
-
-	aristocrats = {
-		culture = formosan
-		religion = animist
-		size = 500
-	}
-
-	aristocrats = {
-		culture = han_chinese
-		religion = confucian
-		size = 75
-	}
-
-	clergymen = {
-		culture = han_chinese
-		religion = confucian
-		size = 50
-	}
-	artisans = {
-		culture = han_chinese
-		religion = confucian
-		size = 375
-	}
-	soldiers = {
-		culture = han_chinese
-		religion = confucian
-		size = 650
-	}
-	farmers = {
-		culture = han_chinese
-		religion = mahayana
-		size = 5469
-	}
-}
-#Penghu (15K - 60 K POPS) #british trade post 1836 - old cocos island
 2406 = {
-	aristocrats = {
+aristocrats = {
 		culture = han_chinese
 		religion = confucian
 		size = 80
 	}
-
-	clergymen = {
+clergymen = {
 		culture = han_chinese
 		religion = confucian
 		size = 54
 	}
-	artisans = {
+artisans = {
 		culture = han_chinese
 		religion = confucian
 		size = 400
 	}
-	soldiers = {
+soldiers = {
 		culture = han_chinese
 		religion = confucian
 		size = 694
 	}
-	farmers = {
+farmers = {
 		culture = han_chinese
 		religion = mahayana
 		size = 6894
 	}
 }
 
+2562 = {
+farmers = {
+		culture = formosan
+		religion = animist
+		size = 9488
+	}
+slaves = {
+		culture = formosan
+		religion = animist
+		size = 9987
+	}
+soldiers = {
+		culture = formosan
+		religion = animist
+		size = 2497
+	}
+aristocrats = {
+		culture = formosan
+		religion = animist
+		size = 500
+	}
+aristocrats = {
+		culture = han_chinese
+		religion = confucian
+		size = 75
+	}
+clergymen = {
+		culture = han_chinese
+		religion = confucian
+		size = 50
+	}
+artisans = {
+		culture = han_chinese
+		religion = confucian
+		size = 375
+	}
+soldiers = {
+		culture = han_chinese
+		religion = confucian
+		size = 650
+	}
+farmers = {
+		culture = han_chinese
+		religion = mahayana
+		size = 5456
+	}
+}
+
+2681 = {
+aristocrats = {
+		culture = han_chinese
+		religion = confucian
+		size = 750
+	}
+bureaucrats = {
+		culture = han_chinese
+		religion = confucian
+		size = 200
+	}
+officers = {
+		culture = han_chinese
+		religion = confucian
+		size = 363
+	}
+clergymen = {
+		culture = han_chinese
+		religion = confucian
+		size = 613
+	}
+artisans = {
+		culture = han_chinese
+		religion = confucian
+		size = 3075
+	}
+soldiers = {
+		culture = han_chinese
+		religion = confucian
+		size = 625
+	}
+farmers = {
+		culture = han_chinese
+		religion = confucian
+		size = 35313
+	}
+aristocrats = {
+		culture = han_chinese
+		religion = mahayana
+		size = 2313
+	}
+clergymen = {
+		culture = han_chinese
+		religion = mahayana
+		size = 1863
+	}
+artisans = {
+		culture = han_chinese
+		religion = mahayana
+		size = 9300
+	}
+soldiers = {
+		culture = han_chinese
+		religion = mahayana
+		size = 1200
+	}
+farmers = {
+		culture = han_chinese
+		religion = mahayana
+		size = 124988
+	}
+soldiers = {
+		culture = han_chinese
+		religion = mahayana
+		size = 1513
+	}
+serfs = {
+		culture = han_chinese
+		religion = mahayana
+		size = 5000
+	}
+}
+
+5041 = {
+aristocrats = {
+		culture = han_chinese
+		religion = confucian
+		size = 762
+	}
+clergymen = {
+		culture = han_chinese
+		religion = confucian
+		size = 662
+	}
+artisans = {
+		culture = han_chinese
+		religion = confucian
+		size = 3300
+	}
+soldiers = {
+		culture = han_chinese
+		religion = confucian
+		size = 662
+	}
+farmers = {
+		culture = han_chinese
+		religion = confucian
+		size = 60612
+	}
+slaves = {
+		culture = han_chinese
+		religion = confucian
+		size = 10000
+	}
+aristocrats = {
+		culture = han_chinese
+		religion = mahayana
+		size = 1750
+	}
+clergymen = {
+		culture = han_chinese
+		religion = mahayana
+		size = 1250
+	}
+artisans = {
+		culture = han_chinese
+		religion = mahayana
+		size = 6250
+	}
+soldiers = {
+		culture = han_chinese
+		religion = mahayana
+		size = 1250
+	}
+farmers = {
+		culture = han_chinese
+		religion = mahayana
+		size = 82387
+	}
+serfs = {
+		culture = han_chinese
+		religion = mahayana
+		size = 1000
+	}
+}
+
 5952 = {
-	aristocrats = {
+aristocrats = {
 		culture = han_chinese
 		religion = confucian
 		size = 70
 	}
-
-	clergymen = {
+clergymen = {
 		culture = han_chinese
 		religion = confucian
 		size = 46
 	}
-	artisans = {
+artisans = {
 		culture = han_chinese
 		religion = confucian
 		size = 350
 	}
-	soldiers = {
+soldiers = {
 		culture = han_chinese
 		religion = confucian
 		size = 606
 	}
-	labourers = {
+labourers = {
 		culture = han_chinese
 		religion = mahayana
 		size = 6031
 	}
 }
-#Taipei (1452000/363000 POPS) formerly 2681 - Kikkiaki in Russia.txt
-2681 = {
-	aristocrats = {
-		culture = han_chinese
-		religion = confucian
-		size = 750
-	}
-	bureaucrats = {
-		culture = han_chinese
-		religion = confucian
-		size = 200
-	}
-	officers = {
-		culture = han_chinese
-		religion = confucian
-		size = 363
-	}
-	clergymen = {
-		culture = han_chinese
-		religion = confucian
-		size = 613
-	}
-	artisans = {
-		culture = han_chinese
-		religion = confucian
-		size = 3075
-	}
-	soldiers = {
-		culture = han_chinese
-		religion = confucian
-		size = 625
-	}
-	farmers = {
-		culture = han_chinese
-		religion = confucian
-		size = 35313
-	}
-	aristocrats = {
-		culture = han_chinese
-		religion = mahayana
-		size = 2313
-	}
-	clergymen = {
-		culture = han_chinese
-		religion = mahayana
-		size = 1863
-	}
-	artisans = {
-		culture = han_chinese
-		religion = mahayana
-		size = 9300
-	}
-	soldiers = {
-		culture = han_chinese
-		religion = mahayana
-		size = 1200
-	}
-	farmers = {
-		culture = han_chinese
-		religion = mahayana
-		size = 124988
-	}
 
-	soldiers = {
+6103 = {
+farmers = {
+		culture = formosan
+		religion = animist
+		size = 9512
+	}
+slaves = {
+		culture = formosan
+		religion = animist
+		size = 10013
+	}
+soldiers = {
+		culture = formosan
+		religion = animist
+		size = 2503
+	}
+aristocrats = {
+		culture = formosan
+		religion = animist
+		size = 500
+	}
+aristocrats = {
+		culture = han_chinese
+		religion = confucian
+		size = 75
+	}
+clergymen = {
+		culture = han_chinese
+		religion = confucian
+		size = 50
+	}
+artisans = {
+		culture = han_chinese
+		religion = confucian
+		size = 375
+	}
+soldiers = {
+		culture = han_chinese
+		religion = confucian
+		size = 650
+	}
+farmers = {
 		culture = han_chinese
 		religion = mahayana
-		size = 1513
+		size = 5469
 	}
-
-	serfs = {
-		culture = han_chinese
-		religion = mahayana
-		size = 5000
-	}
-
 }
 
 6237 = {
-	aristocrats = {
+aristocrats = {
 		culture = han_chinese
 		religion = confucian
 		size = 750
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = han_chinese
 		religion = confucian
 		size = 200
 	}
-	officers = {
+officers = {
 		culture = han_chinese
 		religion = confucian
 		size = 362
 	}
-	clergymen = {
+clergymen = {
 		culture = han_chinese
 		religion = confucian
 		size = 612
 	}
-	artisans = {
+artisans = {
 		culture = han_chinese
 		religion = confucian
 		size = 3075
 	}
-	soldiers = {
+soldiers = {
 		culture = han_chinese
 		religion = confucian
 		size = 625
 	}
-	farmers = {
+farmers = {
 		culture = han_chinese
 		religion = confucian
 		size = 35312
 	}
-	aristocrats = {
+aristocrats = {
 		culture = han_chinese
 		religion = mahayana
 		size = 2312
 	}
-	clergymen = {
+clergymen = {
 		culture = han_chinese
 		religion = mahayana
 		size = 1862
 	}
-	artisans = {
+artisans = {
 		culture = han_chinese
 		religion = mahayana
 		size = 9300
 	}
-	soldiers = {
+soldiers = {
 		culture = han_chinese
 		religion = mahayana
 		size = 1200
 	}
-	farmers = {
+farmers = {
 		culture = han_chinese
 		religion = mahayana
 		size = 124987
 	}
-
-	soldiers = {
+soldiers = {
 		culture = han_chinese
 		religion = mahayana
 		size = 1512
 	}
-
-	serfs = {
+serfs = {
 		culture = han_chinese
 		religion = mahayana
 		size = 5000
 	}
-
 }

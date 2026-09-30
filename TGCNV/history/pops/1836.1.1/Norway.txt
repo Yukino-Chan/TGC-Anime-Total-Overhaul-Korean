@@ -1,3085 +1,3626 @@
-#Trondelag-Nordland Region - 304000
-#Trondheim (140000/35000 POPS)
-
-
-
-#Bodo (56000/14000 POPS)
-
-
-
-#Hammerfest (36000/9000 POPS)
-
-
-
-#Alesund (72000/18000 POPS)
-
-
-
-#Vestlandet-Sorlandet Region : 544000
-#Bergen (180000/45000 POPS)
-
-
-
-#Christiansand (164000/41000 POPS)
-
-
-
-#Skien (68000/17000 POPS)
-
-
-
-#Drammen (132000/33000 POPS)
-
-
-
-#Ostlandet Region - 352000
-#Christiania (108000/27000 POPS)
-
-
-
-#Hamar (80000/20000 POPS)
-
-
-
-#Lillehammer (96000/24000 POPS)
-
-
-
-#Frederiksstad (68000/17000 POPS)
-
-
-
-#Jan Mayan (72000/18000 POPS)
-
-305 = {	aristocrats = {
+305 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 75
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 58
 	}
-	officers = {
+officers = {
 		culture = norwegian
 		religion = lutheran
 		size = 10
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 38
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 726
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 386
 	}
-	labourers = {
+labourers = {
 		culture = norwegian
 		religion = lutheran
 		size = 6025
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1896
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 12
 	}
 }
 
-306 = {	clergymen = {
+306 = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
-		size = 15
+		size = 14
 	}
-	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 31
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 236
-	}
-	soldiers = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 29
 	}
-	labourers = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 3752
+		size = 221
 	}
-	labourers = {
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 27
+	}
+labourers = {
+		culture = norwegian
+		religion = lutheran
+		size = 3515
+	}
+labourers = {
 		culture = finnish
 		religion = lutheran
-		size = 316
+		size = 296
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	officers = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
-		size = 13
+		size = 12
 	}
-	labourers = {
+labourers = {
 		culture = norwegian
 		religion = lutheran
-		size = 207
+		size = 194
 	}
-	clergymen = {
-		culture = swedish
-		religion = protestant
-		size = 0
-	}
-	artisans = {
+artisans = {
 		culture = swedish
 		religion = lutheran
 		size = 1
 	}
-	soldiers = {
-		culture = swedish
-		religion = protestant
-		size = 0
-	}
-	labourers = {
+labourers = {
 		culture = swedish
 		religion = lutheran
-		size = 18
-	}
-	clergymen = {
-		culture = swedish
-		religion = protestant
-		size = 0
-	}
-	artisans = {
-		culture = swedish
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = swedish
-		religion = protestant
-		size = 0
-	}
-	artisans = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-	labourers = {
-		culture = sami
-		religion = protestant
-		size = 0
-	}
-	labourers = {
-		culture = finnish
-		religion = protestant
-		size = 0
+		size = 17
 	}
 }
 
-307 = {	aristocrats = {
+307 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 10
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 5
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 48
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 5
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 474
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 228
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 190
 	}
 }
 
-308 = {	aristocrats = {
+308 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 124
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 24
 	}
-	officers = {
+officers = {
 		culture = norwegian
 		religion = lutheran
 		size = 4
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 50
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 810
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 159
 	}
-	labourers = {
+labourers = {
 		culture = norwegian
 		religion = lutheran
 		size = 2488
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 38
 	}
-	labourers = {
+labourers = {
 		culture = norwegian
 		religion = lutheran
 		size = 8946
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 11
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
 }
 
-309 = {	aristocrats = {
+309 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
-		size = 248
+		size = 221
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = norwegian
 		religion = lutheran
-		size = 189
+		size = 168
 	}
-	officers = {
-		culture = norwegian
-		religion = lutheran
-		size = 38
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 104
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 2212
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 757
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 21048
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 176
-	}
-}
-
-310 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 179
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 63
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 694
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 290
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 14030
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 1
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 20
-	}
-}
-
-311 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 41
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 28
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 267
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 11
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 5984
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 29
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 3
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 4
-	}
-}
-
-312 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 93
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 41
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 811
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 4
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 9683
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 60
-	}
-	bureaucrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 20
-	}
-	officers = {
-		culture = norwegian
-		religion = lutheran
-		size = 4
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 95
-	}
-	capitalists = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 3
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 2
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 21
-	}
-	capitalists = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-}
-
-3874 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 86
-	}
-	bureaucrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 126
-	}
-	officers = {
-		culture = norwegian
-		religion = lutheran
-		size = 26
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 36
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 1820
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 758
-	}
-	labourers = {
-		culture = norwegian
-		religion = lutheran
-		size = 5697
-	}
-	capitalists = {
-		culture = norwegian
-		religion = lutheran
-		size = 2
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 5
-	}
-	aristocrats = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	clergymen = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 3
-	}
-}
-
-314 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 84
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 43
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 467
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 47
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 8998
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 6
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 12
-	}
-	aristocrats = {
-		culture = swedish
-		religion = lutheran
-		size = 1
-	}
-	clergymen = {
-		culture = swedish
-		religion = lutheran
-		size = 1
-	}
-	artisans = {
-		culture = swedish
-		religion = lutheran
-		size = 4
-	}
-	soldiers = {
-		culture = swedish
-		religion = lutheran
-		size = 3
-	}
-	labourers = {
-		culture = swedish
-		religion = lutheran
-		size = 79
-	}
-	labourers = {
-		culture = finnish
-		religion = lutheran
-		size = 6
-	}
-}
-
-315 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 75
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 43
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 708
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 3
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 7813
-	}
-	bureaucrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 24
-	}
-	officers = {
-		culture = norwegian
-		religion = lutheran
-		size = 5
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 143
-	}
-	capitalists = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 1
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 54
-	}
-	clergymen = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 1
-	}
-}
-
-316 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 120
-	}
-	bureaucrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 170
-	}
-	officers = {
+officers = {
 		culture = norwegian
 		religion = lutheran
 		size = 34
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
-		size = 51
+		size = 93
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 2483
+		size = 1968
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
-		size = 27
+		size = 673
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
-		size = 8370
+		size = 18724
 	}
-	capitalists = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
-		size = 16
+		size = 157
 	}
-	soldiers = {
+}
+
+310 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
-		size = 997
+		size = 179
 	}
-	capitalists = {
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 63
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 694
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 290
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 14030
+	}
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	soldiers = {
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 20
+	}
+}
+
+311 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 41
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 28
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 267
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 11
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 5984
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 29
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
+	}
+}
+
+312 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 90
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 40
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 782
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 9336
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 58
+	}
+bureaucrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 19
+	}
+officers = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 92
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 20
+	}
+}
+
+313 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 91
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 38
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 2037
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 5657
+	}
+bureaucrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 144
+	}
+officers = {
+		culture = norwegian
+		religion = lutheran
+		size = 28
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 434
+	}
+capitalists = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 429
+	}
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
 }
 
-982 = {	clergymen = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-	farmers = {
-		culture = finnish
-		religion = lutheran
-		size = 48
-	}
-	farmers = {
-		culture = sami
-		religion = lutheran
-		size = 56
-	}
-	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 2
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 1
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 10
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 1
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 100
-	}
-    clergymen = {
-        culture = russian
-        religion = orthodox
-        size = 7
-    }
-
-    farmers = {
-        culture = sami
-        religion = orthodox
-        size = 92
-    }
-
-    farmers = {
-        culture = finnish
-        religion = orthodox
-        size = 52
-    }
-
-
-	clergymen = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-
-
-    clergymen = {
-        culture = russian
-        religion = orthodox
-        size = 0
-    }
-
-
-}
-
-3866 = {	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 43
-	}
-	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 86
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 930
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 2
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 276
-	}
-	farmers = {
-		culture = finnish
-		religion = lutheran
-		size = 23
-	}
-	bureaucrats = {
+314 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 84
 	}
-	officers = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
-		size = 14
+		size = 43
 	}
-	soldiers = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 562
+		size = 467
 	}
-	labourers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
-		size = 8796
+		size = 47
 	}
-	clergymen = {
-		culture = swedish
-		religion = protestant
-		size = 0
-	}
-	artisans = {
-		culture = swedish
+farmers = {
+		culture = norwegian
 		religion = lutheran
-		size = 3
+		size = 8998
 	}
-	soldiers = {
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 6
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 12
+	}
+aristocrats = {
 		culture = swedish
 		religion = lutheran
 		size = 1
 	}
-	labourers = {
+clergymen = {
+		culture = swedish
+		religion = lutheran
+		size = 1
+	}
+artisans = {
+		culture = swedish
+		religion = lutheran
+		size = 4
+	}
+soldiers = {
+		culture = swedish
+		religion = lutheran
+		size = 3
+	}
+labourers = {
+		culture = swedish
+		religion = lutheran
+		size = 79
+	}
+labourers = {
+		culture = finnish
+		religion = lutheran
+		size = 6
+	}
+}
+
+315 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 75
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 43
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 708
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 7813
+	}
+bureaucrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 24
+	}
+officers = {
+		culture = norwegian
+		religion = lutheran
+		size = 5
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 143
+	}
+capitalists = {
+		culture = norwegian
+		religion = protestant
+		size = 0
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 54
+	}
+clergymen = {
+		culture = norwegian
+		religion = protestant
+		size = 0
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+}
+
+316 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 120
+	}
+bureaucrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 170
+	}
+officers = {
+		culture = norwegian
+		religion = lutheran
+		size = 34
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 51
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 2483
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 27
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 8370
+	}
+capitalists = {
+		culture = norwegian
+		religion = protestant
+		size = 0
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 16
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 997
+	}
+capitalists = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+}
+
+982 = {
+clergymen = {
+		culture = finnish
+		religion = protestant
+		size = 0
+	}
+soldiers = {
+		culture = finnish
+		religion = protestant
+		size = 0
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 48
+	}
+farmers = {
+		culture = sami
+		religion = lutheran
+		size = 56
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 10
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 100
+	}
+clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 7
+    }
+farmers = {
+        culture = sami
+        religion = orthodox
+        size = 92
+    }
+farmers = {
+        culture = finnish
+        religion = orthodox
+        size = 52
+    }
+clergymen = {
+		culture = finnish
+		religion = protestant
+		size = 0
+	}
+soldiers = {
+		culture = finnish
+		religion = protestant
+		size = 0
+	}
+clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 0
+    }
+}
+
+3866 = {
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 43
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 86
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 930
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 276
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 23
+	}
+bureaucrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 84
+	}
+officers = {
+		culture = norwegian
+		religion = lutheran
+		size = 14
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 562
+	}
+labourers = {
+		culture = norwegian
+		religion = lutheran
+		size = 8796
+	}
+clergymen = {
+		culture = swedish
+		religion = protestant
+		size = 0
+	}
+artisans = {
+		culture = swedish
+		religion = lutheran
+		size = 3
+	}
+soldiers = {
+		culture = swedish
+		religion = lutheran
+		size = 1
+	}
+labourers = {
 		culture = swedish
 		religion = lutheran
 		size = 63
 	}
 }
 
-3867 = {	aristocrats = {
+3867 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 15
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 8
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 101
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 3
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1575
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 126
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 215
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 10
 	}
-	clergymen = {
+clergymen = {
 		culture = swedish
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = swedish
 		religion = protestant
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = swedish
 		religion = protestant
 		size = 0
 	}
-	labourers = {
+labourers = {
 		culture = swedish
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = finnish
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = protestant
 		size = 0
 	}
 }
 
-3868 = {	aristocrats = {
+3868 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 22
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 11
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 110
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 3
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1100
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 528
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 440
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 8
 	}
 }
 
-3869 = {	aristocrats = {
+3869 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
-		size = 216
+		size = 203
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
-		size = 81
+		size = 76
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 1149
+		size = 1081
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 5
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
-		size = 19329
+		size = 18183
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
-		size = 38
+		size = 36
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
-		size = 103
+		size = 97
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
-		size = 52
+		size = 49
 	}
-	soldiers = {
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 10
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 6
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 31
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 524
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+}
+
+3870 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 27
+	}
+bureaucrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 21
+	}
+officers = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
+	}
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 11
 	}
-}
-
-3870 = {	aristocrats = {
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 244
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 84
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 2324
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 19
+	}
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 259
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 311
 	}
-	officers = {
+officers = {
 		culture = norwegian
 		religion = lutheran
 		size = 62
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 127
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 3144
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 271
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 25061
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 972
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 19
 	}
 }
 
-3871 = {	aristocrats = {
+3871 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
-		size = 144
+		size = 143
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 43
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 507
+		size = 505
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 10
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
-		size = 9696
+		size = 9654
 	}
-	aristocrats = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	clergymen = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
-		size = 239
+		size = 238
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 7
 	}
-}
-
-3872 = {	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
-		size = 29
+		size = 1
 	}
-	clergymen = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 22
+		size = 2
 	}
-	artisans = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
-		size = 218
+		size = 42
 	}
-	soldiers = {
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 12
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 7
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 245
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 6
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 20
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 10
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 381
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 9
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 5
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 177
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 8
 	}
-	farmers = {
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 150
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 41
+	}
+}
+
+3872 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 29
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 22
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 218
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 8
+	}
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 4988
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 21
 	}
 }
 
-3873 = {	aristocrats = {
+3873 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 134
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 58
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 901
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 9
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 14910
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 39
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 65
 	}
 }
 
-313 = {	aristocrats = {
+3874 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
-		size = 101
+		size = 86
 	}
-	clergymen = {
+bureaucrats = {
 		culture = norwegian
 		religion = lutheran
-		size = 42
+		size = 126
 	}
-	artisans = {
+officers = {
 		culture = norwegian
 		religion = lutheran
-		size = 2263
+		size = 26
 	}
-	soldiers = {
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 36
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 1820
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 758
+	}
+labourers = {
+		culture = norwegian
+		religion = lutheran
+		size = 5697
+	}
+capitalists = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	farmers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
-		size = 6286
+		size = 5
 	}
-	bureaucrats = {
+aristocrats = {
 		culture = norwegian
-		religion = lutheran
-		size = 160
+		religion = protestant
+		size = 0
 	}
-	officers = {
+clergymen = {
 		culture = norwegian
-		religion = lutheran
-		size = 31
+		religion = protestant
+		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
-		religion = lutheran
-		size = 482
+		religion = protestant
+		size = 0
 	}
-	capitalists = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
-		size = 2
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 477
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 2
+		size = 3
 	}
 }
 
-3875 = {	aristocrats = {
+3875 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 99
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 6
 	}
-	officers = {
+officers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 51
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 592
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 40
 	}
-	labourers = {
+labourers = {
 		culture = norwegian
 		religion = lutheran
 		size = 629
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 8
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 10132
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 11
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 54
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = swedish
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = swedish
 		religion = protestant
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = swedish
 		religion = protestant
 		size = 0
 	}
-	labourers = {
+labourers = {
 		culture = swedish
 		religion = lutheran
 		size = 44
 	}
-	aristocrats = {
+aristocrats = {
 		culture = swedish
 		religion = protestant
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = swedish
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = swedish
 		religion = lutheran
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = swedish
 		religion = lutheran
 		size = 1
 	}
-	labourers = {
+labourers = {
 		culture = finnish
 		religion = lutheran
 		size = 3
 	}
 }
 
-3876 = {	aristocrats = {
+3876 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 115
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 68
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 710
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 8
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 13063
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 23
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 75
 	}
 }
 
-3877 = {	aristocrats = {
+3877 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 58
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 29
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 289
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 29
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 6574
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 29
 	}
-	aristocrats = {
+aristocrats = {
 		culture = swedish
 		religion = lutheran
 		size = 3
 	}
-	clergymen = {
+clergymen = {
 		culture = swedish
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = swedish
 		religion = lutheran
 		size = 13
 	}
-	soldiers = {
+soldiers = {
 		culture = swedish
 		religion = lutheran
 		size = 6
 	}
-	farmers = {
+farmers = {
 		culture = swedish
 		religion = lutheran
 		size = 270
 	}
 }
 
-6357 = {	farmers = {
+6357 = {
+farmers = {
 		culture = polar_bears
 		religion = animist
 		size = 11
 	}
 }
 
-6577 = {	aristocrats = {
+6577 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 27
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 12
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 184
+		size = 183
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 21
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
-		size = 3055
+		size = 3035
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-}
-
-6588 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 6
-	}
-	bureaucrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 6
-	}
-	officers = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	clergymen = {
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 20
+	}
+}
+
+6588 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 6
+	}
+bureaucrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 6
+	}
+officers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 3
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 64
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 39
 	}
-	labourers = {
+labourers = {
 		culture = norwegian
 		religion = lutheran
 		size = 612
 	}
 }
 
-6589 = {	aristocrats = {
+6589 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 120
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 113
 	}
-	officers = {
+officers = {
 		culture = norwegian
 		religion = lutheran
 		size = 19
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 60
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 1261
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 376
 	}
-	labourers = {
+labourers = {
 		culture = norwegian
 		religion = lutheran
 		size = 11763
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 377
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 5
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 740
 	}
-	clergymen = {
+clergymen = {
 		culture = swedish
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = swedish
 		religion = lutheran
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = swedish
 		religion = protestant
 		size = 0
 	}
-	labourers = {
+labourers = {
 		culture = swedish
 		religion = lutheran
 		size = 34
 	}
 }
 
-6590 = {	clergymen = {
+6590 = {
+clergymen = {
 		culture = finnish
 		religion = lutheran
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = finnish
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
-		size = 265
+		size = 258
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
-		size = 296
+		size = 288
 	}
-	soldiers = {
+soldiers = {
 		culture = finnish
 		religion = lutheran
 		size = 1
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 7
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 3
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 32
+		size = 31
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 3
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
-		size = 324
+		size = 315
 	}
 }
 
-6657 = {	clergymen = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-	farmers = {
+6657 = {
+farmers = {
 		culture = finnish
 		religion = lutheran
-		size = 60
+		size = 57
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
-		size = 72
+		size = 68
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 3
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 14
+		size = 13
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
-		size = 136
+		size = 129
 	}
-    clergymen = {
+clergymen = {
         culture = russian
         religion = orthodox
         size = 3
     }
-
-    farmers = {
+farmers = {
         culture = sami
         religion = orthodox
-        size = 48
+        size = 46
     }
-
-    farmers = {
+farmers = {
         culture = finnish
         religion = orthodox
-        size = 28
+        size = 27
     }
-
-
 }
 
-6670 = {	aristocrats = {
+6670 = {
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 2
+	}
+farmers = {
+		culture = sami
+		religion = lutheran
+		size = 3
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 6
+	}
+farmers = {
+        culture = sami
+        religion = orthodox
+        size = 2
+    }
+farmers = {
+        culture = finnish
+        religion = orthodox
+        size = 1
+    }
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 9
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 5
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 47
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 5
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 472
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 227
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 189
 	}
 }
 
-6671 = {	clergymen = {
+6671 = {
+clergymen = {
 		culture = finnish
 		religion = protestant
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = finnish
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 27
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 30
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 46
 	}
 }
 
-6672 = {	aristocrats = {
+6672 = {
+aristocrats = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 21
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 10
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 8
 	}
 }
 
-6673 = {	aristocrats = {
+6673 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 4
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 43
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 20
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 17
 	}
 }
 
-6674 = {	aristocrats = {
+6674 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 6
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 64
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 31
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 25
 	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+farmers = {
+		culture = sami
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 1
+	}
 }
 
-6675 = {	aristocrats = {
+6675 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 48
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 23
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 19
 	}
 }
 
-6676 = {	aristocrats = {
+6676 = {
+aristocrats = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 20
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 10
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 8
 	}
 }
 
-6677 = {	aristocrats = {
+6677 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 4
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 44
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 21
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 18
 	}
 }
 
-6678 = {	aristocrats = {
+6678 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 4
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 18
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 184
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 89
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 74
 	}
 }
 
-6679 = {	aristocrats = {
+6679 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 5
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 23
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 226
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 109
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 90
 	}
 }
 
-6756 = {	aristocrats = {
+6756 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 74
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 37
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 373
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 12
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 8176
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 26
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 32
 	}
-	aristocrats = {
+aristocrats = {
 		culture = swedish
 		religion = lutheran
 		size = 37
 	}
-	clergymen = {
+clergymen = {
 		culture = swedish
 		religion = lutheran
 		size = 20
 	}
-	artisans = {
+artisans = {
 		culture = swedish
 		religion = lutheran
 		size = 191
 	}
-	soldiers = {
+soldiers = {
 		culture = swedish
 		religion = lutheran
 		size = 9
 	}
-	farmers = {
+farmers = {
 		culture = swedish
 		religion = lutheran
 		size = 3756
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 53
 	}
-	soldiers = {
+soldiers = {
 		culture = swedish
 		religion = lutheran
 		size = 7
 	}
-	soldiers = {
+soldiers = {
 		culture = swedish
 		religion = lutheran
 		size = 67
 	}
 }
 
-6759 = {	clergymen = {
+6759 = {
+clergymen = {
 		culture = finnish
 		religion = lutheran
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = finnish
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 158
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 185
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 7
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 3
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 33
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 3
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 328
 	}
-}
-
-6776 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 135
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 39
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 451
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 239
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 8758
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 9
-	}
-}
-
-6777 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 2
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 2
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 11
-	}
-	soldiers = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
-		size = 222
+		size = 15
 	}
-	soldiers = {
-		culture = norwegian
+farmers = {
+		culture = sami
 		religion = lutheran
-		size = 1
+		size = 7
 	}
-}
-
-6778 = {	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 3
-	}
-	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 6
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 45
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 6
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 790
-	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
-		size = 66
+		size = 6
 	}
 }
 
-6779 = {	clergymen = {
+6776 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
-		size = 1
+		size = 120
 	}
-	aristocrats = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
-		size = 2
+		size = 34
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 12
+		size = 400
 	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 2
-	}
-	farmers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 212
 	}
-	farmers = {
-		culture = finnish
-		religion = lutheran
-		size = 18
-	}
-}
-
-6780 = {	clergymen = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	aristocrats = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
-		size = 1
+		size = 7764
 	}
-	artisans = {
+soldiers = {
 		culture = norwegian
-		religion = lutheran
-		size = 5
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 1
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 94
-	}
-	farmers = {
-		culture = finnish
 		religion = lutheran
 		size = 8
 	}
 }
 
-6781 = {	clergymen = {
+6777 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 11
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 222
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+}
+
+6778 = {
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 6
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 45
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 6
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 790
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 66
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 30
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 3
+	}
+}
+
+6779 = {
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 10
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 182
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 15
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 14
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 1
+	}
+}
+
+6780 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 5
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 90
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 8
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 49
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 4
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+}
+
+6781 = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 4
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 62
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 5
 	}
 }
 
-6782 = {	clergymen = {
+6782 = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 17
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 302
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 25
 	}
 }
 
-6783 = {	clergymen = {
+6783 = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 7
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 128
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 11
 	}
 }
 
-6784 = {	clergymen = {
+6784 = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 11
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 187
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 16
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
 }
 
-6785 = {	clergymen = {
+6785 = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 96
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 8
 	}
 }
 
-6786 = {	clergymen = {
+6786 = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 13
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 219
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 19
 	}
 }
 
-6787 = {	clergymen = {
+6787 = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 4
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 28
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 4
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 480
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 40
 	}
 }
 
-6788 = {	clergymen = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	aristocrats = {
+6788 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
-		size = 7
+		size = 6
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
+		religion = lutheran
+		size = 109
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 10
+	}
+}
+
+6789 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 5
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 47
+	}
+farmers = {
+		culture = sami
+		religion = lutheran
+		size = 23
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 19
+	}
+}
+
+6790 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 6
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 31
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 309
+	}
+farmers = {
+		culture = sami
+		religion = lutheran
+		size = 148
+	}
+farmers = {
+		culture = finnish
 		religion = lutheran
 		size = 123
 	}
-	farmers = {
-		culture = finnish
-		religion = lutheran
-		size = 11
-	}
 }
 
-6789 = {	aristocrats = {
+6791 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 1
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 6
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 1
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 62
-	}
-	farmers = {
-		culture = sami
-		religion = lutheran
-		size = 30
-	}
-	farmers = {
-		culture = finnish
-		religion = lutheran
-		size = 25
-	}
-}
-
-6790 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 6
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 3
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 31
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 3
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 311
-	}
-	farmers = {
-		culture = sami
-		religion = lutheran
-		size = 149
-	}
-	farmers = {
-		culture = finnish
-		religion = lutheran
-		size = 124
-	}
-}
-
-6791 = {	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 1
-	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = protestant
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 31
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 15
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 13
 	}
 }
 
-6792 = {	aristocrats = {
+6792 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	clergymen = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 7
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 72
 	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 34
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 29
 	}
 }
 
-6793 = {	clergymen = {
-		culture = norwegian
-		religion = protestant
-		size = 0
-	}
-	aristocrats = {
-		culture = norwegian
-		religion = lutheran
-		size = 5
-	}
-	artisans = {
-		culture = norwegian
-		religion = lutheran
-		size = 31
-	}
-	soldiers = {
-		culture = norwegian
-		religion = lutheran
-		size = 1
-	}
-	farmers = {
-		culture = norwegian
-		religion = lutheran
-		size = 539
-	}
-	farmers = {
-		culture = finnish
-		religion = lutheran
-		size = 45
-	}
-	clergymen = {
-		culture = norwegian
-		religion = lutheran
-		size = 2
-	}
-	soldiers = {
+6793 = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 4
 	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 25
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 436
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 37
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
 }
 
-6794 = {	clergymen = {
+6794 = {
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 8
 	}
-	aristocrats = {
+aristocrats = {
 		culture = norwegian
 		religion = lutheran
 		size = 16
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 123
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 12
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
-		size = 2144
+		size = 2140
 	}
-	farmers = {
+farmers = {
 		culture = finnish
 		religion = lutheran
 		size = 182
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 4
 	}
-	clergymen = {
-		culture = swedish
-		religion = protestant
-		size = 0
-	}
-	artisans = {
+artisans = {
 		culture = swedish
 		religion = lutheran
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = swedish
 		religion = lutheran
 		size = 2
 	}
-	labourers = {
+labourers = {
 		culture = swedish
 		religion = lutheran
 		size = 13
 	}
-	artisans = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-	farmers = {
+farmers = {
 		culture = sami
 		religion = lutheran
 		size = 5
 	}
-}
-
-7169 = {	clergymen = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-	farmers = {
-		culture = finnish
-		religion = lutheran
-		size = 177
-	}
-	farmers = {
-		culture = sami
-		religion = lutheran
-		size = 198
-	}
-	clergymen = {
-		culture = finnish
-		religion = lutheran
-		size = 1
-	}
-	soldiers = {
-		culture = finnish
-		religion = protestant
-		size = 0
-	}
-	aristocrats = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 4
 	}
-	clergymen = {
+}
+
+7169 = {
+clergymen = {
+		culture = finnish
+		religion = protestant
+		size = 0
+	}
+soldiers = {
+		culture = finnish
+		religion = protestant
+		size = 0
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 177
+	}
+farmers = {
+		culture = sami
+		religion = lutheran
+		size = 198
+	}
+clergymen = {
+		culture = finnish
+		religion = lutheran
+		size = 1
+	}
+soldiers = {
+		culture = finnish
+		religion = protestant
+		size = 0
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
+	}
+clergymen = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	artisans = {
+artisans = {
 		culture = norwegian
 		religion = lutheran
 		size = 22
 	}
-	soldiers = {
+soldiers = {
 		culture = norwegian
 		religion = lutheran
 		size = 2
 	}
-	farmers = {
+farmers = {
 		culture = norwegian
 		religion = lutheran
 		size = 217
+	}
+}
+
+7260 = {
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = sami
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+}
+
+7262 = {
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 3
+	}
+farmers = {
+		culture = sami
+		religion = lutheran
+		size = 4
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
+	}
+}
+
+7263 = {
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 3
+	}
+farmers = {
+		culture = sami
+		religion = lutheran
+		size = 3
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
+	}
+}
+
+7264 = {
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = sami
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+}
+
+7266 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 7
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 37
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 622
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+}
+
+7406 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 29
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 347
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+bureaucrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+}
+
+7407 = {
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 10
+	}
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 226
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 629
+	}
+bureaucrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 16
+	}
+officers = {
+		culture = norwegian
+		religion = lutheran
+		size = 3
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 48
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 48
+	}
+}
+
+7411 = {
+clergymen = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+aristocrats = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 15
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+labourers = {
+		culture = norwegian
+		religion = lutheran
+		size = 237
+	}
+labourers = {
+		culture = finnish
+		religion = lutheran
+		size = 20
+	}
+soldiers = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+labourers = {
+		culture = norwegian
+		religion = lutheran
+		size = 13
+	}
+labourers = {
+		culture = swedish
+		religion = lutheran
+		size = 1
+	}
+}
+
+7412 = {
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 1
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 26
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 2
+	}
+}
+
+7413 = {
+artisans = {
+		culture = norwegian
+		religion = lutheran
+		size = 2
+	}
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 28
+	}
+farmers = {
+		culture = finnish
+		religion = lutheran
+		size = 2
+	}
+}
+
+7419 = {
+farmers = {
+		culture = norwegian
+		religion = lutheran
+		size = 4
 	}
 }

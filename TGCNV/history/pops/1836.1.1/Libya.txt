@@ -1,751 +1,1056 @@
-#Tripoli-Libya(600000)
-#Tripolitania Region (335000)
-#Tripoli (75000/30000 POPS)
 1731 = {
-	aristocrats = {
+aristocrats = {
 		culture = libyan
 		religion = sunni
 		size = 338
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = libyan
 		religion = sunni
 		size = 25
 	}
-	clergymen = {
+clergymen = {
 		culture = libyan
 		religion = sunni
 		size = 175
 	}
-	officers = {
+officers = {
 		culture = libyan
 		religion = sunni
 		size = 38
 	}
-	artisans  = {
+artisans  = {
 		culture = libyan
 		religion = sunni
 		size = 1750
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
 		size = 1000
 	}
-	farmers  = {
+farmers  = {
 		culture = libyan
 		religion = sunni
 		size = 10175
 	}
-	clergymen = {
+clergymen = {
 		culture = sephardic
 		religion = jewish
 		size = 13
 	}
-	artisans = {
+artisans = {
 		culture = sephardic
 		religion = jewish
 		size = 738
 	}
-	slaves = {
+slaves = {
 		culture = forest_bantu
 		religion = sunni
 		size = 750
 	}
 }
 
-5285 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 337
-	}
-	bureaucrats = {
-		culture = libyan
-		religion = sunni
-		size = 25
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 175
-	}
-	officers = {
-		culture = libyan
-		religion = sunni
-		size = 37
-	}
-	artisans  = {
-		culture = libyan
-		religion = sunni
-		size = 1750
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 1000
-	}
-	farmers  = {
-		culture = libyan
-		religion = sunni
-		size = 10175
-	}
-	clergymen = {
-		culture = sephardic
-		religion = jewish
-		size = 12
-	}
-	artisans = {
-		culture = sephardic
-		religion = jewish
-		size = 737
-	}
-	slaves = {
-		culture = forest_bantu
-		religion = sunni
-		size = 750
-	}
-}
-
-#Gharyan (40000/10000 POPS)
 1732 = {
-	aristocrats = {
+aristocrats = {
 		culture = libyan
 		religion = sunni
 		size = 25
 	}
-	clergymen  = {
+clergymen  = {
 		culture = libyan
 		religion = sunni
 		size = 38
 	}
-	artisans = {
+artisans = {
 		culture = libyan
 		religion = sunni
 		size = 75
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
 		size = 750
 	}
-	farmers = {
+farmers = {
 		culture = libyan
 		religion = sunni
 		size = 1225
 	}
-	aristocrats = {
+aristocrats = {
 		culture = berber
 		religion = sunni
 		size = 38
 	}
-	clergymen = {
+clergymen = {
 		culture = berber
 		religion = sunni
 		size = 38
 	}
-	artisans = {
+artisans = {
 		culture = berber
 		religion = sunni
 		size = 100
 	}
-	soldiers = {
+soldiers = {
 		culture = berber
 		religion = sunni
 		size = 600
 	}
-	farmers = {
+farmers = {
 		culture = berber
 		religion = sunni
 		size = 1862
 	}
-	slaves 	= {
+slaves 	= {
 		culture = forest_bantu
 		religion = sunni
 		size = 250
 	}
 }
 
-5286 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 25
-	}
-	clergymen  = {
-		culture = libyan
-		religion = sunni
-		size = 37
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 75
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 750
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 1225
-	}
-	aristocrats = {
-		culture = berber
-		religion = sunni
-		size = 37
-	}
-	clergymen = {
-		culture = berber
-		religion = sunni
-		size = 37
-	}
-	artisans = {
-		culture = berber
-		religion = sunni
-		size = 100
-	}
-	soldiers = {
-		culture = berber
-		religion = sunni
-		size = 600
-	}
-	farmers = {
-		culture = berber
-		religion = sunni
-		size = 1863
-	}
-	slaves 	= {
-		culture = forest_bantu
-		religion = sunni
-		size = 250
-	}
-}
-#Misratah (60000/20000 POPS)
 1733 = {
-	aristocrats = {
+aristocrats = {
 		culture = libyan
 		religion = sunni
 		size = 151
 	}
-	clergymen = {
+clergymen = {
 		culture = libyan
 		religion = sunni
 		size = 75
 	}
-	artisans = {
+artisans = {
 		culture = libyan
 		religion = sunni
 		size = 388
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
 		size = 50
 	}
-	farmers = {
+farmers = {
 		culture = libyan
 		religion = sunni
 		size = 7703
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
 		size = 750
 	}
-	slaves = {
+slaves = {
 		culture = forest_bantu
 		religion = sunni
 		size = 625
 	}
-	clergymen = {
+clergymen = {
 		culture = mizrahi
 		religion = jewish
 		size = 5
 	}
-	artisans = {
+artisans = {
 		culture = mizrahi
 		religion = jewish
 		size = 245
 	}
 }
 
-5287 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 149
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 75
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 387
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 50
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 7722
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 750
-	}
-	slaves = {
-		culture = forest_bantu
-		religion = sunni
-		size = 625
-	}
-	clergymen = {
-		culture = mizrahi
-		religion = jewish
-		size = 5
-	}
-	artisans = {
-		culture = mizrahi
-		religion = jewish
-		size = 245
-	}
-}
-#Sirt (100000/25000 POPS)
 1734 = {
-	aristocrats = {
+aristocrats = {
 		culture = libyan
 		religion = sunni
 		size = 188
 	}
-	clergymen = {
+clergymen = {
 		culture = libyan
 		religion = sunni
 		size = 101
 	}
-	artisans = {
+artisans = {
 		culture = libyan
 		religion = sunni
 		size = 525
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
 		size = 38
 	}
-	farmers = {
+farmers = {
 		culture = libyan
 		religion = sunni
 		size = 10150
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
 		size = 1000
 	}
-	slaves = {
+slaves = {
 		culture = forest_bantu
 		religion = sunni
 		size = 500
 	}
 }
 
-5288 = {
-	aristocrats = {
+1735 = {
+aristocrats = {
 		culture = libyan
 		religion = sunni
-		size = 187
+		size = 225
 	}
-	clergymen = {
+bureaucrats = {
 		culture = libyan
 		religion = sunni
-		size = 99
+		size = 13
 	}
-	artisans = {
+officers = {
 		culture = libyan
 		religion = sunni
-		size = 525
+		size = 13
 	}
-	soldiers = {
+clergymen = {
 		culture = libyan
 		religion = sunni
-		size = 37
+		size = 75
 	}
-	farmers = {
+artisans = {
 		culture = libyan
 		religion = sunni
-		size = 10150
+		size = 368
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
-		size = 1000
+		size = 600
 	}
-	slaves = {
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 13045
+	}
+clergymen = {
+		culture = bedouin
+		religion = sunni
+		size = 38
+	}
+artisans = {
+		culture = bedouin
+		religion = sunni
+		size = 250
+	}
+slaves = {
 		culture = forest_bantu
 		religion = sunni
-		size = 500
+		size = 750
+	}
+clergymen = {
+		culture = mizrahi
+		religion = jewish
+		size = 3
+	}
+artisans = {
+		culture = mizrahi
+		religion = jewish
+		size = 123
 	}
 }
-#Waddan (15000/6500 POPS)
+
+1736 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 100
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 63
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 325
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 63
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 5950
+	}
+slaves = {
+		culture = forest_bantu
+		religion = sunni
+		size = 250
+	}
+}
+
+1737 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 63
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 50
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 225
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 38
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 4750
+	}
+slaves = {
+		culture = forest_bantu
+		religion = sunni
+		size = 875
+	}
+}
+
+1738 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 13
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 25
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 75
+	}
+soldiers = {
+		culture = bedouin
+		religion = sunni
+		size = 13
+	}
+farmers = {
+		culture = bedouin
+		religion = sunni
+		size = 2375
+	}
+}
+
 1740 = {
-	aristocrats = {
+aristocrats = {
 		culture = libyan
 		religion = sunni
 		size = 26
 	}
-	clergymen = {
+clergymen = {
 		culture = libyan
 		religion = sunni
 		size = 25
 	}
-	artisans = {
+artisans = {
 		culture = libyan
 		religion = sunni
 		size = 75
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
 		size = 13
 	}
-	farmers = {
+farmers = {
 		culture = libyan
 		religion = sunni
 		size = 1375
 	}
-	clergymen = {
+clergymen = {
 		culture = berber
 		religion = sunni
 		size = 13
 	}
-	artisans = {
+artisans = {
 		culture = berber
 		religion = sunni
 		size = 25
 	}
-	soldiers = {
+soldiers = {
 		culture = berber
 		religion = sunni
 		size = 1250
 	}
-	farmers = {
+farmers = {
 		culture = berber
 		religion = sunni
 		size = 450
 	}
 }
 
-5294 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 24
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 25
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 75
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 12
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 1375
-	}
-	clergymen = {
-		culture = berber
-		religion = sunni
-		size = 12
-	}
-	artisans = {
-		culture = berber
-		religion = sunni
-		size = 25
-	}
-	soldiers = {
-		culture = berber
-		religion = sunni
-		size = 1250
-	}
-	farmers = {
-		culture = berber
-		religion = sunni
-		size = 450
-	}
-}
-#Wath (15000/4000 POPS)
-1742 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 8
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 13
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 25
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 5
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 450
-	}
-	aristocrats = {
-		culture = berber
-		religion = sunni
-		size = 25
-	}
-	clergymen = {
-		culture = berber
-		religion = sunni
-		size = 25
-	}
-	artisans = {
-		culture = berber
-		religion = sunni
-		size = 50
-	}
-	soldiers = {
-		culture = berber
-		religion = sunni
-		size = 13
-	}
-	farmers = {
-		culture = berber
-		religion = sunni
-		size = 1388
-	}
-}
-
-5297 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 7
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 12
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 25
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 5
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 450
-	}
-	aristocrats = {
-		culture = berber
-		religion = sunni
-		size = 25
-	}
-	clergymen = {
-		culture = berber
-		religion = sunni
-		size = 25
-	}
-	artisans = {
-		culture = berber
-		religion = sunni
-		size = 50
-	}
-	soldiers = {
-		culture = berber
-		religion = sunni
-		size = 12
-	}
-	farmers = {
-		culture = berber
-		religion = sunni
-		size = 1387
-	}
-}
-#Murzuk (30000/8000 POPS)
 1741 = {
-	aristocrats = {
+aristocrats = {
 		culture = libyan
 		religion = sunni
 		size = 6
                 rebel_type = unciv_reactionary_rebels
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = libyan
 		religion = sunni
 		size = 8
 	}
-	officers = {
+officers = {
 		culture = libyan
 		religion = sunni
 		size = 11
                 rebel_type = unciv_reactionary_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = libyan
 		religion = sunni
 		size = 9
 	}
-	artisans = {
+artisans = {
 		culture = libyan
 		religion = sunni
 		size = 18
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
 		size = 4
 	}
-	farmers = {
+farmers = {
 		culture = libyan
 		religion = sunni
 		size = 301
 	}
-	aristocrats = {
+aristocrats = {
 		culture = berber
 		religion = sunni
 		size = 9
                 militancy = 5
 	        rebel_type = unciv_reactionary_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = berber
 		religion = sunni
 		size = 9
 	}
-	artisans = {
+artisans = {
 		culture = berber
 		religion = sunni
 		size = 61
                 rebel_type = unciv_reactionary_rebels
 	}
-	soldiers = {
+soldiers = {
 		culture = berber
 		religion = sunni
 		size = 1001
 		militancy = 5
 		rebel_type = unciv_reactionary_rebels
 	}
-	farmers = {
+farmers = {
 		culture = berber
 		religion = sunni
 		size = 901
 		militancy = 5
 		rebel_type = unciv_reactionary_rebels
 	}
-	slaves = {
+slaves = {
 		culture = berber
 		religion = sunni
 		size = 368
 	}
 }
 
+1742 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 8
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 13
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 25
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 5
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 450
+	}
+aristocrats = {
+		culture = berber
+		religion = sunni
+		size = 25
+	}
+clergymen = {
+		culture = berber
+		religion = sunni
+		size = 25
+	}
+artisans = {
+		culture = berber
+		religion = sunni
+		size = 50
+	}
+soldiers = {
+		culture = berber
+		religion = sunni
+		size = 13
+	}
+farmers = {
+		culture = berber
+		religion = sunni
+		size = 1388
+	}
+}
+
+2585 = {
+aristocrats = {
+		culture = bedouin
+		religion = sunni
+		size = 25
+	}
+clergymen = {
+		culture = bedouin
+		religion = sunni
+		size = 13
+	}
+artisans = {
+		culture = bedouin
+		religion = sunni
+		size = 63
+	}
+soldiers = {
+		culture = bedouin
+		religion = sunni
+		size = 25
+	}
+farmers = {
+		culture = bedouin
+		religion = sunni
+		size = 375
+	}
+aristocrats = {
+		culture = teda
+		religion = sunni
+		size = 13
+	}
+clergymen = {
+		culture = teda
+		religion = sunni
+		size = 13
+	}
+artisans = {
+		culture = teda
+		religion = sunni
+		size = 50
+	}
+farmers = {
+		culture = teda
+		religion = sunni
+		size = 175
+	}
+}
+
+5285 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 337
+	}
+bureaucrats = {
+		culture = libyan
+		religion = sunni
+		size = 25
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 175
+	}
+officers = {
+		culture = libyan
+		religion = sunni
+		size = 37
+	}
+artisans  = {
+		culture = libyan
+		religion = sunni
+		size = 1750
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 1000
+	}
+farmers  = {
+		culture = libyan
+		religion = sunni
+		size = 10175
+	}
+clergymen = {
+		culture = sephardic
+		religion = jewish
+		size = 12
+	}
+artisans = {
+		culture = sephardic
+		religion = jewish
+		size = 737
+	}
+slaves = {
+		culture = forest_bantu
+		religion = sunni
+		size = 750
+	}
+}
+
+5286 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 25
+	}
+clergymen  = {
+		culture = libyan
+		religion = sunni
+		size = 37
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 75
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 750
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 1225
+	}
+aristocrats = {
+		culture = berber
+		religion = sunni
+		size = 37
+	}
+clergymen = {
+		culture = berber
+		religion = sunni
+		size = 37
+	}
+artisans = {
+		culture = berber
+		religion = sunni
+		size = 100
+	}
+soldiers = {
+		culture = berber
+		religion = sunni
+		size = 600
+	}
+farmers = {
+		culture = berber
+		religion = sunni
+		size = 1863
+	}
+slaves 	= {
+		culture = forest_bantu
+		religion = sunni
+		size = 250
+	}
+}
+
+5287 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 149
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 75
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 387
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 50
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 7722
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 750
+	}
+slaves = {
+		culture = forest_bantu
+		religion = sunni
+		size = 625
+	}
+clergymen = {
+		culture = mizrahi
+		religion = jewish
+		size = 5
+	}
+artisans = {
+		culture = mizrahi
+		religion = jewish
+		size = 245
+	}
+}
+
+5288 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 187
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 99
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 525
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 37
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 10150
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 1000
+	}
+slaves = {
+		culture = forest_bantu
+		religion = sunni
+		size = 500
+	}
+}
+
+5289 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 225
+	}
+bureaucrats = {
+		culture = libyan
+		religion = sunni
+		size = 12
+	}
+officers = {
+		culture = libyan
+		religion = sunni
+		size = 12
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 75
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 367
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 600
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 13045
+	}
+clergymen = {
+		culture = bedouin
+		religion = sunni
+		size = 37
+	}
+artisans = {
+		culture = bedouin
+		religion = sunni
+		size = 250
+	}
+slaves = {
+		culture = forest_bantu
+		religion = sunni
+		size = 750
+	}
+clergymen = {
+		culture = mizrahi
+		religion = jewish
+		size = 2
+	}
+artisans = {
+		culture = mizrahi
+		religion = jewish
+		size = 122
+	}
+}
+
+5290 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 100
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 62
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 325
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 62
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 5950
+	}
+slaves = {
+		culture = forest_bantu
+		religion = sunni
+		size = 250
+	}
+}
+
+5291 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 62
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 50
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 225
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 37
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 4750
+	}
+slaves = {
+		culture = forest_bantu
+		religion = sunni
+		size = 875
+	}
+}
+
+5292 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 12
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 25
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 75
+	}
+soldiers = {
+		culture = bedouin
+		religion = sunni
+		size = 12
+	}
+farmers = {
+		culture = bedouin
+		religion = sunni
+		size = 2375
+	}
+}
+
+5294 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 24
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 25
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 75
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 12
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 1375
+	}
+clergymen = {
+		culture = berber
+		religion = sunni
+		size = 12
+	}
+artisans = {
+		culture = berber
+		religion = sunni
+		size = 25
+	}
+soldiers = {
+		culture = berber
+		religion = sunni
+		size = 1250
+	}
+farmers = {
+		culture = berber
+		religion = sunni
+		size = 450
+	}
+}
+
 5295 = {
-	aristocrats = {
+aristocrats = {
 		culture = libyan
 		religion = sunni
 		size = 5
                 rebel_type = unciv_reactionary_rebels
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = libyan
 		religion = sunni
 		size = 6
 	}
-	officers = {
+officers = {
 		culture = libyan
 		religion = sunni
 		size = 10
                 rebel_type = unciv_reactionary_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = libyan
 		religion = sunni
 		size = 8
 	}
-	artisans = {
+artisans = {
 		culture = libyan
 		religion = sunni
 		size = 16
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
 		size = 3
 	}
-	farmers = {
+farmers = {
 		culture = libyan
 		religion = sunni
 		size = 300
 	}
-	aristocrats = {
+aristocrats = {
 		culture = berber
 		religion = sunni
 		size = 8
                 militancy = 5
 	        rebel_type = unciv_reactionary_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = berber
 		religion = sunni
 		size = 8
 	}
-	artisans = {
+artisans = {
 		culture = berber
 		religion = sunni
 		size = 60
                 rebel_type = unciv_reactionary_rebels
 	}
-	soldiers = {
+soldiers = {
 		culture = berber
 		religion = sunni
 		size = 1000
 		militancy = 5
 		rebel_type = unciv_reactionary_rebels
 	}
-	farmers = {
+farmers = {
 		culture = berber
 		religion = sunni
 		size = 900
 		militancy = 5
 		rebel_type = unciv_reactionary_rebels
 	}
-	slaves = {
+slaves = {
 		culture = berber
 		religion = sunni
 		size = 366
@@ -753,489 +1058,232 @@
 }
 
 5296 = {
-	aristocrats = {
+aristocrats = {
 		culture = libyan
 		religion = sunni
 		size = 4
                 rebel_type = unciv_reactionary_rebels
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = libyan
 		religion = sunni
 		size = 6
 	}
-	officers = {
+officers = {
 		culture = libyan
 		religion = sunni
 		size = 9
                 rebel_type = unciv_reactionary_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = libyan
 		religion = sunni
 		size = 8
 	}
-	artisans = {
+artisans = {
 		culture = libyan
 		religion = sunni
 		size = 16
 	}
-	soldiers = {
+soldiers = {
 		culture = libyan
 		religion = sunni
 		size = 3
 	}
-	farmers = {
+farmers = {
 		culture = libyan
 		religion = sunni
 		size = 299
 	}
-	aristocrats = {
+aristocrats = {
 		culture = berber
 		religion = sunni
 		size = 8
                 militancy = 5
 	        rebel_type = unciv_reactionary_rebels
 	}
-	clergymen = {
+clergymen = {
 		culture = berber
 		religion = sunni
 		size = 8
 	}
-	artisans = {
+artisans = {
 		culture = berber
 		religion = sunni
 		size = 59
                 rebel_type = unciv_reactionary_rebels
 	}
-	soldiers = {
+soldiers = {
 		culture = berber
 		religion = sunni
 		size = 999
 		militancy = 5
 		rebel_type = unciv_reactionary_rebels
 	}
-	farmers = {
+farmers = {
 		culture = berber
 		religion = sunni
 		size = 899
 		militancy = 5
 		rebel_type = unciv_reactionary_rebels
 	}
-	slaves = {
+slaves = {
 		culture = berber
 		religion = sunni
 		size = 366
 	}
 }
-#Cyrenaica Region (265000)
-#Bingazi (125000/31000 POPS)
-1735 = {
-	aristocrats = {
+
+5297 = {
+aristocrats = {
 		culture = libyan
 		religion = sunni
-		size = 225
+		size = 4
 	}
-	bureaucrats = {
+clergymen = {
 		culture = libyan
 		religion = sunni
-		size = 13
+		size = 7
 	}
-	officers = {
+artisans = {
 		culture = libyan
 		religion = sunni
-		size = 13
+		size = 14
 	}
-	clergymen = {
+soldiers = {
 		culture = libyan
 		religion = sunni
-		size = 75
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 368
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 600
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 13045
-	}
-	clergymen = {
-		culture = bedouin
-		religion = sunni
-		size = 38
-	}
-	artisans = {
-		culture = bedouin
-		religion = sunni
-		size = 250
-	}
-	slaves = {
-		culture = forest_bantu
-		religion = sunni
-		size = 750
-	}
-	clergymen = {
-		culture = mizrahi
-		religion = jewish
 		size = 3
 	}
-	artisans = {
-		culture = mizrahi
-		religion = jewish
-		size = 123
-	}
-}
-
-5289 = {
-	aristocrats = {
+farmers = {
 		culture = libyan
-		religion = sunni
-		size = 225
-	}
-	bureaucrats = {
-		culture = libyan
-		religion = sunni
-		size = 12
-	}
-	officers = {
-		culture = libyan
-		religion = sunni
-		size = 12
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 75
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 367
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 600
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 13045
-	}
-	clergymen = {
-		culture = bedouin
-		religion = sunni
-		size = 37
-	}
-	artisans = {
-		culture = bedouin
 		religion = sunni
 		size = 250
 	}
-	slaves = {
-		culture = forest_bantu
+aristocrats = {
+		culture = berber
 		religion = sunni
-		size = 750
+		size = 14
 	}
-	clergymen = {
-		culture = mizrahi
-		religion = jewish
-		size = 2
-	}
-	artisans = {
-		culture = mizrahi
-		religion = jewish
-		size = 122
-	}
-}
-#Derne (60000/15300 POPS)
-1736 = {
-	aristocrats = {
-		culture = libyan
+clergymen = {
+		culture = berber
 		religion = sunni
-		size = 100
+		size = 14
 	}
-	clergymen = {
-		culture = libyan
+artisans = {
+		culture = berber
 		religion = sunni
-		size = 63
+		size = 28
 	}
-	artisans = {
-		culture = libyan
+soldiers = {
+		culture = berber
 		religion = sunni
-		size = 325
+		size = 7
 	}
-	soldiers = {
-		culture = libyan
+farmers = {
+		culture = berber
 		religion = sunni
-		size = 63
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 5950
-	}
-	slaves = {
-		culture = forest_bantu
-		religion = sunni
-		size = 250
-	}
-}
-
-5290 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 100
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 62
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 325
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 62
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 5950
-	}
-	slaves = {
-		culture = forest_bantu
-		religion = sunni
-		size = 250
-	}
-}
-#Djaraboub (50000/12000 POPS)
-1737 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 63
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 50
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 225
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 38
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 4750
-	}
-	slaves = {
-		culture = forest_bantu
-		religion = sunni
-		size = 875
-	}
-}
-
-5291 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 62
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 50
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 225
-	}
-	soldiers = {
-		culture = libyan
-		religion = sunni
-		size = 37
-	}
-	farmers = {
-		culture = libyan
-		religion = sunni
-		size = 4750
-	}
-	slaves = {
-		culture = forest_bantu
-		religion = sunni
-		size = 875
-	}
-}
-#Al Kufrah (25000/5000 POPS)
-1738 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 13
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 25
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 75
-	}
-	soldiers = {
-		culture = bedouin
-		religion = sunni
-		size = 13
-	}
-	farmers = {
-		culture = bedouin
-		religion = sunni
-		size = 2375
-	}
-}
-
-5292 = {
-	aristocrats = {
-		culture = libyan
-		religion = sunni
-		size = 12
-	}
-	clergymen = {
-		culture = libyan
-		religion = sunni
-		size = 25
-	}
-	artisans = {
-		culture = libyan
-		religion = sunni
-		size = 75
-	}
-	soldiers = {
-		culture = bedouin
-		religion = sunni
-		size = 12
-	}
-	farmers = {
-		culture = bedouin
-		religion = sunni
-		size = 2375
-	}
-}
-#Al Jawf (5000/1500 POPS)
-2585 = {
-	aristocrats = {
-		culture = bedouin
-		religion = sunni
-		size = 25
-	}
-	clergymen = {
-		culture = bedouin
-		religion = sunni
-		size = 13
-	}
-	artisans = {
-		culture = bedouin
-		religion = sunni
-		size = 63
-	}
-	soldiers = {
-		culture = bedouin
-		religion = sunni
-		size = 25
-	}
-	farmers = {
-		culture = bedouin
-		religion = sunni
-		size = 375
-	}
-	aristocrats = {
-		culture = teda
-		religion = sunni
-		size = 13
-	}
-	clergymen = {
-		culture = teda
-		religion = sunni
-		size = 13
-	}
-	artisans = {
-		culture = teda
-		religion = sunni
-		size = 50
-	}
-	farmers = {
-		culture = teda
-		religion = sunni
-		size = 175
+		size = 770
 	}
 }
 
 6126 = {
-	aristocrats = {
+aristocrats = {
 		culture = bedouin
 		religion = sunni
 		size = 25
 	}
-	clergymen = {
+clergymen = {
 		culture = bedouin
 		religion = sunni
 		size = 12
 	}
-	artisans = {
+artisans = {
 		culture = bedouin
 		religion = sunni
 		size = 62
 	}
-	soldiers = {
+soldiers = {
 		culture = bedouin
 		religion = sunni
 		size = 25
 	}
-	farmers = {
+farmers = {
 		culture = bedouin
 		religion = sunni
 		size = 375
 	}
-	aristocrats = {
+aristocrats = {
 		culture = teda
 		religion = sunni
 		size = 12
 	}
-	clergymen = {
+clergymen = {
 		culture = teda
 		religion = sunni
 		size = 12
 	}
-	artisans = {
+artisans = {
 		culture = teda
 		religion = sunni
 		size = 50
 	}
-	farmers = {
+farmers = {
 		culture = teda
 		religion = sunni
 		size = 175
+	}
+}
+
+7462 = {
+aristocrats = {
+		culture = libyan
+		religion = sunni
+		size = 3
+	}
+clergymen = {
+		culture = libyan
+		religion = sunni
+		size = 5
+	}
+artisans = {
+		culture = libyan
+		religion = sunni
+		size = 11
+	}
+soldiers = {
+		culture = libyan
+		religion = sunni
+		size = 2
+	}
+farmers = {
+		culture = libyan
+		religion = sunni
+		size = 200
+	}
+aristocrats = {
+		culture = berber
+		religion = sunni
+		size = 11
+	}
+clergymen = {
+		culture = berber
+		religion = sunni
+		size = 11
+	}
+artisans = {
+		culture = berber
+		religion = sunni
+		size = 22
+	}
+soldiers = {
+		culture = berber
+		religion = sunni
+		size = 5
+	}
+farmers = {
+		culture = berber
+		religion = sunni
+		size = 617
 	}
 }

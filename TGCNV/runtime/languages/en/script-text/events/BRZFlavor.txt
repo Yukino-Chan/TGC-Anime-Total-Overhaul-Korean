@@ -6423,7 +6423,7 @@
 						owner = { capital_scope = { continent = south_america } }
 						5830 = { empty = yes }
 					}
-					5830 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					HOP_5830 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				}
 				random_owned = {
 					limit = {

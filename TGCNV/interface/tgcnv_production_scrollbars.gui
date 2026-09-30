@@ -1,0 +1,52 @@
+guiTypes = {
+	scrollbarType = {
+			name = "tgcnv_production_list_slider"	
+			slider = "listboxSliderButton"
+			track= "listboxTrackButton"
+			leftbutton = "upButton"
+			rightbutton = "downButton"
+			size = {x =6 y =6 }
+			position = {x= 0 y =0}
+			priority = 100			
+			borderSize = {x = 6 y = 6}	
+			maxValue =1
+			minValue =0
+			stepSize =0.01
+			startValue = 0
+			horizontal = 0
+
+
+			guiButtonType = {
+				name = "listboxSliderButton"	
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_vthumb"
+				tooltip = ""
+				tooltipText =""	
+				delayedTooltipText = ""
+				position = { x=0 y =0}
+			}
+
+			guiButtonType = {
+				name = "listboxTrackButton"
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_vtrack"
+				position = { x=6 y =6}	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""	
+
+			}	
+
+			guiButtonType = {
+				parent = "listboxSliderButton"
+				name = "upButton"
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_down"
+				position = { x=0 y =0}	
+			}
+			
+			guiButtonType = {
+				parent = "listboxSliderButton"
+				name = "downButton"
+				quadTextureSprite = "GFX_tgcnv_prod_scroll_up"
+				position = { x=0 y =120}	
+			}
+	}
+}

@@ -729,7 +729,7 @@ political_decisions = {
 				33 = { badboy = 5 }
 			}
 			969 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			968 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HXP_968 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			954 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 		ai_will_do = { factor = 1 }

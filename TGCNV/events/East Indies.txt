@@ -1138,7 +1138,7 @@ province_event = {
 		INO = { add_accepted_culture = malay }
 		state_scope = {
 			any_owned = {
-				limit = { is_core = INO NOT = { province_id = 1446 } }
+				limit = { is_core = INO NOT = { region = HXP_1446 } }
 				remove_core = JAV
 				remove_core = DJA
 				remove_core = SAK
@@ -1222,7 +1222,7 @@ province_event = {
 		INO = { add_accepted_culture = moluccan }
 		state_scope = {
 			any_owned = {
-				limit = { is_core = INO NOT = { province_id = 1446 } }
+				limit = { is_core = INO NOT = { region = HXP_1446 } }
 				remove_core = JAV
 				remove_core = DJA
 				remove_core = SAK
@@ -1299,7 +1299,7 @@ province_event = {
 		INO = { add_accepted_culture = melanesian }
 		state_scope = {
 			any_owned = {
-				limit = { is_core = INO NOT = { province_id = 1446 } }
+				limit = { is_core = INO NOT = { region = HXP_1446 } }
 				remove_core = JAV
 				remove_core = DJA
 				remove_core = SAK
@@ -1459,7 +1459,7 @@ country_event = {
 			}
 			owner = {
 				1389 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = PRK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				1388 = { remove_core = THIS remove_core = JOH add_core = PRK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				HXP_1388 = { remove_core = THIS remove_core = JOH add_core = PRK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1391 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = PHG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1390 = { remove_core = THIS }
 				2575 = { remove_core = THIS }
@@ -1472,7 +1472,7 @@ country_event = {
 			}
 			owner = {
 				1389 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				1388 = { remove_core = THIS remove_core = JOH add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				HXP_1388 = { remove_core = THIS remove_core = JOH add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1391 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1390 = { remove_core = THIS }
 				2575 = { remove_core = THIS }
@@ -1552,7 +1552,7 @@ country_event = {
 			FROM = {
 				war = {
 				target = THIS
-				attacker_goal = { casus_belli = acquire_state state_province_id = 1391 }
+				attacker_goal = { casus_belli = h45_acquire_state_eng_1391 state_province_id = 1391 }
 				defender_goal = { casus_belli = status_quo }
 				}
 			}
@@ -2010,7 +2010,7 @@ country_event = {
 		war = {
 			target = BUR
 			attacker_goal = {
-				casus_belli = demand_concession_casus_belli
+				casus_belli = h45_demand_concession_casus_belli_bur_1330
 				state_province_id = 1332
 			}
 			defender_goal = { casus_belli = status_quo }

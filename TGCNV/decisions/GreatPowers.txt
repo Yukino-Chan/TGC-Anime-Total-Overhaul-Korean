@@ -924,7 +924,7 @@ political_decisions = {
 							alliance_with = THIS
 						}
 						any_owned_province = {
-							NOT = { province_id = 1785 }
+							NOT = { region = HOP_1785 }
 							OR = {
 								region = FRA_1783
 								region = FRA_1788

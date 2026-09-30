@@ -372,7 +372,7 @@ political_decisions = {
 			all_core = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alaska
 			2 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			3 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HOP_3 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			CAN_13 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # British Columbia
 			USA_78 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Washington
 			USA_81 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Oregon

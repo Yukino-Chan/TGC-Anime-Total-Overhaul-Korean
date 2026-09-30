@@ -2206,7 +2206,7 @@ country_event = {
 			target = MOR
 			attacker_goal = { casus_belli = treaty_port_casus_belli }
 			defender_goal = {
-				casus_belli = acquire_core_state
+				casus_belli = hx_acquire_core_state_spa_1689
 				state_province_id = 1689
 			}
 		}

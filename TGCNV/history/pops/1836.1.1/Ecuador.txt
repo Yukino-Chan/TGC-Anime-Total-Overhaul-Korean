@@ -1,74 +1,60 @@
-#Quito Region (550000)
-#Ruled by Ecuador 1836
-#San Francisco de Quito (300000/56000 POPS)
 2279 = {
-	aristocrats = {
+aristocrats = {
 		culture = ecuadorian
 		religion = catholic
 		size = 775
 	}
-
-	bureaucrats = {
+bureaucrats = {
 		culture = ecuadorian
 		religion = catholic
 		size = 100
 	}
-
-	officers = {
+officers = {
 		culture = ecuadorian
 		religion = catholic
 		size = 75
 	}
-
-	clergymen = {
+clergymen = {
 		culture = ecuadorian
 		religion = catholic
 		size = 300
 	}
-
-	artisans = {
+artisans = {
 		culture = ecuadorian
 		religion = catholic
 		size = 150
 	}
-
-	soldiers = {
+soldiers = {
 		culture = ecuadorian
 		religion = catholic
 		size = 2400
 	}
-
-	labourers = {
+labourers = {
 		culture = ecuadorian
 		religion = catholic
 		size = 8000
 	}
-
-	clergymen = {
+clergymen = {
 		culture = quechua
 		religion = catholic
 		size = 75
 	}
-
-	artisans = {
+artisans = {
 		culture = quechua
 		religion = catholic
 		size = 2050
 	}
-
-	soldiers = {
+soldiers = {
 		culture = quechua
 		religion = catholic
 		size = 550
 	}
-
-	labourers = {
+labourers = {
 		culture = quechua
 		religion = catholic
 		size = 13000
 	}
-
-	labourers = {
+labourers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 2500
@@ -76,597 +62,535 @@
 	}
 }
 
-5826 = {
-	aristocrats = {
+2280 = {
+aristocrats = {
 		culture = ecuadorian
 		religion = catholic
-		size = 775
+		size = 275
 	}
-
-	bureaucrats = {
+bureaucrats = {
+		culture = ecuadorian
+		religion = catholic
+		size = 50
+	}
+clergymen = {
 		culture = ecuadorian
 		religion = catholic
 		size = 100
 	}
-
-	officers = {
+artisans = {
 		culture = ecuadorian
 		religion = catholic
-		size = 75
+		size = 425
 	}
-
-	clergymen = {
+soldiers = {
 		culture = ecuadorian
 		religion = catholic
-		size = 300
+		size = 1075
 	}
-
-	artisans = {
+farmers = {
 		culture = ecuadorian
 		religion = catholic
-		size = 150
+		size = 3500
 	}
-
-	soldiers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 2400
-	}
-
-	labourers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 8000
-	}
-
-	clergymen = {
-		culture = quechua
-		religion = catholic
-		size = 75
-	}
-
-	artisans = {
-		culture = quechua
-		religion = catholic
-		size = 2050
-	}
-
-	soldiers = {
-		culture = quechua
-		religion = catholic
-		size = 550
-	}
-
-	labourers = {
-		culture = quechua
-		religion = catholic
-		size = 13000
-	}
-
-	labourers = {
+clergymen = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 2500
+		size = 25
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 75
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 25
+		militancy = 4
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1000
+		militancy = 4
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 500
 		militancy = 2
 	}
+artisans = {
+		culture = quechua
+		religion = catholic
+		size = 950
+	}
+farmers = {
+		culture = quechua
+		religion = catholic
+		size = 4500
+	}
 }
-#Puerto Francisco de Orellana (150000/16000 POPS)
+
+2281 = {
+aristocrats = {
+		culture = ecuadorian
+		religion = catholic
+		size = 225
+	}
+clergymen = {
+		culture = ecuadorian
+		religion = catholic
+		size = 75
+	}
+artisans = {
+		culture = ecuadorian
+		religion = catholic
+		size = 175
+	}
+soldiers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 25
+	}
+farmers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 1250
+	}
+clergymen = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 25
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 400
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 75
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 2000
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1250
+	}
+}
+
 2282 = {
-	aristocrats = {
+aristocrats = {
 		culture = ecuadorian
 		religion = catholic
 		size = 401
 	}
-
-	clergymen = {
+clergymen = {
 		culture = ecuadorian
 		religion = catholic
 		size = 126
 	}
-
-	artisans = {
+artisans = {
 		culture = ecuadorian
 		religion = catholic
 		size = 401
 	}
-
-	soldiers = {
+soldiers = {
 		culture = ecuadorian
 		religion = catholic
 		size = 76
 	}
-
-	farmers = {
+farmers = {
 		culture = ecuadorian
 		religion = catholic
 		size = 2204
 	}
-
-	clergymen = {
+clergymen = {
 		culture = quechua
 		religion = catholic
 		size = 51
 	}
-
-	artisans = {
+artisans = {
 		culture = quechua
 		religion = catholic
 		size = 626
 	}
-
-	soldiers = {
+soldiers = {
 		culture = quechua
 		religion = catholic
 		size = 126
 	}
-
-	farmers = {
+farmers = {
 		culture = quechua
 		religion = catholic
 		size = 4007
 	}
 }
 
-5829 = {
-	aristocrats = {
-		culture = ecuadorian
-		religion = catholic
-		size = 399
-	}
-
-	clergymen = {
-		culture = ecuadorian
-		religion = catholic
-		size = 124
-	}
-
-	artisans = {
-		culture = ecuadorian
-		religion = catholic
-		size = 399
-	}
-
-	soldiers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 74
-	}
-
-	farmers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 2196
-	}
-
-	clergymen = {
-		culture = quechua
-		religion = catholic
-		size = 49
-	}
-
-	artisans = {
-		culture = quechua
-		religion = catholic
-		size = 624
-	}
-
-	soldiers = {
-		culture = quechua
-		religion = catholic
-		size = 124
-	}
-
-	farmers = {
-		culture = quechua
-		religion = catholic
-		size = 3993
-	}
-}
-#Macas (100000/10000 POPS)
 2283 = {
-		clergymen = {
+clergymen = {
 		culture = quechua
 		religion = animist
 		size = 351
 	}
-
-	artisans = {
+artisans = {
 		culture = quechua
 		religion = animist
 		size = 651
 	}
-
-	soldiers = {
+soldiers = {
 		culture = quechua
 		religion = animist
 		size = 251
 	}
-
-	farmers = {
+farmers = {
 		culture = quechua
 		religion = animist
 		size = 3752
 	}
 }
 
-5830 = {
-		clergymen = {
-		culture = quechua
-		religion = animist
-		size = 349
-	}
-
-	artisans = {
-		culture = quechua
-		religion = animist
-		size = 649
-	}
-
-	soldiers = {
-		culture = quechua
-		religion = animist
-		size = 249
-	}
-
-	farmers = {
-		culture = quechua
-		religion = animist
-		size = 3748
-	}
-}
-#Guayaquil Region (270300)
-#Ruled by Ecuador 1836
-#Santiago de Guayaquil (180000/25000 POPS)
-2280 = {
-	aristocrats = {
-		culture = ecuadorian
-		religion = catholic
-		size = 275
-	}
-
-	bureaucrats = {
-		culture = ecuadorian
-		religion = catholic
-		size = 50
-	}
-
-	clergymen = {
-		culture = ecuadorian
-		religion = catholic
-		size = 100
-	}
-
-	artisans = {
-		culture = ecuadorian
-		religion = catholic
-		size = 425
-	}
-
-	soldiers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 1075
-	}
-
-	farmers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 3500
-	}
-
-	clergymen = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 25
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 75
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 25
-		militancy = 4
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1000
-		militancy = 4
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 500
-		militancy = 2
-	}
-
-		artisans = {
-		culture = quechua
-		religion = catholic
-		size = 950
-	}
-
-		farmers = {
-		culture = quechua
-		religion = catholic
-		size = 4500
-	}
-}
-
-5827 = {
-	aristocrats = {
-		culture = ecuadorian
-		religion = catholic
-		size = 275
-	}
-
-	bureaucrats = {
-		culture = ecuadorian
-		religion = catholic
-		size = 50
-	}
-
-	clergymen = {
-		culture = ecuadorian
-		religion = catholic
-		size = 100
-	}
-
-	artisans = {
-		culture = ecuadorian
-		religion = catholic
-		size = 425
-	}
-
-	soldiers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 1075
-	}
-
-	farmers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 3500
-	}
-
-	clergymen = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 25
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 75
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 25
-		militancy = 4
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1000
-		militancy = 4
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 500
-		militancy = 2
-	}
-
-		artisans = {
-		culture = quechua
-		religion = catholic
-		size = 950
-	}
-
-		farmers = {
-		culture = quechua
-		religion = catholic
-		size = 4500
-	}
-}
-#San Gregoria de Portoviejo (90000/11000 POPS)
-2281 = {
-	aristocrats = {
-		culture = ecuadorian
-		religion = catholic
-		size = 225
-	}
-
-	clergymen = {
-		culture = ecuadorian
-		religion = catholic
-		size = 75
-	}
-
-	artisans = {
-		culture = ecuadorian
-		religion = catholic
-		size = 175
-	}
-
-	soldiers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 25
-	}
-
-	farmers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 1250
-	}
-
-	clergymen = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 25
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 400
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 75
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 2000
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1250
-	}
-}
-
-5828 = {
-	aristocrats = {
-		culture = ecuadorian
-		religion = catholic
-		size = 225
-	}
-
-	clergymen = {
-		culture = ecuadorian
-		religion = catholic
-		size = 75
-	}
-
-	artisans = {
-		culture = ecuadorian
-		religion = catholic
-		size = 175
-	}
-
-	soldiers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 25
-	}
-
-	farmers = {
-		culture = ecuadorian
-		religion = catholic
-		size = 1250
-	}
-
-	clergymen = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 25
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 400
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 75
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 2000
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1250
-	}
-}
-#Archipielago de Colon (300/75 POPS)
 2285 = {
-	bureaucrats = {
+bureaucrats = {
 		culture = ecuadorian
 		religion = catholic
 		size = 1
 	}
-
-	clergymen = {
+clergymen = {
 		culture = ecuadorian
 		religion = catholic
 		size = 1
 	}
-
-	artisans = {
+artisans = {
 		culture = ecuadorian
 		religion = catholic
 		size = 2
 	}
-
-	soldiers = {
+soldiers = {
 		culture = ecuadorian
 		religion = catholic
 		size = 13
 	}
-
-	farmers = {
+farmers = {
 		culture = ecuadorian
 		religion = catholic
 		size = 23
 	}
 }
 
+5826 = {
+aristocrats = {
+		culture = ecuadorian
+		religion = catholic
+		size = 775
+	}
+bureaucrats = {
+		culture = ecuadorian
+		religion = catholic
+		size = 100
+	}
+officers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 75
+	}
+clergymen = {
+		culture = ecuadorian
+		religion = catholic
+		size = 300
+	}
+artisans = {
+		culture = ecuadorian
+		religion = catholic
+		size = 150
+	}
+soldiers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 2400
+	}
+labourers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 8000
+	}
+clergymen = {
+		culture = quechua
+		religion = catholic
+		size = 75
+	}
+artisans = {
+		culture = quechua
+		religion = catholic
+		size = 2050
+	}
+soldiers = {
+		culture = quechua
+		religion = catholic
+		size = 550
+	}
+labourers = {
+		culture = quechua
+		religion = catholic
+		size = 13000
+	}
+labourers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 2500
+		militancy = 2
+	}
+}
+
+5827 = {
+aristocrats = {
+		culture = ecuadorian
+		religion = catholic
+		size = 275
+	}
+bureaucrats = {
+		culture = ecuadorian
+		religion = catholic
+		size = 50
+	}
+clergymen = {
+		culture = ecuadorian
+		religion = catholic
+		size = 100
+	}
+artisans = {
+		culture = ecuadorian
+		religion = catholic
+		size = 425
+	}
+soldiers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 1075
+	}
+farmers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 3500
+	}
+clergymen = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 25
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 75
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 25
+		militancy = 4
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1000
+		militancy = 4
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 500
+		militancy = 2
+	}
+artisans = {
+		culture = quechua
+		religion = catholic
+		size = 950
+	}
+farmers = {
+		culture = quechua
+		religion = catholic
+		size = 4500
+	}
+}
+
+5828 = {
+aristocrats = {
+		culture = ecuadorian
+		religion = catholic
+		size = 225
+	}
+clergymen = {
+		culture = ecuadorian
+		religion = catholic
+		size = 75
+	}
+artisans = {
+		culture = ecuadorian
+		religion = catholic
+		size = 175
+	}
+soldiers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 25
+	}
+farmers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 1250
+	}
+clergymen = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 25
+	}
+artisans = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 400
+	}
+soldiers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 75
+	}
+farmers = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 2000
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1250
+	}
+}
+
+5829 = {
+aristocrats = {
+		culture = ecuadorian
+		religion = catholic
+		size = 399
+	}
+clergymen = {
+		culture = ecuadorian
+		religion = catholic
+		size = 124
+	}
+artisans = {
+		culture = ecuadorian
+		religion = catholic
+		size = 399
+	}
+soldiers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 74
+	}
+farmers = {
+		culture = ecuadorian
+		religion = catholic
+		size = 2196
+	}
+clergymen = {
+		culture = quechua
+		religion = catholic
+		size = 49
+	}
+artisans = {
+		culture = quechua
+		religion = catholic
+		size = 624
+	}
+soldiers = {
+		culture = quechua
+		religion = catholic
+		size = 124
+	}
+farmers = {
+		culture = quechua
+		religion = catholic
+		size = 3993
+	}
+}
+
+5830 = {
+clergymen = {
+		culture = quechua
+		religion = animist
+		size = 245
+	}
+artisans = {
+		culture = quechua
+		religion = animist
+		size = 455
+	}
+soldiers = {
+		culture = quechua
+		religion = animist
+		size = 175
+	}
+farmers = {
+		culture = quechua
+		religion = animist
+		size = 2628
+	}
+}
+
 5832 = {
-	bureaucrats = {
+bureaucrats = {
 		culture = ecuadorian
 		religion = catholic
 		size = 0
 	}
-
-	clergymen = {
+clergymen = {
 		culture = ecuadorian
 		religion = catholic
 		size = 0
 	}
-
-	artisans = {
+artisans = {
 		culture = ecuadorian
 		religion = catholic
 		size = 1
 	}
-
-	soldiers = {
+soldiers = {
 		culture = ecuadorian
 		religion = catholic
 		size = 12
 	}
-
-	farmers = {
+farmers = {
 		culture = ecuadorian
 		religion = catholic
 		size = 22
+	}
+}
+
+7467 = {
+clergymen = {
+		culture = quechua
+		religion = animist
+		size = 104
+	}
+artisans = {
+		culture = quechua
+		religion = animist
+		size = 194
+	}
+soldiers = {
+		culture = quechua
+		religion = animist
+		size = 74
+	}
+farmers = {
+		culture = quechua
+		religion = animist
+		size = 1120
 	}
 }

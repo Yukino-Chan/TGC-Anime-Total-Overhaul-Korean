@@ -445,8 +445,8 @@ political_decisions = {
 			ASM = { all_core = { remove_core = MUG } }
 			TRA = { all_core = { remove_core = MUG } }
 			1309 = { remove_core = MUG }
-			1310 = { remove_core = MUG }
-			2591 = { remove_core = MUG }
+			HOP_1310 = { remove_core = MUG }
+			HXP_2591 = { remove_core = MUG }
 			prestige = 40
 		}
 
@@ -984,7 +984,7 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						province_id = 1303
-						province_id = 1312
+						region = HXP_1312
 						province_id = 1320
 						is_core = KAL
 						is_core = MAK
@@ -1031,7 +1031,7 @@ political_decisions = {
 
 			all_core = { remove_core = THIS }
 			1303 = { add_core = HND add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			1312 = { add_core = HND add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HXP_1312 = { add_core = HND add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			change_tag = HND
 			any_country = {
 				limit = {

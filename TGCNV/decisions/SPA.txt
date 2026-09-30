@@ -1532,7 +1532,7 @@ political_decisions = {
 			}
 			1 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alaska
 			2 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			3 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HOP_3 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 	}
 	
@@ -1611,7 +1611,7 @@ political_decisions = {
 			}
 			USA_200 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Florida
 			194 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Mississippi
-			197 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alabama
+			HXP_197 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alabama
 			casus_belli = {
 				target = USA
 				type = free_allied_cores

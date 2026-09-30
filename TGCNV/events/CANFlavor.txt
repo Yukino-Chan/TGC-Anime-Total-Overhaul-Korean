@@ -2715,8 +2715,8 @@
 							province_id = 41
 							province_id = 30
 							province_id = 35
-							province_id = 29
-							province_id = 26
+							region = HXP_29
+							region = HXP_26
 						}
 						can_build_in_province = { building = railroad }
 					}
@@ -2724,10 +2724,10 @@
 				}
 				26 = {
 					change_province_name = "Ä¶°Å¸®"
-					add_province_modifier = {
+					HXP_26 = { add_province_modifier = {
 						name = gateway_to_harbor
 						duration = 365
-					}
+					} }
 				}
 			}
 		}
@@ -2766,7 +2766,7 @@
 				any_owned = {
 					limit = {
 						OR = {
-							province_id = 28
+							region = HOP_28
 							province_id = 21
 							province_id = 20
 							province_id = 13
@@ -3578,14 +3578,14 @@
 							3438 = { owned_by = THIS }
 							3440 = { empty = yes }
 						}
-						3440 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+						HOP_3440 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
 					}
 					random_owned = {
 						limit = {
 							3438 = { owned_by = THIS }
 							2595 = { empty = yes }
 						}
-						2595 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+						HOP_2595 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
 					}
 					random_owned = {
 						limit = {
@@ -3603,7 +3603,7 @@
 							33 = { owned_by = THIS }
 							3452 = { empty = yes }
 						}
-						3452 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+						HXP_3452 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
 					}
 					random_owned = {
 						limit = {
@@ -3611,7 +3611,7 @@
 							35 = { owned_by = THIS }
 							33 = { empty = yes }
 						}
-						33 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+						HXP_33 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
 					}
 					random_owned = {
 						limit = {
@@ -3685,7 +3685,7 @@
 							23 = { owned_by = THIS }
 							3446 = { empty = yes }
 						}
-						3446 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+						HOP_3446 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
 					}
 					random_owned = {
 						limit = {
@@ -3700,7 +3700,7 @@
 							32 = { owned_by = THIS }
 							31 = { empty = yes }
 						}
-						31 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+						HXP_31 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
 					}
 				## Northern Quebec ##
 					random_owned = {
@@ -3718,7 +3718,7 @@
 							2592 = { owned_by = THIS }
 							2626 = { empty = yes }
 						}
-						2626 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+						HOP_2626 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
 					}
 					random_owned = {
 						limit = {
@@ -3733,14 +3733,14 @@
 							75 = { owned_by = THIS }
 							3451 = { empty = yes }
 						}
-						3451 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+						HOP_3451 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
 					}
 					random_owned = {
 						limit = {
 							2625 = { owned_by = THIS }
 							76 = { empty = yes }
 						}
-						76 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+						HOP_76 = { secede_province = THIS add_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
 					}
 			}
 		}

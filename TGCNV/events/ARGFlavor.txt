@@ -346,7 +346,7 @@
 					2396 = { empty = yes }
 					5942 = { empty = yes }
 				}
-				5942 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } }
+				HXP_5942 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } }
 			}
 			random_owned = {
 				limit = {
@@ -1731,7 +1731,7 @@
 				scaled_consciousness = { issue = anti_military factor = 4 }
 				war = {
 					target = FROM
-					attacker_goal = { casus_belli = acquire_core_state state_province_id = 2370 }
+					attacker_goal = { casus_belli = ho_acquire_core_state_arg_2369 state_province_id = 2370 }
 					call_ally = no
 				}
 

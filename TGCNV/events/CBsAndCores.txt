@@ -1008,6 +1008,7 @@ country_event = {
 		picture = "prov_new_land"
 
 		trigger = {
+            OR = { NOT = { owner = { tag = CPL } } region = TGC_CONGRESS_POLAND }
 			province_control_days = 730
 			OR = {
 				is_primary_culture = yes
@@ -1099,6 +1100,7 @@ country_event = {
 			state_scope = {
 				any_owned = {
 					limit = {
+                        OR = { NOT = { owner = { tag = CPL } } region = TGC_CONGRESS_POLAND }
 						NOT = { is_core = THIS }
 						NOT = { has_province_modifier = core_integration }
 						NOT = { has_province_modifier = integration_refusal }
@@ -1154,6 +1156,7 @@ country_event = {
 			state_scope = {
 				any_owned = {
 					limit = {
+                        OR = { NOT = { owner = { tag = CPL } } region = TGC_CONGRESS_POLAND }
 						NOT = { is_core = THIS }
 						NOT = { has_province_modifier = core_integration }
 						NOT = { has_province_modifier = integration_refusal }
@@ -1243,6 +1246,7 @@ country_event = {
 		picture = "prov_new_land"
 
 		trigger = {
+            OR = { NOT = { owner = { tag = CPL } } region = TGC_CONGRESS_POLAND }
 			province_control_days = 730
 			has_province_modifier = core_integration
 			owner = {

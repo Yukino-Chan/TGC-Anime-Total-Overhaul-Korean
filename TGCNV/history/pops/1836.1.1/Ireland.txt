@@ -1,5734 +1,5503 @@
-#Ulster Region - 1846000
-#under rule of Britain 1836
-#Belfast (295422/73856 POPs)
-
-
-
-#Londonderry (673619/168405 POPS)
-
-
-
-#Armagh (583867/145967 POPS)
-
-
-
-#Donegal (297322/74330 POPS) 
-
-
-
-#Cavan (433680/108420 POPs)
-
-
-
-#Connaught Region - 1316000
-#under rule of Britain 1836
-#Galway (762277/190569 POPS)
-
-
-
-#Sligo (571736/142934 POPs)
-
-
-
-#Munster Region - 2244000 
-#under rule of Britain 1836
-#Cork (737859/184465 POPS) 
-
-
-
-#Limerick (762086/190522 POPS)
-
-
-
-#Waterford (580950/145237 POPs)
-
-
-
-#Leinster Region - 1836000 
-#under rule of Britain 1836
-#Dublin (784943/196236 POPs)
-
-
-
-#Westmeath (548883/137221 POPs)
-
-
-
-#Wexford (576651/144163 POPS)
-
-254 = {	aristocrats = {
+254 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 891
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 178
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 61
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 59
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = anglican
 		size = 184
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = methodist
 		size = 37
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = baptist
 		size = 12
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = protestant
 		size = 12
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 587
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 117
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 39
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 39
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 349
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 70
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 25
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 22
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 375
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 75
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 25
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 25
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 7609
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 1523
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 507
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 506
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 9586
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 1916
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 639
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 639
 	}
-	
-	labourers = {
+labourers = {
 		culture = scottish
 		religion = presbyterian
 		size = 21930
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 27671
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 136
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 230
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 5250
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 27013
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 112
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 22
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 8
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 7
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = anglican
 		size = 15538
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = methodist
 		size = 3108
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = baptist
 		size = 1035
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = protestant
 		size = 1035
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 56
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 358
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 72
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 24
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 24
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 28
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 46
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 9
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 188
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 38
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 13
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 12
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 94
 	}
 }
 
-255 = {	clergymen = {
+255 = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 281
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 1382
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 147
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 13855
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 158
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 32
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 11
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 10
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 45
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 8
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 1536
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 307
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 102
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 102
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 242
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 49
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 16
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 16
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 13799
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 2759
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 921
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 919
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 86
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 22234
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 24
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 39
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 8
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	
-	
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 80
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 120
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 6584
 	}
 }
 
-256 = {	aristocrats = {
+256 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 205
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 41
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 14
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 13
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 140
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 29
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 9
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 8
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 1892
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 379
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 127
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 125
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 237
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 47
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 16
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 16
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = anglican
 		size = 21658
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = methodist
 		size = 4332
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = baptist
 		size = 1444
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = protestant
 		size = 1443
 	}
-	
-	labourers = {
+labourers = {
 		culture = scottish
 		religion = presbyterian
 		size = 16722
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 213
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 2099
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 118
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 18440
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 182
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 36
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 12
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 12
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 91
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 52
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 11
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 13
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 43
 	}
-	
-	
-	
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 1427
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 286
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 95
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 95
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 21
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 108
 	}
-	
-	
-	
-	
-	
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 4135
 	}
 }
 
-257 = {	clergymen = {
+257 = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 324
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 2842
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 29
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 24685
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 22
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 4
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 24
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 5
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 729
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 147
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 49
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 48
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 47
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 10
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 7704
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 1540
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 514
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 513
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 39
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 8054
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 271
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 366
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	
-
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 47
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 9
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 11
 	}
-	
-	
-
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 2
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 32
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 7
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 21
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 215
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 11032
 	}
 }
 
-258 = {	aristocrats = {
+258 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 291
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 580
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 3931
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 270
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 64379
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 216
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 59
 	}
 }
 
-259 = {	aristocrats = {
+259 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 272
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 559
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 2603
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 183
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 42740
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 57
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 11
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 38
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 379
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 14
 	}
 }
 
-260 = {	aristocrats = {
+260 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 87
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 312
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 70
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 243
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 3121
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 261
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 26014
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 1492
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 298
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 100
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 99
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 117
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 23
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 8
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 8
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 98
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 20
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 6
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 6
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = anglican
 		size = 32
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = methodist
 		size = 7
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 65
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 13
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
 }
 
-261 = {	aristocrats = {
+261 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 258
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 385
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 3845
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 341
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 56268
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 8
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 132
 	}
 }
 
-262 = {	aristocrats = {
+262 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 191
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 273
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 2476
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 68
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 42770
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 188
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 96
 	}
 }
 
-263 = {	aristocrats = {
+263 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 58
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 11
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 44
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 9
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 42
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 36
 	}
-	
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 15
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 3
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 273
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 55
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 18
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 18
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 1200
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 240
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 80
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 80
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 18
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 95
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 91
 	}
-	
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 2388
 	}
-	
-	
-	
-	
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 20162
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 187
 	}
 }
 
-264 = {	bureaucrats = {
+264 = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 2
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 1
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 1
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 35
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 32
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 1283
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 14
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 21398
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 3
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 49
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 11
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 2808
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 562
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 187
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 187
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 14
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 3
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 269
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 12
 	}
 }
 
-265 = {	aristocrats = {
+265 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 79
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 16
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 5
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 52
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 1556
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 21
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 298
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 27868
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 13
 	}
 }
 
-3349 = {	clergymen = {
+3349 = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 622
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 4660
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 1
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 90
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 139
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 234
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 47
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 16
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 4031
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 806
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 269
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 268
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 1
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 144
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 28
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 10
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 37
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 8
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 355
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 30
 	}
-	
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 66
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 12
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 15
 	}
-	
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 15
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 75
 	}
-	
-	
-	
-	
-	
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 31310
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 9
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 355
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 164
 	}
 }
 
-3815 = {	aristocrats = {
+3815 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 17
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 3
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = anglican
 		size = 4
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = methodist
 		size = 1
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 13
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 3
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 6
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 17
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 140
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 28
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 10
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 9
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 167
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 34
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 11
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 11
 	}
-	
-	labourers = {
+labourers = {
 		culture = scottish
 		religion = presbyterian
 		size = 223
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 541
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 3
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 3
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 110
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 259
 	}
 }
 
-3816 = {	aristocrats = {
+3816 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 66
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 13
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 5
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 20
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 4
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 765
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 153
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 51
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 51
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 23
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = anglican
 		size = 1213
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = methodist
 		size = 242
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = baptist
 		size = 81
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = protestant
 		size = 81
 	}
-	
-	labourers = {
+labourers = {
 		culture = scottish
 		religion = presbyterian
 		size = 937
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 74
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 277
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 12
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 7144
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 75
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 125
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 25
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 8
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 8
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 5785
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 1157
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 386
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 385
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 37
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 9809
 	}
 }
 
-3817 = {	aristocrats = {
+3817 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 34
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 7
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 22
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 4
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 277
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 55
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 19
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 18
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 73
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 15
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 5
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = anglican
 		size = 3827
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = methodist
 		size = 766
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = baptist
 		size = 255
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = protestant
 		size = 255
 	}
-	
-	labourers = {
+labourers = {
 		culture = scottish
 		religion = presbyterian
 		size = 2955
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 21
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 66
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 37
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 3259
 	}
 }
 
-3818 = {	clergymen = {
+3818 = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 190
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 2239
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 34
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 28097
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 54
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 11
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 34
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 7
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 1129
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 226
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 77
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 75
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 56
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 11
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 11111
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 2222
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 741
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 740
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 62
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 13884
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 174
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 9
 	}
-	
-	
-
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 39
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 65
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 13
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 364
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	
-
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 45
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 9
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
 }
 
-3819 = {	aristocrats = {
+3819 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 432
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 1079
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 5387
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 179
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 95429
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 1
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 7
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 625
 	}
 }
 
-3820 = {	aristocrats = {
+3820 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 366
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 710
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 3143
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 95
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 49568
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 102
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 20
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 7
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 7
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 68
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 197
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 30
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 483
 	}
 }
 
-3821 = {	aristocrats = {
+3821 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 245
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 833
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 185
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 666
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 8519
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 286
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 72186
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 3978
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 796
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 265
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 264
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 312
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 63
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 21
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 20
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 260
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 53
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 17
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 17
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = anglican
 		size = 87
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = methodist
 		size = 17
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = baptist
 		size = 7
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = protestant
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 72
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 14
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 5
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 408
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 102
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 20
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 7
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 7
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 24
 	}
 }
 
-3822 = {	aristocrats = {
-		culture = irish
-		religion = catholic
-		size = 329
-	}
-	bureaucrats = {
-		culture = irish
-		religion = catholic
-		size = 131
-	}
-	officers = {
-		culture = irish
-		religion = catholic
-		size = 29
-	}
-	clergymen = {
-		culture = irish
-		religion = catholic
-		size = 541
-	}
-	artisans = {
-		culture = irish
-		religion = catholic
-		size = 5703
-	}
-	
-	
-	soldiers = {
-		culture = irish
-		religion = catholic
-		size = 109
-	}
-	farmers = {
-		culture = irish
-		religion = catholic
-		size = 75009
-	}
-	
-	farmers = {
-		culture = british
-		religion = anglican
-		size = 626
-	}
-	farmers = {
-		culture = british
-		religion = methodist
-		size = 125
-	}
-	farmers = {
-		culture = british
-		religion = baptist
-		size = 42
-	}
-	farmers = {
-		culture = british
-		religion = protestant
-		size = 42
-	}
-	aristocrats = {
-		culture = british
-		religion = anglican
-		size = 50
-	}
-	aristocrats = {
-		culture = british
-		religion = methodist
-		size = 10
-	}
-	aristocrats = {
-		culture = british
-		religion = baptist
-		size = 3
-	}
-	aristocrats = {
-		culture = british
-		religion = protestant
-		size = 3
-	}
-	bureaucrats = {
-		culture = british
-		religion = anglican
-		size = 41
-	}
-	bureaucrats = {
-		culture = british
-		religion = methodist
-		size = 8
-	}
-	bureaucrats = {
-		culture = british
-		religion = baptist
-		size = 3
-	}
-	bureaucrats = {
-		culture = british
-		religion = protestant
-		size = 3
-	}
-	officers = {
-		culture = british
-		religion = anglican
-		size = 13
-	}
-	officers = {
-		culture = british
-		religion = methodist
-		size = 3
-	}
-	officers = {
-		culture = british
-		religion = baptist
-		size = 1
-	}
-	officers = {
-		culture = british
-		religion = protestant
-		size = 1
-	}
-	soldiers = {
-		culture = british
-		religion = anglican
-		size = 27
-	}
-	soldiers = {
-		culture = british
-		religion = methodist
-		size = 5
-	}
-	soldiers = {
-		culture = british
-		religion = baptist
-		size = 2
-	}
-	soldiers = {
-		culture = british
-		religion = protestant
-		size = 2
-	}
-	
-	soldiers = {
-		culture = irish
-		religion = catholic
-		size = 549
-	}
-}
-
-3823 = {	aristocrats = {
-		culture = irish
-		religion = catholic
-		size = 207
-	}
-	clergymen = {
+3822 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 327
 	}
-	artisans = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
-		size = 3161
+		size = 130
 	}
-	
-	soldiers = {
+officers = {
 		culture = irish
 		religion = catholic
+		size = 29
+	}
+clergymen = {
+		culture = irish
+		religion = catholic
+		size = 538
+	}
+artisans = {
+		culture = irish
+		religion = catholic
+		size = 5667
+	}
+soldiers = {
+		culture = irish
+		religion = catholic
+		size = 108
+	}
+farmers = {
+		culture = irish
+		religion = catholic
+		size = 74530
+	}
+farmers = {
+		culture = british
+		religion = anglican
+		size = 622
+	}
+farmers = {
+		culture = british
+		religion = methodist
+		size = 124
+	}
+farmers = {
+		culture = british
+		religion = baptist
+		size = 42
+	}
+farmers = {
+		culture = british
+		religion = protestant
+		size = 42
+	}
+aristocrats = {
+		culture = british
+		religion = anglican
+		size = 50
+	}
+aristocrats = {
+		culture = british
+		religion = methodist
+		size = 10
+	}
+aristocrats = {
+		culture = british
+		religion = baptist
+		size = 3
+	}
+aristocrats = {
+		culture = british
+		religion = protestant
+		size = 3
+	}
+bureaucrats = {
+		culture = british
+		religion = anglican
+		size = 41
+	}
+bureaucrats = {
+		culture = british
+		religion = methodist
 		size = 8
 	}
-	farmers = {
-		culture = irish
-		religion = catholic
-		size = 48440
-	}
-	soldiers = {
-		culture = irish
-		religion = catholic
-		size = 53
-	}
-	bureaucrats = {
-		culture = irish
-		religion = catholic
-		size = 86
-	}
-	officers = {
-		culture = irish
-		religion = catholic
-		size = 19
-	}
-	
-	
-	soldiers = {
-		culture = irish
-		religion = catholic
-		size = 71
-	}
-	
-	farmers = {
-		culture = british
-		religion = anglican
-		size = 411
-	}
-	farmers = {
-		culture = british
-		religion = methodist
-		size = 82
-	}
-	farmers = {
+bureaucrats = {
 		culture = british
 		religion = baptist
-		size = 27
+		size = 3
 	}
-	farmers = {
+bureaucrats = {
 		culture = british
 		religion = protestant
-		size = 27
+		size = 3
 	}
-	aristocrats = {
+officers = {
 		culture = british
 		religion = anglican
-		size = 32
+		size = 13
 	}
-	aristocrats = {
+officers = {
 		culture = british
 		religion = methodist
-		size = 7
+		size = 3
 	}
-	aristocrats = {
+officers = {
 		culture = british
 		religion = baptist
-		size = 2
+		size = 1
 	}
-	aristocrats = {
+officers = {
 		culture = british
 		religion = protestant
-		size = 2
+		size = 1
 	}
-	bureaucrats = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 27
 	}
-	bureaucrats = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 5
 	}
-	bureaucrats = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	bureaucrats = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	officers = {
+soldiers = {
+		culture = irish
+		religion = catholic
+		size = 545
+	}
+aristocrats = {
+		culture = irish
+		religion = catholic
+		size = 2
+	}
+bureaucrats = {
+		culture = irish
+		religion = catholic
+		size = 1
+	}
+clergymen = {
+		culture = irish
+		religion = catholic
+		size = 3
+	}
+artisans = {
+		culture = irish
+		religion = catholic
+		size = 36
+	}
+soldiers = {
+		culture = irish
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = irish
+		religion = catholic
+		size = 479
+	}
+farmers = {
+		culture = british
+		religion = anglican
+		size = 4
+	}
+farmers = {
+		culture = british
+		religion = methodist
+		size = 1
+	}
+soldiers = {
+		culture = irish
+		religion = catholic
+		size = 4
+	}
+}
+
+3823 = {
+aristocrats = {
+		culture = irish
+		religion = catholic
+		size = 207
+	}
+clergymen = {
+		culture = irish
+		religion = catholic
+		size = 327
+	}
+artisans = {
+		culture = irish
+		religion = catholic
+		size = 3161
+	}
+soldiers = {
+		culture = irish
+		religion = catholic
+		size = 8
+	}
+farmers = {
+		culture = irish
+		religion = catholic
+		size = 48440
+	}
+soldiers = {
+		culture = irish
+		religion = catholic
+		size = 53
+	}
+bureaucrats = {
+		culture = irish
+		religion = catholic
+		size = 86
+	}
+officers = {
+		culture = irish
+		religion = catholic
+		size = 19
+	}
+soldiers = {
+		culture = irish
+		religion = catholic
+		size = 71
+	}
+farmers = {
+		culture = british
+		religion = anglican
+		size = 411
+	}
+farmers = {
+		culture = british
+		religion = methodist
+		size = 82
+	}
+farmers = {
+		culture = british
+		religion = baptist
+		size = 27
+	}
+farmers = {
+		culture = british
+		religion = protestant
+		size = 27
+	}
+aristocrats = {
+		culture = british
+		religion = anglican
+		size = 32
+	}
+aristocrats = {
+		culture = british
+		religion = methodist
+		size = 7
+	}
+aristocrats = {
+		culture = british
+		religion = baptist
+		size = 2
+	}
+aristocrats = {
+		culture = british
+		religion = protestant
+		size = 2
+	}
+bureaucrats = {
+		culture = british
+		religion = anglican
+		size = 27
+	}
+bureaucrats = {
+		culture = british
+		religion = methodist
+		size = 5
+	}
+bureaucrats = {
+		culture = british
+		religion = baptist
+		size = 2
+	}
+bureaucrats = {
+		culture = british
+		religion = protestant
+		size = 2
+	}
+officers = {
 		culture = british
 		religion = anglican
 		size = 9
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = methodist
 		size = 2
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 18
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 4
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 275
 	}
 }
 
-3824 = {	aristocrats = {
+3824 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 106
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 21
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 7
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 7
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 430
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 87
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 29
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 29
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 106
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 354
 	}
-	
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 146
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 29
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 10
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 9
 	}
-	
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 2655
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 531
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 177
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 177
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 11682
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 2336
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 779
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 779
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 177
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 796
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 150
 	}
-	
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 14160
 	}
-	
-	
-	
-	
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 33845
 	}
-	
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 735
 	}
-	
-	
-	
-	
-	
 }
 
-3825 = {	aristocrats = {
+3825 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 91
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 100
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 2361
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 87
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 40320
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 70
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 14
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 3944
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 789
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 263
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 263
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 20
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 4
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 93
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 9
 	}
-	
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 301
 	}
 }
 
-3826 = {	aristocrats = {
+3826 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 69
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 13
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 5
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 46
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 1396
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 20
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 50
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 24998
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 3
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 225
 	}
 }
 
-6351 = {	aristocrats = {
+6351 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 152
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 31
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 11
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 10
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 66
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 14
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 341
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 69
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 23
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 22
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 62
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 13
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = anglican
 		size = 3234
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = methodist
 		size = 647
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = baptist
 		size = 216
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = protestant
 		size = 215
 	}
-	
-	labourers = {
+labourers = {
 		culture = scottish
 		religion = presbyterian
 		size = 2497
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 521
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 3183
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 31
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 3719
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 309
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 3552
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 711
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 237
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 237
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 114
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 25383
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 12
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 20
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 4
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 6
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 1549
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 349
 	}
 }
 
-6586 = {	aristocrats = {
+6586 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 62
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 154
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 773
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 21
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 13700
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 95
 	}
 }
 
-6801 = {	bureaucrats = {
+6801 = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 64
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 13
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 50
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 212
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 403
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 3784
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 98
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 32734
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 82
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 17
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 6
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 6
 	}
-	
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 40
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 9
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 257
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 51
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 17
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 17
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 3762
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 753
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 250
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 250
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 17
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 86
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 162
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 178
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 58
 	}
 }
 
-6805 = {	clergymen = {
+6805 = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 26
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 97
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 29
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 2332
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 22
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 4
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 5
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 258
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 52
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 17
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 17
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 47
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 10
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 2207
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 442
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 147
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 147
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 14
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 3743
 	}
 }
 
-6806 = {	clergymen = {
+6806 = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 476
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 2342
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 39
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 3138
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 68
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 14
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 23
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 5
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 348
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 70
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 23
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 23
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 64
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 13
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 3864
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 773
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 258
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 258
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 19
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 5036
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 53
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 11
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 35
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 256
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 126
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 26545
 	}
-	
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 0
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 4
 	}
-	
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 149
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 226
 	}
 }
 
-6807 = {	aristocrats = {
+6807 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 75
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 82
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 1356
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 272
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 90
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 1
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = anglican
 		size = 135
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = methodist
 		size = 27
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = baptist
 		size = 9
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = protestant
 		size = 9
 	}
-	
-	labourers = {
+labourers = {
 		culture = scottish
 		religion = presbyterian
 		size = 104
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 481
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 7652
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 1
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 115
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 15
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 218
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 44
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 15
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 100
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 179
 	}
-	
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 14
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 16
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 6
 	}
-	
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 89
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 6322
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 1265
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 422
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 421
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 90
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 37
 	}
-	
-	
-	
-	
-	
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 21039
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 71
 	}
-	
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 411
 	}
-	
-	
-	
-	
-	
 }
 
-6808 = {	clergymen = {
+6808 = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 39
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 148
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 43
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 3538
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 32
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 7
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 8
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 2
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 392
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 79
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 26
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 26
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 72
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 14
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 5
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 3350
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 670
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 223
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 223
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = scottish
 		religion = presbyterian
 		size = 22
 	}
-	
-	farmers = {
+farmers = {
 		culture = scottish
 		religion = presbyterian
 		size = 5679
 	}
 }
 
-6809 = {	aristocrats = {
+6809 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 9
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 2
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 6
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 2
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 74
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 15
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 13
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = anglican
 		size = 1021
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = methodist
 		size = 205
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = baptist
 		size = 68
 	}
-	labourers = {
+labourers = {
 		culture = british
 		religion = protestant
 		size = 68
 	}
-	
-	labourers = {
+labourers = {
 		culture = scottish
 		religion = presbyterian
 		size = 789
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 6
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 18
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 7
 	}
-	labourers = {
+labourers = {
 		culture = irish
 		religion = catholic
 		size = 870
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 7
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 3
 	}
 }
 
-6810 = {	bureaucrats = {
+6810 = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 83
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 17
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 6
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 6
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 56
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 247
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 446
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 1996
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 288
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 30241
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 5
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 1
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 244
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 49
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 16
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 16
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 2
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 24
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 268
 	}
 }
 
-6996 = {	aristocrats = {
+6996 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 56
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 11
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 4
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 37
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 1110
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 14
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 65
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 19886
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 157
 	}
 }
 
-6997 = {	aristocrats = {
+6997 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 125
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 147
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 2087
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 76
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 37502
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 98
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 45
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 9
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 180
 	}
 }
 
-6998 = {	aristocrats = {
+6998 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 82
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 72
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 2128
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 62
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 37062
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 77
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 15
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 6
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 2090
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 418
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 140
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 139
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 10
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 2
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 209
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 160
 	}
 }
 
-6999 = {	aristocrats = {
+6999 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 78
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 16
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 5
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 4
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 84
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 17
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 6
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 5
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 58
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 69
 	}
-	
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 35
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 7
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 513
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 103
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 34
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 34
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 3549
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 710
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 237
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 236
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 34
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 173
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 171
 	}
-	
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 3998
 	}
-	
-	
-	
-	
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 28463
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 127
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 129
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 13
 	}
 }
 
-7000 = {	aristocrats = {
+7000 = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 110
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 22
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 8
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 6
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 310
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 62
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 21
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 21
 	}
-	aristocrats = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 97
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 255
 	}
-	
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 113
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 23
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 7
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = protestant
 		size = 7
 	}
-	
-	artisans = {
+artisans = {
 		culture = british
 		religion = anglican
 		size = 1909
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = methodist
 		size = 382
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = baptist
 		size = 127
 	}
-	artisans = {
+artisans = {
 		culture = british
 		religion = protestant
 		size = 127
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 9959
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 1992
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 665
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 663
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 128
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 585
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 636
 	}
-	
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 10980
 	}
-	
-	
-	
-	
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 37858
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 58
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 25
 	}
-	
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 99
 	}
 }
 
-7001 = {	aristocrats = {
+7001 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 77
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 123
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 1095
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 2
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 17526
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 21
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 4
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 14
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 141
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 24
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 5
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 1398
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 280
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 93
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 93
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = anglican
 		size = 7
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = methodist
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 140
 	}
 }
 
-7002 = {	aristocrats = {
+7002 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 182
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 348
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 77
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 400
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 4775
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 93
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 47878
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 1662
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 332
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 112
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 110
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 130
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 26
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 9
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 9
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 108
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 22
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 8
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 7
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = anglican
 		size = 37
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = methodist
 		size = 7
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 23
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 5
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 118
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 197
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 49
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 10
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 3
 	}
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 44
 	}
 }
 
-7003 = {	aristocrats = {
+7003 = {
+aristocrats = {
 		culture = irish
 		religion = catholic
 		size = 63
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = irish
 		religion = catholic
 		size = 90
 	}
-	officers = {
+officers = {
 		culture = irish
 		religion = catholic
 		size = 20
 	}
-	clergymen = {
+clergymen = {
 		culture = irish
 		religion = catholic
 		size = 124
 	}
-	artisans = {
+artisans = {
 		culture = irish
 		religion = catholic
 		size = 1376
 	}
-	
-	
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 75
 	}
-	farmers = {
+farmers = {
 		culture = irish
 		religion = catholic
 		size = 16055
 	}
-	
-	farmers = {
+farmers = {
 		culture = british
 		religion = anglican
 		size = 431
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = methodist
 		size = 86
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = baptist
 		size = 29
 	}
-	farmers = {
+farmers = {
 		culture = british
 		religion = protestant
 		size = 29
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = anglican
 		size = 34
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = methodist
 		size = 7
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	aristocrats = {
+aristocrats = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = anglican
 		size = 28
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = methodist
 		size = 5
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = baptist
 		size = 2
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = british
 		religion = protestant
 		size = 2
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = anglican
 		size = 9
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = methodist
 		size = 2
 	}
-	officers = {
+officers = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = anglican
 		size = 19
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = methodist
 		size = 4
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = baptist
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = british
 		religion = protestant
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = irish
 		religion = catholic
 		size = 69

@@ -1458,7 +1458,7 @@ country_event = {
 			}
 			war = {
 				target = THIS
-				attacker_goal = { casus_belli = acquire_core_state state_province_id = 1788 }
+				attacker_goal = { casus_belli = ho_acquire_core_state_fra_1783 state_province_id = 1788 }
 				defender_goal = { casus_belli = conquest_any }
 				call_ally = no
 			}
@@ -1475,7 +1475,7 @@ country_event = {
 			}
 			war = {
 				target = THIS
-				attacker_goal = { casus_belli = acquire_core_state state_province_id = 1788 }
+				attacker_goal = { casus_belli = ho_acquire_core_state_fra_1783 state_province_id = 1788 }
 				defender_goal = { casus_belli = conquest_any }
 				call_ally = no
 			}
@@ -1737,7 +1737,7 @@ country_event = {
 			badboy = 5
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			2625 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HOP_76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			77 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			QUE = { all_core = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			ENG = {
@@ -2636,7 +2636,7 @@ country_event = {
 				target = FROM
 				attacker_goal = { casus_belli = cut_down_to_size }
 				defender_goal = {
-					casus_belli = acquire_core_state
+					casus_belli = h45_acquire_core_state_hst_fra_alsace
 					state_province_id = 412
 				}
 			}

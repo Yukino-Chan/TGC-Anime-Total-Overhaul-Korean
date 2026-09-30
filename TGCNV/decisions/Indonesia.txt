@@ -236,7 +236,7 @@ indonesia_raya = {
 				country_event = 95255
 			}
 			any_owned = {
-				limit = { is_core = INO NOT = { province_id = 1446 } }
+				limit = { is_core = INO NOT = { region = HXP_1446 } }
 					remove_core = JAV
 					remove_core = DJA
 					remove_core = SAK

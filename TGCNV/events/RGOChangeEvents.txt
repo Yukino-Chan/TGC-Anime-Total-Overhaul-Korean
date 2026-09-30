@@ -2240,7 +2240,7 @@
 						province_id = 1304
 						province_id = 1319
 						province_id = 1316
-						province_id = 1302
+						region = HXP_1302
 						province_id = 1261
 						province_id = 1262
 						province_id = 1628
@@ -2251,10 +2251,10 @@
 						province_id = 1228
 						province_id = 1225
 						province_id = 1246
-						province_id = 1300
+						region = HXP_1300
 						province_id = 1306
 						province_id = 1307
-						province_id = 1295
+						region = HXP_1295
 						province_id = 1233
 						province_id = 1635
 						province_id = 1632
@@ -2271,12 +2271,12 @@
 						province_id = 1290
 						province_id = 1593
 						province_id = 1248
-						province_id = 1318
+						region = HXP_1318
 						province_id = 1350
 						province_id = 1359
 						province_id = 1407
-						province_id = 1301
-						province_id = 1278
+						region = HXP_1301
+						region = HXP_1278
 						province_id = 1274
 						province_id = 1327
 						province_id = 1236
@@ -2302,7 +2302,7 @@
 						province_id = 1303
 						province_id = 1326
 						province_id = 1308
-						province_id = 1312
+						region = HXP_1312
 						province_id = 1537
 						province_id = 1541
 						province_id = 1507 #Zhenyuan - China
@@ -5909,7 +5909,7 @@
 		option = {
 			name = "EVTOPTA199039"
 
-			1877 = { trade_goods = rubber }
+			HOP_1877 = { trade_goods = rubber }
 			1878 = { trade_goods = timber }
 
 			ai_chance = { factor = 70 }
@@ -5919,7 +5919,7 @@
 		option = {
 			name = "EVTOPTC199039"
 
-			1877 = { trade_goods = coffee }
+			HOP_1877 = { trade_goods = coffee }
 			1878 = { trade_goods = coffee }
 
 			ai_chance = {
@@ -5948,7 +5948,7 @@
 		option = {
 			name = "EVTOPTD199050"
 
-			1877 = { trade_goods = tobacco }
+			HOP_1877 = { trade_goods = tobacco }
 			1878 = { trade_goods = tobacco }
 
 			ai_chance = {
@@ -5977,7 +5977,7 @@
 		option = {
 			name = "EVTOPTD199065"
 
-			1877 = { trade_goods = rubber }
+			HOP_1877 = { trade_goods = rubber }
 			1878 = { trade_goods = tropical_wood }
 
 			ai_chance = {
@@ -6422,7 +6422,7 @@
 
 			1394 = { trade_goods = tea }
 			1395 = { trade_goods = tea }
-			1388 = { trade_goods = tobacco }
+			HXP_1388 = { trade_goods = tobacco }
 
 			ai_chance = {
 				factor = 10
@@ -6505,7 +6505,7 @@
 
 			1394 = { trade_goods = coffee }
 			1395 = { trade_goods = coffee }
-			1388 = { trade_goods = coffee }
+			HXP_1388 = { trade_goods = coffee }
 
 			ai_chance = {
 				factor = 10

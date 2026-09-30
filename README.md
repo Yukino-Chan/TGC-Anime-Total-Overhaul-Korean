@@ -1,6 +1,6 @@
 # TGC - Anime Total Overhaul (Korean)
 
-Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGCNV**와 음악 모드 **TGO**입니다. 이 브랜치에는 두 모드의 파일과 관련 설치·업데이트 소스가 있습니다. 내용은 배포 **TGCNV-20260930-103450**(엔진 0.6.8.3+20260929)과 같습니다.
+Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGCNV**와 음악 모드 **TGO**입니다. 이 브랜치에는 두 모드의 파일과 관련 설치·업데이트 소스가 있습니다. 내용은 배포 **TGCNV-20260930-163538**(엔진 0.6.8.3+20260930-P35)과 같습니다.
 
 ## 설치와 업데이트
 
@@ -25,7 +25,7 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-이 배포는 사용자 승인 실험판입니다. 파일·서명·설치 도구 검증은 마쳤지만 장기 캠페인 안정성은 검증하지 않았습니다. 멀티플레이는 모든 참가자가 같은 배포를 설치해야 합니다. 기존 세이브는 변환하지 않으며 새 캠페인을 권장합니다.
+이 배포는 사용자 승인 실험판입니다. 파일·서명·설치 도구 검증은 마쳤지만 장기 캠페인 안정성은 검증하지 않았습니다. 멀티플레이는 모든 참가자가 같은 배포를 설치해야 합니다. 프로빈스 번호가 바뀌었으므로 새 캠페인으로 시작해야 합니다. 기존 세이브는 호환되지 않으며 변환하지 않습니다.
 
 ## 제작자, 출처와 권리
 
@@ -38,4 +38,4 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## English
 
-TGCNV is a standalone Korean/English anime overhaul for Victoria II: Heart of Darkness 3.04, bundled with the TGO music mod. Download the [online installer](https://github.com/Yukino-Chan/TGC-Anime-Total-Overhaul-Korean/releases/download/installer/TGC-Online-Installer.zip?sha256=8744f9c19e805c687aa709bb7154f5d5a4747edfaee755fe5838d870ecf305a2), extract it, close the game and run Update.cmd, then choose English on first install. This branch holds the TGCNV and TGO mod files plus related updater sources. The mod files match release TGCNV-20260930-103450; install through the installer rather than copying folders. Unofficial non-commercial fan project; Blue Archive and other characters belong to their respective owners.
+TGCNV is a standalone Korean/English anime overhaul for Victoria II: Heart of Darkness 3.04, bundled with the TGO music mod. Download the [online installer](https://github.com/Yukino-Chan/TGC-Anime-Total-Overhaul-Korean/releases/download/installer/TGC-Online-Installer.zip?sha256=8744f9c19e805c687aa709bb7154f5d5a4747edfaee755fe5838d870ecf305a2), extract it, close the game and run Update.cmd, then choose English on first install. This branch holds the TGCNV and TGO mod files plus related updater sources. The mod files match release TGCNV-20260930-163538; install through the installer rather than copying folders. Province IDs changed: start a new campaign; old saves are not compatible. Unofficial non-commercial fan project; Blue Archive and other characters belong to their respective owners.

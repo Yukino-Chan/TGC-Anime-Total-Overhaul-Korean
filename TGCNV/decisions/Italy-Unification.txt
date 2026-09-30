@@ -471,7 +471,7 @@ political_decisions = {
 					THIS = {
 						war = {
 							target = AUS
-							attacker_goal = { casus_belli = unification_casus_belli state_province_id = 726 }
+							attacker_goal = { casus_belli = h45_unification_casus_belli_hst_lom state_province_id = 726 }
 							defender_goal = { casus_belli = status_quo }
 							call_ally = yes
 						}
@@ -486,7 +486,7 @@ political_decisions = {
 					THIS = {
 						war = {
 							target = KUK
-							attacker_goal = { casus_belli = unification_casus_belli state_province_id = 726 }
+							attacker_goal = { casus_belli = h45_unification_casus_belli_hst_lom state_province_id = 726 }
 							defender_goal = { casus_belli = humiliate }
 							call_ally = yes
 						}
@@ -501,7 +501,7 @@ political_decisions = {
 					THIS = {
 						war = {
 							target = DNB
-							attacker_goal = { casus_belli = unification_casus_belli state_province_id = 726 }
+							attacker_goal = { casus_belli = h45_unification_casus_belli_hst_lom state_province_id = 726 }
 							defender_goal = { casus_belli = humiliate }
 							call_ally = yes
 						}
@@ -516,7 +516,7 @@ political_decisions = {
 					THIS = {
 						war = {
 							target = GCF
-							attacker_goal = { casus_belli = unification_casus_belli state_province_id = 726 }
+							attacker_goal = { casus_belli = h45_unification_casus_belli_hst_lom state_province_id = 726 }
 							defender_goal = { casus_belli = humiliate }
 							call_ally = yes
 						}

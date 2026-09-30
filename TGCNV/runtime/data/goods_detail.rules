@@ -375,11 +375,11 @@ rule expanded_sugar_refinery sugar sugar_refinery factory 0 0 0 0 40 0 3 refined
 rule base_idol_media idol_media - any 0 0 0 0 0 0 1 unclassified 100
 rule expanded_artisan_idol_media idol_media artisan_idol_media artisan 0 0 0 0 40 0 3 fabric_banner_goods 35 photo_card_print 50 printed_album_magazine 15
 rule expanded_idol_media_studio idol_media idol_media_studio factory 0 0 0 0 40 0 3 fabric_banner_goods 30 photo_card_print 45 printed_album_magazine 25
-provinces 6691
+provinces 6925
 province 1 1 7 cold continent_north_america geo_usa naval_base_site region_usa_1 terrain_montane_tundra upland
 province 2 1 6 cold continent_north_america geo_usa region_tgc_territory_2 region_usa_1 terrain_arctic
-province 3 1 7 cold continent_north_america geo_usa naval_base_site region_usa_1 terrain_montane_tundra upland
-province 4 1 7 cold continent_north_america geo_usa naval_base_site region_usa_1 terrain_montane_tundra upland
+province 3 1 6 cold continent_north_america geo_usa region_usa_1 terrain_montane_tundra upland
+province 4 1 6 cold continent_north_america geo_usa region_usa_1 terrain_montane_tundra upland
 province 5 1 6 cold continent_north_america geo_usa naval_base_site region_usa_1 terrain_arctic
 province 6 6 7 cold continent_north_america geo_canada region_eng_6 region_gold_1893 terrain_montane_tundra upland
 province 7 6 6 cold continent_north_america geo_canada region_eng_6 terrain_montane_tundra upland
@@ -1157,7 +1157,7 @@ province 778 778 6 continent_europe geo_austria naval_base_site region_mediterra
 province 779 777 5 continent_europe geo_austria region_aus_777 region_tgc_territory_779 terrain_plains
 province 780 780 7 continent_europe geo_austria naval_base_site region_aus_780 region_mediterranean_sea_coast terrain_hills upland
 province 781 770 7 continent_europe geo_austria naval_base_site region_aus_770 region_mediterranean_sea_coast terrain_urban_zadar urban
-province 782 780 7 continent_europe geo_austria naval_base_site region_aus_780 region_mediterranean_sea_coast terrain_urban_dubrovnik urban
+province 782 780 6 continent_europe geo_austria region_aus_780 region_mediterranean_sea_coast terrain_urban_dubrovnik urban
 province 783 783 5 continent_europe geo_balkan region_tur_788 terrain_urban_sarajevo urban
 province 784 784 4 continent_europe geo_balkan region_psa_2312 terrain_plains
 province 785 785 4 continent_europe geo_balkan region_tur_785 terrain_woods
@@ -1670,13 +1670,13 @@ province 1291 1290 7 continent_asia geo_india naval_base_site region_asian_plant
 province 1292 1290 3 continent_asia geo_india region_eng_1291
 province 1293 1290 4 continent_asia geo_india naval_base_site region_eng_1291
 province 1294 1290 3 continent_asia geo_india region_eng_1291
-province 1295 1290 4 continent_asia geo_india naval_base_site region_eng_1291
+province 1295 1290 3 continent_asia geo_india region_eng_1291
 province 1296 1290 6 continent_asia geo_india region_asian_plantations region_eng_1291 terrain_hills upland
 province 1297 1297 7 continent_asia geo_india naval_base_site region_asian_plantations region_eng_1297 terrain_urban_bombay urban
 province 1298 1297 3 continent_asia geo_india region_eng_1297
 province 1299 1297 3 continent_asia geo_india region_eng_1297
 province 1300 1297 3 continent_asia geo_india region_eng_1297
-province 1301 1297 4 continent_asia geo_india naval_base_site region_eng_1297
+province 1301 1297 3 continent_asia geo_india region_eng_1297
 province 1302 1297 3 continent_asia geo_india region_eng_1297
 province 1303 1297 7 continent_asia geo_india naval_base_site region_asian_plantations region_eng_1297 terrain_urban_goa urban
 province 1304 1304 7 continent_asia geo_india naval_base_site region_asian_plantations region_eng_1304 terrain_urban_madras urban
@@ -1687,7 +1687,7 @@ province 1308 1305 4 continent_asia geo_india region_asian_plantations region_en
 province 1309 1304 5 continent_asia geo_india naval_base_site region_asian_plantations region_eng_1304
 province 1310 1304 5 continent_asia geo_india naval_base_site region_asian_plantations region_eng_1304
 province 1311 1304 4 continent_asia geo_india region_asian_plantations region_eng_1304
-province 1312 1304 7 continent_asia geo_india naval_base_site region_asian_plantations region_eng_1304 terrain_urban_pondicherry urban
+province 1312 1304 6 continent_asia geo_india region_asian_plantations region_eng_1304 terrain_urban_pondicherry urban
 province 1313 1313 4 continent_asia geo_india region_asian_plantations region_mys_1314
 province 1314 1313 4 continent_asia geo_india region_asian_plantations region_mys_1314
 province 1315 1313 4 continent_asia geo_india region_asian_plantations region_mys_1314
@@ -2160,7 +2160,7 @@ province 1781 1775 3 continent_west_africa geo_africa region_fra_1775
 province 1782 1775 3 continent_west_africa geo_africa region_fra_1775
 province 1783 1783 4 continent_west_africa geo_africa naval_base_site region_fra_1783
 province 1784 1783 4 continent_west_africa geo_africa naval_base_site region_fra_1783
-province 1785 1785 4 continent_west_africa geo_africa naval_base_site region_fra_1788
+province 1785 1785 3 continent_west_africa geo_africa region_fra_1788
 province 1786 1783 4 continent_west_africa geo_africa naval_base_site region_fra_1783
 province 1787 1783 3 continent_west_africa geo_africa region_fra_1783
 province 1788 1783 4 continent_west_africa geo_africa naval_base_site region_fra_1783
@@ -2252,7 +2252,7 @@ province 1873 1858 4 continent_east_africa geo_africa naval_base_site region_som
 province 1874 1858 5 continent_east_africa geo_africa naval_base_site region_som_1872 region_tgc_territory_1874
 province 1875 1858 4 continent_east_africa geo_africa naval_base_site region_som_1872
 province 1876 1876 4 continent_west_africa geo_africa naval_base_site region_fra_1878
-province 1877 1876 4 continent_west_africa geo_africa naval_base_site region_fra_1878
+province 1877 1876 3 continent_west_africa geo_africa region_fra_1878
 province 1878 1876 3 continent_west_africa geo_africa region_fra_1878
 province 1879 1879 4 continent_west_africa geo_africa naval_base_site region_fra_1883
 province 1880 1879 3 continent_west_africa geo_africa region_fra_1883
@@ -2966,7 +2966,7 @@ province 2587 2587 5 continent_europe geo_soviet naval_base_site region_rus_984 
 province 2588 981 5 continent_europe geo_soviet naval_base_site region_rus_981 terrain_forest
 province 2589 1660 4 continent_asia geo_soviet naval_base_site region_jap_1660
 province 2590 1689 6 geo_soviet naval_base_site region_mediterranean_sea_coast region_spa_1689 terrain_urban_ceuta urban
-province 2591 1304 5 continent_asia geo_scandinavia naval_base_site region_asian_plantations region_eng_1304
+province 2591 1304 4 continent_asia geo_scandinavia region_asian_plantations region_eng_1304
 province 2592 9 6 cold continent_north_america geo_canada naval_base_site region_can_60 terrain_arctic
 province 2593 9 6 cold continent_north_america geo_canada naval_base_site region_can_60 terrain_boreal
 province 2594 47 5 cold continent_north_america geo_canada region_can_50 terrain_boreal
@@ -3185,7 +3185,7 @@ province 3351 1102 3 continent_oceania geo_soviet region_rus_1102
 province 3352 1048 7 continent_oceania geo_soviet naval_base_site region_black_sea_coast region_rus_1048 terrain_urban_sochi urban
 province 3353 2368 4 continent_south_america geo_south_america region_arg_2369 region_tgc_territory_3353
 province 3354 3354 4 continent_europe geo_france region_psa_2059 terrain_plains
-province 3355 3355 5 continent_europe geo_scandinavia naval_base_site region_jan_3355 terrain_plains
+province 3355 3355 4 continent_europe geo_scandinavia region_jan_3355 terrain_plains
 province 3356 3356 4 continent_europe geo_balkan region_tur_2690 terrain_plains
 province 3357 455 4 continent_europe geo_spain region_psa_2037 terrain_plains
 province 3358 3358 6 continent_europe geo_balkan region_mon_2582 region_tgc_territory_3358 terrain_mountain upland
@@ -3231,7 +3231,7 @@ province 3397 565 5 continent_europe geo_germany region_nas_564 region_rhineland
 province 3398 3398 6 continent_europe geo_soviet naval_base_site region_baltic_sea_coast region_psa_190 terrain_plains
 province 3399 3399 4 continent_europe geo_soviet region_psa_3790 terrain_plains
 province 3400 2368 4 continent_south_america geo_south_america region_arg_2369 region_tgc_territory_3400
-province 3401 1443 4 continent_east_indies geo_indonesia naval_base_site region_net_1446
+province 3401 1443 3 continent_east_indies geo_indonesia region_net_1446
 province 3402 3402 6 continent_europe geo_austria naval_base_site region_mediterranean_sea_coast region_psa_1083 terrain_plains
 province 3403 849 7 continent_europe geo_balkan naval_base_site region_mediterranean_sea_coast region_tur_853 terrain_mountain upland
 province 3404 770 6 continent_europe geo_austria naval_base_site region_aus_770 region_mediterranean_sea_coast terrain_plains
@@ -7067,4 +7067,238 @@ province 7233 1077 3 continent_asia geo_central_asia region_rus_1070
 province 7234 1077 3 continent_asia geo_central_asia region_rus_1070
 province 7235 1532 3 continent_asia geo_china region_chi_1532
 province 7236 540 5 continent_europe geo_germany naval_base_site region_psa_2000 terrain_plains
+province 7237 11 5 cold continent_north_america geo_canada region_eng_9 terrain_arctic
+province 7238 11 5 cold continent_north_america geo_canada region_eng_9 terrain_arctic
+province 7239 30 5 cold continent_north_america geo_canada region_eng_30 terrain_boreal
+province 7240 30 5 cold continent_north_america geo_canada region_eng_30 terrain_boreal
+province 7241 47 5 cold continent_north_america geo_canada region_can_50 terrain_boreal
+province 7242 155 3 continent_north_america geo_usa region_usa_158
+province 7243 184 3 continent_north_america geo_usa region_usa_185
+province 7244 241 3 continent_north_america geo_usa region_usa_241
+province 7245 241 3 continent_north_america geo_usa region_usa_241
+province 7246 268 4 continent_europe geo_united_kingdom region_psa_4857 terrain_plains
+province 7247 3828 5 continent_europe geo_united_kingdom region_eng_266 terrain_hills upland
+province 7248 3833 4 continent_europe geo_united_kingdom region_psa_1876 terrain_plains
+province 7249 7143 4 continent_europe geo_united_kingdom region_psa_4854 terrain_plains
+province 7250 273 5 continent_europe geo_united_kingdom region_psa_122 terrain_urban_cardiff urban
+province 7251 274 5 continent_europe geo_united_kingdom region_psa_1880 terrain_hills upland
+province 7252 290 4 continent_europe geo_united_kingdom region_eng_288 terrain_plains
+province 7253 3833 4 continent_europe geo_united_kingdom region_psa_1876 terrain_plains
+province 7254 3813 4 continent_europe geo_scandinavia region_psa_1551 terrain_plains
+province 7255 3813 4 continent_europe geo_scandinavia region_psa_1551 terrain_plains
+province 7256 3355 5 continent_europe geo_scandinavia naval_base_site region_jan_3355 terrain_plains
+province 7257 3355 4 continent_europe geo_scandinavia region_jan_3355 terrain_plains
+province 7258 2587 4 continent_europe geo_soviet region_rus_984 terrain_plains
+province 7259 984 4 continent_europe geo_soviet region_psa_928 terrain_plains
+province 7260 982 4 continent_europe geo_scandinavia region_psa_722 terrain_plains
+province 7261 6758 5 continent_europe geo_scandinavia region_psa_1513 terrain_hills upland
+province 7262 338 5 continent_europe geo_scandinavia region_rus_336 terrain_hills upland
+province 7263 338 5 continent_europe geo_scandinavia region_rus_336 terrain_hills upland
+province 7264 338 5 continent_europe geo_scandinavia region_rus_336 terrain_hills upland
+province 7265 6761 5 continent_europe geo_scandinavia region_baltic_sea_coast region_psa_1522 terrain_plains
+province 7266 3869 5 continent_europe geo_scandinavia region_psa_1543 terrain_mountain upland
+province 7267 321 6 continent_europe geo_scandinavia region_baltic_sea_coast region_psa_1500 terrain_hills upland
+province 7268 334 5 continent_europe geo_scandinavia region_baltic_sea_coast region_psa_1502 terrain_plains
+province 7269 437 4 continent_europe geo_france region_fra_434 terrain_plains
+province 7270 6669 4 continent_europe geo_germany region_psa_935 terrain_plains
+province 7271 3418 5 continent_europe geo_germany region_pru_554 terrain_hills upland
+province 7272 3418 5 continent_europe geo_germany region_pru_554 terrain_hills upland
+province 7273 3255 5 continent_europe geo_germany region_psa_2084 terrain_montane_woods upland
+province 7274 556 4 continent_europe geo_germany region_psa_2088 terrain_plains
+province 7275 698 5 continent_europe geo_germany region_baltic_sea_coast region_psa_188 terrain_plains
+province 7276 778 5 continent_europe geo_austria region_mediterranean_sea_coast region_psa_1111 terrain_plains
+province 7277 780 7 continent_europe geo_austria naval_base_site region_aus_780 region_mediterranean_sea_coast terrain_urban_dubrovnik urban
+province 7278 6994 5 continent_europe geo_italy region_mediterranean_sea_coast region_psa_2710 terrain_plains
+province 7279 763 5 continent_europe geo_italy region_mediterranean_sea_coast region_psa_2663 terrain_plains
+province 7280 845 5 continent_europe geo_balkan region_mediterranean_sea_coast region_psa_1236 terrain_coastal_desert
+province 7281 836 5 continent_europe geo_balkan region_mediterranean_sea_coast region_psa_1108 terrain_plains
+province 7282 839 6 continent_europe geo_balkan region_gre_826 region_mediterranean_sea_coast terrain_montane_woods upland
+province 7283 839 6 continent_europe geo_balkan region_gre_826 region_mediterranean_sea_coast terrain_montane_woods upland
+province 7284 997 4 continent_europe geo_soviet region_rus_1005 terrain_plains
+province 7285 966 5 continent_europe geo_soviet region_black_sea_coast region_psa_3846 terrain_plains
+province 7286 7039 5 continent_europe geo_soviet region_black_sea_coast region_psa_3727 terrain_plains
+province 7287 7039 5 continent_europe geo_soviet region_black_sea_coast region_psa_3727 terrain_plains
+province 7288 4517 5 continent_europe geo_soviet region_black_sea_coast region_psa_3728 terrain_plains
+province 7289 4536 4 continent_europe geo_soviet region_psa_215 terrain_plains
+province 7290 6637 4 continent_europe geo_soviet region_psa_402 terrain_plains
+province 7291 1181 3 continent_asia geo_soviet region_rus_1184
+province 7292 2634 6 cold continent_asia geo_soviet region_rus_2590 terrain_montane_tundra upland
+province 7293 2634 6 cold continent_asia geo_soviet region_rus_2590 terrain_montane_tundra upland
+province 7294 2654 5 cold continent_asia geo_soviet region_rus_2615 terrain_boreal
+province 7295 1227 3 continent_oceania geo_india region_pan_1227
+province 7296 1227 5 continent_oceania geo_india region_asian_plantations region_pan_1227 terrain_forest
+province 7297 1227 5 continent_asia geo_india region_asian_plantations region_pan_1227 terrain_floodplain_farmland
+province 7298 1227 5 continent_asia geo_india region_asian_plantations region_pan_1227 terrain_floodplain_farmland
+province 7299 1227 5 continent_asia geo_india region_asian_plantations region_pan_1227 terrain_floodplain_farmland
+province 7300 1238 6 continent_asia geo_india region_asian_plantations region_eng_1236 terrain_montane_forest upland
+province 7301 1247 4 continent_asia geo_india region_asian_plantations region_eng_1247
+province 7302 1247 4 continent_asia geo_india region_asian_plantations region_eng_1247
+province 7303 1251 4 continent_asia geo_india region_asian_plantations region_eng_1251
+province 7304 1251 4 continent_asia geo_india region_asian_plantations region_eng_1251
+province 7305 1264 3 continent_asia geo_india region_eng_1264
+province 7306 1264 3 continent_asia geo_india region_eng_1264
+province 7307 1270 4 continent_asia geo_india region_asian_plantations region_eng_1275
+province 7308 1270 4 continent_asia geo_india region_asian_plantations region_eng_1275
+province 7309 1270 4 continent_asia geo_india region_asian_plantations region_eng_1275
+province 7310 1270 4 continent_asia geo_india region_asian_plantations region_eng_1275
+province 7311 1261 4 continent_asia geo_india region_asian_plantations region_nag_1277
+province 7312 1261 4 continent_asia geo_india region_asian_plantations region_nag_1277
+province 7313 1278 3 continent_asia geo_india region_hyd_1283
+province 7314 1288 4 continent_oceania geo_central_asia region_asian_plantations region_sin_1288
+province 7315 1290 6 continent_asia geo_india region_asian_plantations region_eng_1291 terrain_urban_ahmedabad urban
+province 7316 1290 5 continent_asia geo_india region_asian_plantations region_eng_1291 terrain_plains
+province 7317 1290 5 continent_asia geo_india region_asian_plantations region_eng_1291 terrain_plains
+province 7318 1290 3 continent_asia geo_india region_eng_1291
+province 7319 1290 3 continent_asia geo_india region_eng_1291
+province 7320 1290 4 continent_asia geo_india naval_base_site region_eng_1291
+province 7321 1290 3 continent_asia geo_india region_eng_1291
+province 7322 1290 3 continent_asia geo_india region_eng_1291
+province 7323 1290 3 continent_asia geo_india region_eng_1291
+province 7324 1290 3 continent_asia geo_india region_eng_1291
+province 7325 1290 3 continent_asia geo_india region_eng_1291
+province 7326 1290 3 continent_asia geo_india region_eng_1291
+province 7327 1290 3 continent_asia geo_india region_eng_1291
+province 7328 1290 3 continent_asia geo_india region_eng_1291
+province 7329 1290 5 continent_asia geo_india region_asian_plantations region_eng_1291 terrain_farmlands
+province 7330 1297 3 continent_asia geo_india region_eng_1297
+province 7331 1297 3 continent_asia geo_india region_eng_1297
+province 7332 1297 3 continent_asia geo_india region_eng_1297
+province 7333 1297 3 continent_asia geo_india region_eng_1297
+province 7334 1297 3 continent_asia geo_india region_eng_1297
+province 7335 1297 3 continent_asia geo_india region_eng_1297
+province 7336 1297 3 continent_asia geo_india region_eng_1297
+province 7337 1297 3 continent_asia geo_india region_eng_1297
+province 7338 1297 3 continent_asia geo_india region_eng_1297
+province 7339 1297 4 continent_asia geo_india naval_base_site region_eng_1297
+province 7340 1297 3 continent_asia geo_india region_eng_1297
+province 7341 1297 3 continent_asia geo_india region_eng_1297
+province 7342 1297 3 continent_asia geo_india region_eng_1297
+province 7343 1297 3 continent_asia geo_india region_eng_1297
+province 7344 1297 3 continent_asia geo_india region_eng_1297
+province 7345 1297 3 continent_asia geo_india region_eng_1297
+province 7346 1297 3 continent_asia geo_india region_eng_1297
+province 7347 1297 3 continent_asia geo_india region_eng_1297
+province 7348 1297 3 continent_asia geo_india region_eng_1297
+province 7349 1297 3 continent_asia geo_india region_eng_1297
+province 7350 1297 5 continent_asia geo_india region_asian_plantations region_eng_1297 terrain_plains
+province 7351 1297 5 continent_asia geo_india region_asian_plantations region_eng_1297 terrain_plains
+province 7352 1304 6 continent_asia geo_india region_asian_plantations region_eng_1304 terrain_urban_pondicherry urban
+province 7353 1304 5 continent_asia geo_scandinavia naval_base_site region_asian_plantations region_eng_1304
+province 7354 1304 5 continent_asia geo_india region_asian_plantations region_eng_1304 terrain_farmlands
+province 7355 1304 5 continent_asia geo_india region_asian_plantations region_eng_1304 terrain_farmlands
+province 7356 1305 4 continent_asia geo_india region_asian_plantations region_eng_1305
+province 7357 1305 4 continent_asia geo_india region_asian_plantations region_eng_1305
+province 7358 1313 4 continent_asia geo_india region_asian_plantations region_mys_1314
+province 7359 1318 5 continent_asia geo_india region_asian_plantations region_eng_1317 region_rubber_1880
+province 7360 1393 5 continent_east_indies geo_asia region_asian_plantations region_bru_1396 region_oil_1885
+province 7361 1393 5 continent_east_indies geo_asia region_asian_plantations region_bru_1396 region_oil_1885
+province 7362 1393 5 continent_east_indies geo_asia region_asian_plantations region_bru_1396 region_oil_1885
+province 7363 1393 5 continent_east_indies geo_asia region_asian_plantations region_bru_1396 region_oil_1885
+province 7364 1443 3 continent_east_indies geo_indonesia region_net_1446
+province 7365 1462 4 continent_east_indies geo_indonesia region_asian_plantations region_spa_1463
+province 7366 1462 4 continent_east_indies geo_indonesia region_asian_plantations region_spa_1463
+province 7367 1462 4 continent_east_indies geo_indonesia region_asian_plantations region_spa_1463
+province 7368 1532 3 continent_asia geo_central_asia region_chi_1532
+province 7369 1532 3 continent_asia geo_central_asia region_chi_1532
+province 7370 1547 3 continent_asia geo_china region_chi_1547
+province 7371 1612 3 continent_asia geo_china region_chi_1612
+province 7372 1612 3 continent_asia geo_china region_chi_1612
+province 7373 1631 4 continent_asia geo_asia region_asian_plantations region_kor_gyeongsang
+province 7374 1649 3 continent_asia geo_japan region_jap_1649
+province 7375 1649 3 continent_asia geo_japan region_jap_1649
+province 7376 1649 3 continent_asia geo_japan region_jap_1649
+province 7377 1649 3 continent_asia geo_japan region_jap_1649
+province 7378 1649 3 continent_asia geo_japan region_jap_1649
+province 7379 1660 3 continent_asia geo_japan region_jap_1660
+province 7380 1660 3 continent_asia geo_japan region_jap_1660
+province 7381 1668 3 continent_asia geo_japan region_jap_1672
+province 7382 1668 3 continent_asia geo_japan region_jap_1672
+province 7383 1668 3 continent_asia geo_japan region_jap_1672
+province 7384 1668 3 continent_asia geo_japan region_jap_1672
+province 7385 1645 3 continent_asia geo_japan region_jap_1675
+province 7386 1645 3 continent_asia geo_japan region_jap_1675
+province 7387 1645 3 continent_asia geo_japan region_jap_1675
+province 7388 1686 3 geo_africa region_mediterranean_sea_coast region_mor_1688
+province 7389 1775 3 continent_west_africa geo_africa region_fra_1775
+province 7390 1907 4 continent_west_africa geo_africa region_ash_1909 terrain_jungle
+province 7391 1907 3 continent_west_africa geo_africa region_ash_1909
+province 7392 2066 3 continent_east_africa geo_africa region_eng_2067
+province 7393 2158 3 continent_north_america geo_mexico region_mex_2158
+province 7394 2161 3 continent_north_america geo_mexico region_mex_2161
+province 7395 2159 3 continent_north_america geo_mexico region_mex_2167
+province 7396 2172 3 continent_north_america geo_mexico region_mex_2172
+province 7397 2165 5 continent_north_america geo_mexico region_mex_2181 terrain_urban_villahermosa urban
+province 7398 2201 3 continent_north_america geo_south_america region_uca_2201
+province 7399 2201 3 continent_north_america geo_south_america region_uca_2201
+province 7400 2268 3 continent_south_america geo_south_america region_vnz_2234
+province 7401 2268 3 continent_south_america geo_south_america region_vnz_2234
+province 7402 2268 3 continent_south_america geo_south_america region_vnz_2234
+province 7403 2396 3 continent_south_america geo_south_america region_arg_2398
+province 7404 2396 3 continent_south_america geo_south_america region_arg_2398
+province 7405 2509 5 continent_australia_new_zealand geo_australia region_eng_2509 terrain_urban_auckland urban
+province 7406 312 4 continent_europe geo_scandinavia region_psa_1546 terrain_woods
+province 7407 313 5 continent_europe geo_scandinavia region_psa_110 terrain_urban_oslo urban
+province 7408 754 6 continent_europe geo_italy region_mediterranean_sea_coast region_psa_117 terrain_hills upland
+province 7409 322 5 continent_europe geo_scandinavia region_baltic_sea_coast region_psa_141 terrain_plains
+province 7410 324 5 continent_europe geo_scandinavia region_baltic_sea_coast region_psa_1519 terrain_woods
+province 7411 306 5 continent_europe geo_scandinavia region_psa_144 terrain_mountain upland
+province 7412 6793 5 continent_europe geo_scandinavia region_psa_1549 terrain_mountain upland
+province 7413 6793 5 continent_europe geo_scandinavia region_psa_1549 terrain_mountain upland
+province 7414 968 6 continent_europe geo_soviet region_big_ukrainian_breadbasket region_black_sea_coast region_psa_192 terrain_plains
+province 7415 968 6 continent_europe geo_soviet region_big_ukrainian_breadbasket region_black_sea_coast region_psa_192 terrain_plains
+province 7416 968 6 continent_europe geo_soviet region_big_ukrainian_breadbasket region_black_sea_coast region_psa_192 terrain_plains
+province 7417 976 5 continent_europe geo_soviet region_black_sea_coast region_psa_1321 terrain_plains
+province 7418 536 4 continent_europe geo_germany region_psa_1141 terrain_plains
+province 7419 6778 5 continent_europe geo_scandinavia region_psa_1547 terrain_mountain upland
+province 7420 326 5 continent_europe geo_scandinavia region_baltic_sea_coast region_psa_1518 terrain_plains
+province 7421 326 5 continent_europe geo_scandinavia region_baltic_sea_coast region_psa_1518 terrain_plains
+province 7422 326 5 continent_europe geo_scandinavia region_baltic_sea_coast region_psa_1518 terrain_plains
+province 7423 1057 5 continent_europe geo_soviet region_psa_2110 region_tgc_caucasian_raid_area terrain_plains
+province 7424 1 7 cold continent_north_america geo_usa naval_base_site region_usa_1 terrain_montane_tundra upland
+province 7425 1 7 cold continent_north_america geo_usa naval_base_site region_usa_1 terrain_montane_tundra upland
+province 7426 1 6 cold continent_north_america geo_usa region_usa_1 terrain_montane_tundra upland
+province 7427 1 6 cold continent_north_america geo_usa region_usa_1 terrain_montane_tundra upland
+province 7428 1 5 cold continent_north_america geo_usa region_usa_1 terrain_boreal
+province 7429 1 5 cold continent_north_america geo_usa region_usa_1 terrain_polar_island
+province 7430 1 5 cold continent_north_america geo_usa region_usa_1 terrain_boreal
+province 7431 1 6 cold continent_north_america geo_usa region_usa_1 terrain_montane_tundra upland
+province 7432 1 5 cold continent_north_america geo_usa region_usa_1 terrain_boreal
+province 7433 1 5 cold continent_north_america geo_usa region_usa_1 terrain_boreal
+province 7434 1 5 cold continent_north_america geo_usa region_usa_1 terrain_boreal
+province 7435 1 5 cold continent_north_america geo_usa region_usa_1 terrain_boreal
+province 7436 1 5 cold continent_north_america geo_usa region_usa_1 terrain_boreal
+province 7437 1 5 cold continent_north_america geo_usa region_usa_1 terrain_boreal
+province 7438 22 3 continent_north_america geo_canada region_eng_22
+province 7439 22 5 cold continent_north_america geo_canada region_eng_22 terrain_boreal
+province 7440 28 3 continent_north_america geo_canada region_eng_28
+province 7441 28 3 continent_north_america geo_canada region_eng_28
+province 7442 28 3 continent_north_america geo_canada region_eng_28
+province 7443 28 3 continent_north_america geo_canada region_eng_28
+province 7444 37 5 cold continent_north_america geo_canada region_eng_36 terrain_boreal
+province 7445 37 5 cold continent_north_america geo_canada region_eng_36 terrain_boreal
+province 7446 75 5 cold continent_north_america geo_canada region_eng_75 terrain_boreal
+province 7447 3420 4 continent_europe geo_germany region_psa_2008 terrain_plains
+province 7448 3420 4 continent_europe geo_germany region_psa_2008 terrain_plains
+province 7449 1071 3 continent_oceania geo_central_asia region_per_1142
+province 7450 1189 3 continent_asia geo_central_asia region_kok_1190
+province 7451 353 5 continent_europe geo_soviet region_baltic_sea_coast region_psa_811 terrain_plains
+province 7452 7078 5 continent_europe geo_soviet region_baltic_sea_coast region_psa_3801 terrain_plains
+province 7453 1304 6 continent_asia geo_india region_asian_plantations region_eng_1304 terrain_urban_pondicherry urban
+province 7454 1304 6 continent_asia geo_india region_asian_plantations region_eng_1304 terrain_urban_pondicherry urban
+province 7455 1304 5 continent_asia geo_india region_asian_plantations region_eng_1304 terrain_farmlands
+province 7456 1304 5 continent_asia geo_india region_asian_plantations region_eng_1304 terrain_farmlands
+province 7457 1364 3 continent_indochina geo_asia region_sia_1366
+province 7458 1465 3 continent_asia geo_central_asia region_chi_1465
+province 7459 1465 3 continent_asia geo_central_asia region_chi_1465
+province 7460 1465 3 continent_asia geo_central_asia region_chi_1465
+province 7461 1465 3 continent_asia geo_central_asia region_chi_1465
+province 7462 1731 2 geo_africa region_tri_1731
+province 7463 1785 4 continent_west_africa geo_africa naval_base_site region_fra_1788
+province 7464 1785 3 continent_west_africa geo_africa region_fra_1788
+province 7465 1907 5 continent_west_africa geo_africa region_ash_1909 terrain_urban_cape_coast urban
+province 7466 2249 3 continent_south_america geo_south_america region_vnz_2265
+province 7467 2279 4 continent_south_america geo_south_america region_ecu_2279 region_the_amazon_forest
+province 7468 2287 3 continent_south_america geo_south_america region_peu_2291
+province 7469 2287 3 continent_south_america geo_south_america region_peu_2291
+province 7470 2402 4 continent_south_america geo_south_america region_brz_2408 region_the_amazon_forest
 end

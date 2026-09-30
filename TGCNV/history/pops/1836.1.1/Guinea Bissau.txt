@@ -1,333 +1,394 @@
-#Casamance Region (108000) #see Senegal.txt and Guinea.txt for balance of region
-#Uncolonized in 1836/Portuguese trade post
-#Bissau (32000/8000 POPS)
 1877 = {
-	clergymen = {
+clergymen = {
 		culture = portuguese
 		religion = catholic
-		size = 50
+		size = 38
 	}
-	artisans = {
+artisans = {
 		culture = portuguese
 		religion = catholic
-		size = 50
+		size = 38
 	}
-	soldiers = {
+soldiers = {
 		culture = portuguese
 		religion = catholic
-		size = 50
+		size = 38
 	}
-
-	farmers = {
+farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 50
+		size = 38
 	}
-	aristocrats = {
+aristocrats = {
 		culture = western_nigritic
 		religion = catholic
-		size = 50
+		size = 38
 	}
-
-	officers = {
+officers = {
 		culture = western_nigritic
 		religion = catholic
-		size = 50
+		size = 38
 	}
-
-	clergymen = {
+clergymen = {
 		culture = western_nigritic
 		religion = catholic
-		size = 50
+		size = 38
 	}
-	artisans = {
+artisans = {
 		culture = western_nigritic
 		religion = catholic
-		size = 188
+		size = 144
 	}
-	soldiers = {
+soldiers = {
 		culture = western_nigritic
 		religion = catholic
-		size = 50
+		size = 38
 	}
-	farmers = {
+farmers = {
 		culture = western_nigritic
 		religion = catholic
-		size = 2650
+		size = 2027
 	}
-	slaves = {
+slaves = {
 		culture = western_nigritic
 		religion = animist
-		size = 1000
+		size = 765
 	}
-
-		aristocrats = {
+aristocrats = {
 		culture = western_nigritic
 		religion = animist
-		size = 150
+		size = 115
 	}
-
-	officers = {
+officers = {
 		culture = western_nigritic
 		religion = animist
-		size = 50
+		size = 38
 	}
-
-	clergymen = {
+clergymen = {
 		culture = western_nigritic
 		religion = animist
-		size = 50
+		size = 38
 	}
-	artisans = {
+artisans = {
 		culture = western_nigritic
 		religion = animist
-		size = 500
+		size = 382
 	}
-	soldiers = {
+soldiers = {
 		culture = western_nigritic
 		religion = animist
-		size = 1500
+		size = 1147
 	}
-	tribals = {
+tribals = {
 		culture = western_nigritic
 		religion = animist
-		size = 6024
+		size = 4608
 	}
 }
 
-5433 = {
-	clergymen = {
-		culture = portuguese
-		religion = catholic
-		size = 50
-	}
-	artisans = {
-		culture = portuguese
-		religion = catholic
-		size = 50
-	}
-	soldiers = {
-		culture = portuguese
-		religion = catholic
-		size = 50
-	}
-
-	farmers = {
-		culture = portuguese
-		religion = catholic
-		size = 50
-	}
-	aristocrats = {
-		culture = western_nigritic
-		religion = catholic
-		size = 50
-	}
-
-	officers = {
-		culture = western_nigritic
-		religion = catholic
-		size = 50
-	}
-
-	clergymen = {
-		culture = western_nigritic
-		religion = catholic
-		size = 50
-	}
-	artisans = {
-		culture = western_nigritic
-		religion = catholic
-		size = 187
-	}
-	soldiers = {
-		culture = western_nigritic
-		religion = catholic
-		size = 50
-	}
-	farmers = {
-		culture = western_nigritic
-		religion = catholic
-		size = 2650
-	}
-	slaves = {
-		culture = western_nigritic
-		religion = animist
-		size = 1000
-	}
-
-		aristocrats = {
-		culture = western_nigritic
-		religion = animist
-		size = 150
-	}
-
-	officers = {
-		culture = western_nigritic
-		religion = animist
-		size = 50
-	}
-
-	clergymen = {
-		culture = western_nigritic
-		religion = animist
-		size = 50
-	}
-	artisans = {
-		culture = western_nigritic
-		religion = animist
-		size = 500
-	}
-	soldiers = {
-		culture = western_nigritic
-		religion = animist
-		size = 1500
-	}
-	tribals = {
-		culture = western_nigritic
-		religion = animist
-		size = 6024
-	}
-}
-#under the rule of Gabu in 1836
-#Gabu (152000/38000 POPS)
 1878 = {
-	aristocrats = {
+aristocrats = {
 		culture = mande
 		religion = sunni
 		size = 250
 	}
-
-	bureaucrats = {
+bureaucrats = {
 		culture = mande
 		religion = sunni
 		size = 50
 	}
-	clergymen = {
+clergymen = {
 		culture = mande
 		religion = sunni
 		size = 50
 	}
-	artisans = {
+artisans = {
 		culture = mande
 		religion = sunni
 		size = 500
 	}
-	soldiers = {
+soldiers = {
 		culture = mande
 		religion = sunni
 		size = 550
 	}
-	farmers = {
+farmers = {
 		culture = mande
 		religion = sunni
 		size = 1882
 	}
-
-
-	aristocrats = {
+aristocrats = {
 		culture = fulbe
 		religion = sunni
 		size = 200
 	}
-
-	bureaucrats = {
+bureaucrats = {
 		culture = fulbe
 		religion = sunni
 		size = 50
 	}
-	clergymen = {
+clergymen = {
 		culture = fulbe
 		religion = sunni
 		size = 50
 	}
-	artisans = {
+artisans = {
 		culture = fulbe
 		religion = sunni
 		size = 500
 	}
-	soldiers = {
+soldiers = {
 		culture = fulbe
 		religion = sunni
 		size = 600
 	}
-	farmers = {
+farmers = {
 		culture = fulbe
 		religion = sunni
 		size = 5557
 	}
-	slaves = {
+slaves = {
 		culture = western_nigritic
 		religion = animist
 		size = 999
 	}
 }
 
+5433 = {
+clergymen = {
+		culture = portuguese
+		religion = catholic
+		size = 12
+	}
+artisans = {
+		culture = portuguese
+		religion = catholic
+		size = 12
+	}
+soldiers = {
+		culture = portuguese
+		religion = catholic
+		size = 12
+	}
+farmers = {
+		culture = portuguese
+		religion = catholic
+		size = 12
+	}
+aristocrats = {
+		culture = western_nigritic
+		religion = catholic
+		size = 12
+	}
+officers = {
+		culture = western_nigritic
+		religion = catholic
+		size = 12
+	}
+clergymen = {
+		culture = western_nigritic
+		religion = catholic
+		size = 12
+	}
+artisans = {
+		culture = western_nigritic
+		religion = catholic
+		size = 44
+	}
+soldiers = {
+		culture = western_nigritic
+		religion = catholic
+		size = 12
+	}
+farmers = {
+		culture = western_nigritic
+		religion = catholic
+		size = 623
+	}
+slaves = {
+		culture = western_nigritic
+		religion = animist
+		size = 235
+	}
+aristocrats = {
+		culture = western_nigritic
+		religion = animist
+		size = 35
+	}
+officers = {
+		culture = western_nigritic
+		religion = animist
+		size = 12
+	}
+clergymen = {
+		culture = western_nigritic
+		religion = animist
+		size = 12
+	}
+artisans = {
+		culture = western_nigritic
+		religion = animist
+		size = 118
+	}
+soldiers = {
+		culture = western_nigritic
+		religion = animist
+		size = 353
+	}
+tribals = {
+		culture = western_nigritic
+		religion = animist
+		size = 1416
+	}
+clergymen = {
+		culture = portuguese
+		religion = catholic
+		size = 50
+	}
+artisans = {
+		culture = portuguese
+		religion = catholic
+		size = 50
+	}
+soldiers = {
+		culture = portuguese
+		religion = catholic
+		size = 50
+	}
+farmers = {
+		culture = portuguese
+		religion = catholic
+		size = 50
+	}
+aristocrats = {
+		culture = western_nigritic
+		religion = catholic
+		size = 50
+	}
+officers = {
+		culture = western_nigritic
+		religion = catholic
+		size = 50
+	}
+clergymen = {
+		culture = western_nigritic
+		religion = catholic
+		size = 50
+	}
+artisans = {
+		culture = western_nigritic
+		religion = catholic
+		size = 187
+	}
+soldiers = {
+		culture = western_nigritic
+		religion = catholic
+		size = 50
+	}
+farmers = {
+		culture = western_nigritic
+		religion = catholic
+		size = 2650
+	}
+slaves = {
+		culture = western_nigritic
+		religion = animist
+		size = 1000
+	}
+aristocrats = {
+		culture = western_nigritic
+		religion = animist
+		size = 150
+	}
+officers = {
+		culture = western_nigritic
+		religion = animist
+		size = 50
+	}
+clergymen = {
+		culture = western_nigritic
+		religion = animist
+		size = 50
+	}
+artisans = {
+		culture = western_nigritic
+		religion = animist
+		size = 500
+	}
+soldiers = {
+		culture = western_nigritic
+		religion = animist
+		size = 1500
+	}
+tribals = {
+		culture = western_nigritic
+		religion = animist
+		size = 6024
+	}
+}
+
 5434 = {
-	aristocrats = {
+aristocrats = {
 		culture = mande
 		religion = sunni
 		size = 250
 	}
-
-	bureaucrats = {
+bureaucrats = {
 		culture = mande
 		religion = sunni
 		size = 50
 	}
-	clergymen = {
+clergymen = {
 		culture = mande
 		religion = sunni
 		size = 50
 	}
-	artisans = {
+artisans = {
 		culture = mande
 		religion = sunni
 		size = 500
 	}
-	soldiers = {
+soldiers = {
 		culture = mande
 		religion = sunni
 		size = 550
 	}
-	farmers = {
+farmers = {
 		culture = mande
 		religion = sunni
 		size = 1886
 	}
-
-
-	aristocrats = {
+aristocrats = {
 		culture = fulbe
 		religion = sunni
 		size = 200
 	}
-
-	bureaucrats = {
+bureaucrats = {
 		culture = fulbe
 		religion = sunni
 		size = 50
 	}
-	clergymen = {
+clergymen = {
 		culture = fulbe
 		religion = sunni
 		size = 50
 	}
-	artisans = {
+artisans = {
 		culture = fulbe
 		religion = sunni
 		size = 500
 	}
-	soldiers = {
+soldiers = {
 		culture = fulbe
 		religion = sunni
 		size = 600
 	}
-	farmers = {
+farmers = {
 		culture = fulbe
 		religion = sunni
 		size = 5572
 	}
-	slaves = {
+slaves = {
 		culture = western_nigritic
 		religion = animist
 		size = 1001

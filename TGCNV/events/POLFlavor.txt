@@ -1781,7 +1781,7 @@ country_event = { #this event is an issue in case, eg Russia conquers Galicia
 		name = "EVT666666009OPTA"
 		war = {
 			target = POL
-			attacker_goal = { casus_belli = acquire_core_state state_province_id = 701 }
+			attacker_goal = { casus_belli = h45_acquire_core_state_hst_pru_posen state_province_id = 701 }
 			defender_goal = { casus_belli = status_quo }
 		}
 		ai_chance = {
@@ -1849,8 +1849,8 @@ country_event = { #Austria
 		name = "EVT666666009OPTA"
 		war = {
 			target = POL
-			attacker_goal = { casus_belli = acquire_any_state state_province_id = 6573 }
-			attacker_goal = { casus_belli = acquire_any_state state_province_id = 702 } #Lvov
+			attacker_goal = { casus_belli = h45_acquire_any_state_hst_cpl_krakow state_province_id = 6573 }
+			attacker_goal = { casus_belli = h45_acquire_any_state_hst_gal_lemberg state_province_id = 702 } #Lvov
 			defender_goal = { casus_belli = status_quo }
 		}
 		ai_chance = {
@@ -1919,8 +1919,8 @@ country_event = {
 		war = {
 			target = POL #this was thought to be a problem but nevermind, as this event chain can never trigger if AI CPL is rebelling, issues can not happen
 			attacker_goal = { casus_belli = acquire_any_state state_province_id = 706 }
-			attacker_goal = { casus_belli = acquire_any_state state_province_id = 715 }
-			attacker_goal = { casus_belli = acquire_any_state state_province_id = 362 }
+			attacker_goal = { casus_belli = ho_acquire_any_state_hst_cpl_podlasie state_province_id = 715 }
+			attacker_goal = { casus_belli = h45_acquire_any_state_hst_cpl_augustow state_province_id = 362 }
 			#attacker_goal = { casus_belli = conquest_any }
 			defender_goal = { casus_belli = status_quo }
 		}

@@ -317,7 +317,7 @@ political_decisions = {
 			}
 			1 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alaska
 			2 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			3 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HOP_3 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 	}
 
@@ -378,7 +378,7 @@ political_decisions = {
 			}
 			USA_200 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Florida
 			194 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Mississippi
-			197 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alabama
+			HXP_197 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alabama
 		}
 	}
 
@@ -838,8 +838,8 @@ political_decisions = {
 			set_country_flag = mexican_unity
 			2172 = { add_province_modifier = { name = cultural_resurgence duration = 4300 } } # Mexico City
 			2173 = { add_province_modifier = { name = cultural_resurgence duration = 4300 } } # Tlaxcala de Xicohténcatl
-			2174 = { add_province_modifier = { name = cultural_resurgence duration = 4300 } } # Pachuca de Soto
-			2175 = { add_province_modifier = { name = cultural_resurgence duration = 4300 } } # Puebla de Zaragoza
+			HXP_2174 = { add_province_modifier = { name = cultural_resurgence duration = 4300 } } # Pachuca de Soto
+			HXP_2175 = { add_province_modifier = { name = cultural_resurgence duration = 4300 } } # Puebla de Zaragoza
 			2176 = { add_province_modifier = { name = cultural_resurgence duration = 4300 } } # Cuernavaca
 			2180 = { add_province_modifier = { name = cultural_resurgence duration = 4300 } } # Toluca de Lerdo
 		}
@@ -1656,7 +1656,7 @@ political_decisions = {
 				3372 = { change_province_name = "Llano en Llamas" }
 			## Mexico ##
 				2168 = { change_province_name = "Autlan" add_province_modifier = { name = recently_built_city duration = 1825 } }
-				2171 = { change_province_name = "Valladolid" add_province_modifier = { name = recently_built_city duration = 1825 } state_scope = { change_region_name = "Michoacan Province" } }
+				2171 = { change_province_name = "Valladolid" add_province_modifier = { name = recently_built_city duration = 1825 }  }
 				2187 = { change_province_name = "Belice" state_scope = { change_region_name = "Belice Province" } }
 				2163 = { change_province_name = "Orizaba-Xalapa" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				2154 = { change_province_name = "San Juan del Rio" }
@@ -1667,8 +1667,8 @@ political_decisions = {
 				2209 = { state_scope = { change_region_name = "Cuba Occidental Province" } }
 				2211 = { state_scope = { change_region_name = "Cuba Oriental Province" } }
 			## Hispaniola ##
-				2215 = { state_scope = { change_region_name = "Hispaniola Province" } }
-				2216 = { state_scope = { change_region_name = "Hispaniola del Sur Province" } }
+				2215 = {  }
+				2216 = {  }
 			## Washington ##
 				78 = { change_province_name = "Huatulco" state_scope = { change_region_name = "Aramburu Province" } }
 				79 = { change_province_name = "Nueva Aramburu" }
@@ -1692,9 +1692,9 @@ political_decisions = {
 				118 = { change_province_name = "Der Smissen" }
 				119 = { change_province_name = "Union y Libertad" state_scope = { change_region_name = "Nor Dakota Province" } }
 			## South Dakota ##
-				120 = { change_province_name = "Ciudad Sioux" add_province_modifier = { name = recently_built_city duration = 1825 } }
+				120 = { change_province_name = "Ciudad Sioux" HXP_120 = { add_province_modifier = { name = recently_built_city duration = 1825 } } }
 				121 = { change_province_name = "Ciudad Rapida" }
-				122 = { change_province_name = "Almonte-Estrada" state_scope = { change_region_name = "Sud Dakota Province" } }
+				122 = { change_province_name = "Almonte-Estrada"  }
 			## Nebraska ##
 				123 = { change_province_name = "Bazaine" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				124 = { change_province_name = "Mariscal" }

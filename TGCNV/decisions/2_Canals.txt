@@ -520,11 +520,11 @@ political_decisions = {
 			set_global_flag = corinth_under_construction
 
 			random_list = {
-				20 = { 840 = { add_province_modifier = { name = corinth_canal_construction duration = 1825 } } }
-				20 = { 840 = { add_province_modifier = { name = corinth_canal_construction duration = 2190 } } }
-				20 = { 840 = { add_province_modifier = { name = corinth_canal_construction duration = 2555 } } }
-				20 = { 840 = { add_province_modifier = { name = corinth_canal_construction duration = 2920 } } }
-				20 = { 840 = { add_province_modifier = { name = corinth_canal_construction duration = 3285 } } }
+				20 = { HXP_840 = { add_province_modifier = { name = corinth_canal_construction duration = 1825 } } }
+				20 = { HXP_840 = { add_province_modifier = { name = corinth_canal_construction duration = 2190 } } }
+				20 = { HXP_840 = { add_province_modifier = { name = corinth_canal_construction duration = 2555 } } }
+				20 = { HXP_840 = { add_province_modifier = { name = corinth_canal_construction duration = 2920 } } }
+				20 = { HXP_840 = { add_province_modifier = { name = corinth_canal_construction duration = 3285 } } }
 			}
 		}
 
@@ -569,11 +569,11 @@ political_decisions = {
 			set_global_flag = corinth_under_construction_3
 
 			random_list = {
-				20 = { 840 = { add_province_modifier = { name = corinth_canal_construction duration = 365 } } }
-				20 = { 840 = { add_province_modifier = { name = corinth_canal_construction duration = 548 } } }
-				20 = { 840 = { add_province_modifier = { name = corinth_canal_construction duration = 730 } } }
-				20 = { 840 = { add_province_modifier = { name = corinth_canal_construction duration = 913 } } }
-				20 = { 840 = { add_province_modifier = { name = corinth_canal_construction duration = 1095 } } }
+				20 = { HXP_840 = { add_province_modifier = { name = corinth_canal_construction duration = 365 } } }
+				20 = { HXP_840 = { add_province_modifier = { name = corinth_canal_construction duration = 548 } } }
+				20 = { HXP_840 = { add_province_modifier = { name = corinth_canal_construction duration = 730 } } }
+				20 = { HXP_840 = { add_province_modifier = { name = corinth_canal_construction duration = 913 } } }
+				20 = { HXP_840 = { add_province_modifier = { name = corinth_canal_construction duration = 1095 } } }
 			}
 		}
 

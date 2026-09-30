@@ -423,31 +423,31 @@ political_decisions = {
 			}
 			any_owned = {
 				limit = {
-					province_id = 29
+					region = HXP_29
 					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
 				}
 				infrastructure = 1 owner = { treasury = -2000 }
 			}
 			any_owned = {
 				limit = {
-					province_id = 26
+					region = HXP_26
 					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
 				}
 				infrastructure = 1 owner = { treasury = -2000 }
 			}
 			25 = {
 				change_province_name = "캘거리"
-				life_rating = 15
-				add_province_modifier = { name = gateway_to_harbor duration = 720 }
-				any_pop = { limit = { location = { province_id = 26 } is_culture_group = pan_british } reduce_pop = 3 }
-				any_pop = { limit = { location = { province_id = 26 } is_culture_group = neo_european_cultures } reduce_pop = 3 }
+				HOP_25 = { life_rating = 15 }
+				HOP_25 = { add_province_modifier = { name = gateway_to_harbor duration = 720 } }
+				HOP_25 = { any_pop = { limit = { location = { region = HXP_26 } is_culture_group = pan_british } reduce_pop = 3 } }
+				HOP_25 = { any_pop = { limit = { location = { region = HXP_26 } is_culture_group = neo_european_cultures } reduce_pop = 3 } }
 
 			}
-			27 = {
+			HXP_27 = {
 				life_rating = 10
 				add_province_modifier = { name = gateway_to_harbor duration = 720 }
-				any_pop = { limit = { location = { province_id = 27 } is_culture_group = pan_british } reduce_pop = 3 }
-				any_pop = { limit = { location = { province_id = 27 } is_culture_group = neo_european_cultures } reduce_pop = 3 }
+				any_pop = { limit = { location = { region = HXP_27 } is_culture_group = pan_british } reduce_pop = 3 }
+				any_pop = { limit = { location = { region = HXP_27 } is_culture_group = neo_european_cultures } reduce_pop = 3 }
 			}
 			69 = { change_province_name = "에드먼스턴" }
 			41 = { change_province_name = "브랜던" }
@@ -496,7 +496,7 @@ political_decisions = {
 			treasury = -7000
 			any_owned = {
 				limit = {
-					province_id = 28
+					region = HOP_28
 					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
 				}
 				infrastructure = 1 owner = { treasury = -2000 }

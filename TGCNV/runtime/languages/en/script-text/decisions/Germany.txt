@@ -2129,7 +2129,7 @@ political_decisions = {
 		effect = {
 			badboy = 1
 			any_pop = { limit = { has_pop_culture = lithuanian } militancy = 5 }
-			698 = { remove_core = LIT } #Memel
+			HXP_698 = { remove_core = LIT } #Memel
 			set_global_flag = ober_ost_lit
 
 			349 = {
@@ -2156,7 +2156,7 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 997 }
 			}
 
-			352 = {
+			HXP_352 = {
 				remove_core = RUS
 
 				any_pop = { limit = { has_pop_culture = russian } move_pop = 997 }
@@ -2164,7 +2164,7 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 997 }
 			}
 
-			353 = {
+			HOP_353 = {
 				remove_core = RUS
 
 				any_pop = { limit = { has_pop_culture = russian } move_pop = 996 }

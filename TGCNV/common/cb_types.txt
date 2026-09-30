@@ -39,6 +39,35 @@
 
 # Order that CBs are executed in a peace treaty
 peace_order = {
+	ho_acquire_any_state_hst_cpl_podlasie
+	ho_acquire_any_state_tri_1731
+	ho_acquire_core_state_arg_2369
+	ho_acquire_core_state_fra_1783
+	ho_acquire_core_state_per_1122
+	ho_acquire_state_fra_1783
+	ho_place_in_the_sun_tri_1731
+
+	hx_acquire_any_state_hst_dal_zara
+	hx_acquire_core_state_hst_ven
+	hx_acquire_core_state_spa_1689
+	hx_free_peoples_hst_ven
+
+	h45_acquire_any_state_chi_1479
+	h45_acquire_any_state_chi_1552
+	h45_acquire_any_state_fra_1923
+	h45_acquire_any_state_hst_cpl_augustow
+	h45_acquire_any_state_hst_cpl_krakow
+	h45_acquire_any_state_hst_gal_lemberg
+	h45_acquire_any_state_rus_1196
+	h45_acquire_core_state_hst_fra_alsace
+	h45_acquire_core_state_hst_pru_posen
+	h45_acquire_state_eng_1391
+	h45_acquire_state_hst_lom
+	h45_demand_concession_casus_belli_bur_1330
+	h45_unification_casus_belli_hst_fra_alsace
+	h45_unification_casus_belli_hst_lom
+	h45_unification_casus_belli_hst_sch
+
 	tgcnv_liberate_lombardy
 	tgcnv_frankfurt_settlement
 	#Normal CB's
@@ -542,22 +571,10 @@ restore_austrian_empire = {
 			}
 		}
 		neighbour = THIS
-		any_owned_province = { #Opt
-			OR = {
-				is_core = VEN
-				is_core = SLO
-				is_core = SLV
-				is_core = BOH
-				is_core = HUN
-				is_core = GLM
-				region = AUS_771
-				region = AUS_780
-				region = AUS_774
-				region = AUS_654
-				region = AUS_652
-				region = AUS_657
-			}
-		}
+		any_owned_province = {
+            region = TGC_AUSTRIAN_REINTEGRATION
+            state_scope = { NOT = { any_owned_province = { NOT = { region = TGC_AUSTRIAN_REINTEGRATION } } } }
+        }
 		OR = {
 			NOT = { tag = ITA }
 			THIS = { NOT = { has_country_flag = accepts_italy } }
@@ -568,23 +585,9 @@ restore_austrian_empire = {
 	}
 
 	allowed_states = {
-		any_owned_province = {
-			OR = {
-				is_core = VEN
-				is_core = SLO
-				is_core = SLV
-				is_core = BOH
-				is_core = HUN
-				region = AUS_702
-				region = AUS_771
-				region = AUS_780
-				region = AUS_774
-				region = AUS_654
-				region = AUS_652
-				region = AUS_657
-			}
-		}
-	}
+        any_owned_province = { region = TGC_AUSTRIAN_REINTEGRATION }
+        NOT = { any_owned_province = { NOT = { region = TGC_AUSTRIAN_REINTEGRATION } } }
+    }
 
 	po_demand_state = yes
 
@@ -8234,4 +8237,1966 @@ tgcnv_frankfurt_settlement = {
     can_use = { tag = FRA THIS = { OR = { tag = PRU tag = NGF tag = GER tag = GCF } } any_owned_province = { region = TGC_ALSACE_LORRAINE } }
     allowed_states = { any_owned_province = { region = TGC_ALSACE_LORRAINE is_core = GER } }
     war_name = WAR_UNIFICATION_NAME
+}
+
+# 1836-1945 state partition compatibility: fixed event war goals.
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_any_state_chi_1479 = {
+	all_allowed_states = yes
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		always = no
+	}
+
+	allowed_states = {
+		any_owned_province = { region = CHI_1479 }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+	}
+
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					any_owned_province = { port = yes }
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_any_state_chi_1552 = {
+	all_allowed_states = yes
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		always = no
+	}
+
+	allowed_states = {
+		any_owned_province = { region = CHI_1552 }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+	}
+
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					any_owned_province = { port = yes }
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_any_state_fra_1923 = {
+	all_allowed_states = yes
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		always = no
+	}
+
+	allowed_states = {
+		any_owned_province = { region = FRA_1923 }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+	}
+
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					any_owned_province = { port = yes }
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_any_state_hst_cpl_augustow = {
+	all_allowed_states = yes
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		always = no
+	}
+
+	allowed_states = {
+		any_owned_province = { region = HST_CPL_AUGUSTOW }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+	}
+
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					any_owned_province = { port = yes }
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_any_state_hst_cpl_krakow = {
+	all_allowed_states = yes
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		always = no
+	}
+
+	allowed_states = {
+		any_owned_province = { region = HST_CPL_KRAKOW }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+	}
+
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					any_owned_province = { port = yes }
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_any_state_hst_gal_lemberg = {
+	all_allowed_states = yes
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		always = no
+	}
+
+	allowed_states = {
+		any_owned_province = { region = HST_GAL_LEMBERG }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+	}
+
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					any_owned_province = { port = yes }
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_any_state_rus_1196 = {
+	all_allowed_states = yes
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		always = no
+	}
+
+	allowed_states = {
+		any_owned_province = { region = RUS_1196 }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+	}
+
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					any_owned_province = { port = yes }
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_core_state_hst_fra_alsace = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+
+	construction_speed = 0.8
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = yes
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		#Do NOT use has_unclaimed_cores = yes, it is glitched
+		THIS = { NOT = { has_unclaimed_cores = no } }
+		any_owned_province = { is_core = THIS }
+		OR = {
+			AND = { THIS = { any_owned_province = { port = yes } } any_owned_province = { port = yes } }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { substate_of = THIS }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+		THIS = {
+			NOT = { has_country_modifier = no_more_war }
+		}
+		NOT = { has_country_modifier = mediating_political_solution }
+		
+	}
+
+	allowed_states = {
+		any_owned_province = { region = HST_FRA_ALSACE }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_CORE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+
+	on_po_accepted = {
+		country_event =	2650	# Territorial Loss event
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_core_state_hst_pru_posen = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+
+	construction_speed = 0.8
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = yes
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		#Do NOT use has_unclaimed_cores = yes, it is glitched
+		THIS = { NOT = { has_unclaimed_cores = no } }
+		any_owned_province = { is_core = THIS }
+		OR = {
+			AND = { THIS = { any_owned_province = { port = yes } } any_owned_province = { port = yes } }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { substate_of = THIS }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+		THIS = {
+			NOT = { has_country_modifier = no_more_war }
+		}
+		NOT = { has_country_modifier = mediating_political_solution }
+		
+	}
+
+	allowed_states = {
+		any_owned_province = { region = HST_PRU_POSEN }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_CORE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+
+	on_po_accepted = {
+		country_event =	2650	# Territorial Loss event
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_state_eng_1391 = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+
+	construction_speed = 0.5
+
+	badboy_factor = 1.0
+	prestige_factor = 2
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		any_state = {
+			is_colonial = no
+			NOT = { any_owned_province = { is_capital = yes } }
+		}
+		OR = {
+			THIS = { civilized = no }
+			civilized = yes
+		}
+		OR = {
+			AND = {
+				THIS = { any_owned_province = { port = yes } }
+				any_owned_province = { port = yes }
+			}
+			neighbour = THIS
+			AND = { war_with = THIS ai = no }
+		}
+		OR = {
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+			war_with = THIS
+		}
+		OR = {
+			THIS = { government = fascist_dictatorship }
+			THIS = { has_country_flag = communist_gov }
+			THIS = { civilized = no }
+			war_with = THIS
+			NOT = { relation = { who = THIS value = 0 } }
+			THIS = { ai = no }
+		}
+		#AI anti-military will not use this
+		OR = {
+			THIS = { ai = no }
+			THIS = { NOT = { war_policy = anti_military } }
+		}
+		#AI will not use this CB when duking it out over hegemony
+		OR = {
+			THIS = { ai = no }
+			NOT = {
+				AND = {
+					culture_has_union_tag = yes
+					is_culture_group = THIS
+					cultural_union = { exists = no }
+					is_greater_power = yes
+					THIS = { is_greater_power = yes }
+				}
+			}
+		}
+	}
+
+	allowed_states = {
+		any_owned_province = { region = ENG_1391 }
+	}
+
+	allowed_states_in_crisis = {
+		NOT = { any_owned_province = { is_capital = yes } }
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_acquire_state_hst_lom = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+
+	construction_speed = 0.5
+
+	badboy_factor = 1.0
+	prestige_factor = 2
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		any_state = {
+			is_colonial = no
+			NOT = { any_owned_province = { is_capital = yes } }
+		}
+		OR = {
+			THIS = { civilized = no }
+			civilized = yes
+		}
+		OR = {
+			AND = {
+				THIS = { any_owned_province = { port = yes } }
+				any_owned_province = { port = yes }
+			}
+			neighbour = THIS
+			AND = { war_with = THIS ai = no }
+		}
+		OR = {
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+			war_with = THIS
+		}
+		OR = {
+			THIS = { government = fascist_dictatorship }
+			THIS = { has_country_flag = communist_gov }
+			THIS = { civilized = no }
+			war_with = THIS
+			NOT = { relation = { who = THIS value = 0 } }
+			THIS = { ai = no }
+		}
+		#AI anti-military will not use this
+		OR = {
+			THIS = { ai = no }
+			THIS = { NOT = { war_policy = anti_military } }
+		}
+		#AI will not use this CB when duking it out over hegemony
+		OR = {
+			THIS = { ai = no }
+			NOT = {
+				AND = {
+					culture_has_union_tag = yes
+					is_culture_group = THIS
+					cultural_union = { exists = no }
+					is_greater_power = yes
+					THIS = { is_greater_power = yes }
+				}
+			}
+		}
+	}
+
+	allowed_states = {
+		any_owned_province = { region = HST_LOM }
+	}
+
+	allowed_states_in_crisis = {
+		NOT = { any_owned_province = { is_capital = yes } }
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_demand_concession_casus_belli_bur_1330 = {
+	all_allowed_states = yes
+	constructing_cb = no
+
+	sprite_index = 7
+	is_triggered_only = yes
+	months = 0
+	construction_speed = 1.2
+	crisis = no
+
+	badboy_factor = 1
+	prestige_factor = 1
+	peace_cost_factor = 0.5
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	always = no
+
+	can_use = {
+		civilized = no
+		THIS = { civilized = yes }
+		number_of_states = 2
+		OR = {
+			AND = {
+				THIS = { any_owned_province = { port = yes } }
+				any_owned_province = { port = yes }
+			}
+			AND = { war_with = THIS ai = no }
+			neighbour = THIS
+			AND = { any_neighbor_country = { vassal_of = THIS } THIS = { tag = ENG } }
+		}
+		OR = {
+			OR = {
+				has_global_flag = berlin_conference
+				has_global_flag = colonial_cassus_belli_africa_enabled
+			}
+		 	NOT = {
+				has_country_flag = african_nation
+			}
+		}
+		#OR = { #This has been split to a separate CB if Scramble for China happens
+			#THIS = { primary_culture = japanese ai = no }
+			#has_global_flag = scramble_for_china
+			NOT = { primary_culture = manchu }
+		#}
+
+
+		OR = {
+			THIS = { ai = no }
+			THIS = { war_policy = jingoism NOT = { has_country_flag = democracy_gov } }
+			NOT = {
+				THIS = {
+					OR = {
+						capital_scope = { continent = south_america }
+						capital_scope = { continent = north_america }
+						capital_scope = { continent = australia_new_zealand }
+					}
+				}
+			}
+		}
+
+		OR = {
+			THIS = { war_policy = jingoism }
+			THIS = { civilized = no }
+			war_with = THIS
+			NOT = { relation = { who = THIS value = 0 } }
+			THIS = { ai = no }
+		}
+	}
+
+	allowed_states = {
+		any_owned_province = { region = BUR_1330 }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_CONCESSION_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.1
+		}
+	}
+
+	on_po_accepted = {
+		#country_event = 426700
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_unification_casus_belli_hst_fra_alsace = {
+	all_allowed_states = yes
+	constructing_cb = no
+
+	sprite_index = 22
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 1
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	always = yes
+
+	can_use = {
+		THIS = {
+			is_greater_power = yes
+			culture_has_union_tag = yes
+			nationalism_n_imperialism = 1
+			is_cultural_union = no
+		}
+		OR = {
+			NOT = { is_culture_group = THIS }
+			AND = {
+				war_with = THIS
+				is_culture_group = THIS
+				part_of_sphere = no
+				THIS = { NOT = { tag = AUS } }
+				THIS = { NOT = { tag = KUK } }
+				THIS = { NOT = { tag = DNB } }
+				THIS = { NOT = { tag = UBD } }
+				THIS = { NOT = { tag = STH } }
+				THIS = { NOT = { tag = LIV } }
+				THIS = { NOT = { tag = COU } }
+			}
+		}
+		any_state = {
+			any_owned_province = {
+				any_core = {
+					this_culture_union = this_union
+					is_cultural_union = yes
+				}
+			}
+			NOT = { any_owned_province = { is_capital = yes } }
+		}
+		number_of_states = 2
+		NOT = { tag = PRU }
+		NOT = { tag = NGF }
+		THIS = { NOT = { tag = KUK } }
+		THIS = { NOT = { tag = DNB } }
+		THIS = { NOT = { tag = UBD } }
+		THIS = { NOT = { tag = STH } }
+		THIS = { NOT = { tag = LIV } }
+		THIS = { NOT = { tag = COU } }
+
+	}
+	allowed_states = {
+		any_owned_province = { region = HST_FRA_ALSACE }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_UNIFICATION_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_unification_casus_belli_hst_lom = {
+	all_allowed_states = yes
+	constructing_cb = no
+
+	sprite_index = 22
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 1
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	always = yes
+
+	can_use = {
+		THIS = {
+			is_greater_power = yes
+			culture_has_union_tag = yes
+			nationalism_n_imperialism = 1
+			is_cultural_union = no
+		}
+		OR = {
+			NOT = { is_culture_group = THIS }
+			AND = {
+				war_with = THIS
+				is_culture_group = THIS
+				part_of_sphere = no
+				THIS = { NOT = { tag = AUS } }
+				THIS = { NOT = { tag = KUK } }
+				THIS = { NOT = { tag = DNB } }
+				THIS = { NOT = { tag = UBD } }
+				THIS = { NOT = { tag = STH } }
+				THIS = { NOT = { tag = LIV } }
+				THIS = { NOT = { tag = COU } }
+			}
+		}
+		any_state = {
+			any_owned_province = {
+				any_core = {
+					this_culture_union = this_union
+					is_cultural_union = yes
+				}
+			}
+			NOT = { any_owned_province = { is_capital = yes } }
+		}
+		number_of_states = 2
+		NOT = { tag = PRU }
+		NOT = { tag = NGF }
+		THIS = { NOT = { tag = KUK } }
+		THIS = { NOT = { tag = DNB } }
+		THIS = { NOT = { tag = UBD } }
+		THIS = { NOT = { tag = STH } }
+		THIS = { NOT = { tag = LIV } }
+		THIS = { NOT = { tag = COU } }
+
+	}
+	allowed_states = {
+		any_owned_province = { region = HST_LOM }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_UNIFICATION_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
+# Fixed scripted territory; only used by the corresponding event/decision.
+h45_unification_casus_belli_hst_sch = {
+	all_allowed_states = yes
+	constructing_cb = no
+
+	sprite_index = 22
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 1
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	always = yes
+
+	can_use = {
+		THIS = {
+			is_greater_power = yes
+			culture_has_union_tag = yes
+			nationalism_n_imperialism = 1
+			is_cultural_union = no
+		}
+		OR = {
+			NOT = { is_culture_group = THIS }
+			AND = {
+				war_with = THIS
+				is_culture_group = THIS
+				part_of_sphere = no
+				THIS = { NOT = { tag = AUS } }
+				THIS = { NOT = { tag = KUK } }
+				THIS = { NOT = { tag = DNB } }
+				THIS = { NOT = { tag = UBD } }
+				THIS = { NOT = { tag = STH } }
+				THIS = { NOT = { tag = LIV } }
+				THIS = { NOT = { tag = COU } }
+			}
+		}
+		any_state = {
+			any_owned_province = {
+				any_core = {
+					this_culture_union = this_union
+					is_cultural_union = yes
+				}
+			}
+			NOT = { any_owned_province = { is_capital = yes } }
+		}
+		number_of_states = 2
+		NOT = { tag = PRU }
+		NOT = { tag = NGF }
+		THIS = { NOT = { tag = KUK } }
+		THIS = { NOT = { tag = DNB } }
+		THIS = { NOT = { tag = UBD } }
+		THIS = { NOT = { tag = STH } }
+		THIS = { NOT = { tag = LIV } }
+		THIS = { NOT = { tag = COU } }
+
+	}
+	allowed_states = {
+		any_owned_province = { region = HST_SCH }
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_UNIFICATION_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
+# Fixed historical targets after contiguous-state refinement.
+hx_acquire_any_state_hst_dal_zara = {
+	all_allowed_states = yes
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		always = no
+	}
+
+	allowed_states = { any_owned_province = { region = HST_DAL_ZARA } }
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+	}
+
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					any_owned_province = { port = yes }
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+hx_acquire_core_state_hst_ven = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+
+	construction_speed = 0.8
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = yes
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		#Do NOT use has_unclaimed_cores = yes, it is glitched
+		THIS = { NOT = { has_unclaimed_cores = no } }
+		any_owned_province = { is_core = THIS }
+		OR = {
+			AND = { THIS = { any_owned_province = { port = yes } } any_owned_province = { port = yes } }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { substate_of = THIS }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+		THIS = {
+			NOT = { has_country_modifier = no_more_war }
+		}
+		NOT = { has_country_modifier = mediating_political_solution }
+		
+	}
+
+	allowed_states = { any_owned_province = { region = HST_VEN } }
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_CORE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+
+	on_po_accepted = {
+		country_event =	2650	# Territorial Loss event
+	}
+}
+
+hx_acquire_core_state_spa_1689 = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+
+	construction_speed = 0.8
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = yes
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		#Do NOT use has_unclaimed_cores = yes, it is glitched
+		THIS = { NOT = { has_unclaimed_cores = no } }
+		any_owned_province = { is_core = THIS }
+		OR = {
+			AND = { THIS = { any_owned_province = { port = yes } } any_owned_province = { port = yes } }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { substate_of = THIS }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+		THIS = {
+			NOT = { has_country_modifier = no_more_war }
+		}
+		NOT = { has_country_modifier = mediating_political_solution }
+		
+	}
+
+	allowed_states = { any_owned_province = { region = SPA_1689 } }
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_CORE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+
+	on_po_accepted = {
+		country_event =	2650	# Territorial Loss event
+	}
+}
+
+hx_free_peoples_hst_ven = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 9
+	is_triggered_only = yes
+	months = 12
+
+	badboy_factor = 0.75
+	prestige_factor = 2
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		number_of_states = 2
+		OR = {
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { OR = { vassal_of = THIS substate_of = THIS in_sphere = THIS } }
+			AND = { THIS = { any_owned_province = { port = yes } } any_owned_province = { port = yes } }
+		}
+		OR = {
+			THIS = { civilized = no }
+			war_with = THIS
+			NOT = { relation = { who = THIS value = 0 } }
+			
+			FROM = { involved_in_crisis = yes }
+			THIS = { government = fascist_dictatorship }
+			THIS = { has_country_flag = communist_gov }
+			THIS = { ai = no }
+		}
+		OR = {
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+			war_with = THIS
+			FROM = { involved_in_crisis = yes }
+		}
+		OR = {
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+			NOT = { has_country_flag = dismantle_declared }
+			FROM = { involved_in_crisis = yes }
+		}
+	}
+
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+
+
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal's state
+	allowed_states = { any_owned_province = { region = HST_VEN } }
+
+	po_transfer_provinces = yes
+
+	war_name = WAR_FREE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+
+	on_po_accepted = {
+		country_event =	2651	# Territorial Loss event
+		plurality = -2
+	}
+}
+
+# Fixed historical targets after contiguous-state refinement.
+ho_acquire_any_state_hst_cpl_podlasie = {
+	all_allowed_states = yes
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		always = no
+	}
+
+	allowed_states = { any_owned_province = { region = HST_CPL_PODLASIE } }
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+	}
+
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					any_owned_province = { port = yes }
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+ho_acquire_any_state_tri_1731 = {
+	all_allowed_states = yes
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		always = no
+	}
+
+	allowed_states = { any_owned_province = { region = TRI_1731 } }
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+	}
+
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					any_owned_province = { port = yes }
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+ho_acquire_core_state_arg_2369 = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+
+	construction_speed = 0.8
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = yes
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		#Do NOT use has_unclaimed_cores = yes, it is glitched
+		THIS = { NOT = { has_unclaimed_cores = no } }
+		any_owned_province = { is_core = THIS }
+		OR = {
+			AND = { THIS = { any_owned_province = { port = yes } } any_owned_province = { port = yes } }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { substate_of = THIS }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+		THIS = {
+			NOT = { has_country_modifier = no_more_war }
+		}
+		NOT = { has_country_modifier = mediating_political_solution }
+		
+	}
+
+	allowed_states = { any_owned_province = { region = ARG_2369 } }
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_CORE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+
+	on_po_accepted = {
+		country_event =	2650	# Territorial Loss event
+	}
+}
+
+ho_acquire_core_state_fra_1783 = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+
+	construction_speed = 0.8
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = yes
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		#Do NOT use has_unclaimed_cores = yes, it is glitched
+		THIS = { NOT = { has_unclaimed_cores = no } }
+		any_owned_province = { is_core = THIS }
+		OR = {
+			AND = { THIS = { any_owned_province = { port = yes } } any_owned_province = { port = yes } }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { substate_of = THIS }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+		THIS = {
+			NOT = { has_country_modifier = no_more_war }
+		}
+		NOT = { has_country_modifier = mediating_political_solution }
+		
+	}
+
+	allowed_states = { any_owned_province = { region = FRA_1783 } }
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_CORE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+
+	on_po_accepted = {
+		country_event =	2650	# Territorial Loss event
+	}
+}
+
+ho_acquire_core_state_per_1122 = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+
+	construction_speed = 0.8
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = yes
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		#Do NOT use has_unclaimed_cores = yes, it is glitched
+		THIS = { NOT = { has_unclaimed_cores = no } }
+		any_owned_province = { is_core = THIS }
+		OR = {
+			AND = { THIS = { any_owned_province = { port = yes } } any_owned_province = { port = yes } }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { substate_of = THIS }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+		THIS = {
+			NOT = { has_country_modifier = no_more_war }
+		}
+		NOT = { has_country_modifier = mediating_political_solution }
+		
+	}
+
+	allowed_states = { any_owned_province = { region = PER_1122 } }
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_CORE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+
+	on_po_accepted = {
+		country_event =	2650	# Territorial Loss event
+	}
+}
+
+ho_acquire_state_fra_1783 = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+
+	construction_speed = 0.5
+
+	badboy_factor = 1.0
+	prestige_factor = 2
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		any_state = {
+			is_colonial = no
+			NOT = { any_owned_province = { is_capital = yes } }
+		}
+		OR = {
+			THIS = { civilized = no }
+			civilized = yes
+		}
+		OR = {
+			AND = {
+				THIS = { any_owned_province = { port = yes } }
+				any_owned_province = { port = yes }
+			}
+			neighbour = THIS
+			AND = { war_with = THIS ai = no }
+		}
+		OR = {
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+			war_with = THIS
+		}
+		OR = {
+			THIS = { government = fascist_dictatorship }
+			THIS = { has_country_flag = communist_gov }
+			THIS = { civilized = no }
+			war_with = THIS
+			NOT = { relation = { who = THIS value = 0 } }
+			THIS = { ai = no }
+		}
+		#AI anti-military will not use this
+		OR = {
+			THIS = { ai = no }
+			THIS = { NOT = { war_policy = anti_military } }
+		}
+		#AI will not use this CB when duking it out over hegemony
+		OR = {
+			THIS = { ai = no }
+			NOT = {
+				AND = {
+					culture_has_union_tag = yes
+					is_culture_group = THIS
+					cultural_union = { exists = no }
+					is_greater_power = yes
+					THIS = { is_greater_power = yes }
+				}
+			}
+		}
+	}
+
+	allowed_states = { any_owned_province = { region = FRA_1783 } }
+
+	allowed_states_in_crisis = {
+		NOT = { any_owned_province = { is_capital = yes } }
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_TAKE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+ho_place_in_the_sun_tri_1731 = {
+	all_allowed_states = yes
+	constructing_cb = no
+	crisis = no
+
+	sprite_index = 7
+	is_triggered_only = yes
+	months = 12
+
+	badboy_factor = 0.5
+	prestige_factor = 2
+	peace_cost_factor = 0.5
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		any_owned_province = { is_colonial = yes }
+		THIS = {
+			OR = {
+				any_owned_province = { port = yes }
+				total_amount_of_ships = 10
+				any_owned_province = { any_neighbor_province = { NOT = { owned_by = THIS } is_colonial = yes } }
+			}
+		}
+		OR = {
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+			war_with = THIS
+		}
+		OR = {
+			THIS = { government = fascist_dictatorship }
+			THIS = { has_country_flag = communist_gov }
+			THIS = { civilized = no }
+			war_with = THIS
+			NOT = { relation = { who = THIS value = 0 } }
+			THIS = { ai = no }
+		}
+		NOT = { primary_culture = misri }
+		#AND = { THIS = { ai = yes } NOT = { primary_culture = misri } }  #fix so retard AI stops taking sudan during oriental crisis
+	}
+
+	allowed_states = { any_owned_province = { region = TRI_1731 } }
+
+	allowed_states_in_crisis = {
+		any_owned_province = {
+			OR = {
+				port = yes
+				any_neighbor_province = { owner = { tag = THIS } }
+			}
+		}
+	}
+
+	po_demand_state = yes
+
+	war_name = WAR_COLONIAL_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+
 }

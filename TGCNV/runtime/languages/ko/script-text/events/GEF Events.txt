@@ -883,7 +883,7 @@ country_event = {
 		name = "EVTOPTA999391"
 
 		3253 = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-		778 = { remove_core = AUS }
+		HXP_778 = { remove_core = AUS }
 		AUS = { end_war = HUN }
 		AUS = { end_war = VEN }
 		AUS = { end_war = LOM }
@@ -1062,10 +1062,10 @@ country_event = {
 		3281 = { add_core = PZN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		release = PZN
 		RUS = { release_vassal = CPL }
-		PZN = { all_core = { add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+		PZN = { all_core = { limit = { region = TGC_CONGRESS_POLAND } add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 		PZN = { all_core = { remove_core = GER } }
 		PZN = { all_core = { remove_core = GCF } }
-		GLM = { all_core = { add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+		GLM = { all_core = { limit = { region = TGC_CONGRESS_POLAND } add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 		CPL = { inherit = PZN }
 		CPL = { inherit = GLM }
 		RUS = {
@@ -1118,42 +1118,38 @@ country_event = {
 		3281 = { add_core = PZN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		release = PZN
 		RUS = { release_vassal = CPL }
-		PZN = { all_core = { add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+		PZN = { all_core = { limit = { region = TGC_CONGRESS_POLAND } add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 		PZN = { all_core = { remove_core = GER } }
 		PZN = { all_core = { remove_core = GCF } }
-		GLM = { all_core = { add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+		GLM = { all_core = { limit = { region = TGC_CONGRESS_POLAND } add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 		692 = { add_core = PML add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		release = PML
-		PML = { all_core = { add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+		PML = { all_core = { limit = { region = TGC_CONGRESS_POLAND } add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 		PML = { all_core = { remove_core = GER } }
 		PML = { all_core = { remove_core = GCF } }
 		CPL = { inherit = PML }
 		CPL = { inherit = PZN }
 		CPL = { inherit = GLM }
-		696 = { add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-		697 = { add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-		693 = { add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-		695 = { add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-		3380 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-		698 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		HXP_3380 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		HXP_698 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		696 = { remove_core = GER }
 		697 = { remove_core = GER }
 		693 = { remove_core = GER }
-		695 = { remove_core = GER }
-		3380 = { remove_core = GER }
-		698 = { remove_core = GER }
+		HXP_695 = { remove_core = GER }
+		HXP_3380 = { remove_core = GER }
+		HXP_698 = { remove_core = GER }
 		696 = { remove_core = GCF }
 		697 = { remove_core = GCF }
 		693 = { remove_core = GCF }
-		695 = { remove_core = GCF }
-		3380 = { remove_core = GCF }
-		698 = { remove_core = GCF }
+		HXP_695 = { remove_core = GCF }
+		HXP_3380 = { remove_core = GCF }
+		HXP_698 = { remove_core = GCF }
 		696 = { secede_province = CPL }
 		697 = { secede_province = CPL }
 		693 = { secede_province = CPL }
-		695 = { secede_province = CPL }
-		3380 = { secede_province = RUS }
-		698 = { secede_province = RUS }
+		HXP_695 = { secede_province = CPL }
+		HXP_3380 = { secede_province = RUS }
+		HXP_698 = { secede_province = RUS }
 		RUS = {
 			country_event = {
 				id = 999397
@@ -1398,7 +1394,7 @@ country_event = {
 			change_tag = NGF
 			3305 = { secede_province = SAX }
 		}
-		698 = { secede_province = RUS }
+		HXP_698 = { secede_province = RUS }
 		698 = { change_province_name = "클라이페다" }
 		RUS = {
 			inherit = LIT
@@ -1411,7 +1407,7 @@ country_event = {
 			create_vassal = DZG
 			create_vassal = PZN
 		}
-		556 = { secede_province = SAX }
+		HXP_556 = { secede_province = SAX }
 		554 = { secede_province = SAX }
 		3304 = { secede_province = SAX }
 		SAX = {
@@ -1435,7 +1431,7 @@ country_event = {
 		}
 		any_country = {
 			limit = { tag = CPL }
-			any_owned = { add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			any_owned = { limit = { region = TGC_CONGRESS_POLAND } add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 		any_country = {
 			limit = { NOT = { tag = PRU } }
@@ -1966,8 +1962,8 @@ country_event = {
 		release = LUB
 		release = LAU
 		3333 = { secede_province = GER }
-		3468 = { secede_province = GER }
-		3468 = { remove_core = DEN }
+		HXP_3468 = { secede_province = GER }
+		HXP_3468 = { remove_core = DEN }
 		368 = {	secede_province = DEN }
 		368 = {	remove_core = SWH }
 		368 = {	remove_core = SCH }
@@ -2045,8 +2041,8 @@ country_event = {
 		release = LUB
 		release = LAU
 		3333 = { secede_province = DEN }
-		3468 = { secede_province = DEN }
-		3468 = { remove_core = GER }
+		HXP_3468 = { secede_province = DEN }
+		HXP_3468 = { remove_core = GER }
 		368 = {	secede_province = DEN }
 		370 = { secede_province = DEN }
 		371 = {	secede_province = DEN }
@@ -2128,8 +2124,8 @@ country_event = {
 		3333 = { secede_province = DEN }
 		368 = {	secede_province = DEN }
 		371 = {	secede_province = DEN }
-		3468 = { secede_province = GER }
-		3468 = { remove_core = DEN }
+		HXP_3468 = { secede_province = GER }
+		HXP_3468 = { remove_core = DEN }
 		368 = {	remove_core = SWH }
 		368 = {	remove_core = SCH }
 		3333 = { remove_core = GER }
@@ -2251,7 +2247,7 @@ country_event = {
 			3333 = { remove_core = GER }
 			370 = { remove_core = GER }
 			371 = { remove_core = GER }
-			3468 = { remove_core = GER }
+			HXP_3468 = { remove_core = GER }
 		}
 		inherit = HOL
 		inherit = SWH
@@ -2263,7 +2259,7 @@ country_event = {
 		368 = {	secede_province = DEN }
 		370 = { secede_province = DEN }
 		371 = {	secede_province = DEN }
-		3468 = { secede_province = DEN }
+		HXP_3468 = { secede_province = DEN }
 
 		ai_chance = { factor = 100 }
 	}
@@ -2304,7 +2300,7 @@ country_event = {
 			368 = {	remove_core = SCH }
 			3333 = { remove_core = GER }
 			371 = { remove_core = GER }
-			3468 = { remove_core = DEN }
+			HXP_3468 = { remove_core = DEN }
 		}
 		inherit = SCH
 		inherit = HOL
@@ -2357,7 +2353,7 @@ country_event = {
 			3333 = { remove_core = DEN }
 			370 = { remove_core = DEN }
 			371 = { remove_core = DEN }
-			3468 = { remove_core = DEN }
+			HXP_3468 = { remove_core = DEN }
 		}
 		inherit = SCH
 		inherit = HOL
@@ -2821,7 +2817,7 @@ country_event = {
 			change_tag = NGF
 			3305 = { secede_province = SAX }
 		}
-		556 = { secede_province = SAX }
+		HXP_556 = { secede_province = SAX }
 		554 = { secede_province = SAX }
 		3304 = { secede_province = SAX }
 		SAX = {
@@ -4061,7 +4057,7 @@ country_event = {
 			change_tag = NGF
 			3305 = { secede_province = SAX }
 		}
-		556 = { secede_province = SAX }
+		HXP_556 = { secede_province = SAX }
 		554 = { secede_province = SAX }
 		3304 = { secede_province = SAX }
 		SAX = {

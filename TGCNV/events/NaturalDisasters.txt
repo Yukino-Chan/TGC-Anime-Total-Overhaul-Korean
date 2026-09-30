@@ -255,7 +255,7 @@ country_event = {
 		
 		1652 = { infrastructure = -2 fort = -2 naval_base = -2 add_province_modifier = { name = earthquake_devastation duration = 90 } }
 		
-		1653 = { infrastructure = -2 fort = -2 naval_base = -2 add_province_modifier = { name = earthquake_devastation duration = 90 } }
+		1653 = { HXP_1653 = { infrastructure = -2 } fort = -2 naval_base = -2 HXP_1653 = { add_province_modifier = { name = earthquake_devastation duration = 90 } } }
 	}
 }
 
@@ -377,7 +377,7 @@ country_event = {
 		any_owned = {
 			limit = { 
 				OR = {
-					province_id = 763
+					region = HXP_763
 					province_id = 759
 				}
 			}

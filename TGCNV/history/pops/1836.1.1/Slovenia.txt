@@ -1,2200 +1,2114 @@
-#Carinthia-Styria Region (204000) #see Austria.txt for balance of Region
-#under the rule of Austria in 1836
-#Maribor (204000/51000 POPS) #Part of Slovenia Today
-
-
-
-#Carniola Region (460000)
-#under the rule of Austria in 1836
-#Ljubljana (280000/70000 POPS)
-
-
-
-#Postojna (180000/45000 POPS)
-
-
-
-#Koper (61633/15408 POPS)
-
-
-
-#Murska Sobota
-
-
-
-#Gutenstein/Ravne
-
-3312 = {	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 122
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 17
-	}
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 506
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 10
-	}
-	labourers = {
-		culture = south_german
-		religion = catholic
-		size = 2046
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 98
-	}
-	artisans = {
-		culture = slovene
-		religion = catholic
-		size = 386
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 5
-	}
-	labourers = {
-		culture = slovene
-		religion = catholic
-		size = 3819
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 6
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 3
-	}
-
-	bureaucrats = {
-		culture = south_german
-		religion = catholic
-		size = 41
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 8
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 72
-	}
-
-	serfs = {
-		culture = gypsy
-		religion = catholic
-		size = 160
-	}
-
-	serfs = {
-		culture = slovene
-		religion = catholic
-		size = 3759
-	}
-	aristocrats = {
-		culture = slovene
-		religion = catholic
-		size = 24
-	}
-	bureaucrats = {
-		culture = slovene
-		religion = catholic
-		size = 6
-	}
-	officers = {
-		culture = slovene
-		religion = catholic
-		size = 3
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 31
-	}
-
-	officers = {
-		culture = south_german
-		religion = catholic
-		size = 1
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 3
-	}
-	aristocrats = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-
-	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-}
-
-4322 = {	aristocrats = {
-		culture = slovene
-		religion = catholic
-		size = 226
-	}
-	bureaucrats = {
-		culture = slovene
-		religion = catholic
-		size = 35
-	}
-	officers = {
-		culture = slovene
-		religion = catholic
-		size = 15
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 192
-	}
-	artisans = {
-		culture = slovene
-		religion = catholic
-		size = 1032
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 169
-	}
-	farmers = {
-		culture = slovene
-		religion = catholic
-		size = 15910
-	}
-
-	serfs = {
-		culture = slovene
-		religion = catholic
-		size = 3079
-	}
-	bureaucrats = {
-		culture = south_german
-		religion = catholic
-		size = 4
-	}
-	officers = {
-		culture = south_german
-		religion = catholic
-		size = 4
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 20
-	}
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 23
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 15
-	}
-	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 1392
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 28
-	}
-
-	farmers = {
-		culture = gypsy
-		religion = catholic
-		size = 99
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 56
-	}
-
-}
-
-769 = {	aristocrats = {
-		culture = croat
-		religion = catholic
-		size = 3
-	}
-	clergymen = {
-		culture = croat
-		religion = catholic
-		size = 16
-	}
-	artisans = {
-		culture = croat
-		religion = catholic
-		size = 67
-	}
-	soldiers = {
-		culture = croat
-		religion = catholic
-		size = 7
-	}
-	farmers = {
-		culture = croat
-		religion = catholic
-		size = 1544
-	}
-	clergymen = {
-		culture = romanian
-		religion = catholic
-		size = 0
-	}
-	artisans = {
-		culture = romanian
-		religion = catholic
-		size = 0
-	}
-	farmers = {
-		culture = romanian
-		religion = catholic
-		size = 33
-	}
-	clergymen = {
-		culture = serb
-		religion = orthodox
-		size = 1
-	}
-	artisans = {
-		culture = serb
-		religion = orthodox
-		size = 4
-	}
-	soldiers = {
-		culture = serb
-		religion = orthodox
-		size = 1
-	}
-	serfs = {
-		culture = serb
-		religion = orthodox
-		size = 71
-	}
-	aristocrats = {
-		culture = north_italian
-		religion = catholic
-		size = 5
-	}
-	clergymen = {
-		culture = north_italian
-		religion = catholic
-		size = 1
-	}
-	artisans = {
-		culture = north_italian
-		religion = catholic
-		size = 9
-	}
-	soldiers = {
-		culture = north_italian
-		religion = catholic
-		size = 2
-	}
-	farmers = {
-		culture = north_italian
-		religion = catholic
-		size = 125
-	}
-	aristocrats = {
-		culture = romanian
-		religion = catholic
-		size = 0
-	}
-	clergymen = {
-		culture = romanian
-		religion = catholic
-		size = 4
-	}
-	artisans = {
-		culture = romanian
-		religion = catholic
-		size = 1
-	}
-	soldiers = {
-		culture = romanian
-		religion = catholic
-		size = 1
-	}
-	soldiers = {
-		culture = croat
-		religion = catholic
-		size = 16
-	}
-	aristocrats = {
-		culture = slovene
-		religion = catholic
-		size = 94
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 80
-	}
-	artisans = {
-		culture = slovene
-		religion = catholic
-		size = 397
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 80
-	}
-	farmers = {
-		culture = slovene
-		religion = catholic
-		size = 7385
-	}
-
-	farmers = {
-		culture = gypsy
-		religion = catholic
-		size = 94
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 5
-	}
-	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 373
-	}
-}
-
-3282 = {	aristocrats = {
-		culture = hungarian
-		religion = catholic
-		size = 45
-	}
-	clergymen = {
-		culture = hungarian
-		religion = catholic
-		size = 7
-	}
-	artisans = {
-		culture = hungarian
-		religion = catholic
-		size = 25
-	}
-	soldiers = {
-		culture = hungarian
-		religion = catholic
-		size = 3
-	}
-	farmers = {
-		culture = hungarian
-		religion = catholic
-		size = 1039
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 2
-	}
-	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 308
-	}
-	clergymen = {
-		culture = south_german
-		religion = protestant
-		size = 0
-	}
-	artisans = {
-		culture = south_german
-		religion = protestant
-		size = 0
-	}
-	soldiers = {
-		culture = south_german
-		religion = lutheran
-		size = 2
-	}
-	farmers = {
-		culture = south_german
-		religion = lutheran
-		size = 3
-	}
-
-	clergymen = {
-		culture = croat
-		religion = catholic
-		size = 0
-	}
-	artisans = {
-		culture = croat
-		religion = catholic
-		size = 2
-	}
-	soldiers = {
-		culture = croat
-		religion = catholic
-		size = 0
-	}
-	farmers = {
-		culture = croat
-		religion = catholic
-		size = 9
-	}
-	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 53
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 1
-	}
-	bureaucrats = {
-		culture = south_german
-		religion = catholic
-		size = 1
-	}
-
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 5
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 4
-	}
-	soldiers = {
-		culture = hungarian
-		religion = catholic
-		size = 11
-	}
-	soldiers = {
-		culture = hungarian
-		religion = catholic
-		size = 11
-	}
-	soldiers = {
-		culture = hungarian
-		religion = catholic
-		size = 11
-	}
-	soldiers = {
-		culture = hungarian
-		religion = catholic
-		size = 1
-	}
-
-	serfs = {
-		culture = gypsy
-		religion = catholic
-		size = 20
-	}
-	aristocrats = {
-		culture = hungarian
-		religion = presbyterian
-		size = 2
-	}
-	clergymen = {
-		culture = hungarian
-		religion = presbyterian
-		size = 1
-	}
-	artisans = {
-		culture = hungarian
-		religion = presbyterian
-		size = 6
-	}
-	soldiers = {
-		culture = hungarian
-		religion = presbyterian
-		size = 1
-	}
-	serfs = {
-		culture = hungarian
-		religion = presbyterian
-		size = 102
-	}
-	clergymen = {
-		culture = ashkenazi
-		religion = jewish
-		size = 0
-	}
-	artisans = {
-		culture = ashkenazi
-		religion = jewish
-		size = 7
-	}
-	soldiers = {
-		culture = ashkenazi
-		religion = jewish
-		size = 0
-	}
-	farmers = {
-		culture = ashkenazi
-		religion = jewish
-		size = 10
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	artisans = {
-		culture = slovene
-		religion = catholic
-		size = 209
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	serfs = {
-		culture = slovene
-		religion = catholic
-		size = 49
-	}
-	clergymen = {
-		culture = croat
-		religion = catholic
-		size = 0
-	}
-	soldiers = {
-		culture = croat
-		religion = catholic
-		size = 0
-	}
-	serfs = {
-		culture = croat
-		religion = catholic
-		size = 23
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 20
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 17
-	}
-	farmers = {
-		culture = slovene
-		religion = catholic
-		size = 1862
-	}
-
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 3
-	}
-
-	clergymen = {
-		culture = hungarian
-		religion = catholic
-		size = 0
-	}
-}
-
-3311 = {	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 53
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 29
-	}
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 218
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 3
-	}
-	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 1751
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	artisans = {
-		culture = slovene
-		religion = catholic
-		size = 174
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 1
-	}
-	farmers = {
-		culture = slovene
-		religion = catholic
-		size = 2183
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 33
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 53
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 17
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 30
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 15
-	}
-
-	bureaucrats = {
-		culture = south_german
-		religion = catholic
-		size = 15
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 3
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 26
-	}
-
-	serfs = {
-		culture = gypsy
-		religion = catholic
-		size = 58
-	}
-
-	serfs = {
-		culture = slovene
-		religion = catholic
-		size = 1245
-	}
-	aristocrats = {
-		culture = slovene
-		religion = catholic
-		size = 3
-	}
-	bureaucrats = {
-		culture = slovene
-		religion = catholic
-		size = 1
-	}
-	officers = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 5
-	}
-
-	bureaucrats = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	officers = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	aristocrats = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	artisans = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-
-	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-}
-
-767 = {	aristocrats = {
+767 = {
+aristocrats = {
 		culture = croat
 		religion = catholic
 		size = 19
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = croat
 		religion = catholic
 		size = 4
 	}
-
-	bureaucrats = {
+bureaucrats = {
 		culture = south_german
 		religion = catholic
 		size = 10
 	}
-	officers = {
+officers = {
 		culture = croat
 		religion = catholic
 		size = 2
 	}
-	clergymen = {
+clergymen = {
 		culture = croat
 		religion = catholic
 		size = 17
 	}
-	artisans = {
+artisans = {
 		culture = croat
 		religion = catholic
 		size = 91
 	}
-	soldiers = {
+soldiers = {
 		culture = croat
 		religion = catholic
 		size = 10
 	}
-	labourers = {
+labourers = {
 		culture = croat
 		religion = catholic
 		size = 1045
 	}
-
-	labourers = {
+labourers = {
 		culture = bosniak
 		religion = sunni
 		size = 6
 	}
-
-	serfs = {
+serfs = {
 		culture = gypsy
 		religion = catholic
 		size = 18
 	}
-
-	serfs = {
+serfs = {
 		culture = croat
 		religion = catholic
 		size = 487
 	}
-	aristocrats = {
+aristocrats = {
 		culture = hungarian
 		religion = catholic
 		size = 14
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = hungarian
 		religion = catholic
 		size = 2
 	}
-	officers = {
+officers = {
 		culture = hungarian
 		religion = catholic
 		size = 2
 	}
-	clergymen = {
+clergymen = {
 		culture = hungarian
 		religion = catholic
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = hungarian
 		religion = catholic
 		size = 14
 	}
-	soldiers = {
+soldiers = {
 		culture = hungarian
 		religion = catholic
 		size = 0
 	}
-	labourers = {
+labourers = {
 		culture = hungarian
 		religion = catholic
 		size = 60
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = south_german
 		religion = catholic
 		size = 7
 	}
-	artisans = {
+artisans = {
 		culture = south_german
 		religion = catholic
 		size = 10
 	}
-	soldiers = {
+soldiers = {
 		culture = south_german
 		religion = catholic
 		size = 1
 	}
-	labourers = {
+labourers = {
 		culture = south_german
 		religion = catholic
 		size = 551
 	}
-
-	soldiers = {
+soldiers = {
 		culture = croat
 		religion = catholic
 		size = 10
 	}
-
-
-
-	clergymen = {
+clergymen = {
 		culture = hungarian
 		religion = catholic
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = hungarian
 		religion = catholic
 		size = 0
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = south_german
 		religion = catholic
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = croat
 		religion = catholic
 		size = 9
 	}
-
-	aristocrats = {
+aristocrats = {
 		culture = slovene
 		religion = catholic
 		size = 30
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = slovene
 		religion = catholic
 		size = 6
 	}
-	officers = {
+officers = {
 		culture = slovene
 		religion = catholic
 		size = 3
 	}
-	clergymen = {
+clergymen = {
 		culture = slovene
 		religion = catholic
 		size = 25
 	}
-	artisans = {
+artisans = {
 		culture = slovene
 		religion = catholic
 		size = 141
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 28
 	}
-	labourers = {
+labourers = {
 		culture = slovene
 		religion = catholic
 		size = 2303
 	}
-
-	serfs = {
+serfs = {
 		culture = slovene
 		religion = catholic
 		size = 513
 	}
-	officers = {
+officers = {
 		culture = south_german
 		religion = catholic
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = south_german
 		religion = catholic
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 7
 	}
-
-	aristocrats = {
+aristocrats = {
 		culture = south_german
 		religion = catholic
 		size = 9
 	}
-	aristocrats = {
+aristocrats = {
 		culture = slovene
 		religion = catholic
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = slovene
 		religion = catholic
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 0
 	}
-
-	aristocrats = {
+aristocrats = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-}
-
-3485 = {	aristocrats = {
-		culture = slovene
-		religion = catholic
-		size = 2
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 5
-	}
-	artisans = {
-		culture = slovene
-		religion = catholic
-		size = 27
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 2
-	}
-	farmers = {
-		culture = slovene
-		religion = catholic
-		size = 220
-	}
-
-	farmers = {
-		culture = gypsy
-		religion = catholic
-		size = 2
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 8
-	}
-	aristocrats = {
-		culture = north_italian
-		religion = catholic
-		size = 4
-	}
-	bureaucrats = {
-		culture = north_italian
-		religion = catholic
-		size = 2
-	}
-	bureaucrats = {
-		culture = south_german
-		religion = catholic
-		size = 3
-	}
-	clergymen = {
-		culture = north_italian
-		religion = catholic
-		size = 1
-	}
-	artisans = {
-		culture = north_italian
-		religion = catholic
-		size = 31
-	}
-	soldiers = {
-		culture = north_italian
-		religion = catholic
-		size = 3
-	}
-	farmers = {
-		culture = north_italian
-		religion = catholic
-		size = 154
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 8
-	}
-}
-
-4321 = {	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 475
-	}
-	bureaucrats = {
-		culture = south_german
-		religion = catholic
-		size = 309
-	}
-	officers = {
-		culture = south_german
-		religion = catholic
-		size = 53
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 197
-	}
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 2391
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 214
-	}
-	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 17365
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 24
-	}
-	clergymen = {
-		culture = hungarian
-		religion = catholic
-		size = 1
-	}
-	artisans = {
-		culture = hungarian
-		religion = catholic
-		size = 2
-	}
-	soldiers = {
-		culture = hungarian
-		religion = catholic
-		size = 12
-	}
-	farmers = {
-		culture = hungarian
-		religion = catholic
-		size = 83
-	}
-	clergymen = {
-		culture = hungarian
-		religion = protestant
-		size = 0
-	}
-	artisans = {
-		culture = hungarian
-		religion = presbyterian
-		size = 2
-	}
-	soldiers = {
-		culture = hungarian
-		religion = presbyterian
-		size = 12
-	}
-	farmers = {
-		culture = hungarian
-		religion = presbyterian
-		size = 20
-	}
-
-	clergymen = {
-		culture = croat
-		religion = catholic
-		size = 2
-	}
-	artisans = {
-		culture = croat
-		religion = catholic
-		size = 10
-	}
-	soldiers = {
-		culture = croat
-		religion = catholic
-		size = 3
-	}
-	farmers = {
-		culture = croat
-		religion = catholic
-		size = 64
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 156
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 107
-	}
-	artisans = {
-		culture = slovene
-		religion = catholic
-		size = 394
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 2
-	}
-	farmers = {
-		culture = slovene
-		religion = catholic
-		size = 3220
-	}
-
-	aristocrats = {
-		culture = hungarian
-		religion = catholic
-		size = 2
-	}
-	clergymen = {
-		culture = hungarian
-		religion = catholic
-		size = 0
-	}
-	aristocrats = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	artisans = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 0
-	}
-
-	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 12
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 104
-	}
-
-	serfs = {
-		culture = gypsy
-		religion = catholic
-		size = 232
-	}
-
-	serfs = {
-		culture = slovene
-		religion = catholic
-		size = 4637
-	}
-	aristocrats = {
-		culture = slovene
-		religion = catholic
-		size = 2
-	}
-	soldiers = {
-		culture = slovene
-		religion = catholic
-		size = 1
-	}
-
-	clergymen = {
+clergymen = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
 }
 
-768 = {	aristocrats = {
+768 = {
+aristocrats = {
 		culture = croat
 		religion = catholic
 		size = 51
 	}
-	clergymen = {
+clergymen = {
 		culture = croat
 		religion = catholic
 		size = 33
 	}
-	artisans = {
+artisans = {
 		culture = croat
 		religion = catholic
 		size = 159
 	}
-	soldiers = {
+soldiers = {
 		culture = croat
 		religion = catholic
 		size = 98
 	}
-	farmers = {
+farmers = {
 		culture = croat
 		religion = catholic
 		size = 2784
 	}
-	clergymen = {
+clergymen = {
 		culture = romanian
 		religion = catholic
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = romanian
 		religion = catholic
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = romanian
 		religion = catholic
 		size = 7
 	}
-	clergymen = {
+clergymen = {
 		culture = serb
 		religion = orthodox
 		size = 11
 	}
-	artisans = {
+artisans = {
 		culture = serb
 		religion = orthodox
 		size = 53
 	}
-	soldiers = {
+soldiers = {
 		culture = serb
 		religion = orthodox
 		size = 13
 	}
-	serfs = {
+serfs = {
 		culture = serb
 		religion = orthodox
 		size = 990
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = croat
 		religion = catholic
 		size = 1
 	}
-
-	bureaucrats = {
+bureaucrats = {
 		culture = south_german
 		religion = catholic
 		size = 14
 	}
-	officers = {
+officers = {
 		culture = croat
 		religion = catholic
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = croat
 		religion = catholic
 		size = 3
 	}
-
-	farmers = {
+farmers = {
 		culture = bosniak
 		religion = sunni
 		size = 1
 	}
-
-	serfs = {
+serfs = {
 		culture = gypsy
 		religion = catholic
 		size = 3
 	}
-
-	serfs = {
+serfs = {
 		culture = croat
 		religion = catholic
 		size = 37
 	}
-	aristocrats = {
+aristocrats = {
 		culture = hungarian
 		religion = catholic
 		size = 2
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = hungarian
 		religion = catholic
 		size = 0
 	}
-	officers = {
+officers = {
 		culture = hungarian
 		religion = catholic
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = hungarian
 		religion = catholic
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = hungarian
 		religion = catholic
 		size = 2
 	}
-	soldiers = {
+soldiers = {
 		culture = hungarian
 		religion = catholic
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = hungarian
 		religion = catholic
 		size = 10
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = south_german
 		religion = catholic
 		size = 80
 	}
-	soldiers = {
+soldiers = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
-	farmers = {
+farmers = {
 		culture = south_german
 		religion = catholic
 		size = 3611
 	}
-	aristocrats = {
+aristocrats = {
 		culture = slovene
 		religion = catholic
 		size = 472
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = slovene
 		religion = catholic
 		size = 119
 	}
-	officers = {
+officers = {
 		culture = slovene
 		religion = catholic
 		size = 54
 	}
-	clergymen = {
+clergymen = {
 		culture = slovene
 		religion = catholic
 		size = 400
 	}
-	artisans = {
+artisans = {
 		culture = slovene
 		religion = catholic
 		size = 2268
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 83
 	}
-	farmers = {
+farmers = {
 		culture = slovene
 		religion = catholic
 		size = 30870
 	}
-
-	serfs = {
+serfs = {
 		culture = slovene
 		religion = catholic
 		size = 10652
 	}
-	officers = {
+officers = {
 		culture = south_german
 		religion = catholic
 		size = 13
 	}
-	clergymen = {
+clergymen = {
 		culture = south_german
 		religion = catholic
 		size = 56
 	}
-	soldiers = {
+soldiers = {
 		culture = south_german
 		religion = catholic
 		size = 8
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 28
 	}
-
-	farmers = {
+farmers = {
 		culture = gypsy
 		religion = catholic
 		size = 33
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 503
 	}
-
-	soldiers = {
+soldiers = {
 		culture = south_german
 		religion = catholic
 		size = 46
 	}
 }
 
-4323 = {	aristocrats = {
-		culture = croat
-		religion = catholic
-		size = 15
-	}
-	bureaucrats = {
-		culture = croat
-		religion = catholic
-		size = 8
-	}
-
-	bureaucrats = {
-		culture = south_german
-		religion = catholic
-		size = 24
-	}
-	officers = {
+769 = {
+aristocrats = {
 		culture = croat
 		religion = catholic
 		size = 3
 	}
-	clergymen = {
+clergymen = {
 		culture = croat
 		religion = catholic
-		size = 15
+		size = 16
 	}
-	artisans = {
+artisans = {
 		culture = croat
 		religion = catholic
-		size = 84
+		size = 67
 	}
-	soldiers = {
+soldiers = {
 		culture = croat
 		religion = catholic
-		size = 37
+		size = 7
 	}
-	farmers = {
+farmers = {
 		culture = croat
 		religion = catholic
-		size = 876
+		size = 1544
 	}
-
-	farmers = {
-		culture = bosniak
-		religion = sunni
-		size = 10
-	}
-
-	serfs = {
-		culture = gypsy
+clergymen = {
+		culture = romanian
 		religion = catholic
-		size = 34
+		size = 0
 	}
-
-	serfs = {
-		culture = croat
+artisans = {
+		culture = romanian
 		religion = catholic
-		size = 404
+		size = 0
 	}
-	aristocrats = {
-		culture = hungarian
+farmers = {
+		culture = romanian
 		religion = catholic
-		size = 24
+		size = 33
 	}
-	bureaucrats = {
-		culture = hungarian
-		religion = catholic
-		size = 3
+clergymen = {
+		culture = serb
+		religion = orthodox
+		size = 1
 	}
-	officers = {
-		culture = hungarian
+artisans = {
+		culture = serb
+		religion = orthodox
+		size = 4
+	}
+soldiers = {
+		culture = serb
+		religion = orthodox
+		size = 1
+	}
+serfs = {
+		culture = serb
+		religion = orthodox
+		size = 71
+	}
+aristocrats = {
+		culture = north_italian
 		religion = catholic
 		size = 5
 	}
-	clergymen = {
-		culture = hungarian
+clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 9
+	}
+soldiers = {
+		culture = north_italian
 		religion = catholic
 		size = 2
 	}
-	artisans = {
+farmers = {
+		culture = north_italian
+		religion = catholic
+		size = 125
+	}
+aristocrats = {
+		culture = romanian
+		religion = catholic
+		size = 0
+	}
+clergymen = {
+		culture = romanian
+		religion = catholic
+		size = 4
+	}
+artisans = {
+		culture = romanian
+		religion = catholic
+		size = 1
+	}
+soldiers = {
+		culture = romanian
+		religion = catholic
+		size = 1
+	}
+soldiers = {
+		culture = croat
+		religion = catholic
+		size = 16
+	}
+aristocrats = {
+		culture = slovene
+		religion = catholic
+		size = 94
+	}
+clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 80
+	}
+artisans = {
+		culture = slovene
+		religion = catholic
+		size = 397
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 80
+	}
+farmers = {
+		culture = slovene
+		religion = catholic
+		size = 7385
+	}
+farmers = {
+		culture = gypsy
+		religion = catholic
+		size = 94
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 5
+	}
+farmers = {
+		culture = south_german
+		religion = catholic
+		size = 373
+	}
+}
+
+3282 = {
+aristocrats = {
 		culture = hungarian
 		religion = catholic
-		size = 24
+		size = 45
 	}
-	soldiers = {
+clergymen = {
 		culture = hungarian
+		religion = catholic
+		size = 7
+	}
+artisans = {
+		culture = hungarian
+		religion = catholic
+		size = 25
+	}
+soldiers = {
+		culture = hungarian
+		religion = catholic
+		size = 3
+	}
+farmers = {
+		culture = hungarian
+		religion = catholic
+		size = 1039
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+artisans = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+soldiers = {
+		culture = south_german
 		religion = catholic
 		size = 2
 	}
-	farmers = {
-		culture = hungarian
-		religion = catholic
-		size = 109
-	}
-	clergymen = {
+farmers = {
 		culture = south_german
 		religion = catholic
-		size = 21
+		size = 308
 	}
-	artisans = {
+clergymen = {
 		culture = south_german
+		religion = protestant
+		size = 0
+	}
+artisans = {
+		culture = south_german
+		religion = protestant
+		size = 0
+	}
+soldiers = {
+		culture = south_german
+		religion = lutheran
+		size = 2
+	}
+farmers = {
+		culture = south_german
+		religion = lutheran
+		size = 3
+	}
+clergymen = {
+		culture = croat
 		religion = catholic
-		size = 39
+		size = 0
 	}
-	soldiers = {
-		culture = south_german
+artisans = {
+		culture = croat
 		religion = catholic
 		size = 2
 	}
-	farmers = {
+soldiers = {
+		culture = croat
+		religion = catholic
+		size = 0
+	}
+farmers = {
+		culture = croat
+		religion = catholic
+		size = 9
+	}
+aristocrats = {
 		culture = south_german
 		religion = catholic
-		size = 1487
+		size = 53
 	}
-	aristocrats = {
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 1
+	}
+bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = south_german
+		religion = catholic
+		size = 5
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 4
+	}
+soldiers = {
+		culture = hungarian
+		religion = catholic
+		size = 11
+	}
+soldiers = {
+		culture = hungarian
+		religion = catholic
+		size = 11
+	}
+soldiers = {
+		culture = hungarian
+		religion = catholic
+		size = 11
+	}
+soldiers = {
+		culture = hungarian
+		religion = catholic
+		size = 1
+	}
+serfs = {
+		culture = gypsy
+		religion = catholic
+		size = 20
+	}
+aristocrats = {
+		culture = hungarian
+		religion = presbyterian
+		size = 2
+	}
+clergymen = {
+		culture = hungarian
+		religion = presbyterian
+		size = 1
+	}
+artisans = {
+		culture = hungarian
+		religion = presbyterian
+		size = 6
+	}
+soldiers = {
+		culture = hungarian
+		religion = presbyterian
+		size = 1
+	}
+serfs = {
+		culture = hungarian
+		religion = presbyterian
+		size = 102
+	}
+clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 0
+	}
+artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 7
+	}
+soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 0
+	}
+farmers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 10
+	}
+clergymen = {
 		culture = slovene
 		religion = catholic
-		size = 161
+		size = 0
 	}
-	bureaucrats = {
-		culture = slovene
-		religion = catholic
-		size = 44
-	}
-	officers = {
-		culture = slovene
-		religion = catholic
-		size = 19
-	}
-	clergymen = {
-		culture = slovene
-		religion = catholic
-		size = 137
-	}
-	artisans = {
-		culture = slovene
-		religion = catholic
-		size = 781
-	}
-	soldiers = {
+artisans = {
 		culture = slovene
 		religion = catholic
 		size = 209
 	}
-	farmers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
-		size = 10369
+		size = 0
 	}
+serfs = {
+		culture = slovene
+		religion = catholic
+		size = 49
+	}
+clergymen = {
+		culture = croat
+		religion = catholic
+		size = 0
+	}
+soldiers = {
+		culture = croat
+		religion = catholic
+		size = 0
+	}
+serfs = {
+		culture = croat
+		religion = catholic
+		size = 23
+	}
+clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 20
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 17
+	}
+farmers = {
+		culture = slovene
+		religion = catholic
+		size = 1862
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 3
+	}
+clergymen = {
+		culture = hungarian
+		religion = catholic
+		size = 0
+	}
+}
 
-	serfs = {
+3311 = {
+aristocrats = {
+		culture = south_german
+		religion = catholic
+		size = 53
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 29
+	}
+artisans = {
+		culture = south_german
+		religion = catholic
+		size = 218
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 3
+	}
+farmers = {
+		culture = south_german
+		religion = catholic
+		size = 1751
+	}
+clergymen = {
 		culture = slovene
 		religion = catholic
-		size = 3902
+		size = 0
 	}
-	officers = {
+artisans = {
+		culture = slovene
+		religion = catholic
+		size = 174
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = slovene
+		religion = catholic
+		size = 2183
+	}
+soldiers = {
 		culture = south_german
+		religion = catholic
+		size = 33
+	}
+clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 53
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 17
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 30
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 15
+	}
+bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 15
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 3
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 26
+	}
+serfs = {
+		culture = gypsy
+		religion = catholic
+		size = 58
+	}
+serfs = {
+		culture = slovene
+		religion = catholic
+		size = 1245
+	}
+aristocrats = {
+		culture = slovene
+		religion = catholic
+		size = 3
+	}
+bureaucrats = {
+		culture = slovene
+		religion = catholic
+		size = 1
+	}
+officers = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+soldiers = {
+		culture = slovene
 		religion = catholic
 		size = 5
 	}
-	soldiers = {
+bureaucrats = {
 		culture = south_german
 		religion = catholic
-		size = 19
+		size = 0
 	}
-	officers = {
+officers = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+aristocrats = {
 		culture = slovene
 		religion = catholic
 		size = 0
 	}
-	soldiers = {
+clergymen = {
 		culture = slovene
 		religion = catholic
-		size = 6
+		size = 0
 	}
-
-	bureaucrats = {
+artisans = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+aristocrats = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
-	officers = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 0
-	}
-	soldiers = {
+clergymen = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
 }
 
-6316 = {	aristocrats = {
+3312 = {
+aristocrats = {
 		culture = south_german
 		religion = catholic
-		size = 96
+		size = 122
 	}
-	clergymen = {
+clergymen = {
 		culture = south_german
 		religion = catholic
-		size = 53
+		size = 17
 	}
-	artisans = {
+artisans = {
 		culture = south_german
 		religion = catholic
-		size = 367
+		size = 506
 	}
-	soldiers = {
+soldiers = {
 		culture = south_german
 		religion = catholic
-		size = 40
+		size = 10
 	}
-	farmers = {
+labourers = {
 		culture = south_german
 		religion = catholic
-		size = 4066
+		size = 2046
 	}
-	clergymen = {
+clergymen = {
 		culture = slovene
 		religion = catholic
-		size = 59
+		size = 98
 	}
-	artisans = {
+artisans = {
 		culture = slovene
 		religion = catholic
-		size = 198
+		size = 386
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
-		size = 18
+		size = 5
 	}
-	farmers = {
+labourers = {
 		culture = slovene
 		religion = catholic
-		size = 2624
+		size = 3819
 	}
-	soldiers = {
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 6
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 3
+	}
+bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 41
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 8
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 72
+	}
+serfs = {
+		culture = gypsy
+		religion = catholic
+		size = 160
+	}
+serfs = {
+		culture = slovene
+		religion = catholic
+		size = 3759
+	}
+aristocrats = {
+		culture = slovene
+		religion = catholic
+		size = 24
+	}
+bureaucrats = {
+		culture = slovene
+		religion = catholic
+		size = 6
+	}
+officers = {
+		culture = slovene
+		religion = catholic
+		size = 3
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 31
+	}
+officers = {
+		culture = south_german
+		religion = catholic
+		size = 1
+	}
+soldiers = {
 		culture = south_german
 		religion = catholic
 		size = 3
 	}
-	soldiers = {
+aristocrats = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+aristocrats = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+}
+
+3485 = {
+aristocrats = {
+		culture = slovene
+		religion = catholic
+		size = 2
+	}
+clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 5
+	}
+artisans = {
+		culture = slovene
+		religion = catholic
+		size = 27
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 2
+	}
+farmers = {
+		culture = slovene
+		religion = catholic
+		size = 220
+	}
+farmers = {
+		culture = gypsy
+		religion = catholic
+		size = 2
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+farmers = {
+		culture = south_german
+		religion = catholic
+		size = 8
+	}
+aristocrats = {
+		culture = north_italian
+		religion = catholic
+		size = 4
+	}
+bureaucrats = {
+		culture = north_italian
+		religion = catholic
+		size = 2
+	}
+bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 3
+	}
+clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 31
+	}
+soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 3
+	}
+farmers = {
+		culture = north_italian
+		religion = catholic
+		size = 154
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 8
+	}
+}
+
+4321 = {
+aristocrats = {
+		culture = south_german
+		religion = catholic
+		size = 475
+	}
+bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 309
+	}
+officers = {
+		culture = south_german
+		religion = catholic
+		size = 53
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 197
+	}
+artisans = {
+		culture = south_german
+		religion = catholic
+		size = 2391
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 214
+	}
+farmers = {
+		culture = south_german
+		religion = catholic
+		size = 17365
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 24
+	}
+clergymen = {
+		culture = hungarian
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = hungarian
+		religion = catholic
+		size = 2
+	}
+soldiers = {
+		culture = hungarian
+		religion = catholic
+		size = 12
+	}
+farmers = {
+		culture = hungarian
+		religion = catholic
+		size = 83
+	}
+clergymen = {
+		culture = hungarian
+		religion = protestant
+		size = 0
+	}
+artisans = {
+		culture = hungarian
+		religion = presbyterian
+		size = 2
+	}
+soldiers = {
+		culture = hungarian
+		religion = presbyterian
+		size = 12
+	}
+farmers = {
+		culture = hungarian
+		religion = presbyterian
+		size = 20
+	}
+clergymen = {
+		culture = croat
+		religion = catholic
+		size = 2
+	}
+artisans = {
+		culture = croat
+		religion = catholic
+		size = 10
+	}
+soldiers = {
+		culture = croat
+		religion = catholic
+		size = 3
+	}
+farmers = {
+		culture = croat
+		religion = catholic
+		size = 64
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 156
+	}
+clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 107
+	}
+artisans = {
+		culture = slovene
+		religion = catholic
+		size = 394
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 2
+	}
+farmers = {
+		culture = slovene
+		religion = catholic
+		size = 3220
+	}
+aristocrats = {
+		culture = hungarian
+		religion = catholic
+		size = 2
+	}
+clergymen = {
+		culture = hungarian
+		religion = catholic
+		size = 0
+	}
+aristocrats = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+artisans = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+aristocrats = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 12
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 104
+	}
+serfs = {
+		culture = gypsy
+		religion = catholic
+		size = 232
+	}
+serfs = {
+		culture = slovene
+		religion = catholic
+		size = 4637
+	}
+aristocrats = {
+		culture = slovene
+		religion = catholic
+		size = 2
+	}
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 1
 	}
-	bureaucrats = {
+clergymen = {
 		culture = south_german
 		religion = catholic
-		size = 25
+		size = 0
 	}
-	officers = {
-		culture = south_german
-		religion = catholic
-		size = 2
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 11
-	}
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 64
-	}
-	soldiers = {
+}
+
+4322 = {
+aristocrats = {
 		culture = slovene
 		religion = catholic
-		size = 32
+		size = 226
 	}
-
-	soldiers = {
+bureaucrats = {
+		culture = slovene
+		religion = catholic
+		size = 35
+	}
+officers = {
+		culture = slovene
+		religion = catholic
+		size = 15
+	}
+clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 192
+	}
+artisans = {
+		culture = slovene
+		religion = catholic
+		size = 1032
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 169
+	}
+farmers = {
+		culture = slovene
+		religion = catholic
+		size = 15910
+	}
+serfs = {
+		culture = slovene
+		religion = catholic
+		size = 3079
+	}
+bureaucrats = {
 		culture = south_german
 		religion = catholic
 		size = 4
 	}
-	soldiers = {
+officers = {
+		culture = south_german
+		religion = catholic
+		size = 4
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 20
+	}
+artisans = {
+		culture = south_german
+		religion = catholic
+		size = 23
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 15
+	}
+farmers = {
+		culture = south_german
+		religion = catholic
+		size = 1392
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 28
+	}
+farmers = {
+		culture = gypsy
+		religion = catholic
+		size = 99
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 56
+	}
+}
+
+4323 = {
+aristocrats = {
+		culture = croat
+		religion = catholic
+		size = 15
+	}
+bureaucrats = {
+		culture = croat
+		religion = catholic
+		size = 8
+	}
+bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 24
+	}
+officers = {
+		culture = croat
+		religion = catholic
+		size = 3
+	}
+clergymen = {
+		culture = croat
+		religion = catholic
+		size = 15
+	}
+artisans = {
+		culture = croat
+		religion = catholic
+		size = 84
+	}
+soldiers = {
+		culture = croat
+		religion = catholic
+		size = 37
+	}
+farmers = {
+		culture = croat
+		religion = catholic
+		size = 876
+	}
+farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 10
+	}
+serfs = {
+		culture = gypsy
+		religion = catholic
+		size = 34
+	}
+serfs = {
+		culture = croat
+		religion = catholic
+		size = 404
+	}
+aristocrats = {
+		culture = hungarian
+		religion = catholic
+		size = 24
+	}
+bureaucrats = {
+		culture = hungarian
+		religion = catholic
+		size = 3
+	}
+officers = {
+		culture = hungarian
+		religion = catholic
+		size = 5
+	}
+clergymen = {
+		culture = hungarian
+		religion = catholic
+		size = 2
+	}
+artisans = {
+		culture = hungarian
+		religion = catholic
+		size = 24
+	}
+soldiers = {
+		culture = hungarian
+		religion = catholic
+		size = 2
+	}
+farmers = {
+		culture = hungarian
+		religion = catholic
+		size = 109
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 21
+	}
+artisans = {
+		culture = south_german
+		religion = catholic
+		size = 39
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 2
+	}
+farmers = {
+		culture = south_german
+		religion = catholic
+		size = 1487
+	}
+aristocrats = {
+		culture = slovene
+		religion = catholic
+		size = 161
+	}
+bureaucrats = {
+		culture = slovene
+		religion = catholic
+		size = 44
+	}
+officers = {
+		culture = slovene
+		religion = catholic
+		size = 19
+	}
+clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 137
+	}
+artisans = {
+		culture = slovene
+		religion = catholic
+		size = 781
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 209
+	}
+farmers = {
+		culture = slovene
+		religion = catholic
+		size = 10369
+	}
+serfs = {
+		culture = slovene
+		religion = catholic
+		size = 3902
+	}
+officers = {
+		culture = south_german
+		religion = catholic
+		size = 5
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 19
+	}
+officers = {
+		culture = slovene
+		religion = catholic
+		size = 0
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 6
+	}
+bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+officers = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 0
+	}
+}
+
+6316 = {
+aristocrats = {
+		culture = south_german
+		religion = catholic
+		size = 96
+	}
+clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 53
+	}
+artisans = {
+		culture = south_german
+		religion = catholic
+		size = 367
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 40
+	}
+farmers = {
+		culture = south_german
+		religion = catholic
+		size = 4066
+	}
+clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 59
+	}
+artisans = {
+		culture = slovene
+		religion = catholic
+		size = 198
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 18
+	}
+farmers = {
+		culture = slovene
+		religion = catholic
+		size = 2624
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 3
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 1
+	}
+bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 25
+	}
+officers = {
+		culture = south_german
+		religion = catholic
+		size = 2
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 11
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 64
+	}
+soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 32
+	}
+soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 4
+	}
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 33
 	}
-
-	serfs = {
+serfs = {
 		culture = gypsy
 		religion = catholic
 		size = 72
 	}
-
-	serfs = {
+serfs = {
 		culture = slovene
 		religion = catholic
 		size = 1449
 	}
 }
 
-6468 = {	aristocrats = {
+6468 = {
+aristocrats = {
 		culture = south_german
 		religion = catholic
 		size = 1
 	}
-	clergymen = {
+clergymen = {
 		culture = south_german
 		religion = catholic
 		size = 3
 	}
-	artisans = {
+artisans = {
 		culture = south_german
 		religion = catholic
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = south_german
 		religion = catholic
 		size = 2
 	}
-	farmers = {
+farmers = {
 		culture = south_german
 		religion = catholic
 		size = 200
 	}
-	clergymen = {
+clergymen = {
 		culture = slovene
 		religion = catholic
 		size = 0
 	}
-	artisans = {
+artisans = {
 		culture = slovene
 		religion = catholic
 		size = 0
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = slovene
 		religion = catholic
 		size = 3633
 	}
-	aristocrats = {
+aristocrats = {
 		culture = romansh
 		religion = catholic
 		size = 13
 	}
-
-	clergymen = {
+clergymen = {
 		culture = romansh
 		religion = catholic
 		size = 4
 	}
-
-	artisans = {
+artisans = {
 		culture = romansh
 		religion = catholic
 		size = 21
 	}
-
-	soldiers = {
+soldiers = {
 		culture = romansh
 		religion = catholic
 		size = 13
 	}
-
-	farmers = {
+farmers = {
 		culture = romansh
 		religion = catholic
 		size = 713
 	}
-
-	aristocrats = {
+aristocrats = {
 		culture = north_italian
 		religion = catholic
 		size = 24
 	}
-
-	clergymen = {
+clergymen = {
 		culture = north_italian
 		religion = catholic
 		size = 2
 	}
-
-	artisans = {
+artisans = {
 		culture = north_italian
 		religion = catholic
 		size = 4
 	}
-
-	soldiers = {
+soldiers = {
 		culture = north_italian
 		religion = catholic
 		size = 1
 	}
-
-	farmers = {
+farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 28
 	}
-
-	clergymen = {
+clergymen = {
 		culture = slovene
 		religion = catholic
 		size = 64
 	}
-
-	artisans = {
+artisans = {
 		culture = slovene
 		religion = catholic
 		size = 242
 	}
-
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 23
 	}
-
-	aristocrats = {
+aristocrats = {
 		culture = slovene
 		religion = catholic
 		size = 40
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 34
 	}
-
-	farmers = {
+farmers = {
 		culture = gypsy
 		religion = catholic
 		size = 40
 	}
 }
 
-6970 = {	aristocrats = {
+6970 = {
+aristocrats = {
 		culture = south_german
 		religion = catholic
 		size = 12
 	}
-
-	bureaucrats = {
+bureaucrats = {
 		culture = south_german
 		religion = catholic
 		size = 4
 	}
-	clergymen = {
+clergymen = {
 		culture = south_german
 		religion = catholic
 		size = 1
 	}
-	artisans = {
+artisans = {
 		culture = south_german
 		religion = catholic
 		size = 45
 	}
-	soldiers = {
+soldiers = {
 		culture = south_german
 		religion = catholic
 		size = 1
 	}
-	farmers = {
+farmers = {
 		culture = south_german
 		religion = catholic
 		size = 177
 	}
-	clergymen = {
+clergymen = {
 		culture = slovene
 		religion = catholic
 		size = 7
 	}
-	artisans = {
+artisans = {
 		culture = slovene
 		religion = catholic
 		size = 27
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 6
 	}
-	farmers = {
+farmers = {
 		culture = slovene
 		religion = catholic
 		size = 288
 	}
-
-	serfs = {
+serfs = {
 		culture = gypsy
 		religion = catholic
 		size = 14
 	}
-
-	serfs = {
+serfs = {
 		culture = slovene
 		religion = catholic
 		size = 290
 	}
-	aristocrats = {
+aristocrats = {
 		culture = slovene
 		religion = catholic
 		size = 1
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 1
 	}
-
-	clergymen = {
+clergymen = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
 }
 
-6971 = {	aristocrats = {
+6971 = {
+aristocrats = {
 		culture = slovene
 		religion = catholic
 		size = 14
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = slovene
 		religion = catholic
 		size = 4
 	}
-	officers = {
+officers = {
 		culture = slovene
 		religion = catholic
 		size = 2
 	}
-	clergymen = {
+clergymen = {
 		culture = slovene
 		religion = catholic
 		size = 12
 	}
-	artisans = {
+artisans = {
 		culture = slovene
 		religion = catholic
 		size = 68
 	}
-	soldiers = {
+soldiers = {
 		culture = slovene
 		religion = catholic
 		size = 19
 	}
-	farmers = {
+farmers = {
 		culture = slovene
 		religion = catholic
 		size = 909
 	}
-
-	serfs = {
+serfs = {
 		culture = slovene
 		religion = catholic
 		size = 342
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
-	officers = {
+officers = {
 		culture = south_german
 		religion = catholic
 		size = 0
 	}
-	clergymen = {
+clergymen = {
 		culture = south_german
 		religion = catholic
 		size = 2
 	}
-	artisans = {
+artisans = {
 		culture = south_german
 		religion = catholic
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = south_german
 		religion = catholic
 		size = 2
 	}
-	farmers = {
+farmers = {
 		culture = south_german
 		religion = catholic
 		size = 111

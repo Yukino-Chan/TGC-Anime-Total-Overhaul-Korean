@@ -1870,7 +1870,7 @@ country_event = {
 		war = {
 			target = AUS
 			attacker_goal = {
-				casus_belli = acquire_core_state
+				casus_belli = hx_acquire_core_state_hst_ven
 				state_province_id = 729
 			}
 			call_ally = yes
@@ -2050,7 +2050,7 @@ country_event = {
 				remove_core = HUN
 				secede_province = AUS
 			 } } }
-			778 = {
+			HXP_778 = {
 				add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				remove_core = THIS
 				secede_province = HUN
@@ -2224,7 +2224,7 @@ country_event = {
 			diplomatic_influence = { who = BAN value = 200 }
 			relation = { who = BAN value = 200 }
 			BAN = { add_accepted_culture = serb }
-			778 = { remove_core = CRO }
+			HXP_778 = { remove_core = CRO }
 			770 = { remove_core = CRO }
 			AUS_780 = { remove_core = CRO }
 			release_vassal = CRO
@@ -2252,7 +2252,7 @@ country_event = {
 				add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				remove_core = HUN
 			}
-			778 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HXP_778 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			770 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			AUS_780 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			release_vassal = HUN

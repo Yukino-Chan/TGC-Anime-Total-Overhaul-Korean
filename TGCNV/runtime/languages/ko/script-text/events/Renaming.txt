@@ -83,7 +83,7 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 289 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "레스터" }
 
 			# 290
-			any_land_province = { limit = { province_id = 290 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "링컨" }
+			any_land_province = { limit = { region = HXP_290 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "링컨" }
 
 			# 281
 			any_land_province = { limit = { province_id = 281 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "헐" }
@@ -123,10 +123,10 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 419 owner = { is_culture_group = germanic } } change_province_name = "채널 제도" }
 
 			# 273
-			any_land_province = { limit = { province_id = 273 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "카디프" }
+			any_land_province = { limit = { region = HXP_273 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "카디프" }
 
 			# 274
-			any_land_province = { limit = { province_id = 274 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "카디건" }
+			any_land_province = { limit = { region = HXP_274 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "카디건" }
 
 			# 275
 			any_land_province = { limit = { province_id = 275 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "몽고메리셔" }
@@ -138,7 +138,7 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 271 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "글래스고" }
 
 			# 268
-			any_land_province = { limit = { province_id = 268 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "던디" }
+			any_land_province = { limit = { region = HXP_268 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "던디" }
 
 			# 269
 			any_land_province = { limit = { province_id = 269 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "에든버러" }
@@ -156,7 +156,7 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 1724 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "오크니·셰틀랜드 제도" }
 
 			# 270
-			any_land_province = { limit = { province_id = 270 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "스털링" }
+			any_land_province = { limit = { region = HXP_270 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "스털링" }
 
 			# 254
 			any_land_province = { limit = { province_id = 254 owner = { OR = { primary_culture = british primary_culture = scottish } } } change_province_name = "벨파스트" }
@@ -567,11 +567,11 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 697 owner = { is_culture_group = east_slavic } } change_province_name = "오스트루다" }
 
 			# 695
-			any_land_province = { limit = { province_id = 695 owner = { is_culture_group = germanic } } change_province_name = "쾨니히스베르크" }
-			any_land_province = { limit = { province_id = 695 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "크룰레비에츠" }
-			any_land_province = { limit = { province_id = 695 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "코롤레베츠" }
-			any_land_province = { limit = { province_id = 695 owner = { is_culture_group = east_slavic has_country_flag = communist_gov } } change_province_name = "칼리닌그라드" }
-			any_land_province = { limit = { province_id = 695 owner = { primary_culture = lithuanian } } change_province_name = "카라랴우추스" }
+			any_land_province = { limit = { region = HXP_695 owner = { is_culture_group = germanic } } change_province_name = "쾨니히스베르크" }
+			any_land_province = { limit = { region = HXP_695 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "크룰레비에츠" }
+			any_land_province = { limit = { region = HXP_695 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "코롤레베츠" }
+			any_land_province = { limit = { region = HXP_695 owner = { is_culture_group = east_slavic has_country_flag = communist_gov } } change_province_name = "칼리닌그라드" }
+			any_land_province = { limit = { region = HXP_695 owner = { primary_culture = lithuanian } } change_province_name = "카라랴우추스" }
 
 			# 696
 			any_land_province = { limit = { province_id = 696 owner = { is_culture_group = germanic } } change_province_name = "알렌슈타인" }
@@ -581,18 +581,18 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 696 owner = { primary_culture = lithuanian } } change_province_name = "올슈티나스" }
 
 			# 698
-			any_land_province = { limit = { province_id = 698 owner = { is_culture_group = germanic } } change_province_name = "메멜" }
-			any_land_province = { limit = { province_id = 698 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "클라이페다" }
-			any_land_province = { limit = { province_id = 698 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "클라이페다" }
-			any_land_province = { limit = { province_id = 698 owner = { is_culture_group = east_slavic has_country_flag = communist_gov } } change_province_name = "메멜" }
-			any_land_province = { limit = { province_id = 698 owner = { primary_culture = lithuanian } } change_province_name = "클라이페다" }
+			any_land_province = { limit = { region = HXP_698 owner = { is_culture_group = germanic } } change_province_name = "메멜" }
+			any_land_province = { limit = { region = HXP_698 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "클라이페다" }
+			any_land_province = { limit = { region = HXP_698 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "클라이페다" }
+			any_land_province = { limit = { region = HXP_698 owner = { is_culture_group = east_slavic has_country_flag = communist_gov } } change_province_name = "메멜" }
+			any_land_province = { limit = { region = HXP_698 owner = { primary_culture = lithuanian } } change_province_name = "클라이페다" }
 
 			# 3380
-			any_land_province = { limit = { province_id = 3380 owner = { is_culture_group = germanic } } change_province_name = "틸지트" }
-			any_land_province = { limit = { province_id = 3380 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "틸자" }
-			any_land_province = { limit = { province_id = 3380 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "틸지츠크" }
-			any_land_province = { limit = { province_id = 3380 owner = { is_culture_group = east_slavic has_country_flag = communist_gov } } change_province_name = "소베츠크" }
-			any_land_province = { limit = { province_id = 3380 owner = { primary_culture = lithuanian } } change_province_name = "틸제" }
+			any_land_province = { limit = { region = HXP_3380 owner = { is_culture_group = germanic } } change_province_name = "틸지트" }
+			any_land_province = { limit = { region = HXP_3380 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "틸자" }
+			any_land_province = { limit = { region = HXP_3380 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "틸지츠크" }
+			any_land_province = { limit = { region = HXP_3380 owner = { is_culture_group = east_slavic has_country_flag = communist_gov } } change_province_name = "소베츠크" }
+			any_land_province = { limit = { region = HXP_3380 owner = { primary_culture = lithuanian } } change_province_name = "틸제" }
 
 			# 699
 			any_land_province = { limit = { province_id = 699 owner = { is_culture_group = germanic } } change_province_name = "포젠" }
@@ -937,16 +937,16 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 351 owner = { is_culture_group = east_slavic NOT = { accepted_culture = estonian } } } change_province_name = "페르노프" }
 
 			# 352
-			any_land_province = { limit = { province_id = 352 owner = { is_culture_group = germanic } } change_province_name = "도르파트" }
-			any_land_province = { limit = { province_id = 352 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { primary_culture = estonian } } } change_province_name = "도르파트" }
-			any_land_province = { limit = { province_id = 352 owner = { OR = { is_culture_group = baltic primary_culture = finnish AND = { accepted_culture = estonian OR = { is_culture_group = scandinavian is_culture_group = east_slavic } } } } } change_province_name = "타르투" }
-			any_land_province = { limit = { province_id = 352 owner = { is_culture_group = east_slavic NOT = { accepted_culture = estonian } } } change_province_name = "데르프트" }
+			any_land_province = { limit = { region = HXP_352 owner = { is_culture_group = germanic } } change_province_name = "도르파트" }
+			any_land_province = { limit = { region = HXP_352 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { primary_culture = estonian } } } change_province_name = "도르파트" }
+			any_land_province = { limit = { region = HXP_352 owner = { OR = { is_culture_group = baltic primary_culture = finnish AND = { accepted_culture = estonian OR = { is_culture_group = scandinavian is_culture_group = east_slavic } } } } } change_province_name = "타르투" }
+			any_land_province = { limit = { region = HXP_352 owner = { is_culture_group = east_slavic NOT = { accepted_culture = estonian } } } change_province_name = "데르프트" }
 
 			# 353
-			any_land_province = { limit = { province_id = 353 owner = { is_culture_group = germanic } } change_province_name = "외젤" }
-			any_land_province = { limit = { province_id = 353 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { primary_culture = estonian } } } change_province_name = "외른보리" }
-			any_land_province = { limit = { province_id = 353 owner = { OR = { is_culture_group = baltic primary_culture = finnish AND = { accepted_culture = estonian OR = { is_culture_group = scandinavian is_culture_group = east_slavic } } } } } change_province_name = "사레마" }
-			any_land_province = { limit = { province_id = 353 owner = { is_culture_group = east_slavic NOT = { accepted_culture = estonian } } } change_province_name = "사미섬" }
+			any_land_province = { limit = { region = HOP_353 owner = { is_culture_group = germanic } } change_province_name = "외젤" }
+			any_land_province = { limit = { region = HOP_353 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { primary_culture = estonian } } } change_province_name = "외른보리" }
+			any_land_province = { limit = { region = HOP_353 owner = { OR = { is_culture_group = baltic primary_culture = finnish AND = { accepted_culture = estonian OR = { is_culture_group = scandinavian is_culture_group = east_slavic } } } } } change_province_name = "사레마" }
+			any_land_province = { limit = { region = HOP_353 owner = { is_culture_group = east_slavic NOT = { accepted_culture = estonian } } } change_province_name = "사미섬" }
 
 			# 354
 			any_land_province = { limit = { province_id = 354 owner = { is_culture_group = germanic } } change_province_name = "리가" }
@@ -1063,16 +1063,16 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 3379 owner = { primary_culture = finnish is_vassal = yes overlord = { is_culture_group = east_slavic has_country_flag = finland_russification } } } change_province_name = "쿠올라얘르비" }
 
 			# 339
-			any_land_province = { limit = { province_id = 339 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "비보리" }
-			any_land_province = { limit = { province_id = 339 owner = { is_culture_group = east_slavic NOT = { accepted_culture = finnish } NOT = { accepted_culture = sami } } } change_province_name = "비보르크" }
-			any_land_province = { limit = { province_id = 339 owner = { primary_culture = finnish is_vassal = yes overlord = { is_culture_group = east_slavic has_country_flag = finland_russification } } } change_province_name = "비보르크" }
-			any_land_province = { limit = { province_id = 339 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } OR = { is_vassal = no overlord = { OR = { NOT = { is_culture_group = east_slavic } NOT = { has_country_flag = finland_russification } } } } } } change_province_name = "비푸리" }
+			any_land_province = { limit = { region = HXP_339 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "비보리" }
+			any_land_province = { limit = { region = HXP_339 owner = { is_culture_group = east_slavic NOT = { accepted_culture = finnish } NOT = { accepted_culture = sami } } } change_province_name = "비보르크" }
+			any_land_province = { limit = { region = HXP_339 owner = { primary_culture = finnish is_vassal = yes overlord = { is_culture_group = east_slavic has_country_flag = finland_russification } } } change_province_name = "비보르크" }
+			any_land_province = { limit = { region = HXP_339 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } OR = { is_vassal = no overlord = { OR = { NOT = { is_culture_group = east_slavic } NOT = { has_country_flag = finland_russification } } } } } } change_province_name = "비푸리" }
 
 			# 340
-			any_land_province = { limit = { province_id = 340 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "상트미켈" }
-			any_land_province = { limit = { province_id = 340 owner = { is_culture_group = east_slavic NOT = { accepted_culture = finnish } NOT = { accepted_culture = sami } } } change_province_name = "상크트미헬" }
-			any_land_province = { limit = { province_id = 340 owner = { primary_culture = finnish is_vassal = yes overlord = { is_culture_group = east_slavic has_country_flag = finland_russification } } } change_province_name = "상크트미헬" }
-			any_land_province = { limit = { province_id = 340 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } OR = { is_vassal = no overlord = { OR = { NOT = { is_culture_group = east_slavic } NOT = { has_country_flag = finland_russification } } } } } } change_province_name = "미켈리" }
+			any_land_province = { limit = { region = HXP_340 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "상트미켈" }
+			any_land_province = { limit = { region = HXP_340 owner = { is_culture_group = east_slavic NOT = { accepted_culture = finnish } NOT = { accepted_culture = sami } } } change_province_name = "상크트미헬" }
+			any_land_province = { limit = { region = HXP_340 owner = { primary_culture = finnish is_vassal = yes overlord = { is_culture_group = east_slavic has_country_flag = finland_russification } } } change_province_name = "상크트미헬" }
+			any_land_province = { limit = { region = HXP_340 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } OR = { is_vassal = no overlord = { OR = { NOT = { is_culture_group = east_slavic } NOT = { has_country_flag = finland_russification } } } } } } change_province_name = "미켈리" }
 
 			# 341
 			any_land_province = { limit = { province_id = 341 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "코트카" }
@@ -1099,10 +1099,10 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 344 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } OR = { is_vassal = no overlord = { OR = { NOT = { is_culture_group = east_slavic } NOT = { has_country_flag = finland_russification } } } } } } change_province_name = "로이마" }
 
 			# 345
-			any_land_province = { limit = { province_id = 345 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "비에르네보리" }
-			any_land_province = { limit = { province_id = 345 owner = { is_culture_group = east_slavic NOT = { accepted_culture = finnish } NOT = { accepted_culture = sami } } } change_province_name = "비에르네보리" }
-			any_land_province = { limit = { province_id = 345 owner = { primary_culture = finnish is_vassal = yes overlord = { is_culture_group = east_slavic has_country_flag = finland_russification } } } change_province_name = "비에르네보리" }
-			any_land_province = { limit = { province_id = 345 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } OR = { is_vassal = no overlord = { OR = { NOT = { is_culture_group = east_slavic } NOT = { has_country_flag = finland_russification } } } } } } change_province_name = "비에르네보리" }
+			any_land_province = { limit = { region = HXP_345 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "비에르네보리" }
+			any_land_province = { limit = { region = HXP_345 owner = { is_culture_group = east_slavic NOT = { accepted_culture = finnish } NOT = { accepted_culture = sami } } } change_province_name = "비에르네보리" }
+			any_land_province = { limit = { region = HXP_345 owner = { primary_culture = finnish is_vassal = yes overlord = { is_culture_group = east_slavic has_country_flag = finland_russification } } } change_province_name = "비에르네보리" }
+			any_land_province = { limit = { region = HXP_345 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } OR = { is_vassal = no overlord = { OR = { NOT = { is_culture_group = east_slavic } NOT = { has_country_flag = finland_russification } } } } } } change_province_name = "비에르네보리" }
 
 			# 346
 			any_land_province = { limit = { province_id = 346 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "바사" }
@@ -1382,11 +1382,11 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 959 owner = { is_culture_group = germanic } } change_province_name = "지토미르" }
 
 			# 968
-			any_land_province = { limit = { province_id = 968 owner = { is_culture_group = east_slavic } } change_province_name = "오데사" }
-			any_land_province = { limit = { province_id = 968 owner = { is_culture_group = germanic } } change_province_name = "오데사" }
-			any_land_province = { limit = { province_id = 968 owner = { primary_culture = turkish } } change_province_name = "카라케르만" }
-			any_land_province = { limit = { province_id = 968 owner = { primary_culture = tatar } } change_province_name = "외쥐칼레" }
-			any_land_province = { limit = { province_id = 968 owner = { is_culture_group = pan_romanian } } change_province_name = "오데사" }
+			any_land_province = { limit = { region = HXP_968 owner = { is_culture_group = east_slavic } } change_province_name = "오데사" }
+			any_land_province = { limit = { region = HXP_968 owner = { is_culture_group = germanic } } change_province_name = "오데사" }
+			any_land_province = { limit = { region = HXP_968 owner = { primary_culture = turkish } } change_province_name = "카라케르만" }
+			any_land_province = { limit = { region = HXP_968 owner = { primary_culture = tatar } } change_province_name = "외쥐칼레" }
+			any_land_province = { limit = { region = HXP_968 owner = { is_culture_group = pan_romanian } } change_province_name = "오데사" }
 
 			# 969
 			any_land_province = { limit = { province_id = 969 owner = { is_culture_group = east_slavic } } change_province_name = "티라스폴" }
@@ -1495,11 +1495,11 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 979 owner = { is_culture_group = germanic } } change_province_name = "노이체르카스크" }
 
 			# 976
-			any_land_province = { limit = { province_id = 976 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "마리우폴" }
-			any_land_province = { limit = { province_id = 976 owner = { is_culture_group = east_slavic has_country_flag = communist_gov } } change_province_name = "즈다노프" }
-			any_land_province = { limit = { province_id = 976 owner = { is_culture_group = germanic } } change_province_name = "마리엔하펜" }
-			any_land_province = { limit = { province_id = 976 owner = { primary_culture = turkish } } change_province_name = "이지움" }
-			any_land_province = { limit = { province_id = 976 owner = { primary_culture = tatar } } change_province_name = "이지움" }
+			any_land_province = { limit = { region = HXP_976 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "마리우폴" }
+			any_land_province = { limit = { region = HXP_976 owner = { is_culture_group = east_slavic has_country_flag = communist_gov } } change_province_name = "즈다노프" }
+			any_land_province = { limit = { region = HXP_976 owner = { is_culture_group = germanic } } change_province_name = "마리엔하펜" }
+			any_land_province = { limit = { region = HXP_976 owner = { primary_culture = turkish } } change_province_name = "이지움" }
+			any_land_province = { limit = { region = HXP_976 owner = { primary_culture = tatar } } change_province_name = "이지움" }
 
 			# 1039
 			any_land_province = { limit = { province_id = 1039 owner = { is_culture_group = east_slavic has_country_flag = monarchy_gov } } change_province_name = "미하일로프카" }
@@ -1542,8 +1542,8 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 1056 owner = { is_culture_group = germanic } } change_province_name = "퓐프베르겐" }
 
 			# 1057
-			any_land_province = { limit = { province_id = 1057 owner = { is_culture_group = east_slavic } } change_province_name = "키즐랴르" }
-			any_land_province = { limit = { province_id = 1057 owner = { is_culture_group = germanic } } change_province_name = "키즐랴르" }
+			any_land_province = { limit = { region = HXP_1057 owner = { is_culture_group = east_slavic } } change_province_name = "키즐랴르" }
+			any_land_province = { limit = { region = HXP_1057 owner = { is_culture_group = germanic } } change_province_name = "키즐랴르" }
 
 			# 3352
 			any_land_province = { limit = { province_id = 3352 owner = { is_culture_group = east_slavic } } change_province_name = "소치" }
@@ -1603,10 +1603,10 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 3376 owner = { OR = { primary_culture = finnish primary_culture = sami primary_culture = estonian AND = { is_culture_group = scandinavian OR = { accepted_culture = finnish accepted_culture = sami accepted_culture = estonian } } } } } change_province_name = "야닐린" }
 
 			# 984
-			any_land_province = { limit = { province_id = 984 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "우흐투오" }
-			any_land_province = { limit = { province_id = 984 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "우흐타" }
-			any_land_province = { limit = { province_id = 984 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } NOT = { has_global_flag = kalevala_compiled } } } change_province_name = "우흐투아" }
-			any_land_province = { limit = { province_id = 984 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } has_global_flag = kalevala_compiled } } change_province_name = "칼레발라" }
+			any_land_province = { limit = { region = HXP_984 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "우흐투오" }
+			any_land_province = { limit = { region = HXP_984 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "우흐타" }
+			any_land_province = { limit = { region = HXP_984 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } NOT = { has_global_flag = kalevala_compiled } } } change_province_name = "우흐투아" }
+			any_land_province = { limit = { region = HXP_984 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } has_global_flag = kalevala_compiled } } change_province_name = "칼레발라" }
 
 			# 982
 			any_land_province = { limit = { province_id = 982 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "페차모엘벤" }
@@ -1619,9 +1619,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 983 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } } } change_province_name = "포라얘르비" }
 
 			# 988
-			any_land_province = { limit = { province_id = 988 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "포베네츠" }
-			any_land_province = { limit = { province_id = 988 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "포베네츠" }
-			any_land_province = { limit = { province_id = 988 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } } } change_province_name = "포베네츠" }
+			any_land_province = { limit = { region = HXP_988 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "포베네츠" }
+			any_land_province = { limit = { region = HXP_988 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "포베네츠" }
+			any_land_province = { limit = { region = HXP_988 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } } } change_province_name = "포베네츠" }
 
 			# 995
 			any_land_province = { limit = { province_id = 995 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "콘도포가" }
@@ -1629,12 +1629,12 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 995 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } } } change_province_name = "콘도포가" }
 
 			# 2587
-			any_land_province = { limit = { province_id = 2587 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "콜라반도" }
-			any_land_province = { limit = { province_id = 2587 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } NOT = { has_global_flag = murmansk_built } } } change_province_name = "콜라" }
-			any_land_province = { limit = { province_id = 2587 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } has_country_flag = monarchy_gov has_global_flag = murmansk_built } } change_province_name = "로마노프" }
-			any_land_province = { limit = { province_id = 2587 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } NOT = { has_country_flag = monarchy_gov } NOT = { has_country_flag = communist_gov } has_global_flag = murmansk_built } } change_province_name = "무르만스크" }
-			any_land_province = { limit = { province_id = 2587 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } has_country_flag = communist_gov } } change_province_name = "무르만스크" }
-			any_land_province = { limit = { province_id = 2587 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } } } change_province_name = "쿠올라" }
+			any_land_province = { limit = { region = HXP_2587 owner = { is_culture_group = scandinavian NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } } } change_province_name = "콜라반도" }
+			any_land_province = { limit = { region = HXP_2587 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } NOT = { has_global_flag = murmansk_built } } } change_province_name = "콜라" }
+			any_land_province = { limit = { region = HXP_2587 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } has_country_flag = monarchy_gov has_global_flag = murmansk_built } } change_province_name = "로마노프" }
+			any_land_province = { limit = { region = HXP_2587 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } NOT = { has_country_flag = monarchy_gov } NOT = { has_country_flag = communist_gov } has_global_flag = murmansk_built } } change_province_name = "무르만스크" }
+			any_land_province = { limit = { region = HXP_2587 owner = { is_culture_group = east_slavic NOT = { primary_culture = finnish } NOT = { accepted_culture = finnish } NOT = { primary_culture = sami } NOT = { accepted_culture = sami } has_country_flag = communist_gov } } change_province_name = "무르만스크" }
+			any_land_province = { limit = { region = HXP_2587 owner = { OR = { primary_culture = finnish primary_culture = sami accepted_culture = finnish accepted_culture = sami } } } change_province_name = "쿠올라" }
 
 			# 3377
 			any_land_province = { limit = { province_id = 3377 owner = { is_culture_group = germanic } } change_province_name = "페추르" }
@@ -2198,10 +2198,10 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 773 owner = { is_culture_group = germanic NOT = { accepted_culture = hungarian } NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } NOT = { accepted_culture = north_italian } NOT = { accepted_culture = south_italian } } } change_province_name = "첸크" }
 
 			# 778
-			any_land_province = { limit = { province_id = 778 owner = { OR = { is_culture_group = hungarian_culture_group AND = { is_culture_group = germanic accepted_culture = hungarian NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } } } } } change_province_name = "피우메" }
-			any_land_province = { limit = { province_id = 778 owner = { OR = { is_culture_group = south_slavic AND = { is_culture_group = germanic OR = { accepted_culture = croat accepted_culture = serb } } } } } change_province_name = "리예카" }
-			any_land_province = { limit = { province_id = 778 owner = { OR = { is_culture_group = italian AND = { is_culture_group = germanic NOT = { accepted_culture = hungarian } NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } OR = { accepted_culture = north_italian accepted_culture = south_italian } } } } } change_province_name = "피우메" }
-			any_land_province = { limit = { province_id = 778 owner = { is_culture_group = germanic NOT = { accepted_culture = hungarian } NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } NOT = { accepted_culture = north_italian } NOT = { accepted_culture = south_italian } } } change_province_name = "장크트파이트" }
+			any_land_province = { limit = { region = HXP_778 owner = { OR = { is_culture_group = hungarian_culture_group AND = { is_culture_group = germanic accepted_culture = hungarian NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } } } } } change_province_name = "피우메" }
+			any_land_province = { limit = { region = HXP_778 owner = { OR = { is_culture_group = south_slavic AND = { is_culture_group = germanic OR = { accepted_culture = croat accepted_culture = serb } } } } } change_province_name = "리예카" }
+			any_land_province = { limit = { region = HXP_778 owner = { OR = { is_culture_group = italian AND = { is_culture_group = germanic NOT = { accepted_culture = hungarian } NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } OR = { accepted_culture = north_italian accepted_culture = south_italian } } } } } change_province_name = "피우메" }
+			any_land_province = { limit = { region = HXP_778 owner = { is_culture_group = germanic NOT = { accepted_culture = hungarian } NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } NOT = { accepted_culture = north_italian } NOT = { accepted_culture = south_italian } } } change_province_name = "장크트파이트" }
 
 			# 777
 			any_land_province = { limit = { province_id = 777 owner = { OR = { is_culture_group = hungarian_culture_group AND = { is_culture_group = germanic accepted_culture = hungarian NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } } } } } change_province_name = "포제거" }
@@ -2233,14 +2233,14 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 781 owner = { is_culture_group = germanic NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } NOT = { accepted_culture = north_italian } NOT = { accepted_culture = south_italian } } } change_province_name = "자라" }
 
 			# 782
-			any_land_province = { limit = { province_id = 782 owner = { OR = { is_culture_group = south_slavic AND = { is_culture_group = germanic OR = { accepted_culture = croat accepted_culture = serb } } } } } change_province_name = "두브로브니크" }
-			any_land_province = { limit = { province_id = 782 owner = { OR = { is_culture_group = italian AND = { is_culture_group = germanic NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } OR = { accepted_culture = north_italian accepted_culture = south_italian } } } } } change_province_name = "라구사" }
-			any_land_province = { limit = { province_id = 782 owner = { is_culture_group = germanic NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } NOT = { accepted_culture = north_italian } NOT = { accepted_culture = south_italian } } } change_province_name = "라구사" }
+			any_land_province = { limit = { region = HXP_782 owner = { OR = { is_culture_group = south_slavic AND = { is_culture_group = germanic OR = { accepted_culture = croat accepted_culture = serb } } } } } change_province_name = "두브로브니크" }
+			any_land_province = { limit = { region = HXP_782 owner = { OR = { is_culture_group = italian AND = { is_culture_group = germanic NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } OR = { accepted_culture = north_italian accepted_culture = south_italian } } } } } change_province_name = "라구사" }
+			any_land_province = { limit = { region = HXP_782 owner = { is_culture_group = germanic NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } NOT = { accepted_culture = north_italian } NOT = { accepted_culture = south_italian } } } change_province_name = "라구사" }
 
 			# 3402
-			any_land_province = { limit = { province_id = 3402 owner = { OR = { is_culture_group = south_slavic AND = { is_culture_group = germanic OR = { accepted_culture = croat accepted_culture = serb } } } } } change_province_name = "시베니크" }
-			any_land_province = { limit = { province_id = 3402 owner = { OR = { is_culture_group = italian AND = { is_culture_group = germanic NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } OR = { accepted_culture = north_italian accepted_culture = south_italian } } } } } change_province_name = "세베니코" }
-			any_land_province = { limit = { province_id = 3402 owner = { is_culture_group = germanic NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } NOT = { accepted_culture = north_italian } NOT = { accepted_culture = south_italian } } } change_province_name = "시벤닝" }
+			any_land_province = { limit = { region = HXP_3402 owner = { OR = { is_culture_group = south_slavic AND = { is_culture_group = germanic OR = { accepted_culture = croat accepted_culture = serb } } } } } change_province_name = "시베니크" }
+			any_land_province = { limit = { region = HXP_3402 owner = { OR = { is_culture_group = italian AND = { is_culture_group = germanic NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } OR = { accepted_culture = north_italian accepted_culture = south_italian } } } } } change_province_name = "세베니코" }
+			any_land_province = { limit = { region = HXP_3402 owner = { is_culture_group = germanic NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } NOT = { accepted_culture = north_italian } NOT = { accepted_culture = south_italian } } } change_province_name = "시벤닝" }
 
 			# 3283
 			any_land_province = { limit = { province_id = 3283 owner = { OR = { is_culture_group = hungarian_culture_group AND = { is_culture_group = germanic accepted_culture = hungarian NOT = { accepted_culture = croat } NOT = { accepted_culture = serb } } } } } change_province_name = "너지다르더" }
@@ -2528,8 +2528,8 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 835 owner = { primary_culture = turkish } } change_province_name = "암피사" }
 
 			# 837
-			any_land_province = { limit = { province_id = 837 owner = { primary_culture = greek } } change_province_name = "에톨리아-아카르나니아" }
-			any_land_province = { limit = { province_id = 837 owner = { primary_culture = turkish } } change_province_name = "에톨리아-아카르나니아" }
+			any_land_province = { limit = { region = HXP_837 owner = { primary_culture = greek } } change_province_name = "에톨리아-아카르나니아" }
+			any_land_province = { limit = { region = HXP_837 owner = { primary_culture = turkish } } change_province_name = "에톨리아-아카르나니아" }
 
 			# 838
 			any_land_province = { limit = { province_id = 838 owner = { primary_culture = greek } } change_province_name = "할키스" }
@@ -2548,8 +2548,8 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 839 owner = { primary_culture = turkish } } change_province_name = "아나볼루" }
 
 			# 840
-			any_land_province = { limit = { province_id = 840 owner = { primary_culture = greek } } change_province_name = "코린토스" }
-			any_land_province = { limit = { province_id = 840 owner = { primary_culture = turkish } } change_province_name = "괴르되스" }
+			any_land_province = { limit = { region = HXP_840 owner = { primary_culture = greek } } change_province_name = "코린토스" }
+			any_land_province = { limit = { region = HXP_840 owner = { primary_culture = turkish } } change_province_name = "괴르되스" }
 
 			# 827
 			any_land_province = { limit = { province_id = 827 owner = { is_culture_group = italian } } change_province_name = "자친토" }
@@ -2815,7 +2815,7 @@ country_event = {
 			any_land_province = { limit = { province_id = 1757 owner = { primary_culture = greek } } change_province_name = "파란" }
 
 			# 1751
-			any_land_province = { limit = { province_id = 1751 owner = { primary_culture = greek } } state_scope = { change_region_name = "알렉산드리아주" } }
+			any_land_province = { limit = { province_id = 1751 owner = { primary_culture = greek } }  }
 
 			# 1746
 			any_land_province = { limit = { province_id = 1746 owner = { primary_culture = greek } } change_province_name = "다미에타" }
@@ -2824,7 +2824,7 @@ country_event = {
 			any_land_province = { limit = { province_id = 1747 owner = { primary_culture = greek } } change_province_name = "헬리오폴리스" }
 
 			# 1753
-			any_land_province = { limit = { province_id = 1753 owner = { primary_culture = greek } } change_province_name = "안티피르고스" state_scope = { change_region_name = "알렉산드리아주" } }
+			any_land_province = { limit = { province_id = 1753 owner = { primary_culture = greek } } change_province_name = "안티피르고스"  }
 
 			# 1752
 			any_land_province = { limit = { province_id = 1752 owner = { primary_culture = greek } } change_province_name = "파라이토니온" }
@@ -2863,7 +2863,7 @@ country_event = {
 			any_land_province = { limit = { province_id = 2559 owner = { primary_culture = greek } } change_province_name = "아비도스" }
 
 			# 1760
-			any_land_province = { limit = { province_id = 1760 owner = { primary_culture = greek } } change_province_name = "초네미리스" state_scope = { change_region_name = "대오아시스주" } }
+			any_land_province = { limit = { province_id = 1760 owner = { primary_culture = greek } } change_province_name = "초네미리스"  }
 
 			# 1766
 			any_land_province = { limit = { province_id = 1766 owner = { primary_culture = greek } } change_province_name = "시에네" }
@@ -2890,7 +2890,7 @@ country_event = {
 			any_land_province = { limit = { province_id = 1737 owner = { primary_culture = greek } } change_province_name = "마르마리카" }
 
 			# 1731
-			any_land_province = { limit = { province_id = 1731 owner = { primary_culture = greek } } change_province_name = "트리폴리스" state_scope = { change_region_name = "트리폴리타니아 베이령" } }
+			any_land_province = { limit = { province_id = 1731 owner = { primary_culture = greek } } change_province_name = "트리폴리스"  }
 
 			# 1733
 			any_land_province = { limit = { province_id = 1733 owner = { primary_culture = greek } } change_province_name = "테우박티스" }
@@ -2977,8 +2977,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 2099 owner = { is_culture_group = pan_french } } change_province_name = "샹오트" }
 
 			# 2111
-			any_land_province = { limit = { province_id = 2111 owner = { OR = { primary_culture = boer accepted_culture = boer } NOT = { tag = SAF } } } change_province_name = "피터마리츠버그" state_scope = { change_region_name = "나탈주" } }
-			any_land_province = { limit = { province_id = 2111 owner = { OR = { is_culture_group = pan_british tag = SAF } } } change_province_name = "더반" state_scope = { change_region_name = "나탈주" } }
+			any_land_province = { limit = { province_id = 2111 owner = { OR = { primary_culture = boer accepted_culture = boer } NOT = { tag = SAF } } } change_province_name = "피터마리츠버그"  }
+			any_land_province = { limit = { province_id = 2111 owner = { OR = { is_culture_group = pan_british tag = SAF } } } change_province_name = "더반"  }
 
 			# 2112
 			any_land_province = { limit = { province_id = 2112 owner = { OR = { primary_culture = boer accepted_culture = boer } NOT = { tag = SAF } } } change_province_name = "프라우스미트" }
@@ -3001,8 +3001,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 2103 owner = { OR = { is_culture_group = pan_british tag = SAF } } } change_province_name = "필리폴리스" }
 
 			# 2105
-			any_land_province = { limit = { province_id = 2105 owner = { OR = { primary_culture = boer accepted_culture = boer } NOT = { tag = SAF } } } change_province_name = "프리토리아" state_scope = { change_region_name = "트란스발주" } }
-			any_land_province = { limit = { province_id = 2105 owner = { OR = { is_culture_group = pan_british tag = SAF } } } change_province_name = "프리토리아" state_scope = { change_region_name = "트란스발주" } }
+			any_land_province = { limit = { province_id = 2105 owner = { OR = { primary_culture = boer accepted_culture = boer } NOT = { tag = SAF } } } change_province_name = "프리토리아"  }
+			any_land_province = { limit = { province_id = 2105 owner = { OR = { is_culture_group = pan_british tag = SAF } } } change_province_name = "프리토리아"  }
 
 			# 2106
 			any_land_province = { limit = { province_id = 2106 owner = { OR = { primary_culture = boer accepted_culture = boer } NOT = { tag = SAF } } } change_province_name = "비트바테르스란트" }
@@ -3165,9 +3165,9 @@ country_event = {
 		name = "DBGOPTA19"
 		#Renamings
 			# 1
-			any_land_province = { limit = { province_id = 1 owner = { is_culture_group = east_slavic } } change_province_name = "노보아르한겔스크" state_scope = { change_region_name = "알래스카주" } }
-			any_land_province = { limit = { province_id = 1 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "싯카" state_scope = { change_region_name = "알래스카주" } }
-			any_land_province = { limit = { province_id = 1 owner = { primary_culture = japanese } } change_province_name = "시토카" state_scope = { change_region_name = "호쿠시마주" } }
+			any_land_province = { limit = { province_id = 1 owner = { is_culture_group = east_slavic } } change_province_name = "노보아르한겔스크"  }
+			any_land_province = { limit = { province_id = 1 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "싯카"  }
+			any_land_province = { limit = { province_id = 1 owner = { primary_culture = japanese } } change_province_name = "시토카"  }
 
 			# 2
 			any_land_province = { limit = { province_id = 2 owner = { is_culture_group = east_slavic } } change_province_name = "성 디오니시우스 보루" }
@@ -3175,14 +3175,14 @@ country_event = {
 			any_land_province = { limit = { province_id = 2 owner = { primary_culture = japanese } } change_province_name = "스티킨" }
 
 			# 3
-			any_land_province = { limit = { province_id = 3 owner = { is_culture_group = east_slavic } } change_province_name = "성 파벨 항구" }
-			any_land_province = { limit = { province_id = 3 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "코디액" }
-			any_land_province = { limit = { province_id = 3 owner = { primary_culture = japanese } } change_province_name = "고디아쿠" }
+			any_land_province = { limit = { region = HOP_3 owner = { is_culture_group = east_slavic } } change_province_name = "성 파벨 항구" }
+			any_land_province = { limit = { region = HOP_3 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "코디액" }
+			any_land_province = { limit = { region = HOP_3 owner = { primary_culture = japanese } } change_province_name = "고디아쿠" }
 
 			# 4
-			any_land_province = { limit = { province_id = 4 owner = { is_culture_group = east_slavic } } change_province_name = "니콜라이 보루" }
-			any_land_province = { limit = { province_id = 4 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "키나이" }
-			any_land_province = { limit = { province_id = 4 owner = { primary_culture = japanese } } change_province_name = "기나이" }
+			any_land_province = { limit = { region = HOP_4 owner = { is_culture_group = east_slavic } } change_province_name = "니콜라이 보루" }
+			any_land_province = { limit = { region = HOP_4 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "키나이" }
+			any_land_province = { limit = { region = HOP_4 owner = { primary_culture = japanese } } change_province_name = "기나이" }
 
 			# 5
 			any_land_province = { limit = { province_id = 5 owner = { is_culture_group = east_slavic } } change_province_name = "어널래스카" }
@@ -3190,24 +3190,24 @@ country_event = {
 			any_land_province = { limit = { province_id = 5 owner = { primary_culture = japanese } } change_province_name = "우나라슈카" }
 
 			# 2599
-			any_land_province = { limit = { province_id = 2599 owner = { is_culture_group = east_slavic } } change_province_name = "성 미하일 보루" }
-			any_land_province = { limit = { province_id = 2599 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "놈" }
-			any_land_province = { limit = { province_id = 2599 owner = { primary_culture = japanese } } change_province_name = "히지리미카에루" }
+			any_land_province = { limit = { region = HOP_2599 owner = { is_culture_group = east_slavic } } change_province_name = "성 미하일 보루" }
+			any_land_province = { limit = { region = HOP_2599 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "놈" }
+			any_land_province = { limit = { region = HOP_2599 owner = { primary_culture = japanese } } change_province_name = "히지리미카에루" }
 
 			# 3317
-			any_land_province = { limit = { province_id = 3317 owner = { is_culture_group = east_slavic } } change_province_name = "알류샨 열도" }
-			any_land_province = { limit = { province_id = 3317 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "알류샨 열도" }
-			any_land_province = { limit = { province_id = 3317 owner = { primary_culture = japanese } } change_province_name = "아류샨 열도" }
+			any_land_province = { limit = { region = HOP_3317 owner = { is_culture_group = east_slavic } } change_province_name = "알류샨 열도" }
+			any_land_province = { limit = { region = HOP_3317 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "알류샨 열도" }
+			any_land_province = { limit = { region = HOP_3317 owner = { primary_culture = japanese } } change_province_name = "아류샨 열도" }
 
 			# 3390
-			any_land_province = { limit = { province_id = 3390 owner = { is_culture_group = east_slavic } } change_province_name = "콜마코프 보루" }
-			any_land_province = { limit = { province_id = 3390 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "베설" }
-			any_land_province = { limit = { province_id = 3390 owner = { primary_culture = japanese } } change_province_name = "고루마코후" }
+			any_land_province = { limit = { region = HOP_3390 owner = { is_culture_group = east_slavic } } change_province_name = "콜마코프 보루" }
+			any_land_province = { limit = { region = HOP_3390 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "베설" }
+			any_land_province = { limit = { region = HOP_3390 owner = { primary_culture = japanese } } change_province_name = "고루마코후" }
 
 			# 3391
-			any_land_province = { limit = { province_id = 3391 owner = { is_culture_group = east_slavic } } change_province_name = "알래스카반도" }
-			any_land_province = { limit = { province_id = 3391 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "앵커리지" }
-			any_land_province = { limit = { province_id = 3391 owner = { primary_culture = japanese } } change_province_name = "게이류" }
+			any_land_province = { limit = { region = HOP_3391 owner = { is_culture_group = east_slavic } } change_province_name = "알래스카반도" }
+			any_land_province = { limit = { region = HOP_3391 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "앵커리지" }
+			any_land_province = { limit = { region = HOP_3391 owner = { primary_culture = japanese } } change_province_name = "게이류" }
 
 			# 3395
 			any_land_province = { limit = { province_id = 3395 owner = { is_culture_group = east_slavic } } change_province_name = "유콘강" }
@@ -3215,9 +3215,9 @@ country_event = {
 			any_land_province = { limit = { province_id = 3395 owner = { primary_culture = japanese } } change_province_name = "유콘 요새" }
 
 			# 3408
-			any_land_province = { limit = { province_id = 3408 owner = { is_culture_group = east_slavic } } change_province_name = "볼샤야고라" }
-			any_land_province = { limit = { province_id = 3408 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "밸디즈" }
-			any_land_province = { limit = { province_id = 3408 owner = { primary_culture = japanese } } change_province_name = "무쓰히토야마" }
+			any_land_province = { limit = { region = HOP_3408 owner = { is_culture_group = east_slavic } } change_province_name = "볼샤야고라" }
+			any_land_province = { limit = { region = HOP_3408 owner = { OR = { is_culture_group = american_cultures is_culture_group = pan_british accepted_culture = anglo_canadian primary_culture = anglo_canadian } } } change_province_name = "밸디즈" }
+			any_land_province = { limit = { region = HOP_3408 owner = { primary_culture = japanese } } change_province_name = "무쓰히토야마" }
 
 			# 3409
 			any_land_province = { limit = { province_id = 3409 owner = { is_culture_group = east_slavic } } change_province_name = "배로곶" }
@@ -3228,7 +3228,7 @@ country_event = {
 			any_land_province = { limit = { province_id = 46 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } state_scope = { change_region_name = "남부 온타리오주" } }
 
 			# 47
-			any_land_province = { limit = { province_id = 47 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } state_scope = { change_region_name = "북부 온타리오주" } }
+			any_land_province = { limit = { province_id = 47 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } }  }
 
 			# 48
 			any_land_province = { limit = { province_id = 48 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } change_province_name = "프랑스인 요새" }
@@ -3240,17 +3240,17 @@ country_event = {
 			any_land_province = { limit = { province_id = 50 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } change_province_name = "베뒤토네르" }
 
 			# 2594
-			any_land_province = { limit = { province_id = 2594 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } change_province_name = "미슈키고가망" }
+			any_land_province = { limit = { region = HXP_2594 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } change_province_name = "미슈키고가망" }
 
 			# 37
-			any_land_province = { limit = { province_id = 37 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } change_province_name = "라페루즈" state_scope = { change_region_name = "프레리주" } }
+			any_land_province = { limit = { region = HOP_37 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } change_province_name = "라페루즈"  }
 
 			# 41
 			any_land_province = { limit = { province_id = 41 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } change_province_name = "포르카펠" }
 
 			# 13
-			any_land_province = { limit = { province_id = 13 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } change_province_name = "누벨파리" state_scope = { change_region_name = "콜롬비주" } }
-			any_land_province = { limit = { province_id = 13 owner = { has_global_flag = new_england_rename NOT = { has_country_flag = NW_hegemony } } } state_scope = { change_region_name = "뉴햄프셔주" } }
+			any_land_province = { limit = { province_id = 13 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } change_province_name = "누벨파리"  }
+			any_land_province = { limit = { province_id = 13 owner = { has_global_flag = new_england_rename NOT = { has_country_flag = NW_hegemony } } }  }
 
 			# 15
 			any_land_province = { limit = { province_id = 15 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } NOT = { has_country_flag = 2nd_monarchygov } NOT = { has_country_flag = 2nd_republicgov } } } change_province_name = "나폴레옹" }
@@ -3281,8 +3281,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 144 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "아데" }
 
 			# 130
-			any_land_province = { limit = { province_id = 130 owner = { is_culture_group = american_cultures } } change_province_name = "포트깁슨" state_scope = { change_region_name = "오클라호마주" } }
-			any_land_province = { limit = { province_id = 130 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "샹플랭" state_scope = { change_region_name = "카도다쿠아주" } }
+			any_land_province = { limit = { province_id = 130 owner = { is_culture_group = american_cultures } } change_province_name = "포트깁슨"  }
+			any_land_province = { limit = { province_id = 130 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "샹플랭"  }
 
 			# 131
 			any_land_province = { limit = { province_id = 131 owner = { is_culture_group = american_cultures } } change_province_name = "포트워시토" }
@@ -3337,8 +3337,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 125 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "라콜린" }
 
 			# 155
-			any_land_province = { limit = { province_id = 155 owner = { is_culture_group = american_cultures } } change_province_name = "포트스넬링" state_scope = { change_region_name = "미네소타주" } }
-			any_land_province = { limit = { province_id = 155 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "위예" state_scope = { change_region_name = "북극성주" } }
+			any_land_province = { limit = { province_id = 155 owner = { is_culture_group = american_cultures } } change_province_name = "포트스넬링"  }
+			any_land_province = { limit = { province_id = 155 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "위예"  }
 
 			# 156
 			any_land_province = { limit = { province_id = 156 owner = { is_culture_group = american_cultures } } change_province_name = "포트렌빌" }
@@ -3349,8 +3349,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 157 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "비외포르" }
 
 			# 120
-			any_land_province = { limit = { province_id = 120 owner = { is_culture_group = american_cultures } } change_province_name = "포트카이오와" state_scope = { change_region_name = "사우스다코타주" } }
-			any_land_province = { limit = { province_id = 120 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "탱토누" state_scope = { change_region_name = "사우스다코타주" } }
+			any_land_province = { limit = { region = HXP_120 owner = { is_culture_group = american_cultures } } change_province_name = "포트카이오와"  }
+			any_land_province = { limit = { region = HXP_120 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "탱토누"  }
 
 			# 121
 			any_land_province = { limit = { province_id = 121 owner = { is_culture_group = american_cultures } } change_province_name = "포트시더" }
@@ -3511,8 +3511,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 2147 owner = { is_culture_group = american_cultures OR = { NOT = { accepted_culture = mexican } has_global_flag = usa_anglify_north_mexico } } } change_province_name = "블랙록" }
 
 			# 2150
-			any_land_province = { limit = { province_id = 2150 owner = { OR = { primary_culture = mexican AND = { accepted_culture = mexican NOT = { has_global_flag = usa_anglify_north_mexico } } } } } change_province_name = "마타모로스" state_scope = { change_region_name = "누에보레온-타마울리파스주" } }
-			any_land_province = { limit = { province_id = 2150 owner = { is_culture_group = american_cultures OR = { NOT = { accepted_culture = mexican } has_global_flag = usa_anglify_north_mexico } } } change_province_name = "레이노사" state_scope = { change_region_name = "리오그란데주" } }
+			any_land_province = { limit = { province_id = 2150 owner = { OR = { primary_culture = mexican AND = { accepted_culture = mexican NOT = { has_global_flag = usa_anglify_north_mexico } } } } } change_province_name = "마타모로스"  }
+			any_land_province = { limit = { province_id = 2150 owner = { is_culture_group = american_cultures OR = { NOT = { accepted_culture = mexican } has_global_flag = usa_anglify_north_mexico } } } change_province_name = "레이노사"  }
 
 			# 2151
 			any_land_province = { limit = { province_id = 2151 owner = { OR = { primary_culture = mexican AND = { accepted_culture = mexican NOT = { has_global_flag = usa_anglify_north_mexico } } } } } change_province_name = "시우다드빅토리아" }
@@ -3879,8 +3879,8 @@ country_event = {
 		name = "DBGOPTA21"
 		#Renamings
 			# 1635
-			any_land_province = { limit = { province_id = 1635 owner = { primary_culture = japanese } } change_province_name = "고슈" state_scope = { change_region_name = "젠라난도" } }
-			any_land_province = { limit = { province_id = 1635 owner = { primary_culture = korean } } change_province_name = "광주" state_scope = { change_region_name = "전라도" } }
+			any_land_province = { limit = { province_id = 1635 owner = { primary_culture = japanese } } change_province_name = "고슈"  }
+			any_land_province = { limit = { province_id = 1635 owner = { primary_culture = korean } } change_province_name = "광주"  }
 
 			# 1637
 			any_land_province = { limit = { province_id = 1637 owner = { primary_culture = japanese } } change_province_name = "사이슈" }
@@ -3935,8 +3935,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 1629 owner = { primary_culture = korean } } change_province_name = "원산" }
 
 			# 1619
-			any_land_province = { limit = { province_id = 1619 owner = { primary_culture = japanese } } change_province_name = "헤이조" state_scope = { change_region_name = "헤이안난도" } }
-			any_land_province = { limit = { province_id = 1619 owner = { primary_culture = korean } } change_province_name = "평양" state_scope = { change_region_name = "평안도" } }
+			any_land_province = { limit = { province_id = 1619 owner = { primary_culture = japanese } } change_province_name = "헤이조"  }
+			any_land_province = { limit = { province_id = 1619 owner = { primary_culture = korean } } change_province_name = "평양"  }
 
 			# 1621
 			any_land_province = { limit = { province_id = 1621 owner = { primary_culture = japanese } } change_province_name = "간코" }
@@ -4022,13 +4022,13 @@ country_event = {
 			any_land_province = { limit = { province_id = 1089 owner = { is_culture_group = east_slavic } } change_province_name = "이투루프" }
 
 			# 1366
-			any_land_province = { limit = { province_id = 1366 owner = { primary_culture = vietnamese } } change_province_name = "시엠라" state_scope = { change_region_name = "떠이타인 무앙" } }
+			any_land_province = { limit = { province_id = 1366 owner = { primary_culture = vietnamese } } change_province_name = "시엠라"  }
 
 			# 1364
 			any_land_province = { limit = { province_id = 1364 owner = { primary_culture = vietnamese } } change_province_name = "남방" }
 
 			# 1367
-			any_land_province = { limit = { province_id = 1367 owner = { primary_culture = vietnamese } } change_province_name = "꽝비엔" }
+			any_land_province = { limit = { region = HOP_1367 owner = { primary_culture = vietnamese } } change_province_name = "꽝비엔" }
 
 			# 1368
 			any_land_province = { limit = { province_id = 1368 owner = { primary_culture = vietnamese } } change_province_name = "남반" }

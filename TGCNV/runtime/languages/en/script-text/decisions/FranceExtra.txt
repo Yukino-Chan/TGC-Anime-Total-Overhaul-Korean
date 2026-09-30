@@ -38,12 +38,12 @@ political_decisions = {
 				random_owned = {
 					limit = { province_id = 2509 }
 					change_province_name = "Valenmans"
-					state_scope = { change_region_name = "Ile du Nord Province" }
+					
 				}
 				random_owned = { # TODO
 					limit = { province_id = 2516 }
 					change_province_name = "Akaroa"
-					state_scope = { change_region_name = "Ile du Sud Province" }
+					
 				}
 				2510 = { change_province_name = "Nouvelle-Bordeaux" }
 				2511 = { change_province_name = "Perouse" }
@@ -140,7 +140,7 @@ political_decisions = {
 			}
 			any_pop = {
 				limit = {
-					location = { province_id = 2509 }
+					location = { region = HXP_2509 }
 					has_pop_culture = maori
 				}
 				move_pop = 431
@@ -616,7 +616,7 @@ political_decisions = {
 			}
 			any_pop = {
 				limit = {
-					location = { province_id = 437 }
+					location = { region = HXP_437 }
 					has_pop_culture = aborigine
 				}
 				move_pop = 2475

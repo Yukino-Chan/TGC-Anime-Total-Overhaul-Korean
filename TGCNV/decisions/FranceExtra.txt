@@ -38,12 +38,12 @@ political_decisions = {
 				random_owned = {
 					limit = { province_id = 2509 }
 					change_province_name = "발렌만스"
-					state_scope = { change_region_name = "북섬주" }
+					
 				}
 				random_owned = { # TODO
 					limit = { province_id = 2516 }
 					change_province_name = "아카로아"
-					state_scope = { change_region_name = "남섬주" }
+					
 				}
 				2510 = { change_province_name = "누벨보르도" }
 				2511 = { change_province_name = "페루즈" }
@@ -140,7 +140,7 @@ political_decisions = {
 			}
 			any_pop = {
 				limit = {
-					location = { province_id = 2509 }
+					location = { region = HXP_2509 }
 					has_pop_culture = maori
 				}
 				move_pop = 431
@@ -616,7 +616,7 @@ political_decisions = {
 			}
 			any_pop = {
 				limit = {
-					location = { province_id = 437 }
+					location = { region = HXP_437 }
 					has_pop_culture = aborigine
 				}
 				move_pop = 2475

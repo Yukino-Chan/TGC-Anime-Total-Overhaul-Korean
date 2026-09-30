@@ -483,7 +483,7 @@ country_event = {
 		THIS = { diplomatic_influence = { who = RUS value = -200 } }
 		war = {
 			target = AUS
-			attacker_goal = { casus_belli = acquire_any_state
+			attacker_goal = { casus_belli = hx_acquire_any_state_hst_dal_zara
 							state_province_id = 781 }
 			attacker_goal = { casus_belli = acquire_all_cores
 							 country = AUS }

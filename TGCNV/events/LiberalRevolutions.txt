@@ -3517,7 +3517,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA10225"
-		778 = { remove_core = HUN }
+		HXP_778 = { remove_core = HUN }
 		plurality = -7
 		any_owned = {
 			limit = {

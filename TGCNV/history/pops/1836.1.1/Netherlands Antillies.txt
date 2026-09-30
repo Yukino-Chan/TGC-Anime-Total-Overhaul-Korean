@@ -1,111 +1,103 @@
-#Dutch West Indies Region : 19500
-#Ruled by Netherlands 1836
-#Curacao (12300/3100 POPS)
 2234 = {
-	aristocrats = {
+aristocrats = {
 		culture = dutch
 		religion = presbyterian
 		size = 40
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = dutch
 		religion = presbyterian
 		size = 3
 	}
-	soldiers = {
+soldiers = {
 		culture = dutch
 		religion = presbyterian
 		size = 13
 	}
-	artisans = {
+artisans = {
 		culture = dutch
 		religion = presbyterian
 		size = 37
 	}
-	clergymen = {
+clergymen = {
 		culture = dutch
 		religion = presbyterian
 		size = 11
 	}
-	farmers = {
+farmers = {
 		culture = dutch
 		religion = presbyterian
 		size = 1076
 	}
-	
-	slaves = {
+slaves = {
 		culture = afro_caribbean
 		religion = catholic
 		size = 569
 	}
 }
 
-5784 = {
-	aristocrats = {
-		culture = dutch
-		religion = presbyterian
-		size = 36
-	}
-	bureaucrats = {
-		culture = dutch
-		religion = presbyterian
-		size = 2
-	}
-	soldiers = {
-		culture = dutch
-		religion = presbyterian
-		size = 12
-	}
-	artisans = {
-		culture = dutch
-		religion = presbyterian
-		size = 33
-	}
-	clergymen = {
-		culture = dutch
-		religion = presbyterian
-		size = 9
-	}
-	farmers = {
-		culture = dutch
-		religion = presbyterian
-		size = 1004
-	}
-	
-	slaves = {
-		culture = afro_caribbean
-		religion = catholic
-		size = 531
-	}
-}
-
-#Philipsburg - Saint Martin (4800/1200 POPS)
 2236 = {
-	aristocrats = {
+aristocrats = {
 		culture = dutch
 		religion = presbyterian
 		size = 10
 	}
-	
-	clergymen = {
+clergymen = {
 		culture = dutch
 		religion = presbyterian
 		size = 25
 	}
-	artisans = {
+artisans = {
 		culture = afro_caribbean
 		religion = protestant
 		size = 55
 	}
-	
-	farmers = {
+farmers = {
 		culture = dutch
 		religion = presbyterian
 		size = 400
 	}
-	slaves = {
+slaves = {
 		culture = afro_caribbean
 		religion = protestant
 		size = 100
+	}
+}
+
+5784 = {
+aristocrats = {
+		culture = dutch
+		religion = presbyterian
+		size = 36
+	}
+bureaucrats = {
+		culture = dutch
+		religion = presbyterian
+		size = 2
+	}
+soldiers = {
+		culture = dutch
+		religion = presbyterian
+		size = 12
+	}
+artisans = {
+		culture = dutch
+		religion = presbyterian
+		size = 33
+	}
+clergymen = {
+		culture = dutch
+		religion = presbyterian
+		size = 9
+	}
+farmers = {
+		culture = dutch
+		religion = presbyterian
+		size = 1004
+	}
+slaves = {
+		culture = afro_caribbean
+		religion = catholic
+		size = 531
 	}
 }

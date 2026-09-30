@@ -1831,7 +1831,7 @@ rename_bourbon_island = {
 				}
 				war = {
 					target = THIS
-					attacker_goal = { casus_belli = acquire_state state_province_id = 1784 }
+					attacker_goal = { casus_belli = ho_acquire_state_fra_1783 state_province_id = 1784 }
 					defender_goal = { casus_belli = add_to_sphere }
 					call_ally = no
 				}
@@ -2854,7 +2854,7 @@ rename_bourbon_island = {
 			}
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			2625 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HOP_76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			77 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			ENG = {
@@ -2915,7 +2915,7 @@ rename_bourbon_island = {
 			badboy = 10
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			2625 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HOP_76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			77 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			QUE = { all_core = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			treasury = -50000
@@ -3080,14 +3080,14 @@ rename_bourbon_island = {
 			## Effects that will happen if either the Treaty of Montreal or Paris is taken ##
 
 				treasury = -100000
-				2593 = { state_scope = { change_region_name = "Nord-du-Quebec Province" } }
+				2593 = {  }
 				65 = { state_scope = { change_region_name = "Quebec Province" } }
 				65 = { change_province_name = "Quebec" }
 				58 = { change_province_name = "Montreal" }
 				63 = { change_province_name = "Temiscaming" }
 				70 = { change_province_name = "Ile Saint-Jean" }
 				73 = { change_province_name = "Ile-Royale" }
-				71 = { state_scope = { change_region_name = "Acadie Province" } }
+				71 = {  }
 				77 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				MRU = { all_core = { remove_core = MRU } }
 
@@ -3161,7 +3161,7 @@ rename_bourbon_island = {
 							remove_core = COL
 						}
 					}
-					74 = { state_scope = { change_region_name = "Terre-Neuve Province" } }
+					74 = {  }
 					74 = { change_province_name = "Terre-Neuve" } 
 					QUE = {
 						all_core = {
@@ -3738,13 +3738,13 @@ rename_bourbon_island = {
 						NOT = { is_core = UOR } #Oregon
 						NOT = { is_core = COL } #Columbia
 						NOT = { state_id = 248 } #Maine
-						NOT = { state_id = 247 } #Vermont.. seriously what are you doing with so many yankees smh?
+						NOT = { region = USA_247 } #Vermont.. seriously what are you doing with so many yankees smh?
 						NOT = { state_id = 159 } #Wisconsin
-						NOT = { state_id = 173 } #Michigan
+						NOT = { region = USA_176 } #Michigan
 						NOT = { state_id = 163 } #Illinois
 						NOT = { state_id = 171 } #Indiana
 						NOT = { state_id = 178 } #Ohio
-						NOT = { state_id = 155 } #Minnesota
+						NOT = { region = USA_158 } #Minnesota
 					}
 					#remove_core = USA
 					#remove_core = CSA
@@ -3788,11 +3788,11 @@ rename_bourbon_island = {
 								is_core = LSK
 								state_id = 171 #Indiana
 								state_id = 163 #Illinois
-								state_id = 173 #Michigan
+								region = USA_176 #Michigan
 								state_id = 159 #Wisconsin
-								state_id = 247 #Vermont
+								region = USA_247 #Vermont
 								state_id = 248 #Maine
-								state_id = 155 #Minnesota
+								region = USA_158 #Minnesota
 								state_id = 178 #Ohio.. stop going west dude smh
 							}
 						NOT = { is_core = ULA }

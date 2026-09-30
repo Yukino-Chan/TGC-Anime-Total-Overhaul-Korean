@@ -354,7 +354,7 @@ country_event = {
 		set_global_flag = kyrgyzstan_created
 		1189 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		1190 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-		1203 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		HOP_1203 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		KYR = {
 			nationalvalue = nv_autocracy
 			all_core = {

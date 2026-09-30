@@ -1,433 +1,429 @@
-#Bechuanaland Region (76000) #see South Africa.txt for balance of region
-#uncolonized in 1836/dominated by the Tswana in 1836
-#Gaborone (28000/7000 POPS)
 2074 = {
-	aristocrats = {
+aristocrats = {
 		culture = tswana
 		religion = animist
 		size = 63
 	}
-	clergymen = {
+clergymen = {
 		culture = tswana
 		religion = animist
 		size = 38
 	}
-	artisans = {
+artisans = {
 		culture = tswana
 		religion = animist
 		size = 175
 	}
-	soldiers = {
+soldiers = {
 		culture = tswana
 		religion = animist
 		size = 38
 	}
-	tribals = {
+tribals = {
 		culture = tswana
 		religion = animist
 		size = 3188
 	}
 }
 
+2075 = {
+aristocrats = {
+		culture = nguni
+		religion = animist
+		size = 16
+	}
+clergymen = {
+		culture = nguni
+		religion = animist
+		size = 16
+	}
+artisans = {
+		culture = nguni
+		religion = animist
+		size = 51
+	}
+soldiers = {
+		culture = nguni
+		religion = animist
+		size = 21
+	}
+tribals = {
+		culture = nguni
+		religion = animist
+		size = 901
+	}
+aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 16
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 26
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 51
+	}
+soldiers = {
+		culture = tswana
+		religion = animist
+		size = 11
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 901
+	}
+}
+
+2076 = {
+aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 8
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 13
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 26
+	}
+soldiers = {
+		culture = tswana
+		religion = animist
+		size = 6
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 451
+	}
+aristocrats = {
+		culture = herero
+		religion = animist
+		size = 13
+	}
+clergymen = {
+		culture = herero
+		religion = animist
+		size = 26
+	}
+artisans = {
+		culture = herero
+		religion = animist
+		size = 51
+	}
+soldiers = {
+		culture = herero
+		religion = animist
+		size = 13
+	}
+tribals = {
+		culture = herero
+		religion = animist
+		size = 901
+	}
+}
+
+2077 = {
+aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 13
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 25
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 50
+	}
+soldiers = {
+		culture = tswana
+		religion = animist
+		size = 13
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 900
+	}
+aristocrats = {
+		culture = khoisan
+		religion = animist
+		size = 8
+	}
+clergymen = {
+		culture = khoisan
+		religion = animist
+		size = 13
+	}
+artisans = {
+		culture = khoisan
+		religion = animist
+		size = 25
+	}
+soldiers = {
+		culture = khoisan
+		religion = animist
+		size = 5
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 450
+	}
+}
+
+2574 = {
+aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 25
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 25
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 100
+	}
+soldiers = {
+		culture = tswana
+		religion = animist
+		size = 25
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 1825
+	}
+}
+
 5630 = {
-	aristocrats = {
+aristocrats = {
 		culture = tswana
 		religion = animist
 		size = 62
 	}
-	clergymen = {
+clergymen = {
 		culture = tswana
 		religion = animist
 		size = 37
 	}
-	artisans = {
+artisans = {
 		culture = tswana
 		religion = animist
 		size = 175
 	}
-	soldiers = {
+soldiers = {
 		culture = tswana
 		religion = animist
 		size = 37
 	}
-	tribals = {
+tribals = {
 		culture = tswana
 		religion = animist
 		size = 3187
 	}
 }
-#Nokaneng (12000/3000 POPS)
-2076 = {
-	aristocrats = {
-		culture = tswana
-		religion = animist
-		size = 8
-	}
-	clergymen = {
-		culture = tswana
-		religion = animist
-		size = 13
-	}
-	artisans = {
-		culture = tswana
-		religion = animist
-		size = 26
-	}
-	soldiers = {
-		culture = tswana
-		religion = animist
-		size = 6
-	}
-	tribals = {
-		culture = tswana
-		religion = animist
-		size = 451
-	}
-	aristocrats = {
-		culture = herero
-		religion = animist
-		size = 13
-	}
-	clergymen = {
-		culture = herero
-		religion = animist
-		size = 26
-	}
-	artisans = {
-		culture = herero
-		religion = animist
-		size = 51
-	}
-	soldiers = {
-		culture = herero
-		religion = animist
-		size = 13
-	}
-	tribals = {
-		culture = herero
-		religion = animist
-		size = 901
-	}
-}
-
-5632 = {
-	aristocrats = {
-		culture = tswana
-		religion = animist
-		size = 7
-	}
-	clergymen = {
-		culture = tswana
-		religion = animist
-		size = 12
-	}
-	artisans = {
-		culture = tswana
-		religion = animist
-		size = 24
-	}
-	soldiers = {
-		culture = tswana
-		religion = animist
-		size = 4
-	}
-	tribals = {
-		culture = tswana
-		religion = animist
-		size = 449
-	}
-	aristocrats = {
-		culture = herero
-		religion = animist
-		size = 12
-	}
-	clergymen = {
-		culture = herero
-		religion = animist
-		size = 24
-	}
-	artisans = {
-		culture = herero
-		religion = animist
-		size = 49
-	}
-	soldiers = {
-		culture = herero
-		religion = animist
-		size = 12
-	}
-	tribals = {
-		culture = herero
-		religion = animist
-		size = 899
-	}
-}
-#Tshabong (12000/3000 POPS)
-2077 = {
-	aristocrats = {
-		culture = tswana
-		religion = animist
-		size = 13
-	}
-	clergymen = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-	artisans = {
-		culture = tswana
-		religion = animist
-		size = 50
-	}
-	soldiers = {
-		culture = tswana
-		religion = animist
-		size = 13
-	}
-	tribals = {
-		culture = tswana
-		religion = animist
-		size = 900
-	}
-	aristocrats = {
-		culture = khoisan
-		religion = animist
-		size = 8
-	}
-	clergymen = {
-		culture = khoisan
-		religion = animist
-		size = 13
-	}
-	artisans = {
-		culture = khoisan
-		religion = animist
-		size = 25
-	}
-	soldiers = {
-		culture = khoisan
-		religion = animist
-		size = 5
-	}
-	tribals = {
-		culture = khoisan
-		religion = animist
-		size = 450
-	}
-}
-
-5633 = {
-	aristocrats = {
-		culture = tswana
-		religion = animist
-		size = 12
-	}
-	clergymen = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-	artisans = {
-		culture = tswana
-		religion = animist
-		size = 50
-	}
-	soldiers = {
-		culture = tswana
-		religion = animist
-		size = 12
-	}
-	tribals = {
-		culture = tswana
-		religion = animist
-		size = 900
-	}
-	aristocrats = {
-		culture = khoisan
-		religion = animist
-		size = 7
-	}
-	clergymen = {
-		culture = khoisan
-		religion = animist
-		size = 12
-	}
-	artisans = {
-		culture = khoisan
-		religion = animist
-		size = 25
-	}
-	soldiers = {
-		culture = khoisan
-		religion = animist
-		size = 5
-	}
-	tribals = {
-		culture = khoisan
-		religion = animist
-		size = 450
-	}
-}
-#Mochidi (16000/4000 POPS)
-2574 = {
-	aristocrats = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-	clergymen = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-	artisans = {
-		culture = tswana
-		religion = animist
-		size = 100
-	}
-	soldiers = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-	tribals = {
-		culture = tswana
-		religion = animist
-		size = 1825
-	}
-}
-
-6115 = {
-	aristocrats = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-	clergymen = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-	artisans = {
-		culture = tswana
-		religion = animist
-		size = 100
-	}
-	soldiers = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-	tribals = {
-		culture = tswana
-		religion = animist
-		size = 1825
-	}
-}
-#under the rule of Matabele in 1836
-#Serowe (16000/4000 POPS)
-2075 = {
-	aristocrats = {
-		culture = nguni
-		religion = animist
-		size = 16
-	}
-	clergymen = {
-		culture = nguni
-		religion = animist
-		size = 16
-	}
-	artisans = {
-		culture = nguni
-		religion = animist
-		size = 51
-	}
-	soldiers = {
-		culture = nguni
-		religion = animist
-		size = 21
-	}
-	tribals = {
-		culture = nguni
-		religion = animist
-		size = 901
-	}
-	aristocrats = {
-		culture = tswana
-		religion = animist
-		size = 16
-	}
-	clergymen = {
-		culture = tswana
-		religion = animist
-		size = 26
-	}
-	artisans = {
-		culture = tswana
-		religion = animist
-		size = 51
-	}
-	soldiers = {
-		culture = tswana
-		religion = animist
-		size = 11
-	}
-	tribals = {
-		culture = tswana
-		religion = animist
-		size = 901
-	}
-}
 
 5631 = {
-	aristocrats = {
+aristocrats = {
 		culture = nguni
 		religion = animist
 		size = 14
 	}
-	clergymen = {
+clergymen = {
 		culture = nguni
 		religion = animist
 		size = 14
 	}
-	artisans = {
+artisans = {
 		culture = nguni
 		religion = animist
 		size = 49
 	}
-	soldiers = {
+soldiers = {
 		culture = nguni
 		religion = animist
 		size = 19
 	}
-	tribals = {
+tribals = {
 		culture = nguni
 		religion = animist
 		size = 899
 	}
-	aristocrats = {
+aristocrats = {
 		culture = tswana
 		religion = animist
 		size = 14
 	}
-	clergymen = {
+clergymen = {
 		culture = tswana
 		religion = animist
 		size = 24
 	}
-	artisans = {
+artisans = {
 		culture = tswana
 		religion = animist
 		size = 49
 	}
-	soldiers = {
+soldiers = {
 		culture = tswana
 		religion = animist
 		size = 9
 	}
-	tribals = {
+tribals = {
 		culture = tswana
 		religion = animist
 		size = 899
+	}
+}
+
+5632 = {
+aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 7
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 12
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 24
+	}
+soldiers = {
+		culture = tswana
+		religion = animist
+		size = 4
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 449
+	}
+aristocrats = {
+		culture = herero
+		religion = animist
+		size = 12
+	}
+clergymen = {
+		culture = herero
+		religion = animist
+		size = 24
+	}
+artisans = {
+		culture = herero
+		religion = animist
+		size = 49
+	}
+soldiers = {
+		culture = herero
+		religion = animist
+		size = 12
+	}
+tribals = {
+		culture = herero
+		religion = animist
+		size = 899
+	}
+}
+
+5633 = {
+aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 12
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 25
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 50
+	}
+soldiers = {
+		culture = tswana
+		religion = animist
+		size = 12
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 900
+	}
+aristocrats = {
+		culture = khoisan
+		religion = animist
+		size = 7
+	}
+clergymen = {
+		culture = khoisan
+		religion = animist
+		size = 12
+	}
+artisans = {
+		culture = khoisan
+		religion = animist
+		size = 25
+	}
+soldiers = {
+		culture = khoisan
+		religion = animist
+		size = 5
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 450
+	}
+}
+
+6115 = {
+aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 25
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 25
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 100
+	}
+soldiers = {
+		culture = tswana
+		religion = animist
+		size = 25
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 1825
 	}
 }

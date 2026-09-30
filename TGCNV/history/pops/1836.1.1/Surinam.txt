@@ -1,214 +1,211 @@
-#Surinam : 56640
-#Ruled by The Netherlands 1836
-#Paramaribo (48640/12500 POPS)
 2240 = {
-	aristocrats = {
+aristocrats = {
 		culture = dutch
 		religion = presbyterian
 		size = 25
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = dutch
 		religion = presbyterian
 		size = 30
 	}
-	artisans = {
+artisans = {
 		culture = dutch
 		religion = presbyterian
 		size = 50
 	}
-	soldiers = {
+soldiers = {
 		culture = dutch
 		religion = presbyterian
 		size = 25
 	}
-	clergymen = {
+clergymen = {
 		culture = mullato
 		religion = protestant
 		size = 25
 		militancy = 4
 	}
-	artisans = {
+artisans = {
 		culture = mullato
 		religion = protestant
 		size = 500
 		militancy = 4
 	}
-		soldiers = {
+soldiers = {
 		culture = mullato
 		religion = protestant
 		size = 45
 		militancy = 4
 	}
-	farmers = {
+farmers = {
 		culture = mullato
 		religion = protestant
 		size = 500
 		militancy = 4
 	}
-	slaves = {
+slaves = {
 		culture = mullato
 		religion = protestant
 		size = 100
 		militancy = 2
 	}
-	slaves = {
+slaves = {
 		culture = afro_caribbean
 		religion = animist
 		size = 3000
 		militancy = 2
 	}
-		clergymen = {
+clergymen = {
 		culture = arawak
 		religion = animist
 		size = 25
 	}
-	farmers = {
+farmers = {
 		culture = arawak
 		religion = animist
 		size = 600
 	}
-	artisans = {
+artisans = {
 		culture = carib
 		religion = animist
 		size = 75
 	}
-	farmers = {
+farmers = {
 		culture = carib
 		religion = animist
 		size = 1250
+	}
+}
+
+2245 = {
+clergymen = {
+		culture = amazonian
+		religion = animist
+		size = 25
+	}
+artisans = {
+		culture = amazonian
+		religion = animist
+		size = 100
+	}
+soldiers = {
+		culture = amazonian
+		religion = animist
+		size = 25
+	}
+farmers = {
+		culture = amazonian
+		religion = animist
+		size = 350
+	}
+farmers = {
+		culture = carib
+		religion = animist
+		size = 500
 	}
 }
 
 5787 = {
-	aristocrats = {
+aristocrats = {
 		culture = dutch
 		religion = presbyterian
 		size = 25
 	}
-	bureaucrats = {
+bureaucrats = {
 		culture = dutch
 		religion = presbyterian
 		size = 30
 	}
-	artisans = {
+artisans = {
 		culture = dutch
 		religion = presbyterian
 		size = 50
 	}
-	soldiers = {
+soldiers = {
 		culture = dutch
 		religion = presbyterian
 		size = 25
 	}
-	clergymen = {
+clergymen = {
 		culture = mullato
 		religion = protestant
 		size = 25
 		militancy = 4
 	}
-	artisans = {
+artisans = {
 		culture = mullato
 		religion = protestant
 		size = 500
 		militancy = 4
 	}
-		soldiers = {
+soldiers = {
 		culture = mullato
 		religion = protestant
 		size = 45
 		militancy = 4
 	}
-	farmers = {
+farmers = {
 		culture = mullato
 		religion = protestant
 		size = 500
 		militancy = 4
 	}
-	slaves = {
+slaves = {
 		culture = mullato
 		religion = protestant
 		size = 100
 		militancy = 2
 	}
-	slaves = {
+slaves = {
 		culture = afro_caribbean
 		religion = animist
 		size = 3000
 		militancy = 2
 	}
-		clergymen = {
+clergymen = {
 		culture = arawak
 		religion = animist
 		size = 25
 	}
-	farmers = {
+farmers = {
 		culture = arawak
 		religion = animist
 		size = 600
 	}
-	artisans = {
+artisans = {
 		culture = carib
 		religion = animist
 		size = 75
 	}
-	farmers = {
+farmers = {
 		culture = carib
 		religion = animist
 		size = 1250
 	}
 }
-#Stoelmanseiland (8000/2000 POPS)
-2245 = {
-	clergymen = {
-		culture = amazonian
-		religion = animist
-		size = 25
-	}
-	artisans = {
-		culture = amazonian
-		religion = animist
-		size = 100
-	}
-	soldiers = {
-		culture = amazonian
-		religion = animist
-		size = 25
-	}
-	farmers = {
-		culture = amazonian
-		religion = animist
-		size = 350
-	}
-	farmers = {
-		culture = carib
-		religion = animist
-		size = 500
-	}
-}
 
 5792 = {
-	clergymen = {
+clergymen = {
 		culture = amazonian
 		religion = animist
 		size = 25
 	}
-	artisans = {
+artisans = {
 		culture = amazonian
 		religion = animist
 		size = 100
 	}
-	soldiers = {
+soldiers = {
 		culture = amazonian
 		religion = animist
 		size = 25
 	}
-	farmers = {
+farmers = {
 		culture = amazonian
 		religion = animist
 		size = 350
 	}
-	farmers = {
+farmers = {
 		culture = carib
 		religion = animist
 		size = 500

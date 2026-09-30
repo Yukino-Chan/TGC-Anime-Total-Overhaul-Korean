@@ -5117,7 +5117,7 @@ political_decisions = {
 
 			FRA_1775 = { add_core = TRZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1782 = { trade_goods = iron }
-			1782 = { state_scope = { change_region_name = "Mauritania Province" } }
+			1782 = {  }
 			any_owned = {
 				limit = { is_core = TRZ }
 				add_province_modifier = { name = colonial_exploitation duration = 1095 }
@@ -5618,7 +5618,7 @@ political_decisions = {
 			country_event = 199065
 
 			GBU = { all_core = { remove_core = GBU } }
-			1877 = { add_core = GBU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HOP_1877 = { add_core = GBU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1878 = { add_core = GBU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 
 			any_owned = {

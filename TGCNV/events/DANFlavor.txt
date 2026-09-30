@@ -1226,7 +1226,7 @@
 		fire_only_once = yes
 
 		immediate = {
-			334 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HXP_334 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			335 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 
@@ -1298,7 +1298,7 @@
 		option = {
 			name = "EVTOPTA36216"
 
-			334 = { remove_core = THIS }
+			HXP_334 = { remove_core = THIS }
 			335 = { remove_core = THIS }
 			all_core = {
 				limit = {

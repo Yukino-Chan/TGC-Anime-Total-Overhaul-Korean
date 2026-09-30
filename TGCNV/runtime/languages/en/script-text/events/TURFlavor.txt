@@ -3174,7 +3174,7 @@ country_event = {
 		war = {
 			target = BHT
 			attacker_goal = {
-					casus_belli = acquire_core_state
+					casus_belli = ho_acquire_core_state_per_1122
 					state_province_id  = 1110
 				}
 			defender_goal = { casus_belli = humiliate }
