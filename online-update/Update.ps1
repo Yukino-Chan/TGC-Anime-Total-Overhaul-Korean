@@ -190,7 +190,8 @@ try {
     Write-Progress -Activity '설치 파일 비교' -Completed
     $downloadBytes=[long]0
     foreach($id in $missing) { $downloadBytes+=$catalog.Assets[$id].Bytes }
-    Write-Host ("배포: {0} / 엔진: {1} / 변경·누락 파일: {2} / 다운로드 최대 {3:N1} MB" -f $catalog.Release,$catalog.EngineVersion,$changed,($downloadBytes/1MB))
+    $displayEngine = $catalog.EngineVersion -replace '\+[0-9]{8}(?:-[0-9]{6})?(?=-|$)',''
+    Write-Host ("TGCNV + TGO / 엔진: {0} / 변경·누락 파일: {1} / 다운로드 최대 {2:N1} MB" -f $displayEngine,$changed,($downloadBytes/1MB))
     if ($Action -eq 'Check') { exit 0 }
     # Even when all target files match, run the installer if no online installation
     # receipt exists: it also configures launcher/bootstrap files outside payload.
