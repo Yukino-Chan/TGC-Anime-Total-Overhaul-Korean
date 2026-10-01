@@ -16,6 +16,7 @@ tgcnv_paratrooper = { defence = 1 }
 tgcnv_marine = { defence = 1 }
 # TGCNV SPECIALIST BONUS END
 				guard = { defence = 1 }
+				tgcnv_sturmtruppe = { defence = 1 }  # TGCNV STURMTRUPPE = guard
 				engineer = { defence = 1 }
 				cuirassier = { defence = 1 }
 				dragoon = { defence = 1 }
@@ -49,6 +50,7 @@ tgcnv_paratrooper = { defence = 1 }
 tgcnv_marine = { defence = 1 }
 # TGCNV SPECIALIST BONUS END
 				guard = { defence = 1 }
+				tgcnv_sturmtruppe = { defence = 1 }  # TGCNV STURMTRUPPE = guard
 				engineer = { defence = 1 }
 				artillery = { defence = 1 }
 				dragoon = { defence = 1 }
@@ -105,6 +107,7 @@ tgcnv_paratrooper = { defence = 1 }
 tgcnv_marine = { defence = 1 }
 # TGCNV SPECIALIST BONUS END
 				guard = { defence = 1 }
+				tgcnv_sturmtruppe = { defence = 1 }  # TGCNV STURMTRUPPE = guard
 				engineer = { defence = 1 }
 				artillery = { defence = 1 }
 				dragoon = { defence = 1 }
@@ -179,6 +182,7 @@ tgcnv_paratrooper = { defence = 1 }
 tgcnv_marine = { defence = 1 }
 # TGCNV SPECIALIST BONUS END
 				guard = { defence = 1 }
+				tgcnv_sturmtruppe = { defence = 1 }  # TGCNV STURMTRUPPE = guard
 				engineer = { defence = 1 }
 				artillery = { defence = 1 }
 				dragoon = { defence = 1 }
@@ -213,6 +217,7 @@ tgcnv_paratrooper = { defence = 0.5 }
 tgcnv_marine = { defence = 0.5 }
 # TGCNV SPECIALIST BONUS END
 				guard = { defence = 0.5 }
+				tgcnv_sturmtruppe = { defence = 0.5 }  # TGCNV STURMTRUPPE = guard
 				engineer = { defence = 0.5 }
 				artillery = { defence = 1 }
 				irregular = { defence = 0.5 }
@@ -242,6 +247,7 @@ tgcnv_paratrooper = { defence = 1 }
 tgcnv_marine = { defence = 1 }
 # TGCNV SPECIALIST BONUS END
 				guard = { defence = 1 }
+				tgcnv_sturmtruppe = { defence = 1 }  # TGCNV STURMTRUPPE = guard
 				engineer = { defence = 1 }
 				artillery = { defence = 1 }
 				dragoon = { defence = 1 }
@@ -275,6 +281,7 @@ tgcnv_paratrooper = { attack = 1 }
 tgcnv_marine = { attack = 1 }
 # TGCNV SPECIALIST BONUS END
 				guard = { attack = 1 }
+				tgcnv_sturmtruppe = { attack = 1 }  # TGCNV STURMTRUPPE = guard
 				engineer = { attack = 1 }
 				dragoon = { attack = 1 }
 				hussar = { attack = 1 }
@@ -306,6 +313,7 @@ tgcnv_paratrooper = { defence = 1 }
 tgcnv_marine = { defence = 1 }
 # TGCNV SPECIALIST BONUS END
 				guard = { defence = 1 }
+				tgcnv_sturmtruppe = { defence = 1 }  # TGCNV STURMTRUPPE = guard
 				engineer = { defence = 1 }
 				artillery = { defence = 1 }
 				dragoon = { defence = 1 }
@@ -369,6 +377,7 @@ tgcnv_paratrooper = { attack = 1 }
 tgcnv_marine = { attack = 1 }
 # TGCNV SPECIALIST BONUS END
 				guard = { attack = 1 }
+				tgcnv_sturmtruppe = { attack = 1 }  # TGCNV STURMTRUPPE = guard
 				engineer = { attack = 1 }
 				cuirassier = { attack = 1 defence = 1 }
 				dragoon = { attack = 1 }
@@ -540,6 +549,7 @@ tgcnv_paratrooper = { attack = 1 defence = 1 }
 tgcnv_marine = { attack = 1 defence = 1 }
 # TGCNV SPECIALIST BONUS END
 				guard = { attack = 1 defence = 1 }
+				tgcnv_sturmtruppe = { attack = 1 defence = 1 }  # TGCNV STURMTRUPPE = guard
 				engineer = { attack = 1 defence = 1 siege = 1 }
 				tank = { attack = 1 defence = 1 }
 tgcnv_light_tank = { attack = 1 defence = 1 }
@@ -677,6 +687,7 @@ tgcnv_paratrooper = { attack = 1 defence = 1 }
 tgcnv_marine = { attack = 1 defence = 1 }
 # TGCNV SPECIALIST BONUS END
 				guard = { attack = 1 defence = 1 }
+				tgcnv_sturmtruppe = { attack = 1 defence = 1 }  # TGCNV STURMTRUPPE = guard
 				engineer = { attack = 1 defence = 1 }
 				tank = { attack = 1 defence = 1 siege = 1 maximum_speed = 1 }
 tgcnv_light_tank = { attack = 1 defence = 1 siege = 1 maximum_speed = 1 }
@@ -710,6 +721,12 @@ tgcnv_heavy_tank = { attack = 1 defence = 1 siege = 1 maximum_speed = 1 }
 					maximum_speed = 1
 					supply_consumption = 0.15
 				}
+				tgcnv_sturmtruppe = {
+					attack = 0.2
+					defence = 0.2
+					maximum_speed = 1
+					supply_consumption = 0.15
+				}  # TGCNV STURMTRUPPE = guard
 			}
 		}
 
@@ -957,6 +974,7 @@ tgcnv_paratrooper = { attack = 1 supply_consumption = 0.40 }
 tgcnv_marine = { attack = 1 supply_consumption = 0.40 }
 # TGCNV SPECIALIST BONUS END
 				guard = { attack = 1 supply_consumption = 0.40 }
+				tgcnv_sturmtruppe = { attack = 1 supply_consumption = 0.40 }  # TGCNV STURMTRUPPE = guard
 				engineer = { attack = 1 supply_consumption = 0.40 }
 				dragoon = { attack = 1 supply_consumption = 0.40 }
 				hussar = { attack = 1 supply_consumption = 0.40 }
@@ -1005,6 +1023,7 @@ tgcnv_paratrooper = { attack = 0.15 defence = 0.15 }
 tgcnv_marine = { attack = 0.15 defence = 0.15 }
 # TGCNV SPECIALIST BONUS END
 				guard = { attack = 0.15 defence = 0.15 }
+				tgcnv_sturmtruppe = { attack = 0.15 defence = 0.15 }  # TGCNV STURMTRUPPE = guard
 				army_base = { supply_consumption = 0.05 }
 			}
 		}
@@ -1080,6 +1099,7 @@ tgcnv_paratrooper = { defence = 4 supply_consumption = 0.50 }
 tgcnv_marine = { defence = 4 supply_consumption = 0.50 }
 # TGCNV SPECIALIST BONUS END
 				guard = { defence = 4 supply_consumption = 0.50 }
+				tgcnv_sturmtruppe = { defence = 4 supply_consumption = 0.50 }  # TGCNV STURMTRUPPE = guard
 				engineer = { defence = 4 supply_consumption = 0.50 }
 				cuirassier = { defence = 1 supply_consumption = 0.50 }
 				dragoon = { defence = 2 supply_consumption = 0.50 }
@@ -1138,6 +1158,7 @@ tgcnv_marine = {
 				}
 # TGCNV SPECIALIST BONUS END
 				guard = { attack = 4 supply_consumption = 0.50 }
+				tgcnv_sturmtruppe = { attack = 4 supply_consumption = 0.50 }  # TGCNV STURMTRUPPE = guard
 				engineer = { attack = 1 supply_consumption = 0.50 }
 				cuirassier = { attack = 1 supply_consumption = 0.50 }
 				dragoon = { attack = 1 supply_consumption = 0.50 }
@@ -1180,6 +1201,7 @@ tgcnv_marine = {
 				}
 # TGCNV SPECIALIST BONUS END
 				guard = { attack = 4 supply_consumption = 0.50 }
+				tgcnv_sturmtruppe = { attack = 4 supply_consumption = 0.50 }  # TGCNV STURMTRUPPE = guard
 				engineer = { attack = 1 supply_consumption = 0.50 }
 				cuirassier = { attack = 1 supply_consumption = 0.50 }
 				dragoon = { attack = 1 supply_consumption = 0.50 }
@@ -1268,6 +1290,7 @@ tgcnv_paratrooper = { attack = 4 defence = 2 supply_consumption = 0.50 }
 tgcnv_marine = { attack = 4 defence = 2 supply_consumption = 0.50 }
 # TGCNV SPECIALIST BONUS END
 				guard = { attack = 4 defence = 2 supply_consumption = 0.50 }
+				tgcnv_sturmtruppe = { attack = 4 defence = 2 supply_consumption = 0.50 }  # TGCNV STURMTRUPPE = guard
 				engineer = { attack = 2 defence = 2 supply_consumption = 0.50 }
 				irregular = { attack = 1 defence = 2 supply_consumption = 0.50 }
 			}
@@ -1581,6 +1604,7 @@ tgcnv_paratrooper = { defence = 0.5 }
 tgcnv_marine = { defence = 0.5 }
 # TGCNV SPECIALIST BONUS END
 				guard = { defence = 0.5 }
+				tgcnv_sturmtruppe = { defence = 0.5 }  # TGCNV STURMTRUPPE = guard
 				engineer = { defence = 0.5 }
 				irregular = { defence = 0.5 }
 			}
@@ -2720,6 +2744,10 @@ tgcnv_marine = {
 					discipline = 0.3
 					default_organisation = 5
 				}
+				tgcnv_sturmtruppe = {
+					discipline = 0.3
+					default_organisation = 5
+				}  # TGCNV STURMTRUPPE = guard
 			}
 		}
 
@@ -3210,6 +3238,9 @@ tgcnv_heavy_tank = {
 				guard = {
 					attack = 7
 				}
+				tgcnv_sturmtruppe = {
+					attack = 7
+				}  # TGCNV STURMTRUPPE = guard
 				hussar = {
 					attack = 7
 				}
@@ -3309,6 +3340,7 @@ tgcnv_paratrooper = { attack = 0.25 }
 tgcnv_marine = { attack = 0.25 }
 # TGCNV SPECIALIST BONUS END
 		guard = { attack = 0.25 }
+		tgcnv_sturmtruppe = { attack = 0.25 }  # TGCNV STURMTRUPPE = guard
 	}
 }
 
@@ -3428,6 +3460,7 @@ tgcnv_paratrooper = { attack = 0.25 }
 tgcnv_marine = { attack = 0.25 }
 # TGCNV SPECIALIST BONUS END
 		guard = { attack = 0.25 }
+		tgcnv_sturmtruppe = { attack = 0.25 }  # TGCNV STURMTRUPPE = guard
 	}
 }
 
@@ -3465,6 +3498,7 @@ tgcnv_paratrooper = { default_organisation = 1 }
 tgcnv_marine = { default_organisation = 1 }
 # TGCNV SPECIALIST BONUS END
 		guard = { default_organisation = 1 }
+		tgcnv_sturmtruppe = { default_organisation = 1 }  # TGCNV STURMTRUPPE = guard
 	}
 }
 
@@ -3486,6 +3520,7 @@ tgcnv_paratrooper = { defence = 0.25 }
 tgcnv_marine = { defence = 0.25 }
 # TGCNV SPECIALIST BONUS END
 		guard = { defence = 0.25 }
+		tgcnv_sturmtruppe = { defence = 0.25 }  # TGCNV STURMTRUPPE = guard
 	}
 }
 
@@ -3507,6 +3542,7 @@ tgcnv_paratrooper = { defence = 0.25 }
 tgcnv_marine = { defence = 0.25 }
 # TGCNV SPECIALIST BONUS END
 		guard = { defence = 0.25 }
+		tgcnv_sturmtruppe = { defence = 0.25 }  # TGCNV STURMTRUPPE = guard
 	}
 }
 
@@ -3564,6 +3600,7 @@ tgcnv_paratrooper = { attack = 0.25 }
 tgcnv_marine = { attack = 0.25 }
 # TGCNV SPECIALIST BONUS END
 		guard = { attack = 0.25 }
+		tgcnv_sturmtruppe = { attack = 0.25 }  # TGCNV STURMTRUPPE = guard
 	}
 }
 
@@ -3601,6 +3638,7 @@ tgcnv_paratrooper = { default_organisation = 1 }
 tgcnv_marine = { default_organisation = 1 }
 # TGCNV SPECIALIST BONUS END
 		guard = { default_organisation = 1 }
+		tgcnv_sturmtruppe = { default_organisation = 1 }  # TGCNV STURMTRUPPE = guard
 	}
 }
 

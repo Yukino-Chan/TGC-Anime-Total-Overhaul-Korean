@@ -1,0 +1,16 @@
+# TGCNV fiscal balance (2026-10-01). Read once when the game starts.
+# Details: #WIP/purchasing_power_20261001/README.ko.md
+#
+# no  = a salary budget line (education, administration, social, military) is exactly
+#       what the POPs are paid
+# yes = native: pay x (2 - administrative efficiency); the difference reaches nobody
+budget_overhead = no
+#
+# Pay of clergy, bureaucrats, soldiers and officers (and pensions) at a full slider:
+# 1.0 = native, twice the cost of their life and everyday needs; 0.5 = that cost once.
+# Allowed 0.25 .. 2.0.
+state_pay = 0.5
+#
+# yes = an artisan's input reserve is written into the save together with its money
+# no  = native: the reserve is lost at every save and load
+save_artisan_reserve = yes

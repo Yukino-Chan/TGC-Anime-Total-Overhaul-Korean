@@ -3968,7 +3968,7 @@ germanization_resistance = {
 		tax_efficiency = 0.075
 		administrative_efficiency_modifier = 0.05
 		global_pop_militancy_modifier = 0.01
-		min_tax = 0.1
+		min_tax = 0.04	# 2026-10-01 purchasing power (likin_tax): was 0.1
 		war_exhaustion = -0.5
 		icon = 9
 	}
@@ -4005,7 +4005,7 @@ germanization_resistance = {
 ## HFM EIC Modifiers ##
 
 	eic_balance = {
-		max_tax = 0.75
+		max_tax = -0.1	# 2026-10-01 purchasing power (eic_balance): was 0.75
 		administrative_efficiency_modifier = 0.05
 		research_points_modifier = -2.55
 		leadership_modifier = 4
@@ -4690,14 +4690,14 @@ quilombo_presence = {
 	}
 
 	farrapos_compromise_strong = {
-		max_tax = -0.25
+		max_tax = -0.1	# 2026-10-01 purchasing power (farrapos_compromise_strong): was -0.25
 		min_tariff = 1.50
 		max_tariff = 0.50
 		icon = 5
 	}
 
 	farrapos_compromise_mild = {
-		max_tax = -0.10
+		max_tax = -0.04	# 2026-10-01 purchasing power (farrapos_compromise_mild): was -0.10
 		min_tariff = 1.25
 		max_tariff = 0.25
 		icon = 5

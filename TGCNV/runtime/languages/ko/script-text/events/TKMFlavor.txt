@@ -81,9 +81,11 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA32546"
-		RUS_1185 = { add_core = KAZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = KHI remove_core = KOK remove_core = BUK remove_core = RUS }
-		RUS_1184 = { add_core = KAZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = KHI remove_core = KOK remove_core = BUK remove_core = RUS }
-		RUS_1182 = { add_core = KAZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = KHI remove_core = KOK remove_core = BUK remove_core = RUS }
+		TGC_CA_1991_KAZ = { add_core = KAZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+
+		RUS_1185 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = KHI remove_core = KOK remove_core = BUK remove_core = RUS }
+		RUS_1184 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = KHI remove_core = KOK remove_core = BUK remove_core = RUS }
+		RUS_1182 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = KHI remove_core = KOK remove_core = BUK remove_core = RUS }
 		1186 = { life_rating = 5 }
 		1185 = { life_rating = 5 }
 		1193 = { life_rating = 5 }
@@ -132,7 +134,9 @@ country_event = {
 	option = {
 		name = "EVTOPTA32546"
 		set_global_flag = uzbekistan_created
-		KHI_1191 = { add_core = UZB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		TGC_CA_1991_UZB = { add_core = UZB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+
+		KHI_1191 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		random_country = {
 			limit = { tag = BUK exists = no }
 			BUK = { all_core = { remove_core = BUK } }
@@ -352,9 +356,11 @@ country_event = {
 	option = {
 		name = "EVTOPTA32546"
 		set_global_flag = kyrgyzstan_created
-		1189 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-		1190 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-		HOP_1203 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		TGC_CA_1991_KYR = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+
+		1189 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		1190 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		HOP_1203 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		KYR = {
 			nationalvalue = nv_autocracy
 			all_core = {

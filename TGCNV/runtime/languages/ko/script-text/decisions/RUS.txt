@@ -5369,17 +5369,23 @@ political_decisions = {
 			KHI_1191 = { remove_core = KOK remove_core = BUK remove_core = KHI }
 			RUS_1196 = { remove_core = KOK remove_core = BUK remove_core = KHI }
 
-			RUS_1182 = { add_core = KAZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			RUS_1184 = { add_core = KAZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			RUS_1185 = { add_core = KAZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			KHI_1191 = { add_core = UZB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			RUS_1196 = { add_core = TKM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			1201 = { add_core = TAJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			1207 = { add_core = TAJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			1208 = { add_core = TAJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			1189 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			TGC_TERRITORY_1190 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			HOP_1203 = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			TGC_CA_1991_KAZ = { add_core = KAZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			TGC_CA_1991_KYR = { add_core = KYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			TGC_CA_1991_TAJ = { add_core = TAJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			TGC_CA_1991_TKM = { add_core = TKM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			TGC_CA_1991_UZB = { add_core = UZB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+
+			RUS_1182 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			RUS_1184 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			RUS_1185 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			KHI_1191 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			RUS_1196 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1201 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1207 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1208 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			1189 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			TGC_TERRITORY_1190 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			HOP_1203 = {  add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 
 		ai_will_do = { factor = 1 }

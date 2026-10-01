@@ -1062,7 +1062,6 @@ tgcnv_ww2_army_doctrine_1945 = {
 		unciv_military = yes
 		army_base = { supply_consumption = 0.10 }
 
-		activate_unit = engineer
 		combat_width = -2
 
 		ai_chance = {
@@ -1188,7 +1187,6 @@ tgcnv_ww2_army_doctrine_1945 = {
 		year = 1850
 		cost = 10800
 
-		activate_unit = guard
 		unciv_military = yes
 		army_base = { supply_consumption = 0.20 }
 
@@ -1832,6 +1830,7 @@ tgcnv_ww2_light_armament_1930 = {
 	year = 1930
 	cost = 34000
 	unciv_military = yes
+	activate_unit = tgcnv_sturmtruppe
 
 	infantry = { attack = 0.5 }
 # TGCNV SPECIALIST BONUS BEGIN
@@ -1839,6 +1838,7 @@ tgcnv_paratrooper = { attack = 0.5 }
 tgcnv_marine = { attack = 0.5 }
 # TGCNV SPECIALIST BONUS END
 	guard = { attack = 0.5 }
+	tgcnv_sturmtruppe = { attack = 0.5 }  # TGCNV STURMTRUPPE = guard
 
 	ai_chance = {
 		factor = 1.0
@@ -1859,6 +1859,7 @@ tgcnv_paratrooper = { defence = 0.5 }
 tgcnv_marine = { defence = 0.5 }
 # TGCNV SPECIALIST BONUS END
 	guard = { defence = 0.5 }
+	tgcnv_sturmtruppe = { defence = 0.5 }  # TGCNV STURMTRUPPE = guard
 
 	ai_chance = {
 		factor = 1.0
@@ -1896,6 +1897,7 @@ tgcnv_paratrooper = { attack = 0.5 }
 tgcnv_marine = { attack = 0.5 }
 # TGCNV SPECIALIST BONUS END
 	guard = { attack = 0.5 }
+	tgcnv_sturmtruppe = { attack = 0.5 }  # TGCNV STURMTRUPPE = guard
 
 	ai_chance = {
 		factor = 1.0
@@ -1915,6 +1917,7 @@ tgcnv_paratrooper = { default_organisation = 3 }
 tgcnv_marine = { default_organisation = 3 }
 # TGCNV SPECIALIST BONUS END
 	guard = { default_organisation = 3 }
+	tgcnv_sturmtruppe = { default_organisation = 3 }  # TGCNV STURMTRUPPE = guard
 
 	ai_chance = {
 		factor = 1.0

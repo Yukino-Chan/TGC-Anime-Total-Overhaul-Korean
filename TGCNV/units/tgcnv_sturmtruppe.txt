@@ -1,0 +1,50 @@
+tgcnv_sturmtruppe = {
+	icon = 31
+
+	type = land
+	sprite = Guard
+	active = no
+	unit_type = infantry
+	primary_culture = yes
+	floating_flag = no
+	move_sound = army_move
+	select_sound = army_selected
+
+	# Sturmtruppe: elite assault infantry (TGCNV batch 35). Gets every guard modifier from research.
+	#Core Abilities
+	priority = 20
+	max_strength = 3
+	default_organisation = 30
+	maximum_speed = 4.50
+	weighted_value = 11.0
+
+	#Building Costs
+	build_time = 120
+	build_cost = {
+		small_arms = 15
+		ammunition = 10
+		explosives = 10
+		canned_food = 10
+		regular_clothes = 10
+	}
+
+	supply_consumption = 0.18
+	supply_cost = {
+		small_arms = 0.03
+		ammunition = 0.12
+		explosives = 0.03
+		canned_food = 0.07
+		fruit = 0.08
+		soap = 0.03
+		pharmaceuticals = 0.002
+	}
+
+	#Land Abilities
+	reconnaissance = 1
+	attack = 10
+	defence = 4
+	discipline = 1.15
+	support = 0.0
+	maneuver = 3
+	siege = 0.5
+}
