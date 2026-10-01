@@ -3193,108 +3193,7 @@ labourers = {
 	}
 }
 
-66 = {
-clergymen = {
-		culture = anglo_canadian
-		religion = anglican
-		size = 10
-	}
-clergymen = {
-		culture = anglo_canadian
-		religion = presbyterian
-		size = 6
-	}
-clergymen = {
-		culture = anglo_canadian
-		religion = methodist
-		size = 6
-	}
-clergymen = {
-		culture = anglo_canadian
-		religion = baptist
-		size = 3
-	}
-artisans = {
-		culture = anglo_canadian
-		religion = anglican
-		size = 80
-	}
-artisans = {
-		culture = anglo_canadian
-		religion = presbyterian
-		size = 50
-	}
-artisans = {
-		culture = anglo_canadian
-		religion = methodist
-		size = 50
-	}
-artisans = {
-		culture = anglo_canadian
-		religion = baptist
-		size = 20
-	}
-soldiers = {
-		culture = anglo_canadian
-		religion = anglican
-		size = 20
-	}
-soldiers = {
-		culture = anglo_canadian
-		religion = presbyterian
-		size = 13
-	}
-soldiers = {
-		culture = anglo_canadian
-		religion = methodist
-		size = 12
-	}
-soldiers = {
-		culture = anglo_canadian
-		religion = baptist
-		size = 5
-	}
-labourers = {
-		culture = anglo_canadian
-		religion = anglican
-		size = 890
-	}
-labourers = {
-		culture = anglo_canadian
-		religion = presbyterian
-		size = 556
-	}
-labourers = {
-		culture = anglo_canadian
-		religion = methodist
-		size = 556
-	}
-labourers = {
-		culture = anglo_canadian
-		religion = baptist
-		size = 222
-	}
-clergymen = {
-		culture = french_canadian
-		religion = catholic
-		size = 138
-	}
-artisans = {
-		culture = french_canadian
-		religion = catholic
-		size = 483
-	}
-soldiers = {
-		culture = french_canadian
-		religion = catholic
-		size = 100
-	}
-labourers = {
-		culture = french_canadian
-		religion = catholic
-		size = 5147
-	}
-}
+
 
 67 = {
 clergymen = {
@@ -8277,133 +8176,7 @@ labourers = {
 	}
 }
 
-3619 = {
-bureaucrats = {
-		culture = anglo_canadian
-		religion = anglican
-		size = 40
-	}
-bureaucrats = {
-		culture = anglo_canadian
-		religion = presbyterian
-		size = 25
-	}
-bureaucrats = {
-		culture = anglo_canadian
-		religion = methodist
-		size = 25
-	}
-bureaucrats = {
-		culture = anglo_canadian
-		religion = baptist
-		size = 10
-	}
-clergymen = {
-		culture = anglo_canadian
-		religion = anglican
-		size = 25
-	}
-clergymen = {
-		culture = anglo_canadian
-		religion = presbyterian
-		size = 16
-	}
-clergymen = {
-		culture = anglo_canadian
-		religion = methodist
-		size = 15
-	}
-clergymen = {
-		culture = anglo_canadian
-		religion = baptist
-		size = 6
-	}
-artisans = {
-		culture = anglo_canadian
-		religion = anglican
-		size = 1001
-	}
-artisans = {
-		culture = anglo_canadian
-		religion = presbyterian
-		size = 625
-	}
-artisans = {
-		culture = anglo_canadian
-		religion = methodist
-		size = 625
-	}
-artisans = {
-		culture = anglo_canadian
-		religion = baptist
-		size = 250
-	}
-soldiers = {
-		culture = anglo_canadian
-		religion = anglican
-		size = 50
-	}
-soldiers = {
-		culture = anglo_canadian
-		religion = presbyterian
-		size = 31
-	}
-soldiers = {
-		culture = anglo_canadian
-		religion = methodist
-		size = 31
-	}
-soldiers = {
-		culture = anglo_canadian
-		religion = baptist
-		size = 13
-	}
-farmers = {
-		culture = anglo_canadian
-		religion = anglican
-		size = 2687
-	}
-farmers = {
-		culture = anglo_canadian
-		religion = presbyterian
-		size = 1679
-	}
-farmers = {
-		culture = anglo_canadian
-		religion = methodist
-		size = 1679
-	}
-farmers = {
-		culture = anglo_canadian
-		religion = baptist
-		size = 672
-	}
-bureaucrats = {
-		culture = french_canadian
-		religion = catholic
-		size = 50
-	}
-clergymen = {
-		culture = french_canadian
-		religion = catholic
-		size = 250
-	}
-artisans = {
-		culture = french_canadian
-		religion = catholic
-		size = 3002
-	}
-soldiers = {
-		culture = french_canadian
-		religion = catholic
-		size = 200
-	}
-farmers = {
-		culture = french_canadian
-		religion = catholic
-		size = 18014
-	}
-}
+
 
 3620 = {
 clergymen = {
@@ -11334,5 +11107,306 @@ farmers = {
 		culture = innu
 		religion = animist
 		size = 48
+	}
+}
+
+66 = {
+clergymen = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 10
+	}
+clergymen = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 6
+	}
+clergymen = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 6
+	}
+clergymen = {
+		culture = anglo_canadian
+		religion = baptist
+		size = 3
+	}
+artisans = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 79
+	}
+artisans = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 49
+	}
+artisans = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 49
+	}
+artisans = {
+		culture = anglo_canadian
+		religion = baptist
+		size = 20
+	}
+soldiers = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 20
+	}
+soldiers = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 13
+	}
+soldiers = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 12
+	}
+soldiers = {
+		culture = anglo_canadian
+		religion = baptist
+		size = 5
+	}
+labourers = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 875
+	}
+labourers = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 547
+	}
+labourers = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 547
+	}
+labourers = {
+		culture = anglo_canadian
+		religion = baptist
+		size = 218
+	}
+clergymen = {
+		culture = french_canadian
+		religion = catholic
+		size = 136
+	}
+artisans = {
+		culture = french_canadian
+		religion = catholic
+		size = 475
+	}
+soldiers = {
+		culture = french_canadian
+		religion = catholic
+		size = 98
+	}
+labourers = {
+		culture = french_canadian
+		religion = catholic
+		size = 5063
+	}
+farmers = {
+        culture = yankee
+        religion = methodist
+        size = 5
+    }
+farmers = {
+        culture = yankee
+        religion = baptist
+        size = 3
+    }
+farmers = {
+        culture = yankee
+        religion = presbyterian
+        size = 3
+    }
+farmers = {
+        culture = yankee
+        religion = anglican
+        size = 1
+    }
+farmers = {
+        culture = yankee
+        religion = protestant
+        size = 2
+    }
+artisans = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 2
+	}
+artisans = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 1
+	}
+artisans = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 1
+	}
+farmers = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 5
+	}
+farmers = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 3
+	}
+farmers = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 3
+	}
+farmers = {
+		culture = anglo_canadian
+		religion = baptist
+		size = 1
+	}
+artisans = {
+		culture = french_canadian
+		religion = catholic
+		size = 5
+	}
+farmers = {
+		culture = french_canadian
+		religion = catholic
+		size = 33
+	}
+}
+
+3619 = {
+bureaucrats = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 40
+	}
+bureaucrats = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 25
+	}
+bureaucrats = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 25
+	}
+bureaucrats = {
+		culture = anglo_canadian
+		religion = baptist
+		size = 10
+	}
+clergymen = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 25
+	}
+clergymen = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 16
+	}
+clergymen = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 15
+	}
+clergymen = {
+		culture = anglo_canadian
+		religion = baptist
+		size = 6
+	}
+artisans = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 999
+	}
+artisans = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 624
+	}
+artisans = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 624
+	}
+artisans = {
+		culture = anglo_canadian
+		religion = baptist
+		size = 250
+	}
+soldiers = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 50
+	}
+soldiers = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 31
+	}
+soldiers = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 31
+	}
+soldiers = {
+		culture = anglo_canadian
+		religion = baptist
+		size = 13
+	}
+farmers = {
+		culture = anglo_canadian
+		religion = anglican
+		size = 2682
+	}
+farmers = {
+		culture = anglo_canadian
+		religion = presbyterian
+		size = 1676
+	}
+farmers = {
+		culture = anglo_canadian
+		religion = methodist
+		size = 1676
+	}
+farmers = {
+		culture = anglo_canadian
+		religion = baptist
+		size = 671
+	}
+bureaucrats = {
+		culture = french_canadian
+		religion = catholic
+		size = 50
+	}
+clergymen = {
+		culture = french_canadian
+		religion = catholic
+		size = 250
+	}
+artisans = {
+		culture = french_canadian
+		religion = catholic
+		size = 2997
+	}
+soldiers = {
+		culture = french_canadian
+		religion = catholic
+		size = 200
+	}
+farmers = {
+		culture = french_canadian
+		religion = catholic
+		size = 17981
 	}
 }

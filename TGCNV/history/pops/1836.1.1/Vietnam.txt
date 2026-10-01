@@ -1705,58 +1705,7 @@ farmers = {
 	}
 }
 
-4939 = {
-aristocrats = {
-		culture = vietnamese
-		religion = mahayana
-		size = 150
-	}
-clergymen = {
-		culture = vietnamese
-		religion = mahayana
-		size = 62
-	}
-artisans = {
-		culture = vietnamese
-		religion = mahayana
-		size = 350
-	}
-soldiers = {
-		culture = vietnamese
-		religion = mahayana
-		size = 75
-	}
-farmers = {
-		culture = vietnamese
-		religion = mahayana
-		size = 6362
-	}
-clergymen = {
-		culture = khmer
-		religion = theravada
-		size = 150
-	}
-artisans = {
-		culture = khmer
-		religion = theravada
-		size = 725
-	}
-soldiers = {
-		culture = khmer
-		religion = theravada
-		size = 125
-	}
-farmers = {
-		culture = khmer
-		religion = theravada
-		size = 13500
-	}
-farmers = {
-		culture = malay
-		religion = sunni
-		size = 3000
-	}
-}
+
 
 4940 = {
 aristocrats = {
@@ -1811,5 +1760,58 @@ farmers = { # These islands were uninhabited but this is to prevent the game fro
 		culture = melanesian
 		religion = animist
 		size = 4
+	}
+}
+
+4939 = {
+aristocrats = {
+		culture = vietnamese
+		religion = mahayana
+		size = 143
+	}
+clergymen = {
+		culture = vietnamese
+		religion = mahayana
+		size = 59
+	}
+artisans = {
+		culture = vietnamese
+		religion = mahayana
+		size = 333
+	}
+soldiers = {
+		culture = vietnamese
+		religion = mahayana
+		size = 71
+	}
+farmers = {
+		culture = vietnamese
+		religion = mahayana
+		size = 6059
+	}
+clergymen = {
+		culture = khmer
+		religion = theravada
+		size = 143
+	}
+artisans = {
+		culture = khmer
+		religion = theravada
+		size = 690
+	}
+soldiers = {
+		culture = khmer
+		religion = theravada
+		size = 119
+	}
+farmers = {
+		culture = khmer
+		religion = theravada
+		size = 12857
+	}
+farmers = {
+		culture = malay
+		religion = sunni
+		size = 2857
 	}
 }

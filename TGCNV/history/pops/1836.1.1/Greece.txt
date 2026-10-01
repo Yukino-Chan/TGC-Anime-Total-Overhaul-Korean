@@ -3419,128 +3419,7 @@ soldiers = {
 	}
 }
 
-4366 = {
-aristocrats = {
-        culture = turkish
-        religion = sunni
-        size = 98
-    }
-bureaucrats = {
-        culture = turkish
-        religion = sunni
-        size = 14
-    }
-officers = {
-        culture = turkish
-        religion = sunni
-        size = 20
-    }
-clergymen = {
-        culture = turkish
-        religion = sunni
-        size = 14
-    }
-artisans = {
-        culture = turkish
-        religion = sunni
-        size = 92
-    }
-soldiers = {
-        culture = turkish
-        religion = sunni
-        size = 25
-    }
-labourers = {
-        culture = turkish
-        religion = sunni
-        size = 1035
-    }
-aristocrats = {
-        culture = bulgarian
-        religion = orthodox
-        size = 15
-    }
-officers = {
-        culture = bulgarian
-        religion = orthodox
-        size = 17
-    }
-clergymen = {
-        culture = bulgarian
-        religion = orthodox
-        size = 32
-    }
-soldiers = {
-        culture = bulgarian
-        religion = orthodox
-        size = 49
-    }
-artisans = {
-        culture = bulgarian
-        religion = orthodox
-        size = 52
-    }
-labourers = {
-        culture = bulgarian
-        religion = orthodox
-        size = 3880
-    }
-labourers = {
-        culture = greek
-        religion = orthodox
-        size = 540
-    }
-labourers = {
-        culture = romanian
-        religion = orthodox
-        size = 34
-    }
-labourers = {
-        culture = romanian
-        religion = sunni
-        size = 9
-    }
-clergymen = {
-        culture = romanian
-        religion = orthodox
-        size = 1
-    }
-soldiers = {
-        culture = bulgarian
-        religion = orthodox
-        size = 6
-    }
-labourers = {
-        culture = gypsy
-        religion = orthodox
-        size = 11
-    }
-labourers = {
-        culture = gypsy
-        religion = sunni
-        size = 8
-    }
-soldiers = {
-		culture = bulgarian
-		religion = orthodox
-		size = 30
-	}
-labourers = {
-		culture = pomak
-		religion = sunni
-		size = 149
-	}
-soldiers = {
-		culture = turkish
-		religion = sunni
-		size = 27
-	}
-artisans = {
-		culture = sephardic
-		religion = jewish
-		size = 25
-	}
-}
+
 
 4371 = {
 aristocrats = {
@@ -3969,6 +3848,77 @@ soldiers = {
         religion = orthodox
         size = 64
     }
+
+aristocrats = {
+        culture = turkish
+        religion = sunni
+        size = 2
+    }
+artisans = {
+        culture = turkish
+        religion = sunni
+        size = 2
+    }
+soldiers = {
+        culture = turkish
+        religion = sunni
+        size = 1
+    }
+labourers = {
+        culture = turkish
+        religion = sunni
+        size = 25
+    }
+clergymen = {
+        culture = bulgarian
+        religion = orthodox
+        size = 1
+    }
+soldiers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 1
+    }
+artisans = {
+        culture = bulgarian
+        religion = orthodox
+        size = 1
+    }
+labourers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 92
+    }
+labourers = {
+        culture = greek
+        religion = orthodox
+        size = 13
+    }
+labourers = {
+        culture = romanian
+        religion = orthodox
+        size = 1
+    }
+soldiers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 1
+	}
+labourers = {
+		culture = pomak
+		religion = sunni
+		size = 4
+	}
+soldiers = {
+		culture = turkish
+		religion = sunni
+		size = 1
+	}
+artisans = {
+		culture = sephardic
+		religion = jewish
+		size = 1
+	}
 }
 
 4374 = {
@@ -7624,4 +7574,192 @@ soldiers = {
         religion = orthodox
         size = 2
     }
+}
+
+4366 = {
+aristocrats = {
+		culture = turkish
+		religion = sunni
+		size = 4
+	}
+artisans = {
+		culture = turkish
+		religion = sunni
+		size = 3
+	}
+soldiers = {
+		culture = turkish
+		religion = sunni
+		size = 1
+	}
+farmers = {
+		culture = turkish
+		religion = sunni
+		size = 9
+	}
+artisans = {
+		culture = bulgarian
+		religion = orthodox
+		size = 1
+	}
+farmers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 61
+	}
+farmers = {
+		culture = serb
+		religion = orthodox
+		size = 5
+	}
+artisans = {
+		culture = sephardic
+		religion = jewish
+		size = 2
+	}
+soldiers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 2
+	}
+farmers = {
+		culture = pomak
+		religion = sunni
+		size = 12
+	}
+soldiers = {
+		culture = turkish
+		religion = sunni
+		size = 1
+	}
+soldiers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 1
+	}
+clergymen = {
+		culture = pomak
+		religion = sunni
+		size = 0
+	}
+aristocrats = {
+        culture = turkish
+        religion = sunni
+        size = 86
+    }
+bureaucrats = {
+        culture = turkish
+        religion = sunni
+        size = 12
+    }
+officers = {
+        culture = turkish
+        religion = sunni
+        size = 18
+    }
+clergymen = {
+        culture = turkish
+        religion = sunni
+        size = 12
+    }
+artisans = {
+        culture = turkish
+        religion = sunni
+        size = 81
+    }
+soldiers = {
+        culture = turkish
+        religion = sunni
+        size = 22
+    }
+labourers = {
+        culture = turkish
+        religion = sunni
+        size = 912
+    }
+aristocrats = {
+        culture = bulgarian
+        religion = orthodox
+        size = 13
+    }
+officers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 15
+    }
+clergymen = {
+        culture = bulgarian
+        religion = orthodox
+        size = 28
+    }
+soldiers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 43
+    }
+artisans = {
+        culture = bulgarian
+        religion = orthodox
+        size = 46
+    }
+labourers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 3418
+    }
+labourers = {
+        culture = greek
+        religion = orthodox
+        size = 476
+    }
+labourers = {
+        culture = romanian
+        religion = orthodox
+        size = 30
+    }
+labourers = {
+        culture = romanian
+        religion = sunni
+        size = 8
+    }
+clergymen = {
+        culture = romanian
+        religion = orthodox
+        size = 1
+    }
+soldiers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 5
+    }
+labourers = {
+        culture = gypsy
+        religion = orthodox
+        size = 10
+    }
+labourers = {
+        culture = gypsy
+        religion = sunni
+        size = 7
+    }
+soldiers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 26
+	}
+labourers = {
+		culture = pomak
+		religion = sunni
+		size = 131
+	}
+soldiers = {
+		culture = turkish
+		religion = sunni
+		size = 24
+	}
+artisans = {
+		culture = sephardic
+		religion = jewish
+		size = 22
+	}
 }

@@ -23,8 +23,8 @@ political_decisions = {
 			regular_clothes = 50
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Northern Quebec
 			capital = 57
-			46 = { state_scope = { change_region_name = "남온타리오주" } }
-			58 = { state_scope = { change_region_name = "남퀘벡주" } }
+			46 = {  }
+			58 = {  }
 		}
 
 		ai_will_do = { factor = 1 }

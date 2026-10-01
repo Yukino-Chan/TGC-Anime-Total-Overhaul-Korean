@@ -3225,7 +3225,7 @@ country_event = {
 			any_land_province = { limit = { province_id = 3409 owner = { primary_culture = japanese } } change_province_name = "바로" }
 
 			# 46
-			any_land_province = { limit = { province_id = 46 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } state_scope = { change_region_name = "남부 온타리오주" } }
+			any_land_province = { limit = { province_id = 46 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } }  }
 
 			# 47
 			any_land_province = { limit = { province_id = 47 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } }  }
@@ -3257,8 +3257,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 15 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } OR = { has_country_flag = 2nd_monarchygov has_country_flag = 2nd_republicgov } } } change_province_name = "부르봉" }
 
 			# 139
-			any_land_province = { limit = { province_id = 139 owner = { is_culture_group = american_cultures } } change_province_name = "뉴올리언스" state_scope = { change_region_name = "루이지애나주" } }
-			any_land_province = { limit = { province_id = 139 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "누벨오를레앙" state_scope = { change_region_name = "하루이지애나주" } }
+			any_land_province = { limit = { province_id = 139 owner = { is_culture_group = american_cultures } } change_province_name = "뉴올리언스"  }
+			any_land_province = { limit = { province_id = 139 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "누벨오를레앙"  }
 
 			# 140
 			any_land_province = { limit = { province_id = 140 owner = { is_culture_group = american_cultures } } change_province_name = "배턴루지" }
@@ -3273,8 +3273,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 142 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "마들" }
 
 			# 143
-			any_land_province = { limit = { province_id = 143 owner = { is_culture_group = american_cultures } } change_province_name = "리틀록" state_scope = { change_region_name = "아칸소주" } }
-			any_land_province = { limit = { province_id = 143 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "슈브뢰유" state_scope = { change_region_name = "아칸소주" } }
+			any_land_province = { limit = { province_id = 143 owner = { is_culture_group = american_cultures } } change_province_name = "리틀록"  }
+			any_land_province = { limit = { province_id = 143 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "슈브뢰유"  }
 
 			# 144
 			any_land_province = { limit = { province_id = 144 owner = { is_culture_group = american_cultures } } change_province_name = "핫스프링스" }
@@ -3305,8 +3305,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 150 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "라파예트" }
 
 			# 154
-			any_land_province = { limit = { province_id = 154 owner = { is_culture_group = american_cultures } } change_province_name = "수시티" state_scope = { change_region_name = "아이오와주" } }
-			any_land_province = { limit = { province_id = 154 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "아이아우에" state_scope = { change_region_name = "상루이지애나주" } }
+			any_land_province = { limit = { province_id = 154 owner = { is_culture_group = american_cultures } } change_province_name = "수시티"  }
+			any_land_province = { limit = { province_id = 154 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "아이아우에"  }
 
 			# 152
 			any_land_province = { limit = { province_id = 152 owner = { is_culture_group = american_cultures } } change_province_name = "오스칼루사" }
@@ -3317,16 +3317,16 @@ country_event = {
 			any_land_province = { limit = { province_id = 153 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "세드르라피드" }
 
 			# 126
-			any_land_province = { limit = { province_id = 126 owner = { is_culture_group = american_cultures } } change_province_name = "포트레번워스" state_scope = { change_region_name = "캔자스주" } }
-			any_land_province = { limit = { province_id = 126 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "캉페" state_scope = { change_region_name = "캉세주" } }
+			any_land_province = { limit = { province_id = 126 owner = { is_culture_group = american_cultures } } change_province_name = "포트레번워스"  }
+			any_land_province = { limit = { province_id = 126 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "캉페"  }
 
 			# 127
 			any_land_province = { limit = { province_id = 127 owner = { is_culture_group = american_cultures } } change_province_name = "포트맨" }
 			any_land_province = { limit = { province_id = 127 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "그리네슈" }
 
 			# 124
-			any_land_province = { limit = { province_id = 124 owner = { is_culture_group = american_cultures } } change_province_name = "보르도 교역소" state_scope = { change_region_name = "네브래스카주" } }
-			any_land_province = { limit = { province_id = 124 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "보르도바티스트빌" state_scope = { change_region_name = "오플라트주" } }
+			any_land_province = { limit = { province_id = 124 owner = { is_culture_group = american_cultures } } change_province_name = "보르도 교역소"  }
+			any_land_province = { limit = { province_id = 124 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "보르도바티스트빌"  }
 
 			# 123
 			any_land_province = { limit = { province_id = 123 owner = { is_culture_group = american_cultures } } change_province_name = "포르로비두" }
@@ -3361,8 +3361,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 122 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "피에르빌" }
 
 			# 117
-			any_land_province = { limit = { province_id = 117 owner = { is_culture_group = american_cultures } } change_province_name = "포트클라크" state_scope = { change_region_name = "노스다코타주" } }
-			any_land_province = { limit = { province_id = 117 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "위다우" state_scope = { change_region_name = "노스다코타주" } }
+			any_land_province = { limit = { province_id = 117 owner = { is_culture_group = american_cultures } } change_province_name = "포트클라크"  }
+			any_land_province = { limit = { province_id = 117 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "위다우"  }
 
 			# 118
 			any_land_province = { limit = { province_id = 118 owner = { is_culture_group = american_cultures } } change_province_name = "포트제임스" }
@@ -3373,8 +3373,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 119 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "망투" }
 
 			# 116
-			any_land_province = { limit = { province_id = 116 owner = { is_culture_group = american_cultures } } change_province_name = "포트클라크" state_scope = { change_region_name = "몬태나주" } }
-			any_land_province = { limit = { province_id = 116 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "몽타뉴빌" state_scope = { change_region_name = "아시니보인주" } }
+			any_land_province = { limit = { province_id = 116 owner = { is_culture_group = american_cultures } } change_province_name = "포트클라크"  }
+			any_land_province = { limit = { province_id = 116 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "몽타뉴빌"  }
 
 			# 114
 			any_land_province = { limit = { province_id = 114 owner = { is_culture_group = american_cultures } } change_province_name = "포트오언" }
@@ -3385,16 +3385,16 @@ country_event = {
 			any_land_province = { limit = { province_id = 115 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "랑세" }
 
 			# 112
-			any_land_province = { limit = { province_id = 112 owner = { is_culture_group = american_cultures } } change_province_name = "포트래러미" state_scope = { change_region_name = "와이오밍주" } }
-			any_land_province = { limit = { province_id = 112 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "샤이엔" state_scope = { change_region_name = "산기슭주" } }
+			any_land_province = { limit = { province_id = 112 owner = { is_culture_group = american_cultures } } change_province_name = "포트래러미"  }
+			any_land_province = { limit = { province_id = 112 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "샤이엔"  }
 
 			# 111
 			any_land_province = { limit = { province_id = 111 owner = { is_culture_group = american_cultures } } change_province_name = "포트보너빌" }
 			any_land_province = { limit = { province_id = 111 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "퐁텐블로" }
 
 			# 83
-			any_land_province = { limit = { province_id = 83 owner = { is_culture_group = american_cultures } } change_province_name = "유진" state_scope = { change_region_name = "오리건주" } }
-			any_land_province = { limit = { province_id = 83 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "외젠" state_scope = { change_region_name = "우리캉주" } }
+			any_land_province = { limit = { province_id = 83 owner = { is_culture_group = american_cultures } } change_province_name = "유진"  }
+			any_land_province = { limit = { province_id = 83 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "외젠"  }
 
 			# 81
 			any_land_province = { limit = { province_id = 81 owner = { is_culture_group = american_cultures } } change_province_name = "포틀랜드" }
@@ -3405,21 +3405,21 @@ country_event = {
 			any_land_province = { limit = { province_id = 82 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "누벨아비뇽" }
 
 			# 91
-			any_land_province = { limit = { province_id = 91 owner = { is_culture_group = american_cultures } } state_scope = { change_region_name = "아이다호주" } }
-			any_land_province = { limit = { province_id = 91 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } state_scope = { change_region_name = "캐스케이디아주" } }
+			any_land_province = { limit = { province_id = 91 owner = { is_culture_group = american_cultures } }  }
+			any_land_province = { limit = { province_id = 91 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } }  }
 
 			# 78
-			any_land_province = { limit = { province_id = 78 owner = { is_culture_group = american_cultures } } change_province_name = "시애틀" state_scope = { change_region_name = "워싱턴주" } }
-			any_land_province = { limit = { province_id = 78 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "생브리외" state_scope = { change_region_name = "남콜롬비주" } }
+			any_land_province = { limit = { province_id = 78 owner = { is_culture_group = american_cultures } } change_province_name = "시애틀"  }
+			any_land_province = { limit = { province_id = 78 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "생브리외"  }
 
 			# 79
 			any_land_province = { limit = { province_id = 79 owner = { is_culture_group = american_cultures } } change_province_name = "올림피아" }
 			any_land_province = { limit = { province_id = 79 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "샤를부르루아얄" }
 
 			# 133
-			any_land_province = { limit = { province_id = 133 owner = { tag = MEX } } change_province_name = "산타아나" state_scope = { change_region_name = "테하스주" } }
-			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = american_cultures } } change_province_name = "오스틴" state_scope = { change_region_name = "텍사스주" } }
-			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = germanic has_global_flag = aquire_texas } } change_province_name = "프리드리히스부르크" state_scope = { change_region_name = "노이나사우주" } }
+			any_land_province = { limit = { province_id = 133 owner = { tag = MEX } } change_province_name = "산타아나"  }
+			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = american_cultures } } change_province_name = "오스틴"  }
+			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = germanic has_global_flag = aquire_texas } } change_province_name = "프리드리히스부르크"  }
 
 			# 43
 			any_land_province = { limit = { province_id = 43 owner = { tag = MEX } } change_province_name = "리오로호" }
@@ -3457,8 +3457,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 3371 owner = { is_culture_group = germanic has_global_flag = aquire_texas } } change_province_name = "카를스하펜" }
 
 			# 2138
-			any_land_province = { limit = { province_id = 2138 owner = { OR = { primary_culture = mexican AND = { accepted_culture = mexican NOT = { has_global_flag = usa_anglify_north_mexico } } } } } change_province_name = "라파스" state_scope = { change_region_name = "바하칼리포르니아주" } }
-			any_land_province = { limit = { province_id = 2138 owner = { is_culture_group = american_cultures OR = { NOT = { accepted_culture = mexican } has_global_flag = usa_anglify_north_mexico } } } change_province_name = "피스빌" state_scope = { change_region_name = "로어캘리포니아주" } }
+			any_land_province = { limit = { province_id = 2138 owner = { OR = { primary_culture = mexican AND = { accepted_culture = mexican NOT = { has_global_flag = usa_anglify_north_mexico } } } } } change_province_name = "라파스"  }
+			any_land_province = { limit = { province_id = 2138 owner = { is_culture_group = american_cultures OR = { NOT = { accepted_culture = mexican } has_global_flag = usa_anglify_north_mexico } } } change_province_name = "피스빌"  }
 
 			# 2139
 			any_land_province = { limit = { province_id = 2139 owner = { OR = { primary_culture = mexican AND = { accepted_culture = mexican NOT = { has_global_flag = usa_anglify_north_mexico } } } } } change_province_name = "바이아데로스앙헬레스" }
@@ -3651,12 +3651,12 @@ country_event = {
 		name = "DBGOPTA20"
 		#Renamings
 			# 2466
-			any_land_province = { limit = { province_id = 2466 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "상보르자" state_scope = { change_region_name = "히우그란지두술주" } }
-			any_land_province = { limit = { province_id = 2466 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "산보르하" state_scope = { change_region_name = "리오그란데델수르주" } }
+			any_land_province = { limit = { province_id = 2466 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "상보르자"  }
+			any_land_province = { limit = { province_id = 2466 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "산보르하"  }
 
 			# 2463
-			any_land_province = { limit = { province_id = 2463 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "포르투알레그리" state_scope = { change_region_name = "히우그란지두술주" } }
-			any_land_province = { limit = { province_id = 2463 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "푸에르토알레그레" state_scope = { change_region_name = "리오그란데델수르주" } }
+			any_land_province = { limit = { province_id = 2463 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "포르투알레그리"  }
+			any_land_province = { limit = { province_id = 2463 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "푸에르토알레그레"  }
 
 			# 2459
 			any_land_province = { limit = { province_id = 2459 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "샤페코" }
@@ -3693,50 +3693,50 @@ country_event = {
 			any_land_province = { limit = { province_id = 2243 owner = { NOT = { OR = { primary_culture = brazilian primary_culture = portuguese } } } } change_province_name = "포트제일란디아" }
 
 			# 2420
-			any_land_province = { limit = { province_id = 2420 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "폰타포랑" state_scope = { change_region_name = "마투그로수주" } }
+			any_land_province = { limit = { province_id = 2420 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "폰타포랑"  }
 			any_land_province = { limit = { province_id = 2420 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "푼타푸라" }
 
 			# 2340
-			any_land_province = { limit = { province_id = 2340 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "아순상" state_scope = { change_region_name = "파라과이주" } }
-			any_land_province = { limit = { province_id = 2340 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "아순시온" state_scope = { change_region_name = "파라과이주" } }
+			any_land_province = { limit = { province_id = 2340 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "아순상"  }
+			any_land_province = { limit = { province_id = 2340 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "아순시온"  }
 
 			# 2339
-			any_land_province = { limit = { province_id = 2339 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "필라르" state_scope = { change_region_name = "파라과이주" } }
-			any_land_province = { limit = { province_id = 2339 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "비야델필라르" state_scope = { change_region_name = "파라과이주" } }
+			any_land_province = { limit = { province_id = 2339 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "필라르"  }
+			any_land_province = { limit = { province_id = 2339 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "비야델필라르"  }
 
 			# 2341
-			any_land_province = { limit = { province_id = 2341 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "이타푸아" state_scope = { change_region_name = "미시오네 오코덴탈레스주" } }
-			any_land_province = { limit = { province_id = 2341 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "아눈시아시온데이타푸아" state_scope = { change_region_name = "미시오네 오코덴탈레스주" } }
+			any_land_province = { limit = { province_id = 2341 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "이타푸아"  }
+			any_land_province = { limit = { province_id = 2341 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "아눈시아시온데이타푸아"  }
 
 			# 2342
-			any_land_province = { limit = { province_id = 2342 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "콘세이상" state_scope = { change_region_name = "파라과이주" } }
-			any_land_province = { limit = { province_id = 2342 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "비야레알델라콘셉시온" state_scope = { change_region_name = "파라과이주" } }
+			any_land_province = { limit = { province_id = 2342 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "콘세이상"  }
+			any_land_province = { limit = { province_id = 2342 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "비야레알델라콘셉시온"  }
 
 			# 2344
-			any_land_province = { limit = { province_id = 2344 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "몬테비데우" state_scope = { change_region_name = "시스플라티나주" } }
-			any_land_province = { limit = { province_id = 2344 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "몬테비데오" state_scope = { change_region_name = "우루과이주" } }
+			any_land_province = { limit = { province_id = 2344 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "몬테비데우"  }
+			any_land_province = { limit = { province_id = 2344 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "몬테비데오"  }
 
 			# 2345
-			any_land_province = { limit = { province_id = 2345 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "살토" state_scope = { change_region_name = "시스플라티나주" } }
-			any_land_province = { limit = { province_id = 2345 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "살토오리엔탈" state_scope = { change_region_name = "우루과이주" } }
+			any_land_province = { limit = { province_id = 2345 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "살토"  }
+			any_land_province = { limit = { province_id = 2345 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "살토오리엔탈"  }
 
 			# 2346
-			any_land_province = { limit = { province_id = 2346 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "상프루투오주" state_scope = { change_region_name = "시스플라티나주" } }
+			any_land_province = { limit = { province_id = 2346 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "상프루투오주"  }
 
 			# 2446
-			any_land_province = { limit = { province_id = 2346 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "산프룩투오소" state_scope = { change_region_name = "우루과이주" } }
+			any_land_province = { limit = { province_id = 2346 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "산프룩투오소"  }
 
 			# 2356
-			any_land_province = { limit = { province_id = 2356 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "산후안데베라데라스시에테코리엔테스" state_scope = { change_region_name = "코리엔테스주" } }
-			any_land_province = { limit = { province_id = 2356 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "세치코헨치스" state_scope = { change_region_name = "코헨치스주" } }
+			any_land_province = { limit = { province_id = 2356 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "산후안데베라데라스시에테코리엔테스"  }
+			any_land_province = { limit = { province_id = 2356 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "세치코헨치스"  }
 
 			# 2357
-			any_land_province = { limit = { province_id = 2357 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "누에스트라세뇨라델필라르데쿠루수쿠아티아" state_scope = { change_region_name = "코리엔테스주" } }
-			any_land_province = { limit = { province_id = 2357 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "쿠루수쿠아티아" state_scope = { change_region_name = "코헨치스주" } }
+			any_land_province = { limit = { province_id = 2357 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "누에스트라세뇨라델필라르데쿠루수쿠아티아"  }
+			any_land_province = { limit = { province_id = 2357 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "쿠루수쿠아티아"  }
 
 			# 2358
-			any_land_province = { limit = { province_id = 2358 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "라크루스" state_scope = { change_region_name = "코리엔테스주" } }
-			any_land_province = { limit = { province_id = 2358 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "크루스" state_scope = { change_region_name = "코헨치스주" } }
+			any_land_province = { limit = { province_id = 2358 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "라크루스"  }
+			any_land_province = { limit = { province_id = 2358 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "크루스"  }
 
 			# 2131
 			any_land_province = { limit = { province_id = 2131 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "말비나스 제도" }

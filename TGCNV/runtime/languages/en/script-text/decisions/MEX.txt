@@ -597,7 +597,7 @@ political_decisions = {
 				CLM_1723 = { remove_core = GCO }
 				2205 = { remove_core = GCO }
 			}
-			1723 = { state_scope = { change_region_name = "Panama Province" } }
+			1723 = {  }
 		}
 
 		ai_will_do = { factor = 1 }
@@ -1604,7 +1604,7 @@ political_decisions = {
 				83 = { add_province_modifier = { name = recently_built_city duration = 1825 } }
 				84 = {
 					change_province_name = "Sacramento"
-					state_scope = { change_region_name = "Alta California Province" }
+					
 				}
 				85 = { change_province_name = "Santa Rosa" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				86 = { change_province_name = "Lagos Claros" }
@@ -1614,10 +1614,10 @@ political_decisions = {
 				104 = { change_province_name = "San Francisco" }
 				3366 = { change_province_name = "Sonoma" }
 			#Nevada
-				94 = { change_province_name = "Aztlan" state_scope = { change_region_name = "Sierra Nevada Province" } }
+				94 = { change_province_name = "Aztlan"  }
 				96 = { add_province_modifier = { name = recently_built_city duration = 1825 } }
 			#Utah
-				97 = { add_province_modifier = { name = recently_built_city duration = 1825 } state_scope = { change_region_name = "Quintana Province" } }
+				97 = { add_province_modifier = { name = recently_built_city duration = 1825 }  }
 			#Florida
 				194 = { change_province_name = "Najacuta" }
 				197 = { change_province_name = "Almonte" }
@@ -1625,18 +1625,18 @@ political_decisions = {
 				200 = { change_province_name = "Nueva Miramar" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				3407 = { change_province_name = "Fuerte Mejia" }
 			#Oregon
-				81 = { change_province_name = "Ciudad Iturbide" state_scope = { change_region_name = "Carlotta Province" } }
+				81 = { change_province_name = "Ciudad Iturbide"  }
 				82 = { change_province_name = "Miralago" }
 				83 = { change_province_name = "Mondragon" }
 			#Arizona
-				100 = { change_province_name = "Fenix" state_scope = { change_region_name = "Arizona Province" } add_province_modifier = { name = recently_built_city duration = 1825 } }
+				100 = { change_province_name = "Fenix"  add_province_modifier = { name = recently_built_city duration = 1825 } }
 				101 = { change_province_name = "Nezahuac" }
 				102 = { change_province_name = "La Mesilla" }
 				3367 = { change_province_name = "Silla Real" }
 			#New Mexico
 				38 = { change_province_name = "Platina" }
 				109 = { change_province_name = "Guadalupe" }
-				2631 = { change_province_name = "Los Rios" state_scope = { change_region_name = "Nuevo Mexico Province" } }
+				2631 = { change_province_name = "Los Rios"  }
 				2662 = { change_province_name = "Cerro Azul" }
 			## Texas ##
 				any_owned = { limit = { OR = {
@@ -1657,31 +1657,31 @@ political_decisions = {
 			## Mexico ##
 				2168 = { change_province_name = "Autlan" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				2171 = { change_province_name = "Valladolid" add_province_modifier = { name = recently_built_city duration = 1825 }  }
-				2187 = { change_province_name = "Belice" state_scope = { change_region_name = "Belice Province" } }
+				2187 = { change_province_name = "Belice"  }
 				2163 = { change_province_name = "Orizaba-Xalapa" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				2154 = { change_province_name = "San Juan del Rio" }
 				2178 = { change_province_name = "Exutla" }
 				2144 = { change_province_name = "Ciudad Miramon" }
 				2143 = { change_province_name = "Ciudad Lorena" add_province_modifier = { name = recently_built_city duration = 1825 } }
 			## Cuba ##
-				2209 = { state_scope = { change_region_name = "Cuba Occidental Province" } }
-				2211 = { state_scope = { change_region_name = "Cuba Oriental Province" } }
+				2209 = {  }
+				2211 = {  }
 			## Hispaniola ##
 				2215 = {  }
 				2216 = {  }
 			## Washington ##
-				78 = { change_province_name = "Huatulco" state_scope = { change_region_name = "Aramburu Province" } }
+				78 = { change_province_name = "Huatulco"  }
 				79 = { change_province_name = "Nueva Aramburu" }
 				80 = { change_province_name = "Virreyes" }
 			## Wyoming ##
 				107 = { change_province_name = "Pangolin" }
-				110 = { change_province_name = "Verdad y Paz" state_scope = { change_region_name = "Marzahn Province" } }
+				110 = { change_province_name = "Verdad y Paz"  }
 				111 = { change_province_name = "Vertrina" }
 				112 = { change_province_name = "Ciudad Mendoza" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				113 = { change_province_name = "Leopolis" }
 			## Idaho ##
 				91 = { change_province_name = "Tudos" }
-				92 = { change_province_name = "Araujo" state_scope = { change_region_name = "Lothringen Province (North America)" } }
+				92 = { change_province_name = "Araujo"  }
 				93 = { change_province_name = "Quiroge" }
 			## Montana ##
 				114 = { change_province_name = "Herzfeld" }
@@ -1690,7 +1690,7 @@ political_decisions = {
 			## North Dakota ##
 				117 = { change_province_name = "Nueva Tervuren" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				118 = { change_province_name = "Der Smissen" }
-				119 = { change_province_name = "Union y Libertad" state_scope = { change_region_name = "Nor Dakota Province" } }
+				119 = { change_province_name = "Union y Libertad"  }
 			## South Dakota ##
 				120 = { change_province_name = "Ciudad Sioux" HXP_120 = { add_province_modifier = { name = recently_built_city duration = 1825 } } }
 				121 = { change_province_name = "Ciudad Rapida" }
@@ -1711,7 +1711,7 @@ political_decisions = {
 				3406 = { change_province_name = "Heorica Andrea" }
 			## Louisiana ##
 				139 = { change_province_name = "Nueva Orleans" }
-				141 = { change_province_name = "Coburgo" state_scope = { change_region_name = "Luisiana Province" } add_province_modifier = { name = recently_built_city duration = 1825 } }
+				141 = { change_province_name = "Coburgo"  add_province_modifier = { name = recently_built_city duration = 1825 } }
 				142 = { change_province_name = "Madele" }
 				157 = { change_province_name = "Ogden" }
 			## Arkansas ##
@@ -1722,7 +1722,7 @@ political_decisions = {
 				146 = { change_province_name = "San Luis" }
 				147 = { change_province_name = "Napomuceno" }
 				148 = { change_province_name = "Amalia" }
-				149 = { change_province_name = "Nuevo Habsburgo" state_scope = { change_region_name = "Missuri Province" } add_province_modifier = { name = recently_built_city duration = 1825 } }
+				149 = { change_province_name = "Nuevo Habsburgo"  add_province_modifier = { name = recently_built_city duration = 1825 } }
 				150 = { change_province_name = "Kansas" }
 			## Iowa ##
 				151 = { change_province_name = "Owote" }

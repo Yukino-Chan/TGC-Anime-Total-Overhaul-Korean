@@ -151,7 +151,7 @@ political_decisions = {
 			money = -300000
 			133 = {
 				change_province_name = "프리드리히스부르크"
-				state_scope = { change_region_name = "노이나사우주" }
+				
 			}
 			134 = { change_province_name = "비브리히" }
 			137 = { change_province_name = "노이브라운펠스" }
@@ -244,7 +244,7 @@ political_decisions = {
 			}
 			2209 = {
 				change_province_name = "하펜슈타트"
-				state_scope = { change_region_name = "크론프린츠섬주" }
+				
 			}
 			44 = { change_province_name = "크라카우만" }
 			2212 = { change_province_name = "알러하일리겐만" }
@@ -304,7 +304,7 @@ political_decisions = {
 			inherit = ADV
 			133 = {
 				change_province_name = "오스틴"
-				state_scope = { change_region_name = "텍사스주" }
+				
 			}
 			132 = { change_province_name = "휴스턴" }
 			137 = { change_province_name = "샌안토니오" }
@@ -347,7 +347,7 @@ political_decisions = {
 			inherit = KRO
 			2209 = {
 				change_province_name = "아바나"
-				state_scope = { change_region_name = "쿠바주" }
+				
 			}
 			44 = { change_province_name = "에코베이" }
 			2212 = { change_province_name = "산티아고" }

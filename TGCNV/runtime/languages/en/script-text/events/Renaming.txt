@@ -3225,7 +3225,7 @@ country_event = {
 			any_land_province = { limit = { province_id = 3409 owner = { primary_culture = japanese } } change_province_name = "Baro" }
 
 			# 46
-			any_land_province = { limit = { province_id = 46 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } } state_scope = { change_region_name = "Sud de l'Ontario Province" } }
+			any_land_province = { limit = { province_id = 46 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } }  }
 
 			# 47
 			any_land_province = { limit = { province_id = 47 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } } }  }
@@ -3257,8 +3257,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 15 owner = { OR = { is_culture_group = pan_french primary_culture = french_canadian primary_culture = acadian primary_culture = cajun } OR = { has_country_flag = 2nd_monarchygov has_country_flag = 2nd_republicgov } } } change_province_name = "Bourbon" }
 
 			# 139
-			any_land_province = { limit = { province_id = 139 owner = { is_culture_group = american_cultures } } change_province_name = "New Orleans" state_scope = { change_region_name = "Louisiana Province" } }
-			any_land_province = { limit = { province_id = 139 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Nouvelle-Orleans" state_scope = { change_region_name = "Basse-Louisiane Province" } }
+			any_land_province = { limit = { province_id = 139 owner = { is_culture_group = american_cultures } } change_province_name = "New Orleans"  }
+			any_land_province = { limit = { province_id = 139 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Nouvelle-Orleans"  }
 
 			# 140
 			any_land_province = { limit = { province_id = 140 owner = { is_culture_group = american_cultures } } change_province_name = "Baton Rouge" }
@@ -3273,8 +3273,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 142 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Madele" }
 
 			# 143
-			any_land_province = { limit = { province_id = 143 owner = { is_culture_group = american_cultures } } change_province_name = "Little Rock" state_scope = { change_region_name = "Arkansas Province" } }
-			any_land_province = { limit = { province_id = 143 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Chevreuils" state_scope = { change_region_name = "Arkansas Province" } }
+			any_land_province = { limit = { province_id = 143 owner = { is_culture_group = american_cultures } } change_province_name = "Little Rock"  }
+			any_land_province = { limit = { province_id = 143 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Chevreuils"  }
 
 			# 144
 			any_land_province = { limit = { province_id = 144 owner = { is_culture_group = american_cultures } } change_province_name = "Hotsprings" }
@@ -3305,8 +3305,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 150 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Lafayette" }
 
 			# 154
-			any_land_province = { limit = { province_id = 154 owner = { is_culture_group = american_cultures } } change_province_name = "Sioux City" state_scope = { change_region_name = "Iowa Province" } }
-			any_land_province = { limit = { province_id = 154 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Aiaouez" state_scope = { change_region_name = "Haute-Louisiane Province" } }
+			any_land_province = { limit = { province_id = 154 owner = { is_culture_group = american_cultures } } change_province_name = "Sioux City"  }
+			any_land_province = { limit = { province_id = 154 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Aiaouez"  }
 
 			# 152
 			any_land_province = { limit = { province_id = 152 owner = { is_culture_group = american_cultures } } change_province_name = "Oskaloosa" }
@@ -3317,16 +3317,16 @@ country_event = {
 			any_land_province = { limit = { province_id = 153 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Cedre Rapides" }
 
 			# 126
-			any_land_province = { limit = { province_id = 126 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Leavenworth" state_scope = { change_region_name = "Kansas Province" } }
-			any_land_province = { limit = { province_id = 126 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Canfez" state_scope = { change_region_name = "Cansez Province" } }
+			any_land_province = { limit = { province_id = 126 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Leavenworth"  }
+			any_land_province = { limit = { province_id = 126 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Canfez"  }
 
 			# 127
 			any_land_province = { limit = { province_id = 127 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Mann" }
 			any_land_province = { limit = { province_id = 127 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Grinaiches" }
 
 			# 124
-			any_land_province = { limit = { province_id = 124 owner = { is_culture_group = american_cultures } } change_province_name = "Bordeaux's Post" state_scope = { change_region_name = "Nebraska Province" } }
-			any_land_province = { limit = { province_id = 124 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Bordeaux'Baptisteville" state_scope = { change_region_name = "Eau-Platte Province" } }
+			any_land_province = { limit = { province_id = 124 owner = { is_culture_group = american_cultures } } change_province_name = "Bordeaux's Post"  }
+			any_land_province = { limit = { province_id = 124 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Bordeaux'Baptisteville"  }
 
 			# 123
 			any_land_province = { limit = { province_id = 123 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Robidoux" }
@@ -3361,8 +3361,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 122 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Pierreville" }
 
 			# 117
-			any_land_province = { limit = { province_id = 117 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Clark" state_scope = { change_region_name = "North Dakota Province" } }
-			any_land_province = { limit = { province_id = 117 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Ouidaou" state_scope = { change_region_name = "North Dakota Province" } }
+			any_land_province = { limit = { province_id = 117 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Clark"  }
+			any_land_province = { limit = { province_id = 117 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Ouidaou"  }
 
 			# 118
 			any_land_province = { limit = { province_id = 118 owner = { is_culture_group = american_cultures } } change_province_name = "Fort James" }
@@ -3373,8 +3373,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 119 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Mentous" }
 
 			# 116
-			any_land_province = { limit = { province_id = 116 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Clark" state_scope = { change_region_name = "Montana Province" } }
-			any_land_province = { limit = { province_id = 116 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Montagneville" state_scope = { change_region_name = "Assiniboine Province" } }
+			any_land_province = { limit = { province_id = 116 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Clark"  }
+			any_land_province = { limit = { province_id = 116 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Montagneville"  }
 
 			# 114
 			any_land_province = { limit = { province_id = 114 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Owen" }
@@ -3385,16 +3385,16 @@ country_event = {
 			any_land_province = { limit = { province_id = 115 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Rance" }
 
 			# 112
-			any_land_province = { limit = { province_id = 112 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Laramie" state_scope = { change_region_name = "Wyoming Province" } }
-			any_land_province = { limit = { province_id = 112 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Cheyenne" state_scope = { change_region_name = "Contreforts Province" } }
+			any_land_province = { limit = { province_id = 112 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Laramie"  }
+			any_land_province = { limit = { province_id = 112 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Cheyenne"  }
 
 			# 111
 			any_land_province = { limit = { province_id = 111 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Bonneville" }
 			any_land_province = { limit = { province_id = 111 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Fontainebleau" }
 
 			# 83
-			any_land_province = { limit = { province_id = 83 owner = { is_culture_group = american_cultures } } change_province_name = "Eugene" state_scope = { change_region_name = "Oregon Province" } }
-			any_land_province = { limit = { province_id = 83 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Eugene" state_scope = { change_region_name = "Ourican Province" } }
+			any_land_province = { limit = { province_id = 83 owner = { is_culture_group = american_cultures } } change_province_name = "Eugene"  }
+			any_land_province = { limit = { province_id = 83 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Eugene"  }
 
 			# 81
 			any_land_province = { limit = { province_id = 81 owner = { is_culture_group = american_cultures } } change_province_name = "Portland" }
@@ -3405,21 +3405,21 @@ country_event = {
 			any_land_province = { limit = { province_id = 82 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Nouvelle-Avignon" }
 
 			# 91
-			any_land_province = { limit = { province_id = 91 owner = { is_culture_group = american_cultures } } state_scope = { change_region_name = "Idaho Province" } }
-			any_land_province = { limit = { province_id = 91 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } state_scope = { change_region_name = "Cascadia Province" } }
+			any_land_province = { limit = { province_id = 91 owner = { is_culture_group = american_cultures } }  }
+			any_land_province = { limit = { province_id = 91 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } }  }
 
 			# 78
-			any_land_province = { limit = { province_id = 78 owner = { is_culture_group = american_cultures } } change_province_name = "Seattle" state_scope = { change_region_name = "Washington Province" } }
-			any_land_province = { limit = { province_id = 78 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "St Brieux" state_scope = { change_region_name = "Colombie du Sud Province" } }
+			any_land_province = { limit = { province_id = 78 owner = { is_culture_group = american_cultures } } change_province_name = "Seattle"  }
+			any_land_province = { limit = { province_id = 78 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "St Brieux"  }
 
 			# 79
 			any_land_province = { limit = { province_id = 79 owner = { is_culture_group = american_cultures } } change_province_name = "Olympia" }
 			any_land_province = { limit = { province_id = 79 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Charlesbourg-Royal" }
 
 			# 133
-			any_land_province = { limit = { province_id = 133 owner = { tag = MEX } } change_province_name = "Santa Anna" state_scope = { change_region_name = "Tejas Province" } }
-			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = american_cultures } } change_province_name = "Austin" state_scope = { change_region_name = "Texas Province" } }
-			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = germanic has_global_flag = aquire_texas } } change_province_name = "Friedrichsburg" state_scope = { change_region_name = "Neu Nassau Province" } }
+			any_land_province = { limit = { province_id = 133 owner = { tag = MEX } } change_province_name = "Santa Anna"  }
+			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = american_cultures } } change_province_name = "Austin"  }
+			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = germanic has_global_flag = aquire_texas } } change_province_name = "Friedrichsburg"  }
 
 			# 43
 			any_land_province = { limit = { province_id = 43 owner = { tag = MEX } } change_province_name = "Rio Rojo" }
@@ -3457,8 +3457,8 @@ country_event = {
 			any_land_province = { limit = { province_id = 3371 owner = { is_culture_group = germanic has_global_flag = aquire_texas } } change_province_name = "Carlshafen" }
 
 			# 2138
-			any_land_province = { limit = { province_id = 2138 owner = { OR = { primary_culture = mexican AND = { accepted_culture = mexican NOT = { has_global_flag = usa_anglify_north_mexico } } } } } change_province_name = "La Paz" state_scope = { change_region_name = "Baja California Province" } }
-			any_land_province = { limit = { province_id = 2138 owner = { is_culture_group = american_cultures OR = { NOT = { accepted_culture = mexican } has_global_flag = usa_anglify_north_mexico } } } change_province_name = "Peaceville" state_scope = { change_region_name = "Lower California Province" } }
+			any_land_province = { limit = { province_id = 2138 owner = { OR = { primary_culture = mexican AND = { accepted_culture = mexican NOT = { has_global_flag = usa_anglify_north_mexico } } } } } change_province_name = "La Paz"  }
+			any_land_province = { limit = { province_id = 2138 owner = { is_culture_group = american_cultures OR = { NOT = { accepted_culture = mexican } has_global_flag = usa_anglify_north_mexico } } } change_province_name = "Peaceville"  }
 
 			# 2139
 			any_land_province = { limit = { province_id = 2139 owner = { OR = { primary_culture = mexican AND = { accepted_culture = mexican NOT = { has_global_flag = usa_anglify_north_mexico } } } } } change_province_name = "Bahia de los Angeles" }
@@ -3651,12 +3651,12 @@ country_event = {
 		name = "DBGOPTA20"
 		#Renamings
 			# 2466
-			any_land_province = { limit = { province_id = 2466 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Sao Borja" state_scope = { change_region_name = "Rio Grande do Sul Province" } }
-			any_land_province = { limit = { province_id = 2466 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "San Borja" state_scope = { change_region_name = "Rio Grande del Sur Province" } }
+			any_land_province = { limit = { province_id = 2466 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Sao Borja"  }
+			any_land_province = { limit = { province_id = 2466 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "San Borja"  }
 
 			# 2463
-			any_land_province = { limit = { province_id = 2463 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Porto Alegre" state_scope = { change_region_name = "Rio Grande do Sul Province" } }
-			any_land_province = { limit = { province_id = 2463 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Puerto Alegre" state_scope = { change_region_name = "Rio Grande del Sur Province" } }
+			any_land_province = { limit = { province_id = 2463 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Porto Alegre"  }
+			any_land_province = { limit = { province_id = 2463 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Puerto Alegre"  }
 
 			# 2459
 			any_land_province = { limit = { province_id = 2459 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Chapeco" }
@@ -3693,50 +3693,50 @@ country_event = {
 			any_land_province = { limit = { province_id = 2243 owner = { NOT = { OR = { primary_culture = brazilian primary_culture = portuguese } } } } change_province_name = "Fort Zeelandia" }
 
 			# 2420
-			any_land_province = { limit = { province_id = 2420 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Ponta Pora" state_scope = { change_region_name = "Mato Grosso Province" } }
+			any_land_province = { limit = { province_id = 2420 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Ponta Pora"  }
 			any_land_province = { limit = { province_id = 2420 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Punta Pura" }
 
 			# 2340
-			any_land_province = { limit = { province_id = 2340 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Assuncao" state_scope = { change_region_name = "Paraguay Province" } }
-			any_land_province = { limit = { province_id = 2340 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Asuncion" state_scope = { change_region_name = "Paraguay Province" } }
+			any_land_province = { limit = { province_id = 2340 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Assuncao"  }
+			any_land_province = { limit = { province_id = 2340 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Asuncion"  }
 
 			# 2339
-			any_land_province = { limit = { province_id = 2339 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Pilar" state_scope = { change_region_name = "Paraguay Province" } }
-			any_land_province = { limit = { province_id = 2339 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Villa del Pilar" state_scope = { change_region_name = "Paraguay Province" } }
+			any_land_province = { limit = { province_id = 2339 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Pilar"  }
+			any_land_province = { limit = { province_id = 2339 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Villa del Pilar"  }
 
 			# 2341
-			any_land_province = { limit = { province_id = 2341 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Itapua" state_scope = { change_region_name = "Misiones Occidentales Province" } }
-			any_land_province = { limit = { province_id = 2341 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Anunciacion de Itapua" state_scope = { change_region_name = "Misiones Occidentales Province" } }
+			any_land_province = { limit = { province_id = 2341 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Itapua"  }
+			any_land_province = { limit = { province_id = 2341 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Anunciacion de Itapua"  }
 
 			# 2342
-			any_land_province = { limit = { province_id = 2342 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Conceicao" state_scope = { change_region_name = "Paraguay Province" } }
-			any_land_province = { limit = { province_id = 2342 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Villa Real de la Concepcion" state_scope = { change_region_name = "Paraguay Province" } }
+			any_land_province = { limit = { province_id = 2342 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Conceicao"  }
+			any_land_province = { limit = { province_id = 2342 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Villa Real de la Concepcion"  }
 
 			# 2344
-			any_land_province = { limit = { province_id = 2344 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Montevideu" state_scope = { change_region_name = "Cisplatina Province" } }
-			any_land_province = { limit = { province_id = 2344 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Montevideo" state_scope = { change_region_name = "Uruguay Province" } }
+			any_land_province = { limit = { province_id = 2344 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Montevideu"  }
+			any_land_province = { limit = { province_id = 2344 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Montevideo"  }
 
 			# 2345
-			any_land_province = { limit = { province_id = 2345 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Salto" state_scope = { change_region_name = "Cisplatina Province" } }
-			any_land_province = { limit = { province_id = 2345 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Salto Oriental" state_scope = { change_region_name = "Uruguay Province" } }
+			any_land_province = { limit = { province_id = 2345 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Salto"  }
+			any_land_province = { limit = { province_id = 2345 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Salto Oriental"  }
 
 			# 2346
-			any_land_province = { limit = { province_id = 2346 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Sao Frutuoso" state_scope = { change_region_name = "Cisplatina Province" } }
+			any_land_province = { limit = { province_id = 2346 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Sao Frutuoso"  }
 
 			# 2446
-			any_land_province = { limit = { province_id = 2346 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "San Fructuoso" state_scope = { change_region_name = "Uruguay Province" } }
+			any_land_province = { limit = { province_id = 2346 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "San Fructuoso"  }
 
 			# 2356
-			any_land_province = { limit = { province_id = 2356 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "San Juan de Vera de las Siete Corrientes" state_scope = { change_region_name = "Corrientes Province" } }
-			any_land_province = { limit = { province_id = 2356 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Sete Correntes" state_scope = { change_region_name = "Correntes Province" } }
+			any_land_province = { limit = { province_id = 2356 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "San Juan de Vera de las Siete Corrientes"  }
+			any_land_province = { limit = { province_id = 2356 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Sete Correntes"  }
 
 			# 2357
-			any_land_province = { limit = { province_id = 2357 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Nuestra Senora del Pilar de Curuzu Cuatia" state_scope = { change_region_name = "Corrientes Province" } }
-			any_land_province = { limit = { province_id = 2357 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Curuzu Cuatia" state_scope = { change_region_name = "Correntes Province" } }
+			any_land_province = { limit = { province_id = 2357 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Nuestra Senora del Pilar de Curuzu Cuatia"  }
+			any_land_province = { limit = { province_id = 2357 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Curuzu Cuatia"  }
 
 			# 2358
-			any_land_province = { limit = { province_id = 2358 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "La Cruz" state_scope = { change_region_name = "Corrientes Province" } }
-			any_land_province = { limit = { province_id = 2358 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Cruz" state_scope = { change_region_name = "Correntes Province" } }
+			any_land_province = { limit = { province_id = 2358 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "La Cruz"  }
+			any_land_province = { limit = { province_id = 2358 owner = { OR = { primary_culture = brazilian primary_culture = portuguese } } } change_province_name = "Cruz"  }
 
 			# 2131
 			any_land_province = { limit = { province_id = 2131 owner = { OR = { primary_culture = spanish AND = { is_culture_group = latin_american_cultures NOT = { primary_culture = brazilian } } } } } change_province_name = "Islas Malvinas" }

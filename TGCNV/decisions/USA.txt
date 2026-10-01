@@ -759,7 +759,7 @@ political_decisions = {
 				random_owned = {
 					limit = { province_id = 84 NOT = { has_global_flag = american_frontier_84 } }
 					change_province_name = "새크라멘토"
-					state_scope = { change_region_name = "캘리포니아주" }
+					
 					set_global_flag = american_frontier_84
 				}
 				random_owned = {
@@ -806,7 +806,7 @@ political_decisions = {
 				random_owned = {
 					limit = { province_id = 92 NOT = { has_global_flag = american_frontier_92 } }
 					change_province_name = "보이시"
-					state_scope = { change_region_name = "아이다호주" }
+					
 					set_global_flag = american_frontier_92
 				}
 				random_owned = {
@@ -817,14 +817,14 @@ political_decisions = {
 			## Nevada ##
 				random_owned = {
 					limit = { province_id = 96 NOT = { has_global_flag = american_frontier_96 } }
-					state_scope = { change_region_name = "네바다주" }
+					
 					add_province_modifier = { name = recently_built_city duration = 730 }
 					set_global_flag = american_frontier_96
 				}
 			## Utah ##
 				random_owned = {
 					limit = { province_id = 97 NOT = { has_global_flag = american_frontier_97 } }
-					state_scope = { change_region_name = "유타주" }
+					
 					add_province_modifier = { name = recently_built_city duration = 730 }
 					set_global_flag = american_frontier_97
 				}
@@ -832,7 +832,7 @@ political_decisions = {
 				random_owned = {
 					limit = { province_id = 100 NOT = { has_global_flag = american_frontier_100 } }
 					change_province_name = "피닉스"
-					state_scope = { change_region_name = "애리조나주" }
+					
 					set_global_flag = american_frontier_100
 				}
 				random_owned = {
@@ -854,7 +854,7 @@ political_decisions = {
 				random_owned = {
 					limit = { province_id = 38 NOT = { has_global_flag = american_frontier_38 } }
 					change_province_name = "실버시티"
-					state_scope = { change_region_name = "뉴멕시코주" }
+					
 					set_global_flag = american_frontier_38
 				}
 				random_owned = {

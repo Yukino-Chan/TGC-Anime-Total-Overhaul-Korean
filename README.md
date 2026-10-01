@@ -25,7 +25,7 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-이 배포는 사용자 승인 실험판입니다. 파일·서명·설치 도구 검증은 마쳤지만 장기 캠페인 안정성은 검증하지 않았습니다. 멀티플레이는 모든 참가자가 같은 배포를 설치해야 합니다. 프로빈스 재편 이전 지도에서 만든 세이브는 호환되지 않으므로 새 캠페인으로 시작해야 합니다. 이번 파일명·문서 정리는 게임 데이터를 바꾸지 않습니다.
+이 배포는 사용자 승인 실험판입니다. 파일·서명·설치 도구 검증은 마쳤지만 장기 캠페인 안정성은 검증하지 않았습니다. 멀티플레이는 모든 참가자가 같은 배포를 설치해야 합니다. 프로빈스 재편 이전 지도에서 만든 세이브는 호환되지 않으므로 새 캠페인으로 시작해야 합니다. 이번 배포에는 지도·주 배정, 수도 랜드마크·글꼴·로딩 화면과 이에 맞춘 한국어·영어 옵션이 포함됩니다.
 
 ## 제작자, 출처와 권리
 
@@ -97,6 +97,6 @@ The ZIPs and repository folders that contain the mod sources are not installers.
 
 ### Compatibility and verification
 
-The current mod uses a rebuilt province layout. Campaigns created before that layout change are incompatible and are not converted: start a fresh campaign when migrating from an older layout. A packaging or documentation-only revision does not itself change the game data. Everyone in a multiplayer session must use the same build. Long campaigns, reloading saves, and multiplayer have not been fully verified. Victoria II itself remains a 32-bit game, and the helper processes used by the tools do not turn it into a fully 64-bit engine.
+The current mod uses a rebuilt province layout. Campaigns created before that layout change are incompatible and are not converted: start a fresh campaign when migrating from an older layout. This release also updates state assignments and province boundaries, capital landmarks, fonts, loading art, and the matching Korean/English language files. Everyone in a multiplayer session must use the same build. Long campaigns, reloading saves, and multiplayer have not been fully verified. Victoria II itself remains a 32-bit game, and the helper processes used by the tools do not turn it into a fully 64-bit engine.
 
 The online updater authenticates signed metadata and checks downloaded file hashes before installation. For an offline archive, compare its SHA-256 with the trusted accompanying checksum and run Verify.cmd after extraction. If a check fails, keep the downloaded file and the error log, and do not hand-mix files from different packages; download again from the official release instead. If Windows denies write access, run the tool as administrator under the same Windows account so that its Documents profile stays the same.

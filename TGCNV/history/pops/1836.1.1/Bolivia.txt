@@ -268,6 +268,122 @@ farmers = {
 		religion = animist
 		size = 2000
 	}
+
+aristocrats = {
+		culture = bolivian
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 2
+	}
+farmers = {
+		culture = bolivian
+		religion = catholic
+		size = 9
+	}
+artisans = {
+		culture = guarani
+		religion = animist
+		size = 4
+	}
+soldiers = {
+		culture = guarani
+		religion = animist
+		size = 2
+	}
+farmers = {
+		culture = guarani
+		religion = animist
+		size = 23
+	}
+farmers = {
+		culture = aimara
+		religion = animist
+		size = 7
+	}
+farmers = {
+		culture = quechua
+		religion = animist
+		size = 4
+	}
+aristocrats = {
+		culture = bolivian
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 4
+	}
+soldiers = {
+		culture = bolivian
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = bolivian
+		religion = catholic
+		size = 18
+	}
+clergymen = {
+		culture = guarani
+		religion = animist
+		size = 1
+	}
+artisans = {
+		culture = guarani
+		religion = animist
+		size = 8
+	}
+soldiers = {
+		culture = guarani
+		religion = animist
+		size = 3
+	}
+farmers = {
+		culture = guarani
+		religion = animist
+		size = 49
+	}
+farmers = {
+		culture = aimara
+		religion = animist
+		size = 15
+	}
+farmers = {
+		culture = quechua
+		religion = animist
+		size = 9
+	}
+aristocrats = {
+		culture = bolivian
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 2
+	}
+farmers = {
+		culture = bolivian
+		religion = catholic
+		size = 8
+	}
+artisans = {
+		culture = guarani
+		religion = animist
+		size = 4
+	}
+farmers = {
+		culture = guarani
+		religion = animist
+		size = 19
+	}
 }
 
 2314 = {
@@ -316,65 +432,55 @@ farmers = {
 		religion = animist
 		size = 7000
 	}
-}
 
-2315 = {
 aristocrats = {
 		culture = bolivian
 		religion = catholic
-		size = 100
+		size = 2
 	}
 clergymen = {
 		culture = bolivian
 		religion = catholic
-		size = 25
+		size = 1
 	}
 artisans = {
 		culture = bolivian
 		religion = catholic
-		size = 300
+		size = 23
 	}
 soldiers = {
 		culture = bolivian
 		religion = catholic
-		size = 75
+		size = 5
 	}
 farmers = {
 		culture = bolivian
 		religion = catholic
-		size = 1499
+		size = 156
 	}
 clergymen = {
-		culture = guarani
+		culture = aimara
 		religion = animist
-		size = 50
+		size = 1
 	}
 artisans = {
-		culture = guarani
+		culture = aimara
 		religion = animist
-		size = 700
+		size = 65
 	}
 soldiers = {
-		culture = guarani
+		culture = aimara
 		religion = animist
-		size = 250
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 3996
+		size = 18
 	}
 farmers = {
 		culture = aimara
 		religion = animist
-		size = 1249
-	}
-farmers = {
-		culture = quechua
-		religion = animist
-		size = 750
+		size = 182
 	}
 }
+
+
 
 2316 = {
 aristocrats = {
@@ -896,111 +1002,9 @@ farmers = {
 	}
 }
 
-5861 = {
-aristocrats = {
-		culture = bolivian
-		religion = catholic
-		size = 100
-	}
-clergymen = {
-		culture = bolivian
-		religion = catholic
-		size = 50
-	}
-artisans = {
-		culture = bolivian
-		religion = catholic
-		size = 900
-	}
-soldiers = {
-		culture = bolivian
-		religion = catholic
-		size = 200
-	}
-farmers = {
-		culture = bolivian
-		religion = catholic
-		size = 6000
-	}
-clergymen = {
-		culture = aimara
-		religion = animist
-		size = 50
-	}
-artisans = {
-		culture = aimara
-		religion = animist
-		size = 2500
-	}
-soldiers = {
-		culture = aimara
-		religion = animist
-		size = 700
-	}
-farmers = {
-		culture = aimara
-		religion = animist
-		size = 7000
-	}
-}
 
-5862 = {
-aristocrats = {
-		culture = bolivian
-		religion = catholic
-		size = 100
-	}
-clergymen = {
-		culture = bolivian
-		religion = catholic
-		size = 25
-	}
-artisans = {
-		culture = bolivian
-		religion = catholic
-		size = 300
-	}
-soldiers = {
-		culture = bolivian
-		religion = catholic
-		size = 75
-	}
-farmers = {
-		culture = bolivian
-		religion = catholic
-		size = 1501
-	}
-clergymen = {
-		culture = guarani
-		religion = animist
-		size = 50
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 700
-	}
-soldiers = {
-		culture = guarani
-		religion = animist
-		size = 250
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 4004
-	}
-farmers = {
-		culture = aimara
-		religion = animist
-		size = 1251
-	}
-farmers = {
-		culture = quechua
-		religion = animist
-		size = 750
-	}
-}
+
+
 
 5863 = {
 aristocrats = {
@@ -1103,38 +1107,7 @@ farmers = {
 	}
 }
 
-5865 = {
-aristocrats = {
-		culture = bolivian
-		religion = catholic
-		size = 74
-	}
-clergymen = {
-		culture = bolivian
-		religion = catholic
-		size = 24
-	}
-artisans = {
-		culture = bolivian
-		religion = catholic
-		size = 249
-	}
-farmers = {
-		culture = bolivian
-		religion = catholic
-		size = 899
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 499
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 2249
-	}
-}
+
 
 5866 = {
 clergymen = {
@@ -1247,5 +1220,402 @@ farmers = {
 		culture = amazonian
 		religion = animist
 		size = 647
+	}
+}
+
+2315 = {
+aristocrats = {
+		culture = bolivian
+		religion = catholic
+		size = 98
+	}
+clergymen = {
+		culture = bolivian
+		religion = catholic
+		size = 25
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 296
+	}
+soldiers = {
+		culture = bolivian
+		religion = catholic
+		size = 74
+	}
+farmers = {
+		culture = bolivian
+		religion = catholic
+		size = 1477
+	}
+clergymen = {
+		culture = guarani
+		religion = animist
+		size = 49
+	}
+artisans = {
+		culture = guarani
+		religion = animist
+		size = 690
+	}
+soldiers = {
+		culture = guarani
+		religion = animist
+		size = 246
+	}
+farmers = {
+		culture = guarani
+		religion = animist
+		size = 3938
+	}
+farmers = {
+		culture = aimara
+		religion = animist
+		size = 1231
+	}
+farmers = {
+		culture = quechua
+		religion = animist
+		size = 739
+	}
+}
+
+5861 = {
+aristocrats = {
+		culture = bolivian
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 1
+	}
+labourers = {
+		culture = bolivian
+		religion = catholic
+		size = 13
+	}
+artisans = {
+		culture = aimara
+		religion = catholic
+		size = 2
+	}
+labourers = {
+		culture = aimara
+		religion = catholic
+		size = 27
+	}
+aristocrats = {
+		culture = peruvian
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = peruvian
+		religion = catholic
+		size = 2
+	}
+artisans = {
+		culture = aimara
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = aimara
+		religion = catholic
+		size = 17
+	}
+artisans = {
+		culture = quechua
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = quechua
+		religion = catholic
+		size = 10
+	}
+aristocrats = {
+		culture = bolivian
+		religion = catholic
+		size = 95
+	}
+clergymen = {
+		culture = bolivian
+		religion = catholic
+		size = 47
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 853
+	}
+soldiers = {
+		culture = bolivian
+		religion = catholic
+		size = 189
+	}
+farmers = {
+		culture = bolivian
+		religion = catholic
+		size = 5685
+	}
+clergymen = {
+		culture = aimara
+		religion = animist
+		size = 47
+	}
+artisans = {
+		culture = aimara
+		religion = animist
+		size = 2369
+	}
+soldiers = {
+		culture = aimara
+		religion = animist
+		size = 663
+	}
+farmers = {
+		culture = aimara
+		religion = animist
+		size = 6632
+	}
+aristocrats = {
+		culture = platinean
+		religion = catholic
+		size = 1
+	}
+clergymen = {
+		culture = platinean
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = platinean
+		religion = catholic
+		size = 2
+	}
+farmers = {
+		culture = platinean
+		religion = catholic
+		size = 6
+	}
+artisans = {
+		culture = aimara
+		religion = animist
+		size = 2
+	}
+farmers = {
+		culture = aimara
+		religion = animist
+		size = 8
+	}
+}
+
+5862 = {
+aristocrats = {
+		culture = bolivian
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 2
+	}
+soldiers = {
+		culture = bolivian
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = bolivian
+		religion = catholic
+		size = 13
+	}
+clergymen = {
+		culture = guarani
+		religion = animist
+		size = 1
+	}
+artisans = {
+		culture = guarani
+		religion = animist
+		size = 6
+	}
+soldiers = {
+		culture = guarani
+		religion = animist
+		size = 2
+	}
+farmers = {
+		culture = guarani
+		religion = animist
+		size = 35
+	}
+farmers = {
+		culture = aimara
+		religion = animist
+		size = 11
+	}
+farmers = {
+		culture = quechua
+		religion = animist
+		size = 7
+	}
+aristocrats = {
+		culture = bolivian
+		religion = catholic
+		size = 92
+	}
+clergymen = {
+		culture = bolivian
+		religion = catholic
+		size = 23
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 276
+	}
+soldiers = {
+		culture = bolivian
+		religion = catholic
+		size = 69
+	}
+farmers = {
+		culture = bolivian
+		religion = catholic
+		size = 1380
+	}
+clergymen = {
+		culture = guarani
+		religion = animist
+		size = 46
+	}
+artisans = {
+		culture = guarani
+		religion = animist
+		size = 644
+	}
+soldiers = {
+		culture = guarani
+		religion = animist
+		size = 230
+	}
+farmers = {
+		culture = guarani
+		religion = animist
+		size = 3681
+	}
+farmers = {
+		culture = aimara
+		religion = animist
+		size = 1150
+	}
+farmers = {
+		culture = quechua
+		religion = animist
+		size = 690
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 2
+	}
+farmers = {
+		culture = bolivian
+		religion = catholic
+		size = 5
+	}
+artisans = {
+		culture = guarani
+		religion = animist
+		size = 3
+	}
+farmers = {
+		culture = guarani
+		religion = animist
+		size = 14
+	}
+}
+
+5865 = {
+aristocrats = {
+		culture = bolivian
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 3
+	}
+soldiers = {
+		culture = bolivian
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = bolivian
+		religion = catholic
+		size = 18
+	}
+artisans = {
+		culture = guarani
+		religion = animist
+		size = 8
+	}
+soldiers = {
+		culture = guarani
+		religion = animist
+		size = 3
+	}
+farmers = {
+		culture = guarani
+		religion = animist
+		size = 48
+	}
+farmers = {
+		culture = aimara
+		religion = animist
+		size = 15
+	}
+farmers = {
+		culture = quechua
+		religion = animist
+		size = 9
+	}
+aristocrats = {
+		culture = bolivian
+		religion = catholic
+		size = 71
+	}
+clergymen = {
+		culture = bolivian
+		religion = catholic
+		size = 23
+	}
+artisans = {
+		culture = bolivian
+		religion = catholic
+		size = 239
+	}
+farmers = {
+		culture = bolivian
+		religion = catholic
+		size = 864
+	}
+artisans = {
+		culture = guarani
+		religion = animist
+		size = 479
+	}
+farmers = {
+		culture = guarani
+		religion = animist
+		size = 2160
 	}
 }

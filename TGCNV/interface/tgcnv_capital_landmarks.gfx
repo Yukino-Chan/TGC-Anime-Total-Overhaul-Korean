@@ -1,0 +1,61 @@
+objectTypes = {
+
+# TGCNV capital landmarks (#WIP/capital_landmarks_20260930)
+
+	EMFXActorType = {
+		name = "TGCNV_LM_MoscowCity"
+		actorfile = "gfx\anims\City_Eastern_03.xac"
+		idle = "gfx\anims\static.xsm"
+		scale = 1.0
+	}
+
+	EMFXActorType = {
+		name = "TGCNV_LM_WinterPalace"
+		actorfile = "gfx\anims\TGCNV_LM_WinterPalace.xac"
+		idle = "gfx\anims\static.xsm"
+		scale = 0.75
+	}
+
+	EMFXActorType = {
+		name = "TGCNV_LM_BrandenburgGate"
+		actorfile = "gfx\anims\TGCNV_LM_BrandenburgGate.xac"
+		idle = "gfx\anims\static.xsm"
+		scale = 1.0
+	}
+
+	EMFXActorType = {
+		name = "TGCNV_LM_HagiaSophia"
+		actorfile = "gfx\anims\TGCNV_LM_HagiaSophia.xac"
+		idle = "gfx\anims\static.xsm"
+		scale = 1.0
+	}
+
+	EMFXActorType = {
+		name = "TGCNV_LM_StPeters"
+		actorfile = "gfx\anims\TGCNV_LM_StPeters.xac"
+		idle = "gfx\anims\static.xsm"
+		scale = 0.6
+	}
+
+	EMFXActorType = {
+		name = "TGCNV_LM_Stephansdom"
+		actorfile = "gfx\anims\TGCNV_LM_Stephansdom.xac"
+		idle = "gfx\anims\static.xsm"
+		scale = 0.85
+	}
+
+	EMFXActorType = {
+		name = "TGCNV_LM_USCapitol1836"
+		actorfile = "gfx\anims\TGCNV_LM_USCapitol1836.xac"
+		idle = "gfx\anims\static.xsm"
+		scale = 1.0
+	}
+
+	EMFXActorType = {
+		name = "TGCNV_LM_USCapitol"
+		actorfile = "gfx\anims\TGCNV_LM_USCapitol.xac"
+		idle = "gfx\anims\static.xsm"
+		scale = 1.0
+	}
+
+}

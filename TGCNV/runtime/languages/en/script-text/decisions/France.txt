@@ -3081,7 +3081,7 @@ rename_bourbon_island = {
 
 				treasury = -100000
 				2593 = {  }
-				65 = { state_scope = { change_region_name = "Quebec Province" } }
+				65 = {  }
 				65 = { change_province_name = "Quebec" }
 				58 = { change_province_name = "Montreal" }
 				63 = { change_province_name = "Temiscaming" }
@@ -3098,7 +3098,7 @@ rename_bourbon_island = {
 					USA = { all_core = { remove_core = ACA } }
 					ULA = { all_core = { remove_core = ULA } }
 					owner = { badboy = -5 } # Reduces your infamy for dropping the rest of your claims
-					46 = { state_scope = { change_region_name = "Southern Ontario Province" } }
+					46 = {  }
 					QUE = {
 						all_core = {
 							remove_core = ENG
@@ -3737,13 +3737,13 @@ rename_bourbon_island = {
 						NOT = { is_core = FCA } #French Canada
 						NOT = { is_core = UOR } #Oregon
 						NOT = { is_core = COL } #Columbia
-						NOT = { state_id = 248 } #Maine
+						NOT = { region = USA_248 } #Maine
 						NOT = { region = USA_247 } #Vermont.. seriously what are you doing with so many yankees smh?
-						NOT = { state_id = 159 } #Wisconsin
+						NOT = { region = HMG_159 } #Wisconsin
 						NOT = { region = USA_176 } #Michigan
-						NOT = { state_id = 163 } #Illinois
-						NOT = { state_id = 171 } #Indiana
-						NOT = { state_id = 178 } #Ohio
+						NOT = { region = USA_168 } #Illinois
+						NOT = { region = USA_170 } #Indiana
+						NOT = { region = USA_178 } #Ohio
 						NOT = { region = USA_158 } #Minnesota
 					}
 					#remove_core = USA
@@ -3786,14 +3786,14 @@ rename_bourbon_island = {
 								is_core = UOR
 								is_core = COL
 								is_core = LSK
-								state_id = 171 #Indiana
-								state_id = 163 #Illinois
+								region = USA_170 #Indiana
+								region = USA_168 #Illinois
 								region = USA_176 #Michigan
-								state_id = 159 #Wisconsin
+								region = HMG_159 #Wisconsin
 								region = USA_247 #Vermont
-								state_id = 248 #Maine
+								region = USA_248 #Maine
 								region = USA_158 #Minnesota
-								state_id = 178 #Ohio.. stop going west dude smh
+								region = USA_178 #Ohio.. stop going west dude smh
 							}
 						NOT = { is_core = ULA }
 						NOT = { province_id = 156 } #That one weird ULA salient

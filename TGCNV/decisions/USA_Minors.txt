@@ -1112,9 +1112,9 @@ political_decisions = {
 			89 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Los Angeles
 			90 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # San Diego
 			MEX_94 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Nevada
-			94 = { change_province_name = "카슨시티" state_scope = { change_region_name = "네바다주" } }
+			94 = { change_province_name = "카슨시티"  }
 			MEX_97 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Utah
-			97 = { change_province_name = "솔트레이크시티" state_scope = { change_region_name = "유타주" } }
+			97 = { change_province_name = "솔트레이크시티"  }
 			98 = { change_province_name = "세인트조지" }
 			99 = { change_province_name = "버널" }
 			100 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Gilenos

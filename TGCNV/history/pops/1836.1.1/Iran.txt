@@ -458,88 +458,7 @@ farmers = {
 	}
 }
 
-1112 = {
-aristocrats = {
-		culture = azerbaijani
-		religion = shiite
-		size = 313
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = shiite
-		size = 163
-	}
-artisans = {
-		culture = azerbaijani
-		religion = shiite
-		size = 775
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 550
-	}
-farmers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 13750
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = sunni
-		size = 188
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = sunni
-		size = 100
-	}
-artisans = {
-		culture = azerbaijani
-		religion = sunni
-		size = 550
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 100
-	}
-farmers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 10063
-	}
-aristocrats = {
-		culture = persian
-		religion = shiite
-		size = 188
-	}
-clergymen = {
-		culture = persian
-		religion = shiite
-		size = 88
-	}
-artisans = {
-		culture = persian
-		religion = shiite
-		size = 425
-	}
-soldiers = {
-		culture = persian
-		religion = shiite
-		size = 88
-	}
-farmers = {
-		culture = persian
-		religion = shiite
-		size = 7713
-	}
-slaves = {
-		culture = tatar
-		religion = orthodox
-		size = 2500
-	}
-}
+
 
 1113 = {
 aristocrats = {
@@ -4814,5 +4733,128 @@ labourers = {
 		culture = mashriqi
 		religion = shiite
 		size = 225
+	}
+}
+
+1112 = {
+artisans = {
+		culture = armenian
+		religion = coptic
+		size = 1
+	}
+labourers = {
+		culture = armenian
+		religion = coptic
+		size = 26
+	}
+soldiers = {
+		culture = azerbaijani
+		religion = sunni
+		size = 1
+	}
+labourers = {
+		culture = azerbaijani
+		religion = sunni
+		size = 8
+	}
+labourers = {
+		culture = kurdish
+		religion = sunni
+		size = 2
+	}
+labourers = {
+		culture = persian
+		religion = shiite
+		size = 1
+	}
+aristocrats = {
+		culture = azerbaijani
+		religion = shiite
+		size = 304
+	}
+clergymen = {
+		culture = azerbaijani
+		religion = shiite
+		size = 158
+	}
+artisans = {
+		culture = azerbaijani
+		religion = shiite
+		size = 753
+	}
+soldiers = {
+		culture = azerbaijani
+		religion = shiite
+		size = 535
+	}
+farmers = {
+		culture = azerbaijani
+		religion = shiite
+		size = 13360
+	}
+aristocrats = {
+		culture = azerbaijani
+		religion = sunni
+		size = 182
+	}
+clergymen = {
+		culture = azerbaijani
+		religion = sunni
+		size = 97
+	}
+artisans = {
+		culture = azerbaijani
+		religion = sunni
+		size = 535
+	}
+soldiers = {
+		culture = azerbaijani
+		religion = sunni
+		size = 97
+	}
+farmers = {
+		culture = azerbaijani
+		religion = sunni
+		size = 9778
+	}
+aristocrats = {
+		culture = persian
+		religion = shiite
+		size = 182
+	}
+clergymen = {
+		culture = persian
+		religion = shiite
+		size = 86
+	}
+artisans = {
+		culture = persian
+		religion = shiite
+		size = 413
+	}
+soldiers = {
+		culture = persian
+		religion = shiite
+		size = 86
+	}
+farmers = {
+		culture = persian
+		religion = shiite
+		size = 7494
+	}
+slaves = {
+		culture = tatar
+		religion = orthodox
+		size = 2429
+	}
+farmers = {
+		culture = azerbaijani
+		religion = sunni
+		size = 14
+	}
+farmers = {
+		culture = armenian
+		religion = coptic
+		size = 5
 	}
 }

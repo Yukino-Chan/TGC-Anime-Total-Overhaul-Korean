@@ -1,65 +1,4 @@
-2078 = {
-aristocrats = {
-		culture = herero
-		religion = animist
-		size = 50
-	}
-clergymen = {
-		culture = herero
-		religion = animist
-		size = 25
-	}
-artisans = {
-		culture = herero
-		religion = animist
-		size = 150
-	}
-soldiers = {
-		culture = herero
-		religion = animist
-		size = 38
-	}
-tribals = {
-		culture = herero
-		religion = animist
-		size = 2588
-	}
-farmers = {
-		culture = herero
-		religion = protestant
-		size = 150
-	}
-aristocrats = {
-		culture = khoisan
-		religion = animist
-		size = 113
-	}
-clergymen = {
-		culture = khoisan
-		religion = animist
-		size = 63
-	}
-artisans = {
-		culture = khoisan
-		religion = animist
-		size = 300
-	}
-soldiers = {
-		culture = khoisan
-		religion = animist
-		size = 63
-	}
-tribals = {
-		culture = khoisan
-		religion = animist
-		size = 5363
-	}
-farmers = {
-		culture = khoisan
-		religion = protestant
-		size = 100
-	}
-}
+
 
 2079 = {
 aristocrats = {
@@ -114,38 +53,7 @@ tribals = {
 	}
 }
 
-2080 = {
-aristocrats = {
-		culture = south_forest_bantu
-		religion = animist
-		size = 50
-	}
-clergymen = {
-		culture = south_forest_bantu
-		religion = animist
-		size = 25
-	}
-artisans = {
-		culture = south_forest_bantu
-		religion = animist
-		size = 150
-	}
-soldiers = {
-		culture = south_forest_bantu
-		religion = animist
-		size = 38
-	}
-tribals = {
-		culture = south_forest_bantu
-		religion = animist
-		size = 2738
-	}
-tribals = {
-		culture = herero
-		religion = animist
-		size = 4100
-	}
-}
+
 
 2081 = {
 aristocrats = {
@@ -197,6 +105,97 @@ tribals = {
 		culture = lunda
 		religion = animist
 		size = 450
+	}
+
+clergymen = {
+		culture = lunda
+		religion = animist
+		size = 1
+	}
+artisans = {
+		culture = lunda
+		religion = animist
+		size = 1
+	}
+tribals = {
+		culture = lunda
+		religion = animist
+		size = 24
+	}
+slaves = {
+		culture = lunda
+		religion = animist
+		size = 13
+	}
+aristocrats = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 2
+	}
+clergymen = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 2
+	}
+artisans = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 8
+	}
+soldiers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 2
+	}
+tribals = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 114
+	}
+slaves = {
+		culture = chokwe
+		religion = animist
+		size = 32
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 1
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 1
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 19
+	}
+aristocrats = {
+		culture = herero
+		religion = animist
+		size = 1
+	}
+clergymen = {
+		culture = herero
+		religion = animist
+		size = 1
+	}
+artisans = {
+		culture = herero
+		religion = animist
+		size = 2
+	}
+soldiers = {
+		culture = herero
+		religion = animist
+		size = 1
+	}
+tribals = {
+		culture = herero
+		religion = animist
+		size = 39
 	}
 }
 
@@ -276,139 +275,11 @@ tribals = {
 	}
 }
 
-2084 = {
-aristocrats = {
-		culture = khoisan
-		religion = animist
-		size = 63
-	}
-clergymen = {
-		culture = khoisan
-		religion = animist
-		size = 38
-	}
-artisans = {
-		culture = khoisan
-		religion = animist
-		size = 175
-	}
-soldiers = {
-		culture = khoisan
-		religion = animist
-		size = 38
-	}
-tribals = {
-		culture = khoisan
-		religion = animist
-		size = 8183
-	}
-}
 
-2085 = {
-aristocrats = {
-		culture = khoisan
-		religion = animist
-		size = 13
-	}
-clergymen = {
-		culture = khoisan
-		religion = animist
-		size = 25
-	}
-artisans = {
-		culture = khoisan
-		religion = animist
-		size = 50
-	}
-soldiers = {
-		culture = khoisan
-		religion = animist
-		size = 13
-	}
-tribals = {
-		culture = khoisan
-		religion = animist
-		size = 900
-	}
-aristocrats = {
-		culture = tswana
-		religion = animist
-		size = 8
-	}
-clergymen = {
-		culture = tswana
-		religion = animist
-		size = 13
-	}
-artisans = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-soldiers = {
-		culture = tswana
-		religion = animist
-		size = 5
-	}
-tribals = {
-		culture = tswana
-		religion = animist
-		size = 450
-	}
-}
 
-2086 = {
-aristocrats = {
-		culture = khoisan
-		religion = animist
-		size = 25
-	}
-clergymen = {
-		culture = khoisan
-		religion = animist
-		size = 25
-	}
-artisans = {
-		culture = khoisan
-		religion = animist
-		size = 100
-	}
-soldiers = {
-		culture = khoisan
-		religion = animist
-		size = 25
-	}
-tribals = {
-		culture = khoisan
-		religion = animist
-		size = 1825
-	}
-aristocrats = {
-		culture = tswana
-		religion = animist
-		size = 8
-	}
-clergymen = {
-		culture = tswana
-		religion = animist
-		size = 13
-	}
-artisans = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-soldiers = {
-		culture = tswana
-		religion = animist
-		size = 5
-	}
-tribals = {
-		culture = tswana
-		religion = animist
-		size = 450
-	}
-}
+
+
+
 
 5634 = {
 aristocrats = {
@@ -559,58 +430,7 @@ tribals = {
 	}
 }
 
-5637 = {
-aristocrats = {
-		culture = south_forest_bantu
-		religion = animist
-		size = 50
-	}
-clergymen = {
-		culture = south_forest_bantu
-		religion = animist
-		size = 50
-	}
-artisans = {
-		culture = south_forest_bantu
-		religion = animist
-		size = 75
-	}
-soldiers = {
-		culture = south_forest_bantu
-		religion = animist
-		size = 50
-	}
-tribals = {
-		culture = south_forest_bantu
-		religion = animist
-		size = 1350
-	}
-aristocrats = {
-		culture = lunda
-		religion = animist
-		size = 50
-	}
-clergymen = {
-		culture = lunda
-		religion = animist
-		size = 50
-	}
-artisans = {
-		culture = lunda
-		religion = animist
-		size = 50
-	}
-soldiers = {
-		culture = lunda
-		religion = animist
-		size = 50
-	}
-tribals = {
-		culture = lunda
-		religion = animist
-		size = 450
-	}
-}
+
 
 5638 = {
 aristocrats = {
@@ -769,7 +589,62 @@ tribals = {
 	}
 }
 
-5642 = {
+
+
+2084 = {
+aristocrats = {
+		culture = khoisan
+		religion = animist
+		size = 63
+	}
+clergymen = {
+		culture = khoisan
+		religion = animist
+		size = 38
+	}
+artisans = {
+		culture = khoisan
+		religion = animist
+		size = 175
+	}
+soldiers = {
+		culture = khoisan
+		religion = animist
+		size = 38
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 8164
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 5
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 1
+	}
+farmers = {
+		culture = boer
+		religion = presbyterian
+		size = 1
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 2
+	}
+tribals = {
+		culture = sotho
+		religion = animist
+		size = 1
+	}
+}
+
+2086 = {
 aristocrats = {
 		culture = khoisan
 		religion = animist
@@ -783,7 +658,7 @@ clergymen = {
 artisans = {
 		culture = khoisan
 		religion = animist
-		size = 100
+		size = 99
 	}
 soldiers = {
 		culture = khoisan
@@ -793,7 +668,183 @@ soldiers = {
 tribals = {
 		culture = khoisan
 		religion = animist
-		size = 1825
+		size = 1801
+	}
+aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 8
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 13
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 25
+	}
+soldiers = {
+		culture = tswana
+		religion = animist
+		size = 5
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 444
+	}
+artisans = {
+		culture = boer
+		religion = presbyterian
+		size = 1
+	}
+farmers = {
+		culture = boer
+		religion = presbyterian
+		size = 5
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 18
+	}
+tribals = {
+		culture = sotho
+		religion = animist
+		size = 12
+	}
+}
+
+5637 = {
+aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 1
+	}
+artisans = {
+		culture = lunda
+		religion = animist
+		size = 1
+	}
+tribals = {
+		culture = lunda
+		religion = animist
+		size = 22
+	}
+tribals = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 2
+	}
+slaves = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 5
+	}
+tribals = {
+		culture = nguni
+		religion = animist
+		size = 1
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 1
+	}
+aristocrats = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 50
+	}
+clergymen = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 50
+	}
+artisans = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 75
+	}
+soldiers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 50
+	}
+tribals = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 1346
+	}
+aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 50
+	}
+clergymen = {
+		culture = lunda
+		religion = animist
+		size = 50
+	}
+artisans = {
+		culture = lunda
+		religion = animist
+		size = 50
+	}
+soldiers = {
+		culture = lunda
+		religion = animist
+		size = 50
+	}
+tribals = {
+		culture = lunda
+		religion = animist
+		size = 449
+	}
+}
+
+5642 = {
+artisans = {
+		culture = khoisan
+		religion = animist
+		size = 1
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 17
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 4
+	}
+aristocrats = {
+		culture = khoisan
+		religion = animist
+		size = 25
+	}
+clergymen = {
+		culture = khoisan
+		religion = animist
+		size = 25
+	}
+artisans = {
+		culture = khoisan
+		religion = animist
+		size = 99
+	}
+soldiers = {
+		culture = khoisan
+		religion = animist
+		size = 25
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 1810
 	}
 aristocrats = {
 		culture = tswana
@@ -818,6 +869,304 @@ soldiers = {
 tribals = {
 		culture = tswana
 		religion = animist
-		size = 450
+		size = 446
+	}
+}
+
+2078 = {
+aristocrats = {
+		culture = herero
+		religion = animist
+		size = 42
+	}
+clergymen = {
+		culture = herero
+		religion = animist
+		size = 21
+	}
+artisans = {
+		culture = herero
+		religion = animist
+		size = 126
+	}
+soldiers = {
+		culture = herero
+		religion = animist
+		size = 32
+	}
+tribals = {
+		culture = herero
+		religion = animist
+		size = 2173
+	}
+farmers = {
+		culture = herero
+		religion = protestant
+		size = 126
+	}
+aristocrats = {
+		culture = khoisan
+		religion = animist
+		size = 95
+	}
+clergymen = {
+		culture = khoisan
+		religion = animist
+		size = 53
+	}
+artisans = {
+		culture = khoisan
+		religion = animist
+		size = 252
+	}
+soldiers = {
+		culture = khoisan
+		religion = animist
+		size = 53
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 4503
+	}
+farmers = {
+		culture = khoisan
+		religion = protestant
+		size = 84
+	}
+}
+
+2080 = {
+aristocrats = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 40
+	}
+clergymen = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 20
+	}
+artisans = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 121
+	}
+soldiers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 31
+	}
+tribals = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 2210
+	}
+tribals = {
+		culture = herero
+		religion = animist
+		size = 3309
+	}
+}
+
+2085 = {
+aristocrats = {
+		culture = khoisan
+		religion = animist
+		size = 8
+	}
+clergymen = {
+		culture = khoisan
+		religion = animist
+		size = 15
+	}
+artisans = {
+		culture = khoisan
+		religion = animist
+		size = 29
+	}
+soldiers = {
+		culture = khoisan
+		religion = animist
+		size = 8
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 528
+	}
+aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 5
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 8
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 15
+	}
+soldiers = {
+		culture = tswana
+		religion = animist
+		size = 3
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 264
+	}
+}
+
+7483 = {
+aristocrats = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 10
+	}
+clergymen = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 5
+	}
+artisans = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 29
+	}
+soldiers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 7
+	}
+tribals = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 528
+	}
+tribals = {
+		culture = herero
+		religion = animist
+		size = 791
+	}
+}
+
+7484 = {
+aristocrats = {
+		culture = herero
+		religion = animist
+		size = 8
+	}
+clergymen = {
+		culture = herero
+		religion = animist
+		size = 4
+	}
+artisans = {
+		culture = herero
+		religion = animist
+		size = 24
+	}
+soldiers = {
+		culture = herero
+		religion = animist
+		size = 6
+	}
+tribals = {
+		culture = herero
+		religion = animist
+		size = 415
+	}
+farmers = {
+		culture = herero
+		religion = protestant
+		size = 24
+	}
+aristocrats = {
+		culture = khoisan
+		religion = animist
+		size = 18
+	}
+clergymen = {
+		culture = khoisan
+		religion = animist
+		size = 10
+	}
+artisans = {
+		culture = khoisan
+		religion = animist
+		size = 48
+	}
+soldiers = {
+		culture = khoisan
+		religion = animist
+		size = 10
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 860
+	}
+farmers = {
+		culture = khoisan
+		religion = protestant
+		size = 16
+	}
+}
+
+7485 = {
+aristocrats = {
+		culture = khoisan
+		religion = animist
+		size = 5
+	}
+clergymen = {
+		culture = khoisan
+		religion = animist
+		size = 10
+	}
+artisans = {
+		culture = khoisan
+		religion = animist
+		size = 21
+	}
+soldiers = {
+		culture = khoisan
+		religion = animist
+		size = 5
+	}
+tribals = {
+		culture = khoisan
+		religion = animist
+		size = 372
+	}
+aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 3
+	}
+clergymen = {
+		culture = tswana
+		religion = animist
+		size = 5
+	}
+artisans = {
+		culture = tswana
+		religion = animist
+		size = 10
+	}
+soldiers = {
+		culture = tswana
+		religion = animist
+		size = 2
+	}
+tribals = {
+		culture = tswana
+		religion = animist
+		size = 186
 	}
 }

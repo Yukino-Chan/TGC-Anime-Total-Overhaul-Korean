@@ -74,48 +74,7 @@ slaves = {
 	}
 }
 
-1777 = {
-aristocrats = {
-		culture = maures
-		religion = sunni
-		size = 194
-	}
-bureaucrats = {
-		culture = maures
-		religion = sunni
-		size = 5
-	}
-officers = {
-		culture = maures
-		religion = sunni
-		size = 3
-	}
-clergymen = {
-		culture = maures
-		religion = sunni
-		size = 100
-	}
-artisans = {
-		culture = maures
-		religion = sunni
-		size = 422
-	}
-soldiers = {
-		culture = maures
-		religion = sunni
-		size = 110
-	}
-farmers = {
-		culture = maures
-		religion = sunni
-		size = 6614
-	}
-slaves = {
-		culture = fulbe
-		religion = sunni
-		size = 2978
-	}
-}
+
 
 1778 = {
 aristocrats = {
@@ -393,38 +352,7 @@ slaves = {
 	}
 }
 
-5333 = {
-aristocrats = {
-		culture = maures
-		religion = sunni
-		size = 50
-	}
-clergymen = {
-		culture = maures
-		religion = sunni
-		size = 37
-	}
-artisans = {
-		culture = maures
-		religion = sunni
-		size = 137
-	}
-soldiers = {
-		culture = maures
-		religion = sunni
-		size = 37
-	}
-farmers = {
-		culture = maures
-		religion = sunni
-		size = 1739
-	}
-slaves = {
-		culture = fulbe
-		religion = sunni
-		size = 1501
-	}
-}
+
 
 5334 = {
 aristocrats = {
@@ -579,6 +507,222 @@ farmers = {
 slaves = {
 		culture = berber
 		religion = sunni
+		size = 8
+	}
+}
+
+1777 = {
+aristocrats = {
+		culture = maures
+		religion = sunni
+		size = 189
+	}
+bureaucrats = {
+		culture = maures
+		religion = sunni
+		size = 5
+	}
+officers = {
+		culture = maures
+		religion = sunni
+		size = 3
+	}
+clergymen = {
+		culture = maures
+		religion = sunni
+		size = 97
+	}
+artisans = {
+		culture = maures
+		religion = sunni
+		size = 411
+	}
+soldiers = {
+		culture = maures
+		religion = sunni
+		size = 107
+	}
+farmers = {
+		culture = maures
+		religion = sunni
+		size = 6438
+	}
+slaves = {
+		culture = fulbe
+		religion = sunni
+		size = 2899
+	}
+artisans = {
+		culture = bambara
+		religion = animist
+		size = 1
+	}
+soldiers = {
+		culture = bambara
+		religion = animist
+		size = 1
+	}
+farmers = {
+		culture = bambara
+		religion = animist
+		size = 12
+	}
+soldiers = {
+		culture = fulbe
+		religion = sunni
+		size = 1
+	}
+farmers = {
+		culture = fulbe
+		religion = sunni
+		size = 7
+	}
+slaves = {
+		culture = mande
+		religion = animist
+		size = 11
+	}
+aristocrats = {
+		culture = bambara
+		religion = animist
+		size = 1
+	}
+clergymen = {
+		culture = bambara
+		religion = animist
+		size = 1
+	}
+artisans = {
+		culture = bambara
+		religion = animist
+		size = 1
+	}
+farmers = {
+		culture = bambara
+		religion = animist
+		size = 107
+	}
+aristocrats = {
+		culture = fulbe
+		religion = sunni
+		size = 3
+	}
+clergymen = {
+		culture = fulbe
+		religion = sunni
+		size = 1
+	}
+artisans = {
+		culture = fulbe
+		religion = sunni
+		size = 6
+	}
+soldiers = {
+		culture = fulbe
+		religion = sunni
+		size = 2
+	}
+farmers = {
+		culture = fulbe
+		religion = sunni
+		size = 15
+	}
+slaves = {
+		culture = mande
+		religion = animist
+		size = 26
+	}
+}
+
+5333 = {
+aristocrats = {
+		culture = fulbe
+		religion = sunni
+		size = 2
+	}
+clergymen = {
+		culture = fulbe
+		religion = sunni
+		size = 1
+	}
+artisans = {
+		culture = fulbe
+		religion = sunni
+		size = 4
+	}
+soldiers = {
+		culture = fulbe
+		religion = sunni
+		size = 3
+	}
+farmers = {
+		culture = fulbe
+		religion = sunni
+		size = 68
+	}
+slaves = {
+		culture = fulbe
+		religion = sunni
+		size = 30
+	}
+aristocrats = {
+		culture = maures
+		religion = sunni
+		size = 50
+	}
+clergymen = {
+		culture = maures
+		religion = sunni
+		size = 37
+	}
+artisans = {
+		culture = maures
+		religion = sunni
+		size = 136
+	}
+soldiers = {
+		culture = maures
+		religion = sunni
+		size = 37
+	}
+farmers = {
+		culture = maures
+		religion = sunni
+		size = 1723
+	}
+slaves = {
+		culture = fulbe
+		religion = sunni
+		size = 1487
+	}
+farmers = {
+		culture = bambara
+		religion = animist
+		size = 36
+	}
+aristocrats = {
+		culture = fulbe
+		religion = sunni
+		size = 1
+	}
+artisans = {
+		culture = fulbe
+		religion = sunni
+		size = 2
+	}
+soldiers = {
+		culture = fulbe
+		religion = sunni
+		size = 1
+	}
+farmers = {
+		culture = fulbe
+		religion = sunni
+		size = 5
+	}
+slaves = {
+		culture = mande
+		religion = animist
 		size = 8
 	}
 }

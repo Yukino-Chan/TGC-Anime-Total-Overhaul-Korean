@@ -151,7 +151,7 @@ political_decisions = {
 			money = -300000
 			133 = {
 				change_province_name = "Friedrichsburg"
-				state_scope = { change_region_name = "Neu Nassau Province" }
+				
 			}
 			134 = { change_province_name = "Biebrich" }
 			137 = { change_province_name = "Neu Braunfels" }
@@ -244,7 +244,7 @@ political_decisions = {
 			}
 			2209 = {
 				change_province_name = "Hafenstadt"
-				state_scope = { change_region_name = "Kronprinzinsel Province" }
+				
 			}
 			44 = { change_province_name = "Krakau Bucht" }
 			2212 = { change_province_name = "Allerheiligenbucht" }
@@ -304,7 +304,7 @@ political_decisions = {
 			inherit = ADV
 			133 = {
 				change_province_name = "Austin"
-				state_scope = { change_region_name = "Texas Province" }
+				
 			}
 			132 = { change_province_name = "Houston" }
 			137 = { change_province_name = "San Antonio" }
@@ -347,7 +347,7 @@ political_decisions = {
 			inherit = KRO
 			2209 = {
 				change_province_name = "Havana"
-				state_scope = { change_region_name = "Cuba Province" }
+				
 			}
 			44 = { change_province_name = "Echo Bay" }
 			2212 = { change_province_name = "Santiago" }

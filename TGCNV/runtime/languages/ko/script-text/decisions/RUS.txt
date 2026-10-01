@@ -4448,7 +4448,7 @@ political_decisions = {
 
 				treasury = -50000
 				#California
-				89 = { change_province_name = "안겔렙스크항" state_scope = { change_region_name = "칼리포르니야주" } }
+				89 = { change_province_name = "안겔렙스크항"  }
 				87 = { change_province_name = "셸리호프" }
 				104 = { change_province_name = "스뱌토프란치옙스크" }
 				84 = { change_province_name = "젤레나야돌리나" }
@@ -4457,13 +4457,13 @@ political_decisions = {
 				88 = { change_province_name = "스메르티 사막" }
 				86 = { change_province_name = "모르드비노바고라" }
 				#Oregon
-				81 = { change_province_name = "크레니친항" state_scope = { change_region_name = "세베르나야칼리포르니야주" } }
+				81 = { change_province_name = "크레니친항"  }
 				83 = { change_province_name = "레자노프 요새" }
 				82 = { change_province_name = "쿠스코프 요새" }
 				#Baja
-				3368 = { change_province_name = "쿠카파산맥" state_scope = { change_region_name = "니즈냐야칼리포르니야주" } }
+				3368 = { change_province_name = "쿠카파산맥"  }
 				#Washington
-				78 = { change_province_name = "니코폴" state_scope = { change_region_name = "니즈니오레곤주" } }
+				78 = { change_province_name = "니코폴"  }
 				13 = { change_province_name = "알렉산드로폴"  }
 				15 = { change_province_name = "쿠즈네초프항" }
 				2598 = { change_province_name = "알렉산드라 왕비섬" }
@@ -4475,7 +4475,7 @@ political_decisions = {
 				97 = { change_province_name = "솔트부르크" }
 				98 = { change_province_name = "젤티페레발" }
 				92 = { change_province_name = "스칼리스티 요새" } 
-				93 = { change_province_name = "블렉스타르 요새" state_scope = { change_region_name = "아이다호주" } } #dedicated to never tiring play tester Blackstar from Discord channel
+				93 = { change_province_name = "블렉스타르 요새"  } #dedicated to never tiring play tester Blackstar from Discord channel
 				#114 = { change_province_name = "Fort Blekstar" } #
 
 				any_owned = {

@@ -4586,8 +4586,8 @@ country_event = {
 					any_owned = {
 						limit = { 
 							OR = {
-						state_id = 87
-						state_id = 2139
+						region = MEX_85
+						region = MEX_2139
 						} 
 						}
 						secede_province = THIS

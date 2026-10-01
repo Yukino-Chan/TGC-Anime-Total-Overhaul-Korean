@@ -2233,7 +2233,7 @@
 			}
 			random_owned = {
 				limit = { province_id = 81 }
-				state_scope = { change_region_name = "Oregon Province" }
+				
 			}
 			82 = {
 				change_province_name = "Lakeview"
@@ -3061,7 +3061,7 @@
 			prestige = 4
 			78 = {
 				change_province_name = "Seattle"
-				state_scope = { change_region_name = "Washington Province" }
+				
 				any_pop = {
 					limit = { is_culture_group = native_american }
 					reduce_pop = 0.3

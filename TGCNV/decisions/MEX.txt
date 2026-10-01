@@ -597,7 +597,7 @@ political_decisions = {
 				CLM_1723 = { remove_core = GCO }
 				2205 = { remove_core = GCO }
 			}
-			1723 = { state_scope = { change_region_name = "파나마주" } }
+			1723 = {  }
 		}
 
 		ai_will_do = { factor = 1 }
@@ -1604,7 +1604,7 @@ political_decisions = {
 				83 = { add_province_modifier = { name = recently_built_city duration = 1825 } }
 				84 = {
 					change_province_name = "새크라멘토"
-					state_scope = { change_region_name = "알타칼리포르니아주" }
+					
 				}
 				85 = { change_province_name = "산타로사" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				86 = { change_province_name = "라고스클라로스" }
@@ -1614,10 +1614,10 @@ political_decisions = {
 				104 = { change_province_name = "샌프란시스코" }
 				3366 = { change_province_name = "소노마" }
 			#Nevada
-				94 = { change_province_name = "아스틀란" state_scope = { change_region_name = "시에라네바다주" } }
+				94 = { change_province_name = "아스틀란"  }
 				96 = { add_province_modifier = { name = recently_built_city duration = 1825 } }
 			#Utah
-				97 = { add_province_modifier = { name = recently_built_city duration = 1825 } state_scope = { change_region_name = "킨타나주" } }
+				97 = { add_province_modifier = { name = recently_built_city duration = 1825 }  }
 			#Florida
 				194 = { change_province_name = "나자쿠타" }
 				197 = { change_province_name = "알몬테" }
@@ -1625,18 +1625,18 @@ political_decisions = {
 				200 = { change_province_name = "누에바미라마르" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				3407 = { change_province_name = "푸에르테메히아" }
 			#Oregon
-				81 = { change_province_name = "시우다드이투르비데" state_scope = { change_region_name = "카를로타주" } }
+				81 = { change_province_name = "시우다드이투르비데"  }
 				82 = { change_province_name = "미랄라고" }
 				83 = { change_province_name = "몬드라곤" }
 			#Arizona
-				100 = { change_province_name = "페닉스" state_scope = { change_region_name = "애리조나주" } add_province_modifier = { name = recently_built_city duration = 1825 } }
+				100 = { change_province_name = "페닉스"  add_province_modifier = { name = recently_built_city duration = 1825 } }
 				101 = { change_province_name = "네사우악" }
 				102 = { change_province_name = "라메시야" }
 				3367 = { change_province_name = "시야레알" }
 			#New Mexico
 				38 = { change_province_name = "플라티나" }
 				109 = { change_province_name = "과달루페" }
-				2631 = { change_province_name = "로스리오스" state_scope = { change_region_name = "누에보멕시코주" } }
+				2631 = { change_province_name = "로스리오스"  }
 				2662 = { change_province_name = "세로아술" }
 			## Texas ##
 				any_owned = { limit = { OR = {
@@ -1657,31 +1657,31 @@ political_decisions = {
 			## Mexico ##
 				2168 = { change_province_name = "아우틀란" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				2171 = { change_province_name = "바야돌리드" add_province_modifier = { name = recently_built_city duration = 1825 }  }
-				2187 = { change_province_name = "벨리세" state_scope = { change_region_name = "벨리세주" } }
+				2187 = { change_province_name = "벨리세"  }
 				2163 = { change_province_name = "오리사바할라파" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				2154 = { change_province_name = "산후안델리오" }
 				2178 = { change_province_name = "에수틀라" }
 				2144 = { change_province_name = "시우다드미라몬" }
 				2143 = { change_province_name = "시우다드로레나" add_province_modifier = { name = recently_built_city duration = 1825 } }
 			## Cuba ##
-				2209 = { state_scope = { change_region_name = "서쿠바주" } }
-				2211 = { state_scope = { change_region_name = "동쿠바주" } }
+				2209 = {  }
+				2211 = {  }
 			## Hispaniola ##
 				2215 = {  }
 				2216 = {  }
 			## Washington ##
-				78 = { change_province_name = "우아툴코" state_scope = { change_region_name = "아람부루주" } }
+				78 = { change_province_name = "우아툴코"  }
 				79 = { change_province_name = "누에바아람부루" }
 				80 = { change_province_name = "비레예스" }
 			## Wyoming ##
 				107 = { change_province_name = "팡골린" }
-				110 = { change_province_name = "베르다디파스" state_scope = { change_region_name = "마르찬주" } }
+				110 = { change_province_name = "베르다디파스"  }
 				111 = { change_province_name = "베르트리나" }
 				112 = { change_province_name = "시우다드멘도사" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				113 = { change_province_name = "레오폴리스" }
 			## Idaho ##
 				91 = { change_province_name = "투도스" }
-				92 = { change_province_name = "아라우호" state_scope = { change_region_name = "로트링겐주(북아메리카)" } }
+				92 = { change_province_name = "아라우호"  }
 				93 = { change_province_name = "키로게" }
 			## Montana ##
 				114 = { change_province_name = "헤르츠펠트" }
@@ -1690,7 +1690,7 @@ political_decisions = {
 			## North Dakota ##
 				117 = { change_province_name = "누에바테르뷔렌" add_province_modifier = { name = recently_built_city duration = 1825 } }
 				118 = { change_province_name = "데르스미선" }
-				119 = { change_province_name = "우니온이리베르타드" state_scope = { change_region_name = "북다코타주" } }
+				119 = { change_province_name = "우니온이리베르타드"  }
 			## South Dakota ##
 				120 = { change_province_name = "시우다드시우" HXP_120 = { add_province_modifier = { name = recently_built_city duration = 1825 } } }
 				121 = { change_province_name = "시우다드라피다" }
@@ -1711,7 +1711,7 @@ political_decisions = {
 				3406 = { change_province_name = "에로이카안드레아" }
 			## Louisiana ##
 				139 = { change_province_name = "누에바오를레안스" }
-				141 = { change_province_name = "코부르고" state_scope = { change_region_name = "루이시아나주" } add_province_modifier = { name = recently_built_city duration = 1825 } }
+				141 = { change_province_name = "코부르고"  add_province_modifier = { name = recently_built_city duration = 1825 } }
 				142 = { change_province_name = "마들" }
 				157 = { change_province_name = "오그던" }
 			## Arkansas ##
@@ -1722,7 +1722,7 @@ political_decisions = {
 				146 = { change_province_name = "산루이스" }
 				147 = { change_province_name = "나포무세노" }
 				148 = { change_province_name = "아말리아" }
-				149 = { change_province_name = "누에보합스부르고" state_scope = { change_region_name = "미수리주" } add_province_modifier = { name = recently_built_city duration = 1825 } }
+				149 = { change_province_name = "누에보합스부르고"  add_province_modifier = { name = recently_built_city duration = 1825 } }
 				150 = { change_province_name = "캔자스" }
 			## Iowa ##
 				151 = { change_province_name = "오워테" }

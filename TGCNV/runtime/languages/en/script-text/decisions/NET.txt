@@ -85,9 +85,10 @@ political_decisions = {
 		}
 
 		effect = {
+			TGC_LONDON_LIMBURG_DUCHY = { remove_core = LBG add_core = NET }
 			any_country = { release = LBG leave_alliance = LBG }
 			3313 = { remove_core = LBG }
-			381 = { remove_core = LBG change_province_name = "Maastricht" }
+			
 			any_country = { limit = { has_country_flag = limburg_crisis } clr_country_flag = limburg_crisis }
 			clr_country_flag = limburg_crisis
 			inherit = LBG

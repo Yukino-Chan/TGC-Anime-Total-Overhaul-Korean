@@ -81,45 +81,7 @@ slaves = {
 	}
 }
 
-2345 = {
-aristocrats = {
-		culture = platinean
-		religion = catholic
-		size = 75
-	}
-bureaucrats = {
-		culture = platinean
-		religion = catholic
-		size = 35
-	}
-clergymen = {
-		culture = platinean
-		religion = catholic
-		size = 25
-	}
-artisans = {
-		culture = platinean
-		religion = catholic
-		size = 225
-	}
-soldiers = {
-		culture = platinean
-		religion = catholic
-		size = 775
-	}
-soldiers = {
-		culture = platinean
-		religion = catholic
-		size = 750
-		militancy = 9
-		rebel_type = liberal_rebels
-	}
-farmers = {
-		culture = platinean
-		religion = catholic
-		size = 3615
-	}
-}
+
 
 2346 = {
 aristocrats = {
@@ -310,98 +272,9 @@ slaves = {
 	}
 }
 
-5891 = {
-aristocrats = {
-		culture = platinean
-		religion = catholic
-		size = 75
-	}
-bureaucrats = {
-		culture = platinean
-		religion = catholic
-		size = 35
-	}
-clergymen = {
-		culture = platinean
-		religion = catholic
-		size = 25
-	}
-artisans = {
-		culture = platinean
-		religion = catholic
-		size = 225
-	}
-soldiers = {
-		culture = platinean
-		religion = catholic
-		size = 775
-	}
-soldiers = {
-		culture = platinean
-		religion = catholic
-		size = 750
-		militancy = 9
-		rebel_type = liberal_rebels
-	}
-farmers = {
-		culture = platinean
-		religion = catholic
-		size = 3615
-	}
-}
 
-5892 = {
-aristocrats = {
-		culture = platinean
-		religion = catholic
-		size = 24
-	}
-bureaucrats = {
-		culture = platinean
-		religion = catholic
-		size = 24
-	}
-clergymen = {
-		culture = platinean
-		religion = catholic
-		size = 24
-	}
-artisans = {
-		culture = platinean
-		religion = catholic
-		size = 49
-	}
-soldiers = {
-		culture = platinean
-		religion = catholic
-		size = 49
-	}
-farmers = {
-		culture = platinean
-		religion = catholic
-		size = 899
-	}
-clergymen = {
-		culture = brazilian
-		religion = catholic
-		size = 24
-	}
-artisans = {
-		culture = brazilian
-		religion = catholic
-		size = 24
-	}
-soldiers = {
-		culture = brazilian
-		religion = catholic
-		size = 24
-	}
-farmers = {
-		culture = brazilian
-		religion = catholic
-		size = 499
-	}
-}
+
+
 
 5893 = {
 aristocrats = {
@@ -453,5 +326,257 @@ farmers = {
 		culture = brazilian
 		religion = catholic
 		size = 1645
+	}
+}
+
+2345 = {
+aristocrats = {
+		culture = platinean
+		religion = catholic
+		size = 75
+	}
+bureaucrats = {
+		culture = platinean
+		religion = catholic
+		size = 35
+	}
+clergymen = {
+		culture = platinean
+		religion = catholic
+		size = 25
+	}
+artisans = {
+		culture = platinean
+		religion = catholic
+		size = 225
+	}
+soldiers = {
+		culture = platinean
+		religion = catholic
+		size = 773
+	}
+soldiers = {
+		culture = platinean
+		religion = catholic
+		size = 748
+		militancy = 9
+		rebel_type = liberal_rebels
+	}
+farmers = {
+		culture = platinean
+		religion = catholic
+		size = 3606
+	}
+}
+
+5891 = {
+soldiers = {
+		culture = platinean
+		religion = catholic
+		size = 1
+	}
+soldiers = {
+		culture = platinean
+		religion = catholic
+		size = 1
+		militancy = 9
+		rebel_type = liberal_rebels
+	}
+farmers = {
+		culture = platinean
+		religion = catholic
+		size = 2
+	}
+aristocrats = {
+		culture = platinean
+		religion = catholic
+		size = 75
+	}
+bureaucrats = {
+		culture = platinean
+		religion = catholic
+		size = 35
+	}
+clergymen = {
+		culture = platinean
+		religion = catholic
+		size = 25
+	}
+artisans = {
+		culture = platinean
+		religion = catholic
+		size = 224
+	}
+soldiers = {
+		culture = platinean
+		religion = catholic
+		size = 772
+	}
+soldiers = {
+		culture = platinean
+		religion = catholic
+		size = 747
+		militancy = 9
+		rebel_type = liberal_rebels
+	}
+farmers = {
+		culture = platinean
+		religion = catholic
+		size = 3600
+	}
+aristocrats = {
+		culture = platinean
+		religion = catholic
+		size = 1
+	}
+bureaucrats = {
+		culture = platinean
+		religion = catholic
+		size = 1
+	}
+clergymen = {
+		culture = platinean
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = platinean
+		religion = catholic
+		size = 2
+	}
+soldiers = {
+		culture = platinean
+		religion = catholic
+		size = 2
+	}
+farmers = {
+		culture = platinean
+		religion = catholic
+		size = 29
+	}
+clergymen = {
+		culture = brazilian
+		religion = catholic
+		size = 1
+	}
+artisans = {
+		culture = brazilian
+		religion = catholic
+		size = 1
+	}
+soldiers = {
+		culture = brazilian
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = brazilian
+		religion = catholic
+		size = 16
+	}
+}
+
+5892 = {
+soldiers = {
+		culture = brazilian
+		religion = catholic
+		size = 51
+	}
+farmers = {
+		culture = brazilian
+		religion = catholic
+		size = 16
+	}
+farmers = {
+		culture = platinean
+		religion = catholic
+		size = 20
+	}
+farmers = {
+		culture = guarani
+		religion = catholic
+		size = 20
+	}
+farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 25
+	}
+slaves = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 20
+		militancy = 2
+	}
+aristocrats = {
+		culture = platinean
+		religion = catholic
+		size = 23
+	}
+bureaucrats = {
+		culture = platinean
+		religion = catholic
+		size = 23
+	}
+clergymen = {
+		culture = platinean
+		religion = catholic
+		size = 23
+	}
+artisans = {
+		culture = platinean
+		religion = catholic
+		size = 47
+	}
+soldiers = {
+		culture = platinean
+		religion = catholic
+		size = 47
+	}
+farmers = {
+		culture = platinean
+		religion = catholic
+		size = 854
+	}
+clergymen = {
+		culture = brazilian
+		religion = catholic
+		size = 23
+	}
+artisans = {
+		culture = brazilian
+		religion = catholic
+		size = 23
+	}
+soldiers = {
+		culture = brazilian
+		religion = catholic
+		size = 23
+	}
+farmers = {
+		culture = brazilian
+		religion = catholic
+		size = 475
+	}
+artisans = {
+		culture = platinean
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = platinean
+		religion = catholic
+		size = 5
+	}
+slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 1
+		militancy = 2
+	}
+farmers = {
+		culture = platinean
+		religion = catholic
+		size = 2
 	}
 }

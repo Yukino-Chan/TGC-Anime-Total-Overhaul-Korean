@@ -4448,7 +4448,7 @@ political_decisions = {
 
 				treasury = -50000
 				#California
-				89 = { change_province_name = "Port Angelevsk" state_scope = { change_region_name = "Kaliforniya Province" } }
+				89 = { change_province_name = "Port Angelevsk"  }
 				87 = { change_province_name = "Shelikhov" }
 				104 = { change_province_name = "Svyatofrantsievsk" }
 				84 = { change_province_name = "Zelenaya Dolina" }
@@ -4457,13 +4457,13 @@ political_decisions = {
 				88 = { change_province_name = "Pustynya Smerti" }
 				86 = { change_province_name = "Mordvinova Gora" }
 				#Oregon
-				81 = { change_province_name = "Port Krenitsyn" state_scope = { change_region_name = "Severnaya Kaliforniya Province" } }
+				81 = { change_province_name = "Port Krenitsyn"  }
 				83 = { change_province_name = "Fort Rezanov" }
 				82 = { change_province_name = "Fort Kuskov" }
 				#Baja
-				3368 = { change_province_name = "Cucapa Mountains" state_scope = { change_region_name = "Nizhnyaya Kaliforniya Province" } }
+				3368 = { change_province_name = "Cucapa Mountains"  }
 				#Washington
-				78 = { change_province_name = "Nikopol" state_scope = { change_region_name = "Nizhniy Oregon Province" } }
+				78 = { change_province_name = "Nikopol"  }
 				13 = { change_province_name = "Alexandropol"  }
 				15 = { change_province_name = "Port Kuznetsov" }
 				2598 = { change_province_name = "Ostrov Korolevy Aleksandry" }
@@ -4475,7 +4475,7 @@ political_decisions = {
 				97 = { change_province_name = "Soltburg" }
 				98 = { change_province_name = "Zheltyy Pereval" }
 				92 = { change_province_name = "Skalistyy Ostrog" } 
-				93 = { change_province_name = "Fort Blekstar" state_scope = { change_region_name = "Idaho Province" } } #dedicated to never tiring play tester Blackstar from Discord channel
+				93 = { change_province_name = "Fort Blekstar"  } #dedicated to never tiring play tester Blackstar from Discord channel
 				#114 = { change_province_name = "Fort Blekstar" } #
 
 				any_owned = {

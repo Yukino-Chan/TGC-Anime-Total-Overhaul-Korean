@@ -91,153 +91,7 @@ farmers = {
 	}
 }
 
-913 = {
-aristocrats = {
-		culture = mashriqi
-		religion = shiite
-		size = 43
-	}
-clergymen = {
-		culture = mashriqi
-		religion = shiite
-		size = 85
-	}
-artisans = {
-		culture = mashriqi
-		religion = shiite
-		size = 106
-	}
-farmers = {
-		culture = mashriqi
-		religion = shiite
-		size = 829
-	}
-clergymen = {
-		culture = syriac
-		religion = orthodox
-		size = 170
-	}
-artisans = {
-		culture = syriac
-		religion = orthodox
-		size = 213
-	}
-farmers = {
-		culture = syriac
-		religion = orthodox
-		size = 4463
-	}
-aristocrats = {
-		culture = syriac
-		religion = catholic
-		size = 383
-	}
-bureaucrats = {
-		culture = syriac
-		religion = catholic
-		size = 255
-	}
-clergymen = {
-		culture = syriac
-		religion = catholic
-		size = 510
-	}
-artisans = {
-		culture = syriac
-		religion = catholic
-		size = 2423
-	}
-farmers = {
-		culture = syriac
-		religion = catholic
-		size = 4080
-	}
-soldiers = {
-		culture = syriac
-		religion = catholic
-		size = 829
-	}
-officers = {
-		culture = mashriqi
-		religion = sunni
-		size = 85
-	}
-clergymen = {
-		culture = mashriqi
-		religion = sunni
-		size = 85
-	}
-artisans = {
-		culture = mashriqi
-		religion = sunni
-		size = 106
-	}
-farmers = {
-		culture = mashriqi
-		religion = sunni
-		size = 786
-	}
-aristocrats = {
-		culture = druzes
-		religion = druze
-		size = 500
-	}
-clergymen = {
-		culture = druzes
-		religion = druze
-		size = 85
-	}
-artisans = {
-		culture = druzes
-		religion = druze
-		size = 170
-	}
-farmers = {
-		culture = druzes
-		religion = druze
-		size = 3081
-	}
-clergymen = {
-		culture = armenian
-		religion = coptic
-		size = 21
-	}
-artisans = {
-		culture = armenian
-		religion = coptic
-		size = 85
-	}
-farmers = {
-		culture = armenian
-		religion = coptic
-		size = 1084
-	}
-clergymen = {
-		culture = armenian
-		religion = catholic
-		size = 106
-	}
-artisans = {
-		culture = armenian
-		religion = catholic
-		size = 340
-	}
-farmers = {
-		culture = armenian
-		religion = catholic
-		size = 1679
-	}
-clergymen = {
-		culture = mizrahi
-		religion = jewish
-		size = 85
-	}
-artisans = {
-		culture = mizrahi
-		religion = jewish
-		size = 417
-	}
-}
+
 
 914 = {
 aristocrats = {
@@ -644,6 +498,147 @@ artisans = {
 		religion = jewish
 		size = 416
 	}
+
+aristocrats = {
+		culture = mashriqi
+		religion = shiite
+		size = 1
+	}
+clergymen = {
+		culture = mashriqi
+		religion = shiite
+		size = 2
+	}
+artisans = {
+		culture = mashriqi
+		religion = shiite
+		size = 2
+	}
+farmers = {
+		culture = mashriqi
+		religion = shiite
+		size = 17
+	}
+clergymen = {
+		culture = syriac
+		religion = orthodox
+		size = 4
+	}
+artisans = {
+		culture = syriac
+		religion = orthodox
+		size = 4
+	}
+farmers = {
+		culture = syriac
+		religion = orthodox
+		size = 92
+	}
+aristocrats = {
+		culture = syriac
+		religion = catholic
+		size = 8
+	}
+bureaucrats = {
+		culture = syriac
+		religion = catholic
+		size = 5
+	}
+clergymen = {
+		culture = syriac
+		religion = catholic
+		size = 11
+	}
+artisans = {
+		culture = syriac
+		religion = catholic
+		size = 50
+	}
+farmers = {
+		culture = syriac
+		religion = catholic
+		size = 84
+	}
+soldiers = {
+		culture = syriac
+		religion = catholic
+		size = 17
+	}
+officers = {
+		culture = mashriqi
+		religion = sunni
+		size = 2
+	}
+clergymen = {
+		culture = mashriqi
+		religion = sunni
+		size = 2
+	}
+artisans = {
+		culture = mashriqi
+		religion = sunni
+		size = 2
+	}
+farmers = {
+		culture = mashriqi
+		religion = sunni
+		size = 16
+	}
+aristocrats = {
+		culture = druzes
+		religion = druze
+		size = 10
+	}
+clergymen = {
+		culture = druzes
+		religion = druze
+		size = 2
+	}
+artisans = {
+		culture = druzes
+		religion = druze
+		size = 4
+	}
+farmers = {
+		culture = druzes
+		religion = druze
+		size = 64
+	}
+artisans = {
+		culture = armenian
+		religion = coptic
+		size = 2
+	}
+farmers = {
+		culture = armenian
+		religion = coptic
+		size = 22
+	}
+clergymen = {
+		culture = armenian
+		religion = catholic
+		size = 2
+	}
+artisans = {
+		culture = armenian
+		religion = catholic
+		size = 7
+	}
+farmers = {
+		culture = armenian
+		religion = catholic
+		size = 35
+	}
+clergymen = {
+		culture = mizrahi
+		religion = jewish
+		size = 2
+	}
+artisans = {
+		culture = mizrahi
+		religion = jewish
+		size = 9
+	}
 }
 
 4466 = {
@@ -809,5 +804,153 @@ farmers = {
 		culture = alawites
 		religion = shiite
 		size = 843
+	}
+}
+
+913 = {
+aristocrats = {
+		culture = mashriqi
+		religion = shiite
+		size = 42
+	}
+clergymen = {
+		culture = mashriqi
+		religion = shiite
+		size = 83
+	}
+artisans = {
+		culture = mashriqi
+		religion = shiite
+		size = 104
+	}
+farmers = {
+		culture = mashriqi
+		religion = shiite
+		size = 812
+	}
+clergymen = {
+		culture = syriac
+		religion = orthodox
+		size = 166
+	}
+artisans = {
+		culture = syriac
+		religion = orthodox
+		size = 209
+	}
+farmers = {
+		culture = syriac
+		religion = orthodox
+		size = 4371
+	}
+aristocrats = {
+		culture = syriac
+		religion = catholic
+		size = 375
+	}
+bureaucrats = {
+		culture = syriac
+		religion = catholic
+		size = 250
+	}
+clergymen = {
+		culture = syriac
+		religion = catholic
+		size = 499
+	}
+artisans = {
+		culture = syriac
+		religion = catholic
+		size = 2373
+	}
+farmers = {
+		culture = syriac
+		religion = catholic
+		size = 3996
+	}
+soldiers = {
+		culture = syriac
+		religion = catholic
+		size = 812
+	}
+officers = {
+		culture = mashriqi
+		religion = sunni
+		size = 83
+	}
+clergymen = {
+		culture = mashriqi
+		religion = sunni
+		size = 83
+	}
+artisans = {
+		culture = mashriqi
+		religion = sunni
+		size = 104
+	}
+farmers = {
+		culture = mashriqi
+		religion = sunni
+		size = 770
+	}
+aristocrats = {
+		culture = druzes
+		religion = druze
+		size = 490
+	}
+clergymen = {
+		culture = druzes
+		religion = druze
+		size = 83
+	}
+artisans = {
+		culture = druzes
+		religion = druze
+		size = 166
+	}
+farmers = {
+		culture = druzes
+		religion = druze
+		size = 3017
+	}
+clergymen = {
+		culture = armenian
+		religion = coptic
+		size = 21
+	}
+artisans = {
+		culture = armenian
+		religion = coptic
+		size = 83
+	}
+farmers = {
+		culture = armenian
+		religion = coptic
+		size = 1062
+	}
+clergymen = {
+		culture = armenian
+		religion = catholic
+		size = 104
+	}
+artisans = {
+		culture = armenian
+		religion = catholic
+		size = 333
+	}
+farmers = {
+		culture = armenian
+		religion = catholic
+		size = 1644
+	}
+clergymen = {
+		culture = mizrahi
+		religion = jewish
+		size = 83
+	}
+artisans = {
+		culture = mizrahi
+		religion = jewish
+		size = 408
 	}
 }

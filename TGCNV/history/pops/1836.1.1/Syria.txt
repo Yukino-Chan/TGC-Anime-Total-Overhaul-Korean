@@ -455,6 +455,22 @@ farmers = {
         religion = jewish
         size = 463
     }
+
+artisans = {
+        culture = druzes
+        religion = druze
+        size = 1
+    }
+farmers = {
+        culture = druzes
+        religion = druze
+        size = 9
+    }
+farmers = {
+        culture = syriac
+        religion = coptic
+        size = 2
+    }
 }
 
 903 = {
@@ -646,53 +662,7 @@ farmers = {
     }
 }
 
-906 = {
-aristocrats = {
-        culture = druzes
-        religion = druze
-        size = 25
-    }
-clergymen = {
-        culture = druzes
-        religion = druze
-        size = 20
-    }
-artisans = {
-        culture = druzes
-        religion = druze
-        size = 125
-    }
-soldiers = {
-        culture = druzes
-        religion = druze
-        size = 30
-    }
-farmers = {
-        culture = druzes
-        religion = druze
-        size = 2000
-    }
-clergymen = {
-        culture = syriac
-        religion = coptic
-        size = 10
-    }
-artisans = {
-        culture = syriac
-        religion = coptic
-        size = 25
-    }
-farmers = {
-        culture = syriac
-        religion = coptic
-        size = 350
-    }
-farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 50
-    }
-}
+
 
 907 = {
 aristocrats = {
@@ -1779,5 +1749,53 @@ farmers = {
         culture = yazidis
         religion = yazidi
         size = 2500
+    }
+}
+
+906 = {
+aristocrats = {
+        culture = druzes
+        religion = druze
+        size = 25
+    }
+clergymen = {
+        culture = druzes
+        religion = druze
+        size = 20
+    }
+artisans = {
+        culture = druzes
+        religion = druze
+        size = 124
+    }
+soldiers = {
+        culture = druzes
+        religion = druze
+        size = 30
+    }
+farmers = {
+        culture = druzes
+        religion = druze
+        size = 1991
+    }
+clergymen = {
+        culture = syriac
+        religion = coptic
+        size = 10
+    }
+artisans = {
+        culture = syriac
+        religion = coptic
+        size = 25
+    }
+farmers = {
+        culture = syriac
+        religion = coptic
+        size = 348
+    }
+farmers = {
+        culture = bedouin
+        religion = sunni
+        size = 50
     }
 }

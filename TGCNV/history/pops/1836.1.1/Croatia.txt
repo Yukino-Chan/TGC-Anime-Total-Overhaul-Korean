@@ -891,88 +891,7 @@ soldiers = {
 	}
 }
 
-776 = {
-clergymen = {
-		culture = croat
-		religion = catholic
-		size = 18
-	}
-artisans = {
-		culture = croat
-		religion = catholic
-		size = 74
-	}
-soldiers = {
-		culture = croat
-		religion = catholic
-		size = 5
-	}
-farmers = {
-		culture = croat
-		religion = catholic
-		size = 2004
-	}
-clergymen = {
-		culture = serb
-		religion = orthodox
-		size = 54
-	}
-artisans = {
-		culture = serb
-		religion = orthodox
-		size = 288
-	}
-soldiers = {
-		culture = croat
-		religion = catholic
-		size = 14
-	}
-serfs = {
-		culture = croat
-		religion = catholic
-		size = 1729
-	}
-soldiers = {
-		culture = croat
-		religion = catholic
-		size = 9
-	}
-aristocrats = {
-		culture = croat
-		religion = catholic
-		size = 50
-	}
-soldiers = {
-		culture = serb
-		religion = orthodox
-		size = 41
-	}
-farmers = {
-		culture = serb
-		religion = orthodox
-		size = 1598
-	}
-clergymen = {
-		culture = slovak
-		religion = catholic
-		size = 6
-	}
-farmers = {
-		culture = slovak
-		religion = catholic
-		size = 110
-	}
-serfs = {
-		culture = serb
-		religion = orthodox
-		size = 879
-	}
-soldiers = {
-		culture = serb
-		religion = orthodox
-		size = 4
-	}
-}
+
 
 777 = {
 aristocrats = {
@@ -1159,6 +1078,42 @@ clergymen = {
 		culture = slovak
 		religion = catholic
 		size = 0
+	}
+
+artisans = {
+		culture = croat
+		religion = catholic
+		size = 1
+	}
+farmers = {
+		culture = croat
+		religion = catholic
+		size = 18
+	}
+artisans = {
+		culture = serb
+		religion = orthodox
+		size = 3
+	}
+serfs = {
+		culture = croat
+		religion = catholic
+		size = 16
+	}
+farmers = {
+		culture = serb
+		religion = orthodox
+		size = 15
+	}
+farmers = {
+		culture = slovak
+		religion = catholic
+		size = 1
+	}
+serfs = {
+		culture = serb
+		religion = orthodox
+		size = 8
 	}
 }
 
@@ -6759,5 +6714,88 @@ serfs = {
 		culture = serb
 		religion = orthodox
 		size = 76
+	}
+}
+
+776 = {
+clergymen = {
+		culture = croat
+		religion = catholic
+		size = 18
+	}
+artisans = {
+		culture = croat
+		religion = catholic
+		size = 73
+	}
+soldiers = {
+		culture = croat
+		religion = catholic
+		size = 5
+	}
+farmers = {
+		culture = croat
+		religion = catholic
+		size = 1986
+	}
+clergymen = {
+		culture = serb
+		religion = orthodox
+		size = 54
+	}
+artisans = {
+		culture = serb
+		religion = orthodox
+		size = 285
+	}
+soldiers = {
+		culture = croat
+		religion = catholic
+		size = 14
+	}
+serfs = {
+		culture = croat
+		religion = catholic
+		size = 1713
+	}
+soldiers = {
+		culture = croat
+		religion = catholic
+		size = 9
+	}
+aristocrats = {
+		culture = croat
+		religion = catholic
+		size = 50
+	}
+soldiers = {
+		culture = serb
+		religion = orthodox
+		size = 41
+	}
+farmers = {
+		culture = serb
+		religion = orthodox
+		size = 1583
+	}
+clergymen = {
+		culture = slovak
+		religion = catholic
+		size = 6
+	}
+farmers = {
+		culture = slovak
+		religion = catholic
+		size = 109
+	}
+serfs = {
+		culture = serb
+		religion = orthodox
+		size = 871
+	}
+soldiers = {
+		culture = serb
+		religion = orthodox
+		size = 4
 	}
 }

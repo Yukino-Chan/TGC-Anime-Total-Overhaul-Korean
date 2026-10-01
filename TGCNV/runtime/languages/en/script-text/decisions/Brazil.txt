@@ -582,7 +582,7 @@ political_decisions = {
 				URU_2344 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				2344 = { change_province_name = "Montevideu" }
 				2346 = { change_province_name = "Santa Rosa" }
-				2344 = { state_scope = { change_region_name = "Cisplatina Province" } }
+				2344 = {  }
 			}
 
 			ai_will_do = {
@@ -649,13 +649,13 @@ political_decisions = {
 				random_owned = { limit = { province_id = 2340 } 2340 = { change_province_name = "Vila Real" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 				random_owned = { limit = { province_id = 2341 } 2341 = { change_province_name = "Itapua" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 				random_owned = { limit = { province_id = 2342 } 2342 = { change_province_name = "Vila Rica do Espirito Santo" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
-				2340 = { state_scope = { change_region_name = "Paraguay Province" } }
+				2340 = {  }
 				set_country_flag = hidden_tooltip
 				random_owned = {
 					limit = { owner = { has_country_flag = hidden_tooltip NOT = { has_global_flag = extra_flavour_disabled } } }
 					random = {
 						chance = 1
-						owner = { 2340 = { state_scope = { change_region_name = "Mato Grosso do Oeste Province" } } }
+						owner = { 2340 = {  } }
 					}
 				}
 				clr_country_flag = hidden_tooltip

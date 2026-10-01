@@ -1,8 +1,10 @@
-add_core = GER
-add_core = PRU
-add_core = RHI
-owner = PRU
-controller = PRU
+add_core = NET
+add_core = BEL
+
+
+
+owner = BEL
+controller = BEL
 trade_goods = coal
 terrain = woods
 life_rating = 35

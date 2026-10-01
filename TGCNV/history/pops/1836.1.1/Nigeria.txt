@@ -763,63 +763,7 @@ slaves = {
 	}
 }
 
-1938 = {
-aristocrats = {
-		culture = east_kwa
-		religion = animist
-		size = 13
-	}
-clergymen = {
-		culture = east_kwa
-		religion = animist
-		size = 25
-	}
-artisans = {
-		culture = east_kwa
-		religion = animist
-		size = 50
-	}
-soldiers = {
-		culture = east_kwa
-		religion = animist
-		size = 13
-	}
-tribals = {
-		culture = east_kwa
-		religion = animist
-		size = 900
-	}
-slaves = {
-		culture = east_kwa
-		religion = animist
-		size = 1000
-	}
-aristocrats = {
-		culture = east_kwa
-		religion = sunni
-		size = 113
-	}
-clergymen = {
-		culture = east_kwa
-		religion = sunni
-		size = 63
-	}
-artisans = {
-		culture = east_kwa
-		religion = sunni
-		size = 250
-	}
-soldiers = {
-		culture = east_kwa
-		religion = sunni
-		size = 63
-	}
-farmers = {
-		culture = east_kwa
-		religion = sunni
-		size = 4513
-	}
-}
+
 
 1939 = {
 aristocrats = {
@@ -954,38 +898,7 @@ slaves = {
 	}
 }
 
-1940 = {
-aristocrats = {
-		culture = east_kwa
-		religion = animist
-		size = 163
-	}
-clergymen = {
-		culture = east_kwa
-		religion = animist
-		size = 88
-	}
-artisans = {
-		culture = east_kwa
-		religion = animist
-		size = 350
-	}
-soldiers = {
-		culture = east_kwa
-		religion = animist
-		size = 88
-	}
-tribals = {
-		culture = east_kwa
-		religion = animist
-		size = 5313
-	}
-slaves = {
-		culture = east_kwa
-		religion = animist
-		size = 2500
-	}
-}
+
 
 1941 = {
 aristocrats = {
@@ -2802,6 +2715,92 @@ farmers = {
 		religion = sunni
 		size = 4512
 	}
+
+aristocrats = {
+		culture = east_kwa
+		religion = animist
+		size = 1
+	}
+clergymen = {
+		culture = east_kwa
+		religion = animist
+		size = 3
+	}
+artisans = {
+		culture = east_kwa
+		religion = animist
+		size = 5
+	}
+soldiers = {
+		culture = east_kwa
+		religion = animist
+		size = 1
+	}
+tribals = {
+		culture = east_kwa
+		religion = animist
+		size = 91
+	}
+slaves = {
+		culture = east_kwa
+		religion = animist
+		size = 101
+	}
+aristocrats = {
+		culture = east_kwa
+		religion = sunni
+		size = 11
+	}
+clergymen = {
+		culture = east_kwa
+		religion = sunni
+		size = 6
+	}
+artisans = {
+		culture = east_kwa
+		religion = sunni
+		size = 25
+	}
+soldiers = {
+		culture = east_kwa
+		religion = sunni
+		size = 6
+	}
+farmers = {
+		culture = east_kwa
+		religion = sunni
+		size = 457
+	}
+aristocrats = {
+		culture = east_kwa
+		religion = animist
+		size = 3
+	}
+clergymen = {
+		culture = east_kwa
+		religion = animist
+		size = 1
+	}
+artisans = {
+		culture = east_kwa
+		religion = animist
+		size = 6
+	}
+soldiers = {
+		culture = east_kwa
+		religion = animist
+		size = 1
+	}
+tribals = {
+		culture = east_kwa
+		religion = animist
+		size = 87
+	}
+slaves = {
+		culture = east_kwa
+		religion = animist
+		size = 41
+	}
 }
 
 5495 = {
@@ -3961,5 +3960,111 @@ farmers = {
 		culture = bedouin
 		religion = sunni
 		size = 3600
+	}
+}
+
+1938 = {
+aristocrats = {
+		culture = east_kwa
+		religion = animist
+		size = 12
+	}
+clergymen = {
+		culture = east_kwa
+		religion = animist
+		size = 22
+	}
+artisans = {
+		culture = east_kwa
+		religion = animist
+		size = 45
+	}
+soldiers = {
+		culture = east_kwa
+		religion = animist
+		size = 12
+	}
+tribals = {
+		culture = east_kwa
+		religion = animist
+		size = 809
+	}
+slaves = {
+		culture = east_kwa
+		religion = animist
+		size = 899
+	}
+aristocrats = {
+		culture = east_kwa
+		religion = sunni
+		size = 102
+	}
+clergymen = {
+		culture = east_kwa
+		religion = sunni
+		size = 57
+	}
+artisans = {
+		culture = east_kwa
+		religion = sunni
+		size = 225
+	}
+soldiers = {
+		culture = east_kwa
+		religion = sunni
+		size = 57
+	}
+farmers = {
+		culture = east_kwa
+		religion = sunni
+		size = 4056
+	}
+tribals = {
+		culture = gur
+		religion = animist
+		size = 2
+	}
+slaves = {
+		culture = yoruba
+		religion = animist
+		size = 1
+	}
+farmers = {
+		culture = east_kwa
+		religion = sunni
+		size = 6
+	}
+}
+
+1940 = {
+aristocrats = {
+		culture = east_kwa
+		religion = animist
+		size = 160
+	}
+clergymen = {
+		culture = east_kwa
+		religion = animist
+		size = 87
+	}
+artisans = {
+		culture = east_kwa
+		religion = animist
+		size = 344
+	}
+soldiers = {
+		culture = east_kwa
+		religion = animist
+		size = 87
+	}
+tribals = {
+		culture = east_kwa
+		religion = animist
+		size = 5226
+	}
+slaves = {
+		culture = east_kwa
+		religion = animist
+		size = 2459
 	}
 }

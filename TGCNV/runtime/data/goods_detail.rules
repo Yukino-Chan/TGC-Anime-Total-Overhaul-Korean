@@ -375,7 +375,7 @@ rule expanded_sugar_refinery sugar sugar_refinery factory 0 0 0 0 40 0 3 refined
 rule base_idol_media idol_media - any 0 0 0 0 0 0 1 unclassified 100
 rule expanded_artisan_idol_media idol_media artisan_idol_media artisan 0 0 0 0 40 0 3 fabric_banner_goods 35 photo_card_print 50 printed_album_magazine 15
 rule expanded_idol_media_studio idol_media idol_media_studio factory 0 0 0 0 40 0 3 fabric_banner_goods 30 photo_card_print 45 printed_album_magazine 25
-provinces 6925
+provinces 6940
 province 1 1 7 cold continent_north_america geo_usa naval_base_site region_usa_1 terrain_montane_tundra upland
 province 2 1 6 cold continent_north_america geo_usa region_tgc_territory_2 region_usa_1 terrain_arctic
 province 3 1 6 cold continent_north_america geo_usa region_usa_1 terrain_montane_tundra upland
@@ -6210,7 +6210,7 @@ province 6376 996 4 continent_europe geo_soviet region_rus_994 terrain_woods
 province 6377 997 4 continent_europe geo_soviet region_rus_1005 terrain_plains
 province 6378 6378 4 continent_europe geo_soviet region_psa_1278 terrain_plains
 province 6379 3379 4 continent_europe geo_soviet region_psa_147 terrain_woods
-province 6380 698 5 continent_europe geo_soviet region_baltic_sea_coast region_psa_188 terrain_woods
+province 6380 3412 4 continent_europe geo_low_countries region_psa_1996 terrain_plains
 province 6381 1102 3 continent_oceania geo_soviet region_rus_1102
 province 6382 887 5 continent_oceania geo_central_asia region_tur_890 terrain_hills upland
 province 6383 389 4 continent_europe geo_low_countries region_net_378 terrain_marsh
@@ -7301,4 +7301,19 @@ province 7467 2279 4 continent_south_america geo_south_america region_ecu_2279 r
 province 7468 2287 3 continent_south_america geo_south_america region_peu_2291
 province 7469 2287 3 continent_south_america geo_south_america region_peu_2291
 province 7470 2402 4 continent_south_america geo_south_america region_brz_2408 region_the_amazon_forest
+province 7471 565 4 continent_europe geo_germany region_nas_564 terrain_plains
+province 7472 574 6 continent_europe geo_germany region_psa_4877 region_rhineland_region terrain_urban urban
+province 7474 587 5 continent_europe geo_germany region_bad_586 terrain_montane_woods upland
+province 7475 2560 4 continent_europe geo_germany region_psa_1134 terrain_plains
+province 7476 4137 5 continent_europe geo_germany region_psa_4878 region_rhineland_region terrain_plains
+province 7477 575 6 continent_europe geo_germany region_pru_578 region_rhineland_region terrain_urban urban
+province 7478 790 3 continent_east_africa geo_africa region_eng_2014
+province 7479 1990 3 continent_central_africa geo_africa region_bel_1990
+province 7480 790 3 continent_east_africa geo_africa region_eng_2014
+province 7473 2528 4 continent_east_indies geo_indonesia region_asian_plantations region_ast_2528
+province 7481 1977 4 continent_central_africa geo_africa region_fra_1978 region_rubber_1880
+province 7482 1977 4 continent_central_africa geo_africa region_fra_1978 region_rubber_1880
+province 7483 2079 2 geo_africa region_eng_2078
+province 7484 2078 3 geo_africa naval_base_site region_eng_2083
+province 7485 2078 2 geo_africa region_eng_2083
 end

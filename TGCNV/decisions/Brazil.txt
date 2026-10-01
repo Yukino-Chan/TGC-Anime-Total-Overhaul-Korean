@@ -582,7 +582,7 @@ political_decisions = {
 				URU_2344 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				2344 = { change_province_name = "몬테비데우" }
 				2346 = { change_province_name = "산타로사" }
-				2344 = { state_scope = { change_region_name = "시스플라티나주" } }
+				2344 = {  }
 			}
 
 			ai_will_do = {
@@ -649,13 +649,13 @@ political_decisions = {
 				random_owned = { limit = { province_id = 2340 } 2340 = { change_province_name = "빌라헤알" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 				random_owned = { limit = { province_id = 2341 } 2341 = { change_province_name = "이타푸앙" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 				random_owned = { limit = { province_id = 2342 } 2342 = { change_province_name = "빌라히카두이스피리투산투" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
-				2340 = { state_scope = { change_region_name = "파라과이주" } }
+				2340 = {  }
 				set_country_flag = hidden_tooltip
 				random_owned = {
 					limit = { owner = { has_country_flag = hidden_tooltip NOT = { has_global_flag = extra_flavour_disabled } } }
 					random = {
 						chance = 1
-						owner = { 2340 = { state_scope = { change_region_name = "서마투그로수주" } } }
+						owner = { 2340 = {  } }
 					}
 				}
 				clr_country_flag = hidden_tooltip

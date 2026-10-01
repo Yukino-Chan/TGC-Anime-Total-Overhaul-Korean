@@ -2233,7 +2233,7 @@
 			}
 			random_owned = {
 				limit = { province_id = 81 }
-				state_scope = { change_region_name = "오리건주" }
+				
 			}
 			82 = {
 				change_province_name = "레이크뷰"
@@ -3061,7 +3061,7 @@
 			prestige = 4
 			78 = {
 				change_province_name = "시애틀"
-				state_scope = { change_region_name = "워싱턴주" }
+				
 				any_pop = {
 					limit = { is_culture_group = native_american }
 					reduce_pop = 0.3

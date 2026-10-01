@@ -1,0 +1,36 @@
+political_decisions = {
+	# TGCNV capital landmarks: sets the map landmark flags once (AI only, invisible to players).
+	tgcnv_capital_landmarks = {
+		potential = {
+			ai = yes
+			NOT = { has_global_flag = tgcnv_capital_landmarks_v1 }
+		}
+		allow = { }
+		effect = {
+			set_global_flag = tgcnv_capital_landmarks_v1
+			994 = { set_province_flag = tgcnv_winter_palace }
+			549 = { set_province_flag = tgcnv_brandenburg_gate }
+			619 = { set_province_flag = tgcnv_stephansdom }
+			860 = { set_province_flag = tgcnv_hagia_sophia }
+			749 = { set_province_flag = tgcnv_st_peters }
+			2146 = { set_province_flag = tgcnv_us_capitol_1836 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	# tgcnv_us_capitol: from 1866, replacing tgcnv_us_capitol_1836
+	tgcnv_capital_landmarks_tgcnv_us_capitol = {
+		potential = {
+			ai = yes
+			year = 1866
+			has_global_flag = tgcnv_capital_landmarks_v1
+			NOT = { has_global_flag = tgcnv_capital_landmarks_tgcnv_us_capitol }
+		}
+		allow = { }
+		effect = {
+			set_global_flag = tgcnv_capital_landmarks_tgcnv_us_capitol
+			2146 = { clr_province_flag = tgcnv_us_capitol_1836 set_province_flag = tgcnv_us_capitol }
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
