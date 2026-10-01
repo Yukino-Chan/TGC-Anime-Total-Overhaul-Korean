@@ -1,0 +1,61 @@
+# One-time repair for campaigns whose JAN initializer ran before the city-scope fix.
+# Keep this separate from the recurring renamers: do not duplicate their schedules.
+# Repair immediately; the confirmation option has no dynamic scope tooltip.
+country_event = {
+	id = 269891
+	title = "TGCNV_CITY_NAME_REPAIR_TITLE"
+	desc = "TGCNV_CITY_NAME_REPAIR_DESC"
+	fire_only_once = yes
+	trigger = {
+		tag = JAN
+		ai = yes
+		OR = {
+			NOT = { has_global_flag = tgcnv_city_name_scope_repaired_20261001_16 }
+			NOT = { has_global_flag = tgcnv_city_name_scope_repaired_20261001_19 }
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		if = {
+			limit = { NOT = { has_global_flag = tgcnv_city_name_scope_repaired_20261001_16 } }
+			693 = { change_province_name = "Elbing" }
+			695 = { change_province_name = "Konigsberg" }
+			4389 = { change_province_name = "Archontochori" }
+			4536 = { change_province_name = "Muyezerskiy" }
+			6607 = { change_province_name = "Kherson  /  Yelisavetgrad" }
+			6608 = { change_province_name = "SyniVody" }
+			7145 = { change_province_name = "Ayrshire" }
+			7246 = { change_province_name = "Aberdour" }
+			7250 = { change_province_name = "Kewstoke" }
+			7251 = { change_province_name = "Lundy" }
+			7252 = { change_province_name = "Snettisham" }
+			7258 = { change_province_name = "Pirenga" }
+			7259 = { change_province_name = "Paanajarvi" }
+			7275 = { change_province_name = "Bommelsvitte" }
+			7276 = { change_province_name = "Veglia" }
+			7277 = { change_province_name = "Orasac" }
+			7282 = { change_province_name = "Galaxidi" }
+			7283 = { change_province_name = "Antikyra" }
+			7417 = { change_province_name = "Kamyshevatskaya" }
+			7423 = { change_province_name = "Sulak" }
+			if = {
+				limit = { has_global_flag = renamings_enabled }
+				any_land_province = { limit = { province_id = 693 owner = { is_culture_group = germanic } } change_province_name = "Elbing" }
+				any_land_province = { limit = { province_id = 693 owner = { OR = { is_culture_group = polish_culture_group is_culture_group = east_slavic AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "Elblag" }
+				any_land_province = { limit = { province_id = 695 owner = { is_culture_group = germanic } } change_province_name = "Konigsberg" }
+				any_land_province = { limit = { province_id = 695 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "Krolewiec" }
+				any_land_province = { limit = { province_id = 695 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "Korolevets" }
+				any_land_province = { limit = { province_id = 695 owner = { is_culture_group = east_slavic has_country_flag = communist_gov } } change_province_name = "Kaliningrad" }
+				any_land_province = { limit = { province_id = 695 owner = { primary_culture = lithuanian } } change_province_name = "Karaliauchius" }
+			}
+			set_global_flag = tgcnv_city_name_scope_repaired_20261001_16
+		}
+		if = {
+			limit = { NOT = { has_global_flag = tgcnv_city_name_scope_repaired_20261001_19 } }
+			3716 = { change_province_name = "Le Mars" }
+			7241 = { change_province_name = "Baudette" }
+			set_global_flag = tgcnv_city_name_scope_repaired_20261001_19
+		}
+	}
+	option = { name = "TGCNV_CITY_NAME_REPAIR_OK" }
+}

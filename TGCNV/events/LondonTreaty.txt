@@ -172,6 +172,7 @@ country_event = {
 					region = NET_382
 					region = NET_385
 					region = TGC_LONDON_LIMBURG
+					region = TGC_LONDON_LIMBURG_DIRECT
 					region = TGC_LUXEMBOURG_EAST
 					
 					
@@ -281,12 +282,12 @@ country_event = {
 		TGC_LUXEMBOURG_WEST = { remove_core = NET }
 		BEL = { all_core = { remove_core = NET } }
 		TGC_LONDON_LIMBURG = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-		TGC_LONDON_LIMBURG_DIRECT = { remove_core = LBG }
+		TGC_LONDON_LIMBURG_DIRECT = { remove_core = LBG add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		TGC_LONDON_LIMBURG_DUCHY = { add_core = LBG }
 		
 		
 		release_vassal = LBG
-		# Preserve the Dutch fortress districts even if native release expands a state.
+		# Preserve Dutch direct districts, including northern West Limburg, after native release.
 		TGC_LONDON_LIMBURG_DIRECT = { remove_core = LBG add_core = NET secede_province = NET }
 		LBG = { capital = 6380 }
 

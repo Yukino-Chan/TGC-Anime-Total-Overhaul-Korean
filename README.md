@@ -25,7 +25,9 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-이 배포는 사용자 승인 실험판입니다. 파일·서명·설치 도구 검증은 마쳤지만 장기 캠페인 안정성은 검증하지 않았습니다. 멀티플레이는 모든 참가자가 같은 배포를 설치해야 합니다. 프로빈스 재편 이전 지도에서 만든 세이브는 호환되지 않으므로 새 캠페인으로 시작해야 합니다. 이번 수정은 일일 재화 집계, 지명 변경 이벤트와 은행 문구를 갱신합니다. 직전 같은 지도 배포의 캠페인은 계속 사용할 수 있습니다.
+이 배포는 사용자 승인 실험판입니다. 파일·서명·설치 도구 검증은 마쳤지만 장기 캠페인 안정성은 검증하지 않았습니다. 멀티플레이는 모든 참가자가 같은 배포를 설치해야 합니다. 프로빈스 재편 이전 지도에서 만든 세이브는 호환되지 않으므로 새 캠페인으로 시작해야 합니다. 이번 수정은 캠페인 전환 시 지도 지명 동기화를 고치고, 자동 지명 복구·종교 인물 아이콘·신앙 이름·국교 문구 및 검증된 림뷔르흐 조약 영역을 갱신합니다. 685의 HMG_685 → HMG_684 이동과 런타임 주 표 보정을 함께 포함합니다. 물리적 지도 경계와 캐시는 유지하지만 행정 주 배정이 바뀌므로 새 캠페인으로 시작해 주세요. 기존 세이브의 주 배정 변환은 검증하지 않았습니다.
+
+기존 `event 16` 수동 호출 안내는 폐기합니다. 이벤트 16·19를 플레이어 국가에서 콘솔로 열면 크래시가 날 수 있습니다. 이번 배포는 지도 지명 동기화와 별도의 자동 복구를 사용합니다.
 
 ## 제작자, 출처와 권리
 
@@ -95,8 +97,10 @@ After the first installation, updates reuse the tools and files you already have
 
 The ZIPs and repository folders that contain the mod sources are not installers. Copying them into the Victoria II directory does not produce a working installation, because the loader, the verified map cache, and the language selection must be set up by the installer tools. Only the official installer release and the offline packages described above are supported; repackaged or third-party copies are not. Victoria II game files and DLC are not included in any package.
 
+Do not open legacy events `16` or `19` through the console on a player country: their effect preview can crash the game. The previous manual `event 16` recommendation is withdrawn. This release uses map label synchronization and a separate automatic repair event.
+
 ### Compatibility and verification
 
-The current mod uses a rebuilt province layout. Campaigns created before that layout change are incompatible and are not converted: start a fresh campaign when migrating from an older layout. This patch preserves the previous province layout and save format while optimizing daily goods aggregation and correcting province renaming and bank labels. Campaigns from the previous release with the same map layout can continue. Everyone in a multiplayer session must use the same build. Long campaigns, reloading saves, and multiplayer have not been fully verified. Victoria II itself remains a 32-bit game, and the helper processes used by the tools do not turn it into a fully 64-bit engine.
+The current mod uses a rebuilt province layout. Campaigns created before that layout change are incompatible and are not converted: start a fresh campaign when migrating from an older layout. This patch fixes map label synchronization when changing campaigns, adds automatic name repair and new anime faith portraits and labels, and includes the validated Limburg treaty districts. Province 685 now belongs to HMG_684 instead of HMG_685, and the runtime state table has been corrected to match. Province IDs and physical border geometry are unchanged, so the validated geometry cache is reused. Administrative state membership has changed: start a fresh campaign. Migration of state membership in existing saves has not been verified. Everyone in a multiplayer session must use the same build. Long campaigns, reloading saves, and multiplayer have not been fully verified. Victoria II itself remains a 32-bit game, and the helper processes used by the tools do not turn it into a fully 64-bit engine.
 
 The online updater authenticates signed metadata and checks downloaded file hashes before installation. For an offline archive, compare its SHA-256 with the trusted accompanying checksum and run Verify.cmd after extraction. If a check fails, keep the downloaded file and the error log, and do not hand-mix files from different packages; download again from the official release instead. If Windows denies write access, run the tool as administrator under the same Windows account so that its Documents profile stays the same.

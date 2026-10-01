@@ -1,0 +1,61 @@
+# One-time repair for campaigns whose JAN initializer ran before the city-scope fix.
+# Keep this separate from the recurring renamers: do not duplicate their schedules.
+# Repair immediately; the confirmation option has no dynamic scope tooltip.
+country_event = {
+	id = 269891
+	title = "TGCNV_CITY_NAME_REPAIR_TITLE"
+	desc = "TGCNV_CITY_NAME_REPAIR_DESC"
+	fire_only_once = yes
+	trigger = {
+		tag = JAN
+		ai = yes
+		OR = {
+			NOT = { has_global_flag = tgcnv_city_name_scope_repaired_20261001_16 }
+			NOT = { has_global_flag = tgcnv_city_name_scope_repaired_20261001_19 }
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		if = {
+			limit = { NOT = { has_global_flag = tgcnv_city_name_scope_repaired_20261001_16 } }
+			693 = { change_province_name = "엘빙" }
+			695 = { change_province_name = "쾨니히스베르크" }
+			4389 = { change_province_name = "아르콘토코리" }
+			4536 = { change_province_name = "무예제르스키" }
+			6607 = { change_province_name = "헤르손 옐리자베트그라드" }
+			6608 = { change_province_name = "시니보디" }
+			7145 = { change_province_name = "에어셔" }
+			7246 = { change_province_name = "애버다워" }
+			7250 = { change_province_name = "케우스토크" }
+			7251 = { change_province_name = "런디섬" }
+			7252 = { change_province_name = "스네티셤" }
+			7258 = { change_province_name = "피렝가호" }
+			7259 = { change_province_name = "파나야르비" }
+			7275 = { change_province_name = "봄멜스비테" }
+			7276 = { change_province_name = "베글리아" }
+			7277 = { change_province_name = "오라샤츠" }
+			7282 = { change_province_name = "갈락시디" }
+			7283 = { change_province_name = "안티키라" }
+			7417 = { change_province_name = "카미셰바츠카야" }
+			7423 = { change_province_name = "술라크" }
+			if = {
+				limit = { has_global_flag = renamings_enabled }
+				any_land_province = { limit = { province_id = 693 owner = { is_culture_group = germanic } } change_province_name = "엘빙" }
+				any_land_province = { limit = { province_id = 693 owner = { OR = { is_culture_group = polish_culture_group is_culture_group = east_slavic AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "엘블롱크" }
+				any_land_province = { limit = { province_id = 695 owner = { is_culture_group = germanic } } change_province_name = "쾨니히스베르크" }
+				any_land_province = { limit = { province_id = 695 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "크룰레비에츠" }
+				any_land_province = { limit = { province_id = 695 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "코롤레베츠" }
+				any_land_province = { limit = { province_id = 695 owner = { is_culture_group = east_slavic has_country_flag = communist_gov } } change_province_name = "칼리닌그라드" }
+				any_land_province = { limit = { province_id = 695 owner = { primary_culture = lithuanian } } change_province_name = "카라랴우추스" }
+			}
+			set_global_flag = tgcnv_city_name_scope_repaired_20261001_16
+		}
+		if = {
+			limit = { NOT = { has_global_flag = tgcnv_city_name_scope_repaired_20261001_19 } }
+			3716 = { change_province_name = "르마르" }
+			7241 = { change_province_name = "보데트" }
+			set_global_flag = tgcnv_city_name_scope_repaired_20261001_19
+		}
+	}
+	option = { name = "TGCNV_CITY_NAME_REPAIR_OK" }
+}
