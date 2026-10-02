@@ -1210,21 +1210,21 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 709 owner = { OR = { AND = { is_culture_group = germanic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = germanic } } } } } change_province_name = "Lumbsee" }
 			any_land_province = { limit = { province_id = 709 owner = { OR = { AND = { primary_culture = lithuanian NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { primary_culture = lithuanian } } } } } change_province_name = "Lomza" }
 
-			# 362
-			any_land_province = { limit = { province_id = 362 owner = { OR = { primary_culture = polish accepted_culture = polish } OR = { is_substate = no AND = { is_substate = yes NOT = { overlord = { is_culture_group = east_slavic } } NOT = { overlord = { is_culture_group = germanic } } NOT = { overlord = { primary_culture = lithuanian } } } } } } change_province_name = "Mariampol" }
-			any_land_province = { limit = { province_id = 362 owner = { OR = { AND = { is_culture_group = east_slavic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = east_slavic } } } } } change_province_name = "Mariyampole" }
-			any_land_province = { limit = { province_id = 362 owner = { OR = { AND = { is_culture_group = germanic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = germanic } } } } } change_province_name = "Mariampol" }
-			any_land_province = { limit = { province_id = 362 owner = { OR = { AND = { primary_culture = lithuanian NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { primary_culture = lithuanian } } } } } change_province_name = "Marijampole" }
+			# 3923 (TGCNV 2026-10-03: names of 362, its town is on 3923's land)
+			any_land_province = { limit = { province_id = 3923 owner = { OR = { primary_culture = polish accepted_culture = polish } OR = { is_substate = no AND = { is_substate = yes NOT = { overlord = { is_culture_group = east_slavic } } NOT = { overlord = { is_culture_group = germanic } } NOT = { overlord = { primary_culture = lithuanian } } } } } } change_province_name = "Mariampol" }
+			any_land_province = { limit = { province_id = 3923 owner = { OR = { AND = { is_culture_group = east_slavic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = east_slavic } } } } } change_province_name = "Mariyampole" }
+			any_land_province = { limit = { province_id = 3923 owner = { OR = { AND = { is_culture_group = germanic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = germanic } } } } } change_province_name = "Mariampol" }
+			any_land_province = { limit = { province_id = 3923 owner = { OR = { AND = { primary_culture = lithuanian NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { primary_culture = lithuanian } } } } } change_province_name = "Marijampole" }
 
-			# 715
-			any_land_province = { limit = { province_id = 715 owner = { OR = { primary_culture = polish accepted_culture = polish } OR = { is_substate = no AND = { is_substate = yes NOT = { overlord = { is_culture_group = east_slavic } } NOT = { overlord = { is_culture_group = germanic } } } } } } change_province_name = "Lublin" }
-			any_land_province = { limit = { province_id = 715 owner = { OR = { AND = { is_culture_group = east_slavic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = east_slavic } } } } } change_province_name = "Ljublin" }
-			any_land_province = { limit = { province_id = 715 owner = { OR = { AND = { is_culture_group = germanic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = germanic } } } } } change_province_name = "Lublin" }
+			# 711 (TGCNV 2026-10-03: names of 715, its town is on 711's land)
+			any_land_province = { limit = { province_id = 711 owner = { OR = { primary_culture = polish accepted_culture = polish } OR = { is_substate = no AND = { is_substate = yes NOT = { overlord = { is_culture_group = east_slavic } } NOT = { overlord = { is_culture_group = germanic } } } } } } change_province_name = "Lublin" }
+			any_land_province = { limit = { province_id = 711 owner = { OR = { AND = { is_culture_group = east_slavic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = east_slavic } } } } } change_province_name = "Ljublin" }
+			any_land_province = { limit = { province_id = 711 owner = { OR = { AND = { is_culture_group = germanic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = germanic } } } } } change_province_name = "Lublin" }
 
-			# 711
-			any_land_province = { limit = { province_id = 711 owner = { OR = { primary_culture = polish accepted_culture = polish } OR = { is_substate = no AND = { is_substate = yes NOT = { overlord = { is_culture_group = east_slavic } } NOT = { overlord = { is_culture_group = germanic } } } } } } change_province_name = "Sandomierz" }
-			any_land_province = { limit = { province_id = 711 owner = { OR = { AND = { is_culture_group = east_slavic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = east_slavic } } } } } change_province_name = "Sandomierz" }
-			any_land_province = { limit = { province_id = 711 owner = { OR = { AND = { is_culture_group = germanic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = germanic } } } } } change_province_name = "Sandomierz" }
+			# 7113 (TGCNV 2026-10-03: names of 711, its town is on 7113's land)
+			any_land_province = { limit = { province_id = 7113 owner = { OR = { primary_culture = polish accepted_culture = polish } OR = { is_substate = no AND = { is_substate = yes NOT = { overlord = { is_culture_group = east_slavic } } NOT = { overlord = { is_culture_group = germanic } } } } } } change_province_name = "Sandomierz" }
+			any_land_province = { limit = { province_id = 7113 owner = { OR = { AND = { is_culture_group = east_slavic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = east_slavic } } } } } change_province_name = "Sandomierz" }
+			any_land_province = { limit = { province_id = 7113 owner = { OR = { AND = { is_culture_group = germanic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = germanic } } } } } change_province_name = "Sandomierz" }
 
 			# 713
 			any_land_province = { limit = { province_id = 713 owner = { OR = { primary_culture = polish accepted_culture = polish } OR = { is_substate = no AND = { is_substate = yes NOT = { overlord = { is_culture_group = east_slavic } } NOT = { overlord = { is_culture_group = germanic } } } } } } change_province_name = "Radom" }
@@ -1276,11 +1276,11 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 939 owner = { primary_culture = polish } } change_province_name = "Slonim" }
 			any_land_province = { limit = { province_id = 939 owner = { is_culture_group = germanic } } change_province_name = "Slonim" }
 
-			# 940
-			any_land_province = { limit = { province_id = 940 owner = { is_culture_group = east_slavic } } change_province_name = "Brest-Litovsk" }
-			any_land_province = { limit = { province_id = 940 owner = { primary_culture = polish } } change_province_name = "Brzesc Litewski" }
-			any_land_province = { limit = { province_id = 940 owner = { is_culture_group = germanic } } change_province_name = "Brest-Litowsk" }
-			any_land_province = { limit = { province_id = 940 owner = { primary_culture = lithuanian } } change_province_name = "Brestas" }
+			# 7121 (TGCNV 2026-10-03: names of 940, its town is on 7121's land)
+			any_land_province = { limit = { province_id = 7121 owner = { is_culture_group = east_slavic } } change_province_name = "Brest-Litovsk" }
+			any_land_province = { limit = { province_id = 7121 owner = { primary_culture = polish } } change_province_name = "Brzesc Litewski" }
+			any_land_province = { limit = { province_id = 7121 owner = { is_culture_group = germanic } } change_province_name = "Brest-Litowsk" }
+			any_land_province = { limit = { province_id = 7121 owner = { primary_culture = lithuanian } } change_province_name = "Brestas" }
 
 			# 936
 			any_land_province = { limit = { province_id = 936 owner = { is_culture_group = east_slavic } } change_province_name = "Volkovysk" }

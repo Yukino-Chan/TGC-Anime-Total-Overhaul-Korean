@@ -35,6 +35,8 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 안트베르펜·헨트 위치와 벨기에·젤란트 주변 지명을 바로잡고, 서림뷔르흐 주를 벨기에에 남겼으며(런던 조약 이벤트·결정 연동), 벨기에 수도를 옮겼습니다. 몽골 지역의 주 5개를 재편하고 차하르 주 이름을 붙였습니다. 위치·주 경계가 바뀌어 지도 캐시를 다시 만들었습니다.
 
+최근 지도 수정에는 포메라니아의 누락 항구, 폴란드·러시아 강 국경·주 배정·지명, 메멜 구획 교정이 포함됩니다. 대양과 연결된 해안 항구 1,217곳을 추가하고 293곳을 재배치했으며, 영문 지명 27개와 대응하는 캐시를 함께 갱신했습니다. 전체 팩은 새 캠페인 기준이며 실제 게임 화면 확인은 남아 있습니다.
+
 기존 `event 16` 수동 호출 안내는 폐기합니다. 이벤트 16·19를 플레이어 국가에서 콘솔로 열면 크래시가 날 수 있습니다. 이번 배포는 지도 지명 동기화와 별도의 자동 복구를 사용합니다.
 
 ## 제작자, 출처와 권리
@@ -118,5 +120,7 @@ This build also includes the R64-E1 duplicate-removal update and `actor_clones =
 Antwerp and Ghent positions, Low Countries place names and the west Limburg state (kept in Belgium, with the London Treaty event and decisions) are corrected, the Belgian capital moved, five Mongolian states regrouped (including the new Chahar state), and the map cache rebuilt to match. The engine (e0562e91, still displayed as 0.6.8.5) restores military time when a save was edited so that its unit count differs from the saved military journal: units outside the journal are adopted like newly created units, while battle records are still checked strictly. After a military-time failure the date panel now shows a restart notice.
 
 This build also merges duplicate POP lines in 125 starting-population files, tops up soldier POPs and fixes the home state of 70 order-of-battle files, so starting regiments (for example the British Cape garrison) no longer vanish; this applies to new campaigns. It adds the government table for newly independent or released countries and the Hanover release timing, and it corrects English unit terms (Armored Car, Medium Tank) and short unit names.
+
+The latest map update corrects missing Pomeranian ports, the Poland/Russia river border, state membership and place names, and the Memel area. It adds 1,217 ocean-facing coastal port points and relocates 293 to their own coastlines. Twenty-seven English labels and the matching rebuilt cache are included. Use the package with a fresh campaign; final in-game visual checks remain outstanding.
 
 The online updater authenticates signed metadata and checks downloaded file hashes before installation. For an offline archive, compare its SHA-256 with the trusted accompanying checksum and run Verify.cmd after extraction. If a check fails, keep the downloaded file and the error log, and do not hand-mix files from different packages; download again from the official release instead. If Windows denies write access, run the tool as administrator under the same Windows account so that its Documents profile stays the same.
