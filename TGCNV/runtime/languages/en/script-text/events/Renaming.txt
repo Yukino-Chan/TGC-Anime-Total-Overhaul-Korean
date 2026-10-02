@@ -312,9 +312,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 3469 owner = { is_culture_group = pan_french } } change_province_name = "La Haye" }
 
 			# 378
-			any_land_province = { limit = { province_id = 378 owner = { is_culture_group = beneluxian } } change_province_name = "Middelburg" }
-			any_land_province = { limit = { province_id = 378 owner = { is_culture_group = germanic } } change_province_name = "Mittelburg" }
-			any_land_province = { limit = { province_id = 378 owner = { is_culture_group = pan_french } } change_province_name = "Middelbourg" }
+			any_land_province = { limit = { province_id = 6383 owner = { is_culture_group = beneluxian } } change_province_name = "Middelburg" }
+			any_land_province = { limit = { province_id = 6383 owner = { is_culture_group = germanic } } change_province_name = "Mittelburg" }
+			any_land_province = { limit = { province_id = 6383 owner = { is_culture_group = pan_french } } change_province_name = "Middelburg" }
 
 			# 3384
 			any_land_province = { limit = { province_id = 3384 owner = { is_culture_group = beneluxian } } change_province_name = "Terneuzen" }
@@ -327,9 +327,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 379 owner = { is_culture_group = pan_french } } change_province_name = "Eindhoven" }
 
 			# 380
-			any_land_province = { limit = { province_id = 380 owner = { is_culture_group = beneluxian } } change_province_name = "'s-Hertogenbosch" }
-			any_land_province = { limit = { province_id = 380 owner = { is_culture_group = germanic } } change_province_name = "Herzogenbusch" }
-			any_land_province = { limit = { province_id = 380 owner = { is_culture_group = pan_french } } change_province_name = "'Bois-le_Duc" }
+			any_land_province = { limit = { province_id = 3943 owner = { is_culture_group = beneluxian } } change_province_name = "'s-Hertogenbosch" }
+			any_land_province = { limit = { province_id = 3943 owner = { is_culture_group = germanic } } change_province_name = "Herzogenbusch" }
+			any_land_province = { limit = { province_id = 3943 owner = { is_culture_group = pan_french } } change_province_name = "'Bois-le_Duc" }
 
 			# 381
 			any_land_province = { limit = { province_id = 381 owner = { is_culture_group = beneluxian } } change_province_name = "Maastricht" }
@@ -337,9 +337,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 381 owner = { is_culture_group = pan_french } } change_province_name = "Maestricht" }
 
 			# 3462
-			any_land_province = { limit = { province_id = 3462 owner = { is_culture_group = beneluxian } } change_province_name = "Sint-Truiden" }
-			any_land_province = { limit = { province_id = 3462 owner = { is_culture_group = germanic } } change_province_name = "Sankt-Treuden" }
-			any_land_province = { limit = { province_id = 3462 owner = { is_culture_group = pan_french } } change_province_name = "Saint-Trond" }
+			any_land_province = { limit = { province_id = 3948 owner = { is_culture_group = beneluxian } } change_province_name = "Sint-Truiden" }
+			any_land_province = { limit = { province_id = 3948 owner = { is_culture_group = germanic } } change_province_name = "Sankt-Treuden" }
+			any_land_province = { limit = { province_id = 3948 owner = { is_culture_group = pan_french } } change_province_name = "Saint-Trond" }
 
 			# 382
 			any_land_province = { limit = { province_id = 382 owner = { is_culture_group = beneluxian } } change_province_name = "Nijmegen" }
@@ -362,14 +362,14 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 385 owner = { is_culture_group = pan_french } } change_province_name = "Leuvarde" }
 
 			# 387
-			any_land_province = { limit = { province_id = 387 owner = { is_culture_group = beneluxian } } change_province_name = "Brussel" }
-			any_land_province = { limit = { province_id = 387 owner = { is_culture_group = germanic } } change_province_name = "Brussel" }
-			any_land_province = { limit = { province_id = 387 owner = { is_culture_group = pan_french } } change_province_name = "Bruxelles" }
+			any_land_province = { limit = { province_id = 3952 owner = { is_culture_group = beneluxian } } change_province_name = "Bruxelles" }
+			any_land_province = { limit = { province_id = 3952 owner = { is_culture_group = germanic } } change_province_name = "Bruxelles" }
+			any_land_province = { limit = { province_id = 3952 owner = { is_culture_group = pan_french } } change_province_name = "Bruxelles" }
 
 			# 3386
-			any_land_province = { limit = { province_id = 3386 owner = { is_culture_group = beneluxian } } change_province_name = "Waver" }
-			any_land_province = { limit = { province_id = 3386 owner = { is_culture_group = germanic } } change_province_name = "Waver" }
-			any_land_province = { limit = { province_id = 3386 owner = { is_culture_group = pan_french } } change_province_name = "Wavre" }
+			#TGCNV 2026-10-03 no province of this name now: any_land_province = { limit = { province_id = 3386 owner = { is_culture_group = beneluxian } } change_province_name = "와브르" }
+			#TGCNV 2026-10-03 no province of this name now: any_land_province = { limit = { province_id = 3386 owner = { is_culture_group = germanic } } change_province_name = "와브르" }
+			#TGCNV 2026-10-03 no province of this name now: any_land_province = { limit = { province_id = 3386 owner = { is_culture_group = pan_french } } change_province_name = "와브르" }
 
 			# 388
 			any_land_province = { limit = { province_id = 388 owner = { is_culture_group = beneluxian } } change_province_name = "Brugge" }
@@ -377,34 +377,34 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 388 owner = { is_culture_group = pan_french } } change_province_name = "Bruges" }
 
 			# 389
-			any_land_province = { limit = { province_id = 389 owner = { is_culture_group = beneluxian } } change_province_name = "Gent" }
-			any_land_province = { limit = { province_id = 389 owner = { is_culture_group = germanic } } change_province_name = "Gent" }
-			any_land_province = { limit = { province_id = 389 owner = { is_culture_group = pan_french } } change_province_name = "Saint-Trond" }
+			any_land_province = { limit = { province_id = 6472 owner = { is_culture_group = beneluxian } } change_province_name = "Gent" }
+			any_land_province = { limit = { province_id = 6472 owner = { is_culture_group = germanic } } change_province_name = "Gent" }
+			any_land_province = { limit = { province_id = 6472 owner = { is_culture_group = pan_french } } change_province_name = "River" }
 
 			# 400
-			any_land_province = { limit = { province_id = 400 owner = { is_culture_group = beneluxian } } change_province_name = "Duinkerken" }
-			any_land_province = { limit = { province_id = 400 owner = { is_culture_group = germanic } } change_province_name = "Dunkirchen" }
-			any_land_province = { limit = { province_id = 400 owner = { is_culture_group = pan_french } } change_province_name = "Dunkerque" }
+			any_land_province = { limit = { province_id = 3961 owner = { is_culture_group = beneluxian } } change_province_name = "Dunkerque" }
+			any_land_province = { limit = { province_id = 3961 owner = { is_culture_group = germanic } } change_province_name = "Dunkerque" }
+			any_land_province = { limit = { province_id = 3961 owner = { is_culture_group = pan_french } } change_province_name = "Dunkerque" }
 
 			# 3461
-			any_land_province = { limit = { province_id = 3461 owner = { is_culture_group = beneluxian } } change_province_name = "Geraardsbergen" }
-			any_land_province = { limit = { province_id = 3461 owner = { is_culture_group = germanic } } change_province_name = "Gerhardsbergen" }
-			any_land_province = { limit = { province_id = 3461 owner = { is_culture_group = pan_french } } change_province_name = "Grammont" }
+			any_land_province = { limit = { province_id = 6385 owner = { is_culture_group = beneluxian } } change_province_name = "Geraardsbergen" }
+			any_land_province = { limit = { province_id = 6385 owner = { is_culture_group = germanic } } change_province_name = "Gerhardsbergen" }
+			any_land_province = { limit = { province_id = 6385 owner = { is_culture_group = pan_french } } change_province_name = "Grammont" }
 
 			# 390
-			any_land_province = { limit = { province_id = 390 owner = { is_culture_group = beneluxian } } change_province_name = "Antwerpen" }
-			any_land_province = { limit = { province_id = 390 owner = { is_culture_group = germanic } } change_province_name = "Antorf" }
-			any_land_province = { limit = { province_id = 390 owner = { is_culture_group = pan_french } } change_province_name = "Anvers" }
+			any_land_province = { limit = { province_id = 6415 owner = { is_culture_group = beneluxian } } change_province_name = "Antwerpen" }
+			any_land_province = { limit = { province_id = 6415 owner = { is_culture_group = germanic } } change_province_name = "Antorf" }
+			any_land_province = { limit = { province_id = 6415 owner = { is_culture_group = pan_french } } change_province_name = "Anvers" }
 
 			# 3410
-			any_land_province = { limit = { province_id = 3410 owner = { is_culture_group = beneluxian } } change_province_name = "Turnhout" }
-			any_land_province = { limit = { province_id = 3410 owner = { is_culture_group = germanic } } change_province_name = "Dornholz" }
-			any_land_province = { limit = { province_id = 3410 owner = { is_culture_group = pan_french } } change_province_name = "Turnhout" }
+			#TGCNV 2026-10-03 no province of this name now: any_land_province = { limit = { province_id = 3410 owner = { is_culture_group = beneluxian } } change_province_name = "튀른하우트" }
+			#TGCNV 2026-10-03 no province of this name now: any_land_province = { limit = { province_id = 3410 owner = { is_culture_group = germanic } } change_province_name = "도른홀츠" }
+			#TGCNV 2026-10-03 no province of this name now: any_land_province = { limit = { province_id = 3410 owner = { is_culture_group = pan_french } } change_province_name = "튀른하우트" }
 
 			# 393
-			any_land_province = { limit = { province_id = 393 owner = { is_culture_group = beneluxian } } change_province_name = "Doornik" }
-			any_land_province = { limit = { province_id = 393 owner = { is_culture_group = germanic } } change_province_name = "Dornick" }
-			any_land_province = { limit = { province_id = 393 owner = { is_culture_group = pan_french } } change_province_name = "Tournai" }
+			any_land_province = { limit = { province_id = 400 owner = { is_culture_group = beneluxian } } change_province_name = "Doornik" }
+			any_land_province = { limit = { province_id = 400 owner = { is_culture_group = germanic } } change_province_name = "Doornik" }
+			any_land_province = { limit = { province_id = 400 owner = { is_culture_group = pan_french } } change_province_name = "Tournai" }
 
 			# 394
 			any_land_province = { limit = { province_id = 394 owner = { is_culture_group = beneluxian } } change_province_name = "Bergen" }
@@ -417,14 +417,14 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 399 owner = { is_culture_group = pan_french } } change_province_name = "Lille" }
 
 			# 392
-			any_land_province = { limit = { province_id = 392 owner = { is_culture_group = beneluxian } } change_province_name = "Namen" }
-			any_land_province = { limit = { province_id = 392 owner = { is_culture_group = germanic } } change_province_name = "Namur" }
-			any_land_province = { limit = { province_id = 392 owner = { is_culture_group = pan_french } } change_province_name = "Namur" }
+			any_land_province = { limit = { province_id = 3386 owner = { is_culture_group = beneluxian } } change_province_name = "Namen" }
+			any_land_province = { limit = { province_id = 3386 owner = { is_culture_group = germanic } } change_province_name = "Namur" }
+			any_land_province = { limit = { province_id = 3386 owner = { is_culture_group = pan_french } } change_province_name = "Namur" }
 
 			# 395
-			any_land_province = { limit = { province_id = 395 owner = { is_culture_group = beneluxian } } change_province_name = "Luik" }
-			any_land_province = { limit = { province_id = 395 owner = { is_culture_group = germanic } } change_province_name = "Luttich" }
-			any_land_province = { limit = { province_id = 395 owner = { is_culture_group = pan_french } } change_province_name = "Liege" }
+			any_land_province = { limit = { province_id = 3462 owner = { is_culture_group = beneluxian } } change_province_name = "Luik" }
+			any_land_province = { limit = { province_id = 3462 owner = { is_culture_group = germanic } } change_province_name = "Luttich" }
+			any_land_province = { limit = { province_id = 3462 owner = { is_culture_group = pan_french } } change_province_name = "Liege" }
 
 			# 3412
 			any_land_province = { limit = { province_id = 3412 owner = { is_culture_group = beneluxian } } change_province_name = "Verviers" }

@@ -722,7 +722,7 @@ political_decisions = {
 		    NET = { has_country_modifier = willem_i_absolutism NOT = { war_with = BEL } }
 			is_greater_power = yes
 			primary_culture = french
-			387 = { is_core = NET }
+			3952 = { is_core = NET }
 			alliance_with = NET
 			NOT = { NET = { has_country_flag = PRU_willem_i_alliance has_country_flag = FRA_willem_i_alliance } has_country_flag = FRA_willem_i_alliance_proposed }
 		}
@@ -747,14 +747,14 @@ political_decisions = {
 			is_greater_power = yes
 			primary_culture = french
 			NOT = { exists = BEL }
-			387 = { owned_by = NET }
+			3952 = { owned_by = NET }
 			NET = { has_country_flag = FRA_willem_i_alliance }
 			NOT = { has_global_flag = treaty_of_amsterdam_belgium }
 		}
 		allow = {
 			war = no
 			NOT = { exists = BEL }
-			387 = { owned_by = NET }
+			3952 = { owned_by = NET }
 		}
 
 		effect = {

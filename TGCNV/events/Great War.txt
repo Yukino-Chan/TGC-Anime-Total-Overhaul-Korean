@@ -2503,7 +2503,7 @@
 			#Give Eupen-Malmedy to Belgium
 			random_country = {
 				limit = {
-					owns = 395
+					owns = 3462
 					NOT = { tag = THIS }
 					}
 				country_event = 96091
@@ -5388,9 +5388,9 @@
 			#Add Belgian cores, if Belgium/Flanders is in a truce
 			random_country = {
 				limit = {
-					owns = 387
-					owns = 392
-					NOT = { owns = 400 }
+					owns = 3952
+					owns = 3386
+					NOT = { owns = 3961 }
 					NOT = { owns = 405 }
 					OR = {
 						tag = BEL
@@ -8897,7 +8897,7 @@
 					secede_province = THIS
 				}
 				6709 = { add_core = THIS add_core = FLA secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 399
-				400 = {
+				3961 = {
 					add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					add_core = FLA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = THIS

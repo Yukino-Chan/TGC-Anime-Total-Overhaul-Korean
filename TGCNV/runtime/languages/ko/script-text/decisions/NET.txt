@@ -165,7 +165,7 @@ political_decisions = {
 		potential = {
 			tag = NET
 			NOT = { has_country_flag = form_greater_netherlands }
-			NOT = { NET = { owns = 387 } }
+			NOT = { NET = { owns = 3952 } }
 			year = 1860
 		}
 
@@ -298,12 +298,12 @@ political_decisions = {
 			OR = {
 				AND = {
 					owns = 394 #Wallonia
-					owns = 387 #Flanders
+					owns = 3952 #Flanders
 					owns = 397 #Luxembourg
 				}
 				AND = {
-					owns = 387 #Brussels
-					owns = 392 #Namur
+					owns = 3952 #Brussels
+					owns = 3386 #Namur
 					owns = 397 #Luxembourg
 				}
 			}
@@ -325,7 +325,7 @@ political_decisions = {
 			set_country_flag = artois_claimed
 			FRA_404 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			405 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-			400 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3961 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			399 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			6709 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 399
 			relation = { who = FRA value = -400 }

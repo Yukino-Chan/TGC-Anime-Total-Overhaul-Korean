@@ -11,7 +11,7 @@ political_decisions = {
 
 		potential = {
 			has_country_flag = is_real_belgium
-			owns = 390
+			owns = 6415
 			NOT = { accepted_culture = dutch }
 			NOT = { has_country_flag = law_of_equality }
 		}
@@ -20,7 +20,7 @@ political_decisions = {
 			war = no
 			OR = {
 				revolution_n_counterrevolution = 1
-				387 = { average_militancy = 6 }
+				3952 = { average_militancy = 6 }
 				num_of_revolts = 1
 			}
 		}
@@ -31,7 +31,7 @@ political_decisions = {
 			clr_global_flag = france_rename_brussels
 			prestige = 10
 			add_accepted_culture = dutch
-			387 = { change_province_name = "ºê·ò¼¿" }
+			3952 = { change_province_name = "ºê·ò¼¿" }
 			any_pop = {
 				limit = {
 					has_pop_culture = dutch
@@ -59,9 +59,9 @@ political_decisions = {
 
 		allow = {
 			war = no
-			owns = 387
+			owns = 3952
 			OR = {
-				owns = 392
+				owns = 3386
 				WLL = {
 					war = no
 					exists = yes
@@ -93,7 +93,7 @@ political_decisions = {
 			change_tag = BEL
 			add_accepted_culture = french
 			remove_accepted_culture = dutch
-			capital = 387
+			capital = 3952
 			random_country = {
 				limit = {
 					tag = WLL
@@ -134,9 +134,9 @@ political_decisions = {
 
 		allow = {
 			war = no
-			owns = 392
+			owns = 3386
 			OR = {
-				owns = 387
+				owns = 3952
 				FLA = {
 					war = no
 					exists = yes
@@ -167,7 +167,7 @@ political_decisions = {
 			}
 			change_tag = BEL
 			#add_accepted_culture = dutch
-			capital = 392
+			capital = 3386
 			random_country = {
 				limit = {
 					tag = FLA
@@ -213,7 +213,7 @@ political_decisions = {
 
 		allow = {
 			war = no
-			owns = 387
+			owns = 3952
 		}
 
 		effect = {
@@ -259,7 +259,7 @@ political_decisions = {
 
 		allow = {
 			war = no
-			owns = 392
+			owns = 3386
 		}
 
 		effect = {
@@ -271,7 +271,7 @@ political_decisions = {
 			}
 			change_tag = WLL
 			remove_accepted_culture = dutch
-			capital = 392
+			capital = 3386
 			any_pop = {
 				limit = { has_pop_culture = french }
 				militancy = -3

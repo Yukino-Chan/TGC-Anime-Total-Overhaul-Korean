@@ -5077,7 +5077,7 @@ HMG_2595 = { 2595 6134 6445 7440 7442 7443 }
 HMG_3558 = { 3558 7425 7437 }
 
 # Dutch direct districts remain outside the released Duchy.
-TGC_LONDON_LIMBURG_DIRECT = { 3313 6415 3940 391 }
+TGC_LONDON_LIMBURG_DIRECT = { 3313 } # TGCNV 2026-10-03: West Limburg (391 3940 6415) stays Belgian
 TGC_LONDON_LIMBURG_DUCHY = { 3411 3942 6380 3412 }
 
 # Retired administrative areas: stable exact-scope aliases.

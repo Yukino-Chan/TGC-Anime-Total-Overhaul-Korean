@@ -33,6 +33,8 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 이번 재배포 엔진(e0562e91, 표시 버전 0.6.8.5)은 세이브를 편집해 부대 수가 군사 시간 기록과 달라지면 군사 시간이 켜지지 않던 문제를 고쳤습니다. 기록 밖의 부대는 새 부대처럼 편입하고 전투 기록 검사는 그대로 엄격합니다. 군사 시간이 멈춘 뒤에는 날짜 아래에 다시 실행 안내가 표시됩니다.
 
+안트베르펜·헨트 위치와 벨기에·젤란트 주변 지명을 바로잡고, 서림뷔르흐 주를 벨기에에 남겼으며(런던 조약 이벤트·결정 연동), 벨기에 수도를 옮겼습니다. 위치 파일이 바뀌어 지도 캐시를 다시 만들었습니다.
+
 기존 `event 16` 수동 호출 안내는 폐기합니다. 이벤트 16·19를 플레이어 국가에서 콘솔로 열면 크래시가 날 수 있습니다. 이번 배포는 지도 지명 동기화와 별도의 자동 복구를 사용합니다.
 
 ## 제작자, 출처와 권리
@@ -113,7 +115,7 @@ The installed experimental DLL reports display version 0.6.8.5. This build keeps
 
 This build also includes the R64-E1 duplicate-removal update and `actor_clones = 0`. It keeps the original actor for each type and disables the extra mesh-copying actor clone. The update passed 144 relocated-PE buffer checks for guarded matching, rejected configuration and repeated installation. The same build passed the 282 lazy-loading and 59 air-profile coexistence checks. Live animation, selection, battles and several units of the same type remain unverified.
 
-This redeployment engine (e0562e91, still displayed as 0.6.8.5) restores military time when a save was edited so that its unit count differs from the saved military journal: units outside the journal are adopted like newly created units, while battle records are still checked strictly. After a military-time failure the date panel now shows a restart notice.
+Antwerp and Ghent positions, Low Countries place names and the west Limburg state (kept in Belgium, with the London Treaty event and decisions) are corrected, the Belgian capital moved, and the map cache rebuilt to match. The engine (e0562e91, still displayed as 0.6.8.5) restores military time when a save was edited so that its unit count differs from the saved military journal: units outside the journal are adopted like newly created units, while battle records are still checked strictly. After a military-time failure the date panel now shows a restart notice.
 
 This build also merges duplicate POP lines in 125 starting-population files, tops up soldier POPs and fixes the home state of 70 order-of-battle files, so starting regiments (for example the British Cape garrison) no longer vanish; this applies to new campaigns. It adds the government table for newly independent or released countries and the Hanover release timing, and it corrects English unit terms (Armored Car, Medium Tank) and short unit names.
 

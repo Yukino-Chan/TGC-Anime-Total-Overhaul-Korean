@@ -3111,7 +3111,7 @@ political_decisions = {
 		potential = {
 			is_greater_power = yes
 			primary_culture = north_german
-			387 = { is_core = NET }
+			3952 = { is_core = NET }
 			alliance_with = NET
 			NOT = { NET = { has_country_flag = PRU_willem_i_alliance has_country_flag = FRA_willem_i_alliance } has_country_flag = PRU_willem_i_alliance_proposed }
 			NET = { has_country_modifier = willem_i_absolutism NOT = { war_with = BEL } }
@@ -3144,14 +3144,14 @@ political_decisions = {
 			is_greater_power = yes
 			primary_culture = north_german
 			NOT = { exists = BEL }
-			387 = { owned_by = NET }
+			3952 = { owned_by = NET }
 			NET = { has_country_flag = PRU_willem_i_alliance }
 			NOT = { has_global_flag = treaty_of_amsterdam_belgium }
 		}
 		allow = {
 			war = no
 			NOT = { exists = BEL }
-			387 = { owned_by = NET }
+			3952 = { owned_by = NET }
 		}
 
 		effect = {
@@ -4561,10 +4561,10 @@ political_decisions = {
 		picture = wallonien
 		potential = {
 			tag = GER
-			owns = 392
-			owns = 393
+			owns = 3386
+			owns = 400
 			owns = 394
-			owns = 395
+			owns = 3462
 			has_global_flag = german_renamed_frborderlands # TODO intent?
 			NOT = { exists = LUX }
 			NOT = { exists = WLL }
@@ -4579,9 +4579,9 @@ political_decisions = {
 
 			release_vassal = WLL
 
-			395 = { remove_core = WLL }
+			3462 = { remove_core = WLL }
 			3956 = { remove_core = WLL } # TGCNV split half of 395
-			395 = { secede_province = GER }
+			3462 = { secede_province = GER }
 			3956 = { secede_province = GER } # TGCNV split half of 395
 
 			398 = { remove_core = WLL }
