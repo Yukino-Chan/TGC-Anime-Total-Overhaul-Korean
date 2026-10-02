@@ -36,7 +36,9 @@ country_event = {
 				all_core = { remove_core = PLS }
 			}
 			917 = { add_core = PLS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4469 = { add_core = PLS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 917
 			918 = { add_core = PLS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4470 = { add_core = PLS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 918
 		}
 
 		add_country_modifier = { name = new_country duration = 1095 }

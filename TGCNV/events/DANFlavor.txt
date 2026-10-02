@@ -1492,6 +1492,17 @@
 				remove_core = DEN
 				remove_core = THIS
 			}
+			3813 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
+			6795 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
+			6796 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
+			6797 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
+			6798 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
+			6799 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
+			6800 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
+			7254 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
+			7255 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
+			7256 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
+			7257 = { remove_core = DEN remove_core = THIS remove_province_modifier = nationalist_agitation } # TGCNV split half of 252
 			release_vassal = ICL
 			ICL = { any_pop = { militancy = -8 } }
 			relation = {

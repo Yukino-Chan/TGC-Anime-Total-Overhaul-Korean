@@ -912,7 +912,9 @@ country_event = {
 		name = "EVTOPTB97635"
 		set_country_flag = consulted_fudai
 		1643 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } }
+		5196 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } } # TGCNV split half of 1643
 		1644 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } }
+		5197 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } } # TGCNV split half of 1644
 		any_country = {
 			limit = {
 				substate_of = TKG
@@ -2130,6 +2132,7 @@ country_event = {
 				secede_province = THIS
 				any_pop = { limit = { NOT = { is_primary_culture = yes } } literacy = -0.99 }
 			}
+			4645 = { add_core = THIS secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { limit = { NOT = { is_primary_culture = yes } } literacy = -0.99 } } # TGCNV split half of 1089
 		}
 		random_owned = {
 			limit = {
@@ -2148,6 +2151,7 @@ country_event = {
 					reduce_pop = 0.3
 				}
 			}
+			4643 = { add_core = THIS secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 10 any_pop = { limit = { NOT = { is_primary_culture = yes } } literacy = -0.99 } add_province_modifier = { name = population_resettlement duration = 720 } any_pop = { limit = { type = bureaucrats } reduce_pop = 0.3 } } # TGCNV split half of 1087
 		}
 	}
 }
@@ -3150,6 +3154,7 @@ country_event = {
 		#random_owned = { limit = { province_id = 1087 } add_core = EZO }
 		random_owned = { limit = { province_id = 1088 } add_core = EZO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		random_owned = { limit = { province_id = 1086 } add_core = EZO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		random_owned = { limit = { province_id = 4642 } add_core = EZO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1086
 		release_vassal = EZO
 		relation = { who = EZO value = 400 }
 		EZO = {

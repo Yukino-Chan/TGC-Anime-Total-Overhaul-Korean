@@ -951,6 +951,8 @@ country_event = {
 			TUR_803 = { remove_core = TUR } # S.Serbia
 			TUR_804 = { remove_core = TUR } # Sandzak
 			2583 = { remove_core = TUR } # Montenegro
+			6124 = { remove_core = TUR } # TGCNV split half of 2583
+			6974 = { remove_core = TUR } # TGCNV split half of 2583
 			TGC_TERRITORY_2569 = { remove_core = TUR }
 			TGC_TERRITORY_3358 = { remove_core = TUR }
 			3433 = { remove_core = TUR }
@@ -1077,6 +1079,8 @@ country_event = {
 				secede_province = MON
 				MON = { set_country_flag = received_congress_benefit }
 			}
+			random_owned = { limit = { province_id = 6124 } secede_province = MON } # TGCNV split half of 2583
+			random_owned = { limit = { province_id = 6974 } secede_province = MON } # TGCNV split half of 2583
 			random_owned = {
 				limit = { province_id = 3358 }
 				secede_province = MON
@@ -1345,6 +1349,7 @@ country_event = {
 				secede_province = GRE
 				GRE = { set_country_flag = received_congress_benefit }
 			}
+			random_owned = { limit = { province_id = 4376 NOT = { exists = GRE } } secede_province = GRE } # TGCNV split half of 824
 
 			# If Greece is a GP and attending, give Crete and W. Macedonia
 			random_country = {
@@ -1360,8 +1365,8 @@ country_event = {
 								region = TUR_805 # Chalkidiki
 								region = TUR_820 # Southwestern Macedonia
 								region = TUR_832 # Thessaly
-								province_id = 824 # Yanya
-								province_id = 841 # Micova
+								province_id = 824 province_id = 4376 # Yanya
+								province_id = 841 province_id = 4393 # Micova
 								region = EGY_848 # Crete
 							}
 						}
@@ -2404,6 +2409,8 @@ country_event = { # TODO this should not always happen
 	option = {
 		name = "EVTOPTA97520"
 		678 = { secede_province = RUS }
+		4235 = { secede_province = RUS } # TGCNV split half of 678
+		6739 = { secede_province = RUS } # TGCNV split half of 678
 		673 = { secede_province = RUS }
 		ai_chance = { factor = 100 }
 	}

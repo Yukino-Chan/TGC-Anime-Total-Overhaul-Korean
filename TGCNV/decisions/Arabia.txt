@@ -98,6 +98,7 @@ political_decisions = {
 			NEJ_1157 = { add_core = HDJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }	}	#Nejd
 			NEJ_1156 = { add_core = HDJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }	#Ha'il
 			1155 = { add_core = HDJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }		#Abha
+			4711 = { add_core = HDJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1155
 			random_country = {
 				limit = {
 					owns = 1157
@@ -549,6 +550,7 @@ political_decisions = {
 					any_pop = { literacy = -0.99 }
 					life_rating = 5
 				}
+				3568 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 } # TGCNV split half of 12
 				owner = { prestige = 2 }
 			}
 			random_owned = { # North Yemen
@@ -561,6 +563,7 @@ political_decisions = {
 					any_pop = { literacy = -0.99 }
 					life_rating = 30
 				}
+				4736 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 30 } # TGCNV split half of 1180
 				owner = { prestige = 2 }
 			}
 			random_owned = { # South Ha'il
@@ -573,6 +576,7 @@ political_decisions = {
 					any_pop = { literacy = -0.99 }
 					life_rating = 5
 				}
+				4717 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 } # TGCNV split half of 1161
 				owner = { prestige = 2 }
 			}
 			random_owned = { # Yemen
@@ -591,6 +595,7 @@ political_decisions = {
 					any_pop = { literacy = -0.99 }
 					life_rating = 5
 				}
+				6280 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 } # TGCNV split half of 3273
 				owner = { prestige = 2 }
 			}
 			random_owned = { # Oman
@@ -603,6 +608,7 @@ political_decisions = {
 					any_pop = { literacy = -0.99 }
 					life_rating = 15
 				}
+				4728 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 15 } # TGCNV split half of 1172
 				owner = { prestige = 2 }
 			}
 			random_owned = { # South Arabia
@@ -615,6 +621,7 @@ political_decisions = {
 					any_pop = { literacy = -0.99 }
 					life_rating = 5
 				}
+				6127 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 } # TGCNV split half of 2586
 				owner = { prestige = 2 }
 			}
 			random_owned = { # North Arabia and Iraq Desert
@@ -628,11 +635,13 @@ political_decisions = {
 					any_pop = { literacy = -0.99 }
 					life_rating = 5
 				}
+				4714 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 } # TGCNV split half of 1158
 				3292 = {
 					secede_province = THIS
 					any_pop = { literacy = -0.99 }
 					life_rating = 5
 				}
+				6298 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 } # TGCNV split half of 3292
 				owner = { prestige = 2 }
 			}
 		}
@@ -731,7 +740,9 @@ political_decisions = {
 			change_tag = ARA
 
 			1163 = { remove_core = TUR }
+			4719 = { remove_core = TUR } # TGCNV split half of 1163
 			1164 = { remove_core = TUR }
+			4720 = { remove_core = TUR } # TGCNV split half of 1164
 		}
 
 		ai_will_do = { factor = 1 }
@@ -896,7 +907,9 @@ political_decisions = {
 			relation = { who = ARA value = 50 }
 			diplomatic_influence = { who = ARA value = 200 }
 			1163 = { remove_core = TUR }
+			4719 = { remove_core = TUR } # TGCNV split half of 1163
 			1164 = { remove_core = TUR }
+			4720 = { remove_core = TUR } # TGCNV split half of 1164
 		}
 
 		ai_will_do = { factor = 1 }

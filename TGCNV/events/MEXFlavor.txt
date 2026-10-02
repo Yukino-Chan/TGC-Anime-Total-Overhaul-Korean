@@ -465,6 +465,7 @@
 			}
 			any_pop = { militancy = -6 }
 			2172 = { change_controller = MEX }
+			5724 = { change_controller = MEX } # TGCNV split half of 2172
 			FRA = {
 				relation = {
 					who = THIS
@@ -1969,6 +1970,7 @@
 			name = "EVTOPTA1904191430"
 
 			2182 = { secede_province = MEX }
+			5734 = { secede_province = MEX } # TGCNV split half of 2182
 
 			ai_chance = { factor = 70 }
 		}
@@ -2648,6 +2650,7 @@
 
 			money = 10000
 			3366 = { remove_core = THIS remove_core = LSK }
+			6368 = { remove_core = THIS remove_core = LSK } # TGCNV split half of 3366
 			FROM = { country_event = 190419121 }
 
 			ai_chance = {
@@ -2706,6 +2709,7 @@
 			prestige = 10
 			money = -10000
 			3366 = { secede_province = THIS }
+			6368 = { secede_province = THIS } # TGCNV split half of 3366
 			any_country = {
 				limit = { is_core = 85 }
 				add_core = 3366
@@ -2982,7 +2986,9 @@
 					3475 = { owned_by = THIS }
 				}
 				2188 = { secede_province = THIS }
+				5740 = { secede_province = THIS } # TGCNV split half of 2188
 				2189 = { secede_province = THIS }
+				5741 = { secede_province = THIS } # TGCNV split half of 2189
 			}
 		}
 	}
@@ -3032,7 +3038,9 @@
 			USA_91 = { remove_core = THIS } # Idaho
 			111 = { remove_core = THIS } # Wyoming
 			113 = { remove_core = THIS }
+			3675 = { remove_core = THIS } # TGCNV split half of 113
 			114 = { remove_core = THIS } # Montana
+			3676 = { remove_core = THIS } # TGCNV split half of 114
 			CAN_13 = { # Colombia
 				limit = {
 					# Audax Validator "." Ignore_NEXT
@@ -3041,7 +3049,9 @@
 				remove_core = THIS
 			}
 			1 = { remove_core = THIS } # Alaska
+			3555 = { remove_core = THIS } # TGCNV split half of 1
 			2 = { remove_core = THIS }
+			3556 = { remove_core = THIS } # TGCNV split half of 2
 			HOP_3 = { remove_core = THIS }
 		}
 	}

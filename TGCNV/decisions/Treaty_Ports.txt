@@ -10,6 +10,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			1695 = { secede_province = THIS change_controller = THIS }
+			5247 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1695
 		}
 
 		ai_will_do = { factor = 1 }
@@ -27,6 +28,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			1071 = { secede_province = THIS change_controller = THIS }
+			4624 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1071
 		}
 
 		ai_will_do = { factor = 1 }
@@ -63,6 +65,7 @@ political_decisions = {
 				secede_province = PER
 			}
 			1071 = { secede_province = THIS change_controller = THIS }
+			4624 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1071
 		}
 
 		ai_will_do = { factor = 1 }
@@ -169,6 +172,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			1538 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			5092 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1538
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } plurality = -1  }
@@ -225,6 +229,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			1566 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			5120 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1566
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } plurality = -1  }
@@ -282,6 +287,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			1481 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			5038 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1481
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } plurality = -1  }
@@ -387,6 +393,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			1606 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			5159 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1606
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } plurality = -1  }
@@ -452,9 +459,13 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			2406 = { secede_province = THIS change_controller = THIS }
+			5952 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 2406
 			1485 = { secede_province = THIS change_controller = THIS }
+			5041 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1485
 			2562 = { secede_province = THIS change_controller = THIS }
+			6103 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 2562
 			2681 = { secede_province = THIS change_controller = THIS }
+			6237 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 2681
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } plurality = -1  }
@@ -502,6 +513,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			1499 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			5053 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1499
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } plurality = -1  }
@@ -563,6 +575,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			2632 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			6174 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 2632
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } plurality = -1  }
@@ -620,6 +633,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			1608 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			5161 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1608
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } plurality = -1  }
@@ -672,6 +686,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			3249 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			6261 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 3249
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } plurality = -1  }
@@ -859,6 +874,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			2048 = { secede_province = THIS change_controller = THIS }
+			5604 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 2048
 		}
 
 		ai_will_do = { factor = 1 }
@@ -892,6 +908,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			2589 = { secede_province = THIS change_controller = THIS }
+			6130 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 2589
 		}
 
 		ai_will_do = { factor = 1 }
@@ -909,6 +926,7 @@ political_decisions = {
 		effect = {
 			remove_country_modifier = negotiating_treaty
 			3260 = { secede_province = THIS change_controller = THIS }
+			6269 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 3260
 		}
 
 		ai_will_do = { factor = 1 }

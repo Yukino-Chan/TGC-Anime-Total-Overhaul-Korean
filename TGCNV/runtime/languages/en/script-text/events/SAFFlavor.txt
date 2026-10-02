@@ -55,9 +55,13 @@ country_event = {
 		name = "EVTOPTA6001"
 		set_country_flag = rename_mozambican_provinces_boer
 		2049 = { change_province_name = "Ahoutburg" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5605 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2049
 		2050 = { change_province_name = "Andriesburg" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5606 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2050
 		2051 = { change_province_name = "Goiamense" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5607 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2051
 		2052 = { change_province_name = "Fort Sarel" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5608 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2052
 		2049 = { state_scope = { change_region_name = "Moojembeek Province"} }
 		ai_chance = {
 			factor = 100
@@ -90,9 +94,13 @@ country_event = {
 		name = "EVTOPTA6002"
 		set_country_flag = rename_cape_colony_boer
 		2087 = { change_province_name = "Kaapstad" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5643 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2087
 		2091 = { change_province_name = "Stellenbosch" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5647 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2091
 		2092 = { change_province_name = "Laingsburg" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5648 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2092
 		2090 = { change_province_name = "Bredasdorp" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5646 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2090
 		2087 = { state_scope = { change_region_name = "Kaapstad Province" } }
 	}
 }
@@ -125,6 +133,7 @@ country_event = {
 		prestige = 10
 		treasury = -10000
 		2083 = { secede_province = THIS change_province_name = "Walvisbaai" life_rating = 25 any_pop = { literacy = -0.99 } }
+		5639 = { secede_province = THIS life_rating = 25 any_pop = { literacy = -0.99 } } # TGCNV split half of 2083
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -529,9 +538,13 @@ country_event = {
 		name = "EVTOPTA6010"
 		set_country_flag = rename_natal_boer
 		2113 = { change_province_name = "Richardsbaai" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5669 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2113
 		2112 = { change_province_name = "Vrousmith" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5668 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2112
 		2111 = { change_province_name = "Pietermaritzburg" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5667 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2111
 		2104 = { change_province_name = "Caledon" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5660 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2104
 	}
 }
 

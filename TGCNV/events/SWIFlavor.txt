@@ -480,9 +480,15 @@ country_event = {
 		}
 		clr_country_flag = hidden_tooltip
 		3250 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		6262 = { add_core = SDB secede_province = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3250
 		609 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		4167 = { add_core = SDB secede_province = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 609
 		3272 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		6279 = { add_core = SDB secede_province = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3272
 		606 = { add_core = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SDB }
+		4164 = { add_core = SDB secede_province = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 606
+		6818 = { add_core = SDB secede_province = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 606
+		6838 = { add_core = SDB secede_province = SDB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 606
 		any_country = {
 			limit = { has_country_flag = sonderbund_ally }
 			create_alliance = SDB
@@ -680,15 +686,20 @@ country_event = {
 			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = FRA
 		}
+		4167 = { add_core = FRA secede_province = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 609
 		466 = {
 			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = FRA
 		}
+		4027 = { add_core = FRA secede_province = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
+		6699 = { add_core = FRA secede_province = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
 		ITA = { country_event = 994562 }
 		2568 = {
 			add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = ITA
 		}
+		6109 = { add_core = ITA secede_province = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2568
+		6816 = { add_core = ITA secede_province = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2568
 		611 = {
 			add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = ITA
@@ -778,15 +789,20 @@ country_event = {
 			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = FRA
 		}
+		4167 = { add_core = FRA secede_province = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 609
 		466 = {
 			add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = FRA
 		}
+		4027 = { add_core = FRA secede_province = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
+		6699 = { add_core = FRA secede_province = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
 		ITA = { country_event = 994562 }
 		2568 = {
 			add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = ITA
 		}
+		6109 = { add_core = ITA secede_province = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2568
+		6816 = { add_core = ITA secede_province = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2568
 		611 = {
 			add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = ITA

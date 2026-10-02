@@ -318,6 +318,7 @@ political_decisions = {
 				}
 				secede_province = TUR
 			}
+			random_owned = { limit = { NOT = { is_core = THIS } NOT = { any_core = { primary_culture = THIS } } province_id = 4357 TUR = { exists = yes owns = 802 owns = 803 } } secede_province = TUR } # TGCNV split half of 804
 			random_owned = {
 				limit = {
 					NOT = { is_core = THIS }
@@ -327,6 +328,9 @@ political_decisions = {
 				}
 				secede_province = TUR
 			}
+			random_owned = { limit = { NOT = { is_core = THIS } NOT = { any_core = { primary_culture = THIS } } province_id = 6118 TUR = { exists = yes owns = 802 owns = 803 } } secede_province = TUR } # TGCNV split half of 2577
+			random_owned = { limit = { NOT = { is_core = THIS } NOT = { any_core = { primary_culture = THIS } } province_id = 6714 TUR = { exists = yes owns = 802 owns = 803 } } secede_province = TUR } # TGCNV split half of 2577
+			random_owned = { limit = { NOT = { is_core = THIS } NOT = { any_core = { primary_culture = THIS } } province_id = 6717 TUR = { exists = yes owns = 802 owns = 803 } } secede_province = TUR } # TGCNV split half of 2577
 			random_owned = {
 				limit = {
 					NOT = { is_core = THIS }
@@ -336,6 +340,7 @@ political_decisions = {
 				}
 				secede_province = SER
 			}
+			random_owned = { limit = { NOT = { is_core = THIS } NOT = { any_core = { primary_culture = THIS } } province_id = 6325 TUR = { exists = yes owns = 802 owns = 803 } } secede_province = SER } # TGCNV split half of 3321
 			any_country = {
 				limit = {
 					OR = {
@@ -1053,7 +1058,9 @@ political_decisions = {
 				add_core = GCF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
 			370 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3931 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 370
 			371 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3932 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 371
 			GER = {
 				all_core = {
 					remove_core = GER

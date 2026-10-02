@@ -1489,7 +1489,10 @@ country_event = {
 			all_core = { add_core = DNB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 		662 = { add_core = DNB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4219 = { add_core = DNB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 662
 		663 = { add_core = DNB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4220 = { add_core = DNB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 663
+		6964 = { add_core = DNB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 663
 		any_pop = {
 			limit = { has_pop_culture = romanian }
 			militancy = -4

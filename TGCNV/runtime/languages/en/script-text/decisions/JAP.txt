@@ -262,6 +262,7 @@ political_decisions = {
 				limit = { province_id = 1089 }
 				add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
+			random_owned = { limit = { province_id = 4645 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1089
 			any_pop = {
 				limit = { is_primary_culture = yes }
 				ideology = {
@@ -1092,22 +1093,26 @@ political_decisions = {
 				remove_core = FJN
 				change_province_name = "Taihoku"
 			}
+			6237 = { add_core = TAI remove_core = FJN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2681
 			2562 = {
 				add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				remove_core = FJN
 				change_province_name = "Karenko"
 			}
+			6103 = { add_core = TAI remove_core = FJN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2562
 			2406 = {
 				add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				remove_core = FJN
 				change_province_name = "Hoko"
 			}
+			5952 = { add_core = TAI remove_core = FJN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2406
 			1485 = {
 				add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				remove_core = FJN
 				change_province_name = "Tainan Cho"
 				state_scope = { change_region_name = "Takasago Province" }
 			}
+			5041 = { add_core = TAI remove_core = FJN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1485
 			TAI = { government = colonial_company add_accepted_culture = japanese }
 			set_global_flag = taiwan_administration
 		}
@@ -1137,8 +1142,12 @@ political_decisions = {
 		effect = {
 			set_global_flag = ryukyu_inherited
 			1678 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5231 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1678
 			1679 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5232 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1679
 			random_owned = { limit = { owner = { tag = QNG } } 1678 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } 1679 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+			5231 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1678
+			5232 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1679
 			inherit = RYU
 		}
 
@@ -1168,7 +1177,9 @@ political_decisions = {
 		effect = {
 			set_country_flag = ryukyu_is_japanese
 			1678 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5231 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1678
 			1679 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5232 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1679
 			random_country = {
 				limit = {
 					owns = 1678
@@ -1489,6 +1500,7 @@ political_decisions = {
 					is_colonial = no
 				}
 				1087 = { secede_province = UTI }
+				4643 = { secede_province = UTI } # TGCNV split half of 1087
 				THIS = { inherit = UTI }
 			}
 			random_owned = {
@@ -1569,7 +1581,9 @@ political_decisions = {
 
 		effect = {
 			1643 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } }
+			5196 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } } # TGCNV split half of 1643
 			1644 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } }
+			5197 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } } # TGCNV split half of 1644
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -1996,8 +2010,15 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			1535 = { secede_province = JAP }
+			5089 = { secede_province = JAP } # TGCNV split half of 1535
 			1534 = { secede_province = JAP }
+			7229 = { secede_province = JAP } # TGCNV split half of 1534
+			7460 = { secede_province = JAP } # TGCNV split half of 1534
 			1532 = { secede_province = JAP }
+			5086 = { secede_province = JAP } # TGCNV split half of 1532
+			7224 = { secede_province = JAP } # TGCNV split half of 1532
+			7368 = { secede_province = JAP } # TGCNV split half of 1532
+			7369 = { secede_province = JAP } # TGCNV split half of 1532
 			inherit = IMG
 			release_vassal = IMG
 			IMG = {
@@ -2095,6 +2116,7 @@ political_decisions = {
 					is_colonial = no
 				}
 				1086 = { secede_province = UTI }
+				4642 = { secede_province = UTI } # TGCNV split half of 1086
 				THIS = { inherit = UTI }
 			}
 

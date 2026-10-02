@@ -27,8 +27,10 @@ political_decisions = {
 					1089 = { empty = yes }
 				}
 				1087 = { secede_province = THIS }
+				4643 = { secede_province = THIS } # TGCNV split half of 1087
 				1088 = { secede_province = THIS }
 				1089 = { secede_province = THIS }
+				4645 = { secede_province = THIS } # TGCNV split half of 1089
 			}
 		}
 	}

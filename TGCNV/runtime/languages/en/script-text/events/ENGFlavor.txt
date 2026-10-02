@@ -12,7 +12,10 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		year = 1838
+		OR = {	# TGCNV 2026-10-02: William IV died on 1837.6.20 (month is 0-based, 5 = June)
+			year = 1838
+			AND = { year = 1837 month = 5 }
+		}
 		has_country_flag = monarchy_gov
 		HAN = {
 			OR = {
@@ -26,7 +29,7 @@ country_event = {
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 6
+		days = 20	# TGCNV 2026-10-02: was months = 6 from 1838.1.1
 	}
 
 	option = {
@@ -38,6 +41,11 @@ country_event = {
 			value = -200
 		}
 		prestige = 10
+		HAN = {	# TGCNV 2026-10-02: Ernest Augustus reigns under the 1833 constitution. Without this, JANFlavor
+			# event 52 (post-colonial government assigner) turns the freed colonial_company into a dictatorship
+			government = prussian_constitutionalism
+			clr_country_flag = colonial_company_gov
+		}
 	}
 }
 
@@ -1906,6 +1914,7 @@ country_event = {
 			limit = { tag = FROM }
 			random_owned = { limit = { province_id = 1909 } 1909 = { secede_province = THIS } }
 			random_owned = { limit = { province_id = 1907 } 1907 = { secede_province = THIS } }
+			5463 = { secede_province = THIS } # TGCNV split half of 1907
 			random_owned = { limit = { province_id = 1908 } HOP_1908 = { secede_province = THIS } }
 		}
 		1909 = { secede_province = THIS }
@@ -2081,6 +2090,7 @@ country_event = {
 		set_country_flag = lagos_slave_trade
 		1923 = { owner = { country_event = 36966 } }
 		1923 = { secede_province = THIS }
+		5479 = { secede_province = THIS } # TGCNV split half of 1923
 		relation = { who = SOK value = -400 }
 		relation = { who = OYO value = -400 }
 		relation = { who = ARO value = -400 }
@@ -2380,10 +2390,15 @@ country_event = {
 	option = {
 		name = "EVTOPTA3697006"
 		2070 = { secede_province = THIS life_rating = 25 any_pop = { limit = { NOT = { has_pop_culture = british } } literacy = -0.99 } }
+		5626 = { secede_province = THIS life_rating = 25 any_pop = { limit = { NOT = { has_pop_culture = british } } literacy = -0.99 } } # TGCNV split half of 2070
 		2635 = { secede_province = THIS life_rating = 25 any_pop = { limit = { NOT = { has_pop_culture = british } } literacy = -0.99 } }
+		6179 = { secede_province = THIS life_rating = 25 any_pop = { limit = { NOT = { has_pop_culture = british } } literacy = -0.99 } } # TGCNV split half of 2635
 		2068 = { secede_province = THIS change_province_name = "Salisbury" life_rating = 25 any_pop = { limit = { NOT = { has_pop_culture = british } } literacy = -0.99 } }
+		5624 = { secede_province = THIS life_rating = 25 any_pop = { limit = { NOT = { has_pop_culture = british } } literacy = -0.99 } } # TGCNV split half of 2068
 		2073 = { secede_province = THIS life_rating = 10 any_pop = { limit = { NOT = { has_pop_culture = british } } literacy = -0.99 } }
+		5629 = { secede_province = THIS life_rating = 10 any_pop = { limit = { NOT = { has_pop_culture = british } } literacy = -0.99 } } # TGCNV split half of 2073
 		2072 = { secede_province = THIS life_rating = 10 any_pop = { limit = { NOT = { has_pop_culture = british } } literacy = -0.99 } }
+		5628 = { secede_province = THIS life_rating = 10 any_pop = { limit = { NOT = { has_pop_culture = british } } literacy = -0.99 } } # TGCNV split half of 2072
 		2096 = { any_pop = { limit = { type = soldiers has_pop_culture = british } move_pop = 2068 } }
 		2087 = { any_pop = { limit = { type = soldiers has_pop_culture = british } move_pop = 2068 } }
 		2087 = { any_pop = { limit = { type = artisans has_pop_culture = british } pop_type = soldiers } }
@@ -2715,6 +2730,7 @@ country_event = {
 		ABU = { sphere_owner = { country_event = 3697013 } }
 		relation = { who = QAT value = -400 }
 		1165 = { remove_core = BHR }
+		4721 = { remove_core = BHR } # TGCNV split half of 1165
 		war = {
 			target = QAT
 			attacker_goal = {
@@ -3308,6 +3324,7 @@ country_event = {
 			
 			#neutrality = yes
 			2104 = { add_core = BSH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5660 = { add_core = BSH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2104
 		}
 
 		random_country = {
@@ -3337,6 +3354,7 @@ country_event = {
 			
 			#neutrality = yes
 			2114 = { add_core = SUA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } trade_goods = coal }
+			5670 = { add_core = SUA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2114
 		}
 		random_country = {
 			limit = { tag = FROM primary_culture = sotho }
@@ -3864,12 +3882,14 @@ country_event = {
 
 			prestige = 2
 			2196 = { secede_province = THIS }
+			5748 = { secede_province = THIS } # TGCNV split half of 2196
 			random_owned = { # If 2195 is a core then 2196 should also be a core
 				limit = {
 					province_id = 2195
 					is_core = THIS
 				}
 				2196 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5748 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2196
 			}
 			relation = { who = FROM value = 20 }
 		}
@@ -3903,6 +3923,7 @@ country_event = {
 					}
 				}
 				3334 = { secede_province = THIS }
+				6336 = { secede_province = THIS } # TGCNV split half of 3334
 			}
 			random_owned = { # If 2195 is a core 3334 should also be a core
 				limit = {
@@ -3918,6 +3939,7 @@ country_event = {
 					}
 				}
 				3334 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6336 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3334
 			}
 
 			random_owned = { # If 2220 is owned directly or by vassal of FROM, secede it
@@ -3933,6 +3955,7 @@ country_event = {
 					}
 				}
 				2220 = { secede_province = THIS }
+				5772 = { secede_province = THIS } # TGCNV split half of 2220
 			}
 			random_owned = { # If 2198 is a core 2220 should also be a core
 				limit = {
@@ -3948,6 +3971,7 @@ country_event = {
 					}
 				}
 				2220 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5772 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2220
 			}
 
 			relation = { who = FROM value = 30 }
@@ -4029,6 +4053,7 @@ country_event = {
 					country_event = 209706
 				}
 			}
+			random_owned = { limit = { province_id = 5748 } remove_core = JAM } # TGCNV split half of 2196
 
 			random_country = { # Send events to relevant Miskito Coast province owners (but only one if they are the same)
 				limit = {
@@ -4175,6 +4200,7 @@ country_event = {
 					country_event = 209706
 				}
 			}
+			5748 = { remove_core = JAM } # TGCNV split half of 2196
 			ai_chance = { factor = 70 }
 		}
 
@@ -4185,6 +4211,7 @@ country_event = {
 			badboy = 2
 
 			2196 = { secede_province = THIS }
+			5748 = { secede_province = THIS } # TGCNV split half of 2196
 
 			ai_chance = {
 				factor = 30

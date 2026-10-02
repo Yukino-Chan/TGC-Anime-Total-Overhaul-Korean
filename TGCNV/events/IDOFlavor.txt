@@ -645,11 +645,13 @@ country_event = {
 			militancy = 3
 		}
 		1365 = { remove_core = CAM }
+		4922 = { remove_core = CAM } # TGCNV split half of 1365
 		random_owned = {
 			limit = { province_id = 1366 any_neighbor_province = { owned_by = FROM } }
 			remove_core = SIA
 			secede_province = FROM
 		}
+		random_owned = { limit = { province_id = 4923 any_neighbor_province = { owned_by = FROM } } remove_core = SIA secede_province = FROM } # TGCNV split half of 1366
 		any_owned = {
 			limit = {
 				OR = {

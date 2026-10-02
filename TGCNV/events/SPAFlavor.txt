@@ -1176,6 +1176,7 @@ country_event = {
 				limit = { province_id = 2222 }
 				secede_province = USA
 			}
+			random_owned = { limit = { province_id = 5774 } secede_province = USA } # TGCNV split half of 2222
 			random_country = {
 				limit = {
 					tag = PRI
@@ -1194,6 +1195,7 @@ country_event = {
 				}
 				secede_province = USA
 			}
+			any_owned = { limit = { OR = { region = SPA_1455 region = SPA_1459 region = SPA_1463 province_id = 6064 } } secede_province = USA } # TGCNV split half of 2517
 			random_country = {
 				limit = {
 					tag = PHL
@@ -1313,8 +1315,8 @@ country_event = {
 							region = SPA_1455
 							region = SPA_1459
 							region = SPA_1463
-							province_id = 2517
-							province_id = 2222
+							province_id = 2517 province_id = 6064
+							province_id = 2222 province_id = 5774
 						}
 					}
 					add_core = USA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -1382,6 +1384,7 @@ country_event = {
 				limit = { province_id = 2222 }
 				secede_province = USA
 			}
+			random_owned = { limit = { province_id = 5774 } secede_province = USA } # TGCNV split half of 2222
 			random_country = {
 				limit = {
 					tag = PRI
@@ -1400,6 +1403,7 @@ country_event = {
 				}
 				secede_province = USA
 			}
+			any_owned = { limit = { OR = { region = SPA_1455 region = SPA_1459 region = SPA_1463 province_id = 6064 } } secede_province = USA } # TGCNV split half of 2517
 			random_country = {
 				limit = {
 					tag = PHL
@@ -1509,8 +1513,8 @@ country_event = {
 							region = SPA_1455
 							region = SPA_1459
 							region = SPA_1463
-							province_id = 2517
-							province_id = 2222
+							province_id = 2517 province_id = 6064
+							province_id = 2222 province_id = 5774
 						}
 					}
 					add_core = USA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -2449,15 +2453,16 @@ country_event = {
 			any_owned = {
 				limit = {
 					OR = {
-						province_id = 1686
-						province_id = 1687
-						province_id = 1688
-						province_id = 1695
+						province_id = 1686 province_id = 5239
+						province_id = 1687 province_id = 5240
+						province_id = 1688 province_id = 5241
+						province_id = 1695 province_id = 5247
 					}
 				}
 				secede_province = THIS
 			}
 			any_owned = { limit = { province_id = 1686 } secede_province = MOR }
+			any_owned = { limit = { province_id = 5239 } secede_province = MOR } # TGCNV split half of 1686
 		}
 		MOR_1696 = { secede_province = THIS add_core = MOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
 		MOR = {
@@ -3848,9 +3853,11 @@ country_event = {
 	option = {
 		name = "EVTOPTA90141" #agreed
 		1973 = { secede_province = THIS life_rating = 30 any_pop = { literacy = -0.99 } }
+		5529 = { secede_province = THIS life_rating = 30 any_pop = { literacy = -0.99 } } # TGCNV split half of 1973
 		badboy = -1
 		relation = { who = FROM value = 75 }
 		any_owned = { limit = { province_id = 1973 } secede_province = FROM }
+		any_owned = { limit = { province_id = 5529 } secede_province = FROM } # TGCNV split half of 1973
 		ai_chance = {
 			factor = 70
 			modifier = { factor = 100 FROM = { ai = yes } }
@@ -4267,8 +4274,12 @@ country_event = {
 		badboy = 10
 		517 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		460 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4021 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 460
+		6827 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 460
 		457 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4018 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 457
 		464 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4025 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 464
 
 		ai_chance = { factor = 30 }
 	}

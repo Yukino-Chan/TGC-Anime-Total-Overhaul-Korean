@@ -757,15 +757,18 @@ country_event = {
 		badboy = 2
 		1851 = { owner = { country_event = 95509 } }
 		1851 = { secede_province = THIS }
+		5407 = { secede_province = THIS } # TGCNV split half of 1851
 
 		# DEVNOTE - purpose?
 		random_country = {
 			limit = { civilized = no owns = 1849 }
 			1849 = { secede_province = THIS }
+			5405 = { secede_province = THIS } # TGCNV split half of 1849
 		}
 		random_country = {
 			limit = { civilized = no owns = 1850 owns = 1849 }
 			1850 = { secede_province = THIS }
+			5406 = { secede_province = THIS } # TGCNV split half of 1850
 		}
 
 		ai_chance = {
@@ -1143,6 +1146,7 @@ country_event = {
 		}
 
 		1834 = { add_core = EGY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5390 = { add_core = EGY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1834
 
 		random_owned = {
 			limit = {
@@ -1244,7 +1248,9 @@ country_event = {
 
 		relation = { who = FROM value = 50 }
 		1878 = { secede_province = THIS }
+		5434 = { secede_province = THIS } # TGCNV split half of 1878
 		1792 = { secede_province = FROM }
+		5347 = { secede_province = FROM } # TGCNV split half of 1792
 
 		ai_chance = {
 			factor = 95
@@ -1300,6 +1306,7 @@ country_event = {
 		name = "EVTOPTA955200"
 
 		2081 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		5637 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 2081
 	}
 }
 
@@ -1333,6 +1340,7 @@ country_event = {
 		}
 		relation = { who = FROM value = 25 }
 		2081 = { secede_province = FROM add_core = NMB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5637 = { secede_province = FROM add_core = NMB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2081
 
 		ai_chance = {
 			factor = 0.5
@@ -1377,6 +1385,7 @@ country_event = {
 			limit = { province_id = 1792 }
 			secede_province = FROM
 		}
+		random_owned = { limit = { province_id = 5347 } secede_province = FROM } # TGCNV split half of 1792
 
 		random_country = {
 			limit = {
@@ -1460,12 +1469,14 @@ country_event = {
 					life_rating = 25
 					any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 }
 				}
+				5625 = { secede_province = THIS add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 25 any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 } } # TGCNV split half of 2069
 				2073 = {
 					secede_province = THIS
 					add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					life_rating = 25
 					any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 }
 				}
+				5629 = { secede_province = THIS add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 25 any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 } } # TGCNV split half of 2073
 			}
 		}
 
@@ -1480,6 +1491,7 @@ country_event = {
 					life_rating = 25
 					any_pop = { literacy = -0.99 }
 				}
+				5441 = { secede_province = THIS life_rating = 25 any_pop = { literacy = -0.99 } } # TGCNV split half of 1885
 			}
 		}
 
@@ -1498,12 +1510,14 @@ country_event = {
 					life_rating = 25
 					any_pop = { limit = { NOT = { has_pop_culture = afro_american } } literacy = -0.99 }
 				}
+				5446 = { secede_province = THIS add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 25 any_pop = { limit = { NOT = { has_pop_culture = afro_american } } literacy = -0.99 } } # TGCNV split half of 1890
 				1891 = {
 					secede_province = THIS
 					add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					life_rating = 25
 					any_pop = { limit = { NOT = { has_pop_culture = afro_american } } literacy = -0.99 }
 				}
+				5447 = { secede_province = THIS add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 25 any_pop = { limit = { NOT = { has_pop_culture = afro_american } } literacy = -0.99 } } # TGCNV split half of 1891
 			}
 		}
 	}
@@ -1528,6 +1542,7 @@ country_event = {
 			limit = { province_id = 1878 }
 			secede_province = FROM
 		}
+		random_owned = { limit = { province_id = 5434 } secede_province = FROM } # TGCNV split half of 1878
 
 		random_country = {
 			limit = {
@@ -2973,6 +2988,7 @@ country_event = {
 					secede_province = THIS
 					any_pop = { literacy = -0.99 }
 				}
+				random_empty_neighbor_province = { limit = { is_core = CNG province_id = 5541 } secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1985
 			}
 			1982 = {
 				random_empty_neighbor_province = {

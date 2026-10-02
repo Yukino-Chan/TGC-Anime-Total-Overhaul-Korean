@@ -21,13 +21,20 @@ political_decisions = {
 			DON = { all_core = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			RUT = { all_core = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			676 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4233 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 676
 			677 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			663 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4220 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 663
+			6964 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 663
 			715 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6745 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 715
+			7106 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 715
 			705 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			977 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4529 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 977
 			1018 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1019 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4571 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1019
 			any_country = {
 				limit = {
 					NOT = { tag = THIS }
@@ -73,6 +80,8 @@ political_decisions = {
 			}
 			675 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			663 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4220 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 663
+			6964 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 663
 			704 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			705 = { add_core = UKR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			random_country = {

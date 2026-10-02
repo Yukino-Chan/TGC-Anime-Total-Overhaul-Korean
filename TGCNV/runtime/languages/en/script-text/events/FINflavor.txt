@@ -772,6 +772,8 @@
 				add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				secede_province = FIN
 			}
+			4534 = { remove_core = RUS add_core = FIN secede_province = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 982
+			7171 = { remove_core = RUS add_core = FIN secede_province = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 982
 
 			ai_chance = {
 				factor = 85

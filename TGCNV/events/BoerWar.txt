@@ -2303,6 +2303,7 @@ country_event = {
 		prestige = 5
 		treasury = -10000
 		2083 = { secede_province = THIS change_province_name = "월비스베이" life_rating = 25 any_pop = { literacy = -0.99 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }}
+		5639 = { secede_province = THIS add_core = SAF life_rating = 25 any_pop = { literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2083
 		ai_chance = {
 			factor = 1000
 			modifier = {
@@ -2384,6 +2385,7 @@ country_event = {
 				change_province_name = "스프링복"
 				life_rating = 15
 			}
+			5644 = { secede_province = ENG any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 } life_rating = 15 } # TGCNV split half of 2088
 		}
 		random_owned = {
 			limit = {
@@ -2399,6 +2401,7 @@ country_event = {
 				change_province_name = "더아르"
 				life_rating = 15
 			}
+			6099 = { secede_province = ENG any_pop = { limit = { has_pop_culture = boer } literacy = 0.2 } any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 } life_rating = 15 } # TGCNV split half of 2558
 		}
 		random_owned = {
 			limit = {
@@ -2413,6 +2416,7 @@ country_event = {
 				change_province_name = "칼비니아"
 				life_rating = 15
 			}
+			5649 = { secede_province = ENG any_pop = { limit = { has_pop_culture = boer } literacy = 0.29 } any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 } life_rating = 15 } # TGCNV split half of 2093
 		}
 		ai_chance = {
 			factor = 100
@@ -2462,6 +2466,7 @@ country_event = {
 			add_province_modifier = { name = gold_rush duration = 1825 }
 			any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 }
 		}
+		5650 = { secede_province = THIS any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 } } # TGCNV split half of 2094
 	}
 }
 

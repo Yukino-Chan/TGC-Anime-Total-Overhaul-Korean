@@ -222,6 +222,8 @@ political_decisions = {
 			set_country_flag = tartu_treaty_broke
 			random_country = { limit = { exists = yes neighbour = THIS tag = FIN } THIS = { badboy = 5 } }
 			982 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4534 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 982
+			7171 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 982
 			HXP_339 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 
@@ -266,6 +268,23 @@ political_decisions = {
 			RUS_349 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Estonia
 			2580 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Novaya Ladoga
 			307 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Hammerfest
+			3868 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6670 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6671 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6672 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6673 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6674 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6675 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6676 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6677 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6678 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6679 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6758 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6759 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			6790 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			7169 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			7170 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
+			7264 = { add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 307
 			add_accepted_culture = ugrian
 			add_accepted_culture = estonian
 			prestige = 20

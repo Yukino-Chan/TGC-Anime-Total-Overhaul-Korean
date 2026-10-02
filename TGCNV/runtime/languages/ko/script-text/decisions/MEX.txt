@@ -29,6 +29,7 @@ political_decisions = {
 			set_country_flag = soconusco_joins_mexico
 			badboy = 1
 			2182 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5734 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2182
 			random_country = {
 				limit = { owns = 2182 }
 				country_event = 1904191430
@@ -189,13 +190,20 @@ political_decisions = {
 				MEX_97 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Utah
 				MEX_100 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Arizona
 				110 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Wyoming
+				3672 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split, Mexican side of Wyoming
 				107 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3669 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split, Mexican side of Wyoming
 				108 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Colorado
+				3670 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split, Mexican side of Colorado
 				135 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3697 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split, Mexican side of Colorado
 				103 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3665 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split, Mexican side of Colorado
 				MEX_103 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # New Mexico
 				128 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Kansas
+				3690 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split, Mexican side of Kansas
 				129 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Oklahoma
+				3691 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split, Mexican side of Oklahoma
 				TEX_132 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Texas
 				random_owned = {
 					limit = { 2140 = { NOT = { is_core = THIS } } }
@@ -307,7 +315,9 @@ political_decisions = {
 			USA_91 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Idaho
 			111 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Wyoming
 			113 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3675 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 113
 			114 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Montana
+			3676 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 114
 			CAN_13 = { # Colombia
 				limit = {
 					# Audax Validator "." Ignore_NEXT
@@ -316,7 +326,9 @@ political_decisions = {
 				add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
 			1 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alaska
+			3555 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1
 			2 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3556 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2
 			HOP_3 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 	}
@@ -378,6 +390,7 @@ political_decisions = {
 			}
 			USA_200 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Florida
 			194 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Mississippi
+			3756 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 194
 			HXP_197 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alabama
 		}
 	}
@@ -423,6 +436,7 @@ political_decisions = {
 			set_country_flag = mexico_caribbean
 			add_accepted_culture = caribeno
 			2222 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Puerto Rico
+			5774 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2222
 			SPA_2209 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Cuba
 			HAI_2213 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Hispaniola
 		}
@@ -1494,6 +1508,7 @@ political_decisions = {
 				remove_core = LOS
 				any_pop = { consciousness = 4 militancy = 1 }
 			}
+			random_owned = { limit = { province_id = 5733 is_core = LOS owner = { tag = MEX } } remove_core = LOS any_pop = { consciousness = 4 militancy = 1 } } # TGCNV split half of 2181
 			random_owned = {
 				limit = {
 					province_id = 2182
@@ -1503,6 +1518,7 @@ political_decisions = {
 				remove_core = LOS
 				any_pop = { consciousness = 4 militancy = 1 }
 			}
+			random_owned = { limit = { province_id = 5734 is_core = LOS owner = { tag = MEX } } remove_core = LOS any_pop = { consciousness = 4 militancy = 1 } } # TGCNV split half of 2182
 
 			random_owned = {
 				limit = {
@@ -1518,6 +1534,7 @@ political_decisions = {
 				remove_core = LOS
 				any_pop = { consciousness = 4 militancy = 1 }
 			}
+			random_owned = { limit = { province_id = 6171 is_core = LOS owner = { OR = { tag = UCA tag = GUA } } } remove_core = LOS any_pop = { consciousness = 4 militancy = 1 } } # TGCNV split half of 2628
 		}
 
 		ai_will_do = {
@@ -1819,7 +1836,9 @@ political_decisions = {
 			2631 = { add_province_modifier = { name = recently_built_city duration = 1825 } }
 			2662 = { add_province_modifier = { name = recently_built_city duration = 1825 } }
 			3366 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6368 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3366
 			3366 = { remove_core = USA }
+			6368 = { remove_core = USA } # TGCNV split half of 3366
 		}
 
 		ai_will_do = { factor = 1 }
@@ -2040,6 +2059,7 @@ political_decisions = {
 			set_country_flag = sonora_claims
 			badboy = 3
 			102 = { add_core = SON add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Tuscon
+			3664 = { add_core = SON add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 102
 			MEX_2156 = { add_core = SON add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Sinaloa
 		}
 

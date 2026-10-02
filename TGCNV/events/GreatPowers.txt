@@ -1639,8 +1639,8 @@ country_event = {
 				any_owned = {
 					limit = {
 						OR = {
-							province_id = 1199
-							province_id = 1207
+							province_id = 1199 province_id = 4756
+							province_id = 1207 province_id = 4764
 						}
 					}
 					secede_province = RUS
@@ -1661,8 +1661,8 @@ country_event = {
 					limit = {
 						OR = {
 							province_id = 1203
-							province_id = 1201
-							province_id = 1195
+							province_id = 1201 province_id = 4758
+							province_id = 1195 province_id = 4752
 						}
 						is_core = KAZ
 						is_core = TAJ
@@ -1923,6 +1923,7 @@ country_event = {
 				limit = { owner = { has_country_flag = agreed_to_tangier_protocol } province_id = 1686 }
 				owner = {
 					1686 = { secede_province = MOR }
+					5239 = { secede_province = MOR } # TGCNV split half of 1686
 					clr_country_flag = agreed_to_tangier_protocol
 				}
 			}
@@ -2025,6 +2026,7 @@ country_event = {
 				limit = { province_id = 1686 }
 				secede_province = MOR
 			}
+			random_owned = { limit = { province_id = 5239 } secede_province = MOR } # TGCNV split half of 1686
 			clr_country_flag = agreed_to_tangier_protocol
 			FROM = {
 				create_vassal = MOR

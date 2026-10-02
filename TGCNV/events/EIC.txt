@@ -650,7 +650,10 @@
 
 				ENG_1251 = { add_core = EIC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1304 = { add_core = EIC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4861 = { add_core = EIC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1304
+				7455 = { add_core = EIC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1304
 				1297 = { add_core = EIC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4854 = { add_core = EIC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1297
 				remove_country_modifier = sepoy_mutiny
 				set_global_flag = EIC_independence
 			}

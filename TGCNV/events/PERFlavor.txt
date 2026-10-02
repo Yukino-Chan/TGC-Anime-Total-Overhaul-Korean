@@ -4658,6 +4658,7 @@ country_event = {
 				add_core = GLN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				add_province_modifier = { name = secessionist_agitation duration = 895 }
 			}
+			4672 = { add_core = GLN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_province_modifier = { name = secessionist_agitation duration = 895 } } # TGCNV split half of 1116
 			state_scope = {
 				any_owned = {
 					add_core = GLN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } # Gilan core

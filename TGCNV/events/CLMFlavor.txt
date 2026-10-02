@@ -56,24 +56,28 @@
 				add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				secede_province = VNZ
 			}
+			random_owned = { limit = { province_id = 5817 } remove_core = THIS add_core = VNZ secede_province = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2270
 			random_owned = {
 				limit = { province_id = 2249 }
 				remove_core = THIS
 				add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				secede_province = VNZ
 			}
+			random_owned = { limit = { province_id = 7466 } remove_core = THIS add_core = VNZ secede_province = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2249
 			random_owned = {
 				limit = { province_id = 2278 }
 				remove_core = THIS
 				add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				secede_province = VNZ
 			}
+			random_owned = { limit = { province_id = 5825 } remove_core = THIS add_core = VNZ secede_province = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2278
 			random_owned = {
 				limit = { province_id = 2277 }
 				remove_core = THIS
 				add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				secede_province = VNZ
 			}
+			random_owned = { limit = { province_id = 5824 } remove_core = THIS add_core = VNZ secede_province = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2277
 
 			ai_chance = {
 				factor = 10
@@ -223,18 +227,22 @@
 					limit = { province_id = 2270 is_core = VNZ }
 					remove_core = VNZ
 				}
+				random_owned = { limit = { province_id = 5817 is_core = VNZ } remove_core = VNZ } # TGCNV split half of 2270
 				random_owned = {
 					limit = { province_id = 2249 is_core = VNZ }
 					remove_core = VNZ
 				}
+				random_owned = { limit = { province_id = 7466 is_core = VNZ } remove_core = VNZ } # TGCNV split half of 2249
 				random_owned = {
 					limit = { province_id = 2278 is_core = VNZ }
 					remove_core = VNZ
 				}
+				random_owned = { limit = { province_id = 5825 is_core = VNZ } remove_core = VNZ } # TGCNV split half of 2278
 				random_owned = {
 					limit = { province_id = 2277 is_core = VNZ }
 					remove_core = VNZ
 				}
+				random_owned = { limit = { province_id = 5824 is_core = VNZ } remove_core = VNZ } # TGCNV split half of 2277
 			}
 
 			relation = { who = VNZ value = -100 }
@@ -247,24 +255,28 @@
 					add_core = CLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = CLM
 				}
+				random_owned = { limit = { province_id = 5817 } add_core = CLM secede_province = CLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2270
 				random_owned = {
 					limit = { province_id = 2249 }
 					remove_core = VNZ
 					add_core = CLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = CLM
 				}
+				random_owned = { limit = { province_id = 7466 } add_core = CLM secede_province = CLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2249
 				random_owned = {
 					limit = { province_id = 2278 }
 					remove_core = VNZ
 					add_core = CLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = CLM
 				}
+				random_owned = { limit = { province_id = 5825 } add_core = CLM secede_province = CLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2278
 				random_owned = {
 					limit = { province_id = 2277 }
 					remove_core = VNZ
 					add_core = CLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = CLM
 				}
+				random_owned = { limit = { province_id = 5824 } add_core = CLM secede_province = CLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2277
 			}
 
 			ai_chance = {
@@ -295,11 +307,13 @@
 					limit = { province_id = 2270 is_core = CLM }
 					remove_core = CLM
 				}
+				random_owned = { limit = { province_id = 5817 is_core = CLM } remove_core = CLM } # TGCNV split half of 2270
 				random_owned = {
 					limit = { province_id = 2270 }
 					add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = VNZ
 				}
+				random_owned = { limit = { province_id = 5817 } add_core = VNZ secede_province = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2270
 				random_owned = {
 					limit = { province_id = 2249 is_core = VNZ }
 					remove_core = VNZ
@@ -378,14 +392,17 @@
 					limit = { province_id = 2249 is_core = CLM }
 					remove_core = CLM
 				}
+				random_owned = { limit = { province_id = 7466 is_core = CLM } remove_core = CLM } # TGCNV split half of 2249
 				random_owned = {
 					limit = { province_id = 2278 is_core = CLM }
 					remove_core = CLM
 				}
+				random_owned = { limit = { province_id = 5825 is_core = CLM } remove_core = CLM } # TGCNV split half of 2278
 				random_owned = {
 					limit = { province_id = 2277 is_core = CLM }
 					remove_core = CLM
 				}
+				random_owned = { limit = { province_id = 5824 is_core = CLM } remove_core = CLM } # TGCNV split half of 2277
 			}
 
 			relation = { who = CLM value = -100 }
@@ -404,18 +421,21 @@
 					add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = VNZ
 				}
+				random_owned = { limit = { province_id = 7466 } add_core = VNZ secede_province = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2249
 				random_owned = {
 					limit = { province_id = 2278 }
 					remove_core = CLM
 					add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = VNZ
 				}
+				random_owned = { limit = { province_id = 5825 } add_core = VNZ secede_province = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2278
 				random_owned = {
 					limit = { province_id = 2277 }
 					remove_core = CLM
 					add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = VNZ
 				}
+				random_owned = { limit = { province_id = 5824 } add_core = VNZ secede_province = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2277
 			}
 
 			ai_chance = {
@@ -462,18 +482,22 @@
 					limit = { province_id = 2270 }
 					add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
+				random_owned = { limit = { province_id = 5817 } add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2270
 				random_owned = {
 					limit = { province_id = 2249 }
 					add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
+				random_owned = { limit = { province_id = 7466 } add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2249
 				random_owned = {
 					limit = { province_id = 2278 }
 					add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
+				random_owned = { limit = { province_id = 5825 } add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2278
 				random_owned = {
 					limit = { province_id = 2277 }
 					add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
+				random_owned = { limit = { province_id = 5824 } add_core = VNZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2277
 			}
 			war = {
 				target = CLM
@@ -528,35 +552,43 @@
 			random_owned = {
 				limit = { 2270 = { is_core = THIS } }
 				2270 = { remove_core = THIS }
+				5817 = { remove_core = THIS } # TGCNV split half of 2270
 			}
 			random_owned = {
 				limit = { province_id = 2270 }
 				secede_province = CLM
 			}
+			random_owned = { limit = { province_id = 5817 } secede_province = CLM } # TGCNV split half of 2270
 			random_owned = {
 				limit = { 2249 = { is_core = VNZ } }
 				2249 = { remove_core = VNZ }
+				7466 = { remove_core = VNZ } # TGCNV split half of 2249
 			}
 			random_owned = {
 				limit = { province_id = 2249 }
 				secede_province = CLM
 			}
+			random_owned = { limit = { province_id = 7466 } secede_province = CLM } # TGCNV split half of 2249
 			random_owned = {
 				limit = { 2278 = { is_core = VNZ } }
 				2278 = { remove_core = VNZ }
+				5825 = { remove_core = VNZ } # TGCNV split half of 2278
 			}
 			random_owned = {
 				limit = { province_id = 2278 }
 				secede_province = CLM
 			}
+			random_owned = { limit = { province_id = 5825 } secede_province = CLM } # TGCNV split half of 2278
 			random_owned = {
 				limit = { 2277 = { is_core = VNZ } }
 				2277 = { remove_core = VNZ }
+				5824 = { remove_core = VNZ } # TGCNV split half of 2277
 			}
 			random_owned = {
 				limit = { province_id = 2277 }
 				secede_province = CLM
 			}
+			random_owned = { limit = { province_id = 5824 } secede_province = CLM } # TGCNV split half of 2277
 
 			any_pop = {
 				scaled_militancy = { issue = jingoism factor = 6 }

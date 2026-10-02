@@ -302,6 +302,7 @@ political_decisions = {
 					}
 				}
 				721 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4277 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 721
 				set_global_flag = italian_reclaim_aosta
 			}
 		}
@@ -334,6 +335,7 @@ political_decisions = {
 			AUS_774 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }	} #Lika
 			AUS_780 = {	add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }	} #Dalmatia
 			2582 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Cattaro
+			6123 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2582
 
 			any_country = {
 				limit = {
@@ -377,9 +379,13 @@ political_decisions = {
 			prestige = 20
 			badboy = 4
 			854 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Malta
+			4406 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 854
 			473 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Corsica
+			4034 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 473
 			826 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Corfu
+			4378 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 826
 			827 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Zante
+			4379 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 827
 
 			any_country = {
 				limit = {
@@ -468,6 +474,7 @@ political_decisions = {
 					}
 				}
 			}
+			4406 = { secede_province = THIS } # TGCNV split half of 854
 		}
 
 		ai_will_do = {

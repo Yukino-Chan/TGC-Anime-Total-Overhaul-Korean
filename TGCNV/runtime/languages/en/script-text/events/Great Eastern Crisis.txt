@@ -776,6 +776,8 @@ country_event = {
 			}
 			secede_province = RUS
 		}
+		random_owned = { limit = { province_id = 6966 owned_by = TUR } secede_province = RUS } # TGCNV split half of 859
+		random_owned = { limit = { province_id = 6978 owned_by = TUR } secede_province = RUS } # TGCNV split half of 859
 		any_owned = {
 			limit = { region = TGC_KARS_PRE_SPLIT }
 			secede_province = RUS
@@ -892,6 +894,7 @@ country_event = {
 			}
 			secede_province = BUL
 		}
+		random_owned = { limit = { province_id = 4380 owned_by = TUR } secede_province = BUL } # TGCNV split half of 828
 		random_owned = {
 			limit = {
 				province_id = 858 #Kirklareli
@@ -1419,6 +1422,7 @@ country_event = {
 			}
 			secede_province = RUS
 		}
+		random_owned = { limit = { province_id = 4414 owned_by = TUR } secede_province = RUS } # TGCNV split half of 862
 		
 		random_owned = {
 			limit = {
@@ -1427,6 +1431,7 @@ country_event = {
 			}
 			secede_province = RUS
 		}
+		random_owned = { limit = { province_id = 4452 owned_by = TUR } secede_province = RUS } # TGCNV split half of 900
 		
 		random_owned = {
 			limit = {
@@ -1435,6 +1440,7 @@ country_event = {
 			}
 			secede_province = RUS
 		}
+		random_owned = { limit = { province_id = 4418 owned_by = TUR } secede_province = RUS } # TGCNV split half of 866
 		
 		random_owned = {
 			limit = {
@@ -2174,15 +2180,21 @@ country_event = {
 		name = "EVTOPTA900642"
 		#set_country_flag = receiving_cyprus
 		random_owned = { limit = { province_id = 848 owned_by = TUR } secede_province = FROM } #Crete
+		random_owned = { limit = { province_id = 4400 owned_by = TUR } secede_province = FROM } # TGCNV split half of 848
 		random_owned = { limit = { province_id = 847 owned_by = TUR } secede_province = FROM } #Crete
+		random_owned = { limit = { province_id = 4399 owned_by = TUR } secede_province = FROM } # TGCNV split half of 847
 		random_owned = { limit = { province_id = 849 owned_by = TUR } secede_province = FROM } #Albania
 		random_owned = { limit = { province_id = 852 owned_by = TUR } secede_province = FROM } #Albania
+		random_owned = { limit = { province_id = 4404 owned_by = TUR } secede_province = FROM } # TGCNV split half of 852
 		random_owned = { limit = { province_id = 853 owned_by = TUR } secede_province = FROM } #Albania
+		random_owned = { limit = { province_id = 4405 owned_by = TUR } secede_province = FROM } # TGCNV split half of 853
 		random_owned = { limit = { province_id = 3403 owned_by = TUR } secede_province = FROM } #Albania
 		any_owned = { limit = { region = TRI_1731 owned_by = TUR } secede_province = FROM } #Tripolitania
 		any_owned = { limit = { region = TRI_1735 owned_by = TUR } secede_province = FROM } #Cyr
 		random_owned = { limit = { province_id = 1759 owned_by = TUR } secede_province = FROM }
+		random_owned = { limit = { province_id = 5314 owned_by = TUR } secede_province = FROM } # TGCNV split half of 1759
 		random_owned = { limit = { province_id = 846 owned_by = TUR } secede_province = FROM change_province_name = "Rodi" } #Rhodos
+		random_owned = { limit = { province_id = 4398 owned_by = TUR } secede_province = FROM } # TGCNV split half of 846
 		#FROM = { country_event = { id = 500172 days = 1 } }
 	    #add_country_modifier = { name = western_military_mission duration = 850 }
 	}
@@ -2873,14 +2885,20 @@ country_event = { #End of GEC
 		any_owned = { limit = { region = EGY_910 owned_by = TUR } secede_province = SYR } #Jordan
 		any_owned = { limit = { region = HDJ_1151 owned_by = TUR } secede_province = SYR }
 		random_owned = { limit = { province_id = 848 owned_by = TUR } secede_province = FROM } #Crete
+		random_owned = { limit = { province_id = 4400 owned_by = TUR } secede_province = FROM } # TGCNV split half of 848
 		random_owned = { limit = { province_id = 847 owned_by = TUR } secede_province = FROM } #Crete
+		random_owned = { limit = { province_id = 4399 owned_by = TUR } secede_province = FROM } # TGCNV split half of 847
 		random_owned = { limit = { province_id = 849 owned_by = TUR } secede_province = FROM } #Albania
 		random_owned = { limit = { province_id = 852 owned_by = TUR } secede_province = FROM } #Albania
+		random_owned = { limit = { province_id = 4404 owned_by = TUR } secede_province = FROM } # TGCNV split half of 852
 		random_owned = { limit = { province_id = 853 owned_by = TUR } secede_province = FROM } #Albania
+		random_owned = { limit = { province_id = 4405 owned_by = TUR } secede_province = FROM } # TGCNV split half of 853
 		random_owned = { limit = { province_id = 3403 owned_by = TUR } secede_province = FROM } #Albania
 		any_owned = { limit = { region = TRI_1731 owned_by = TUR } secede_province = FROM } #Tripolitania
 		any_owned = { limit = { region = TRI_1735 owned_by = TUR } secede_province = FROM } #Cyr
 		random_owned = { limit = { province_id = 1759 owned_by = TUR } secede_province = FROM }
+		random_owned = { limit = { province_id = 5314 owned_by = TUR } secede_province = FROM } # TGCNV split half of 1759
 		random_owned = { limit = { province_id = 846 owned_by = TUR } secede_province = FROM } #Rhodos
+		random_owned = { limit = { province_id = 4398 owned_by = TUR } secede_province = FROM } # TGCNV split half of 846
 		}
 }

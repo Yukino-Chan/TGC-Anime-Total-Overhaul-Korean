@@ -180,11 +180,17 @@ country_event = {
 		2510 = { secede_province = THIS }
 		2511 = { secede_province = THIS }
 		2512 = { secede_province = THIS }
+		6059 = { secede_province = THIS } # TGCNV split half of 2512
 		2513 = { secede_province = THIS }
+		6060 = { secede_province = THIS } # TGCNV split half of 2513
 		2514 = { secede_province = THIS }
+		6061 = { secede_province = THIS } # TGCNV split half of 2514
 		2515 = { secede_province = THIS }
+		6062 = { secede_province = THIS } # TGCNV split half of 2515
 		2516 = { secede_province = THIS }
+		6063 = { secede_province = THIS } # TGCNV split half of 2516
 		2571 = { secede_province = THIS }
+		6112 = { secede_province = THIS } # TGCNV split half of 2571
 		relation = { who = FROM value = 150 }
 		treasury = -250000
 		FROM = { treasury = 250000 }
@@ -1381,8 +1387,12 @@ country_event = {
 		inherit = SDB
 		badboy = 6
 		3478 = { secede_province = LTU }
+		6487 = { secede_province = LTU } # TGCNV split half of 3478
 		605 = { secede_province = LTU }
+		4163 = { secede_province = LTU } # TGCNV split half of 605
+		6817 = { secede_province = LTU } # TGCNV split half of 605
 		3272 = { secede_province = LTU }
+		6279 = { secede_province = LTU } # TGCNV split half of 3272
 		any_owned = {
 			limit = {
 				is_core = SWI
@@ -1401,7 +1411,11 @@ country_event = {
 		605 = { secede_province = LTU }
 		3272 = { secede_province = LTU }
 		604 = { secede_province = LTU }
+		4162 = { secede_province = LTU } # TGCNV split half of 604
 		606 = { secede_province = LTU }
+		4164 = { secede_province = LTU } # TGCNV split half of 606
+		6818 = { secede_province = LTU } # TGCNV split half of 606
+		6838 = { secede_province = LTU } # TGCNV split half of 606
 		GCF = { inherit = SWI }
 		any_owned = {
 			limit = {

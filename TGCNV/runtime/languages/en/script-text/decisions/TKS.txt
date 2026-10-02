@@ -568,6 +568,7 @@ political_decisions = {
 			set_country_flag = red_water_conquered
 			prestige = 10
 			1205 = { secede_province = THIS }
+			4762 = { secede_province = THIS } # TGCNV split half of 1205
 		}
 
 		ai_will_do = { factor = 1 }

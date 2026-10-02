@@ -725,6 +725,7 @@
 		option = {
 			name = "EVTOPTA49511"
 			1724 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5278 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1724
 			prestige = 20
 		}
 	}

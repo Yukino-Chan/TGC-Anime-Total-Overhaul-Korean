@@ -25,6 +25,8 @@ political_decisions = {
 			regular_clothes = 50
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = RPL }
 			2625 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = RPL }
+			6167 = { add_core = QUE remove_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2625
+			7446 = { add_core = QUE remove_core = RPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2625
 			HOP_76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = RPL }
 			HOP_3451 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = RPL }
 			58 = {  }

@@ -621,13 +621,31 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "tg_resources"
-            position = { x = 18 y = 43 }
+            position = { x = 470 y = 43 }
             font = "vic_18_black"
             text = " "
-            maxWidth = 946
+            maxWidth = 494
+            format = right
             maxHeight = 30
             fixedsize = yes
         }
+        iconType = {
+            name = "tg_warhead_icon"
+            spriteType = "GFX_tgcnv_unit_nuclear_bomb"
+            position = { x = 18 y = 37 }
+            scale = 0.375
+        }
+
+        instantTextBoxType = {
+            name = "tg_warheads"
+            position = { x = 46 y = 43 }
+            font = "vic_18_black"
+            text = " "
+            maxWidth = 410
+            maxHeight = 30
+            fixedsize = yes
+        }
+
 
         guiButtonType = {
             name = "tg_wings"
@@ -659,7 +677,7 @@ guiTypes = {
         guiButtonType = {
             name = "tg_nuclear"
             position = { x = 486 y = 78 }
-            quadTextureSprite = "GFX_tgcnv_air_ui_tab_144"
+            quadTextureSprite = "GFX_tgcnv_air_ui_tab_nuclear"
             buttonFont = "vic_18_black"
             buttonText = "TGC_AIR_NUCLEAR"
             clicksound = click
@@ -1585,6 +1603,69 @@ guiTypes = {
             name = "tg_detail_icon_9"
             spriteType = "GFX_tgcnv_unit_reconnaissance"
             position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_detail_nuclear"
+            spriteType = "GFX_tgcnv_unit_nuclear_bomb"
+            position = { x = 934 y = 80 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_nuclear_0"
+            spriteType = "GFX_tgcnv_unit_nuclear_bomb"
+            position = { x = 23 y = 151 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_nuclear_1"
+            spriteType = "GFX_tgcnv_unit_nuclear_bomb"
+            position = { x = 23 y = 185 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_nuclear_2"
+            spriteType = "GFX_tgcnv_unit_nuclear_bomb"
+            position = { x = 23 y = 219 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_nuclear_3"
+            spriteType = "GFX_tgcnv_unit_nuclear_bomb"
+            position = { x = 23 y = 253 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_nuclear_4"
+            spriteType = "GFX_tgcnv_unit_nuclear_bomb"
+            position = { x = 23 y = 287 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_nuclear_5"
+            spriteType = "GFX_tgcnv_unit_nuclear_bomb"
+            position = { x = 23 y = 321 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_nuclear_6"
+            spriteType = "GFX_tgcnv_unit_nuclear_bomb"
+            position = { x = 23 y = 355 }
+            scale = 0.4375
+        }
+
+        iconType = {
+            name = "tg_row_nuclear_7"
+            spriteType = "GFX_tgcnv_unit_nuclear_bomb"
+            position = { x = 23 y = 389 }
             scale = 0.4375
         }
 

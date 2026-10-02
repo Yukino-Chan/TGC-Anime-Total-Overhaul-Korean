@@ -68,6 +68,7 @@ political_decisions = {
 			prestige = 10
 			add_accepted_culture = sindi
 			1223 = { add_core = PNJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4780 = { add_core = PNJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1223
 			set_country_flag = embraced_sindi
 		}
 

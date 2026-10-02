@@ -80,12 +80,12 @@ artisans = {
 soldiers = {
 		culture = nguni
 		religion = animist
-		size = 200
+		size = 1000
 	}
 tribals = {
 		culture = nguni
 		religion = animist
-		size = 11625
+		size = 10825
 	}
 slaves = {
 		culture = nguni
@@ -173,12 +173,12 @@ artisans = {
 soldiers = {
 		culture = tonga
 		religion = animist
-		size = 200
+		size = 1000
 	}
 tribals = {
 		culture = tonga
 		religion = animist
-		size = 15300
+		size = 14500
 	}
 slaves = {
 		culture = tonga
@@ -231,12 +231,12 @@ artisans = {
 soldiers = {
 		culture = shona
 		religion = animist
-		size = 201
+		size = 1000
 	}
 tribals = {
 		culture = shona
 		religion = animist
-		size = 19709
+		size = 18910
 	}
 slaves = {
 		culture = shona
@@ -735,12 +735,12 @@ artisans = {
 soldiers = {
 		culture = yao
 		religion = sunni
-		size = 151
+		size = 1000
 	}
 farmers = {
 		culture = yao
 		religion = sunni
-		size = 10980
+		size = 10131
 	}
 slaves = {
 		culture = yao
@@ -926,12 +926,12 @@ artisans = {
 soldiers = {
 		culture = nguni
 		religion = animist
-		size = 200
+		size = 1000
 	}
 tribals = {
 		culture = nguni
 		religion = animist
-		size = 11625
+		size = 10825
 	}
 slaves = {
 		culture = nguni
@@ -1019,12 +1019,12 @@ artisans = {
 soldiers = {
 		culture = tonga
 		religion = animist
-		size = 200
+		size = 1000
 	}
 tribals = {
 		culture = tonga
 		religion = animist
-		size = 15300
+		size = 14500
 	}
 slaves = {
 		culture = tonga
@@ -1095,244 +1095,109 @@ slaves = {
 aristocrats = {
 		culture = portuguese
 		religion = catholic
-		size = 50
+		size = 51
 	}
 clergymen = {
 		culture = portuguese
 		religion = catholic
-		size = 50
+		size = 51
 	}
 artisans = {
 		culture = portuguese
 		religion = catholic
-		size = 50
+		size = 51
 	}
 soldiers = {
 		culture = portuguese
 		religion = catholic
-		size = 75
+		size = 77
 	}
 farmers = {
 		culture = portuguese
 		religion = catholic
+		size = 514
+	}
+aristocrats = {
+		culture = shona
+		religion = animist
+		size = 186
+	}
+clergymen = {
+		culture = shona
+		religion = animist
+		size = 89
+	}
+artisans = {
+		culture = shona
+		religion = animist
+		size = 417
+	}
+soldiers = {
+		culture = shona
+		religion = animist
+		size = 88
+	}
+tribals = {
+		culture = shona
+		religion = animist
+		size = 7200
+	}
+slaves = {
+		culture = shona
+		religion = animist
+		size = 1638
+	}
+aristocrats = {
+		culture = sena
+		religion = animist
+		size = 128
+	}
+clergymen = {
+		culture = sena
+		religion = animist
+		size = 103
+	}
+artisans = {
+		culture = sena
+		religion = animist
+		size = 565
+	}
+soldiers = {
+		culture = sena
+		religion = animist
+		size = 128
+	}
+tribals = {
+		culture = sena
+		religion = animist
+		size = 21932
+	}
+slaves = {
+		culture = sena
+		religion = animist
+		size = 1284
+	}
+clergymen = {
+		culture = swahili
+		religion = sunni
+		size = 51
+	}
+soldiers = {
+		culture = swahili
+		religion = sunni
+		size = 128
+	}
+artisans = {
+		culture = swahili
+		religion = sunni
 		size = 500
 	}
-aristocrats = {
-		culture = shona
-		religion = animist
-		size = 75
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 75
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 350
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 75
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 5425
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 1500
-	}
-aristocrats = {
-		culture = sena
-		religion = animist
-		size = 125
-	}
-clergymen = {
-		culture = sena
-		religion = animist
-		size = 100
-	}
-artisans = {
-		culture = sena
-		religion = animist
-		size = 550
-	}
-soldiers = {
-		culture = sena
-		religion = animist
-		size = 125
-	}
-tribals = {
-		culture = sena
-		religion = animist
-		size = 21350
-	}
-slaves = {
-		culture = sena
-		religion = animist
-		size = 1250
-	}
-clergymen = {
-		culture = swahili
-		religion = sunni
-		size = 50
-	}
-soldiers = {
-		culture = swahili
-		religion = sunni
-		size = 125
-	}
-artisans = {
-		culture = swahili
-		religion = sunni
-		size = 487
-	}
 farmers = {
 		culture = swahili
 		religion = sunni
-		size = 1500
+		size = 1541
 	}
 
-aristocrats = {
-		culture = portuguese
-		religion = catholic
-		size = 1
-	}
-clergymen = {
-		culture = portuguese
-		religion = catholic
-		size = 1
-	}
-artisans = {
-		culture = portuguese
-		religion = catholic
-		size = 1
-	}
-soldiers = {
-		culture = portuguese
-		religion = catholic
-		size = 2
-	}
-farmers = {
-		culture = portuguese
-		religion = catholic
-		size = 14
-	}
-aristocrats = {
-		culture = shona
-		religion = animist
-		size = 2
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 2
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 10
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 2
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 148
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 41
-	}
-aristocrats = {
-		culture = sena
-		religion = animist
-		size = 3
-	}
-clergymen = {
-		culture = sena
-		religion = animist
-		size = 3
-	}
-artisans = {
-		culture = sena
-		religion = animist
-		size = 15
-	}
-soldiers = {
-		culture = sena
-		religion = animist
-		size = 3
-	}
-tribals = {
-		culture = sena
-		religion = animist
-		size = 582
-	}
-slaves = {
-		culture = sena
-		religion = animist
-		size = 34
-	}
-clergymen = {
-		culture = swahili
-		religion = sunni
-		size = 1
-	}
-soldiers = {
-		culture = swahili
-		religion = sunni
-		size = 3
-	}
-artisans = {
-		culture = swahili
-		religion = sunni
-		size = 13
-	}
-farmers = {
-		culture = swahili
-		religion = sunni
-		size = 41
-	}
-aristocrats = {
-		culture = shona
-		religion = animist
-		size = 109
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 12
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 57
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 11
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 1627
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 97
-	}
 }
 
 
@@ -1341,93 +1206,53 @@ slaves = {
 aristocrats = {
 		culture = shona
 		religion = animist
-		size = 225
+		size = 238
 	}
 clergymen = {
 		culture = shona
 		religion = animist
-		size = 200
+		size = 205
 	}
 artisans = {
 		culture = shona
 		religion = animist
-		size = 1000
+		size = 1026
 	}
 soldiers = {
 		culture = shona
 		religion = animist
-		size = 225
+		size = 231
 	}
 tribals = {
 		culture = shona
 		religion = animist
-		size = 25350
+		size = 26325
 	}
 slaves = {
 		culture = shona
 		religion = animist
-		size = 1000
+		size = 1065
 	}
 
 aristocrats = {
-		culture = shona
-		religion = animist
-		size = 3
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 3
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 12
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 3
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 314
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 12
-	}
-aristocrats = {
-		culture = southern_bantu
-		religion = animist
-		size = 1
-	}
-artisans = {
 		culture = southern_bantu
 		religion = animist
 		size = 2
 	}
+artisans = {
+		culture = southern_bantu
+		religion = animist
+		size = 4
+	}
 tribals = {
 		culture = southern_bantu
 		religion = animist
-		size = 45
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 1
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 15
+		size = 78
 	}
 tribals = {
 		culture = sena
 		religion = animist
-		size = 7
+		size = 237
 	}
 aristocrats = {
 		culture = nyasa
@@ -1460,36 +1285,6 @@ slaves = {
 		size = 37
 	}
 aristocrats = {
-		culture = shona
-		religion = animist
-		size = 10
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 2
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 12
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 3
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 636
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 53
-	}
-aristocrats = {
 		culture = sena
 		religion = animist
 		size = 9
@@ -1508,41 +1303,6 @@ soldiers = {
 		culture = sena
 		religion = animist
 		size = 2
-	}
-tribals = {
-		culture = sena
-		religion = animist
-		size = 225
-	}
-aristocrats = {
-		culture = southern_bantu
-		religion = animist
-		size = 1
-	}
-artisans = {
-		culture = southern_bantu
-		religion = animist
-		size = 2
-	}
-tribals = {
-		culture = southern_bantu
-		religion = animist
-		size = 33
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 1
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 10
-	}
-tribals = {
-		culture = sena
-		religion = animist
-		size = 5
 	}
 }
 
@@ -1964,12 +1724,12 @@ artisans = {
 soldiers = {
 		culture = yao
 		religion = sunni
-		size = 149
+		size = 1000
 	}
 farmers = {
 		culture = yao
 		religion = sunni
-		size = 10970
+		size = 10119
 	}
 slaves = {
 		culture = yao
@@ -2102,32 +1862,32 @@ farmers = {
 aristocrats = {
 		culture = shona
 		religion = animist
-		size = 73
+		size = 115
 	}
 clergymen = {
 		culture = shona
 		religion = animist
-		size = 73
+		size = 85
 	}
 artisans = {
 		culture = shona
 		religion = animist
-		size = 340
+		size = 396
 	}
 soldiers = {
 		culture = shona
 		religion = animist
-		size = 73
+		size = 86
 	}
 tribals = {
 		culture = shona
 		religion = animist
-		size = 5277
+		size = 6767
 	}
 slaves = {
 		culture = shona
 		religion = animist
-		size = 1459
+		size = 1528
 	}
 aristocrats = {
 		culture = sena
@@ -2179,238 +1939,93 @@ farmers = {
 		religion = sunni
 		size = 1459
 	}
-aristocrats = {
-		culture = shona
-		religion = animist
-		size = 9
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 8
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 39
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 9
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 989
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 39
-	}
-aristocrats = {
-		culture = shona
-		religion = animist
-		size = 33
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 4
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 17
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 4
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 501
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 30
-	}
 }
 
 2054 = {
 aristocrats = {
 		culture = shona
 		religion = animist
-		size = 49
+		size = 56
 	}
 clergymen = {
 		culture = shona
 		religion = animist
-		size = 62
+		size = 64
 	}
 artisans = {
 		culture = shona
 		religion = animist
-		size = 246
+		size = 254
 	}
 soldiers = {
 		culture = shona
 		religion = animist
-		size = 74
+		size = 76
 	}
 tribals = {
 		culture = shona
 		religion = animist
-		size = 3509
+		size = 3960
 	}
 slaves = {
 		culture = shona
 		religion = animist
-		size = 1477
+		size = 1515
 	}
 aristocrats = {
 		culture = nyasa
 		religion = animist
-		size = 49
+		size = 54
 	}
 clergymen = {
 		culture = nyasa
 		religion = animist
-		size = 49
+		size = 50
 	}
 artisans = {
 		culture = nyasa
 		religion = animist
-		size = 197
+		size = 203
 	}
 soldiers = {
 		culture = nyasa
 		religion = animist
-		size = 49
+		size = 50
 	}
 tribals = {
 		culture = nyasa
 		religion = animist
-		size = 2388
+		size = 2515
 	}
 slaves = {
 		culture = nyasa
 		religion = animist
-		size = 1231
+		size = 1257
 	}
 aristocrats = {
 		culture = sena
 		religion = animist
-		size = 49
+		size = 55
 	}
 clergymen = {
 		culture = sena
 		religion = animist
-		size = 49
+		size = 50
 	}
 artisans = {
 		culture = sena
 		religion = animist
-		size = 173
+		size = 175
 	}
 soldiers = {
 		culture = sena
 		religion = animist
-		size = 49
+		size = 50
 	}
 tribals = {
 		culture = sena
 		religion = animist
-		size = 3165
-	}
-aristocrats = {
-		culture = nyasa
-		religion = animist
-		size = 5
-	}
-clergymen = {
-		culture = nyasa
-		religion = animist
-		size = 1
-	}
-artisans = {
-		culture = nyasa
-		religion = animist
-		size = 6
-	}
-soldiers = {
-		culture = nyasa
-		religion = animist
-		size = 1
-	}
-tribals = {
-		culture = nyasa
-		religion = animist
-		size = 127
-	}
-slaves = {
-		culture = nyasa
-		religion = animist
-		size = 26
-	}
-aristocrats = {
-		culture = shona
-		religion = animist
-		size = 7
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 2
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 8
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 2
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 451
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 38
-	}
-aristocrats = {
-		culture = sena
-		religion = animist
-		size = 6
-	}
-clergymen = {
-		culture = sena
-		religion = animist
-		size = 1
-	}
-artisans = {
-		culture = sena
-		religion = animist
-		size = 2
-	}
-soldiers = {
-		culture = sena
-		religion = animist
-		size = 1
-	}
-tribals = {
-		culture = sena
-		religion = animist
-		size = 160
+		size = 3325
 	}
 }
 
@@ -2418,157 +2033,67 @@ tribals = {
 artisans = {
 		culture = shona
 		religion = animist
-		size = 1
+		size = 915
 	}
 tribals = {
 		culture = shona
 		religion = animist
-		size = 7
+		size = 23225
 	}
 slaves = {
 		culture = shona
 		religion = animist
-		size = 3
+		size = 935
 	}
 tribals = {
 		culture = nyasa
 		religion = animist
-		size = 5
+		size = 60
 	}
 slaves = {
 		culture = nyasa
 		religion = animist
-		size = 2
+		size = 19
 	}
 tribals = {
 		culture = sena
 		religion = animist
-		size = 6
+		size = 77
 	}
 aristocrats = {
 		culture = shona
 		religion = animist
-		size = 205
+		size = 207
 	}
 clergymen = {
 		culture = shona
 		religion = animist
 		size = 182
 	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 910
-	}
 soldiers = {
 		culture = shona
 		religion = animist
-		size = 205
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 23058
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 910
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 2
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 1
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 27
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 11
+		size = 206
 	}
 artisans = {
 		culture = nyasa
 		religion = animist
-		size = 2
-	}
-tribals = {
-		culture = nyasa
-		religion = animist
-		size = 18
-	}
-slaves = {
-		culture = nyasa
-		religion = animist
-		size = 9
+		size = 4
 	}
 artisans = {
 		culture = sena
 		religion = animist
 		size = 1
 	}
-tribals = {
-		culture = sena
-		religion = animist
-		size = 24
-	}
 aristocrats = {
 		culture = nyasa
 		religion = animist
 		size = 2
 	}
-artisans = {
-		culture = nyasa
-		religion = animist
-		size = 2
-	}
-tribals = {
-		culture = nyasa
-		religion = animist
-		size = 37
-	}
-slaves = {
-		culture = nyasa
-		religion = animist
-		size = 8
-	}
-aristocrats = {
-		culture = shona
-		religion = animist
-		size = 2
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 2
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 133
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 11
-	}
 aristocrats = {
 		culture = sena
 		religion = animist
 		size = 2
-	}
-tribals = {
-		culture = sena
-		religion = animist
-		size = 47
 	}
 }
 
@@ -2586,7 +2111,7 @@ clergymen = {
 artisans = {
 		culture = southern_bantu
 		religion = animist
-		size = 1242
+		size = 1243
 	}
 soldiers = {
 		culture = southern_bantu
@@ -2596,12 +2121,12 @@ soldiers = {
 tribals = {
 		culture = southern_bantu
 		religion = animist
-		size = 24845
+		size = 24855
 	}
 slaves = {
 		culture = southern_bantu
 		religion = animist
-		size = 994
+		size = 1005
 	}
 clergymen = {
 		culture = swahili
@@ -2611,17 +2136,17 @@ clergymen = {
 soldiers = {
 		culture = swahili
 		religion = sunni
-		size = 50
+		size = 53
 	}
 artisans = {
 		culture = swahili
 		religion = sunni
-		size = 969
+		size = 981
 	}
 farmers = {
 		culture = swahili
 		religion = sunni
-		size = 1491
+		size = 1691
 	}
 aristocrats = {
 		culture = swahili
@@ -2638,25 +2163,10 @@ clergymen = {
 		religion = ibadi
 		size = 1
 	}
-artisans = {
-		culture = swahili
-		religion = sunni
-		size = 12
-	}
-soldiers = {
-		culture = swahili
-		religion = sunni
-		size = 3
-	}
-farmers = {
-		culture = swahili
-		religion = sunni
-		size = 200
-	}
 slaves = {
 		culture = yao
 		religion = animist
-		size = 75
+		size = 81
 	}
 aristocrats = {
 		culture = yao
@@ -2666,17 +2176,25 @@ aristocrats = {
 artisans = {
 		culture = yao
 		religion = sunni
-		size = 1
+		size = 2
 	}
 farmers = {
 		culture = yao
 		religion = sunni
-		size = 20
+		size = 33
 	}
+}
+
+2581 = {
 artisans = {
-		culture = southern_bantu
-		religion = animist
-		size = 1
+		culture = yao
+		religion = sunni
+		size = 1054
+	}
+farmers = {
+		culture = yao
+		religion = sunni
+		size = 17853
 	}
 tribals = {
 		culture = southern_bantu
@@ -2688,123 +2206,25 @@ slaves = {
 		religion = animist
 		size = 11
 	}
-artisans = {
-		culture = yao
-		religion = sunni
-		size = 1
-	}
-farmers = {
-		culture = yao
-		religion = sunni
-		size = 13
-	}
-slaves = {
-		culture = yao
-		religion = animist
-		size = 6
-	}
-}
-
-2581 = {
-artisans = {
-		culture = yao
-		religion = sunni
-		size = 1
-	}
-farmers = {
-		culture = yao
-		religion = sunni
-		size = 15
-	}
-tribals = {
-		culture = southern_bantu
-		religion = animist
-		size = 7
-	}
-slaves = {
-		culture = southern_bantu
-		religion = animist
-		size = 8
-	}
 aristocrats = {
 		culture = yao
 		religion = sunni
-		size = 225
+		size = 226
 	}
 clergymen = {
 		culture = yao
 		religion = sunni
-		size = 200
-	}
-artisans = {
-		culture = yao
-		religion = sunni
-		size = 1049
+		size = 201
 	}
 soldiers = {
 		culture = yao
 		religion = sunni
-		size = 225
-	}
-farmers = {
-		culture = yao
-		religion = sunni
-		size = 17781
+		size = 226
 	}
 slaves = {
 		culture = yao
 		religion = animist
-		size = 8491
-	}
-artisans = {
-		culture = yao
-		religion = sunni
-		size = 1
-	}
-farmers = {
-		culture = yao
-		religion = sunni
-		size = 7
-	}
-tribals = {
-		culture = southern_bantu
-		religion = animist
-		size = 3
-	}
-slaves = {
-		culture = southern_bantu
-		religion = animist
-		size = 3
-	}
-aristocrats = {
-		culture = yao
-		religion = sunni
-		size = 1
-	}
-clergymen = {
-		culture = yao
-		religion = sunni
-		size = 1
-	}
-artisans = {
-		culture = yao
-		religion = sunni
-		size = 3
-	}
-soldiers = {
-		culture = yao
-		religion = sunni
-		size = 1
-	}
-farmers = {
-		culture = yao
-		religion = sunni
-		size = 50
-	}
-slaves = {
-		culture = yao
-		religion = animist
-		size = 24
+		size = 8515
 	}
 }
 
@@ -2812,202 +2232,87 @@ slaves = {
 aristocrats = {
 		culture = shona
 		religion = animist
-		size = 1
+		size = 58
 	}
 clergymen = {
 		culture = shona
 		religion = animist
-		size = 1
+		size = 69
 	}
 artisans = {
 		culture = shona
 		religion = animist
-		size = 3
+		size = 283
 	}
 soldiers = {
 		culture = shona
 		religion = animist
-		size = 1
+		size = 82
 	}
 tribals = {
 		culture = shona
 		religion = animist
-		size = 47
+		size = 4391
 	}
 slaves = {
 		culture = shona
 		religion = animist
-		size = 20
+		size = 1541
 	}
 aristocrats = {
 		culture = nyasa
 		religion = animist
-		size = 1
+		size = 51
 	}
 clergymen = {
 		culture = nyasa
 		religion = animist
-		size = 1
+		size = 51
 	}
 artisans = {
 		culture = nyasa
 		religion = animist
-		size = 3
+		size = 201
 	}
 soldiers = {
 		culture = nyasa
 		religion = animist
-		size = 1
+		size = 51
 	}
 tribals = {
 		culture = nyasa
 		religion = animist
-		size = 32
+		size = 2439
 	}
 slaves = {
 		culture = nyasa
 		religion = animist
-		size = 17
+		size = 1258
 	}
 aristocrats = {
 		culture = sena
 		religion = animist
-		size = 1
+		size = 51
 	}
 clergymen = {
 		culture = sena
 		religion = animist
-		size = 1
+		size = 51
 	}
 artisans = {
 		culture = sena
 		religion = animist
-		size = 2
+		size = 176
 	}
 soldiers = {
 		culture = sena
 		religion = animist
-		size = 1
+		size = 51
 	}
 tribals = {
 		culture = sena
 		religion = animist
-		size = 42
-	}
-aristocrats = {
-		culture = shona
-		religion = animist
-		size = 7
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 6
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 32
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 7
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 809
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 32
-	}
-aristocrats = {
-		culture = shona
-		religion = animist
-		size = 50
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 62
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 248
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 74
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 3535
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 1489
-	}
-aristocrats = {
-		culture = nyasa
-		religion = animist
-		size = 50
-	}
-clergymen = {
-		culture = nyasa
-		religion = animist
-		size = 50
-	}
-artisans = {
-		culture = nyasa
-		religion = animist
-		size = 198
-	}
-soldiers = {
-		culture = nyasa
-		religion = animist
-		size = 50
-	}
-tribals = {
-		culture = nyasa
-		religion = animist
-		size = 2407
-	}
-slaves = {
-		culture = nyasa
-		religion = animist
-		size = 1241
-	}
-aristocrats = {
-		culture = sena
-		religion = animist
-		size = 50
-	}
-clergymen = {
-		culture = sena
-		religion = animist
-		size = 50
-	}
-artisans = {
-		culture = sena
-		religion = animist
-		size = 174
-	}
-soldiers = {
-		culture = sena
-		religion = animist
-		size = 50
-	}
-tribals = {
-		culture = sena
-		religion = animist
-		size = 3188
+		size = 3230
 	}
 }
 
@@ -3103,62 +2408,32 @@ tribals = {
 aristocrats = {
 		culture = shona
 		religion = animist
-		size = 1
+		size = 1535
 	}
 clergymen = {
 		culture = shona
 		religion = animist
-		size = 1
+		size = 172
 	}
 artisans = {
 		culture = shona
 		religion = animist
-		size = 7
+		size = 808
 	}
 soldiers = {
 		culture = shona
 		religion = animist
-		size = 1
+		size = 161
 	}
 tribals = {
 		culture = shona
 		religion = animist
-		size = 180
+		size = 23206
 	}
 slaves = {
 		culture = shona
 		religion = animist
-		size = 7
-	}
-aristocrats = {
-		culture = shona
-		religion = animist
-		size = 1534
-	}
-clergymen = {
-		culture = shona
-		religion = animist
-		size = 171
-	}
-artisans = {
-		culture = shona
-		religion = animist
-		size = 801
-	}
-soldiers = {
-		culture = shona
-		religion = animist
-		size = 160
-	}
-tribals = {
-		culture = shona
-		religion = animist
-		size = 23026
-	}
-slaves = {
-		culture = shona
-		religion = animist
-		size = 1374
+		size = 1381
 	}
 }
 
@@ -3166,17 +2441,17 @@ slaves = {
 aristocrats = {
 		culture = yao
 		religion = sunni
-		size = 1
+		size = 225
 	}
 artisans = {
 		culture = yao
 		religion = sunni
-		size = 1
+		size = 1046
 	}
 farmers = {
 		culture = yao
 		religion = sunni
-		size = 20
+		size = 17745
 	}
 artisans = {
 		culture = southern_bantu
@@ -3193,30 +2468,15 @@ slaves = {
 		religion = animist
 		size = 11
 	}
-aristocrats = {
-		culture = yao
-		religion = sunni
-		size = 224
-	}
 clergymen = {
 		culture = yao
 		religion = sunni
 		size = 199
 	}
-artisans = {
-		culture = yao
-		religion = sunni
-		size = 1045
-	}
 soldiers = {
 		culture = yao
 		religion = sunni
 		size = 224
-	}
-farmers = {
-		culture = yao
-		religion = sunni
-		size = 17725
 	}
 slaves = {
 		culture = yao

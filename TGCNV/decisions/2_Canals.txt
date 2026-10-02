@@ -118,6 +118,7 @@ political_decisions = {
 				treasury = 75000
 			}
 			1755 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5310 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1755
 			country_event = 36970
 		}
 
@@ -178,6 +179,7 @@ political_decisions = {
 			random_country = { limit = { owns = 1755 NOT = { in_sphere = THIS } } THIS = { treasury = -200000 } }
 			1755 = { owner = { country_event = 36980 } }
 			1755 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5310 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1755
 
 			random_owned = { limit = { exists = NEJ } owner = { diplomatic_influence = { who = NEJ value = 25 } } }
 			random_owned = { limit = { exists = HAL } owner = { diplomatic_influence = { who = HAL value = 25 } } }
@@ -319,6 +321,7 @@ political_decisions = {
 		effect = {
 			set_global_flag = kiel_under_construction
 			369 = { secede_province = THIS }
+			3930 = { secede_province = THIS } # TGCNV split half of 369
 			country_event = 36976
 		}
 
@@ -380,7 +383,9 @@ political_decisions = {
 				treasury = 25000
 			}
 			3501 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6508 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3501
 			3502 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6509 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3502
 			set_global_flag = nicaragua_under_construction
 			set_country_flag = nicaragua_canal_builder
 

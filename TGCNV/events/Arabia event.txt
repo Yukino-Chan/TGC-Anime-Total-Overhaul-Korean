@@ -1228,6 +1228,7 @@
 					is_core = THIS
 				}
 				935 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4487 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 935
 			}
 		}
 	}

@@ -77,5 +77,8 @@ country_event = {
 	option = {
 		name = "EVTOPTA99999977"
 		2577 = { secede_province = THIS }
+		6118 = { secede_province = THIS } # TGCNV split half of 2577
+		6714 = { secede_province = THIS } # TGCNV split half of 2577
+		6717 = { secede_province = THIS } # TGCNV split half of 2577
 	}
 }

@@ -59,19 +59,31 @@ political_decisions = {
 			set_country_flag = venetian_ambition
 			prestige = 60
 			727 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4283 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 727
 			728 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4284 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 728
 			729 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4285 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 729
 			6601 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4287 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 6601
 			730 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4286 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 730
 			731 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			732 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			733 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4289 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 733
 			770 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4324 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 770
 			780 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4333 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 780
+			6691 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 780
 			781 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			2582 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6123 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2582
 			826 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4378 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 826
 			827 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4379 = { add_core = VEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 827
 			badboy = 5
 		}
 	}

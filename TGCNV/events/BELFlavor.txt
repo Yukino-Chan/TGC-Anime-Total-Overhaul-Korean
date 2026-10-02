@@ -320,6 +320,7 @@ country_event = {
 			FROM = { money = 30000 }
 			relation = { who = FROM value = 50 }
 			39 = { secede_province = THIS }
+			3602 = { secede_province = THIS } # TGCNV split half of 39
 
 			ai_chance = { factor = 100 }
 		}
@@ -389,6 +390,7 @@ country_event = {
 			name = "EVTOPTB1904191431"
 
 			39 = { remove_core = THIS }
+			3602 = { remove_core = THIS } # TGCNV split half of 39
 
 			random_country = {
 				limit = { owns = 2186 }
@@ -416,5 +418,6 @@ country_event = {
 				secede_province = THIS
 				add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
+			3602 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 39
 		}
 	}

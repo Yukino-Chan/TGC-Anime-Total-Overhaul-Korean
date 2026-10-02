@@ -1517,10 +1517,14 @@ political_decisions = {
 			set_global_flag = sakhalin_claimed_chinese
 			badboy = 5
 			1086 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4642 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1086
 			1087 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4643 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1087
 			CHI_1082 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1086 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4642 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1086
 			1087 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4643 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1087
 			CHI_1082 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1086 = { owner = { relation = { who = THIS value = -200 } } }
 			1087 = { owner = { relation = { who = THIS value = -200 } } }
@@ -2843,6 +2847,7 @@ political_decisions = {
 				add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				add_core = LAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
+			4983 = { add_core = THIS add_core = LAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1426
 		}
 
 		ai_will_do = { factor = 1 }
@@ -3383,22 +3388,26 @@ political_decisions = {
 				remove_core = FJN
 				change_province_name = "타이베이"
 			}
+			6237 = { add_core = TAI remove_core = FJN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2681
 			2562 = {
 				add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				remove_core = FJN
 				change_province_name = "타이둥"
 			}
+			6103 = { add_core = TAI remove_core = FJN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2562
 			2406 = {
 				add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				remove_core = FJN
 				change_province_name = "펑후"
 			}
+			5952 = { add_core = TAI remove_core = FJN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2406
 			1485 = {
 				add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				remove_core = FJN
 				change_province_name = "타이난"
 				state_scope = { change_region_name = "타이완성" }
 			}
+			5041 = { add_core = TAI remove_core = FJN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1485
 			TAI = { government = democracy remove_accepted_culture = japanese }
 			clr_global_flag = taiwan_administration
 		}

@@ -257,12 +257,16 @@ political_decisions = {
 		    TUR_789 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Herzegovina
 		    TUR_785 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Western Bosnia
 			3283 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Baranja
+			6290 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3283
 			3289 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Cakovec
+			6295 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3289
 			TUR_804 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Novi Pazar
 			2577 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Pljevlja
 			MON_3433 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Kotor
 			2538 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Novi Sad
+			6081 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2538
 			3309 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Subotica
+			6314 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3309
 		}
 
 		ai_will_do = {

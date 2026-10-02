@@ -326,6 +326,7 @@
 				398 = {
 					remove_core = LUX
 				}
+				3959 = { remove_core = LUX } # TGCNV split half of 398
 				397 = {
 					remove_core = NET
 				}
@@ -346,6 +347,7 @@
 					add_core = LUX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					remove_core = NET
 				}
+				3959 = { add_core = LUX remove_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 398
 				397 = {
 					remove_core = NET
 				}
@@ -370,6 +372,7 @@
 					add_core = LUX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					remove_core = NET
 				}
+				3957 = { add_core = LUX remove_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 396
 				397 = {
 					remove_core = NET
 				}

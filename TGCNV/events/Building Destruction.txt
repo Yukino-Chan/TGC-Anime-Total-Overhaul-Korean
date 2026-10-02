@@ -125,6 +125,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = { 300 = { change_controller = THIS } }
+	3861 = { change_controller = THIS } # TGCNV split half of 300
 
 	option = {
 		name = "EVTOPTA152009874"
@@ -157,5 +158,6 @@ country_event = {
 			}
 		}
 		300 = { change_controller = FROM }
+		3861 = { change_controller = FROM } # TGCNV split half of 300
 	}
 }

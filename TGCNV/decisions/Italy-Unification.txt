@@ -1068,6 +1068,7 @@ political_decisions = {
 					add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
 				721 = {	add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }	}
+				4277 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 721
 				3363 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				owner = { badboy = 6 }
 			}
@@ -1215,7 +1216,7 @@ political_decisions = {
 				limit = {
 					OR = {
 						province_id = 3363
-						province_id = 721
+						province_id = 721 province_id = 4277
 						region = SAR_466
 						region = SAR_472
 					}
@@ -1234,9 +1235,16 @@ political_decisions = {
 			TUS_744 = { add_core = TUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = SAR }
 			751 = { add_core = TUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			752 = { add_core = TUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4306 = { add_core = TUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 752
+			6748 = { add_core = TUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 752
+			6988 = { add_core = TUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 752
 			750 = { add_core = TUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4304 = { add_core = TUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 750
 			PAP = { all_core = { remove_core = PAP } }
 			749 = { add_core = PAP add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4303 = { add_core = PAP add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 749
+			6690 = { add_core = PAP add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 749
+			6984 = { add_core = PAP add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 749
 			3374 = { add_core = PAP add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			3375 = { add_core = PAP add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			3479 = { add_core = SAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = TUS }
@@ -1329,6 +1337,7 @@ political_decisions = {
 				remove_core = SAR
 				remove_core = ITA
 			}
+			4324 = { remove_core = SAR remove_core = ITA } # TGCNV split half of 770
 			SAR = {	prestige = -30 }
 			425 = { owner = { country_event = 72764 } }
 		}
@@ -1558,6 +1567,7 @@ political_decisions = {
 				remove_core = SRD
 				remove_core = ITA
 			}
+			4034 = { remove_core = SRD remove_core = ITA } # TGCNV split half of 473
 			SRD = {	prestige = -30 }
 			random_country = {
 				limit = {

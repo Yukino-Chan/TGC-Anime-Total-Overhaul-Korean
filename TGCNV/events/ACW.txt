@@ -4807,10 +4807,15 @@
 					USA_151 = { add_core = DAK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Iowa
 					DES = { all_core = { remove_core = DES } }
 					94 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					3656 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 94
 					95 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					3657 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 95
 					97 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					3659 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 97
 					98 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					3660 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 98
 					99 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					3661 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 99
 					any_country = {
 						limit = {
 							OR = {
@@ -8161,6 +8166,7 @@
 						UIL = { owns = 158 }
 					}
 					49 = { secede_province = UIL }
+					3610 = { secede_province = UIL } # TGCNV split half of 49
 				}
 				UIL = {
 					capital = 163
@@ -8297,6 +8303,7 @@
 							}
 						}
 						49 = { secede_province = UIL }
+						3610 = { secede_province = UIL } # TGCNV split half of 49
 					}
 				}
 			}
@@ -13556,7 +13563,9 @@
 				set_country_flag = CHP_created
 				prestige = -50
 				2181 = { add_core = CHP add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Tuxtla
+				5733 = { add_core = CHP add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2181
 				2182 = { add_core = CHP add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Soconusco
+				5734 = { add_core = CHP add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2182
 				any_state = {
 					limit = {
 						any_owned_province = {

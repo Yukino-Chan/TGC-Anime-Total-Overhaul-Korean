@@ -1,0 +1,6 @@
+# TGCNV EMFX actor clones (engine module emfx_clones, 2026-10-02).
+# The native actor loader registers every unit and building model twice: the original
+# plus one deep clone that holds its own copy of the meshes (ActorManager::RegisterActor).
+# Instances already share both copies, so 0 keeps only the original and frees about
+# 70-110 MB of address space at the map stage. 1 is the native behaviour.
+actor_clones = 0

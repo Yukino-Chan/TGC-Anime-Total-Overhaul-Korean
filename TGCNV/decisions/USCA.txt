@@ -188,6 +188,7 @@ political_decisions = {
 			UCA_2201 = { add_core = UCA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Costa Rica
 			CLM_1723 = { add_core = UCA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Panama
 			2182 = { add_core = UCA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Soconusco
+			5734 = { add_core = UCA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2182
 			change_tag = UCA
 			political_reform = federalism
 		}
@@ -316,6 +317,7 @@ political_decisions = {
 				all_core = { add_core = UCA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
 			2182 = { add_core = UCA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Soconusco
+			5734 = { add_core = UCA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2182
 			any_owned = {
 				limit = {
 					is_core = UCA
@@ -703,6 +705,7 @@ political_decisions = {
 		effect = {
 			badboy = 1
 			2182 = { secede_province = THIS }
+			5734 = { secede_province = THIS } # TGCNV split half of 2182
 			MEX = { country_event = 8194746 }
 		}
 
@@ -869,8 +872,11 @@ political_decisions = {
 			set_country_flag = yucatec_claims
 			badboy = 1
 			2187 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5739 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2187
 			2189 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5741 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2189
 			3472 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6481 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3472
 		}
 
 		ai_will_do = { factor = 1 }

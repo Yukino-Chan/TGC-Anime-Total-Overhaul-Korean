@@ -645,10 +645,15 @@ political_decisions = {
 				set_global_flag = brazil_has_renamed_paraguay
 				badboy = 5
 				random_owned = { limit = { province_id = 2420 } 2420 = { change_province_name = "Ponta Pora" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+				5966 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2420
 				random_owned = { limit = { province_id = 2339 } 2339 = { change_province_name = "Assuncao" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+				5885 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2339
 				random_owned = { limit = { province_id = 2340 } 2340 = { change_province_name = "Vila Real" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+				5886 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2340
 				random_owned = { limit = { province_id = 2341 } 2341 = { change_province_name = "Itapua" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+				5887 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2341
 				random_owned = { limit = { province_id = 2342 } 2342 = { change_province_name = "Vila Rica do Espirito Santo" add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
+				5888 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2342
 				2340 = {  }
 				set_country_flag = hidden_tooltip
 				random_owned = {

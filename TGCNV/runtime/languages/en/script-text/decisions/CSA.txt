@@ -87,6 +87,7 @@ political_decisions = {
 			RGR = { all_core = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }	} }
 			HAI_2213 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Hispanola
 			2222 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Puerto Rico
+			5774 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2222
 			any_pop = {
 				limit = {
 					is_culture_group = african_diaspora_cultures
@@ -139,7 +140,9 @@ political_decisions = {
 			UCA_2186 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Guatemala
 			UCA_2191 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # El Salvador
 			2217 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Jamaica
+			5769 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2217
 			2218 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Cayman Islands
+			5770 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2218
 			add_accepted_culture = central_american # Maybe move this to event?
 			any_pop = {
 				limit = {
@@ -202,7 +205,9 @@ political_decisions = {
 			UCA_2201 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Costa Rica
 			CLM_1723 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Panama
 			2219 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Bahamas
+			5771 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2219
 			2220 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Turks and Caicos
+			5772 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2220
 			any_pop = {
 				limit = {
 					OR = {
@@ -267,6 +272,7 @@ political_decisions = {
 			CLM_2251 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Magdalena
 			VNZ_2234 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Lago de Maracaibo
 			2273 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Guanare
+			5820 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2273
 			VNZ_2264 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Caracas
 			VNZ_2269 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Orinoco
 			ENG_2224 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Leeward Islands
@@ -673,11 +679,15 @@ political_decisions = {
 			set_country_flag = 36_or_fight
 			badboy = 5
 			87 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Monterey
+			3649 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 87
 			88 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Mojave Desert
+			3650 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 88
 			89 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Los Angeles
+			3651 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 89
 			90 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # San Diego
 
 			96 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Las Vegas
+			3658 = { add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 96
 
 			MEX_100 = { # Arizona
 				limit = {

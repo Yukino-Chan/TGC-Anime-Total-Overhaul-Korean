@@ -30,6 +30,7 @@ political_decisions = {
 
 				treasury = -75000
 				113 = { remove_core = CAN remove_core = ENG remove_core = FCA remove_core = ULA } #So it doesn't end up being annexed by France if USA didn't do the Oregon Treaty
+				3675 = { remove_core = CAN remove_core = ENG remove_core = FCA remove_core = ULA } # TGCNV split half of 113
 				USA = {
 					remove_accepted_culture = cajun
 					any_owned = {
@@ -351,6 +352,7 @@ political_decisions = {
 			2123 = {
 				secede_province = THIS
 			}
+			5679 = { secede_province = THIS } # TGCNV split half of 2123
 			2124 = {
 				secede_province = THIS
 				change_province_name = "Mayotte"
@@ -400,8 +402,13 @@ political_decisions = {
 			badboy = 3
 			465 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			466 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4027 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
+			6699 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
 			472 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4033 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 472
+			7189 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 472
 			3362 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6364 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3362
 			random_country = {
 				limit = { owns = 465 }
 				leave_alliance = THIS
@@ -465,6 +472,7 @@ political_decisions = {
 			FRA = { set_country_flag = claimed_aosta }
 			badboy = 1
 			721 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4277 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 721
 			random_country = {
 				limit = { owns = 721 }
 				leave_alliance = THIS
@@ -509,7 +517,9 @@ political_decisions = {
 		effect = {
 			prestige = 6
 			1097 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4653 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1097
 			1097 = { secede_province = THIS }
+			4653 = { secede_province = THIS } # TGCNV split half of 1097
 			add_country_modifier = { name = penal_colonies duration = -1 }
 		}
 	}
@@ -1568,7 +1578,9 @@ rename_bourbon_island = {
 				}
 				owner = {
 					1358 = { add_core = LXA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					4915 = { add_core = LXA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1358
 					1359 = { add_core = LXA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					4916 = { add_core = LXA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1359
 				}
 			}
 			any_country = {
@@ -1817,6 +1829,7 @@ rename_bourbon_island = {
 				secede_province = THIS
 				owner = { relation = { who = THIS value = -25 } }
 			}
+			6114 = { secede_province = THIS } # TGCNV split half of 2573
 			random_country = {
 				limit = {
 					tag = TRZ
@@ -2258,6 +2271,7 @@ rename_bourbon_island = {
 				}
 			1879 = { owner = { relation = { who = THIS value = -400 } any_neighbor_country = { relation = { who = THIS value = -400 } } } }
 			1879 = { secede_province = THIS }
+			5435 = { secede_province = THIS } # TGCNV split half of 1879
 		}
 		ai_will_do = {
 			factor = 1
@@ -2383,6 +2397,7 @@ rename_bourbon_island = {
 			diplomatic_influence = { who = DAH value = 300 }
 			1919 = { owner = { relation = { who = THIS value = 100 } treasury = 45000 } }
 			1919 = { secede_province = THIS }
+			5475 = { secede_province = THIS } # TGCNV split half of 1919
 		}
 
 		ai_will_do = {
@@ -2497,6 +2512,7 @@ rename_bourbon_island = {
 
 		effect = {
 			1972 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			5528 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1972
 		}
 
 		ai_will_do = { factor = 1 }
@@ -2854,8 +2870,11 @@ rename_bourbon_island = {
 			}
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			2625 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6167 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2625
+			7446 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2625
 			HOP_76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			77 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3639 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 77
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			ENG = {
 				any_owned = {
@@ -2915,8 +2934,11 @@ rename_bourbon_island = {
 			badboy = 10
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			2625 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6167 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2625
+			7446 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2625
 			HOP_76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			77 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3639 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 77
 			QUE = { all_core = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			treasury = -50000
 			ENG = {
@@ -3089,6 +3111,7 @@ rename_bourbon_island = {
 				73 = { change_province_name = "Ile-Royale" }
 				71 = {  }
 				77 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3639 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 77
 				MRU = { all_core = { remove_core = MRU } }
 
 			## Treaty of Paris - Only Quebec and Acadia ##
@@ -3392,7 +3415,7 @@ rename_bourbon_island = {
 							region = USA_78 # Washington
 							region = USA_81 # Oregon
 							region = USA_91 # Idaho
-							province_id = 106
+							province_id = 106 province_id = 3668
 							province_id = 78
 							province_id = 79
 						}
@@ -3425,7 +3448,7 @@ rename_bourbon_island = {
 								region = USA_78 #Washington
 								region = USA_81 #Oregon
 								region = USA_91 #Idaho
-								province_id = 106
+								province_id = 106 province_id = 3668
 								province_id = 78
 								province_id = 79
 							}
@@ -3460,7 +3483,7 @@ rename_bourbon_island = {
 								region = USA_78 #Washington
 								region = USA_81 #Oregon
 								region = USA_91 #Idaho
-								province_id = 106
+								province_id = 106 province_id = 3668
 								province_id = 78
 								province_id = 79
 							}
@@ -4287,7 +4310,9 @@ rename_bourbon_island = {
 		effect = {
 			badboy = 1
 			419 = { secede_province = THIS }
+			3980 = { secede_province = THIS } # TGCNV split half of 419
 			419 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3980 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 419
 		}
 
 		ai_will_do = {
@@ -4426,10 +4451,16 @@ rename_bourbon_island = {
 			prestige = 10
 			badboy = 3
 			721 = { remove_core = ITA }
+			4277 = { remove_core = ITA } # TGCNV split half of 721
 			465 = { remove_core = ITA }
 			466 = { remove_core = ITA }
+			4027 = { remove_core = ITA } # TGCNV split half of 466
+			6699 = { remove_core = ITA } # TGCNV split half of 466
 			472 = { remove_core = ITA }
+			4033 = { remove_core = ITA } # TGCNV split half of 472
+			7189 = { remove_core = ITA } # TGCNV split half of 472
 			3362 = { remove_core = ITA }
+			6364 = { remove_core = ITA } # TGCNV split half of 3362
 			any_owned = {
 				limit = { is_core = ITA  }
 				secede_province = ITA
@@ -4467,6 +4498,7 @@ rename_bourbon_island = {
 		effect = {
 			set_country_flag = guangzhouwan_treaty_port_fra
 			2632 = { secede_province = THIS change_controller = THIS }
+			6174 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 2632
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			prestige = 20
 			random_country = {

@@ -178,6 +178,7 @@ country_event = {
 				badboy = -2
 			}
 		}
+		random_owned = { limit = { province_id = 5310 EGY = { exists = yes owns = 1757 } } secede_province = EGY remove_core = THIS } # TGCNV split half of 1755
 	}
 }
 
@@ -736,6 +737,7 @@ country_event = {
 		plurality = -15
 		relation = { who = FROM value = 100 }
 		1755 = { secede_province = FROM }
+		5310 = { secede_province = FROM } # TGCNV split half of 1755
 	}
 }
 

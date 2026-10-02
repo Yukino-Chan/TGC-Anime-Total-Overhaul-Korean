@@ -199,9 +199,13 @@ indonesia_raya = {
 			BAL_1438 = { add_core = INO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			NET_1423 = { add_core = INO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1452 = { add_core = INO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5009 = { add_core = INO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1452
 			1453 = { add_core = INO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5010 = { add_core = INO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1453
 			1454 = { add_core = INO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5011 = { add_core = INO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1454
 			1560 = { add_core = INO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5114 = { add_core = INO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1560
 			any_country = {
 				limit = {
 					OR = {

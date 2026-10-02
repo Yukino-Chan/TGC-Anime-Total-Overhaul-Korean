@@ -900,9 +900,12 @@ country_event = {
 		AUS = { all_core = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 		397 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		3318 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		6323 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3318
 		3322 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		409 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		3970 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 409
 		410 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		3971 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 410
 		412 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		release = AUS
 		inherit = AUS
@@ -1123,6 +1126,7 @@ country_event = {
 		PZN = { all_core = { remove_core = GCF } }
 		GLM = { all_core = { limit = { region = TGC_CONGRESS_POLAND } add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 		692 = { add_core = PML add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4249 = { add_core = PML add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 692
 		release = PML
 		PML = { all_core = { limit = { region = TGC_CONGRESS_POLAND } add_core = CPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 		PML = { all_core = { remove_core = GER } }
@@ -1134,19 +1138,25 @@ country_event = {
 		HXP_698 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		696 = { remove_core = GER }
 		697 = { remove_core = GER }
+		4254 = { remove_core = GER } # TGCNV split half of 697
 		693 = { remove_core = GER }
+		4250 = { remove_core = GER } # TGCNV split half of 693
 		HXP_695 = { remove_core = GER }
 		HXP_3380 = { remove_core = GER }
 		HXP_698 = { remove_core = GER }
 		696 = { remove_core = GCF }
 		697 = { remove_core = GCF }
+		4254 = { remove_core = GCF } # TGCNV split half of 697
 		693 = { remove_core = GCF }
+		4250 = { remove_core = GCF } # TGCNV split half of 693
 		HXP_695 = { remove_core = GCF }
 		HXP_3380 = { remove_core = GCF }
 		HXP_698 = { remove_core = GCF }
 		696 = { secede_province = CPL }
 		697 = { secede_province = CPL }
+		4254 = { secede_province = CPL } # TGCNV split half of 697
 		693 = { secede_province = CPL }
+		4250 = { secede_province = CPL } # TGCNV split half of 693
 		HXP_695 = { secede_province = CPL }
 		HXP_3380 = { secede_province = RUS }
 		HXP_698 = { secede_province = RUS }
@@ -1562,8 +1572,10 @@ country_event = {
 		name = "EVTOPTA999405"
 
 		571 = { remove_core = BAV }
+		4129 = { remove_core = BAV } # TGCNV split half of 571
 		3426 = { remove_core = BAV }
 		571 = { add_core = RHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4129 = { add_core = RHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 571
 		3426 = { add_core = RHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		release = BAV
 		BAV = { all_core = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
@@ -1962,13 +1974,16 @@ country_event = {
 		release = LUB
 		release = LAU
 		3333 = { secede_province = GER }
+		6335 = { secede_province = GER } # TGCNV split half of 3333
 		HXP_3468 = { secede_province = GER }
 		HXP_3468 = { remove_core = DEN }
 		368 = {	secede_province = DEN }
 		368 = {	remove_core = SWH }
 		368 = {	remove_core = SCH }
 		3333 = { remove_core = DEN }
+		6335 = { remove_core = DEN } # TGCNV split half of 3333
 		370 = { remove_core = DEN }
+		3931 = { remove_core = DEN } # TGCNV split half of 370
 		371 = { remove_core = DEN }
 		GER = {
 			inherit = SCH
@@ -2041,15 +2056,19 @@ country_event = {
 		release = LUB
 		release = LAU
 		3333 = { secede_province = DEN }
+		6335 = { secede_province = DEN } # TGCNV split half of 3333
 		HXP_3468 = { secede_province = DEN }
 		HXP_3468 = { remove_core = GER }
 		368 = {	secede_province = DEN }
 		370 = { secede_province = DEN }
+		3931 = { secede_province = DEN } # TGCNV split half of 370
 		371 = {	secede_province = DEN }
 		368 = {	remove_core = SWH }
 		368 = {	remove_core = SCH }
 		3333 = { remove_core = GER }
+		6335 = { remove_core = GER } # TGCNV split half of 3333
 		370 = { remove_core = GER }
+		3931 = { remove_core = GER } # TGCNV split half of 370
 		371 = { remove_core = GER }
 		GER = {
 			inherit = HOL
@@ -2122,6 +2141,7 @@ country_event = {
 		release = LUB
 		release = LAU
 		3333 = { secede_province = DEN }
+		6335 = { secede_province = DEN } # TGCNV split half of 3333
 		368 = {	secede_province = DEN }
 		371 = {	secede_province = DEN }
 		HXP_3468 = { secede_province = GER }
@@ -2129,8 +2149,10 @@ country_event = {
 		368 = {	remove_core = SWH }
 		368 = {	remove_core = SCH }
 		3333 = { remove_core = GER }
+		6335 = { remove_core = GER } # TGCNV split half of 3333
 		371 = { remove_core = GER }
 		370 = { remove_core = DEN }
+		3931 = { remove_core = DEN } # TGCNV split half of 370
 		GER = {
 			inherit = SCH
 			inherit = HOL
@@ -2245,7 +2267,9 @@ country_event = {
 			368 = {	remove_core = SWH }
 			368 = {	remove_core = SCH }
 			3333 = { remove_core = GER }
+			6335 = { remove_core = GER } # TGCNV split half of 3333
 			370 = { remove_core = GER }
+			3931 = { remove_core = GER } # TGCNV split half of 370
 			371 = { remove_core = GER }
 			HXP_3468 = { remove_core = GER }
 		}
@@ -2256,8 +2280,10 @@ country_event = {
 		inherit = HAM
 		inherit = LAU
 		3333 = { secede_province = DEN }
+		6335 = { secede_province = DEN } # TGCNV split half of 3333
 		368 = {	secede_province = DEN }
 		370 = { secede_province = DEN }
+		3931 = { secede_province = DEN } # TGCNV split half of 370
 		371 = {	secede_province = DEN }
 		HXP_3468 = { secede_province = DEN }
 
@@ -2299,6 +2325,7 @@ country_event = {
 			368 = {	remove_core = SWH }
 			368 = {	remove_core = SCH }
 			3333 = { remove_core = GER }
+			6335 = { remove_core = GER } # TGCNV split half of 3333
 			371 = { remove_core = GER }
 			HXP_3468 = { remove_core = DEN }
 		}
@@ -2310,6 +2337,7 @@ country_event = {
 		inherit = HAM
 		inherit = LAU
 		3333 = { secede_province = DEN }
+		6335 = { secede_province = DEN } # TGCNV split half of 3333
 		368 = {	secede_province = DEN }
 		371 = {	secede_province = DEN }
 
@@ -2351,7 +2379,9 @@ country_event = {
 			368 = {	remove_core = SWH }
 			368 = {	remove_core = SCH }
 			3333 = { remove_core = DEN }
+			6335 = { remove_core = DEN } # TGCNV split half of 3333
 			370 = { remove_core = DEN }
+			3931 = { remove_core = DEN } # TGCNV split half of 370
 			371 = { remove_core = DEN }
 			HXP_3468 = { remove_core = DEN }
 		}
@@ -2363,6 +2393,7 @@ country_event = {
 		inherit = HAM
 		inherit = LAU
 		3333 = { secede_province = GER }
+		6335 = { secede_province = GER } # TGCNV split half of 3333
 		368 = {	secede_province = DEN }
 
 		ai_chance = { factor = 100 }
@@ -3871,12 +3902,18 @@ country_event = {
 			name = "EVTOPTA822200"
 
 			133 = { remove_core = USA }
+			3695 = { remove_core = USA } # TGCNV split half of 133
 			132 = { remove_core = USA }
+			3694 = { remove_core = USA } # TGCNV split half of 132
 			137 = { remove_core = USA }
 			43 = { remove_core = USA }
+			3606 = { remove_core = USA } # TGCNV split half of 43
 			3371 = { remove_core = USA }
+			6373 = { remove_core = USA } # TGCNV split half of 3371
 			3369 = { remove_core = USA }
+			6371 = { remove_core = USA } # TGCNV split half of 3369
 			3370 = { remove_core = USA }
+			6372 = { remove_core = USA } # TGCNV split half of 3370
 			USA = { add_country_modifier = { name = Backed-Down-Texas duration = -1 } }
 			any_country = {
 				limit = {

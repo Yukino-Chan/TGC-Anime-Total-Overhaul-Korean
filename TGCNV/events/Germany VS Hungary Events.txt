@@ -17,6 +17,7 @@
 			633 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			AUS_624 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			3282 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
+			6289 = { add_core = GER secede_province = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3282
 
 			ai_chance = { factor = 50 }
 		}
@@ -34,6 +35,8 @@
 			AUS_792 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			AUS_2538 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			791 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4344 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+			6955 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 			HUN = { release = BAN }
 			create_vassal = BAN
 
@@ -448,6 +451,7 @@
 			633 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			AUS_624 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			3282 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
+			6289 = { add_core = GER secede_province = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3282
 		}
 	}
 
@@ -471,11 +475,14 @@
 			633 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			AUS_624 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			3282 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
+			6289 = { add_core = GER secede_province = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3282
 
 			AUS_652 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			AUS_792 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			AUS_2538 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			791 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4344 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+			6955 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 			HUN = { release = BAN }
 			create_vassal = BAN
 
@@ -503,11 +510,14 @@
 			633 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			AUS_624 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			3282 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
+			6289 = { add_core = GER secede_province = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3282
 
 			AUS_652 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			AUS_792 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			AUS_2538 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			791 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4344 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+			6955 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 
 			HUN = {
 				release = BAN
@@ -543,12 +553,15 @@
 			633 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			AUS_624 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			3282 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
+			6289 = { add_core = GER secede_province = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3282
 
 			AUS_652 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			AUS_792 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			779 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Fraggy TBD
 			AUS_2538 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			791 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4344 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+			6955 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 			HUN = {
 				release = BAN
 				release = SIE
@@ -1078,7 +1091,10 @@
 			treasury = -100000
 			623 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER remove_core = HUN }
 			624 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER remove_core = HUN }
+			4182 = { add_core = GER secede_province = GER remove_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 624
+			6945 = { add_core = GER secede_province = GER remove_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 624
 			3282 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER remove_core = HUN }
+			6289 = { add_core = GER secede_province = GER remove_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3282
 			remove_country_modifier = talk_to_hungary1
 			set_global_flag = burgenland_resolved
 		}
@@ -1098,7 +1114,10 @@
 
 			623 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER remove_core = HUN }
 			624 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER remove_core = HUN }
+			4182 = { add_core = GER secede_province = GER remove_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 624
+			6945 = { add_core = GER secede_province = GER remove_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 624
 			3282 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER remove_core = HUN }
+			6289 = { add_core = GER secede_province = GER remove_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3282
 			remove_country_modifier = talk_to_hungary1
 			set_global_flag = burgenland_resolved
 		}
@@ -1715,6 +1734,8 @@
 			AUS_792 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			AUS_2538 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			791 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4344 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+			6955 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 			HUN = { release = BAN }
 
 			GER = { country_event = { id = 2000000057 days = 4 } }
@@ -1776,6 +1797,8 @@
 			AUS_792 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = BAN }
 			AUS_2538 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = BAN }
 			791 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = BAN }
+			4344 = { add_core = BAN secede_province = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+			6955 = { add_core = BAN secede_province = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 		}
 	}
 
@@ -2445,11 +2468,14 @@
 			633 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			AUS_624 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
 			3282 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = GER }
+			6289 = { add_core = GER secede_province = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3282
 
 			AUS_652 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			AUS_792 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			AUS_2538 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			791 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4344 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+			6955 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 			HUN = { release = BAN }
 			create_vassal = BAN
 

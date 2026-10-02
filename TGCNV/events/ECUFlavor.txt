@@ -288,6 +288,7 @@ country_event = {
 			add_core = ECU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			add_core = PEU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 		}
+		5836 = { add_core = ECU add_core = PEU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2289
 	}
 
 	# Sign the treaty
@@ -298,15 +299,19 @@ country_event = {
 		badboy = -2
 
 		2289 = { remove_core = CLM }
+		5836 = { remove_core = CLM } # TGCNV split half of 2289
 		random_owned = {
 			limit = { province_id = 2289 }
 			secede_province = FROM
 		}
+		random_owned = { limit = { province_id = 5836 } secede_province = FROM } # TGCNV split half of 2289
 		2284 = { remove_core = CLM }
+		5831 = { remove_core = CLM } # TGCNV split half of 2284
 		random_owned = {
 			limit = { province_id = 2284 }
 			secede_province = FROM
 		}
+		random_owned = { limit = { province_id = 5831 } secede_province = FROM } # TGCNV split half of 2284
 		relation = { who = FROM value = 50 }
 
 		ai_chance = { factor = 90 }

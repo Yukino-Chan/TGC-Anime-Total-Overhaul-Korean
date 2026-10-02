@@ -685,7 +685,10 @@ political_decisions = {
 		effect = {
 			badboy = 3
 			2538 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6081 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2538
 			791 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4344 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+			6955 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -729,8 +732,12 @@ political_decisions = {
 				33 = { badboy = 5 }
 			}
 			969 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6694 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 969
+			7057 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 969
 			HXP_968 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			954 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4506 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 954
+			7062 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 954
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -768,9 +775,15 @@ political_decisions = {
 				33 = { badboy = 10 }
 			}
 			648 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4205 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 648
+			6685 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 648
+			6948 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 648
 			650 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4207 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 650
+			7164 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 650
 			649 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			792 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4345 = { add_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 792
 			#795 = { add_core = ROM } # not really part of the "Tisza region" being south of the Danube now is it?
 		}
 		ai_will_do = { factor = 1 }

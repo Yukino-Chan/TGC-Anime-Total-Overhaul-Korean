@@ -266,7 +266,9 @@ political_decisions = {
 			TUR_802 = { remove_core = TUR } # Kosovo
 			TUR_804 = { remove_core = TUR } # Sandzak
 			847 = { remove_core = TUR } #Chania
+			4399 = { remove_core = TUR } # TGCNV split half of 847
 			848 = { remove_core = TUR } #Iraklion
+			4400 = { remove_core = TUR } # TGCNV split half of 848
 			EGY_843 = { remove_core = TUR } #Aegean Islands
 			add_country_modifier = { name = outraged_europe_rus duration = 10000 }
 			any_country = {
@@ -1378,11 +1380,23 @@ political_decisions = {
 			set_country_flag = rus_claim_lodermia
 			prestige = 30
 			702 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6574 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 702
+			6888 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 702
+			7090 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 702
 			952 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4504 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 952
+			6904 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 952
+			7089 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 952
 			951 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4503 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 951
+			7122 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 951
 			953 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4505 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 953
+			7091 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 953
 			950 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4502 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 950
 			662 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4219 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 662
 		}
 
 		ai_will_do = {
@@ -1896,12 +1910,16 @@ political_decisions = {
 
 		set_global_flag = chuguchak_done
 		1068 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4620 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1068
 		TGC_TERRITORY_1186 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		TGC_TERRITORY_1188 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		TGC_TERRITORY_1190 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		1208 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4765 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1208
 		1189 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4746 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1189
 		1185 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4742 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1185
 			any_country = {
 				limit = {
 					OR = {
@@ -2783,6 +2801,7 @@ political_decisions = {
 				remove_core = MCK
 				remove_core = QNG
 			}
+			4637 = { add_core = RUS add_core = KAM remove_core = CHI remove_core = MCK remove_core = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1081
 			2697 = {
 				change_province_name = "Zeya"
 				add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -2791,6 +2810,7 @@ political_decisions = {
 				remove_core = MCK
 				remove_core = QNG
 			}
+			6255 = { add_core = RUS add_core = KAM remove_core = CHI remove_core = MCK remove_core = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2697
 			1085 = {
 				change_province_name = "Blagoveshchensk"
 				add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -2799,6 +2819,7 @@ political_decisions = {
 				remove_core = MCK
 				remove_core = QNG
 			}
+			4641 = { add_core = RUS add_core = KAM remove_core = CHI remove_core = MCK remove_core = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1085
 			1084 = {
 				change_province_name = "Nikolayevsk-na-amure"
 				add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -2807,6 +2828,7 @@ political_decisions = {
 				remove_core = MCK
 				remove_core = QNG
 			}
+			4640 = { add_core = RUS add_core = KAM remove_core = CHI remove_core = MCK remove_core = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1084
 			1083 = {
 				change_province_name = "Khabarovsk"
 				add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -2815,6 +2837,7 @@ political_decisions = {
 				remove_core = MCK
 				remove_core = QNG
 			}
+			4639 = { add_core = RUS add_core = KAM remove_core = CHI remove_core = MCK remove_core = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1083
 			2617 = {
 				change_province_name = "Pashkovo"
 				add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -2823,6 +2846,7 @@ political_decisions = {
 				remove_core = MCK
 				remove_core = QNG
 			}
+			6158 = { add_core = RUS add_core = KAM remove_core = CHI remove_core = MCK remove_core = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2617
 			1082 = {
 				change_province_name = "Vladivostok"
 				add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -2831,6 +2855,7 @@ political_decisions = {
 				remove_core = MCK
 				remove_core = QNG
 			}
+			4638 = { add_core = RUS add_core = KAM remove_core = CHI remove_core = MCK remove_core = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1082
 			1082 = { state_scope = { change_region_name = "Primorye Province" } }
 			1080 = { state_scope = { change_region_name = "Amur Province" } }
 			prestige = 10
@@ -3072,7 +3097,10 @@ political_decisions = {
 				RUS_706 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				RUS_715 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				707 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4264 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 707
 				719 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4275 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 719
+				6686 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 719
 			}
 			any_owned = {
 				limit = {
@@ -3289,17 +3317,39 @@ political_decisions = {
 			#702 = { change_province_name = "Lviv" }
 
 			702 = { remove_core = POL }
+			6574 = { remove_core = POL } # TGCNV split half of 702
+			6888 = { remove_core = POL } # TGCNV split half of 702
+			7090 = { remove_core = POL } # TGCNV split half of 702
 			702 = { remove_core = GLM }
+			6574 = { remove_core = GLM } # TGCNV split half of 702
+			6888 = { remove_core = GLM } # TGCNV split half of 702
+			7090 = { remove_core = GLM } # TGCNV split half of 702
 
 			951 = { remove_core = POL }
+			4503 = { remove_core = POL } # TGCNV split half of 951
+			7122 = { remove_core = POL } # TGCNV split half of 951
 			951 = { remove_core = GLM }
+			4503 = { remove_core = GLM } # TGCNV split half of 951
+			7122 = { remove_core = GLM } # TGCNV split half of 951
 
 			952 = { remove_core = POL }
+			4504 = { remove_core = POL } # TGCNV split half of 952
+			6904 = { remove_core = POL } # TGCNV split half of 952
+			7089 = { remove_core = POL } # TGCNV split half of 952
 			952 = { remove_core = GLM }
+			4504 = { remove_core = GLM } # TGCNV split half of 952
+			6904 = { remove_core = GLM } # TGCNV split half of 952
+			7089 = { remove_core = GLM } # TGCNV split half of 952
 
 			953 = { remove_core = POL }
+			4505 = { remove_core = POL } # TGCNV split half of 953
+			7091 = { remove_core = POL } # TGCNV split half of 953
 			953 = { remove_core = RUT }
+			4505 = { remove_core = RUT } # TGCNV split half of 953
+			7091 = { remove_core = RUT } # TGCNV split half of 953
 			953 = { remove_core = GLM }
+			4505 = { remove_core = GLM } # TGCNV split half of 953
+			7091 = { remove_core = GLM } # TGCNV split half of 953
 
 			702 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 715 } }
 			952 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 706 } }
@@ -3393,6 +3443,8 @@ political_decisions = {
 				add_core = VLG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				add_province_modifier = { name = russoification duration = -1 }
 			}
+			4589 = { add_core = VLG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_province_modifier = { name = russoification duration = -1 } } # TGCNV split half of 1037
+			6931 = { add_core = VLG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_province_modifier = { name = russoification duration = -1 } } # TGCNV split half of 1037
 			political_reform = unitary
 			any_pop = {
 				limit = {
@@ -3669,7 +3721,9 @@ political_decisions = {
 			prestige = 4
 			1469 = { change_province_name = "Kyzyl" }
 			1469 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5026 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1469
 			1068 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4620 = { add_core = RUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1068
 
 			random_country = {
 				limit = {
@@ -3906,6 +3960,10 @@ political_decisions = {
 			random_owned = {
 				limit = { owner = { owns = 1210 } }
 				owner = { 1208 = { remove_core = AFG } 208 = { remove_core = BUK } 208 = { remove_core = UZB } 1211 = { remove_core = BUK } }
+				4765 = { remove_core = AFG } # TGCNV split half of 1208
+				3769 = { remove_core = BUK } # TGCNV split half of 208
+				3769 = { remove_core = UZB } # TGCNV split half of 208
+				4768 = { remove_core = BUK } # TGCNV split half of 1211
 			}
 			random_owned = { limit = { owner = { NOT = { owns = 1210 } } } 1210 = { owner = { country_event = 325461 } } }
 			any_owned = { remove_core = BDK }
@@ -4196,6 +4254,7 @@ political_decisions = {
 			prestige = 15
 			#badboy = 5
 			99 = { secede_province = MEX } #Fixing border
+			3661 = { secede_province = MEX } # TGCNV split half of 99
 			treasury = -50000
 				any_owned = {
 					limit = {
@@ -4238,13 +4297,21 @@ political_decisions = {
 			  treasury = -100000
 			  set_country_flag = snatch_oregon_rus
 			  79 = { secede_province = RUS } # Washington
+			  3641 = { secede_province = RUS } # TGCNV split half of 79
 			  78 = { secede_province = RUS } # Washington
+			  3640 = { secede_province = RUS } # TGCNV split half of 78
 			  13 = { secede_province = RUS } #"""Br*t*sh""""" Columbia
+			  3569 = { secede_province = RUS } # TGCNV split half of 13
 			  15 = { secede_province = RUS } 
+			  3571 = { secede_province = RUS } # TGCNV split half of 15
 			  2598 = { secede_province = RUS } 
+			  6137 = { secede_province = RUS } # TGCNV split half of 2598
 			  14 = { secede_province = RUS } 
+			  3570 = { secede_province = RUS } # TGCNV split half of 14
 			  92 = { secede_province = RUS } 
+			  3654 = { secede_province = RUS } # TGCNV split half of 92
 			  93 = { secede_province = RUS } 
+			  3655 = { secede_province = RUS } # TGCNV split half of 93
 			  USA_81 = { secede_province = RUS } # Oregon
 			  #Inland provinces repurposed to oregon trail
 			  #USA_78 = { secede_province = RUS } # Washington

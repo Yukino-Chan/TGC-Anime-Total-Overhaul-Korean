@@ -937,7 +937,7 @@ country_event = {
 						limit = {
 							OR = {
 								province_id = 905
-								province_id = 900
+								province_id = 900 province_id = 4452
 							}
 						}
 						remove_core = SYR
@@ -1106,6 +1106,7 @@ country_event = {
 				reduce_pop = 0.90
 			}
 		}
+		4443 = { remove_core = ASY any_pop = { limit = { culture = kurdish } reduce_pop = 1.05 militancy = -1 } any_pop = { limit = { culture = assyrian } reduce_pop = 0.70 militancy = 6 } any_pop = { limit = { has_pop_religion = orthodox } militancy = 2 reduce_pop = 0.90 } } # TGCNV split half of 891
 		893 = {
 			remove_core = ASY
 			any_pop = {
@@ -1124,6 +1125,7 @@ country_event = {
 				reduce_pop = 0.90
 			}
 		}
+		4445 = { remove_core = ASY any_pop = { limit = { culture = kurdish } reduce_pop = 1.15 militancy = -1 } any_pop = { limit = { culture = assyrian } reduce_pop = 0.50 militancy = 6 } any_pop = { limit = { has_pop_religion = orthodox } militancy = 2 reduce_pop = 0.90 } } # TGCNV split half of 893
 		892 = {
 			any_pop = {
 				limit = { culture = kurdish }
@@ -2418,6 +2420,7 @@ country_event = {
 		name = "EVTOPTA98642"
 
 		1832 = { secede_province = THIS any_pop = { reduce_pop = 0.8 } }
+		5388 = { secede_province = THIS any_pop = { reduce_pop = 0.8 } } # TGCNV split half of 1832
 
 		ai_chance = { factor = 100 }
 	}
@@ -2966,25 +2969,30 @@ country_event = {
 			add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			any_pop = { literacy = -0.99 }
 		}
+		5397 = { add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1841
 		1817 = {
 			secede_province = THIS
 			add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			add_core = DAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			any_pop = { literacy = -0.99 }
 		}
+		5372 = { secede_province = THIS add_core = SUD add_core = DAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1817
 		1843 = {
 			add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			any_pop = { literacy = -0.99 }
 		}
+		5399 = { add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1843
 		1739 = {
 			secede_province = THIS
 			add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			any_pop = { literacy = -0.99 }
 		}
+		5293 = { secede_province = THIS add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1739
 		1839 = {
 			add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			any_pop = { literacy = -0.99 }
 		}
+		5395 = { add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1839
 
 		any_owned = {
 			limit = { is_core = DAR NOT = { province_id = 1845 } }
@@ -3005,12 +3013,14 @@ country_event = {
 			add_core = DAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			any_pop = { literacy = -0.99 }
 		}
+		5397 = { secede_province = THIS add_core = DAR life_rating = 22 add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1841
 		1842 = {
 			secede_province = THIS
 			add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			add_core = DAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			any_pop = { literacy = -0.99 }
 		}
+		5398 = { secede_province = THIS add_core = SUD add_core = DAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1842
 		1843 = {
 			secede_province = THIS
 			life_rating = 25
@@ -3018,6 +3028,7 @@ country_event = {
 			add_core = DAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			any_pop = { literacy = -0.99 }
 		}
+		5399 = { secede_province = THIS add_core = DAR life_rating = 25 add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1843
 
 		any_owned = {
 			limit = {
@@ -4983,6 +4994,9 @@ province_event = {
 				}
 				secede_province = MON
 			}
+			random_owned = { limit = { province_id = 6118 NOT = { any_neighbor_province = { owned_by = THIS } } any_neighbor_province = { owned_by = MON } } secede_province = MON } # TGCNV split half of 2577
+			random_owned = { limit = { province_id = 6714 NOT = { any_neighbor_province = { owned_by = THIS } } any_neighbor_province = { owned_by = MON } } secede_province = MON } # TGCNV split half of 2577
+			random_owned = { limit = { province_id = 6717 NOT = { any_neighbor_province = { owned_by = THIS } } any_neighbor_province = { owned_by = MON } } secede_province = MON } # TGCNV split half of 2577
 		}
 
 		owner = {
@@ -4994,6 +5008,9 @@ province_event = {
 				}
 				secede_province = YUG
 			}
+			random_owned = { limit = { province_id = 6118 NOT = { any_neighbor_province = { owned_by = THIS } } any_neighbor_province = { owned_by = YUG } } secede_province = YUG } # TGCNV split half of 2577
+			random_owned = { limit = { province_id = 6714 NOT = { any_neighbor_province = { owned_by = THIS } } any_neighbor_province = { owned_by = YUG } } secede_province = YUG } # TGCNV split half of 2577
+			random_owned = { limit = { province_id = 6717 NOT = { any_neighbor_province = { owned_by = THIS } } any_neighbor_province = { owned_by = YUG } } secede_province = YUG } # TGCNV split half of 2577
 		}
 
 		owner = {
@@ -5005,6 +5022,7 @@ province_event = {
 				}
 				secede_province = SER
 			}
+			random_owned = { limit = { province_id = 4357 NOT = { any_neighbor_province = { owned_by = THIS } } any_neighbor_province = { owned_by = SER } } secede_province = SER } # TGCNV split half of 804
 		}
 
 		owner = {
@@ -5016,6 +5034,7 @@ province_event = {
 				}
 				secede_province = YUG
 			}
+			random_owned = { limit = { province_id = 4357 NOT = { any_neighbor_province = { owned_by = THIS } } any_neighbor_province = { owned_by = YUG } } secede_province = YUG } # TGCNV split half of 804
 		}
 
 	}
@@ -5115,6 +5134,7 @@ province_event = {
 					consciousness = 7
 				}
 			}
+			4721 = { remove_core = TUR any_pop = { militancy = 4 consciousness = 7 } } # TGCNV split half of 1165
 		}
 	}
 
@@ -5190,6 +5210,7 @@ province_event = {
 					consciousness = 9
 				}
 			}
+			4721 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { militancy = 9 consciousness = 9 } } # TGCNV split half of 1165
 			badboy = 7.5
 			relation = { who = ENG value = -200 }
 			relation = { who = PER value = -200 }

@@ -191,13 +191,21 @@ political_decisions = {
 			TGC_ARMENIA_PRE_SPLIT = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			RUS_1102 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1108 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4664 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1108
 			1109 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4665 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1109
 			1110 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4666 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1110
 			1111 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4667 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1111
 			1112 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4668 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1112
 			1117 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4673 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1117
 			1118 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4674 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1118
 			1119 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4675 = { add_core = TUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1119
 			any_country = {
 				limit = {
 					OR = {
@@ -924,6 +932,7 @@ political_decisions = {
 			set_country_flag = claimed_the_persian_gulf
 			badboy = 2
 			1162 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4718 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1162
 		}
 
 		ai_will_do = { factor = 1 }
@@ -960,13 +969,16 @@ political_decisions = {
 			set_country_flag = claimed_arab_coast
 			badboy = 5
 			1163 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4719 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1163
 			1164 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4720 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1164
 			random_owned = {
 				limit = {
 					province_id = 932
 					is_core = THIS
 				}
 				935 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4487 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 935
 			}
 			random_country = {
 				limit = {
@@ -1373,16 +1385,27 @@ political_decisions = {
 			prestige = 10
 			923 = { change_province_name = "Nineveh" } # TODO move to rename decisions
 			889 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4441 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 889
 			890 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4442 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 890
 			891 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4443 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 891
 			892 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4444 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 892
 			893 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4445 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 893
 			899 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4451 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 899
 			1110 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4666 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1110
 			2414 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5960 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2414
 			925 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4477 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 925
 			928 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4480 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 928
 			898 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4450 = { add_core = ASY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 898
 		}
 
 		ai_will_do = {
@@ -1427,10 +1450,15 @@ political_decisions = {
 			badboy = 10
 			set_country_flag = claimed_greater_syria
 			1756 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5311 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1756
 			1757 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5312 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1757
 			1131 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4687 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1131
 			1132 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4688 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1132
 			1136 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4692 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1136
 			EGY_921 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			EGY_910 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			EGY_915 = { add_core = SYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
@@ -1715,7 +1743,9 @@ political_decisions = {
 			set_country_flag = claimed_the_persian_gulf
 			badboy = 2
 			1165 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4721 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1165
 			1162 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4718 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1162
 		}
 
 		ai_will_do = { factor = 1 }

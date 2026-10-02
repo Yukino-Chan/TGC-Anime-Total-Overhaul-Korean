@@ -426,8 +426,8 @@ political_decisions = {
 				limit = {
 					OR = {
 						region = FRA_1914
-						province_id = 1916
-						province_id = 1915
+						province_id = 1916 province_id = 5472
+						province_id = 1915 province_id = 5471
 					}
 				}
 				add_core = TOG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -3490,11 +3490,14 @@ political_decisions = {
 				life_rating = 25
 				add_province_modifier = { name = colonial_exploitation duration = 1095 }
 			}
+			5623 = { add_core = MLW remove_core = KZB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 25 add_province_modifier = { name = colonial_exploitation duration = 1095 } } # TGCNV split half of 2067
 			2066 = {
 				add_core = MLW add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				life_rating = 25
 				add_province_modifier = { name = colonial_exploitation duration = 1095 }
 			}
+			5622 = { add_core = MLW add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 25 add_province_modifier = { name = colonial_exploitation duration = 1095 } } # TGCNV split half of 2066
+			7392 = { add_core = MLW add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 25 add_province_modifier = { name = colonial_exploitation duration = 1095 } } # TGCNV split half of 2066
 
 			MLW = {
 				primary_culture = THIS
@@ -3834,6 +3837,7 @@ political_decisions = {
 				add_core = ANG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				add_province_modifier = { name = colonial_exploitation duration = 365 }
 			}
+			any_owned = { limit = { OR = { province_id = 5556 region = POR_2003 region = POR_2006 region = POR_1999 } } add_core = ANG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_province_modifier = { name = colonial_exploitation duration = 365 } } # TGCNV split half of 2000
 
 			ANG = {
 				primary_culture = THIS
@@ -3933,6 +3937,7 @@ political_decisions = {
 				}
 				add_core = ANG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
+			any_owned = { limit = { OR = { province_id = 5556 region = POR_2003 region = POR_2006 region = POR_1999 } } add_core = ANG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2000
 
 			ANG = {
 				primary_culture = THIS
@@ -5352,9 +5357,13 @@ political_decisions = {
 			WRL = { all_core = { remove_core = WRL } }
 			1875 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1865 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5421 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1865
 			1867 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5423 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1867
 			2031 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5587 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2031
 			2032 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5588 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2032
 			SOM = {
 				set_country_flag = post_colonial_country
 				nationalvalue = nv_autocracy
@@ -5399,6 +5408,7 @@ political_decisions = {
 				change_province_name = "¸®³ÄÆ¼"
 				add_core = NMB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
+			random_owned = { limit = { province_id = 5637 owner = { NOT = { is_culture_group = germanic } } } add_core = NMB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2081
 			random_owned = {
 				limit = {
 					province_id = 2081
@@ -5620,6 +5630,7 @@ political_decisions = {
 			GBU = { all_core = { remove_core = GBU } }
 			HOP_1877 = { add_core = GBU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1878 = { add_core = GBU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5434 = { add_core = GBU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1878
 
 			any_owned = {
 				limit = { is_core = GBU }
@@ -6697,6 +6708,7 @@ political_decisions = {
 			treasury = -50000
 			prestige = 4
 			1875 = { secede_province = THIS life_rating = 25 }
+			5431 = { secede_province = THIS life_rating = 25 } # TGCNV split half of 1875
 		}
 
 		ai_will_do = { factor = 1 }

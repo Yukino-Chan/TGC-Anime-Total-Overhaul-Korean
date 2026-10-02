@@ -159,8 +159,11 @@ political_decisions = {
 			3370 = { change_province_name = "Marzahn" }
 			inherit = TEX
 			138 = {	secede_province = MEX }
+			3700 = { secede_province = MEX } # TGCNV split half of 138
 			136 = {	secede_province = MEX }
+			3698 = { secede_province = MEX } # TGCNV split half of 136
 			3372 = { secede_province = MEX }
+			6374 = { secede_province = MEX } # TGCNV split half of 3372
 			release_vassal = TEX
 			TEX = { change_tag = ADV }
 			ADV = {
@@ -178,29 +181,51 @@ political_decisions = {
 				political_reform = no_slavery
 			}
 			133 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3695 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 133
 			132 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3694 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 132
 			137 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			43 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3606 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 43
 			3371 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6373 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3371
 			3369 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6371 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3369
 			3370 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6372 = { add_core = ADV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3370
 			138 = { remove_core = ADV }
+			3700 = { remove_core = ADV } # TGCNV split half of 138
 			136 = { remove_core = ADV }
+			3698 = { remove_core = ADV } # TGCNV split half of 136
 			105 = { remove_core = ADV }
+			3667 = { remove_core = ADV } # TGCNV split half of 105
 			2631 = { remove_core = ADV }
+			6173 = { remove_core = ADV } # TGCNV split half of 2631
 			129 = { remove_core = ADV }
+			3691 = { remove_core = ADV } # TGCNV split half of 129
 			128 = { remove_core = ADV }
+			3690 = { remove_core = ADV } # TGCNV split half of 128
 			103 = { remove_core = ADV }
+			3665 = { remove_core = ADV } # TGCNV split half of 103
 			107 = { remove_core = ADV }
+			3669 = { remove_core = ADV } # TGCNV split half of 107
 			3372 = { remove_core = ADV }
+			6374 = { remove_core = ADV } # TGCNV split half of 3372
 			133 = { remove_core = MEX }
+			3695 = { remove_core = MEX } # TGCNV split half of 133
 			132 = { remove_core = MEX }
+			3694 = { remove_core = MEX } # TGCNV split half of 132
 			137 = { remove_core = MEX }
 			43 = { remove_core = MEX }
+			3606 = { remove_core = MEX } # TGCNV split half of 43
 			3371 = { remove_core = MEX }
+			6373 = { remove_core = MEX } # TGCNV split half of 3371
 			3369 = { remove_core = MEX }
+			6371 = { remove_core = MEX } # TGCNV split half of 3369
 			3370 = { remove_core = MEX }
+			6372 = { remove_core = MEX } # TGCNV split half of 3370
 			134 = { remove_core = MEX }
+			3696 = { remove_core = MEX } # TGCNV split half of 134
 			ADV = { government = dominion }
 		}
 		ai_will_do = { factor = 0.2 }
@@ -403,18 +428,35 @@ political_decisions = {
 			}
 			set_country_flag = Thicc-Bohemia
 			552 = {	secede_province = THIS }
+			4111 = { secede_province = THIS } # TGCNV split half of 552
 			558 = {	secede_province = THIS }
+			4117 = { secede_province = THIS } # TGCNV split half of 558
+			7152 = { secede_province = THIS } # TGCNV split half of 558
 			552 = { change_province_name = "Chotebuz" }
 			558 = { change_province_name = "Drazdany" }
 			552 = {	remove_core = PRU }
+			4111 = { remove_core = PRU } # TGCNV split half of 552
 			552 = {	remove_core = NGF }
+			4111 = { remove_core = NGF } # TGCNV split half of 552
 			552 = {	remove_core = GER }
+			4111 = { remove_core = GER } # TGCNV split half of 552
 			552 = {	remove_core = GCF }
+			4111 = { remove_core = GCF } # TGCNV split half of 552
 			558 = {	remove_core = PRU }
+			4117 = { remove_core = PRU } # TGCNV split half of 558
+			7152 = { remove_core = PRU } # TGCNV split half of 558
 			558 = {	remove_core = SAX }
+			4117 = { remove_core = SAX } # TGCNV split half of 558
+			7152 = { remove_core = SAX } # TGCNV split half of 558
 			558 = {	remove_core = NGF }
+			4117 = { remove_core = NGF } # TGCNV split half of 558
+			7152 = { remove_core = NGF } # TGCNV split half of 558
 			558 = {	remove_core = GER }
+			4117 = { remove_core = GER } # TGCNV split half of 558
+			7152 = { remove_core = GER } # TGCNV split half of 558
 			558 = {	remove_core = GCF }
+			4117 = { remove_core = GCF } # TGCNV split half of 558
+			7152 = { remove_core = GCF } # TGCNV split half of 558
 			PRU_682 = { add_core = BOH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			PRU_682 = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			PRU_682 = { remove_core = GER }
@@ -500,18 +542,31 @@ political_decisions = {
 			PRU_690 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			PRU_546 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			558 = {	secede_province = THIS }
+			4117 = { secede_province = THIS } # TGCNV split half of 558
+			7152 = { secede_province = THIS } # TGCNV split half of 558
 			552 = {	secede_province = THIS }
+			4111 = { secede_province = THIS } # TGCNV split half of 552
 			681 = {	secede_province = THIS }
+			4238 = { secede_province = THIS } # TGCNV split half of 681
 			550 = {	secede_province = THIS }
+			4109 = { secede_province = THIS } # TGCNV split half of 550
+			6707 = { secede_province = THIS } # TGCNV split half of 550
 			3428 = {	secede_province = THIS }
+			6430 = { secede_province = THIS } # TGCNV split half of 3428
+			6571 = { secede_province = THIS } # TGCNV split half of 3428
 			549 = {	secede_province = THIS }
+			4108 = { secede_province = THIS } # TGCNV split half of 549
 			551 = {	secede_province = THIS }
+			4110 = { secede_province = THIS } # TGCNV split half of 551
 			545 = {	secede_province = THIS }
 			544 = {	secede_province = THIS }
+			4103 = { secede_province = THIS } # TGCNV split half of 544
 			3427 = {	secede_province = THIS }
+			6429 = { secede_province = THIS } # TGCNV split half of 3427
 			3484 = {	secede_province = THIS }
 			529 = {	secede_province = THIS }
 			369 = {	secede_province = THIS }
+			3930 = { secede_province = THIS } # TGCNV split half of 369
 			4088 = {	secede_province = THIS }
 			7201 = {	secede_province = THIS }
 			4090 = {	secede_province = THIS }
@@ -521,18 +576,31 @@ political_decisions = {
 			679 = {	secede_province = THIS }
 			680 = {	secede_province = THIS }
 			558 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4117 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 558
+			7152 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 558
 			552 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4111 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 552
 			681 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4238 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 681
 			550 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4109 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 550
+			6707 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 550
 			3428 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6430 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3428
+			6571 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3428
 			549 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4108 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 549
 			551 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4110 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 551
 			545 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			544 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4103 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 544
 			3427 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6429 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3427
 			3484 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			529 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			369 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3930 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 369
 			4088 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			7201 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			4090 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
@@ -543,8 +611,10 @@ political_decisions = {
 			680 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			368 = { secede_province = DEN }
 			3333 = { secede_province = DEN }
+			6335 = { secede_province = DEN } # TGCNV split half of 3333
 			371 = { secede_province = DEN }
 			370 = { secede_province = DEN }
+			3931 = { secede_province = DEN } # TGCNV split half of 370
 			HXP_3468 = { secede_province = DEN }
 			badboy = 22
 			end_war = GCF
@@ -592,12 +662,19 @@ political_decisions = {
 			PRU_575 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			563 = { secede_province = NET }
 			1743 = { secede_province = NET }
+			5298 = { secede_province = NET } # TGCNV split half of 1743
 			1743 = { remove_core = GER }
+			5298 = { remove_core = GER } # TGCNV split half of 1743
 			1743 = { remove_core = PRU }
+			5298 = { remove_core = PRU } # TGCNV split half of 1743
 			1743 = { remove_core = HAN }
+			5298 = { remove_core = HAN } # TGCNV split half of 1743
 			1743 = { remove_core = NGF }
+			5298 = { remove_core = NGF } # TGCNV split half of 1743
 			1743 = { remove_core = GCF }
+			5298 = { remove_core = GCF } # TGCNV split half of 1743
 			1743 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5298 = { add_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1743
 			573 = { add_core = SAA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			release_vassal = SAA
 			add_country_modifier = {

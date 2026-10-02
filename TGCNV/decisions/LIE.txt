@@ -23,6 +23,7 @@ political_decisions = {
 				add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				secede_province = THiS
 			}
+			4172 = { add_core = THIS secede_province = THiS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 614
 		}
 
 		ai_will_do = { factor = 0 }

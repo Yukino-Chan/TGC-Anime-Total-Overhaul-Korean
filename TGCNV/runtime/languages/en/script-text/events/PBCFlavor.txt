@@ -778,14 +778,21 @@
 				SPU = { all_core = { remove_core = SPU } }
 				PEU_2297 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Cusco
 				PEU_2303 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Areqipa
-				2297 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Lima
+				# TGCNV 2026-10-02: 2297 Ica stays with North Peru (Lima department, not South Peru's 1836 land)
 				2301 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Iñapari
+				5848 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Puerto Seticayo (split from Inapari 2301)
 				2307 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Northern Atacama
+				5854 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Monton de Gloria (split from Iquique 2307)
 				2308 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5855 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Putre (split from Arica 2308)
 				2319 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Northern Bolivia
 				2321 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5866 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Placido de Castro (split from Rio Abuna 2319)
+				5868 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Boa Esperanca (split from Rio Madeira 2321)
 				3296 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6302 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3296
 				3297 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6303 = { add_core = SPU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Santa Rosa do Purus (split from Acre 3297)
 				PEU = { release = SPU }
 				PEU = {
 					any_owned = {
@@ -817,22 +824,27 @@
 						limit = { province_id = 2301 }
 						secede_province = SPU
 					}
+					random_owned = { limit = { province_id = 5848 } secede_province = SPU } # TGCNV split half of 2301
 					random_owned = {
 						limit = { province_id = 2319 }
 						secede_province = SPU
 					}
+					random_owned = { limit = { province_id = 5866 } secede_province = SPU } # TGCNV split half of 2319
 					random_owned = {
 						limit = { province_id = 2321 }
 						secede_province = SPU
 					}
+					random_owned = { limit = { province_id = 5868 } secede_province = SPU } # TGCNV split half of 2321
 					random_owned = {
 						limit = { province_id = 3297 }
 						secede_province = SPU
 					}
+					random_owned = { limit = { province_id = 6303 } secede_province = SPU } # TGCNV split half of 3297
 					random_owned = {
 						limit = { province_id = 3296 }
 						secede_province = SPU
 					}
+					random_owned = { limit = { province_id = 6302 } secede_province = SPU } # TGCNV split half of 3296
 					SPU = {
 						all_core = {
 							limit = { owned_by = THIS }
@@ -844,18 +856,22 @@
 						limit = { province_id = 2300 }
 						secede_province = PEU
 					}
+					random_owned = { limit = { province_id = 5847 } secede_province = PEU } # TGCNV split half of 2300
 					random_owned = {
 						limit = { province_id = 2298 }
 						secede_province = PEU
 					}
+					random_owned = { limit = { province_id = 5845 } secede_province = PEU } # TGCNV split half of 2298
 					random_owned = {
 						limit = { province_id = 2549 }
 						secede_province = PEU
 					}
+					random_owned = { limit = { province_id = 6091 } secede_province = PEU } # TGCNV split half of 2549
 					random_owned = {
 						limit = { province_id = 2407 }
 						secede_province = PEU
 					}
+					random_owned = { limit = { province_id = 5953 } secede_province = PEU } # TGCNV split half of 2407
 					PEU = {
 						all_core = {
 							limit = { owned_by = THIS }
@@ -949,7 +965,9 @@
 			random_owned = {
 				limit = { owner = { tag = CHL } }
 				2305 = { add_core = CHL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5852 = { add_core = CHL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2305
 				3299 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6305 = { add_core = PBC add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3299
 				owner = {
 					casus_belli = {
 						target = PEU
@@ -972,16 +990,19 @@
 			random_owned = {
 				limit = { owner = { tag = ARC } }
 				2370 = { add_core = ARC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5916 = { add_core = ARC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2370
 				HOP_3353 = { add_core = ARC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
 			random_owned = {
 				limit = { owner = { tag = ARG } }
 				2370 = { add_core = ARG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5916 = { add_core = ARG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2370
 				HOP_3353 = { add_core = ARG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
 			random_owned = {
 				limit = { owner = { tag = LPL } }
 				2370 = { add_core = LPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5916 = { add_core = LPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2370
 				HOP_3353 = { add_core = LPL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
 			random_owned = {
@@ -991,9 +1012,13 @@
 					}
 				}
 				2371 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5917 = { add_core = PBC add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2371
 				3400 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6403 = { add_core = PBC add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3400
 				2368 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5914 = { add_core = PBC add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2368
 				2373 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5919 = { add_core = PBC add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2373
 				1714 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				owner = {
 					war = {
@@ -1075,6 +1100,7 @@
 			random_owned = {
 				limit = { owner = { tag = CHL } }
 				3299 = { remove_core = PBC remove_core = BOL }
+				6305 = { remove_core = PBC remove_core = BOL } # TGCNV split half of 3299
 			}
 
 			random_owned = {
@@ -1084,9 +1110,13 @@
 					}
 				}
 				2371 = { remove_core = PBC remove_core = BOL }
+				5917 = { remove_core = PBC remove_core = BOL } # TGCNV split half of 2371
 				3400 = { remove_core = PBC remove_core = BOL }
+				6403 = { remove_core = PBC remove_core = BOL } # TGCNV split half of 3400
 				2368 = { remove_core = PBC remove_core = BOL }
+				5914 = { remove_core = PBC remove_core = BOL } # TGCNV split half of 2368
 				2373 = { remove_core = PBC remove_core = BOL }
+				5919 = { remove_core = PBC remove_core = BOL } # TGCNV split half of 2373
 				1714 = { remove_core = PBC remove_core = BOL }
 			}
 		}
@@ -1448,6 +1478,9 @@
 			2307 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = SPU remove_core = PEU }
 			2308 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = SPU remove_core = PEU }
 			2578 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = SPU remove_core = PEU }
+			5854 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = SPU remove_core = PEU } # Monton de Gloria
+			5855 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = SPU remove_core = PEU } # Putre
+			6119 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = SPU remove_core = PEU } # Sobraya
 
 			ai_chance = {
 				factor = 40
@@ -1494,6 +1527,9 @@
 			2307 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			2308 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			2578 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5854 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Monton de Gloria
+			5855 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Putre
+			6119 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Sobraya
 
 			random_owned = {
 				limit = { is_core = PEU }
@@ -1624,46 +1660,58 @@
 						limit = { province_id = 2287 is_core = ECU ECU = { owns = 2280 is_disarmed = no } }
 						secede_province = ECU
 					}
+					random_owned = { limit = { province_id = 5834 is_core = ECU ECU = { owns = 2280 is_disarmed = no } } secede_province = ECU } # TGCNV split half of 2287
 					random_owned = {
 						limit = { province_id = 2287 is_core = GCO GCO = { owns = 2280 is_disarmed = no } }
 						secede_province = GCO
 					}
+					random_owned = { limit = { province_id = 5834 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2287
 
 				# Quito #
 					random_owned = { # San Francisco de Quito
 						limit = { province_id = 2279 is_core = ECU ECU = { owns = 2280 is_disarmed = no } }
 						secede_province = ECU
 					}
+					random_owned = { limit = { province_id = 5826 is_core = ECU ECU = { owns = 2280 is_disarmed = no } } secede_province = ECU } # TGCNV split half of 2279
 					random_owned = {
 						limit = { province_id = 2279 is_core = GCO GCO = { owns = 2280 is_disarmed = no } }
 						secede_province = GCO
 					}
+					random_owned = { limit = { province_id = 5826 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2279
 					random_owned = { # Puerto Francisco de Orellana
 						limit = { province_id = 2282 is_core = ECU ECU = { owns = 2280 is_disarmed = no } }
 						secede_province = ECU
 					}
+					random_owned = { limit = { province_id = 5829 is_core = ECU ECU = { owns = 2280 is_disarmed = no } } secede_province = ECU } # TGCNV split half of 2282
 					random_owned = {
 						limit = { province_id = 2282 is_core = GCO GCO = { owns = 2280 is_disarmed = no } }
 						secede_province = GCO
 					}
+					random_owned = { limit = { province_id = 5829 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2282
 					random_owned = { # Macas
 						limit = { province_id = 2283 is_core = ECU ECU = { owns = 2280 is_disarmed = no } }
 						secede_province = ECU
 					}
+					random_owned = { limit = { province_id = 5830 is_core = ECU ECU = { owns = 2280 is_disarmed = no } } secede_province = ECU } # TGCNV split half of 2283
+					random_owned = { limit = { province_id = 7467 is_core = ECU ECU = { owns = 2280 is_disarmed = no } } secede_province = ECU } # TGCNV split half of 2283
 					random_owned = {
 						limit = { province_id = 2283 is_core = GCO GCO = { owns = 2280 is_disarmed = no } }
 						secede_province = GCO
 					}
+					random_owned = { limit = { province_id = 5830 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2283
+					random_owned = { limit = { province_id = 7467 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2283
 
 				# Loreto #
 					random_owned = { # San Pablo y San Pedro de Iquitos
 						limit = { province_id = 2288 is_core = ECU ECU = { owns = 2280 is_disarmed = no } }
 						secede_province = ECU
 					}
+					random_owned = { limit = { province_id = 5835 is_core = ECU ECU = { owns = 2280 is_disarmed = no } } secede_province = ECU } # TGCNV split half of 2288
 					random_owned = {
 						limit = { province_id = 2288 is_core = GCO GCO = { owns = 2280 is_disarmed = no } }
 						secede_province = GCO
 					}
+					random_owned = { limit = { province_id = 5835 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2288
 
 			## Colombia or Ecuador ##
 				## South ##
@@ -1683,6 +1731,7 @@
 							}
 							secede_province = ECU
 						}
+						random_owned = { limit = { province_id = 5831 is_core = ECU ECU = { owns = 2280 is_disarmed = no } CLM = { NOT = { owns = 2282 } } } secede_province = ECU } # TGCNV split half of 2284
 						random_owned = {
 							limit = {
 								province_id = 2284
@@ -1698,6 +1747,7 @@
 							}
 							secede_province = CLM
 						}
+						random_owned = { limit = { province_id = 5831 is_core = CLM CLM = { OR = { ECU = { NOT = { owns = 2280 } } ECU = { is_disarmed = yes } owns = 2282 } is_disarmed = no } } secede_province = CLM } # TGCNV split half of 2284
 						random_owned = {
 							limit = {
 								province_id = 2284
@@ -1709,6 +1759,7 @@
 							}
 							secede_province = GCO
 						}
+						random_owned = { limit = { province_id = 5831 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2284
 					# Loreto - Rio Putumayo #
 						random_owned = {
 							limit = {
@@ -1722,6 +1773,7 @@
 							}
 							secede_province = ECU
 						}
+						random_owned = { limit = { province_id = 5836 is_core = ECU ECU = { owns = 2280 is_disarmed = no } CLM = { NOT = { owns = 2282 } } } secede_province = ECU } # TGCNV split half of 2289
 						random_owned = {
 							limit = {
 								province_id = 2289
@@ -1737,6 +1789,7 @@
 							}
 							secede_province = CLM
 						}
+						random_owned = { limit = { province_id = 5836 is_core = CLM CLM = { OR = { ECU = { NOT = { owns = 2280 } } ECU = { is_disarmed = yes } owns = 2282 } is_disarmed = no } } secede_province = CLM } # TGCNV split half of 2289
 						random_owned = {
 							limit = {
 								province_id = 2289
@@ -1748,6 +1801,7 @@
 							}
 							secede_province = GCO
 						}
+						random_owned = { limit = { province_id = 5836 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2289
 					# Boyaca - Amacayacu #
 						random_owned = {
 							limit = {
@@ -1761,6 +1815,7 @@
 							}
 							secede_province = ECU
 						}
+						random_owned = { limit = { province_id = 5808 is_core = ECU ECU = { owns = 2280 is_disarmed = no } CLM = { NOT = { owns = 2282 } } } secede_province = ECU } # TGCNV split half of 2261
 						random_owned = {
 							limit = {
 								province_id = 2261
@@ -1776,6 +1831,7 @@
 							}
 							secede_province = CLM
 						}
+						random_owned = { limit = { province_id = 5808 is_core = CLM CLM = { OR = { ECU = { NOT = { owns = 2280 } } ECU = { is_disarmed = yes } owns = 2282 } is_disarmed = no } } secede_province = CLM } # TGCNV split half of 2261
 						random_owned = {
 							limit = {
 								province_id = 2261
@@ -1787,6 +1843,7 @@
 							}
 							secede_province = GCO
 						}
+						random_owned = { limit = { province_id = 5808 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2261
 					# Amazonas - Sao Francisco Xavier de Tabatinga #
 						random_owned = {
 							limit = {
@@ -1842,6 +1899,7 @@
 							}
 							secede_province = CLM
 						}
+						random_owned = { limit = { province_id = 5806 is_core = CLM CLM = { owns = 2257 is_disarmed = no } } secede_province = CLM } # TGCNV split half of 2259
 						random_owned = {
 							limit = {
 								province_id = 2259
@@ -1857,6 +1915,7 @@
 							}
 							secede_province = ECU
 						}
+						random_owned = { limit = { province_id = 5806 is_core = ECU ECU = { owns = 2280 OR = { CLM = { NOT = { owns = 2257 } } CLM = { is_disarmed = yes } } is_disarmed = no } } secede_province = ECU } # TGCNV split half of 2259
 						random_owned = {
 							limit = {
 								province_id = 2259
@@ -1868,6 +1927,7 @@
 							}
 							secede_province = GCO
 						}
+						random_owned = { limit = { province_id = 5806 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2259
 					# Boyaca - Cahuinari #
 						random_owned = {
 							limit = {
@@ -1882,6 +1942,7 @@
 							}
 							secede_province = CLM
 						}
+						random_owned = { limit = { province_id = 5838 is_core = CLM CLM = { owns = 2257 owns = 2260 is_disarmed = no } ECU = { NOT = { owns = 2259 } } } secede_province = CLM } # TGCNV split half of 2291
 						random_owned = {
 							limit = {
 								province_id = 2291
@@ -1899,6 +1960,7 @@
 							}
 							secede_province = ECU
 						}
+						random_owned = { limit = { province_id = 5838 is_core = ECU ECU = { OR = { CLM = { NOT = { owns = 2257 } } CLM = { NOT = { owns = 2260 } } CLM = { is_disarmed = yes } owns = 2259 } owns = 2280 is_disarmed = no } } secede_province = ECU } # TGCNV split half of 2291
 						random_owned = {
 							limit = {
 								province_id = 2291
@@ -1910,6 +1972,7 @@
 							}
 							secede_province = GCO
 						}
+						random_owned = { limit = { province_id = 5838 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2291
 					# Amazonas - Sao Paulo dos Cambebas #
 						random_owned = {
 							limit = {
@@ -1924,6 +1987,7 @@
 							}
 							secede_province = CLM
 						}
+						random_owned = { limit = { province_id = 5810 is_core = CLM CLM = { owns = 2257 owns = 2401 is_disarmed = no } ECU = { NOT = { owns = 2259 } } } secede_province = CLM } # TGCNV split half of 2263
 						random_owned = {
 							limit = {
 								province_id = 2263
@@ -1941,6 +2005,7 @@
 							}
 							secede_province = ECU
 						}
+						random_owned = { limit = { province_id = 5810 is_core = ECU ECU = { OR = { CLM = { NOT = { owns = 2257 } } CLM = { NOT = { owns = 2401 } } CLM = { is_disarmed = yes } owns = 2259 } owns = 2280 is_disarmed = no } } secede_province = ECU } # TGCNV split half of 2263
 						random_owned = {
 							limit = {
 								province_id = 2263
@@ -1952,6 +2017,7 @@
 							}
 							secede_province = GCO
 						}
+						random_owned = { limit = { province_id = 5810 is_core = GCO GCO = { owns = 2280 is_disarmed = no } } secede_province = GCO } # TGCNV split half of 2263
 		}
 	}
 
@@ -2077,7 +2143,9 @@
 			}
 			HOP_3353 = { remove_core = BOL remove_core = PBC }
 			2370 = { remove_core = BOL remove_core = PBC }
+			5916 = { remove_core = BOL remove_core = PBC } # TGCNV split half of 2370
 			2315 = { remove_core = THIS }
+			5862 = { remove_core = THIS } # TGCNV split half of 2315
 			FROM = { country_event = 4661008 }
 			relation = { who = BOL value = 25 }
 			FROM = { any_owned = { limit = { is_core = THIS } secede_province = THIS } }
@@ -2090,6 +2158,7 @@
 
 			badboy = 5
 			2315 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5862 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2315
 			relation = {
 				who = FROM
 				value = -300
@@ -2256,6 +2325,8 @@ country_event = {
 			}
 			2309 = { remove_core = THIS remove_core = BOL }
 			2305 = { remove_core = THIS remove_core = BOL }
+			5856 = { remove_core = THIS remove_core = BOL } # Baquedano
+			5852 = { remove_core = THIS remove_core = BOL } # Yolanda Norte
 		}
 
 		# Chile loses their cores on central Antofagasta
@@ -2268,6 +2339,8 @@ country_event = {
 			}
 			2309 = { remove_core = THIS }
 			2305 = { remove_core = THIS }
+			5856 = { remove_core = THIS } # Baquedano
+			5852 = { remove_core = THIS } # Yolanda Norte
 		}
 
 		# Peru/PBC lose their cores on northern Antofagasta
@@ -2283,6 +2356,8 @@ country_event = {
 			}
 			2308 = { remove_core = THIS remove_core = PEU }
 			2307 = { remove_core = THIS remove_core = PEU }
+			5855 = { remove_core = THIS remove_core = PEU } # Putre
+			5854 = { remove_core = THIS remove_core = PEU } # Monton de Gloria
 		}
 
 		# Chile loses their cores on northern Antofagasta
@@ -2296,6 +2371,9 @@ country_event = {
 			2308 = { remove_core = THIS }
 			2307 = { remove_core = THIS }
 			2578 = { remove_core = THIS }
+			5855 = { remove_core = THIS } # Putre
+			5854 = { remove_core = THIS } # Monton de Gloria
+			6119 = { remove_core = THIS } # Sobraya
 		}
 
 		any_owned = {

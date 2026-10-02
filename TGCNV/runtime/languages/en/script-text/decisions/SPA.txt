@@ -1057,6 +1057,7 @@ political_decisions = {
 					}
 				}
 				owner = { 1973 = { secede_province = THIS life_rating = 25 any_pop = { literacy = -0.99 } } }
+				5529 = { secede_province = THIS life_rating = 25 any_pop = { literacy = -0.99 } } # TGCNV split half of 1973
 			}
 
 			random_owned = {
@@ -1522,7 +1523,9 @@ political_decisions = {
 			USA_91 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Idaho
 			111 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Wyoming
 			113 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3675 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 113
 			114 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Montana
+			3676 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 114
 			CAN_13 = { # Colombia
 				limit = {
 					# Audax Validator "." Ignore_NEXT
@@ -1531,7 +1534,9 @@ political_decisions = {
 				add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
 			1 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alaska
+			3555 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1
 			2 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3556 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2
 			HOP_3 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		}
 	}
@@ -1611,6 +1616,7 @@ political_decisions = {
 			}
 			USA_200 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Florida
 			194 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Mississippi
+			3756 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 194
 			HXP_197 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alabama
 			casus_belli = {
 				target = USA
@@ -1716,8 +1722,13 @@ political_decisions = {
 				33 = { badboy = 3 }
 			}
 			497 = { add_core = CAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4058 = { add_core = CAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 497
+			7127 = { add_core = CAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 497
 			495 = { add_core = CAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4056 = { add_core = CAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 495
 			496 = { add_core = CAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4057 = { add_core = CAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 496
+			7128 = { add_core = CAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 496
 		}
 		ai_will_do = { factor = 1 }
 	}

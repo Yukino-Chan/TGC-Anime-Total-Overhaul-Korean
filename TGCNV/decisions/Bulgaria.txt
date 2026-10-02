@@ -152,9 +152,13 @@ political_decisions = {
 			badboy = 10
 			set_country_flag = greater_bulgaria_claimed
 			798 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Nis/Nisch
+			6576 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 798
 			799 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Pirot/Šehirköy
+			6692 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 799
 			829 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Gyumyurdjina/Komotini
+			4381 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 829
 			825 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Sketsha/Xánthi
+			4377 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 825
 			TUR_674 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Dobrudja
 			TUR_805 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Southern Macedonia
 			TUR_860 = { add_core = BUL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Thrace

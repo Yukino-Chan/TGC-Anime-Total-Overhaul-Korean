@@ -1375,7 +1375,9 @@ political_decisions = {
 				any_owned = { limit = { NOT = { OR = { province_id = 1386 province_id = 1384 province_id = 1385 } } } remove_core = JOH }
 				HXP_1388 = { remove_core = JOH add_core = PRK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1389 = { remove_core = JOH add_core = PRK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4946 = { remove_core = JOH add_core = PRK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1389
 				1391 = { remove_core = JOH add_core = PHG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4948 = { remove_core = JOH add_core = PHG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1391
 
 				random_owned = { limit = { exists = PRK } owner = { diplomatic_influence = { who = PRK value = 15 } } }
 				random_owned = { limit = { exists = SWK } owner = { diplomatic_influence = { who = SWK value = 15 } } }
@@ -1596,6 +1598,7 @@ political_decisions = {
 				KLM = { all_core = { add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 				BRU_1396 = { add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1386 = { remove_core = SGP }
+				4943 = { remove_core = SGP } # TGCNV split half of 1386
 				HXP_1388 = { remove_core = SGP }
 				random_owned = { limit = { province_id = 2576 } add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				any_country = {
@@ -1901,6 +1904,7 @@ political_decisions = {
 					militancy = -6
 				}
 				1386 = { remove_core = SGP }
+				4943 = { remove_core = SGP } # TGCNV split half of 1386
 				HXP_1388 = { remove_core = SGP }
 				any_owned = {
 					limit = { is_core = MLY NOT = { province_id = 1393 } }
@@ -2032,8 +2036,8 @@ political_decisions = {
 					any_owned = {
 						limit = {
 							OR = {
-								province_id = 1396
-								province_id = 1397
+								province_id = 1396 province_id = 4953
+								province_id = 1397 province_id = 4954
 							}
 						}
 						secede_province = THIS
@@ -2116,6 +2120,7 @@ political_decisions = {
 					secede_province = ENG
 					naval_base = 1
 				}
+				6000 = { secede_province = ENG } # TGCNV split half of 2454
 			}
 		}
 
@@ -3129,6 +3134,7 @@ political_decisions = {
 					}
 					secede_province = BLC
 				}
+				random_owned = { limit = { province_id = 4700 NOT = { is_core = PER } } secede_province = BLC } # TGCNV split half of 1144
 				create_vassal = BLC
 				diplomatic_influence = { who = BLC value = 400 }
 				BLC = {
@@ -3246,6 +3252,7 @@ political_decisions = {
 				1273 = { secede_province = BUN add_core = BUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1274 = { secede_province = BUN add_core = BUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1282 = { secede_province = BUN add_core = BUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4839 = { secede_province = BUN add_core = BUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1282
 				create_vassal = BUN
 				diplomatic_influence = { who = BUN value = 400 }
 				BUN = {
@@ -3728,6 +3735,7 @@ political_decisions = {
 					}
 					secede_province = OMA
 				}
+				random_owned = { limit = { province_id = 4624 OMA = { exists = yes in_sphere = THIS } } secede_province = OMA } # TGCNV split half of 1071
 				any_owned = {
 					limit = { is_core = PER }
 					secede_province = PER
@@ -4100,6 +4108,7 @@ political_decisions = {
 						duration = 720
 					}
 				}
+				5092 = { secede_province = QNG remove_core = TPG life_rating = 3 add_province_modifier = { name = western_presence duration = -1 } } # TGCNV split half of 1538
 				QNG = {
 					any_pop = {
 						limit = { is_state_religion = yes }
@@ -4607,6 +4616,7 @@ political_decisions = {
 						1870 = { empty = yes }
 					}
 					1870 = { secede_province = ENG any_pop = { literacy = -0.99 } }
+					5426 = { secede_province = ENG any_pop = { literacy = -0.99 } } # TGCNV split half of 1870
 				}
 				KNY = { government = colonial_company }
 				# TODO maybe do something with the tags that are there in these states like get influence?
@@ -4824,6 +4834,7 @@ political_decisions = {
 						secede_province = THIS
 						add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					}
+					random_owned = { limit = { province_id = 5310 } secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1755
 				}
 				relation = {
 					who = EGY

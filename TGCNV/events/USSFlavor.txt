@@ -1130,12 +1130,18 @@
 				USA_126 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Kansas
 				TEX_132 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }# Texas
 				110 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Wyoming
+				3672 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 110
 				107 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3669 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 107
 				108 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Colorado
+				3670 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 108
 				103 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3665 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 103
 				135 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3697 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 135
 				128 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Kansas
 				129 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Oklahoma
+				3691 = { add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 129
 				any_owned = {
 					limit = { is_core = MEX }
 					remove_core = USA
@@ -1181,10 +1187,10 @@
 					limit = {
 						OR = {
 							province_id = 111 # Wyoming
-							province_id = 112
-							province_id = 113
+							province_id = 112 province_id = 3674
+							province_id = 113 province_id = 3675
 							region = USA_116 # Montana
-							province_id = 106 # Colorado
+							province_id = 106 province_id = 3668 # Colorado
 							region = USA_118 # North Dakota
 							region = USA_121 # South Dakota
 							region = USA_124 # Nebraska

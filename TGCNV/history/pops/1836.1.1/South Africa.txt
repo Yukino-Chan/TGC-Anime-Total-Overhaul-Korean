@@ -157,12 +157,12 @@ officers = {
 soldiers = {
 		culture = boer
 		religion = presbyterian
-		size = 550
+		size = 1000
 	}
 farmers = {
 		culture = boer
 		religion = presbyterian
-		size = 7069
+		size = 6619
 	}
 artisans = {
 		culture = griqua
@@ -857,7 +857,7 @@ artisans = {
 soldiers = {
 		culture = nguni
 		religion = animist
-		size = 51
+		size = 102
 	}
 tribals = {
 		culture = nguni
@@ -888,11 +888,6 @@ tribals = {
 		culture = khoisan
 		religion = animist
 		size = 2453
-	}
-soldiers = {
-		culture = nguni
-		religion = animist
-		size = 51
 	}
 }
 
@@ -1113,12 +1108,12 @@ artisans = {
 soldiers = {
 		culture = xhosa
 		religion = animist
-		size = 601
+		size = 1000
 	}
 tribals = {
 		culture = xhosa
 		religion = animist
-		size = 8758
+		size = 8359
 	}
 aristocrats = {
 		culture = boer
@@ -1166,12 +1161,12 @@ artisans = {
 soldiers = {
 		culture = xhosa
 		religion = animist
-		size = 600
+		size = 1000
 	}
 tribals = {
 		culture = xhosa
 		religion = animist
-		size = 8750
+		size = 8350
 	}
 aristocrats = {
 		culture = boer
@@ -1224,12 +1219,12 @@ artisans = {
 soldiers = {
 		culture = xhosa
 		religion = animist
-		size = 700
+		size = 1000
 	}
 tribals = {
 		culture = xhosa
 		religion = animist
-		size = 15992
+		size = 15692
 	}
 slaves = {
 		culture = xhosa
@@ -1466,12 +1461,12 @@ artisans = {
 soldiers = {
 		culture = sotho
 		religion = animist
-		size = 550
+		size = 1000
 	}
 tribals = {
 		culture = sotho
 		religion = animist
-		size = 28975
+		size = 28525
 	}
 slaves = {
 		culture = zulu
@@ -2080,17 +2075,7 @@ artisans = {
 soldiers = {
 		culture = zulu
 		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 500
+		size = 3500
 	}
 slaves = {
 		culture = nguni
@@ -2168,32 +2153,7 @@ artisans = {
 soldiers = {
 		culture = zulu
 		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 500
+		size = 8000
 	}
 tribals = {
 		culture = zulu
@@ -2256,12 +2216,12 @@ artisans = {
 soldiers = {
 		culture = nguni
 		religion = animist
-		size = 500
+		size = 1000
 	}
 tribals = {
 		culture = nguni
 		religion = animist
-		size = 11475
+		size = 10975
 	}
 slaves = {
 		culture = nguni
@@ -3404,7 +3364,7 @@ artisans = {
 soldiers = {
 		culture = nguni
 		religion = animist
-		size = 49
+		size = 98
 	}
 tribals = {
 		culture = nguni
@@ -3435,11 +3395,6 @@ tribals = {
 		culture = khoisan
 		religion = animist
 		size = 2447
-	}
-soldiers = {
-		culture = nguni
-		religion = animist
-		size = 49
 	}
 }
 
@@ -4627,17 +4582,7 @@ artisans = {
 soldiers = {
 		culture = zulu
 		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 500
+		size = 3500
 	}
 slaves = {
 		culture = nguni
@@ -4715,32 +4660,7 @@ artisans = {
 soldiers = {
 		culture = zulu
 		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 1500
-	}
-soldiers = {
-		culture = zulu
-		religion = animist
-		size = 500
+		size = 8000
 	}
 tribals = {
 		culture = zulu
@@ -5066,17 +4986,12 @@ tribals = {
 tribals = {
 		culture = khoisan
 		religion = animist
-		size = 19
-	}
-tribals = {
-		culture = khoisan
-		religion = animist
-		size = 2
+		size = 1459
 	}
 tribals = {
 		culture = tswana
 		religion = animist
-		size = 1
+		size = 14
 	}
 clergymen = {
 		culture = boer
@@ -5091,7 +5006,7 @@ artisans = {
 farmers = {
 		culture = boer
 		religion = presbyterian
-		size = 407
+		size = 409
 	}
 clergymen = {
 		culture = khoisan
@@ -5107,11 +5022,6 @@ soldiers = {
 		culture = khoisan
 		religion = animist
 		size = 13
-	}
-tribals = {
-		culture = khoisan
-		religion = animist
-		size = 1430
 	}
 aristocrats = {
 		culture = sotho
@@ -5136,32 +5046,12 @@ soldiers = {
 tribals = {
 		culture = sotho
 		religion = animist
-		size = 925
-	}
-farmers = {
-		culture = boer
-		religion = presbyterian
-		size = 2
-	}
-tribals = {
-		culture = khoisan
-		religion = animist
-		size = 8
-	}
-tribals = {
-		culture = sotho
-		religion = animist
-		size = 5
+		size = 930
 	}
 artisans = {
 		culture = tswana
 		religion = animist
 		size = 1
-	}
-tribals = {
-		culture = tswana
-		religion = animist
-		size = 13
 	}
 }
 
@@ -5224,12 +5114,7 @@ soldiers = {
 tribals = {
 		culture = tswana
 		religion = animist
-		size = 17793
-	}
-tribals = {
-		culture = tswana
-		religion = animist
-		size = 10
+		size = 17803
 	}
 }
 
@@ -5257,7 +5142,7 @@ clergymen = {
 artisans = {
 		culture = tswana
 		religion = animist
-		size = 13
+		size = 14
 	}
 soldiers = {
 		culture = tswana
@@ -5267,7 +5152,7 @@ soldiers = {
 tribals = {
 		culture = tswana
 		religion = animist
-		size = 295
+		size = 310
 	}
 clergymen = {
 		culture = boer
@@ -5329,16 +5214,6 @@ tribals = {
 		religion = animist
 		size = 928
 	}
-artisans = {
-		culture = tswana
-		religion = animist
-		size = 1
-	}
-tribals = {
-		culture = tswana
-		religion = animist
-		size = 15
-	}
 }
 
 5651 = {
@@ -5350,22 +5225,17 @@ artisans = {
 tribals = {
 		culture = khoisan
 		religion = animist
-		size = 15
+		size = 20
 	}
 tribals = {
 		culture = tswana
 		religion = animist
-		size = 4
+		size = 2290
 	}
 farmers = {
 		culture = boer
 		religion = presbyterian
 		size = 2
-	}
-tribals = {
-		culture = khoisan
-		religion = animist
-		size = 5
 	}
 tribals = {
 		culture = sotho
@@ -5391,10 +5261,5 @@ soldiers = {
 		culture = tswana
 		religion = animist
 		size = 24
-	}
-tribals = {
-		culture = tswana
-		religion = animist
-		size = 2286
 	}
 }

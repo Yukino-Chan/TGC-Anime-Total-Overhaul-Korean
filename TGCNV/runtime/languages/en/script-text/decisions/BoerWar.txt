@@ -393,11 +393,11 @@ political_decisions = {
 			any_owned = {
 				limit = {
 					OR = {
-						province_id = 2088
-						province_id = 2558
-						province_id = 2093
-						province_id = 2094
-						province_id = 2095
+						province_id = 2088 province_id = 5644
+						province_id = 2558 province_id = 6099
+						province_id = 2093 province_id = 5649
+						province_id = 2094 province_id = 5650
+						province_id = 2095 province_id = 5651
 					}
 				}
 				add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -654,9 +654,13 @@ political_decisions = {
 			set_country_flag = claimed_xhosa
 			badboy = 2
 			2098 = { add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5654 = { add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2098
 			2099 = { add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5655 = { add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2099
 			2100 = { add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5656 = { add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2100
 			2104 = { add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5660 = { add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2104
 			diplomatic_influence = { who = XHO value = -400 }
 			relation = { who = XHO value = -200 }
 			XHO = { leave_alliance = THIS }
@@ -758,6 +762,7 @@ political_decisions = {
 					change_province_name = "King William's Town"
 					secede_province = THIS
 				}
+				5655 = { add_core = SAF secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2099
 			}
 			random_country = {
 				limit = {
@@ -769,6 +774,7 @@ political_decisions = {
 					change_province_name = "Port Rex"
 					secede_province = THIS
 				}
+				5654 = { add_core = SAF secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2098
 			}
 		}
 

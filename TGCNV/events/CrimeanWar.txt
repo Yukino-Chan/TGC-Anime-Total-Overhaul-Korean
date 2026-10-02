@@ -667,7 +667,7 @@ country_event = { #yes
 			limit = {
 				OR = {
 				province_id = 673
-				province_id = 678
+				province_id = 678 province_id = 4235 province_id = 6739
 			}
 			}
 			secede_province = RUS #this is so to revert the URP getting sea port historical
@@ -1103,8 +1103,8 @@ country_event = {
 			limit = {
 			          OR = {
 			          region = TGC_KARS_PRE_SPLIT 
-					  province_id = 3383
-					  province_id = 856
+					  province_id = 3383 province_id = 6382
+					  province_id = 856 province_id = 4408
 					  province_id = 884
 					  province_id = 882
 					  }
@@ -1120,6 +1120,8 @@ country_event = {
 			}
 			secede_province = MON
 		}
+		random_owned = { limit = { province_id = 6124 owned_by = TUR } secede_province = MON } # TGCNV split half of 2583
+		random_owned = { limit = { province_id = 6974 owned_by = TUR } secede_province = MON } # TGCNV split half of 2583
 		random_owned = {
 			limit = {
 				province_id = 2569 #Niksic 1858
@@ -1134,6 +1136,7 @@ country_event = {
 			}
 			secede_province = MON
 		}
+		random_owned = { limit = { province_id = 6360 owned_by = TUR } secede_province = MON } # TGCNV split half of 3358
 		random_owned = {
 			limit = {
 				province_id = 3433 #Sutomore
@@ -1232,10 +1235,12 @@ country_event = {
 			}
 			secede_province = BUL
 		}
+		random_owned = { limit = { province_id = 6386 owned_by = TUR } secede_province = BUL } # TGCNV split half of 3387
 		#Western Bulgaria
 		806 = { add_core = MCD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		813 = { remove_core = MCD }
 		822 = { remove_core = MCD }
+		7197 = { remove_core = MCD } # TGCNV split half of 822
 		release_vassal = MCD
 		random_owned = {
 			limit = {
@@ -1286,6 +1291,7 @@ country_event = {
 			}
 			secede_province = MCD
 		}
+		random_owned = { limit = { province_id = 6692 owned_by = TUR } secede_province = MCD } # TGCNV split half of 799
 		MCD = { primary_culture = bulgarian religion = orthodox government = colonial_company capital = 809 }
 		# Free Serbia if it is owned, return Nis, Leskovac
 		random_owned = {
@@ -1306,6 +1312,7 @@ country_event = {
 			}
 			secede_province = SER
 		}
+		random_owned = { limit = { province_id = 6576 owned_by = TUR } secede_province = SER } # TGCNV split half of 798
 		random_owned = {
 			limit = {
 				province_id = 347 #Mitrovica
@@ -1313,6 +1320,7 @@ country_event = {
 			}
 			secede_province = SER
 		}
+		random_owned = { limit = { province_id = 3908 owned_by = TUR } secede_province = SER } # TGCNV split half of 347
 		random_owned = {
 			limit = {
 				province_id = 3321 #Novi Pazar
@@ -1320,6 +1328,7 @@ country_event = {
 			}
 			secede_province = SER
 		}
+		random_owned = { limit = { province_id = 6325 owned_by = TUR } secede_province = SER } # TGCNV split half of 3321
 		random_owned = {
 			limit = {
 				province_id = 804 #Sjenica
@@ -1327,6 +1336,7 @@ country_event = {
 			}
 			secede_province = SER
 		}
+		random_owned = { limit = { province_id = 4357 owned_by = TUR } secede_province = SER } # TGCNV split half of 804
 		random_country = {
 			limit = {
 				tag = SER
@@ -1369,6 +1379,7 @@ country_event = {
 			}
 			secede_province = GRE
 		}
+		random_owned = { limit = { province_id = 4384 owned_by = TUR } secede_province = GRE } # TGCNV split half of 832
 
 		random_owned = {
 			limit = {
@@ -1385,6 +1396,7 @@ country_event = {
 			}
 			secede_province = GRE
 		}
+		random_owned = { limit = { province_id = 4376 owned_by = TUR } secede_province = GRE } # TGCNV split half of 824
 
 		random_owned = {
 			limit = {
@@ -1418,6 +1430,7 @@ country_event = {
 				secede_province = ARM
 				TUR = { create_vassal = ARM }
 			}
+		random_owned = { limit = { province_id = 4430 owned_by = TUR NOT = { exists = ARM } } secede_province = ARM } # TGCNV split half of 878
 		random_owned = {
 				limit = {
 					province_id = 890
@@ -1460,6 +1473,7 @@ country_event = {
 				add_core = ARM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				secede_province = ARM
 			}
+		random_owned = { limit = { province_id = 4430 owned_by = TUR } add_core = ARM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 878
 
 		TUR = {
 			release_vassal = URP
@@ -1651,7 +1665,7 @@ country_event = {
 			limit = {
 				OR = {
 					region = MOL_673
-					province_id = 678
+					province_id = 678 province_id = 4235 province_id = 6739
 					province_id = 673
 				}
 			}
@@ -2142,6 +2156,8 @@ country_event = { # TODO this should not always happen
 		name = "EVTOPTA97520"
 		clr_country_flag = romanian_war_of_independence
 		678 = { secede_province = RUS }
+		4235 = { secede_province = RUS } # TGCNV split half of 678
+		6739 = { secede_province = RUS } # TGCNV split half of 678
 		673 = { secede_province = RUS }
 		ai_chance = { factor = 100 }
 	}

@@ -78,7 +78,9 @@ political_decisions = {
 				limit = { owner = { owns = 1453 } }
 				owner = {
 					1454 = { secede_province = THIS life_rating = 26 }
+					5011 = { secede_province = THIS life_rating = 26 } # TGCNV split half of 1454
 					1560 = { secede_province = THIS life_rating = 26 }
+					5114 = { secede_province = THIS life_rating = 26 } # TGCNV split half of 1560
 				}
 			}
 		}
@@ -264,6 +266,7 @@ political_decisions = {
 					}
 				}
 				1434 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
+				4991 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 } # TGCNV split half of 1434
 				owner = { prestige = 2 }
 			}
 			random_owned = {
@@ -275,6 +278,7 @@ political_decisions = {
 					}
 				}
 				1435 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
+				4992 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 } # TGCNV split half of 1435
 				owner = { prestige = 2 }
 			}
 		}

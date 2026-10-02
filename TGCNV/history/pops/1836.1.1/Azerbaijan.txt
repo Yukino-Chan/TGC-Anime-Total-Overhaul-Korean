@@ -2,7 +2,7 @@
 bureaucrats = {
 		culture = russian
 		religion = orthodox
-		size = 20
+		size = 21
 	}
 clergymen = {
 		culture = russian
@@ -17,12 +17,12 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 20
+		size = 21
 	}
 aristocrats = {
 		culture = azerbaijani
 		religion = sunni
-		size = 63
+		size = 65
 	}
 bureaucrats = {
 		culture = azerbaijani
@@ -32,27 +32,27 @@ bureaucrats = {
 clergymen = {
 		culture = azerbaijani
 		religion = sunni
-		size = 25
+		size = 26
 	}
 artisans = {
 		culture = azerbaijani
 		religion = sunni
-		size = 150
+		size = 155
 	}
 soldiers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 30
+		size = 31
 	}
 farmers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 2675
+		size = 2773
 	}
 aristocrats = {
 		culture = azerbaijani
 		religion = shiite
-		size = 88
+		size = 92
 	}
 bureaucrats = {
 		culture = azerbaijani
@@ -62,22 +62,22 @@ bureaucrats = {
 clergymen = {
 		culture = azerbaijani
 		religion = shiite
-		size = 55
+		size = 57
 	}
 artisans = {
 		culture = azerbaijani
 		religion = shiite
-		size = 300
+		size = 313
 	}
 soldiers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 63
+		size = 65
 	}
 farmers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 5493
+		size = 5724
 	}
 clergymen = {
 		culture = armenian
@@ -87,7 +87,7 @@ clergymen = {
 artisans = {
 		culture = armenian
 		religion = coptic
-		size = 370
+		size = 383
 	}
 clergymen = {
 		culture = mizrahi
@@ -97,94 +97,9 @@ clergymen = {
 artisans = {
 		culture = mizrahi
 		religion = jewish
-		size = 123
+		size = 127
 	}
 
-aristocrats = {
-		culture = azerbaijani
-		religion = shiite
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = shiite
-		size = 2
-	}
-farmers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 30
-	}
-bureaucrats = {
-		culture = russian
-		religion = orthodox
-		size = 1
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 1
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = sunni
-		size = 2
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = sunni
-		size = 5
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-farmers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 98
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = shiite
-		size = 3
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = shiite
-		size = 2
-	}
-artisans = {
-		culture = azerbaijani
-		religion = shiite
-		size = 11
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 2
-	}
-farmers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 201
-	}
-artisans = {
-		culture = armenian
-		religion = coptic
-		size = 13
-	}
-artisans = {
-		culture = mizrahi
-		religion = jewish
-		size = 4
-	}
 }
 
 1103 = {
@@ -256,67 +171,12 @@ artisans = {
 soldiers = {
 		culture = lezgins
 		religion = sunni
-		size = 33
+		size = 42
 	}
 farmers = {
 		culture = lezgins
 		religion = sunni
 		size = 1557
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = sunni
-		size = 0
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = sunni
-		size = 0
-	}
-artisans = {
-		culture = azerbaijani
-		religion = sunni
-		size = 0
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 0
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = shiite
-		size = 0
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = shiite
-		size = 0
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 0
-	}
-aristocrats = {
-		culture = lezgins
-		religion = sunni
-		size = 0
-	}
-clergymen = {
-		culture = lezgins
-		religion = sunni
-		size = 0
-	}
-artisans = {
-		culture = lezgins
-		religion = sunni
-		size = 0
-	}
-soldiers = {
-		culture = lezgins
-		religion = sunni
-		size = 0
 	}
 bureaucrats = {
         culture = russian
@@ -332,11 +192,6 @@ artisans = {
         culture = russian
         religion = orthodox
         size = 2
-    }
-soldiers = {
-        culture = lezgins
-        religion = sunni
-        size = 9
     }
 clergymen = {
         culture = mizrahi
@@ -565,104 +420,54 @@ farmers = {
 aristocrats = {
 		culture = avars
 		religion = sunni
-		size = 5
+		size = 6
 	}
 clergymen = {
 		culture = avars
 		religion = sunni
-		size = 50
+		size = 57
 	}
 artisans = {
 		culture = avars
 		religion = sunni
-		size = 250
+		size = 287
 	}
 soldiers = {
 		culture = avars
 		religion = sunni
-		size = 50
+		size = 57
 	}
 farmers = {
 		culture = avars
 		religion = sunni
-		size = 455
+		size = 522
 	}
 aristocrats = {
 		culture = georgian
 		religion = orthodox
-		size = 38
+		size = 43
 	}
 clergymen = {
 		culture = georgian
 		religion = orthodox
-		size = 38
+		size = 43
 	}
 artisans = {
 		culture = georgian
 		religion = orthodox
-		size = 175
+		size = 201
 	}
 farmers = {
 		culture = georgian
 		religion = orthodox
-		size = 455
+		size = 522
 	}
 farmers = {
 		culture = mongol
 		religion = gelugpa
-		size = 50
+		size = 57
 	}
 
-aristocrats = {
-		culture = avars
-		religion = sunni
-		size = 1
-	}
-clergymen = {
-		culture = avars
-		religion = sunni
-		size = 7
-	}
-artisans = {
-		culture = avars
-		religion = sunni
-		size = 37
-	}
-soldiers = {
-		culture = avars
-		religion = sunni
-		size = 7
-	}
-farmers = {
-		culture = avars
-		religion = sunni
-		size = 67
-	}
-aristocrats = {
-		culture = georgian
-		religion = orthodox
-		size = 5
-	}
-clergymen = {
-		culture = georgian
-		religion = orthodox
-		size = 5
-	}
-artisans = {
-		culture = georgian
-		religion = orthodox
-		size = 26
-	}
-farmers = {
-		culture = georgian
-		religion = orthodox
-		size = 67
-	}
-farmers = {
-		culture = mongol
-		religion = gelugpa
-		size = 7
-	}
 }
 
 3382 = {
@@ -729,7 +534,7 @@ artisans = {
 soldiers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 3
+		size = 8
 	}
 farmers = {
 		culture = azerbaijani
@@ -754,7 +559,7 @@ artisans = {
 soldiers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 9
+		size = 26
 	}
 farmers = {
 		culture = azerbaijani
@@ -779,27 +584,12 @@ artisans = {
 soldiers = {
 		culture = lezgins
 		religion = sunni
-		size = 11
+		size = 34
 	}
 farmers = {
 		culture = lezgins
 		religion = sunni
 		size = 1219
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 5
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 17
-	}
-soldiers = {
-		culture = lezgins
-		religion = sunni
-		size = 23
 	}
 }
 
@@ -807,27 +597,27 @@ soldiers = {
 aristocrats = {
 		culture = azerbaijani
 		religion = shiite
-		size = 15
+		size = 18
 	}
 clergymen = {
 		culture = azerbaijani
 		religion = shiite
-		size = 22
+		size = 24
 	}
 artisans = {
 		culture = azerbaijani
 		religion = shiite
-		size = 50
+		size = 59
 	}
 soldiers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 12
+		size = 14
 	}
 farmers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 1000
+		size = 1164
 	}
 aristocrats = {
 		culture = georgian
@@ -857,27 +647,27 @@ farmers = {
 aristocrats = {
 		culture = azerbaijani
 		religion = sunni
-		size = 25
+		size = 28
 	}
 clergymen = {
 		culture = azerbaijani
 		religion = sunni
-		size = 50
+		size = 51
 	}
 artisans = {
 		culture = azerbaijani
 		religion = sunni
-		size = 75
+		size = 82
 	}
 soldiers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 50
+		size = 52
 	}
 farmers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 1250
+		size = 1387
 	}
 
 bureaucrats = {
@@ -890,60 +680,10 @@ soldiers = {
 		religion = orthodox
 		size = 1
 	}
-aristocrats = {
-		culture = azerbaijani
-		religion = sunni
-		size = 2
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = sunni
-		size = 4
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-farmers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 80
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = shiite
-		size = 3
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = shiite
-		size = 2
-	}
-artisans = {
-		culture = azerbaijani
-		religion = shiite
-		size = 9
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 2
-	}
-farmers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 164
-	}
 artisans = {
 		culture = armenian
 		religion = coptic
-		size = 11
+		size = 13
 	}
 artisans = {
 		culture = mizrahi
@@ -951,34 +691,9 @@ artisans = {
 		size = 4
 	}
 aristocrats = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = sunni
-		size = 3
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-farmers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 57
-	}
-aristocrats = {
 		culture = armenian
 		religion = coptic
 		size = 1
-	}
-artisans = {
-		culture = armenian
-		religion = coptic
-		size = 2
 	}
 farmers = {
 		culture = armenian
@@ -1165,7 +880,7 @@ artisans = {
 soldiers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 1
+		size = 3
 	}
 farmers = {
 		culture = azerbaijani
@@ -1190,7 +905,7 @@ artisans = {
 soldiers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 2
+		size = 8
 	}
 farmers = {
 		culture = azerbaijani
@@ -1215,27 +930,12 @@ artisans = {
 soldiers = {
 		culture = lezgins
 		religion = sunni
-		size = 3
+		size = 11
 	}
 farmers = {
 		culture = lezgins
 		religion = sunni
 		size = 404
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 2
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 6
-	}
-soldiers = {
-		culture = lezgins
-		religion = sunni
-		size = 8
 	}
 }
 
@@ -1243,77 +943,52 @@ soldiers = {
 aristocrats = {
 		culture = azerbaijani
 		religion = shiite
-		size = 109
+		size = 117
 	}
 clergymen = {
 		culture = azerbaijani
 		religion = shiite
-		size = 61
+		size = 65
 	}
 artisans = {
 		culture = azerbaijani
 		religion = shiite
-		size = 338
+		size = 359
 	}
 soldiers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 73
+		size = 86
 	}
 farmers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 6189
+		size = 6578
 	}
 aristocrats = {
 		culture = azerbaijani
-		religion = shiite
+		religion = sunni
 		size = 6
 	}
 clergymen = {
 		culture = azerbaijani
-		religion = shiite
-		size = 3
+		religion = sunni
+		size = 2
 	}
 artisans = {
 		culture = azerbaijani
-		religion = shiite
+		religion = sunni
 		size = 15
 	}
 soldiers = {
 		culture = azerbaijani
-		religion = shiite
-		size = 11
-	}
-farmers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 270
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = sunni
-		size = 4
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = sunni
-		size = 2
-	}
-artisans = {
-		culture = azerbaijani
-		religion = sunni
-		size = 11
-	}
-soldiers = {
-		culture = azerbaijani
 		religion = sunni
 		size = 2
 	}
 farmers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 197
+		size = 267
 	}
 aristocrats = {
 		culture = persian
@@ -1345,69 +1020,14 @@ slaves = {
 		religion = orthodox
 		size = 49
 	}
-aristocrats = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = sunni
-		size = 2
-	}
-farmers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 27
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = shiite
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = shiite
-		size = 3
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 1
-	}
-farmers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 55
-	}
 artisans = {
 		culture = armenian
 		religion = coptic
-		size = 4
+		size = 5
 	}
 artisans = {
 		culture = mizrahi
 		religion = jewish
-		size = 1
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = sunni
-		size = 2
-	}
-farmers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 43
-	}
-artisans = {
-		culture = armenian
-		religion = coptic
 		size = 1
 	}
 farmers = {
@@ -1415,58 +1035,33 @@ farmers = {
 		religion = coptic
 		size = 14
 	}
-aristocrats = {
-		culture = azerbaijani
-		religion = shiite
-		size = 1
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = shiite
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = shiite
-		size = 3
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 1
-	}
-farmers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 64
-	}
 }
 
 4658 = {
 aristocrats = {
 		culture = azerbaijani
 		religion = shiite
-		size = 1
+		size = 81
 	}
 clergymen = {
 		culture = azerbaijani
 		religion = shiite
-		size = 1
+		size = 52
 	}
 artisans = {
 		culture = azerbaijani
 		religion = shiite
-		size = 3
+		size = 280
 	}
 soldiers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 1
+		size = 58
 	}
 farmers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 60
+		size = 5132
 	}
 bureaucrats = {
 		culture = russian
@@ -1491,7 +1086,7 @@ soldiers = {
 aristocrats = {
 		culture = azerbaijani
 		religion = sunni
-		size = 57
+		size = 58
 	}
 bureaucrats = {
 		culture = azerbaijani
@@ -1501,27 +1096,22 @@ bureaucrats = {
 clergymen = {
 		culture = azerbaijani
 		religion = sunni
-		size = 23
+		size = 24
 	}
 artisans = {
 		culture = azerbaijani
 		religion = sunni
-		size = 139
+		size = 142
 	}
 soldiers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 28
+		size = 29
 	}
 farmers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 2470
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = shiite
-		size = 80
+		size = 2528
 	}
 bureaucrats = {
 		culture = azerbaijani
@@ -1529,34 +1119,14 @@ bureaucrats = {
 		size = 2
 	}
 clergymen = {
-		culture = azerbaijani
-		religion = shiite
-		size = 51
-	}
-artisans = {
-		culture = azerbaijani
-		religion = shiite
-		size = 277
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 57
-	}
-farmers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 5072
-	}
-clergymen = {
 		culture = armenian
 		religion = coptic
-		size = 5
+		size = 6
 	}
 artisans = {
 		culture = armenian
 		religion = coptic
-		size = 342
+		size = 344
 	}
 clergymen = {
 		culture = mizrahi
@@ -1569,44 +1139,9 @@ artisans = {
 		size = 113
 	}
 aristocrats = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = sunni
-		size = 3
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 1
-	}
-farmers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 58
-	}
-aristocrats = {
 		culture = armenian
 		religion = coptic
 		size = 1
-	}
-clergymen = {
-		culture = armenian
-		religion = coptic
-		size = 1
-	}
-artisans = {
-		culture = armenian
-		religion = coptic
-		size = 2
 	}
 soldiers = {
 		culture = armenian
@@ -1624,77 +1159,52 @@ farmers = {
 aristocrats = {
 		culture = azerbaijani
 		religion = shiite
-		size = 2
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = shiite
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = shiite
-		size = 7
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 1
-	}
-farmers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 121
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = shiite
-		size = 2
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = shiite
-		size = 1
-	}
-artisans = {
-		culture = azerbaijani
-		religion = shiite
 		size = 4
 	}
-soldiers = {
+clergymen = {
 		culture = azerbaijani
 		religion = shiite
 		size = 2
 	}
+artisans = {
+		culture = azerbaijani
+		religion = shiite
+		size = 11
+	}
+soldiers = {
+		culture = azerbaijani
+		religion = shiite
+		size = 3
+	}
 farmers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 60
+		size = 181
 	}
 aristocrats = {
 		culture = azerbaijani
 		religion = sunni
-		size = 1
+		size = 73
 	}
 clergymen = {
 		culture = azerbaijani
 		religion = sunni
-		size = 1
+		size = 37
 	}
 artisans = {
 		culture = azerbaijani
 		religion = sunni
-		size = 2
+		size = 219
 	}
 soldiers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 1
+		size = 49
 	}
 farmers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 44
+		size = 4684
 	}
 aristocrats = {
 		culture = persian
@@ -1715,31 +1225,6 @@ slaves = {
 		culture = tatar
 		religion = orthodox
 		size = 11
-	}
-aristocrats = {
-		culture = azerbaijani
-		religion = sunni
-		size = 72
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = sunni
-		size = 36
-	}
-artisans = {
-		culture = azerbaijani
-		religion = sunni
-		size = 217
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 48
-	}
-farmers = {
-		culture = azerbaijani
-		religion = sunni
-		size = 4640
 	}
 aristocrats = {
 		culture = armenian
@@ -1772,27 +1257,27 @@ farmers = {
 aristocrats = {
 		culture = azerbaijani
 		religion = shiite
-		size = 1
+		size = 112
 	}
 clergymen = {
 		culture = azerbaijani
 		religion = shiite
-		size = 1
+		size = 62
 	}
 artisans = {
 		culture = azerbaijani
 		religion = shiite
-		size = 3
+		size = 350
 	}
 soldiers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 2
+		size = 76
 	}
 farmers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 60
+		size = 6396
 	}
 aristocrats = {
 		culture = azerbaijani
@@ -1829,31 +1314,6 @@ slaves = {
 		religion = orthodox
 		size = 11
 	}
-aristocrats = {
-		culture = azerbaijani
-		religion = shiite
-		size = 111
-	}
-clergymen = {
-		culture = azerbaijani
-		religion = shiite
-		size = 61
-	}
-artisans = {
-		culture = azerbaijani
-		religion = shiite
-		size = 347
-	}
-soldiers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 74
-	}
-farmers = {
-		culture = azerbaijani
-		religion = shiite
-		size = 6336
-	}
 }
 
 6353 = {
@@ -1870,7 +1330,7 @@ soldiers = {
 aristocrats = {
 		culture = georgian
 		religion = orthodox
-		size = 6
+		size = 38
 	}
 officers = {
 		culture = georgian
@@ -1880,7 +1340,7 @@ officers = {
 clergymen = {
 		culture = georgian
 		religion = orthodox
-		size = 3
+		size = 35
 	}
 artisans = {
 		culture = armenian
@@ -1900,7 +1360,7 @@ serfs = {
 farmers = {
 		culture = georgian
 		religion = orthodox
-		size = 28
+		size = 416
 	}
 artisans = {
 		culture = circassian
@@ -1967,25 +1427,10 @@ farmers = {
 		religion = sunni
 		size = 388
 	}
-aristocrats = {
-		culture = georgian
-		religion = orthodox
-		size = 32
-	}
-clergymen = {
-		culture = georgian
-		religion = orthodox
-		size = 32
-	}
 artisans = {
 		culture = georgian
 		religion = orthodox
 		size = 149
-	}
-farmers = {
-		culture = georgian
-		religion = orthodox
-		size = 388
 	}
 farmers = {
 		culture = mongol
@@ -2008,7 +1453,7 @@ soldiers = {
 aristocrats = {
 		culture = georgian
 		religion = orthodox
-		size = 13
+		size = 49
 	}
 bureaucrats = {
 		culture = georgian
@@ -2023,7 +1468,7 @@ officers = {
 clergymen = {
 		culture = georgian
 		religion = orthodox
-		size = 5
+		size = 41
 	}
 artisans = {
 		culture = armenian
@@ -2043,7 +1488,7 @@ serfs = {
 farmers = {
 		culture = georgian
 		religion = orthodox
-		size = 58
+		size = 505
 	}
 artisans = {
 		culture = circassian
@@ -2124,21 +1569,6 @@ soldiers = {
 		culture = azerbaijani
 		religion = shiite
 		size = 49
-	}
-farmers = {
-		culture = georgian
-		religion = orthodox
-		size = 447
-	}
-aristocrats = {
-		culture = georgian
-		religion = orthodox
-		size = 36
-	}
-clergymen = {
-		culture = georgian
-		religion = orthodox
-		size = 36
 	}
 artisans = {
 		culture = georgian

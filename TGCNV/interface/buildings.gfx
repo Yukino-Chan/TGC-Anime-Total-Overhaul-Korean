@@ -107,7 +107,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "building_naval_base2"
-		actorfile = "gfx\anims\Navalbase_Early_Empty.xac"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
 
 		idle = "gfx\anims\Navalbase_Early_Animation.xsm"
 		scale = 0.75
@@ -115,7 +115,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "building_naval_base2_ships"
-		actorfile = "gfx\anims\Navalbase_Early_Full.xac"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
 
 		idle = "gfx\anims\Navalbase_Early_Animation.xsm"
 		scale = 0.75
@@ -139,7 +139,7 @@ objectTypes = {
 
 		EMFXActorType = {
 		name = "building_naval_base4"
-		actorfile = "gfx\anims\Navalbase_Mid_Empty.xac"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
 
 		idle = "gfx\anims\Navalbase_Mid_Animation.xsm"
 		scale = 0.75
@@ -147,7 +147,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "building_naval_base4_ships"
-		actorfile = "gfx\anims\Navalbase_Mid_Full.xac"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
 
 		idle = "gfx\anims\Navalbase_Mid_Animation.xsm"
 		scale = 0.75
@@ -171,7 +171,7 @@ objectTypes = {
 
 		EMFXActorType = {
 		name = "building_naval_base6"
-		actorfile = "gfx\anims\Navalbase_Late_Empty.xac"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
 
 		idle = "gfx\anims\Navalbase_Late_Animation.xsm"
 		scale = 0.9
@@ -179,7 +179,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "building_naval_base6_ships"
-		actorfile = "gfx\anims\Navalbase_Late_Full.xac"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
 
 		idle = "gfx\anims\Navalbase_Late_Animation.xsm"
 		scale = 0.9
@@ -217,7 +217,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "building_fort2"
-		actorfile = "gfx\anims\Fort_Early.xac"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
 
 		idle = "gfx\anims\static.xsm"
 		scale = 1.0
@@ -233,7 +233,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "building_fort4"
-		actorfile = "gfx\anims\Fort_Mid2.xac"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
 
 		idle = "gfx\anims\static.xsm"
 		scale = 1.0
@@ -249,7 +249,7 @@ objectTypes = {
 
 		EMFXActorType = {
 		name = "building_fort6"
-		actorfile = "gfx\anims\Fort_Late.xac"
+		actorfile = "gfx\anims\TGCNV_BA_Dummy.xac"
 
 		idle = "gfx\anims\static.xsm"
 		scale = 1.0

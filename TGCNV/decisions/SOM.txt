@@ -29,12 +29,19 @@ political_decisions = {
 			MAJ = { all_core = { remove_core = MAJ } }
 			WRL = { all_core = { remove_core = WRL } }
 			1875 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5431 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1875
 			1864 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5420 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1864
 			1866 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5422 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1866
 			1865 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5421 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1865
 			1867 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5423 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1867
 			2031 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5587 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2031
 			2032 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5588 = { add_core = SOM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2032
 			change_tag = SOM
 			any_pop = { militancy = -4 }
 		}

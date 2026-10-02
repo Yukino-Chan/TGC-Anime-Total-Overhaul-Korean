@@ -522,8 +522,8 @@
 					OR = {
 						region = RUS_706
 						region = RUS_715
-						province_id = 707
-						province_id = 719
+						province_id = 707 province_id = 4264
+						province_id = 719 province_id = 4275 province_id = 6686
 					}
 					NOT = { province_id = 6573 }
 					NOT = { is_core = RUS }
@@ -538,7 +538,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GER }
@@ -559,7 +559,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GCF }
@@ -644,6 +644,7 @@
 				SLV = { all_core = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 				2584 = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				689 = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4246 = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 689
 				all_core = {
 					limit = {
 						is_core = THIS
@@ -2319,6 +2320,7 @@
 					add_core = PZN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
 				684 = { remove_core = THIS }
+				4241 = { remove_core = THIS } # TGCNV split half of 684
 				685 = { remove_core = THIS }
 			}
 
@@ -2330,7 +2332,7 @@
 						region = RUS_706
 						region = RUS_715
 						province_id = 707
-						province_id = 719
+						province_id = 719 province_id = 4275 province_id = 6686
 					}
 					NOT = { province_id = 6573 }
 					NOT = { is_core = RUS }
@@ -2345,7 +2347,7 @@
 						region = RUS_706
 						region = RUS_715
 						province_id = 707
-						province_id = 719
+						province_id = 719 province_id = 4275 province_id = 6686
 					}
 					NOT = { province_id = 6573 }
 					NOT = { is_core = RUS }
@@ -2535,7 +2537,10 @@
 				696 = { add_core = POL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				683 = { add_core = POL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				682 = { add_core = POL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4239 = { add_core = POL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 682
+				6844 = { add_core = POL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 682
 				684 = { add_core = POL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4241 = { add_core = POL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 684
 				685 = { add_core = POL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				2584 = { add_core = POL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
@@ -2550,7 +2555,10 @@
 				696 = { add_core = PLC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				683 = { add_core = PLC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				682 = { add_core = PLC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4239 = { add_core = PLC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 682
+				6844 = { add_core = PLC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 682
 				684 = { add_core = PLC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4241 = { add_core = PLC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 684
 				685 = { add_core = PLC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				2584 = { add_core = PLC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
@@ -2688,6 +2696,7 @@
 				SLV = { all_core = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 				2584 = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				689 = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4246 = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 689
 				all_core = {
 					limit = {
 						is_core = THIS
@@ -3069,7 +3078,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GER }
@@ -3090,7 +3099,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GCF }
@@ -3160,6 +3169,9 @@
 				}
 				add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
+			random_owned = { limit = { province_id = 3900 } add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 339
+			random_owned = { limit = { province_id = 6761 } add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 339
+			random_owned = { limit = { province_id = 6762 } add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 339
 
 			#if Finland has a truce, add Finnish cores to Karelia & Petsamo, if owned
 			any_owned = {
@@ -3176,6 +3188,7 @@
 				}
 				add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
+			random_owned = { limit = { province_id = 7171 owner = { truce_with = FIN } } add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 982
 
 			#if Finland is part of SCA & Scandinavia has a truce, it gets Karelia & Petsamo, if owned
 			any_owned = {
@@ -3212,6 +3225,7 @@
 				add_core = FIN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				add_core = SCA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			}
+			random_owned = { limit = { province_id = 7171 owner = { truce_with = SCA } FIN = { exists = no all_core = { OR = { owned_by = RUS owned_by = SCA } } } } add_core = SCA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 982
 
 			#normalize relations with treaty members
 			any_country = {
@@ -4023,8 +4037,8 @@
 					OR = {
 						region = RUS_706
 						region = RUS_715
-						province_id = 707
-						province_id = 719
+						province_id = 707 province_id = 4264
+						province_id = 719 province_id = 4275 province_id = 6686
 					}
 					NOT = { province_id = 6573 }
 					NOT = { is_core = RUS }
@@ -4039,7 +4053,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GER }
@@ -4060,7 +4074,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GCF }
@@ -4464,6 +4478,7 @@
 					truce_with = THIS
 				}
 				419 = { add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3980 = { add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 419
 			}
 
 			#if any Congress Poland cores owned, re-add cores to Russia
@@ -4472,8 +4487,8 @@
 					OR = {
 						region = RUS_706
 						region = RUS_715
-						province_id = 707
-						province_id = 719
+						province_id = 707 province_id = 4264
+						province_id = 719 province_id = 4275 province_id = 6686
 					}
 					NOT = { province_id = 6573 }
 					NOT = { is_core = RUS }
@@ -4488,7 +4503,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GER }
@@ -4509,7 +4524,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GCF }
@@ -4891,8 +4906,8 @@
 					OR = {
 						region = RUS_706
 						region = RUS_715
-						province_id = 707
-						province_id = 719
+						province_id = 707 province_id = 4264
+						province_id = 719 province_id = 4275 province_id = 6686
 					}
 					NOT = { province_id = 6573 }
 					NOT = { is_core = RUS }
@@ -4907,7 +4922,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GER }
@@ -4928,7 +4943,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GCF }
@@ -5309,7 +5324,10 @@
 				465 = { remove_core = THIS }
 				466 = { remove_core = THIS }
 				472 = { remove_core = THIS }
+				4033 = { remove_core = THIS } # TGCNV split half of 472
+				7189 = { remove_core = THIS } # TGCNV split half of 472
 				473 = { remove_core = THIS }
+				4034 = { remove_core = THIS } # TGCNV split half of 473
 
 			}
 
@@ -5327,11 +5345,19 @@
 					add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = ITA
 				}
+				4033 = { add_core = ITA secede_province = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 472
+				7189 = { add_core = ITA secede_province = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 472
 				473 = { add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = ITA }
+				4034 = { add_core = ITA secede_province = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 473
 
 				454 = { secede_province = ITA }
+				4015 = { secede_province = ITA } # TGCNV split half of 454
 				469 = { secede_province = ITA }
+				6698 = { secede_province = ITA } # TGCNV split half of 469
+				6700 = { secede_province = ITA } # TGCNV split half of 469
+				6843 = { secede_province = ITA } # TGCNV split half of 469
 				470 = { secede_province = ITA }
+				4031 = { secede_province = ITA } # TGCNV split half of 470
 				471 = { secede_province = ITA }
 			}
 			random_country = {
@@ -5342,11 +5368,19 @@
 				}
 				SAR_466 = { add_core = SAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SAR }
 				472 = { add_core = SAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SAR }
+				4033 = { add_core = SAR secede_province = SAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 472
+				7189 = { add_core = SAR secede_province = SAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 472
 				473 = { add_core = SAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SAR }
+				4034 = { add_core = SAR secede_province = SAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 473
 
 				454 = { secede_province = SAR }
+				4015 = { secede_province = SAR } # TGCNV split half of 454
 				469 = { secede_province = SAR }
+				6698 = { secede_province = SAR } # TGCNV split half of 469
+				6700 = { secede_province = SAR } # TGCNV split half of 469
+				6843 = { secede_province = SAR } # TGCNV split half of 469
 				470 = { secede_province = SAR }
+				4031 = { secede_province = SAR } # TGCNV split half of 470
 				471 = { secede_province = SAR }
 			}
 
@@ -5375,8 +5409,12 @@
 					truce_with = THIS
 				}
 				457 = { add_core = SPA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SPA }
+				4018 = { add_core = SPA secede_province = SPA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 457
 				460 = { add_core = SPA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SPA }
+				4021 = { add_core = SPA secede_province = SPA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 460
+				6827 = { add_core = SPA secede_province = SPA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 460
 				464 = { add_core = SPA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = SPA }
+				4025 = { add_core = SPA secede_province = SPA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 464
 			}
 
 			#if any Congress Poland cores owned, re-add cores to Russia
@@ -5385,8 +5423,8 @@
 					OR = {
 						region = RUS_706
 						region = RUS_715
-						province_id = 707
-						province_id = 719
+						province_id = 707 province_id = 4264
+						province_id = 719 province_id = 4275 province_id = 6686
 					}
 					NOT = { province_id = 6573 }
 					NOT = { is_core = RUS }
@@ -5401,7 +5439,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GER }
@@ -5422,7 +5460,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GCF }
@@ -5807,8 +5845,8 @@
 					OR = {
 						region = RUS_706
 						region = RUS_715
-						province_id = 707
-						province_id = 719
+						province_id = 707 province_id = 4264
+						province_id = 719 province_id = 4275 province_id = 6686
 					}
 					NOT = { province_id = 6573 }
 					NOT = { is_core = RUS }
@@ -5823,7 +5861,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GER }
@@ -5844,7 +5882,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GCF }
@@ -5904,6 +5942,7 @@
 					add_core = PRU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					remove_core = WUR
 				}
+				4152 = { add_core = PRU remove_core = WUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 594
 				any_country = {
 					limit = {
 						exists = yes
@@ -5968,6 +6007,7 @@
 				SLV = { all_core = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 				2584 = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				689 = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4246 = { add_core = CZH add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 689
 				all_core = {
 					limit = {
 						is_core = THIS
@@ -6290,8 +6330,8 @@
 					OR = {
 						region = RUS_706
 						region = RUS_715
-						province_id = 707
-						province_id = 719
+						province_id = 707 province_id = 4264
+						province_id = 719 province_id = 4275 province_id = 6686
 					}
 					NOT = { province_id = 6573 }
 					NOT = { is_core = RUS }
@@ -6306,7 +6346,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GER }
@@ -6327,7 +6367,7 @@
 					OR = {
 						region = PRU_690
 						region = PRU_701
-						province_id = 684
+						province_id = 684 province_id = 4241
 						province_id = 685
 					}
 					NOT = { is_core = GCF }
@@ -8813,6 +8853,7 @@
 				remove_core = GER
 				remove_core = GCF
 			}
+			3957 = { add_core = THIS secede_province = THIS remove_core = PRU remove_core = NGF remove_core = GER remove_core = GCF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 396
 			3481 = { # Malmedy
 				add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				secede_province = THIS
@@ -8835,6 +8876,7 @@
 		option = {
 			name = "EVTOPTA96092"
 			77 = { secede_province = THIS add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3639 = { secede_province = THIS add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 77
 		}
 	}
 
@@ -8854,6 +8896,7 @@
 					add_core = FLA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = THIS
 				}
+				6709 = { add_core = THIS add_core = FLA secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 399
 				400 = {
 					add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					add_core = FLA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -8864,10 +8907,12 @@
 					add_core = FLA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = THIS
 				}
+				3962 = { add_core = THIS add_core = FLA secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 401
 				404 = {
 					add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = THIS
 				}
+				3965 = { add_core = THIS secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 404
 				405 = {
 					add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					secede_province = THIS

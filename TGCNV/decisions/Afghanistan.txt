@@ -37,8 +37,11 @@ political_decisions = {
 			}
 			KAL_1221 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Baluchistan
 			1218 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Peshawar
+			4775 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1218
 			1219 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Quetta
+			4776 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1219
 			1223 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Chitral
+			4780 = { add_core = AFG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1223
 			badboy = 4
 			prestige = 10
 			any_country = {
@@ -98,15 +101,25 @@ political_decisions = {
 			change_tag = DUR
 			SIN_1288 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Sindh
 			1147 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Mashad
+			4703 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1147
 			1148 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Birjand
+			4704 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1148
 			1227 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Lahore
+			4784 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1227
 			1228 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Multan
+			4785 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1228
 			1229 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Sialkot
+			4786 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1229
 			1230 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Attock
+			4787 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1230
 			1231 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Bahawalpur
+			4788 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1231
 			1232 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Shahpur
+			4789 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1232
 			1236 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Delhi
+			4793 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1236
 			1237 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Panipat
+			4794 = { add_core = DUR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1237
 			any_country = {
 				limit = {
 					OR = {

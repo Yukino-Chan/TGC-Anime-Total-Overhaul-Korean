@@ -20,13 +20,21 @@ political_decisions = {
 			badboy = 10
 			set_country_flag = claimed_greater_tibet
 			1593 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5146 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1593
 			1586 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5139 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1586
 			1582 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5135 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1582
 			1556 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5110 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1556
 			1558 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5112 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1558
 			1557 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5111 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1557
 			1591 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5144 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1591
 			1226 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4783 = { add_core = TIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1226
 		}
 		ai_will_do = { factor = 1 }
 	}

@@ -1366,6 +1366,8 @@ country_event = {
 			any_pop = { limit = { has_pop_culture = south_german } move_pop = 623 }
 			change_province_name = "ºÿπˆ∆Æ«Ï¿Ã"
 		}
+		6292 = { remove_core = AUS remove_core = GER remove_core = GCF add_core = HUN secede_province = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_province_modifier = integration_refusal remove_province_modifier = core_integration remove_province_modifier = national_assimilation remove_province_modifier = national_assimilation_rejection remove_province_modifier = national_assimilation_acceptance remove_province_modifier = national_assimilation_complete any_pop = { limit = { has_pop_culture = south_german } move_pop = 623 } } # TGCNV split half of 3286
+		7165 = { remove_core = AUS remove_core = GER remove_core = GCF add_core = HUN secede_province = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_province_modifier = integration_refusal remove_province_modifier = core_integration remove_province_modifier = national_assimilation remove_province_modifier = national_assimilation_rejection remove_province_modifier = national_assimilation_acceptance remove_province_modifier = national_assimilation_complete any_pop = { limit = { has_pop_culture = south_german } move_pop = 623 } } # TGCNV split half of 3286
 		624 = { #Eisenstadt
 			remove_core = HUN
 			add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -1378,6 +1380,8 @@ country_event = {
 			remove_province_modifier = national_assimilation_complete
 			any_pop = { limit = { has_pop_culture = hungarian } move_pop = 3286 }
 		}
+		4182 = { remove_core = HUN add_core = AUS secede_province = FROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_province_modifier = integration_refusal remove_province_modifier = core_integration remove_province_modifier = national_assimilation remove_province_modifier = national_assimilation_rejection remove_province_modifier = national_assimilation_acceptance remove_province_modifier = national_assimilation_complete any_pop = { limit = { has_pop_culture = hungarian } move_pop = 3286 } } # TGCNV split half of 624
+		6945 = { remove_core = HUN add_core = AUS secede_province = FROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_province_modifier = integration_refusal remove_province_modifier = core_integration remove_province_modifier = national_assimilation remove_province_modifier = national_assimilation_rejection remove_province_modifier = national_assimilation_acceptance remove_province_modifier = national_assimilation_complete any_pop = { limit = { has_pop_culture = hungarian } move_pop = 3286 } } # TGCNV split half of 624
 		623 = { #÷denburg
 			remove_core = HUN
 			add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -1402,6 +1406,7 @@ country_event = {
 			remove_province_modifier = national_assimilation_complete
 			any_pop = { limit = { has_pop_culture = hungarian } move_pop = 3286 }
 		}
+		6289 = { remove_core = HUN add_core = AUS secede_province = FROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_province_modifier = integration_refusal remove_province_modifier = core_integration remove_province_modifier = national_assimilation remove_province_modifier = national_assimilation_rejection remove_province_modifier = national_assimilation_acceptance remove_province_modifier = national_assimilation_complete any_pop = { limit = { has_pop_culture = hungarian } move_pop = 3286 } } # TGCNV split half of 3282
 		relation = { who = FROM value = 110 }
 		badboy = -2
 		FROM = { badboy = -2 }
@@ -2202,8 +2207,12 @@ country_event = {
 			inherit = SLO
 			inherit = SIE
 			791 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4344 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+			6955 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 			652 = { remove_core = SIE }
+			4209 = { remove_core = SIE } # TGCNV split half of 652
 			653 = { remove_core = SIE }
+			4210 = { remove_core = SIE } # TGCNV split half of 653
 			AUS_2538 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			TGC_TERRITORY_779 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			793 = { add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
@@ -2226,6 +2235,7 @@ country_event = {
 			BAN = { add_accepted_culture = serb }
 			HXP_778 = { remove_core = CRO }
 			770 = { remove_core = CRO }
+			4324 = { remove_core = CRO } # TGCNV split half of 770
 			AUS_780 = { remove_core = CRO }
 			release_vassal = CRO
 			create_alliance = CRO
@@ -2254,6 +2264,7 @@ country_event = {
 			}
 			HXP_778 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			770 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4324 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 770
 			AUS_780 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			release_vassal = HUN
 			create_alliance = HUN
@@ -2675,6 +2686,8 @@ country_event = {
 					secede_province = SWI
 					add_core = SWI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
+				4027 = { secede_province = SWI add_core = SWI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
+				6699 = { secede_province = SWI add_core = SWI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
 				465 = {
 					secede_province = SWI
 					add_core = SWI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -2719,6 +2732,9 @@ country_event = {
 			add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			life_rating = 5
 		}
+		4161 = { add_core = AUS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 5 } # TGCNV split half of 603
+		6837 = { add_core = AUS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 5 } # TGCNV split half of 603
+		6841 = { add_core = AUS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 5 } # TGCNV split half of 603
 	}
 }
 
@@ -2754,10 +2770,13 @@ country_event = {
 			add_core = BKV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			remove_core = GLM
 		}
+		4219 = { add_core = BKV remove_core = GLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 662
 		663 = {
 			add_core = BKV add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			remove_core = GLM
 		}
+		4220 = { add_core = BKV remove_core = GLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 663
+		6964 = { add_core = BKV remove_core = GLM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 663
 
 		ai_chance = { factor = 75 }
 	}

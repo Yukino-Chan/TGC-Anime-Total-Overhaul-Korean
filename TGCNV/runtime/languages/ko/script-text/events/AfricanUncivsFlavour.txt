@@ -53,7 +53,25 @@ country_event = { #Mzilikazi of Matabele flees to Matabeland
 				literacy = -0.99
 			}
 		}
+		5625 = {  # Kwekwe, split half of Gweru 2069 (TGCNV 2026-10-02)
+			add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = MAT
+			life_rating = 25
+			any_pop = {
+				limit = { NOT = { has_pop_culture = boer } }
+				literacy = -0.99
+			}
+		}
 		2071 = {  # Bulawayo
+			add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = MAT
+			life_rating = 25
+			any_pop = {
+				limit = { NOT = { has_pop_culture = boer } }
+				literacy = -0.99
+			}
+		}
+		5627 = {  # Inyati, split half of Bulawayo 2071 (TGCNV 2026-10-02)
 			add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = MAT
 			life_rating = 25
@@ -71,6 +89,15 @@ country_event = { #Mzilikazi of Matabele flees to Matabeland
 				literacy = -0.99
 			}
 		}
+		5628 = {  # Lupane, split half of Hwange 2072 (TGCNV 2026-10-02)
+			add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = MAT
+			life_rating = 25
+			any_pop = {
+				limit = { NOT = { has_pop_culture = boer } }
+				literacy = -0.99
+			}
+		}
 		2574 = {
 			add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = MAT
@@ -80,7 +107,25 @@ country_event = { #Mzilikazi of Matabele flees to Matabeland
 				literacy = -0.99
 			}
 		}
+		6115 = {  # Malaka, split half of Mochudi 2574 (TGCNV 2026-10-02)
+			add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = MAT
+			life_rating = 20
+			any_pop = {
+				limit = { NOT = { has_pop_culture = boer } }
+				literacy = -0.99
+			}
+		}
 		2075 = {
+			add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+			secede_province = MAT
+			life_rating = 20
+			any_pop = {
+				limit = { NOT = { has_pop_culture = boer } }
+				literacy = -0.99
+			}
+		}
+		5631 = {  # Gweta, split half of Serowe 2075 (TGCNV 2026-10-02)
 			add_core = MAT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = MAT
 			life_rating = 20
@@ -107,6 +152,7 @@ country_event = { #Mzilikazi of Matabele flees to Matabeland
 			any_state = { is_slave = yes }
 		}
 		2108 = { secede_province = TRN }  # Mosega
+		5664 = { secede_province = TRN }  # Polokwane, split half of Mosega 2108 (TGCNV 2026-10-02)
 		random_owned = {
 			limit = { province_id = 2071 }
 			state_scope = { change_region_name = "마타벨렐란드주" }
@@ -253,6 +299,7 @@ country_event = {
 		set_country_flag = omar_tall_arrived
 		prestige = 6
 		1881 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		5437 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1881
 	}
 }
 

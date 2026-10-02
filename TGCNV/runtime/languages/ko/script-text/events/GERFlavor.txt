@@ -351,6 +351,7 @@ country_event = {
 						}
 						secede_province = ENG
 					}
+					any_owned = { limit = { OR = { region = ENG_2024 region = ENG_2026 province_id = 5426 } } secede_province = ENG } # TGCNV split half of 1870
 					set_country_flag = germany_gave_colonies
 				}
 			}
@@ -381,6 +382,7 @@ country_event = {
 				}
 				secede_province = ZAN
 			}
+			random_owned = { limit = { province_id = 5604 owned_by = THIS NOT = { exists = ZAN } } secede_province = ZAN } # TGCNV split half of 2048
 
 			#UK Receives Zanzibar as a vassal
 			random_country = {
@@ -2120,8 +2122,12 @@ country_event = {
 
 		2560 = { remove_core = NGF }
 		570 = { remove_core = NGF }
+		4128 = { remove_core = NGF } # TGCNV split half of 570
+		7475 = { remove_core = NGF } # TGCNV split half of 570
 		2560 = { secede_province = HES }
 		570 = { secede_province = HES }
+		4128 = { secede_province = HES } # TGCNV split half of 570
+		7475 = { secede_province = HES } # TGCNV split half of 570
 
 		HES = {
 			relation = { who = NGF value = 25 }
@@ -2278,14 +2284,18 @@ country_event = {
 					limit = { province_id = 2538 }
 					add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
+				random_owned = { limit = { province_id = 6081 } add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2538
 				random_owned = {
 					limit = { province_id = 3309 }
 					add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
+				random_owned = { limit = { province_id = 6314 } add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3309
 				random_owned = {
 					limit = { province_id = 791 }
 					add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
+				random_owned = { limit = { province_id = 4344 } add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+				random_owned = { limit = { province_id = 6955 } add_core = BAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 				random_owned = {
 					limit = { province_id = 653 }
 					BAN = { add_accepted_culture = romanian }
@@ -2686,6 +2696,7 @@ country_event = {
 				623 = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				633 = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				3282 = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6289 = { add_core = AUS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3282
 				any_pop = {
 					limit = {
 						is_primary_culture = no
@@ -3027,7 +3038,9 @@ country_event = {
 				}
 				AUS_770 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				3283 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = CRO }
+				6290 = { add_core = HUN remove_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3283
 				3289 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = CRO }
+				6295 = { add_core = HUN remove_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3289
 				any_country = {
 					limit = {
 						is_greater_power = yes
@@ -3119,7 +3132,9 @@ country_event = {
 
 				prestige = -200
 				3283 = { remove_core = GER remove_core = AUS add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Nagydarda
+				6290 = { remove_core = GER remove_core = AUS add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3283
 				3289 = { remove_core = GER remove_core = AUS add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } #Csaktornya
+				6295 = { remove_core = GER remove_core = AUS add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3289
 				random_country = {
 					limit = {
 						OR = {
@@ -3159,7 +3174,9 @@ country_event = {
 					any_country = {
 						limit = { THIS = { tag = HUN } }
 						3283 = { secede_province = THIS }
+						6290 = { secede_province = THIS } # TGCNV split half of 3283
 						3289 = { secede_province = THIS }
+						6295 = { secede_province = THIS } # TGCNV split half of 3289
 					}
 				}
 				any_greater_power = {
@@ -3220,6 +3237,7 @@ country_event = {
 						}
 						add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					}
+					all_core = { limit = { OR = { culture = north_german culture = south_german } province_id = 4290 } add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 734
 				}
 				FROM = { all_core = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 				add_casus_belli = {
@@ -3352,7 +3370,9 @@ country_event = {
 				}
 				AUS_770 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				3283 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = CRO }
+				6290 = { add_core = HUN remove_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3283
 				3289 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = CRO }
+				6295 = { add_core = HUN remove_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3289
 				FROM = { country_event = 31520 }
 				any_country = {
 					limit = {
@@ -3461,6 +3481,8 @@ country_event = {
 				# Maybe Croatia a puppet of Hungary?
 
                 791 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+                4344 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
+                6955 = { add_core = CRO add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 791
 				any_owned = {
 					limit = { owner = { tag = KUK } }
 					owner = {
@@ -3892,6 +3914,10 @@ country_event = {
 		trigger = {
 			owns = 537
 			tag = HAN
+			OR = {	# TGCNV 2026-10-02: the constitution was revoked on 1837.11.1 (month is 0-based, 10 = November)
+				year = 1838
+				AND = { year = 1837 month = 10 }
+			}
 			NOT = { vassal_of = ENG }
 			NOT = {
 				has_country_flag = han_constitution_revoked
@@ -3929,6 +3955,7 @@ country_event = {
 			name = "EVTOPTB200007"
 
 			set_country_flag = han_constitution_approved
+			government = prussian_constitutionalism	# TGCNV 2026-10-02: the 1833 constitution stays
 			prestige = -40
 			any_pop = {
 				scaled_consciousness = { ideology = liberal factor = -3 }
@@ -6264,6 +6291,7 @@ country_event = {
 			relation = { who = FRA value = 100 }
 			TGC_TERRITORY_409 = { remove_core = FRA }
 			410 = { remove_core = FRA }
+			3971 = { remove_core = FRA } # TGCNV split half of 410
 			412 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_412  }
 				secede_province = FRA
 				remove_core = GER

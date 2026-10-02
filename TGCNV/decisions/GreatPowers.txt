@@ -411,6 +411,8 @@ political_decisions = {
 				AUS_654 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = ROM }
 				AUS_657 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = ROM }
 				647 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = ROM }      ## Add to the meta region instead?
+				4204 = { add_core = HUN remove_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 647
+				6963 = { add_core = HUN remove_core = ROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 647
 				651 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = ROM }
 				3385 = { add_core = HUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } remove_core = ROM }
 				set_global_flag = trantreaty_enforced
@@ -2547,10 +2549,10 @@ political_decisions = {
 								OR = {
 									region = ENG_1391
 									region = ENG_1384
-									province_id = 1394
-									province_id = 1395
-									province_id = 1396
-									province_id = 1397
+									province_id = 1394 province_id = 4951
+									province_id = 1395 province_id = 4952
+									province_id = 1396 province_id = 4953
+									province_id = 1397 province_id = 4954
 								}
 							}
 							secede_province = THIS
@@ -2863,8 +2865,8 @@ political_decisions = {
 							limit = {
 								OR = {
 									region = SOM_1868
-									province_id = 1874
-									province_id = 1873
+									province_id = 1874 province_id = 5430
+									province_id = 1873 province_id = 5429
 								}
 							}
 							secede_province = THIS

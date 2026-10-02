@@ -62,13 +62,17 @@ political_decisions = {
 			badboy = 6
 			prestige = 10
 			1686 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5239 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1686
 			2590 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1695 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5247 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1695
 			set_country_flag = hidden_tooltip
 			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip tag = KPB } } 
 					1686 = { add_core = POR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					5239 = { add_core = POR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1686
 					2590 = { add_core = POR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 					1695 = { add_core = POR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					5247 = { add_core = POR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1695
 			}
 			clr_country_flag = hidden_tooltip
 			any_country = { 
@@ -248,6 +252,7 @@ political_decisions = {
 					}
 					secede_province = THIS
 				}
+				any_owned = { limit = { OR = { province_id = 5556 region = POR_1999 } } secede_province = THIS } # TGCNV split half of 2000
 			}
 			relation = { who = KON value = 400 }
 		}
@@ -273,6 +278,7 @@ political_decisions = {
 
 		effect = {
 			2004 = { secede_province = THIS any_pop = { reduce_pop = 0.99 literacy = -0.99 } }
+			5560 = { secede_province = THIS any_pop = { reduce_pop = 0.99 literacy = -0.99 } } # TGCNV split half of 2004
 		}
 
 		ai_will_do = { factor = 1 }
@@ -309,6 +315,7 @@ political_decisions = {
 				remove_core = KON
 				remove_core = LUN
 			}
+			any_owned = { limit = { OR = { state_id = 1999 state_id = 2003 state_id = 2006 province_id = 5556 } } add_core = ANG remove_core = KON remove_core = LUN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2000
 
 			random_owned = {
 				limit = {

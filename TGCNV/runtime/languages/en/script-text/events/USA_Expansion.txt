@@ -564,10 +564,10 @@
 								region = USA_81		# Oregon
 								region = USA_91		# Idaho
 								province_id = 111	# Wyoming
-								province_id = 113
-								province_id = 114	# Montana
-								province_id = 141	# Louisiana
-								province_id = 2630	# Oklahoma
+								province_id = 113 province_id = 3675
+								province_id = 114 province_id = 3676	# Montana
+								province_id = 141 province_id = 3703	# Louisiana
+								province_id = 2630 province_id = 6172	# Oklahoma
 							}
 						}
 						add_core = MEX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
@@ -1713,7 +1713,11 @@
 					year = 1885
 				}
 				3444 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				6451 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 3444
+				6452 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 3444
 				3395 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				6397 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 3395
+				6398 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 3395
 			}
 			random_owned = {
 				limit = {
@@ -1722,6 +1726,8 @@
 					year = 1885
 				}
 				3409 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				6412 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 3409
+				6413 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 3409
 			}
 			random_owned = {
 				limit = {
@@ -1739,6 +1745,7 @@
 					year = 1885
 				}
 				2 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				3556 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 2
 			}
 			random_owned = {
 				limit = {
@@ -1940,6 +1947,7 @@
 					secede_province = THIS
 					add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				}
+				3556 = { secede_province = THIS add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2
 				relation = { who = FROM value = -100 }
 				war_exhaustion = -10
 				any_pop = { consciousness = -0.5 }
@@ -2142,6 +2150,7 @@
 					91 = { owned_by = THIS }
 				}
 				80 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3642 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 80
 			}
 			random_owned = {
 				limit = {
@@ -2149,6 +2158,7 @@
 					OR = { 92 = { owned_by = THIS } 113 = { owned_by = THIS } }
 				}
 				93 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3655 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 93
 			}
 			random_owned = {
 				limit = {
@@ -2156,6 +2166,7 @@
 					91 = { owned_by = THIS }
 				}
 				92 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3654 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 92
 			}
 			random_owned = {
 				limit = {
@@ -2164,6 +2175,7 @@
 					115 = { owned_by = THIS }
 				}
 				91 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3653 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 91
 			}
 			random_owned = {
 				limit = {
@@ -2171,6 +2183,7 @@
 					111 = { owned_by = THIS }
 				}
 				113 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3675 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 113
 			}
 			random_owned = {
 				limit = {
@@ -2186,6 +2199,7 @@
 					115 = { owned_by = THIS }
 				}
 				114 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3676 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 114
 			}
 		}
 	}
@@ -2245,6 +2259,7 @@
 					33 = { any_pop = { limit = { has_pop_culture = yankee } reduce_pop = 3 } }
 				}
 			}
+			3644 = { secede_province = THIS life_rating = 15 } # TGCNV split half of 82
 			83 = {
 				change_province_name = "Pendelton"
 				life_rating = 15
@@ -2255,6 +2270,7 @@
 					33 = { any_pop = { limit = { has_pop_culture = yankee } reduce_pop = 3 } }
 				}
 			}
+			3645 = { secede_province = THIS life_rating = 15 } # TGCNV split half of 83
 		}
 	}
 

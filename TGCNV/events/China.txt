@@ -665,6 +665,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA90909"
 		1481 = { secede_province = FROM add_province_modifier = { name = chinese_treaty_port duration = -1 } }
+		5038 = { secede_province = FROM } # TGCNV split half of 1481
 		any_pop = { limit = { is_culture_group = east_asian } militancy = 1 }
 		prestige_factor = -0.1
 		ai_chance = { factor = 0.8 }
@@ -827,7 +828,9 @@ country_event = {
 	immediate = {
 		set_country_flag = xinhai_revolution
 		2632 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		6174 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2632
 		1566 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		5120 = { add_core = CHI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1566
 	}
 
 	option = {
@@ -2412,12 +2415,12 @@ country_event = {
 					limit = {
 						OR = {
 							province_id = 1498
-							province_id = 1538
-							province_id = 1566
-							province_id = 1481
+							province_id = 1538 province_id = 5092
+							province_id = 1566 province_id = 5120
+							province_id = 1481 province_id = 5038
 							province_id = 1569
-							province_id = 1606
-							province_id = 2632
+							province_id = 1606 province_id = 5159
+							province_id = 2632 province_id = 6174
 						}
 					}
 					secede_province = THIS
@@ -2461,6 +2464,7 @@ country_event = {
 				FROM = { owns = 1481 }
 			}
 			1481 = { secede_province = RUS }
+			5038 = { secede_province = RUS } # TGCNV split half of 1481
 		}
 		random_owned = {
 			limit = {
@@ -2655,6 +2659,7 @@ country_event = {
 		remove_country_modifier = trade_restrictions
 		ENG = {
 			1538 = { secede_province = ENG change_controller = ENG }
+			5092 = { secede_province = ENG change_controller = ENG } # TGCNV split half of 1538
 		}
 		random_owned = {
 			limit = {
@@ -2750,6 +2755,7 @@ country_event = {
 			remove_core = TIB
 			secede_province = FROM
 		}
+		random_owned = { limit = { province_id = 5146 } add_core = ASM add_core = HND remove_core = CHI remove_core = TIB secede_province = FROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1593
 		relation = { who = FROM value = 200 }
 		FROM = {
 			diplomatic_influence = {
@@ -6259,18 +6265,22 @@ country_event = {
 			add_core = KMT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			fort = 3
 		}
+		5041 = { add_core = KMT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1485
 		2562 = {
 			add_core = KMT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			fort = 3
 		}
+		6103 = { add_core = KMT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2562
 		2406 = {
 			add_core = KMT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			fort = 3
 		}
+		5952 = { add_core = KMT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2406
 		2681 = {
 			add_core = KMT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			fort = 3
 		}
+		6237 = { add_core = KMT add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2681
 		capital_scope = {
 			aristocrats = {
 				limit = { is_primary_culture = yes }
@@ -7127,6 +7137,7 @@ country_event = {
 			}
 			secede_province = LEG
 		}
+		any_owned = { limit = { province_id = 6261 } secede_province = LEG } # TGCNV split half of 3249
 		release = LEG
 		FROM = {
 			create_vassal = LEG
@@ -8209,8 +8220,11 @@ country_event = {
 			any_pop = { limit = { is_culture_group = east_asian } reduce_pop = 1.1 }
 			add_core = HQJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 		}
+		4930 = { add_core = HQJ any_pop = { limit = { is_culture_group = east_asian } reduce_pop = 1.1 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1373
 		1371 = { add_core = HQJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4928 = { add_core = HQJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1371
 		1372 = { add_core = HQJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4929 = { add_core = HQJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1372
 		casus_belli = { target = QNG type = release_puppet months = 36 }
 		release = HQJ
 		HQJ = {
@@ -8811,6 +8825,7 @@ country_event = {
 		}
 		end_war = TPG
 		1608 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+		5161 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1608
 		TPG = { country_event = 99970 }
 
 		ai_chance = {
@@ -11209,21 +11224,25 @@ country_event = {
 			secede_province = TAI
 			fort = 3
 		}
+		5041 = { add_core = TAI secede_province = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1485
 		2562 = {
 			add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = TAI
 			fort = 3
 		}
+		6103 = { add_core = TAI secede_province = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2562
 		2406 = {
 			add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = TAI
 			fort = 3
 		}
+		5952 = { add_core = TAI secede_province = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2406
 		2681 = {
 			add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			secede_province = TAI
 			fort = 3
 		}
+		6237 = { add_core = TAI secede_province = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2681
 		capital_scope = {
 			aristocrats = {
 				limit = { is_primary_culture = yes }
@@ -11394,24 +11413,28 @@ country_event = {
 			secede_province = QNG
 			fort = 3
 		}
+		5041 = { add_core = QNG add_core = TAI remove_core = FJN secede_province = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1485
 		2562 = {
 			add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			remove_core = FJN
 			secede_province = QNG
 			fort = 3
 		}
+		6103 = { add_core = TAI remove_core = FJN secede_province = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2562
 		2406 = {
 			add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			remove_core = FJN
 			secede_province = QNG
 			fort = 3
 		}
+		5952 = { add_core = TAI remove_core = FJN secede_province = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2406
 		2681 = {
 			add_core = TAI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			remove_core = FJN
 			secede_province = QNG
 			fort = 3
 		}
+		6237 = { add_core = TAI remove_core = FJN secede_province = QNG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2681
 		1616 = {
 			aristocrats = {
 				limit = { has_pop_culture = manchu }

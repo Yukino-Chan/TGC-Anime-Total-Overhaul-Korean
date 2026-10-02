@@ -3404,6 +3404,7 @@ country_event = {
 			}
 			change_controller = ENG
 		}
+		random_owned = { limit = { province_id = 3861 controlled_by = REB } change_controller = ENG } # TGCNV split half of 300
 		any_owned = {
 			limit = { is_colonial = no }
 			any_pop = {
@@ -3935,6 +3936,7 @@ country_event = {
 			}
 			change_controller = NET
 		}
+		random_owned = { limit = { province_id = 3936 controlled_by = REB } change_controller = NET } # TGCNV split half of 375
 		any_owned = {
 			limit = { is_colonial = no }
 			remove_province_modifier = liberal_agitation

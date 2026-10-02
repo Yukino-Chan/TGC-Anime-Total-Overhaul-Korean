@@ -42,6 +42,12 @@ spriteTypes = {
         effectFile = "gfx\\FX\\buttonstate.fx"
     }
     textSpriteType = {
+        name = "GFX_tgcnv_air_ui_tab_nuclear"
+        texturefile = "gfx\\interface\\tgcnv_air\\ui_tab_nuclear_144.dds"
+        noOfFrames = 1
+        effectFile = "gfx\\FX\\buttonstate.fx"
+    }
+    textSpriteType = {
         name = "GFX_tgcnv_air_ui_nav_air"
         texturefile = "gfx\\interface\\tgcnv_air\\ui_nav_air.dds"
         noOfFrames = 1

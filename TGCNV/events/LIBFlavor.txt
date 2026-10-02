@@ -31,11 +31,13 @@ country_event = {
 			add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			life_rating = 15
 		}
+		5446 = { secede_province = THIS add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 15 } # TGCNV split half of 1890
 		1891 = {
 			secede_province = THIS
 			add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			life_rating = 15
 		}
+		5447 = { secede_province = THIS add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 15 } # TGCNV split half of 1891
 	}
 }
 
@@ -63,7 +65,9 @@ country_event = {
 
 		immediate = {
 			1887 = { add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5443 = { add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1887
 			1888 = { add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5444 = { add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1888
 			LIB = { all_core = { remove_core = USA } }
 		}
 
@@ -301,6 +305,7 @@ country_event = {
 					add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					life_rating = 15
 				}
+				5446 = { secede_province = THIS add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 15 } # TGCNV split half of 1890
 			}
 			random_owned = {
 				limit = { 1891 = { empty = yes } }
@@ -309,6 +314,7 @@ country_event = {
 					add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 					life_rating = 15
 				}
+				5447 = { secede_province = THIS add_core = LIB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } life_rating = 15 } # TGCNV split half of 1891
 			}
 
 			random_country = {

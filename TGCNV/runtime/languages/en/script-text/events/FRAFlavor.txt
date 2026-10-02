@@ -998,6 +998,7 @@ country_event = {
 			}
 			secede_province = CRS
 		}
+		4034 = { change_controller = THIS secede_province = CRS any_pop = { limit = { has_pop_culture = north_italian } militancy = -8 } } # TGCNV split half of 473
 	}
 }
 
@@ -1048,6 +1049,7 @@ country_event = {
 			secede_province = THIS
 			naval_base = 1
 		}
+		4354 = { secede_province = THIS } # TGCNV split half of 801
 		random_country = {
 			limit = {
 				tag = ENG
@@ -1489,6 +1491,7 @@ country_event = {
 			}
 			relation = { who = THIS value = -400 }
 			1791 = { secede_province = THIS }
+			5346 = { secede_province = THIS } # TGCNV split half of 1791
 		}
 		1788 = {
 			any_pop = { limit = { NOT = { has_pop_religion = catholic } } reduce_pop = 0.7 }
@@ -1496,6 +1499,7 @@ country_event = {
 			change_province_name = "Kaolack"
 			add_province_modifier = { name = nationalist_agitation duration = 720 }
 		}
+		5343 = { secede_province = THIS any_pop = { limit = { NOT = { has_pop_religion = catholic } } reduce_pop = 0.7 } add_province_modifier = { name = nationalist_agitation duration = 720 } } # TGCNV split half of 1788
 
 		random_country = {
 			limit = {
@@ -1737,8 +1741,11 @@ country_event = {
 			badboy = 5
 			CAN_60 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			2625 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6167 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2625
+			7446 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2625
 			HOP_76 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			77 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3639 = { add_core = QUE add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 77
 			QUE = { all_core = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			ENG = {
 				badboy = -8

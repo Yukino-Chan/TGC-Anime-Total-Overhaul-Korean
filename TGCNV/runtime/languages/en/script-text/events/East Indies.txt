@@ -481,11 +481,13 @@ country_event = {
 			remove_core = BRU
 			secede_province = SWK
 		}
+		4951 = { add_core = SWK remove_core = BRU secede_province = SWK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1394
 		1395 = {
 			add_core = SWK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 			remove_core = BRU
 			secede_province = SWK
 		}
+		4952 = { add_core = SWK remove_core = BRU secede_province = SWK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1395
 		ENG = {
 			diplomatic_influence = {
 				who = SWK
@@ -1036,8 +1038,8 @@ country_event = {
 			any_owned = {
 					limit = {
 						OR = {
-							province_id = 1439
-							province_id = 1444
+							province_id = 1439 province_id = 4996
+							province_id = 1444 province_id = 5001
 						}
 					}
 				secede_province = THIS
@@ -1459,10 +1461,14 @@ country_event = {
 			}
 			owner = {
 				1389 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = PRK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4946 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = PRK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1389
 				HXP_1388 = { remove_core = THIS remove_core = JOH add_core = PRK add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1391 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = PHG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4948 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = PHG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1391
 				1390 = { remove_core = THIS }
+				4947 = { remove_core = THIS } # TGCNV split half of 1390
 				2575 = { remove_core = THIS }
+				6116 = { remove_core = THIS } # TGCNV split half of 2575
 			}
 		}
 
@@ -1472,8 +1478,10 @@ country_event = {
 			}
 			owner = {
 				1389 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4946 = { add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1389
 				HXP_1388 = { remove_core = THIS remove_core = JOH add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 				1391 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				4948 = { add_core = MLY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1391
 				1390 = { remove_core = THIS }
 				2575 = { remove_core = THIS }
 			}
@@ -1482,8 +1490,8 @@ country_event = {
 		any_owned = {
 			limit = {
 				OR = {
-					province_id = 1340
-					province_id = 1338
+					province_id = 1340 province_id = 4897
+					province_id = 1338 province_id = 4895
 					is_core = BUR
 				}
 			}
@@ -1580,6 +1588,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA971204"
 		1408 = { secede_province = THIS remove_core = ATJ }
+		4965 = { secede_province = THIS remove_core = ATJ } # TGCNV split half of 1408
 		1411 = { secede_province = THIS remove_core = ATJ }
 	}
 }

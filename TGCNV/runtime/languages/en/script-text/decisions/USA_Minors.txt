@@ -371,7 +371,9 @@ political_decisions = {
 			prestige = 40
 			all_core = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			1 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Alaska
+			3555 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1
 			2 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3556 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2
 			HOP_3 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			CAN_13 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # British Columbia
 			USA_78 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Washington
@@ -379,7 +381,9 @@ political_decisions = {
 			USA_91 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Idaho
 			111 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Wyoming
 			113 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3675 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 113
 			114 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Montana
+			3676 = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 114
 			COL = { all_core = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			UOR = { all_core = { add_core = CAS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			change_tag = CAS
@@ -1107,19 +1111,27 @@ political_decisions = {
 				}
 			}
 			82 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Goose Lake
+			3644 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 82
 			86 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Sierra Nevada
+			3648 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 86
 			88 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Mojave Desert
+			3650 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 88
 			89 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Los Angeles
+			3651 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 89
 			90 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # San Diego
 			MEX_94 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Nevada
 			94 = { change_province_name = "Carson City"  }
 			MEX_97 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Utah
-			97 = { change_province_name = "Salt Lake City"  }
+			97 = { change_province_name = "Logan" } # TGCNV 2026-10-02: Logan; Salt Lake City lies in 3659
+			3659 = { change_province_name = "Salt Lake City" }
 			98 = { change_province_name = "St. George" }
-			99 = { change_province_name = "Vernal" }
+			99 = { change_province_name = "Richfield" } # TGCNV 2026-10-02: Richfield; Vernal lies in 3661
 			100 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Gilenos
+			3662 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split half of 100 (TGC_TERRITORY_100)
 			101 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Grand Canyon
+			3663 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split half of 101 (TGC_TERRITORY_101)
 			3367 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Havasupai
+			6369 = { add_core = DES add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split half of 3367 (TGC_TERRITORY_3367)
 			3225 = { change_province_name = "Great Salt Lake" }
 		}
 
@@ -1154,8 +1166,11 @@ political_decisions = {
 			MEX_94 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Nevada
 			MEX_100 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Arizona
 			108 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Colorado
+			3670 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split half of 108 (TGC_TERRITORY_108)
 			109 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # New Mexico
+			3671 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split half of 109 (TGC_TERRITORY_109)
 			110 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Wyoming
+			3672 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV 2026-10-02: split half of 110 (TGC_TERRITORY_110)
 			set_country_flag = deseret_claims
 		}
 
@@ -1556,7 +1571,9 @@ political_decisions = {
 			badboy = 4
 			prestige = 20
 			66 = { add_core = NEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3628 = { add_core = NEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 66
 			67 = { add_core = NEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3629 = { add_core = NEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 67
 		}
 
 		ai_will_do = { factor = 1 }

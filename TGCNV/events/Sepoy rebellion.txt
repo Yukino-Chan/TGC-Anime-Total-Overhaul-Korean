@@ -927,7 +927,9 @@ country_event = {
 
 		MUG = { all_core = { remove_core = MUG } }
 		1236 = { add_core = RAJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4793 = { add_core = RAJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1236
 		1237 = { add_core = RAJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+		4794 = { add_core = RAJ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1237
 	}
 }
 

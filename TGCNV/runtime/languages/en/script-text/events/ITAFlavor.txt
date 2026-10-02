@@ -2052,7 +2052,11 @@
 			set_global_flag = plombieres_refused
 			465 = { add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			466 = { add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4027 = { add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
+			6699 = { add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
 			472 = { add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4033 = { add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 472
+			7189 = { add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 472
 
 			PAP_741 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			#MOD_739 = { add_core = THIS }
@@ -2749,6 +2753,7 @@
 					name = "EVTOPTB72760"
 
 					770 = { add_core = SAR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					4324 = { add_core = SAR add_core = ITA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 770
 					relation = { who = FROM value = -80 }
 					FROM = {
 						add_casus_belli = { target = THIS type = free_allied_cores months = 12 }
@@ -3143,7 +3148,13 @@
 			random_list = {
 				70 = {
 					762 = { secede_province = SYC }
+					4316 = { secede_province = SYC } # TGCNV split half of 762
+					6578 = { secede_province = SYC } # TGCNV split half of 762
+					6579 = { secede_province = SYC } # TGCNV split half of 762
+					6981 = { secede_province = SYC } # TGCNV split half of 762
 					764 = { secede_province = SYC }
+					4318 = { secede_province = SYC } # TGCNV split half of 764
+					6980 = { secede_province = SYC } # TGCNV split half of 764
 					prestige = -10
 					war = {
 						target = SYC
@@ -3204,10 +3215,16 @@
 				secede_province = SYC
 				remove_core = SIC
 			}
+			4316 = { remove_core = SIC } # TGCNV split half of 762
+			6578 = { remove_core = SIC } # TGCNV split half of 762
+			6579 = { remove_core = SIC } # TGCNV split half of 762
+			6981 = { remove_core = SIC } # TGCNV split half of 762
 			764 = {
 				secede_province = SYC
 				remove_core = SIC
 			}
+			4318 = { remove_core = SIC } # TGCNV split half of 764
+			6980 = { remove_core = SIC } # TGCNV split half of 764
 
 			ai_chance = { factor = 0.02 }
 		}
@@ -3264,6 +3281,7 @@
 				set_global_flag = five_days_of_milan_occurred
 				LOM = { government = democracy }
 				726 = { secede_province = LOM }
+				4282 = { secede_province = LOM } # TGCNV split half of 726
 				relation = { who = LOM value = -100 }
 				prestige = -30
 			}
@@ -3756,6 +3774,7 @@
 					end_war = THIS
 				}
 				726 = { secede_province = AUS }
+				4282 = { secede_province = AUS } # TGCNV split half of 726
 				any_pop = {
 					limit = { has_pop_culture = north_italian }
 					militancy = -5
@@ -4807,6 +4826,7 @@
 
 					prestige = 20
 					726 = { secede_province = THIS }
+					4282 = { secede_province = THIS } # TGCNV split half of 726
 					any_pop = {
 						limit = { has_pop_culture = north_italian }
 						militancy = -5
@@ -4929,6 +4949,7 @@
 					set_global_flag = genoa_revolt
 					TGC_TERRITORY_724 = { add_core = GEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 					725 = { add_core = GEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+					4281 = { add_core = GEN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 725
 				}
 
 				mean_time_to_happen = {
@@ -5379,19 +5400,34 @@ country_event = {
 
 			set_global_flag = libya_organized
 			random_owned = { limit = { province_id = 1731 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5285 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1731
 			random_owned = { limit = { province_id = 1732 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5286 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1732
 			random_owned = { limit = { province_id = 1733 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5287 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1733
 			random_owned = { limit = { province_id = 1734 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5288 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1734
 			random_owned = { limit = { province_id = 1735 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5289 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1735
 			random_owned = { limit = { province_id = 1736 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5290 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1736
 			random_owned = { limit = { province_id = 1737 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5291 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1737
 			random_owned = { limit = { province_id = 1738 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5292 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1738
 			random_owned = { limit = { province_id = 2585 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 6126 owned_by = TUR } secede_province = LBY } # TGCNV split half of 2585
 			random_owned = { limit = { province_id = 1740 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5294 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1740
 			random_owned = { limit = { province_id = 1741 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5295 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1741
+			random_owned = { limit = { province_id = 5296 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1741
 			random_owned = { limit = { province_id = 1742 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 7462 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1742
 			random_owned = { limit = { province_id = 1744 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5299 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1744
 			random_owned = { limit = { province_id = 1759 is_core = CYR owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5314 is_core = CYR owned_by = TUR } secede_province = LBY } # TGCNV split half of 1759
 			TUR = { create_vassal = LBY }
 			CYR = { all_core = { add_core = LBY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			TRI = { all_core = { add_core = LBY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
@@ -5445,19 +5481,34 @@ country_event = {
 			prestige = -50
 			FROM = { country_event = 900008 }
 			random_owned = { limit = { province_id = 1731 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5285 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1731
 			random_owned = { limit = { province_id = 1732 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5286 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1732
 			random_owned = { limit = { province_id = 1733 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5287 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1733
 			random_owned = { limit = { province_id = 1734 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5288 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1734
 			random_owned = { limit = { province_id = 1735 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5289 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1735
 			random_owned = { limit = { province_id = 1736 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5290 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1736
 			random_owned = { limit = { province_id = 1737 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5291 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1737
 			random_owned = { limit = { province_id = 1738 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5292 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1738
 			random_owned = { limit = { province_id = 2585 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 6126 owned_by = TUR } secede_province = LBY } # TGCNV split half of 2585
 			random_owned = { limit = { province_id = 1740 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5294 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1740
 			random_owned = { limit = { province_id = 1741 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5295 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1741
+			random_owned = { limit = { province_id = 5296 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1741
 			random_owned = { limit = { province_id = 1742 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 7462 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1742
 			random_owned = { limit = { province_id = 1744 owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5299 owned_by = TUR } secede_province = LBY } # TGCNV split half of 1744
 			random_owned = { limit = { province_id = 1759 is_core = CYR owned_by = TUR } secede_province = LBY }
+			random_owned = { limit = { province_id = 5314 is_core = CYR owned_by = TUR } secede_province = LBY } # TGCNV split half of 1759
 
 			ai_chance = {
 				factor = 0.1
@@ -5627,6 +5678,7 @@ country_event = {
 			random_country = {
 				limit = { tag = TUR owns = 846 }
 				846 = { secede_province = THIS any_pop = { militancy = 3 } }
+				4398 = { secede_province = THIS any_pop = { militancy = 3 } } # TGCNV split half of 846
 			}
 
 			ai_chance = {

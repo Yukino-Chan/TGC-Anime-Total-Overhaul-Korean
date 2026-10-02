@@ -589,6 +589,7 @@ political_decisions = {
 			PRG_2338 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			ARG_2366 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			2369 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5915 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2369
 
 			# Acquire the empty split half under the same conditions.
 			random_owned = {
@@ -781,12 +782,16 @@ political_decisions = {
 			random_owned = {
 				limit = { owner = { tag = BOL } }
 				3299 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6305 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3299
 				2322 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5869 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2322
 			}
 			random_owned = {
 				limit = { owner = { tag = PBC } }
 				3299 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6305 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3299
 				2322 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5869 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2322
 			}
 		}
 
@@ -842,17 +847,25 @@ political_decisions = {
 			random_owned = {
 				limit = { owner = { tag = BOL } }
 				2371 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5917 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2371
 				3400 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6403 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3400
 				2368 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5914 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2368
 				2373 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5919 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2373
 				1714 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
 			random_owned = {
 				limit = { owner = { tag = PBC } }
 				2371 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5917 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2371
 				3400 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6403 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3400
 				2368 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5914 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2368
 				2373 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5919 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2373
 				1714 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			}
 		}
@@ -906,18 +919,28 @@ political_decisions = {
 			random_owned = {
 				limit = { owner = { tag = BOL } }
 				2372 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5918 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2372
 				2365 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5911 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2365
 				2364 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5910 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2364
 				2377 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5923 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2377
 				2362 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5908 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2362
 			}
 			random_owned = {
 				limit = { owner = { tag = PBC } }
 				2372 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5918 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2372
 				2365 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5911 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2365
 				2364 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5910 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2364
 				2377 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5923 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2377
 				2362 = { add_core = BOL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5908 = { add_core = PBC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2362
 			}
 		}
 

@@ -661,6 +661,7 @@ political_decisions = {
 			money = -75000
 			MEX = {
 				104 = { secede_province = THIS }
+				3666 = { secede_province = THIS } # TGCNV split half of 104
 				money = 75000
 			}
 			104 = {
@@ -668,6 +669,7 @@ political_decisions = {
 				add_core = USS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				naval_base = 1
 			}
+			3666 = { remove_core = MEX add_core = USS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 104
 		}
 	}
 
@@ -751,6 +753,7 @@ political_decisions = {
 			random_owned = {
 				limit = { 2554 = { is_core = PRG } }
 				2459 = { add_core = USS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = ARG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = BRZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PRG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6005 = { add_core = USS add_core = ARG add_core = BRZ add_core = PRG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2459
 			}
 			random_owned = {
 				limit = { 2554 = { NOT = { is_core = PRG } } }
@@ -759,6 +762,7 @@ political_decisions = {
 			random_owned = {
 				limit = { 2341 = { is_core = PRG } }
 				2462 = { add_core = USS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = ARG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = BRZ add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PRG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6008 = { add_core = USS add_core = ARG add_core = BRZ add_core = PRG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2462
 			}
 			random_owned = {
 				limit = { 2341 = { NOT = { is_core = PRG } } }

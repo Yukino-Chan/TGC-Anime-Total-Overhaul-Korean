@@ -149,22 +149,39 @@ political_decisions = {
 			}
 			SAF = { set_country_flag = post_colonial_country government = hms_government }
 			random_owned = { limit = { province_id = 2113 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5669 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2113
 			random_owned = { limit = { province_id = 2112 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5668 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2112
 			random_owned = { limit = { province_id = 2100 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5656 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2100
 			random_owned = { limit = { province_id = 2101 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5657 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2101
 			random_owned = { limit = { province_id = 2102 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5658 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2102
 			random_owned = { limit = { province_id = 2103 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5659 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2103
 			random_owned = { limit = { province_id = 2105 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5661 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2105
 			random_owned = { limit = { province_id = 2106 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5662 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2106
 			random_owned = { limit = { province_id = 2107 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5663 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2107
 			random_owned = { limit = { province_id = 2108 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5664 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2108
 			random_owned = { limit = { province_id = 2109 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5665 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2109
 			random_owned = { limit = { province_id = 2110 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5666 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2110
 			random_owned = { limit = { province_id = 2088 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5644 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2088
 			random_owned = { limit = { province_id = 2558 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 6099 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2558
 			random_owned = { limit = { province_id = 2093 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5649 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2093
 			random_owned = { limit = { province_id = 2094 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5650 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2094
 			random_owned = { limit = { province_id = 2111 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			random_owned = { limit = { province_id = 5667 } add_core = SAF add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2111
 			release_vassal = SAF
 			create_alliance = SAF
 			diplomatic_influence = {
@@ -475,8 +492,12 @@ political_decisions = {
 			#2081 = { add_core = THIS }
 			#2082 = { add_core = THIS }
 			2084 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+			5640 = { add_core = THIS secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } life_rating = 5 } # TGCNV split half of 2084
 			2086 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+			5642 = { add_core = THIS secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } life_rating = 5 } # TGCNV split half of 2086
 			2085 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+			5641 = { add_core = THIS secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } life_rating = 5 } # TGCNV split half of 2085
+			7485 = { add_core = THIS secede_province = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } life_rating = 5 } # TGCNV split half of 2085
 			set_country_flag = claimed_namibia
 		}
 
@@ -648,6 +669,7 @@ political_decisions = {
 				change_province_name = "후트스프라위트"
 				remove_core = ZOU
 			}
+			5666 = { remove_core = ZOU } # TGCNV split half of 2110
 			random_owned = {
 				limit = {
 						owner = {	NOT = {	point_defense_system = 1 } }

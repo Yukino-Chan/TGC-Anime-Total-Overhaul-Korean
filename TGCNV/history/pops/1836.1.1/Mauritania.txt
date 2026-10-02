@@ -60,12 +60,12 @@ artisans = {
 soldiers = {
 		culture = maures
 		religion = sunni
-		size = 88
+		size = 1000
 	}
 farmers = {
 		culture = maures
 		religion = sunni
-		size = 5690
+		size = 4778
 	}
 slaves = {
 		culture = wolof
@@ -166,17 +166,12 @@ artisans = {
 soldiers = {
 		culture = maures
 		religion = sunni
-		size = 25
+		size = 50
 	}
 farmers = {
 		culture = maures
 		religion = sunni
 		size = 4538
-	}
-soldiers = {
-		culture = maures
-		religion = sunni
-		size = 25
 	}
 }
 
@@ -295,12 +290,12 @@ artisans = {
 soldiers = {
 		culture = maures
 		religion = sunni
-		size = 87
+		size = 1000
 	}
 farmers = {
 		culture = maures
 		religion = sunni
-		size = 5710
+		size = 4797
 	}
 slaves = {
 		culture = wolof
@@ -411,17 +406,12 @@ artisans = {
 soldiers = {
 		culture = maures
 		religion = sunni
-		size = 25
+		size = 50
 	}
 farmers = {
 		culture = maures
 		religion = sunni
 		size = 4537
-	}
-soldiers = {
-		culture = maures
-		religion = sunni
-		size = 25
 	}
 }
 
@@ -555,7 +545,7 @@ slaves = {
 artisans = {
 		culture = bambara
 		religion = animist
-		size = 1
+		size = 2
 	}
 soldiers = {
 		culture = bambara
@@ -565,22 +555,22 @@ soldiers = {
 farmers = {
 		culture = bambara
 		religion = animist
-		size = 12
+		size = 119
 	}
 soldiers = {
 		culture = fulbe
 		religion = sunni
-		size = 1
+		size = 3
 	}
 farmers = {
 		culture = fulbe
 		religion = sunni
-		size = 7
+		size = 22
 	}
 slaves = {
 		culture = mande
 		religion = animist
-		size = 11
+		size = 37
 	}
 aristocrats = {
 		culture = bambara
@@ -592,16 +582,24 @@ clergymen = {
 		religion = animist
 		size = 1
 	}
-artisans = {
-		culture = bambara
-		religion = animist
+aristocrats = {
+		culture = fulbe
+		religion = sunni
+		size = 3
+	}
+clergymen = {
+		culture = fulbe
+		religion = sunni
 		size = 1
 	}
-farmers = {
-		culture = bambara
-		religion = animist
-		size = 107
+artisans = {
+		culture = fulbe
+		religion = sunni
+		size = 6
 	}
+}
+
+5333 = {
 aristocrats = {
 		culture = fulbe
 		religion = sunni
@@ -620,50 +618,17 @@ artisans = {
 soldiers = {
 		culture = fulbe
 		religion = sunni
-		size = 2
-	}
-farmers = {
-		culture = fulbe
-		religion = sunni
-		size = 15
-	}
-slaves = {
-		culture = mande
-		religion = animist
-		size = 26
-	}
-}
-
-5333 = {
-aristocrats = {
-		culture = fulbe
-		religion = sunni
-		size = 2
-	}
-clergymen = {
-		culture = fulbe
-		religion = sunni
-		size = 1
-	}
-artisans = {
-		culture = fulbe
-		religion = sunni
 		size = 4
 	}
-soldiers = {
-		culture = fulbe
-		religion = sunni
-		size = 3
-	}
 farmers = {
 		culture = fulbe
 		religion = sunni
-		size = 68
+		size = 73
 	}
 slaves = {
 		culture = fulbe
 		religion = sunni
-		size = 30
+		size = 1517
 	}
 aristocrats = {
 		culture = maures
@@ -690,35 +655,10 @@ farmers = {
 		religion = sunni
 		size = 1723
 	}
-slaves = {
-		culture = fulbe
-		religion = sunni
-		size = 1487
-	}
 farmers = {
 		culture = bambara
 		religion = animist
 		size = 36
-	}
-aristocrats = {
-		culture = fulbe
-		religion = sunni
-		size = 1
-	}
-artisans = {
-		culture = fulbe
-		religion = sunni
-		size = 2
-	}
-soldiers = {
-		culture = fulbe
-		religion = sunni
-		size = 1
-	}
-farmers = {
-		culture = fulbe
-		religion = sunni
-		size = 5
 	}
 slaves = {
 		culture = mande

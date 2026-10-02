@@ -352,11 +352,13 @@
 				add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				remove_core = THIS
 			}
+			random_owned = { limit = { province_id = 3664 } add_core = CSA remove_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 102
 			random_owned = {
 				limit = { province_id = 2662 }
 				add_core = CSA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
 				remove_core = THIS
 			}
+			random_owned = { limit = { province_id = 6212 } add_core = CSA remove_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2662
 			any_owned = {
 				limit = { is_core = CSA }
 				secede_province = CSA
@@ -423,10 +425,12 @@
 			random_country = {
 				limit = { tag = MEX owns = 102 NOT = { owns = 100 } }
 				102 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				3664 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 102
 			}
 			random_country = {
 				limit = { tag = MEX owns = 2662 NOT = { owns = 38 } }
 				2662 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6212 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2662
 			}
 			relation = { who = MEX value = -200 }
 			diplomatic_influence = { who = MEX value = -200 }
@@ -495,7 +499,9 @@
 			MEX_2142 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Chihuahua
 			MEX_2156 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Sinaloa
 			102 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3664 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 102
 			2662 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6212 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2662
 			set_global_flag = sonora_is_a_state
 
 			random_country = {

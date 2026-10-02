@@ -54,13 +54,25 @@ political_decisions = {
 			GRN = { all_core = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			ICL = { all_core = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			253 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Faroe Islands
+			3814 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 253
 			1724 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Orkney and Shetland
+			5278 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1724
 			982 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Petsamo
+			4534 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 982
+			7171 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 982
 			HXP_2587 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Kola
 			338 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Tornel
+			3899 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 338
+			6590 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 338
+			7175 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 338
+			7179 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 338
 			3379 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Kuolajaarvi
+			6379 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3379
 			319 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Ostersund
 			330 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Borls
+			3891 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 330
+			6755 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 330
+			6757 = { add_core = NOR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 330
 		}
 
 		ai_will_do = {

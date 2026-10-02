@@ -79,6 +79,7 @@ political_decisions = {
 		effect = {
 			prestige = 40
 			2222 = { add_core = ATC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			5774 = { add_core = ATC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2222
 			CUB = { all_core = { add_core = ATC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			DOM = { all_core = { add_core = ATC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } }
 			change_tag = ATC
@@ -196,9 +197,13 @@ political_decisions = {
 		effect = {
 			prestige = 20
 			2217 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Jamaica
+			5769 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2217
 			2218 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Cayman Islands
+			5770 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2218
 			2219 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Bahamas
+			5771 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2219
 			2220 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Turks and Caicos Islands
+			5772 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2220
 			ENG_2224 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Leeward Islands
 			ENG_2228 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Windward Islands
 			NET_2235 = { add_core = CRB add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Leeward Antilles

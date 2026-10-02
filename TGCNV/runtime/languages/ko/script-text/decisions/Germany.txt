@@ -1372,6 +1372,7 @@ political_decisions = {
 				secede_province = THIS
 				owner = { relation = { who = THIS value = -100 } }
 			}
+			3892 = { secede_province = THIS } # TGCNV split half of 331
 		}
 
 		ai_will_do = {
@@ -1975,6 +1976,7 @@ political_decisions = {
 			leave_alliance = SGM
 			SGM = { any_owned = { any_pop = { militancy = 1 } } }
 			594 = { remove_core = SGM add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4152 = { remove_core = SGM add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 594
 			594 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			inherit = SGM
 		}
@@ -2020,6 +2022,7 @@ political_decisions = {
 			566 = { owner = { relation = { who = THIS value = -400 } leave_alliance = THIS } }
 			566 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			568 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4126 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 568
 		}
 
 		ai_will_do = {
@@ -2139,6 +2142,10 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 996 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 996 }
 			}
+			3910 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 996 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 996 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 996 } } # TGCNV split half of 349
+			7078 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 996 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 996 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 996 } } # TGCNV split half of 349
+			7079 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 996 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 996 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 996 } } # TGCNV split half of 349
+			7080 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 996 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 996 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 996 } } # TGCNV split half of 349
 
 			350 = {
 				remove_core = RUS
@@ -2147,6 +2154,7 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 996 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 996 }
 			}
+			3911 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 996 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 996 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 996 } } # TGCNV split half of 350
 
 			351 = {
 				remove_core = RUS
@@ -2155,6 +2163,7 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 997 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 997 }
 			}
+			3912 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 997 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 997 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 997 } } # TGCNV split half of 351
 
 			HXP_352 = {
 				remove_core = RUS
@@ -2180,6 +2189,7 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 1006 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 1006 }
 			}
+			3915 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 1006 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 1006 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 1006 } } # TGCNV split half of 354
 
 			355 = {
 				remove_core = RUS
@@ -2188,6 +2198,9 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 1006 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 1006 }
 			}
+			3916 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 1006 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 1006 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 1006 } } # TGCNV split half of 355
+			7076 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 1006 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 1006 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 1006 } } # TGCNV split half of 355
+			7081 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 1006 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 1006 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 1006 } } # TGCNV split half of 355
 
 			356 = {
 				remove_core = RUS
@@ -2196,6 +2209,7 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 1006 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 1006 }
 			}
+			3917 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 1006 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 1006 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 1006 } } # TGCNV split half of 356
 
 			357 = {
 				remove_core = RUS
@@ -2204,6 +2218,7 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 945 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 945 }
 			}
+			3918 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 945 } } # TGCNV split half of 357
 
 			358 = {
 				remove_core = RUS
@@ -2212,6 +2227,10 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 945 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 945 }
 			}
+			3919 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 945 } } # TGCNV split half of 358
+			7073 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 945 } } # TGCNV split half of 358
+			7074 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 945 } } # TGCNV split half of 358
+			7077 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 945 } } # TGCNV split half of 358
 
 			359 = {
 				remove_core = RUS
@@ -2220,6 +2239,8 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 945 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 945 }
 			}
+			3920 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 945 } } # TGCNV split half of 359
+			7075 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 945 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 945 } } # TGCNV split half of 359
 
 
 			360 = {
@@ -2229,6 +2250,8 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 }
 			}
+			3921 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 } } # TGCNV split half of 360
+			6722 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 } } # TGCNV split half of 360
 
 			361 = {
 				remove_core = RUS
@@ -2237,6 +2260,7 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 937 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 937 }
 			}
+			3922 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 937 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 937 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 937 } } # TGCNV split half of 361
 
 			362 = {
 				remove_core = RUS
@@ -2245,6 +2269,10 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 937 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 937 }
 			}
+			3923 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 937 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 937 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 937 } } # TGCNV split half of 362
+			6725 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 937 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 937 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 937 } } # TGCNV split half of 362
+			7086 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 937 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 937 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 937 } } # TGCNV split half of 362
+			7087 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 937 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 937 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 937 } } # TGCNV split half of 362
 
 			363 = {
 				remove_core = RUS
@@ -2253,6 +2281,8 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 }
 			}
+			3924 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 } } # TGCNV split half of 363
+			7084 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 } } # TGCNV split half of 363
 
 			364 = {
 				remove_core = RUS
@@ -2261,6 +2291,7 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 }
 			}
+			3925 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 } } # TGCNV split half of 364
 
 			365 = {
 				remove_core = RUS
@@ -2269,6 +2300,8 @@ political_decisions = {
 				any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 }
 				any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 }
 			}
+			3926 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 } } # TGCNV split half of 365
+			7083 = { remove_core = RUS any_pop = { limit = { has_pop_culture = russian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ukrainian } move_pop = 718 } any_pop = { limit = { has_pop_culture = ugrian } move_pop = 718 } } # TGCNV split half of 365
 
 		}
 
@@ -3874,6 +3907,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = qingdao_treaty_port_ger
 			1566 = { secede_province = THIS change_controller = THIS }
+			5120 = { secede_province = THIS change_controller = THIS } # TGCNV split half of 1566
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			prestige = 20
 			random_country = {
@@ -4285,13 +4319,24 @@ political_decisions = {
 			4088 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			3483 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			690 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4247 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 690
 			548 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4107 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 548
 			331 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3892 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 331
 			369 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3930 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 369
 			531 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4091 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 531
 			693 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4250 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 693
 			354 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3915 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 354
 			349 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3910 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 349
+			7078 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 349
+			7079 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 349
+			7080 = { add_core = HNS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 349
 			change_tag = HNS
 			random_country = {
 				limit = {
@@ -4503,9 +4548,12 @@ political_decisions = {
 				secede_province = ITA
 				remove_core = THIS
 			}
+			4290 = { secede_province = ITA remove_core = THIS } # TGCNV split half of 734
 
 			735 = { remove_core = ITA }
+			4291 = { remove_core = ITA } # TGCNV split half of 735
 			3288 = { remove_core = ITA }
+			6294 = { remove_core = ITA } # TGCNV split half of 3288
 		}
 	}
 
@@ -4532,17 +4580,24 @@ political_decisions = {
 			release_vassal = WLL
 
 			395 = { remove_core = WLL }
+			3956 = { remove_core = WLL } # TGCNV split half of 395
 			395 = { secede_province = GER }
+			3956 = { secede_province = GER } # TGCNV split half of 395
 
 			398 = { remove_core = WLL }
+			3959 = { remove_core = WLL } # TGCNV split half of 398
 			398 = { secede_province = GER }
+			3959 = { secede_province = GER } # TGCNV split half of 398
 
 			405 = { remove_core = WLL }
 			405 = { secede_province = GER }
 
 			3318 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6323 = { add_core = GER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3318
 			3318 = { remove_core = WLL }
+			6323 = { remove_core = WLL } # TGCNV split half of 3318
 			3318 = { secede_province = GER }
+			6323 = { secede_province = GER } # TGCNV split half of 3318
 
 			inherit = MRN
 
@@ -4683,7 +4738,9 @@ political_decisions = {
 			set_country_flag = the_french_menace
 			badboy = 50
 			409 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3970 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 409
 			410 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3971 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 410
 			412 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			3322 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			war = {
@@ -4722,42 +4779,86 @@ political_decisions = {
 			set_country_flag = vf_released
 			badboy = -10
 			409 = { remove_core = FRA }
+			3970 = { remove_core = FRA } # TGCNV split half of 409
 			410 = { remove_core = FRA }
+			3971 = { remove_core = FRA } # TGCNV split half of 410
 			412 = { remove_core = FRA }
 			3322 = { remove_core = FRA }
 			448 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4009 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 448
 			449 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4010 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 449
 			450 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4011 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 450
 			451 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4012 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 451
 			452 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4013 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 452
 			453 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4014 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 453
 			454 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4015 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 454
 			455 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4016 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 455
 			457 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4018 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 457
 			456 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4017 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 456
+			6568 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 456
 			461 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4022 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 461
 			462 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4023 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 462
 			463 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4024 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 463
+			6830 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 463
 			464 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4025 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 464
 			465 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			466 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4027 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
+			6699 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 466
 			467 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4028 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 467
+			6831 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 467
 			468 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4029 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 468
 			469 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6698 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 469
+			6700 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 469
+			6843 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 469
 			470 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4031 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 470
 			471 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			472 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4033 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 472
+			7189 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 472
 			447 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4008 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 447
+			6828 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 447
 			446 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4007 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 446
 			445 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4006 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 445
+			6824 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 445
 			439 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4000 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 439
 			473 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4034 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 473
 			428 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3989 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 428
+			6822 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 428
 			433 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			431 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			438 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3999 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 438
 			440 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4001 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 440
+			7129 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 440
+			7130 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 440
 			430 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3991 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 430
+			6821 = { add_core = VFR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 430
 			release_vassal = VFR
 			relation = { who = VFR value = 400 }
 		}

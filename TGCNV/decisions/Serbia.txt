@@ -186,6 +186,7 @@ political_decisions = {
 			prestige = 10
 			badboy = 1
 			850 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			4402 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 850
 			any_country = {
 				limit = {
 					is_core = 850
@@ -223,17 +224,24 @@ political_decisions = {
 			AUS_774 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Lika
 			AUS_777 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Slavonia
 			3283 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Baranja
+			6290 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3283
 			AUS_2538 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Vojvodina
 			792 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Banat
+			4345 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 792
 			3319 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			6324 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3319
+			6724 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 3319
 			AUS_780 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Dalmatia
 			TUR_788 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Bosnia
 			772 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Sisak
+			4326 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 772
 			776 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Bjelovar
+			4330 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 776
 			MON_2582 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Montenegro
 			MON_3433 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Cattaro
 			TUR_806 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Northern Macedonia
 			850 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Skadar
+			4402 = { add_core = SER add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 850
 		}
 
 		ai_will_do = {

@@ -764,17 +764,17 @@ political_decisions = {
 				}
 				random_owned = {
 					limit = { province_id = 85 NOT = { has_global_flag = american_frontier_85 } }
-					change_province_name = "산타로사"
+					change_province_name = "크레센트시티" # TGCNV 2026-10-02: Crescent City; Santa Rosa lies in 3647
 					set_global_flag = american_frontier_85
 				}
 				random_owned = {
 					limit = { province_id = 86 NOT = { has_global_flag = american_frontier_86 } }
-					change_province_name = "매머드레이크스"
+					change_province_name = "수전빌" # TGCNV 2026-10-02: Susanville; Mammoth Lakes lies in 3648
 					set_global_flag = american_frontier_86
 				}
 				random_owned = {
 					limit = { province_id = 88 NOT = { has_global_flag = american_frontier_88 } }
-					change_province_name = "바스토"
+					change_province_name = "엘센트로" # TGCNV 2026-10-02: El Centro; Barstow lies in 3650
 					set_global_flag = american_frontier_88
 				}
 				random_owned = {
@@ -831,7 +831,7 @@ political_decisions = {
 			## Arizona ##
 				random_owned = {
 					limit = { province_id = 100 NOT = { has_global_flag = american_frontier_100 } }
-					change_province_name = "피닉스"
+					change_province_name = "글로브" # TGCNV 2026-10-02: Globe; Phoenix lies in 3662
 					
 					set_global_flag = american_frontier_100
 				}
@@ -869,13 +869,13 @@ political_decisions = {
 				}
 				random_owned = {
 					limit = { province_id = 2662 NOT = { has_global_flag = american_frontier_2662 } }
-					change_province_name = "로즈버그"
+					change_province_name = "애니머스" # TGCNV 2026-10-02: Animas; Lordsburg is 3601
 					set_global_flag = american_frontier_2662
 				}
 			## Colorado ##
 				random_owned = {
 					limit = { province_id = 103 NOT = { has_global_flag = american_frontier_103 } }
-					change_province_name = "푸에블로"
+					change_province_name = "글렌우드스프링스" # TGCNV 2026-10-02: Glenwood Springs; Pueblo lies in 3668
 					set_global_flag = american_frontier_103
 				}
 				random_owned = {
@@ -895,7 +895,7 @@ political_decisions = {
 				}
 				random_owned = {
 					limit = { province_id = 135 NOT = { has_global_flag = american_frontier_135 } }
-					change_province_name = "두랑고"
+					change_province_name = "이그나시오" # TGCNV 2026-10-02: Ignacio; Durango is on the 108 border and 2153 (Mexico) is already Durango
 					set_global_flag = american_frontier_135
 				}
 			## Wyoming ##
@@ -906,7 +906,7 @@ political_decisions = {
 				}
 				random_owned = {
 					limit = { province_id = 110 NOT = { has_global_flag = american_frontier_110 } }
-					change_province_name = "록스프링스"
+					change_province_name = "에번스턴" # TGCNV 2026-10-02: Evanston; Rock Springs lies in 3672
 					set_global_flag = american_frontier_110
 				}
 				random_owned = {
@@ -1031,7 +1031,7 @@ political_decisions = {
 				}
 				random_owned = {
 					limit = { province_id = 128 NOT = { has_global_flag = american_frontier_128 } }
-					change_province_name = "리버럴"
+					change_province_name = "휴고턴" # TGCNV 2026-10-02: Hugoton; province 3709 is already named Liberal
 					set_global_flag = american_frontier_128
 				}
 			## Oklahoma ##
@@ -1063,7 +1063,7 @@ political_decisions = {
 			## Texas ##
 				random_owned = {
 					limit = { province_id = 43 NOT = { has_global_flag = american_frontier_43_name } }
-					change_province_name = "댈러스"
+					change_province_name = "보넘" # TGCNV 2026-10-02: Bonham; Dallas lies in 3696
 					set_global_flag = american_frontier_43_name
 				}
 				random_owned = {
@@ -1103,7 +1103,7 @@ political_decisions = {
 				}
 				random_owned = {
 					limit = { province_id = 3372 NOT = { has_global_flag = american_frontier_3372 } }
-					change_province_name = "러벅"
+					change_province_name = "애머릴로" # TGCNV 2026-10-02: Amarillo; Lubbock lies in 6374
 					set_global_flag = american_frontier_3372
 				}
 			## Louisiana ##
@@ -1311,6 +1311,7 @@ political_decisions = {
 			badboy = 5
 			set_country_flag = incite_yucatan_revolt
 			2181 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Maybe not?
+			5733 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2181
 			HXP_2165 = { add_core = YUC add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Maybe not?
 			MEX = {
 				release = YUC
@@ -2786,13 +2787,21 @@ political_decisions = {
 			USA_118 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # North Dakota
 			USA_118 = { add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			161 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3723 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 161
 			161 = { add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3723 = { add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 161
 			160 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3722 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 160
 			160 = { add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3722 = { add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 160
 			158 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3720 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 158
 			158 = { add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3720 = { add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 158
 			157 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3719 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 157
 			157 = { add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+			3719 = { add_core = CAN add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 157
 			USA_78 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Washington
 			USA_78 = { add_core = COL add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 			USA_81 = { add_core = ENG add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # Oregon
@@ -2823,7 +2832,9 @@ political_decisions = {
 				}
 			}
 			69 = { remove_core = NEN }
+			3631 = { remove_core = NEN } # TGCNV split half of 69
 			250 = { remove_core = MRU }
+			3811 = { remove_core = MRU } # TGCNV split half of 250
 			ENG = { all_core = { remove_core = USA } }
 			USA = {
 				country_event = {

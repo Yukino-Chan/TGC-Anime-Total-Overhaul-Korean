@@ -1159,6 +1159,7 @@ country_event = {
 			secede_province = AFG
 		}
 		1210 = { secede_province = AFG }
+		4767 = { secede_province = AFG } # TGCNV split half of 1210
 		FROM = {
 			badboy = -3
 			prestige = 30
@@ -1367,6 +1368,7 @@ country_event = {
 		name = "EVTOPTA99201"
 		prestige = -10
 		1212 = { remove_core = PER }
+		4769 = { remove_core = PER } # TGCNV split half of 1212
 		ENG = { country_event = 99203 }
 		ai_chance = { factor = 100 }
 	}
@@ -1375,6 +1377,7 @@ country_event = {
 		name = "EVTOPTB99201"
 		prestige = 10
 		1212 = { secede_province = THIS }
+		4769 = { secede_province = THIS } # TGCNV split half of 1212
 		ENG = { country_event = 99202 }
 		ai_chance = { factor = 0 }
 	}
@@ -1468,6 +1471,7 @@ country_event = {
 		name = "EVTOPT99910"
 		prestige = 10
 		1212 = { remove_core = PER }
+		4769 = { remove_core = PER } # TGCNV split half of 1212
 		FROM = {
 			war_exhaustion = 5
 			any_pop = {

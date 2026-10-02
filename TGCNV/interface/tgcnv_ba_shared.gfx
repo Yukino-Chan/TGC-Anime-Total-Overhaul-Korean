@@ -22,6 +22,42 @@ objectTypes = {
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
 	EMFXActorType = {
+		name = "TGCNV_BA_AriusGL_140"
+		actorfile = "gfx\anims\TGCNV_BA_AriusGL.xac"
+		idle   = "gfx\anims\TGCNV_BA_AriusGL_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_AriusGL_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_AriusGL_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_AriusHMG_140"
+		actorfile = "gfx\anims\TGCNV_BA_AriusHMG.xac"
+		idle   = "gfx\anims\TGCNV_BA_AriusHMG_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_AriusHMG_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_AriusHMG_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_AriusSMG_140"
+		actorfile = "gfx\anims\TGCNV_BA_AriusSMG.xac"
+		idle   = "gfx\anims\TGCNV_BA_AriusSMG_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_AriusSMG_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_AriusSMG_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_AriusTerrorSMG_140"
+		actorfile = "gfx\anims\TGCNV_BA_AriusTerrorSMG.xac"
+		idle   = "gfx\anims\TGCNV_BA_AriusTerrorSMG_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_AriusTerrorSMG_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_AriusTerrorSMG_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
 		name = "TGCNV_BA_ArmoredCar_070"
 		actorfile = "gfx\anims\TGCNV_BA_ArmoredCar.xac"
 		idle   = "gfx\anims\TGCNV_BA_ArmoredCar_Idle.xsm"
@@ -53,6 +89,15 @@ objectTypes = {
 		idle   = "gfx\anims\TGCNV_BA_Atsuko_Idle.xsm"
 		move   = "gfx\anims\TGCNV_BA_Atsuko_Move.xsm"
 		attack = "gfx\anims\TGCNV_BA_Atsuko_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_AzusaSwim_140"
+		actorfile = "gfx\anims\TGCNV_BA_AzusaSwim.xac"
+		idle   = "gfx\anims\TGCNV_BA_AzusaSwim_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_AzusaSwim_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_AzusaSwim_Attack.xsm"
 		scale = 1.4
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
@@ -93,11 +138,254 @@ objectTypes = {
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
 	EMFXActorType = {
+		name = "TGCNV_BA_CavCuirAbydos_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavCuirAbydos.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavCuirAbydos_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavCuirAbydos_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavCuirAbydos_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavCuirArius_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavCuirArius.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavCuirArius_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavCuirArius_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavCuirArius_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavCuirGehenna_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavCuirGehenna.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavCuirGehenna_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavCuirGehenna_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavCuirGehenna_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavCuirHyakkiyako_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavCuirHyakkiyako.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavCuirHyakkiyako_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavCuirHyakkiyako_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavCuirHyakkiyako_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavCuirMillennium_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavCuirMillennium.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavCuirMillennium_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavCuirMillennium_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavCuirMillennium_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavCuirRedWinter_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavCuirRedWinter.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavCuirRedWinter_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavCuirRedWinter_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavCuirRedWinter_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavCuirSRT_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavCuirSRT.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavCuirSRT_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavCuirSRT_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavCuirSRT_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavCuirShanhaijing_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavCuirShanhaijing.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavCuirShanhaijing_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavCuirShanhaijing_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavCuirShanhaijing_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavCuirTrinity_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavCuirTrinity.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavCuirTrinity_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavCuirTrinity_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavCuirTrinity_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavDragAbydos_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavDragAbydos.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavDragAbydos_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavDragAbydos_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavDragAbydos_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavDragArius_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavDragArius.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavDragArius_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavDragArius_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavDragArius_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavDragGehenna_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavDragGehenna.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavDragGehenna_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavDragGehenna_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavDragGehenna_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavDragHyakkiyako_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavDragHyakkiyako.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavDragHyakkiyako_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavDragHyakkiyako_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavDragHyakkiyako_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavDragMillennium_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavDragMillennium.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavDragMillennium_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavDragMillennium_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavDragMillennium_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavDragRedWinter_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavDragRedWinter.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavDragRedWinter_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavDragRedWinter_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavDragRedWinter_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavDragSRT_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavDragSRT.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavDragSRT_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavDragSRT_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavDragSRT_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavDragShanhaijing_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavDragShanhaijing.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavDragShanhaijing_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavDragShanhaijing_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavDragShanhaijing_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavDragTrinity_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavDragTrinity.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavDragTrinity_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavDragTrinity_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavDragTrinity_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
 		name = "TGCNV_BA_CavHina_130"
 		actorfile = "gfx\anims\TGCNV_BA_CavHina.xac"
 		idle   = "gfx\anims\TGCNV_BA_CavHina_Idle.xsm"
 		move   = "gfx\anims\TGCNV_BA_CavHina_Move.xsm"
 		attack = "gfx\anims\TGCNV_BA_CavHina_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavHussAbydos_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavHussAbydos.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavHussAbydos_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavHussAbydos_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavHussAbydos_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavHussArius_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavHussArius.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavHussArius_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavHussArius_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavHussArius_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavHussGehenna_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavHussGehenna.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavHussGehenna_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavHussGehenna_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavHussGehenna_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavHussHyakkiyako_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavHussHyakkiyako.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavHussHyakkiyako_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavHussHyakkiyako_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavHussHyakkiyako_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavHussMillennium_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavHussMillennium.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavHussMillennium_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavHussMillennium_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavHussMillennium_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavHussRedWinter_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavHussRedWinter.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavHussRedWinter_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavHussRedWinter_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavHussRedWinter_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavHussSRT_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavHussSRT.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavHussSRT_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavHussSRT_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavHussSRT_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavHussShanhaijing_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavHussShanhaijing.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavHussShanhaijing_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavHussShanhaijing_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavHussShanhaijing_Attack.xsm"
+		scale = 1.3
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_CavHussTrinity_130"
+		actorfile = "gfx\anims\TGCNV_BA_CavHussTrinity.xac"
+		idle   = "gfx\anims\TGCNV_BA_CavHussTrinity_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_CavHussTrinity_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_CavHussTrinity_Attack.xsm"
 		scale = 1.3
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
@@ -192,11 +480,65 @@ objectTypes = {
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
 	EMFXActorType = {
+		name = "TGCNV_BA_DroidAR_140"
+		actorfile = "gfx\anims\TGCNV_BA_DroidAR.xac"
+		idle   = "gfx\anims\TGCNV_BA_DroidAR_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_DroidAR_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_DroidAR_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_Eimi_140"
+		actorfile = "gfx\anims\TGCNV_BA_Eimi.xac"
+		idle   = "gfx\anims\TGCNV_BA_Eimi_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_Eimi_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_Eimi_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_GenryumonAR_140"
+		actorfile = "gfx\anims\TGCNV_BA_GenryumonAR.xac"
+		idle   = "gfx\anims\TGCNV_BA_GenryumonAR_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_GenryumonAR_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_GenryumonAR_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_GenryumonHG_140"
+		actorfile = "gfx\anims\TGCNV_BA_GenryumonHG.xac"
+		idle   = "gfx\anims\TGCNV_BA_GenryumonHG_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_GenryumonHG_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_GenryumonHG_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_GenryumonMG_140"
+		actorfile = "gfx\anims\TGCNV_BA_GenryumonMG.xac"
+		idle   = "gfx\anims\TGCNV_BA_GenryumonMG_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_GenryumonMG_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_GenryumonMG_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
 		name = "TGCNV_BA_Haruka_140"
 		actorfile = "gfx\anims\TGCNV_BA_Haruka.xac"
 		idle   = "gfx\anims\TGCNV_BA_Haruka_Idle.xsm"
 		move   = "gfx\anims\TGCNV_BA_Haruka_Move.xsm"
 		attack = "gfx\anims\TGCNV_BA_Haruka_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_Haruna_140"
+		actorfile = "gfx\anims\TGCNV_BA_Haruna.xac"
+		idle   = "gfx\anims\TGCNV_BA_Haruna_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_Haruna_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_Haruna_Attack.xsm"
 		scale = 1.4
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
@@ -271,11 +613,29 @@ objectTypes = {
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
 	EMFXActorType = {
+		name = "TGCNV_BA_IzumiSwim_140"
+		actorfile = "gfx\anims\TGCNV_BA_IzumiSwim.xac"
+		idle   = "gfx\anims\TGCNV_BA_IzumiSwim_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_IzumiSwim_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_IzumiSwim_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
 		name = "TGCNV_BA_Izuna_140"
 		actorfile = "gfx\anims\TGCNV_BA_Izuna.xac"
 		idle   = "gfx\anims\TGCNV_BA_Izuna_Idle.xsm"
 		move   = "gfx\anims\TGCNV_BA_Izuna_Move.xsm"
 		attack = "gfx\anims\TGCNV_BA_Izuna_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_Junko_140"
+		actorfile = "gfx\anims\TGCNV_BA_Junko.xac"
+		idle   = "gfx\anims\TGCNV_BA_Junko_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_Junko_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_Junko_Attack.xsm"
 		scale = 1.4
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
@@ -331,6 +691,15 @@ objectTypes = {
 		move   = "gfx\anims\TGCNV_BA_LightTank_Move.xsm"
 		attack = "gfx\anims\TGCNV_BA_LightTank_Attack.xsm"
 		scale = 0.75
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_Maki_140"
+		actorfile = "gfx\anims\TGCNV_BA_Maki.xac"
+		idle   = "gfx\anims\TGCNV_BA_Maki_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_Maki_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_Maki_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
 	EMFXActorType = {
 		name = "TGCNV_BA_Marina_140"
@@ -423,6 +792,42 @@ objectTypes = {
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
 	EMFXActorType = {
+		name = "TGCNV_BA_Pina_140"
+		actorfile = "gfx\anims\TGCNV_BA_Pina.xac"
+		idle   = "gfx\anims\TGCNV_BA_Pina_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_Pina_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_Pina_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_RWGuardGL_140"
+		actorfile = "gfx\anims\TGCNV_BA_RWGuardGL.xac"
+		idle   = "gfx\anims\TGCNV_BA_RWGuardGL_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_RWGuardGL_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_RWGuardGL_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_RWGuardSMG_140"
+		actorfile = "gfx\anims\TGCNV_BA_RWGuardSMG.xac"
+		idle   = "gfx\anims\TGCNV_BA_RWGuardSMG_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_RWGuardSMG_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_RWGuardSMG_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_RWSergeantAR_140"
+		actorfile = "gfx\anims\TGCNV_BA_RWSergeantAR.xac"
+		idle   = "gfx\anims\TGCNV_BA_RWSergeantAR_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_RWSergeantAR_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_RWSergeantAR_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
 		name = "TGCNV_BA_Reizyo_140"
 		actorfile = "gfx\anims\TGCNV_BA_Reizyo.xac"
 		idle   = "gfx\anims\TGCNV_BA_Reizyo_Idle.xsm"
@@ -477,11 +882,56 @@ objectTypes = {
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
 	EMFXActorType = {
+		name = "TGCNV_BA_ShirokoRiding_140"
+		actorfile = "gfx\anims\TGCNV_BA_ShirokoRiding.xac"
+		idle   = "gfx\anims\TGCNV_BA_ShirokoRiding_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_ShirokoRiding_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_ShirokoRiding_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
 		name = "TGCNV_BA_Shiroko_140"
 		actorfile = "gfx\anims\TGCNV_BA_Shiroko.xac"
 		idle   = "gfx\anims\TGCNV_BA_Shiroko_Idle.xsm"
 		move   = "gfx\anims\TGCNV_BA_Shiroko_Move.xsm"
 		attack = "gfx\anims\TGCNV_BA_Shiroko_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_SukebanSR_140"
+		actorfile = "gfx\anims\TGCNV_BA_SukebanSR.xac"
+		idle   = "gfx\anims\TGCNV_BA_SukebanSR_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_SukebanSR_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_SukebanSR_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_SukebanSwimMG_140"
+		actorfile = "gfx\anims\TGCNV_BA_SukebanSwimMG.xac"
+		idle   = "gfx\anims\TGCNV_BA_SukebanSwimMG_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_SukebanSwimMG_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_SukebanSwimMG_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_SukebanSwimSMG_140"
+		actorfile = "gfx\anims\TGCNV_BA_SukebanSwimSMG.xac"
+		idle   = "gfx\anims\TGCNV_BA_SukebanSwimSMG_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_SukebanSwimSMG_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_SukebanSwimSMG_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_Sumire_140"
+		actorfile = "gfx\anims\TGCNV_BA_Sumire.xac"
+		idle   = "gfx\anims\TGCNV_BA_Sumire_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_Sumire_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_Sumire_Attack.xsm"
 		scale = 1.4
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}
@@ -500,6 +950,51 @@ objectTypes = {
 		idle   = "gfx\anims\TGCNV_BA_Tsubaki_Idle.xsm"
 		move   = "gfx\anims\TGCNV_BA_Tsubaki_Move.xsm"
 		attack = "gfx\anims\TGCNV_BA_Tsubaki_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_ValkyrieAR_140"
+		actorfile = "gfx\anims\TGCNV_BA_ValkyrieAR.xac"
+		idle   = "gfx\anims\TGCNV_BA_ValkyrieAR_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_ValkyrieAR_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_ValkyrieAR_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_ValkyrieSG_140"
+		actorfile = "gfx\anims\TGCNV_BA_ValkyrieSG.xac"
+		idle   = "gfx\anims\TGCNV_BA_ValkyrieSG_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_ValkyrieSG_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_ValkyrieSG_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_ValkyrieSR_140"
+		actorfile = "gfx\anims\TGCNV_BA_ValkyrieSR.xac"
+		idle   = "gfx\anims\TGCNV_BA_ValkyrieSR_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_ValkyrieSR_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_ValkyrieSR_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_YukataSG_140"
+		actorfile = "gfx\anims\TGCNV_BA_YukataSG.xac"
+		idle   = "gfx\anims\TGCNV_BA_YukataSG_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_YukataSG_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_YukataSG_Attack.xsm"
+		scale = 1.4
+		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
+	}
+	EMFXActorType = {
+		name = "TGCNV_BA_YukataSR_140"
+		actorfile = "gfx\anims\TGCNV_BA_YukataSR.xac"
+		idle   = "gfx\anims\TGCNV_BA_YukataSR_Idle.xsm"
+		move   = "gfx\anims\TGCNV_BA_YukataSR_Move.xsm"
+		attack = "gfx\anims\TGCNV_BA_YukataSR_Attack.xsm"
 		scale = 1.4
 		attach = { name = "InfantryShadowblob" node = "Root" attachId = 2 }
 	}

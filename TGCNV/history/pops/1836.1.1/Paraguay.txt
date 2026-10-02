@@ -40,17 +40,17 @@ clergymen = {
 artisans = {
 		culture = guarani
 		religion = animist
-		size = 250
+		size = 264
 	}
 soldiers = {
 		culture = guarani
 		religion = animist
-		size = 150
+		size = 151
 	}
 farmers = {
 		culture = guarani
 		religion = animist
-		size = 275
+		size = 334
 	}
 farmers = {
 		culture = quechua
@@ -77,31 +77,6 @@ farmers = {
 		culture = bolivian
 		religion = catholic
 		size = 21
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 12
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 52
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 2
-	}
-soldiers = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 7
 	}
 }
 
@@ -155,37 +130,37 @@ farmers = {
 aristocrats = {
 		culture = paraguayan
 		religion = catholic
-		size = 249
+		size = 254
 	}
 clergymen = {
 		culture = paraguayan
 		religion = catholic
-		size = 50
+		size = 52
 	}
 artisans = {
 		culture = paraguayan
 		religion = catholic
-		size = 948
+		size = 967
 	}
 soldiers = {
 		culture = paraguayan
 		religion = catholic
-		size = 748
+		size = 759
 	}
 farmers = {
 		culture = paraguayan
 		religion = catholic
-		size = 7983
+		size = 8111
 	}
 artisans = {
 		culture = guarani
 		religion = animist
-		size = 499
+		size = 508
 	}
 farmers = {
 		culture = guarani
 		religion = animist
-		size = 1497
+		size = 1563
 	}
 aristocrats = {
 		culture = brazilian
@@ -194,56 +169,6 @@ aristocrats = {
 	}
 farmers = {
 		culture = brazilian
-		religion = catholic
-		size = 1
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 7
-	}
-aristocrats = {
-		culture = paraguayan
-		religion = catholic
-		size = 3
-	}
-clergymen = {
-		culture = paraguayan
-		religion = catholic
-		size = 1
-	}
-artisans = {
-		culture = paraguayan
-		religion = catholic
-		size = 13
-	}
-soldiers = {
-		culture = paraguayan
-		religion = catholic
-		size = 10
-	}
-farmers = {
-		culture = paraguayan
-		religion = catholic
-		size = 109
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 7
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 20
-	}
-aristocrats = {
-		culture = paraguayan
 		religion = catholic
 		size = 1
 	}
@@ -251,21 +176,6 @@ bureaucrats = {
 		culture = paraguayan
 		religion = catholic
 		size = 1
-	}
-clergymen = {
-		culture = paraguayan
-		religion = catholic
-		size = 1
-	}
-artisans = {
-		culture = paraguayan
-		religion = catholic
-		size = 5
-	}
-farmers = {
-		culture = paraguayan
-		religion = catholic
-		size = 12
 	}
 farmers = {
 		culture = platinean
@@ -289,41 +199,6 @@ farmers = {
 		religion = animist
 		size = 15
 	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 34
-	}
-aristocrats = {
-		culture = paraguayan
-		religion = catholic
-		size = 1
-	}
-artisans = {
-		culture = paraguayan
-		religion = catholic
-		size = 1
-	}
-soldiers = {
-		culture = paraguayan
-		religion = catholic
-		size = 1
-	}
-farmers = {
-		culture = paraguayan
-		religion = catholic
-		size = 7
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 5
-	}
 artisans = {
 		culture = arawak
 		religion = animist
@@ -340,180 +215,86 @@ farmers = {
 aristocrats = {
 		culture = paraguayan
 		religion = catholic
-		size = 497
+		size = 504
 	}
 bureaucrats = {
 		culture = paraguayan
 		religion = catholic
-		size = 150
+		size = 152
 	}
 officers = {
 		culture = paraguayan
 		religion = catholic
-		size = 100
+		size = 101
 	}
 clergymen = {
 		culture = paraguayan
 		religion = catholic
-		size = 249
+		size = 252
 	}
 artisans = {
 		culture = paraguayan
 		religion = catholic
-		size = 2234
+		size = 2263
 	}
 soldiers = {
 		culture = paraguayan
 		religion = catholic
-		size = 7447
+		size = 7537
 	}
 farmers = {
 		culture = paraguayan
 		religion = catholic
-		size = 9930
+		size = 10065
 	}
 artisans = {
 		culture = guarani
 		religion = catholic
-		size = 745
+		size = 754
 	}
 soldiers = {
 		culture = guarani
 		religion = catholic
-		size = 3973
+		size = 4019
 	}
 farmers = {
 		culture = guarani
 		religion = catholic
-		size = 4469
+		size = 4521
 	}
 artisans = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 299
+		size = 303
 		militancy = 4
 	}
 soldiers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 199
+		size = 201
 		militancy = 4
 	}
 farmers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 497
+		size = 503
 		militancy = 4
 	}
 slaves = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 993
+		size = 1005
 		militancy = 2
-	}
-aristocrats = {
-		culture = paraguayan
-		religion = catholic
-		size = 6
-	}
-bureaucrats = {
-		culture = paraguayan
-		religion = catholic
-		size = 2
-	}
-officers = {
-		culture = paraguayan
-		religion = catholic
-		size = 1
-	}
-clergymen = {
-		culture = paraguayan
-		religion = catholic
-		size = 3
-	}
-artisans = {
-		culture = paraguayan
-		religion = catholic
-		size = 26
-	}
-soldiers = {
-		culture = paraguayan
-		religion = catholic
-		size = 86
-	}
-farmers = {
-		culture = paraguayan
-		religion = catholic
-		size = 115
-	}
-artisans = {
-		culture = guarani
-		religion = catholic
-		size = 9
-	}
-soldiers = {
-		culture = guarani
-		religion = catholic
-		size = 46
-	}
-farmers = {
-		culture = guarani
-		religion = catholic
-		size = 52
-	}
-artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 4
-		militancy = 4
-	}
-soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 2
-		militancy = 4
-	}
-farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 6
-		militancy = 4
-	}
-slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 12
-		militancy = 2
-	}
-aristocrats = {
-		culture = paraguayan
-		religion = catholic
-		size = 1
-	}
-artisans = {
-		culture = paraguayan
-		religion = catholic
-		size = 3
-	}
-soldiers = {
-		culture = paraguayan
-		religion = catholic
-		size = 4
-	}
-farmers = {
-		culture = paraguayan
-		religion = catholic
-		size = 20
 	}
 artisans = {
 		culture = guarani
 		religion = animist
-		size = 3
+		size = 5
 	}
 farmers = {
 		culture = guarani
 		religion = animist
-		size = 15
+		size = 49
 	}
 artisans = {
 		culture = arawak
@@ -525,20 +306,10 @@ farmers = {
 		religion = animist
 		size = 6
 	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 2
-	}
 soldiers = {
 		culture = guarani
 		religion = animist
 		size = 1
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 34
 	}
 }
 
@@ -556,27 +327,27 @@ clergymen = {
 artisans = {
 		culture = paraguayan
 		religion = catholic
-		size = 498
+		size = 499
 	}
 soldiers = {
 		culture = paraguayan
 		religion = catholic
-		size = 748
+		size = 749
 	}
 farmers = {
 		culture = paraguayan
 		religion = catholic
-		size = 3988
+		size = 3995
 	}
 artisans = {
 		culture = guarani
 		religion = animist
-		size = 498
+		size = 501
 	}
 farmers = {
 		culture = guarani
 		religion = animist
-		size = 2991
+		size = 3010
 	}
 artisans = {
 		culture = arawak
@@ -586,67 +357,12 @@ artisans = {
 farmers = {
 		culture = arawak
 		religion = animist
-		size = 1246
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 2
+		size = 1249
 	}
 soldiers = {
-		culture = guarani
-		religion = animist
-		size = 2
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 11
-	}
-soldiers = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
-farmers = {
 		culture = guarani
 		religion = animist
 		size = 3
-	}
-farmers = {
-		culture = arawak
-		religion = animist
-		size = 1
-	}
-artisans = {
-		culture = paraguayan
-		religion = catholic
-		size = 1
-	}
-soldiers = {
-		culture = paraguayan
-		religion = catholic
-		size = 1
-	}
-farmers = {
-		culture = paraguayan
-		religion = catholic
-		size = 7
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 5
-	}
-farmers = {
-		culture = arawak
-		religion = animist
-		size = 2
 	}
 }
 
@@ -659,7 +375,7 @@ clergymen = {
 artisans = {
 		culture = guarani
 		religion = animist
-		size = 240
+		size = 242
 	}
 soldiers = {
 		culture = guarani
@@ -669,22 +385,7 @@ soldiers = {
 farmers = {
 		culture = guarani
 		religion = animist
-		size = 1198
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 3
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 2
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 22
+		size = 1223
 	}
 }
 
@@ -725,17 +426,17 @@ farmers = {
 artisans = {
 		culture = paraguayan
 		religion = catholic
-		size = 2
+		size = 916
 	}
 farmers = {
 		culture = paraguayan
 		religion = catholic
-		size = 5
+		size = 7704
 	}
 farmers = {
 		culture = platinean
 		religion = catholic
-		size = 2
+		size = 5
 	}
 farmers = {
 		culture = afro_caribeno
@@ -757,7 +458,7 @@ farmers = {
 farmers = {
 		culture = guarani
 		religion = animist
-		size = 13
+		size = 1459
 	}
 aristocrats = {
 		culture = paraguayan
@@ -769,50 +470,20 @@ clergymen = {
 		religion = catholic
 		size = 48
 	}
-artisans = {
-		culture = paraguayan
-		religion = catholic
-		size = 914
-	}
 soldiers = {
 		culture = paraguayan
 		religion = catholic
 		size = 722
 	}
-farmers = {
-		culture = paraguayan
-		religion = catholic
-		size = 7699
-	}
 artisans = {
 		culture = guarani
 		religion = animist
-		size = 481
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 1444
+		size = 482
 	}
 artisans = {
 		culture = platinean
 		religion = catholic
 		size = 1
-	}
-farmers = {
-		culture = platinean
-		religion = catholic
-		size = 3
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 2
 	}
 }
 
@@ -820,27 +491,27 @@ farmers = {
 aristocrats = {
 		culture = paraguayan
 		religion = catholic
-		size = 4
+		size = 487
 	}
 clergymen = {
 		culture = paraguayan
 		religion = catholic
-		size = 1
+		size = 242
 	}
 artisans = {
 		culture = paraguayan
 		religion = catholic
-		size = 16
+		size = 2193
 	}
 soldiers = {
 		culture = paraguayan
 		religion = catholic
-		size = 12
+		size = 7269
 	}
 farmers = {
 		culture = paraguayan
 		religion = catholic
-		size = 134
+		size = 9809
 	}
 artisans = {
 		culture = guarani
@@ -850,12 +521,7 @@ artisans = {
 farmers = {
 		culture = guarani
 		religion = animist
-		size = 25
-	}
-aristocrats = {
-		culture = paraguayan
-		religion = catholic
-		size = 483
+		size = 26
 	}
 bureaucrats = {
 		culture = paraguayan
@@ -866,26 +532,6 @@ officers = {
 		culture = paraguayan
 		religion = catholic
 		size = 96
-	}
-clergymen = {
-		culture = paraguayan
-		religion = catholic
-		size = 241
-	}
-artisans = {
-		culture = paraguayan
-		religion = catholic
-		size = 2177
-	}
-soldiers = {
-		culture = paraguayan
-		religion = catholic
-		size = 7257
-	}
-farmers = {
-		culture = paraguayan
-		religion = catholic
-		size = 9675
 	}
 artisans = {
 		culture = guarani
@@ -931,68 +577,58 @@ farmers = {
 		religion = catholic
 		size = 3
 	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
 }
 
 5888 = {
 aristocrats = {
 		culture = paraguayan
 		religion = catholic
-		size = 1
+		size = 224
 	}
 artisans = {
 		culture = paraguayan
 		religion = catholic
-		size = 2
+		size = 497
 	}
 soldiers = {
 		culture = paraguayan
 		religion = catholic
-		size = 2
+		size = 745
 	}
 farmers = {
 		culture = paraguayan
 		religion = catholic
-		size = 12
+		size = 3975
 	}
 artisans = {
 		culture = guarani
 		religion = animist
-		size = 2
+		size = 499
 	}
 farmers = {
 		culture = guarani
 		religion = animist
-		size = 9
+		size = 2999
 	}
 artisans = {
 		culture = arawak
 		religion = animist
-		size = 1
+		size = 249
 	}
 farmers = {
 		culture = arawak
 		religion = animist
-		size = 4
+		size = 1243
 	}
 aristocrats = {
 		culture = brazilian
 		religion = catholic
-		size = 1
+		size = 3
 	}
 farmers = {
 		culture = brazilian
 		religion = catholic
-		size = 1
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 5
+		size = 3
 	}
 farmers = {
 		culture = tupinamba
@@ -1004,70 +640,10 @@ farmers = {
 		religion = animist
 		size = 3
 	}
-aristocrats = {
-		culture = brazilian
-		religion = catholic
-		size = 2
-	}
-farmers = {
-		culture = brazilian
-		religion = catholic
-		size = 2
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 2
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 13
-	}
-aristocrats = {
-		culture = paraguayan
-		religion = catholic
-		size = 223
-	}
 clergymen = {
 		culture = paraguayan
 		religion = catholic
 		size = 25
-	}
-artisans = {
-		culture = paraguayan
-		religion = catholic
-		size = 495
-	}
-soldiers = {
-		culture = paraguayan
-		religion = catholic
-		size = 743
-	}
-farmers = {
-		culture = paraguayan
-		religion = catholic
-		size = 3963
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 495
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 2972
-	}
-artisans = {
-		culture = arawak
-		religion = animist
-		size = 248
-	}
-farmers = {
-		culture = arawak
-		religion = animist
-		size = 1239
 	}
 }
 
@@ -1075,57 +651,22 @@ farmers = {
 clergymen = {
 		culture = guarani
 		religion = animist
-		size = 1
+		size = 27
 	}
 artisans = {
 		culture = guarani
 		religion = animist
-		size = 8
+		size = 263
 	}
 soldiers = {
 		culture = guarani
 		religion = animist
-		size = 7
+		size = 236
 	}
 farmers = {
 		culture = guarani
 		religion = animist
-		size = 38
-	}
-clergymen = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 5
-	}
-soldiers = {
-		culture = guarani
-		religion = animist
-		size = 2
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 82
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
-soldiers = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 3
+		size = 1376
 	}
 artisans = {
 		culture = quechua
@@ -1136,21 +677,6 @@ farmers = {
 		culture = quechua
 		religion = animist
 		size = 2
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 1
-	}
-soldiers = {
-		culture = guarani
-		religion = animist
-		size = 2
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 12
 	}
 artisans = {
 		culture = arawak
@@ -1161,25 +687,5 @@ farmers = {
 		culture = arawak
 		religion = animist
 		size = 4
-	}
-clergymen = {
-		culture = guarani
-		religion = animist
-		size = 25
-	}
-artisans = {
-		culture = guarani
-		religion = animist
-		size = 248
-	}
-soldiers = {
-		culture = guarani
-		religion = animist
-		size = 224
-	}
-farmers = {
-		culture = guarani
-		religion = animist
-		size = 1241
 	}
 }

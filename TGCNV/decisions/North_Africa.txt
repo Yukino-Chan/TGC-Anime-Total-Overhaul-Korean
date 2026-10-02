@@ -397,6 +397,8 @@ political_decisions = {
 					1717 = { empty = yes }
 				}
 				1717 = { secede_province = THIS add_core = ALD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+				5269 = { secede_province = THIS add_core = ALD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1717
+				5270 = { secede_province = THIS add_core = ALD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1717
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Algeria
@@ -405,6 +407,8 @@ political_decisions = {
 					1717 = { empty = yes }
 				}
 				1717 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5269 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1717
+				5270 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1717
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Tripolitania unorganized
@@ -413,6 +417,7 @@ political_decisions = {
 					1742 = { empty = yes }
 				}
 				1742 = { secede_province = THIS add_core = TRI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+				7462 = { secede_province = THIS add_core = TRI add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1742
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Tripolitania organized
@@ -421,6 +426,7 @@ political_decisions = {
 					1742 = { empty = yes }
 				}
 				1742 = { secede_province = THIS add_core = LBY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+				7462 = { add_core = LBY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1742
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Tripolitania
@@ -429,6 +435,7 @@ political_decisions = {
 					1742 = { empty = yes }
 				}
 				1742 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				7462 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1742
 			}
 			random_owned = {				# Cyrenaica unorganized
 				limit = {
@@ -436,6 +443,7 @@ political_decisions = {
 					2585 = { empty = yes }
 				}
 				2585 = { secede_province = THIS add_core = CYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+				6126 = { secede_province = THIS add_core = CYR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 2585
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Cyrenaica organized
@@ -444,6 +452,7 @@ political_decisions = {
 					2585 = { empty = yes }
 				}
 				2585 = { secede_province = THIS add_core = LBY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+				6126 = { add_core = LBY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 2585
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Cyrenaica
@@ -452,6 +461,7 @@ political_decisions = {
 					2585 = { empty = yes }
 				}
 				2585 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6126 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2585
 			}
 			random_owned = {				# Egypt
 				limit = {
@@ -459,6 +469,7 @@ political_decisions = {
 					1758 = { empty = yes }
 				}
 				1758 = { secede_province = THIS add_core = EGY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+				5313 = { secede_province = THIS add_core = EGY add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1758
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Egypt
@@ -467,6 +478,7 @@ political_decisions = {
 					1758 = { empty = yes }
 				}
 				1758 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5313 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1758
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Sudan
@@ -475,7 +487,9 @@ political_decisions = {
 					2564 = { empty = yes }
 				}
 				2564 = { secede_province = THIS add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+				6105 = { secede_province = THIS add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 2564
 				1817 = { secede_province = THIS add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } }
+				5372 = { secede_province = THIS add_core = SUD add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } any_pop = { literacy = -0.99 } } # TGCNV split half of 1817
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Sudan
@@ -484,7 +498,9 @@ political_decisions = {
 					2564 = { empty = yes }
 				}
 				2564 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				6105 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 2564
 				1817 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				5372 = { add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 1817
 				owner = { prestige = 2 }
 			}
 			random_owned = { 				# Chad
@@ -493,7 +509,10 @@ political_decisions = {
 					1826 = { empty = yes }
 				}
 				1826 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				5381 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1826
+				5382 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1826
 				1744 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				5299 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1744
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Niger
@@ -504,8 +523,11 @@ political_decisions = {
 					1814 = { empty = yes }
 				}
 				1812 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				5367 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1812
 				1813 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				5368 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1813
 				1814 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				5369 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1814
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Mali
@@ -516,8 +538,11 @@ political_decisions = {
 					1805 = { empty = yes }
 				}
 				2609 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				6149 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 2609
 				1807 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				5362 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1807
 				1805 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				5360 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1805
 				owner = { prestige = 2 }
 			}
 			random_owned = {				# Mauritania
@@ -527,7 +552,9 @@ political_decisions = {
 					1781 = { empty = yes }
 				}
 				1782 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				5337 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1782
 				1781 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+				5336 = { secede_province = THIS any_pop = { literacy = -0.99 } } # TGCNV split half of 1781
 				1782 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 				1781 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 				owner = { prestige = 2 }

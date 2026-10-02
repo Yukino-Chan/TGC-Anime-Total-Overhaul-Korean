@@ -22,12 +22,12 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 118
+		size = 1000
 	}
 farmers = {
 		culture = estonian
 		religion = lutheran
-		size = 17342
+		size = 17098
 	}
 aristocrats = {
 		culture = north_german
@@ -57,7 +57,7 @@ artisans = {
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 7
+		size = 48
 	}
 clergymen = {
 		culture = swedish
@@ -82,7 +82,7 @@ artisans = {
 soldiers = {
 		culture = swedish
 		religion = lutheran
-		size = 7
+		size = 43
 	}
 farmers = {
 		culture = swedish
@@ -112,67 +112,17 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 4
+		size = 25
 	}
 farmers = {
 		culture = russian
 		religion = orthodox
 		size = 500
 	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 1
-	}
 farmers = {
 		culture = north_german
 		religion = lutheran
 		size = 5
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 1
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 575
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 36
-	}
-soldiers = {
-		culture = swedish
-		religion = lutheran
-		size = 36
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 18
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 55
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 3
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 4
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 7
 	}
 }
 
@@ -190,12 +140,12 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 469
+		size = 1000
 	}
 farmers = {
 		culture = estonian
 		religion = lutheran
-		size = 13222
+		size = 13050
 	}
 aristocrats = {
 		culture = north_german
@@ -215,7 +165,7 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 28
+		size = 249
 	}
 farmers = {
 		culture = russian
@@ -242,35 +192,10 @@ farmers = {
 		religion = lutheran
 		size = 1
 	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 5
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 1
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 354
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 214
-	}
 aristocrats = {
         culture = russian
         religion = orthodox
         size = 1
-    }
-soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 6
     }
 clergymen = {
         culture = ugrian
@@ -323,7 +248,7 @@ artisans = {
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 34
+		size = 39
 	}
 farmers = {
 		culture = north_german
@@ -343,22 +268,12 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 68
+		size = 91
 	}
 farmers = {
 		culture = estonian
 		religion = lutheran
 		size = 9343
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 5
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 17
 	}
 clergymen = {
 		culture = russian
@@ -389,11 +304,6 @@ officers = {
 		culture = estonian
 		religion = protestant
 		size = 0
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 5
 	}
 bureaucrats = {
 		culture = north_german
@@ -448,47 +358,17 @@ farmers = {
 aristocrats = {
 		culture = russian
 		religion = orthodox
-		size = 0
+		size = 1
 	}
 officers = {
 		culture = russian
 		religion = orthodox
 		size = 0
 	}
-clergymen = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-artisans = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-clergymen = {
-		culture = north_german
-		religion = protestant
-		size = 0
-	}
-soldiers = {
-		culture = north_german
-		religion = protestant
-		size = 0
-	}
 farmers = {
 		culture = north_german
 		religion = protestant
 		size = 0
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 1
 	}
 clergymen = {
 		culture = latvian
@@ -516,16 +396,6 @@ farmers = {
 		size = 3
 	}
 clergymen = {
-		culture = north_german
-		religion = protestant
-		size = 0
-	}
-soldiers = {
-		culture = north_german
-		religion = protestant
-		size = 0
-	}
-clergymen = {
 		culture = ashkenazi
 		religion = jewish
 		size = 0
@@ -544,26 +414,6 @@ farmers = {
 		culture = ashkenazi
 		religion = jewish
 		size = 2
-	}
-aristocrats = {
-		culture = russian
-		religion = orthodox
-		size = 1
-	}
-clergymen = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-artisans = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 0
 	}
 aristocrats = {
 		culture = polish
@@ -606,12 +456,12 @@ clergymen = {
 artisans = {
 		culture = north_german
 		religion = lutheran
-		size = 1081
+		size = 1083
 	}
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 38
+		size = 57
 	}
 farmers = {
 		culture = north_german
@@ -626,17 +476,17 @@ clergymen = {
 artisans = {
 		culture = estonian
 		religion = lutheran
-		size = 740
+		size = 741
 	}
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 133
+		size = 199
 	}
 farmers = {
 		culture = estonian
 		religion = lutheran
-		size = 20472
+		size = 20513
 	}
 clergymen = {
 		culture = russian
@@ -651,47 +501,12 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 38
+		size = 57
 	}
 farmers = {
 		culture = russian
 		religion = orthodox
-		size = 753
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 19
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 66
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 19
-	}
-artisans = {
-		culture = north_german
-		religion = lutheran
-		size = 2
-	}
-artisans = {
-		culture = estonian
-		religion = lutheran
-		size = 1
-	}
-farmers = {
-		culture = estonian
-		religion = lutheran
-		size = 41
-	}
-farmers = {
-		culture = russian
-		religion = orthodox
-		size = 2
+		size = 755
 	}
 }
 
@@ -714,17 +529,12 @@ artisans = {
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 49
+		size = 134
 	}
 farmers = {
 		culture = north_german
 		religion = lutheran
 		size = 231
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 25
 	}
 clergymen = {
 		culture = estonian
@@ -739,27 +549,12 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 49
+		size = 89
 	}
 farmers = {
 		culture = estonian
 		religion = lutheran
 		size = 2624
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 40
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 20
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 40
 	}
 }
 
@@ -777,7 +572,7 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 17
+		size = 635
 	}
 farmers = {
 		culture = estonian
@@ -802,42 +597,17 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 1
+		size = 550
 	}
 farmers = {
 		culture = russian
 		religion = orthodox
 		size = 2093
 	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 471
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 286
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 147
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 89
-	}
 aristocrats = {
         culture = russian
         religion = orthodox
         size = 26
-    }
-soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 85
     }
 serfs = {
         culture = estonian
@@ -848,11 +618,6 @@ farmers = {
         culture = finnish
         religion = orthodox
         size = 295
-    }
-soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 86
     }
 clergymen = {
         culture = ugrian
@@ -879,21 +644,6 @@ soldiers = {
         religion = protestant
         size = 0
     }
-aristocrats = {
-        culture = russian
-        religion = orthodox
-        size = 0
-    }
-clergymen = {
-        culture = russian
-        religion = orthodox
-        size = 0
-    }
-soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 3
-    }
 }
 
 3377 = {
@@ -910,7 +660,7 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 421
+		size = 466
 	}
 farmers = {
 		culture = estonian
@@ -935,7 +685,7 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 255
+		size = 271
 	}
 farmers = {
 		culture = russian
@@ -955,21 +705,11 @@ artisans = {
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 13
+		size = 16
 	}
 farmers = {
 		culture = north_german
 		religion = lutheran
-		size = 13
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 45
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
 		size = 13
 	}
 clergymen = {
@@ -997,11 +737,6 @@ farmers = {
 		religion = orthodox
 		size = 33
 	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 3
-	}
 clergymen = {
 		culture = ashkenazi
 		religion = jewish
@@ -1026,11 +761,6 @@ aristocrats = {
 		culture = russian
 		religion = orthodox
 		size = 7
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 3
 	}
 aristocrats = {
 		culture = polish
@@ -1196,7 +926,7 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 339
+		size = 911
 	}
 farmers = {
 		culture = estonian
@@ -1221,7 +951,7 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 21
+		size = 58
 	}
 farmers = {
 		culture = russian
@@ -1248,16 +978,6 @@ farmers = {
 		religion = lutheran
 		size = 3
 	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 9
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 3
-	}
 aristocrats = {
 		culture = estonian
 		religion = protestant
@@ -1272,11 +992,6 @@ clergymen = {
 		culture = estonian
 		religion = protestant
 		size = 0
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 1
 	}
 aristocrats = {
 		culture = north_german
@@ -1343,31 +1058,6 @@ officers = {
 		religion = orthodox
 		size = 0
 	}
-clergymen = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-artisans = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 562
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 34
-	}
 }
 
 3912 = {
@@ -1389,7 +1079,7 @@ artisans = {
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 9
+		size = 49
 	}
 farmers = {
 		culture = north_german
@@ -1409,22 +1099,12 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 18
+		size = 89
 	}
 farmers = {
 		culture = estonian
 		religion = lutheran
 		size = 9799
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 35
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 71
 	}
 clergymen = {
 		culture = latvian
@@ -1450,11 +1130,6 @@ farmers = {
 		culture = byelorussian
 		religion = orthodox
 		size = 57
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 5
 	}
 clergymen = {
 		culture = ashkenazi
@@ -1547,17 +1222,12 @@ artisans = {
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 6
+		size = 9
 	}
 farmers = {
 		culture = north_german
 		religion = lutheran
 		size = 16
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 3
 	}
 clergymen = {
 		culture = estonian
@@ -1620,7 +1290,7 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 411
+		size = 709
 	}
 farmers = {
 		culture = russian
@@ -1680,7 +1350,7 @@ farmers = {
 aristocrats = {
 		culture = russian
 		religion = orthodox
-		size = 0
+		size = 46
 	}
 bureaucrats = {
 		culture = russian
@@ -1692,40 +1362,10 @@ officers = {
 		religion = orthodox
 		size = 0
 	}
-clergymen = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-artisans = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 0
-	}
-aristocrats = {
-        culture = russian
-        religion = orthodox
-        size = 46
-    }
-soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 23
-    }
 serfs = {
         culture = estonian
         religion = orthodox
         size = 930
-    }
-soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 275
     }
 }
 
@@ -1768,7 +1408,7 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 2
+		size = 404
 	}
 farmers = {
 		culture = estonian
@@ -1788,22 +1428,12 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 1
+		size = 245
 	}
 farmers = {
 		culture = russian
 		religion = orthodox
 		size = 739
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 402
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 244
 	}
 }
 
@@ -1821,7 +1451,7 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 394
+		size = 705
 	}
 farmers = {
 		culture = estonian
@@ -1846,7 +1476,7 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 239
+		size = 451
 	}
 farmers = {
 		culture = russian
@@ -1866,32 +1496,12 @@ artisans = {
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 1
+		size = 3
 	}
 farmers = {
 		culture = north_german
 		religion = lutheran
 		size = 1
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 3
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 1
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 308
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 186
 	}
 clergymen = {
 		culture = latvian
@@ -1906,7 +1516,7 @@ artisans = {
 soldiers = {
 		culture = latvian
 		religion = catholic
-		size = 5
+		size = 8
 	}
 farmers = {
 		culture = latvian
@@ -1926,7 +1536,7 @@ artisans = {
 soldiers = {
 		culture = latvian
 		religion = lutheran
-		size = 1
+		size = 15
 	}
 farmers = {
 		culture = latvian
@@ -1938,25 +1548,10 @@ aristocrats = {
 		religion = orthodox
 		size = 57
 	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 3
-	}
-soldiers = {
-		culture = latvian
-		religion = lutheran
-		size = 13
-	}
 farmers = {
 		culture = byelorussian
 		religion = orthodox
 		size = 7
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 1
 	}
 clergymen = {
 		culture = ashkenazi
@@ -1971,17 +1566,12 @@ artisans = {
 soldiers = {
 		culture = ashkenazi
 		religion = jewish
-		size = 1
+		size = 2
 	}
 farmers = {
 		culture = ashkenazi
 		religion = jewish
 		size = 7
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 1
 	}
 aristocrats = {
 		culture = polish
@@ -2008,46 +1598,16 @@ farmers = {
 		religion = catholic
 		size = 49
 	}
-soldiers = {
-		culture = latvian
-		religion = catholic
-		size = 3
-	}
 clergymen = {
 		culture = latvian
 		religion = protestant
 		size = 0
-	}
-soldiers = {
-		culture = latvian
-		religion = lutheran
-		size = 1
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 1
-	}
-soldiers = {
-		culture = ashkenazi
-		religion = jewish
-		size = 1
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 1
 	}
 farmers = {
 		culture = lithuanian
 		religion = catholic
 		size = 21
 	}
-soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 20
-    }
 serfs = {
         culture = russian
         religion = orthodox
@@ -2066,11 +1626,6 @@ soldiers = {
 soldiers = {
         culture = latvian
         religion = protestant
-        size = 0
-    }
-clergymen = {
-        culture = ashkenazi
-        religion = jewish
         size = 0
     }
 }
@@ -2099,7 +1654,7 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 116
+		size = 121
 	}
 farmers = {
 		culture = estonian
@@ -2134,7 +1689,7 @@ artisans = {
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 7
+		size = 14
 	}
 clergymen = {
 		culture = swedish
@@ -2196,35 +1751,10 @@ farmers = {
 		religion = orthodox
 		size = 72
 	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 1
-	}
 farmers = {
 		culture = north_german
 		religion = lutheran
 		size = 11
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 1
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 4
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 2
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 4
 	}
 }
 
@@ -2252,7 +1782,7 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 327
+		size = 344
 	}
 farmers = {
 		culture = estonian
@@ -2287,7 +1817,7 @@ artisans = {
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 21
+		size = 29
 	}
 clergymen = {
 		culture = swedish
@@ -2349,20 +1879,10 @@ farmers = {
 		religion = orthodox
 		size = 205
 	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 8
-	}
 farmers = {
 		culture = north_german
 		religion = lutheran
 		size = 8
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 17
 	}
 }
 
@@ -2385,7 +1905,7 @@ artisans = {
 soldiers = {
 		culture = north_german
 		religion = lutheran
-		size = 5
+		size = 23
 	}
 farmers = {
 		culture = north_german
@@ -2405,22 +1925,12 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 10
+		size = 448
 	}
 farmers = {
 		culture = estonian
 		religion = lutheran
 		size = 12297
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 2
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 8
 	}
 clergymen = {
 		culture = russian
@@ -2435,7 +1945,7 @@ artisans = {
 soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 2
+		size = 22
 	}
 farmers = {
 		culture = russian
@@ -2452,22 +1962,12 @@ officers = {
 		religion = lutheran
 		size = 21
 	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 219
-	}
 bureaucrats = {
 		culture = north_german
 		religion = lutheran
 		size = 10
 	}
 officers = {
-		culture = north_german
-		religion = lutheran
-		size = 14
-	}
-soldiers = {
 		culture = north_german
 		religion = lutheran
 		size = 14
@@ -2512,31 +2012,6 @@ officers = {
 		religion = orthodox
 		size = 1
 	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 7
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 208
-	}
-soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 13
-	}
-soldiers = {
-		culture = north_german
-		religion = lutheran
-		size = 2
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 3
-	}
 }
 
 7284 = {
@@ -2563,7 +2038,7 @@ artisans = {
 soldiers = {
 		culture = estonian
 		religion = lutheran
-		size = 1
+		size = 126
 	}
 farmers = {
 		culture = estonian
@@ -2584,11 +2059,6 @@ farmers = {
 		culture = russian
 		religion = orthodox
 		size = 231
-	}
-soldiers = {
-		culture = estonian
-		religion = lutheran
-		size = 125
 	}
 soldiers = {
 		culture = russian

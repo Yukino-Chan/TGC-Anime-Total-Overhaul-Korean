@@ -348,6 +348,7 @@ country_event = {
 		name = "EVTOPTA36713"
 		prestige = -40
 		387 = { remove_core = BEL remove_core = NET add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FRA } #French Part
+		3948 = { remove_core = BEL remove_core = NET add_core = FRA secede_province = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 387
 		393 = { remove_core = BEL remove_core = NET add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FRA }
 		394 = { remove_core = BEL remove_core = NET add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FRA }
 		3386 = { remove_core = BEL remove_core = NET add_core = FRA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FRA }
@@ -359,8 +360,10 @@ country_event = {
 		PRU = { inherit = MRN } #Prussia inherits Neutral Moresnet
 		3320 = { add_core = PRU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
 		392 = { remove_core = BEL remove_core = NET add_core = LUX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PRU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = PRU }
+		3953 = { remove_core = BEL remove_core = NET add_core = LUX add_core = PRU secede_province = PRU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 392
 		397 = { remove_core = NET add_core = PRU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = PRU }
 		395 = { remove_core = BEL remove_core = NET add_core = LUX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PRU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = PRU }
+		3956 = { remove_core = BEL remove_core = NET add_core = LUX add_core = PRU secede_province = PRU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 395
 		398 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_398  } remove_core = BEL remove_core = NET add_core = PRU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = PRU  } } }
 		3318 = { owner = { any_owned = { limit = { region = TGC_TERRITORY_3318  } remove_core = BEL remove_core = NET add_core = PRU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = PRU  } } }
 		3412 = { remove_core = BEL remove_core = NET add_core = LUX add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } add_core = PRU add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = PRU }
@@ -369,6 +372,7 @@ country_event = {
 		389 = { remove_core = BEL remove_core = NET secede_province = FLA }
 		3384 = { remove_core = BEL add_core = FLA add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FLA }
 		3461 = { remove_core = BEL remove_core = NET secede_province = FLA }
+		6472 = { remove_core = BEL remove_core = NET secede_province = FLA } # TGCNV split half of 3461
 		ENG = { create_vassal = FLA diplomatic_influence = { who = FLA value = 400 } } #British puppet Antwerpen Freestate
 		FLA = { government = colonial_company }
 
@@ -392,6 +396,7 @@ country_event = {
 		inherit = BEL
 		390 = { remove_core = BEL }
 		391 = { remove_core = BEL }
+		3952 = { remove_core = BEL } # TGCNV split half of 391
 		3410 = { remove_core = BEL }
 		ai_chance = {
 			factor = 95
@@ -408,6 +413,7 @@ country_event = {
 		prestige = 10
 		390 = { remove_core = NET }
 		391 = { remove_core = NET }
+		3952 = { remove_core = NET } # TGCNV split half of 391
 		3410 = { remove_core = NET }
 		create_vassal = BEL
 		BEL = { government = colonial_company primary_culture = dutch add_accepted_culture = french }
@@ -1064,9 +1070,11 @@ country_event = {
 		badboy = -2
 		prestige = 10
 		392 = { add_core = FROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = NET }
+		3953 = { add_core = FROM secede_province = FROM remove_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 392
 		393 = { add_core = FROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = NET }
 		394 = { add_core = FROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = NET }
 		395 = { add_core = FROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = NET }
+		3956 = { add_core = FROM secede_province = FROM remove_core = NET add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 395
 		3412 = { add_core = FROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = NET }
 		3463 = { add_core = FROM add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } secede_province = FROM remove_core = NET }
 		BEL = { all_core = { remove_core = BEL } }

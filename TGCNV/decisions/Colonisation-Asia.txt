@@ -172,8 +172,8 @@ political_decisions = {
 				limit = {
 					NOT = { is_core = INO }
 					OR = {
-						province_id = 1439
-						province_id = 1444
+						province_id = 1439 province_id = 4996
+						province_id = 1444 province_id = 5001
 					}
 				}
 				add_core = TMR add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
