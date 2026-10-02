@@ -1042,7 +1042,7 @@ guiTypes = {
 	windowType = {
 		name = "state_info"
 		backGround =""
-		size = { x=964 y=150 }
+		size = { x=964 y=146 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = "0"
@@ -1141,7 +1141,7 @@ guiTypes = {
 			leftbutton = "left"
 			rightbutton = "right"
 			size = { x = 300 y = 20 }
-			position = { x = 596 y = 128 }
+			position = { x = 596 y = 125 }
 			priority = 100
 			minValue = 0
 			maxValue = 4
@@ -1175,7 +1175,7 @@ guiTypes = {
 	windowType = {
 		name = "state_info_invest"
 		backGround =""
-		size = { x=964 y=150 }
+		size = { x=964 y=146 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = "0"
@@ -1267,7 +1267,7 @@ guiTypes = {
 			leftbutton = "left"
 			rightbutton = "right"
 			size = { x = 300 y = 20 }
-			position = { x = 596 y = 128 }
+			position = { x = 596 y = 125 }
 			priority = 100
 			minValue = 0
 			maxValue = 4

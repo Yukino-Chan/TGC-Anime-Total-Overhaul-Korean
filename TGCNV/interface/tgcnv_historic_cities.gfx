@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_terrainimg_urban_aachen"
+		texturefile = "gfx\\interface\\terrain\\unique_urban\\terrain_urban_aachen.dds"
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_terrainimg_urban_trier"
+		texturefile = "gfx\\interface\\terrain\\unique_urban\\terrain_urban_trier.dds"
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_terrainimg_urban_kiel"
+		texturefile = "gfx\\interface\\terrain\\unique_urban\\terrain_urban_kiel.dds"
+		norefcount = yes
+	}
+}

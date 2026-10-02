@@ -303,14 +303,14 @@ political_decisions = {
 			set_global_flag = usa_seize_texas
 			inherit = ADV
 			133 = {
-				change_province_name = "¿À½ºÆ¾"
+				change_province_name = "ÇÁ·¹´õ¸¯½º¹ö±×"
 				
 			}
 			132 = { change_province_name = "ÈÞ½ºÅÏ" }
 			137 = { change_province_name = "»÷¾ÈÅä´Ï¿À" }
 			134 = { change_province_name = "¾Öºô¸°" }
 			43 = { change_province_name = "´î·¯½º" }
-			3371 = { change_province_name = "¿¤Ä¯Æ÷" }
+			3371 = { change_province_name = "¶ó±×·£Áö" }
 			3369 = { change_province_name = "º¸¸óÆ®" }
 			3370 = { change_province_name = "ÇåÃ÷ºô" }
 			ADV = { overlord = { end_war = USA } }

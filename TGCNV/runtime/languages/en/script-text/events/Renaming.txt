@@ -289,8 +289,8 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 2622 owner = { is_culture_group = germanic } } change_province_name = "Herzogenbar" }
 
 			# 3458
-			any_land_province = { limit = { province_id = 3458 owner = { is_culture_group = pan_french } } change_province_name = "Longwy" }
-			any_land_province = { limit = { province_id = 3458 owner = { is_culture_group = germanic } } change_province_name = "Langich" }
+			any_land_province = { limit = { province_id = 3458 owner = { is_culture_group = pan_french } } change_province_name = "Virton" }
+			any_land_province = { limit = { province_id = 3458 owner = { is_culture_group = germanic } } change_province_name = "Virton" }
 
 			# 3482
 			any_land_province = { limit = { province_id = 3482 owner = { is_culture_group = pan_french } } change_province_name = "La Bresse" }
@@ -342,9 +342,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 3462 owner = { is_culture_group = pan_french } } change_province_name = "Saint-Trond" }
 
 			# 382
-			any_land_province = { limit = { province_id = 382 owner = { is_culture_group = beneluxian } } change_province_name = "Arnhem-Nijmegen" }
-			any_land_province = { limit = { province_id = 382 owner = { is_culture_group = germanic } } change_province_name = "Arnheim-Nimwegen" }
-			any_land_province = { limit = { province_id = 382 owner = { is_culture_group = pan_french } } change_province_name = "Arnhem-Nimegue" }
+			any_land_province = { limit = { province_id = 382 owner = { is_culture_group = beneluxian } } change_province_name = "Nijmegen" }
+			any_land_province = { limit = { province_id = 382 owner = { is_culture_group = germanic } } change_province_name = "Nimwegen" }
+			any_land_province = { limit = { province_id = 382 owner = { is_culture_group = pan_french } } change_province_name = "Nijmegen" }
 
 			# 3455
 			any_land_province = { limit = { province_id = 3455 owner = { is_culture_group = beneluxian } } change_province_name = "Tiel" }
@@ -427,9 +427,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 395 owner = { is_culture_group = pan_french } } change_province_name = "Liege" }
 
 			# 3412
-			any_land_province = { limit = { province_id = 3412 owner = { is_culture_group = beneluxian } } change_province_name = "Blieberg" }
-			any_land_province = { limit = { province_id = 3412 owner = { is_culture_group = germanic } } change_province_name = "Bleyberg" }
-			any_land_province = { limit = { province_id = 3412 owner = { is_culture_group = pan_french } } change_province_name = "Plombieres" }
+			any_land_province = { limit = { province_id = 3412 owner = { is_culture_group = beneluxian } } change_province_name = "Verviers" }
+			any_land_province = { limit = { province_id = 3412 owner = { is_culture_group = germanic } } change_province_name = "Verviers" }
+			any_land_province = { limit = { province_id = 3412 owner = { is_culture_group = pan_french } } change_province_name = "Verviers" }
 
 			# 533
 			any_land_province = { limit = { province_id = 533 owner = { OR = { is_culture_group = germanic is_culture_group = scandinavian } } } change_province_name = "Helgoland" }
@@ -542,9 +542,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 685 owner = { is_culture_group = czecho_slovak_culture_group } } change_province_name = "Katovice" }
 
 			# 3495
-			any_land_province = { limit = { province_id = 3495 owner = { is_culture_group = germanic } } change_province_name = "Reichthal" }
-			any_land_province = { limit = { province_id = 3495 owner = { is_culture_group = polish_culture_group } } change_province_name = "Rychtal" }
-			any_land_province = { limit = { province_id = 3495 owner = { is_culture_group = czecho_slovak_culture_group } } change_province_name = "Rychly" }
+			any_land_province = { limit = { province_id = 3495 owner = { is_culture_group = germanic } } change_province_name = "Rawicz" }
+			any_land_province = { limit = { province_id = 3495 owner = { is_culture_group = polish_culture_group } } change_province_name = "Rawicz" }
+			any_land_province = { limit = { province_id = 3495 owner = { is_culture_group = czecho_slovak_culture_group } } change_province_name = "Rawicz" }
 
 			# 3277
 			any_land_province = { limit = { province_id = 3277 owner = { is_culture_group = germanic } } change_province_name = "Hultschin" }
@@ -629,8 +629,8 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 700 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "Bydgoszcz" }
 
 			# 701
-			any_land_province = { limit = { province_id = 701 owner = { is_culture_group = germanic } } change_province_name = "Gnesen" }
-			any_land_province = { limit = { province_id = 701 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "Gniezno" }
+			any_land_province = { limit = { province_id = 701 owner = { is_culture_group = germanic } } change_province_name = "Lissa" }
+			any_land_province = { limit = { province_id = 701 owner = { OR = { is_culture_group = polish_culture_group AND = { is_culture_group = czecho_slovak_culture_group accepted_culture = polish } } } } change_province_name = "Leszno" }
 
 			# 3281
 			any_land_province = { limit = { province_id = 3281 owner = { is_culture_group = germanic } } change_province_name = "Fraustadt" }
@@ -662,9 +662,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 398 owner = { is_culture_group = pan_french } } change_province_name = "Bastogne" }
 
 			# 3318
-			any_land_province = { limit = { province_id = 3318 owner = { is_culture_group = germanic } } change_province_name = "Arel" }
-			any_land_province = { limit = { province_id = 3318 owner = { is_culture_group = beneluxian } } change_province_name = "Aarlen" }
-			any_land_province = { limit = { province_id = 3318 owner = { is_culture_group = pan_french } } change_province_name = "Arlon" }
+			any_land_province = { limit = { province_id = 3318 owner = { is_culture_group = germanic } } change_province_name = "Dudelange" }
+			any_land_province = { limit = { province_id = 3318 owner = { is_culture_group = beneluxian } } change_province_name = "Dudelange" }
+			any_land_province = { limit = { province_id = 3318 owner = { is_culture_group = pan_french } } change_province_name = "Dudelange" }
 
 			# 571
 			any_land_province = { limit = { province_id = 571 owner = { is_culture_group = germanic } } change_province_name = "Kaiserlautern" }
@@ -702,10 +702,10 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 576 owner = { is_culture_group = beneluxian } } change_province_name = "Bitburg" }
 
 			# 577
-			any_land_province = { limit = { province_id = 577 owner = { is_culture_group = germanic NOT = { has_global_flag = german_k_reform } } } change_province_name = "Cleve" }
-			any_land_province = { limit = { province_id = 577 owner = { is_culture_group = germanic has_global_flag = german_k_reform } } change_province_name = "Kleve" }
-			any_land_province = { limit = { province_id = 577 owner = { is_culture_group = pan_french } } change_province_name = "Cleves" }
-			any_land_province = { limit = { province_id = 577 owner = { is_culture_group = beneluxian } } change_province_name = "Kleef" }
+			any_land_province = { limit = { province_id = 577 owner = { is_culture_group = germanic NOT = { has_global_flag = german_k_reform } } } change_province_name = "Solingen" }
+			any_land_province = { limit = { province_id = 577 owner = { is_culture_group = germanic has_global_flag = german_k_reform } } change_province_name = "Solingen" }
+			any_land_province = { limit = { province_id = 577 owner = { is_culture_group = pan_french } } change_province_name = "Solingen" }
+			any_land_province = { limit = { province_id = 577 owner = { is_culture_group = beneluxian } } change_province_name = "Solingen" }
 
 			# 3302
 			any_land_province = { limit = { province_id = 3302 owner = { is_culture_group = germanic } } change_province_name = "Birkenfeld" }
@@ -1222,9 +1222,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 715 owner = { OR = { AND = { is_culture_group = germanic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = germanic } } } } } change_province_name = "Lublin" }
 
 			# 711
-			any_land_province = { limit = { province_id = 711 owner = { OR = { primary_culture = polish accepted_culture = polish } OR = { is_substate = no AND = { is_substate = yes NOT = { overlord = { is_culture_group = east_slavic } } NOT = { overlord = { is_culture_group = germanic } } } } } } change_province_name = "Siedlce" }
-			any_land_province = { limit = { province_id = 711 owner = { OR = { AND = { is_culture_group = east_slavic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = east_slavic } } } } } change_province_name = "Sedlets" }
-			any_land_province = { limit = { province_id = 711 owner = { OR = { AND = { is_culture_group = germanic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = germanic } } } } } change_province_name = "Siedlce" }
+			any_land_province = { limit = { province_id = 711 owner = { OR = { primary_culture = polish accepted_culture = polish } OR = { is_substate = no AND = { is_substate = yes NOT = { overlord = { is_culture_group = east_slavic } } NOT = { overlord = { is_culture_group = germanic } } } } } } change_province_name = "Sandomierz" }
+			any_land_province = { limit = { province_id = 711 owner = { OR = { AND = { is_culture_group = east_slavic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = east_slavic } } } } } change_province_name = "Sandomierz" }
+			any_land_province = { limit = { province_id = 711 owner = { OR = { AND = { is_culture_group = germanic NOT = { accepted_culture = polish } } AND = { primary_culture = polish is_substate = yes overlord = { is_culture_group = germanic } } } } } change_province_name = "Sandomierz" }
 
 			# 713
 			any_land_province = { limit = { province_id = 713 owner = { OR = { primary_culture = polish accepted_culture = polish } OR = { is_substate = no AND = { is_substate = yes NOT = { overlord = { is_culture_group = east_slavic } } NOT = { overlord = { is_culture_group = germanic } } } } } } change_province_name = "Radom" }
@@ -1257,9 +1257,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 947 owner = { is_culture_group = germanic } } change_province_name = "Maladsetschna" }
 
 			# 948
-			any_land_province = { limit = { province_id = 948 owner = { is_culture_group = east_slavic } } change_province_name = "Mozyr" }
-			any_land_province = { limit = { province_id = 948 owner = { primary_culture = polish } } change_province_name = "Mozyrz" }
-			any_land_province = { limit = { province_id = 948 owner = { is_culture_group = germanic } } change_province_name = "Masyr" }
+			any_land_province = { limit = { province_id = 948 owner = { is_culture_group = east_slavic } } change_province_name = "Slutsk" }
+			any_land_province = { limit = { province_id = 948 owner = { primary_culture = polish } } change_province_name = "Slutsk" }
+			any_land_province = { limit = { province_id = 948 owner = { is_culture_group = germanic } } change_province_name = "Slutsk" }
 
 			# 3498
 			any_land_province = { limit = { province_id = 3498 owner = { is_culture_group = east_slavic } } change_province_name = "Lelchitsy" }
@@ -1272,9 +1272,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 937 owner = { is_culture_group = germanic } } change_province_name = "Pruschany" }
 
 			# 939
-			any_land_province = { limit = { province_id = 939 owner = { is_culture_group = east_slavic } } change_province_name = "Baranavichy" }
-			any_land_province = { limit = { province_id = 939 owner = { primary_culture = polish } } change_province_name = "Baranowicze" }
-			any_land_province = { limit = { province_id = 939 owner = { is_culture_group = germanic } } change_province_name = "Baranowitsch" }
+			any_land_province = { limit = { province_id = 939 owner = { is_culture_group = east_slavic } } change_province_name = "Slonim" }
+			any_land_province = { limit = { province_id = 939 owner = { primary_culture = polish } } change_province_name = "Slonim" }
+			any_land_province = { limit = { province_id = 939 owner = { is_culture_group = germanic } } change_province_name = "Slonim" }
 
 			# 940
 			any_land_province = { limit = { province_id = 940 owner = { is_culture_group = east_slavic } } change_province_name = "Brest-Litovsk" }
@@ -1538,12 +1538,12 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 1047 owner = { is_culture_group = germanic } } change_province_name = "Rostov-na-Donu" }
 
 			# 1046
-			any_land_province = { limit = { province_id = 1046 owner = { is_culture_group = east_slavic } } change_province_name = "Nizhne-Chirkasya" }
-			any_land_province = { limit = { province_id = 1046 owner = { is_culture_group = germanic } } change_province_name = "Niedertschar" }
+			any_land_province = { limit = { province_id = 1046 owner = { is_culture_group = east_slavic } } change_province_name = "Yegorlykskaya" }
+			any_land_province = { limit = { province_id = 1046 owner = { is_culture_group = germanic } } change_province_name = "Yegorlykskaya" }
 
 			# 1045
-			any_land_province = { limit = { province_id = 1045 owner = { is_culture_group = east_slavic } } change_province_name = "Ust-Medveditskaya" }
-			any_land_province = { limit = { province_id = 1045 owner = { is_culture_group = germanic } } change_province_name = "Mullerau" }
+			any_land_province = { limit = { province_id = 1045 owner = { is_culture_group = east_slavic } } change_province_name = "Bokovskaya" }
+			any_land_province = { limit = { province_id = 1045 owner = { is_culture_group = germanic } } change_province_name = "Bokovskaya" }
 
 			# 1048
 			any_land_province = { limit = { province_id = 1048 owner = { is_culture_group = east_slavic NOT = { has_country_flag = communist_gov } } } change_province_name = "Yekaterinodar" }
@@ -1899,9 +1899,9 @@ country_event = { # DEVNOTE: Many of the Lithuanian renames and other renames fo
 			any_land_province = { limit = { province_id = 635 owner = { is_culture_group = germanic NOT = { accepted_culture = hungarian } NOT = { accepted_culture = slovak } } } change_province_name = "Comorn" }
 
 			# 637
-			any_land_province = { limit = { province_id = 637 owner = { OR = { is_culture_group = hungarian_culture_group AND = { is_culture_group = germanic accepted_culture = hungarian NOT = { accepted_culture = slovak } } } } } change_province_name = "Rima Szombat" }
-			any_land_province = { limit = { province_id = 637 owner = { OR = { is_culture_group = czecho_slovak_culture_group AND = { is_culture_group = germanic accepted_culture = slovak } } } } change_province_name = "Rimavska Sobota" }
-			any_land_province = { limit = { province_id = 637 owner = { is_culture_group = germanic NOT = { accepted_culture = hungarian } NOT = { accepted_culture = slovak } } } change_province_name = "Grosssteffelsdorf" }
+			any_land_province = { limit = { province_id = 637 owner = { OR = { is_culture_group = hungarian_culture_group AND = { is_culture_group = germanic accepted_culture = hungarian NOT = { accepted_culture = slovak } } } } } change_province_name = "Rozsahegy" }
+			any_land_province = { limit = { province_id = 637 owner = { OR = { is_culture_group = czecho_slovak_culture_group AND = { is_culture_group = germanic accepted_culture = slovak } } } } change_province_name = "Ruzomberok" }
+			any_land_province = { limit = { province_id = 637 owner = { is_culture_group = germanic NOT = { accepted_culture = hungarian } NOT = { accepted_culture = slovak } } } change_province_name = "Rosenberg" }
 
 			# 641
 			any_land_province = { limit = { province_id = 641 owner = { OR = { is_culture_group = hungarian_culture_group AND = { is_culture_group = germanic accepted_culture = hungarian } } has_global_flag = budapest_founded } } change_province_name = "Budapest" }
@@ -2847,7 +2847,7 @@ country_event = {
 			any_land_province = { limit = { province_id = 1746 owner = { primary_culture = greek } } change_province_name = "Damietta" }
 
 			# 1747
-			any_land_province = { limit = { province_id = 1747 owner = { primary_culture = greek } } change_province_name = "Heliopolis" }
+			any_land_province = { limit = { province_id = 1747 owner = { primary_culture = greek } } change_province_name = "Nitria" }
 
 			# 1753
 			any_land_province = { limit = { province_id = 1753 owner = { primary_culture = greek } } change_province_name = "Antipyrgos"  }
@@ -3339,7 +3339,7 @@ country_event = {
 			any_land_province = { limit = { province_id = 150 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Lafayette" }
 
 			# 154
-			any_land_province = { limit = { province_id = 154 owner = { is_culture_group = american_cultures } } change_province_name = "Sioux City"  }
+			any_land_province = { limit = { province_id = 154 owner = { is_culture_group = american_cultures } } change_province_name = "Fort Dodge"  }
 			any_land_province = { limit = { province_id = 154 owner = { OR = { primary_culture = french_canadian primary_culture = french_australian primary_culture = cajun primary_culture = acadian is_culture_group = pan_french } } } change_province_name = "Aiaouez"  }
 
 			# 152
@@ -3452,7 +3452,7 @@ country_event = {
 
 			# 133
 			any_land_province = { limit = { province_id = 133 owner = { tag = MEX } } change_province_name = "Santa Anna"  }
-			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = american_cultures } } change_province_name = "Austin"  }
+			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = american_cultures } } change_province_name = "Fredericksburg"  }
 			any_land_province = { limit = { province_id = 133 owner = { is_culture_group = germanic has_global_flag = aquire_texas } } change_province_name = "Friedrichsburg"  }
 
 			# 43
@@ -3486,9 +3486,9 @@ country_event = {
 			any_land_province = { limit = { province_id = 3370 owner = { is_culture_group = germanic has_global_flag = aquire_texas } } change_province_name = "Neu Mainz" }
 
 			# 3371
-			any_land_province = { limit = { province_id = 3371 owner = { tag = MEX } } change_province_name = "Guadalupe Victoria" }
-			any_land_province = { limit = { province_id = 3371 owner = { is_culture_group = american_cultures } } change_province_name = "Victoria" }
-			any_land_province = { limit = { province_id = 3371 owner = { is_culture_group = germanic has_global_flag = aquire_texas } } change_province_name = "Carlshafen" }
+			any_land_province = { limit = { province_id = 3371 owner = { tag = MEX } } change_province_name = "La Grange" }
+			any_land_province = { limit = { province_id = 3371 owner = { is_culture_group = american_cultures } } change_province_name = "La Grange" }
+			any_land_province = { limit = { province_id = 3371 owner = { is_culture_group = germanic has_global_flag = aquire_texas } } change_province_name = "La Grange" }
 
 			# 2138
 			any_land_province = { limit = { province_id = 2138 owner = { OR = { primary_culture = mexican AND = { accepted_culture = mexican NOT = { has_global_flag = usa_anglify_north_mexico } } } } } change_province_name = "La Paz"  }

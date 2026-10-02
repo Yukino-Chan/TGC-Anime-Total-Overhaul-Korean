@@ -436,7 +436,7 @@ political_decisions = {
 				infrastructure = 1 owner = { treasury = -2000 }
 			}
 			25 = {
-				change_province_name = "Calgary"
+				change_province_name = "Edmonton"
 				HOP_25 = { life_rating = 15 }
 				HOP_25 = { add_province_modifier = { name = gateway_to_harbor duration = 720 } }
 				HOP_25 = { any_pop = { limit = { location = { region = HXP_26 } is_culture_group = pan_british } reduce_pop = 3 } }
@@ -454,9 +454,9 @@ political_decisions = {
 			30 = { change_province_name = "Regina" }
 			34 = { change_province_name = "Saskatoon" }
 			35 = { change_province_name = "Maple Creek" }
-			22 = { change_province_name = "Bonnyville" }
+			22 = { change_province_name = "Medicine Hat" }
 			26 = { change_province_name = "Red Deer" }
-			24 = { change_province_name = "Medicine Hat" }
+			24 = { change_province_name = "Milk River" }
 		}
 
 		ai_will_do = { factor = 1 }

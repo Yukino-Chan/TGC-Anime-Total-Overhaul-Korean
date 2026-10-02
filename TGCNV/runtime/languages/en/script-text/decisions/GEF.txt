@@ -303,14 +303,14 @@ political_decisions = {
 			set_global_flag = usa_seize_texas
 			inherit = ADV
 			133 = {
-				change_province_name = "Austin"
+				change_province_name = "Fredericksburg"
 				
 			}
 			132 = { change_province_name = "Houston" }
 			137 = { change_province_name = "San Antonio" }
 			134 = { change_province_name = "Abilene" }
 			43 = { change_province_name = "Dallas" }
-			3371 = { change_province_name = "El Campo" }
+			3371 = { change_province_name = "La Grange" }
 			3369 = { change_province_name = "Beaumont" }
 			3370 = { change_province_name = "Huntsville" }
 			ADV = { overlord = { end_war = USA } }
