@@ -107,32 +107,32 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "gp_info"
-			position = { x=25 y = 13 }
-			quadTextureSprite ="GFX_prod_tab_button"
+			position = { x = 25 y = 15 }
+			quadTextureSprite ="GFX_button_thin_120"
 		}
 		
 		instantTextBoxType = { 
 			name = "gp_info_text"
-			position = { x = 28 y = 20 }
-			font = "vic_22_black"
+			position = { x = 25 y = 17 }
+			font = "vic_18_black"
 			text = "DIPLOMACY_GP_INFO"	
-			maxWidth = 148
+			maxWidth = 120
 			maxHeight = 20
 			format = centre
 		}
 		
 		guiButtonType = {
 			name = "war_info"
-			position = { x=185 y = 13 }
-			quadTextureSprite ="GFX_prod_tab_button"
+			position = { x = 151 y = 15 }
+			quadTextureSprite ="GFX_button_thin_120"
 		}
 		
 		instantTextBoxType = { 
 			name = "war_info_text"
-			position = { x = 188 y = 20 }
-			font = "vic_22_black"
+			position = { x = 151 y = 17 }
+			font = "vic_18_black"
 			text = "DIPLOMACY_WAR_INFO"	
-			maxWidth = 148
+			maxWidth = 120
 			maxHeight = 20
 			format = centre
 		}
@@ -150,16 +150,16 @@ guiTypes = {
 		# CBs ############
 		guiButtonType = {
 			name = "cb_info"
-			position = { x=345 y = 13 }
-			quadTextureSprite ="GFX_prod_tab_button"
+			position = { x = 277 y = 15 }
+			quadTextureSprite ="GFX_button_thin_120"
 		}
 		
 		instantTextBoxType = { 
 			name = "cb_info_text"
-			position = { x = 348 y = 20 }
-			font = "vic_22_black"
+			position = { x = 277 y = 17 }
+			font = "vic_18_black"
 			text = "DIPLOMACY_CB_INFO"	
-			maxWidth = 148
+			maxWidth = 120
 			maxHeight = 20
 			format = centre
 		}
@@ -183,16 +183,16 @@ guiTypes = {
 		# Crisis ############
 		guiButtonType = {
 			name = "crisis_info"
-			position = { x=505 y = 13 }
-			quadTextureSprite ="GFX_prod_tab_button"
+			position = { x = 403 y = 15 }
+			quadTextureSprite ="GFX_button_thin_120"
 		}
 		
 		instantTextBoxType = { 
 			name = "crisis_info_text"
-			position = { x = 508 y = 20 }
-			font = "vic_22_black"
+			position = { x = 403 y = 17 }
+			font = "vic_18_black"
 			text = "DIPLOMACY_CRISIS_INFO"	
-			maxWidth = 148
+			maxWidth = 120
 			maxHeight = 20
 			format = centre
 		}
@@ -1278,7 +1278,7 @@ guiTypes = {
         # Prestige diplomacy: appended after native children to draw above them.
         guiButtonType = {
             name = "tg_prestige_open"
-            position = { x = 480 y = -28 }
+            position = { x = 529 y = 15 }
             quadTextureSprite = "GFX_button_thin_120"
             buttonFont = "vic_18_black"
             buttonText = "TGC_PRESTIGE_OPEN"
@@ -1286,8 +1286,8 @@ guiTypes = {
         }
         windowType = {
             name = "tg_prestige_panel"
-            position = { x = 42 y = 58 }
-            size = { x = 570 y = 350 }
+            position = { x = 25 y = 54 }
+            size = { x = 628 y = 234 }
             moveable = 0
             fullScreen = no
             orientation = "UPPER_LEFT"
@@ -1299,15 +1299,15 @@ guiTypes = {
             }
             instantTextBoxType = {
                 name = "tg_prestige_title"
-                position = { x = 26 y = 12 }
+                position = { x = 22 y = 10 }
                 font = "vic_22"
                 text = "TGC_PRESTIGE_TITLE"
-                maxWidth = 360
-                maxHeight = 24
+                maxWidth = 430
+                maxHeight = 25
             }
             guiButtonType = {
                 name = "tg_prestige_close"
-                position = { x = 426 y = 12 }
+                position = { x = 486 y = 11 }
                 quadTextureSprite = "GFX_button_thin_120"
                 buttonFont = "vic_18_black"
                 buttonText = "TGC_PRESTIGE_CLOSE"
@@ -1315,17 +1315,17 @@ guiTypes = {
             }
             instantTextBoxType = {
                 name = "tg_prestige_resources"
-                position = { x = 26 y = 44 }
+                position = { x = 22 y = 40 }
                 font = "vic_18"
                 text = " "
-                maxWidth = 520
-                maxHeight = 32
+                maxWidth = 586
+                maxHeight = 28
                 fixedsize = yes
             }
 
             guiButtonType = {
                 name = "tg_prestige_goodwill"
-                position = { x = 26 y = 84 }
+                position = { x = 22 y = 78 }
                 quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
                 buttonFont = "vic_18"
                 buttonText = "TGC_PRESTIGE_GOODWILL"
@@ -1333,57 +1333,39 @@ guiTypes = {
             }
             instantTextBoxType = {
                 name = "tg_prestige_effect0"
-                position = { x = 182 y = 84 }
+                position = { x = 184 y = 78 }
                 font = "vic_18"
                 text = " "
-                maxWidth = 362
-                maxHeight = 48
-                fixedsize = yes
-            }
-
-            guiButtonType = {
-                name = "tg_prestige_reopen"
-                position = { x = 26 y = 140 }
-                quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
-                buttonFont = "vic_18"
-                buttonText = "TGC_PRESTIGE_REOPEN"
-                clicksound = click
-            }
-            instantTextBoxType = {
-                name = "tg_prestige_effect1"
-                position = { x = 182 y = 140 }
-                font = "vic_18"
-                text = " "
-                maxWidth = 362
+                maxWidth = 422
                 maxHeight = 48
                 fixedsize = yes
             }
 
             guiButtonType = {
                 name = "tg_prestige_offensive"
-                position = { x = 26 y = 196 }
+                position = { x = 22 y = 136 }
                 quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
                 buttonFont = "vic_18"
                 buttonText = "TGC_PRESTIGE_OFFENSIVE"
                 clicksound = click
             }
             instantTextBoxType = {
-                name = "tg_prestige_effect2"
-                position = { x = 182 y = 196 }
+                name = "tg_prestige_effect1"
+                position = { x = 184 y = 136 }
                 font = "vic_18"
                 text = " "
-                maxWidth = 362
+                maxWidth = 422
                 maxHeight = 48
                 fixedsize = yes
             }
 
             instantTextBoxType = {
                 name = "tg_prestige_status"
-                position = { x = 26 y = 254 }
+                position = { x = 22 y = 195 }
                 font = "vic_18"
                 text = " "
-                maxWidth = 520
-                maxHeight = 76
+                maxWidth = 586
+                maxHeight = 36
                 fixedsize = yes
             }
         }
