@@ -4,11 +4,11 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 이전 공식 `TGCNV.exe`에서 설치가 중단되던 오류를 수정했습니다. 해당 구버전 런처는 백업 없이 교체되며 복원해도 최신 런처가 유지됩니다. 이미 받은 온라인 설치 폴더에서 `Update.cmd`를 다시 실행하세요.
 
-**이번 버전은 온라인 설치 도구 갱신이 필요합니다.** 최신 인스톨러 ZIP을 기존 도구 폴더에 덮어 풀고 Update.cmd를 실행하세요. 기존 캐시·설치 기록·복원 자료는 삭제하지 마세요. 새 치트 사용 안내 파일을 지원합니다.
+**기존 GHCR 온라인 도구에서는 Update.cmd를 실행하면 됩니다.** 이번 배포는 인스톨러 실행 파일이 이전 배포와 같습니다. 처음 설치하거나 오래된 도구를 사용하는 경우 최신 인스톨러 ZIP을 받으세요. 기존 캐시·설치 기록·복원 자료는 유지하세요.
 
 ## 설치와 업데이트
 
-1. [온라인 설치 도구](https://github.com/Yukino-Chan/TGC-Anime-Total-Overhaul-Korean/releases/download/installer/TGC-Online-Installer.zip?sha256=e3cfe8a9fb0c2d2e5bfb1f4fb30db8f41abf7eab4038dc973dd8ccdead239910)를 받습니다.
+1. [온라인 설치 도구](https://github.com/Yukino-Chan/TGC-Anime-Total-Overhaul-Korean/releases/download/installer/TGC-Online-Installer.zip)를 받습니다.
 2. ZIP 전체를 압축 해제하고 게임과 런처를 종료합니다.
 3. **Update.cmd**를 실행하고, 처음에는 Victoria II 설치 폴더의 `v2game.exe`를 선택합니다. 처음 설치할 때 한국어 또는 English를 고릅니다.
 4. 런처에서 **TGC - Anime Total Overhaul**과 **TGO - The Grand Orchestra**를 함께 선택합니다.
@@ -29,13 +29,21 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-설치된 실험용 DLL은 **0.6.8.13**입니다. 엔진 0.6.8.13: 위신 외교 창의 UI 가림을 수정하고 외교망 복구·세력권 외교 공세를 특명 사절 파견으로 통합했습니다. 우호 사절단은 관계 +100, 특명 사절은 관계 +50·영향력 +25와 제재 해제를 제공합니다. 평화 협상: 현재 승점 50 이상일 때 우리 편이 점령한 영토에 대해 초과 승점 최대 30까지 위신으로 요구합니다. 첫 10승점은 1점당 위신 3, 다음 10은 5, 마지막 10은 8이며 실제 수락 시에만 한 번 결제합니다. 기존 AI 수락 판단과 전쟁 목표 합법성은 유지합니다. 거절·만료·점령 상실·예산 초과·위신 부족에는 과금하지 않습니다. 대기 제안과 결제 표식을 저장하며 AI 발신·양보·멀티플레이 제안은 기존 경로를 사용합니다. 설치 기록의 12개 테스트 묶음·1,995개 검사와 파일 해시를 확인했습니다. 실제 협상 화면·AI 응답·대기 중 저장 후 재개·장기 플레이는 미검증입니다. 새 캠페인 기준 실험판이며 기존 지도 검사 한계를 유지합니다. 변경된 위신 문구의 한국어·English 옵션을 함께 갱신했습니다. 지도·지도 캐시·TGO와 기존 설치·복원 도구는 직전 정상 배포를 유지합니다.
+현재 실험용 엔진은 **0.6.8.15**입니다. 0.6.8.14에서 보완한 위신 외교·평화 협상 요청의 만료, 오류 처리와 미결 요청 정리를 포함합니다. 위신을 사용하는 평화 협상은 기존 AI 수락 판단과 전쟁 목표 합법성을 따르며, 실제 수락 때만 한 번 결제하는 규칙을 유지합니다. 실제 협상 화면, AI 응답, 대기 중 저장 후 재개와 장기 플레이는 미검증입니다.
+
+이번 빌드에는 자동 **Renderer64 shadow 검증 파일럿**이 들어 있습니다. 게임 시작 시 숨김 x86 관리 프로그램이 한 번 실행되어 해당 게임 프로세스의 관측 기록을 기다리고, 별도 x64 작업자가 Iori의 첫 8개 submesh를 최대 4개 캡처 프레임까지 재생해 반환된 영역·색상·깊이와 해시를 검사합니다. 관리 프로그램은 최대 10분 대기 후 종료하며, 게임 종료 시 소유한 하위 프로세스도 종료됩니다. 게임 화면은 기존 네이티브 D3D9 렌더링을 계속 사용합니다. 이 파일럿은 게임 전체의 64비트 전환이나 실게임 지형 합성 완료를 뜻하지 않으며, 실게임 FPS·메모리 개선은 검증되지 않았습니다. 사용과 종료 방법은 아래 렌더러 관측 안내를 참고하세요.
+
+리투아니아·크림·트란실바니아·폴란드·우크라이나·벨라루스·루마니아·에스토니아·보헤미아의 새 대표 9명과 QNG의 각청을 반영해 **10개국의 정부별 깃발 110개**를 갱신했습니다. QNG의 기존 리월 국호는 유지합니다. 변경된 국호·정부명·국민 형용사의 **183개 키**를 한국어와 English 문구 은행에 반영했으며, 한국어 원문 바이트와 스크립트 게임플레이 토큰을 보존했습니다. 깃발과 국호의 실제 게임 표시는 아직 확인하지 않았습니다.
+
+TGO에서는 현재 재생목록과 시작곡이 참조하지 않는 음원 11개를 배포에서 제외했습니다. **실제 음악 106곡**, 재생목록, 음악 설정 이벤트와 기존 곡 출처 문서 3개는 유지합니다. 지도와 검증된 지도 캐시는 직전 배포와 같습니다. 런처에서는 선택한 TGCNV 언어와 함께 제공된 TGO 설정을 사용하세요. 이 빌드의 실게임 멀티플레이 체크섬은 별도로 검증하지 않았습니다.
+
+설치 영수증과 후보 파일 해시를 대조했으며, shadow 구성 요소 13개 시나리오와 회귀 테스트 15개 묶음, 각 아키텍처의 프로토콜 검사 152개·픽셀 검사 17,050개 통과 기록을 확인했습니다. 이러한 검사는 실게임 화면·성능·장기 플레이 검증을 대신하지 않습니다. 기존 지도 검증 한계와 새 캠페인 권장을 유지합니다.
 
 복제본 제거 패치 R64-E1과 `actor_clones = 0` 설정도 포함합니다. 각 액터 타입의 원본은 유지하며 추가 메시 복제본 생성을 끕니다. 재배치된 실행 파일 사본의 창 보호·설정 거부·반복 적용 검사 144개가 통과했고 기존 지연 로딩 282개·공군 공존 59개 검사도 동일 빌드에서 통과했습니다. 실제 애니메이션·선택·전투 및 같은 타입의 여러 유닛 표시는 미검증입니다.
 
 1836년 시작 인구 125개 파일의 중복 POP 줄을 합치고 군인 POP를 보충했으며, 부대 파일 70개의 주둔지 번호를 고쳐 시작 연대가 사라지던 문제(예: 영국 케이프 수비대)를 해결했습니다. 새 캠페인에만 적용됩니다. 독립·해방 국가의 정부 형태 표와 하노버 해방 시점도 반영했고, English 옵션의 장갑차(Armored Car)·중형전차(Medium Tank) 용어와 짧은 병종 이름을 바로잡았습니다.
 
-이번 재배포 엔진(e0562e91, 표시 버전 0.6.8.5)은 세이브를 편집해 부대 수가 군사 시간 기록과 달라지면 군사 시간이 켜지지 않던 문제를 고쳤습니다. 기록 밖의 부대는 새 부대처럼 편입하고 전투 기록 검사는 그대로 엄격합니다. 군사 시간이 멈춘 뒤에는 날짜 아래에 다시 실행 안내가 표시됩니다.
+이전 군사 시간 보완(당시 표시 버전 0.6.8.5)은 세이브를 편집해 부대 수가 군사 시간 기록과 달라지면 군사 시간이 켜지지 않던 문제를 고쳤습니다. 기록 밖의 부대는 새 부대처럼 편입하고 전투 기록 검사는 그대로 엄격합니다. 군사 시간이 멈춘 뒤에는 날짜 아래에 다시 실행 안내가 표시됩니다.
 
 안트베르펜·헨트 위치와 벨기에·젤란트 주변 지명을 바로잡고, 서림뷔르흐 주를 벨기에에 남겼으며(런던 조약 이벤트·결정 연동), 벨기에 수도를 옮겼습니다. 몽골 지역의 주 5개를 재편하고 차하르 주 이름을 붙였습니다. 위치·주 경계가 바뀌어 지도 캐시를 다시 만들었습니다.
 
@@ -45,7 +53,7 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 제작자, 출처와 권리
 
-- 기반 모드: [The Grand Combination](https://github.com/The-Grand-Combination/The-Grand-Combo). 음악 모드: [The Grand Orchestra](https://github.com/The-Grand-Combination/The-Grand-Orchestra). 곡목과 연주 출처는 `TGO/OPENING_MUSIC.md`, `TGO/VICTORIA1_MUSIC.md`에 있습니다.
+- 기반 모드: [The Grand Combination](https://github.com/The-Grand-Combination/The-Grand-Combo). 음악 모드: [The Grand Orchestra](https://github.com/The-Grand-Combination/The-Grand-Orchestra). 곡목과 연주 출처는 `TGO/OPENING_MUSIC.md`, `TGO/VICTORIA1_MUSIC.md`, `TGO/VICTORIA1_MUSIC_MANIFEST.json`에 있습니다.
 - Victoria II © Paradox Interactive. 원본 게임과 DLC는 포함하지 않습니다.
 - 블루 아카이브의 캐릭터, 모델, UI 요소에 대한 권리는 NEXON Games Co., Ltd. 및 관련 권리자에게 있습니다. 국기와 초상에 쓰인 다른 작품의 캐릭터는 각 권리자에게 권리가 있습니다. 이 프로젝트는 비공식·비영리 팬 모드이며 권리자와 관계가 없습니다.
 - 글꼴: 경기천년체 © 경기도.
@@ -107,7 +115,7 @@ When an offline package is provided, it is named **TGCNV-TGO.zip** and is publis
 
 Older official `TGCNV.exe` launchers are now accepted and replaced without a backup. Restoring this update keeps the new launcher. Unknown executables remain untouched and their SHA-256 is shown in the error. Run `Update.cmd` again from your existing online installer folder to receive the repair.
 
-**Refresh the online installer for this release.** Download the latest installer ZIP, extract its files over your existing tool folder, and run Update.cmd. Keep the existing cache, installation records and recovery data. The refreshed client accepts the included CheatPack guide.
+**Existing GHCR updater users can run Update.cmd directly.** The installer is unchanged from the preceding release. Download the current installer ZIP for a first installation or to replace an older client. Keep the existing cache, installation records and recovery data.
 
 ### Later updates
 
@@ -121,11 +129,21 @@ Do not open legacy events `16` or `19` through the console on a player country: 
 
 ### Compatibility and verification
 
-The current experimental engine is **0.6.8.13**. Prestige diplomacy panels now avoid covering the native tabs. Reopen Diplomacy and Sphere Diplomacy Offensive are combined into Send Special Envoy (relations +50, influence +25 and penalty removal); Goodwill Delegation grants relations +100. Peace demands can use prestige for up to 30 additional warscore when your current warscore is at least 50 and your side occupies the requested territory. Each extra point costs 3 prestige for the first ten, 5 for the next ten and 8 for the final ten. Prestige is charged once, only when the offer is accepted. Existing AI acceptance and wargoal legality checks remain in force; the feature does not force acceptance. Rejected or expired offers, lost occupation, insufficient prestige or an exceeded budget do not charge prestige. AI-sent offers, concessions and multiplayer use the original path. The release reuses 12 developer test suites covering 1,995 checks and verifies installed hashes and the refreshed Korean/English text. Live negotiation UI, AI responses, pending-offer save/reload and long-term play remain unverified. Use a fresh campaign; inherited map validation limits remain. Map geometry, cache, TGO and the existing installer/restore tools are unchanged.
+The current experimental engine is **0.6.8.15**, including the prestige diplomacy and peace-request lifecycle fixes from **0.6.8.14**. Expiration, error handling and cleanup of unresolved requests are covered by these cumulative changes. Prestige-assisted peace demands still follow the game's AI acceptance and wargoal legality checks, and prestige is charged once only after acceptance. The feature does not force acceptance. Live negotiation UI, AI responses, saving and reloading a pending request, and long-running campaigns remain unverified.
+
+This package adds an automatic **Renderer64 shadow-validation pilot**. On game startup, a hidden x86 controller waits for an observation capture belonging to that game process. A separate x64 worker replays the supported Iori model's first eight submeshes for at most four captured frames. The controller checks the returned image region, color/depth formats and hashes, then exits. It waits for at most ten minutes; its owned child processes also stop when the game exits. The supplied configuration enables this bounded pilot. Unsupported captures, invalid data and timeouts are rejected while normal game drawing continues.
+
+The game's existing native D3D9 renderer remains responsible for the screen. The pilot does not establish full terrain composition, identical original GPU buffers or complete 64-bit game rendering. A successful shadow report verifies the captured replay and response contract, not pixel equivalence with a live game screenshot. **Live-game FPS gains and memory savings have not been verified.** See the renderer section below for the configuration file and how to disable the pilot.
+
+Country presentation is refreshed for ten countries: nine new representatives cover Lithuania, Crimea, Transylvania, Poland, Ukraine, Belarus, Romania, Estonia and Bohemia, while QNG uses Keqing and keeps its existing Liyue country names. The update replaces **110 government-specific flags** and updates **183 country-name, government-name and demonym keys** in the Korean/English language banks. The Korean source bytes and gameplay tokens in localized scripts are preserved. Installed flag/localization hashes and the existing integration reports were checked; final in-game flag and text presentation remains unverified.
+
+TGO keeps **106 real music tracks**, the current playlist and music-settings event. Eleven audio files that are not referenced by the playlist or title theme are omitted. The three existing source documents remain included: `TGO/OPENING_MUSIC.md`, `TGO/VICTORIA1_MUSIC.md` and `TGO/VICTORIA1_MUSIC_MANIFEST.json`. The map geometry and verified map cache are unchanged from the previous package. Use the bundled TGO descriptor alongside the chosen TGCNV language; this build's live multiplayer checksum has not been independently verified.
+
+The release review checked installation receipts and candidate hashes. Recorded shadow validation covers 13 component scenarios and 15 regression suites, including 152 protocol checks and 17,050 pixel checks for each architecture, plus parent/child lifetime checks. Those bounded checks do not replace live gameplay, performance or long-session validation. Use a fresh campaign and retain the existing map-validation limitations.
 
 This build also includes the R64-E1 duplicate-removal update and `actor_clones = 0`. It keeps the original actor for each type and disables the extra mesh-copying actor clone. The update passed 144 relocated-PE buffer checks for guarded matching, rejected configuration and repeated installation. The same build passed the 282 lazy-loading and 59 air-profile coexistence checks. Live animation, selection, battles and several units of the same type remain unverified.
 
-Antwerp and Ghent positions, Low Countries place names and the west Limburg state (kept in Belgium, with the London Treaty event and decisions) are corrected, the Belgian capital moved, five Mongolian states regrouped (including the new Chahar state), and the map cache rebuilt to match. The engine (e0562e91, still displayed as 0.6.8.5) restores military time when a save was edited so that its unit count differs from the saved military journal: units outside the journal are adopted like newly created units, while battle records are still checked strictly. After a military-time failure the date panel now shows a restart notice.
+Antwerp and Ghent positions, Low Countries place names and the west Limburg state (kept in Belgium, with the London Treaty event and decisions) are corrected, the Belgian capital moved, five Mongolian states regrouped (including the new Chahar state), and the map cache rebuilt to match. An earlier military-time fix (then displayed as 0.6.8.5) restores military time when a save was edited so that its unit count differs from the saved military journal: units outside the journal are adopted like newly created units, while battle records are still checked strictly. After a military-time failure the date panel now shows a restart notice.
 
 This build also merges duplicate POP lines in 125 starting-population files, tops up soldier POPs and fixes the home state of 70 order-of-battle files, so starting regiments (for example the British Cape garrison) no longer vanish; this applies to new campaigns. It adds the government table for newly independent or released countries and the Hanover release timing, and it corrects English unit terms (Armored Car, Medium Tank) and short unit names.
 
@@ -136,6 +154,10 @@ The online updater authenticates signed metadata and checks downloaded file hash
 
 ### Renderer observation / 렌더러 관측
 
-The observer records at most 32 draws and eight shaders in a local capture of at most 305,600 bytes. It does not upload captures. To disable it, close the game and set `observe = 0` in `TGCNV/runtime/data/tgcnv_renderer64_probe.txt`. This is a diagnostic observation module, not an enabled 64-bit renderer.
+The observer records at most 32 draws and eight shaders in a local capture of at most 305,600 bytes. It does not upload captures. The automatic shadow pilot described above consumes only supported captures and runs its x64 worker outside the game process; the native renderer continues to draw the game.
+
+To disable the shadow pilot on the next launch, close the game and set `shadow = 0` in `TGCNV/runtime/data/tgcnv_renderer64_shadow.txt`. To disable observation captures as well, set `observe = 0` in `TGCNV/runtime/data/tgcnv_renderer64_probe.txt`. The package includes the pilot's usage notes and xxHash license under `TGCNV/runtime/renderer64-shadow/`. A `complete` shadow result reports successful bounded capture verification and does not certify a live-game performance improvement.
+
+다음 실행부터 shadow 검증을 끄려면 게임을 종료하고 `TGCNV/runtime/data/tgcnv_renderer64_shadow.txt`의 `shadow = 0`을 설정하세요. 관측 기록도 끄려면 `tgcnv_renderer64_probe.txt`의 `observe = 0`을 설정합니다. `complete` 결과는 해당 캡처의 제한된 검증 성공을 뜻하며 실게임 화면 일치나 성능 개선을 보증하지 않습니다.
 
 CheatPack V2.10 credits: Bob Bobington, with contributions by Lord Unhold and Dr.; TGC/GFM image credits are retained in `TGCNV/docs/TGCNV_CheatPack.ko.md`.

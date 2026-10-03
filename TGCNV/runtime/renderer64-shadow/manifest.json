@@ -1,0 +1,81 @@
+{
+  "component": "renderer64-shadow",
+  "version": "0.1.0",
+  "engine_version": "0.6.8.15",
+  "automatic_game_hook": false,
+  "automatic_capture_verification": true,
+  "game_output_replacement": false,
+  "files": [
+    {
+      "path": "avatar_native.hlsl",
+      "bytes": 3289,
+      "sha256": "48c9877cb3814c7d00265fafbf629ff9cfb3f411af1c03832b064009ee40ac2e"
+    },
+    {
+      "path": "cache/iori.assets",
+      "bytes": 539808,
+      "sha256": "7453ee91518247e7ba6503d20bef84bf64ddae6ed5d67b84e3770c8b0ae8dc4e"
+    },
+    {
+      "path": "cache/packs/TGCNV_BA_Iori_Body.texpack",
+      "bytes": 43872,
+      "sha256": "d93ca7fdc9349663f0876a403db0e8834359c1cb0115340d3361a0acc56c47b4"
+    },
+    {
+      "path": "cache/packs/TGCNV_BA_Iori_Body_Mask.texpack",
+      "bytes": 22024,
+      "sha256": "c17d766abe8d74e19d82f989f5d1baf86f64267a30592d17a7e513453a8dcd03"
+    },
+    {
+      "path": "cache/packs/TGCNV_BA_Iori_EyeMouth.texpack",
+      "bytes": 87576,
+      "sha256": "4a6d20b2aa343aedd790ba79d188eeecf4c745394c2a069cebc7d02932ca74b8"
+    },
+    {
+      "path": "cache/packs/TGCNV_BA_Iori_Face.texpack",
+      "bytes": 43872,
+      "sha256": "760a171528ffb6664869c805fa3bc97b377bc00161cf259bfbcc2572d1a3b003"
+    },
+    {
+      "path": "cache/packs/TGCNV_BA_Iori_Hair.texpack",
+      "bytes": 43872,
+      "sha256": "9e31ed6bbd13ca56103df1d7a5ddcc213a4e99a8e9884f86c07e903f43f92ea2"
+    },
+    {
+      "path": "cache/packs/TGCNV_BA_Iori_Hair_Mask.texpack",
+      "bytes": 22024,
+      "sha256": "85304fd8242df5ba78c8decaf20963c53c2b4b08abb98861e5f64dc8c8e99e53"
+    },
+    {
+      "path": "depth_export.hlsl",
+      "bytes": 303,
+      "sha256": "45122185f387e87123ec0d7d752698836dd21843ce61ed8c4ff45d1fcc4794ae"
+    },
+    {
+      "path": "frame_worker.exe",
+      "bytes": 345600,
+      "sha256": "4630e3061f3a09afd49bc1ec65bdf5fbbdbc61dc41c80a584edf9a9bf9fd904f"
+    },
+    {
+      "path": "LICENSE.xxHash.txt",
+      "bytes": 1389,
+      "sha256": "6ffedbc0f7878612d2b23589f1ff2ab15633e1df7963a5d9fc750ec5500c7e7a"
+    },
+    {
+      "path": "README.ko.txt",
+      "bytes": 2729,
+      "sha256": "a62582e0a0e25934e7ae4a719ac3aa542b97fe6bf294c4c765ba0c35dacacff0"
+    },
+    {
+      "path": "region_bounds.hlsl",
+      "bytes": 969,
+      "sha256": "aed5f79bab04645cc0076dedef3fb2f0060b39c373b819d0fdd58e7c7df814aa"
+    },
+    {
+      "path": "shadow_controller.exe",
+      "bytes": 309760,
+      "sha256": "ff5b13f1c4c5865fe469365f2bebc9d25ace47e781bbf075c568b93959501bb3"
+    }
+  ],
+  "engine_startup_connection": true
+}

@@ -1,0 +1,5 @@
+# Renderer64 shadow pilot. Set shadow=0 before the next game launch to disable.
+# Runs one bounded capture verification outside the game process.
+# Existing native game draws stay authoritative; this is not draw replacement.
+shadow = 1
+wait_ms = 600000
