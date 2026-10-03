@@ -237,13 +237,21 @@ function Transaction-Path($Receipt,$Op,[string]$Kind) {
     if ($Kind -eq 'target') { return Child-Path $root $Op.relative }
     return Child-Path $root ("TGCNV_Backups/$($Receipt.id)/$Kind/$($Op.relative)")
 }
+function Test-LauncherNoBackup($Op) {
+    if ($Op.scope -ne 'game' -or $Op.relative -ne 'TGCNV.exe') { return $false }
+    if ($Op -is [Collections.IDictionary]) {
+        return ($Op.Contains('replace_without_backup') -and $Op['replace_without_backup'] -eq $true)
+    }
+    $property=$Op.PSObject.Properties['replace_without_backup']
+    return ($null -ne $property -and $property.Value -eq $true)
+}
 function Restore-Transaction($Receipt,[string]$ReceiptPath) {
     Assert-Closed
     if ($Receipt.id -notmatch '^\d{8}-\d{6}-[0-9a-f]{8}$') { throw '잘못된 백업 ID입니다.' }
     # Check every backup before moving anything. The removed+target pair also
     # covers interruption after the original was restored but before journaling.
     foreach ($op in $Receipt.operations) {
-        if ($op.restored -or -not $op.had_before) { continue }
+        if ($op.restored -or -not $op.had_before -or (Test-LauncherNoBackup $op)) { continue }
         $before=Transaction-Path $Receipt $op 'before'
         if (Test-Path -LiteralPath $before) { continue }
         $target=Transaction-Path $Receipt $op 'target'
@@ -263,6 +271,11 @@ function Restore-Transaction($Receipt,[string]$ReceiptPath) {
         $mustRestore=Test-Path -LiteralPath $before
         $newApplied=(-not $op.had_before) -and (-not (Test-Path -LiteralPath $stage))
         if ($op.restored) { continue }
+        if (Test-LauncherNoBackup $op) {
+            $op.restored=$true
+            Save-Json $ReceiptPath $Receipt
+            continue
+        }
         if ($mustRestore -or $newApplied) {
             if (Test-Path -LiteralPath $target) { Move-Safe $target $removed }
             if ($mustRestore) { Move-Safe $before $target }
@@ -316,7 +329,10 @@ try {
         $receipt=Get-Content -LiteralPath $receiptPath -Raw -Encoding UTF8 | ConvertFrom-Json
         if ($receipt.game -ine $GamePath -or $receipt.id -cne $BackupId) { throw '이 게임 폴더의 백업이 아닙니다.' }
         Restore-Transaction $receipt $receiptPath
-        Write-Host '설치 전 상태로 복원했습니다. 설치본과 백업은 TGCNV_Backups에 보존했습니다. 세이브는 변경하지 않았습니다.'
+        Write-Host '백업된 파일을 설치 전 상태로 복원했습니다. 세이브는 변경하지 않았습니다.'
+        if (@($receipt.operations | Where-Object { Test-LauncherNoBackup $_ }).Count -gt 0) {
+            Write-Host '백업 없이 교체한 공식 TGCNV.exe는 최신 상태를 유지합니다.'
+        }
         exit 0
     }
     $gameInfo=Game-Profile $GamePath $manifest.game_sha256
@@ -358,12 +374,18 @@ try {
     }
     $launcherCfg=$null
     $launcherPlan=$null
+    $tgcnvExeTargetHash=$null
     $tgcnvExePayload=Join-Path $PackRoot 'payload/game/TGCNV.exe'
     if (Test-Path -LiteralPath $tgcnvExePayload) {
         $tgcnvExeTarget=Child-Path $GamePath 'TGCNV.exe'
         $tgcnvExePayloadHash=Hash-File $tgcnvExePayload
+        # Prior official prelauncher, pinned to published release manifests.
+        $tgcnvExePriorHash='5bcb0ded3c9eede36f42a7d561f283bbab32d8acea0b5236f1b1957429ef19c9'
         if (Test-Path -LiteralPath $tgcnvExeTarget) {
-            if ((Hash-File $tgcnvExeTarget) -cne $tgcnvExePayloadHash) { throw '알 수 없는 TGCNV.exe가 이미 설치되어 있습니다.' }
+            $tgcnvExeTargetHash=Hash-File $tgcnvExeTarget
+            if ($tgcnvExeTargetHash -cne $tgcnvExePayloadHash -and $tgcnvExeTargetHash -cne $tgcnvExePriorHash) {
+                throw "알 수 없는 TGCNV.exe가 이미 설치되어 있습니다. 파일을 삭제하지 말고 보관한 뒤 다음 SHA-256과 함께 문의해 주세요: $tgcnvExeTargetHash"
+            }
         }
         $launcherCfg=Child-Path $GamePath 'launcher/launcher.cfg'
         if (-not (Test-Path -LiteralPath $launcherCfg)) { throw '런처 설정(launcher/launcher.cfg)을 찾을 수 없습니다.' }
@@ -424,14 +446,15 @@ try {
     foreach ($relative in $gameRelatives) {
         $ops+=@{scope='game';relative=$relative;had_before=(Test-Path -LiteralPath (Child-Path $GamePath $relative));restored=$false}
     }
-    if (Test-Path -LiteralPath $tgcnvExePayload) {
-        $ops+=@{scope='game';relative='TGCNV.exe';had_before=(Test-Path -LiteralPath (Child-Path $GamePath 'TGCNV.exe'));restored=$false}
-    }
     if ($launcherPlan) {
         $ops+=@{scope='game';relative='launcher/launcher.cfg';had_before=$true;restored=$false}
     }
     if ($gameInfo.adjust) { $ops+=@{scope='game';relative='v2game.exe';had_before=$true;restored=$false} }
     $ops+=@{scope='profile';relative='map/cache';had_before=(Test-Path -LiteralPath (Child-Path $profile 'map/cache'));restored=$false}
+    # Apply the approved no-backup launcher replacement last.
+    if (Test-Path -LiteralPath $tgcnvExePayload) {
+        $ops+=@{scope='game';relative='TGCNV.exe';had_before=($null -ne $tgcnvExeTargetHash);restored=$false;replace_without_backup=($tgcnvExeTargetHash -ceq $tgcnvExePriorHash)}
+    }
     $receipt=@{schema=1;id=$id;game=$GamePath;profile=$profile;release=$manifest.release;language=$selectedLanguage;status='applying';operations=$ops}
     $receiptPath=Join-Path $txn 'receipt.json'
     Save-Json $receiptPath $receipt
@@ -443,8 +466,20 @@ try {
                 if (-not $launcherPlan -or (Hash-File (Transaction-Path $receipt $op 'target')) -cne $launcherPlan.OriginalSha256) { throw '런처 설정이 설치 중 변경되었습니다.' }
             }
             $target=Transaction-Path $receipt $op 'target'
-            if ($op.had_before) { Move-Safe $target (Transaction-Path $receipt $op 'before') }
-            Move-Safe (Transaction-Path $receipt $op 'stage') $target
+            if ($op.scope -eq 'game' -and $op.relative -eq 'TGCNV.exe') {
+                $tgcnvExeCurrentHash=$null
+                if (Test-Path -LiteralPath $target) { $tgcnvExeCurrentHash=Hash-File $target }
+                if ($tgcnvExeCurrentHash -cne $tgcnvExeTargetHash) {
+                    throw "TGCNV.exe가 설치 준비 중 변경되었습니다. 해당 파일을 보관하고 다른 설치 작업이 끝난 뒤 다시 시도하세요. 현재 SHA-256: $tgcnvExeCurrentHash"
+                }
+            }
+            if (Test-LauncherNoBackup $op) {
+                Write-Host '이전 공식 TGCNV.exe를 백업 없이 교체합니다. 이 파일은 복원해도 구버전으로 돌아가지 않습니다.'
+                [IO.File]::Replace((Transaction-Path $receipt $op 'stage'),$target,[NullString]::Value)
+            } else {
+                if ($op.had_before) { Move-Safe $target (Transaction-Path $receipt $op 'before') }
+                Move-Safe (Transaction-Path $receipt $op 'stage') $target
+            }
         }
         $receipt.status='installed'
         Save-Json $receiptPath $receipt
@@ -452,7 +487,7 @@ try {
         $failure=$_
         try { Restore-Transaction $receipt $receiptPath }
         catch { throw "설치가 중단되었으며 자동 복원도 완료하지 못했습니다. 게임을 실행하지 말고 Restore.cmd를 실행하세요. 백업: $txn / $($_.Exception.Message)" }
-        throw "설치 실패로 기존 파일을 복원했습니다: $($failure.Exception.Message)"
+        throw "설치 실패로 백업된 파일을 복원했습니다: $($failure.Exception.Message)"
     }
     $modSuffix=if ($selectedLanguage -eq 'en') { '(English)' } else { '(Korean)' }
     Write-Host ('Installed language / 설치 언어: '+$selectedLanguage)

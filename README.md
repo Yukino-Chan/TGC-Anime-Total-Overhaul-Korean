@@ -2,6 +2,8 @@
 
 Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGCNV**와 음악 모드 **TGO**입니다. 이 브랜치에는 두 모드의 파일과 관련 설치·업데이트 소스가 있습니다. 최신 통합 배포본과 같은 모드 데이터를 제공합니다. 전체 팩은 `TGCNV-TGO.zip`, 체크섬은 `TGCNV-TGO.zip.sha256`, 설치 안내는 `TGCNV-TGO-설치안내.txt` 이름을 계속 사용합니다.
 
+이전 공식 `TGCNV.exe`에서 설치가 중단되던 오류를 수정했습니다. 해당 구버전 런처는 백업 없이 교체되며 복원해도 최신 런처가 유지됩니다. 이미 받은 온라인 설치 폴더에서 `Update.cmd`를 다시 실행하세요.
+
 ## 설치와 업데이트
 
 1. [온라인 설치 도구](https://github.com/Yukino-Chan/TGC-Anime-Total-Overhaul-Korean/releases/download/installer/TGC-Online-Installer.zip?sha256=e3cfe8a9fb0c2d2e5bfb1f4fb30db8f41abf7eab4038dc973dd8ccdead239910)를 받습니다.
@@ -100,6 +102,8 @@ When an offline package is provided, it is named **TGCNV-TGO.zip** and is publis
 3. Run `Verify.cmd` to check the extracted package files against their manifest.
 4. Close the game and launcher, then run `Setup.cmd -Language en` (use `-Language ko` for Korean).
 5. Run `Restore.cmd` to return to the previous installation if something goes wrong.
+
+Older official `TGCNV.exe` launchers are now accepted and replaced without a backup. Restoring this update keeps the new launcher. Unknown executables remain untouched and their SHA-256 is shown in the error. Run `Update.cmd` again from your existing online installer folder to receive the repair.
 
 ### Later updates
 
