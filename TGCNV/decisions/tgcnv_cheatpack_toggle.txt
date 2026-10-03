@@ -1,0 +1,196 @@
+# TGCNV CheatPack 2.10 port. Original gameplay commands remain available.
+political_decisions = {
+	TGCNV_CP_enable = {
+		picture = "tgcnv_cp_cogs_cheatpack_menu"
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = tgcnv_cheatpack_enabled
+			}
+		}
+		allow = {
+
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_aioccflag
+			clr_global_flag = tgcnv_cp_coreremovalhappening
+			clr_global_flag = tgcnv_cp_coreremovalhappeninghidden
+			clr_global_flag = tgcnv_cp_cp_expellcores
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+			clr_global_flag = tgcnv_cp_deselected_self
+			clr_global_flag = tgcnv_cp_dud_flag
+			clr_global_flag = tgcnv_cp_selection
+			clr_global_flag = tgcnv_cp_selection_ally_endabled
+			clr_global_flag = tgcnv_cp_selection_enemy_endabled
+			clr_global_flag = tgcnv_cp_selection_gp_endabled
+			clr_global_flag = tgcnv_cp_selection_minor_endabled
+			clr_global_flag = tgcnv_cp_selection_self_endabled
+			clr_global_flag = tgcnv_cp_selection_sp_endabled
+			clr_global_flag = tgcnv_cp_selection_target_endabled
+			clr_global_flag = tgcnv_cp_selection_unciv_endabled
+			clr_global_flag = tgcnv_cp_selection_vassal_endabled
+			clr_global_flag = tgcnv_cp_target_effect_menu
+			clr_global_flag = tgcnv_cp_target_select_menu
+			any_country = {
+				clr_country_flag = tgcnv_cp_annexoptiona
+				clr_country_flag = tgcnv_cp_annexoptionb
+				clr_country_flag = tgcnv_cp_civilsoptiona
+				clr_country_flag = tgcnv_cp_civilsoptionb
+				clr_country_flag = tgcnv_cp_coresoptiona
+				clr_country_flag = tgcnv_cp_coresoptionb
+				clr_country_flag = tgcnv_cp_coresoptionc
+				clr_country_flag = tgcnv_cp_cp_annexevent
+				clr_country_flag = tgcnv_cp_cp_expellcores
+				clr_country_flag = tgcnv_cp_cp_hide_decisions
+				clr_country_flag = tgcnv_cp_cp_tag_target
+				clr_country_flag = tgcnv_cp_interacted_with
+				clr_country_flag = tgcnv_cp_overlordsoptiona
+				clr_country_flag = tgcnv_cp_overlordsoptionb
+				clr_country_flag = tgcnv_cp_overlordsoptionc
+				clr_country_flag = tgcnv_cp_overlordsoptiond
+				clr_country_flag = tgcnv_cp_player_nation
+				clr_country_flag = tgcnv_cp_possible_interactions
+				clr_country_flag = tgcnv_cp_selected_ally
+				clr_country_flag = tgcnv_cp_selected_enemy
+				clr_country_flag = tgcnv_cp_selected_gp
+				clr_country_flag = tgcnv_cp_selected_minor
+				clr_country_flag = tgcnv_cp_selected_self
+				clr_country_flag = tgcnv_cp_selected_sp
+				clr_country_flag = tgcnv_cp_selected_unciv
+				clr_country_flag = tgcnv_cp_selected_vassal
+				clr_country_flag = tgcnv_cp_unions2optiona
+				clr_country_flag = tgcnv_cp_unions2optionb
+				clr_country_flag = tgcnv_cp_unions2optionc
+				clr_country_flag = tgcnv_cp_unions2optiond
+				clr_country_flag = tgcnv_cp_unions2optione
+				clr_country_flag = tgcnv_cp_unions2optionf
+				clr_country_flag = tgcnv_cp_unions2optiong
+				clr_country_flag = tgcnv_cp_unions2optionh
+				clr_country_flag = tgcnv_cp_unions2optioni
+				clr_country_flag = tgcnv_cp_unions2optionj
+				clr_country_flag = tgcnv_cp_unions2optionk
+				clr_country_flag = tgcnv_cp_unionsoptiona
+				clr_country_flag = tgcnv_cp_unionsoptionb
+				clr_country_flag = tgcnv_cp_unionsoptionc
+				clr_country_flag = tgcnv_cp_unionsoptiond
+				clr_country_flag = tgcnv_cp_unionsoptione
+				clr_country_flag = tgcnv_cp_unionsoptionf
+				clr_country_flag = tgcnv_cp_unionsoptiong
+				clr_country_flag = tgcnv_cp_unionsoptionh
+				clr_country_flag = tgcnv_cp_unionsoptioni
+				clr_country_flag = tgcnv_cp_unionsoptionj
+				clr_country_flag = tgcnv_cp_unionsoptionk
+			}
+			set_global_flag = tgcnv_cheatpack_enabled
+			set_global_flag = tgcnv_cp_target_select_menu
+			set_global_flag = tgcnv_cp_target_effect_menu
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_disable = {
+		picture = "tgcnv_cp_cogs_cheatpack_menu"
+		potential = {
+			ai = no
+			has_global_flag = tgcnv_cheatpack_enabled
+		}
+		allow = {
+
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_aioccflag
+			clr_global_flag = tgcnv_cp_coreremovalhappening
+			clr_global_flag = tgcnv_cp_coreremovalhappeninghidden
+			clr_global_flag = tgcnv_cp_cp_expellcores
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+			clr_global_flag = tgcnv_cp_deselected_self
+			clr_global_flag = tgcnv_cp_dud_flag
+			clr_global_flag = tgcnv_cp_selection
+			clr_global_flag = tgcnv_cp_selection_ally_endabled
+			clr_global_flag = tgcnv_cp_selection_enemy_endabled
+			clr_global_flag = tgcnv_cp_selection_gp_endabled
+			clr_global_flag = tgcnv_cp_selection_minor_endabled
+			clr_global_flag = tgcnv_cp_selection_self_endabled
+			clr_global_flag = tgcnv_cp_selection_sp_endabled
+			clr_global_flag = tgcnv_cp_selection_target_endabled
+			clr_global_flag = tgcnv_cp_selection_unciv_endabled
+			clr_global_flag = tgcnv_cp_selection_vassal_endabled
+			clr_global_flag = tgcnv_cp_target_effect_menu
+			clr_global_flag = tgcnv_cp_target_select_menu
+			any_country = {
+				clr_country_flag = tgcnv_cp_annexoptiona
+				clr_country_flag = tgcnv_cp_annexoptionb
+				clr_country_flag = tgcnv_cp_civilsoptiona
+				clr_country_flag = tgcnv_cp_civilsoptionb
+				clr_country_flag = tgcnv_cp_coresoptiona
+				clr_country_flag = tgcnv_cp_coresoptionb
+				clr_country_flag = tgcnv_cp_coresoptionc
+				clr_country_flag = tgcnv_cp_cp_annexevent
+				clr_country_flag = tgcnv_cp_cp_expellcores
+				clr_country_flag = tgcnv_cp_cp_hide_decisions
+				clr_country_flag = tgcnv_cp_cp_tag_target
+				clr_country_flag = tgcnv_cp_interacted_with
+				clr_country_flag = tgcnv_cp_overlordsoptiona
+				clr_country_flag = tgcnv_cp_overlordsoptionb
+				clr_country_flag = tgcnv_cp_overlordsoptionc
+				clr_country_flag = tgcnv_cp_overlordsoptiond
+				clr_country_flag = tgcnv_cp_player_nation
+				clr_country_flag = tgcnv_cp_possible_interactions
+				clr_country_flag = tgcnv_cp_selected_ally
+				clr_country_flag = tgcnv_cp_selected_enemy
+				clr_country_flag = tgcnv_cp_selected_gp
+				clr_country_flag = tgcnv_cp_selected_minor
+				clr_country_flag = tgcnv_cp_selected_self
+				clr_country_flag = tgcnv_cp_selected_sp
+				clr_country_flag = tgcnv_cp_selected_unciv
+				clr_country_flag = tgcnv_cp_selected_vassal
+				clr_country_flag = tgcnv_cp_unions2optiona
+				clr_country_flag = tgcnv_cp_unions2optionb
+				clr_country_flag = tgcnv_cp_unions2optionc
+				clr_country_flag = tgcnv_cp_unions2optiond
+				clr_country_flag = tgcnv_cp_unions2optione
+				clr_country_flag = tgcnv_cp_unions2optionf
+				clr_country_flag = tgcnv_cp_unions2optiong
+				clr_country_flag = tgcnv_cp_unions2optionh
+				clr_country_flag = tgcnv_cp_unions2optioni
+				clr_country_flag = tgcnv_cp_unions2optionj
+				clr_country_flag = tgcnv_cp_unions2optionk
+				clr_country_flag = tgcnv_cp_unionsoptiona
+				clr_country_flag = tgcnv_cp_unionsoptionb
+				clr_country_flag = tgcnv_cp_unionsoptionc
+				clr_country_flag = tgcnv_cp_unionsoptiond
+				clr_country_flag = tgcnv_cp_unionsoptione
+				clr_country_flag = tgcnv_cp_unionsoptionf
+				clr_country_flag = tgcnv_cp_unionsoptiong
+				clr_country_flag = tgcnv_cp_unionsoptionh
+				clr_country_flag = tgcnv_cp_unionsoptioni
+				clr_country_flag = tgcnv_cp_unionsoptionj
+				clr_country_flag = tgcnv_cp_unionsoptionk
+			}
+			clr_global_flag = tgcnv_cheatpack_enabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_restore_menus = {
+		picture = "tgcnv_cp_cogs_cheatpack_menu"
+		potential = {
+			ai = no
+			has_global_flag = tgcnv_cheatpack_enabled
+			has_country_flag = tgcnv_cp_cp_hide_decisions
+		}
+		allow = {
+
+		}
+		effect = {
+			clr_country_flag = tgcnv_cp_cp_hide_decisions
+			set_global_flag = tgcnv_cp_target_select_menu
+			set_global_flag = tgcnv_cp_target_effect_menu
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

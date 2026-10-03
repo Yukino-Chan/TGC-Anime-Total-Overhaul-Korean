@@ -4,6 +4,8 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 이전 공식 `TGCNV.exe`에서 설치가 중단되던 오류를 수정했습니다. 해당 구버전 런처는 백업 없이 교체되며 복원해도 최신 런처가 유지됩니다. 이미 받은 온라인 설치 폴더에서 `Update.cmd`를 다시 실행하세요.
 
+**이번 버전은 온라인 설치 도구 갱신이 필요합니다.** 최신 인스톨러 ZIP을 기존 도구 폴더에 덮어 풀고 Update.cmd를 실행하세요. 기존 캐시·설치 기록·복원 자료는 삭제하지 마세요. 새 치트 사용 안내 파일을 지원합니다.
+
 ## 설치와 업데이트
 
 1. [온라인 설치 도구](https://github.com/Yukino-Chan/TGC-Anime-Total-Overhaul-Korean/releases/download/installer/TGC-Online-Installer.zip?sha256=e3cfe8a9fb0c2d2e5bfb1f4fb30db8f41abf7eab4038dc973dd8ccdead239910)를 받습니다.
@@ -27,7 +29,7 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-설치된 실험용 DLL은 **0.6.8.8**입니다. 공중전·해전 선택 기반 창과 국가별 제해권 툴팁, 수요 기반 상세 재화 생산 특화와 아이콘, 종속국 열강 승격 제한, 2차대전 기술·발명 효과, 지형·해전 UI를 갱신했습니다. 한국어·English 문구도 현재 효과에 맞췄습니다. 최종 코드 723개 검사와 GUI 정적 검사, 생산 특화 28개 테스트·IPC 검사, 종속국 595개 검사 기록을 재사용하고 설치 파일을 대조했습니다. 공장 아이콘 유지 수정은 사용자 확인을 받았지만 최종 통합 빌드의 클릭·표시·장기 경제·저장 재로드는 미검증입니다. 새 캠페인 기준 실험판이며 기존 지도 좌표 차이 24곳과 자료·환경 제한 9건을 유지합니다. 네이티브 게임·렌더러는 32비트이고 일부 계산만 외부 64비트 작업자가 처리합니다. 미설치 렌더러·위신 연구와 개인 세이브는 포함하지 않습니다.
+설치된 실험용 DLL은 **0.6.8.11**입니다. 위신 외교와 공격 선전포고 비용, 바다 클릭·제공권 툴팁 수정, BA 렌더링 관측 모듈을 통합했습니다. 화면은 계속 기존 32비트 렌더러가 그리며 64비트 화면 대체·자산 외부화·메모리 절감은 활성화하지 않았습니다. 추가 영토를 위신으로 구매하는 기능도 비활성입니다. 결정 목록에서 [치트] TGCNV 치트 메뉴 켜기로 통합 CheatPack을 사용합니다. 기본은 꺼짐이며 숨긴 메뉴는 복구 결정으로 다시 표시합니다. 끄기는 적용된 효과를 되돌리지 않습니다. 기병 36종에는 보병·근위병과 겹치지 않는 캐릭터 9명과 새 말 재질·UV를 적용했습니다. 한영 메뉴 문구 441개를 추가하고 지도·캐시·TGO는 직전 승인본을 유지합니다. 최종 검사 12개 묶음과 관측 3,995개, 위신 1,173개, 치트 정적 검사 3,635개 기록을 재사용하고 설치 해시를 대조했습니다. 최종 실게임·기병 표시·장기 진행·저장 재로드는 아직 미검증입니다. 새 캠페인 기준 실험판이며 기존 좌표 차이 24곳과 자료·환경 제한 9건을 유지합니다.
 
 복제본 제거 패치 R64-E1과 `actor_clones = 0` 설정도 포함합니다. 각 액터 타입의 원본은 유지하며 추가 메시 복제본 생성을 끕니다. 재배치된 실행 파일 사본의 창 보호·설정 거부·반복 적용 검사 144개가 통과했고 기존 지연 로딩 282개·공군 공존 59개 검사도 동일 빌드에서 통과했습니다. 실제 애니메이션·선택·전투 및 같은 타입의 여러 유닛 표시는 미검증입니다.
 
@@ -105,6 +107,8 @@ When an offline package is provided, it is named **TGCNV-TGO.zip** and is publis
 
 Older official `TGCNV.exe` launchers are now accepted and replaced without a backup. Restoring this update keeps the new launcher. Unknown executables remain untouched and their SHA-256 is shown in the error. Run `Update.cmd` again from your existing online installer folder to receive the repair.
 
+**Refresh the online installer for this release.** Download the latest installer ZIP, extract its files over your existing tool folder, and run Update.cmd. Keep the existing cache, installation records and recovery data. The refreshed client accepts the included CheatPack guide.
+
 ### Later updates
 
 After the first installation, updates reuse the tools and files you already have: run them again from the same folder, and the language you chose is remembered. Keep the backups and the updater's cached installation records; the supported offline restore uses both. Update only while the game and launcher are closed.
@@ -117,7 +121,7 @@ Do not open legacy events `16` or `19` through the console on a player country: 
 
 ### Compatibility and verification
 
-The current experimental engine is **0.6.8.8**. It opens air and naval combat reports from active battle selections, adds country flags and naval-control shares to sea tooltips, and includes demand-based factory/RGO specialization, detailed goods icons, subject-country great-power restrictions, revised WWII technology effects, and terrain/naval UI updates. Korean and English descriptions match the revised effects. The release reuses 723 final code checks and separate GUI validation, 28 specialization tests plus x86/x64 IPC verification, and 595 subject-country checks, with installed hashes reconciled to their receipts. The factory-icon retention fix has user confirmation; final integrated battle interaction, rendering, long-term economic behavior and save/reload still require live validation. Specialization is learned again after loading. Use a fresh campaign. The inherited 24 coordinate differences and nine data/environment limitations remain. The native game and renderer are still 32-bit; external 64-bit workers handle selected calculations. Uninstalled renderer/prestige research and personal saves are excluded.
+The current experimental engine is **0.6.8.11**. It integrates prestige diplomacy and offensive-war costs, sea-click and air-superiority tooltip fixes, and a bounded BA rendering observer. The existing 32-bit renderer still draws the game: 64-bit screen replacement, asset externalization and memory savings are not active. Prestige purchases of extra peace-deal territory are also inactive. Open [Cheat] Enable TGCNV Cheat Menu in the decision list to use the integrated CheatPack; it starts disabled. A recovery decision restores hidden menus, while disabling the menu does not undo effects already applied. Thirty-six cavalry types use nine exclusive characters, refreshed horse materials and corrected UVs. English covers the 441 new cheat/prestige strings. Map geometry, cache and TGO remain unchanged. Validation reuses 12 final engine suites, 3,995 observer checks, 1,173 prestige checks and 3,635 static cheat-menu checks, with installed hashes reconciled to receipts. Final gameplay, cavalry rendering, long-term progress and save/reload remain unverified. Use a fresh campaign; the inherited 24 coordinate differences and nine data/environment limitations remain.
 
 This build also includes the R64-E1 duplicate-removal update and `actor_clones = 0`. It keeps the original actor for each type and disables the extra mesh-copying actor clone. The update passed 144 relocated-PE buffer checks for guarded matching, rejected configuration and repeated installation. The same build passed the 282 lazy-loading and 59 air-profile coexistence checks. Live animation, selection, battles and several units of the same type remain unverified.
 
@@ -128,3 +132,10 @@ This build also merges duplicate POP lines in 125 starting-population files, top
 The latest map update corrects missing Pomeranian ports, the Poland/Russia river border, state membership and place names, and the Memel area. It adds 1,217 ocean-facing coastal port points and relocates 293 to their own coastlines. Twenty-seven English labels and the matching rebuilt cache are included. Use the package with a fresh campaign; final in-game visual checks remain outstanding.
 
 The online updater authenticates signed metadata and checks downloaded file hashes before installation. For an offline archive, compare its SHA-256 with the trusted accompanying checksum and run Verify.cmd after extraction. If a check fails, keep the downloaded file and the error log, and do not hand-mix files from different packages; download again from the official release instead. If Windows denies write access, run the tool as administrator under the same Windows account so that its Documents profile stays the same.
+
+
+### Renderer observation / 렌더러 관측
+
+The observer records at most 32 draws and eight shaders in a local capture of at most 305,600 bytes. It does not upload captures. To disable it, close the game and set `observe = 0` in `TGCNV/runtime/data/tgcnv_renderer64_probe.txt`. This is a diagnostic observation module, not an enabled 64-bit renderer.
+
+CheatPack V2.10 credits: Bob Bobington, with contributions by Lord Unhold and Dr.; TGC/GFM image credits are retained in `TGCNV/docs/TGCNV_CheatPack.ko.md`.

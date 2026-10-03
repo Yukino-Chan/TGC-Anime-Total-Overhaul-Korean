@@ -7047,3 +7047,10 @@ tgca_fx_move_512 = {
 
 # Newly granted claims are protected from cultural expiry for ten years.
 tgcnv_treaty_core_grace = { icon = 6 }
+
+# TGCNV CheatPack immigration boost BEGIN
+tgcnv_cp_immigration = {
+	icon = 13
+	global_immigrant_attract = 1
+}
+# TGCNV CheatPack immigration boost END

@@ -186,6 +186,8 @@ def allowed_path(path):
             if len(p) == 4:
                 return p[3] in {'tgcnv.mod','tgo.mod'}
             if p[3] == 'tgcnv':
+                if p[4:] == ['docs', 'tgcnv_cheatpack.ko.md']:
+                    return True
                 if len(p) == 5:
                     return p[4] in {'settings.txt','tgcnv_extension.json'}
                 return p[4] in {'common','decisions','events','gfx','history','interface','inventions','localisation','map','news','poptypes','runtime','sound','technologies','units'}

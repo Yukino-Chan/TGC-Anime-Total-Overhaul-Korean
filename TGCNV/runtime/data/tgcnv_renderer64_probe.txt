@@ -1,0 +1,5 @@
+# Renderer64 pilot: observe the real BA draw state without replacing native draws.
+# Set observe=0 before the next game start to disable this pilot.
+observe = 1
+max_samples = 32
+sample_stride = 120

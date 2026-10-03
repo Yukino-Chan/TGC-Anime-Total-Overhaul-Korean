@@ -1,0 +1,1439 @@
+# TGCNV CheatPack 2.10 port. Original gameplay commands remain available.
+country_event = {
+	id = 777770027
+	title = "TGCNV_CP_EVTNAME777770027"
+	desc = "TGCNV_CP_EVTDESC777770027"
+	picture = "tgcnv_cp_CP_Generals"
+	major = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTA777770027"
+		any_country = {
+			limit = {
+				AND = {
+					OR = {
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_sp
+								is_secondary_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_gp
+								is_greater_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_minor
+								AND = {
+									NOT = {
+										is_greater_power = yes
+									}
+									NOT = {
+										is_secondary_power = yes
+									}
+									civilized = yes
+								}
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_unciv
+								civilized = no
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_vassal_endabled
+							AND = {
+								has_country_flag = tgcnv_cp_selected_vassal
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_enemy_endabled
+							OR = {
+								war_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_ally_endabled
+							OR = {
+								alliance_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_target_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_cp_tag_target
+							}
+						}
+					}
+					OR = {
+						tag = FRA
+						tag = NZF
+						tag = FAS
+						tag = FCA
+						tag = ULA
+						tag = BOR
+					}
+				}
+			}
+			random_list = {
+				1 = {
+					define_general = {
+						name = "Louis VIII"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Charles of Anjou"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Joan of Arc"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Napoleon Bonaparte"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Ferdinand Foch"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Charles de Gaulle"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Philippe Leclerc de Hauteclocque"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_country = {
+			limit = {
+				AND = {
+					OR = {
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_sp
+								is_secondary_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_gp
+								is_greater_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_minor
+								AND = {
+									NOT = {
+										is_greater_power = yes
+									}
+									NOT = {
+										is_secondary_power = yes
+									}
+									civilized = yes
+								}
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_unciv
+								civilized = no
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_vassal_endabled
+							AND = {
+								has_country_flag = tgcnv_cp_selected_vassal
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_enemy_endabled
+							OR = {
+								war_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_ally_endabled
+							OR = {
+								alliance_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_target_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_cp_tag_target
+							}
+						}
+					}
+					OR = {
+						tag = ENG
+						tag = NRM
+						tag = SCO
+						tag = ENL
+						tag = EIC
+					}
+				}
+			}
+			random_list = {
+				1 = {
+					define_general = {
+						name = "Aethelwold of Wessex"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "John Dudley"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Oliver Cromwell"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Horatio Nelson"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Thomas Edward Lawrence"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Francis Lloyd"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Bernard Montgomery"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_country = {
+			limit = {
+				AND = {
+					OR = {
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_sp
+								is_secondary_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_gp
+								is_greater_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_minor
+								AND = {
+									NOT = {
+										is_greater_power = yes
+									}
+									NOT = {
+										is_secondary_power = yes
+									}
+									civilized = yes
+								}
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_unciv
+								civilized = no
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_vassal_endabled
+							AND = {
+								has_country_flag = tgcnv_cp_selected_vassal
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_enemy_endabled
+							OR = {
+								war_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_ally_endabled
+							OR = {
+								alliance_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_target_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_cp_tag_target
+							}
+						}
+					}
+					OR = {
+						tag = USA
+						tag = FSA
+					}
+				}
+			}
+			random_list = {
+				1 = {
+					define_general = {
+						name = "Ulysses S. Grant"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "George S. Patton"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "George Washington"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Robert E. Lee "
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Dwight D. Eisenhower"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Rutherford B. Hayes"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "George Armstrong Custer"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_country = {
+			limit = {
+				AND = {
+					OR = {
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_sp
+								is_secondary_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_gp
+								is_greater_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_minor
+								AND = {
+									NOT = {
+										is_greater_power = yes
+									}
+									NOT = {
+										is_secondary_power = yes
+									}
+									civilized = yes
+								}
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_unciv
+								civilized = no
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_vassal_endabled
+							AND = {
+								has_country_flag = tgcnv_cp_selected_vassal
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_enemy_endabled
+							OR = {
+								war_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_ally_endabled
+							OR = {
+								alliance_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_target_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_cp_tag_target
+							}
+						}
+					}
+					NOT = {
+						tag = USA
+						tag = FSA
+						tag = ENG
+						tag = NRM
+						tag = SCO
+						tag = ENL
+						tag = EIC
+						tag = FRA
+						tag = NZF
+						tag = FAS
+						tag = FCA
+						tag = ULA
+						tag = BOR
+					}
+				}
+			}
+			random_list = {
+				1 = {
+					define_general = {
+						name = "Bob Bobington"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Abraham Lincoln (Best MP Server)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Jman"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "MaTi5893"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "CynicViper"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Savs"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Radsterman"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Gustavus Adolphus (Sweden)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Frederick the Great (Prussia)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Prince Eugene (Savoy)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Hannibal Barca (Carthage)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Julius Caesar (Rome)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Alexander the Great (Macedonia)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Scipio Africanus (Rome)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Attila the Hun (Huns)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Marcus Agrippa (Rome)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "King Charlemagne (Francia)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Saladin (Arabia)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Genghis Khan (Mongolia)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Shaka Zulu (Zulu)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+				1 = {
+					define_general = {
+						name = "Louis Botha (Boer)"
+						personality = skilled
+						background = natural_born_leader
+					}
+				}
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						OR = {
+							tag = FRA
+							tag = NZF
+							tag = FAS
+							tag = FCA
+							tag = ULA
+							tag = BOR
+						}
+					}
+				}
+			}
+			owner = {
+				limit = {
+
+				}
+				random_list = {
+					1 = {
+						define_general = {
+							name = "Louis VIII"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Charles of Anjou"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Joan of Arc"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Napoleon Bonaparte"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Ferdinand Foch"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Charles de Gaulle"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Philippe Leclerc de Hauteclocque"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+				}
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						OR = {
+							tag = ENG
+							tag = NRM
+							tag = SCO
+							tag = ENL
+							tag = EIC
+						}
+					}
+				}
+			}
+			owner = {
+				limit = {
+
+				}
+				random_list = {
+					1 = {
+						define_general = {
+							name = "Aethelwold of Wessex"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "John Dudley"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Oliver Cromwell"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Horatio Nelson"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Thomas Edward Lawrence"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Francis Lloyd"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Bernard Montgomery"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+				}
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						OR = {
+							tag = USA
+							tag = FSA
+						}
+					}
+				}
+			}
+			owner = {
+				limit = {
+
+				}
+				random_list = {
+					1 = {
+						define_general = {
+							name = "Ulysses S. Grant"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "George S. Patton"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "George Washington"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Robert E. Lee "
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Dwight D. Eisenhower"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Rutherford B. Hayes"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "George Armstrong Custer"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+				}
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						NOT = {
+							tag = USA
+							tag = FSA
+							tag = FRA
+							tag = NZF
+							tag = FAS
+							tag = FCA
+							tag = ULA
+							tag = BOR
+							tag = ENG
+							tag = NRM
+							tag = SCO
+							tag = ENL
+							tag = EIC
+						}
+					}
+				}
+			}
+			owner = {
+				limit = {
+
+				}
+				random_list = {
+					1 = {
+						define_general = {
+							name = "Bob Bobington"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Abraham Lincoln (Best MP Server)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Jman "
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "MaTi5893 "
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "CynicViper "
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Savs"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Radsterman"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Gustavus Adolphus (Sweden)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Frederick the Great (Prussia)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Prince Eugene (Savoy)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Hannibal Barca (Carthage)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Julius Caesar (Rome)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Alexander the Great (Macedonia)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Scipio Africanus (Rome)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Attila the Hun (Huns)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Marcus Agrippa (Rome)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "King Charlemagne (Francia)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Saladin (Arabia)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Genghis Khan (Mongolia)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Shaka Zulu (Zulu)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+					1 = {
+						define_general = {
+							name = "Louis Botha (Boer)"
+							personality = skilled
+							background = natural_born_leader
+						}
+					}
+				}
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTB777770027"
+	}
+}
+country_event = {
+	id = 777770087
+	is_triggered_only = yes
+	option = {
+		add_country_modifier = {
+			name = CB_gen_plus
+			duration = 365
+		}
+		remove_country_modifier = CB_gen_minus
+		ai_chance = {
+			factor = 1
+		}
+		name = "TGCNV_CP_EVENT_777770087_OPTION_0"
+	}
+	title = "TGCNV_CP_EVENT_777770087_TITLE"
+	desc = "TGCNV_CP_EVENT_777770087_DESC"
+}

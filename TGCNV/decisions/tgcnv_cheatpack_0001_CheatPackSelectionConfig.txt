@@ -1,0 +1,1240 @@
+# TGCNV CheatPack 2.10 port. Original gameplay commands remain available.
+political_decisions = {
+	TGCNV_CP_TargetDecisionsEnableCP = {
+		picture = "tgcnv_cp_cogs_cheatpack_menu"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_global_flag = tgcnv_cp_target_select_menu
+			}
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_target_select_menu
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_TargetDecisionsDisableCP = {
+		picture = "tgcnv_cp_cogs_cheatpack_menu"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			has_global_flag = tgcnv_cp_target_select_menu
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_target_select_menu
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_ClearAllSelections = {
+		picture = "tgcnv_cp_cogs_cheatpack_CLR_blue"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			OR = {
+				has_country_flag = tgcnv_cp_selected_self
+				has_global_flag = tgcnv_cp_selection_sp_endabled
+				has_global_flag = tgcnv_cp_selection_gp_endabled
+				has_global_flag = tgcnv_cp_selection_self_endabled
+				has_global_flag = tgcnv_cp_selection_minor_endabled
+				has_global_flag = tgcnv_cp_selection_unciv_endabled
+				has_global_flag = tgcnv_cp_selection_enemy_endabled
+				has_global_flag = tgcnv_cp_deselected_self
+				has_global_flag = tgcnv_cp_selection_ally_endabled
+				has_global_flag = tgcnv_cp_selection_target_endabled
+				has_global_flag = tgcnv_cp_selection_vassal_endabled
+				has_country_flag = tgcnv_cp_cp_tag_target
+			}
+		}
+		effect = {
+			clr_country_flag = tgcnv_cp_selected_self
+			clr_global_flag = tgcnv_cp_selection_sp_endabled
+			clr_global_flag = tgcnv_cp_selection_gp_endabled
+			clr_global_flag = tgcnv_cp_selection_self_endabled
+			clr_global_flag = tgcnv_cp_selection_minor_endabled
+			clr_global_flag = tgcnv_cp_selection_unciv_endabled
+			clr_global_flag = tgcnv_cp_selection_enemy_endabled
+			clr_global_flag = tgcnv_cp_selection_ally_endabled
+			clr_global_flag = tgcnv_cp_selection_target_endabled
+			clr_global_flag = tgcnv_cp_selection_vassal_endabled
+			clr_global_flag = tgcnv_cp_deselected_self
+			clr_country_flag = tgcnv_cp_cp_tag_target
+			any_country = {
+				limit = {
+					OR = {
+						exists = yes
+						exists = no
+					}
+				}
+				clr_country_flag = tgcnv_cp_cp_tag_target
+			}
+			clr_country_flag = tgcnv_cp_cp_tag_target
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+			clr_global_flag = tgcnv_cp_deselected_self
+			clr_global_flag = tgcnv_cp_selection_ally_endabled
+			clr_global_flag = tgcnv_cp_selection_enemy_endabled
+			clr_global_flag = tgcnv_cp_selection_gp_endabled
+			clr_global_flag = tgcnv_cp_selection_minor_endabled
+			clr_global_flag = tgcnv_cp_selection_self_endabled
+			clr_global_flag = tgcnv_cp_selection_sp_endabled
+			clr_global_flag = tgcnv_cp_selection_target_endabled
+			clr_global_flag = tgcnv_cp_selection_unciv_endabled
+			clr_global_flag = tgcnv_cp_selection_vassal_endabled
+			any_country = {
+				clr_country_flag = tgcnv_cp_cp_tag_target
+				clr_country_flag = tgcnv_cp_selected_ally
+				clr_country_flag = tgcnv_cp_selected_enemy
+				clr_country_flag = tgcnv_cp_selected_gp
+				clr_country_flag = tgcnv_cp_selected_minor
+				clr_country_flag = tgcnv_cp_selected_self
+				clr_country_flag = tgcnv_cp_selected_sp
+				clr_country_flag = tgcnv_cp_selected_unciv
+				clr_country_flag = tgcnv_cp_selected_vassal
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelectSelf = {
+		picture = "tgcnv_cp_cogs_cheatpack_Self_neutral"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			NOT = {
+				has_country_flag = tgcnv_cp_selected_self
+				has_global_flag = tgcnv_cp_selection_self_endabled
+			}
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_tag_target
+			}
+			NOT = {
+				OR = {
+					AND = {
+						has_global_flag = tgcnv_cp_selection_sp_endabled
+						is_secondary_power = yes
+					}
+					AND = {
+						has_global_flag = tgcnv_cp_selection_gp_endabled
+						is_greater_power = yes
+					}
+					AND = {
+						has_global_flag = tgcnv_cp_selection_minor_endabled
+						is_greater_power = no
+						is_secondary_power = no
+						civilized = yes
+					}
+					AND = {
+						has_global_flag = tgcnv_cp_selection_unciv_endabled
+						civilized = no
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = tgcnv_cp_selected_self
+			set_global_flag = tgcnv_cp_selection_self_endabled
+			clr_global_flag = tgcnv_cp_deselected_self
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelectSelfDeselected = {
+		picture = "tgcnv_cp_cogs_cheatpack_Self_false"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_deselected_self
+			NOT = {
+				has_country_flag = tgcnv_cp_selected_self
+				has_global_flag = tgcnv_cp_selection_self_endabled
+			}
+		}
+		effect = {
+			set_country_flag = tgcnv_cp_selected_self
+			set_global_flag = tgcnv_cp_selection_self_endabled
+			clr_global_flag = tgcnv_cp_deselected_self
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelfSelected = {
+		picture = "tgcnv_cp_cogs_cheatpack_Self_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			OR = {
+				AND = {
+					has_global_flag = tgcnv_cp_selection_self_endabled
+					has_country_flag = tgcnv_cp_selected_self
+					has_global_flag = tgcnv_cp_target_select_menu
+					NOT = {
+						AND = {
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							is_secondary_power = yes
+							NOT = {
+								has_global_flag = tgcnv_cp_deselected_self
+							}
+						}
+						AND = {
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							is_greater_power = yes
+							NOT = {
+								has_global_flag = tgcnv_cp_deselected_self
+							}
+						}
+						AND = {
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							is_greater_power = no
+							is_secondary_power = no
+							civilized = yes
+							NOT = {
+								has_global_flag = tgcnv_cp_deselected_self
+							}
+						}
+						AND = {
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							civilized = no
+							NOT = {
+								has_global_flag = tgcnv_cp_deselected_self
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_self_endabled
+			clr_country_flag = tgcnv_cp_selected_self
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelfSelectedPlus = {
+		picture = "tgcnv_cp_cogs_cheatpack_Self_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			has_global_flag = tgcnv_cp_target_select_menu
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			OR = {
+				AND = {
+					has_global_flag = tgcnv_cp_selection_sp_endabled
+					is_secondary_power = yes
+					NOT = {
+						has_global_flag = tgcnv_cp_deselected_self
+					}
+				}
+				AND = {
+					has_global_flag = tgcnv_cp_selection_gp_endabled
+					is_greater_power = yes
+					NOT = {
+						has_global_flag = tgcnv_cp_deselected_self
+					}
+				}
+				AND = {
+					has_global_flag = tgcnv_cp_selection_minor_endabled
+					is_greater_power = no
+					is_secondary_power = no
+					civilized = yes
+					NOT = {
+						has_global_flag = tgcnv_cp_deselected_self
+					}
+				}
+				AND = {
+					has_global_flag = tgcnv_cp_selection_unciv_endabled
+					civilized = no
+					NOT = {
+						has_global_flag = tgcnv_cp_deselected_self
+					}
+				}
+			}
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_self_endabled
+			clr_country_flag = tgcnv_cp_selected_self
+			set_global_flag = tgcnv_cp_deselected_self
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelfSelectedPlusTAG = {
+		picture = "tgcnv_cp_cogs_cheatpack_Self_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			has_global_flag = tgcnv_cp_target_select_menu
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			OR = {
+				AND = {
+					has_global_flag = tgcnv_cp_selection_target_endabled
+					has_country_flag = tgcnv_cp_cp_tag_target
+				}
+			}
+		}
+		effect = {
+			clr_country_flag = tgcnv_cp_cp_tag_target
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelectVassals = {
+		picture = "tgcnv_cp_cogs_cheatpack_Vassal_neutral"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			NOT = {
+				has_global_flag = tgcnv_cp_selection_vassal_endabled
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_selection_vassal_endabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_VassalsSelected = {
+		picture = "tgcnv_cp_cogs_cheatpack_Vassal_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_vassal_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_vassal_endabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelectEnemys = {
+		picture = "tgcnv_cp_cogs_cheatpack_Enemy_neutral"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			NOT = {
+				has_global_flag = tgcnv_cp_selection_enemy_endabled
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_selection_enemy_endabled
+			any_country = {
+				limit = {
+					war_with = THIS
+				}
+				set_country_flag = tgcnv_cp_selected_enemy
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_EnemysSelected = {
+		picture = "tgcnv_cp_cogs_cheatpack_Enemy_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_enemy_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_enemy_endabled
+			any_country = {
+				limit = {
+					war_with = THIS
+				}
+				clr_country_flag = tgcnv_cp_selected_enemy
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelectAllies = {
+		picture = "tgcnv_cp_cogs_cheatpack_Ally_neutral"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			NOT = {
+				has_global_flag = tgcnv_cp_selection_ally_endabled
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_selection_ally_endabled
+			any_country = {
+				limit = {
+					alliance_with = THIS
+				}
+				set_country_flag = tgcnv_cp_selected_ally
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_AlliesSelected = {
+		picture = "tgcnv_cp_cogs_cheatpack_Ally_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_ally_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_ally_endabled
+			any_country = {
+				limit = {
+					alliance_with = THIS
+				}
+				clr_country_flag = tgcnv_cp_selected_ally
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelectGreatPowers = {
+		picture = "tgcnv_cp_cogs_cheatpack_GP_neutral"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			NOT = {
+				has_global_flag = tgcnv_cp_selection_gp_endabled
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_selection_gp_endabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_GreatPowersSelected = {
+		picture = "tgcnv_cp_cogs_cheatpack_GP_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			is_greater_power = no
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_gp_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_gp_endabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_GreatPowersSelected_asGP = {
+		picture = "tgcnv_cp_cogs_cheatpack_GP_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			is_greater_power = yes
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_gp_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_gp_endabled
+			clr_global_flag = tgcnv_cp_deselected_self
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelectSecondaryPowers = {
+		picture = "tgcnv_cp_cogs_cheatpack_SP_neutral"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			NOT = {
+				has_global_flag = tgcnv_cp_selection_sp_endabled
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_selection_sp_endabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SecondaryPowersSelected = {
+		picture = "tgcnv_cp_cogs_cheatpack_SP_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			is_secondary_power = no
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_sp_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_sp_endabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SecondaryPowersSelected_asSP = {
+		picture = "tgcnv_cp_cogs_cheatpack_SP_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			is_secondary_power = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_sp_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_sp_endabled
+			clr_global_flag = tgcnv_cp_deselected_self
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelectMinorPowers = {
+		picture = "tgcnv_cp_cogs_cheatpack_Civ_neutral"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			NOT = {
+				has_global_flag = tgcnv_cp_selection_minor_endabled
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_selection_minor_endabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_MinorPowersSelected = {
+		picture = "tgcnv_cp_cogs_cheatpack_Civ_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+				civilized = no
+			}
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_minor_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_minor_endabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_MinorPowersSelected_asMinor = {
+		picture = "tgcnv_cp_cogs_cheatpack_Civ_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			is_greater_power = no
+			is_secondary_power = no
+			civilized = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_minor_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_minor_endabled
+			clr_global_flag = tgcnv_cp_deselected_self
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelectUnCivPowers = {
+		picture = "tgcnv_cp_cogs_cheatpack_UnCiv_neutral"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			NOT = {
+				has_global_flag = tgcnv_cp_selection_unciv_endabled
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_selection_unciv_endabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_UnCivPowersSelected = {
+		picture = "tgcnv_cp_cogs_cheatpack_UnCiv_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			civilized = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_unciv_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_unciv_endabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_UnCivPowersSelected_asUnCiv = {
+		picture = "tgcnv_cp_cogs_cheatpack_UnCiv_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			civilized = no
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			has_global_flag = tgcnv_cp_selection_unciv_endabled
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_unciv_endabled
+			clr_global_flag = tgcnv_cp_deselected_self
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_SelectTargetCountry = {
+		picture = "tgcnv_cp_cogs_cheatpack_TAG_neutral"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_tag_target
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_selection_target_endabled
+			set_country_flag = tgcnv_cp_cp_tag_target
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_TargetCountrySelected = {
+		picture = "tgcnv_cp_cogs_cheatpack_TAG_true"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			OR = {
+				has_country_flag = tgcnv_cp_cp_tag_target
+			}
+		}
+		effect = {
+			clr_country_flag = tgcnv_cp_cp_tag_target
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_TargetCountrySelectedGeneral = {
+		picture = "tgcnv_cp_cogs_cheatpack_CLRTAG_blue"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_select_menu
+			OR = {
+				has_global_flag = tgcnv_cp_selection_target_endabled
+			}
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection_target_endabled
+			clr_country_flag = tgcnv_cp_cp_tag_target
+			any_country = {
+				limit = {
+					OR = {
+						exists = yes
+						exists = no
+					}
+				}
+				clr_country_flag = tgcnv_cp_cp_tag_target
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_AiGreaterSelfSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			is_greater_power = yes
+			NOT = {
+				has_country_flag = tgcnv_cp_selected_gp
+			}
+		}
+		effect = {
+			set_country_flag = tgcnv_cp_selected_gp
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiGreaterSelfDeSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			is_greater_power = no
+			has_country_flag = tgcnv_cp_selected_gp
+		}
+		effect = {
+			clr_country_flag = tgcnv_cp_selected_gp
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiSecondarySelfSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			is_secondary_power = yes
+			NOT = {
+				has_country_flag = tgcnv_cp_selected_sp
+			}
+		}
+		effect = {
+			set_country_flag = tgcnv_cp_selected_sp
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiSecondarySelfDeSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			is_secondary_power = no
+			has_country_flag = tgcnv_cp_selected_sp
+		}
+		effect = {
+			clr_country_flag = tgcnv_cp_selected_sp
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiMinorSelfSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			is_secondary_power = no
+			is_greater_power = no
+			civilized = yes
+			NOT = {
+				has_country_flag = tgcnv_cp_selected_minor
+			}
+		}
+		effect = {
+			set_country_flag = tgcnv_cp_selected_minor
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiMinorSelfDeSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+				civilized = no
+			}
+			has_country_flag = tgcnv_cp_selected_minor
+		}
+		effect = {
+			clr_country_flag = tgcnv_cp_selected_minor
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiUnCivSelfSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			civilized = no
+			NOT = {
+				has_country_flag = tgcnv_cp_selected_unciv
+			}
+		}
+		effect = {
+			set_country_flag = tgcnv_cp_selected_unciv
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiUnCivSelfDeSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			civilized = yes
+			has_country_flag = tgcnv_cp_selected_unciv
+		}
+		effect = {
+			clr_country_flag = tgcnv_cp_selected_unciv
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiEnemySelfSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			has_country_flag = MightBeUnuseded
+			NOT = {
+				has_country_flag = tgcnv_cp_selected_enemy
+			}
+		}
+		effect = {
+			set_country_flag = tgcnv_cp_selected_enemy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiEnemySelfDeSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			has_country_flag = tgcnv_cp_selected_enemy
+			war = no
+		}
+		effect = {
+			clr_country_flag = tgcnv_cp_selected_enemy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiVassalSelfSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			OR = {
+				is_vassal = yes
+				is_substate = yes
+			}
+			overlord = {
+				has_country_flag = tgcnv_cp_player_nation
+			}
+			NOT = {
+				has_country_flag = tgcnv_cp_selected_vassal
+			}
+		}
+		effect = {
+			set_country_flag = tgcnv_cp_selected_vassal
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiVassalSelfDeSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			OR = {
+				is_vassal = yes
+				is_substate = yes
+			}
+			overlord = {
+				NOT = {
+					has_country_flag = tgcnv_cp_player_nation
+				}
+			}
+			has_country_flag = tgcnv_cp_selected_vassal
+		}
+		effect = {
+			clr_country_flag = tgcnv_cp_selected_vassal
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiMainPlayerSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			any_neighbor_country = {
+				ai = no
+				NOT = {
+					has_country_flag = tgcnv_cp_player_nation
+				}
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					exists = yes
+					ai = no
+				}
+				set_country_flag = tgcnv_cp_player_nation
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiMainPlayerDeSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			any_neighbor_country = {
+				ai = yes
+				has_country_flag = tgcnv_cp_player_nation
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					exists = yes
+					ai = yes
+				}
+				clr_country_flag = tgcnv_cp_player_nation
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiSecondaryPlayerDeSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			any_neighbor_country = {
+				ai = no
+				is_secondary_power = no
+				has_country_flag = tgcnv_cp_selected_sp
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					is_secondary_power = no
+					has_country_flag = tgcnv_cp_selected_sp
+				}
+				clr_country_flag = tgcnv_cp_selected_sp
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiSecondaryPlayerSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			any_neighbor_country = {
+				ai = no
+				is_secondary_power = yes
+				NOT = {
+					has_country_flag = tgcnv_cp_selected_sp
+				}
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					is_secondary_power = yes
+				}
+				set_country_flag = tgcnv_cp_selected_sp
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiGreatPlayerSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			any_neighbor_country = {
+				ai = no
+				is_greater_power = yes
+				NOT = {
+					has_country_flag = tgcnv_cp_selected_gp
+				}
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					is_greater_power = yes
+				}
+				set_country_flag = tgcnv_cp_selected_gp
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiGreatPlayerDeSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			any_neighbor_country = {
+				ai = no
+				is_greater_power = no
+				has_country_flag = tgcnv_cp_selected_gp
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					is_greater_power = no
+					has_country_flag = tgcnv_cp_selected_gp
+				}
+				clr_country_flag = tgcnv_cp_selected_gp
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiMinorPlayerSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			any_neighbor_country = {
+				ai = no
+				civilized = yes
+				is_greater_power = no
+				is_secondary_power = no
+				NOT = {
+					has_country_flag = tgcnv_cp_selected_minor
+				}
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					AND = {
+						civilized = yes
+						is_greater_power = no
+						is_secondary_power = no
+					}
+				}
+				set_country_flag = tgcnv_cp_selected_minor
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiMinorPlayerDeSelect = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			any_neighbor_country = {
+				ai = no
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+					civilized = no
+				}
+				has_country_flag = tgcnv_cp_selected_minor
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						is_greater_power = yes
+						is_secondary_power = yes
+						civilized = no
+					}
+					has_country_flag = tgcnv_cp_selected_minor
+				}
+				clr_country_flag = tgcnv_cp_selected_minor
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiSELECTION = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			NOT = {
+				has_global_flag = tgcnv_cp_selection
+			}
+			OR = {
+				has_global_flag = tgcnv_cp_selection_gp_endabled
+				has_global_flag = tgcnv_cp_selection_sp_endabled
+				has_global_flag = tgcnv_cp_selection_self_endabled
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_selection
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiSELECTIONclear = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			has_global_flag = tgcnv_cp_selection
+			NOT = {
+				OR = {
+					has_global_flag = tgcnv_cp_selection_gp_endabled
+					has_global_flag = tgcnv_cp_selection_sp_endabled
+					has_global_flag = tgcnv_cp_selection_self_endabled
+				}
+			}
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_selection
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_AiSELECTIONclearExpellCores = {
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = yes
+			has_global_flag = tgcnv_cp_cp_expellcores
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_cp_expellcores
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_CP_HideAllDecisions = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			has_global_flag = tgcnv_cp_target_select_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770010
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

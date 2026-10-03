@@ -1,0 +1,182 @@
+# TGCNV CheatPack 2.10 port. Original gameplay commands remain available.
+political_decisions = {
+	TGCNV_CP_EnableAiOccupiedLand = {
+		picture = "tgcnv_cp_cogs_anarchy_mode"
+		potential = {
+			ai = no
+			has_global_flag = tgcnv_cheatpack_enabled
+			NOT = {
+				has_global_flag = tgcnv_cp_aioccflag
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_aioccflag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_DisableAiOccupiedLand = {
+		picture = "tgcnv_cp_cogs_anarchy_mode"
+		potential = {
+			ai = no
+			has_global_flag = tgcnv_cheatpack_enabled
+			has_global_flag = tgcnv_cp_aioccflag
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_aioccflag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_TakeYourOccupiedLandAIWithAPort = {
+		potential = {
+			ai = yes
+			has_global_flag = tgcnv_cheatpack_enabled
+			has_global_flag = tgcnv_cp_aioccflag
+		}
+		allow = {
+			OR = {
+				war = yes
+				has_country_flag = tgcnv_cp_vassalatanarchy
+			}
+			is_vassal = no
+			num_of_ports = 1
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					owned_by = THIS
+				}
+				any_neighbor_province = {
+					limit = {
+						AND = {
+							NOT = {
+								owned_by = THIS
+							}
+							controlled_by = THIS
+						}
+						owner = {
+							num_of_cities = 2
+						}
+					}
+					set_province_flag = tgcnv_cp_recentaquire
+					secede_province = THIS
+				}
+			}
+			any_country = {
+				limit = {
+					NOT = {
+						tag = THIS
+					}
+				}
+				any_owned = {
+					limit = {
+						AND = {
+							controlled_by = THIS
+							port = yes
+							province_control_days = 15
+						}
+						owner = {
+							num_of_cities = 2
+						}
+					}
+					set_province_flag = tgcnv_cp_recentaquire
+					secede_province = THIS
+				}
+			}
+			any_country = {
+				limit = {
+					NOT = {
+						tag = THIS
+					}
+				}
+				any_owned = {
+					limit = {
+						AND = {
+							controlled_by = THIS
+						}
+						owner = {
+							NOT = {
+								num_of_cities = 2
+							}
+						}
+					}
+					set_province_flag = tgcnv_cp_recentaquire
+					owner = {
+						annex_to = THIS
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TGCNV_CP_TakeYourOccupiedLandAIWithoutAPort = {
+		potential = {
+			ai = yes
+			has_global_flag = tgcnv_cheatpack_enabled
+			has_global_flag = tgcnv_cp_aioccflag
+		}
+		allow = {
+			OR = {
+				war = yes
+				has_country_flag = tgcnv_cp_vassalatanarchy
+			}
+			is_vassal = no
+			NOT = {
+				num_of_ports = 1
+			}
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					owned_by = THIS
+				}
+				any_neighbor_province = {
+					limit = {
+						AND = {
+							NOT = {
+								owned_by = THIS
+							}
+							controlled_by = THIS
+						}
+						owner = {
+							num_of_cities = 2
+						}
+					}
+					set_province_flag = tgcnv_cp_recentaquire
+					secede_province = THIS
+				}
+			}
+			any_country = {
+				limit = {
+					NOT = {
+						tag = THIS
+					}
+				}
+				any_owned = {
+					limit = {
+						AND = {
+							controlled_by = THIS
+							owner = {
+								NOT = {
+									num_of_cities = 2
+								}
+							}
+						}
+					}
+					set_province_flag = tgcnv_cp_recentaquire
+					owner = {
+						annex_to = THIS
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

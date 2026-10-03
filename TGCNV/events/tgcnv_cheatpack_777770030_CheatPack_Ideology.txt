@@ -1,0 +1,54 @@
+# TGCNV CheatPack 2.10 port. Original gameplay commands remain available.
+country_event = {
+	id = 777770030
+	title = "TGCNV_CP_EVTNAME777770030"
+	desc = "TGCNV_CP_EVTDESC777770030"
+	major = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTA777770030"
+		enable_ideology = fascist
+		enable_ideology = reactionary
+		enable_ideology = conservative
+		enable_ideology = socialist
+		enable_ideology = communist
+		enable_ideology = liberal
+		clr_global_flag = tgcnv_cp_default_to_self_cp
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTB777770030"
+		enable_ideology = fascist
+		clr_global_flag = tgcnv_cp_default_to_self_cp
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTC777770030"
+		enable_ideology = reactionary
+		clr_global_flag = tgcnv_cp_default_to_self_cp
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTD777770030"
+		enable_ideology = conservative
+		clr_global_flag = tgcnv_cp_default_to_self_cp
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTE777770030"
+		enable_ideology = socialist
+		clr_global_flag = tgcnv_cp_default_to_self_cp
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTF777770030"
+		enable_ideology = communist
+		clr_global_flag = tgcnv_cp_default_to_self_cp
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTG777770030"
+		enable_ideology = liberal
+		clr_global_flag = tgcnv_cp_default_to_self_cp
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTH777770030"
+	}
+}

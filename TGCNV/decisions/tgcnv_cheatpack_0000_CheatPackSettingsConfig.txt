@@ -1,0 +1,25 @@
+# TGCNV CheatPack 2.10 port. Original gameplay commands remain available.
+political_decisions = {
+	TGCNV_CP_vassal_interactions_cheatpack = {
+		picture = "tgcnv_cp_cogs_cheatpack_menu"
+		alert = no
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			ai = no
+			num_of_vassals_no_substates = 1
+			is_vassal = no
+		}
+		allow = {
+			civilized = yes
+		}
+		effect = {
+			random_country = {
+				limit = {
+					exists = yes
+					vassal_of = THIS
+				}
+				country_event = 477877793
+			}
+		}
+	}
+}

@@ -1274,7 +1274,120 @@ guiTypes = {
 				position = { x= 230 y = 233 }
 			}
 		}
-	}
+	
+        # Prestige diplomacy: appended after native children to draw above them.
+        guiButtonType = {
+            name = "tg_prestige_open"
+            position = { x = 480 y = -28 }
+            quadTextureSprite = "GFX_button_thin_120"
+            buttonFont = "vic_18_black"
+            buttonText = "TGC_PRESTIGE_OPEN"
+            clicksound = click
+        }
+        windowType = {
+            name = "tg_prestige_panel"
+            position = { x = 42 y = 58 }
+            size = { x = 570 y = 350 }
+            moveable = 0
+            fullScreen = no
+            orientation = "UPPER_LEFT"
+            backGround = "tg_prestige_background"
+            guiButtonType = {
+                name = "tg_prestige_background"
+                quadTextureSprite = "GFX_tgcnv_prestige_background"
+                position = { x = 0 y = 0 }
+            }
+            instantTextBoxType = {
+                name = "tg_prestige_title"
+                position = { x = 26 y = 12 }
+                font = "vic_22"
+                text = "TGC_PRESTIGE_TITLE"
+                maxWidth = 360
+                maxHeight = 24
+            }
+            guiButtonType = {
+                name = "tg_prestige_close"
+                position = { x = 426 y = 12 }
+                quadTextureSprite = "GFX_button_thin_120"
+                buttonFont = "vic_18_black"
+                buttonText = "TGC_PRESTIGE_CLOSE"
+                clicksound = click
+            }
+            instantTextBoxType = {
+                name = "tg_prestige_resources"
+                position = { x = 26 y = 44 }
+                font = "vic_18"
+                text = " "
+                maxWidth = 520
+                maxHeight = 32
+                fixedsize = yes
+            }
+
+            guiButtonType = {
+                name = "tg_prestige_goodwill"
+                position = { x = 26 y = 84 }
+                quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
+                buttonFont = "vic_18"
+                buttonText = "TGC_PRESTIGE_GOODWILL"
+                clicksound = click
+            }
+            instantTextBoxType = {
+                name = "tg_prestige_effect0"
+                position = { x = 182 y = 84 }
+                font = "vic_18"
+                text = " "
+                maxWidth = 362
+                maxHeight = 48
+                fixedsize = yes
+            }
+
+            guiButtonType = {
+                name = "tg_prestige_reopen"
+                position = { x = 26 y = 140 }
+                quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
+                buttonFont = "vic_18"
+                buttonText = "TGC_PRESTIGE_REOPEN"
+                clicksound = click
+            }
+            instantTextBoxType = {
+                name = "tg_prestige_effect1"
+                position = { x = 182 y = 140 }
+                font = "vic_18"
+                text = " "
+                maxWidth = 362
+                maxHeight = 48
+                fixedsize = yes
+            }
+
+            guiButtonType = {
+                name = "tg_prestige_offensive"
+                position = { x = 26 y = 196 }
+                quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
+                buttonFont = "vic_18"
+                buttonText = "TGC_PRESTIGE_OFFENSIVE"
+                clicksound = click
+            }
+            instantTextBoxType = {
+                name = "tg_prestige_effect2"
+                position = { x = 182 y = 196 }
+                font = "vic_18"
+                text = " "
+                maxWidth = 362
+                maxHeight = 48
+                fixedsize = yes
+            }
+
+            instantTextBoxType = {
+                name = "tg_prestige_status"
+                position = { x = 26 y = 254 }
+                font = "vic_18"
+                text = " "
+                maxWidth = 520
+                maxHeight = 76
+                fixedsize = yes
+            }
+        }
+}
 
 	########################
 	# COUNTRY INFO         #

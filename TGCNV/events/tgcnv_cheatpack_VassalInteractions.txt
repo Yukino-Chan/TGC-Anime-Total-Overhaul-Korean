@@ -1,0 +1,105 @@
+# TGCNV CheatPack 2.10 port. Original gameplay commands remain available.
+country_event = {
+	id = 477877788
+	is_triggered_only = yes
+	option = {
+		overlord = {
+			release_vassal = THIS
+		}
+		name = "TGCNV_CP_EVENT_477877788_OPTION_0"
+	}
+	title = "TGCNV_CP_EVENT_477877788_TITLE"
+	desc = "TGCNV_CP_EVENT_477877788_DESC"
+}
+country_event = {
+	id = 477877792
+	is_triggered_only = yes
+	option = {
+		FROM = {
+			country_event = 477877788
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				vassal_of = THIS
+			}
+			clr_country_flag = tgcnv_cp_interacted_with
+		}
+		name = "TGCNV_CP_EVENT_477877792_OPTION_0"
+	}
+	option = {
+		any_owned = {
+			limit = {
+				is_core = FROM
+				NOT = {
+					is_core = THIS
+				}
+			}
+			secede_province = FROM
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				vassal_of = THIS
+			}
+			clr_country_flag = tgcnv_cp_interacted_with
+		}
+		name = "TGCNV_CP_EVENT_477877792_OPTION_1"
+	}
+	option = {
+		random_country = {
+			limit = {
+				vassal_of = THIS
+				exists = yes
+				NOT = {
+					has_country_flag = tgcnv_cp_interacted_with
+				}
+			}
+			country_event = 477877793
+			THIS = {
+				set_country_flag = tgcnv_cp_possible_interactions
+			}
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				exists = yes
+				THIS = {
+					NOT = {
+						has_country_flag = tgcnv_cp_possible_interactions
+					}
+				}
+			}
+			clr_country_flag = tgcnv_cp_interacted_with
+		}
+		name = "TGCNV_CP_EVENT_477877792_OPTION_2"
+	}
+	option = {
+		any_country = {
+			limit = {
+				exists = yes
+				vassal_of = THIS
+			}
+			clr_country_flag = tgcnv_cp_interacted_with
+		}
+		name = "TGCNV_CP_EVENT_477877792_OPTION_3"
+	}
+	title = "TGCNV_CP_EVENT_477877792_TITLE"
+	desc = "TGCNV_CP_EVENT_477877792_DESC"
+}
+country_event = {
+	id = 477877793
+	is_triggered_only = yes
+	option = {
+		set_country_flag = tgcnv_cp_interacted_with
+		FROM = {
+			clr_country_flag = tgcnv_cp_possible_interactions
+		}
+		overlord = {
+			country_event = 477877792
+		}
+		name = "TGCNV_CP_EVENT_477877793_OPTION_0"
+	}
+	title = "TGCNV_CP_EVENT_477877793_TITLE"
+	desc = "TGCNV_CP_EVENT_477877793_DESC"
+}

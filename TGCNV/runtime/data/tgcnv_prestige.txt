@@ -1,0 +1,10 @@
+# Prestige paid war and diplomacy. Read once at startup.
+enabled = yes
+declaration_cost = 30
+goodwill_cost = 20
+reopen_cost = 40
+offensive_cost = 60
+cooldown_days = 730
+protection_days = 90
+# Native peace offer acceptance/commit is not yet connected.
+peace_enabled = no

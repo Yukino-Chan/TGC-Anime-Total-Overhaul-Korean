@@ -1,0 +1,8 @@
+spriteTypes = {
+    corneredTileSpriteType = {
+        name = "GFX_tgcnv_prestige_background"
+        size = { x = 570 y = 350 }
+        textureFile = "gfx\\interface\\tiles_dialog_diplo.tga"
+        borderSize = { x = 94 y = 94 }
+    }
+}

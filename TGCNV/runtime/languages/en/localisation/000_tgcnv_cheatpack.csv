@@ -1,0 +1,436 @@
+CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;ITALIAN;SWEDISH;CZECH;HUNGARIAN;DUTCH;PORTUGUESE;RUSSIAN;FINNISH;x
+TGCNV_CP_AlliesSelected_desc;You have selected your allies.;;;;;;;;;;;;;x
+TGCNV_CP_AlliesSelected_title;[Cheat] Allies Selected.;;;;;;;;;;;;;x
+TGCNV_CP_CP_EditPopulationTypes_desc;Allows you to modify the population type sizes of target nations. (Event ID: 777770060);;;;;;;;;;;;;x
+TGCNV_CP_CP_EditPopulationTypes_title;[Cheat] Modify Population Types;;;;;;;;;;;;;x
+TGCNV_CP_CP_EnableTechnology_desc;Allows the target nation to unlock selected technology groups. (Event ID: 777770060);;;;;;;;;;;;;x
+TGCNV_CP_CP_EnableTechnology_title;[Cheat] Enable Technology;;;;;;;;;;;;;x
+TGCNV_CP_CP_HideAllDecisions_desc;Hides or shows only the cheat menu. Clears target selections. After hiding, it can be restored with the [Cheat] Show Hidden Cheat Menu decision.;;;;;;;;;;;;;x
+TGCNV_CP_CP_HideAllDecisions_title;[Cheat] Hide/Show Cheat Menu;;;;;;;;;;;;;x
+TGCNV_CP_CP_MajorUnions_desc;Allows the target nation to form major union states. (Event ID: 777770040);;;;;;;;;;;;;x
+TGCNV_CP_CP_MajorUnions_title;[Cheat] Form Major Union;;;;;;;;;;;;;x
+TGCNV_CP_CP_MinorUnions_desc;Allows the target nation to form minor union states. (Event ID: 777770041);;;;;;;;;;;;;x
+TGCNV_CP_CP_MinorUnions_title;[Cheat] Form Minor Union;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyAnnexation_desc;Allows you to annex or puppet current target nations. By default this event selects your own nation. (Event ID: 777770035);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyAnnexation_title;[Cheat] Enable Annexation & Puppet;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyAssimilation_desc;Allows you to assimilate target nation populations on a national and regional basis. By default this event selects your own nation. (Event ID: 777770021);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyAssimilation_title;[Cheat] Modify Assimilation;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyCBOverride_desc;Selected target nations receive a modifier that increases CB generation speed, and modifiers that reduce CB generation speed are removed. By default this event selects your own nation. (Event ID: 777770023);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyCBOverride_title;[Cheat] Modify CB Generation;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyCivilWars_desc;Allows you to trigger the American Civil War among relevant target nations. By default this event selects your own nation. (Event ID: 777770036);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyCivilWars_title;[Cheat] Modify Civil War;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyCivilzation_desc;Allows you to civilize or uncivilize target nations. By default this event selects your own nation. (Event ID: 777770002);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyCivilzation_title;[Cheat] Modify Civilization Status;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyConsciousness_desc;Allows you to modify selected target nation consciousness. By default this event selects your own nation. (Event ID: 777770008);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyConsciousness_title;[Cheat] Modify Consciousness;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyCores_desc;Allows target nations to add or annex cores in provinces. Also allows the player to remove selected target nation cores from your own nation's provinces. By default this event selects your own nation. (Event ID: 777770025);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyCores_title;[Cheat] Modify Cores;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyGenerals_desc;Allows you to spawn generals for target nations. Will attempt to assign random nation-specific generals where possible. By default this event selects your own nation. (Event ID: 777770027);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyGenerals_title;[Cheat] Modify Generals;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyGovernment_desc;Allows you to select the government type of target nations. Ruling party, reforms, upper house, and population ideology are not changed. By default this event selects your own nation. (Event ID: 777770029);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyGovernment_title;[Cheat] Modify Government;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyIdeology_desc;Allows you to enable specified ideologies. (Event ID: 777770030);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyIdeology_title;[Cheat] Enable Ideologies;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyImmigration_desc;Allows you to apply the Statue of Liberty modifier to selected target nations to increase immigration attraction. May not work in some mods. By default this event selects your own nation. (Event ID: 777770022);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyImmigration_title;[Cheat] Modify Immigration;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyIndependence_desc;Causes target nations to become independent peacefully, trigger an independence war or civil war, or leave a sphere. By default this event selects your own nation. (Event ID: 777770034);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyIndependence_title;[Cheat] Enable Independence;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyInfamy_desc;Allows you to modify selected target nation infamy. By default this event selects your own nation. (Event ID: 777770004);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyInfamy_title;[Cheat] Modify Infamy;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyInfrastructure_desc;Allows you to modify relations with current target nations. By default this event selects your own nation. (Event ID: 777770033);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyInfrastructure_title;[Cheat] Modify Infrastructure;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyJingoism_desc;Allows you to modify selected target nation jingoism. By default this event selects your own nation. (Event ID: 777770020);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyJingoism_title;[Cheat] Modify Jingoism;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyLiferating_desc;Allows you to modify target nation life rating on a national and regional basis. By default this event selects your own nation. (Event ID: 777770024);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyLiferating_title;[Cheat] Modify Life Rating;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyLiteracy_desc;Allows you to modify selected target nation literacy. By default this event selects your own nation. (Event ID: 777770003);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyLiteracy_title;[Cheat] Modify Literacy;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyMilitancy_desc;Allows you to modify selected target nation militancy. By default this event selects your own nation. (Event ID: 777770007);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyMilitancy_title;[Cheat] Modify Militancy;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyPlurality_desc;Allows you to modify selected target nation plurality. By default this event selects your own nation. (Event ID: 777770009);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyPlurality_title;[Cheat] Modify Plurality;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyPopulationIdeology_desc;Allows you to select the majority ideology of target nation populations. Ruling party, reforms, upper house, and government type are not changed. By default this event selects your own nation. (Event ID: 777770032);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyPopulationIdeology_title;[Cheat] Modify Population Ideology;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyPopulation_desc;Allows you to scale the population of target nations by a percentage. By default this event selects your own nation. (Event ID: 777770037);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyPopulation_title;[Cheat] Modify Population Size;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyPrestige_desc;Allows you to modify selected target nation prestige. By default this event selects your own nation. (Event ID: 777770001);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyPrestige_title;[Cheat] Modify Prestige;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyReforms_desc;Allows you to modify target nation reforms, progressing or rolling back reforms. By default this event selects your own nation. (Event ID: 777770026);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyReforms_title;[Cheat] Modify Reforms;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyRelations_desc;Allows you to modify relations with current target nations. By default this event selects your own nation. (Event ID: 777770028);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyRelations_title;[Cheat] Modify Relations;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyTreasury_desc;Allows you to modify selected target nation treasury. By default this event selects your own nation. (Event ID: 777770005);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyTreasury_title;[Cheat] Modify Treasury;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyUpperHouse_desc;Allows you to modify the dominant ideology type in the upper house of target nations. If a party of that ideology exists, attempts to set it as the ruling party. Reforms, government type, and population ideology are not changed. By default this event selects your own nation. (Event ID: 777770031);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyUpperHouse_title;[Cheat] Modify Upper House;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyWarExhaustion_desc;Allows you to modify selected target nation war exhaustion. By default this event selects your own nation. (Event ID: 777770006);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyWarExhaustion_title;[Cheat] Modify War Exhaustion;;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyWars_desc;Allows you to enable or disable Great Wars and World Wars. (Event ID: 777770038);;;;;;;;;;;;;x
+TGCNV_CP_CP_ModifyWars_title;[Cheat] Modify World Wars;;;;;;;;;;;;;x
+TGCNV_CP_ClearAllSelections_desc;Clears all selections. This includes TAG switch targets. (Event ID: 777770000);;;;;;;;;;;;;x
+TGCNV_CP_ClearAllSelections_title;[Cheat] Clear All Selections;;;;;;;;;;;;;x
+TGCNV_CP_DisableAiOccupiedLand_desc;Currently all AI annex any province they occupy. This disables this feature.;;;;;;;;;;;;;x
+TGCNV_CP_DisableAiOccupiedLand_title;[Cheat] Disable Anarchy Mode;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877788_DESC;Removes subject relationship with the overlord.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877788_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877788_TITLE;[Cheat] Independence Complete;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877792_DESC;Select an action to apply to $FROMCOUNTRY$. To view another subject, select Next Subject, or select End Subject Management to close.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877792_OPTION_0;Make This Subject Independent;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877792_OPTION_1;Return Subject Cores That Are Not Overlord Cores;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877792_OPTION_2;Next Subject;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877792_OPTION_3;End Subject Management;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877792_TITLE;[Cheat] Subject Management: $FROMCOUNTRY$;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877793_DESC;Passes the subject management menu to the overlord.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877793_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_477877793_TITLE;[Cheat] Request Overlord Subject Management;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770050_DESC;Uses the current TGCNV technology list. Early/late technologies are divided at year 1870. Army and navy technologies are classified as military, while commerce, culture, and industry technologies are classified as civilian. Event ID: 777770050.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770050_OPTION_0;Unlock All Technologies (300);;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770050_OPTION_1;Unlock Military Technologies Before 1870 (30);;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770050_OPTION_2;Unlock Military Technologies After 1870 (90);;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770050_OPTION_3;Unlock Civilian Technologies Before 1870 (55);;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770050_OPTION_4;Unlock Civilian Technologies After 1870 (125);;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770050_OPTION_5;Unlock Colonization Technologies (4);;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770050_OPTION_6;Do Nothing;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770050_TITLE;[Cheat] Unlock TGCNV Technologies;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770083_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770083_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770083_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770084_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770084_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770084_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770085_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770085_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770085_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770087_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770087_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770087_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770088_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770088_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770088_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770089_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770089_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770089_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770094_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770094_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770094_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770095_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770095_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770095_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770096_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770096_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770096_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770100_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770100_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770100_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770101_DESC;Applies the requested cheat.;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770101_OPTION_0;OK;;;;;;;;;;;;;x
+TGCNV_CP_EVENT_777770101_TITLE;[Cheat] Confirm Application;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770000;Clears all currently targeted nations. This means events and decisions will target your own nation by default. The event ID for this decision is 777770000 (five 7s and 0000).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770001;Target nation prestige is modified by this amount, and unfortunately unavoidable technology and event modifiers are also applied. Prestige can also be modified directly through the console with the command "prestige #" (where # is the amount to change it by). The event ID for this decision is 777770001 (five 7s and 0001).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770002;Toggles civilization/uncivilization for selected nation $COUNTRY$. The event ID for this decision is 777770002 (five 7s and 0002).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770003;Target nation literacy is modified by this percentage. The event ID for this decision is 777770003 (five 7s and 0003).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770004;Modifies target nation infamy by the selected amount. Event ID: 777770004.;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770005;Target nation treasury is modified by this amount. Treasury can also be modified directly through the console with the command "money #" (where # is the amount to change it by). The event ID for this decision is 777770005 (five 7s and 0005).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770006;Target nation war exhaustion is modified by this amount. The event ID for this decision is 777770006 (five 7s and 0006).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770007;Target nation militancy is modified by this amount. The event ID for this decision is 777770007 (five 7s and 0007).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770008;Target nation consciousness is modified by this amount. The event ID for this decision is 777770008 (five 7s and 0008).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770009;Target nation plurality is modified by this amount. The event ID for this decision is 777770009 (five 7s and 0009).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770010;Hides the cheat menu and clears all target selections. The hidden menu can be restored with the [Cheat] Show Hidden Cheat Menu decision. Event ID: 777770010.;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770020;Target nation jingoism is modified by this amount. The event ID for this decision is 777770020 (five 7s and 0020).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770021;Target nation population is assimilated into the primary culture according to these conditions. The event ID for this decision is 777770021 (five 7s and 0021).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770022;Applies a +100% immigration attraction modifier to target nation for 365 days. Event ID: 777770022.;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770023;Target nation receives a modifier that boosts CB generation, and modifiers that reduce CB generation are also removed. The event ID for this decision is 777770023 (five 7s and 0023).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770024;Target nation province life rating is modified by this amount. The event ID for this decision is 777770024 (five 7s and 0024).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770025;Options related to changing a nation's cores. The event ID for this decision is 777770025 (five 7s and 0025).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770026;Options related to changing a nation's political and social reforms. The event ID for this decision is 777770026 (five 7s and 0026).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770027;Target nation gains a powerful new general. The event ID for this decision is 777770027 (five 7s and 0027).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770028;Allows you to change relations with currently selected target nations. The event ID for this decision is 777770028 (five 7s and 0028).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770029;Target nation government is changed to this type. Political parties and population ideology are not changed. The event ID for this decision is 777770029 (five 7s and 0029).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770030;Unlocks the ideology globally. The event ID for this decision is 777770030 (five 7s and 0030).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770031;Target nation upper house ideology is changed so the selected ideology becomes a significant majority. If a party of that ideology exists, the ruling party is also changed to the selected ideology. The event ID for this decision is 777770031 (five 7s and 0031).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770032;Target nation population ideology is changed so the selected ideology becomes a majority. The event ID for this decision is 777770032 (five 7s and 0032).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770033;Target Nation's infrastructure is increased or decreased by one level. Currently ports do not work. The event ID for this decision is 777770033 (Five 7's and 0033).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770034;Target Nation becomes independent through the specified method. This event can also be used for your nation to become independent from its sphere leader. Note: The Civil War option can also be triggered against any Target Selection when your nation is not a vassal. The event ID for this decision is 777770034 (Five 7's and 0034).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770035;Target Nation can be annexed or puppeted. The event ID for this decision is 777770035 (Five 7's and 0035).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770036;Transfers territory to the CSA based on the Americas continent and slave-state conditions on the current map. Capitals are excluded. Event ID: 777770036.;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770037;Target Nation's population is increased or decreased by this percentage. The event ID for this decision is 777770037 (Five 7's and 0037).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770038;Great Wars and World Wars can be enabled or disabled. The event ID for this decision is 777770038 (Five 7's and 0038).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770040;Target Nation attempts to form Major Union nations. Note: The event ID for this decision is 777770040 (Five 7's and 0040).;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770041;Target Nation forms Minor Union nations. Event ID: 777770041.;;;;;;;;;;;;;x
+TGCNV_CP_EVTDESC777770060;Target Nation's population strata size can be changed. The event ID for this decision is 777770060 (Five 7's and 0060).;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770000;[Cheat] Clear Currently Selected Target Nations!;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770001;[Cheat] Edit Prestige;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770002;[Cheat] Toggle Civilization Status;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770003;[Cheat] Edit Literacy;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770004;[Cheat] Edit Infamy;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770005;[Cheat] Edit Treasury;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770006;[Cheat] Edit War Exhaustion;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770007;[Cheat] Edit Militancy;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770008;[Cheat] Edit Consciousness;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770009;[Cheat] Edit Plurality;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770010;[Cheat] Hide All Decision Menus!;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770020;[Cheat] Edit Jingoism;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770021;[Cheat] Edit Culture (Assimilation);;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770022;[Cheat] Edit Immigration;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770023;[Cheat] Edit CB Generation;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770024;[Cheat] Edit Life Ratings;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770025;[Cheat] Edit Cores;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770026;[Cheat] Edit Reforms;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770027;[Cheat] Spawn General;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770028;[Cheat] Edit Relations;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770029;[Cheat] Edit Government;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770030;[Cheat] Unlock Ideologies;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770031;[Cheat] Edit Ruling Party & Upper House;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770032;[Cheat] Edit Population Ideology;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770033;[Cheat] Edit Infrastructure;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770034;[Cheat] Force Independence, Civil War & Leave Sphere;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770035;[Cheat] Annexation Options;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770036;[Cheat] Civil War Options;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770037;[Cheat] Edit Population;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770038;[Cheat] Edit Great & World Wars;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770040;[Cheat] Major Unions;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770041;[Cheat] Minor Unions;;;;;;;;;;;;;x
+TGCNV_CP_EVTNAME777770060;[Cheat] Edit Pop Types;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770000;Clear currently selected targets.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770001;§G+100§! Prestige (with multipliers).;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770002;Westernize.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770003;§G+50%§! Literacy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770004;§R+30§! Infamy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770005;§G+1000000§! Treasury.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770006;§G-50§! War Exhaustion.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770007;§R+10§! Militancy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770008;§R+10§! Consciousness.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770009;§G+50§! Plurality.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770010;Hide commands and clear currently selected targets.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770020;Jingoism is §Gincreased§! by a significant factor.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770021;Assimilate all provinces and pop types!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770022;Apply a +100% immigration attraction modifier (365 days).;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770023;Apply a modifier that increases CB generation and remove all modifiers that decrease CB generation!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770024;Increase life rating by §G+10§! in all provinces!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770025;Target Nations annex their own cores.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770026;Full Economic Reforms.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770027;Spawn General (identity preferentially tied to the nation).;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770028;Set relations with selected target nations to maximum §GPositive§!.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770029;Change target nation's government to Proletarian Dictatorship.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770030;Unlock all ideologies.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770031;Change target nation's upper house to Fascists.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770032;Change target nation's population to Fascists.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770033;Fort level increased by §G+1§!.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770034;Target nation triggers peaceful independence.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770035;Target nations are annexed.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770036;Transfer North American slave states to spawn the CSA and trigger a Civil War.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770037;Target nation's population §Gdoubled§!.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770038;§GEnable§! Great Wars.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770040;Form Generic Cultural Union.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770041;Form Generic Cultural Union.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTA777770060;Multiply the target country's rich-stratum population by 2.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770000;Do nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770001;§G+10§! Prestige (with multipliers).;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770002;Unwesternize.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770003;§G+5%§! Literacy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770004;§R+5§! Infamy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770005;§R-1000000§! Treasury.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770006;§G-5§! War Exhaustion.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770007;§R+2.5§! Militancy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770008;§R+2.5§! Consciousness.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770009;§G+5§! Plurality.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770010;Show menus and commands.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770020;Jingoism is §Gincreased§! by a moderate factor.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770021;Assimilate all core provinces and their pops!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770022;Do nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770023;Do nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770024;Decrease life rating by §R-10§! in all provinces!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770025;Target nations add cores to their currently owned provinces.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770026;Full Economic Rollback.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770027;Do nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770028;Set relations with selected target nations to maximum §RNegative§!.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770029;Change target nation's government to Presidential Dictatorship.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770030;Unlock Fascist Ideology.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770031;Change target nation's upper house to Reactionaries.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770032;Change target nation's population to Reactionaries.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770033;Fort level decreased by §R-1§!.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770034;Target nation triggers an Independence War.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770035;Target nations are puppeted.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770036;Transfer North and South American slave states to spawn a massive CSA.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770037;Target nation's population increased by §G25%§!.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770038;§GEnable§! World Wars.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770040;Form Greater Germany.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770041;Form Gran Colombia.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTB777770060;Halve the target nation's rich population strata.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770001;§R-10§! Prestige (without multipliers).;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770002;Do nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770003;§R-5%§! Literacy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770004;§G-5§! Infamy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770005;Do nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770006;§R+5§! War Exhaustion.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770007;§G-2.5§! Militancy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770008;§G-2.5§! Consciousness.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770009;§R-5§! Plurality.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770010;Do nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770020;Jingoism is §Rdecreased§! by a moderate factor.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770021;Assimilate all non-colonial provinces and their pops!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770024;Increase life rating by §G+10§! in all non-colonial provinces!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770025;Remove targeted nations' cores from your provinces.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770026;Full Social Reforms.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770028;Do nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770029;Change target nation's government to Bourgeois Dictatorship.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770030;Unlock Reactionary Ideology.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770031;Change target nation's upper house to Conservatives.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770032;Change target nation's population to Conservatives.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770033;Railway level increased by §G+1§!.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770034;Target nation triggers a Civil War.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770035;Do nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770036;Do nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770037;Target nation's population decreased by §R25%§!.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770038;§RDisable§! Great Wars.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770040;Form Lesser Germany.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770041;Form Arabia.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTC777770060;Remove the target nation's rich population strata of non-accepted/non-primary culture.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770001;§R-100§! Prestige (without multipliers).;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770003;§R-50%§! Literacy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770004;§G-50§! Infamy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770006;§R+50§! War Exhaustion.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770007;§G-10§! Militancy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770008;§G-10§! Consciousness.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770009;§R-50§! Plurality.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770020;Jingoism is §Rdecreased§! by a significant factor.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770021;Assimilate all non-colonial provinces with a non-primary or non-accepted majority culture!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770024;Increase life rating by §G+10§! in all colonial provinces!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770025;Remove all nations' cores from your provinces.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770026;Full Social Rollback.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770029;Change target nation's government to Fascist Dictatorship.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770030;Unlock Conservative Ideology.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770031;Change target country upper house to Socialists.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770032;Change target country population to Socialists.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770033;Railway Level §R-1§! decreased.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770034;Remove target country from sphere.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770037;Target country population §RHalved§!.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770038;World Wars §Rdisabled§!.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770040;Form North German Confederation.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770041;Form Romania.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTD777770060;Multiply the target country's middle-stratum population by 2.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770001;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770003;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770004;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770006;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770007;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770008;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770009;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770020;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770021;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770024;Increase life rating by §G+5§! in all non-colonial provinces with a hard cap of 45!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770025;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770026;Full Education & Healthcare Reforms.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770029;Change target country government to Absolute Monarchy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770030;Unlock Socialist Ideology.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770031;Change target country upper house to Communists.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770032;Change target country population to Communists.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770033;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770034;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770037;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770038;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770040;Form South German Confederation.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770041;Form Czechoslovakia.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTE777770060;Halve target country population's middle stratum.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTF777770024;Increase life rating by §G+5§! in all colonial provinces with a hard cap of 45!;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTF777770026;Full Education & Healthcare Rollback.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTF777770029;Change target country government to Prussian Constitutionalism.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTF777770030;Unlock Communist Ideology.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTF777770031;Change target country upper house to Liberals.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTF777770032;Change target country population to Liberals.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTF777770040;Form Italy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTF777770041;Form Yugoslavia.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTF777770060;Remove non-accepted/non-primary culture middle stratum from target country population.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTG777770024;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTG777770026;Full Democratic Reforms.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTG777770029;Change target country government to HMS Government (His Majesty's Government).;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTG777770030;Unlock Liberal Ideology.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTG777770031;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTG777770032;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTG777770040;Form Scandinavia.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTG777770041;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTG777770060;Multiply the target country's poor-stratum population by 2.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTH777770026;Full Democratic Rollback.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTH777770029;Change target country government to Democracy.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTH777770030;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTH777770040;Form Austria-Hungary.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTH777770060;Halve target country population's poor stratum.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTI777770026;Allow Elections.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTI777770029;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTI777770040;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTI777770060;Remove non-accepted/non-primary culture poor stratum from target country population.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTJ777770026;Deny Elections.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTJ777770060;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTK777770026;Allow Slavery.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTL777770026;Deny Slavery.;;;;;;;;;;;;;x
+TGCNV_CP_EVTOPTM777770026;Do Nothing.;;;;;;;;;;;;;x
+TGCNV_CP_EnableAiOccupiedLand_desc;Enabling this will cause all AI to immediately annex any province they occupy.;;;;;;;;;;;;;x
+TGCNV_CP_EnableAiOccupiedLand_title;[Cheat] Enable Anarchy Mode;;;;;;;;;;;;;x
+TGCNV_CP_EnemysSelected_desc;You have selected your enemies. Making peace will deselect enemy nations.;;;;;;;;;;;;;x
+TGCNV_CP_EnemysSelected_title;[Cheat] Enemies Selected;;;;;;;;;;;;;x
+TGCNV_CP_GreatPowersSelected_asGP_desc;All great powers selected.;;;;;;;;;;;;;x
+TGCNV_CP_GreatPowersSelected_asGP_title;[Cheat] Great Powers Selected;;;;;;;;;;;;;x
+TGCNV_CP_GreatPowersSelected_desc;All great powers selected.;;;;;;;;;;;;;x
+TGCNV_CP_GreatPowersSelected_title;[Cheat] Great Powers Selected;;;;;;;;;;;;;x
+TGCNV_CP_MinorPowersSelected_asMinor_desc;All minor nations selected.;;;;;;;;;;;;;x
+TGCNV_CP_MinorPowersSelected_asMinor_title;[Cheat] Minor Nations Selected;;;;;;;;;;;;;x
+TGCNV_CP_MinorPowersSelected_desc;All minor nations selected.;;;;;;;;;;;;;x
+TGCNV_CP_MinorPowersSelected_title;[Cheat] Minor Nations Selected;;;;;;;;;;;;;x
+TGCNV_CP_SecondaryPowersSelected_asSP_desc;All secondary powers selected.;;;;;;;;;;;;;x
+TGCNV_CP_SecondaryPowersSelected_asSP_title;[Cheat] Secondary Powers Selected;;;;;;;;;;;;;x
+TGCNV_CP_SecondaryPowersSelected_desc;All secondary powers selected.;;;;;;;;;;;;;x
+TGCNV_CP_SecondaryPowersSelected_title;[Cheat] Secondary Powers Selected;;;;;;;;;;;;;x
+TGCNV_CP_SelectAllies_desc;Select your current allies.;;;;;;;;;;;;;x
+TGCNV_CP_SelectAllies_title;[Cheat] Select Allies;;;;;;;;;;;;;x
+TGCNV_CP_SelectEnemys_desc;Select your current enemies. Making peace will deselect enemy nations.;;;;;;;;;;;;;x
+TGCNV_CP_SelectEnemys_title;[Cheat] Select Enemies;;;;;;;;;;;;;x
+TGCNV_CP_SelectGreatPowers_desc;Select all great powers to apply effects. Note: This includes all great powers at any given time, and changes if nations lose or gain great power status.;;;;;;;;;;;;;x
+TGCNV_CP_SelectGreatPowers_title;[Cheat] Select Great Powers;;;;;;;;;;;;;x
+TGCNV_CP_SelectMinorPowers_desc;Select all minor nations to apply effects. Note: This includes all minor nations at any given time, and changes if nations lose or gain great power or secondary power status.;;;;;;;;;;;;;x
+TGCNV_CP_SelectMinorPowers_title;[Cheat] Select Minor Nations;;;;;;;;;;;;;x
+TGCNV_CP_SelectSecondaryPowers_desc;Select all secondary powers to apply effects. Note: This includes all secondary powers at any given time, and changes if nations lose or gain secondary power status.;;;;;;;;;;;;;x
+TGCNV_CP_SelectSecondaryPowers_title;[Cheat] Select Secondary Powers;;;;;;;;;;;;;x
+TGCNV_CP_SelectSelfDeselected_desc;You have manually removed your own nation from the current selection. Use this command to add it back to the current selection.;;;;;;;;;;;;;x
+TGCNV_CP_SelectSelfDeselected_title;[Cheat] Reselect Own Nation;;;;;;;;;;;;;x
+TGCNV_CP_SelectSelf_desc;Select your own nation.;;;;;;;;;;;;;x
+TGCNV_CP_SelectSelf_title;[Cheat] Select Own Nation;;;;;;;;;;;;;x
+TGCNV_CP_SelectTargetCountry_desc;When TAG switching with the console, enable this option to select the country you want effects applied to.;;;;;;;;;;;;;x
+TGCNV_CP_SelectTargetCountry_title;[Cheat] Select Country for TAG Switching;;;;;;;;;;;;;x
+TGCNV_CP_SelectUnCivPowers_desc;Select all uncivilized nations to apply effects. Note: This includes all uncivilized nations at any given time.;;;;;;;;;;;;;x
+TGCNV_CP_SelectUnCivPowers_title;[Cheat] Select Uncivilized Nations;;;;;;;;;;;;;x
+TGCNV_CP_SelectVassals_desc;Select your own vassals.;;;;;;;;;;;;;x
+TGCNV_CP_SelectVassals_title;[Cheat] Select Own Vassals;;;;;;;;;;;;;x
+TGCNV_CP_SelfSelectedPlusTAG_desc;Your own nation is selected in the TAG switching selection. Use this option to deselect only your own nation while keeping other selections.;;;;;;;;;;;;;x
+TGCNV_CP_SelfSelectedPlusTAG_title;[Cheat] Own Nation Selected (From TAG Switch Selection);;;;;;;;;;;;;x
+TGCNV_CP_SelfSelectedPlus_desc;Your own nation is included in another selection. Use this option to deselect only your own nation while keeping other selections.;;;;;;;;;;;;;x
+TGCNV_CP_SelfSelectedPlus_title;[Cheat] Own Nation Selected (From Another Category);;;;;;;;;;;;;x
+TGCNV_CP_SelfSelected_desc;You have selected your own nation. Deselect this option to deselect your nation.;;;;;;;;;;;;;x
+TGCNV_CP_SelfSelected_title;[Cheat] Own Nation Selected ($COUNTRY$);;;;;;;;;;;;;x
+TGCNV_CP_TargetCountrySelectedGeneral_desc;This decision deselects all nations selected with the TAG selector.;;;;;;;;;;;;;x
+TGCNV_CP_TargetCountrySelectedGeneral_title;[Cheat] Deselect All TAG Selections;;;;;;;;;;;;;x
+TGCNV_CP_TargetCountrySelected_desc;You have selected this nation for TAG switching. Use this decision to deselect that nation.;;;;;;;;;;;;;x
+TGCNV_CP_TargetCountrySelected_title;[Cheat] Country Selected for TAG Switching;;;;;;;;;;;;;x
+TGCNV_CP_TargetDecisionsDisableCP_desc;Temporarily hide the country selection menu. Selections are not cleared.;;;;;;;;;;;;;x
+TGCNV_CP_TargetDecisionsDisableCP_title;[Cheat] Hide Country Selection Menu;;;;;;;;;;;;;x
+TGCNV_CP_TargetDecisionsEnableCP_desc;Select the nations to apply country-specific command effects to.;;;;;;;;;;;;;x
+TGCNV_CP_TargetDecisionsEnableCP_title;[Cheat] Select Countries for Country Commands;;;;;;;;;;;;;x
+TGCNV_CP_TargetEffectsDisableCP_desc;Temporarily hide the effects menu.;;;;;;;;;;;;;x
+TGCNV_CP_TargetEffectsDisableCP_title;[Cheat] Hide Effect Selection Menu;;;;;;;;;;;;;x
+TGCNV_CP_TargetEffectsEnableCP_desc;Select the effects to apply to selected nations.;;;;;;;;;;;;;x
+TGCNV_CP_TargetEffectsEnableCP_title;[Cheat] Select Effects for Country Commands;;;;;;;;;;;;;x
+TGCNV_CP_UnCivPowersSelected_asUnCiv_desc;All uncivilized nations selected.;;;;;;;;;;;;;x
+TGCNV_CP_UnCivPowersSelected_asUnCiv_title;[Cheat] Uncivilized Nations Selected;;;;;;;;;;;;;x
+TGCNV_CP_UnCivPowersSelected_desc;All uncivilized nations selected.;;;;;;;;;;;;;x
+TGCNV_CP_UnCivPowersSelected_title;[Cheat] Uncivilized Nations Selected;;;;;;;;;;;;;x
+TGCNV_CP_VassalsSelected_desc;You have selected your vassals. Deselect this option to deselect your vassals.;;;;;;;;;;;;;x
+TGCNV_CP_VassalsSelected_title;[Cheat] Own Vassals Selected;;;;;;;;;;;;;x
+TGCNV_CP_disable_desc;Clear target selection and turn off the cheat menu and Anarchy Mode. Already applied cheat effects remain.;;;;;;;;;;;;;x
+TGCNV_CP_disable_title;[Cheat] Turn Off TGCNV Cheat Menu;;;;;;;;;;;;;x
+TGCNV_CP_enable_desc;Open the country selection and effect selection menus. If no target is selected, effects apply to your own nation. Can be used in existing campaigns.;;;;;;;;;;;;;x
+TGCNV_CP_enable_title;[Cheat] Turn On TGCNV Cheat Menu;;;;;;;;;;;;;x
+TGCNV_CP_restore_menus_desc;Unhide the current country's cheat menu and reopen the country and effect selection menus.;;;;;;;;;;;;;x
+TGCNV_CP_restore_menus_title;[Cheat] Restore Hidden Cheat Menu;;;;;;;;;;;;;x
+TGCNV_CP_vassal_interactions_cheatpack_desc;This option lets you grant independence and give cores to your vassals. The existing method used in many mods is a major performance drain, and this option replaces it, increasing game speed.;;;;;;;;;;;;;x
+TGCNV_CP_vassal_interactions_cheatpack_title;[Cheat] Vassal Interactions;;;;;;;;;;;;;x
+tgcnv_cp_immigration;Cheat: Increase Immigration Attraction;;;;;;;;;;;;;x
+tgcnv_cp_immigration_desc;+100% immigration attraction for 365 days.;;;;;;;;;;;;;x

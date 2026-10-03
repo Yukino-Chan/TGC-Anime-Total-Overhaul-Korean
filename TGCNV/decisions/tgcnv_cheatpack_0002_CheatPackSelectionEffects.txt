@@ -1,0 +1,713 @@
+# TGCNV CheatPack 2.10 port. Original gameplay commands remain available.
+political_decisions = {
+	TGCNV_CP_TargetEffectsEnableCP = {
+		picture = "tgcnv_cp_cogs_cheatpack_menu"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_global_flag = tgcnv_cp_target_effect_menu
+			}
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+		}
+		effect = {
+			set_global_flag = tgcnv_cp_target_effect_menu
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_TargetEffectsDisableCP = {
+		picture = "tgcnv_cp_cogs_cheatpack_menu"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			clr_global_flag = tgcnv_cp_target_effect_menu
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyPrestige = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770001
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyCivilzation = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770002
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyLiteracy = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770003
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyInfamy = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770004
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyTreasury = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770005
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyWarExhaustion = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770006
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyMilitancy = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770007
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyConsciousness = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770008
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyPlurality = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770009
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyJingoism = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770020
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyAssimilation = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770021
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyImmigration = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770022
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyCBOverride = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770023
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyLiferating = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770024
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyCores = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770025
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyReforms = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770026
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyGenerals = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770027
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyRelations = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770028
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyGovernment = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770029
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyIdeology = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770030
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyUpperHouse = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770031
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyPopulationIdeology = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770032
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyInfrastructure = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770033
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyIndependence = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770034
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyAnnexation = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770035
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyCivilWars = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770036
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyPopulation = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770037
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_ModifyWars = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770038
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_MajorUnions = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770040
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_MinorUnions = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770041
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_EnableTechnology = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770050
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	TGCNV_CP_CP_EditPopulationTypes = {
+		picture = "tgcnv_cp_cogs_cheatpack"
+		potential = {
+			has_global_flag = tgcnv_cheatpack_enabled
+			exists = yes
+			ai = no
+			NOT = {
+				has_country_flag = tgcnv_cp_cp_hide_decisions
+			}
+			has_global_flag = tgcnv_cp_target_effect_menu
+		}
+		effect = {
+			country_event = {
+				id = 777770060
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

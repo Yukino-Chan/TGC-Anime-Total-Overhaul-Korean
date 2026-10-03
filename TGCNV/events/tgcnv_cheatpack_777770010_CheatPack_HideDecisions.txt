@@ -1,0 +1,65 @@
+# TGCNV CheatPack 2.10 port. Original gameplay commands remain available.
+country_event = {
+	id = 777770010
+	title = "TGCNV_CP_EVTNAME777770010"
+	desc = "TGCNV_CP_EVTDESC777770010"
+	major = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTA777770010"
+		clr_country_flag = tgcnv_cp_selected_self
+		clr_global_flag = tgcnv_cp_selection_sp_endabled
+		clr_global_flag = tgcnv_cp_selection_gp_endabled
+		clr_global_flag = tgcnv_cp_selection_self_endabled
+		clr_global_flag = tgcnv_cp_selection_minor_endabled
+		clr_global_flag = tgcnv_cp_selection_unciv_endabled
+		clr_global_flag = tgcnv_cp_selection_enemy_endabled
+		clr_global_flag = tgcnv_cp_selection_ally_endabled
+		clr_global_flag = tgcnv_cp_selection_target_endabled
+		clr_global_flag = tgcnv_cp_deselected_self
+		clr_country_flag = tgcnv_cp_cp_tag_target
+		any_country = {
+			limit = {
+				OR = {
+					exists = yes
+					exists = no
+				}
+			}
+			clr_country_flag = tgcnv_cp_cp_tag_target
+		}
+		clr_country_flag = tgcnv_cp_cp_tag_target
+		set_country_flag = tgcnv_cp_cp_hide_decisions
+		clr_global_flag = tgcnv_cp_default_to_self_cp
+		clr_global_flag = tgcnv_cp_deselected_self
+		clr_global_flag = tgcnv_cp_selection_ally_endabled
+		clr_global_flag = tgcnv_cp_selection_enemy_endabled
+		clr_global_flag = tgcnv_cp_selection_gp_endabled
+		clr_global_flag = tgcnv_cp_selection_minor_endabled
+		clr_global_flag = tgcnv_cp_selection_self_endabled
+		clr_global_flag = tgcnv_cp_selection_sp_endabled
+		clr_global_flag = tgcnv_cp_selection_target_endabled
+		clr_global_flag = tgcnv_cp_selection_unciv_endabled
+		clr_global_flag = tgcnv_cp_selection_vassal_endabled
+		any_country = {
+			clr_country_flag = tgcnv_cp_cp_tag_target
+			clr_country_flag = tgcnv_cp_selected_ally
+			clr_country_flag = tgcnv_cp_selected_enemy
+			clr_country_flag = tgcnv_cp_selected_gp
+			clr_country_flag = tgcnv_cp_selected_minor
+			clr_country_flag = tgcnv_cp_selected_self
+			clr_country_flag = tgcnv_cp_selected_sp
+			clr_country_flag = tgcnv_cp_selected_unciv
+			clr_country_flag = tgcnv_cp_selected_vassal
+		}
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTB777770010"
+		clr_country_flag = tgcnv_cp_cp_hide_decisions
+	}
+	option = {
+		name = "TGCNV_CP_EVTOPTC777770010"
+	}
+}

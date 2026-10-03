@@ -1,0 +1,3615 @@
+# TGCNV CheatPack 2.10 port. Original gameplay commands remain available.
+country_event = {
+	id = 777770050
+	picture = "tgcnv_cp_CP_CBOverride"
+	major = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		any_country = {
+			limit = {
+				AND = {
+					OR = {
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_sp
+								is_secondary_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_gp
+								is_greater_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_minor
+								AND = {
+									NOT = {
+										is_greater_power = yes
+									}
+									NOT = {
+										is_secondary_power = yes
+									}
+									civilized = yes
+								}
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_unciv
+								civilized = no
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_vassal_endabled
+							AND = {
+								has_country_flag = tgcnv_cp_selected_vassal
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_enemy_endabled
+							OR = {
+								war_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_ally_endabled
+							OR = {
+								alliance_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_target_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_cp_tag_target
+							}
+						}
+					}
+				}
+			}
+			activate_technology = ad_hoc_money_bill_printing
+			activate_technology = alphabetic_flag_signaling
+			activate_technology = army_command_principle
+			activate_technology = army_professionalism
+			activate_technology = associationism
+			activate_technology = basic_chemistry
+			activate_technology = battleship_column_doctrine
+			activate_technology = bronze_muzzle_loaded_artillery
+			activate_technology = business_regulations
+			activate_technology = classicism_n_early_romanticism
+			activate_technology = clipper_design
+			activate_technology = collectivist_theory
+			activate_technology = compound_steam_engines
+			activate_technology = early_classical_theory_and_critique
+			activate_technology = enlightenment_thought
+			activate_technology = experimental_railroad
+			activate_technology = fire_control_systems
+			activate_technology = flintlock_rifles
+			activate_technology = freedom_of_trade
+			activate_technology = functionalism
+			activate_technology = guild_based_production
+			activate_technology = high_pressure_steam_engine
+			activate_technology = hot_blast
+			activate_technology = ideological_thought
+			activate_technology = interchangeable_parts
+			activate_technology = introspectionism
+			activate_technology = iron_muzzle_loaded_artillery
+			activate_technology = late_classical_theory
+			activate_technology = late_enlightenment_philosophy
+			activate_technology = malthusian_thought
+			activate_technology = market_structure
+			activate_technology = mechanical_production
+			activate_technology = medicine
+			activate_technology = military_plans
+			activate_technology = military_staff_system
+			activate_technology = muzzle_loaded_rifles
+			activate_technology = naval_design_bureaus
+			activate_technology = naval_plans
+			activate_technology = naval_professionalism
+			activate_technology = no_standard
+			activate_technology = organized_factories
+			activate_technology = piston_steam_engine
+			activate_technology = positivism
+			activate_technology = post_napoleonic_thought
+			activate_technology = post_nelsonian_thought
+			activate_technology = private_bank_money_bill_printing
+			activate_technology = private_banks
+			activate_technology = realism
+			activate_technology = romanticism
+			activate_technology = scientific_management
+			activate_technology = semi_automatization
+			activate_technology = steamers
+			activate_technology = stock_exchange
+			activate_technology = strategic_mobility
+			activate_technology = the_command_principle
+			activate_technology = early_railroad
+			activate_technology = idealism
+			activate_technology = mechanized_mining
+			activate_technology = state_n_government
+			activate_technology = army_decision_making
+			activate_technology = biologism
+			activate_technology = breech_loaded_rifles
+			activate_technology = business_banks
+			activate_technology = central_bank_money_bill_printing
+			activate_technology = impressionism
+			activate_technology = inorganic_chemistry
+			activate_technology = iron_breech_loaded_artillery
+			activate_technology = iron_railroad
+			activate_technology = market_regulations
+			activate_technology = military_statistics
+			activate_technology = nationalism_n_imperialism
+			activate_technology = naval_decision_making
+			activate_technology = naval_statistics
+			activate_technology = phenomenalism
+			activate_technology = pneumatic_and_hydraulics
+			activate_technology = point_defense_system
+			activate_technology = regenerative_furnaces
+			activate_technology = steam_turbine
+			activate_technology = the_historical_theory
+			activate_technology = time_saving_measures
+			activate_technology = weapon_platforms
+			activate_technology = iron_steamers
+			activate_technology = raider_group_doctrine
+			activate_technology = empiricism
+			activate_technology = marginalism
+			activate_technology = analytic_philosophy
+			activate_technology = army_risk_management
+			activate_technology = assembly_line
+			activate_technology = deep_defense_system
+			activate_technology = drilling_and_blasting
+			activate_technology = economic_responsibility
+			activate_technology = experimental_psychology
+			activate_technology = expressionism
+			activate_technology = investment_banks
+			activate_technology = main_armament
+			activate_technology = management_strategy
+			activate_technology = military_logistics
+			activate_technology = modern_central_bank_system
+			activate_technology = naval_logistics
+			activate_technology = naval_risk_management
+			activate_technology = organic_chemistry
+			activate_technology = revolution_n_counterrevolution
+			activate_technology = social_science
+			activate_technology = steel_breech_loaded_artillery
+			activate_technology = steel_railroad
+			activate_technology = blue_and_brown_water_schools
+			activate_technology = machine_guns
+			activate_technology = combustion_engine
+			activate_technology = electricity
+			activate_technology = phenomenology_n_hermeneutic
+			activate_technology = steel_steamers
+			activate_technology = electrical_power_generation
+			activate_technology = advanced_metallurgy
+			activate_technology = neoclassical_theory
+			activate_technology = psychoanalysis
+			activate_technology = high_sea_battle_fleet
+			activate_technology = integral_rail_system
+			activate_technology = advanced_naval_design
+			activate_technology = advanced_turbine_generators
+			activate_technology = anti__rationalism
+			activate_technology = army_nco_training
+			activate_technology = bank_inspection_board
+			activate_technology = electric_furnace
+			activate_technology = government_interventionism
+			activate_technology = indirect_artillery_fire
+			activate_technology = infiltration
+			activate_technology = market_determined_exchange_rates
+			activate_technology = mass_politics
+			activate_technology = militar_culture
+			activate_technology = military_directionism
+			activate_technology = modernism
+			activate_technology = naval_culture
+			activate_technology = naval_directionism
+			activate_technology = naval_nco_training
+			activate_technology = organizational_development
+			activate_technology = piece_work
+			activate_technology = psychodynamics
+			activate_technology = shift_work
+			activate_technology = social_alienation
+			activate_technology = steam_turbine_ships
+			activate_technology = synthetic_polymers
+			activate_technology = bolt_action_rifles
+			activate_technology = early_aeronautics
+			activate_technology = early_oil
+			activate_technology = semi_auto_rifles
+			activate_technology = advanced_polymers
+			activate_technology = advanced_steel_alloys
+			activate_technology = armored_vehicles
+			activate_technology = assembly_line_mechanization
+			activate_technology = behaviorism
+			activate_technology = federal_reserve_system
+			activate_technology = mass_culture_n_the_avant_garde
+			activate_technology = self_propelled_artillery
+			activate_technology = social_psychology
+			activate_technology = the_police_state
+			activate_technology = aeronautics
+			activate_technology = grand_fleet
+			activate_technology = inflation_targeting
+			activate_technology = limited_access_roads
+			activate_technology = modern_naval_training
+			activate_technology = naval_integration
+			activate_technology = naval_welding
+			activate_technology = ontology
+			activate_technology = modern_naval_doctrine
+			activate_technology = great_war_experience
+			activate_technology = heavy_armament_dunno
+			activate_technology = modern_army_doctrine
+			activate_technology = modern_divisional_structure
+			activate_technology = modern_naval_design
+			activate_technology = mutual_funds
+			activate_technology = oil_driven_ships
+			activate_technology = keynesian_economics
+			activate_technology = hedge_funds
+			activate_technology = high_ways_free_ways
+			activate_technology = network_centric_warfare
+			activate_technology = tgcnv_ww2_aesthetics_1930
+			activate_technology = tgcnv_ww2_army_doctrine_1930
+			activate_technology = tgcnv_ww2_army_leadership_1930
+			activate_technology = tgcnv_ww2_chemistry_and_electricity_1930
+			activate_technology = tgcnv_ww2_economic_thought_and_critique_1930
+			activate_technology = tgcnv_ww2_financial_institutions_1930
+			activate_technology = tgcnv_ww2_heavy_armament_1930
+			activate_technology = tgcnv_ww2_light_armament_1930
+			activate_technology = tgcnv_ww2_market_functionality_1930
+			activate_technology = tgcnv_ww2_mechanization_1930
+			activate_technology = tgcnv_ww2_metallurgy_1930
+			activate_technology = tgcnv_ww2_military_science_1930
+			activate_technology = tgcnv_ww2_monetary_system_1930
+			activate_technology = tgcnv_ww2_naval_doctrine_1930
+			activate_technology = tgcnv_ww2_naval_engineering_1930
+			activate_technology = tgcnv_ww2_naval_leadership_1930
+			activate_technology = tgcnv_ww2_naval_science_1930
+			activate_technology = tgcnv_ww2_philosophy_1930
+			activate_technology = tgcnv_ww2_political_thought_1930
+			activate_technology = tgcnv_ww2_psychology_1930
+			activate_technology = tgcnv_ww2_ship_construction_1930
+			activate_technology = tgcnv_ww2_social_thought_1930
+			activate_technology = tgcnv_ww2_tech_infrastructure_1930
+			activate_technology = tgcnv_ww2_tech_organization_1930
+			activate_technology = tgcnv_ww2_tech_power_1930
+			activate_technology = tgcnv_ww2_aesthetics_1936
+			activate_technology = tgcnv_ww2_army_doctrine_1936
+			activate_technology = tgcnv_ww2_army_leadership_1936
+			activate_technology = tgcnv_ww2_chemistry_and_electricity_1936
+			activate_technology = tgcnv_ww2_economic_thought_and_critique_1936
+			activate_technology = tgcnv_ww2_financial_institutions_1936
+			activate_technology = tgcnv_ww2_heavy_armament_1936
+			activate_technology = tgcnv_ww2_light_armament_1936
+			activate_technology = tgcnv_ww2_market_functionality_1936
+			activate_technology = tgcnv_ww2_mechanization_1936
+			activate_technology = tgcnv_ww2_metallurgy_1936
+			activate_technology = tgcnv_ww2_military_science_1936
+			activate_technology = tgcnv_ww2_monetary_system_1936
+			activate_technology = tgcnv_ww2_naval_doctrine_1936
+			activate_technology = tgcnv_ww2_naval_engineering_1936
+			activate_technology = tgcnv_ww2_naval_leadership_1936
+			activate_technology = tgcnv_ww2_naval_science_1936
+			activate_technology = tgcnv_ww2_philosophy_1936
+			activate_technology = tgcnv_ww2_political_thought_1936
+			activate_technology = tgcnv_ww2_psychology_1936
+			activate_technology = tgcnv_ww2_ship_construction_1936
+			activate_technology = tgcnv_ww2_social_thought_1936
+			activate_technology = tgcnv_ww2_tech_infrastructure_1936
+			activate_technology = tgcnv_ww2_tech_organization_1936
+			activate_technology = tgcnv_ww2_tech_power_1936
+			activate_technology = tgcnv_ww2_aesthetics_1940
+			activate_technology = tgcnv_ww2_army_doctrine_1940
+			activate_technology = tgcnv_ww2_army_leadership_1940
+			activate_technology = tgcnv_ww2_chemistry_and_electricity_1940
+			activate_technology = tgcnv_ww2_economic_thought_and_critique_1940
+			activate_technology = tgcnv_ww2_financial_institutions_1940
+			activate_technology = tgcnv_ww2_heavy_armament_1940
+			activate_technology = tgcnv_ww2_light_armament_1940
+			activate_technology = tgcnv_ww2_market_functionality_1940
+			activate_technology = tgcnv_ww2_mechanization_1940
+			activate_technology = tgcnv_ww2_metallurgy_1940
+			activate_technology = tgcnv_ww2_military_science_1940
+			activate_technology = tgcnv_ww2_monetary_system_1940
+			activate_technology = tgcnv_ww2_naval_doctrine_1940
+			activate_technology = tgcnv_ww2_naval_engineering_1940
+			activate_technology = tgcnv_ww2_naval_leadership_1940
+			activate_technology = tgcnv_ww2_naval_science_1940
+			activate_technology = tgcnv_ww2_philosophy_1940
+			activate_technology = tgcnv_ww2_political_thought_1940
+			activate_technology = tgcnv_ww2_psychology_1940
+			activate_technology = tgcnv_ww2_ship_construction_1940
+			activate_technology = tgcnv_ww2_social_thought_1940
+			activate_technology = tgcnv_ww2_tech_infrastructure_1940
+			activate_technology = tgcnv_ww2_tech_organization_1940
+			activate_technology = tgcnv_ww2_tech_power_1940
+			activate_technology = tgcnv_ww2_aesthetics_1943
+			activate_technology = tgcnv_ww2_army_doctrine_1943
+			activate_technology = tgcnv_ww2_army_leadership_1943
+			activate_technology = tgcnv_ww2_chemistry_and_electricity_1943
+			activate_technology = tgcnv_ww2_economic_thought_and_critique_1943
+			activate_technology = tgcnv_ww2_financial_institutions_1943
+			activate_technology = tgcnv_ww2_heavy_armament_1943
+			activate_technology = tgcnv_ww2_light_armament_1943
+			activate_technology = tgcnv_ww2_market_functionality_1943
+			activate_technology = tgcnv_ww2_mechanization_1943
+			activate_technology = tgcnv_ww2_metallurgy_1943
+			activate_technology = tgcnv_ww2_military_science_1943
+			activate_technology = tgcnv_ww2_monetary_system_1943
+			activate_technology = tgcnv_ww2_naval_doctrine_1943
+			activate_technology = tgcnv_ww2_naval_engineering_1943
+			activate_technology = tgcnv_ww2_naval_leadership_1943
+			activate_technology = tgcnv_ww2_naval_science_1943
+			activate_technology = tgcnv_ww2_philosophy_1943
+			activate_technology = tgcnv_ww2_political_thought_1943
+			activate_technology = tgcnv_ww2_psychology_1943
+			activate_technology = tgcnv_ww2_ship_construction_1943
+			activate_technology = tgcnv_ww2_social_thought_1943
+			activate_technology = tgcnv_ww2_tech_infrastructure_1943
+			activate_technology = tgcnv_ww2_tech_organization_1943
+			activate_technology = tgcnv_ww2_tech_power_1943
+			activate_technology = tgcnv_ww2_aesthetics_1945
+			activate_technology = tgcnv_ww2_army_doctrine_1945
+			activate_technology = tgcnv_ww2_army_leadership_1945
+			activate_technology = tgcnv_ww2_chemistry_and_electricity_1945
+			activate_technology = tgcnv_ww2_economic_thought_and_critique_1945
+			activate_technology = tgcnv_ww2_financial_institutions_1945
+			activate_technology = tgcnv_ww2_heavy_armament_1945
+			activate_technology = tgcnv_ww2_light_armament_1945
+			activate_technology = tgcnv_ww2_market_functionality_1945
+			activate_technology = tgcnv_ww2_mechanization_1945
+			activate_technology = tgcnv_ww2_metallurgy_1945
+			activate_technology = tgcnv_ww2_military_science_1945
+			activate_technology = tgcnv_ww2_monetary_system_1945
+			activate_technology = tgcnv_ww2_naval_doctrine_1945
+			activate_technology = tgcnv_ww2_naval_engineering_1945
+			activate_technology = tgcnv_ww2_naval_leadership_1945
+			activate_technology = tgcnv_ww2_naval_science_1945
+			activate_technology = tgcnv_ww2_philosophy_1945
+			activate_technology = tgcnv_ww2_political_thought_1945
+			activate_technology = tgcnv_ww2_psychology_1945
+			activate_technology = tgcnv_ww2_ship_construction_1945
+			activate_technology = tgcnv_ww2_social_thought_1945
+			activate_technology = tgcnv_ww2_tech_infrastructure_1945
+			activate_technology = tgcnv_ww2_tech_organization_1945
+			activate_technology = tgcnv_ww2_tech_power_1945
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						NOT = {
+							has_global_flag = HFMe_MOD_ACTIVE
+						}
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = ad_hoc_money_bill_printing
+				activate_technology = alphabetic_flag_signaling
+				activate_technology = army_command_principle
+				activate_technology = army_professionalism
+				activate_technology = associationism
+				activate_technology = basic_chemistry
+				activate_technology = battleship_column_doctrine
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = business_regulations
+				activate_technology = classicism_n_early_romanticism
+				activate_technology = clipper_design
+				activate_technology = collectivist_theory
+				activate_technology = compound_steam_engines
+				activate_technology = early_classical_theory_and_critique
+				activate_technology = enlightenment_thought
+				activate_technology = experimental_railroad
+				activate_technology = fire_control_systems
+				activate_technology = flintlock_rifles
+				activate_technology = freedom_of_trade
+				activate_technology = functionalism
+				activate_technology = guild_based_production
+				activate_technology = high_pressure_steam_engine
+				activate_technology = hot_blast
+				activate_technology = ideological_thought
+				activate_technology = interchangeable_parts
+				activate_technology = introspectionism
+				activate_technology = iron_muzzle_loaded_artillery
+				activate_technology = late_classical_theory
+				activate_technology = late_enlightenment_philosophy
+				activate_technology = malthusian_thought
+				activate_technology = market_structure
+				activate_technology = mechanical_production
+				activate_technology = medicine
+				activate_technology = military_plans
+				activate_technology = military_staff_system
+				activate_technology = muzzle_loaded_rifles
+				activate_technology = naval_design_bureaus
+				activate_technology = naval_plans
+				activate_technology = naval_professionalism
+				activate_technology = no_standard
+				activate_technology = organized_factories
+				activate_technology = piston_steam_engine
+				activate_technology = positivism
+				activate_technology = post_napoleonic_thought
+				activate_technology = post_nelsonian_thought
+				activate_technology = private_bank_money_bill_printing
+				activate_technology = private_banks
+				activate_technology = realism
+				activate_technology = romanticism
+				activate_technology = scientific_management
+				activate_technology = semi_automatization
+				activate_technology = steamers
+				activate_technology = stock_exchange
+				activate_technology = strategic_mobility
+				activate_technology = the_command_principle
+				activate_technology = early_railroad
+				activate_technology = idealism
+				activate_technology = mechanized_mining
+				activate_technology = state_n_government
+				activate_technology = army_decision_making
+				activate_technology = biologism
+				activate_technology = breech_loaded_rifles
+				activate_technology = business_banks
+				activate_technology = central_bank_money_bill_printing
+				activate_technology = impressionism
+				activate_technology = inorganic_chemistry
+				activate_technology = iron_breech_loaded_artillery
+				activate_technology = iron_railroad
+				activate_technology = market_regulations
+				activate_technology = military_statistics
+				activate_technology = nationalism_n_imperialism
+				activate_technology = naval_decision_making
+				activate_technology = naval_statistics
+				activate_technology = phenomenalism
+				activate_technology = pneumatic_and_hydraulics
+				activate_technology = point_defense_system
+				activate_technology = regenerative_furnaces
+				activate_technology = steam_turbine
+				activate_technology = the_historical_theory
+				activate_technology = time_saving_measures
+				activate_technology = weapon_platforms
+				activate_technology = iron_steamers
+				activate_technology = raider_group_doctrine
+				activate_technology = empiricism
+				activate_technology = marginalism
+				activate_technology = analytic_philosophy
+				activate_technology = army_risk_management
+				activate_technology = assembly_line
+				activate_technology = deep_defense_system
+				activate_technology = drilling_and_blasting
+				activate_technology = economic_responsibility
+				activate_technology = experimental_psychology
+				activate_technology = expressionism
+				activate_technology = investment_banks
+				activate_technology = main_armament
+				activate_technology = management_strategy
+				activate_technology = military_logistics
+				activate_technology = modern_central_bank_system
+				activate_technology = naval_logistics
+				activate_technology = naval_risk_management
+				activate_technology = organic_chemistry
+				activate_technology = revolution_n_counterrevolution
+				activate_technology = social_science
+				activate_technology = steel_breech_loaded_artillery
+				activate_technology = steel_railroad
+				activate_technology = blue_and_brown_water_schools
+				activate_technology = machine_guns
+				activate_technology = combustion_engine
+				activate_technology = electricity
+				activate_technology = phenomenology_n_hermeneutic
+				activate_technology = steel_steamers
+				activate_technology = electrical_power_generation
+				activate_technology = advanced_metallurgy
+				activate_technology = neoclassical_theory
+				activate_technology = psychoanalysis
+				activate_technology = high_sea_battle_fleet
+				activate_technology = integral_rail_system
+				activate_technology = advanced_naval_design
+				activate_technology = advanced_turbine_generators
+				activate_technology = anti__rationalism
+				activate_technology = army_nco_training
+				activate_technology = bank_inspection_board
+				activate_technology = electric_furnace
+				activate_technology = government_interventionism
+				activate_technology = indirect_artillery_fire
+				activate_technology = infiltration
+				activate_technology = market_determined_exchange_rates
+				activate_technology = mass_politics
+				activate_technology = militar_culture
+				activate_technology = military_directionism
+				activate_technology = modernism
+				activate_technology = naval_culture
+				activate_technology = naval_directionism
+				activate_technology = naval_nco_training
+				activate_technology = organizational_development
+				activate_technology = piece_work
+				activate_technology = psychodynamics
+				activate_technology = shift_work
+				activate_technology = social_alienation
+				activate_technology = steam_turbine_ships
+				activate_technology = synthetic_polymers
+				activate_technology = bolt_action_rifles
+				activate_technology = early_aeronautics
+				activate_technology = early_oil
+				activate_technology = semi_auto_rifles
+				activate_technology = advanced_polymers
+				activate_technology = advanced_steel_alloys
+				activate_technology = armored_vehicles
+				activate_technology = assembly_line_mechanization
+				activate_technology = behaviorism
+				activate_technology = federal_reserve_system
+				activate_technology = mass_culture_n_the_avant_garde
+				activate_technology = self_propelled_artillery
+				activate_technology = social_psychology
+				activate_technology = the_police_state
+				activate_technology = aeronautics
+				activate_technology = grand_fleet
+				activate_technology = inflation_targeting
+				activate_technology = limited_access_roads
+				activate_technology = modern_naval_training
+				activate_technology = naval_integration
+				activate_technology = naval_welding
+				activate_technology = ontology
+				activate_technology = modern_naval_doctrine
+				activate_technology = great_war_experience
+				activate_technology = heavy_armament_dunno
+				activate_technology = modern_army_doctrine
+				activate_technology = modern_divisional_structure
+				activate_technology = modern_naval_design
+				activate_technology = mutual_funds
+				activate_technology = oil_driven_ships
+				activate_technology = keynesian_economics
+				activate_technology = hedge_funds
+				activate_technology = high_ways_free_ways
+				activate_technology = network_centric_warfare
+				activate_technology = tgcnv_ww2_aesthetics_1930
+				activate_technology = tgcnv_ww2_army_doctrine_1930
+				activate_technology = tgcnv_ww2_army_leadership_1930
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1930
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1930
+				activate_technology = tgcnv_ww2_financial_institutions_1930
+				activate_technology = tgcnv_ww2_heavy_armament_1930
+				activate_technology = tgcnv_ww2_light_armament_1930
+				activate_technology = tgcnv_ww2_market_functionality_1930
+				activate_technology = tgcnv_ww2_mechanization_1930
+				activate_technology = tgcnv_ww2_metallurgy_1930
+				activate_technology = tgcnv_ww2_military_science_1930
+				activate_technology = tgcnv_ww2_monetary_system_1930
+				activate_technology = tgcnv_ww2_naval_doctrine_1930
+				activate_technology = tgcnv_ww2_naval_engineering_1930
+				activate_technology = tgcnv_ww2_naval_leadership_1930
+				activate_technology = tgcnv_ww2_naval_science_1930
+				activate_technology = tgcnv_ww2_philosophy_1930
+				activate_technology = tgcnv_ww2_political_thought_1930
+				activate_technology = tgcnv_ww2_psychology_1930
+				activate_technology = tgcnv_ww2_ship_construction_1930
+				activate_technology = tgcnv_ww2_social_thought_1930
+				activate_technology = tgcnv_ww2_tech_infrastructure_1930
+				activate_technology = tgcnv_ww2_tech_organization_1930
+				activate_technology = tgcnv_ww2_tech_power_1930
+				activate_technology = tgcnv_ww2_aesthetics_1936
+				activate_technology = tgcnv_ww2_army_doctrine_1936
+				activate_technology = tgcnv_ww2_army_leadership_1936
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1936
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1936
+				activate_technology = tgcnv_ww2_financial_institutions_1936
+				activate_technology = tgcnv_ww2_heavy_armament_1936
+				activate_technology = tgcnv_ww2_light_armament_1936
+				activate_technology = tgcnv_ww2_market_functionality_1936
+				activate_technology = tgcnv_ww2_mechanization_1936
+				activate_technology = tgcnv_ww2_metallurgy_1936
+				activate_technology = tgcnv_ww2_military_science_1936
+				activate_technology = tgcnv_ww2_monetary_system_1936
+				activate_technology = tgcnv_ww2_naval_doctrine_1936
+				activate_technology = tgcnv_ww2_naval_engineering_1936
+				activate_technology = tgcnv_ww2_naval_leadership_1936
+				activate_technology = tgcnv_ww2_naval_science_1936
+				activate_technology = tgcnv_ww2_philosophy_1936
+				activate_technology = tgcnv_ww2_political_thought_1936
+				activate_technology = tgcnv_ww2_psychology_1936
+				activate_technology = tgcnv_ww2_ship_construction_1936
+				activate_technology = tgcnv_ww2_social_thought_1936
+				activate_technology = tgcnv_ww2_tech_infrastructure_1936
+				activate_technology = tgcnv_ww2_tech_organization_1936
+				activate_technology = tgcnv_ww2_tech_power_1936
+				activate_technology = tgcnv_ww2_aesthetics_1940
+				activate_technology = tgcnv_ww2_army_doctrine_1940
+				activate_technology = tgcnv_ww2_army_leadership_1940
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1940
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1940
+				activate_technology = tgcnv_ww2_financial_institutions_1940
+				activate_technology = tgcnv_ww2_heavy_armament_1940
+				activate_technology = tgcnv_ww2_light_armament_1940
+				activate_technology = tgcnv_ww2_market_functionality_1940
+				activate_technology = tgcnv_ww2_mechanization_1940
+				activate_technology = tgcnv_ww2_metallurgy_1940
+				activate_technology = tgcnv_ww2_military_science_1940
+				activate_technology = tgcnv_ww2_monetary_system_1940
+				activate_technology = tgcnv_ww2_naval_doctrine_1940
+				activate_technology = tgcnv_ww2_naval_engineering_1940
+				activate_technology = tgcnv_ww2_naval_leadership_1940
+				activate_technology = tgcnv_ww2_naval_science_1940
+				activate_technology = tgcnv_ww2_philosophy_1940
+				activate_technology = tgcnv_ww2_political_thought_1940
+				activate_technology = tgcnv_ww2_psychology_1940
+				activate_technology = tgcnv_ww2_ship_construction_1940
+				activate_technology = tgcnv_ww2_social_thought_1940
+				activate_technology = tgcnv_ww2_tech_infrastructure_1940
+				activate_technology = tgcnv_ww2_tech_organization_1940
+				activate_technology = tgcnv_ww2_tech_power_1940
+				activate_technology = tgcnv_ww2_aesthetics_1943
+				activate_technology = tgcnv_ww2_army_doctrine_1943
+				activate_technology = tgcnv_ww2_army_leadership_1943
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1943
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1943
+				activate_technology = tgcnv_ww2_financial_institutions_1943
+				activate_technology = tgcnv_ww2_heavy_armament_1943
+				activate_technology = tgcnv_ww2_light_armament_1943
+				activate_technology = tgcnv_ww2_market_functionality_1943
+				activate_technology = tgcnv_ww2_mechanization_1943
+				activate_technology = tgcnv_ww2_metallurgy_1943
+				activate_technology = tgcnv_ww2_military_science_1943
+				activate_technology = tgcnv_ww2_monetary_system_1943
+				activate_technology = tgcnv_ww2_naval_doctrine_1943
+				activate_technology = tgcnv_ww2_naval_engineering_1943
+				activate_technology = tgcnv_ww2_naval_leadership_1943
+				activate_technology = tgcnv_ww2_naval_science_1943
+				activate_technology = tgcnv_ww2_philosophy_1943
+				activate_technology = tgcnv_ww2_political_thought_1943
+				activate_technology = tgcnv_ww2_psychology_1943
+				activate_technology = tgcnv_ww2_ship_construction_1943
+				activate_technology = tgcnv_ww2_social_thought_1943
+				activate_technology = tgcnv_ww2_tech_infrastructure_1943
+				activate_technology = tgcnv_ww2_tech_organization_1943
+				activate_technology = tgcnv_ww2_tech_power_1943
+				activate_technology = tgcnv_ww2_aesthetics_1945
+				activate_technology = tgcnv_ww2_army_doctrine_1945
+				activate_technology = tgcnv_ww2_army_leadership_1945
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1945
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1945
+				activate_technology = tgcnv_ww2_financial_institutions_1945
+				activate_technology = tgcnv_ww2_heavy_armament_1945
+				activate_technology = tgcnv_ww2_light_armament_1945
+				activate_technology = tgcnv_ww2_market_functionality_1945
+				activate_technology = tgcnv_ww2_mechanization_1945
+				activate_technology = tgcnv_ww2_metallurgy_1945
+				activate_technology = tgcnv_ww2_military_science_1945
+				activate_technology = tgcnv_ww2_monetary_system_1945
+				activate_technology = tgcnv_ww2_naval_doctrine_1945
+				activate_technology = tgcnv_ww2_naval_engineering_1945
+				activate_technology = tgcnv_ww2_naval_leadership_1945
+				activate_technology = tgcnv_ww2_naval_science_1945
+				activate_technology = tgcnv_ww2_philosophy_1945
+				activate_technology = tgcnv_ww2_political_thought_1945
+				activate_technology = tgcnv_ww2_psychology_1945
+				activate_technology = tgcnv_ww2_ship_construction_1945
+				activate_technology = tgcnv_ww2_social_thought_1945
+				activate_technology = tgcnv_ww2_tech_infrastructure_1945
+				activate_technology = tgcnv_ww2_tech_organization_1945
+				activate_technology = tgcnv_ww2_tech_power_1945
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						has_global_flag = HFMe_MOD_ACTIVE
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = ad_hoc_money_bill_printing
+				activate_technology = alphabetic_flag_signaling
+				activate_technology = army_command_principle
+				activate_technology = army_professionalism
+				activate_technology = associationism
+				activate_technology = basic_chemistry
+				activate_technology = battleship_column_doctrine
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = business_regulations
+				activate_technology = classicism_n_early_romanticism
+				activate_technology = clipper_design
+				activate_technology = collectivist_theory
+				activate_technology = compound_steam_engines
+				activate_technology = early_classical_theory_and_critique
+				activate_technology = enlightenment_thought
+				activate_technology = experimental_railroad
+				activate_technology = fire_control_systems
+				activate_technology = flintlock_rifles
+				activate_technology = freedom_of_trade
+				activate_technology = functionalism
+				activate_technology = guild_based_production
+				activate_technology = high_pressure_steam_engine
+				activate_technology = hot_blast
+				activate_technology = ideological_thought
+				activate_technology = interchangeable_parts
+				activate_technology = introspectionism
+				activate_technology = iron_muzzle_loaded_artillery
+				activate_technology = late_classical_theory
+				activate_technology = late_enlightenment_philosophy
+				activate_technology = malthusian_thought
+				activate_technology = market_structure
+				activate_technology = mechanical_production
+				activate_technology = medicine
+				activate_technology = military_plans
+				activate_technology = military_staff_system
+				activate_technology = muzzle_loaded_rifles
+				activate_technology = naval_design_bureaus
+				activate_technology = naval_plans
+				activate_technology = naval_professionalism
+				activate_technology = no_standard
+				activate_technology = organized_factories
+				activate_technology = piston_steam_engine
+				activate_technology = positivism
+				activate_technology = post_napoleonic_thought
+				activate_technology = post_nelsonian_thought
+				activate_technology = private_bank_money_bill_printing
+				activate_technology = private_banks
+				activate_technology = realism
+				activate_technology = romanticism
+				activate_technology = scientific_management
+				activate_technology = semi_automatization
+				activate_technology = steamers
+				activate_technology = stock_exchange
+				activate_technology = strategic_mobility
+				activate_technology = the_command_principle
+				activate_technology = early_railroad
+				activate_technology = idealism
+				activate_technology = mechanized_mining
+				activate_technology = state_n_government
+				activate_technology = army_decision_making
+				activate_technology = biologism
+				activate_technology = breech_loaded_rifles
+				activate_technology = business_banks
+				activate_technology = central_bank_money_bill_printing
+				activate_technology = impressionism
+				activate_technology = inorganic_chemistry
+				activate_technology = iron_breech_loaded_artillery
+				activate_technology = iron_railroad
+				activate_technology = market_regulations
+				activate_technology = military_statistics
+				activate_technology = nationalism_n_imperialism
+				activate_technology = naval_decision_making
+				activate_technology = naval_statistics
+				activate_technology = phenomenalism
+				activate_technology = pneumatic_and_hydraulics
+				activate_technology = point_defense_system
+				activate_technology = regenerative_furnaces
+				activate_technology = steam_turbine
+				activate_technology = the_historical_theory
+				activate_technology = time_saving_measures
+				activate_technology = weapon_platforms
+				activate_technology = iron_steamers
+				activate_technology = raider_group_doctrine
+				activate_technology = empiricism
+				activate_technology = marginalism
+				activate_technology = analytic_philosophy
+				activate_technology = army_risk_management
+				activate_technology = assembly_line
+				activate_technology = deep_defense_system
+				activate_technology = drilling_and_blasting
+				activate_technology = economic_responsibility
+				activate_technology = experimental_psychology
+				activate_technology = expressionism
+				activate_technology = investment_banks
+				activate_technology = main_armament
+				activate_technology = management_strategy
+				activate_technology = military_logistics
+				activate_technology = modern_central_bank_system
+				activate_technology = naval_logistics
+				activate_technology = naval_risk_management
+				activate_technology = organic_chemistry
+				activate_technology = revolution_n_counterrevolution
+				activate_technology = social_science
+				activate_technology = steel_breech_loaded_artillery
+				activate_technology = steel_railroad
+				activate_technology = blue_and_brown_water_schools
+				activate_technology = machine_guns
+				activate_technology = combustion_engine
+				activate_technology = electricity
+				activate_technology = phenomenology_n_hermeneutic
+				activate_technology = steel_steamers
+				activate_technology = electrical_power_generation
+				activate_technology = advanced_metallurgy
+				activate_technology = neoclassical_theory
+				activate_technology = psychoanalysis
+				activate_technology = high_sea_battle_fleet
+				activate_technology = integral_rail_system
+				activate_technology = advanced_naval_design
+				activate_technology = advanced_turbine_generators
+				activate_technology = anti__rationalism
+				activate_technology = army_nco_training
+				activate_technology = bank_inspection_board
+				activate_technology = electric_furnace
+				activate_technology = government_interventionism
+				activate_technology = indirect_artillery_fire
+				activate_technology = infiltration
+				activate_technology = market_determined_exchange_rates
+				activate_technology = mass_politics
+				activate_technology = militar_culture
+				activate_technology = military_directionism
+				activate_technology = modernism
+				activate_technology = naval_culture
+				activate_technology = naval_directionism
+				activate_technology = naval_nco_training
+				activate_technology = organizational_development
+				activate_technology = piece_work
+				activate_technology = psychodynamics
+				activate_technology = shift_work
+				activate_technology = social_alienation
+				activate_technology = steam_turbine_ships
+				activate_technology = synthetic_polymers
+				activate_technology = bolt_action_rifles
+				activate_technology = early_aeronautics
+				activate_technology = early_oil
+				activate_technology = semi_auto_rifles
+				activate_technology = advanced_polymers
+				activate_technology = advanced_steel_alloys
+				activate_technology = armored_vehicles
+				activate_technology = assembly_line_mechanization
+				activate_technology = behaviorism
+				activate_technology = federal_reserve_system
+				activate_technology = mass_culture_n_the_avant_garde
+				activate_technology = self_propelled_artillery
+				activate_technology = social_psychology
+				activate_technology = the_police_state
+				activate_technology = aeronautics
+				activate_technology = grand_fleet
+				activate_technology = inflation_targeting
+				activate_technology = limited_access_roads
+				activate_technology = modern_naval_training
+				activate_technology = naval_integration
+				activate_technology = naval_welding
+				activate_technology = ontology
+				activate_technology = modern_naval_doctrine
+				activate_technology = great_war_experience
+				activate_technology = heavy_armament_dunno
+				activate_technology = modern_army_doctrine
+				activate_technology = modern_divisional_structure
+				activate_technology = modern_naval_design
+				activate_technology = mutual_funds
+				activate_technology = oil_driven_ships
+				activate_technology = keynesian_economics
+				activate_technology = hedge_funds
+				activate_technology = high_ways_free_ways
+				activate_technology = network_centric_warfare
+				activate_technology = tgcnv_ww2_aesthetics_1930
+				activate_technology = tgcnv_ww2_army_doctrine_1930
+				activate_technology = tgcnv_ww2_army_leadership_1930
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1930
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1930
+				activate_technology = tgcnv_ww2_financial_institutions_1930
+				activate_technology = tgcnv_ww2_heavy_armament_1930
+				activate_technology = tgcnv_ww2_light_armament_1930
+				activate_technology = tgcnv_ww2_market_functionality_1930
+				activate_technology = tgcnv_ww2_mechanization_1930
+				activate_technology = tgcnv_ww2_metallurgy_1930
+				activate_technology = tgcnv_ww2_military_science_1930
+				activate_technology = tgcnv_ww2_monetary_system_1930
+				activate_technology = tgcnv_ww2_naval_doctrine_1930
+				activate_technology = tgcnv_ww2_naval_engineering_1930
+				activate_technology = tgcnv_ww2_naval_leadership_1930
+				activate_technology = tgcnv_ww2_naval_science_1930
+				activate_technology = tgcnv_ww2_philosophy_1930
+				activate_technology = tgcnv_ww2_political_thought_1930
+				activate_technology = tgcnv_ww2_psychology_1930
+				activate_technology = tgcnv_ww2_ship_construction_1930
+				activate_technology = tgcnv_ww2_social_thought_1930
+				activate_technology = tgcnv_ww2_tech_infrastructure_1930
+				activate_technology = tgcnv_ww2_tech_organization_1930
+				activate_technology = tgcnv_ww2_tech_power_1930
+				activate_technology = tgcnv_ww2_aesthetics_1936
+				activate_technology = tgcnv_ww2_army_doctrine_1936
+				activate_technology = tgcnv_ww2_army_leadership_1936
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1936
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1936
+				activate_technology = tgcnv_ww2_financial_institutions_1936
+				activate_technology = tgcnv_ww2_heavy_armament_1936
+				activate_technology = tgcnv_ww2_light_armament_1936
+				activate_technology = tgcnv_ww2_market_functionality_1936
+				activate_technology = tgcnv_ww2_mechanization_1936
+				activate_technology = tgcnv_ww2_metallurgy_1936
+				activate_technology = tgcnv_ww2_military_science_1936
+				activate_technology = tgcnv_ww2_monetary_system_1936
+				activate_technology = tgcnv_ww2_naval_doctrine_1936
+				activate_technology = tgcnv_ww2_naval_engineering_1936
+				activate_technology = tgcnv_ww2_naval_leadership_1936
+				activate_technology = tgcnv_ww2_naval_science_1936
+				activate_technology = tgcnv_ww2_philosophy_1936
+				activate_technology = tgcnv_ww2_political_thought_1936
+				activate_technology = tgcnv_ww2_psychology_1936
+				activate_technology = tgcnv_ww2_ship_construction_1936
+				activate_technology = tgcnv_ww2_social_thought_1936
+				activate_technology = tgcnv_ww2_tech_infrastructure_1936
+				activate_technology = tgcnv_ww2_tech_organization_1936
+				activate_technology = tgcnv_ww2_tech_power_1936
+				activate_technology = tgcnv_ww2_aesthetics_1940
+				activate_technology = tgcnv_ww2_army_doctrine_1940
+				activate_technology = tgcnv_ww2_army_leadership_1940
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1940
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1940
+				activate_technology = tgcnv_ww2_financial_institutions_1940
+				activate_technology = tgcnv_ww2_heavy_armament_1940
+				activate_technology = tgcnv_ww2_light_armament_1940
+				activate_technology = tgcnv_ww2_market_functionality_1940
+				activate_technology = tgcnv_ww2_mechanization_1940
+				activate_technology = tgcnv_ww2_metallurgy_1940
+				activate_technology = tgcnv_ww2_military_science_1940
+				activate_technology = tgcnv_ww2_monetary_system_1940
+				activate_technology = tgcnv_ww2_naval_doctrine_1940
+				activate_technology = tgcnv_ww2_naval_engineering_1940
+				activate_technology = tgcnv_ww2_naval_leadership_1940
+				activate_technology = tgcnv_ww2_naval_science_1940
+				activate_technology = tgcnv_ww2_philosophy_1940
+				activate_technology = tgcnv_ww2_political_thought_1940
+				activate_technology = tgcnv_ww2_psychology_1940
+				activate_technology = tgcnv_ww2_ship_construction_1940
+				activate_technology = tgcnv_ww2_social_thought_1940
+				activate_technology = tgcnv_ww2_tech_infrastructure_1940
+				activate_technology = tgcnv_ww2_tech_organization_1940
+				activate_technology = tgcnv_ww2_tech_power_1940
+				activate_technology = tgcnv_ww2_aesthetics_1943
+				activate_technology = tgcnv_ww2_army_doctrine_1943
+				activate_technology = tgcnv_ww2_army_leadership_1943
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1943
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1943
+				activate_technology = tgcnv_ww2_financial_institutions_1943
+				activate_technology = tgcnv_ww2_heavy_armament_1943
+				activate_technology = tgcnv_ww2_light_armament_1943
+				activate_technology = tgcnv_ww2_market_functionality_1943
+				activate_technology = tgcnv_ww2_mechanization_1943
+				activate_technology = tgcnv_ww2_metallurgy_1943
+				activate_technology = tgcnv_ww2_military_science_1943
+				activate_technology = tgcnv_ww2_monetary_system_1943
+				activate_technology = tgcnv_ww2_naval_doctrine_1943
+				activate_technology = tgcnv_ww2_naval_engineering_1943
+				activate_technology = tgcnv_ww2_naval_leadership_1943
+				activate_technology = tgcnv_ww2_naval_science_1943
+				activate_technology = tgcnv_ww2_philosophy_1943
+				activate_technology = tgcnv_ww2_political_thought_1943
+				activate_technology = tgcnv_ww2_psychology_1943
+				activate_technology = tgcnv_ww2_ship_construction_1943
+				activate_technology = tgcnv_ww2_social_thought_1943
+				activate_technology = tgcnv_ww2_tech_infrastructure_1943
+				activate_technology = tgcnv_ww2_tech_organization_1943
+				activate_technology = tgcnv_ww2_tech_power_1943
+				activate_technology = tgcnv_ww2_aesthetics_1945
+				activate_technology = tgcnv_ww2_army_doctrine_1945
+				activate_technology = tgcnv_ww2_army_leadership_1945
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1945
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1945
+				activate_technology = tgcnv_ww2_financial_institutions_1945
+				activate_technology = tgcnv_ww2_heavy_armament_1945
+				activate_technology = tgcnv_ww2_light_armament_1945
+				activate_technology = tgcnv_ww2_market_functionality_1945
+				activate_technology = tgcnv_ww2_mechanization_1945
+				activate_technology = tgcnv_ww2_metallurgy_1945
+				activate_technology = tgcnv_ww2_military_science_1945
+				activate_technology = tgcnv_ww2_monetary_system_1945
+				activate_technology = tgcnv_ww2_naval_doctrine_1945
+				activate_technology = tgcnv_ww2_naval_engineering_1945
+				activate_technology = tgcnv_ww2_naval_leadership_1945
+				activate_technology = tgcnv_ww2_naval_science_1945
+				activate_technology = tgcnv_ww2_philosophy_1945
+				activate_technology = tgcnv_ww2_political_thought_1945
+				activate_technology = tgcnv_ww2_psychology_1945
+				activate_technology = tgcnv_ww2_ship_construction_1945
+				activate_technology = tgcnv_ww2_social_thought_1945
+				activate_technology = tgcnv_ww2_tech_infrastructure_1945
+				activate_technology = tgcnv_ww2_tech_organization_1945
+				activate_technology = tgcnv_ww2_tech_power_1945
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		name = "TGCNV_CP_EVENT_777770050_OPTION_0"
+	}
+	option = {
+		any_country = {
+			limit = {
+				AND = {
+					OR = {
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_sp
+								is_secondary_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_gp
+								is_greater_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_minor
+								AND = {
+									NOT = {
+										is_greater_power = yes
+									}
+									NOT = {
+										is_secondary_power = yes
+									}
+									civilized = yes
+								}
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_unciv
+								civilized = no
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_vassal_endabled
+							AND = {
+								has_country_flag = tgcnv_cp_selected_vassal
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_enemy_endabled
+							OR = {
+								war_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_ally_endabled
+							OR = {
+								alliance_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_target_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_cp_tag_target
+							}
+						}
+					}
+				}
+			}
+			activate_technology = alphabetic_flag_signaling
+			activate_technology = army_command_principle
+			activate_technology = army_professionalism
+			activate_technology = battleship_column_doctrine
+			activate_technology = bronze_muzzle_loaded_artillery
+			activate_technology = clipper_design
+			activate_technology = fire_control_systems
+			activate_technology = flintlock_rifles
+			activate_technology = iron_muzzle_loaded_artillery
+			activate_technology = military_plans
+			activate_technology = military_staff_system
+			activate_technology = muzzle_loaded_rifles
+			activate_technology = naval_design_bureaus
+			activate_technology = naval_plans
+			activate_technology = naval_professionalism
+			activate_technology = post_napoleonic_thought
+			activate_technology = post_nelsonian_thought
+			activate_technology = steamers
+			activate_technology = strategic_mobility
+			activate_technology = the_command_principle
+			activate_technology = army_decision_making
+			activate_technology = breech_loaded_rifles
+			activate_technology = iron_breech_loaded_artillery
+			activate_technology = military_statistics
+			activate_technology = naval_decision_making
+			activate_technology = naval_statistics
+			activate_technology = point_defense_system
+			activate_technology = weapon_platforms
+			activate_technology = iron_steamers
+			activate_technology = raider_group_doctrine
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						NOT = {
+							has_global_flag = HFMe_MOD_ACTIVE
+						}
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = alphabetic_flag_signaling
+				activate_technology = army_command_principle
+				activate_technology = army_professionalism
+				activate_technology = battleship_column_doctrine
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = clipper_design
+				activate_technology = fire_control_systems
+				activate_technology = flintlock_rifles
+				activate_technology = iron_muzzle_loaded_artillery
+				activate_technology = military_plans
+				activate_technology = military_staff_system
+				activate_technology = muzzle_loaded_rifles
+				activate_technology = naval_design_bureaus
+				activate_technology = naval_plans
+				activate_technology = naval_professionalism
+				activate_technology = post_napoleonic_thought
+				activate_technology = post_nelsonian_thought
+				activate_technology = steamers
+				activate_technology = strategic_mobility
+				activate_technology = the_command_principle
+				activate_technology = army_decision_making
+				activate_technology = breech_loaded_rifles
+				activate_technology = iron_breech_loaded_artillery
+				activate_technology = military_statistics
+				activate_technology = naval_decision_making
+				activate_technology = naval_statistics
+				activate_technology = point_defense_system
+				activate_technology = weapon_platforms
+				activate_technology = iron_steamers
+				activate_technology = raider_group_doctrine
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						has_global_flag = HFMe_MOD_ACTIVE
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = alphabetic_flag_signaling
+				activate_technology = army_command_principle
+				activate_technology = army_professionalism
+				activate_technology = battleship_column_doctrine
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = clipper_design
+				activate_technology = fire_control_systems
+				activate_technology = flintlock_rifles
+				activate_technology = iron_muzzle_loaded_artillery
+				activate_technology = military_plans
+				activate_technology = military_staff_system
+				activate_technology = muzzle_loaded_rifles
+				activate_technology = naval_design_bureaus
+				activate_technology = naval_plans
+				activate_technology = naval_professionalism
+				activate_technology = post_napoleonic_thought
+				activate_technology = post_nelsonian_thought
+				activate_technology = steamers
+				activate_technology = strategic_mobility
+				activate_technology = the_command_principle
+				activate_technology = army_decision_making
+				activate_technology = breech_loaded_rifles
+				activate_technology = iron_breech_loaded_artillery
+				activate_technology = military_statistics
+				activate_technology = naval_decision_making
+				activate_technology = naval_statistics
+				activate_technology = point_defense_system
+				activate_technology = weapon_platforms
+				activate_technology = iron_steamers
+				activate_technology = raider_group_doctrine
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		name = "TGCNV_CP_EVENT_777770050_OPTION_1"
+	}
+	option = {
+		any_country = {
+			limit = {
+				AND = {
+					OR = {
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_sp
+								is_secondary_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_gp
+								is_greater_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_minor
+								AND = {
+									NOT = {
+										is_greater_power = yes
+									}
+									NOT = {
+										is_secondary_power = yes
+									}
+									civilized = yes
+								}
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_unciv
+								civilized = no
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_vassal_endabled
+							AND = {
+								has_country_flag = tgcnv_cp_selected_vassal
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_enemy_endabled
+							OR = {
+								war_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_ally_endabled
+							OR = {
+								alliance_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_target_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_cp_tag_target
+							}
+						}
+					}
+				}
+			}
+			activate_technology = army_risk_management
+			activate_technology = deep_defense_system
+			activate_technology = main_armament
+			activate_technology = military_logistics
+			activate_technology = naval_logistics
+			activate_technology = naval_risk_management
+			activate_technology = steel_breech_loaded_artillery
+			activate_technology = blue_and_brown_water_schools
+			activate_technology = machine_guns
+			activate_technology = steel_steamers
+			activate_technology = high_sea_battle_fleet
+			activate_technology = advanced_naval_design
+			activate_technology = army_nco_training
+			activate_technology = indirect_artillery_fire
+			activate_technology = infiltration
+			activate_technology = militar_culture
+			activate_technology = military_directionism
+			activate_technology = naval_culture
+			activate_technology = naval_directionism
+			activate_technology = naval_nco_training
+			activate_technology = steam_turbine_ships
+			activate_technology = bolt_action_rifles
+			activate_technology = early_aeronautics
+			activate_technology = early_oil
+			activate_technology = semi_auto_rifles
+			activate_technology = armored_vehicles
+			activate_technology = self_propelled_artillery
+			activate_technology = aeronautics
+			activate_technology = grand_fleet
+			activate_technology = modern_naval_training
+			activate_technology = naval_integration
+			activate_technology = naval_welding
+			activate_technology = modern_naval_doctrine
+			activate_technology = great_war_experience
+			activate_technology = heavy_armament_dunno
+			activate_technology = modern_army_doctrine
+			activate_technology = modern_divisional_structure
+			activate_technology = modern_naval_design
+			activate_technology = oil_driven_ships
+			activate_technology = network_centric_warfare
+			activate_technology = tgcnv_ww2_army_doctrine_1930
+			activate_technology = tgcnv_ww2_army_leadership_1930
+			activate_technology = tgcnv_ww2_heavy_armament_1930
+			activate_technology = tgcnv_ww2_light_armament_1930
+			activate_technology = tgcnv_ww2_military_science_1930
+			activate_technology = tgcnv_ww2_naval_doctrine_1930
+			activate_technology = tgcnv_ww2_naval_engineering_1930
+			activate_technology = tgcnv_ww2_naval_leadership_1930
+			activate_technology = tgcnv_ww2_naval_science_1930
+			activate_technology = tgcnv_ww2_ship_construction_1930
+			activate_technology = tgcnv_ww2_army_doctrine_1936
+			activate_technology = tgcnv_ww2_army_leadership_1936
+			activate_technology = tgcnv_ww2_heavy_armament_1936
+			activate_technology = tgcnv_ww2_light_armament_1936
+			activate_technology = tgcnv_ww2_military_science_1936
+			activate_technology = tgcnv_ww2_naval_doctrine_1936
+			activate_technology = tgcnv_ww2_naval_engineering_1936
+			activate_technology = tgcnv_ww2_naval_leadership_1936
+			activate_technology = tgcnv_ww2_naval_science_1936
+			activate_technology = tgcnv_ww2_ship_construction_1936
+			activate_technology = tgcnv_ww2_army_doctrine_1940
+			activate_technology = tgcnv_ww2_army_leadership_1940
+			activate_technology = tgcnv_ww2_heavy_armament_1940
+			activate_technology = tgcnv_ww2_light_armament_1940
+			activate_technology = tgcnv_ww2_military_science_1940
+			activate_technology = tgcnv_ww2_naval_doctrine_1940
+			activate_technology = tgcnv_ww2_naval_engineering_1940
+			activate_technology = tgcnv_ww2_naval_leadership_1940
+			activate_technology = tgcnv_ww2_naval_science_1940
+			activate_technology = tgcnv_ww2_ship_construction_1940
+			activate_technology = tgcnv_ww2_army_doctrine_1943
+			activate_technology = tgcnv_ww2_army_leadership_1943
+			activate_technology = tgcnv_ww2_heavy_armament_1943
+			activate_technology = tgcnv_ww2_light_armament_1943
+			activate_technology = tgcnv_ww2_military_science_1943
+			activate_technology = tgcnv_ww2_naval_doctrine_1943
+			activate_technology = tgcnv_ww2_naval_engineering_1943
+			activate_technology = tgcnv_ww2_naval_leadership_1943
+			activate_technology = tgcnv_ww2_naval_science_1943
+			activate_technology = tgcnv_ww2_ship_construction_1943
+			activate_technology = tgcnv_ww2_army_doctrine_1945
+			activate_technology = tgcnv_ww2_army_leadership_1945
+			activate_technology = tgcnv_ww2_heavy_armament_1945
+			activate_technology = tgcnv_ww2_light_armament_1945
+			activate_technology = tgcnv_ww2_military_science_1945
+			activate_technology = tgcnv_ww2_naval_doctrine_1945
+			activate_technology = tgcnv_ww2_naval_engineering_1945
+			activate_technology = tgcnv_ww2_naval_leadership_1945
+			activate_technology = tgcnv_ww2_naval_science_1945
+			activate_technology = tgcnv_ww2_ship_construction_1945
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						NOT = {
+							has_global_flag = HFMe_MOD_ACTIVE
+						}
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = army_risk_management
+				activate_technology = deep_defense_system
+				activate_technology = main_armament
+				activate_technology = military_logistics
+				activate_technology = naval_logistics
+				activate_technology = naval_risk_management
+				activate_technology = steel_breech_loaded_artillery
+				activate_technology = blue_and_brown_water_schools
+				activate_technology = machine_guns
+				activate_technology = steel_steamers
+				activate_technology = high_sea_battle_fleet
+				activate_technology = advanced_naval_design
+				activate_technology = army_nco_training
+				activate_technology = indirect_artillery_fire
+				activate_technology = infiltration
+				activate_technology = militar_culture
+				activate_technology = military_directionism
+				activate_technology = naval_culture
+				activate_technology = naval_directionism
+				activate_technology = naval_nco_training
+				activate_technology = steam_turbine_ships
+				activate_technology = bolt_action_rifles
+				activate_technology = early_aeronautics
+				activate_technology = early_oil
+				activate_technology = semi_auto_rifles
+				activate_technology = armored_vehicles
+				activate_technology = self_propelled_artillery
+				activate_technology = aeronautics
+				activate_technology = grand_fleet
+				activate_technology = modern_naval_training
+				activate_technology = naval_integration
+				activate_technology = naval_welding
+				activate_technology = modern_naval_doctrine
+				activate_technology = great_war_experience
+				activate_technology = heavy_armament_dunno
+				activate_technology = modern_army_doctrine
+				activate_technology = modern_divisional_structure
+				activate_technology = modern_naval_design
+				activate_technology = oil_driven_ships
+				activate_technology = network_centric_warfare
+				activate_technology = tgcnv_ww2_army_doctrine_1930
+				activate_technology = tgcnv_ww2_army_leadership_1930
+				activate_technology = tgcnv_ww2_heavy_armament_1930
+				activate_technology = tgcnv_ww2_light_armament_1930
+				activate_technology = tgcnv_ww2_military_science_1930
+				activate_technology = tgcnv_ww2_naval_doctrine_1930
+				activate_technology = tgcnv_ww2_naval_engineering_1930
+				activate_technology = tgcnv_ww2_naval_leadership_1930
+				activate_technology = tgcnv_ww2_naval_science_1930
+				activate_technology = tgcnv_ww2_ship_construction_1930
+				activate_technology = tgcnv_ww2_army_doctrine_1936
+				activate_technology = tgcnv_ww2_army_leadership_1936
+				activate_technology = tgcnv_ww2_heavy_armament_1936
+				activate_technology = tgcnv_ww2_light_armament_1936
+				activate_technology = tgcnv_ww2_military_science_1936
+				activate_technology = tgcnv_ww2_naval_doctrine_1936
+				activate_technology = tgcnv_ww2_naval_engineering_1936
+				activate_technology = tgcnv_ww2_naval_leadership_1936
+				activate_technology = tgcnv_ww2_naval_science_1936
+				activate_technology = tgcnv_ww2_ship_construction_1936
+				activate_technology = tgcnv_ww2_army_doctrine_1940
+				activate_technology = tgcnv_ww2_army_leadership_1940
+				activate_technology = tgcnv_ww2_heavy_armament_1940
+				activate_technology = tgcnv_ww2_light_armament_1940
+				activate_technology = tgcnv_ww2_military_science_1940
+				activate_technology = tgcnv_ww2_naval_doctrine_1940
+				activate_technology = tgcnv_ww2_naval_engineering_1940
+				activate_technology = tgcnv_ww2_naval_leadership_1940
+				activate_technology = tgcnv_ww2_naval_science_1940
+				activate_technology = tgcnv_ww2_ship_construction_1940
+				activate_technology = tgcnv_ww2_army_doctrine_1943
+				activate_technology = tgcnv_ww2_army_leadership_1943
+				activate_technology = tgcnv_ww2_heavy_armament_1943
+				activate_technology = tgcnv_ww2_light_armament_1943
+				activate_technology = tgcnv_ww2_military_science_1943
+				activate_technology = tgcnv_ww2_naval_doctrine_1943
+				activate_technology = tgcnv_ww2_naval_engineering_1943
+				activate_technology = tgcnv_ww2_naval_leadership_1943
+				activate_technology = tgcnv_ww2_naval_science_1943
+				activate_technology = tgcnv_ww2_ship_construction_1943
+				activate_technology = tgcnv_ww2_army_doctrine_1945
+				activate_technology = tgcnv_ww2_army_leadership_1945
+				activate_technology = tgcnv_ww2_heavy_armament_1945
+				activate_technology = tgcnv_ww2_light_armament_1945
+				activate_technology = tgcnv_ww2_military_science_1945
+				activate_technology = tgcnv_ww2_naval_doctrine_1945
+				activate_technology = tgcnv_ww2_naval_engineering_1945
+				activate_technology = tgcnv_ww2_naval_leadership_1945
+				activate_technology = tgcnv_ww2_naval_science_1945
+				activate_technology = tgcnv_ww2_ship_construction_1945
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						has_global_flag = HFMe_MOD_ACTIVE
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = army_risk_management
+				activate_technology = deep_defense_system
+				activate_technology = main_armament
+				activate_technology = military_logistics
+				activate_technology = naval_logistics
+				activate_technology = naval_risk_management
+				activate_technology = steel_breech_loaded_artillery
+				activate_technology = blue_and_brown_water_schools
+				activate_technology = machine_guns
+				activate_technology = steel_steamers
+				activate_technology = high_sea_battle_fleet
+				activate_technology = advanced_naval_design
+				activate_technology = army_nco_training
+				activate_technology = indirect_artillery_fire
+				activate_technology = infiltration
+				activate_technology = militar_culture
+				activate_technology = military_directionism
+				activate_technology = naval_culture
+				activate_technology = naval_directionism
+				activate_technology = naval_nco_training
+				activate_technology = steam_turbine_ships
+				activate_technology = bolt_action_rifles
+				activate_technology = early_aeronautics
+				activate_technology = early_oil
+				activate_technology = semi_auto_rifles
+				activate_technology = armored_vehicles
+				activate_technology = self_propelled_artillery
+				activate_technology = aeronautics
+				activate_technology = grand_fleet
+				activate_technology = modern_naval_training
+				activate_technology = naval_integration
+				activate_technology = naval_welding
+				activate_technology = modern_naval_doctrine
+				activate_technology = great_war_experience
+				activate_technology = heavy_armament_dunno
+				activate_technology = modern_army_doctrine
+				activate_technology = modern_divisional_structure
+				activate_technology = modern_naval_design
+				activate_technology = oil_driven_ships
+				activate_technology = network_centric_warfare
+				activate_technology = tgcnv_ww2_army_doctrine_1930
+				activate_technology = tgcnv_ww2_army_leadership_1930
+				activate_technology = tgcnv_ww2_heavy_armament_1930
+				activate_technology = tgcnv_ww2_light_armament_1930
+				activate_technology = tgcnv_ww2_military_science_1930
+				activate_technology = tgcnv_ww2_naval_doctrine_1930
+				activate_technology = tgcnv_ww2_naval_engineering_1930
+				activate_technology = tgcnv_ww2_naval_leadership_1930
+				activate_technology = tgcnv_ww2_naval_science_1930
+				activate_technology = tgcnv_ww2_ship_construction_1930
+				activate_technology = tgcnv_ww2_army_doctrine_1936
+				activate_technology = tgcnv_ww2_army_leadership_1936
+				activate_technology = tgcnv_ww2_heavy_armament_1936
+				activate_technology = tgcnv_ww2_light_armament_1936
+				activate_technology = tgcnv_ww2_military_science_1936
+				activate_technology = tgcnv_ww2_naval_doctrine_1936
+				activate_technology = tgcnv_ww2_naval_engineering_1936
+				activate_technology = tgcnv_ww2_naval_leadership_1936
+				activate_technology = tgcnv_ww2_naval_science_1936
+				activate_technology = tgcnv_ww2_ship_construction_1936
+				activate_technology = tgcnv_ww2_army_doctrine_1940
+				activate_technology = tgcnv_ww2_army_leadership_1940
+				activate_technology = tgcnv_ww2_heavy_armament_1940
+				activate_technology = tgcnv_ww2_light_armament_1940
+				activate_technology = tgcnv_ww2_military_science_1940
+				activate_technology = tgcnv_ww2_naval_doctrine_1940
+				activate_technology = tgcnv_ww2_naval_engineering_1940
+				activate_technology = tgcnv_ww2_naval_leadership_1940
+				activate_technology = tgcnv_ww2_naval_science_1940
+				activate_technology = tgcnv_ww2_ship_construction_1940
+				activate_technology = tgcnv_ww2_army_doctrine_1943
+				activate_technology = tgcnv_ww2_army_leadership_1943
+				activate_technology = tgcnv_ww2_heavy_armament_1943
+				activate_technology = tgcnv_ww2_light_armament_1943
+				activate_technology = tgcnv_ww2_military_science_1943
+				activate_technology = tgcnv_ww2_naval_doctrine_1943
+				activate_technology = tgcnv_ww2_naval_engineering_1943
+				activate_technology = tgcnv_ww2_naval_leadership_1943
+				activate_technology = tgcnv_ww2_naval_science_1943
+				activate_technology = tgcnv_ww2_ship_construction_1943
+				activate_technology = tgcnv_ww2_army_doctrine_1945
+				activate_technology = tgcnv_ww2_army_leadership_1945
+				activate_technology = tgcnv_ww2_heavy_armament_1945
+				activate_technology = tgcnv_ww2_light_armament_1945
+				activate_technology = tgcnv_ww2_military_science_1945
+				activate_technology = tgcnv_ww2_naval_doctrine_1945
+				activate_technology = tgcnv_ww2_naval_engineering_1945
+				activate_technology = tgcnv_ww2_naval_leadership_1945
+				activate_technology = tgcnv_ww2_naval_science_1945
+				activate_technology = tgcnv_ww2_ship_construction_1945
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		name = "TGCNV_CP_EVENT_777770050_OPTION_2"
+	}
+	option = {
+		any_country = {
+			limit = {
+				AND = {
+					OR = {
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_sp
+								is_secondary_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_gp
+								is_greater_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_minor
+								AND = {
+									NOT = {
+										is_greater_power = yes
+									}
+									NOT = {
+										is_secondary_power = yes
+									}
+									civilized = yes
+								}
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_unciv
+								civilized = no
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_vassal_endabled
+							AND = {
+								has_country_flag = tgcnv_cp_selected_vassal
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_enemy_endabled
+							OR = {
+								war_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_ally_endabled
+							OR = {
+								alliance_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_target_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_cp_tag_target
+							}
+						}
+					}
+				}
+			}
+			activate_technology = ad_hoc_money_bill_printing
+			activate_technology = associationism
+			activate_technology = basic_chemistry
+			activate_technology = business_regulations
+			activate_technology = classicism_n_early_romanticism
+			activate_technology = collectivist_theory
+			activate_technology = compound_steam_engines
+			activate_technology = early_classical_theory_and_critique
+			activate_technology = enlightenment_thought
+			activate_technology = experimental_railroad
+			activate_technology = freedom_of_trade
+			activate_technology = functionalism
+			activate_technology = guild_based_production
+			activate_technology = high_pressure_steam_engine
+			activate_technology = hot_blast
+			activate_technology = ideological_thought
+			activate_technology = interchangeable_parts
+			activate_technology = introspectionism
+			activate_technology = late_classical_theory
+			activate_technology = late_enlightenment_philosophy
+			activate_technology = malthusian_thought
+			activate_technology = market_structure
+			activate_technology = mechanical_production
+			activate_technology = medicine
+			activate_technology = no_standard
+			activate_technology = organized_factories
+			activate_technology = piston_steam_engine
+			activate_technology = positivism
+			activate_technology = private_bank_money_bill_printing
+			activate_technology = private_banks
+			activate_technology = realism
+			activate_technology = romanticism
+			activate_technology = scientific_management
+			activate_technology = semi_automatization
+			activate_technology = stock_exchange
+			activate_technology = early_railroad
+			activate_technology = idealism
+			activate_technology = mechanized_mining
+			activate_technology = state_n_government
+			activate_technology = biologism
+			activate_technology = business_banks
+			activate_technology = central_bank_money_bill_printing
+			activate_technology = impressionism
+			activate_technology = inorganic_chemistry
+			activate_technology = iron_railroad
+			activate_technology = market_regulations
+			activate_technology = nationalism_n_imperialism
+			activate_technology = phenomenalism
+			activate_technology = pneumatic_and_hydraulics
+			activate_technology = regenerative_furnaces
+			activate_technology = steam_turbine
+			activate_technology = the_historical_theory
+			activate_technology = time_saving_measures
+			activate_technology = empiricism
+			activate_technology = marginalism
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						NOT = {
+							has_global_flag = HFMe_MOD_ACTIVE
+						}
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = ad_hoc_money_bill_printing
+				activate_technology = associationism
+				activate_technology = basic_chemistry
+				activate_technology = business_regulations
+				activate_technology = classicism_n_early_romanticism
+				activate_technology = collectivist_theory
+				activate_technology = compound_steam_engines
+				activate_technology = early_classical_theory_and_critique
+				activate_technology = enlightenment_thought
+				activate_technology = experimental_railroad
+				activate_technology = freedom_of_trade
+				activate_technology = functionalism
+				activate_technology = guild_based_production
+				activate_technology = high_pressure_steam_engine
+				activate_technology = hot_blast
+				activate_technology = ideological_thought
+				activate_technology = interchangeable_parts
+				activate_technology = introspectionism
+				activate_technology = late_classical_theory
+				activate_technology = late_enlightenment_philosophy
+				activate_technology = malthusian_thought
+				activate_technology = market_structure
+				activate_technology = mechanical_production
+				activate_technology = medicine
+				activate_technology = no_standard
+				activate_technology = organized_factories
+				activate_technology = piston_steam_engine
+				activate_technology = positivism
+				activate_technology = private_bank_money_bill_printing
+				activate_technology = private_banks
+				activate_technology = realism
+				activate_technology = romanticism
+				activate_technology = scientific_management
+				activate_technology = semi_automatization
+				activate_technology = stock_exchange
+				activate_technology = early_railroad
+				activate_technology = idealism
+				activate_technology = mechanized_mining
+				activate_technology = state_n_government
+				activate_technology = biologism
+				activate_technology = business_banks
+				activate_technology = central_bank_money_bill_printing
+				activate_technology = impressionism
+				activate_technology = inorganic_chemistry
+				activate_technology = iron_railroad
+				activate_technology = market_regulations
+				activate_technology = nationalism_n_imperialism
+				activate_technology = phenomenalism
+				activate_technology = pneumatic_and_hydraulics
+				activate_technology = regenerative_furnaces
+				activate_technology = steam_turbine
+				activate_technology = the_historical_theory
+				activate_technology = time_saving_measures
+				activate_technology = empiricism
+				activate_technology = marginalism
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						has_global_flag = HFMe_MOD_ACTIVE
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = ad_hoc_money_bill_printing
+				activate_technology = associationism
+				activate_technology = basic_chemistry
+				activate_technology = business_regulations
+				activate_technology = classicism_n_early_romanticism
+				activate_technology = collectivist_theory
+				activate_technology = compound_steam_engines
+				activate_technology = early_classical_theory_and_critique
+				activate_technology = enlightenment_thought
+				activate_technology = experimental_railroad
+				activate_technology = freedom_of_trade
+				activate_technology = functionalism
+				activate_technology = guild_based_production
+				activate_technology = high_pressure_steam_engine
+				activate_technology = hot_blast
+				activate_technology = ideological_thought
+				activate_technology = interchangeable_parts
+				activate_technology = introspectionism
+				activate_technology = late_classical_theory
+				activate_technology = late_enlightenment_philosophy
+				activate_technology = malthusian_thought
+				activate_technology = market_structure
+				activate_technology = mechanical_production
+				activate_technology = medicine
+				activate_technology = no_standard
+				activate_technology = organized_factories
+				activate_technology = piston_steam_engine
+				activate_technology = positivism
+				activate_technology = private_bank_money_bill_printing
+				activate_technology = private_banks
+				activate_technology = realism
+				activate_technology = romanticism
+				activate_technology = scientific_management
+				activate_technology = semi_automatization
+				activate_technology = stock_exchange
+				activate_technology = early_railroad
+				activate_technology = idealism
+				activate_technology = mechanized_mining
+				activate_technology = state_n_government
+				activate_technology = biologism
+				activate_technology = business_banks
+				activate_technology = central_bank_money_bill_printing
+				activate_technology = impressionism
+				activate_technology = inorganic_chemistry
+				activate_technology = iron_railroad
+				activate_technology = market_regulations
+				activate_technology = nationalism_n_imperialism
+				activate_technology = phenomenalism
+				activate_technology = pneumatic_and_hydraulics
+				activate_technology = regenerative_furnaces
+				activate_technology = steam_turbine
+				activate_technology = the_historical_theory
+				activate_technology = time_saving_measures
+				activate_technology = empiricism
+				activate_technology = marginalism
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		name = "TGCNV_CP_EVENT_777770050_OPTION_3"
+	}
+	option = {
+		any_country = {
+			limit = {
+				AND = {
+					OR = {
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_sp
+								is_secondary_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_gp
+								is_greater_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_minor
+								AND = {
+									NOT = {
+										is_greater_power = yes
+									}
+									NOT = {
+										is_secondary_power = yes
+									}
+									civilized = yes
+								}
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_unciv
+								civilized = no
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_vassal_endabled
+							AND = {
+								has_country_flag = tgcnv_cp_selected_vassal
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_enemy_endabled
+							OR = {
+								war_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_ally_endabled
+							OR = {
+								alliance_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_target_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_cp_tag_target
+							}
+						}
+					}
+				}
+			}
+			activate_technology = analytic_philosophy
+			activate_technology = assembly_line
+			activate_technology = drilling_and_blasting
+			activate_technology = economic_responsibility
+			activate_technology = experimental_psychology
+			activate_technology = expressionism
+			activate_technology = investment_banks
+			activate_technology = management_strategy
+			activate_technology = modern_central_bank_system
+			activate_technology = organic_chemistry
+			activate_technology = revolution_n_counterrevolution
+			activate_technology = social_science
+			activate_technology = steel_railroad
+			activate_technology = combustion_engine
+			activate_technology = electricity
+			activate_technology = phenomenology_n_hermeneutic
+			activate_technology = electrical_power_generation
+			activate_technology = advanced_metallurgy
+			activate_technology = neoclassical_theory
+			activate_technology = psychoanalysis
+			activate_technology = integral_rail_system
+			activate_technology = advanced_turbine_generators
+			activate_technology = anti__rationalism
+			activate_technology = bank_inspection_board
+			activate_technology = electric_furnace
+			activate_technology = government_interventionism
+			activate_technology = market_determined_exchange_rates
+			activate_technology = mass_politics
+			activate_technology = modernism
+			activate_technology = organizational_development
+			activate_technology = piece_work
+			activate_technology = psychodynamics
+			activate_technology = shift_work
+			activate_technology = social_alienation
+			activate_technology = synthetic_polymers
+			activate_technology = advanced_polymers
+			activate_technology = advanced_steel_alloys
+			activate_technology = assembly_line_mechanization
+			activate_technology = behaviorism
+			activate_technology = federal_reserve_system
+			activate_technology = mass_culture_n_the_avant_garde
+			activate_technology = social_psychology
+			activate_technology = the_police_state
+			activate_technology = inflation_targeting
+			activate_technology = limited_access_roads
+			activate_technology = ontology
+			activate_technology = mutual_funds
+			activate_technology = keynesian_economics
+			activate_technology = hedge_funds
+			activate_technology = high_ways_free_ways
+			activate_technology = tgcnv_ww2_aesthetics_1930
+			activate_technology = tgcnv_ww2_chemistry_and_electricity_1930
+			activate_technology = tgcnv_ww2_economic_thought_and_critique_1930
+			activate_technology = tgcnv_ww2_financial_institutions_1930
+			activate_technology = tgcnv_ww2_market_functionality_1930
+			activate_technology = tgcnv_ww2_mechanization_1930
+			activate_technology = tgcnv_ww2_metallurgy_1930
+			activate_technology = tgcnv_ww2_monetary_system_1930
+			activate_technology = tgcnv_ww2_philosophy_1930
+			activate_technology = tgcnv_ww2_political_thought_1930
+			activate_technology = tgcnv_ww2_psychology_1930
+			activate_technology = tgcnv_ww2_social_thought_1930
+			activate_technology = tgcnv_ww2_tech_infrastructure_1930
+			activate_technology = tgcnv_ww2_tech_organization_1930
+			activate_technology = tgcnv_ww2_tech_power_1930
+			activate_technology = tgcnv_ww2_aesthetics_1936
+			activate_technology = tgcnv_ww2_chemistry_and_electricity_1936
+			activate_technology = tgcnv_ww2_economic_thought_and_critique_1936
+			activate_technology = tgcnv_ww2_financial_institutions_1936
+			activate_technology = tgcnv_ww2_market_functionality_1936
+			activate_technology = tgcnv_ww2_mechanization_1936
+			activate_technology = tgcnv_ww2_metallurgy_1936
+			activate_technology = tgcnv_ww2_monetary_system_1936
+			activate_technology = tgcnv_ww2_philosophy_1936
+			activate_technology = tgcnv_ww2_political_thought_1936
+			activate_technology = tgcnv_ww2_psychology_1936
+			activate_technology = tgcnv_ww2_social_thought_1936
+			activate_technology = tgcnv_ww2_tech_infrastructure_1936
+			activate_technology = tgcnv_ww2_tech_organization_1936
+			activate_technology = tgcnv_ww2_tech_power_1936
+			activate_technology = tgcnv_ww2_aesthetics_1940
+			activate_technology = tgcnv_ww2_chemistry_and_electricity_1940
+			activate_technology = tgcnv_ww2_economic_thought_and_critique_1940
+			activate_technology = tgcnv_ww2_financial_institutions_1940
+			activate_technology = tgcnv_ww2_market_functionality_1940
+			activate_technology = tgcnv_ww2_mechanization_1940
+			activate_technology = tgcnv_ww2_metallurgy_1940
+			activate_technology = tgcnv_ww2_monetary_system_1940
+			activate_technology = tgcnv_ww2_philosophy_1940
+			activate_technology = tgcnv_ww2_political_thought_1940
+			activate_technology = tgcnv_ww2_psychology_1940
+			activate_technology = tgcnv_ww2_social_thought_1940
+			activate_technology = tgcnv_ww2_tech_infrastructure_1940
+			activate_technology = tgcnv_ww2_tech_organization_1940
+			activate_technology = tgcnv_ww2_tech_power_1940
+			activate_technology = tgcnv_ww2_aesthetics_1943
+			activate_technology = tgcnv_ww2_chemistry_and_electricity_1943
+			activate_technology = tgcnv_ww2_economic_thought_and_critique_1943
+			activate_technology = tgcnv_ww2_financial_institutions_1943
+			activate_technology = tgcnv_ww2_market_functionality_1943
+			activate_technology = tgcnv_ww2_mechanization_1943
+			activate_technology = tgcnv_ww2_metallurgy_1943
+			activate_technology = tgcnv_ww2_monetary_system_1943
+			activate_technology = tgcnv_ww2_philosophy_1943
+			activate_technology = tgcnv_ww2_political_thought_1943
+			activate_technology = tgcnv_ww2_psychology_1943
+			activate_technology = tgcnv_ww2_social_thought_1943
+			activate_technology = tgcnv_ww2_tech_infrastructure_1943
+			activate_technology = tgcnv_ww2_tech_organization_1943
+			activate_technology = tgcnv_ww2_tech_power_1943
+			activate_technology = tgcnv_ww2_aesthetics_1945
+			activate_technology = tgcnv_ww2_chemistry_and_electricity_1945
+			activate_technology = tgcnv_ww2_economic_thought_and_critique_1945
+			activate_technology = tgcnv_ww2_financial_institutions_1945
+			activate_technology = tgcnv_ww2_market_functionality_1945
+			activate_technology = tgcnv_ww2_mechanization_1945
+			activate_technology = tgcnv_ww2_metallurgy_1945
+			activate_technology = tgcnv_ww2_monetary_system_1945
+			activate_technology = tgcnv_ww2_philosophy_1945
+			activate_technology = tgcnv_ww2_political_thought_1945
+			activate_technology = tgcnv_ww2_psychology_1945
+			activate_technology = tgcnv_ww2_social_thought_1945
+			activate_technology = tgcnv_ww2_tech_infrastructure_1945
+			activate_technology = tgcnv_ww2_tech_organization_1945
+			activate_technology = tgcnv_ww2_tech_power_1945
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						NOT = {
+							has_global_flag = HFMe_MOD_ACTIVE
+						}
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = analytic_philosophy
+				activate_technology = assembly_line
+				activate_technology = drilling_and_blasting
+				activate_technology = economic_responsibility
+				activate_technology = experimental_psychology
+				activate_technology = expressionism
+				activate_technology = investment_banks
+				activate_technology = management_strategy
+				activate_technology = modern_central_bank_system
+				activate_technology = organic_chemistry
+				activate_technology = revolution_n_counterrevolution
+				activate_technology = social_science
+				activate_technology = steel_railroad
+				activate_technology = combustion_engine
+				activate_technology = electricity
+				activate_technology = phenomenology_n_hermeneutic
+				activate_technology = electrical_power_generation
+				activate_technology = advanced_metallurgy
+				activate_technology = neoclassical_theory
+				activate_technology = psychoanalysis
+				activate_technology = integral_rail_system
+				activate_technology = advanced_turbine_generators
+				activate_technology = anti__rationalism
+				activate_technology = bank_inspection_board
+				activate_technology = electric_furnace
+				activate_technology = government_interventionism
+				activate_technology = market_determined_exchange_rates
+				activate_technology = mass_politics
+				activate_technology = modernism
+				activate_technology = organizational_development
+				activate_technology = piece_work
+				activate_technology = psychodynamics
+				activate_technology = shift_work
+				activate_technology = social_alienation
+				activate_technology = synthetic_polymers
+				activate_technology = advanced_polymers
+				activate_technology = advanced_steel_alloys
+				activate_technology = assembly_line_mechanization
+				activate_technology = behaviorism
+				activate_technology = federal_reserve_system
+				activate_technology = mass_culture_n_the_avant_garde
+				activate_technology = social_psychology
+				activate_technology = the_police_state
+				activate_technology = inflation_targeting
+				activate_technology = limited_access_roads
+				activate_technology = ontology
+				activate_technology = mutual_funds
+				activate_technology = keynesian_economics
+				activate_technology = hedge_funds
+				activate_technology = high_ways_free_ways
+				activate_technology = tgcnv_ww2_aesthetics_1930
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1930
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1930
+				activate_technology = tgcnv_ww2_financial_institutions_1930
+				activate_technology = tgcnv_ww2_market_functionality_1930
+				activate_technology = tgcnv_ww2_mechanization_1930
+				activate_technology = tgcnv_ww2_metallurgy_1930
+				activate_technology = tgcnv_ww2_monetary_system_1930
+				activate_technology = tgcnv_ww2_philosophy_1930
+				activate_technology = tgcnv_ww2_political_thought_1930
+				activate_technology = tgcnv_ww2_psychology_1930
+				activate_technology = tgcnv_ww2_social_thought_1930
+				activate_technology = tgcnv_ww2_tech_infrastructure_1930
+				activate_technology = tgcnv_ww2_tech_organization_1930
+				activate_technology = tgcnv_ww2_tech_power_1930
+				activate_technology = tgcnv_ww2_aesthetics_1936
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1936
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1936
+				activate_technology = tgcnv_ww2_financial_institutions_1936
+				activate_technology = tgcnv_ww2_market_functionality_1936
+				activate_technology = tgcnv_ww2_mechanization_1936
+				activate_technology = tgcnv_ww2_metallurgy_1936
+				activate_technology = tgcnv_ww2_monetary_system_1936
+				activate_technology = tgcnv_ww2_philosophy_1936
+				activate_technology = tgcnv_ww2_political_thought_1936
+				activate_technology = tgcnv_ww2_psychology_1936
+				activate_technology = tgcnv_ww2_social_thought_1936
+				activate_technology = tgcnv_ww2_tech_infrastructure_1936
+				activate_technology = tgcnv_ww2_tech_organization_1936
+				activate_technology = tgcnv_ww2_tech_power_1936
+				activate_technology = tgcnv_ww2_aesthetics_1940
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1940
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1940
+				activate_technology = tgcnv_ww2_financial_institutions_1940
+				activate_technology = tgcnv_ww2_market_functionality_1940
+				activate_technology = tgcnv_ww2_mechanization_1940
+				activate_technology = tgcnv_ww2_metallurgy_1940
+				activate_technology = tgcnv_ww2_monetary_system_1940
+				activate_technology = tgcnv_ww2_philosophy_1940
+				activate_technology = tgcnv_ww2_political_thought_1940
+				activate_technology = tgcnv_ww2_psychology_1940
+				activate_technology = tgcnv_ww2_social_thought_1940
+				activate_technology = tgcnv_ww2_tech_infrastructure_1940
+				activate_technology = tgcnv_ww2_tech_organization_1940
+				activate_technology = tgcnv_ww2_tech_power_1940
+				activate_technology = tgcnv_ww2_aesthetics_1943
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1943
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1943
+				activate_technology = tgcnv_ww2_financial_institutions_1943
+				activate_technology = tgcnv_ww2_market_functionality_1943
+				activate_technology = tgcnv_ww2_mechanization_1943
+				activate_technology = tgcnv_ww2_metallurgy_1943
+				activate_technology = tgcnv_ww2_monetary_system_1943
+				activate_technology = tgcnv_ww2_philosophy_1943
+				activate_technology = tgcnv_ww2_political_thought_1943
+				activate_technology = tgcnv_ww2_psychology_1943
+				activate_technology = tgcnv_ww2_social_thought_1943
+				activate_technology = tgcnv_ww2_tech_infrastructure_1943
+				activate_technology = tgcnv_ww2_tech_organization_1943
+				activate_technology = tgcnv_ww2_tech_power_1943
+				activate_technology = tgcnv_ww2_aesthetics_1945
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1945
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1945
+				activate_technology = tgcnv_ww2_financial_institutions_1945
+				activate_technology = tgcnv_ww2_market_functionality_1945
+				activate_technology = tgcnv_ww2_mechanization_1945
+				activate_technology = tgcnv_ww2_metallurgy_1945
+				activate_technology = tgcnv_ww2_monetary_system_1945
+				activate_technology = tgcnv_ww2_philosophy_1945
+				activate_technology = tgcnv_ww2_political_thought_1945
+				activate_technology = tgcnv_ww2_psychology_1945
+				activate_technology = tgcnv_ww2_social_thought_1945
+				activate_technology = tgcnv_ww2_tech_infrastructure_1945
+				activate_technology = tgcnv_ww2_tech_organization_1945
+				activate_technology = tgcnv_ww2_tech_power_1945
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						has_global_flag = HFMe_MOD_ACTIVE
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = analytic_philosophy
+				activate_technology = assembly_line
+				activate_technology = drilling_and_blasting
+				activate_technology = economic_responsibility
+				activate_technology = experimental_psychology
+				activate_technology = expressionism
+				activate_technology = investment_banks
+				activate_technology = management_strategy
+				activate_technology = modern_central_bank_system
+				activate_technology = organic_chemistry
+				activate_technology = revolution_n_counterrevolution
+				activate_technology = social_science
+				activate_technology = steel_railroad
+				activate_technology = combustion_engine
+				activate_technology = electricity
+				activate_technology = phenomenology_n_hermeneutic
+				activate_technology = electrical_power_generation
+				activate_technology = advanced_metallurgy
+				activate_technology = neoclassical_theory
+				activate_technology = psychoanalysis
+				activate_technology = integral_rail_system
+				activate_technology = advanced_turbine_generators
+				activate_technology = anti__rationalism
+				activate_technology = bank_inspection_board
+				activate_technology = electric_furnace
+				activate_technology = government_interventionism
+				activate_technology = market_determined_exchange_rates
+				activate_technology = mass_politics
+				activate_technology = modernism
+				activate_technology = organizational_development
+				activate_technology = piece_work
+				activate_technology = psychodynamics
+				activate_technology = shift_work
+				activate_technology = social_alienation
+				activate_technology = synthetic_polymers
+				activate_technology = advanced_polymers
+				activate_technology = advanced_steel_alloys
+				activate_technology = assembly_line_mechanization
+				activate_technology = behaviorism
+				activate_technology = federal_reserve_system
+				activate_technology = mass_culture_n_the_avant_garde
+				activate_technology = social_psychology
+				activate_technology = the_police_state
+				activate_technology = inflation_targeting
+				activate_technology = limited_access_roads
+				activate_technology = ontology
+				activate_technology = mutual_funds
+				activate_technology = keynesian_economics
+				activate_technology = hedge_funds
+				activate_technology = high_ways_free_ways
+				activate_technology = tgcnv_ww2_aesthetics_1930
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1930
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1930
+				activate_technology = tgcnv_ww2_financial_institutions_1930
+				activate_technology = tgcnv_ww2_market_functionality_1930
+				activate_technology = tgcnv_ww2_mechanization_1930
+				activate_technology = tgcnv_ww2_metallurgy_1930
+				activate_technology = tgcnv_ww2_monetary_system_1930
+				activate_technology = tgcnv_ww2_philosophy_1930
+				activate_technology = tgcnv_ww2_political_thought_1930
+				activate_technology = tgcnv_ww2_psychology_1930
+				activate_technology = tgcnv_ww2_social_thought_1930
+				activate_technology = tgcnv_ww2_tech_infrastructure_1930
+				activate_technology = tgcnv_ww2_tech_organization_1930
+				activate_technology = tgcnv_ww2_tech_power_1930
+				activate_technology = tgcnv_ww2_aesthetics_1936
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1936
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1936
+				activate_technology = tgcnv_ww2_financial_institutions_1936
+				activate_technology = tgcnv_ww2_market_functionality_1936
+				activate_technology = tgcnv_ww2_mechanization_1936
+				activate_technology = tgcnv_ww2_metallurgy_1936
+				activate_technology = tgcnv_ww2_monetary_system_1936
+				activate_technology = tgcnv_ww2_philosophy_1936
+				activate_technology = tgcnv_ww2_political_thought_1936
+				activate_technology = tgcnv_ww2_psychology_1936
+				activate_technology = tgcnv_ww2_social_thought_1936
+				activate_technology = tgcnv_ww2_tech_infrastructure_1936
+				activate_technology = tgcnv_ww2_tech_organization_1936
+				activate_technology = tgcnv_ww2_tech_power_1936
+				activate_technology = tgcnv_ww2_aesthetics_1940
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1940
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1940
+				activate_technology = tgcnv_ww2_financial_institutions_1940
+				activate_technology = tgcnv_ww2_market_functionality_1940
+				activate_technology = tgcnv_ww2_mechanization_1940
+				activate_technology = tgcnv_ww2_metallurgy_1940
+				activate_technology = tgcnv_ww2_monetary_system_1940
+				activate_technology = tgcnv_ww2_philosophy_1940
+				activate_technology = tgcnv_ww2_political_thought_1940
+				activate_technology = tgcnv_ww2_psychology_1940
+				activate_technology = tgcnv_ww2_social_thought_1940
+				activate_technology = tgcnv_ww2_tech_infrastructure_1940
+				activate_technology = tgcnv_ww2_tech_organization_1940
+				activate_technology = tgcnv_ww2_tech_power_1940
+				activate_technology = tgcnv_ww2_aesthetics_1943
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1943
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1943
+				activate_technology = tgcnv_ww2_financial_institutions_1943
+				activate_technology = tgcnv_ww2_market_functionality_1943
+				activate_technology = tgcnv_ww2_mechanization_1943
+				activate_technology = tgcnv_ww2_metallurgy_1943
+				activate_technology = tgcnv_ww2_monetary_system_1943
+				activate_technology = tgcnv_ww2_philosophy_1943
+				activate_technology = tgcnv_ww2_political_thought_1943
+				activate_technology = tgcnv_ww2_psychology_1943
+				activate_technology = tgcnv_ww2_social_thought_1943
+				activate_technology = tgcnv_ww2_tech_infrastructure_1943
+				activate_technology = tgcnv_ww2_tech_organization_1943
+				activate_technology = tgcnv_ww2_tech_power_1943
+				activate_technology = tgcnv_ww2_aesthetics_1945
+				activate_technology = tgcnv_ww2_chemistry_and_electricity_1945
+				activate_technology = tgcnv_ww2_economic_thought_and_critique_1945
+				activate_technology = tgcnv_ww2_financial_institutions_1945
+				activate_technology = tgcnv_ww2_market_functionality_1945
+				activate_technology = tgcnv_ww2_mechanization_1945
+				activate_technology = tgcnv_ww2_metallurgy_1945
+				activate_technology = tgcnv_ww2_monetary_system_1945
+				activate_technology = tgcnv_ww2_philosophy_1945
+				activate_technology = tgcnv_ww2_political_thought_1945
+				activate_technology = tgcnv_ww2_psychology_1945
+				activate_technology = tgcnv_ww2_social_thought_1945
+				activate_technology = tgcnv_ww2_tech_infrastructure_1945
+				activate_technology = tgcnv_ww2_tech_organization_1945
+				activate_technology = tgcnv_ww2_tech_power_1945
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		name = "TGCNV_CP_EVENT_777770050_OPTION_4"
+	}
+	option = {
+		any_country = {
+			limit = {
+				AND = {
+					OR = {
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_sp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_sp
+								is_secondary_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_gp_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_gp
+								is_greater_power = yes
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_minor_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_minor
+								AND = {
+									NOT = {
+										is_greater_power = yes
+									}
+									NOT = {
+										is_secondary_power = yes
+									}
+									civilized = yes
+								}
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_unciv_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_selected_unciv
+								civilized = no
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_vassal_endabled
+							AND = {
+								has_country_flag = tgcnv_cp_selected_vassal
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_enemy_endabled
+							OR = {
+								war_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_ally_endabled
+							OR = {
+								alliance_with = THIS
+							}
+						}
+						AND = {
+							exists = yes
+							has_global_flag = tgcnv_cp_selection_target_endabled
+							OR = {
+								has_country_flag = tgcnv_cp_cp_tag_target
+							}
+						}
+					}
+				}
+			}
+			activate_technology = medicine
+			activate_technology = state_n_government
+			activate_technology = breech_loaded_rifles
+			activate_technology = revolution_n_counterrevolution
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						NOT = {
+							has_global_flag = HFMe_MOD_ACTIVE
+						}
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = medicine
+				activate_technology = state_n_government
+				activate_technology = breech_loaded_rifles
+				activate_technology = revolution_n_counterrevolution
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					exists = yes
+					AND = {
+						OR = {
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_sp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_sp
+									is_secondary_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_gp_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_gp
+									is_greater_power = yes
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_minor_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_minor
+									AND = {
+										NOT = {
+											is_greater_power = yes
+										}
+										NOT = {
+											is_secondary_power = yes
+										}
+										civilized = yes
+									}
+								}
+							}
+							AND = {
+								exists = yes
+								tag = THIS
+								ai = no
+								has_global_flag = tgcnv_cp_selection_unciv_endabled
+								OR = {
+									has_country_flag = tgcnv_cp_selected_unciv
+									civilized = no
+								}
+							}
+							AND = {
+								exists = yes
+								ai = no
+								tag = THIS
+								has_global_flag = tgcnv_cp_selection_self_endabled
+							}
+							AND = {
+								exists = yes
+								ai = no
+								has_country_flag = tgcnv_cp_cp_tag_target
+								has_global_flag = tgcnv_cp_selection_target_endabled
+							}
+							AND = {
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_sp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_gp_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_self_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_unciv_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_minor_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_enemy_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_ally_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_vassal_endabled
+								}
+								NOT = {
+									has_global_flag = tgcnv_cp_selection_target_endabled
+								}
+							}
+						}
+						has_global_flag = HFMe_MOD_ACTIVE
+						NOT = {
+							has_global_flag = CWE_MOD_ACTIVE
+							has_global_flag = AOE_MOD_ACTIVE
+						}
+					}
+				}
+			}
+			owner = {
+				activate_technology = medicine
+				activate_technology = state_n_government
+				activate_technology = breech_loaded_rifles
+				activate_technology = revolution_n_counterrevolution
+			}
+			clr_global_flag = tgcnv_cp_default_to_self_cp
+		}
+		name = "TGCNV_CP_EVENT_777770050_OPTION_5"
+	}
+	option = {
+		name = "TGCNV_CP_EVENT_777770050_OPTION_6"
+	}
+	title = "TGCNV_CP_EVENT_777770050_TITLE"
+	desc = "TGCNV_CP_EVENT_777770050_DESC"
+}

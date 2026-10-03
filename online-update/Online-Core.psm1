@@ -628,6 +628,7 @@ function Test-CatalogPath {
     if ($count -ge 3 -and $lower[0] -eq 'game' -and $lower[1] -eq 'mod') {
         if ($count -eq 3 -and ($lower[2] -eq 'tgcnv.mod' -or $lower[2] -eq 'tgo.mod')) { return $true }
         if ($lower[2] -eq 'tgcnv') {
+            if ($count -eq 5 -and $lower[3] -eq 'docs' -and $lower[4] -eq 'tgcnv_cheatpack.ko.md') { return $true }
             if ($count -eq 4) { return ($script:TGCNVRootFiles -contains $lower[3]) }
             if ($count -ge 5) { return ($script:TGCNVRoots -contains $lower[3]) }
             return $false
