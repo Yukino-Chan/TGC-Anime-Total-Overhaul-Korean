@@ -1,0 +1,1559 @@
+# TGCNV WWII advanced inventions: three additional discoveries per research area.
+# The primary technology and date are mandatory; support research improves chance.
+
+tgcnv_ww2_inv_battery_wire_networks = {
+	limit = {
+		tgcnv_ww2_army_doctrine_1936 = 1
+		year = 1936
+		invention = tgcnv_ww2_inv_artillery_survey_teams
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_army_leadership_1930 = 1 }
+	}
+	effect = {
+		artillery = {
+			support = 0.1
+		}
+	}
+}
+
+tgcnv_ww2_inv_operational_deception_plans = {
+	limit = {
+		tgcnv_ww2_army_doctrine_1940 = 1
+		year = 1940
+		invention = tgcnv_ww2_inv_combined_arms_exercises
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_army_leadership_1936 = 1 }
+	}
+	effect = {
+		military_tactics = 0.01
+	}
+}
+
+tgcnv_ww2_inv_tank_engineer_teams = {
+	limit = {
+		tgcnv_ww2_army_doctrine_1943 = 1
+		year = 1943
+		invention = tgcnv_ww2_inv_breakthrough_exploitation
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_heavy_armament_1943 = 1 }
+	}
+	effect = {
+		engineer = {
+			support = 0.1
+		}
+		tank = {
+			default_organisation = 1
+		}
+		tgcnv_light_tank = {
+			default_organisation = 1
+		}
+		tgcnv_heavy_tank = {
+			default_organisation = 1
+		}
+	}
+}
+
+tgcnv_ww2_inv_rifle_grenade_issue = {
+	limit = {
+		tgcnv_ww2_light_armament_1936 = 1
+		year = 1936
+		invention = tgcnv_ww2_inv_rifle_parts_standardization
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_heavy_armament_1930 = 1 }
+	}
+	effect = {
+		infantry = {
+			attack = 0.25
+		}
+		tgcnv_paratrooper = {
+			attack = 0.25
+		}
+		tgcnv_marine = {
+			attack = 0.25
+		}
+		guard = {
+			attack = 0.25
+		}
+		tgcnv_sturmtruppe = {
+			attack = 0.25
+		}
+	}
+}
+
+tgcnv_ww2_inv_antitank_mine_doctrine = {
+	limit = {
+		tgcnv_ww2_light_armament_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_heavy_armament_1940 = 1 }
+	}
+	effect = {
+		infantry = {
+			defence = 0.25
+		}
+		tgcnv_paratrooper = {
+			defence = 0.25
+		}
+		tgcnv_marine = {
+			defence = 0.25
+		}
+		guard = {
+			defence = 0.25
+		}
+		tgcnv_sturmtruppe = {
+			defence = 0.25
+		}
+		engineer = {
+			defence = 0.25
+		}
+	}
+}
+
+tgcnv_ww2_inv_standard_ration_packs = {
+	limit = {
+		tgcnv_ww2_light_armament_1945 = 1
+		year = 1945
+		invention = tgcnv_ww2_inv_squad_fire_maneuver
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_market_functionality_1940 = 1 }
+	}
+	effect = {
+		land_attrition = -0.005
+		infantry = {
+			default_organisation = 1
+		}
+		tgcnv_paratrooper = {
+			default_organisation = 1
+		}
+		tgcnv_marine = {
+			default_organisation = 1
+		}
+		guard = {
+			default_organisation = 1
+		}
+		tgcnv_sturmtruppe = {
+			default_organisation = 1
+		}
+	}
+}
+
+tgcnv_ww2_inv_torsion_bar_suspension = {
+	limit = {
+		tgcnv_ww2_heavy_armament_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1930 = 1 }
+	}
+	effect = {
+		tank = {
+			maximum_speed = 0.1
+		}
+		tgcnv_light_tank = {
+			maximum_speed = 0.1
+		}
+		tgcnv_heavy_tank = {
+			maximum_speed = 0.1
+		}
+	}
+}
+
+tgcnv_ww2_inv_high_velocity_at_guns = {
+	limit = {
+		tgcnv_ww2_heavy_armament_1940 = 1
+		year = 1940
+		invention = tgcnv_ww2_inv_standard_shell_lots
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_metallurgy_1940 = 1 }
+	}
+	effect = {
+		artillery = {
+			attack = 0.25
+		}
+	}
+}
+
+tgcnv_ww2_inv_cross_country_driving = {
+	limit = {
+		tgcnv_ww2_heavy_armament_1945 = 1
+		year = 1945
+		invention = tgcnv_ww2_inv_mechanized_pursuit
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_army_doctrine_1943 = 1 }
+	}
+	effect = {
+		tank = {
+			maximum_speed = 0.2
+		}
+		tgcnv_light_tank = {
+			maximum_speed = 0.3
+		}
+		tgcnv_heavy_tank = {
+			maximum_speed = 0.1
+		}
+	}
+}
+
+tgcnv_ww2_inv_duralumin_extrusion = {
+	limit = {
+		tgcnv_ww2_military_science_1936 = 1
+		year = 1936
+		invention = tgcnv_ww2_inv_aviation_instrument_standards
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_metallurgy_1930 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			aeroplanes = 0.01
+			machine_parts = 0.01
+		}
+	}
+}
+
+tgcnv_ww2_inv_searchlight_battery_drills = {
+	limit = {
+		tgcnv_ww2_military_science_1940 = 1
+		year = 1940
+		invention = tgcnv_ww2_inv_aircraft_inspection_depots
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_naval_science_1940 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			electric_gear = 0.01
+			ammunition = 0.01
+		}
+	}
+}
+
+tgcnv_ww2_inv_swept_wing_tunnel_tests = {
+	limit = {
+		tgcnv_ww2_military_science_1945 = 1
+		year = 1945
+		invention = tgcnv_ww2_inv_long_range_airframe_tooling
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_tech_power_1943 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			aeroplanes = 0.02
+			machine_parts = 0.01
+		}
+	}
+}
+
+tgcnv_ww2_inv_staff_cipher_procedures = {
+	limit = {
+		tgcnv_ww2_army_leadership_1936 = 1
+		year = 1936
+		invention = tgcnv_ww2_inv_field_radio_protocols
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_chemistry_and_electricity_1930 = 1 }
+	}
+	effect = {
+		army_base = {
+			default_organisation = 1
+		}
+	}
+}
+
+tgcnv_ww2_inv_air_support_request_forms = {
+	limit = {
+		tgcnv_ww2_army_leadership_1940 = 1
+		year = 1940
+		invention = tgcnv_ww2_inv_staff_map_exercises
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_military_science_1930 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			radio = 0.01
+		}
+		artillery = {
+			support = 0.05
+		}
+	}
+}
+
+tgcnv_ww2_inv_field_refuelling_points = {
+	limit = {
+		tgcnv_ww2_army_leadership_1943 = 1
+		year = 1943
+		invention = tgcnv_ww2_inv_forward_liaison_officers
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_tech_infrastructure_1936 = 1 }
+	}
+	effect = {
+		land_attrition = -0.005
+		reinforce_rate = 0.005
+	}
+}
+
+tgcnv_ww2_inv_underway_refuelling_drills = {
+	limit = {
+		tgcnv_ww2_naval_doctrine_1936 = 1
+		year = 1936
+		invention = tgcnv_ww2_inv_escort_rotation_plans
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_tech_power_1936 = 1 }
+	}
+	effect = {
+		navy_base = {
+			supply_consumption = -0.005
+		}
+		tgcnv_destroyer = {
+			default_organisation = 1
+		}
+	}
+}
+
+tgcnv_ww2_inv_convoy_air_cover_schedules = {
+	limit = {
+		tgcnv_ww2_naval_doctrine_1940 = 1
+		year = 1940
+		invention = tgcnv_ww2_inv_convoy_station_keeping
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_army_leadership_1940 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			fuel = 0.01
+		}
+		naval_attrition = -0.005
+	}
+}
+
+tgcnv_ww2_inv_beach_liaison_parties = {
+	limit = {
+		tgcnv_ww2_naval_doctrine_1945 = 1
+		year = 1945
+		invention = tgcnv_ww2_inv_escort_search_patterns
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_army_doctrine_1945 = 1 }
+	}
+	effect = {
+		tgcnv_marine = {
+			attack = 0.25
+			default_organisation = 1
+		}
+		steam_transport = {
+			hull = 0.05
+		}
+	}
+}
+
+tgcnv_ww2_inv_cruiser_ammo_handling = {
+	limit = {
+		tgcnv_ww2_ship_construction_1936 = 1
+		year = 1936
+		invention = tgcnv_ww2_inv_welded_bulkheads
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1936 = 1 }
+	}
+	effect = {
+		tgcnv_heavy_cruiser = {
+			gun_power = 1
+		}
+		factory_goods_output = {
+			ammunition = 0.01
+		}
+	}
+}
+
+tgcnv_ww2_inv_carrier_hangar_layouts = {
+	limit = {
+		tgcnv_ww2_ship_construction_1940 = 1
+		year = 1940
+		invention = tgcnv_ww2_inv_cruiser_compartmentation
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_military_science_1936 = 1 }
+	}
+	effect = {
+		tgcnv_fleet_carrier = {
+			hull = 2
+			default_organisation = 1
+		}
+		tgcnv_light_carrier = {
+			hull = 1
+		}
+	}
+}
+
+tgcnv_ww2_inv_submarine_battery_standards = {
+	limit = {
+		tgcnv_ww2_ship_construction_1943 = 1
+		year = 1943
+		invention = tgcnv_ww2_inv_shipyard_welding_jigs
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_chemistry_and_electricity_1930 = 1 }
+	}
+	effect = {
+		tgcnv_submarine = {
+			maximum_speed = 0.3
+		}
+		navy_base = {
+			build_time = -1
+		}
+	}
+}
+
+tgcnv_ww2_inv_turbine_rotor_balancing = {
+	limit = {
+		tgcnv_ww2_naval_engineering_1936 = 1
+		year = 1936
+		invention = tgcnv_ww2_inv_damage_control_parties
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1930 = 1 }
+	}
+	effect = {
+		tgcnv_destroyer = {
+			maximum_speed = 0.5
+		}
+		tgcnv_heavy_cruiser = {
+			maximum_speed = 0.5
+		}
+	}
+}
+
+tgcnv_ww2_inv_submarine_snorkel_fittings = {
+	limit = {
+		tgcnv_ww2_naval_engineering_1940 = 1
+		year = 1940
+		invention = tgcnv_ww2_inv_high_pressure_steam_seals
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1940 = 1 }
+	}
+	effect = {
+		tgcnv_submarine = {
+			maximum_speed = 0.5
+			evasion = 0.01
+		}
+	}
+}
+
+tgcnv_ww2_inv_repair_parts_standardization = {
+	limit = {
+		tgcnv_ww2_naval_engineering_1945 = 1
+		year = 1945
+		invention = tgcnv_ww2_inv_automatic_fire_mains
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1940 = 1 }
+	}
+	effect = {
+		naval_attrition = -0.005
+		navy_base = {
+			default_organisation = 1
+		}
+	}
+}
+
+tgcnv_ww2_inv_hydrophone_array_layouts = {
+	limit = {
+		tgcnv_ww2_naval_science_1936 = 1
+		year = 1936
+		invention = tgcnv_ww2_inv_direction_finder_calibration
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_chemistry_and_electricity_1930 = 1 }
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 1
+		}
+		factory_goods_output = {
+			electric_gear = 0.01
+		}
+	}
+}
+
+tgcnv_ww2_inv_fire_control_radars = {
+	limit = {
+		tgcnv_ww2_naval_science_1940 = 1
+		year = 1940
+		invention = tgcnv_ww2_inv_maritime_radio_beacons
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_military_science_1940 = 1 }
+	}
+	effect = {
+		navy_base = {
+			gun_power = 0.05
+		}
+		tgcnv_heavy_cruiser = {
+			gun_power = 1
+		}
+	}
+}
+
+tgcnv_ww2_inv_oxygen_torpedo_feeds = {
+	limit = {
+		tgcnv_ww2_naval_science_1943 = 1
+		year = 1943
+		invention = tgcnv_ww2_inv_sonar_transducer_production
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_chemistry_and_electricity_1936 = 1 }
+	}
+	effect = {
+		tgcnv_submarine = {
+			torpedo_attack = 2
+		}
+		tgcnv_destroyer = {
+			torpedo_attack = 1
+		}
+	}
+}
+
+tgcnv_ww2_inv_spotter_correction_code = {
+	limit = {
+		tgcnv_ww2_naval_leadership_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_army_leadership_1936 = 1 }
+	}
+	effect = {
+		navy_base = {
+			gun_power = 0.05
+		}
+	}
+}
+
+tgcnv_ww2_inv_fleet_cipher_key_rotation = {
+	limit = {
+		tgcnv_ww2_naval_leadership_1940 = 1
+		year = 1940
+		invention = tgcnv_ww2_inv_salvo_coordination
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_philosophy_1940 = 1 }
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 1
+		}
+		factory_goods_output = {
+			radio = 0.01
+		}
+	}
+}
+
+tgcnv_ww2_inv_logistics_appendix_warplans = {
+	limit = {
+		tgcnv_ww2_naval_leadership_1945 = 1
+		year = 1945
+		invention = tgcnv_ww2_inv_emergency_command_succession
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_army_leadership_1945 = 1 }
+	}
+	effect = {
+		navy_base = {
+			supply_consumption = -0.005
+			default_organisation = 1
+		}
+	}
+}
+
+tgcnv_ww2_inv_alkylation_refining = {
+	limit = {
+		tgcnv_ww2_tech_power_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_chemistry_and_electricity_1936 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			fuel = 0.03
+			automobiles = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_condenser_vacuum_controls = {
+	limit = {
+		tgcnv_ww2_tech_power_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1940 = 1 }
+	}
+	effect = {
+		factory_throughput = 0.01
+		rgo_goods_output = {
+			coal = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_turbine_blade_cooling = {
+	limit = {
+		tgcnv_ww2_tech_power_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_metallurgy_1940 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			aeroplanes = 0.03
+			fuel = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_ammunition_optical_inspection = {
+	limit = {
+		tgcnv_ww2_mechanization_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_metallurgy_1936 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			ammunition = 0.03
+			small_arms = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_supplier_quality_certification = {
+	limit = {
+		tgcnv_ww2_mechanization_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_tech_organization_1940 = 1 }
+	}
+	effect = {
+		factory_input = -0.002
+		factory_goods_output = {
+			machine_parts = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_dispersed_airframe_production = {
+	limit = {
+		tgcnv_ww2_mechanization_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_tech_infrastructure_1943 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			aeroplanes = 0.03
+		}
+		supply_limit = 0.025
+	}
+}
+
+tgcnv_ww2_inv_armor_welding_electrodes = {
+	limit = {
+		tgcnv_ww2_metallurgy_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1936 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			steel = 0.02
+			barrels = 0.03
+		}
+	}
+}
+
+tgcnv_ww2_inv_nickel_superalloy_formulations = {
+	limit = {
+		tgcnv_ww2_metallurgy_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_tech_power_1940 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			steel = 0.03
+		}
+		factory_goods_input = {
+			aeroplanes = -0.005
+		}
+	}
+}
+
+tgcnv_ww2_inv_powder_metallurgy_tool_steel = {
+	limit = {
+		tgcnv_ww2_metallurgy_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1945 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			steel = 0.03
+			machine_parts = 0.03
+		}
+	}
+}
+
+tgcnv_ww2_inv_military_fuel_pipelines = {
+	limit = {
+		tgcnv_ww2_tech_infrastructure_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_tech_power_1936 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			fuel = 0.03
+		}
+		supply_limit = 0.025
+	}
+}
+
+tgcnv_ww2_inv_equipment_recovery_teams = {
+	limit = {
+		tgcnv_ww2_tech_infrastructure_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1940 = 1 }
+	}
+	effect = {
+		reinforce_rate = 0.01
+		land_attrition = -0.005
+	}
+}
+
+tgcnv_ww2_inv_palletized_loading_systems = {
+	limit = {
+		tgcnv_ww2_tech_infrastructure_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_market_functionality_1943 = 1 }
+	}
+	effect = {
+		factory_throughput = 0.01
+		supply_limit = 0.025
+	}
+}
+
+tgcnv_ww2_inv_coal_gasification_plants = {
+	limit = {
+		tgcnv_ww2_chemistry_and_electricity_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_tech_power_1936 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			fuel = 0.03
+		}
+		rgo_goods_output = {
+			coal = 0.03
+		}
+	}
+}
+
+tgcnv_ww2_inv_stabilized_explosive_compounds = {
+	limit = {
+		tgcnv_ww2_chemistry_and_electricity_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_metallurgy_1940 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			explosives = 0.03
+			ammunition = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_neutron_cross_section_measurements = {
+	limit = {
+		tgcnv_ww2_chemistry_and_electricity_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_philosophy_1943 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			electric_gear = 0.03
+		}
+		increase_research = 0.01
+	}
+}
+
+tgcnv_ww2_inv_public_loan_guarantees = {
+	limit = {
+		tgcnv_ww2_financial_institutions_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_monetary_system_1936 = 1 }
+	}
+	effect = {
+		factory_cost = -0.005
+		loan_interest = -0.0005
+	}
+}
+
+tgcnv_ww2_inv_bond_redemption_reserves = {
+	limit = {
+		tgcnv_ww2_financial_institutions_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_monetary_system_1940 = 1 }
+	}
+	effect = {
+		tax_eff = 1
+		administrative_efficiency = 0.005
+	}
+}
+
+tgcnv_ww2_inv_reconstruction_development_banks = {
+	limit = {
+		tgcnv_ww2_financial_institutions_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_economic_thought_and_critique_1945 = 1 }
+	}
+	effect = {
+		factory_cost = -0.005
+		factory_goods_output = {
+			steel = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_money_demand_models = {
+	limit = {
+		tgcnv_ww2_monetary_system_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_economic_thought_and_critique_1930 = 1 }
+	}
+	effect = {
+		administrative_efficiency = 0.005
+		tax_eff = 1
+	}
+}
+
+tgcnv_ww2_inv_wartime_foreign_exchange_allocation = {
+	limit = {
+		tgcnv_ww2_monetary_system_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_market_functionality_1940 = 1 }
+	}
+	effect = {
+		factory_input = -0.002
+		factory_goods_output = {
+			fuel = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_settlement_currency_agreements = {
+	limit = {
+		tgcnv_ww2_monetary_system_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_political_thought_1945 = 1 }
+	}
+	effect = {
+		loan_interest = -0.0005
+		diplomatic_points = 0.025
+	}
+}
+
+tgcnv_ww2_inv_employment_stabilization_programs = {
+	limit = {
+		tgcnv_ww2_economic_thought_and_critique_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_financial_institutions_1936 = 1 }
+	}
+	effect = {
+		factory_throughput = 0.01
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_strategic_material_substitution = {
+	limit = {
+		tgcnv_ww2_economic_thought_and_critique_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_metallurgy_1940 = 1 }
+	}
+	effect = {
+		factory_input = -0.003
+		factory_goods_output = {
+			steel = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_national_economic_simulation = {
+	limit = {
+		tgcnv_ww2_economic_thought_and_critique_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_tech_organization_1943 = 1 }
+	}
+	effect = {
+		factory_input = -0.003
+		factory_output = 0.005
+	}
+}
+
+tgcnv_ww2_inv_refrigerated_supply_networks = {
+	limit = {
+		tgcnv_ww2_market_functionality_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_tech_infrastructure_1936 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			canned_food = 0.03
+		}
+		supply_limit = 0.025
+	}
+}
+
+tgcnv_ww2_inv_military_food_specifications = {
+	limit = {
+		tgcnv_ww2_market_functionality_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_social_thought_1940 = 1 }
+	}
+	effect = {
+		factory_goods_output = {
+			canned_food = 0.03
+		}
+		supply_limit = 0.025
+	}
+}
+
+tgcnv_ww2_inv_wartime_route_optimization = {
+	limit = {
+		tgcnv_ww2_market_functionality_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_tech_organization_1943 = 1 }
+	}
+	effect = {
+		naval_attrition = -0.005
+		land_attrition = -0.005
+	}
+}
+
+tgcnv_ww2_inv_production_load_leveling = {
+	limit = {
+		tgcnv_ww2_tech_organization_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1936 = 1 }
+	}
+	effect = {
+		factory_input = -0.002
+		factory_throughput = 0.01
+	}
+}
+
+tgcnv_ww2_inv_integrated_military_demand_forecasts = {
+	limit = {
+		tgcnv_ww2_tech_organization_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_economic_thought_and_critique_1940 = 1 }
+	}
+	effect = {
+		factory_throughput = 0.01
+		factory_goods_output = {
+			small_arms = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_maintenance_replacement_analysis = {
+	limit = {
+		tgcnv_ww2_tech_organization_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_tech_infrastructure_1940 = 1 }
+	}
+	effect = {
+		factory_input = -0.002
+		factory_goods_output = {
+			machine_parts = 0.02
+		}
+	}
+}
+
+tgcnv_ww2_inv_location_sound_recording = {
+	limit = {
+		tgcnv_ww2_aesthetics_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_chemistry_and_electricity_1930 = 1 }
+	}
+	effect = {
+		shared_prestige = 3
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_war_photography_networks = {
+	limit = {
+		tgcnv_ww2_aesthetics_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_political_thought_1940 = 1 }
+	}
+	effect = {
+		prestige = 0.015
+		morale = 0.01
+	}
+}
+
+tgcnv_ww2_inv_cultural_property_restitution = {
+	limit = {
+		tgcnv_ww2_aesthetics_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_political_thought_1945 = 1 }
+	}
+	effect = {
+		prestige = 0.02
+		diplomatic_points = 0.025
+	}
+}
+
+tgcnv_ww2_inv_experimental_error_analysis = {
+	limit = {
+		tgcnv_ww2_philosophy_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_social_thought_1936 = 1 }
+	}
+	effect = {
+		increase_research = 0.02
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_scientific_abstract_networks = {
+	limit = {
+		tgcnv_ww2_philosophy_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_chemistry_and_electricity_1940 = 1 }
+	}
+	effect = {
+		increase_research = 0.025
+		factory_goods_output = {
+			radio = 0.01
+		}
+	}
+}
+
+tgcnv_ww2_inv_shared_reference_materials = {
+	limit = {
+		tgcnv_ww2_philosophy_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_metallurgy_1943 = 1 }
+	}
+	effect = {
+		increase_research = 0.025
+		education_efficiency = 0.01
+	}
+}
+
+tgcnv_ww2_inv_social_mobility_panel_surveys = {
+	limit = {
+		tgcnv_ww2_social_thought_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_economic_thought_and_critique_1930 = 1 }
+	}
+	effect = {
+		education_efficiency = 0.02
+		administrative_efficiency = 0.005
+	}
+}
+
+tgcnv_ww2_inv_first_aid_training = {
+	limit = {
+		tgcnv_ww2_social_thought_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_psychology_1940 = 1 }
+	}
+	effect = {
+		land_attrition = -0.005
+		reinforce_rate = 0.005
+	}
+}
+
+tgcnv_ww2_inv_civilian_war_victim_retraining = {
+	limit = {
+		tgcnv_ww2_social_thought_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_psychology_1945 = 1 }
+	}
+	effect = {
+		education_efficiency = 0.02
+		factory_goods_output = {
+			machine_parts = 0.01
+		}
+	}
+}
+
+tgcnv_ww2_inv_policy_impact_assessment = {
+	limit = {
+		tgcnv_ww2_political_thought_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_social_thought_1936 = 1 }
+	}
+	effect = {
+		tax_eff = 1
+		administrative_efficiency = 0.005
+	}
+}
+
+tgcnv_ww2_inv_civilian_evacuation_planning = {
+	limit = {
+		tgcnv_ww2_political_thought_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_tech_infrastructure_1940 = 1 }
+	}
+	effect = {
+		administrative_efficiency = 0.005
+		supply_limit = 0.025
+	}
+}
+
+tgcnv_ww2_inv_postwar_international_arbitration = {
+	limit = {
+		tgcnv_ww2_political_thought_1945 = 1
+		year = 1945
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1947 }
+		modifier = { factor = 2 tgcnv_ww2_aesthetics_1945 = 1 }
+	}
+	effect = {
+		diplomatic_points = 0.05
+		influence = 0.01
+	}
+}
+
+tgcnv_ww2_inv_workplace_safety_training = {
+	limit = {
+		tgcnv_ww2_psychology_1936 = 1
+		year = 1936
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1938 }
+		modifier = { factor = 2 tgcnv_ww2_social_thought_1936 = 1 }
+	}
+	effect = {
+		factory_output = 0.005
+		reinforce_rate = 0.005
+	}
+}
+
+tgcnv_ww2_inv_unit_cohesion_training = {
+	limit = {
+		tgcnv_ww2_psychology_1940 = 1
+		year = 1940
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1942 }
+		modifier = { factor = 2 tgcnv_ww2_political_thought_1940 = 1 }
+	}
+	effect = {
+		army_base = {
+			default_organisation = 1
+		}
+		morale = 0.015
+	}
+}
+
+tgcnv_ww2_inv_operator_motion_studies = {
+	limit = {
+		tgcnv_ww2_psychology_1943 = 1
+		year = 1943
+	}
+	news = no
+	chance = {
+		base = 4
+		modifier = { factor = 2 literacy = 0.6 }
+		modifier = { factor = 2 year = 1945 }
+		modifier = { factor = 2 tgcnv_ww2_mechanization_1943 = 1 }
+	}
+	effect = {
+		factory_input = -0.002
+		education_efficiency = 0.01
+	}
+}

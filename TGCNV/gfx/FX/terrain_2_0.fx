@@ -392,7 +392,8 @@ float4 GenerateTiles( TILE_STRUCT v )
 	TexCoord.x *= NUM_TILES_X;
 	TexCoord.y *= (NUM_TILES_Y - 0.001);
 
-	TexCoord.x = clamp( TexCoord.x, 0.001, X_CLAMP );
+	// Keep bilinear reads inside the selected 256-pixel atlas tile.
+	TexCoord.x = clamp( TexCoord.x, 0.001, X_CLAMP - 0.001 );
 	TexCoord.y = clamp( TexCoord.y, 0.001, Y_CLAMP );
 
 	float2 uvThis;
@@ -571,17 +572,18 @@ VS_MAP_OUTPUT VertexShader_Map(const VS_INPUT v )
 
 float4 White = float4( 1, 1, 1, 1 );
 
-// TGCNV_BA_MAP_BEGIN - Blue Archive map grading (#WIP/ba_3d_20260929)
-// Dimmed twice on the owner's request ("map too bright"): 13_ba_map_darker.
-// Colour luminance above BA_KNEE is compressed so white land ends near BA_CEIL
-// grey. 09: pastel 0.16, relief 0.80..1.06, no ceiling, no brightness factor;
-// 12: pastel 0.10, relief 0.76..0.98, knee 0.45 / ceiling 0.80.
+// TGCNV_BA_MAP_BEGIN - readable terrain/country RGB blend.
+// 2026-10-03 recovery: no native country-minus-0.7 luminance target.
+// Lift terrain shadows gently; preserve country hues and native alpha.
 #define BA_PASTEL 0.10          // country colour lift toward white
-#define BA_RELIEF_LO 0.74       // terrain shading range under country colours
-#define BA_RELIEF_HI 0.94
-#define BA_LAND_BRIGHTNESS 0.85 // overall land level
-#define BA_KNEE 0.40            // luminance where highlight compression starts
-#define BA_CEIL 0.66            // luminance a pure white country ends at
+#define BA_RELIEF_LO 0.86       // terrain shading range under country colours
+#define BA_RELIEF_HI 1.00
+#define BA_LAND_BRIGHTNESS 1.00 // overall land level
+#define BA_KNEE 0.50            // luminance where highlight compression starts
+#define BA_CEIL 0.80            // luminance a pure white country ends at
+#define BA_TERRAIN_NEAR 0.31    // terrain contribution beneath country RGB
+#define BA_TERRAIN_FAR  0.25    // keep distant country colours dominant
+#define BA_TERRAIN_SAT  0.80    // restrained biome hue in shared thematic modes
 #define BA_HEX_SIZE 3.5         // tactical hex grid cell (map units)
 #define BA_HEX_ALPHA 0.08       // 0 disables the grid (09/12: 0.10)
 static const float3 BA_HAZE = float3( 0.60, 0.67, 0.80 );
@@ -593,18 +595,21 @@ float3 BATame( float3 c )
 	return c * ( t / max( l, 0.001 ) );
 }
 
-float3 BAPastel( float3 c, float grey )
+// TGCNV terrain retexture: blend RGB in this opaque land pass. Output alpha
+// remains native for occupation colours, air markers and coastal compositing.
+float3 BAPastel( float3 c, float3 terrain, float grey, float amount )
 {
 	float relief = lerp( BA_RELIEF_LO, BA_RELIEF_HI, saturate( ( grey - 0.22 ) * 1.7 ) );
-	return BATame( lerp( c, float3( 1.0, 1.0, 1.0 ), BA_PASTEL ) * ( relief * BA_LAND_BRIGHTNESS ) );
+	float terrainGrey = dot( terrain, GREYIFY );
+	float3 terrainHue = lerp( terrainGrey.xxx, terrain, BA_TERRAIN_SAT );
+	float3 country = lerp( c, float3( 1.0, 1.0, 1.0 ), BA_PASTEL );
+	return BATame( lerp( country, terrainHue, amount ) * ( relief * BA_LAND_BRIGHTNESS ) );
 }
 
 float3 BATerrainGrade( float3 c )
 {
-	// terrain map mode: +18% saturation, small lift (09: * 0.78 + 0.16..0.20, 12: * 0.80 + 0.07..0.09)
-	float l = dot( c, GREYIFY );
-	c = lerp( l.xxx, c, 1.18 );
-	return c * 0.76 + float3( 0.04, 0.045, 0.05 );
+	// Authored terrain keeps its full RGB brightness in terrain mode.
+	return c;
 }
 
 float BAHexLine( float2 world )
@@ -660,7 +665,6 @@ float4 PixelShader_Map2_0_General( VS_MAP_OUTPUT v ) : COLOR
     //return float4(s.vTexCoord0.xy, 0, 1);
 
     float Grey = dot( TerrainColor.rgb, GREYIFY );
- 	TerrainColor.rgb = Grey;
 	TerrainColor *= White;
 
 	float2 vProvinceUV = v.vProvinceId + 0.5f;
@@ -673,8 +677,8 @@ float4 PixelShader_Map2_0_General( VS_MAP_OUTPUT v ) : COLOR
 	float vColor = tex2D( StripesTexture, v.vTerrainTexCoord ).a;
 	float4 Color = lerp(Color1, Color2, vColor);
 
-	// TGCNV_BA: bright pastel country colour over soft relief + tactical hexes
-	Color.rgb = BAPastel( Color.rgb, Grey );
+	// TGCNV_BA: translucent country colour over authored terrain + tactical hexes
+	Color.rgb = BAPastel( Color.rgb, TerrainColor.rgb, Grey, BA_TERRAIN_NEAR );
 	Color.rgb = lerp( Color.rgb, float3( 1.0, 1.0, 1.0 ), BAHexLine( v.vTexCoord0.xy ) );
 
 	Color.rgb = TGCNVApplyAir(Color.rgb,v.vTexCoord0.xy,TGCNVAir);
@@ -699,9 +703,9 @@ float4 PixelShader_Map2_0_General_Low( VS_MAP_OUTPUT v ) : COLOR
 	float4 Color = Color2 * vColor + Color1 * ( 1.0 - vColor );
 
 	// TGCNV_BA: zoomed-out map keeps the same pastel country colours; the
-	// colour map only contributes gentle relief
+	// colour map supplies geographic terrain hue and gentle relief
 	float4 OutColor;
-	OutColor.rgb = BAPastel( Color.rgb, dot( ColorColor.rgb, GREYIFY ) * 1.35 );
+	OutColor.rgb = BAPastel( Color.rgb, ColorColor.rgb, dot( ColorColor.rgb, GREYIFY ) * 1.35, BA_TERRAIN_FAR );
 	OutColor.a = Color.a;
 
 	OutColor.rgb = TGCNVApplyAir(OutColor.rgb,v.vTexCoord0.xy,TGCNVAir);
@@ -810,7 +814,6 @@ float4 PixelShader_Beach_General( VS_OUTPUT_BEACH v ) : COLOR
 	/////////////////
 
 	float Grey = dot( y1.rgb, GREYIFY );
- 	y1.rgb = Grey * White;
 
 	float2 borderoffset = v.vBorderOffsetColor.rg + float2(-0.001/256,0);
 	float4 Color1 = tex2D( GeneralTexture, borderoffset );
@@ -820,8 +823,8 @@ float4 PixelShader_Beach_General( VS_OUTPUT_BEACH v ) : COLOR
 	float vColor = tex2D( StripesTexture, v.vTerrainIndexColor ).a;
 	float4 Color = lerp( Color1, Color2, vColor );
 
-	// TGCNV_BA: same pastel grading as the inland shader
-	Color.rgb = BAPastel( Color.rgb, Grey );
+	// TGCNV_BA: same terrain/country blend as the inland shader
+	Color.rgb = BAPastel( Color.rgb, y1.rgb, Grey, BA_TERRAIN_NEAR );
 	Color.a = 1;
 
 	Color.rgb = TGCNVApplyAir(Color.rgb,v.vTexCoordBase,TGCNVAir);
@@ -838,7 +841,7 @@ float4 PixelShader_Beach_General_Low( VS_OUTPUT_BEACH v ) : COLOR
 	float4 ColorColor = tex2D( ColorTexture, v.vColorTexCoord ); //Coordinates for colormap
 	// TGCNV_BA: same pastel grading as the zoomed-out inland shader
 	float4 OutColor;
-	OutColor.rgb = BAPastel( Color.rgb, dot( ColorColor.rgb, GREYIFY ) * 1.35 );
+	OutColor.rgb = BAPastel( Color.rgb, ColorColor.rgb, dot( ColorColor.rgb, GREYIFY ) * 1.35, BA_TERRAIN_FAR );
 	OutColor.a = 1;
 
 	//float vAlpha = 1;

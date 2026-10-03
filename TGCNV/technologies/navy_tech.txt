@@ -623,10 +623,20 @@ tgcnv_ww2_naval_doctrine_1930 = {
 	unciv_military = yes
 
 	naval_attrition = -0.02
+	steam_transport = {
+		hull = 0.1
+		maximum_speed = 0.5
+	}
+	supply_range = 0.05
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -636,11 +646,27 @@ tgcnv_ww2_naval_doctrine_1936 = {
 	cost = 37000
 	unciv_military = yes
 
-	navy_base = { default_organisation = 2 }
+	navy_base = {
+		default_organisation = 2
+	}
+	tgcnv_light_carrier = {
+		default_organisation = 2
+	}
+	tgcnv_fleet_carrier = {
+		default_organisation = 2
+	}
+	tgcnv_destroyer = {
+		default_organisation = 2
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -650,11 +676,25 @@ tgcnv_ww2_naval_doctrine_1940 = {
 	cost = 40000
 	unciv_military = yes
 
-	navy_base = { default_organisation = 2 }
+	navy_base = {
+		default_organisation = 2
+	}
+	factory_goods_output = {
+		aeroplanes = 0.02
+		fuel = 0.01
+	}
+	tgcnv_fleet_carrier = {
+		hull = 5
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -665,10 +705,22 @@ tgcnv_ww2_naval_doctrine_1943 = {
 	unciv_military = yes
 
 	naval_attrition = -0.02
+	tgcnv_destroyer = {
+		evasion = 0.02
+		hull = 2
+	}
+	navy_base = {
+		default_organisation = 1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -678,11 +730,25 @@ tgcnv_ww2_naval_doctrine_1945 = {
 	cost = 46000
 	unciv_military = yes
 
-	navy_base = { default_organisation = 3 }
+	navy_base = {
+		default_organisation = 3
+	}
+	tgcnv_marine = {
+		attack = 0.5
+		defence = 0.5
+	}
+	steam_transport = {
+		hull = 0.1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 # TGCNV WWII END naval_doctrine
@@ -1348,11 +1414,22 @@ tgcnv_ww2_ship_construction_1930 = {
 	cost = 34000
 	unciv_military = yes
 
-	navy_base = { hull = 0.1 }
+	navy_base = {
+		hull = 0.1
+		build_time = -3
+	}
+	factory_goods_output = {
+		steamer_convoy = 0.02
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -1362,11 +1439,26 @@ tgcnv_ww2_ship_construction_1936 = {
 	cost = 37000
 	unciv_military = yes
 
-	cruiser = { gun_power = 0.5 hull = 0.2 }
+	cruiser = {
+		gun_power = 0.5
+		hull = 0.2
+	}
+	tgcnv_heavy_cruiser = {
+		gun_power = 3
+		hull = 5
+	}
+	tgcnv_destroyer = {
+		hull = 2
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -1376,12 +1468,26 @@ tgcnv_ww2_ship_construction_1940 = {
 	cost = 40000
 	unciv_military = yes
 
-	battleship = { hull = 0.3 }
-	dreadnought = { hull = 0.3 }
+	battleship = {
+		hull = 0.3
+		gun_power = 1
+	}
+	dreadnought = {
+		hull = 0.3
+		gun_power = 1
+	}
+	tgcnv_fleet_carrier = {
+		hull = 5
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -1391,11 +1497,25 @@ tgcnv_ww2_ship_construction_1943 = {
 	cost = 43000
 	unciv_military = yes
 
-	navy_base = { build_time = -5 }
+	navy_base = {
+		build_time = -5
+		hull = 0.05
+	}
+	factory_goods_output = {
+		steamer_convoy = 0.03
+	}
+	tgcnv_submarine = {
+		hull = 1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -1405,11 +1525,30 @@ tgcnv_ww2_ship_construction_1945 = {
 	cost = 46000
 	unciv_military = yes
 
-	navy_base = { hull = 0.2 }
+	navy_base = {
+		hull = 0.2
+	}
+	tgcnv_light_carrier = {
+		hull = 4
+		default_organisation = 2
+	}
+	tgcnv_fleet_carrier = {
+		hull = 6
+		default_organisation = 2
+	}
+	tgcnv_submarine = {
+		hull = 1
+		evasion = 0.01
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 # TGCNV WWII END ship_construction
@@ -1953,11 +2092,26 @@ tgcnv_ww2_naval_engineering_1930 = {
 	cost = 34000
 	unciv_military = yes
 
-	navy_base = { hull = 0.1 }
+	navy_base = {
+		hull = 0.1
+		default_organisation = 2
+	}
+	naval_attrition = -0.005
+	tgcnv_submarine = {
+		torpedo_attack = 1
+	}
+	tgcnv_destroyer = {
+		torpedo_attack = 0.5
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -1967,12 +2121,33 @@ tgcnv_ww2_naval_engineering_1936 = {
 	cost = 37000
 	unciv_military = yes
 
-	cruiser = { maximum_speed = 0.5 }
-	dreadnought = { maximum_speed = 0.5 }
+	cruiser = {
+		maximum_speed = 0.5
+	}
+	dreadnought = {
+		maximum_speed = 0.5
+	}
+	tgcnv_destroyer = {
+		maximum_speed = 1
+	}
+	tgcnv_heavy_cruiser = {
+		maximum_speed = 1
+	}
+	tgcnv_light_carrier = {
+		maximum_speed = 0.5
+	}
+	tgcnv_fleet_carrier = {
+		maximum_speed = 0.5
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -1982,11 +2157,27 @@ tgcnv_ww2_naval_engineering_1940 = {
 	cost = 40000
 	unciv_military = yes
 
-	navy_base = { supply_consumption = -0.02 }
+	navy_base = {
+		supply_consumption = -0.02
+	}
+	tgcnv_submarine = {
+		maximum_speed = 0.5
+	}
+	tgcnv_light_carrier = {
+		maximum_speed = 0.5
+	}
+	tgcnv_fleet_carrier = {
+		maximum_speed = 0.5
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -1996,11 +2187,25 @@ tgcnv_ww2_naval_engineering_1943 = {
 	cost = 43000
 	unciv_military = yes
 
-	navy_base = { hull = 0.1 }
+	navy_base = {
+		hull = 0.1
+		default_organisation = 2
+	}
+	tgcnv_heavy_cruiser = {
+		hull = 5
+	}
+	tgcnv_fleet_carrier = {
+		hull = 3
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -2010,11 +2215,20 @@ tgcnv_ww2_naval_engineering_1945 = {
 	cost = 46000
 	unciv_military = yes
 
-	navy_base = { hull = 0.1 default_organisation = 2 }
+	navy_base = {
+		hull = 0.1
+		default_organisation = 2
+	}
+	naval_attrition = -0.01
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 # TGCNV WWII END naval_engineering
@@ -2423,10 +2637,22 @@ tgcnv_ww2_naval_science_1930 = {
 	unciv_military = yes
 
 	supply_range = 0.1
+	factory_goods_output = {
+		radio = 0.02
+		electric_gear = 0.01
+	}
+	navy_base = {
+		default_organisation = 2
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -2436,11 +2662,24 @@ tgcnv_ww2_naval_science_1936 = {
 	cost = 37000
 	unciv_military = yes
 
-	navy_base = { default_organisation = 2 }
+	navy_base = {
+		default_organisation = 2
+	}
+	tgcnv_destroyer = {
+		evasion = 0.02
+	}
+	factory_goods_output = {
+		electric_gear = 0.02
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -2450,11 +2689,27 @@ tgcnv_ww2_naval_science_1940 = {
 	cost = 40000
 	unciv_military = yes
 
-	navy_base = { gun_power = 0.2 }
+	navy_base = {
+		gun_power = 0.2
+	}
+	tgcnv_heavy_cruiser = {
+		gun_power = 3
+	}
+	tgcnv_destroyer = {
+		gun_power = 1
+	}
+	factory_goods_output = {
+		radio = 0.02
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -2464,11 +2719,29 @@ tgcnv_ww2_naval_science_1943 = {
 	cost = 43000
 	unciv_military = yes
 
-	navy_base = { default_organisation = 2 }
+	navy_base = {
+		default_organisation = 2
+		gun_power = 0.1
+	}
+	factory_goods_output = {
+		ammunition = 0.02
+		electric_gear = 0.01
+	}
+	tgcnv_light_carrier = {
+		default_organisation = 2
+	}
+	tgcnv_fleet_carrier = {
+		default_organisation = 2
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -2478,11 +2751,27 @@ tgcnv_ww2_naval_science_1945 = {
 	cost = 46000
 	unciv_military = yes
 
-	navy_base = { gun_power = 0.2 }
+	navy_base = {
+		gun_power = 0.2
+	}
+	factory_goods_output = {
+		ammunition = 0.03
+	}
+	tgcnv_heavy_cruiser = {
+		gun_power = 2
+	}
+	tgcnv_destroyer = {
+		gun_power = 1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 # TGCNV WWII END naval_science
@@ -3006,11 +3295,20 @@ tgcnv_ww2_naval_leadership_1930 = {
 	cost = 34000
 	unciv_military = yes
 
-	navy_base = { default_organisation = 2 }
+	navy_base = {
+		default_organisation = 2
+	}
+	supply_range = 0.1
+	naval_attrition = -0.005
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -3020,11 +3318,25 @@ tgcnv_ww2_naval_leadership_1936 = {
 	cost = 37000
 	unciv_military = yes
 
-	navy_base = { gun_power = 0.1 }
+	navy_base = {
+		gun_power = 0.1
+		default_organisation = 2
+	}
+	battleship = {
+		gun_power = 1
+	}
+	dreadnought = {
+		gun_power = 1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -3034,11 +3346,27 @@ tgcnv_ww2_naval_leadership_1940 = {
 	cost = 40000
 	unciv_military = yes
 
-	navy_base = { default_organisation = 2 }
+	navy_base = {
+		default_organisation = 2
+	}
+	factory_goods_output = {
+		radio = 0.02
+	}
+	tgcnv_light_carrier = {
+		default_organisation = 2
+	}
+	tgcnv_fleet_carrier = {
+		default_organisation = 2
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -3048,11 +3376,22 @@ tgcnv_ww2_naval_leadership_1943 = {
 	cost = 43000
 	unciv_military = yes
 
-	navy_base = { hull = 0.1 }
+	navy_base = {
+		hull = 0.1
+		default_organisation = 1
+	}
+	tgcnv_submarine = {
+		hull = 1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 
@@ -3062,11 +3401,20 @@ tgcnv_ww2_naval_leadership_1945 = {
 	cost = 46000
 	unciv_military = yes
 
-	navy_base = { default_organisation = 3 }
+	navy_base = {
+		default_organisation = 3
+		gun_power = 0.1
+	}
+	morale = 0.05
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 0 NOT = { total_num_of_ports = 1 } }
+		modifier = {
+			factor = 0
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
 	}
 }
 # TGCNV WWII END naval_leadership

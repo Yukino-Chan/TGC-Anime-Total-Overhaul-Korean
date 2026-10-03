@@ -227,7 +227,8 @@ tgcnv_ww2_financial_institutions_1930 = {
 	year = 1930
 	cost = 34000
 
-	tax_eff = 1
+	tax_eff = 3
+	administrative_efficiency = 0.01
 
 	ai_chance = {
 		factor = 1.0
@@ -239,7 +240,8 @@ tgcnv_ww2_financial_institutions_1936 = {
 	year = 1936
 	cost = 37000
 
-	factory_cost = -0.01
+	factory_cost = -0.025
+	loan_interest = -0.002
 
 	ai_chance = {
 		factor = 1.0
@@ -251,7 +253,8 @@ tgcnv_ww2_financial_institutions_1940 = {
 	year = 1940
 	cost = 40000
 
-	tax_eff = 1
+	tax_eff = 3
+	loan_interest = -0.002
 
 	ai_chance = {
 		factor = 1.0
@@ -263,7 +266,8 @@ tgcnv_ww2_financial_institutions_1943 = {
 	year = 1943
 	cost = 43000
 
-	factory_cost = -0.01
+	factory_cost = -0.025
+	factory_throughput = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -275,7 +279,9 @@ tgcnv_ww2_financial_institutions_1945 = {
 	year = 1945
 	cost = 46000
 
-	loan_interest = -0.001
+	loan_interest = -0.003
+	factory_cost = -0.02
+	factory_throughput = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -483,7 +489,8 @@ tgcnv_ww2_monetary_system_1930 = {
 	year = 1930
 	cost = 34000
 
-	administrative_efficiency = 0.01
+	administrative_efficiency = 0.02
+	tax_eff = 2
 
 	ai_chance = {
 		factor = 1.0
@@ -495,7 +502,8 @@ tgcnv_ww2_monetary_system_1936 = {
 	year = 1936
 	cost = 37000
 
-	loan_interest = -0.001
+	loan_interest = -0.002
+	administrative_efficiency = 0.015
 
 	ai_chance = {
 		factor = 1.0
@@ -507,7 +515,8 @@ tgcnv_ww2_monetary_system_1940 = {
 	year = 1940
 	cost = 40000
 
-	administrative_efficiency = 0.01
+	administrative_efficiency = 0.02
+	factory_input = -0.005
 
 	ai_chance = {
 		factor = 1.0
@@ -519,7 +528,8 @@ tgcnv_ww2_monetary_system_1943 = {
 	year = 1943
 	cost = 43000
 
-	tax_eff = 1
+	tax_eff = 3
+	administrative_efficiency = 0.015
 
 	ai_chance = {
 		factor = 1.0
@@ -531,7 +541,9 @@ tgcnv_ww2_monetary_system_1945 = {
 	year = 1945
 	cost = 46000
 
-	loan_interest = -0.001
+	loan_interest = -0.003
+	factory_input = -0.005
+	administrative_efficiency = 0.015
 
 	ai_chance = {
 		factor = 1.0
@@ -826,7 +838,8 @@ tgcnv_ww2_economic_thought_and_critique_1930 = {
 	year = 1930
 	cost = 34000
 
-	factory_input = -0.005
+	factory_input = -0.01
+	tax_eff = 2
 
 	ai_chance = {
 		factor = 1.0
@@ -838,7 +851,8 @@ tgcnv_ww2_economic_thought_and_critique_1936 = {
 	year = 1936
 	cost = 37000
 
-	factory_output = 0.01
+	factory_output = 0.02
+	factory_throughput = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -850,7 +864,11 @@ tgcnv_ww2_economic_thought_and_critique_1940 = {
 	year = 1940
 	cost = 40000
 
-	factory_throughput = 0.01
+	factory_throughput = 0.03
+	factory_goods_output = {
+		small_arms = 0.03
+		artillery = 0.03
+	}
 
 	ai_chance = {
 		factor = 1.0
@@ -862,7 +880,8 @@ tgcnv_ww2_economic_thought_and_critique_1943 = {
 	year = 1943
 	cost = 43000
 
-	factory_input = -0.005
+	factory_input = -0.01
+	factory_output = 0.015
 
 	ai_chance = {
 		factor = 1.0
@@ -874,7 +893,8 @@ tgcnv_ww2_economic_thought_and_critique_1945 = {
 	year = 1945
 	cost = 46000
 
-	factory_output = 0.01
+	factory_output = 0.025
+	factory_cost = -0.01
 
 	ai_chance = {
 		factor = 1.0
@@ -1226,7 +1246,8 @@ tgcnv_ww2_market_functionality_1930 = {
 	year = 1930
 	cost = 34000
 
-	factory_input = -0.005
+	factory_input = -0.01
+	supply_limit = 0.05
 
 	ai_chance = {
 		factor = 1.0
@@ -1238,7 +1259,10 @@ tgcnv_ww2_market_functionality_1936 = {
 	year = 1936
 	cost = 37000
 
-	supply_limit = 0.025
+	supply_limit = 0.10
+	factory_goods_output = {
+		canned_food = 0.05
+	}
 
 	ai_chance = {
 		factor = 1.0
@@ -1250,7 +1274,11 @@ tgcnv_ww2_market_functionality_1940 = {
 	year = 1940
 	cost = 40000
 
-	factory_throughput = 0.01
+	factory_throughput = 0.02
+	factory_goods_output = {
+		fuel = 0.03
+		ammunition = 0.03
+	}
 
 	ai_chance = {
 		factor = 1.0
@@ -1262,7 +1290,8 @@ tgcnv_ww2_market_functionality_1943 = {
 	year = 1943
 	cost = 43000
 
-	supply_limit = 0.025
+	supply_limit = 0.15
+	reinforce_rate = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -1274,7 +1303,8 @@ tgcnv_ww2_market_functionality_1945 = {
 	year = 1945
 	cost = 46000
 
-	factory_input = -0.005
+	factory_input = -0.01
+	factory_throughput = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -1590,7 +1620,8 @@ tgcnv_ww2_tech_organization_1930 = {
 	year = 1930
 	cost = 34000
 
-	factory_output = 0.01
+	factory_output = 0.02
+	factory_throughput = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -1602,7 +1633,8 @@ tgcnv_ww2_tech_organization_1936 = {
 	year = 1936
 	cost = 37000
 
-	factory_throughput = 0.01
+	factory_throughput = 0.03
+	factory_input = -0.005
 
 	ai_chance = {
 		factor = 1.0
@@ -1614,7 +1646,11 @@ tgcnv_ww2_tech_organization_1940 = {
 	year = 1940
 	cost = 40000
 
-	factory_throughput = 0.02
+	factory_throughput = 0.04
+	factory_goods_output = {
+		barrels = 0.05
+		aeroplanes = 0.04
+	}
 
 	ai_chance = {
 		factor = 1.0
@@ -1626,7 +1662,9 @@ tgcnv_ww2_tech_organization_1943 = {
 	year = 1943
 	cost = 43000
 
-	factory_input = -0.005
+	factory_input = -0.01
+	supply_limit = 0.05
+	factory_output = 0.015
 
 	ai_chance = {
 		factor = 1.0
@@ -1638,7 +1676,8 @@ tgcnv_ww2_tech_organization_1945 = {
 	year = 1945
 	cost = 46000
 
-	factory_output = 0.01
+	factory_output = 0.025
+	factory_cost = -0.015
 
 	ai_chance = {
 		factor = 1.0

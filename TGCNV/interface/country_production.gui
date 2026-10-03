@@ -845,7 +845,7 @@ guiTypes = {
 		iconType = {
 			name = "goods_type"
 			spriteType = "GFX_resources_transparent"
-			position = { x=2 y =2 }
+			position = { x=0 y =2 }
 		}	
 	}
 
@@ -1031,6 +1031,15 @@ guiTypes = {
 		
 	
         # TGCNV subtype overlay: empty until a validated external snapshot exists.
+        # Factory input alternatives: parent frames and native lack indicators remain owned by the game.
+        iconType = { name = "tg_input_subgood_icon_0" spriteType = "GFX_tgcnv_subgoods_small" position = { x=7 y=40 } frame = 1 }
+        instantTextBoxType = { name = "tg_input_subgood_more_0" position = { x=17 y=51 } font = "Arial12_black" text = "" maxWidth = 14 maxHeight = 12 format = left fixedsize = yes }
+        iconType = { name = "tg_input_subgood_icon_1" spriteType = "GFX_tgcnv_subgoods_small" position = { x=32 y=40 } frame = 1 }
+        instantTextBoxType = { name = "tg_input_subgood_more_1" position = { x=42 y=51 } font = "Arial12_black" text = "" maxWidth = 14 maxHeight = 12 format = left fixedsize = yes }
+        iconType = { name = "tg_input_subgood_icon_2" spriteType = "GFX_tgcnv_subgoods_small" position = { x=57 y=40 } frame = 1 }
+        instantTextBoxType = { name = "tg_input_subgood_more_2" position = { x=67 y=51 } font = "Arial12_black" text = "" maxWidth = 14 maxHeight = 12 format = left fixedsize = yes }
+        iconType = { name = "tg_input_subgood_icon_3" spriteType = "GFX_tgcnv_subgoods_small" position = { x=82 y=40 } frame = 1 }
+        instantTextBoxType = { name = "tg_input_subgood_more_3" position = { x=92 y=51 } font = "Arial12_black" text = "" maxWidth = 14 maxHeight = 12 format = left fixedsize = yes }
         iconType = { name = "tg_subgood_icon" spriteType = "GFX_tgcnv_subgoods_normal" position = { x=83 y=13 } frame = 1 }
         instantTextBoxType = { name = "tg_subgood_name" position = { x=3 y=0 } font = "Arial12_black" text = "" maxWidth = 106 maxHeight = 12 format = left fixedsize = yes }
     }
@@ -2028,6 +2037,15 @@ guiTypes = {
 		}
 	
         # TGCNV subtype overlay: empty until a validated external snapshot exists.
+        # Factory input alternatives: parent frames and native lack indicators remain owned by the game.
+        iconType = { name = "tg_input_subgood_icon_0" spriteType = "GFX_tgcnv_subgoods_small" position = { x=0 y=45 } frame = 1 }
+        instantTextBoxType = { name = "tg_input_subgood_more_0" position = { x=2 y=49 } font = "Arial12_black" text = "" maxWidth = 14 maxHeight = 12 format = left fixedsize = yes }
+        iconType = { name = "tg_input_subgood_icon_1" spriteType = "GFX_tgcnv_subgoods_small" position = { x=17 y=45 } frame = 1 }
+        instantTextBoxType = { name = "tg_input_subgood_more_1" position = { x=19 y=49 } font = "Arial12_black" text = "" maxWidth = 14 maxHeight = 12 format = left fixedsize = yes }
+        iconType = { name = "tg_input_subgood_icon_2" spriteType = "GFX_tgcnv_subgoods_small" position = { x=34 y=45 } frame = 1 }
+        instantTextBoxType = { name = "tg_input_subgood_more_2" position = { x=36 y=49 } font = "Arial12_black" text = "" maxWidth = 14 maxHeight = 12 format = left fixedsize = yes }
+        iconType = { name = "tg_input_subgood_icon_3" spriteType = "GFX_tgcnv_subgoods_small" position = { x=51 y=45 } frame = 1 }
+        instantTextBoxType = { name = "tg_input_subgood_more_3" position = { x=53 y=49 } font = "Arial12_black" text = "" maxWidth = 14 maxHeight = 12 format = left fixedsize = yes }
         iconType = { name = "tg_subgood_icon" spriteType = "GFX_tgcnv_subgoods_big" position = { x=87 y=7 } frame = 1 }
         instantTextBoxType = { name = "tg_subgood_name" position = { x=2 y=61 } font = "Arial12_black" text = "" maxWidth = 134 maxHeight = 12 format = left fixedsize = yes }
     }

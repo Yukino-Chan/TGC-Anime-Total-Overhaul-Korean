@@ -208,7 +208,8 @@ tgcnv_ww2_aesthetics_1930 = {
 	year = 1930
 	cost = 34000
 
-	prestige = 0.02
+	prestige = 0.05
+	diplomatic_points = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -220,7 +221,8 @@ tgcnv_ww2_aesthetics_1936 = {
 	year = 1936
 	cost = 37000
 
-	prestige = 0.02
+	prestige = 0.05
+	education_efficiency = 0.015
 
 	ai_chance = {
 		factor = 1.0
@@ -232,7 +234,8 @@ tgcnv_ww2_aesthetics_1940 = {
 	year = 1940
 	cost = 40000
 
-	prestige = 0.02
+	prestige = 0.05
+	morale = 0.025
 
 	ai_chance = {
 		factor = 1.0
@@ -244,7 +247,8 @@ tgcnv_ww2_aesthetics_1943 = {
 	year = 1943
 	cost = 43000
 
-	prestige = 0.02
+	prestige = 0.06
+	increase_research = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -256,7 +260,8 @@ tgcnv_ww2_aesthetics_1945 = {
 	year = 1945
 	cost = 46000
 
-	prestige = 0.03
+	prestige = 0.08
+	diplomatic_points = 0.10
 
 	ai_chance = {
 		factor = 1.0
@@ -496,7 +501,8 @@ tgcnv_ww2_philosophy_1930 = {
 	year = 1930
 	cost = 34000
 
-	increase_research = 0.05
+	increase_research = 0.10
+	education_efficiency = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -508,7 +514,8 @@ tgcnv_ww2_philosophy_1936 = {
 	year = 1936
 	cost = 37000
 
-	increase_research = 0.05
+	increase_research = 0.10
+	education_efficiency = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -520,7 +527,8 @@ tgcnv_ww2_philosophy_1940 = {
 	year = 1940
 	cost = 40000
 
-	increase_research = 0.05
+	increase_research = 0.12
+	education_efficiency = 0.025
 
 	ai_chance = {
 		factor = 1.0
@@ -532,7 +540,8 @@ tgcnv_ww2_philosophy_1943 = {
 	year = 1943
 	cost = 43000
 
-	increase_research = 0.05
+	increase_research = 0.12
+	education_efficiency = 0.025
 
 	ai_chance = {
 		factor = 1.0
@@ -544,7 +553,8 @@ tgcnv_ww2_philosophy_1945 = {
 	year = 1945
 	cost = 46000
 
-	increase_research = 0.10
+	increase_research = 0.15
+	education_efficiency = 0.03
 
 	ai_chance = {
 		factor = 1.0
@@ -863,7 +873,8 @@ tgcnv_ww2_social_thought_1930 = {
 	year = 1930
 	cost = 34000
 
-	education_efficiency = 0.02
+	education_efficiency = 0.05
+	administrative_efficiency = 0.005
 
 	ai_chance = {
 		factor = 1.0
@@ -875,7 +886,8 @@ tgcnv_ww2_social_thought_1936 = {
 	year = 1936
 	cost = 37000
 
-	education_efficiency = 0.02
+	education_efficiency = 0.06
+	administrative_efficiency = 0.005
 
 	ai_chance = {
 		factor = 1.0
@@ -887,7 +899,9 @@ tgcnv_ww2_social_thought_1940 = {
 	year = 1940
 	cost = 40000
 
-	education_efficiency = 0.02
+	education_efficiency = 0.07
+	land_attrition = -0.01
+	morale = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -899,7 +913,10 @@ tgcnv_ww2_social_thought_1943 = {
 	year = 1943
 	cost = 43000
 
-	education_efficiency = 0.03
+	education_efficiency = 0.08
+	factory_goods_output = {
+		machine_parts = 0.03
+	}
 
 	ai_chance = {
 		factor = 1.0
@@ -911,7 +928,8 @@ tgcnv_ww2_social_thought_1945 = {
 	year = 1945
 	cost = 46000
 
-	education_efficiency = 0.03
+	education_efficiency = 0.10
+	reinforce_rate = 0.01
 
 	ai_chance = {
 		factor = 1.0
@@ -1238,7 +1256,8 @@ tgcnv_ww2_political_thought_1930 = {
 	year = 1930
 	cost = 34000
 
-	administrative_efficiency = 0.01
+	administrative_efficiency = 0.02
+	tax_eff = 1
 
 	ai_chance = {
 		factor = 1.0
@@ -1250,7 +1269,8 @@ tgcnv_ww2_political_thought_1936 = {
 	year = 1936
 	cost = 37000
 
-	administrative_efficiency = 0.01
+	administrative_efficiency = 0.02
+	supply_limit = 0.05
 
 	ai_chance = {
 		factor = 1.0
@@ -1263,6 +1283,7 @@ tgcnv_ww2_political_thought_1940 = {
 	cost = 40000
 
 	max_national_focus = 1
+	administrative_efficiency = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -1274,7 +1295,8 @@ tgcnv_ww2_political_thought_1943 = {
 	year = 1943
 	cost = 43000
 
-	diplomatic_points = 0.05
+	diplomatic_points = 0.10
+	administrative_efficiency = 0.01
 
 	ai_chance = {
 		factor = 1.0
@@ -1286,7 +1308,8 @@ tgcnv_ww2_political_thought_1945 = {
 	year = 1945
 	cost = 46000
 
-	diplomatic_points = 0.05
+	diplomatic_points = 0.15
+	prestige = 0.05
 
 	ai_chance = {
 		factor = 1.0
@@ -1554,7 +1577,10 @@ tgcnv_ww2_psychology_1930 = {
 	year = 1930
 	cost = 34000
 
-	regular_experience_level = 1
+	regular_experience_level = 2
+	army_base = {
+		default_organisation = 2
+	}
 
 	ai_chance = {
 		factor = 1.0
@@ -1566,7 +1592,8 @@ tgcnv_ww2_psychology_1936 = {
 	year = 1936
 	cost = 37000
 
-	factory_output = 0.005
+	factory_output = 0.015
+	education_efficiency = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -1578,7 +1605,8 @@ tgcnv_ww2_psychology_1940 = {
 	year = 1940
 	cost = 40000
 
-	morale = 0.02
+	morale = 0.06
+	reinforce_rate = 0.01
 
 	ai_chance = {
 		factor = 1.0
@@ -1590,7 +1618,9 @@ tgcnv_ww2_psychology_1943 = {
 	year = 1943
 	cost = 43000
 
-	regular_experience_level = 1
+	regular_experience_level = 2
+	factory_input = -0.005
+	factory_output = 0.01
 
 	ai_chance = {
 		factor = 1.0
@@ -1602,7 +1632,8 @@ tgcnv_ww2_psychology_1945 = {
 	year = 1945
 	cost = 46000
 
-	reinforce_rate = 0.01
+	reinforce_rate = 0.03
+	morale = 0.05
 
 	ai_chance = {
 		factor = 1.0

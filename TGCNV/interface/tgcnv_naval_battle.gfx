@@ -1,0 +1,39 @@
+spriteTypes = {
+ spriteType = { name = "GFX_tg_nb_balance_tick" texturefile = "gfx/interface/tgcnv_naval_battle/balance_tick.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_button" texturefile = "gfx/interface/tgcnv_naval_battle/button.dds" noOfFrames = 2 }
+    textSpriteType = { name = "GFX_tg_nb_text_button" texturefile = "gfx/interface/tgcnv_naval_battle/text_button.dds" noOfFrames = 1 effectFile = "gfx\\FX\\buttonstate.fx" }
+    spriteType = { name = "GFX_tg_nb_cell_icon_carrier" texturefile = "gfx/interface/tgcnv_naval_battle/cell_icon_carrier.dds" noOfFrames = 1 }
+    spriteType = { name = "GFX_tg_nb_cell_icon_capital" texturefile = "gfx/interface/tgcnv_naval_battle/cell_icon_capital.dds" noOfFrames = 1 }
+    spriteType = { name = "GFX_tg_nb_cell_icon_screen" texturefile = "gfx/interface/tgcnv_naval_battle/cell_icon_screen.dds" noOfFrames = 1 }
+    spriteType = { name = "GFX_tg_nb_cell_icon_submarine" texturefile = "gfx/interface/tgcnv_naval_battle/cell_icon_submarine.dds" noOfFrames = 1 }
+    spriteType = { name = "GFX_tg_nb_cell_icon_transport" texturefile = "gfx/interface/tgcnv_naval_battle/cell_icon_transport.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_capital" texturefile = "gfx/interface/tgcnv_naval_battle/capital.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_carrier" texturefile = "gfx/interface/tgcnv_naval_battle/carrier.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_cell" texturefile = "gfx/interface/tgcnv_naval_battle/cell.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_center_panel" texturefile = "gfx/interface/tgcnv_naval_battle/center_panel.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_empty" texturefile = "gfx/interface/tgcnv_naval_battle/empty.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_friendly" texturefile = "gfx/interface/tgcnv_naval_battle/friendly.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_friendly_edge" texturefile = "gfx/interface/tgcnv_naval_battle/friendly_edge.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_friendly_lane" texturefile = "gfx/interface/tgcnv_naval_battle/friendly_lane.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_friendly_segment" texturefile = "gfx/interface/tgcnv_naval_battle/friendly_segment.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_hostile" texturefile = "gfx/interface/tgcnv_naval_battle/hostile.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_hostile_edge" texturefile = "gfx/interface/tgcnv_naval_battle/hostile_edge.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_hostile_lane" texturefile = "gfx/interface/tgcnv_naval_battle/hostile_lane.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_hostile_segment" texturefile = "gfx/interface/tgcnv_naval_battle/hostile_segment.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_neutral" texturefile = "gfx/interface/tgcnv_naval_battle/neutral.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_neutral_edge" texturefile = "gfx/interface/tgcnv_naval_battle/neutral_edge.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_neutral_lane" texturefile = "gfx/interface/tgcnv_naval_battle/neutral_lane.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_neutral_segment" texturefile = "gfx/interface/tgcnv_naval_battle/neutral_segment.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_operator_friendly" texturefile = "gfx/interface/tgcnv_naval_battle/operator_friendly.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_operator_hostile" texturefile = "gfx/interface/tgcnv_naval_battle/operator_hostile.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_org" texturefile = "gfx/interface/tgcnv_naval_battle/org.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_reserve" texturefile = "gfx/interface/tgcnv_naval_battle/reserve.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_screen" texturefile = "gfx/interface/tgcnv_naval_battle/screen.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_skin" texturefile = "gfx/interface/tgcnv_naval_battle/skin.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_skin_button" texturefile = "gfx/interface/tgcnv_naval_battle/skin.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_str" texturefile = "gfx/interface/tgcnv_naval_battle/str.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_submarine" texturefile = "gfx/interface/tgcnv_naval_battle/submarine.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_title_panel" texturefile = "gfx/interface/tgcnv_naval_battle/title_panel.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_transport" texturefile = "gfx/interface/tgcnv_naval_battle/transport.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tg_nb_balance_badge" texturefile = "gfx/interface/tgcnv_naval_battle/balance_badge.dds" noOfFrames = 1 }
+}

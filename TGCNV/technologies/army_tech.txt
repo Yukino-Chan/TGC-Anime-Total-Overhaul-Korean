@@ -860,11 +860,21 @@ tgcnv_ww2_army_doctrine_1930 = {
 	cost = 34000
 	unciv_military = yes
 
-	army_base = { maximum_speed = 0.2 }
+	army_base = {
+		maximum_speed = 0.4
+		default_organisation = 2
+	}
+	plane = {
+		maximum_speed = 0.5
+		reconnaissance = 0.5
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -874,11 +884,32 @@ tgcnv_ww2_army_doctrine_1936 = {
 	cost = 37000
 	unciv_military = yes
 
-	military_tactics = 0.05
+	military_tactics = 0.075
+	artillery = {
+		support = 0.25
+	}
+	infantry = {
+		default_organisation = 1
+	}
+	tgcnv_paratrooper = {
+		default_organisation = 1
+	}
+	tgcnv_marine = {
+		default_organisation = 1
+	}
+	guard = {
+		default_organisation = 1
+	}
+	tgcnv_sturmtruppe = {
+		default_organisation = 1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -888,11 +919,26 @@ tgcnv_ww2_army_doctrine_1940 = {
 	cost = 40000
 	unciv_military = yes
 
-	army_base = { default_organisation = 3 }
+	army_base = {
+		default_organisation = 6
+	}
+	military_tactics = 0.05
+	tank = {
+		maximum_speed = 0.25
+	}
+	tgcnv_light_tank = {
+		maximum_speed = 0.5
+	}
+	tgcnv_heavy_tank = {
+		maximum_speed = 0.1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -902,11 +948,30 @@ tgcnv_ww2_army_doctrine_1943 = {
 	cost = 43000
 	unciv_military = yes
 
-	military_tactics = 0.05
+	military_tactics = 0.075
+	tank = {
+		attack = 1
+	}
+	tgcnv_light_tank = {
+		attack = 0.75
+	}
+	tgcnv_heavy_tank = {
+		attack = 1.5
+	}
+	plane = {
+		attack = 0.5
+		defence = 0.5
+	}
+	engineer = {
+		siege = 1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -916,11 +981,19 @@ tgcnv_ww2_army_doctrine_1945 = {
 	cost = 46000
 	unciv_military = yes
 
-	morale = 0.10
+	morale = 0.1
+	military_tactics = 0.05
+	army_base = {
+		default_organisation = 6
+	}
+	org_regain = 0.05
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 # TGCNV WWII END army_doctrine
@@ -1832,17 +1905,36 @@ tgcnv_ww2_light_armament_1930 = {
 	unciv_military = yes
 	activate_unit = tgcnv_sturmtruppe
 
-	infantry = { attack = 0.5 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { attack = 0.5 }
-tgcnv_marine = { attack = 0.5 }
-# TGCNV SPECIALIST BONUS END
-	guard = { attack = 0.5 }
-	tgcnv_sturmtruppe = { attack = 0.5 }  # TGCNV STURMTRUPPE = guard
+	infantry = {
+		attack = 1
+		discipline = 0.02
+	}
+	tgcnv_paratrooper = {
+		attack = 1
+		discipline = 0.02
+	}
+	tgcnv_marine = {
+		attack = 1
+		discipline = 0.02
+	}
+	guard = {
+		attack = 1
+		discipline = 0.02
+	}
+	tgcnv_sturmtruppe = {
+		attack = 1
+		discipline = 0.02
+	}
+	factory_goods_output = {
+		small_arms = 0.03
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -1851,19 +1943,38 @@ tgcnv_ww2_light_armament_1936 = {
 	year = 1936
 	cost = 37000
 	unciv_military = yes
-
 	unit = 3
-	infantry = { defence = 0.5 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { defence = 0.5 }
-tgcnv_marine = { defence = 0.5 }
-# TGCNV SPECIALIST BONUS END
-	guard = { defence = 0.5 }
-	tgcnv_sturmtruppe = { defence = 0.5 }  # TGCNV STURMTRUPPE = guard
+
+	infantry = {
+		defence = 1
+		attack = 0.5
+	}
+	tgcnv_paratrooper = {
+		defence = 1
+		attack = 0.5
+	}
+	tgcnv_marine = {
+		defence = 1
+		attack = 0.5
+	}
+	guard = {
+		defence = 1
+		attack = 0.5
+	}
+	tgcnv_sturmtruppe = {
+		defence = 1
+		attack = 0.5
+	}
+	factory_goods_output = {
+		ammunition = 0.03
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -1873,15 +1984,36 @@ tgcnv_ww2_light_armament_1940 = {
 	cost = 40000
 	unciv_military = yes
 
-	infantry = { defence = 1 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { defence = 1 }
-tgcnv_marine = { defence = 1 }
-# TGCNV SPECIALIST BONUS END
+	infantry = {
+		defence = 1.5
+		attack = 0.5
+	}
+	tgcnv_paratrooper = {
+		defence = 1.5
+		attack = 0.5
+	}
+	tgcnv_marine = {
+		defence = 1.5
+		attack = 0.5
+	}
+	guard = {
+		defence = 1.5
+		attack = 0.5
+	}
+	tgcnv_sturmtruppe = {
+		defence = 1.5
+		attack = 0.5
+	}
+	factory_goods_output = {
+		artillery = 0.02
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -1891,17 +2023,41 @@ tgcnv_ww2_light_armament_1943 = {
 	cost = 43000
 	unciv_military = yes
 
-	infantry = { attack = 0.5 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { attack = 0.5 }
-tgcnv_marine = { attack = 0.5 }
-# TGCNV SPECIALIST BONUS END
-	guard = { attack = 0.5 }
-	tgcnv_sturmtruppe = { attack = 0.5 }  # TGCNV STURMTRUPPE = guard
+	infantry = {
+		attack = 1
+		defence = 0.5
+		default_organisation = 2
+	}
+	tgcnv_paratrooper = {
+		attack = 1
+		defence = 0.5
+		default_organisation = 2
+	}
+	tgcnv_marine = {
+		attack = 1
+		defence = 0.5
+		default_organisation = 2
+	}
+	guard = {
+		attack = 1
+		defence = 0.5
+		default_organisation = 2
+	}
+	tgcnv_sturmtruppe = {
+		attack = 1
+		defence = 0.5
+		default_organisation = 2
+	}
+	factory_goods_output = {
+		small_arms = 0.04
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -1911,17 +2067,36 @@ tgcnv_ww2_light_armament_1945 = {
 	cost = 46000
 	unciv_military = yes
 
-	infantry = { default_organisation = 3 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { default_organisation = 3 }
-tgcnv_marine = { default_organisation = 3 }
-# TGCNV SPECIALIST BONUS END
-	guard = { default_organisation = 3 }
-	tgcnv_sturmtruppe = { default_organisation = 3 }  # TGCNV STURMTRUPPE = guard
+	infantry = {
+		default_organisation = 6
+		attack = 0.5
+	}
+	tgcnv_paratrooper = {
+		default_organisation = 6
+		attack = 0.5
+	}
+	tgcnv_marine = {
+		default_organisation = 6
+		attack = 0.5
+	}
+	guard = {
+		default_organisation = 6
+		attack = 0.5
+	}
+	tgcnv_sturmtruppe = {
+		default_organisation = 6
+		attack = 0.5
+	}
+	army_base = {
+		supply_consumption = -0.01
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 # TGCNV WWII END light_armament
@@ -2759,13 +2934,25 @@ tgcnv_ww2_heavy_armament_1930 = {
 	year = 1930
 	cost = 34000
 	unciv_military = yes
-
 	activate_unit = tgcnv_light_tank
-	artillery = { attack = 0.5 }
+
+	artillery = {
+		attack = 1
+		defence = 0.5
+	}
+	engineer = {
+		support = 0.25
+	}
+	factory_goods_output = {
+		artillery = 0.03
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -2775,13 +2962,27 @@ tgcnv_ww2_heavy_armament_1936 = {
 	cost = 37000
 	unciv_military = yes
 
-	tank = { attack = 1 defence = 0.5 }
-	tgcnv_light_tank = { attack = 1 defence = 0.5 }
-	tgcnv_heavy_tank = { attack = 1 defence = 0.5 }
+	tank = {
+		attack = 1.5
+		defence = 1
+	}
+	tgcnv_light_tank = {
+		attack = 1.25
+		defence = 0.75
+		reconnaissance = 1
+	}
+	tgcnv_heavy_tank = {
+		attack = 2
+		defence = 1.25
+		siege = 1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -2790,13 +2991,26 @@ tgcnv_ww2_heavy_armament_1940 = {
 	year = 1940
 	cost = 40000
 	unciv_military = yes
-
 	activate_unit = tgcnv_heavy_tank
-	artillery = { defence = 1 }
+
+	artillery = {
+		defence = 1.5
+		attack = 1
+	}
+	engineer = {
+		defence = 1.5
+		siege = 0.5
+	}
+	factory_goods_output = {
+		explosives = 0.03
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -2806,11 +3020,27 @@ tgcnv_ww2_heavy_armament_1943 = {
 	cost = 43000
 	unciv_military = yes
 
-	artillery = { maximum_speed = 0.2 support = 0.25 }
+	artillery = {
+		attack = 1
+		maximum_speed = 0.4
+		support = 0.5
+	}
+	tank = {
+		maximum_speed = 0.25
+	}
+	tgcnv_light_tank = {
+		maximum_speed = 0.5
+	}
+	tgcnv_heavy_tank = {
+		maximum_speed = 0.1
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -2820,14 +3050,29 @@ tgcnv_ww2_heavy_armament_1945 = {
 	cost = 46000
 	unciv_military = yes
 
-	tank = { attack = 1 }
-	tgcnv_light_tank = { attack = 1 }
-	tgcnv_heavy_tank = { attack = 1 }
-	artillery = { attack = 0.5 }
+	tank = {
+		attack = 2
+		default_organisation = 4
+	}
+	tgcnv_light_tank = {
+		attack = 1.5
+		default_organisation = 4
+	}
+	tgcnv_heavy_tank = {
+		attack = 2.5
+		default_organisation = 4
+	}
+	artillery = {
+		attack = 1
+		support = 0.25
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 # TGCNV WWII END heavy_armament
@@ -3745,11 +3990,18 @@ tgcnv_ww2_military_science_1930 = {
 	cost = 34000
 	unciv_military = yes
 
-	factory_goods_output = { aeroplanes = 0.03 }
+	factory_goods_output = {
+		aeroplanes = 0.05
+		fuel = 0.03
+	}
+	supply_limit = 0.1
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -3759,11 +4011,19 @@ tgcnv_ww2_military_science_1936 = {
 	cost = 37000
 	unciv_military = yes
 
-	factory_goods_output = { aeroplanes = 0.03 }
+	factory_goods_output = {
+		aeroplanes = 0.06
+		machine_parts = 0.03
+		steel = 0.02
+	}
+	factory_output = 0.01
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -3773,11 +4033,21 @@ tgcnv_ww2_military_science_1940 = {
 	cost = 40000
 	unciv_military = yes
 
-	factory_goods_output = { radio = 0.03 }
+	factory_goods_output = {
+		radio = 0.06
+		electric_gear = 0.04
+		artillery = 0.02
+	}
+	factory_goods_input = {
+		explosives = -0.03
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -3787,11 +4057,19 @@ tgcnv_ww2_military_science_1943 = {
 	cost = 43000
 	unciv_military = yes
 
-	factory_goods_output = { aeroplanes = 0.03 }
+	factory_goods_output = {
+		aeroplanes = 0.08
+		fuel = 0.05
+		radio = 0.02
+	}
+	supply_limit = 0.1
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -3801,11 +4079,20 @@ tgcnv_ww2_military_science_1945 = {
 	cost = 46000
 	unciv_military = yes
 
-	factory_goods_output = { aeroplanes = 0.05 }
+	factory_goods_output = {
+		aeroplanes = 0.1
+		machine_parts = 0.03
+		fuel = 0.03
+		electric_gear = 0.02
+	}
+	supply_limit = 0.05
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 # TGCNV WWII END military_science
@@ -4421,11 +4708,20 @@ tgcnv_ww2_army_leadership_1930 = {
 	cost = 34000
 	unciv_military = yes
 
-	army_base = { default_organisation = 2 }
+	army_base = {
+		default_organisation = 4
+	}
+	factory_goods_output = {
+		radio = 0.03
+	}
+	org_regain = 0.03
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -4435,11 +4731,18 @@ tgcnv_ww2_army_leadership_1936 = {
 	cost = 37000
 	unciv_military = yes
 
-	regular_experience_level = 1
+	regular_experience_level = 2
+	army_base = {
+		default_organisation = 3
+	}
+	morale = 0.05
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -4449,11 +4752,23 @@ tgcnv_ww2_army_leadership_1940 = {
 	cost = 40000
 	unciv_military = yes
 
-	army_base = { default_organisation = 2 }
+	army_base = {
+		default_organisation = 4
+	}
+	artillery = {
+		support = 0.25
+	}
+	factory_goods_output = {
+		radio = 0.03
+		aeroplanes = 0.02
+	}
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -4463,11 +4778,18 @@ tgcnv_ww2_army_leadership_1943 = {
 	cost = 43000
 	unciv_military = yes
 
-	reinforce_rate = 0.02
+	reinforce_rate = 0.04
+	army_base = {
+		supply_consumption = -0.01
+	}
+	land_attrition = -0.01
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 
@@ -4477,11 +4799,18 @@ tgcnv_ww2_army_leadership_1945 = {
 	cost = 46000
 	unciv_military = yes
 
-	army_base = { default_organisation = 3 }
+	army_base = {
+		default_organisation = 6
+	}
+	morale = 0.1
+	regular_experience_level = 2
 
 	ai_chance = {
 		factor = 1.0
-		modifier = { factor = 1.5 war = yes }
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
 	}
 }
 # TGCNV WWII END army_leadership

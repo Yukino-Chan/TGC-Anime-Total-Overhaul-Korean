@@ -1,0 +1,6 @@
+spriteTypes = {
+ spriteType = { name = "GFX_tgcnv_air_combat_panel" texturefile = "gfx\interface\tgcnv_air_combat\panel.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tgcnv_air_combat_own" texturefile = "gfx\interface\tgcnv_air_combat\own.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tgcnv_air_combat_enemy" texturefile = "gfx\interface\tgcnv_air_combat\enemy.dds" noOfFrames = 1 }
+ spriteType = { name = "GFX_tgcnv_air_combat_neutral" texturefile = "gfx\interface\tgcnv_air_combat\neutral.dds" noOfFrames = 1 }
+}

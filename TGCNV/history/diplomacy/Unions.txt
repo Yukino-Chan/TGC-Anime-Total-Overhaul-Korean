@@ -1,12 +1,13 @@
+# Personal-union juniors use native vassal relations: the pinned Vic2 engine ignores union tokens.
 # Denmark-Schleswig-Holstein (Frederick VI, Christian VIII, Frederick VII)
-union = {
+vassal = {
 	first = DEN
 	second = SWH
 	start_date = 1460.3.2
 	end_date = 1863.11.15
 }
 # United Kingdom-Hanover (George III, George IV, William IV)
-union = {
+vassal = {
 	first = ENG
 	second = HAN
 	start_date = 1814.10.12
