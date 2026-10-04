@@ -29,7 +29,11 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-현재 실험용 엔진은 **0.6.8.32**입니다. 군사·공군 시간 처리, 자정 단계 분산과 저장 변수의 반복 탐색 축소를 포함합니다. 변수 조회 객체 안에서 최근 경로만 재사용하고 현재 메모리·국가·날짜 및 저장 검사는 유지합니다. 소유 메모리 fixture 비교에서 변수 조회 비용이 17~48% 감소했지만 이 수치는 실게임 FPS나 전체 처리 시간의 개선율이 아닙니다.
+현재 실험용 엔진은 **0.6.8.35**입니다. 이번 변경은 DLL, 해전 GUI 2개, 호시노의 EGY 신정 깃발 등 4개 파일입니다. 지도 해전 아이콘과 AI 교전을 개조한 해전 창에 연결하고, 프로빈스·생산 창과 분리하여 중앙에 배치합니다. 실제 공격측·방어측 국가의 이름과 정부 깃발을 표시하며 정보 갱신 중에도 개조한 창을 유지합니다. 머리카락과 하이라이트가 손상된 호시노 깃발도 복구했습니다.
+
+0.6.8.34에서 Windows의 주소 재배치를 반영하지 않아 정상 코드까지 거부하던 초기화 검사는 0.6.8.35에서 수정했습니다. 실제 로드 주소에 맞춰 기대 바이트를 만들며 변조 검사와 실패 복구를 유지합니다. 실제 원본 PE의 두 재배치 주소를 포함한 6개 검사 묶음을 통과했습니다. 최종 게임 재실행·해전 화면·저장 재로드와 두 PC 멀티플레이/OOS는 아직 미검증입니다. 지도·지도 캐시, TGO 121곡과 한국어/English 파일은 직전 배포와 같습니다.
+
+이전 배포에서 이어지는 기능으로, 군사·공군 시간 처리, 자정 단계 분산과 저장 변수의 반복 탐색 축소를 포함합니다. 변수 조회 객체 안에서 최근 경로만 재사용하고 현재 메모리·국가·날짜 및 저장 검사는 유지합니다. 소유 메모리 fixture 비교에서 변수 조회 비용이 17~48% 감소했지만 이 수치는 실게임 FPS나 전체 처리 시간의 개선율이 아닙니다.
 
 **BA 캐릭터 117개 모델·1,275개 메시의 64비트 렌더러**가 활성화되어 있습니다. 별도 x64 작업자가 캐릭터를 그린 뒤 반환한 색상·깊이 타일을 기존 화면에 합성합니다. 초기 준비, 입력 불일치, 작업자 오류·지연 또는 처리 예산 초과 시 기존 그리기를 사용합니다. 게임 본체는 32비트이며 전체 지형·UI가 64비트로 전환된 것은 아닙니다. 자동 캡처와 shadow 검증은 기본 비활성화 상태입니다.
 
@@ -131,7 +135,11 @@ Do not open legacy events `16` or `19` through the console on a player country: 
 
 ### Compatibility and verification
 
-The current experimental engine is **0.6.8.32**. It includes the military/air scheduling changes and separates native midnight date, military and air work into successive frames while retaining once-only processing. Repeated native saved-variable lookups reuse a bounded path inside each lookup object. Current memory, owner/date and saved-value checks remain in place. A controlled owned-memory fixture measured 17–48% lower variable-lookup cost; this is **not a measured live-game FPS or total simulation improvement**.
+The current experimental engine is **0.6.8.35**. This release changes four files: the DLL, two naval/province GUI files and the restored Hoshino EGY theocracy flag. Map naval-battle icons and AI battles open the customized naval window. It is centered and separated from the province/production window, shows the actual attacking and defending countries with their current-government flags, and keeps the custom design while data refreshes.
+
+The DLL fixes the initialization rejection introduced in 0.6.8.34: its byte check did not account for Windows relocating a handler address. Version 0.6.8.35 constructs the expected bytes from the actual loaded base while retaining exact tamper checks and failure rollback. Six test suites passed, including the pinned executable mapped as data at two relocated bases. Final game restart, naval presentation, save/reload and two-PC multiplayer/OOS remain unverified. The map/cache, 121-track TGO playlist and Korean/English language banks are unchanged from the preceding release.
+
+Features inherited from the preceding package remain available. It includes the military/air scheduling changes and separates native midnight date, military and air work into successive frames while retaining once-only processing. Repeated native saved-variable lookups reuse a bounded path inside each lookup object. Current memory, owner/date and saved-value checks remain in place. A controlled owned-memory fixture measured 17–48% lower variable-lookup cost; this is **not a measured live-game FPS or total simulation improvement**.
 
 The supplied configuration enables the **64-bit renderer for 117 Blue Archive character models and 1,275 meshes**. An external x64 worker returns color/depth tiles that are composed into the existing game view. Startup preparation, unsupported input, worker errors, delays or an exceeded frame budget fall back to native drawing. The game executable remains 32-bit; terrain and the entire UI have not been converted to a 64-bit game engine. Automatic observation captures and the former shadow pilot are disabled by default.
 
