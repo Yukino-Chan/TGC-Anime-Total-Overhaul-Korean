@@ -29,9 +29,11 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-현재 실험용 엔진은 **0.6.8.35**입니다. 이번 변경은 DLL, 해전 GUI 2개, 호시노의 EGY 신정 깃발 등 4개 파일입니다. 지도 해전 아이콘과 AI 교전을 개조한 해전 창에 연결하고, 프로빈스·생산 창과 분리하여 중앙에 배치합니다. 실제 공격측·방어측 국가의 이름과 정부 깃발을 표시하며 정보 갱신 중에도 개조한 창을 유지합니다. 머리카락과 하이라이트가 손상된 호시노 깃발도 복구했습니다.
+현재 실험용 엔진은 **0.6.8.37**입니다. 이번 변경은 DLL, 지도 인접 정보와 재생성된 캐시 등 6개 파일입니다. 원본 엔진의 위치·소속·후퇴·수송·전투 참여 상태를 DLL이 다시 판정해 멈추게 하던 중복 검사를 제거했습니다. 원본에서 없어진 부대는 DLL 기록에서도 정리합니다. 메모리 읽기 범위와 형식, 모호한 식별자, 시간의 중복 계산, 저장 CRC 및 군사/AIR 완료 경계 검사는 유지합니다. 모든 검사를 끈 버전은 아닙니다.
 
-0.6.8.34에서 Windows의 주소 재배치를 반영하지 않아 정상 코드까지 거부하던 초기화 검사는 0.6.8.35에서 수정했습니다. 실제 로드 주소에 맞춰 기대 바이트를 만들며 변조 검사와 실패 복구를 유지합니다. 실제 원본 PE의 두 재배치 주소를 포함한 6개 검사 묶음을 통과했습니다. 최종 게임 재실행·해전 화면·저장 재로드와 두 PC 멀티플레이/OOS는 아직 미검증입니다. 지도·지도 캐시, TGO 121곡과 한국어/English 파일은 직전 배포와 같습니다.
+전장의 안개 수정으로 실제 지도에서 맞닿지 않는 통행 금지 연결 186쌍을 제거했습니다. 틸(티엘)·앙베르(안트베르펜)를 포함하며 이동 가능한 방향 레코드 42,818개, 프로빈스 번호·지도 그림·지형은 보존합니다. 수정 CSV와 맞는 새 지도 캐시를 함께 설치합니다. 해전 UI, TGO 121곡과 한영 파일은 직전 배포와 같습니다.
+
+관련 검사 13개 묶음, 설치 해시와 캐시 서명·인접 관계 검증을 통과했습니다. 실제 세이브의 시야, 장기 시간 진행·저장 재로드와 두 PC 멀티플레이/OOS는 아직 미검증입니다. 이미 중단된 게임 세션을 강제로 계속하지 말고 게임을 종료한 뒤 업데이트하여 마지막 정상 세이브로 다시 시작하세요. 개인 세이브는 변경하지 않습니다.
 
 이전 배포에서 이어지는 기능으로, 군사·공군 시간 처리, 자정 단계 분산과 저장 변수의 반복 탐색 축소를 포함합니다. 변수 조회 객체 안에서 최근 경로만 재사용하고 현재 메모리·국가·날짜 및 저장 검사는 유지합니다. 소유 메모리 fixture 비교에서 변수 조회 비용이 17~48% 감소했지만 이 수치는 실게임 FPS나 전체 처리 시간의 개선율이 아닙니다.
 
@@ -135,9 +137,11 @@ Do not open legacy events `16` or `19` through the console on a player country: 
 
 ### Compatibility and verification
 
-The current experimental engine is **0.6.8.35**. This release changes four files: the DLL, two naval/province GUI files and the restored Hoshino EGY theocracy flag. Map naval-battle icons and AI battles open the customized naval window. It is centered and separated from the province/production window, shows the actual attacking and defending countries with their current-government flags, and keeps the custom design while data refreshes.
+The current experimental engine is **0.6.8.37**. Six files change: the DLL, map adjacency source and regenerated cache files. The DLL no longer re-adjudicates the native engine's unit location, ownership, retreat, transport or battle membership against redundant expectations that could halt time progression. Units removed by the native engine are removed from the DLL journal. Memory layout/range checks, ambiguous-identity checks, duplicate-time prevention, save CRCs and the military/AIR completion boundary remain active; this does not disable every validation check.
 
-The DLL fixes the initialization rejection introduced in 0.6.8.34: its byte check did not account for Windows relocating a handler address. Version 0.6.8.35 constructs the expected bytes from the actual loaded base while retaining exact tamper checks and failure rollback. Six test suites passed, including the pinned executable mapped as data at two relocated bases. Final game restart, naval presentation, save/reload and two-PC multiplayer/OOS remain unverified. The map/cache, 121-track TGO playlist and Korean/English language banks are unchanged from the preceding release.
+The fog-of-war correction removes 186 impassable adjacency pairs whose provinces do not touch in the map, including the links affecting Tiel and Antwerp. All 42,818 passable directed records, province IDs, map raster and terrain are preserved. The corrected CSV and matching regenerated map cache ship together. The naval UI, 121-track TGO playlist and Korean/English files remain unchanged from the preceding release.
+
+Thirteen recorded test suites, installed-file hashes and cache signatures/adjacency checks passed. Tests that substitute native function ports do not certify live gameplay or two-PC multiplayer. Visibility in the actual save, long-running time progression, save/reload and multiplayer/OOS still need live confirmation. Close a halted game session, update, then load the last healthy save instead of forcing that session to continue. Private saves are not modified.
 
 Features inherited from the preceding package remain available. It includes the military/air scheduling changes and separates native midnight date, military and air work into successive frames while retaining once-only processing. Repeated native saved-variable lookups reuse a bounded path inside each lookup object. Current memory, owner/date and saved-value checks remain in place. A controlled owned-memory fixture measured 17–48% lower variable-lookup cost; this is **not a measured live-game FPS or total simulation improvement**.
 
