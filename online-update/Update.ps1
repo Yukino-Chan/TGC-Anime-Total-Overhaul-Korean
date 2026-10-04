@@ -14,6 +14,7 @@ Import-Module (Join-Path $PSScriptRoot 'Online-Core.psm1') -Force -DisableNameCh
 Import-Module (Join-Path $PSScriptRoot 'Language.psm1') -Force -DisableNameChecking
 $utf8=[Text.UTF8Encoding]::new($false)
 $mutex=$null
+$ownedStage=$null
 function Save-Json($Path,$Value) {
     Assert-NoReparsePoint $Path
     $temp=$Path+'.'+[Guid]::NewGuid().ToString('N')+'.tmp'
@@ -51,6 +52,26 @@ function Validate-Files($Catalog,$Root) {
     }
     Write-Progress -Activity '파일 검증' -Completed
 }
+
+function Remove-IncomingStage([string]$Root,[string]$Relative) {
+    if ($Relative -cnotmatch '^packs/TGCNV-[0-9]{8}-[0-9]{6}/[0-9a-f]{32}$') { throw '잘못된 임시 다운로드 경로입니다.' }
+    $target=Resolve-SafeChild $Root $Relative
+    if (-not (Test-Path -LiteralPath $target)) { return }
+    $stack=New-Object 'Collections.Generic.Stack[string]'
+    $stack.Push($target)
+    while ($stack.Count -gt 0) {
+        $item=Get-Item -LiteralPath $stack.Pop() -Force
+        if ($item.Attributes -band [IO.FileAttributes]::ReparsePoint) { throw '연결된 임시 파일은 정리하지 않습니다.' }
+        if ($item.PSIsContainer) {
+            foreach ($child in Get-ChildItem -LiteralPath $item.FullName -Force) {
+                if ($child.Attributes -band [IO.FileAttributes]::ReparsePoint) { throw '연결된 임시 파일은 정리하지 않습니다.' }
+                if ($child.PSIsContainer) { $stack.Push($child.FullName) }
+            }
+        }
+    }
+    Remove-Item -LiteralPath $target -Recurse -Force
+}
+
 function Invoke-Setup($Root,$Mode,[string]$Lang) {
     $args=@('-NoProfile','-STA','-ExecutionPolicy','Bypass','-File',(Join-Path $Root 'Setup.ps1'),'-Action',$Mode)
     if ($Mode -ne 'Verify') {
@@ -59,9 +80,10 @@ function Invoke-Setup($Root,$Mode,[string]$Lang) {
         if ($Mode -eq 'Install' -and $Lang) { $args+=@('-Language',$Lang) }
     }
     & "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe" @args
-    if ($LASTEXITCODE -ne 0) { throw "설치 도구가 실패했습니다 ($Mode). 위 오류와 복원 안내를 확인하세요." }
+    if ($LASTEXITCODE -ne 0) { throw "설치 도구가 실패했습니다 ($Mode). 위 오류를 확인하고 같은 Update.cmd를 다시 실행하세요." }
 }
 try {
+    if ($Action -eq 'Restore') { throw '백업 없는 덮어쓰기 방식입니다. 복원은 제공하지 않습니다. 설치 중단 시 Update.cmd를 다시 실행하세요.' }
     if ($Action -ne 'Update' -and ($Language -ne 'Auto' -or $ChooseLanguage)) { throw 'Language selection applies only to Update.' }
     if ($ChooseLanguage -and $Language -ne 'Auto') { throw 'Use either -ChooseLanguage or -Language.' }
     $trust=Read-Json (Join-Path $PSScriptRoot 'trust.json')
@@ -76,22 +98,6 @@ try {
     if ($state -and $state.schema -ne 1) { throw '지원하지 않는 로컬 상태입니다.' }
     if (-not $GamePath -and $state) { $GamePath=$state.game }
     if (-not $DocumentsPath -and $state) { $DocumentsPath=$state.documents }
-    if ($Action -eq 'Restore') {
-        if (-not $state) { throw '온라인 설치 기록이 없습니다. 기존 배포 팩의 Restore.cmd를 사용하세요.' }
-        if ($GamePath -ine $state.game -or $DocumentsPath -ine $state.documents) { throw '복원은 설치 기록과 같은 경로에서 실행해야 합니다.' }
-        Assert-GameClosed
-        $saved=Resolve-SafeChild $cache $state.stage
-        $channel=Validate-Channel ([IO.File]::ReadAllBytes((Join-Path $saved 'channel.json'))) ([IO.File]::ReadAllBytes((Join-Path $saved 'channel.sig'))) -AllowLegacy
-        $raw=[IO.File]::ReadAllBytes((Join-Path $saved 'catalog.json'))
-        if ($raw.Length -ne $channel.catalog_bytes -or (Byte-Hash $raw) -cne $channel.catalog_sha256) { throw '복원 도구 목록이 손상되었습니다.' }
-        $catalog=Read-ValidatedCatalog $raw $trust.repository
-        $pack=Join-Path $saved 'pack'
-        Validate-Files $catalog $pack
-        Invoke-Setup $pack 'Restore'
-        $state.status='restored'
-        Save-Json $statePath $state
-        exit 0
-    }
     if (-not $GamePath) {
         Add-Type -AssemblyName System.Windows.Forms
         $picker=New-Object Windows.Forms.OpenFileDialog
@@ -202,7 +208,9 @@ try {
     $stageRel='packs/'+$catalog.Release+'/'+[Guid]::NewGuid().ToString('N')
     $stage=Resolve-SafeChild $cache $stageRel
     $pack=Join-Path $stage 'pack'
+    if (Test-Path -LiteralPath $stage) { throw '임시 다운로드 폴더가 이미 존재합니다.' }
     [void][IO.Directory]::CreateDirectory($pack)
+    $ownedStage=$stageRel
     [IO.File]::WriteAllBytes((Join-Path $stage 'channel.json'),$channelRaw)
     [IO.File]::WriteAllBytes((Join-Path $stage 'channel.sig'),$signature)
     [IO.File]::WriteAllBytes((Join-Path $stage 'catalog.json'),$catalogRaw)
@@ -227,21 +235,30 @@ try {
     Validate-Files $catalog $pack
     Invoke-Setup $pack 'Verify'
     Assert-GameClosed
-    # Persist the verified recovery tool before applying, including interrupted installs.
+    # Record the installation state without retaining an old installation.
+    # Previous verified incoming files have already been reused into the new stage.
+    if ($state -and $state.stage -and $state.stage -cne $stageRel) {
+        try { Remove-IncomingStage $cache $state.stage }
+        catch { Write-Warning ('이전 임시 다운로드 정리를 완료하지 못했습니다: '+$_.Exception.Message) }
+    }
     $state=@{schema=1;release=$catalog.Release;stage=$stageRel;game=$GamePath;documents=$DocumentsPath;status='prepared'}
     Save-Json $statePath $state
-    Write-Host '기존 모드·캐시를 백업한 뒤 업데이트를 설치합니다. 세이브는 유지합니다.'
+    Write-Host '기존 모드·캐시·DLL을 백업 없이 덮어씁니다. 세이브는 유지합니다.'
     $langArg=$null
     if ($packHasLanguage) { $langArg=if ($requestedLang) { $requestedLang } else { 'Auto' } }
     Invoke-Setup $pack 'Install' $langArg
     $state.status='installed'
     $state.language=Read-InstalledLanguage (Join-Path $GamePath 'mod/TGCNV')
     Save-Json $statePath $state
-    Write-Host '업데이트 완료. 이전 상태가 필요하면 Restore-Update.cmd를 실행하세요.'
+    Write-Host '업데이트 완료. 백업은 생성하지 않았습니다.'
 } catch {
     Write-Host ('오류: '+$_.Exception.Message) -ForegroundColor Red
-    Write-Host '다운로드·검증 실패 시 게임 파일은 변경하지 않습니다. 설치 중 실패했다면 Restore-Update.cmd로 복원하세요.'
+    Write-Host '다운로드·검증 실패 시 게임 파일은 변경하지 않습니다. 설치 도중 중단됐다면 같은 Update.cmd를 다시 실행하세요. 이전 상태 복원은 제공하지 않습니다.'
     exit 1
 } finally {
+    if ($ownedStage) {
+        try { Remove-IncomingStage $cache $ownedStage }
+        catch { Write-Warning ('임시 다운로드 정리를 완료하지 못했습니다: '+$_.Exception.Message) }
+    }
     if ($mutex) { $mutex.ReleaseMutex(); $mutex.Dispose() }
 }

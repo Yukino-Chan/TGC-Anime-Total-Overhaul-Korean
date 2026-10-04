@@ -10,6 +10,7 @@ param(
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 $PackRoot = $PSScriptRoot
+$ownedStages=New-Object 'Collections.Generic.List[object]'
 Import-Module (Join-Path $PackRoot 'Language.psm1') -Force -DisableNameChecking
 
 function Hash-File([string]$Path) {
@@ -219,7 +220,7 @@ function Verify-Payload($Manifest,[string]$Root) {
     Write-Progress -Activity '배포 파일 검사' -Completed
 }
 function Game-Profile([string]$Root,[string]$Expected) {
-    $path=Join-Path $Root 'v2game.exe'
+    $path=Child-Path $Root 'v2game.exe'
     $bytes=[IO.File]::ReadAllBytes($path)
     $original=Hash-Bytes $bytes
     if ($original -ceq $Expected) { return @{ original=$original; adjust=$false; bytes=$bytes } }
@@ -230,64 +231,100 @@ function Game-Profile([string]$Root,[string]$Expected) {
     if ((Hash-Bytes $bytes) -cne $Expected) { throw '지원하지 않는 v2game.exe입니다. 설치 안내의 3.04 실행 파일 조건을 확인해 주세요. 파일은 변경하지 않았습니다.' }
     return @{ original=$original; adjust=$true; bytes=$bytes }
 }
-function Transaction-Path($Receipt,$Op,[string]$Kind) {
-    $root = if ($Op.scope -eq 'game') { $Receipt.game } elseif ($Op.scope -eq 'profile') { $Receipt.profile } else { throw '잘못된 백업 범위입니다.' }
-    if ($Op.scope -eq 'game' -and $Op.relative -notin @('mod/TGCNV','mod/TGCNV.mod','mod/TGO','mod/TGO.mod','lua51.dll','lua51_ori.dll','tgcnv_memory_bridge.dll','tgcnv_lua51_ori.dll','tgcnv_bootstrap_install.txt','v2game.exe','TGCNV.exe','launcher/launcher.cfg')) { throw '잘못된 게임 백업 항목입니다.' }
-    if ($Op.scope -eq 'profile' -and $Op.relative -ne 'map/cache') { throw '잘못된 캐시 백업 항목입니다.' }
-    if ($Kind -eq 'target') { return Child-Path $root $Op.relative }
-    return Child-Path $root ("TGCNV_Backups/$($Receipt.id)/$Kind/$($Op.relative)")
+function Install-Path($Receipt,$Op,[ValidateSet('target','stage')][string]$Kind) {
+    if ($Receipt.id -cnotmatch '^\d{8}-\d{6}-[0-9a-f]{8}$') { throw '잘못된 설치 작업 ID입니다.' }
+    $root = if ($Op.scope -ceq 'game') { $Receipt.game } elseif ($Op.scope -ceq 'profile') { $Receipt.profile } else { throw '잘못된 설치 범위입니다.' }
+    if ($Op.scope -ceq 'game' -and $Op.relative -cnotin @('mod/TGCNV','mod/TGCNV.mod','mod/TGO','mod/TGO.mod','lua51.dll','lua51_ori.dll','tgcnv_memory_bridge.dll','tgcnv_lua51_ori.dll','tgcnv_bootstrap_install.txt','v2game.exe','TGCNV.exe','launcher/launcher.cfg')) { throw '허용되지 않은 게임 설치 항목입니다.' }
+    if ($Op.scope -ceq 'profile' -and $Op.relative -cne 'map/cache') { throw '허용되지 않은 캐시 설치 항목입니다.' }
+    if ($Kind -ceq 'target') { return Child-Path $root $Op.relative }
+    return Child-Path $root ("TGCNV_Install/$($Receipt.id)/stage/$($Op.relative)")
 }
-function Test-LauncherNoBackup($Op) {
-    if ($Op.scope -ne 'game' -or $Op.relative -ne 'TGCNV.exe') { return $false }
-    if ($Op -is [Collections.IDictionary]) {
-        return ($Op.Contains('replace_without_backup') -and $Op['replace_without_backup'] -eq $true)
+function Assert-PlainTree([string]$Path) {
+    Assert-SafePath $Path
+    if (-not (Test-Path -LiteralPath $Path)) { return }
+    $stack=New-Object 'Collections.Generic.Stack[string]'
+    $stack.Push([IO.Path]::GetFullPath($Path))
+    while ($stack.Count -gt 0) {
+        $current=$stack.Pop()
+        $item=Get-Item -LiteralPath $current -Force
+        if ($item.Attributes -band [IO.FileAttributes]::ReparsePoint) { throw "연결 파일이나 폴더는 덮어쓸 수 없습니다: $current" }
+        if ($item.PSIsContainer) {
+            foreach ($child in Get-ChildItem -LiteralPath $current -Force) {
+                if ($child.Attributes -band [IO.FileAttributes]::ReparsePoint) { throw "연결 파일이나 폴더는 덮어쓸 수 없습니다: $($child.FullName)" }
+                if ($child.PSIsContainer) { $stack.Push($child.FullName) }
+            }
+        }
     }
-    $property=$Op.PSObject.Properties['replace_without_backup']
-    return ($null -ne $property -and $property.Value -eq $true)
 }
-function Restore-Transaction($Receipt,[string]$ReceiptPath) {
-    Assert-Closed
-    if ($Receipt.id -notmatch '^\d{8}-\d{6}-[0-9a-f]{8}$') { throw '잘못된 백업 ID입니다.' }
-    # Check every backup before moving anything. The removed+target pair also
-    # covers interruption after the original was restored but before journaling.
-    foreach ($op in $Receipt.operations) {
-        if ($op.restored -or -not $op.had_before -or (Test-LauncherNoBackup $op)) { continue }
-        $before=Transaction-Path $Receipt $op 'before'
-        if (Test-Path -LiteralPath $before) { continue }
-        $target=Transaction-Path $Receipt $op 'target'
-        $stage=Transaction-Path $Receipt $op 'stage'
-        $removed=Transaction-Path $Receipt $op 'removed'
-        if (-not (Test-Path -LiteralPath $target) -or
-            (-not (Test-Path -LiteralPath $stage) -and -not (Test-Path -LiteralPath $removed))) {
-            throw "원본 백업이 누락되어 복원할 수 없습니다: $before"
-        }
+function Remove-InstallTarget($Receipt,$Op) {
+    # Install-Path restricts deletion to the exact managed mod/cache/native paths.
+    $target=Install-Path $Receipt $Op 'target'
+    Assert-PlainTree $target
+    if (Test-Path -LiteralPath $target) { Remove-Item -LiteralPath $target -Recurse -Force }
+}
+function Set-OverwriteTarget($Receipt,$Op) {
+    $target=Install-Path $Receipt $Op 'target'
+    $stage=Install-Path $Receipt $Op 'stage'
+    Assert-PlainTree $target
+    Assert-PlainTree $stage
+    if (-not (Test-Path -LiteralPath $stage)) { throw "준비된 설치 파일이 없습니다: $stage" }
+    if ([IO.Directory]::Exists($stage)) {
+        Remove-InstallTarget $Receipt $Op
+        Move-Safe $stage $target
+    } elseif ([IO.File]::Exists($target)) {
+        # ReplaceFile with a null backup path does not retain the previous file.
+        [IO.File]::Replace($stage,$target,[NullString]::Value)
+    } else {
+        if (Test-Path -LiteralPath $target) { Remove-InstallTarget $Receipt $Op }
+        Move-Safe $stage $target
     }
-    for ($i=$Receipt.operations.Count-1;$i -ge 0;$i--) {
-        $op=$Receipt.operations[$i]
-        $target=Transaction-Path $Receipt $op 'target'
-        $before=Transaction-Path $Receipt $op 'before'
-        $stage=Transaction-Path $Receipt $op 'stage'
-        $removed=Transaction-Path $Receipt $op 'removed'
-        $mustRestore=Test-Path -LiteralPath $before
-        $newApplied=(-not $op.had_before) -and (-not (Test-Path -LiteralPath $stage))
-        if ($op.restored) { continue }
-        if (Test-LauncherNoBackup $op) {
-            $op.restored=$true
-            Save-Json $ReceiptPath $Receipt
-            continue
+}
+function Remove-OwnedStage([string]$Root,[string]$Id) {
+    if ($Id -cnotmatch '^\d{8}-\d{6}-[0-9a-f]{8}$') { throw '잘못된 임시 설치 경로입니다.' }
+    $stage=Child-Path $Root ("TGCNV_Install/$Id")
+    Assert-PlainTree $stage
+    if (Test-Path -LiteralPath $stage) { Remove-Item -LiteralPath $stage -Recurse -Force }
+}
+
+function Test-OverwriteLuaRecovery($GamePath,$Profile,$Manifest,[string]$BootstrapHash,[string]$CurrentOriHash) {
+    # Strict [bool] gate: permits rerunning only the SAME verified pack in overwrite mode.
+    try {
+        if ($null -eq $GamePath -or $null -eq $Profile -or $null -eq $Manifest) { return $false }
+        if ($BootstrapHash -cnotmatch '^[0-9a-f]{64}$') { return $false }
+        $oriHash = $Manifest.original_lua_sha256
+        if ($oriHash -isnot [string] -or $oriHash -cnotmatch '^[0-9a-f]{64}$') { return $false }
+        if ($Manifest.release -isnot [string]) { return $false }
+        $raw = Get-Content -LiteralPath (Child-Path $GamePath 'TGCNV_Install/receipt.json') -Raw -Encoding UTF8 -ErrorAction Stop
+        if (-not $raw.TrimStart().StartsWith('{',[StringComparison]::Ordinal)) { return $false }
+        $receipt = $raw | ConvertFrom-Json -ErrorAction Stop
+        if ($null -eq $receipt -or $receipt -isnot [System.Management.Automation.PSCustomObject]) { return $false }
+        # Schema must be the integer 2; booleans, fractional (or any non-integer type) are rejected.
+        $schema = $receipt.schema
+        if ($schema -isnot [int] -and $schema -isnot [long]) { return $false }
+        if ($schema -ne 2) { return $false }
+        if ($receipt.mode -isnot [string] -or $receipt.mode -cne 'overwrite_no_backup') { return $false }
+        if ($receipt.status -isnot [string] -or ($receipt.status -cne 'applying' -and $receipt.status -cne 'failed')) { return $false }
+        if ($receipt.game -isnot [string] -or $receipt.game -ine $GamePath) { return $false }
+        if ($receipt.profile -isnot [string] -or $receipt.profile -ine $Profile) { return $false }
+        if ($receipt.release -isnot [string] -or $receipt.release -cne $Manifest.release) { return $false }
+        if ($receipt.original_lua_sha256 -isnot [string] -or $receipt.original_lua_sha256 -cne $oriHash) { return $false }
+        if ($receipt.incoming_bootstrap_sha256 -isnot [string] -or $receipt.incoming_bootstrap_sha256 -cne $BootstrapHash) { return $false }
+        # Accepted current-ori states: only this pack's original or this pack's bootstrap.
+        if ($CurrentOriHash -cne $oriHash -and $CurrentOriHash -cne $BootstrapHash) {
+            # A fresh install can stop after saving the required original Lua,
+            # before creating lua51_ori.dll for the first time.
+            if ($CurrentOriHash -or (Test-Path -LiteralPath (Child-Path $GamePath 'lua51_ori.dll')) -or (Hash-File (Child-Path $GamePath 'lua51.dll')) -cne $oriHash) { return $false }
         }
-        if ($mustRestore -or $newApplied) {
-            if (Test-Path -LiteralPath $target) { Move-Safe $target $removed }
-            if ($mustRestore) { Move-Safe $before $target }
-        }
-        $op.restored=$true
-        Save-Json $ReceiptPath $Receipt
+        $saved = Child-Path $GamePath 'tgcnv_lua51_ori.dll'
+        if (-not (Test-Path -LiteralPath $saved -PathType Leaf)) { return $false }
+        if ((Hash-File $saved) -cne $oriHash) { return $false }
+        return $true
     }
-    $Receipt.status='restored'
-    Save-Json $ReceiptPath $Receipt
+    catch { return $false }
 }
 
 try {
+    if ($Action -eq 'Restore') { throw '이 설치기는 백업 없이 덮어씁니다. 이전 상태 복원은 제공하지 않습니다. 설치가 중단됐다면 같은 Setup.cmd를 다시 실행하세요.' }
     if ($Action -ne 'Install' -and $Language -ne 'Auto') { throw 'Language applies only to Install.' }
     $created=$false
     $setupMutex=New-Object Threading.Mutex($true,'Local\TGCNV_DistributionSetup',[ref]$created)
@@ -314,29 +351,8 @@ try {
     if ($GamePath -match '^[A-Za-z]:$') { $GamePath+='\' }
     Assert-SafePath $GamePath
     Assert-Closed
-    if ($Action -eq 'Restore') {
-        $backupRoot=Child-Path $GamePath 'TGCNV_Backups'
-        if (-not $BackupId) {
-            $candidates=@(Get-ChildItem -LiteralPath $backupRoot -Directory | Sort-Object Name -Descending | Where-Object {
-                $j=Join-Path $_.FullName 'receipt.json'
-                (Test-Path -LiteralPath $j) -and ((Get-Content -LiteralPath $j -Raw -Encoding UTF8 | ConvertFrom-Json).status -ne 'restored')
-            })
-            if (-not $candidates.Count) { throw '복원할 설치 백업이 없습니다.' }
-            $BackupId=$candidates[0].Name
-        }
-        if ($BackupId -notmatch '^\d{8}-\d{6}-[0-9a-f]{8}$') { throw '잘못된 백업 ID입니다.' }
-        $receiptPath=Child-Path $backupRoot "$BackupId/receipt.json"
-        $receipt=Get-Content -LiteralPath $receiptPath -Raw -Encoding UTF8 | ConvertFrom-Json
-        if ($receipt.game -ine $GamePath -or $receipt.id -cne $BackupId) { throw '이 게임 폴더의 백업이 아닙니다.' }
-        Restore-Transaction $receipt $receiptPath
-        Write-Host '백업된 파일을 설치 전 상태로 복원했습니다. 세이브는 변경하지 않았습니다.'
-        if (@($receipt.operations | Where-Object { Test-LauncherNoBackup $_ }).Count -gt 0) {
-            Write-Host '백업 없이 교체한 공식 TGCNV.exe는 최신 상태를 유지합니다.'
-        }
-        exit 0
-    }
     $gameInfo=Game-Profile $GamePath $manifest.game_sha256
-    if ((Hash-File (Join-Path $GamePath 'lua5.1.dll')) -cne $manifest.base_lua_sha256) { throw '지원하는 기본 lua5.1.dll이 아닙니다. 게임 파일을 확인해 주세요.' }
+    if ((Hash-File (Child-Path $GamePath 'lua5.1.dll')) -cne $manifest.base_lua_sha256) { throw '지원하는 기본 lua5.1.dll이 아닙니다. 게임 파일을 확인해 주세요.' }
     if (-not (Test-Path -LiteralPath (Join-Path $GamePath 'victoria2.exe'))) { throw 'Victoria II 런처가 없는 폴더입니다.' }
     if (-not $DocumentsPath) { $DocumentsPath=[Environment]::GetFolderPath('MyDocuments') }
     if (-not $DocumentsPath) { throw '문서 폴더를 찾지 못했습니다. -DocumentsPath로 지정해 주세요.' }
@@ -345,20 +361,24 @@ try {
         Write-Warning '게임/문서 경로에 비영문 문자가 있습니다. 일부 네이티브 지도 처리는 영문 경로만 지원하므로 설치 안내의 경로 제한을 확인해 주세요.'
     }
     $knownKorean=@('8b95a4cfbda4cc520dc26ad0f8516cd1cf8469c4e2ce73ed44a84ea1f6138629','e7677f677d186e95a45d770baa6827d8369aeb69b02b82d69c1a0b6c1e4d41dc','5602ccc12f5ede7c30e73670f161e2a77a0f80abf5bfe934dd30b0a99835e485','213b773ec7ead206fe0c33be3658081e9547391ab923c4c18a0a056d60d56c2c')
-    $luaPath=Join-Path $GamePath 'lua51.dll'
+    $luaPath=Child-Path $GamePath 'lua51.dll'
     $luaHash=Hash-File $luaPath
-    $ori=Join-Path $GamePath 'lua51_ori.dll'
-    $saved=Join-Path $GamePath 'tgcnv_lua51_ori.dll'
-    $bootstrapReceipt=Join-Path $GamePath 'tgcnv_bootstrap_install.txt'
+    $ori=Child-Path $GamePath 'lua51_ori.dll'
+    $saved=Child-Path $GamePath 'tgcnv_lua51_ori.dll'
+    $bootstrapReceipt=Child-Path $GamePath 'tgcnv_bootstrap_install.txt'
     $bootstrapHash=Hash-File (Join-Path $PackRoot 'payload/game/lua51_ori.dll')
-    if (Test-Path -LiteralPath $saved) {
-        if ((Hash-File $saved) -cne $manifest.original_lua_sha256 -or -not (Test-Path -LiteralPath $bootstrapReceipt)) { throw '기존 Lua 백업의 소유/해시를 확인할 수 없습니다.' }
+    $currentOriHash=$null
+    if (Test-Path -LiteralPath $ori -PathType Leaf) { $currentOriHash=Hash-File $ori }
+    $overwriteRecovery=Test-OverwriteLuaRecovery $GamePath $profile $manifest $bootstrapHash $currentOriHash
+    if ($overwriteRecovery) { $originalSource=$saved }
+    elseif (Test-Path -LiteralPath $saved) {
+        if ((Hash-File $saved) -cne $manifest.original_lua_sha256 -or -not (Test-Path -LiteralPath $bootstrapReceipt)) { throw '원본 Lua 실행 의존 파일의 설치 기록/해시를 확인할 수 없습니다.' }
         $record=[IO.File]::ReadAllText($bootstrapReceipt)
         if ($record -notmatch '(?m)^TGCNV_BOOTSTRAP_INSTALL 1\r?$' -or $record -notmatch ('(?m)^backup_sha256='+$manifest.original_lua_sha256+'\r?$') -or $record -notmatch '(?m)^pending_sha256=-\r?$') { throw '기존 Lua 설치 기록이 올바르지 않거나 설치가 중단된 상태입니다.' }
         $installed=[regex]::Match($record,'(?m)^installed_sha256=([0-9a-f]{64})\r?$')
         if (-not $installed.Success -or (Hash-File $ori) -cne $installed.Groups[1].Value) { throw '기존 Lua 설치 기록과 실제 파일이 다릅니다.' }
         $originalSource=$saved
-    } elseif (Test-Path -LiteralPath $bootstrapReceipt) { throw 'Lua 설치 기록은 있지만 원본 백업이 없습니다.' }
+    } elseif (Test-Path -LiteralPath $bootstrapReceipt) { throw 'Lua 설치 기록은 있지만 원본 실행 의존 파일이 없습니다.' }
     elseif ($luaHash -ceq $manifest.original_lua_sha256) {
         if ((Test-Path -LiteralPath $ori) -and (Hash-File $ori) -cne $manifest.original_lua_sha256) { throw '다른 Lua 연결이 이미 설치되어 있습니다.' }
         $originalSource=$luaPath
@@ -401,28 +421,31 @@ try {
         if (@(Get-ChildItem -LiteralPath $tgoPayloadDir -Recurse -Force -File).Count -lt 1) { throw 'TGO 배포 폴더가 비어 있습니다. 압축을 다시 풀어 주세요.' }
     }
     $id=(Get-Date -Format 'yyyyMMdd-HHmmss')+'-'+[Guid]::NewGuid().ToString('N').Substring(0,8)
-    $txn=Child-Path $GamePath "TGCNV_Backups/$id"
-    $profileTxn=Child-Path $profile "TGCNV_Backups/$id"
-    $pendingRoot=Child-Path $GamePath 'TGCNV_Backups'
-    if (Test-Path -LiteralPath $pendingRoot) {
-        foreach ($prior in Get-ChildItem -LiteralPath $pendingRoot -Directory) {
-            $j=Join-Path $prior.FullName 'receipt.json'
-            if ((Test-Path -LiteralPath $j) -and (Get-Content -LiteralPath $j -Raw -Encoding UTF8 | ConvertFrom-Json).status -eq 'applying') { throw '이전 설치가 중단되었습니다. Restore.cmd로 복원한 뒤 다시 설치해 주세요.' }
-        }
+    $installRoot=Child-Path $GamePath 'TGCNV_Install'
+    $txn=Child-Path $GamePath "TGCNV_Install/$id"
+    $profileTxn=Child-Path $profile "TGCNV_Install/$id"
+    $receiptPath=Child-Path $GamePath 'TGCNV_Install/receipt.json'
+    $priorReceipt=$null
+    if (Test-Path -LiteralPath $receiptPath -PathType Leaf) {
+        try { $priorReceipt=Get-Content -LiteralPath $receiptPath -Raw -Encoding UTF8 | ConvertFrom-Json } catch { $priorReceipt=$null }
     }
+    if (Test-Path -LiteralPath $txn) { throw '임시 설치 폴더가 이미 존재합니다.' }
+    if (Test-Path -LiteralPath $profileTxn) { throw '임시 캐시 폴더가 이미 존재합니다.' }
     $langCatalog=Read-LanguageCatalog $PackRoot $manifest
     $installedLang=Read-InstalledLanguage (Join-Path $GamePath 'mod/TGCNV')
     $selectedLanguage=Resolve-LanguageChoice -Requested $Language -Catalog $langCatalog -Installed $installedLang
     [IO.Directory]::CreateDirectory($txn) | Out-Null
+    $ownedStages.Add(@{root=$GamePath;id=$id})
     [IO.Directory]::CreateDirectory($profileTxn) | Out-Null
-    Write-Host '파일을 준비하고 있습니다. 기존 모드와 지도 캐시는 별도 백업으로 보존합니다...'
+    $ownedStages.Add(@{root=$profile;id=$id})
+    Write-Host '새 파일을 준비합니다. 기존 모드·캐시·DLL은 백업 없이 덮어씁니다...'
     Copy-Item -LiteralPath (Join-Path $PackRoot 'payload/game') -Destination (Join-Path $txn 'stage') -Recurse
     Copy-Item -LiteralPath (Join-Path $PackRoot 'payload/profile') -Destination (Join-Path $profileTxn 'stage') -Recurse
     Copy-Item -LiteralPath $originalSource -Destination (Join-Path $txn 'stage/tgcnv_lua51_ori.dll')
     $text="TGCNV_BOOTSTRAP_INSTALL 1`nbackup_sha256=$($manifest.original_lua_sha256)`ninstalled_sha256=$bootstrapHash`npending_sha256=-`n"
     [IO.File]::WriteAllText((Join-Path $txn 'stage/tgcnv_bootstrap_install.txt'),$text,[Text.UTF8Encoding]::new($false))
     if ($gameInfo.adjust) {
-        Write-Host '호환되는 원본 EXE를 확인했습니다. 백업 후 4GB 메모리 플래그 1비트만 적용합니다.'
+        Write-Host '호환되는 원본 EXE를 확인했습니다. 4GB 메모리 플래그 1비트만 적용합니다.'
         [IO.File]::WriteAllBytes((Join-Path $txn 'stage/v2game.exe'),$gameInfo.bytes)
     }
     foreach ($entry in $manifest.files) {
@@ -430,6 +453,8 @@ try {
         $root=if ($entry.path.StartsWith('payload/game/')) { $txn } else { $profileTxn }
         if ((Hash-File (Join-Path $root "stage/$rel")) -cne $entry.sha256) { throw "복사 검증에 실패했습니다: $rel" }
     }
+    if ((Hash-File (Join-Path $txn 'stage/tgcnv_lua51_ori.dll')) -cne $manifest.original_lua_sha256) { throw '원본 Lua 실행 의존 파일의 복사 검증에 실패했습니다.' }
+    if ($gameInfo.adjust -and (Hash-File (Join-Path $txn 'stage/v2game.exe')) -cne $manifest.game_sha256) { throw '4GB 메모리 플래그 파일 검증에 실패했습니다.' }
     if ($langCatalog) {
         [void](Set-StagedLanguage -StageGameRoot (Join-Path $txn 'stage') -Manifest $manifest -Language $selectedLanguage)
     }
@@ -444,50 +469,67 @@ try {
     if ($hasTgo) { $gameRelatives+=@('mod/TGO','mod/TGO.mod') }
     $gameRelatives+=@('tgcnv_memory_bridge.dll','tgcnv_lua51_ori.dll','lua51_ori.dll','tgcnv_bootstrap_install.txt','lua51.dll')
     foreach ($relative in $gameRelatives) {
-        $ops+=@{scope='game';relative=$relative;had_before=(Test-Path -LiteralPath (Child-Path $GamePath $relative));restored=$false}
+        $ops+=@{scope='game';relative=$relative;had_before=(Test-Path -LiteralPath (Child-Path $GamePath $relative));applied=$false}
     }
     if ($launcherPlan) {
-        $ops+=@{scope='game';relative='launcher/launcher.cfg';had_before=$true;restored=$false}
+        $ops+=@{scope='game';relative='launcher/launcher.cfg';had_before=$true;applied=$false}
     }
-    if ($gameInfo.adjust) { $ops+=@{scope='game';relative='v2game.exe';had_before=$true;restored=$false} }
-    $ops+=@{scope='profile';relative='map/cache';had_before=(Test-Path -LiteralPath (Child-Path $profile 'map/cache'));restored=$false}
-    # Apply the approved no-backup launcher replacement last.
+    if ($gameInfo.adjust) { $ops+=@{scope='game';relative='v2game.exe';had_before=$true;applied=$false} }
+    $ops+=@{scope='profile';relative='map/cache';had_before=(Test-Path -LiteralPath (Child-Path $profile 'map/cache'));applied=$false}
+    # Apply the validated prelaunch executable last.
     if (Test-Path -LiteralPath $tgcnvExePayload) {
-        $ops+=@{scope='game';relative='TGCNV.exe';had_before=($null -ne $tgcnvExeTargetHash);restored=$false;replace_without_backup=($tgcnvExeTargetHash -ceq $tgcnvExePriorHash)}
+        $ops+=@{scope='game';relative='TGCNV.exe';had_before=($null -ne $tgcnvExeTargetHash);applied=$false}
     }
-    $receipt=@{schema=1;id=$id;game=$GamePath;profile=$profile;release=$manifest.release;language=$selectedLanguage;status='applying';operations=$ops}
-    $receiptPath=Join-Path $txn 'receipt.json'
+    $receipt=@{schema=2;mode='overwrite_no_backup';id=$id;game=$GamePath;profile=$profile;release=$manifest.release;language=$selectedLanguage;status='preparing';operations=$ops;original_lua_sha256=$manifest.original_lua_sha256;incoming_bootstrap_sha256=$bootstrapHash}
+    # Validate every deletion/replacement boundary before modifying any target.
+    foreach ($op in $ops) {
+        $target=Install-Path $receipt $op 'target'
+        $stage=Install-Path $receipt $op 'stage'
+        Assert-PlainTree $target
+        Assert-PlainTree $stage
+        if (-not (Test-Path -LiteralPath $stage)) { throw "준비된 설치 항목이 없습니다: $stage" }
+        $op.before_kind=if ([IO.Directory]::Exists($target)) { 'directory' } elseif ([IO.File]::Exists($target)) { 'file' } else { 'absent' }
+        $op.before_sha256=if ([IO.File]::Exists($target)) { Hash-File $target } else { $null }
+        $op.after_sha256=if ([IO.File]::Exists($stage)) { Hash-File $stage } else { $null }
+    }
+    if ($priorReceipt) {
+        try {
+            if ($priorReceipt.schema -eq 2 -and $priorReceipt.mode -ceq 'overwrite_no_backup' -and $priorReceipt.game -ieq $GamePath -and $priorReceipt.id -cne $id -and $priorReceipt.id -cmatch '^\d{8}-\d{6}-[0-9a-f]{8}$') {
+                Remove-OwnedStage $GamePath $priorReceipt.id
+                if ($priorReceipt.profile -ieq $profile) { Remove-OwnedStage $profile $priorReceipt.id }
+            }
+        } catch { Write-Warning ('이전 임시 새 파일 정리를 완료하지 못했습니다: '+$_.Exception.Message) }
+    }
+    Save-Json $receiptPath $receipt
+    $receipt.status='applying'
     Save-Json $receiptPath $receipt
     try {
         if ($launcherPlan -and (Hash-File $launcherCfg) -cne $launcherPlan.OriginalSha256) { throw '런처 설정이 설치 직전에 변경되었습니다.' }
         foreach ($op in $ops) {
             Assert-Closed
-            if ($op.scope -eq 'game' -and $op.relative -eq 'launcher/launcher.cfg') {
-                if (-not $launcherPlan -or (Hash-File (Transaction-Path $receipt $op 'target')) -cne $launcherPlan.OriginalSha256) { throw '런처 설정이 설치 중 변경되었습니다.' }
+            $target=Install-Path $receipt $op 'target'
+            $currentKind=if ([IO.Directory]::Exists($target)) { 'directory' } elseif ([IO.File]::Exists($target)) { 'file' } else { 'absent' }
+            if ($currentKind -cne $op.before_kind) { throw "설치 대상의 종류가 준비 중 변경되었습니다: $target" }
+            if ($null -ne $op.before_sha256 -and ((-not [IO.File]::Exists($target)) -or (Hash-File $target) -cne $op.before_sha256)) { throw "설치 대상이 준비 중 변경되었습니다: $target" }
+            if ($op.scope -ceq 'game' -and $op.relative -ceq 'launcher/launcher.cfg' -and (Hash-File $target) -cne $launcherPlan.OriginalSha256) { throw '런처 설정이 설치 중 변경되었습니다.' }
+            if ($op.scope -ceq 'game' -and $op.relative -ceq 'TGCNV.exe') {
+                $currentHash=$null
+                if (Test-Path -LiteralPath $target) { $currentHash=Hash-File $target }
+                if ($currentHash -cne $tgcnvExeTargetHash) { throw 'TGCNV.exe가 설치 준비 중 변경되었습니다.' }
             }
-            $target=Transaction-Path $receipt $op 'target'
-            if ($op.scope -eq 'game' -and $op.relative -eq 'TGCNV.exe') {
-                $tgcnvExeCurrentHash=$null
-                if (Test-Path -LiteralPath $target) { $tgcnvExeCurrentHash=Hash-File $target }
-                if ($tgcnvExeCurrentHash -cne $tgcnvExeTargetHash) {
-                    throw "TGCNV.exe가 설치 준비 중 변경되었습니다. 해당 파일을 보관하고 다른 설치 작업이 끝난 뒤 다시 시도하세요. 현재 SHA-256: $tgcnvExeCurrentHash"
-                }
-            }
-            if (Test-LauncherNoBackup $op) {
-                Write-Host '이전 공식 TGCNV.exe를 백업 없이 교체합니다. 이 파일은 복원해도 구버전으로 돌아가지 않습니다.'
-                [IO.File]::Replace((Transaction-Path $receipt $op 'stage'),$target,[NullString]::Value)
-            } else {
-                if ($op.had_before) { Move-Safe $target (Transaction-Path $receipt $op 'before') }
-                Move-Safe (Transaction-Path $receipt $op 'stage') $target
-            }
+            Set-OverwriteTarget $receipt $op
+            if ($null -ne $op.after_sha256 -and (Hash-File $target) -cne $op.after_sha256) { throw "덮어쓰기 검증 실패: $target" }
+            $op.applied=$true
+            Save-Json $receiptPath $receipt
         }
         $receipt.status='installed'
         Save-Json $receiptPath $receipt
     } catch {
         $failure=$_
-        try { Restore-Transaction $receipt $receiptPath }
-        catch { throw "설치가 중단되었으며 자동 복원도 완료하지 못했습니다. 게임을 실행하지 말고 Restore.cmd를 실행하세요. 백업: $txn / $($_.Exception.Message)" }
-        throw "설치 실패로 백업된 파일을 복원했습니다: $($failure.Exception.Message)"
+        $receipt.status='failed'
+        $receipt.error=$failure.Exception.Message
+        try { Save-Json $receiptPath $receipt } catch { }
+        throw "설치가 중단되었습니다. 백업 없이 덮어쓰는 방식이므로 같은 설치기를 다시 실행해 마무리하세요. 원인: $($failure.Exception.Message)"
     }
     $modSuffix=if ($selectedLanguage -eq 'en') { '(English)' } else { '(Korean)' }
     Write-Host ('Installed language / 설치 언어: '+$selectedLanguage)
@@ -496,7 +538,7 @@ try {
     } else {
         Write-Host "설치 완료! Victoria II 런처에서 TGC - Anime Total Overhaul ${modSuffix}만 선택해 시작하세요."
     }
-    Write-Host "백업: $txn"
+    Write-Host '백업 없이 덮어쓰기 완료. 설치 도중 중단되면 같은 설치기를 다시 실행하세요.'
     Write-Host '게임과 런처는 자동 실행하지 않습니다. 처음에는 새 캠페인으로 확인해 주세요.'
     exit 0
 } catch {
@@ -504,6 +546,10 @@ try {
     Write-Host '쓰기 권한 오류라면 현재 Windows 사용자 계정에서 Setup.cmd를 관리자 권한으로 실행하세요. 다른 계정으로 실행하면 문서 경로가 달라질 수 있습니다.'
     exit 1
 } finally {
+    foreach ($owned in $ownedStages) {
+        try { Remove-OwnedStage $owned.root $owned.id }
+        catch { Write-Warning ('임시 새 파일 정리를 완료하지 못했습니다: '+$_.Exception.Message) }
+    }
     if (Get-Variable setupMutex -ErrorAction SilentlyContinue) {
         if ($created) { $setupMutex.ReleaseMutex() }
         $setupMutex.Dispose()
