@@ -4,7 +4,7 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 설치기는 모드·캐시·DLL·런처를 **백업 없이 덮어씁니다.** 이전 버전 자동 복원은 제공하지 않으며, 설치가 중단되면 같은 설치기를 다시 실행하세요. 세이브와 개인 설정은 유지됩니다.
 
-**이번에는 최신 인스톨러 ZIP을 다시 받아 압축을 풀고 Update.cmd를 실행하세요.** 백업 없는 설치 안내와 임시 파일 정리가 적용됩니다. 기존 설치기가 만든 과거 백업은 자동 삭제하지 않습니다.
+**직전 백업 없는 설치기를 받았다면 같은 Update.cmd를 실행하면 됩니다.** 설치기는 바뀌지 않았습니다. 그보다 오래된 설치기를 쓰는 경우 최신 ZIP을 받아 주세요.
 
 ## 설치와 업데이트
 
@@ -29,9 +29,17 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-현재 실험용 엔진은 **0.6.8.38**입니다. 엔진 0.6.8.38: 항공 처리 대기가 지상·해전 이펙트 표시를 막던 조건과 전투 참가자 판정을 수정했습니다. 호시노의 대기·이동·공격 애니메이션 3개에서 방패가 왼손에 맞춰 함께 움직이도록 수정했습니다.
+현재 실험용 엔진은 **0.6.8.39**입니다. 엔진 0.6.8.39: 한글 채팅의 입력·삭제·선택·커서 이동·붙여넣기를 문자 단위로 처리하고 로비 안내문과 사용자 메시지의 인코딩·색상 코드 충돌을 수정했습니다.
 
-TGO, 한국어/English 문구와 지도 캐시는 직전 검증본을 유지합니다. 관련 엔진 7개 검사 묶음과 설치 해시는 통과했으나 이번 효과·방패의 실제 게임 표시는 아직 미검증입니다. 기존 장기 캠페인·저장 재로드·두 PC 멀티플레이 제한도 유지합니다.
+글꼴 21종에 현대 한글 11,172자와 호환 자모 94자를 등록했습니다. 기존 글자 모양·간격을 보존하고 채팅용 글꼴 1종을 추가했습니다.
+
+혁명 이벤트 3개의 한국어 번역 6개 키·12행을 교정했습니다. 한국어 언어 묶음 3개 파일도 갱신하고 정상 영문 원문은 유지했습니다.
+
+지도 캐시가 없거나 오래된 상태일 때 시작 체크섬이 달라지는 문제도 보정합니다. 해당 항목을 현재 지도 파일에서 계산하며 실제 지도 입력 차이는 계속 반영합니다. 두 PC 멀티플레이 일치 검증은 아직 하지 않았습니다.
+
+체크섬 보정 검증 중 재생성된 인접 캐시와 서명도 반영했습니다. 게임에 쓰는 인접 관계 42,818개는 이전과 같고, 이진 차이는 사용하지 않는 0번 더미 레코드뿐입니다. 지도 파일과 나머지 캐시는 그대로입니다.
+
+설치 완료 파일과 관련 오프라인 검사 10종, 한영 파일·캐시 서명을 확인했습니다. 실게임 IME 조합창·글꼴 표시·멀티플레이 채팅 송수신·저장 재로드는 아직 미검증입니다. 백업 없는 설치기와 TGO는 직전 배포와 같습니다.
 
 이전 배포에서 이어지는 기능으로, 군사·공군 시간 처리, 자정 단계 분산과 저장 변수의 반복 탐색 축소를 포함합니다. 변수 조회 객체 안에서 최근 경로만 재사용하고 현재 메모리·국가·날짜 및 저장 검사는 유지합니다. 소유 메모리 fixture 비교에서 변수 조회 비용이 17~48% 감소했지만 이 수치는 실게임 FPS나 전체 처리 시간의 개선율이 아닙니다.
 
@@ -125,7 +133,7 @@ All managed mods, cache, DLLs and launcher files are overwritten without backups
 
 ### Later updates
 
-Download the new official installer ZIP for this overwrite-only revision. Later runs reuse matching installed files and verified downloads; the selected language is remembered. Temporary incoming files are cleaned up after each run, and a small current installation receipt remains at `TGCNV_Install/receipt.json`. If installation is interrupted, rerun the same installer to complete it. `tgcnv_lua51_ori.dll` is a required original Lua runtime dependency, not a previous-version backup; do not delete it. Update only while the game and launcher are closed.
+If you already downloaded the overwrite-only installer from the preceding release, run the same Update.cmd; the installer is unchanged. Users of older clients should download the current official ZIP. Later runs reuse matching installed files and verified downloads; the selected language is remembered. Temporary incoming files are cleaned up after each run, and a small current installation receipt remains at `TGCNV_Install/receipt.json`. If installation is interrupted, rerun the same installer to complete it. `tgcnv_lua51_ori.dll` is a required original Lua runtime dependency, not a previous-version backup; do not delete it. Update only while the game and launcher are closed.
 
 ### Source archives are not installers
 
@@ -135,9 +143,13 @@ Do not open legacy events `16` or `19` through the console on a player country: 
 
 ### Compatibility and verification
 
-The current experimental engine is **0.6.8.38**. The DLL now admits ground and naval combat effects independently of pending air processing, and checks participants against the current combat view. Hoshino's idle, movement and attack animations now attach the shield to the left-hand pose derived from the original EX animation, preserving the leg motion and right-hand weapon motion.
+The current experimental engine is **0.6.8.39**. This release adds all 11,172 modern Hangul syllables and 94 compatibility jamo across 21 font pairs, including a dedicated chat font. Existing glyph shapes and metrics are retained. Chat input, cursor movement, selection, deletion, paste and length limits now preserve complete characters. Lobby system messages keep the legacy translation path while user chat uses the full Korean input encoding; generated color controls and translated country-name spans are handled without rewriting the user's message body.
 
-This update changes four installed payload files: the engine DLL and three Hoshino animations. TGO, Korean/English text and the verified map cache are retained from the preceding release. Seven recorded engine test suites and installed hashes passed; preview and offline motion checks passed. The final combat effects and shield still need confirmation in the actual game. Long-running campaign, save/reload and two-PC multiplayer/OOS limitations from the preceding release remain. The installer and online updater now overwrite managed files without retaining old-version backups; see the installation instructions above.
+Three revolution events have corrected Korean wording (six keys, twelve rows). The Korean language bank is refreshed to match; the correct original English wording remains unchanged. The DLL also retains the separately installed map-cache startup-checksum correction: a missing or stale local cache no longer changes that startup-checksum term, which is computed from the current map files instead. Actual map inputs remain covered. This is not a certification of identical multiplayer state.
+
+The regenerated adjacency cache and its signature are also included. All 42,818 passable adjacency records remain identical; only the unused province-zero dummy record differs in the binary. The map inputs and other cache files are unchanged.
+
+Ten recorded offline test suites, installed hashes, font coverage, language-bank consistency and map-cache signatures passed. Real-game IME composition, rendering, multiplayer message exchange and save/reload still need confirmation. The overwrite-only installer and TGO remain unchanged from the preceding release. The existing campaign and multiplayer limitations still apply.
 
 Features inherited from the preceding package remain available. It includes the military/air scheduling changes and separates native midnight date, military and air work into successive frames while retaining once-only processing. Repeated native saved-variable lookups reuse a bounded path inside each lookup object. Current memory, owner/date and saved-value checks remain in place. A controlled owned-memory fixture measured 17–48% lower variable-lookup cost; this is **not a measured live-game FPS or total simulation improvement**.
 

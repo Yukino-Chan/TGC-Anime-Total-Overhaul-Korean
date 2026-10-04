@@ -2034,7 +2034,7 @@ guiTypes = {
 			name = "messagelogtext"
 			position = { x = 0 y = 0 }
 			textureFile = ""
-			font = "vic_18"
+			font = "tgcnv_chat"
 			borderSize = {x = 1 y = 1}
 			text = ""	
 			maxWidth = 510
@@ -2323,4 +2323,30 @@ guiTypes = {
 		
 	}
 
+
+	windowType = {
+		name = "lobby_system_text"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=510 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		instantTextBoxType = {
+			name = "messagelogtext"
+			position = { x = 0 y = 0 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 1 y = 1}
+			text = ""	
+			maxWidth = 510
+			maxHeight = 18	
+		
+			Orientation = "UPPER_LEFT"
+		}
+		
+	}
 }

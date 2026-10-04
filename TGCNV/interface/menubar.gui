@@ -919,7 +919,7 @@ guiTypes = {
 		instantTextBoxType={
 			position = {x = 33 y = 5 }
 			name = "text_shadow"
-			font = "vic_18_black"
+			font = "tgcnv_chat_black"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 512
 			maxHeight = 18
@@ -932,7 +932,7 @@ guiTypes = {
 		instantTextBoxType={
 			position = {x = 32 y = 4 }
 			name = "text"
-			font = "vic_18"
+			font = "tgcnv_chat"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 512
 			maxHeight = 18
@@ -960,7 +960,7 @@ guiTypes = {
 		instantTextBoxType={
 			position = {x = 33 y = 5 }
 			name = "text_shadow"
-			font = "vic_18_black"
+			font = "tgcnv_chat_black"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 512
 			maxHeight = 18
@@ -973,7 +973,7 @@ guiTypes = {
 		instantTextBoxType={
 			position = {x = 32 y = 4 }
 			name = "text"
-			font = "vic_18"
+			font = "tgcnv_chat"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 512
 			maxHeight = 18
@@ -1214,7 +1214,7 @@ guiTypes = {
 				name = "chat_message"
 				#textureFile = "gfx\\interface\\small_tiles_dialog.dds"
 				textureFile = "" 
-				font = "vic_18"
+				font = "tgcnv_chat"
 				borderSize = { x = 8 y = 8 }	
 				size = { x=599 y=40 }
 				text = ""	

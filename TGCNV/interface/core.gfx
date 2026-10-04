@@ -1276,4 +1276,7 @@ fonts = {
 		color = 0xffffffff
 	}
 	
+
+	bitmapfont = { name = "tgcnv_chat" fontname = "Arial12_chat_full" color = 0xffffffff }
+	bitmapfont = { name = "tgcnv_chat_black" fontname = "Arial12_chat_full" color = 0xff000000 }
 }
