@@ -2761,7 +2761,7 @@ tgcnv_ww2_inv_deposit_guarantee_rules = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		loan_interest = -0.001
+		loan_interest = -0.005
 	}
 }
 
@@ -2793,7 +2793,7 @@ tgcnv_ww2_inv_public_bond_underwriting = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		loan_interest = -0.001
+		loan_interest = -0.005
 	}
 }
 
@@ -2825,7 +2825,7 @@ tgcnv_ww2_inv_payroll_bond_subscriptions = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		loan_interest = -0.001
+		loan_interest = -0.005
 	}
 }
 
@@ -2841,7 +2841,7 @@ tgcnv_ww2_inv_contract_cost_audits = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_input = -0.002
+		tax_eff = 0.5
 	}
 }
 
@@ -2889,7 +2889,7 @@ tgcnv_ww2_inv_reconstruction_bond_markets = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		loan_interest = -0.001
+		loan_interest = -0.005
 	}
 }
 
@@ -2921,7 +2921,7 @@ tgcnv_ww2_inv_central_bank_discount_policy = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		loan_interest = -0.001
+		loan_interest = -0.005
 	}
 }
 
@@ -2937,7 +2937,7 @@ tgcnv_ww2_inv_open_market_operations = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		loan_interest = -0.001
+		loan_interest = -0.005
 	}
 }
 
@@ -2953,7 +2953,7 @@ tgcnv_ww2_inv_treasury_cash_forecasts = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		tax_eff = 0.5
+		administrative_efficiency = 0.005
 	}
 }
 
@@ -2985,7 +2985,7 @@ tgcnv_ww2_inv_revenue_collection_schedules = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		tax_eff = 0.5
+		administrative_efficiency = 0.005
 	}
 }
 
@@ -3017,7 +3017,7 @@ tgcnv_ww2_inv_international_settlement_standards = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_input = -0.002
+		administrative_efficiency = 0.005
 	}
 }
 
@@ -3033,7 +3033,7 @@ tgcnv_ww2_inv_exchange_stabilization_funds = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		loan_interest = -0.001
+		loan_interest = -0.005
 	}
 }
 
@@ -3065,7 +3065,7 @@ tgcnv_ww2_inv_national_income_surveys = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		administrative_efficiency = 0.005
+		factory_input = -0.005
 	}
 }
 
@@ -3081,7 +3081,7 @@ tgcnv_ww2_inv_industrial_census_tables = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_input = -0.002
+		factory_input = -0.005
 	}
 }
 
@@ -3097,7 +3097,7 @@ tgcnv_ww2_inv_public_works_appraisal = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_cost = -0.005
+		factory_input = -0.005
 	}
 }
 
@@ -3113,7 +3113,7 @@ tgcnv_ww2_inv_countercyclical_budgeting = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_output = 0.005
+		factory_input = -0.005
 	}
 }
 
@@ -3129,7 +3129,7 @@ tgcnv_ww2_inv_materials_priority_boards = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_throughput = 0.005
+		factory_input = -0.005
 	}
 }
 
@@ -3145,7 +3145,7 @@ tgcnv_ww2_inv_industrial_capacity_surveys = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_input = -0.002
+		factory_input = -0.005
 	}
 }
 
@@ -3161,7 +3161,7 @@ tgcnv_ww2_inv_input_output_tables = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_input = -0.002
+		factory_input = -0.005
 	}
 }
 
@@ -3177,7 +3177,7 @@ tgcnv_ww2_inv_bottleneck_analysis = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_throughput = 0.005
+		factory_input = -0.005
 	}
 }
 
@@ -3193,7 +3193,7 @@ tgcnv_ww2_inv_reconstruction_investment_plans = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_cost = -0.005
+		factory_input = -0.005
 	}
 }
 
@@ -3209,7 +3209,7 @@ tgcnv_ww2_inv_civilian_demand_forecasts = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_output = 0.005
+		factory_input = -0.005
 	}
 }
 
@@ -3225,7 +3225,7 @@ tgcnv_ww2_inv_wholesale_inventory_networks = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_input = -0.002
+		factory_input = -0.005
 	}
 }
 
@@ -3241,7 +3241,7 @@ tgcnv_ww2_inv_standard_shipping_documents = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		administrative_efficiency = 0.005
+		influence = 0.005
 	}
 }
 
@@ -3257,7 +3257,7 @@ tgcnv_ww2_inv_reserve_warehouse_management = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		supply_limit = 0.01
+		influence = 0.005
 	}
 }
 
@@ -3273,7 +3273,7 @@ tgcnv_ww2_inv_fuel_stock_rotation = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { fuel = 0.01 }
+		influence = 0.005
 	}
 }
 
@@ -3289,7 +3289,7 @@ tgcnv_ww2_inv_ration_distribution_registers = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		administrative_efficiency = 0.005
+		influence = 0.005
 	}
 }
 
@@ -3305,7 +3305,7 @@ tgcnv_ww2_inv_bulk_procurement_contracts = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_input = -0.002
+		factory_input = -0.005
 	}
 }
 
@@ -3321,7 +3321,7 @@ tgcnv_ww2_inv_freight_priority_schedules = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		supply_limit = 0.01
+		influence = 0.01
 	}
 }
 
@@ -3337,7 +3337,7 @@ tgcnv_ww2_inv_rail_port_coordination = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_throughput = 0.005
+		influence = 0.01
 	}
 }
 
@@ -3353,7 +3353,7 @@ tgcnv_ww2_inv_customs_document_unification = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		administrative_efficiency = 0.005
+		influence = 0.01
 	}
 }
 
@@ -3369,7 +3369,7 @@ tgcnv_ww2_inv_export_credit_guarantees = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_output = 0.005
+		influence = 0.01
 	}
 }
 
@@ -3385,7 +3385,7 @@ tgcnv_ww2_inv_departmental_cost_accounting = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_input = -0.002
+		factory_output = 0.005
 	}
 }
 
@@ -3465,7 +3465,7 @@ tgcnv_ww2_inv_worker_retraining_centers = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		factory_output = 0.005
 	}
 }
 
@@ -3497,7 +3497,7 @@ tgcnv_ww2_inv_resource_allocation_models = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_input = -0.002
+		factory_output = 0.005
 	}
 }
 
@@ -3513,7 +3513,7 @@ tgcnv_ww2_inv_civilian_retooling_schedules = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_cost = -0.005
+		factory_output = 0.005
 	}
 }
 

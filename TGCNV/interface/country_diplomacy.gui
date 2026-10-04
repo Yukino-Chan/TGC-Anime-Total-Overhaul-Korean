@@ -1319,13 +1319,13 @@ guiTypes = {
                 font = "vic_18"
                 text = " "
                 maxWidth = 586
-                maxHeight = 28
+                maxHeight = 20
                 fixedsize = yes
             }
 
             guiButtonType = {
                 name = "tg_prestige_goodwill"
-                position = { x = 22 y = 78 }
+                position = { x = 22 y = 64 }
                 quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
                 buttonFont = "vic_18"
                 buttonText = "TGC_PRESTIGE_GOODWILL"
@@ -1333,17 +1333,17 @@ guiTypes = {
             }
             instantTextBoxType = {
                 name = "tg_prestige_effect0"
-                position = { x = 184 y = 78 }
+                position = { x = 184 y = 64 }
                 font = "vic_18"
                 text = " "
                 maxWidth = 422
-                maxHeight = 48
+                maxHeight = 36
                 fixedsize = yes
             }
 
             guiButtonType = {
                 name = "tg_prestige_offensive"
-                position = { x = 22 y = 136 }
+                position = { x = 22 y = 101 }
                 quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
                 buttonFont = "vic_18"
                 buttonText = "TGC_PRESTIGE_OFFENSIVE"
@@ -1351,21 +1351,55 @@ guiTypes = {
             }
             instantTextBoxType = {
                 name = "tg_prestige_effect1"
-                position = { x = 184 y = 136 }
+                position = { x = 184 y = 101 }
                 font = "vic_18"
                 text = " "
                 maxWidth = 422
-                maxHeight = 48
+                maxHeight = 36
                 fixedsize = yes
             }
 
+            guiButtonType = {
+                name = "tg_prestige_influence"
+                position = { x = 22 y = 138 }
+                quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
+                buttonFont = "vic_18"
+                buttonText = "TGC_PRESTIGE_INFLUENCE"
+                clicksound = click
+            }
+            instantTextBoxType = {
+                name = "tg_prestige_effect2"
+                position = { x = 184 y = 138 }
+                font = "vic_18"
+                text = " "
+                maxWidth = 422
+                maxHeight = 36
+                fixedsize = yes
+            }
+            guiButtonType = {
+                name = "tg_prestige_rally"
+                position = { x = 22 y = 175 }
+                quadTextureSprite = "GFX_tgcnv_air_ui_primary_144"
+                buttonFont = "vic_18"
+                buttonText = "TGC_PRESTIGE_RALLY"
+                clicksound = click
+            }
+            instantTextBoxType = {
+                name = "tg_prestige_effect3"
+                position = { x = 184 y = 175 }
+                font = "vic_18"
+                text = " "
+                maxWidth = 422
+                maxHeight = 36
+                fixedsize = yes
+            }
             instantTextBoxType = {
                 name = "tg_prestige_status"
-                position = { x = 22 y = 195 }
+                position = { x = 22 y = 215 }
                 font = "vic_18"
                 text = " "
                 maxWidth = 586
-                maxHeight = 36
+                maxHeight = 18
                 fixedsize = yes
             }
         }

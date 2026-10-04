@@ -7,7 +7,7 @@ tgcnv_paratrooper_short;Airborne;;;;;;;;;;;;;x
 tgcnv_paratrooper_desc;Elite infantry that can move by air transport. Transports 1-3 regiments waiting at your airbase via Military - Air Force - Special Operations. The destination also requires your own airbase.;;;;;;;;;;;;;x
 tgcnv_marine;Marines;;;;;;;;;;;;;x
 tgcnv_marine_short;Marine;;;;;;;;;;;;;x
-tgcnv_marine_desc;Elite infantry specialized in landings and river crossings. An all-marine unit has double movement speed when landing from transports onto the coast. Reduces attack penalties in amphibious and river-crossing battles by up to 50%, and mixed units reduce this according to the proportion of marines in their current strength.;;;;;;;;;;;;;x
+tgcnv_marine_desc;Elite infantry specialized in landings and river crossings. Regular army river crossing combat modifier is -2, landing and strait combat modifier is -4. Marines reduce this penalty by up to 50% according to their proportion of current strength. If all marines, river crossing -1, landing and strait -2. An all-marine unit has 2x movement speed when landing from transports onto the coast.;;;;;;;;;;;;;x
 tgcnv_armored_car_development;Armored Recon Vehicle Development;;;;;;;;;;;;;x
 tgcnv_armored_car_development_desc;Organizes army armored car units based on internal combustion engines and infiltration tactics.;;;;;;;;;;;;;x
 tgcnv_airborne_infantry;Airborne Infantry;;;;;;;;;;;;;x

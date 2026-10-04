@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "path": "TGCNV/runtime/renderer64-live/cache/all.assets",
+      "bytes": 127041852,
+      "sha256": "de9b13354bf845ada3bc9b25f200ecf993cd94c618a01611925a530411ba33ea"
+    }
+  ],
+  "installation": "Run Update.cmd from the official installer; it verifies signed metadata and downloads this generated cache with all other required files.",
+  "installer_url": "https://github.com/Yukino-Chan/TGC-Anime-Total-Overhaul-Korean/releases/download/installer/TGC-Online-Installer.zip",
+  "offline_pack": "TGCNV-TGO.zip",
+  "reason": "Generated binary exceeds the 100 MiB Git file limit. Included in the complete offline pack and GHCR catalog; not an LFS pointer."
+}

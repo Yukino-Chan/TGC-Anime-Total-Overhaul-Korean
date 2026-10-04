@@ -1,0 +1,30 @@
+TGCNV 블루 아카이브 UI 효과음 — 2026-10-04
+
+로컬에 설치된 BlueArchive의 원본 UnityFS UI 오디오 묶음에서 11개 효과음을 추출했다.
+12개 PCM WAV 오버라이드로 클릭·알림 등 14개 효과음 이름에 연결했다.
+원본 빅토리아 2 파일은 수정하지 않는다. TGCNV의 기존 항공기·폭격·핵 효과음도 그대로 유지한다.
+원래 sound.sfx 내용은 보존하고, 이미 GUI에서 부르던 close_window/start_game 정의 두 개만 추가했다.
+일반 버튼은 click 효과음을 통해 바뀌며, 닫기 전용음은 close_window를 지정한 버튼에서 사용한다.
+앞뒤의 -60 dBFS 이하 무음을 정리하고 1 ms의 가장자리 페이드와 일정한 음량 증감만 적용했다.
+최종 형식은 44.1 kHz, 16-bit PCM, 모노 WAV. 전체 파일 디코딩·음량·참조 검사는 완료했으며 게임 내 청취는 아직 확인하지 않았다.
+
+적용표
+
+일반 버튼 클릭: sound/GI_ValidClick.wav <- UI_Bubble (0.073초, -14.0 dBFS)
+닫기·뒤로가기 전용 버튼: sound/TGCNV_BA_UI_Back.wav <- UI_Button_Back (0.064초, -14.0 dBFS)
+게임 시작 확인: sound/TGCNV_BA_UI_Confirm.wav <- UI_Ready (0.397초, -12.0 dBFS)
+지역 이벤트 알림: sound/GI_MinorBlip.wav <- UI_Notice (0.174초, -14.0 dBFS)
+채팅 알림: sound/GI_ChatMessage.wav <- UI_Notice (0.174초, -16.0 dBFS)
+외교 제안 알림: sound/GI_MessageWindow.wav <- UI_Bleep_Open (0.808초, -12.0 dBFS)
+외교 성공: sound/GI_SuccessBlip.wav <- UI_Complete_Check (0.651초, -10.0 dBFS)
+외교 거절: sound/GI_FailureBlip.wav <- UI_Error_Neg_Confirm (0.587초, -12.0 dBFS)
+오류·실행 불가: sound/GI_ErrorBlip.wav <- UI_Error_Neg (0.708초, -12.0 dBFS)
+국가·주요 이벤트 알림: sound/Misc_Attention.wav <- UI_Bleep_Check_Confirm_Mid (0.635초, -10.0 dBFS)
+신문 발행·페이지 효과: sound/turning_page.wav <- UI_Treasure_Scroll (0.837초, -16.0 dBFS)
+연구 완료: sound/UI_TechnologyFinished.wav <- UI_Unlock (1.060초, -10.0 dBFS)
+
+미리듣기: 클릭 3회 → 뒤로가기 → 제안 알림 → 성공 → 오류 → 연구 완료.
+
+복원: before/interface/sound.sfx를 TGCNV/interface/sound.sfx로 돌리고, sfx_manifest.json에 적힌 새 sound 파일 12개를 TGCNV 밖으로 옮기면 기본 효과음으로 돌아간다.
+게임 실행 중이었다면 저장 후 완전히 종료하고 TGCNV를 활성화하여 재실행한다.
+소스·사용 이력·백업은 #WIP/TGCNV-bluearchive-sfx-20261004에 보관한다. 이 기록은 원본 효과음의 재배포 권한을 부여하지 않는다.

@@ -2051,3 +2051,142 @@ song = {
     }
 }
 
+
+
+# Anime and game orchestral selection - 2026-10-04
+# Source records and backups: #WIP/TGO-anime-expansion-20261004
+
+song = {
+    name = "Anime/Blue Archive - Aoharu.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = USA tag = ENG tag = FRA tag = VFR tag = PRU tag = AUS tag = GER tag = NGF tag = DNB tag = EGY tag = ALD tag = TUN tag = MOR tag = LBY tag = TKG tag = CHI tag = FIN tag = ACA tag = CHP tag = D02 tag = D07 } }
+    }
+}
+
+song = {
+    name = "Anime/Blue Archive - Constant Moderato.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = USA tag = ENG tag = FRA tag = VFR tag = ACA tag = CHP tag = D02 tag = D07 tag = NZL tag = NZF tag = ENL tag = WHA tag = IRE } }
+    }
+}
+
+song = {
+    name = "Anime/Blue Archive - Unwelcome School.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = PRU tag = AUS tag = GER tag = NGF tag = DNB tag = ANK tag = ANH tag = ATB tag = BAV tag = DZG tag = FRM tag = KUK tag = HUN tag = BRE tag = HOH tag = HES tag = HGL tag = GCF } }
+    }
+}
+
+song = {
+    name = "Anime/Arknights - March On.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = AOT tag = CPL tag = ITA tag = AKH tag = BKV tag = AST tag = ARG tag = BOL tag = CHL tag = GRE tag = SER tag = SBS tag = SIB tag = PTK tag = STG tag = MON tag = SAR tag = RPL tag = NOR } }
+    }
+}
+
+song = {
+    name = "Anime/Arknights - Requiem.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = AOT tag = CPL tag = ITA tag = AKH tag = BKV tag = AST tag = ARG tag = BOL tag = CHL tag = GRE tag = SER tag = SBS tag = SIB tag = PTK tag = STG tag = MON tag = SAR tag = RPL tag = NOR } }
+    }
+}
+
+song = {
+    name = "Anime/Fate Zero - Point Zero.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = SIC tag = ARA tag = ARU tag = ANT tag = AWA tag = BYZ tag = CRE tag = CUB tag = DOM tag = DUR tag = HAI tag = HND tag = HNZ tag = MEX tag = MGH tag = SIN tag = BUN tag = BAB tag = AZH tag = BUK tag = BHR tag = GDL } }
+    }
+}
+
+song = {
+    name = "Anime/Fate Zero - Sword Of Promised Victory.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = SIC tag = ARA tag = ARU tag = ANT tag = AWA tag = BYZ tag = CRE tag = CUB tag = DOM tag = DUR tag = HAI tag = HND tag = HNZ tag = MEX tag = MGH tag = SIN tag = BUN tag = BAB tag = AZH tag = BUK tag = BHR tag = GDL } }
+    }
+}
+
+song = {
+    name = "Anime/Genshin - Liyue Romans Fleuves.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = QNG tag = HUI tag = MCK tag = KMT tag = SXI tag = GXI tag = HNN tag = MGL tag = IMG tag = PGG tag = TAI tag = TIB tag = SZC tag = TPG } }
+    }
+}
+
+song = {
+    name = "Anime/Genshin - Rage Beneath The Mountains.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = QNG tag = HUI tag = MCK tag = KMT tag = SXI tag = GXI tag = HNN tag = MGL tag = IMG tag = PGG tag = TAI tag = TIB tag = SZC tag = TPG } }
+    }
+}
+
+song = {
+    name = "Anime/Violet Evergarden - Across The Violet Sky.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = BEL } }
+    }
+}
+
+song = {
+    name = "Anime/Frieren - Journey Of A Lifetime.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = ANC } }
+    }
+}
+
+song = {
+    name = "Anime/Frieren - Zoltraak.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = ANC } }
+    }
+}
+
+song = {
+    name = "Anime/Girls Und Panzer - Senshado March.mp3"
+    chance = {
+        modifier = { factor = 10 war = yes }
+        modifier = { factor = 0 war = no NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = RHI tag = RLE tag = SAA tag = SAX tag = REU tag = ALS } }
+    }
+}
+
+song = {
+    name = "Anime/Love Live Superstar - Main Theme.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = SPA tag = POR tag = IBR tag = CAT tag = GLC tag = CUO tag = BSQ tag = ADO } }
+    }
+}
+
+song = {
+    name = "Anime/86 - Voices Of The Chord.mp3"
+    chance = {
+        modifier = { factor = 1 }
+        modifier = { factor = 0 war = yes NOT = { OR = { has_country_flag = warsong_bypass has_country_flag = war_songs_bypass has_country_flag = war_song_bypass has_country_flag = all_songs_enabled } } }
+        modifier = { factor = 3 OR = { tag = ALB } }
+    }
+}

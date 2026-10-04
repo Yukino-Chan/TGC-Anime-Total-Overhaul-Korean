@@ -277,3 +277,14 @@ tgc_nk_1 = {
 	voicetype = single
 }
 # END TGCNV HOI4 air sound groups
+
+
+# BEGIN TGCNV Blue Archive UI aliases
+# Existing interface buttons already refer to these names.
+close_window = {
+    file = "TGCNV_BA_UI_Back.wav"
+}
+start_game = {
+    file = "TGCNV_BA_UI_Confirm.wav"
+}
+# END TGCNV Blue Archive UI aliases

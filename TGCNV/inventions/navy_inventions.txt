@@ -2372,7 +2372,9 @@ tgcnv_ww2_inv_escort_rotation_plans = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -2388,7 +2390,9 @@ tgcnv_ww2_inv_task_force_screens = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -2420,7 +2424,9 @@ tgcnv_ww2_inv_air_sea_liaison = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -2436,7 +2442,9 @@ tgcnv_ww2_inv_maritime_patrol_airframe_lines = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_goods_output = { aeroplanes = 0.01 }
+		navy_base = {
+			default_organisation = 0.5
+		}
 	}
 }
 
@@ -2452,7 +2460,9 @@ tgcnv_ww2_inv_escort_search_patterns = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -2484,7 +2494,9 @@ tgcnv_ww2_inv_landing_wave_timetables = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -2500,7 +2512,9 @@ tgcnv_ww2_inv_landing_transport_fittings = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		steam_transport = { hull = 0.1 }
+		navy_base = {
+			default_organisation = 0.5
+		}
 	}
 }
 
@@ -2516,7 +2530,9 @@ tgcnv_ww2_inv_shipyard_welding_jigs = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { steamer_convoy = 0.01 }
+		navy_base = {
+			hull = 0.5
+		}
 	}
 }
 
@@ -2532,7 +2548,9 @@ tgcnv_ww2_inv_welded_bulkheads = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		navy_base = { hull = 0.05 }
+		navy_base = {
+			hull = 0.5
+		}
 	}
 }
 
@@ -2548,7 +2566,9 @@ tgcnv_ww2_inv_cruiser_compartmentation = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		cruiser = { hull = 0.1 }
+		cruiser = {
+			hull = 0.5
+		}
 	}
 }
 
@@ -2564,7 +2584,9 @@ tgcnv_ww2_inv_cruiser_mount_standardization = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		cruiser = { gun_power = 0.1 }
+		navy_base = {
+			hull = 0.5
+		}
 	}
 }
 
@@ -2580,8 +2602,12 @@ tgcnv_ww2_inv_capital_ship_bulkheads = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		battleship = { hull = 0.1 }
-		dreadnought = { hull = 0.1 }
+		battleship = {
+			hull = 0.5
+		}
+		dreadnought = {
+			hull = 0.5
+		}
 	}
 }
 
@@ -2597,8 +2623,9 @@ tgcnv_ww2_inv_capital_ship_damage_zones = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		battleship = { default_organisation = 1 }
-		dreadnought = { default_organisation = 1 }
+		navy_base = {
+			hull = 0.5
+		}
 	}
 }
 
@@ -2614,7 +2641,9 @@ tgcnv_ww2_inv_prefabricated_hull_sections = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		navy_base = { build_time = -1 }
+		navy_base = {
+			build_time = -1
+		}
 	}
 }
 
@@ -2630,7 +2659,9 @@ tgcnv_ww2_inv_shipyard_workflow_scheduling = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { steamer_convoy = 0.01 }
+		navy_base = {
+			hull = 0.5
+		}
 	}
 }
 
@@ -2646,7 +2677,9 @@ tgcnv_ww2_inv_splinter_protection = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		navy_base = { hull = 0.05 }
+		navy_base = {
+			hull = 0.5
+		}
 	}
 }
 
@@ -2662,7 +2695,9 @@ tgcnv_ww2_inv_redundant_ship_services = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			hull = 0.5
+		}
 	}
 }
 
@@ -2678,7 +2713,9 @@ tgcnv_ww2_inv_damage_control_parties = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		navy_base = { hull = 0.05 }
+		navy_base = {
+			maximum_speed = 0.5
+		}
 	}
 }
 
@@ -2710,7 +2747,9 @@ tgcnv_ww2_inv_boiler_feed_controls = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		navy_base = { supply_consumption = -0.005 }
+		navy_base = {
+			supply_consumption = -0.005
+		}
 	}
 }
 
@@ -2726,8 +2765,12 @@ tgcnv_ww2_inv_high_pressure_steam_seals = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		cruiser = { maximum_speed = 0.1 }
-		dreadnought = { maximum_speed = 0.1 }
+		cruiser = {
+			maximum_speed = 0.5
+		}
+		dreadnought = {
+			maximum_speed = 0.5
+		}
 	}
 }
 
@@ -2743,7 +2786,9 @@ tgcnv_ww2_inv_propeller_pitch_trials = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		navy_base = { maximum_speed = 0.1 }
+		navy_base = {
+			maximum_speed = 0.5
+		}
 	}
 }
 
@@ -2759,7 +2804,9 @@ tgcnv_ww2_inv_engine_room_economizers = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		navy_base = { supply_consumption = -0.005 }
+		navy_base = {
+			supply_consumption = -0.005
+		}
 	}
 }
 
@@ -2775,7 +2822,9 @@ tgcnv_ww2_inv_automatic_fire_mains = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		navy_base = { hull = 0.05 }
+		navy_base = {
+			maximum_speed = 0.5
+		}
 	}
 }
 
@@ -2791,7 +2840,9 @@ tgcnv_ww2_inv_magazine_safety_systems = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			maximum_speed = 0.5
+		}
 	}
 }
 
@@ -2807,7 +2858,9 @@ tgcnv_ww2_inv_integrated_repair_stations = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		navy_base = { hull = 0.05 }
+		navy_base = {
+			maximum_speed = 0.5
+		}
 	}
 }
 
@@ -2839,7 +2892,7 @@ tgcnv_ww2_inv_direction_finder_calibration = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		supply_range = 0.025
 	}
 }
 
@@ -2871,7 +2924,7 @@ tgcnv_ww2_inv_sonar_operator_training = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		supply_range = 0.025
 	}
 }
 
@@ -2887,7 +2940,7 @@ tgcnv_ww2_inv_sonar_transducer_production = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { electric_gear = 0.01 }
+		supply_range = 0.025
 	}
 }
 
@@ -2903,7 +2956,9 @@ tgcnv_ww2_inv_radar_range_tables = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		navy_base = { gun_power = 0.05 }
+		navy_base = {
+			gun_power = 0.5
+		}
 	}
 }
 
@@ -2919,7 +2974,7 @@ tgcnv_ww2_inv_naval_radar_workshops = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_goods_output = { radio = 0.01 }
+		supply_range = 0.025
 	}
 }
 
@@ -2935,7 +2990,7 @@ tgcnv_ww2_inv_fleet_air_warning_plots = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		supply_range = 0.025
 	}
 }
 
@@ -2951,7 +3006,9 @@ tgcnv_ww2_inv_central_aa_directors = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		navy_base = { gun_power = 0.05 }
+		navy_base = {
+			gun_power = 0.5
+		}
 	}
 }
 
@@ -2967,7 +3024,7 @@ tgcnv_ww2_inv_miniature_fuze_circuits = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_goods_output = { electric_gear = 0.01 }
+		supply_range = 0.025
 	}
 }
 
@@ -2983,7 +3040,9 @@ tgcnv_ww2_inv_proximity_shell_handling = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		navy_base = { gun_power = 0.05 }
+		navy_base = {
+			gun_power = 0.5
+		}
 	}
 }
 
@@ -2999,7 +3058,9 @@ tgcnv_ww2_inv_convoy_route_charts = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		naval_attrition = -0.005
+		navy_base = {
+			default_organisation = 0.5
+		}
 	}
 }
 
@@ -3015,7 +3076,9 @@ tgcnv_ww2_inv_merchant_navy_liaison = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -3031,7 +3094,9 @@ tgcnv_ww2_inv_gunnery_plotting_rooms = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		navy_base = { gun_power = 0.05 }
+		navy_base = {
+			default_organisation = 0.5
+		}
 	}
 }
 
@@ -3047,7 +3112,9 @@ tgcnv_ww2_inv_salvo_coordination = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -3063,7 +3130,9 @@ tgcnv_ww2_inv_fleet_signal_books = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -3079,7 +3148,9 @@ tgcnv_ww2_inv_radio_silence_drills = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		naval_attrition = -0.005
+		navy_base = {
+			default_organisation = 0.5
+		}
 	}
 }
 
@@ -3095,7 +3166,9 @@ tgcnv_ww2_inv_battle_damage_exercises = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		navy_base = { hull = 0.05 }
+		navy_base = {
+			default_organisation = 0.5
+		}
 	}
 }
 
@@ -3111,7 +3184,9 @@ tgcnv_ww2_inv_emergency_command_succession = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -3127,7 +3202,9 @@ tgcnv_ww2_inv_joint_naval_staff_course = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		navy_base = { default_organisation = 1 }
+		navy_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -3143,7 +3220,9 @@ tgcnv_ww2_inv_allied_fleet_procedures = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		navy_base = { gun_power = 0.05 }
+		navy_base = {
+			default_organisation = 0.5
+		}
 	}
 }
 

@@ -3286,7 +3286,9 @@ tgcnv_ww2_inv_motor_columns = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		army_base = { maximum_speed = 0.1 }
+		army_base = {
+			maximum_speed = 0.5
+		}
 	}
 }
 
@@ -3318,7 +3320,9 @@ tgcnv_ww2_inv_combined_arms_exercises = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		army_base = { default_organisation = 1 }
+		army_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -3334,13 +3338,7 @@ tgcnv_ww2_inv_infantry_tank_liaison = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		infantry = { attack = 0.25 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { attack = 0.25 }
-tgcnv_marine = { attack = 0.25 }
-# TGCNV SPECIALIST BONUS END
-		guard = { attack = 0.25 }
-		tgcnv_sturmtruppe = { attack = 0.25 }  # TGCNV STURMTRUPPE = guard
+		military_tactics = 0.015
 	}
 }
 
@@ -3356,7 +3354,7 @@ tgcnv_ww2_inv_echeloned_reserves = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		reinforce_rate = 0.01
+		military_tactics = 0.015
 	}
 }
 
@@ -3388,7 +3386,9 @@ tgcnv_ww2_inv_mobile_battle_groups = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		army_base = { default_organisation = 1 }
+		army_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -3404,9 +3404,15 @@ tgcnv_ww2_inv_mechanized_pursuit = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		tank = { maximum_speed = 0.1 }
-		tgcnv_light_tank = { maximum_speed = 0.1 }
-		tgcnv_heavy_tank = { maximum_speed = 0.1 }
+		tank = {
+			maximum_speed = 0.5
+		}
+		tgcnv_light_tank = {
+			maximum_speed = 0.5
+		}
+		tgcnv_heavy_tank = {
+			maximum_speed = 0.5
+		}
 	}
 }
 
@@ -3422,7 +3428,9 @@ tgcnv_ww2_inv_joint_operations_rooms = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		army_base = { default_organisation = 1 }
+		army_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -3438,7 +3446,7 @@ tgcnv_ww2_inv_theater_reserve_plans = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		morale = 0.02
+		military_tactics = 0.015
 	}
 }
 
@@ -3454,13 +3462,21 @@ tgcnv_ww2_inv_self_loading_rifle_drills = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		infantry = { attack = 0.25 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { attack = 0.25 }
-tgcnv_marine = { attack = 0.25 }
-# TGCNV SPECIALIST BONUS END
-		guard = { attack = 0.25 }
-		tgcnv_sturmtruppe = { attack = 0.25 }  # TGCNV STURMTRUPPE = guard
+		infantry = {
+			attack = 0.5
+		}
+		tgcnv_paratrooper = {
+			attack = 0.5
+		}
+		tgcnv_marine = {
+			attack = 0.5
+		}
+		guard = {
+			attack = 0.5
+		}
+		tgcnv_sturmtruppe = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3476,7 +3492,9 @@ tgcnv_ww2_inv_rifle_parts_standardization = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { small_arms = 0.01 }
+		infantry = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3492,13 +3510,9 @@ tgcnv_ww2_inv_squad_fire_maneuver = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		infantry = { default_organisation = 1 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { default_organisation = 1 }
-tgcnv_marine = { default_organisation = 1 }
-# TGCNV SPECIALIST BONUS END
-		guard = { default_organisation = 1 }
-		tgcnv_sturmtruppe = { default_organisation = 1 }  # TGCNV STURMTRUPPE = guard
+		infantry = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3514,13 +3528,21 @@ tgcnv_ww2_inv_portable_machine_guns = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		infantry = { defence = 0.25 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { defence = 0.25 }
-tgcnv_marine = { defence = 0.25 }
-# TGCNV SPECIALIST BONUS END
-		guard = { defence = 0.25 }
-		tgcnv_sturmtruppe = { defence = 0.25 }  # TGCNV STURMTRUPPE = guard
+		infantry = {
+			defence = 0.5
+		}
+		tgcnv_paratrooper = {
+			defence = 0.5
+		}
+		tgcnv_marine = {
+			defence = 0.5
+		}
+		guard = {
+			defence = 0.5
+		}
+		tgcnv_sturmtruppe = {
+			defence = 0.5
+		}
 	}
 }
 
@@ -3536,13 +3558,21 @@ tgcnv_ww2_inv_shaped_charge_grenades = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		infantry = { defence = 0.25 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { defence = 0.25 }
-tgcnv_marine = { defence = 0.25 }
-# TGCNV SPECIALIST BONUS END
-		guard = { defence = 0.25 }
-		tgcnv_sturmtruppe = { defence = 0.25 }  # TGCNV STURMTRUPPE = guard
+		infantry = {
+			defence = 0.5
+		}
+		tgcnv_paratrooper = {
+			defence = 0.5
+		}
+		tgcnv_marine = {
+			defence = 0.5
+		}
+		guard = {
+			defence = 0.5
+		}
+		tgcnv_sturmtruppe = {
+			defence = 0.5
+		}
 	}
 }
 
@@ -3558,11 +3588,9 @@ tgcnv_ww2_inv_antitank_teams = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		infantry = { default_organisation = 1 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { default_organisation = 1 }
-tgcnv_marine = { default_organisation = 1 }
-# TGCNV SPECIALIST BONUS END
+		infantry = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3578,7 +3606,9 @@ tgcnv_ww2_inv_intermediate_cartridges = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { ammunition = 0.01 }
+		infantry = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3594,13 +3624,21 @@ tgcnv_ww2_inv_assault_rifle_drills = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		infantry = { attack = 0.25 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { attack = 0.25 }
-tgcnv_marine = { attack = 0.25 }
-# TGCNV SPECIALIST BONUS END
-		guard = { attack = 0.25 }
-		tgcnv_sturmtruppe = { attack = 0.25 }  # TGCNV STURMTRUPPE = guard
+		infantry = {
+			attack = 0.5
+		}
+		tgcnv_paratrooper = {
+			attack = 0.5
+		}
+		tgcnv_marine = {
+			attack = 0.5
+		}
+		guard = {
+			attack = 0.5
+		}
+		tgcnv_sturmtruppe = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3616,7 +3654,9 @@ tgcnv_ww2_inv_infantry_equipment_sets = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		army_base = { supply_consumption = -0.005 }
+		infantry = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3632,13 +3672,9 @@ tgcnv_ww2_inv_platoon_weapons_coordination = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		infantry = { default_organisation = 1 }
-# TGCNV SPECIALIST BONUS BEGIN
-tgcnv_paratrooper = { default_organisation = 1 }
-tgcnv_marine = { default_organisation = 1 }
-# TGCNV SPECIALIST BONUS END
-		guard = { default_organisation = 1 }
-		tgcnv_sturmtruppe = { default_organisation = 1 }  # TGCNV STURMTRUPPE = guard
+		infantry = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3654,7 +3690,9 @@ tgcnv_ww2_inv_artillery_survey_teams = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		artillery = { attack = 0.25 }
+		artillery = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3670,7 +3708,9 @@ tgcnv_ww2_inv_standard_shell_lots = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { ammunition = 0.01 }
+		artillery = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3686,9 +3726,9 @@ tgcnv_ww2_inv_tank_crew_intercom = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		tank = { default_organisation = 1 }
-		tgcnv_light_tank = { default_organisation = 1 }
-		tgcnv_heavy_tank = { default_organisation = 1 }
+		artillery = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3704,7 +3744,9 @@ tgcnv_ww2_inv_welded_tank_hulls = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { barrels = 0.01 }
+		artillery = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3720,7 +3762,9 @@ tgcnv_ww2_inv_antitank_gun_positions = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		artillery = { defence = 0.25 }
+		artillery = {
+			defence = 0.5
+		}
 	}
 }
 
@@ -3736,7 +3780,9 @@ tgcnv_ww2_inv_armor_piercing_shot = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		artillery = { attack = 0.25 }
+		artillery = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3752,7 +3798,9 @@ tgcnv_ww2_inv_mobile_artillery_observers = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		artillery = { support = 0.05 }
+		artillery = {
+			support = 0.5
+		}
 	}
 }
 
@@ -3768,7 +3816,9 @@ tgcnv_ww2_inv_self_propelled_gun_maintenance = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		artillery = { maximum_speed = 0.1 }
+		artillery = {
+			maximum_speed = 0.5
+		}
 	}
 }
 
@@ -3784,9 +3834,15 @@ tgcnv_ww2_inv_gun_stabilizer_servos = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		tank = { attack = 0.25 }
-		tgcnv_light_tank = { attack = 0.25 }
-		tgcnv_heavy_tank = { attack = 0.25 }
+		tank = {
+			attack = 0.5
+		}
+		tgcnv_light_tank = {
+			attack = 0.5
+		}
+		tgcnv_heavy_tank = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3802,7 +3858,9 @@ tgcnv_ww2_inv_ballistic_firing_tables = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		artillery = { attack = 0.25 }
+		artillery = {
+			attack = 0.5
+		}
 	}
 }
 
@@ -3818,7 +3876,9 @@ tgcnv_ww2_inv_aircraft_inspection_depots = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { aeroplanes = 0.01 }
+		factory_goods_output = {
+			aeroplanes = 0.01
+		}
 	}
 }
 
@@ -3834,7 +3894,9 @@ tgcnv_ww2_inv_aviation_instrument_standards = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { electric_gear = 0.01 }
+		factory_goods_output = {
+			aeroplanes = 0.005
+		}
 	}
 }
 
@@ -3850,7 +3912,9 @@ tgcnv_ww2_inv_stressed_skin_assembly = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { aeroplanes = 0.01 }
+		factory_goods_output = {
+			aeroplanes = 0.01
+		}
 	}
 }
 
@@ -3866,7 +3930,9 @@ tgcnv_ww2_inv_airframe_riveting_jigs = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { machine_parts = 0.01 }
+		factory_goods_output = {
+			aeroplanes = 0.005
+		}
 	}
 }
 
@@ -3882,7 +3948,9 @@ tgcnv_ww2_inv_radar_receiver_production = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_goods_output = { radio = 0.01 }
+		factory_goods_output = {
+			aeroplanes = 0.01
+		}
 	}
 }
 
@@ -3898,7 +3966,9 @@ tgcnv_ww2_inv_air_warning_switchboards = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_goods_output = { electric_gear = 0.01 }
+		factory_goods_output = {
+			aeroplanes = 0.01
+		}
 	}
 }
 
@@ -3914,7 +3984,9 @@ tgcnv_ww2_inv_long_range_airframe_tooling = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { aeroplanes = 0.01 }
+		factory_goods_output = {
+			aeroplanes = 0.01
+		}
 	}
 }
 
@@ -3930,7 +4002,9 @@ tgcnv_ww2_inv_air_navigation_radio_sets = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { radio = 0.01 }
+		factory_goods_output = {
+			aeroplanes = 0.01
+		}
 	}
 }
 
@@ -3946,7 +4020,9 @@ tgcnv_ww2_inv_jet_engine_test_benches = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_goods_output = { aeroplanes = 0.02 }
+		factory_goods_output = {
+			aeroplanes = 0.02
+		}
 	}
 }
 
@@ -3962,7 +4038,9 @@ tgcnv_ww2_inv_turbine_blade_tooling = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_goods_output = { machine_parts = 0.01 }
+		factory_goods_output = {
+			aeroplanes = 0.01
+		}
 	}
 }
 
@@ -3978,7 +4056,9 @@ tgcnv_ww2_inv_field_radio_protocols = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		army_base = { default_organisation = 1 }
+		army_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -3994,7 +4074,7 @@ tgcnv_ww2_inv_portable_radio_lines = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { radio = 0.01 }
+		morale = 0.01
 	}
 }
 
@@ -4026,7 +4106,9 @@ tgcnv_ww2_inv_standard_operations_orders = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		army_base = { default_organisation = 1 }
+		army_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -4042,7 +4124,9 @@ tgcnv_ww2_inv_forward_liaison_officers = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		army_base = { default_organisation = 1 }
+		army_base = {
+			default_organisation = 1
+		}
 	}
 }
 
@@ -4058,7 +4142,7 @@ tgcnv_ww2_inv_ground_signal_panels = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		artillery = { support = 0.05 }
+		morale = 0.015
 	}
 }
 
@@ -4090,7 +4174,9 @@ tgcnv_ww2_inv_spares_inventory_cards = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		army_base = { supply_consumption = -0.005 }
+		army_base = {
+			supply_consumption = -0.005
+		}
 	}
 }
 
@@ -4122,7 +4208,9 @@ tgcnv_ww2_inv_theater_signal_centers = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		army_base = { default_organisation = 1 }
+		army_base = {
+			default_organisation = 1
+		}
 	}
 }
 

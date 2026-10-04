@@ -212,81 +212,244 @@ units = {
 }
 # TGCNV research increments below are provisional balance, not HOI3 source values.
 technologies = {
-    tgcnv_ww2_light_armament_1930 = {
-        infantry = { soft_attack = 0.500 }
-        guard = { soft_attack = 0.500 }
-        tgcnv_sturmtruppe = { soft_attack = 0.500 }
-        tgcnv_paratrooper = { soft_attack = 0.500 }
-        tgcnv_marine = { soft_attack = 0.500 }
-    }
-    tgcnv_ww2_light_armament_1936 = {
-        infantry = { soft_attack = 0.500 defensiveness = 0.500 }
-        guard = { soft_attack = 0.500 }
-        tgcnv_sturmtruppe = { soft_attack = 0.500 }
-        tgcnv_paratrooper = { soft_attack = 0.500 defensiveness = 0.500 }
-        tgcnv_marine = { soft_attack = 0.500 defensiveness = 0.500 }
-    }
-    tgcnv_ww2_light_armament_1940 = {
-        infantry = { hard_attack = 1.000 piercing = 2.000 }
-        guard = { hard_attack = 1.000 piercing = 2.000 }
-        tgcnv_sturmtruppe = { hard_attack = 1.000 piercing = 2.000 }
-        tgcnv_paratrooper = { hard_attack = 1.000 piercing = 2.000 }
-        tgcnv_marine = { hard_attack = 1.000 piercing = 2.000 }
-    }
-    tgcnv_ww2_light_armament_1943 = {
-        infantry = { soft_attack = 0.500 hard_attack = 0.250 piercing = 0.500 }
-        tgcnv_paratrooper = { soft_attack = 0.500 hard_attack = 0.250 piercing = 0.500 }
-        tgcnv_marine = { soft_attack = 0.500 hard_attack = 0.250 piercing = 0.500 }
-        guard = { soft_attack = 0.500 hard_attack = 0.250 piercing = 0.500 }
-        tgcnv_sturmtruppe = { soft_attack = 0.500 hard_attack = 0.250 piercing = 0.500 }
-    }
-    tgcnv_ww2_light_armament_1945 = {
-        infantry = { soft_attack = 0.500 hard_attack = 0.250 piercing = 0.500 defensiveness = 0.500 }
-        tgcnv_paratrooper = { soft_attack = 0.500 hard_attack = 0.250 piercing = 0.500 defensiveness = 0.500 }
-        tgcnv_marine = { soft_attack = 0.500 hard_attack = 0.250 piercing = 0.500 defensiveness = 0.500 }
-        guard = { soft_attack = 0.500 hard_attack = 0.250 piercing = 0.500 defensiveness = 0.500 }
-        tgcnv_sturmtruppe = { soft_attack = 0.500 hard_attack = 0.250 piercing = 0.500 defensiveness = 0.500 }
-    }
-    tgcnv_ww2_heavy_armament_1930 = {
-        tgcnv_light_tank = { soft_attack = 0.500 armor = 0.500 piercing = 0.500 }
-        artillery = { soft_attack = 0.500 piercing = 1.000 }
-    }
-    tgcnv_ww2_heavy_armament_1936 = {
-        tank = { armor = 1.000 piercing = 1.000 soft_attack = 0.500 }
-        tgcnv_light_tank = { armor = 0.500 soft_attack = 0.500 piercing = 0.500 }
-        artillery = { piercing = 1.000 }
-        plane = { air_defence = 0.500 }
-    }
-    tgcnv_ww2_heavy_armament_1940 = {
-        artillery = { hard_attack = 2.000 piercing = 4.000 }
-        tgcnv_heavy_tank = { armor = 1.000 piercing = 1.000 }
-    }
-    tgcnv_ww2_heavy_armament_1943 = {
-        tank = { toughness = 1.000 armor = 1.000 }
-        tgcnv_heavy_tank = { armor = 2.000 piercing = 2.000 }
-        artillery = { piercing = 2.000 }
-        engineer = { toughness = 0.500 }
-    }
-    tgcnv_ww2_heavy_armament_1945 = {
-        tank = { piercing = 2.000 armor = 1.000 soft_attack = 0.500 }
-        tgcnv_heavy_tank = { piercing = 2.000 armor = 1.000 soft_attack = 0.500 }
-    }
-    tgcnv_ww2_military_science_1940 = {
-        infantry = { air_attack = 0.500 air_defence = 0.500 }
-        irregular = { air_attack = 0.500 air_defence = 0.500 }
-        guard = { air_attack = 0.500 air_defence = 0.500 }
-        tgcnv_sturmtruppe = { air_attack = 0.500 air_defence = 0.500 }
-        artillery = { air_attack = 0.500 air_defence = 0.500 }
-        engineer = { air_attack = 0.500 air_defence = 0.500 }
-        cavalry = { air_attack = 0.500 air_defence = 0.500 }
-        cuirassier = { air_attack = 0.500 air_defence = 0.500 }
-        dragoon = { air_attack = 0.500 air_defence = 0.500 }
-        hussar = { air_attack = 0.500 air_defence = 0.500 }
-        tank = { air_attack = 0.500 air_defence = 0.500 }
-        tgcnv_light_tank = { air_attack = 0.500 air_defence = 0.500 }
-        tgcnv_heavy_tank = { air_attack = 0.500 air_defence = 0.500 }
-        plane = { air_attack = 0.500 air_defence = 0.500 }
-        tgcnv_paratrooper = { air_attack = 0.500 air_defence = 0.500 }
-        tgcnv_marine = { air_attack = 0.500 air_defence = 0.500 }
-    }
+	tgcnv_ww2_light_armament_1930 = {
+		infantry = {
+			soft_attack = 0.5
+		}
+		guard = {
+			soft_attack = 0.5
+		}
+		tgcnv_sturmtruppe = {
+			soft_attack = 0.5
+		}
+		tgcnv_paratrooper = {
+			soft_attack = 0.5
+		}
+		tgcnv_marine = {
+			soft_attack = 0.5
+		}
+	}
+	tgcnv_ww2_light_armament_1936 = {
+		infantry = {
+			soft_attack = 0.5
+			defensiveness = 0.5
+		}
+		guard = {
+			soft_attack = 0.5
+		}
+		tgcnv_sturmtruppe = {
+			soft_attack = 0.5
+		}
+		tgcnv_paratrooper = {
+			soft_attack = 0.5
+			defensiveness = 0.5
+		}
+		tgcnv_marine = {
+			soft_attack = 0.5
+			defensiveness = 0.5
+		}
+	}
+	tgcnv_ww2_light_armament_1940 = {
+		infantry = {
+			hard_attack = 1
+			piercing = 2
+			soft_attack = 0.5
+		}
+		guard = {
+			hard_attack = 1
+			piercing = 2
+			soft_attack = 0.5
+		}
+		tgcnv_sturmtruppe = {
+			hard_attack = 1
+			piercing = 2
+			soft_attack = 0.5
+		}
+		tgcnv_paratrooper = {
+			hard_attack = 1
+			piercing = 2
+			soft_attack = 0.5
+		}
+		tgcnv_marine = {
+			hard_attack = 1
+			piercing = 2
+			soft_attack = 0.5
+		}
+	}
+	tgcnv_ww2_light_armament_1943 = {
+		infantry = {
+			soft_attack = 0.5
+		}
+		tgcnv_paratrooper = {
+			soft_attack = 0.5
+		}
+		tgcnv_marine = {
+			soft_attack = 0.5
+		}
+		guard = {
+			soft_attack = 0.5
+		}
+		tgcnv_sturmtruppe = {
+			soft_attack = 0.5
+		}
+	}
+	tgcnv_ww2_light_armament_1945 = {
+		infantry = {
+			soft_attack = 0.5
+			hard_attack = 1
+			piercing = 2
+			defensiveness = 0.5
+		}
+		tgcnv_paratrooper = {
+			soft_attack = 0.5
+			hard_attack = 1
+			piercing = 2
+			defensiveness = 0.5
+		}
+		tgcnv_marine = {
+			soft_attack = 0.5
+			hard_attack = 1
+			piercing = 2
+			defensiveness = 0.5
+		}
+		guard = {
+			soft_attack = 0.5
+			hard_attack = 1
+			piercing = 2
+			defensiveness = 0.5
+		}
+		tgcnv_sturmtruppe = {
+			soft_attack = 0.5
+			hard_attack = 1
+			piercing = 2
+			defensiveness = 0.5
+		}
+	}
+	tgcnv_ww2_heavy_armament_1930 = {
+		tgcnv_light_tank = {
+			soft_attack = 0.5
+			armor = 0.5
+			piercing = 0.5
+		}
+		artillery = {
+			soft_attack = 0.5
+			piercing = 1
+		}
+	}
+	tgcnv_ww2_heavy_armament_1936 = {
+		tank = {
+			armor = 1
+			piercing = 1
+			soft_attack = 0.5
+		}
+		tgcnv_light_tank = {
+			armor = 0.5
+			soft_attack = 0.5
+			piercing = 0.5
+		}
+		artillery = {
+			piercing = 1
+		}
+	}
+	tgcnv_ww2_heavy_armament_1940 = {
+		artillery = {
+			hard_attack = 2
+			piercing = 4
+		}
+		tgcnv_heavy_tank = {
+			armor = 1
+			piercing = 1
+		}
+	}
+	tgcnv_ww2_heavy_armament_1943 = {
+		tank = {
+			toughness = 1
+			armor = 1
+		}
+		tgcnv_heavy_tank = {
+			armor = 2
+			piercing = 2
+		}
+		artillery = {
+			piercing = 2
+		}
+	}
+	tgcnv_ww2_heavy_armament_1945 = {
+		tank = {
+			piercing = 2
+			armor = 1
+			soft_attack = 0.5
+		}
+		tgcnv_heavy_tank = {
+			piercing = 2
+			armor = 1
+			soft_attack = 0.5
+		}
+	}
+	tgcnv_ww2_military_science_1940 = {
+		infantry = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		irregular = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		guard = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		tgcnv_sturmtruppe = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		artillery = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		engineer = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		cavalry = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		cuirassier = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		dragoon = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		hussar = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		tank = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		tgcnv_light_tank = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		tgcnv_heavy_tank = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		plane = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		tgcnv_paratrooper = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+		tgcnv_marine = {
+			air_attack = 0.5
+			air_defence = 0.5
+		}
+	}
 }

@@ -4288,7 +4288,7 @@ tgcnv_ww2_inv_educational_broadcasts = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		prestige = 0.005
 	}
 }
 
@@ -4320,7 +4320,7 @@ tgcnv_ww2_inv_mobile_cinema_circuits = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		prestige = 0.005
 	}
 }
 
@@ -4336,7 +4336,7 @@ tgcnv_ww2_inv_public_information_posters = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		prestige = 0.005
 	}
 }
 
@@ -4416,7 +4416,7 @@ tgcnv_ww2_inv_traveling_art_exhibitions = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		diplomatic_points = 0.025
+		prestige = 0.005
 	}
 }
 
@@ -4432,7 +4432,7 @@ tgcnv_ww2_inv_replicable_experiments = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		increase_research = 0.005
 	}
 }
 
@@ -4448,7 +4448,7 @@ tgcnv_ww2_inv_scientific_review_seminars = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		shared_prestige = 5
+		increase_research = 0.005
 	}
 }
 
@@ -4464,7 +4464,7 @@ tgcnv_ww2_inv_methodology_curricula = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		increase_research = 0.005
 	}
 }
 
@@ -4480,7 +4480,7 @@ tgcnv_ww2_inv_academic_review_journals = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		shared_prestige = 5
+		increase_research = 0.005
 	}
 }
 
@@ -4496,7 +4496,7 @@ tgcnv_ww2_inv_interdisciplinary_seminars = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		increase_research = 0.005
 	}
 }
 
@@ -4512,7 +4512,7 @@ tgcnv_ww2_inv_shared_research_libraries = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		permanent_prestige = 2
+		increase_research = 0.005
 	}
 }
 
@@ -4528,7 +4528,7 @@ tgcnv_ww2_inv_laboratory_documentation_standards = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		increase_research = 0.005
 	}
 }
 
@@ -4544,7 +4544,7 @@ tgcnv_ww2_inv_scientific_liaison_committees = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		shared_prestige = 5
+		increase_research = 0.005
 	}
 }
 
@@ -4560,7 +4560,7 @@ tgcnv_ww2_inv_research_grant_review = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		increase_research = 0.005
 	}
 }
 
@@ -4576,7 +4576,7 @@ tgcnv_ww2_inv_international_science_congresses = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		shared_prestige = 10
+		increase_research = 0.005
 	}
 }
 
@@ -4592,7 +4592,7 @@ tgcnv_ww2_inv_community_social_surveys = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		administrative_efficiency = 0.005
+		education_efficiency = 0.005
 	}
 }
 
@@ -4624,7 +4624,7 @@ tgcnv_ww2_inv_representative_sampling = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		administrative_efficiency = 0.005
+		education_efficiency = 0.005
 	}
 }
 
@@ -4672,7 +4672,7 @@ tgcnv_ww2_inv_emergency_relief_registers = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		administrative_efficiency = 0.005
+		education_efficiency = 0.01
 	}
 }
 
@@ -4704,7 +4704,7 @@ tgcnv_ww2_inv_vocational_course_standards = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_output = 0.005
+		education_efficiency = 0.01
 	}
 }
 
@@ -4736,7 +4736,7 @@ tgcnv_ww2_inv_community_reconstruction_offices = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		administrative_efficiency = 0.005
+		education_efficiency = 0.01
 	}
 }
 
@@ -4768,7 +4768,7 @@ tgcnv_ww2_inv_standard_administrative_records = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		tax_eff = 0.5
+		administrative_efficiency = 0.005
 	}
 }
 
@@ -4800,7 +4800,7 @@ tgcnv_ww2_inv_public_budget_reporting = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		tax_eff = 0.5
+		administrative_efficiency = 0.005
 	}
 }
 
@@ -4832,7 +4832,7 @@ tgcnv_ww2_inv_civil_supply_coordination = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		supply_limit = 0.01
+		administrative_efficiency = 0.005
 	}
 }
 
@@ -4864,7 +4864,7 @@ tgcnv_ww2_inv_joint_relief_committees = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		permanent_prestige = 2
+		administrative_efficiency = 0.005
 	}
 }
 
@@ -4928,7 +4928,7 @@ tgcnv_ww2_inv_instructor_selection_methods = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		regular_experience_level = 0.5
 	}
 }
 
@@ -4944,7 +4944,7 @@ tgcnv_ww2_inv_industrial_fatigue_studies = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_output = 0.005
+		regular_experience_level = 0.5
 	}
 }
 
@@ -4960,7 +4960,7 @@ tgcnv_ww2_inv_workplace_training_manuals = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		education_efficiency = 0.01
+		regular_experience_level = 0.5
 	}
 }
 
@@ -5008,7 +5008,7 @@ tgcnv_ww2_inv_control_panel_standardization = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_output = 0.005
+		regular_experience_level = 0.5
 	}
 }
 

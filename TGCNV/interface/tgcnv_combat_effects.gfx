@@ -1,0 +1,11 @@
+# BA ground / HOI4 sea-air combat presentation. Generated, eight shared models.
+objectTypes = {
+ EMFXActorType = { name = "tgcnvCombatGroundMuzzle" actorfile = "gfx/anims/TGCNV_Combat_GroundMuzzle.xac" idle = "gfx/anims/TGCNV_Combat_Static.xsm" move = "gfx/anims/TGCNV_Combat_Static.xsm" scale = 1.0 }
+ EMFXActorType = { name = "tgcnvCombatGroundTracer" actorfile = "gfx/anims/TGCNV_Combat_GroundTracer.xac" idle = "gfx/anims/TGCNV_Combat_Static.xsm" move = "gfx/anims/TGCNV_Combat_Static.xsm" scale = 1.0 }
+ EMFXActorType = { name = "tgcnvCombatGroundImpact" actorfile = "gfx/anims/TGCNV_Combat_GroundImpact.xac" idle = "gfx/anims/TGCNV_Combat_Static.xsm" move = "gfx/anims/TGCNV_Combat_Static.xsm" scale = 1.0 }
+ EMFXActorType = { name = "tgcnvCombatNavalMuzzle" actorfile = "gfx/anims/TGCNV_Combat_NavalMuzzle.xac" idle = "gfx/anims/TGCNV_Combat_Static.xsm" move = "gfx/anims/TGCNV_Combat_Static.xsm" scale = 1.0 }
+ EMFXActorType = { name = "tgcnvCombatNavalTracer" actorfile = "gfx/anims/TGCNV_Combat_NavalTracer.xac" idle = "gfx/anims/TGCNV_Combat_Static.xsm" move = "gfx/anims/TGCNV_Combat_Static.xsm" scale = 1.0 }
+ EMFXActorType = { name = "tgcnvCombatNavalImpact" actorfile = "gfx/anims/TGCNV_Combat_NavalImpact.xac" idle = "gfx/anims/TGCNV_Combat_Static.xsm" move = "gfx/anims/TGCNV_Combat_Static.xsm" scale = 1.0 }
+ EMFXActorType = { name = "tgcnvCombatAirMuzzle" actorfile = "gfx/anims/TGCNV_Combat_AirMuzzle.xac" idle = "gfx/anims/TGCNV_Combat_Static.xsm" move = "gfx/anims/TGCNV_Combat_Static.xsm" scale = 1.0 }
+ EMFXActorType = { name = "tgcnvCombatAirTracer" actorfile = "gfx/anims/TGCNV_Combat_AirTracer.xac" idle = "gfx/anims/TGCNV_Combat_Static.xsm" move = "gfx/anims/TGCNV_Combat_Static.xsm" scale = 1.0 }
+}

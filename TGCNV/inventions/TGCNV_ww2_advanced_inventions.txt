@@ -15,9 +15,7 @@ tgcnv_ww2_inv_battery_wire_networks = {
 		modifier = { factor = 2 tgcnv_ww2_army_leadership_1930 = 1 }
 	}
 	effect = {
-		artillery = {
-			support = 0.1
-		}
+		military_tactics = 0.015
 	}
 }
 
@@ -54,16 +52,7 @@ tgcnv_ww2_inv_tank_engineer_teams = {
 	}
 	effect = {
 		engineer = {
-			support = 0.1
-		}
-		tank = {
-			default_organisation = 1
-		}
-		tgcnv_light_tank = {
-			default_organisation = 1
-		}
-		tgcnv_heavy_tank = {
-			default_organisation = 1
+			support = 0.5
 		}
 	}
 }
@@ -83,19 +72,19 @@ tgcnv_ww2_inv_rifle_grenade_issue = {
 	}
 	effect = {
 		infantry = {
-			attack = 0.25
+			attack = 0.5
 		}
 		tgcnv_paratrooper = {
-			attack = 0.25
+			attack = 0.5
 		}
 		tgcnv_marine = {
-			attack = 0.25
+			attack = 0.5
 		}
 		guard = {
-			attack = 0.25
+			attack = 0.5
 		}
 		tgcnv_sturmtruppe = {
-			attack = 0.25
+			attack = 0.5
 		}
 	}
 }
@@ -114,22 +103,19 @@ tgcnv_ww2_inv_antitank_mine_doctrine = {
 	}
 	effect = {
 		infantry = {
-			defence = 0.25
+			defence = 0.5
 		}
 		tgcnv_paratrooper = {
-			defence = 0.25
+			defence = 0.5
 		}
 		tgcnv_marine = {
-			defence = 0.25
+			defence = 0.5
 		}
 		guard = {
-			defence = 0.25
+			defence = 0.5
 		}
 		tgcnv_sturmtruppe = {
-			defence = 0.25
-		}
-		engineer = {
-			defence = 0.25
+			defence = 0.5
 		}
 	}
 }
@@ -148,21 +134,8 @@ tgcnv_ww2_inv_standard_ration_packs = {
 		modifier = { factor = 2 tgcnv_ww2_market_functionality_1940 = 1 }
 	}
 	effect = {
-		land_attrition = -0.005
 		infantry = {
-			default_organisation = 1
-		}
-		tgcnv_paratrooper = {
-			default_organisation = 1
-		}
-		tgcnv_marine = {
-			default_organisation = 1
-		}
-		guard = {
-			default_organisation = 1
-		}
-		tgcnv_sturmtruppe = {
-			default_organisation = 1
+			attack = 0.5
 		}
 	}
 }
@@ -180,14 +153,8 @@ tgcnv_ww2_inv_torsion_bar_suspension = {
 		modifier = { factor = 2 tgcnv_ww2_mechanization_1930 = 1 }
 	}
 	effect = {
-		tank = {
-			maximum_speed = 0.1
-		}
-		tgcnv_light_tank = {
-			maximum_speed = 0.1
-		}
-		tgcnv_heavy_tank = {
-			maximum_speed = 0.1
+		artillery = {
+			attack = 0.5
 		}
 	}
 }
@@ -207,7 +174,7 @@ tgcnv_ww2_inv_high_velocity_at_guns = {
 	}
 	effect = {
 		artillery = {
-			attack = 0.25
+			attack = 0.5
 		}
 	}
 }
@@ -226,14 +193,8 @@ tgcnv_ww2_inv_cross_country_driving = {
 		modifier = { factor = 2 tgcnv_ww2_army_doctrine_1943 = 1 }
 	}
 	effect = {
-		tank = {
-			maximum_speed = 0.2
-		}
-		tgcnv_light_tank = {
-			maximum_speed = 0.3
-		}
-		tgcnv_heavy_tank = {
-			maximum_speed = 0.1
+		artillery = {
+			attack = 0.5
 		}
 	}
 }
@@ -254,7 +215,6 @@ tgcnv_ww2_inv_duralumin_extrusion = {
 	effect = {
 		factory_goods_output = {
 			aeroplanes = 0.01
-			machine_parts = 0.01
 		}
 	}
 }
@@ -274,8 +234,7 @@ tgcnv_ww2_inv_searchlight_battery_drills = {
 	}
 	effect = {
 		factory_goods_output = {
-			electric_gear = 0.01
-			ammunition = 0.01
+			aeroplanes = 0.01
 		}
 	}
 }
@@ -296,7 +255,6 @@ tgcnv_ww2_inv_swept_wing_tunnel_tests = {
 	effect = {
 		factory_goods_output = {
 			aeroplanes = 0.02
-			machine_parts = 0.01
 		}
 	}
 }
@@ -335,12 +293,7 @@ tgcnv_ww2_inv_air_support_request_forms = {
 		modifier = { factor = 2 tgcnv_ww2_military_science_1930 = 1 }
 	}
 	effect = {
-		factory_goods_output = {
-			radio = 0.01
-		}
-		artillery = {
-			support = 0.05
-		}
+		morale = 0.015
 	}
 }
 
@@ -358,7 +311,6 @@ tgcnv_ww2_inv_field_refuelling_points = {
 		modifier = { factor = 2 tgcnv_ww2_tech_infrastructure_1936 = 1 }
 	}
 	effect = {
-		land_attrition = -0.005
 		reinforce_rate = 0.005
 	}
 }
@@ -400,9 +352,6 @@ tgcnv_ww2_inv_convoy_air_cover_schedules = {
 		modifier = { factor = 2 tgcnv_ww2_army_leadership_1940 = 1 }
 	}
 	effect = {
-		factory_goods_output = {
-			fuel = 0.01
-		}
 		naval_attrition = -0.005
 	}
 }
@@ -421,12 +370,8 @@ tgcnv_ww2_inv_beach_liaison_parties = {
 		modifier = { factor = 2 tgcnv_ww2_army_doctrine_1945 = 1 }
 	}
 	effect = {
-		tgcnv_marine = {
-			attack = 0.25
-			default_organisation = 1
-		}
-		steam_transport = {
-			hull = 0.05
+		navy_base = {
+			default_organisation = 0.5
 		}
 	}
 }
@@ -445,11 +390,8 @@ tgcnv_ww2_inv_cruiser_ammo_handling = {
 		modifier = { factor = 2 tgcnv_ww2_mechanization_1936 = 1 }
 	}
 	effect = {
-		tgcnv_heavy_cruiser = {
-			gun_power = 1
-		}
-		factory_goods_output = {
-			ammunition = 0.01
+		navy_base = {
+			hull = 0.5
 		}
 	}
 }
@@ -470,7 +412,6 @@ tgcnv_ww2_inv_carrier_hangar_layouts = {
 	effect = {
 		tgcnv_fleet_carrier = {
 			hull = 2
-			default_organisation = 1
 		}
 		tgcnv_light_carrier = {
 			hull = 1
@@ -492,9 +433,6 @@ tgcnv_ww2_inv_submarine_battery_standards = {
 		modifier = { factor = 2 tgcnv_ww2_chemistry_and_electricity_1930 = 1 }
 	}
 	effect = {
-		tgcnv_submarine = {
-			maximum_speed = 0.3
-		}
 		navy_base = {
 			build_time = -1
 		}
@@ -540,7 +478,6 @@ tgcnv_ww2_inv_submarine_snorkel_fittings = {
 	effect = {
 		tgcnv_submarine = {
 			maximum_speed = 0.5
-			evasion = 0.01
 		}
 	}
 }
@@ -560,9 +497,6 @@ tgcnv_ww2_inv_repair_parts_standardization = {
 	}
 	effect = {
 		naval_attrition = -0.005
-		navy_base = {
-			default_organisation = 1
-		}
 	}
 }
 
@@ -580,12 +514,7 @@ tgcnv_ww2_inv_hydrophone_array_layouts = {
 		modifier = { factor = 2 tgcnv_ww2_chemistry_and_electricity_1930 = 1 }
 	}
 	effect = {
-		navy_base = {
-			default_organisation = 1
-		}
-		factory_goods_output = {
-			electric_gear = 0.01
-		}
+		supply_range = 0.025
 	}
 }
 
@@ -604,7 +533,7 @@ tgcnv_ww2_inv_fire_control_radars = {
 	}
 	effect = {
 		navy_base = {
-			gun_power = 0.05
+			gun_power = 0.5
 		}
 		tgcnv_heavy_cruiser = {
 			gun_power = 1
@@ -649,7 +578,7 @@ tgcnv_ww2_inv_spotter_correction_code = {
 	}
 	effect = {
 		navy_base = {
-			gun_power = 0.05
+			default_organisation = 0.5
 		}
 	}
 }
@@ -670,9 +599,6 @@ tgcnv_ww2_inv_fleet_cipher_key_rotation = {
 	effect = {
 		navy_base = {
 			default_organisation = 1
-		}
-		factory_goods_output = {
-			radio = 0.01
 		}
 	}
 }
@@ -752,7 +678,6 @@ tgcnv_ww2_inv_turbine_blade_cooling = {
 	}
 	effect = {
 		factory_goods_output = {
-			aeroplanes = 0.03
 			fuel = 0.02
 		}
 	}
@@ -791,7 +716,6 @@ tgcnv_ww2_inv_supplier_quality_certification = {
 		modifier = { factor = 2 tgcnv_ww2_tech_organization_1940 = 1 }
 	}
 	effect = {
-		factory_input = -0.002
 		factory_goods_output = {
 			machine_parts = 0.02
 		}
@@ -811,10 +735,7 @@ tgcnv_ww2_inv_dispersed_airframe_production = {
 		modifier = { factor = 2 tgcnv_ww2_tech_infrastructure_1943 = 1 }
 	}
 	effect = {
-		factory_goods_output = {
-			aeroplanes = 0.03
-		}
-		supply_limit = 0.025
+		factory_throughput = 0.005
 	}
 }
 
@@ -833,7 +754,6 @@ tgcnv_ww2_inv_armor_welding_electrodes = {
 	effect = {
 		factory_goods_output = {
 			steel = 0.02
-			barrels = 0.03
 		}
 	}
 }
@@ -854,9 +774,6 @@ tgcnv_ww2_inv_nickel_superalloy_formulations = {
 		factory_goods_output = {
 			steel = 0.03
 		}
-		factory_goods_input = {
-			aeroplanes = -0.005
-		}
 	}
 }
 
@@ -875,7 +792,6 @@ tgcnv_ww2_inv_powder_metallurgy_tool_steel = {
 	effect = {
 		factory_goods_output = {
 			steel = 0.03
-			machine_parts = 0.03
 		}
 	}
 }
@@ -893,9 +809,6 @@ tgcnv_ww2_inv_military_fuel_pipelines = {
 		modifier = { factor = 2 tgcnv_ww2_tech_power_1936 = 1 }
 	}
 	effect = {
-		factory_goods_output = {
-			fuel = 0.03
-		}
 		supply_limit = 0.025
 	}
 }
@@ -913,7 +826,6 @@ tgcnv_ww2_inv_equipment_recovery_teams = {
 		modifier = { factor = 2 tgcnv_ww2_mechanization_1940 = 1 }
 	}
 	effect = {
-		reinforce_rate = 0.01
 		land_attrition = -0.005
 	}
 }
@@ -931,7 +843,6 @@ tgcnv_ww2_inv_palletized_loading_systems = {
 		modifier = { factor = 2 tgcnv_ww2_market_functionality_1943 = 1 }
 	}
 	effect = {
-		factory_throughput = 0.01
 		supply_limit = 0.025
 	}
 }
@@ -951,9 +862,6 @@ tgcnv_ww2_inv_coal_gasification_plants = {
 	effect = {
 		factory_goods_output = {
 			fuel = 0.03
-		}
-		rgo_goods_output = {
-			coal = 0.03
 		}
 	}
 }
@@ -994,7 +902,6 @@ tgcnv_ww2_inv_neutron_cross_section_measurements = {
 		factory_goods_output = {
 			electric_gear = 0.03
 		}
-		increase_research = 0.01
 	}
 }
 
@@ -1012,7 +919,7 @@ tgcnv_ww2_inv_public_loan_guarantees = {
 	}
 	effect = {
 		factory_cost = -0.005
-		loan_interest = -0.0005
+		loan_interest = -0.005
 	}
 }
 
@@ -1030,7 +937,6 @@ tgcnv_ww2_inv_bond_redemption_reserves = {
 	}
 	effect = {
 		tax_eff = 1
-		administrative_efficiency = 0.005
 	}
 }
 
@@ -1048,9 +954,6 @@ tgcnv_ww2_inv_reconstruction_development_banks = {
 	}
 	effect = {
 		factory_cost = -0.005
-		factory_goods_output = {
-			steel = 0.02
-		}
 	}
 }
 
@@ -1068,7 +971,6 @@ tgcnv_ww2_inv_money_demand_models = {
 	}
 	effect = {
 		administrative_efficiency = 0.005
-		tax_eff = 1
 	}
 }
 
@@ -1085,10 +987,7 @@ tgcnv_ww2_inv_wartime_foreign_exchange_allocation = {
 		modifier = { factor = 2 tgcnv_ww2_market_functionality_1940 = 1 }
 	}
 	effect = {
-		factory_input = -0.002
-		factory_goods_output = {
-			fuel = 0.02
-		}
+		administrative_efficiency = 0.005
 	}
 }
 
@@ -1105,8 +1004,7 @@ tgcnv_ww2_inv_settlement_currency_agreements = {
 		modifier = { factor = 2 tgcnv_ww2_political_thought_1945 = 1 }
 	}
 	effect = {
-		loan_interest = -0.0005
-		diplomatic_points = 0.025
+		loan_interest = -0.005
 	}
 }
 
@@ -1123,8 +1021,7 @@ tgcnv_ww2_inv_employment_stabilization_programs = {
 		modifier = { factor = 2 tgcnv_ww2_financial_institutions_1936 = 1 }
 	}
 	effect = {
-		factory_throughput = 0.01
-		education_efficiency = 0.01
+		factory_input = -0.005
 	}
 }
 
@@ -1141,10 +1038,7 @@ tgcnv_ww2_inv_strategic_material_substitution = {
 		modifier = { factor = 2 tgcnv_ww2_metallurgy_1940 = 1 }
 	}
 	effect = {
-		factory_input = -0.003
-		factory_goods_output = {
-			steel = 0.02
-		}
+		factory_input = -0.005
 	}
 }
 
@@ -1161,8 +1055,7 @@ tgcnv_ww2_inv_national_economic_simulation = {
 		modifier = { factor = 2 tgcnv_ww2_tech_organization_1943 = 1 }
 	}
 	effect = {
-		factory_input = -0.003
-		factory_output = 0.005
+		factory_input = -0.005
 	}
 }
 
@@ -1179,10 +1072,7 @@ tgcnv_ww2_inv_refrigerated_supply_networks = {
 		modifier = { factor = 2 tgcnv_ww2_tech_infrastructure_1936 = 1 }
 	}
 	effect = {
-		factory_goods_output = {
-			canned_food = 0.03
-		}
-		supply_limit = 0.025
+		influence = 0.005
 	}
 }
 
@@ -1199,10 +1089,7 @@ tgcnv_ww2_inv_military_food_specifications = {
 		modifier = { factor = 2 tgcnv_ww2_social_thought_1940 = 1 }
 	}
 	effect = {
-		factory_goods_output = {
-			canned_food = 0.03
-		}
-		supply_limit = 0.025
+		influence = 0.005
 	}
 }
 
@@ -1219,8 +1106,7 @@ tgcnv_ww2_inv_wartime_route_optimization = {
 		modifier = { factor = 2 tgcnv_ww2_tech_organization_1943 = 1 }
 	}
 	effect = {
-		naval_attrition = -0.005
-		land_attrition = -0.005
+		influence = 0.01
 	}
 }
 
@@ -1237,7 +1123,6 @@ tgcnv_ww2_inv_production_load_leveling = {
 		modifier = { factor = 2 tgcnv_ww2_mechanization_1936 = 1 }
 	}
 	effect = {
-		factory_input = -0.002
 		factory_throughput = 0.01
 	}
 }
@@ -1256,9 +1141,6 @@ tgcnv_ww2_inv_integrated_military_demand_forecasts = {
 	}
 	effect = {
 		factory_throughput = 0.01
-		factory_goods_output = {
-			small_arms = 0.02
-		}
 	}
 }
 
@@ -1275,10 +1157,7 @@ tgcnv_ww2_inv_maintenance_replacement_analysis = {
 		modifier = { factor = 2 tgcnv_ww2_tech_infrastructure_1940 = 1 }
 	}
 	effect = {
-		factory_input = -0.002
-		factory_goods_output = {
-			machine_parts = 0.02
-		}
+		factory_output = 0.005
 	}
 }
 
@@ -1296,7 +1175,6 @@ tgcnv_ww2_inv_location_sound_recording = {
 	}
 	effect = {
 		shared_prestige = 3
-		education_efficiency = 0.01
 	}
 }
 
@@ -1314,7 +1192,6 @@ tgcnv_ww2_inv_war_photography_networks = {
 	}
 	effect = {
 		prestige = 0.015
-		morale = 0.01
 	}
 }
 
@@ -1332,7 +1209,6 @@ tgcnv_ww2_inv_cultural_property_restitution = {
 	}
 	effect = {
 		prestige = 0.02
-		diplomatic_points = 0.025
 	}
 }
 
@@ -1350,7 +1226,6 @@ tgcnv_ww2_inv_experimental_error_analysis = {
 	}
 	effect = {
 		increase_research = 0.02
-		education_efficiency = 0.01
 	}
 }
 
@@ -1368,9 +1243,6 @@ tgcnv_ww2_inv_scientific_abstract_networks = {
 	}
 	effect = {
 		increase_research = 0.025
-		factory_goods_output = {
-			radio = 0.01
-		}
 	}
 }
 
@@ -1388,7 +1260,6 @@ tgcnv_ww2_inv_shared_reference_materials = {
 	}
 	effect = {
 		increase_research = 0.025
-		education_efficiency = 0.01
 	}
 }
 
@@ -1406,7 +1277,6 @@ tgcnv_ww2_inv_social_mobility_panel_surveys = {
 	}
 	effect = {
 		education_efficiency = 0.02
-		administrative_efficiency = 0.005
 	}
 }
 
@@ -1423,8 +1293,7 @@ tgcnv_ww2_inv_first_aid_training = {
 		modifier = { factor = 2 tgcnv_ww2_psychology_1940 = 1 }
 	}
 	effect = {
-		land_attrition = -0.005
-		reinforce_rate = 0.005
+		education_efficiency = 0.01
 	}
 }
 
@@ -1442,9 +1311,6 @@ tgcnv_ww2_inv_civilian_war_victim_retraining = {
 	}
 	effect = {
 		education_efficiency = 0.02
-		factory_goods_output = {
-			machine_parts = 0.01
-		}
 	}
 }
 
@@ -1461,7 +1327,6 @@ tgcnv_ww2_inv_policy_impact_assessment = {
 		modifier = { factor = 2 tgcnv_ww2_social_thought_1936 = 1 }
 	}
 	effect = {
-		tax_eff = 1
 		administrative_efficiency = 0.005
 	}
 }
@@ -1480,7 +1345,6 @@ tgcnv_ww2_inv_civilian_evacuation_planning = {
 	}
 	effect = {
 		administrative_efficiency = 0.005
-		supply_limit = 0.025
 	}
 }
 
@@ -1515,7 +1379,6 @@ tgcnv_ww2_inv_workplace_safety_training = {
 		modifier = { factor = 2 tgcnv_ww2_social_thought_1936 = 1 }
 	}
 	effect = {
-		factory_output = 0.005
 		reinforce_rate = 0.005
 	}
 }
@@ -1533,9 +1396,6 @@ tgcnv_ww2_inv_unit_cohesion_training = {
 		modifier = { factor = 2 tgcnv_ww2_political_thought_1940 = 1 }
 	}
 	effect = {
-		army_base = {
-			default_organisation = 1
-		}
 		morale = 0.015
 	}
 }
@@ -1553,7 +1413,6 @@ tgcnv_ww2_inv_operator_motion_studies = {
 		modifier = { factor = 2 tgcnv_ww2_mechanization_1943 = 1 }
 	}
 	effect = {
-		factory_input = -0.002
-		education_efficiency = 0.01
+		regular_experience_level = 0.5
 	}
 }

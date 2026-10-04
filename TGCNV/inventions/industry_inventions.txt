@@ -3086,7 +3086,9 @@ tgcnv_ww2_inv_fuel_injection_pumps = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { automobiles = 0.01 }
+		factory_goods_output = {
+			automobiles = 0.01
+		}
 	}
 }
 
@@ -3102,7 +3104,7 @@ tgcnv_ww2_inv_engine_dynamometer_testing = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { machine_parts = 0.01 }
+		factory_throughput = 0.005
 	}
 }
 
@@ -3118,7 +3120,9 @@ tgcnv_ww2_inv_catalytic_fuel_processing = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { fuel = 0.01 }
+		factory_goods_output = {
+			fuel = 0.01
+		}
 	}
 }
 
@@ -3134,7 +3138,7 @@ tgcnv_ww2_inv_aviation_fuel_quality_tests = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_input = { aeroplanes = -0.005 }
+		factory_throughput = 0.005
 	}
 }
 
@@ -3166,7 +3170,7 @@ tgcnv_ww2_inv_industrial_heat_recovery = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_input = -0.002
+		factory_throughput = 0.005
 	}
 }
 
@@ -3182,7 +3186,7 @@ tgcnv_ww2_inv_gas_turbine_compressors = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { aeroplanes = 0.01 }
+		factory_throughput = 0.005
 	}
 }
 
@@ -3198,7 +3202,7 @@ tgcnv_ww2_inv_turbine_balancing_machines = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { machine_parts = 0.01 }
+		factory_throughput = 0.005
 	}
 }
 
@@ -3230,7 +3234,9 @@ tgcnv_ww2_inv_grid_protection_relays = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_goods_output = { electric_gear = 0.01 }
+		factory_goods_output = {
+			electric_gear = 0.01
+		}
 	}
 }
 
@@ -3246,7 +3252,9 @@ tgcnv_ww2_inv_precision_gauges = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { machine_parts = 0.01 }
+		factory_goods_output = {
+			machine_parts = 0.01
+		}
 	}
 }
 
@@ -3262,7 +3270,7 @@ tgcnv_ww2_inv_hardened_cutting_tools = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_input = -0.002
+		factory_throughput = 0.005
 	}
 }
 
@@ -3278,7 +3286,9 @@ tgcnv_ww2_inv_weapons_transfer_lines = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { small_arms = 0.01 }
+		factory_goods_output = {
+			small_arms = 0.01
+		}
 	}
 }
 
@@ -3294,7 +3304,9 @@ tgcnv_ww2_inv_artillery_assembly_fixtures = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { artillery = 0.01 }
+		factory_goods_output = {
+			artillery = 0.01
+		}
 	}
 }
 
@@ -3310,7 +3322,7 @@ tgcnv_ww2_inv_process_control_charts = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_input = -0.002
+		factory_throughput = 0.005
 	}
 }
 
@@ -3326,7 +3338,7 @@ tgcnv_ww2_inv_acceptance_sampling = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_output = 0.005
+		factory_throughput = 0.005
 	}
 }
 
@@ -3342,7 +3354,7 @@ tgcnv_ww2_inv_interchangeable_airframe_parts = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { aeroplanes = 0.01 }
+		factory_throughput = 0.005
 	}
 }
 
@@ -3358,7 +3370,7 @@ tgcnv_ww2_inv_aircraft_subassembly_lines = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_input = { aeroplanes = -0.005 }
+		factory_throughput = 0.005
 	}
 }
 
@@ -3390,7 +3402,9 @@ tgcnv_ww2_inv_automatic_machine_feeds = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_goods_output = { machine_parts = 0.01 }
+		factory_goods_output = {
+			machine_parts = 0.01
+		}
 	}
 }
 
@@ -3406,7 +3420,9 @@ tgcnv_ww2_inv_light_alloy_heat_treatment = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { aeroplanes = 0.01 }
+		factory_goods_output = {
+			steel = 0.005
+		}
 	}
 }
 
@@ -3422,7 +3438,9 @@ tgcnv_ww2_inv_alloy_material_recovery = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_input = { aeroplanes = -0.005 }
+		factory_goods_output = {
+			steel = 0.005
+		}
 	}
 }
 
@@ -3438,7 +3456,9 @@ tgcnv_ww2_inv_armor_plate_heat_treatment = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { steel = 0.01 }
+		factory_goods_output = {
+			steel = 0.01
+		}
 	}
 }
 
@@ -3454,7 +3474,9 @@ tgcnv_ww2_inv_armor_plate_inspection = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { barrels = 0.01 }
+		factory_goods_output = {
+			steel = 0.005
+		}
 	}
 }
 
@@ -3470,7 +3492,9 @@ tgcnv_ww2_inv_creep_resistant_alloys = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_goods_output = { steel = 0.01 }
+		factory_goods_output = {
+			steel = 0.01
+		}
 	}
 }
 
@@ -3486,7 +3510,9 @@ tgcnv_ww2_inv_alloy_batch_control = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_goods_input = { steel = -0.005 }
+		factory_goods_input = {
+			steel = -0.005
+		}
 	}
 }
 
@@ -3502,7 +3528,9 @@ tgcnv_ww2_inv_investment_casting_molds = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { machine_parts = 0.01 }
+		factory_goods_output = {
+			steel = 0.005
+		}
 	}
 }
 
@@ -3518,7 +3546,9 @@ tgcnv_ww2_inv_casting_defect_inspection = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_input = { machine_parts = -0.005 }
+		factory_goods_output = {
+			steel = 0.005
+		}
 	}
 }
 
@@ -3534,7 +3564,9 @@ tgcnv_ww2_inv_carbide_tool_inserts = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_goods_output = { machine_parts = 0.01 }
+		factory_goods_output = {
+			steel = 0.005
+		}
 	}
 }
 
@@ -3550,7 +3582,9 @@ tgcnv_ww2_inv_high_speed_cutting_practice = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_throughput = 0.005
+		factory_goods_output = {
+			steel = 0.005
+		}
 	}
 }
 
@@ -3614,7 +3648,7 @@ tgcnv_ww2_inv_standard_cargo_packing = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		army_base = { supply_consumption = -0.005 }
+		supply_limit = 0.025
 	}
 }
 
@@ -3630,7 +3664,7 @@ tgcnv_ww2_inv_mobile_repair_shops = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		reinforce_rate = 0.005
+		supply_limit = 0.025
 	}
 }
 
@@ -3678,7 +3712,7 @@ tgcnv_ww2_inv_transport_aircraft_servicing = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { aeroplanes = 0.01 }
+		supply_limit = 0.03
 	}
 }
 
@@ -3710,7 +3744,7 @@ tgcnv_ww2_inv_central_repair_allocation = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		reinforce_rate = 0.005
+		supply_limit = 0.03
 	}
 }
 
@@ -3726,7 +3760,9 @@ tgcnv_ww2_inv_industrial_vacuum_tubes = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { electric_gear = 0.01 }
+		factory_goods_output = {
+			electric_gear = 0.01
+		}
 	}
 }
 
@@ -3742,7 +3778,9 @@ tgcnv_ww2_inv_electronic_component_testing = {
 		modifier = { factor = 2 year = 1932 }
 	}
 	effect = {
-		factory_goods_output = { radio = 0.01 }
+		factory_goods_output = {
+			radio = 0.01
+		}
 	}
 }
 
@@ -3758,7 +3796,9 @@ tgcnv_ww2_inv_fuel_hydrogenation_catalysts = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_output = { fuel = 0.01 }
+		factory_goods_output = {
+			fuel = 0.01
+		}
 	}
 }
 
@@ -3774,7 +3814,9 @@ tgcnv_ww2_inv_synthetic_fuel_recovery = {
 		modifier = { factor = 2 year = 1938 }
 	}
 	effect = {
-		factory_goods_input = { fuel = -0.005 }
+		factory_goods_input = {
+			fuel = -0.005
+		}
 	}
 }
 
@@ -3790,7 +3832,9 @@ tgcnv_ww2_inv_propellant_grain_control = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_goods_output = { explosives = 0.01 }
+		factory_goods_output = {
+			explosives = 0.01
+		}
 	}
 }
 
@@ -3806,7 +3850,9 @@ tgcnv_ww2_inv_propellant_storage_standards = {
 		modifier = { factor = 2 year = 1942 }
 	}
 	effect = {
-		factory_goods_input = { explosives = -0.005 }
+		factory_goods_input = {
+			explosives = -0.005
+		}
 	}
 }
 
@@ -3822,7 +3868,9 @@ tgcnv_ww2_inv_gyro_guidance_instruments = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { electric_gear = 0.01 }
+		factory_goods_output = {
+			electric_gear = 0.01
+		}
 	}
 }
 
@@ -3838,7 +3886,9 @@ tgcnv_ww2_inv_rocket_propellant_mixing = {
 		modifier = { factor = 2 year = 1945 }
 	}
 	effect = {
-		factory_goods_output = { explosives = 0.01 }
+		factory_goods_output = {
+			explosives = 0.01
+		}
 	}
 }
 
@@ -3854,7 +3904,9 @@ tgcnv_ww2_inv_radiation_measurement_instruments = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_goods_output = { electric_gear = 0.01 }
+		factory_goods_output = {
+			electric_gear = 0.01
+		}
 	}
 }
 
@@ -3870,7 +3922,9 @@ tgcnv_ww2_inv_isotope_separation_equipment = {
 		modifier = { factor = 2 year = 1947 }
 	}
 	effect = {
-		factory_goods_output = { machine_parts = 0.01 }
+		factory_goods_output = {
+			electric_gear = 0.005
+		}
 	}
 }
 

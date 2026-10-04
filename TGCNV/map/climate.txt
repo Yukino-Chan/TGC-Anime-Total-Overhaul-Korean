@@ -4,20 +4,24 @@
 
 ## Köppen Group A: Tropical climates ##
 harsh_climate = {
+	supply_limit = -0.5
+	attrition = 0.25
 	farm_rgo_size = 0
 	farm_rgo_eff = 0
 	mine_rgo_size = 0.0
 	mine_rgo_eff = 0
-	max_attrition = 3559
+	max_attrition = 3
 }
 
 ## Köppen Group B: Dry climates ##
 arid_climate = {
+	supply_limit = -0.5
+	attrition = 0.25
 	farm_rgo_size = 0
 	farm_rgo_eff = 0
 	mine_rgo_size = 0.0
 	mine_rgo_eff = 0
-	max_attrition = 3559
+	max_attrition = 3
 }
 
 ## Köppen Group C: Temperate climates ##
@@ -38,11 +42,13 @@ mild_climate = {
 
 ## Koppen Group E: Polar and Alpine climates ##
 inhospitable_climate = {
+	supply_limit = -0.5
+	attrition = 0.5
 	farm_rgo_size = 0
 	farm_rgo_eff = 0
 	mine_rgo_size = 0.0
 	mine_rgo_eff = 0
-	max_attrition = 10
+	max_attrition = 5
 }
 
 ## Köppen Group A: Tropical climates ##

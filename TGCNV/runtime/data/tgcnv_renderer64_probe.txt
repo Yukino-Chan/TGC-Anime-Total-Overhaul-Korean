@@ -1,5 +1,7 @@
-# Renderer64 pilot: observe the real BA draw state without replacing native draws.
-# Set observe=0 before the next game start to disable this pilot.
-observe = 1
+# Live renderer for all 117 Blue Archive character models. Restart after changing.
+render = 1
+observe = 0
 max_samples = 32
 sample_stride = 120
+resource_audit = 0
+upload_audit = 1

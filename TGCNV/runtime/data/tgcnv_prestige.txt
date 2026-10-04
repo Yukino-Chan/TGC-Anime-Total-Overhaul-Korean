@@ -11,3 +11,9 @@ peace_enabled = yes
 # Peace purchase: player demands, warscore >= 50, occupied territory, <= 30 extra.
 # Progressive prestige rates per extra score: first 10 at 3, next 10 at 5, last 10 at 8.
 # Payment only on native acceptance; submitted budget never increases; pending receipt TTL 90 days.
+
+# Focused uses, with separate influence and actor-wide war cooldowns.
+influence_cost = 40
+rally_cost = 50
+focused_cooldown_days = 365
+# Multiplayer requires identical DLL, mod files and rules on every peer.

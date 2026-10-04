@@ -1,0 +1,163 @@
+# Dedicated HOI3/HOI4 ship models; local conversion provenance in naval-models-20261004.
+objectTypes = {
+ EMFXActorType = {
+  name = "GenericTGCNVNavalDestroyer"
+  actorfile = "gfx/anims/TGCNV_Naval3D_Destroyer.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.2
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalDestroyer2"
+  actorfile = "gfx/anims/TGCNV_Naval3D_Destroyer.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.2
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalDestroyer3"
+  actorfile = "gfx/anims/TGCNV_Naval3D_Destroyer.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.2
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalDestroyer4"
+  actorfile = "gfx/anims/TGCNV_Naval3D_Destroyer.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.2
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalSubmarine"
+  actorfile = "gfx/anims/TGCNV_Naval3D_Submarine.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.3
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalSubmarine2"
+  actorfile = "gfx/anims/TGCNV_Naval3D_Submarine.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.3
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalSubmarine3"
+  actorfile = "gfx/anims/TGCNV_Naval3D_Submarine.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.3
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalSubmarine4"
+  actorfile = "gfx/anims/TGCNV_Naval3D_Submarine.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.3
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalHeavyCruiser"
+  actorfile = "gfx/anims/TGCNV_Naval3D_HeavyCruiser.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.7
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalHeavyCruiser2"
+  actorfile = "gfx/anims/TGCNV_Naval3D_HeavyCruiser.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.7
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalHeavyCruiser3"
+  actorfile = "gfx/anims/TGCNV_Naval3D_HeavyCruiser.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.7
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalHeavyCruiser4"
+  actorfile = "gfx/anims/TGCNV_Naval3D_HeavyCruiser.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 2.7
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalLightCarrier"
+  actorfile = "gfx/anims/TGCNV_Naval3D_LightCarrier.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 1.8
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalLightCarrier2"
+  actorfile = "gfx/anims/TGCNV_Naval3D_LightCarrier.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 1.8
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalLightCarrier3"
+  actorfile = "gfx/anims/TGCNV_Naval3D_LightCarrier.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 1.8
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalLightCarrier4"
+  actorfile = "gfx/anims/TGCNV_Naval3D_LightCarrier.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 1.8
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalFleetCarrier"
+  actorfile = "gfx/anims/TGCNV_Naval3D_FleetCarrier.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 3.2
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalFleetCarrier2"
+  actorfile = "gfx/anims/TGCNV_Naval3D_FleetCarrier.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 3.2
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalFleetCarrier3"
+  actorfile = "gfx/anims/TGCNV_Naval3D_FleetCarrier.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 3.2
+ }
+ EMFXActorType = {
+  name = "GenericTGCNVNavalFleetCarrier4"
+  actorfile = "gfx/anims/TGCNV_Naval3D_FleetCarrier.xac"
+  idle = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  move = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  attack = "gfx/anims/TGCNV_Naval3D_Float.xsm"
+  scale = 3.2
+ }
+}

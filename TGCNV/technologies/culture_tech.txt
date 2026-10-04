@@ -1,215 +1,230 @@
 ## Aesthetics ##
 
 	classicism_n_early_romanticism = {
-		area = aesthetics
-		year = 1836
-		cost = 3600
+	area = aesthetics
+	year = 1836
+	cost = 3600
 
-		prestige = 0.1
+	prestige = 0.08
 
-		ai_chance = {
-			factor = 1.01
-			modifier = {
-				factor = 3
-				rank = 12
-				NOT = { rank = 6 }
-			}
-			modifier = {
-				factor = 0.5
-				NOT = { literacy = 0.3 }
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3
+			rank = 12
+			NOT = {
+				rank = 6
 			}
 		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				literacy = 0.3
+			}
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
 	}
+}
 
 	romanticism = {
-		area = aesthetics
-		year = 1836
-		cost = 7200
+	area = aesthetics
+	year = 1836
+	cost = 7200
 
-		prestige = 0.1
+	prestige = 0.08
 
-		ai_chance = {
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 0.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				literacy = 0.5
+			}
+			is_greater_power = no
+		}
+		modifier = {
 			factor = 1.05
-			modifier = {
-				factor = 0.5
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { literacy = 0.5 }
-				is_greater_power = no
-			}
-			modifier = {
-				factor = 1.05
-				literacy = 0.6
-			}
-			modifier = {
-				factor = 2
-				has_country_modifier = ts_culture
-			}
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 2
+			has_country_modifier = ts_culture
 		}
 	}
+}
 
 	realism = {
-		area = aesthetics
-		year = 1836
-		cost = 10800
+	area = aesthetics
+	year = 1836
+	cost = 10800
 
-		prestige = 0.1
+	prestige = 0.08
 
-		ai_chance = {
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 5
+			tag = ENG
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				literacy = 0.3
+			}
+			is_greater_power = no
+		}
+		modifier = {
 			factor = 1.05
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { literacy = 0.3 }
-				is_greater_power = no
-			}
-			modifier = {
-				factor = 1.05
-				literacy = 0.6
-			}
-			modifier = {
-				factor = 2
-				has_country_modifier = ts_culture
-			}
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 2
+			has_country_modifier = ts_culture
 		}
 	}
+}
 
 	impressionism = {
-		area = aesthetics
-		year = 1850
-		cost = 14400
+	area = aesthetics
+	year = 1850
+	cost = 14400
 
-		prestige = 0.1
+	prestige = 0.08
 
-		ai_chance = {
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				literacy = 0.4
+			}
+			is_greater_power = no
+		}
+		modifier = {
 			factor = 1.05
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { literacy = 0.4 }
-				is_greater_power = no
-			}
-			modifier = {
-				factor = 1.05
-				literacy = 0.6
-			}
-			modifier = {
-				factor = 2
-				has_country_modifier = ts_culture
-			}
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 2
+			has_country_modifier = ts_culture
 		}
 	}
+}
 
 	expressionism = {
-		area = aesthetics
-		year = 1870
-		cost = 18000
+	area = aesthetics
+	year = 1870
+	cost = 18000
 
-		prestige = 0.1
+	prestige = 0.08
 
-		ai_chance = {
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				literacy = 0.5
+			}
+			is_greater_power = no
+		}
+		modifier = {
 			factor = 1.05
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { literacy = 0.5 }
-				is_greater_power = no
-			}
-			modifier = {
-				factor = 1.05
-				literacy = 0.6
-			}
-			modifier = {
-				factor = 2
-				has_country_modifier = ts_culture
-			}
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 2
+			has_country_modifier = ts_culture
 		}
 	}
+}
 
 	modernism = {
-		area = aesthetics
-		year = 1900
-		cost = 21000
+	area = aesthetics
+	year = 1900
+	cost = 21000
 
-		prestige = 0.1
+	prestige = 0.1
 
-		ai_chance = {
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				literacy = 0.5
+			}
+			is_greater_power = no
+		}
+		modifier = {
 			factor = 1.05
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { literacy = 0.5 }
-				is_greater_power = no
-			}
-			modifier = {
-				factor = 1.05
-				literacy = 0.6
-			}
-			modifier = {
-				factor = 2
-				has_country_modifier = ts_culture
-			}
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 2
+			has_country_modifier = ts_culture
 		}
 	}
+}
 
 	mass_culture_n_the_avant_garde = {
-		area = aesthetics
-		year = 1910
-		cost = 31600
+	area = aesthetics
+	year = 1910
+	cost = 31600
 
-		prestige = 0.15
+	prestige = 0.1
 
-		ai_chance = {
-			factor = 1.01
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				literacy = 0.5
 			}
-			modifier = {
-				factor = 0.1
-				NOT = { literacy = 0.5 }
-				is_greater_power = no
-			}
-			modifier = {
-				factor = 1.05
-				literacy = 0.6
-			}
-			modifier = {
-				factor = 2
-				has_country_modifier = ts_culture
-			}
+			is_greater_power = no
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 2
+			has_country_modifier = ts_culture
 		}
 	}
+}
 # TGCNV WWII BEGIN aesthetics
 tgcnv_ww2_aesthetics_1930 = {
 	area = aesthetics
 	year = 1930
-	cost = 34000
+	cost = 12000
 
-	prestige = 0.05
-	diplomatic_points = 0.02
+	prestige = 0.1
 
 	ai_chance = {
 		factor = 1.0
@@ -219,10 +234,9 @@ tgcnv_ww2_aesthetics_1930 = {
 tgcnv_ww2_aesthetics_1936 = {
 	area = aesthetics
 	year = 1936
-	cost = 37000
+	cost = 14000
 
-	prestige = 0.05
-	education_efficiency = 0.015
+	prestige = 0.1
 
 	ai_chance = {
 		factor = 1.0
@@ -232,10 +246,9 @@ tgcnv_ww2_aesthetics_1936 = {
 tgcnv_ww2_aesthetics_1940 = {
 	area = aesthetics
 	year = 1940
-	cost = 40000
+	cost = 16000
 
-	prestige = 0.05
-	morale = 0.025
+	prestige = 0.1
 
 	ai_chance = {
 		factor = 1.0
@@ -245,10 +258,9 @@ tgcnv_ww2_aesthetics_1940 = {
 tgcnv_ww2_aesthetics_1943 = {
 	area = aesthetics
 	year = 1943
-	cost = 43000
+	cost = 18000
 
-	prestige = 0.06
-	increase_research = 0.02
+	prestige = 0.12
 
 	ai_chance = {
 		factor = 1.0
@@ -258,10 +270,9 @@ tgcnv_ww2_aesthetics_1943 = {
 tgcnv_ww2_aesthetics_1945 = {
 	area = aesthetics
 	year = 1945
-	cost = 46000
+	cost = 20000
 
-	prestige = 0.08
-	diplomatic_points = 0.10
+	prestige = 0.12
 
 	ai_chance = {
 		factor = 1.0
@@ -273,236 +284,235 @@ tgcnv_ww2_aesthetics_1945 = {
 ## Philosophy ##
 
 	late_enlightenment_philosophy = {
-		area = philosophy
-		year = 1836
-		cost = 3600
+	area = philosophy
+	year = 1836
+	cost = 3600
 
-		increase_research = 0.50
+	increase_research = 0.5
 
-		ai_chance = {
-			factor = 90
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 20
-				rank = 16
-			}
-			modifier = {
-				factor = 1.1
-				year = 1840
-			}
-			modifier = {
-				factor = 2
-				year = 1850
-			}
-			modifier = {
-				factor = 1.1
-				year = 1865
-			}
-			modifier = {
-				factor = 2
-				year = 1875
-			}
-			modifier = {
-				factor = 2
-				year = 1885
-			}
+	ai_chance = {
+		factor = 90
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 20
+			rank = 16
+		}
+		modifier = {
+			factor = 1.1
+			year = 1840
+		}
+		modifier = {
+			factor = 2
+			year = 1850
+		}
+		modifier = {
+			factor = 1.1
+			year = 1865
+		}
+		modifier = {
+			factor = 2
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
 		}
 	}
+}
 
 	idealism = {
-		area = philosophy
-		year = 1840
-		cost = 7200
+	area = philosophy
+	year = 1840
+	cost = 7200
 
-		increase_research = 0.50
+	increase_research = 0.5
 
-		ai_chance = {
-			factor = 900 #Was 90, multiplied by check that was always true (factor 10 for civilized = yes)
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 20
-				rank = 16
-			}
-			modifier = {
-				factor = 1.1
-				year = 1845
-			}
-			modifier = {
-				factor = 2
-				year = 1850
-			}
-			modifier = {
-				factor = 1.1
-				year = 1865
-			}
-			modifier = {
-				factor = 2
-				year = 1875
-			}
-			modifier = {
-				factor = 2
-				year = 1885
-			}
+	ai_chance = {
+		factor = 900
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 20
+			rank = 16
+		}
+		modifier = {
+			factor = 1.1
+			year = 1845
+		}
+		modifier = {
+			factor = 2
+			year = 1850
+		}
+		modifier = {
+			factor = 1.1
+			year = 1865
+		}
+		modifier = {
+			factor = 2
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
 		}
 	}
+}
 
 	empiricism = {
-		area = philosophy
-		year = 1860
-		cost = 10800
+	area = philosophy
+	year = 1860
+	cost = 10800
 
-		increase_research = 0.50
+	increase_research = 0.5
 
-		ai_chance = {
-			factor = 900 #Was 90, multiplied by check that was always true (factor 10 for civilized = yes)
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 20
-				rank = 16
-			}
-			modifier = {
-				factor = 1.1
-				year = 1865
-			}
-			modifier = {
-				factor = 2
-				year = 1875
-			}
-			modifier = {
-				factor = 2
-				year = 1885
-			}
+	ai_chance = {
+		factor = 900
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 20
+			rank = 16
+		}
+		modifier = {
+			factor = 1.1
+			year = 1865
+		}
+		modifier = {
+			factor = 2
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
 		}
 	}
+}
 
 	analytic_philosophy = {
-		area = philosophy
-		year = 1870
-		cost = 14400
+	area = philosophy
+	year = 1870
+	cost = 14400
 
-		increase_research = 1.0
+	increase_research = 0.5
 
-		ai_chance = {
-			factor = 900 #Was 90, multiplied by check that was always true (factor 10 for civilized = yes)
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 20
-				rank = 16
-			}
-			modifier = {
-				factor = 1.1
-				year = 1875
-			}
-			modifier = {
-				factor = 2
-				year = 1885
-			}
+	ai_chance = {
+		factor = 900
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 20
+			rank = 16
+		}
+		modifier = {
+			factor = 1.1
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
 		}
 	}
+}
 
 	phenomenology_n_hermeneutic = {
-		area = philosophy
-		year = 1880
-		cost = 18000
+	area = philosophy
+	year = 1880
+	cost = 18000
 
-		increase_research = 1.0
+	increase_research = 0.5
 
-		ai_chance = {
-			factor = 900 #Was 90, multiplied by check that was always true (factor 10 for civilized = yes)
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 20
-				rank = 16
-			}
-			modifier = {
-				factor = 1.1
-				year = 1885
-			}
-			modifier = {
-				factor = 2
-				year = 1890
-			}
+	ai_chance = {
+		factor = 900
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 20
+			rank = 16
+		}
+		modifier = {
+			factor = 1.1
+			year = 1885
+		}
+		modifier = {
+			factor = 2
+			year = 1890
 		}
 	}
+}
 
 	anti__rationalism = {
-		area = philosophy
-		year = 1900
-		cost = 21600
+	area = philosophy
+	year = 1900
+	cost = 21600
 
-		increase_research = 1.0
+	increase_research = 0.5
 
-		ai_chance = {
-			factor = 1000 #Was 100, multiplied by check that was always true (factor 10 for civilized = yes)
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 20
-				rank = 16
-			}
-			modifier = {
-				factor = 1.1
-				year = 1905
-			}
-			modifier = {
-				factor = 2
-				year = 1910
-			}
+	ai_chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 20
+			rank = 16
+		}
+		modifier = {
+			factor = 1.1
+			year = 1905
+		}
+		modifier = {
+			factor = 2
+			year = 1910
 		}
 	}
+}
 
 	ontology = {
-		area = philosophy
-		year = 1915
-		cost = 31600
+	area = philosophy
+	year = 1915
+	cost = 31600
 
-		increase_research = 1.0
+	increase_research = 0.55
 
-		ai_chance = {
-			factor = 1000 #Was 100, multiplied by check that was always true (factor 10 for civilized = yes)
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 20
-				rank = 16
-			}
-			modifier = {
-				factor = 1.1
-				year = 1905
-			}
-			modifier = {
-				factor = 2
-				year = 1910
-			}
+	ai_chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 20
+			rank = 16
+		}
+		modifier = {
+			factor = 1.1
+			year = 1905
+		}
+		modifier = {
+			factor = 2
+			year = 1910
 		}
 	}
+}
 # TGCNV WWII BEGIN philosophy
 tgcnv_ww2_philosophy_1930 = {
 	area = philosophy
 	year = 1930
-	cost = 34000
+	cost = 14000
 
-	increase_research = 0.10
-	education_efficiency = 0.02
+	increase_research = 0.55
 
 	ai_chance = {
 		factor = 1.0
@@ -512,10 +522,9 @@ tgcnv_ww2_philosophy_1930 = {
 tgcnv_ww2_philosophy_1936 = {
 	area = philosophy
 	year = 1936
-	cost = 37000
+	cost = 16000
 
-	increase_research = 0.10
-	education_efficiency = 0.02
+	increase_research = 0.55
 
 	ai_chance = {
 		factor = 1.0
@@ -525,10 +534,9 @@ tgcnv_ww2_philosophy_1936 = {
 tgcnv_ww2_philosophy_1940 = {
 	area = philosophy
 	year = 1940
-	cost = 40000
+	cost = 18000
 
-	increase_research = 0.12
-	education_efficiency = 0.025
+	increase_research = 0.55
 
 	ai_chance = {
 		factor = 1.0
@@ -538,10 +546,9 @@ tgcnv_ww2_philosophy_1940 = {
 tgcnv_ww2_philosophy_1943 = {
 	area = philosophy
 	year = 1943
-	cost = 43000
+	cost = 20000
 
-	increase_research = 0.12
-	education_efficiency = 0.025
+	increase_research = 0.55
 
 	ai_chance = {
 		factor = 1.0
@@ -551,10 +558,9 @@ tgcnv_ww2_philosophy_1943 = {
 tgcnv_ww2_philosophy_1945 = {
 	area = philosophy
 	year = 1945
-	cost = 46000
+	cost = 22000
 
-	increase_research = 0.15
-	education_efficiency = 0.03
+	increase_research = 0.55
 
 	ai_chance = {
 		factor = 1.0
@@ -566,315 +572,382 @@ tgcnv_ww2_philosophy_1945 = {
 ## Social Thought ##
 
 	malthusian_thought = {
-		area = social_thought
-		year = 1836
-		cost = 3600
+	area = social_thought
+	year = 1836
+	cost = 3600
+	activate_building = university
 
-		colonial_migration = 0.05
-		education_efficiency = 0.05
-		activate_building = university
+	colonial_migration = 0.025
+	education_efficiency = 0.05
 
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.75 }
-			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.50 }
-			}
-			modifier = {
-				factor = 2 #4
-				NOT = { literacy = 0.25 }
-			}
-			modifier = {
-				factor = 20
-				capital_scope = { continent = europe }
-				NOT = { tag = TUR }
-				NOT = { literacy = 0.30 }
-				rank = 16
-			}
-			modifier = {
-				factor = 3
-				has_country_modifier = ts_culture
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.75
 			}
 		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.50
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.25
+			}
+		}
+		modifier = {
+			factor = 20
+			capital_scope = {
+				continent = europe
+			}
+			NOT = {
+				tag = TUR
+			}
+			NOT = {
+				literacy = 0.30
+			}
+			rank = 16
+		}
+		modifier = {
+			factor = 3
+			has_country_modifier = ts_culture
+		}
 	}
+}
 
 	positivism = {
-		area = social_thought
-		year = 1836
-		cost = 7200
+	area = social_thought
+	year = 1836
+	cost = 7200
+	max_university = 1
 
-		colonial_migration = 0.05
-		education_efficiency = 0.05
+	colonial_migration = 0.025
+	education_efficiency = 0.05
 
-		max_university = 1
-
-		ai_chance = {
-			factor = 1.8
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.75 }
+	ai_chance = {
+		factor = 1.8
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.75
 			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.50 }
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.50
 			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.25 }
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.25
 			}
-			modifier = {
-				factor = 5
-				rank = 16
-				capital_scope = { continent = europe }
-				NOT = { tag = TUR }
-				OR = {
-					NOT = { literacy = 0.40 }
-					tag = ENG
+		}
+		modifier = {
+			factor = 5
+			rank = 16
+			capital_scope = {
+				continent = europe
+			}
+			NOT = {
+				tag = TUR
+			}
+			OR = {
+				NOT = {
+					literacy = 0.40
 				}
+				tag = ENG
 			}
-			modifier = {
-				factor = 3
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 3
-				is_greater_power = yes
-				OR = {
-					tag = PRU
-					tag = NGF
-					tag = GER
-					tag = ENG
-					tag = USA
-				}
+		}
+		modifier = {
+			factor = 3
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 3
+			is_greater_power = yes
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+				tag = ENG
+				tag = USA
 			}
 		}
 	}
+}
 
 	functionalism = {
-		area = social_thought
-		year = 1836
-		cost = 10800
+	area = social_thought
+	year = 1836
+	cost = 10800
+	max_university = 1
 
-		colonial_migration = 0.05
-		education_efficiency = 0.05
+	colonial_migration = 0.025
+	education_efficiency = 0.05
 
-		max_university = 1
-
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.75 }
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.75
 			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.50 }
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.50
 			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.25 }
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.25
 			}
-			modifier = {
-				factor = 5
-				rank = 16
-				capital_scope = { continent = europe }
-				NOT = { tag = TUR }
-				OR = {
-					NOT = { literacy = 0.50 }
-					tag = ENG
+		}
+		modifier = {
+			factor = 5
+			rank = 16
+			capital_scope = {
+				continent = europe
+			}
+			NOT = {
+				tag = TUR
+			}
+			OR = {
+				NOT = {
+					literacy = 0.50
 				}
+				tag = ENG
 			}
-			modifier = {
-				factor = 3
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 3
-				is_greater_power = yes
-				OR = {
-					tag = PRU
-					tag = NGF
-					tag = GER
-					tag = ENG
-					tag = USA
-				}
+		}
+		modifier = {
+			factor = 3
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 3
+			is_greater_power = yes
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+				tag = ENG
+				tag = USA
 			}
 		}
 	}
+}
 
 	biologism = {
-		area = social_thought
-		year = 1850
-		cost = 14400
+	area = social_thought
+	year = 1850
+	cost = 14400
+	max_university = 1
 
-		colonial_migration = 0.05
-		education_efficiency = 0.1
+	colonial_migration = 0.025
+	education_efficiency = 0.1
 
-		max_university = 1
-
-		ai_chance = {
+	ai_chance = {
+		factor = 2
+		modifier = {
 			factor = 2
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.75 }
+			NOT = {
+				literacy = 0.75
 			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.50 }
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.50
 			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.25 }
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.25
 			}
-			modifier = {
-				factor = 10
-				rank = 16
-				capital_scope = { continent = europe }
-				NOT = { tag = TUR }
-				OR = {
-					NOT = { literacy = 0.7 }
-					year = 1880
-					tag = ENG
+		}
+		modifier = {
+			factor = 10
+			rank = 16
+			capital_scope = {
+				continent = europe
+			}
+			NOT = {
+				tag = TUR
+			}
+			OR = {
+				NOT = {
+					literacy = 0.7
 				}
+				year = 1880
+				tag = ENG
 			}
-			modifier = {
-				factor = 5
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 5
-				OR = {
-					tag = PRU
-					tag = NGF
-					tag = GER
-					tag = ENG
-					tag = USA
-				}
+		}
+		modifier = {
+			factor = 5
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+				tag = ENG
+				tag = USA
 			}
 		}
 	}
+}
 
 	social_science = {
-		area = social_thought
-		year = 1870
-		cost = 18000
+	area = social_thought
+	year = 1870
+	cost = 18000
+	max_university = 1
 
-		colonial_migration = 0.05
-		education_efficiency = 0.1
+	colonial_migration = 0.03
+	education_efficiency = 0.1
 
-		max_university = 1
-
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.75 }
-			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.50 }
-			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.25 }
-			}
-			modifier = {
-				factor = 10
-				rank = 16
-				capital_scope = { continent = europe }
-				NOT = { tag = TUR }
-				OR = {
-					NOT = { literacy = 0.75 }
-					year = 1890
-					tag = ENG
-				}
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.75
 			}
 		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.50
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.25
+			}
+		}
+		modifier = {
+			factor = 10
+			rank = 16
+			capital_scope = {
+				continent = europe
+			}
+			NOT = {
+				tag = TUR
+			}
+			OR = {
+				NOT = {
+					literacy = 0.75
+				}
+				year = 1890
+				tag = ENG
+			}
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
 	}
+}
 
 	social_alienation = {
-		area = social_thought
-		year = 1900
-		cost = 21600
+	area = social_thought
+	year = 1900
+	cost = 21600
+	max_university = 1
 
-		colonial_migration = 0.05
-		education_efficiency = 0.1
+	colonial_migration = 0.03
+	education_efficiency = 0.1
 
-		max_university = 1
-
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.75 }
-			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.50 }
-			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.25 }
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.75
 			}
 		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.50
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.25
+			}
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
 	}
+}
 
 	social_psychology = {
-		area = social_thought
-		year = 1910
-		cost = 31600
+	area = social_thought
+	year = 1910
+	cost = 31600
 
-		colonial_migration = 0.05
-		education_efficiency = 0.5
+	colonial_migration = 0.03
+	education_efficiency = 0.12
 
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.75 }
-			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.50 }
-			}
-			modifier = {
-				factor = 2 #2
-				NOT = { literacy = 0.25 }
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.75
 			}
 		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.50
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				literacy = 0.25
+			}
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
 	}
+}
 # TGCNV WWII BEGIN social_thought
 tgcnv_ww2_social_thought_1930 = {
 	area = social_thought
 	year = 1930
-	cost = 34000
+	cost = 14000
 
-	education_efficiency = 0.05
-	administrative_efficiency = 0.005
+	education_efficiency = 0.13
+	colonial_migration = 0.03
 
 	ai_chance = {
 		factor = 1.0
@@ -884,10 +957,10 @@ tgcnv_ww2_social_thought_1930 = {
 tgcnv_ww2_social_thought_1936 = {
 	area = social_thought
 	year = 1936
-	cost = 37000
+	cost = 16000
 
-	education_efficiency = 0.06
-	administrative_efficiency = 0.005
+	education_efficiency = 0.14
+	colonial_migration = 0.03
 
 	ai_chance = {
 		factor = 1.0
@@ -897,11 +970,10 @@ tgcnv_ww2_social_thought_1936 = {
 tgcnv_ww2_social_thought_1940 = {
 	area = social_thought
 	year = 1940
-	cost = 40000
+	cost = 18000
 
-	education_efficiency = 0.07
-	land_attrition = -0.01
-	morale = 0.02
+	education_efficiency = 0.15
+	colonial_migration = 0.035
 
 	ai_chance = {
 		factor = 1.0
@@ -911,12 +983,10 @@ tgcnv_ww2_social_thought_1940 = {
 tgcnv_ww2_social_thought_1943 = {
 	area = social_thought
 	year = 1943
-	cost = 43000
+	cost = 20000
 
-	education_efficiency = 0.08
-	factory_goods_output = {
-		machine_parts = 0.03
-	}
+	education_efficiency = 0.16
+	colonial_migration = 0.035
 
 	ai_chance = {
 		factor = 1.0
@@ -926,10 +996,10 @@ tgcnv_ww2_social_thought_1943 = {
 tgcnv_ww2_social_thought_1945 = {
 	area = social_thought
 	year = 1945
-	cost = 46000
+	cost = 22000
 
-	education_efficiency = 0.10
-	reinforce_rate = 0.01
+	education_efficiency = 0.17
+	colonial_migration = 0.035
 
 	ai_chance = {
 		factor = 1.0
@@ -940,324 +1010,385 @@ tgcnv_ww2_social_thought_1945 = {
 ## Political Thought ##
 
 	enlightenment_thought = {
-		area = political_thought
-		year = 1836
-		cost = 3600
+	area = political_thought
+	year = 1836
+	cost = 3600
+	max_national_focus = 1
 
-		max_national_focus = 1
 
-		ai_chance = {
-			factor = 11
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				year = 1850
-			}
-			modifier = {
-				factor = 20
-				culture_has_union_tag = yes
-			}
+
+	ai_chance = {
+		factor = 11
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			year = 1850
+		}
+		modifier = {
+			factor = 20
+			culture_has_union_tag = yes
 		}
 	}
+}
 
 	ideological_thought = {
-		area = political_thought
-		year = 1836
-		cost = 7200
+	area = political_thought
+	year = 1836
+	cost = 7200
+	max_national_focus = 1
 
-		max_national_focus = 1
 
-		ai_chance = {
-			factor = 11
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 1.50
-				OR = {
-					total_pops = 4000000
-					AND = {
-						is_secondary_power = yes
-						any_owned_province = { port = yes }
-					}
-					AND = {
-						capital_scope = { continent = europe }
-						colonial_nation = yes
-					}
-				}
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { rank = 16}
-				NOT = { total_pops = 2000000 }
-			}
-			modifier = {
-				factor = 51
-				rank = 16
-				year = 1840
-				any_owned_province = { port = yes }
-				total_pops = 2000000
-			}
-			modifier = {
-				factor = 51
-				year = 1850
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 20
-				culture_has_union_tag = yes
-			}
+
+	ai_chance = {
+		factor = 11
+		modifier = {
+			factor = 6
+			is_greater_power = yes
 		}
-	}
-
-	state_n_government = {
-		area = political_thought
-		year = 1840
-		cost = 10800
-
-		max_national_focus = 1
-		cb_creation_speed = 0.05
-
-		ai_chance = {
-			factor = 15
-			modifier = {
-				factor = 3.5
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					total_pops = 4000000
-					AND = {
-						is_secondary_power = yes
-						any_owned_province = { port = yes }
-					}
-					AND = {
-						capital_scope = { continent = europe }
-						colonial_nation = yes
+		modifier = {
+			factor = 1.50
+			OR = {
+				total_pops = 4000000
+				AND = {
+					is_secondary_power = yes
+					any_owned_province = {
+						port = yes
 					}
 				}
-			}
-			modifier = {
-				factor = 20
-				culture_has_union_tag = yes
-			}
-			modifier = {
-				factor = 30
-				rank = 16
-				year = 1850
-				any_owned_province = { port = yes }
-				total_pops = 3000000
-			}
-			modifier = {
-				factor = 30
-				OR = {
-					year = 1860
-					tag = SAR
-					tag = PRU
-					tag = USA
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
 					colonial_nation = yes
 				}
 			}
-			modifier = {
-				factor = 3
-				has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				rank = 16
+			}
+			NOT = {
+				total_pops = 2000000
 			}
 		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1840
+			any_owned_province = {
+				port = yes
+			}
+			total_pops = 2000000
+		}
+		modifier = {
+			factor = 51
+			year = 1850
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 20
+			culture_has_union_tag = yes
+		}
 	}
+}
+
+	state_n_government = {
+	area = political_thought
+	year = 1840
+	cost = 10800
+	max_national_focus = 1
+
+	cb_creation_speed = 0.015
+
+	ai_chance = {
+		factor = 15
+		modifier = {
+			factor = 3.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				total_pops = 4000000
+				AND = {
+					is_secondary_power = yes
+					any_owned_province = {
+						port = yes
+					}
+				}
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					colonial_nation = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 20
+			culture_has_union_tag = yes
+		}
+		modifier = {
+			factor = 30
+			rank = 16
+			year = 1850
+			any_owned_province = {
+				port = yes
+			}
+			total_pops = 3000000
+		}
+		modifier = {
+			factor = 30
+			OR = {
+				year = 1860
+				tag = SAR
+				tag = PRU
+				tag = USA
+				colonial_nation = yes
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_modifier = ts_culture
+		}
+	}
+}
 
 	nationalism_n_imperialism = {
-		area = political_thought
-		year = 1850
-		cost = 14400
+	area = political_thought
+	year = 1850
+	cost = 14400
+	max_national_focus = 1
 
-		max_national_focus = 1
-		#colonial_life_rating = -10
-		cb_creation_speed = 0.05 #No, bad dog, no infinite CB speed for you
+	cb_creation_speed = 0.02
 
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 21
-				is_greater_power = yes
-				OR = {
-					any_greater_power = { any_owned_province = { any_neighbor_province = { empty = yes } } }
-					any_owned_province = { any_neighbor_province = { empty = yes } }
+	ai_chance = {
+		factor = 20
+		modifier = {
+			factor = 21
+			is_greater_power = yes
+			OR = {
+				any_greater_power = {
+					any_owned_province = {
+						any_neighbor_province = {
+							empty = yes
+						}
+					}
+				}
+				any_owned_province = {
+					any_neighbor_province = {
+						empty = yes
+					}
 				}
 			}
-			modifier = {
-				factor = 11
+		}
+		modifier = {
+			factor = 11
+			rank = 16
+			year = 1860
+			any_owned_province = {
+				has_building = naval_base
+			}
+			total_pops = 4000000
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1865
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1870
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				total_pops = 4000000
+				AND = {
+					is_secondary_power = yes
+					any_owned_province = {
+						port = yes
+					}
+				}
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					colonial_nation = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
 				rank = 16
-				year = 1860
-				any_owned_province = { has_building = naval_base }
+			}
+			NOT = {
+				any_owned_province = {
+					continent = africa
+				}
+			}
+			NOT = {
 				total_pops = 4000000
 			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				year = 1865
-			}
-			modifier = {
-				factor = 51
-				rank = 16
-				year = 1870
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					total_pops = 4000000
-					AND = {
-						is_secondary_power = yes
-						any_owned_province = { port = yes }
+		}
+		modifier = {
+			factor = 3
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 100
+			OR = {
+				AND = {
+					cultural_union = {
+						exists = no
 					}
-					AND = {
-						capital_scope = { continent = europe }
-						colonial_nation = yes
-					}
+					is_greater_power = yes
 				}
-			}
-
-			modifier = {
-				factor = 0.25
-				NOT = { rank = 16 }
-				NOT = { any_owned_province = { continent = africa } }
-				NOT = { total_pops = 4000000 }
-			}
-
-			modifier = {
-				factor = 3
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 100
-				OR = {
-					AND = {
-						cultural_union = { exists = no }
-						is_greater_power = yes
-					}
-					tag = POR
-				}
+				tag = POR
 			}
 		}
 	}
+}
 
 	revolution_n_counterrevolution = {
-		area = political_thought
-		year = 1870
-		cost = 18000
+	area = political_thought
+	year = 1870
+	cost = 18000
+	max_national_focus = 1
 
-		max_national_focus = 1
-		diplomatic_points = 0.25
-		cb_creation_speed = 0.05
+	diplomatic_points = 0.07
+	cb_creation_speed = 0.02
 
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 21
-				is_greater_power = yes
-				OR = {
-					any_greater_power = { any_owned_province = { any_neighbor_province = { empty = yes } } }
-					any_owned_province = { any_neighbor_province = { empty = yes } }
+	ai_chance = {
+		factor = 20
+		modifier = {
+			factor = 21
+			is_greater_power = yes
+			OR = {
+				any_greater_power = {
+					any_owned_province = {
+						any_neighbor_province = {
+							empty = yes
+						}
+					}
+				}
+				any_owned_province = {
+					any_neighbor_province = {
+						empty = yes
+					}
 				}
 			}
-			modifier = {
-				factor = 5
-				total_pops = 5000000
-			}
-			modifier = {
-				factor = 10
-				tag = RUS
-			}
-			modifier = {
-				factor = 51
-				rank = 16
-				year = 1880
-			}
-			modifier = {
-				factor = 3
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 0.25
-				is_greater_power = no
-				NOT = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = 5
+			total_pops = 5000000
+		}
+		modifier = {
+			factor = 10
+			tag = RUS
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1880
+		}
+		modifier = {
+			factor = 3
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 0.25
+			is_greater_power = no
+			NOT = {
+				literacy = 0.4
 			}
 		}
 	}
+}
 
 	mass_politics = {
-		area = political_thought
-		year = 1900
-		cost = 21600
+	area = political_thought
+	year = 1900
+	cost = 21600
+	max_national_focus = 1
 
-		max_national_focus = 1
-		cb_creation_speed = 0.05
+	cb_creation_speed = 0.02
+	diplomatic_points = 0.07
 
-		ai_chance = {
-			factor = 2
-			modifier = {
-				factor = 5
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 5
-				total_pops = 6000000
-			}
-			modifier = {
-				factor = 3
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { literacy = 0.4 }
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 5
+			total_pops = 6000000
+		}
+		modifier = {
+			factor = 3
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				literacy = 0.4
 			}
 		}
 	}
+}
 
 	the_police_state = {
-		area = political_thought
-		year = 1910
-		cost = 31600
+	area = political_thought
+	year = 1910
+	cost = 31600
+	max_national_focus = 1
 
-		max_national_focus = 1
-		suppression_points_modifier = 0.30
-		
-		ai_chance = {
-			factor = 2
-			modifier = {
-				factor = 5
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 5
-				total_pops = 6000000
-			}
-			modifier = {
-				factor = 3
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { literacy = 0.4 }
+	suppression_points_modifier = 0.3
+	cb_creation_speed = 0.02
+	diplomatic_points = 0.075
+
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 5
+			total_pops = 6000000
+		}
+		modifier = {
+			factor = 3
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				literacy = 0.4
 			}
 		}
 	}
+}
 # TGCNV WWII BEGIN political_thought
 tgcnv_ww2_political_thought_1930 = {
 	area = political_thought
 	year = 1930
-	cost = 34000
+	cost = 13000
 
+	diplomatic_points = 0.075
 	administrative_efficiency = 0.02
-	tax_eff = 1
+	cb_creation_speed = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -1267,10 +1398,11 @@ tgcnv_ww2_political_thought_1930 = {
 tgcnv_ww2_political_thought_1936 = {
 	area = political_thought
 	year = 1936
-	cost = 37000
+	cost = 15000
 
 	administrative_efficiency = 0.02
-	supply_limit = 0.05
+	cb_creation_speed = 0.02
+	diplomatic_points = 0.08
 
 	ai_chance = {
 		factor = 1.0
@@ -1280,10 +1412,12 @@ tgcnv_ww2_political_thought_1936 = {
 tgcnv_ww2_political_thought_1940 = {
 	area = political_thought
 	year = 1940
-	cost = 40000
-
+	cost = 17000
 	max_national_focus = 1
+
 	administrative_efficiency = 0.02
+	cb_creation_speed = 0.02
+	diplomatic_points = 0.08
 
 	ai_chance = {
 		factor = 1.0
@@ -1293,10 +1427,11 @@ tgcnv_ww2_political_thought_1940 = {
 tgcnv_ww2_political_thought_1943 = {
 	area = political_thought
 	year = 1943
-	cost = 43000
+	cost = 19000
 
-	diplomatic_points = 0.10
-	administrative_efficiency = 0.01
+	diplomatic_points = 0.085
+	administrative_efficiency = 0.025
+	cb_creation_speed = 0.02
 
 	ai_chance = {
 		factor = 1.0
@@ -1306,10 +1441,11 @@ tgcnv_ww2_political_thought_1943 = {
 tgcnv_ww2_political_thought_1945 = {
 	area = political_thought
 	year = 1945
-	cost = 46000
+	cost = 21000
 
-	diplomatic_points = 0.15
-	prestige = 0.05
+	diplomatic_points = 0.085
+	administrative_efficiency = 0.025
+	cb_creation_speed = 0.025
 
 	ai_chance = {
 		factor = 1.0
@@ -1321,266 +1457,280 @@ tgcnv_ww2_political_thought_1945 = {
 ## Psychology ##
 
 	introspectionism = {
-		area = psychology
-		year = 1836
-		cost = 3600
+	area = psychology
+	year = 1836
+	cost = 3600
 
-		regular_experience_level = 5
-		reinforce_rate = 0.05
+	regular_experience_level = 3
+	reinforce_rate = 0.035
 
-		ai_chance = {
-			factor = 1.25
-			modifier = {
-				factor = 1.05 #1.25
-				is_greater_power = yes
+	ai_chance = {
+		factor = 1.25
+		modifier = {
+			factor = 1.05
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 1.1
+			year = 1850
+		}
+		modifier = {
+			factor = 2
+			year = 1860
+		}
+		modifier = {
+			factor = 21
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 11
+			rank = 16
+			year = 1860
+			any_owned_province = {
+				port = yes
 			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 1.1
-				year = 1850 #1840
-			}
-			modifier = {
-				factor = 2
-				year = 1860 #1850
-			}
-			modifier = {
-				factor = 21
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 11
-				rank = 16
-				year = 1860
-				any_owned_province = { port = yes }
-				total_pops = 4000000
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				year = 1865
-			}
-			modifier = {
-				factor = 51
-				rank = 16
-				year = 1870
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { literacy = 0.4 }
+			total_pops = 4000000
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1865
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1870
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				literacy = 0.4
 			}
 		}
 	}
+}
 
 	associationism = {
-		area = psychology
-		year = 1836
-		cost = 7200
+	area = psychology
+	year = 1836
+	cost = 7200
 
-		regular_experience_level = 5
-		reinforce_rate = 0.05
+	regular_experience_level = 3
+	reinforce_rate = 0.035
 
-		ai_chance = {
-			factor = 1.25
-			modifier = {
-				factor = 1.05
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 1.1
-				year = 1860 #1840
-			}
-			modifier = {
-				factor = 2
-				year = 1870 #1850
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { literacy = 0.4 }
+	ai_chance = {
+		factor = 1.25
+		modifier = {
+			factor = 1.05
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 1.1
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			year = 1870
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				literacy = 0.4
 			}
 		}
 	}
+}
 
 	phenomenalism = {
-		area = psychology
-		year = 1850
-		cost = 10800
+	area = psychology
+	year = 1850
+	cost = 10800
 
-		regular_experience_level = 5
-		reinforce_rate = 0.05
+	regular_experience_level = 3
+	reinforce_rate = 0.04
 
-		ai_chance = {
-			factor = 1.25
-			modifier = {
-				factor = 1.05 #1.25
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 1.1
-				year = 1870 #1860
-			}
-			modifier = {
-				factor = 2
-				year = 1880
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { literacy = 0.4 }
+	ai_chance = {
+		factor = 1.25
+		modifier = {
+			factor = 1.05
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 1.1
+			year = 1870
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				literacy = 0.4
 			}
 		}
 	}
+}
 
 	experimental_psychology = {
-		area = psychology
-		year = 1870
-		cost = 14400
+	area = psychology
+	year = 1870
+	cost = 14400
 
-		regular_experience_level = 5
-		reinforce_rate = 0.05
+	regular_experience_level = 3
+	reinforce_rate = 0.04
 
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 1.05 #1.25
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 1.1
-				year = 1880 #1860
-			}
-			modifier = {
-				factor = 2
-				year = 1890 #1870
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { literacy = 0.4 }
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 1.05
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 1.1
+			year = 1880
+		}
+		modifier = {
+			factor = 2
+			year = 1890
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				literacy = 0.4
 			}
 		}
 	}
+}
 
 	psychoanalysis = {
-		area = psychology
-		year = 1890
-		cost = 18000
+	area = psychology
+	year = 1890
+	cost = 18000
 
-		regular_experience_level = 5
-		reinforce_rate = 0.05
+	regular_experience_level = 3
+	reinforce_rate = 0.04
 
-		ai_chance = {
-			factor = 4
-			modifier = {
-				factor = 3 #1.25
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 3
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 1.1
-				year = 1890 #1880
-			}
-			modifier = {
-				factor = 2
-				year = 1900 #1890
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { literacy = 0.4 }
+	ai_chance = {
+		factor = 4
+		modifier = {
+			factor = 3
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 1.1
+			year = 1890
+		}
+		modifier = {
+			factor = 2
+			year = 1900
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				literacy = 0.4
 			}
 		}
 	}
+}
 
-	psychodynamics  = {
-		area = psychology
-		year = 1900
-		cost = 21600
+	psychodynamics = {
+	area = psychology
+	year = 1900
+	cost = 21600
 
-		regular_experience_level = 5
-		reinforce_rate = 0.05
+	regular_experience_level = 3
+	reinforce_rate = 0.04
 
-		ai_chance = {
-			factor = 1.2
-			modifier = {
-				factor = 1.25
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 1.1
-				year = 1910
-			}
-			modifier = {
-				factor = 2
-				year = 1920
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { literacy = 0.4 }
+	ai_chance = {
+		factor = 1.2
+		modifier = {
+			factor = 1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 1.1
+			year = 1910
+		}
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				literacy = 0.4
 			}
 		}
 	}
+}
 
 	behaviorism = {
-		area = psychology
-		year = 1910
-		cost = 31600
+	area = psychology
+	year = 1910
+	cost = 31600
 
-		regular_experience_level = 10
-		reinforce_rate = 0.1
+	regular_experience_level = 3
+	reinforce_rate = 0.045
 
-		ai_chance = {
-			factor = 1.2
-			modifier = {
-				factor = 1.25
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_culture
-			}
-			modifier = {
-				factor = 1.1
-				year = 1910
-			}
-			modifier = {
-				factor = 2
-				year = 1920
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { literacy = 0.4 }
+	ai_chance = {
+		factor = 1.2
+		modifier = {
+			factor = 1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_culture
+		}
+		modifier = {
+			factor = 1.1
+			year = 1910
+		}
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				literacy = 0.4
 			}
 		}
 	}
+}
 # TGCNV WWII BEGIN psychology
 tgcnv_ww2_psychology_1930 = {
 	area = psychology
 	year = 1930
-	cost = 34000
+	cost = 12000
 
-	regular_experience_level = 2
-	army_base = {
-		default_organisation = 2
-	}
+	regular_experience_level = 3
+	reinforce_rate = 0.045
 
 	ai_chance = {
 		factor = 1.0
@@ -1590,10 +1740,10 @@ tgcnv_ww2_psychology_1930 = {
 tgcnv_ww2_psychology_1936 = {
 	area = psychology
 	year = 1936
-	cost = 37000
+	cost = 14000
 
-	factory_output = 0.015
-	education_efficiency = 0.02
+	regular_experience_level = 3
+	reinforce_rate = 0.045
 
 	ai_chance = {
 		factor = 1.0
@@ -1603,10 +1753,11 @@ tgcnv_ww2_psychology_1936 = {
 tgcnv_ww2_psychology_1940 = {
 	area = psychology
 	year = 1940
-	cost = 40000
+	cost = 16000
 
-	morale = 0.06
-	reinforce_rate = 0.01
+	morale = 0.035
+	reinforce_rate = 0.05
+	regular_experience_level = 4
 
 	ai_chance = {
 		factor = 1.0
@@ -1616,11 +1767,11 @@ tgcnv_ww2_psychology_1940 = {
 tgcnv_ww2_psychology_1943 = {
 	area = psychology
 	year = 1943
-	cost = 43000
+	cost = 18000
 
-	regular_experience_level = 2
-	factory_input = -0.005
-	factory_output = 0.01
+	reinforce_rate = 0.05
+	regular_experience_level = 4
+	morale = 0.035
 
 	ai_chance = {
 		factor = 1.0
@@ -1630,10 +1781,11 @@ tgcnv_ww2_psychology_1943 = {
 tgcnv_ww2_psychology_1945 = {
 	area = psychology
 	year = 1945
-	cost = 46000
+	cost = 20000
 
-	reinforce_rate = 0.03
-	morale = 0.05
+	reinforce_rate = 0.05
+	morale = 0.04
+	regular_experience_level = 5
 
 	ai_chance = {
 		factor = 1.0

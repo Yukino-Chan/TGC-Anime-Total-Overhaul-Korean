@@ -784,3 +784,164 @@ technique BAHalo2
 	}
 }
 // TGCNV_BA_TOON_END
+
+// TGCNV_COMBAT_MATERIALS_BEGIN
+// BA/HOI4 texture adaptation. All ages come from paused presentation poses.
+// These functions never use global Time or change existing actor techniques.
+float2 TGCNVCombatFrame(float2 uv, float frame, float columns)
+{
+    // Inset within each source cell to avoid sampling its neighbouring frame.
+    uv = lerp(float2(0.008,0.008),float2(0.992,0.992),saturate(uv));
+    return (uv + float2(fmod(frame,columns),floor(frame/columns))) / columns;
+}
+float4 TGCNVCombatBAMuzzlePS(TGCNV_STRIKE_VS_OUTPUT In) : COLOR
+{
+    float age=saturate(In.age);
+    float4 c=tex2D(DiffuseMap,TGCNVCombatFrame(In.vTexCoord0,0,2));
+    c.a*=c.r*(1-smoothstep(0.35,1,age));
+    c.rgb=ApplyFOWColor(c.rgb*float3(1,0.78,0.36));
+    return c;
+}
+float4 TGCNVCombatBATracerPS(TGCNV_STRIKE_VS_OUTPUT In) : COLOR
+{
+    float4 c=tex2D(DiffuseMap,In.vTexCoord0);
+    c.a*=c.r*(1-smoothstep(0.7,1,saturate(In.age)));
+    c.rgb=ApplyFOWColor(c.rgb*float3(1,0.92,0.55));
+    return c;
+}
+float4 TGCNVCombatBAImpactPS(TGCNV_STRIKE_VS_OUTPUT In) : COLOR
+{
+    float age=saturate(In.age);
+    float frame=min(15,floor(age*20));
+    float4 c=tex2D(DiffuseMap,TGCNVCombatFrame(In.vTexCoord0,frame,4));
+    c.rgb=ApplyFOWColor(c.rgb);
+    c.a*=1-smoothstep(0.65,0.88,age);
+    return c;
+}
+float4 TGCNVCombatBASmokePS(TGCNV_STRIKE_VS_OUTPUT In) : COLOR
+{
+    float age=saturate(In.age);
+    float4 c=tex2D(DiffuseMap,TGCNVCombatFrame(In.vTexCoord0,min(3,floor(age*4)),2));
+    c.rgb=ApplyFOWColor(c.rgb*lerp(float3(.38,.41,.46),float3(.62,.65,.7),age));
+    c.a*=.52*smoothstep(.10,.32,age)*(1-smoothstep(.55,1,age));
+    return c;
+}
+float4 TGCNVCombatHOIMuzzlePS(TGCNV_STRIKE_VS_OUTPUT In) : COLOR
+{
+    float4 c=tex2D(DiffuseMap,In.vTexCoord0);
+    c.rgb=ApplyFOWColor(c.rgb*float3(1,.77,.39));
+    c.a*=1-smoothstep(.3,1,saturate(In.age));
+    return c;
+}
+float4 TGCNVCombatHOITracerPS(TGCNV_STRIKE_VS_OUTPUT In) : COLOR
+{
+    float4 c=tex2D(DiffuseMap,In.vTexCoord0);
+    c.rgb=ApplyFOWColor(c.rgb*float3(1.4,1.25,.9));
+    c.a*=1-smoothstep(.75,1,saturate(In.age));
+    return c;
+}
+float4 TGCNVCombatHOIFirePS(TGCNV_STRIKE_VS_OUTPUT In) : COLOR
+{
+    float age=saturate(In.age);
+    float4 c=tex2D(DiffuseMap,In.vTexCoord0);
+    c.rgb=ApplyFOWColor(c.rgb);
+    c.a*=1-smoothstep(.08,.42,age);
+    return c;
+}
+float4 TGCNVCombatHOISmokePS(TGCNV_STRIKE_VS_OUTPUT In) : COLOR
+{
+    float age=saturate(In.age);
+    float4 c=tex2D(DiffuseMap,In.vTexCoord0);
+    c.rgb=ApplyFOWColor(c.rgb*lerp(float3(.24,.26,.3),float3(.52,.55,.59),age));
+    c.a*=.55*smoothstep(.04,.22,age)*(1-smoothstep(.55,1,age));
+    return c;
+}
+float4 TGCNVCombatHOIGunSmokePS(TGCNV_STRIKE_VS_OUTPUT In) : COLOR
+{
+    float age=saturate(In.age);
+    float4 c=tex2D(DiffuseMap,In.vTexCoord0);
+    c.rgb=ApplyFOWColor(c.rgb*float3(.46,.49,.53));
+    c.a*=.32*(1-smoothstep(.2,1,age));
+    return c;
+}
+float4 TGCNVCombatHOISplashPS(TGCNV_STRIKE_VS_OUTPUT In) : COLOR
+{
+    float age=saturate(In.age);
+    float4 c=tex2D(DiffuseMap,In.vTexCoord0);
+    c.rgb=ApplyFOWColor(c.rgb*float3(.70,.87,1));
+    c.a*=.78*(1-smoothstep(.2,.6,age));
+    return c;
+}
+// Techniques are emitted below by the asset builder with explicit blend and
+// depth state. The original material prefix remains byte-for-byte unchanged.
+
+technique TGCNVCombatBAMuzzle { pass p0 {
+ ZENABLE=True; ZWRITEENABLE=False; ALPHABLENDENABLE=True; ALPHATESTENABLE=False;
+ SrcBlend=SRCALPHA; DestBlend=ONE; CullMode=CCW;
+ VertexShader=compile vs_2_0 TGCNVStrikeVS();
+ PixelShader=compile ps_2_0 TGCNVCombatBAMuzzlePS();
+} }
+
+technique TGCNVCombatBATracer { pass p0 {
+ ZENABLE=True; ZWRITEENABLE=False; ALPHABLENDENABLE=True; ALPHATESTENABLE=False;
+ SrcBlend=SRCALPHA; DestBlend=ONE; CullMode=CCW;
+ VertexShader=compile vs_2_0 TGCNVStrikeVS();
+ PixelShader=compile ps_2_0 TGCNVCombatBATracerPS();
+} }
+
+technique TGCNVCombatBAImpact { pass p0 {
+ ZENABLE=True; ZWRITEENABLE=False; ALPHABLENDENABLE=True; ALPHATESTENABLE=False;
+ SrcBlend=SRCALPHA; DestBlend=INVSRCALPHA; CullMode=CCW;
+ VertexShader=compile vs_2_0 TGCNVStrikeVS();
+ PixelShader=compile ps_2_0 TGCNVCombatBAImpactPS();
+} }
+
+technique TGCNVCombatBASmoke { pass p0 {
+ ZENABLE=True; ZWRITEENABLE=False; ALPHABLENDENABLE=True; ALPHATESTENABLE=False;
+ SrcBlend=SRCALPHA; DestBlend=INVSRCALPHA; CullMode=CCW;
+ VertexShader=compile vs_2_0 TGCNVStrikeVS();
+ PixelShader=compile ps_2_0 TGCNVCombatBASmokePS();
+} }
+
+technique TGCNVCombatHOIMuzzle { pass p0 {
+ ZENABLE=True; ZWRITEENABLE=False; ALPHABLENDENABLE=True; ALPHATESTENABLE=False;
+ SrcBlend=SRCALPHA; DestBlend=ONE; CullMode=CCW;
+ VertexShader=compile vs_2_0 TGCNVStrikeVS();
+ PixelShader=compile ps_2_0 TGCNVCombatHOIMuzzlePS();
+} }
+
+technique TGCNVCombatHOITracer { pass p0 {
+ ZENABLE=True; ZWRITEENABLE=False; ALPHABLENDENABLE=True; ALPHATESTENABLE=False;
+ SrcBlend=SRCALPHA; DestBlend=ONE; CullMode=CCW;
+ VertexShader=compile vs_2_0 TGCNVStrikeVS();
+ PixelShader=compile ps_2_0 TGCNVCombatHOITracerPS();
+} }
+
+technique TGCNVCombatHOIFire { pass p0 {
+ ZENABLE=True; ZWRITEENABLE=False; ALPHABLENDENABLE=True; ALPHATESTENABLE=False;
+ SrcBlend=SRCALPHA; DestBlend=ONE; CullMode=CCW;
+ VertexShader=compile vs_2_0 TGCNVStrikeVS();
+ PixelShader=compile ps_2_0 TGCNVCombatHOIFirePS();
+} }
+
+technique TGCNVCombatHOISmoke { pass p0 {
+ ZENABLE=True; ZWRITEENABLE=False; ALPHABLENDENABLE=True; ALPHATESTENABLE=False;
+ SrcBlend=SRCALPHA; DestBlend=INVSRCALPHA; CullMode=CCW;
+ VertexShader=compile vs_2_0 TGCNVStrikeVS();
+ PixelShader=compile ps_2_0 TGCNVCombatHOISmokePS();
+} }
+
+technique TGCNVCombatHOIGunSmoke { pass p0 {
+ ZENABLE=True; ZWRITEENABLE=False; ALPHABLENDENABLE=True; ALPHATESTENABLE=False;
+ SrcBlend=SRCALPHA; DestBlend=INVSRCALPHA; CullMode=CCW;
+ VertexShader=compile vs_2_0 TGCNVStrikeVS();
+ PixelShader=compile ps_2_0 TGCNVCombatHOIGunSmokePS();
+} }
+
+technique TGCNVCombatHOISplash { pass p0 {
+ ZENABLE=True; ZWRITEENABLE=False; ALPHABLENDENABLE=True; ALPHATESTENABLE=False;
+ SrcBlend=SRCALPHA; DestBlend=INVSRCALPHA; CullMode=CCW;
+ VertexShader=compile vs_2_0 TGCNVStrikeVS();
+ PixelShader=compile ps_2_0 TGCNVCombatHOISplashPS();
+} }
+// TGCNV_COMBAT_MATERIALS_END

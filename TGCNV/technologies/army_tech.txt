@@ -1,873 +1,1133 @@
 ## Army Doctrine ##
 
 	post_napoleonic_thought = {
-		area = army_doctrine
-		year = 1836
-		cost = 3600
-		unciv_military = yes
+	area = army_doctrine
+	year = 1836
+	cost = 3600
+	unciv_military = yes
+	activate_building = fort
 
-		activate_building = fort
-		army_base = {
-			default_organisation = 5
-			supply_consumption = 0.20
-		}
-		dig_in_cap = 1
+	army_base = {
+		default_organisation = 1.5
+		supply_consumption = 0.2
+	}
+	dig_in_cap = 0.5
+	military_tactics = 0.1
 
-		ai_chance = {
+	ai_chance = {
+		factor = 2
+		modifier = {
 			factor = 2
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
 						}
 					}
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
 			}
-			modifier = {
-				factor = 2
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
 				}
 			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
 			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	strategic_mobility = {
-		area = army_doctrine
-		year = 1836
-		cost = 7200
-		unciv_military = yes
+	area = army_doctrine
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	max_fort = 1
 
-		army_base = { supply_consumption = 0.20 }
-		max_fort = 1
-		dig_in_cap = 1
+	army_base = {
+		supply_consumption = 0.2
+		default_organisation = 1.5
+	}
+	dig_in_cap = 0.5
+	military_tactics = 0.1
 
-		ai_chance = {
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			year = 1840
+		}
+		modifier = {
 			factor = 2
-			modifier = {
-				factor = 1.5
-				year = 1840
-			}
-			modifier = {
-				factor = 2
-				year = 1850
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+			year = 1850
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	point_defense_system = {
-		area = army_doctrine
-		year = 1850
-		cost = 10800
-		unciv_military = yes
+	area = army_doctrine
+	year = 1850
+	cost = 10800
+	unciv_military = yes
+	max_fort = 1
 
-		engineer = { support = 0.25 }
-		army_base = { supply_consumption = 0.20 }
-		max_fort = 1
-		dig_in_cap = 1
+	engineer = {
+		support = 0.5
+	}
+	army_base = {
+		supply_consumption = 0.2
+		default_organisation = 1.5
+	}
+	dig_in_cap = 0.5
+	military_tactics = 0.15
 
-		ai_chance = {
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.1
+			year = 1860
+		}
+		modifier = {
 			factor = 2
-			modifier = {
-				factor = 1.1
-				year = 1860
-			}
-			modifier = {
-				factor = 2
-				year = 1870
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+			year = 1870
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	deep_defense_system = {
-		area = army_doctrine
-		year = 1870
-		cost = 14400
-		unciv_military = yes
+	area = army_doctrine
+	year = 1870
+	cost = 14400
+	unciv_military = yes
+	max_fort = 1
 
-		engineer = { support = 0.25 }
-		army_base = { supply_consumption = 0.20 }
-		max_fort = 1
-		dig_in_cap = 1
+	engineer = {
+		support = 0.5
+	}
+	army_base = {
+		supply_consumption = 0.2
+		default_organisation = 1.5
+	}
+	dig_in_cap = 0.5
+	military_tactics = 0.15
 
-		ai_chance = {
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.1
+			year = 1875
+		}
+		modifier = {
 			factor = 2
-			modifier = {
-				factor = 1.1
-				year = 1875
-			}
-			modifier = {
-				factor = 2
-				year = 1880
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+			year = 1880
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	infiltration = {
-		area = army_doctrine
-		year = 1900
-		cost = 18000
-		unciv_military = yes
+	area = army_doctrine
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	max_fort = 1
 
-		army_base = { supply_consumption = 0.20 }
-		max_fort = 1
-		dig_in_cap = 1
+	army_base = {
+		supply_consumption = 0.2
+		default_organisation = 1.5
+	}
+	dig_in_cap = 0.5
+	military_tactics = 0.2
+	engineer = {
+		support = 0.5
+	}
 
-		ai_chance = {
-			factor = 2
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
 			}
 		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	armored_vehicles = {
-		area = army_doctrine
-		year = 1910
-		cost = 21600
-		unciv_military = yes
+	area = army_doctrine
+	year = 1910
+	cost = 21600
+	unciv_military = yes
+	max_fort = 1
 
-		army_base = { supply_consumption = 0.20 }
-		max_fort = 1
+	army_base = {
+		supply_consumption = 0.2
+		default_organisation = 1.5
+	}
+	military_tactics = 0.2
+	dig_in_cap = 0.5
+	engineer = {
+		support = 0.5
+	}
 
-		ai_chance = {
+	ai_chance = {
+		factor = 2
+		modifier = {
 			factor = 2
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
 						}
 					}
 				}
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
 	}
+}
 
 	modern_army_doctrine = {
-		area = army_doctrine
-		year = 1919
-		cost = 31600
-		unciv_military = yes
+	area = army_doctrine
+	year = 1919
+	cost = 31600
+	unciv_military = yes
 
-		army_base = { supply_consumption = 0.25 }
+	army_base = {
+		supply_consumption = 0.25
+		default_organisation = 1.5
+	}
+	military_tactics = 0.25
+	dig_in_cap = 0.5
+	engineer = {
+		support = 0.5
+	}
 
-		ai_chance = {
+	ai_chance = {
+		factor = 2
+		modifier = {
 			factor = 2
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 # TGCNV WWII BEGIN army_doctrine
 tgcnv_ww2_army_doctrine_1930 = {
 	area = army_doctrine
 	year = 1930
-	cost = 34000
+	cost = 18000
 	unciv_military = yes
 
 	army_base = {
-		maximum_speed = 0.4
-		default_organisation = 2
-	}
-	plane = {
 		maximum_speed = 0.5
-		reconnaissance = 0.5
+		default_organisation = 1.5
 	}
+	engineer = {
+		support = 0.5
+	}
+	military_tactics = 0.25
+	dig_in_cap = 0.5
 
 	ai_chance = {
 		factor = 1.0
@@ -881,27 +1141,16 @@ tgcnv_ww2_army_doctrine_1930 = {
 tgcnv_ww2_army_doctrine_1936 = {
 	area = army_doctrine
 	year = 1936
-	cost = 37000
+	cost = 20000
 	unciv_military = yes
 
-	military_tactics = 0.075
-	artillery = {
-		support = 0.25
+	military_tactics = 0.25
+	army_base = {
+		default_organisation = 1.5
 	}
-	infantry = {
-		default_organisation = 1
-	}
-	tgcnv_paratrooper = {
-		default_organisation = 1
-	}
-	tgcnv_marine = {
-		default_organisation = 1
-	}
-	guard = {
-		default_organisation = 1
-	}
-	tgcnv_sturmtruppe = {
-		default_organisation = 1
+	dig_in_cap = 0.5
+	engineer = {
+		support = 0.5
 	}
 
 	ai_chance = {
@@ -916,22 +1165,28 @@ tgcnv_ww2_army_doctrine_1936 = {
 tgcnv_ww2_army_doctrine_1940 = {
 	area = army_doctrine
 	year = 1940
-	cost = 40000
+	cost = 22000
 	unciv_military = yes
 
 	army_base = {
-		default_organisation = 6
+		default_organisation = 2
 	}
-	military_tactics = 0.05
+	military_tactics = 0.25
 	tank = {
-		maximum_speed = 0.25
+		maximum_speed = 0.5
 	}
 	tgcnv_light_tank = {
 		maximum_speed = 0.5
 	}
 	tgcnv_heavy_tank = {
-		maximum_speed = 0.1
+		maximum_speed = 0.5
 	}
+	engineer = {
+		defence = 1.5
+		siege = 0.5
+		support = 0.5
+	}
+	dig_in_cap = 0.5
 
 	ai_chance = {
 		factor = 1.0
@@ -945,26 +1200,27 @@ tgcnv_ww2_army_doctrine_1940 = {
 tgcnv_ww2_army_doctrine_1943 = {
 	area = army_doctrine
 	year = 1943
-	cost = 43000
+	cost = 24000
 	unciv_military = yes
 
-	military_tactics = 0.075
+	military_tactics = 0.25
+	engineer = {
+		siege = 0.5
+		support = 0.5
+	}
 	tank = {
-		attack = 1
+		maximum_speed = 0.5
 	}
 	tgcnv_light_tank = {
-		attack = 0.75
+		maximum_speed = 0.5
 	}
 	tgcnv_heavy_tank = {
-		attack = 1.5
+		maximum_speed = 0.5
 	}
-	plane = {
-		attack = 0.5
-		defence = 0.5
+	army_base = {
+		default_organisation = 2
 	}
-	engineer = {
-		siege = 1
-	}
+	dig_in_cap = 0.5
 
 	ai_chance = {
 		factor = 1.0
@@ -978,15 +1234,27 @@ tgcnv_ww2_army_doctrine_1943 = {
 tgcnv_ww2_army_doctrine_1945 = {
 	area = army_doctrine
 	year = 1945
-	cost = 46000
+	cost = 26000
 	unciv_military = yes
 
-	morale = 0.1
-	military_tactics = 0.05
+	military_tactics = 0.25
 	army_base = {
-		default_organisation = 6
+		default_organisation = 2
 	}
-	org_regain = 0.05
+	dig_in_cap = 0.5
+	tgcnv_heavy_tank = {
+		maximum_speed = 0.5
+	}
+	engineer = {
+		siege = 0.5
+		support = 0.5
+	}
+	tank = {
+		maximum_speed = 0.5
+	}
+	tgcnv_light_tank = {
+		maximum_speed = 0.5
+	}
 
 	ai_chance = {
 		factor = 1.0
@@ -1002,931 +1270,1192 @@ tgcnv_ww2_army_doctrine_1945 = {
 ## Light Armament ##
 
 	flintlock_rifles = {
-		area = light_armament
-		year = 1836
-		cost = 3600
-		unciv_military = yes
+	area = light_armament
+	year = 1836
+	cost = 3600
+	unciv_military = yes
+	activate_unit = infantry
 
-		activate_unit = infantry
-		army_base = { supply_consumption = 0.10 }
+	army_base = {
+		supply_consumption = 0.1
+	}
 
-		ai_chance = {
+	ai_chance = {
+		factor = 2
+		modifier = {
 			factor = 2
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	muzzle_loaded_rifles = {
-		area = light_armament
-		year = 1836
-		cost = 7200
-		unciv_military = yes
-		army_base = { supply_consumption = 0.10 }
+	area = light_armament
+	year = 1836
+	cost = 7200
+	unciv_military = yes
 
-		combat_width = -2
+	army_base = {
+		supply_consumption = 0.1
+	}
+	combat_width = -2
 
-		ai_chance = {
-			factor = 4
-			modifier = {
-				factor = 6
-				rank = 16
-				year = 1850
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+	ai_chance = {
+		factor = 4
+		modifier = {
+			factor = 6
+			rank = 16
+			year = 1850
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	breech_loaded_rifles = {
-		area = light_armament
-		year = 1850
-		cost = 10800
+	area = light_armament
+	year = 1850
+	cost = 10800
+	unciv_military = yes
 
-		unciv_military = yes
-		army_base = { supply_consumption = 0.20 }
+	army_base = {
+		supply_consumption = 0.2
+	}
+	combat_width = -2
 
-		combat_width = -2
-
-		ai_chance = {
-			factor = 4
-			modifier = {
-				factor = 10
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 6
-				rank = 16
-				year = 1860
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+	ai_chance = {
+		factor = 4
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 6
+			rank = 16
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	machine_guns = {
-		area = light_armament
-		year = 1878
-		cost = 14400
-		unciv_military = yes
-		army_base = { supply_consumption = 0.20 }
+	area = light_armament
+	year = 1878
+	cost = 14400
+	unciv_military = yes
 
-		combat_width = -5
-		#colonial_life_rating = -10
+	army_base = {
+		supply_consumption = 0.2
+	}
+	combat_width = -5
 
-		ai_chance = {
-			factor = 6
-			modifier = {
-				factor = 2
-				rank = 16
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+	ai_chance = {
+		factor = 6
+		modifier = {
+			factor = 2
+			rank = 16
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	bolt_action_rifles = {
-		area = light_armament
-		year = 1905
-		cost = 18000
-		unciv_military = yes
-		army_base = { supply_consumption = 0.40 }
+	area = light_armament
+	year = 1905
+	cost = 18000
+	unciv_military = yes
+	unit = 1
 
-		unit = 1
-		combat_width = -3
+	army_base = {
+		supply_consumption = 0.4
+	}
+	combat_width = -3
 
-		ai_chance = {
-			factor = 3
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+	ai_chance = {
+		factor = 3
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	semi_auto_rifles = {
-		area = light_armament
-		year = 1905
-		cost = 20000
-		unciv_military = yes
-		army_base = { supply_consumption = 0.40 }
+	area = light_armament
+	year = 1905
+	cost = 20000
+	unciv_military = yes
+	unit = 1
 
-		unit = 1
-		combat_width = -5
+	army_base = {
+		supply_consumption = 0.4
+	}
+	combat_width = -5
 
-		ai_chance = {
-			factor = 3
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+	ai_chance = {
+		factor = 3
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	modern_divisional_structure = {
-		area = light_armament
-		year = 1919
-		cost = 21600
-		unciv_military = yes
-		army_base = { supply_consumption = 0.40 }
+	area = light_armament
+	year = 1919
+	cost = 21600
+	unciv_military = yes
+	unit = 2
 
-		unit = 2
-		combat_width = -3
+	army_base = {
+		supply_consumption = 0.4
+	}
+	combat_width = -3
 
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 1.5
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 1.5
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_country_flag = army_tech
+		}
 	}
+}
 # TGCNV WWII BEGIN light_armament
 tgcnv_ww2_light_armament_1930 = {
 	area = light_armament
 	year = 1930
-	cost = 34000
+	cost = 18000
 	unciv_military = yes
 	activate_unit = tgcnv_sturmtruppe
 
 	infantry = {
-		attack = 1
+		attack = 0.5
 		discipline = 0.02
 	}
 	tgcnv_paratrooper = {
-		attack = 1
+		attack = 0.5
 		discipline = 0.02
 	}
 	tgcnv_marine = {
-		attack = 1
+		attack = 0.5
 		discipline = 0.02
 	}
 	guard = {
-		attack = 1
+		attack = 0.5
 		discipline = 0.02
 	}
 	tgcnv_sturmtruppe = {
-		attack = 1
+		attack = 0.5
 		discipline = 0.02
-	}
-	factory_goods_output = {
-		small_arms = 0.03
 	}
 
 	ai_chance = {
@@ -1941,32 +2470,29 @@ tgcnv_ww2_light_armament_1930 = {
 tgcnv_ww2_light_armament_1936 = {
 	area = light_armament
 	year = 1936
-	cost = 37000
+	cost = 20000
 	unciv_military = yes
 	unit = 3
 
 	infantry = {
-		defence = 1
+		defence = 0.5
 		attack = 0.5
 	}
 	tgcnv_paratrooper = {
-		defence = 1
+		defence = 0.5
 		attack = 0.5
 	}
 	tgcnv_marine = {
-		defence = 1
+		defence = 0.5
 		attack = 0.5
 	}
 	guard = {
-		defence = 1
+		defence = 0.5
 		attack = 0.5
 	}
 	tgcnv_sturmtruppe = {
-		defence = 1
+		defence = 0.5
 		attack = 0.5
-	}
-	factory_goods_output = {
-		ammunition = 0.03
 	}
 
 	ai_chance = {
@@ -1981,31 +2507,28 @@ tgcnv_ww2_light_armament_1936 = {
 tgcnv_ww2_light_armament_1940 = {
 	area = light_armament
 	year = 1940
-	cost = 40000
+	cost = 22000
 	unciv_military = yes
 
 	infantry = {
-		defence = 1.5
-		attack = 0.5
+		defence = 0.5
+		attack = 1
 	}
 	tgcnv_paratrooper = {
-		defence = 1.5
-		attack = 0.5
+		defence = 0.5
+		attack = 1
 	}
 	tgcnv_marine = {
-		defence = 1.5
-		attack = 0.5
+		defence = 0.5
+		attack = 1
 	}
 	guard = {
-		defence = 1.5
+		defence = 0.5
 		attack = 0.5
 	}
 	tgcnv_sturmtruppe = {
-		defence = 1.5
+		defence = 0.5
 		attack = 0.5
-	}
-	factory_goods_output = {
-		artillery = 0.02
 	}
 
 	ai_chance = {
@@ -2020,36 +2543,28 @@ tgcnv_ww2_light_armament_1940 = {
 tgcnv_ww2_light_armament_1943 = {
 	area = light_armament
 	year = 1943
-	cost = 43000
+	cost = 24000
 	unciv_military = yes
 
 	infantry = {
 		attack = 1
-		defence = 0.5
-		default_organisation = 2
+		defence = 1
 	}
 	tgcnv_paratrooper = {
 		attack = 1
-		defence = 0.5
-		default_organisation = 2
+		defence = 1
 	}
 	tgcnv_marine = {
 		attack = 1
-		defence = 0.5
-		default_organisation = 2
+		defence = 1
 	}
 	guard = {
-		attack = 1
-		defence = 0.5
-		default_organisation = 2
+		attack = 0.5
+		defence = 1
 	}
 	tgcnv_sturmtruppe = {
-		attack = 1
-		defence = 0.5
-		default_organisation = 2
-	}
-	factory_goods_output = {
-		small_arms = 0.04
+		attack = 0.5
+		defence = 1
 	}
 
 	ai_chance = {
@@ -2064,31 +2579,28 @@ tgcnv_ww2_light_armament_1943 = {
 tgcnv_ww2_light_armament_1945 = {
 	area = light_armament
 	year = 1945
-	cost = 46000
+	cost = 26000
 	unciv_military = yes
 
 	infantry = {
-		default_organisation = 6
-		attack = 0.5
+		attack = 1
+		defence = 1
 	}
 	tgcnv_paratrooper = {
-		default_organisation = 6
-		attack = 0.5
+		attack = 1
+		defence = 1
 	}
 	tgcnv_marine = {
-		default_organisation = 6
-		attack = 0.5
+		attack = 1
+		defence = 1
 	}
 	guard = {
-		default_organisation = 6
-		attack = 0.5
+		attack = 1
+		defence = 1
 	}
 	tgcnv_sturmtruppe = {
-		default_organisation = 6
-		attack = 0.5
-	}
-	army_base = {
-		supply_consumption = -0.01
+		attack = 1
+		defence = 1
 	}
 
 	ai_chance = {
@@ -2106,845 +2618,1059 @@ tgcnv_ww2_light_armament_1945 = {
 ## Heavy Armament ##
 
 	bronze_muzzle_loaded_artillery = {
-		area = heavy_armament
-		year = 1836
-		cost = 3600
-		unciv_military = yes
+	area = heavy_armament
+	year = 1836
+	cost = 3600
+	unciv_military = yes
+	activate_unit = artillery
 
-		activate_unit = artillery
 
-		ai_chance = {
-			factor = 4
-			modifier = {
-				factor = 1.2
-				is_greater_power = yes
-			}
-			modifier = {
-				factor = 1.02
-				any_neighbor_country = {
-					civilized = yes
-					NOT = { is_greater_power = yes }
-					military_score = THIS
-				}
-			}
-			modifier = {
-				factor = 3
-				war = yes
-			}
-			modifier = {
-				factor = 1.02
-				has_country_modifier = ts_army
-			}
-			modifier = {
-				factor = 1.5
-				is_greater_power = yes
-				any_neighbor_country = {
+
+	ai_chance = {
+		factor = 4
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			any_neighbor_country = {
+				civilized = yes
+				NOT = {
 					is_greater_power = yes
-					military_score = THIS
 				}
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 3
+			war = yes
+		}
+		modifier = {
+			factor = 1.02
+			has_country_modifier = ts_army
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
 			}
 		}
 	}
+}
 
 	iron_muzzle_loaded_artillery = {
-		area = heavy_armament
-		year = 1836
-		cost = 7200
-		unciv_military = yes
+	area = heavy_armament
+	year = 1836
+	cost = 7200
+	unciv_military = yes
 
-		artillery = {
-			attack = 0.25
-			support = 0.5
-			supply_consumption = 0.3
+	artillery = {
+		attack = 0.5
+		support = 0.5
+		supply_consumption = 0.3
+	}
+
+	ai_chance = {
+		factor = 4
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-
-		ai_chance = {
-			factor = 4
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 3
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	iron_breech_loaded_artillery = {
-		area = heavy_armament
-		year = 1850
-		cost = 10800
-		unciv_military = yes
+	area = heavy_armament
+	year = 1850
+	cost = 10800
+	unciv_military = yes
 
-		artillery = {
-			attack = 0.25
-			support = 0.5
-			supply_consumption = 0.3
+	artillery = {
+		attack = 0.5
+		support = 0.5
+		supply_consumption = 0.3
+	}
+
+	ai_chance = {
+		factor = 4
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-
-		ai_chance = {
-			factor = 4
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 3
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	steel_breech_loaded_artillery = {
-		area = heavy_armament
-		year = 1870
-		cost = 14400
-		unciv_military = yes
+	area = heavy_armament
+	year = 1870
+	cost = 14400
+	unciv_military = yes
 
-		artillery = {
-			attack = 0.5
-			support = 0.5
-			supply_consumption = 0.9
+	artillery = {
+		attack = 0.5
+		support = 0.5
+		supply_consumption = 0.9
+	}
+
+	ai_chance = {
+		factor = 4
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-
-		ai_chance = {
-			factor = 4
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 3
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	indirect_artillery_fire = {
-		area = heavy_armament
-		year = 1900
-		cost = 18000
-		unciv_military = yes
+	area = heavy_armament
+	year = 1900
+	cost = 18000
+	unciv_military = yes
 
-		artillery = {
-			attack = 0.5
-			defence = 2
-			support = 1
-			supply_consumption = 0.5
+	artillery = {
+		attack = 0.5
+		defence = 1
+		support = 0.5
+		supply_consumption = 0.5
+	}
+
+	ai_chance = {
+		factor = 4
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-
-		ai_chance = {
-			factor = 4
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 3
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	self_propelled_artillery = {
-		area = heavy_armament
-		year = 1910
-		cost = 20100
-		unciv_military = yes
+	area = heavy_armament
+	year = 1910
+	cost = 20100
+	unciv_military = yes
 
-		artillery = {
-			attack = 0.5
-			defence = 2
-			support = 1
-			supply_consumption = 1.0
+	artillery = {
+		attack = 0.5
+		defence = 1
+		support = 0.5
+		supply_consumption = 1
+	}
+
+	ai_chance = {
+		factor = 4
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-
-		ai_chance = {
-			factor = 4
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 3
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	heavy_armament_dunno = {
-		area = heavy_armament
-		year = 1919
-		cost = 31600
-		unciv_military = yes
+	area = heavy_armament
+	year = 1919
+	cost = 31600
+	unciv_military = yes
 
-		artillery = {
-			attack = 0.5
-			defence = 2
-			support = 1
-			supply_consumption = 1.0
+	artillery = {
+		attack = 0.5
+		defence = 1
+		support = 0.5
+		supply_consumption = 1
+	}
+
+	ai_chance = {
+		factor = 4
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-
-		ai_chance = {
-			factor = 4
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 3
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 # TGCNV WWII BEGIN heavy_armament
 tgcnv_ww2_heavy_armament_1930 = {
 	area = heavy_armament
 	year = 1930
-	cost = 34000
+	cost = 20000
 	unciv_military = yes
 	activate_unit = tgcnv_light_tank
 
 	artillery = {
-		attack = 1
-		defence = 0.5
-	}
-	engineer = {
-		support = 0.25
-	}
-	factory_goods_output = {
-		artillery = 0.03
+		attack = 0.5
+		defence = 1
+		support = 0.5
 	}
 
 	ai_chance = {
@@ -2959,21 +3685,26 @@ tgcnv_ww2_heavy_armament_1930 = {
 tgcnv_ww2_heavy_armament_1936 = {
 	area = heavy_armament
 	year = 1936
-	cost = 37000
+	cost = 22000
 	unciv_military = yes
 
+	artillery = {
+		support = 0.5
+		attack = 0.5
+		defence = 1
+	}
 	tank = {
-		attack = 1.5
+		attack = 1
 		defence = 1
 	}
 	tgcnv_light_tank = {
-		attack = 1.25
-		defence = 0.75
+		attack = 1
+		defence = 1
 		reconnaissance = 1
 	}
 	tgcnv_heavy_tank = {
-		attack = 2
-		defence = 1.25
+		attack = 1.5
+		defence = 1.5
 		siege = 1
 	}
 
@@ -2989,20 +3720,23 @@ tgcnv_ww2_heavy_armament_1936 = {
 tgcnv_ww2_heavy_armament_1940 = {
 	area = heavy_armament
 	year = 1940
-	cost = 40000
+	cost = 24000
 	unciv_military = yes
 	activate_unit = tgcnv_heavy_tank
 
 	artillery = {
-		defence = 1.5
+		defence = 1
+		attack = 1
+		support = 0.5
+	}
+	tgcnv_heavy_tank = {
+		attack = 1.5
+	}
+	tgcnv_light_tank = {
 		attack = 1
 	}
-	engineer = {
-		defence = 1.5
-		siege = 0.5
-	}
-	factory_goods_output = {
-		explosives = 0.03
+	tank = {
+		attack = 1
 	}
 
 	ai_chance = {
@@ -3017,22 +3751,23 @@ tgcnv_ww2_heavy_armament_1940 = {
 tgcnv_ww2_heavy_armament_1943 = {
 	area = heavy_armament
 	year = 1943
-	cost = 43000
+	cost = 26000
 	unciv_military = yes
 
-	artillery = {
-		attack = 1
-		maximum_speed = 0.4
-		support = 0.5
-	}
 	tank = {
-		maximum_speed = 0.25
+		attack = 1
 	}
 	tgcnv_light_tank = {
-		maximum_speed = 0.5
+		attack = 1
 	}
 	tgcnv_heavy_tank = {
-		maximum_speed = 0.1
+		attack = 1.5
+	}
+	artillery = {
+		attack = 1
+		maximum_speed = 0.5
+		support = 0.5
+		defence = 1
 	}
 
 	ai_chance = {
@@ -3047,24 +3782,22 @@ tgcnv_ww2_heavy_armament_1943 = {
 tgcnv_ww2_heavy_armament_1945 = {
 	area = heavy_armament
 	year = 1945
-	cost = 46000
+	cost = 28000
 	unciv_military = yes
 
 	tank = {
-		attack = 2
-		default_organisation = 4
+		attack = 1
 	}
 	tgcnv_light_tank = {
-		attack = 1.5
-		default_organisation = 4
+		attack = 1
 	}
 	tgcnv_heavy_tank = {
-		attack = 2.5
-		default_organisation = 4
+		attack = 1.5
 	}
 	artillery = {
 		attack = 1
-		support = 0.25
+		support = 0.5
+		defence = 1
 	}
 
 	ai_chance = {
@@ -3081,920 +3814,1174 @@ tgcnv_ww2_heavy_armament_1945 = {
 ## Military Science ##
 
 	military_staff_system = {
-		area = military_science
-		year = 1836
-		cost = 3600
-		unciv_military = yes
+	area = military_science
+	year = 1836
+	cost = 3600
+	unciv_military = yes
 
-		army_base = {
-			default_organisation = 5
-			supply_consumption = 0.10
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.1
+	}
+
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 3
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	military_plans = {
-		area = military_science
-		year = 1836
-		cost = 7200
-		unciv_military = yes
+	area = military_science
+	year = 1836
+	cost = 7200
+	unciv_military = yes
 
-		army_base = {
-			default_organisation = 5
-			supply_consumption = 0.10
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.1
+	}
+
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 2
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 2
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	military_statistics = {
-		area = military_science
-		year = 1850
-		cost = 10800
-		unciv_military = yes
+	area = military_science
+	year = 1850
+	cost = 10800
+	unciv_military = yes
 
-		army_base = {
-			default_organisation = 5
-			supply_consumption = 0.20
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.2
+	}
+
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 3
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	military_logistics = {
-		area = military_science
-		year = 1870
-		cost = 14400
-		unciv_military = yes
+	area = military_science
+	year = 1870
+	cost = 14400
+	unciv_military = yes
 
-		army_base = {
-			default_organisation = 5
-			supply_consumption = 0.20
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.2
+	}
+	mobilisation_size = 0.05
+
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-		mobilisation_size = 0.05
-
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 3
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	military_directionism = {
-		area = military_science
-		year = 1900
-		cost = 18000
-		unciv_military = yes
+	area = military_science
+	year = 1900
+	cost = 18000
+	unciv_military = yes
 
-		army_base = {
-			default_organisation = 10
-			supply_consumption = 0.20
+	army_base = {
+		default_organisation = 10
+		supply_consumption = 0.2
+	}
+
+	ai_chance = {
+		factor = 8
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
+					}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = north_america
+						}
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = asia
+						}
+						capital_scope = {
+							continent = australia_new_zealand
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
+				}
+			}
 		}
-
-		ai_chance = {
-			factor = 8
-			modifier = {
-				factor = 2
-				is_greater_power = yes
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
 					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
+						military_score = THIS
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
 						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
-						}
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 3
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
 				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
 					}
 				}
 			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
-			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	early_aeronautics = {
-		area = military_science
-		year = 1905
-		cost = 20000
-		unciv_military = yes
+	area = military_science
+	year = 1905
+	cost = 20000
+	unciv_military = yes
 
-		army_base = {
-			default_organisation = 10
-			supply_consumption = 0.20
-		}
+	army_base = {
+		supply_consumption = 0.2
+	}
+	factory_goods_output = {
+		aeroplanes = 0.06
+	}
 
-		ai_chance = {
+	ai_chance = {
+		factor = 2
+		modifier = {
 			factor = 2
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
 						}
 					}
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
 			}
-			modifier = {
-				factor = 2
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
 				}
 			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
 			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 
 	aeronautics = {
-		area = military_science
-		year = 1914
-		cost = 21600
-		unciv_military = yes
+	area = military_science
+	year = 1914
+	cost = 21600
+	unciv_military = yes
 
-		army_base = {
-			default_organisation = 10
-			supply_consumption = 0.20
-		}
+	army_base = {
+		supply_consumption = 0.2
+	}
+	factory_goods_output = {
+		aeroplanes = 0.075
+	}
 
-		ai_chance = {
+	ai_chance = {
+		factor = 2
+		modifier = {
 			factor = 2
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
 						}
 					}
 				}
 			}
-			modifier = {
-				factor = 2
-				rank = 16
-				number_of_states = 5
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
 			}
-			modifier = {
-				factor = 2
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
 				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
 				}
 			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
 			}
+		}
+		modifier = {
+			factor = 2
+			rank = 16
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
 		}
 	}
+}
 # TGCNV WWII BEGIN military_science
 tgcnv_ww2_military_science_1930 = {
 	area = military_science
 	year = 1930
-	cost = 34000
+	cost = 22000
 	unciv_military = yes
 
 	factory_goods_output = {
-		aeroplanes = 0.05
-		fuel = 0.03
+		aeroplanes = 0.09
 	}
-	supply_limit = 0.1
 
 	ai_chance = {
 		factor = 1.0
@@ -4008,15 +4995,12 @@ tgcnv_ww2_military_science_1930 = {
 tgcnv_ww2_military_science_1936 = {
 	area = military_science
 	year = 1936
-	cost = 37000
+	cost = 24000
 	unciv_military = yes
 
 	factory_goods_output = {
-		aeroplanes = 0.06
-		machine_parts = 0.03
-		steel = 0.02
+		aeroplanes = 0.12
 	}
-	factory_output = 0.01
 
 	ai_chance = {
 		factor = 1.0
@@ -4030,16 +5014,11 @@ tgcnv_ww2_military_science_1936 = {
 tgcnv_ww2_military_science_1940 = {
 	area = military_science
 	year = 1940
-	cost = 40000
+	cost = 26000
 	unciv_military = yes
 
 	factory_goods_output = {
-		radio = 0.06
-		electric_gear = 0.04
-		artillery = 0.02
-	}
-	factory_goods_input = {
-		explosives = -0.03
+		aeroplanes = 0.15
 	}
 
 	ai_chance = {
@@ -4054,15 +5033,12 @@ tgcnv_ww2_military_science_1940 = {
 tgcnv_ww2_military_science_1943 = {
 	area = military_science
 	year = 1943
-	cost = 43000
+	cost = 28000
 	unciv_military = yes
 
 	factory_goods_output = {
-		aeroplanes = 0.08
-		fuel = 0.05
-		radio = 0.02
+		aeroplanes = 0.18
 	}
-	supply_limit = 0.1
 
 	ai_chance = {
 		factor = 1.0
@@ -4076,16 +5052,12 @@ tgcnv_ww2_military_science_1943 = {
 tgcnv_ww2_military_science_1945 = {
 	area = military_science
 	year = 1945
-	cost = 46000
+	cost = 44000
 	unciv_military = yes
 
 	factory_goods_output = {
-		aeroplanes = 0.1
-		machine_parts = 0.03
-		fuel = 0.03
-		electric_gear = 0.02
+		aeroplanes = 0.21
 	}
-	supply_limit = 0.05
 
 	ai_chance = {
 		factor = 1.0
@@ -4101,620 +5073,699 @@ tgcnv_ww2_military_science_1945 = {
 ## Army Leadership ##
 
 	army_command_principle = {
-		area = army_leadership
-		year = 1836
-		cost = 3600
-		unciv_military = yes
+	area = army_leadership
+	year = 1836
+	cost = 3600
+	unciv_military = yes
 
-		morale = 0.25
-		military_tactics = 0.25
-		army_base = { supply_consumption = 0.10 }
+	morale = 0.1
+	army_base = {
+		supply_consumption = 0.1
+	}
 
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 1.05
-				year = 1860
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				OR = {
-					AND = {
-						capital_scope = { continent = europe }
-						any_greater_power = {
-							military_score = THIS
-							capital_scope = { continent = europe }
-						}
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 1.05
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			OR = {
+				AND = {
+					capital_scope = {
+						continent = europe
 					}
-					AND = {
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = north_america }
-								capital_scope = { continent = south_america }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = asia }
-							capital_scope = { continent = australia_new_zealand }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = asia }
-								capital_scope = { continent = australia_new_zealand }
-							}
-						}
-					}
-					AND = {
-						OR = {
-							capital_scope = { continent = oceania }
-							capital_scope = { continent = africa }
-						}
-						any_greater_power = {
-							military_score = THIS
-							OR = {
-								capital_scope = { continent = oceania }
-								capital_scope = { continent = africa }
-								capital_scope = { continent = europe }
-							}
+					any_greater_power = {
+						military_score = THIS
+						capital_scope = {
+							continent = europe
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 3
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = north_america
 						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
+						capital_scope = {
+							continent = south_america
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = north_america
+							}
+							capital_scope = {
+								continent = south_america
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 6
-				is_greater_power = yes
-				any_neighbor_country = {
+				AND = {
 					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = asia
 						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
+						capital_scope = {
+							continent = australia_new_zealand
 						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = asia
+							}
+							capital_scope = {
+								continent = australia_new_zealand
+							}
 						}
 					}
 				}
-			}
-			modifier = {
-				factor = 1.2
-				number_of_states = 5
-				rank = 16
-			}
-			modifier = {
-				factor = 1.2
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
+				AND = {
+					OR = {
+						capital_scope = {
+							continent = oceania
+						}
+						capital_scope = {
+							continent = africa
+						}
+					}
+					any_greater_power = {
+						military_score = THIS
+						OR = {
+							capital_scope = {
+								continent = oceania
+							}
+							capital_scope = {
+								continent = africa
+							}
+							capital_scope = {
+								continent = europe
+							}
+						}
+					}
 				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	army_professionalism = {
-		area = army_leadership
-		year = 1836
-		cost = 7200
-		unciv_military = yes
+	area = army_leadership
+	year = 1836
+	cost = 7200
+	unciv_military = yes
 
-		morale = 0.1
-		military_tactics = 0.25
-		army_base = { supply_consumption = 0.10 }
+	morale = 0.1
+	army_base = {
+		supply_consumption = 0.1
+	}
 
-		ai_chance = {
-			factor = 1.3
-			modifier = {
-				factor = 1.05
-				year = 1860
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 1.5
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 3
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				number_of_states = 5
-				rank = 16
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
+	ai_chance = {
+		factor = 1.3
+		modifier = {
+			factor = 1.05
+			year = 1860
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
 			}
 		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			number_of_states = 5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	army_decision_making = {
-		area = army_leadership
-		year = 1850
-		cost = 10800
-		unciv_military = yes
+	area = army_leadership
+	year = 1850
+	cost = 10800
+	unciv_military = yes
 
-		morale = 0.2
-		military_tactics = 0.25
-		army_base = { supply_consumption = 0.20 }
+	morale = 0.15
+	army_base = {
+		supply_consumption = 0.2
+	}
 
-		ai_chance = {
-			factor = 1.3
-			modifier = {
-				factor = 1.05
-				year = 1880
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 1.5
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 1.3
-				number_of_states = 5
-				rank = 16
-			}
-			modifier = {
-				factor = 1.3
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
+	ai_chance = {
+		factor = 1.3
+		modifier = {
+			factor = 1.05
+			year = 1880
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
 			}
 		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			number_of_states = 5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.3
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	army_risk_management = {
-		area = army_leadership
-		year = 1870
-		cost = 14400
-		unciv_military = yes
+	area = army_leadership
+	year = 1870
+	cost = 14400
+	unciv_military = yes
 
-		morale = 0.20
-		military_tactics = 0.25
-		army_base = { supply_consumption = 0.20 }
+	morale = 0.15
+	army_base = {
+		supply_consumption = 0.2
+	}
 
-		ai_chance = {
-			factor = 1.3
-			modifier = {
-				factor = 1.05
-				year = 1890
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 1.5
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 1.3
-				number_of_states = 5
-				rank = 16
-			}
-			modifier = {
-				factor = 1.3
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
+	ai_chance = {
+		factor = 1.3
+		modifier = {
+			factor = 1.05
+			year = 1890
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
 			}
 		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			number_of_states = 5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.3
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	army_nco_training = {
-		area = army_leadership
-		year = 1900
-		cost = 18000
-		unciv_military = yes
+	area = army_leadership
+	year = 1900
+	cost = 18000
+	unciv_military = yes
 
-		morale = 0.25
-		military_tactics = 0.25
-		army_base = { supply_consumption = 0.20 }
+	morale = 0.15
+	army_base = {
+		supply_consumption = 0.2
+	}
 
-		ai_chance = {
-			factor = 1.3
-			modifier = {
-				factor = 1.05
-				year = 1920
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 1.5
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 1.3
-				number_of_states = 5
-				rank = 16
-			}
-			modifier = {
-				factor = 1.3
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
+	ai_chance = {
+		factor = 1.3
+		modifier = {
+			factor = 1.05
+			year = 1920
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
 			}
 		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			number_of_states = 5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.3
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	militar_culture = {
-		area = army_leadership
-		year = 1900
-		cost = 22100
-		unciv_military = yes
+	area = army_leadership
+	year = 1900
+	cost = 22100
+	unciv_military = yes
 
-		morale = 0.25
-		military_tactics = 0.25
-		army_base = { supply_consumption = 0.20 }
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.2
+	}
+	morale = 0.2
 
-		ai_chance = {
-			factor = 1.3
-			modifier = {
-				factor = 1.05
-				year = 1920
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 1.5
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 1.3
-				number_of_states = 5
-				rank = 16
-			}
-			modifier = {
-				factor = 1.3
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
+	ai_chance = {
+		factor = 1.3
+		modifier = {
+			factor = 1.05
+			year = 1920
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
 			}
 		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			number_of_states = 5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.3
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 
 	great_war_experience = {
-		area = army_leadership
-		year = 1919
-		cost = 31000
-		unciv_military = yes
+	area = army_leadership
+	year = 1919
+	cost = 31000
+	unciv_military = yes
 
-		morale = 1
-		military_tactics = 0.40
-		army_base = { supply_consumption = 0.20 }
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.2
+	}
+	morale = 0.2
 
-		ai_chance = {
-			factor = 1.3
-			modifier = {
-				factor = 2
-				OR = {
-					war = yes
-					has_recently_lost_war = yes
-				}
-			}
-			modifier = {
-				factor = 1.5
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-						overlord = {
-							civilized = yes
-							NOT = { is_greater_power = yes }
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				is_greater_power = yes
-				any_neighbor_country = {
-					OR = {
-						AND = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						overlord = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-						sphere_owner = {
-							is_greater_power = yes
-							military_score = THIS
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 1.3
-				number_of_states = 5
-				rank = 16
-			}
-			modifier = {
-				factor = 1.3
-				OR = {
-					war_policy = jingoism
-					NOT = { has_unclaimed_cores = no  }
-				}
-			}
-			modifier = {
-				factor = 3
-				has_country_flag = army_tech
+	ai_chance = {
+		factor = 1.3
+		modifier = {
+			factor = 2
+			OR = {
+				war = yes
+				has_recently_lost_war = yes
 			}
 		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+					overlord = {
+						civilized = yes
+						NOT = {
+							is_greater_power = yes
+						}
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					overlord = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+					sphere_owner = {
+						is_greater_power = yes
+						military_score = THIS
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			number_of_states = 5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.3
+			OR = {
+				war_policy = jingoism
+				NOT = {
+					has_unclaimed_cores = no
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_country_flag = army_tech
+		}
 	}
+}
 # TGCNV WWII BEGIN army_leadership
 tgcnv_ww2_army_leadership_1930 = {
 	area = army_leadership
 	year = 1930
-	cost = 34000
+	cost = 16000
 	unciv_military = yes
 
 	army_base = {
-		default_organisation = 4
+		default_organisation = 5.5
 	}
-	factory_goods_output = {
-		radio = 0.03
-	}
-	org_regain = 0.03
+	org_regain = 0.015
+	morale = 0.2
 
 	ai_chance = {
 		factor = 1.0
@@ -4728,14 +5779,15 @@ tgcnv_ww2_army_leadership_1930 = {
 tgcnv_ww2_army_leadership_1936 = {
 	area = army_leadership
 	year = 1936
-	cost = 37000
+	cost = 18000
 	unciv_military = yes
 
-	regular_experience_level = 2
+	regular_experience_level = 1.5
 	army_base = {
-		default_organisation = 3
+		default_organisation = 5.5
 	}
-	morale = 0.05
+	morale = 0.2
+	org_regain = 0.015
 
 	ai_chance = {
 		factor = 1.0
@@ -4749,19 +5801,15 @@ tgcnv_ww2_army_leadership_1936 = {
 tgcnv_ww2_army_leadership_1940 = {
 	area = army_leadership
 	year = 1940
-	cost = 40000
+	cost = 20000
 	unciv_military = yes
 
 	army_base = {
-		default_organisation = 4
+		default_organisation = 6
 	}
-	artillery = {
-		support = 0.25
-	}
-	factory_goods_output = {
-		radio = 0.03
-		aeroplanes = 0.02
-	}
+	morale = 0.25
+	org_regain = 0.015
+	regular_experience_level = 1.5
 
 	ai_chance = {
 		factor = 1.0
@@ -4775,14 +5823,17 @@ tgcnv_ww2_army_leadership_1940 = {
 tgcnv_ww2_army_leadership_1943 = {
 	area = army_leadership
 	year = 1943
-	cost = 43000
+	cost = 22000
 	unciv_military = yes
 
 	reinforce_rate = 0.04
 	army_base = {
 		supply_consumption = -0.01
+		default_organisation = 6
 	}
-	land_attrition = -0.01
+	morale = 0.25
+	org_regain = 0.015
+	regular_experience_level = 1.5
 
 	ai_chance = {
 		factor = 1.0
@@ -4796,14 +5847,15 @@ tgcnv_ww2_army_leadership_1943 = {
 tgcnv_ww2_army_leadership_1945 = {
 	area = army_leadership
 	year = 1945
-	cost = 46000
+	cost = 24000
 	unciv_military = yes
 
+	org_regain = 0.015
 	army_base = {
 		default_organisation = 6
 	}
-	morale = 0.1
-	regular_experience_level = 2
+	morale = 0.25
+	regular_experience_level = 1.5
 
 	ai_chance = {
 		factor = 1.0
