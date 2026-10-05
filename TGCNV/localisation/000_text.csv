@@ -7047,16 +7047,16 @@ non_socialist_desc;비사회주의 계열 노동조합만 활동할 수 있습니다.;;;;;;;;;;;;;x
 all_trade_unions;모든 노동조합 허용;All Allowed;Autoris§;Alle gestattet;;;;;;;;;;;x
 all_trade_unions_desc;모든 계열의 노동조합이 합법적으로 활동할 수 있습니다.;;;;;;;;;;;;;x
 political_parties;정당;;;;;;;;;;;;;;x
-underground_parties;지하 정당만 허용;;;;;;;;;;;;;;x
-underground_parties_desc;야당은 공개적으로 활동할 수 없어 지하 조직으로만 남습니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;,
+underground_parties;야당 공개활동 금지;;;;;;;;;;;;;;x
+underground_parties_desc;정부가 야당의 공개적인 선거 운동을 막아, 야당은 지하 조직으로 활동합니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;,
 harassment;야당 탄압;;;;;;;;;;;;;;x
-harassment_desc;정부가 유권자에게 집권당을 지지하도록 압력과 탄압을 가합니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;,
+harassment_desc;집권당이 유권자를 위협하고 압박하여 자신들에게 투표하도록 강요합니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;,
 gerrymandering;선거구조작;Gerrymandering;Charcutage §ectoral;Wahlkreisschiebungen;;;;;;;;;;;x
-gerrymandering_desc;"게리만더링"은 특정 정당에게 유리하도록 선거구와 그 경계를 자의적으로 수정하는 것을 말합니다. 여당은 자당의 득표 수를 늘리기 위해 게리만더링을 할 수 있습니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
+gerrymandering_desc;집권당에 유리하도록 선거구 경계를 자의적으로 조정합니다. 그 결과 집권당을 지지하는 표가 선거 결과에 더 큰 영향을 미칩니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
 non_secret_ballots;공개투표;Non-Secret Ballots;Bulletins non secrets;§fentliche Wahlg§ge;;;;;;;;;;;x
-non_secret_ballots_desc;유권자들은 공개 투표 선거를 선택했습니다. 이 제도 아래에서는 여당은 유권자가 누구에게 투표했는지를 알 수 있었기 때문에, 그들에게 여당에 투표하도록 압력을 가할 수 있었습니다;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+non_secret_ballots_desc;투표 내용이 공개되므로 집권당은 유권자가 어느 정당에 투표했는지 알 수 있습니다. 이를 이용해 자신들에게 투표하도록 압력을 가할 수 있습니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 secret_ballots;비밀투표;Secret Ballots;Bulletins secrets;Nicht-§fentliche Wahlg§ge;;;;;;;;;;;x
-secret_ballots_desc;유권자들이 매수 및 협박에 의해 영향을 받는 것을 막기 위해, 유권자들은 비밀 투표 선거를 선택했습니다. 따라서 여당은 유권자에 영향을 미치는 방법을 잃었습니다.The voter's choices are confidential in order to prevent others from influencing the voter by bribery or intimidation. The ruling party can't affect the way people votes.;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+secret_ballots_desc;유권자가 누구에게 투표했는지 비밀로 하여 매수나 협박에 따른 투표 강요를 막습니다. 집권당은 개별 유권자의 투표 내용을 확인해 지지를 강요할 수 없습니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 conscription;징병제;;;;;;;;;;;;;x
 penal_system;형벌 제도;;;;;;;;;;;;;x
 penal_system_l;형벌 제도;;;;;;;;;;;;;x
@@ -7098,7 +7098,7 @@ eight_hours;하루 8시간;8 Hour Work Day;8 heures travaill§s par jour;8 Stunden-T
 eight_hours_desc;1일당 근로 시간은 최대 8시간입니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
 safety_regulations;안전규제;Safety Regulations;R§les de s§urit§Sicherheitsvorschriften;;;;;;;;;;;x
 no_safety;안전규제 없음;No Safety Regulations;Aucune r§le de s§urit§Keine Sicherheitsvorschriften;;;;;;;;;;;x
-no_safety_desc;안전 규제는 존재하지 않습니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
+no_safety_desc;작업장 안전을 규제하는 법률이 없어 고용주는 안전보다 이윤만을 고려합니다. 작업 중 사망하거나 중상을 입는 일이 드물지 않으며, 노동자가 사고에 대한 고용주의 법적 책임을 묻기도 어렵습니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
 trinket_safety;최소한의 안전규제;Minimal Safety Regulations;R§les de s§urit§minimum;Minimale Sicherheitsvorschriften;;;;;;;;;;;x
 trinket_safety_desc;치명적인 위험이 있는 작업에만 안전 규제가 존재합니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
 low_safety;낮은 안전규제;Limited Safety Regulations;R§les de s§urit§limit§s;Eingeschr§kte Sicherheitsvorschriften;;;;;;;;;;;x
@@ -7131,13 +7131,13 @@ good_pensions;높은 연금 기금;Good Pensions;Bonnes pensions;Gute Renten;;;;;;;;;;
 good_pensions_desc;공적 연금의 지급액은 고액입니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
 health_care;보건위생;Health Care;Syst§e de sant§Gesundheitsf§sorge;;;;;;;;;;;x
 no_health_care;보건위생 없음;No Health Care;Aucun syst§e de sant§Keine Gesundheitsf§sorge;;;;;;;;;;;x
-no_health_care_desc;의료 보험 제도는 존재하지 않습니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
+no_health_care_desc;정부는 보건의료에 관심을 두지 않으며 관련 예산도 편성하지 않습니다. 드문 의료기관은 중세부터 이어져 온 시설로, 장비 수준도 그 시대에 머물러 있습니다. 의료 활동은 정식 전문직으로 자리 잡지 못했으며 대부분 교회에 의존합니다. 병원은 조명이 열악하고 환자로 붐비며, 곳곳에서 감염병이 퍼집니다. 병을 치료하는 방법으로 기도를 권하는 일이 흔합니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
 trinket_health_care;매우 낮은 보건위생;Trinket Health care;Syst§e de sant§d§isoire;Sach-Gesundheitsf§sorge;;;;;;;;;;;x
-trinket_health_care_desc;의료 보험 제도는 매우 낮은 수준입니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
+trinket_health_care_desc;의사와 간호사는 정식 교육을 받지만 상처와 질병에 대한 지식은 기초적인 수준이며, 치료 과정에서 여전히 오래된 믿음에 의존하기도 합니다. 병원은 과밀을 줄이기 위해 침대를 1미터 간격으로 배치하고 환기 규정을 마련합니다. 병원 하수관은 하루에 여러 차례 씻어 내며, 변소와 배수구는 이탄으로 만든 숯으로 소독합니다. 환자 기록은 드물고, 제대로 된 위생 기준이나 이를 점검할 정부 기관도 없습니다. 의료시설을 찾기 어렵습니다.\n쬨이 개혁의 효과를 온전히 얻으려면 행정 지출을 최소 20%로 유지해야 합니다. 보건의료에 따른 인구 증가 효과는 충분한 행정 지출이 뒷받침되어야 적용됩니다.쬦;;;;;;;;;;;;x;;;;;;;;;;;;;;
 low_health_care;낮은 보건위생;Low Health Care;Bas syst§e de sant§Geringe Gesundheitsf§sorge;;;;;;;;;;;x
 low_health_care_desc;의료 보험 제도는 낮은 수준입니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
 acceptable_health_care;적당한 보건위생;Acceptable Health Care;Syst§e de sant§acceptable;Akzeptable Gesundheitsf§sorge;;;;;;;;;;;x
-acceptable_health_care_desc;의료 보험 제도는 상당한 수준입니다.;;;;;;;;;;;;x;;;;;;;;;;;;;;
+acceptable_health_care_desc;의료가 전문직으로 자리 잡아 의사와 간호사는 인체와 질병, 치료법에 관한 체계적인 교육을 받습니다. 시설과 장비의 멸균이 일반화되고, 물을 거르는 샹베를랑 여과기와 고압증기로 유해한 미생물을 제거하는 멸균기가 보급됩니다. 정부 기관이 위생 기준 준수와 병원 과밀 문제를 감독합니다. 도시에서는 진료소를 쉽게 찾을 수 있으며, 병원은 석유등을 가스등으로 바꾸어 의료진의 업무 여건을 개선합니다.\n쬨이 개혁의 효과를 온전히 얻으려면 행정 지출을 최소 40%로 유지해야 합니다.쬦;;;;;;;;;;;;x;;;;;;;;;;;;;;
 good_health_care;높은 보건위생;Good Health Care;Bon syst§e de sant§Gute Gesundheitsf§sorge;;;;;;;;;;;x
 good_health_care_desc;의료 보험 제도는 높은 수준입니다. ;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 protectionism_l;보호무역;Protectionism;Protectionnisme;Protektionismus;;;;;;;;;;;x
@@ -7181,7 +7181,7 @@ no_trade_unions_l;노동조합 금지;No Trade Unions;Aucun syndicat;Keine Gewerkschaf
 state_controlled_l;정부 통제 노동조합;State Controlled Trade Unions;Syndicats contr§§ par l'§at;Staatlich kontrollierte Gewerkschaften;;;;;;;;;;;x
 non_socialist_l;사회주의 노동조합 금지;Non Socialist Trade Unions;Syndicats non socialistes;Keine sozialistischen Gewerkschaften;;;;;;;;;;;x
 all_trade_unions_l;모든 노동조합 허용;All Trade Unions;Tous les syndicats;Alle Gewerkschaften;;;;;;;;;;;x
-underground_parties_l;지하 정당만 허용;Outlaw Political Parties;Autoriser les partis politiques;Politische Parteien §hten;;;;;;;;;;;x
+underground_parties_l;야당 공개활동 금지;Outlaw Political Parties;Autoriser les partis politiques;Politische Parteien §hten;;;;;;;;;;;x
 harassment_l;야당 탄압;Harassed Parties.;Partis harcel§.;Schikanierte Parteien.;;;;;;;;;;;x
 gerrymandering_l;선거구 조작;Charcutage §ectoral;Wahlkreisschiebungen;;;;;;;;;;;x
 non_secret_ballots_l;공개투표;Bulletins non secrets;§fentliche Wahlg§ge;;;;;;;;;;;x

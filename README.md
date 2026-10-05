@@ -29,13 +29,17 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-현재 실험용 엔진은 **0.6.8.40**입니다. 엔진 0.6.8.40: 큰 지도 국가명이 흰 사각형으로 나오던 텍스처 파일 읽기 제한을 수정했습니다. 실제 읽기 버퍼와 최초 로드·재로드 제한을 함께 16MiB에서 33MiB로 늘렸습니다.
+현재 실험용 엔진은 **0.6.8.40**입니다. 주 편성과 추가 발칸 경계를 함께 수정했습니다. 직전 공개판 대비 19개 프로빈스의 주 배정이 바뀌며, 3개 주 통합으로 물리적 주는 1,246개에서 1,243개가 됩니다. 블라토·오라샤츠는 라구사, 데브레이발라는 북마케도니아, 드라가시는 코소보에 편입했습니다. 오라샤츠(7277)의 지형은 구릉으로 수정했습니다.
 
-읽기 버퍼는 이전보다 17MiB 증가합니다. 원본 코드 서명이나 세 값이 맞지 않으면 적용을 거부하며, 부분 적용을 되돌리지 못한 상태에서는 시작을 진행하지 않습니다.
+정치 화면의 한국어 문구 33개(54행)를 정리하고, 주 이름 5개(6행)를 갱신했습니다. 영문 옵션에도 새 주 이름과 교육 예산 경고·비밀 투표·야당 공개활동 문구를 맞췄습니다. 교육 경고의 적용 조건과 문해율·예산 경계값을 설명에 정확히 반영했으며 정책의 게임 효과는 바꾸지 않았습니다.
 
-한글 11,172자와 자모 94자, 글꼴 42파일, 한국어/English, TGO, 지도 캐시와 백업 없는 설치기는 직전 배포와 같습니다. 배포용으로 바뀐 게임 파일은 DLL 1개뿐입니다.
+프로이센이 오스트리아에 패권 인정 평화조건으로 승리하면 하노버·헤센카셀·나사우·프랑크푸르트를 합병하고 코어를 추가합니다. 슐레스비히·홀슈타인 14개 프로빈스에 코어를 추가하며 오스트리아 및 해당 공국의 영토를 편입합니다. 다른 독일 소국은 위성국으로 삼되 오스트리아는 제외합니다. 승패 분기·대상 범위·중복 처리 등 오프라인 14개 검사를 통과했으며 실게임 승전 재현은 미검증입니다.
 
-읽기 용량·GUI 텍스처 진단·전체 한글 디코딩의 오프라인 검사 3종과 설치 해시를 확인했습니다. 실제 게임의 지도 글자 표시·저장 재로드·두 PC 멀티플레이는 아직 미검증입니다. 게임을 완전히 종료하고 갱신한 뒤 다시 실행하세요.
+차티스트 집회 이벤트의 한국어 문구 3개(6행)에서 경찰 진압 선택지의 오역을 고쳤습니다. 프로이센 이벤트 6개 문구를 영문으로도 제공하고, 한국어/English의 오스트리아 승패 처리 스크립트를 함께 갱신했습니다.
+
+엔진은 0.6.8.40이며 TGO·글꼴·지도 캐시·백업 없는 덮어쓰기 설치기는 직전 배포와 같습니다. 프로빈스 형상·소유국은 유지됩니다. 게임을 완전히 종료하고 갱신한 뒤 새 캠페인으로 시작하세요.
+
+설치 해시, 주 배정·런타임 표 일치, 추가 4개 배정과 지형 1개만 변경됐는지, 한국어/English 문구 구조 및 캐시 서명을 확인했습니다. 실제 새 캠페인·UI 표시·승전 이벤트·저장 재로드·두 PC 멀티플레이는 미검증입니다. 개인 세이브나 세이브 변환 도구는 배포하지 않습니다.
 
 이전 배포에서 이어지는 기능으로, 군사·공군 시간 처리, 자정 단계 분산과 저장 변수의 반복 탐색 축소를 포함합니다. 변수 조회 객체 안에서 최근 경로만 재사용하고 현재 메모리·국가·날짜 및 저장 검사는 유지합니다. 소유 메모리 fixture 비교에서 변수 조회 비용이 17~48% 감소했지만 이 수치는 실게임 FPS나 전체 처리 시간의 개선율이 아닙니다.
 
@@ -139,11 +143,17 @@ Do not open legacy events `16` or `19` through the console on a player country: 
 
 ### Compatibility and verification
 
-The current experimental engine is **0.6.8.40**. It fixes the native texture-file read limit that rejected large full-Hangul font atlases and caused large country names on the map to appear as white squares. The read-buffer allocation, initial-load limit and reload limit are raised together from 16 MiB to 33 MiB before the native texture manager is constructed. This adds 17 MiB to the read buffer. Original-code signatures and all three values are checked; mismatched or partial patches are refused, and an incomplete rollback prevents startup.
+The current experimental engine is **0.6.8.40**. This combined data update changes state assignments for 19 provinces relative to the preceding public release. Three state mergers reduce the number of physical states from 1,246 to 1,243. The completed Balkan correction places Blato and Orasac in Ragusa, Debre-i Bala in North Macedonia, and Dragash in Kosovo. Orasac (province 7277) now uses hills terrain instead of Dubrovnik's urban terrain. Province geometry and ownership remain unchanged. Physical state definitions and the runtime state table agree for all 6,940 land provinces.
 
-Only the installed engine DLL changes. All 42 font files retain the full 11,172 modern Hangul syllables and 94 compatibility jamo. Korean/English text, TGO, the verified map cache and the overwrite-only installer remain unchanged. Close the game completely, update, then restart so the replacement DLL is loaded.
+The Korean political screen has 33 corrected text keys across 54 rows, plus five state names across six rows. The English option includes the corresponding new state names and revised education-budget warnings, secret-ballot description and opposition-activity labels. Education warnings now describe the existing player-only civilized-country requirement, minimum two states and 1,000,000 POPs, inclusive literacy/spending thresholds, and education-efficiency/prestige penalties. These are text corrections and do not change the policy effects.
 
-Three recorded offline suites passed: native texture read capacity, GUI texture diagnostics and full Hangul decoding. The new capacity test contains 730 checks. Installed-file hashes and the existing font contract were verified. Successful upload to a separate D3D9Ex test device does not certify in-game rendering. Actual map labels, save/reload and two-PC multiplayer still need confirmation.
+Prussian victory over Austria through an accepted hegemony peace settlement now annexes Hanover, Hesse-Kassel, Nassau and Frankfurt and grants Prussian cores. Fourteen provinces in Schleswig and Holstein receive core claims, with Austrian-administered and relevant ducal territory transferred to Prussia. Other eligible German minor states become Prussian satellites after their former overlord ties are cleared. Austria remains independent. Fourteen offline acceptance checks cover victory routing, target scope, former-overlord handling, exclusions and duplicate execution. The settlement has not yet been reproduced in the actual game. Its six text entries and the Austrian victory/defeat script are synchronized across the Korean and English options.
+
+Three Korean Chartist-rally strings across six rows are corrected, including the police-suppression option that had been mistranslated. The existing event effects are unchanged.
+
+The engine DLL, full Hangul fonts, TGO, verified map cache and overwrite-only installer are unchanged. Close the game completely before updating, then start a new campaign. The package does not convert existing campaigns and contains no personal saves. Existing saves have not been certified for the revised state layout.
+
+Installed-file hashes, state-table consistency, the four additional state assignments, the single terrain edit, Korean/English text structure and map-cache signatures were verified. Unchanged components retain their preceding validation. Actual new-campaign startup, in-game text/UI display, save/reload and two-PC multiplayer still need confirmation.
 
 Features inherited from the preceding package remain available. It includes the military/air scheduling changes and separates native midnight date, military and air work into successive frames while retaining once-only processing. Repeated native saved-variable lookups reuse a bounded path inside each lookup object. Current memory, owner/date and saved-value checks remain in place. A controlled owned-memory fixture measured 17–48% lower variable-lookup cost; this is **not a measured live-game FPS or total simulation improvement**.
 

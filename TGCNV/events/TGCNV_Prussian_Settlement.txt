@@ -1,0 +1,176 @@
+# Dispatched only by the Austrian loser of a Prussian hegemony victory.
+country_event = {
+    id = 9592666
+    title = "TGC_PRUSSIAN_SETTLEMENT_TITLE"
+    desc = "TGC_PRUSSIAN_SETTLEMENT_DESC"
+    picture = "treaty"
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                tag = PRU
+                has_country_flag = brothers_war_winner
+                NOT = { has_country_flag = tgcnv_prussian_settlement_done }
+                FROM = {
+                    OR = { tag = AUS tag = KUK }
+                    has_country_flag = brothers_war_loser
+                }
+            }
+            set_country_flag = tgcnv_prussian_settlement_done
+
+            # Add cores before annexation, while the defeated tags still own land.
+            any_country = {
+                limit = {
+                    exists = yes
+                    OR = { tag = HAN tag = HEK tag = NAS tag = FRM }
+                }
+                any_owned = {
+                    add_core = PRU
+                    add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+                }
+                annex_to = PRU
+            }
+            # Also recognize these lands if Prussia annexed them before the war.
+            any_owned = {
+                limit = { OR = { is_core = HAN is_core = HEK is_core = NAS is_core = FRM } }
+                add_core = PRU
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+
+            # Historical duchy territory; broad HOL_369 would include free cities.
+            SCH_370 = {
+                add_core = PRU
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+            TGH_HOLSTEIN = {
+                add_core = PRU
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+            529 = {
+                add_core = PRU
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+            # Transfer Austrian administration and the duchies, not foreign land.
+            any_country = {
+                limit = {
+                    exists = yes
+                    OR = { tag = AUS tag = KUK tag = SWH tag = SCH tag = HOL tag = LAU }
+                }
+                any_owned = {
+                    limit = { OR = { region = SCH_370 region = TGH_HOLSTEIN province_id = 529 } }
+                    secede_province = PRU
+                }
+            }
+
+            any_country = {
+                limit = {
+                    exists = yes
+                    capital_scope = { continent = europe }
+                    NOT = {
+                        OR = {
+                            tag = PRU tag = AUS tag = KUK tag = DNB
+                            tag = GER tag = NGF tag = SGF tag = GCF
+                            tag = SWI tag = NET tag = BEL
+                            tag = UBD tag = LIV tag = COU
+                            tag = HAN tag = HEK tag = NAS tag = FRM
+                            has_country_flag = post_colonial_country
+                        }
+                    }
+                    OR = {
+                        has_country_flag = german_confederation_member
+                        tag = LIE
+                        tag = LBG
+                        AND = {
+                            OR = { primary_culture = north_german primary_culture = south_german }
+                            capital_scope = { OR = { is_core = GER is_core = GCF } }
+                        }
+                    }
+                }
+                # A recipient event keeps THIS bound to the minor, not Prussia.
+                set_country_flag = tgcnv_prussian_subject_pending
+                country_event = 9592667
+            }
+        }
+    }
+
+    option = { name = "TGC_PRUSSIAN_SETTLEMENT_ACCEPT" }
+}
+
+country_event = {
+	id = 9592667
+	title = "TGC_PRUSSIAN_SATELLITE_TITLE"
+	desc = "TGC_PRUSSIAN_SATELLITE_DESC"
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				exists = yes
+				has_country_flag = tgcnv_prussian_subject_pending
+				FROM = {
+					tag = PRU
+					has_country_flag = tgcnv_prussian_settlement_done
+				}
+				NOT = { tag = PRU }
+				NOT = { tag = AUS }
+				NOT = { tag = KUK }
+				NOT = { tag = DNB }
+			}
+			clr_country_flag = tgcnv_prussian_subject_pending
+
+			if = {
+				limit = {
+					is_vassal = yes
+					NOT = { vassal_of = FROM }
+				}
+				overlord = { release_vassal = THIS }
+			}
+
+			if = {
+				limit = { war_with = FROM }
+				end_war = FROM
+			}
+
+			remove_country_modifier = neutrality
+			clr_country_flag = neutrality_candidate
+
+			any_country = {
+				limit = {
+					is_sphere_leader_of = THIS
+					NOT = { tag = FROM }
+				}
+				diplomatic_influence = {
+					who = THIS
+					value = -400
+				}
+			}
+
+			any_country = {
+				limit = {
+					alliance_with = THIS
+					NOT = { tag = FROM }
+				}
+				leave_alliance = THIS
+			}
+
+			if = {
+				limit = { NOT = { vassal_of = FROM } }
+				FROM = { create_vassal = THIS }
+			}
+
+			FROM = {
+				create_alliance = THIS
+				diplomatic_influence = {
+					who = THIS
+					value = 400
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "TGC_PRUSSIAN_SATELLITE_ACCEPT"
+	}
+}
