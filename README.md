@@ -29,15 +29,15 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-현재 실험용 엔진은 **0.6.8.40**입니다. 시애틀(78)에 도시(시애틀) 고유 지형과 전용 항구 그림을 추가했습니다. 지형 수치는 기존 밴쿠버와 같고, 기존 지형 459개의 인덱스를 유지한 채 새 지형을 추가했습니다.
+현재 실험용 엔진은 **0.6.8.41**입니다. 엔진 0.6.8.41: 멀티플레이 참가자의 원본 상태값(2)을 잘못 거부하던 조건을 수정했습니다. 공통 세션 판독·군사/공군 동기화·멀티 명령·위신 기능에서 참가자를 올바르게 처리합니다.
 
-미국 서부 확장에서 누락된 마블턴(3673)·로즈버그(3643)를 영토 이전 대상에 포함했습니다. 기존 캠페인의 미소유 분할 지역 10곳도 조건에 맞으면 자동 보정하며, 타국 영토 이전과 인구·보상의 중복 적용을 방지합니다.
+시간 동기화가 활성화되기 전에도 연결 준비·참가자 대기 안내를 표시하며, 빈 오류 문구 때문에 안내가 사라지지 않도록 수정했습니다. 연결 전에는 원래 날짜를 유지합니다.
 
-한국어/English 지형·복구 문구와 미국 확장 스크립트를 동기화했습니다. DLL 0.6.8.40·TGO·백업 없는 덮어쓰기 설치기는 유지합니다.
+배포 게임 파일 변경은 runtime/tgcnv_engine.dll 한 개입니다. 한국어/English 자산·TGO·지도 캐시·덮어쓰기 설치기는 그대로이며, 이번 DLL 때문에 캐시를 다시 생성할 필요는 없습니다.
 
-시애틀 지형을 포함한 새 입력에 맞춰 자동 재생성이 완료된 지도 캐시를 함께 제공합니다. 새 캐시 서명과 게임 로딩 기록을 확인했습니다. 게임을 완전히 종료하고 갱신한 뒤 TGCNV.exe로 실행하세요.
+관련 오프라인 검사 10개 묶음과 설치 해시·소스 1,260개·보호 자산 113개를 확인했습니다. 실제 두 PC 접속·시간 진행·위신 사용·저장 재로드·장기 동기화는 미검증입니다.
 
-설치 해시·그림 형식·지형 연결·확장 조건 1,800개 사례·한영 일치 검사를 통과했습니다. 실제 시애틀 표시·복구 이벤트 발동·저장 재로드·두 PC 멀티플레이는 이 변경 묶음으로 미검증입니다. 배포판은 새 캠페인 기준이며 개인 세이브는 포함하지 않습니다.
+방장과 참가자 모두 게임/런처를 완전히 종료하고 같은 업데이트를 적용한 뒤 새 멀티플레이 방을 만드세요. HH:00 UTC 표시와 시간 진행을 확인하세요. 이전 모드 데이터의 새 캠페인 기준과 검증 한계는 유지합니다.
 
 이전 배포에서 이어지는 기능으로, 군사·공군 시간 처리, 자정 단계 분산과 저장 변수의 반복 탐색 축소를 포함합니다. 변수 조회 객체 안에서 최근 경로만 재사용하고 현재 메모리·국가·날짜 및 저장 검사는 유지합니다. 소유 메모리 fixture 비교에서 변수 조회 비용이 17~48% 감소했지만 이 수치는 실게임 FPS나 전체 처리 시간의 개선율이 아닙니다.
 
@@ -141,13 +141,15 @@ Do not open legacy events `16` or `19` through the console on a player country: 
 
 ### Compatibility and verification
 
-The current experimental engine is **0.6.8.40**. Seattle (province 78) now has a dedicated urban terrain type and harbor illustration. It uses the existing Vancouver terrain statistics. The new category is appended without changing the indices of the preceding 459 terrain categories.
+The current experimental engine is **0.6.8.41**.
 
-The United States' western expansion now includes the previously omitted Marbleton (3673) and Roseburg (3643). A guarded recovery event can repair ten unowned split-province remnants in existing campaigns. It avoids taking foreign-owned territory or repeating population and reward effects. Static AST and bounded-effect tests cover 1,800 ownership/date/core cases; actual in-game activation remains untested.
+TGCNV 0.6.8.41 fixes rejection of multiplayer joiners under native menu role 2. It corrects shared multiplayer, military, and prestige role detection. Connection-wait text remains visible before clock activation and is no longer cleared by an empty error string. The original date display is retained before the connection is ready.
 
-Korean and English labels and the western-expansion script are synchronized. The engine DLL, TGO and overwrite-only installer are unchanged. Close the game before updating, then launch TGCNV.exe. The automatic cache rebuild for the new terrain definition has completed, and the regenerated cache is included. Its internal signature, native map stamp and successful loading by the game were verified from the completed rebuild and runtime records.
+Ten offline test suites passed. Actual two-PC time progression, prestige actions, save/reload and long-session synchronization remain untested. The installed payload change is only runtime/tgcnv_engine.dll; data, Korean/English text assets, TGO, the verified map cache and the overwrite-only installer are unchanged. This DLL update does not require a cache rebuild.
 
-Seattle rendering, native event activation, save/reload and two-PC multiplayer remain unverified. The package is intended for a new campaign and contains no personal saves. Existing historical limitations are retained below.
+Both host and joiner must close the game and launcher before applying the same update. Restart both peers, create a fresh multiplayer room and check the HH:00 UTC display and time progression.
+
+The previous mod-data campaign requirements and outstanding validation limits still apply.
 
 Features inherited from the preceding package remain available. It includes the military/air scheduling changes and separates native midnight date, military and air work into successive frames while retaining once-only processing. Repeated native saved-variable lookups reuse a bounded path inside each lookup object. Current memory, owner/date and saved-value checks remain in place. A controlled owned-memory fixture measured 17–48% lower variable-lookup cost; this is **not a measured live-game FPS or total simulation improvement**.
 
