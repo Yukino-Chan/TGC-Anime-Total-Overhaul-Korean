@@ -1,0 +1,217 @@
+# Recover only empty western split provinces whose original province is already held.
+# Repeatable and guarded; no POP edits, rewards, renaming, or foreign land transfers.
+country_event = {
+    id = 269897
+    title = TGCNV_USA_SPLIT_REPAIR_TITLE
+    desc = TGCNV_USA_SPLIT_REPAIR_DESC
+    picture = "1843_GreatMigration"
+
+    trigger = {
+        tag = USA
+        OR = {
+            AND = {
+                year = 1844
+                owns = 80
+                80 = { is_core = USA }
+                3642 = { empty = yes }
+            }
+            AND = {
+                year = 1844
+                owns = 93
+                93 = { is_core = USA }
+                3655 = { empty = yes }
+            }
+            AND = {
+                year = 1844
+                owns = 92
+                92 = { is_core = USA }
+                3654 = { empty = yes }
+            }
+            AND = {
+                year = 1844
+                owns = 91
+                91 = { is_core = USA }
+                3653 = { empty = yes }
+            }
+            AND = {
+                year = 1844
+                owns = 113
+                113 = { is_core = USA }
+                3675 = { empty = yes }
+            }
+            AND = {
+                year = 1844
+                owns = 111
+                111 = { is_core = USA }
+                3673 = { empty = yes }
+            }
+            AND = {
+                year = 1844
+                owns = 114
+                114 = { is_core = USA }
+                3676 = { empty = yes }
+            }
+            AND = {
+                year = 1841
+                owns = 81
+                3643 = { empty = yes }
+            }
+            AND = {
+                year = 1841
+                owns = 82
+                3644 = { empty = yes }
+            }
+            AND = {
+                year = 1841
+                owns = 83
+                3645 = { empty = yes }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                tag = USA
+                year = 1844
+                owns = 80
+                80 = { is_core = USA }
+                3642 = { empty = yes }
+            }
+            3642 = {
+                secede_province = USA
+                add_core = USA
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+        }
+        if = {
+            limit = {
+                tag = USA
+                year = 1844
+                owns = 93
+                93 = { is_core = USA }
+                3655 = { empty = yes }
+            }
+            3655 = {
+                secede_province = USA
+                add_core = USA
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+        }
+        if = {
+            limit = {
+                tag = USA
+                year = 1844
+                owns = 92
+                92 = { is_core = USA }
+                3654 = { empty = yes }
+            }
+            3654 = {
+                secede_province = USA
+                add_core = USA
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+        }
+        if = {
+            limit = {
+                tag = USA
+                year = 1844
+                owns = 91
+                91 = { is_core = USA }
+                3653 = { empty = yes }
+            }
+            3653 = {
+                secede_province = USA
+                add_core = USA
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+        }
+        if = {
+            limit = {
+                tag = USA
+                year = 1844
+                owns = 113
+                113 = { is_core = USA }
+                3675 = { empty = yes }
+            }
+            3675 = {
+                secede_province = USA
+                add_core = USA
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+        }
+        if = {
+            limit = {
+                tag = USA
+                year = 1844
+                owns = 111
+                111 = { is_core = USA }
+                3673 = { empty = yes }
+            }
+            3673 = {
+                secede_province = USA
+                add_core = USA
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+        }
+        if = {
+            limit = {
+                tag = USA
+                year = 1844
+                owns = 114
+                114 = { is_core = USA }
+                3676 = { empty = yes }
+            }
+            3676 = {
+                secede_province = USA
+                add_core = USA
+                add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 }
+            }
+        }
+        if = {
+            limit = {
+                tag = USA
+                year = 1841
+                owns = 81
+                3643 = { empty = yes }
+            }
+            3643 = {
+                secede_province = USA
+                life_rating = 15
+            }
+        }
+        if = {
+            limit = {
+                tag = USA
+                year = 1841
+                owns = 82
+                3644 = { empty = yes }
+            }
+            3644 = {
+                secede_province = USA
+                life_rating = 15
+            }
+        }
+        if = {
+            limit = {
+                tag = USA
+                year = 1841
+                owns = 83
+                3645 = { empty = yes }
+            }
+            3645 = {
+                secede_province = USA
+                life_rating = 15
+            }
+        }
+    }
+
+    option = {
+        name = OK
+        ai_chance = { factor = 100 }
+    }
+}

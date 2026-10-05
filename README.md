@@ -29,15 +29,15 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-현재 실험용 엔진은 **0.6.8.40**입니다. 19개 국가 가치관의 보너스 편차를 조정했습니다. 기존 발명 28개를 재조정하고 역할 분리용 발명 21개를 추가해 육군·해군·생산·교육·행정 효과를 구분했습니다.
+현재 실험용 엔진은 **0.6.8.40**입니다. 시애틀(78)에 도시(시애틀) 고유 지형과 전용 항구 그림을 추가했습니다. 지형 수치는 기존 밴쿠버와 같고, 기존 지형 459개의 인덱스를 유지한 채 새 지형을 추가했습니다.
 
-독일 군국주의의 전함·드레드노트 공격력 +2, 선체 +1은 그대로입니다. 생산 보너스는 독일 산업 도약으로 옮겼습니다. 새 발명의 해금 조건은 기존 효과가 더 일찍 열리지 않도록 구성했습니다.
+미국 서부 확장에서 누락된 마블턴(3673)·로즈버그(3643)를 영토 이전 대상에 포함했습니다. 기존 캠페인의 미소유 분할 지역 10곳도 조건에 맞으면 자동 보정하며, 타국 영토 이전과 인구·보상의 중복 적용을 방지합니다.
 
-관련 한국어 문구와 영문 옵션을 함께 갱신했습니다. 영문 발명 설명 49개에도 실제 효과 수치·부호·단위를 넣고 원문과 대조했습니다.
+한국어/English 지형·복구 문구와 미국 확장 스크립트를 동기화했습니다. DLL 0.6.8.40·TGO·백업 없는 덮어쓰기 설치기는 유지합니다.
 
-재생성한 지도 캐시를 포함했습니다. 캐시 1,752개 파일의 해시와 서명을 확인했으며, 담당 작업에서 새 캐시의 게임 로딩까지 확인했습니다. DLL 0.6.8.40·TGO·글꼴·백업 없는 덮어쓰기 설치기는 유지됩니다.
+시애틀 지형을 포함한 새 입력에 맞춰 자동 재생성이 완료된 지도 캐시를 함께 제공합니다. 새 캐시 서명과 게임 로딩 기록을 확인했습니다. 게임을 완전히 종료하고 갱신한 뒤 TGCNV.exe로 실행하세요.
 
-효과 중복·누락, 해금 조건, 숫자 정밀도, 독일 주력함 보너스 유지와 한영 문구를 검증했습니다. 새 캠페인 기준이며 실제 발명 UI·플레이 균형·저장 재로드·두 PC 멀티플레이는 미검증입니다. 게임을 완전히 종료하고 업데이트한 뒤 다시 실행하세요.
+설치 해시·그림 형식·지형 연결·확장 조건 1,800개 사례·한영 일치 검사를 통과했습니다. 실제 시애틀 표시·복구 이벤트 발동·저장 재로드·두 PC 멀티플레이는 이 변경 묶음으로 미검증입니다. 배포판은 새 캠페인 기준이며 개인 세이브는 포함하지 않습니다.
 
 이전 배포에서 이어지는 기능으로, 군사·공군 시간 처리, 자정 단계 분산과 저장 변수의 반복 탐색 축소를 포함합니다. 변수 조회 객체 안에서 최근 경로만 재사용하고 현재 메모리·국가·날짜 및 저장 검사는 유지합니다. 소유 메모리 fixture 비교에서 변수 조회 비용이 17~48% 감소했지만 이 수치는 실게임 FPS나 전체 처리 시간의 개선율이 아닙니다.
 
@@ -141,15 +141,13 @@ Do not open legacy events `16` or `19` through the console on a player country: 
 
 ### Compatibility and verification
 
-The current experimental engine is **0.6.8.40**. This data update rebalances bonuses associated with 19 national values. It revises 28 existing inventions and adds 21 inventions that separate land warfare, naval warfare, production, education and administration. New unlock conditions preserve the original prerequisites and do not grant the transferred effects earlier than before.
+The current experimental engine is **0.6.8.40**. Seattle (province 78) now has a dedicated urban terrain type and harbor illustration. It uses the existing Vancouver terrain statistics. The new category is appended without changing the indices of the preceding 459 terrain categories.
 
-German militarism retains gun power +2 and hull +1 for both battleships and dreadnoughts. Its production bonuses are transferred to German Industrial Leap. Effects are checked for duplicate or missing ownership after redistribution. Static checks cover 241 numeric modifiers, precision, prerequisite references and factory-input bounds. These checks do not certify gameplay balance.
+The United States' western expansion now includes the previously omitted Marbleton (3673) and Roseburg (3643). A guarded recovery event can repair ten unowned split-province remnants in existing campaigns. It avoids taking foreign-owned territory or repeating population and reward effects. Static AST and bounded-effect tests cover 1,800 ownership/date/core cases; actual in-game activation remains untested.
 
-Korean and English localization is synchronized. All 49 relevant English invention descriptions include the reviewed role summary and exact numeric effects. Signs, percentages, percentage-point changes and day counts were compared with the Korean descriptions, and unrelated language assets are unchanged.
+Korean and English labels and the western-expansion script are synchronized. The engine DLL, TGO and overwrite-only installer are unchanged. Close the game before updating, then launch TGCNV.exe. The automatic cache rebuild for the new terrain definition has completed, and the regenerated cache is included. Its internal signature, native map stamp and successful loading by the game were verified from the completed rebuild and runtime records.
 
-The regenerated map cache is included. All 1,752 cache files match the producer's completed rebuild, the cache signature matches, and the producer confirmed that the game loaded the new cache. The engine DLL, TGO, full Hangul fonts and overwrite-only installer remain unchanged. Close the game completely before updating and restart afterwards. This release is intended for a new campaign and does not include personal saves or save-conversion tools.
-
-Actual invention tooltips, campaign balance, save/reload and two-PC multiplayer remain unverified. Existing historical limitations are retained below.
+Seattle rendering, native event activation, save/reload and two-PC multiplayer remain unverified. The package is intended for a new campaign and contains no personal saves. Existing historical limitations are retained below.
 
 Features inherited from the preceding package remain available. It includes the military/air scheduling changes and separates native midnight date, military and air work into successive frames while retaining once-only processing. Repeated native saved-variable lookups reuse a bounded path inside each lookup object. Current memory, owner/date and saved-value checks remain in place. A controlled owned-memory fixture measured 17–48% lower variable-lookup cost; this is **not a measured live-game FPS or total simulation improvement**.
 

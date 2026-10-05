@@ -2150,7 +2150,10 @@
 					91 = { owned_by = THIS }
 				}
 				80 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				3642 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 80
+				if = {
+					limit = { 3642 = { empty = yes } }
+					3642 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 80
+				}
 			}
 			random_owned = {
 				limit = {
@@ -2158,7 +2161,10 @@
 					OR = { 92 = { owned_by = THIS } 113 = { owned_by = THIS } }
 				}
 				93 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				3655 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 93
+				if = {
+					limit = { 3655 = { empty = yes } }
+					3655 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 93
+				}
 			}
 			random_owned = {
 				limit = {
@@ -2166,7 +2172,10 @@
 					91 = { owned_by = THIS }
 				}
 				92 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				3654 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 92
+				if = {
+					limit = { 3654 = { empty = yes } }
+					3654 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 92
+				}
 			}
 			random_owned = {
 				limit = {
@@ -2175,7 +2184,10 @@
 					115 = { owned_by = THIS }
 				}
 				91 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				3653 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 91
+				if = {
+					limit = { 3653 = { empty = yes } }
+					3653 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 91
+				}
 			}
 			random_owned = {
 				limit = {
@@ -2183,7 +2195,10 @@
 					111 = { owned_by = THIS }
 				}
 				113 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				3675 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 113
+				if = {
+					limit = { 3675 = { empty = yes } }
+					3675 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 113
+				}
 			}
 			random_owned = {
 				limit = {
@@ -2191,6 +2206,10 @@
 					112 = { owned_by = THIS }
 				}
 				111 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
+				if = {
+					limit = { 3673 = { empty = yes } }
+					3673 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 111
+				}
 			}
 			random_owned = {
 				limit = {
@@ -2199,7 +2218,10 @@
 					115 = { owned_by = THIS }
 				}
 				114 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_core = THIS add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } }
-				3676 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 114
+				if = {
+					limit = { 3676 = { empty = yes } }
+					3676 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } add_province_modifier = { name = tgcnv_treaty_core_grace duration = 3650 } } # TGCNV split half of 114
+				}
 			}
 		}
 	}
@@ -2245,6 +2267,10 @@
 					33 = { any_pop = { limit = { has_pop_culture = yankee } reduce_pop = 3 } }
 				}
 			}
+			if = {
+				limit = { 3643 = { empty = yes } }
+				3643 = { secede_province = THIS life_rating = 15 } # TGCNV split half of 81
+			}
 			random_owned = {
 				limit = { province_id = 81 }
 				
@@ -2259,7 +2285,10 @@
 					33 = { any_pop = { limit = { has_pop_culture = yankee } reduce_pop = 3 } }
 				}
 			}
-			3644 = { secede_province = THIS life_rating = 15 } # TGCNV split half of 82
+			if = {
+				limit = { 3644 = { empty = yes } }
+				3644 = { secede_province = THIS life_rating = 15 } # TGCNV split half of 82
+			}
 			83 = {
 				change_province_name = "∆ÊµÈ≈œ"
 				life_rating = 15
@@ -2270,7 +2299,10 @@
 					33 = { any_pop = { limit = { has_pop_culture = yankee } reduce_pop = 3 } }
 				}
 			}
-			3645 = { secede_province = THIS life_rating = 15 } # TGCNV split half of 83
+			if = {
+				limit = { 3645 = { empty = yes } }
+				3645 = { secede_province = THIS life_rating = 15 } # TGCNV split half of 83
+			}
 		}
 	}
 
