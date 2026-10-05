@@ -29,17 +29,13 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-현재 실험용 엔진은 **0.6.8.39**입니다. 엔진 0.6.8.39: 한글 채팅의 입력·삭제·선택·커서 이동·붙여넣기를 문자 단위로 처리하고 로비 안내문과 사용자 메시지의 인코딩·색상 코드 충돌을 수정했습니다.
+현재 실험용 엔진은 **0.6.8.40**입니다. 엔진 0.6.8.40: 큰 지도 국가명이 흰 사각형으로 나오던 텍스처 파일 읽기 제한을 수정했습니다. 실제 읽기 버퍼와 최초 로드·재로드 제한을 함께 16MiB에서 33MiB로 늘렸습니다.
 
-글꼴 21종에 현대 한글 11,172자와 호환 자모 94자를 등록했습니다. 기존 글자 모양·간격을 보존하고 채팅용 글꼴 1종을 추가했습니다.
+읽기 버퍼는 이전보다 17MiB 증가합니다. 원본 코드 서명이나 세 값이 맞지 않으면 적용을 거부하며, 부분 적용을 되돌리지 못한 상태에서는 시작을 진행하지 않습니다.
 
-혁명 이벤트 3개의 한국어 번역 6개 키·12행을 교정했습니다. 한국어 언어 묶음 3개 파일도 갱신하고 정상 영문 원문은 유지했습니다.
+한글 11,172자와 자모 94자, 글꼴 42파일, 한국어/English, TGO, 지도 캐시와 백업 없는 설치기는 직전 배포와 같습니다. 배포용으로 바뀐 게임 파일은 DLL 1개뿐입니다.
 
-지도 캐시가 없거나 오래된 상태일 때 시작 체크섬이 달라지는 문제도 보정합니다. 해당 항목을 현재 지도 파일에서 계산하며 실제 지도 입력 차이는 계속 반영합니다. 두 PC 멀티플레이 일치 검증은 아직 하지 않았습니다.
-
-체크섬 보정 검증 중 재생성된 인접 캐시와 서명도 반영했습니다. 게임에 쓰는 인접 관계 42,818개는 이전과 같고, 이진 차이는 사용하지 않는 0번 더미 레코드뿐입니다. 지도 파일과 나머지 캐시는 그대로입니다.
-
-설치 완료 파일과 관련 오프라인 검사 10종, 한영 파일·캐시 서명을 확인했습니다. 실게임 IME 조합창·글꼴 표시·멀티플레이 채팅 송수신·저장 재로드는 아직 미검증입니다. 백업 없는 설치기와 TGO는 직전 배포와 같습니다.
+읽기 용량·GUI 텍스처 진단·전체 한글 디코딩의 오프라인 검사 3종과 설치 해시를 확인했습니다. 실제 게임의 지도 글자 표시·저장 재로드·두 PC 멀티플레이는 아직 미검증입니다. 게임을 완전히 종료하고 갱신한 뒤 다시 실행하세요.
 
 이전 배포에서 이어지는 기능으로, 군사·공군 시간 처리, 자정 단계 분산과 저장 변수의 반복 탐색 축소를 포함합니다. 변수 조회 객체 안에서 최근 경로만 재사용하고 현재 메모리·국가·날짜 및 저장 검사는 유지합니다. 소유 메모리 fixture 비교에서 변수 조회 비용이 17~48% 감소했지만 이 수치는 실게임 FPS나 전체 처리 시간의 개선율이 아닙니다.
 
@@ -143,13 +139,11 @@ Do not open legacy events `16` or `19` through the console on a player country: 
 
 ### Compatibility and verification
 
-The current experimental engine is **0.6.8.39**. This release adds all 11,172 modern Hangul syllables and 94 compatibility jamo across 21 font pairs, including a dedicated chat font. Existing glyph shapes and metrics are retained. Chat input, cursor movement, selection, deletion, paste and length limits now preserve complete characters. Lobby system messages keep the legacy translation path while user chat uses the full Korean input encoding; generated color controls and translated country-name spans are handled without rewriting the user's message body.
+The current experimental engine is **0.6.8.40**. It fixes the native texture-file read limit that rejected large full-Hangul font atlases and caused large country names on the map to appear as white squares. The read-buffer allocation, initial-load limit and reload limit are raised together from 16 MiB to 33 MiB before the native texture manager is constructed. This adds 17 MiB to the read buffer. Original-code signatures and all three values are checked; mismatched or partial patches are refused, and an incomplete rollback prevents startup.
 
-Three revolution events have corrected Korean wording (six keys, twelve rows). The Korean language bank is refreshed to match; the correct original English wording remains unchanged. The DLL also retains the separately installed map-cache startup-checksum correction: a missing or stale local cache no longer changes that startup-checksum term, which is computed from the current map files instead. Actual map inputs remain covered. This is not a certification of identical multiplayer state.
+Only the installed engine DLL changes. All 42 font files retain the full 11,172 modern Hangul syllables and 94 compatibility jamo. Korean/English text, TGO, the verified map cache and the overwrite-only installer remain unchanged. Close the game completely, update, then restart so the replacement DLL is loaded.
 
-The regenerated adjacency cache and its signature are also included. All 42,818 passable adjacency records remain identical; only the unused province-zero dummy record differs in the binary. The map inputs and other cache files are unchanged.
-
-Ten recorded offline test suites, installed hashes, font coverage, language-bank consistency and map-cache signatures passed. Real-game IME composition, rendering, multiplayer message exchange and save/reload still need confirmation. The overwrite-only installer and TGO remain unchanged from the preceding release. The existing campaign and multiplayer limitations still apply.
+Three recorded offline suites passed: native texture read capacity, GUI texture diagnostics and full Hangul decoding. The new capacity test contains 730 checks. Installed-file hashes and the existing font contract were verified. Successful upload to a separate D3D9Ex test device does not certify in-game rendering. Actual map labels, save/reload and two-PC multiplayer still need confirmation.
 
 Features inherited from the preceding package remain available. It includes the military/air scheduling changes and separates native midnight date, military and air work into successive frames while retaining once-only processing. Repeated native saved-variable lookups reuse a bounded path inside each lookup object. Current memory, owner/date and saved-value checks remain in place. A controlled owned-memory fixture measured 17–48% lower variable-lookup cost; this is **not a measured live-game FPS or total simulation improvement**.
 
