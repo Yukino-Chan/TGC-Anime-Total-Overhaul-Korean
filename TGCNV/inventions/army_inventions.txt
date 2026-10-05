@@ -3144,29 +3144,14 @@ tgcnv_heavy_tank = {
 			}
 
 			effect = {
-				factory_goods_output = {
-					cement = 0.04
-				}
-				factory_goods_output = {
-					steel = 0.04
-				}
-				factory_goods_output = {
-					fertilizer = 0.04
-				}
-				factory_goods_output = {
-					fuel = 0.04
-				}
-				factory_output = 0.025
-				reinforce_rate = 0.85
-				morale = 0.45
-				military_tactics = 0.9
-				dig_in_cap = 4
+				reinforce_rate = 0.05
+				morale = 0.1
+				military_tactics = 0.1
+				dig_in_cap = 1
 				army_base = {
-					discipline = 0.55
-					build_time = -15
-					attack = 3.5
-					defence = 3.5
-					maximum_speed = 1
+					discipline = 0.1
+					attack = 0.5
+					defence = 0.5
 				}
 				battleship = {
 					gun_power = 2
@@ -3190,22 +3175,10 @@ tgcnv_heavy_tank = {
 			}
 
 			effect = {
-				rgo_goods_output = {
-					grain = 0.75
-				}
-				rgo_goods_output = {
-					fruit = 0.75
-				}
-				rgo_goods_output = {
-					cattle = 0.75
-				}
-				rgo_goods_output = {
-					fish = 0.75
-				}
-				morale = 0.5
+				morale = 0.1
 				army_base = {
 					discipline = 0.1
-					attack = 5
+					attack = 1
 				}
 			}
 		}
@@ -3221,28 +3194,19 @@ tgcnv_heavy_tank = {
 			}
 
 			effect = {
-				factory_goods_output = {
-					wine = 0.03
-				}
-				factory_goods_output = {
-					furniture = 0.03
-				}
-				factory_goods_output = {
-					luxury_furniture = 0.03
-				}
-				morale = 0.35
+				morale = 0.05
 				army_base = {
 					discipline = 0.1
-					defence = 5
+					defence = 1
 				}
 				guard = {
-					attack = 7
+					attack = 1
 				}
 				tgcnv_sturmtruppe = {
-					attack = 7
-				}  # TGCNV STURMTRUPPE = guard
+					attack = 1
+				}
 				hussar = {
-					attack = 7
+					attack = 1
 				}
 			}
 		}
@@ -3258,17 +3222,12 @@ tgcnv_heavy_tank = {
 			}
 
 			effect = {
-				reinforce_rate = 0.6
-				morale = 0.2
+				reinforce_rate = 0.05
+				morale = 0.1
 				army_base = {
 					discipline = 0.1
-					attack = 5
-					defence = 3.5
-				}
-				navy_base = {
-					gun_power = 0.5
-					hull = 0.3
-					default_organisation = 5
+					attack = 0.5
+					defence = 0.5
 				}
 			}
 		}

@@ -12,45 +12,46 @@ tgcnv_nv_prussia_industrial_development = {
 		base = 100
 	}
 	effect = {
-		factory_throughput = 0.35
 		factory_goods_output = {
-			steel = 0.3
+			cement = 0.115
 		}
 		factory_goods_output = {
-			cement = 0.3
+			steel = 0.115
 		}
 		factory_goods_output = {
-			fertilizer = 0.25
+			fertilizer = 0.115
 		}
 		factory_goods_output = {
-			fuel = 0.25
+			fuel = 0.115
+		}
+		factory_output = 0.025
+		factory_throughput = 0.1
+		factory_goods_output = {
+			ammunition = 0.075
 		}
 		factory_goods_output = {
-			ammunition = 0.3
+			small_arms = 0.075
 		}
 		factory_goods_output = {
-			small_arms = 0.3
+			artillery = 0.075
 		}
 		factory_goods_output = {
-			artillery = 0.3
+			barrels = 0.075
 		}
 		factory_goods_output = {
-			barrels = 0.3
+			aeroplanes = 0.075
 		}
 		factory_goods_output = {
-			aeroplanes = 0.3
+			machine_parts = 0.075
 		}
 		factory_goods_output = {
-			machine_parts = 0.3
+			electric_gear = 0.075
 		}
 		factory_goods_output = {
-			electric_gear = 0.25
+			automobiles = 0.075
 		}
 		factory_goods_output = {
-			automobiles = 0.25
-		}
-		factory_goods_output = {
-			steamer_convoy = 0.25
+			steamer_convoy = 0.075
 		}
 	}
 }
@@ -66,31 +67,10 @@ tgcnv_nv_france_industrial_development = {
 		base = 100
 	}
 	effect = {
-		shared_prestige = 45
-		education_efficiency = 0.3
-		diplomatic_points = 0.35
-		influence = 0.3
-		factory_goods_output = {
-			wine = 0.3
-		}
-		factory_goods_output = {
-			luxury_clothes = 0.3
-		}
-		factory_goods_output = {
-			luxury_furniture = 0.3
-		}
-		factory_goods_output = {
-			glass = 0.3
-		}
-		factory_goods_output = {
-			paper = 0.3
-		}
-		factory_goods_output = {
-			automobiles = 0.25
-		}
-		factory_goods_output = {
-			aeroplanes = 0.3
-		}
+		shared_prestige = 15
+		education_efficiency = 0.15
+		diplomatic_points = 0.15
+		influence = 0.15
 	}
 }
 tgcnv_nv_austria_industrial_development = {
@@ -105,24 +85,15 @@ tgcnv_nv_austria_industrial_development = {
 		base = 100
 	}
 	effect = {
-		administrative_efficiency = 0.3
-		education_efficiency = 0.25
-		core_pop_militancy_modifier = -0.05
-		war_exhaustion = -0.05
-		max_national_focus = 2
-		poor_life_needs = -0.2
-		diplomatic_points = 0.3
-		influence = 0.25
-		loan_interest = -0.03
-		factory_goods_output = {
-			paper = 0.3
-		}
-		factory_goods_output = {
-			glass = 0.3
-		}
-		factory_goods_output = {
-			fabric = 0.3
-		}
+		administrative_efficiency = 0.15
+		education_efficiency = 0.15
+		core_pop_militancy_modifier = -0.01
+		war_exhaustion = -0.01
+		max_national_focus = 1
+		poor_life_needs = -0.05
+		diplomatic_points = 0.15
+		influence = 0.15
+		loan_interest = -0.01
 	}
 }
 tgcnv_nv_japan_industrial_development = {
@@ -137,30 +108,27 @@ tgcnv_nv_japan_industrial_development = {
 		base = 100
 	}
 	effect = {
-		education_efficiency = 0.3
-		administrative_efficiency = 0.25
-		factory_input = -0.2
-		shared_prestige = 40
+		factory_input = -0.025
 		factory_goods_output = {
-			fabric = 0.3
+			fabric = 0.075
 		}
 		factory_goods_output = {
-			steamer_convoy = 0.3
+			steamer_convoy = 0.075
 		}
 		factory_goods_output = {
-			machine_parts = 0.25
+			machine_parts = 0.075
 		}
 		factory_goods_output = {
-			electric_gear = 0.25
+			electric_gear = 0.075
 		}
 		factory_goods_output = {
-			telephones = 0.3
+			telephones = 0.075
 		}
 		factory_goods_output = {
-			radio = 0.3
+			radio = 0.075
 		}
 		factory_goods_output = {
-			aeroplanes = 0.25
+			aeroplanes = 0.075
 		}
 	}
 }
@@ -176,25 +144,13 @@ tgcnv_nv_britain_industrial_development = {
 		base = 100
 	}
 	effect = {
-		supply_range = 0.5
-		naval_attrition = -0.25
-		influence = 0.35
-		diplomatic_points = 0.35
-		colonial_points = 200
-		colonial_prestige = 0.3
-		loan_interest = -0.03
-		rgo_goods_output = {
-			cotton = 0.35
-		}
-		rgo_goods_output = {
-			tropical_wood = 0.35
-		}
-		rgo_goods_output = {
-			tea = 0.3
-		}
-		rgo_goods_output = {
-			coffee = 0.3
-		}
+		supply_range = 0.25
+		naval_attrition = -0.05
+		influence = 0.15
+		diplomatic_points = 0.15
+		colonial_points = 50
+		colonial_prestige = 0.1
+		loan_interest = -0.01
 	}
 }
 tgcnv_nv_usa_industrial_development = {
@@ -209,28 +165,27 @@ tgcnv_nv_usa_industrial_development = {
 		base = 100
 	}
 	effect = {
-		max_national_focus = 2
-		colonial_migration = 0.5
-		education_efficiency = 0.25
-		factory_cost = -0.25
-		loan_interest = -0.03
+		navy_base = {
+			build_time = -5
+		}
+		factory_cost = -0.1
 		factory_goods_output = {
-			automobiles = 0.3
+			automobiles = 0.1
 		}
 		factory_goods_output = {
-			electric_gear = 0.25
+			electric_gear = 0.1
 		}
 		factory_goods_output = {
-			machine_parts = 0.25
+			machine_parts = 0.1
 		}
 		factory_goods_output = {
-			aeroplanes = 0.25
+			aeroplanes = 0.1
 		}
 		factory_goods_output = {
-			telephones = 0.3
+			telephones = 0.1
 		}
 		factory_goods_output = {
-			radio = 0.3
+			radio = 0.1
 		}
 	}
 }
@@ -247,34 +202,11 @@ tgcnv_nv_italia_industrial_development = {
 		base = 100
 	}
 	effect = {
-		diplomatic_points = 0.5
-		influence = 0.3
-		shared_prestige = 40
-		core_pop_militancy_modifier = -0.05
-		navy_base = {
-			default_organisation = 8
-		}
-		cruiser = {
-			maximum_speed = 1
-		}
-		steam_transport = {
-			hull = 4
-		}
-		rgo_goods_output = {
-			fruit = 0.3
-		}
-		rgo_goods_output = {
-			sulphur = 0.3
-		}
-		factory_goods_output = {
-			wine = 0.3
-		}
-		factory_goods_output = {
-			glass = 0.3
-		}
-		factory_goods_output = {
-			canned_food = 0.3
-		}
+		max_national_focus = 1
+		diplomatic_points = 0.15
+		influence = 0.15
+		shared_prestige = 15
+		core_pop_militancy_modifier = -0.01
 	}
 }
 tgcnv_nv_russia_industrial_development = {
@@ -289,30 +221,16 @@ tgcnv_nv_russia_industrial_development = {
 		base = 100
 	}
 	effect = {
-		supply_limit = 0.35
-		land_attrition = -0.25
-		war_exhaustion = -0.05
+		colonial_migration = 0.25
+		supply_limit = 0.15
+		land_attrition = -0.05
+		war_exhaustion = -0.01
 		army_base = {
-			defence = 2.5
+			defence = 0.5
 		}
 		engineer = {
-			defence = 3
-			siege = 1
-		}
-		factory_goods_output = {
-			steel = 0.3
-		}
-		factory_goods_output = {
-			cement = 0.3
-		}
-		factory_goods_output = {
-			lumber = 0.3
-		}
-		factory_goods_output = {
-			canned_food = 0.3
-		}
-		factory_goods_output = {
-			explosives = 0.25
+			defence = 0.5
+			siege = 0.5
 		}
 	}
 }
@@ -328,32 +246,55 @@ tgcnv_nv_soviet_industrial_development = {
 		base = 100
 	}
 	effect = {
-		administrative_efficiency = 0.3
-		education_efficiency = 0.3
-		max_national_focus = 2
-		factory_input = -0.2
-		factory_throughput = 0.3
-		poor_life_needs = -0.2
-		factory_goods_output = {
-			cement = 0.3
+		rgo_goods_output = {
+			coal = 0.1
+		}
+		rgo_goods_output = {
+			iron = 0.1
+		}
+		rgo_goods_output = {
+			oil = 0.15
 		}
 		factory_goods_output = {
-			machine_parts = 0.3
+			steel = 0.04
 		}
 		factory_goods_output = {
-			electric_gear = 0.3
+			automobiles = 0.04
 		}
 		factory_goods_output = {
-			fertilizer = 0.3
+			aeroplanes = 0.04
 		}
 		factory_goods_output = {
-			radio = 0.3
+			artillery = 0.05
 		}
 		factory_goods_output = {
-			paper = 0.3
+			small_arms = 0.05
 		}
 		factory_goods_output = {
-			plastics = 0.3
+			ammunition = 0.05
+		}
+		factory_input = -0.025
+		factory_throughput = 0.1
+		factory_goods_output = {
+			cement = 0.075
+		}
+		factory_goods_output = {
+			machine_parts = 0.075
+		}
+		factory_goods_output = {
+			electric_gear = 0.075
+		}
+		factory_goods_output = {
+			fertilizer = 0.075
+		}
+		factory_goods_output = {
+			radio = 0.075
+		}
+		factory_goods_output = {
+			paper = 0.075
+		}
+		factory_goods_output = {
+			plastics = 0.075
 		}
 	}
 }
@@ -382,11 +323,7 @@ tgcnv_nv_china_cheonha_gyeongse = {
     news = no
     chance = { base = 100 }
     effect = {
-        administrative_efficiency = 0.15
-        rgo_goods_output = { grain = 0.20 }
-        rgo_goods_output = { silk = 0.15 }
-        rgo_goods_output = { tea = 0.15 }
-        factory_goods_output = { paper = 0.15 }
+    	administrative_efficiency = 0.2
     }
 }
 
@@ -398,11 +335,9 @@ tgcnv_nv_netherlands_merchant_credit = {
     news = no
     chance = { base = 100 }
     effect = {
-        loan_interest = -0.02
-        factory_throughput = 0.15
-        factory_goods_output = { fabric = 0.15 }
-        influence = 0.15
-        supply_range = 0.15
+    	loan_interest = -0.01
+    	influence = 0.15
+    	supply_range = 0.2
     }
 }
 
@@ -414,12 +349,18 @@ tgcnv_nv_belgium_independent_workshops = {
     news = no
     chance = { base = 100 }
     effect = {
-        factory_cost = -0.10
-        factory_input = -0.10
-        factory_throughput = 0.15
-        rgo_goods_output = { coal = 0.20 }
-        factory_goods_output = { steel = 0.20 }
-        factory_goods_output = { glass = 0.15 }
+    	factory_cost = -0.05
+    	factory_input = -0.025
+    	factory_throughput = 0.15
+    	rgo_goods_output = {
+    		coal = 0.2
+    	}
+    	factory_goods_output = {
+    		steel = 0.2
+    	}
+    	factory_goods_output = {
+    		glass = 0.15
+    	}
     }
 }
 
@@ -431,11 +372,8 @@ tgcnv_nv_spain_plus_ultra_network = {
     news = no
     chance = { base = 100 }
     effect = {
-        colonial_migration = 0.15
-        rgo_goods_output = { fruit = 0.15 }
-        factory_goods_output = { wine = 0.15 }
-        factory_goods_output = { clipper_convoy = 0.10 }
-        supply_range = 0.10
+    	colonial_migration = 0.25
+    	supply_range = 0.25
     }
 }
 
@@ -447,10 +385,8 @@ tgcnv_nv_portugal_oceanic_depots = {
     news = no
     chance = { base = 100 }
     effect = {
-        supply_range = 0.20
-        naval_attrition = -0.10
-        factory_goods_output = { clipper_convoy = 0.20 }
-        factory_goods_output = { steamer_convoy = 0.15 }
+    	supply_range = 0.3
+    	naval_attrition = -0.075
     }
 }
 
@@ -462,11 +398,10 @@ tgcnv_nv_ottoman_eternal_administration = {
     news = no
     chance = { base = 100 }
     effect = {
-        administrative_efficiency = 0.15
-        core_pop_militancy_modifier = -0.02
-        war_exhaustion = -0.02
-        reinforce_rate = 0.10
-        max_national_focus = 1
+    	administrative_efficiency = 0.2
+    	core_pop_militancy_modifier = -0.01
+    	war_exhaustion = -0.01
+    	max_national_focus = 1
     }
 }
 
@@ -478,10 +413,8 @@ tgcnv_nv_korea_samhan_scholarship = {
     news = no
     chance = { base = 100 }
     effect = {
-        education_efficiency = 0.20
-        administrative_efficiency = 0.15
-        factory_goods_output = { paper = 0.20 }
-        factory_throughput = 0.10
+    	education_efficiency = 0.25
+    	administrative_efficiency = 0.2
     }
 }
 
@@ -493,11 +426,16 @@ tgcnv_nv_sweden_cooperative_workshops = {
     news = no
     chance = { base = 100 }
     effect = {
-        factory_goods_output = { machine_parts = 0.20 }
-        factory_goods_output = { steel = 0.20 }
-        rgo_goods_output = { iron = 0.15 }
-        factory_throughput = 0.10
-        education_efficiency = 0.15
+    	factory_goods_output = {
+    		machine_parts = 0.2
+    	}
+    	factory_goods_output = {
+    		steel = 0.2
+    	}
+    	rgo_goods_output = {
+    		iron = 0.2
+    	}
+    	factory_throughput = 0.125
     }
 }
 
@@ -509,10 +447,15 @@ tgcnv_nv_denmark_coastal_cooperative = {
     news = no
     chance = { base = 100 }
     effect = {
-        rgo_goods_output = { fish = 0.20 }
-        rgo_goods_output = { cattle = 0.15 }
-        supply_range = 0.15
-        factory_goods_output = { clipper_convoy = 0.10 }
+    	rgo_goods_output = {
+    		fish = 0.25
+    	}
+    	rgo_goods_output = {
+    		cattle = 0.2
+    	}
+    	factory_goods_output = {
+    		clipper_convoy = 0.2
+    	}
     }
 }
 
@@ -524,11 +467,518 @@ tgcnv_nv_tokugawa_domain_administration = {
     news = no
     chance = { base = 100 }
     effect = {
-        administrative_efficiency = 0.10
-        war_exhaustion = -0.02
-        core_pop_militancy_modifier = -0.02
-        rgo_goods_output = { silk = 0.20 }
-        factory_goods_output = { paper = 0.15 }
-        reinforce_rate = 0.10
+    	administrative_efficiency = 0.2
+    	war_exhaustion = -0.01
+    	core_pop_militancy_modifier = -0.01
     }
+}
+
+# Role-specific national inventions. Conditions retain the source gate and add relevant research.
+
+tgcnv_nv_france_agricultural_industry = {
+	limit = {
+		nationalism_n_imperialism = 1
+		invention = grande_armee
+		nationalvalue = nv_france
+		year = 1850
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		rgo_goods_output = {
+			grain = 0.1
+		}
+		rgo_goods_output = {
+			fruit = 0.1
+		}
+		rgo_goods_output = {
+			cattle = 0.1
+		}
+		rgo_goods_output = {
+			fish = 0.1
+		}
+		factory_goods_output = {
+			wine = 0.1
+		}
+		factory_goods_output = {
+			luxury_clothes = 0.1
+		}
+		factory_goods_output = {
+			luxury_furniture = 0.1
+		}
+		factory_goods_output = {
+			glass = 0.1
+		}
+		factory_goods_output = {
+			paper = 0.1
+		}
+		factory_goods_output = {
+			automobiles = 0.1
+		}
+		factory_goods_output = {
+			aeroplanes = 0.1
+		}
+	}
+}
+
+tgcnv_nv_austria_imperial_workshops = {
+	limit = {
+		state_n_government = 1
+		invention = kaiserliche_armee
+		nationalvalue = nv_austria
+		year = 1867
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_goods_output = {
+			wine = 0.03
+		}
+		factory_goods_output = {
+			furniture = 0.03
+		}
+		factory_goods_output = {
+			luxury_furniture = 0.03
+		}
+		factory_goods_output = {
+			paper = 0.1
+		}
+		factory_goods_output = {
+			glass = 0.1
+		}
+		factory_goods_output = {
+			fabric = 0.1
+		}
+	}
+}
+
+tgcnv_nv_britain_industrial_supply = {
+	limit = {
+		naval_logistics = 1
+		invention = royal_navy
+		nationalvalue = nv_britain
+		year = 1870
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		rgo_goods_output = {
+			coal = 0.1
+		}
+		rgo_goods_output = {
+			iron = 0.1
+		}
+		rgo_goods_output = {
+			sulphur = 0.1
+		}
+		factory_goods_output = {
+			clipper_convoy = 0.15
+		}
+		factory_goods_output = {
+			steamer_convoy = 0.15
+		}
+		rgo_goods_output = {
+			cotton = 0.1
+		}
+		rgo_goods_output = {
+			tropical_wood = 0.1
+		}
+		rgo_goods_output = {
+			tea = 0.1
+		}
+		rgo_goods_output = {
+			coffee = 0.1
+		}
+	}
+}
+
+tgcnv_nv_italia_national_industry = {
+	limit = {
+		nationalism_n_imperialism = 1
+		invention = united_italian
+		nationalvalue = nv_italia
+		year = 1870
+		tag = ITA
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_goods_output = {
+			fabric = 0.08
+		}
+		factory_goods_output = {
+			luxury_clothes = 0.06
+		}
+		factory_goods_output = {
+			clipper_convoy = 0.05
+		}
+		factory_goods_output = {
+			steamer_convoy = 0.05
+		}
+		rgo_goods_output = {
+			fruit = 0.1
+		}
+		rgo_goods_output = {
+			sulphur = 0.1
+		}
+		factory_goods_output = {
+			wine = 0.1
+		}
+		factory_goods_output = {
+			glass = 0.1
+		}
+		factory_goods_output = {
+			canned_food = 0.1
+		}
+	}
+}
+
+tgcnv_nv_russia_resource_industry = {
+	limit = {
+		steel_railroad = 1
+		invention = tsarism
+		nationalvalue = nv_russia
+		year = 1870
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		farm_rgo_eff = 0.1
+		mine_rgo_eff = 0.1
+		factory_goods_output = {
+			steel = 0.1
+		}
+		factory_goods_output = {
+			cement = 0.1
+		}
+		factory_goods_output = {
+			lumber = 0.1
+		}
+		factory_goods_output = {
+			canned_food = 0.1
+		}
+		factory_goods_output = {
+			explosives = 0.1
+		}
+	}
+}
+
+tgcnv_nv_japan_naval_training = {
+	limit = {
+		army_command_principle = 1
+		nationalvalue = nv_japan
+		post_nelsonian_thought = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		navy_base = {
+			gun_power = 0.5
+			hull = 0.5
+			default_organisation = 2.5
+		}
+	}
+}
+
+tgcnv_nv_japan_public_education = {
+	limit = {
+		empiricism = 1
+		invention = samurai_spirit
+		nationalvalue = nv_japan
+		year = 1868
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		education_efficiency = 0.15
+		administrative_efficiency = 0.15
+		shared_prestige = 15
+	}
+}
+
+tgcnv_nv_usa_mobilization_system = {
+	limit = {
+		private_banks = 1
+		nationalvalue = nv_usa
+		military_staff_system = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		reinforce_rate = 0.05
+		morale = 0.05
+		army_base = {
+			build_time = -5
+			default_organisation = 2.5
+		}
+	}
+}
+
+tgcnv_nv_usa_frontier_institutions = {
+	limit = {
+		state_n_government = 1
+		invention = american_dream
+		nationalvalue = nv_usa
+		year = 1860
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		max_national_focus = 1
+		colonial_migration = 0.25
+		education_efficiency = 0.15
+		loan_interest = -0.01
+	}
+}
+
+tgcnv_nv_italia_naval_expansion = {
+	limit = {
+		nationalism_n_imperialism = 1
+		invention = united_italian
+		nationalvalue = nv_italia
+		year = 1870
+		tag = ITA
+		naval_logistics = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 2.5
+		}
+		cruiser = {
+			maximum_speed = 0.5
+		}
+		steam_transport = {
+			hull = 0.5
+		}
+	}
+}
+
+tgcnv_nv_soviet_mass_education = {
+	limit = {
+		mass_politics = 1
+		invention = red_army
+		nationalvalue = nv_soviet
+		year = 1928
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		administrative_efficiency = 0.15
+		education_efficiency = 0.15
+		max_national_focus = 1
+		poor_life_needs = -0.05
+	}
+}
+
+tgcnv_nv_china_agricultural_workshops = {
+	limit = {
+		state_n_government = 1
+		nationalvalue = nv_china
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		rgo_goods_output = {
+			grain = 0.25
+		}
+		rgo_goods_output = {
+			silk = 0.2
+		}
+		rgo_goods_output = {
+			tea = 0.2
+		}
+		factory_goods_output = {
+			paper = 0.2
+		}
+	}
+}
+
+tgcnv_nv_netherlands_textile_workshops = {
+	limit = {
+		stock_exchange = 1
+		nationalvalue = nv_netherlands
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_throughput = 0.15
+		factory_goods_output = {
+			fabric = 0.2
+		}
+	}
+}
+
+tgcnv_nv_spain_agricultural_shipyards = {
+	limit = {
+		ideological_thought = 1
+		nationalvalue = nv_spain
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		rgo_goods_output = {
+			fruit = 0.2
+		}
+		factory_goods_output = {
+			wine = 0.2
+		}
+		factory_goods_output = {
+			clipper_convoy = 0.15
+		}
+	}
+}
+
+tgcnv_nv_portugal_oceanic_shipyards = {
+	limit = {
+		naval_plans = 1
+		nationalvalue = nv_portugal
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_goods_output = {
+			clipper_convoy = 0.2
+		}
+		factory_goods_output = {
+			steamer_convoy = 0.2
+		}
+	}
+}
+
+tgcnv_nv_korea_paper_workshops = {
+	limit = {
+		positivism = 1
+		nationalvalue = nv_korea
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_goods_output = {
+			paper = 0.2
+		}
+		factory_throughput = 0.1
+	}
+}
+
+tgcnv_nv_tokugawa_domain_workshops = {
+	limit = {
+		army_professionalism = 1
+		nationalvalue = nv_tokugawa
+		mechanical_production = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		rgo_goods_output = {
+			silk = 0.2
+		}
+		factory_goods_output = {
+			paper = 0.2
+		}
+	}
+}
+
+tgcnv_nv_ottoman_recruitment_system = {
+	limit = {
+		state_n_government = 1
+		nationalvalue = nv_ottoman
+		military_staff_system = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		reinforce_rate = 0.15
+	}
+}
+
+tgcnv_nv_sweden_technical_education = {
+	limit = {
+		organized_factories = 1
+		nationalvalue = nv_sweden
+		positivism = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		education_efficiency = 0.15
+	}
+}
+
+tgcnv_nv_denmark_coastal_shipping = {
+	limit = {
+		market_structure = 1
+		nationalvalue = nv_denmark
+		naval_plans = 1
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		supply_range = 0.25
+	}
+}
+
+tgcnv_nv_tokugawa_retainer_recruitment = {
+	limit = {
+		army_professionalism = 1
+		nationalvalue = nv_tokugawa
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		reinforce_rate = 0.15
+	}
 }

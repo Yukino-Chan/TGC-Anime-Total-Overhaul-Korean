@@ -2717,17 +2717,8 @@
 			}
 
 			effect = {
-				farm_rgo_eff = 0.75
-				mine_rgo_eff = 0.75
-				reinforce_rate = 1.0
-				morale = 0.45
-				army_base = {
-					build_time = -45
-					default_organisation = 2.5
-				}
-				navy_base = {
-					build_time = -45
-				}
+				farm_rgo_eff = 0.1
+				mine_rgo_eff = 0.1
 			}
 		}
 

@@ -4157,30 +4157,17 @@
 			}
 
 			effect = {
-				max_national_focus = 4
-				factory_goods_output = {
-					fabric = 0.08
-				}
-				factory_goods_output = {
-					luxury_clothes = 0.06
-				}
-				factory_goods_output = {
-					clipper_convoy = 0.05
-				}
-				factory_goods_output = {
-					steamer_convoy = 0.05
-				}
-				morale = 0.3
+				morale = 0.1
 				army_base = {
-					attack = 3
-					defence = 3
+					attack = 0.5
+					defence = 0.5
 				}
 				guard = {
-					default_organisation = 5
+					default_organisation = 2.5
 				}
 				tgcnv_sturmtruppe = {
-					default_organisation = 5
-				}  # TGCNV STURMTRUPPE = guard
+					default_organisation = 2.5
+				}
 			}
 		}
 
@@ -4195,16 +4182,13 @@
 			}         
 
 			effect = {
-				colonial_migration = 1
-				farm_rgo_eff = 0.25
-				mine_rgo_eff = 0.25
-				reinforce_rate = 0.8
+				reinforce_rate = 0.15
 				army_base = {
-					discipline = 0.25
-					build_time = -25
-					default_organisation = 5
+					discipline = 0.05
+					build_time = -5
+					default_organisation = 2.5
 				}
-				morale = 0.4
+				morale = 0.1
 			}
 		}
 
@@ -4219,41 +4203,14 @@
 			}
 
 			effect = {
-				rgo_goods_output = {
-					coal = 0.45
-				}
-				rgo_goods_output = {
-					iron = 0.45
-				}
-				rgo_goods_output = {
-					oil = 0.9
-				}
-				factory_goods_output = {
-					steel = 0.04
-				}
-				factory_goods_output = {
-					automobiles = 0.04
-				}
-				factory_goods_output = {
-					aeroplanes = 0.04
-				}
-				factory_goods_output = {
-					artillery = 0.05
-				}
-				factory_goods_output = {
-					small_arms = 0.05
-				}
-				factory_goods_output = {
-					ammunition = 0.05
-				}
-				reinforce_rate = 0.8
-				morale = 0.6
-				military_tactics = 0.9
-				dig_in_cap = 6
+				reinforce_rate = 0.15
+				morale = 0.15
+				military_tactics = 0.05
+				dig_in_cap = 2
 				army_base = {
-					discipline = 0.45
-					build_time = -30
-					default_organisation = 3.0
+					discipline = 0.05
+					build_time = -5
+					default_organisation = 2.5
 				}
 			}
 		}

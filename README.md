@@ -29,17 +29,15 @@ Victoria II용 스탠드얼론 한국어·영어 애니메이션 오버홀 **TGC
 
 ## 배포 상태
 
-현재 실험용 엔진은 **0.6.8.40**입니다. 주 편성과 추가 발칸 경계를 함께 수정했습니다. 직전 공개판 대비 19개 프로빈스의 주 배정이 바뀌며, 3개 주 통합으로 물리적 주는 1,246개에서 1,243개가 됩니다. 블라토·오라샤츠는 라구사, 데브레이발라는 북마케도니아, 드라가시는 코소보에 편입했습니다. 오라샤츠(7277)의 지형은 구릉으로 수정했습니다.
+현재 실험용 엔진은 **0.6.8.40**입니다. 19개 국가 가치관의 보너스 편차를 조정했습니다. 기존 발명 28개를 재조정하고 역할 분리용 발명 21개를 추가해 육군·해군·생산·교육·행정 효과를 구분했습니다.
 
-정치 화면의 한국어 문구 33개(54행)를 정리하고, 주 이름 5개(6행)를 갱신했습니다. 영문 옵션에도 새 주 이름과 교육 예산 경고·비밀 투표·야당 공개활동 문구를 맞췄습니다. 교육 경고의 적용 조건과 문해율·예산 경계값을 설명에 정확히 반영했으며 정책의 게임 효과는 바꾸지 않았습니다.
+독일 군국주의의 전함·드레드노트 공격력 +2, 선체 +1은 그대로입니다. 생산 보너스는 독일 산업 도약으로 옮겼습니다. 새 발명의 해금 조건은 기존 효과가 더 일찍 열리지 않도록 구성했습니다.
 
-프로이센이 오스트리아에 패권 인정 평화조건으로 승리하면 하노버·헤센카셀·나사우·프랑크푸르트를 합병하고 코어를 추가합니다. 슐레스비히·홀슈타인 14개 프로빈스에 코어를 추가하며 오스트리아 및 해당 공국의 영토를 편입합니다. 다른 독일 소국은 위성국으로 삼되 오스트리아는 제외합니다. 승패 분기·대상 범위·중복 처리 등 오프라인 14개 검사를 통과했으며 실게임 승전 재현은 미검증입니다.
+관련 한국어 문구와 영문 옵션을 함께 갱신했습니다. 영문 발명 설명 49개에도 실제 효과 수치·부호·단위를 넣고 원문과 대조했습니다.
 
-차티스트 집회 이벤트의 한국어 문구 3개(6행)에서 경찰 진압 선택지의 오역을 고쳤습니다. 프로이센 이벤트 6개 문구를 영문으로도 제공하고, 한국어/English의 오스트리아 승패 처리 스크립트를 함께 갱신했습니다.
+재생성한 지도 캐시를 포함했습니다. 캐시 1,752개 파일의 해시와 서명을 확인했으며, 담당 작업에서 새 캐시의 게임 로딩까지 확인했습니다. DLL 0.6.8.40·TGO·글꼴·백업 없는 덮어쓰기 설치기는 유지됩니다.
 
-엔진은 0.6.8.40이며 TGO·글꼴·지도 캐시·백업 없는 덮어쓰기 설치기는 직전 배포와 같습니다. 프로빈스 형상·소유국은 유지됩니다. 게임을 완전히 종료하고 갱신한 뒤 새 캠페인으로 시작하세요.
-
-설치 해시, 주 배정·런타임 표 일치, 추가 4개 배정과 지형 1개만 변경됐는지, 한국어/English 문구 구조 및 캐시 서명을 확인했습니다. 실제 새 캠페인·UI 표시·승전 이벤트·저장 재로드·두 PC 멀티플레이는 미검증입니다. 개인 세이브나 세이브 변환 도구는 배포하지 않습니다.
+효과 중복·누락, 해금 조건, 숫자 정밀도, 독일 주력함 보너스 유지와 한영 문구를 검증했습니다. 새 캠페인 기준이며 실제 발명 UI·플레이 균형·저장 재로드·두 PC 멀티플레이는 미검증입니다. 게임을 완전히 종료하고 업데이트한 뒤 다시 실행하세요.
 
 이전 배포에서 이어지는 기능으로, 군사·공군 시간 처리, 자정 단계 분산과 저장 변수의 반복 탐색 축소를 포함합니다. 변수 조회 객체 안에서 최근 경로만 재사용하고 현재 메모리·국가·날짜 및 저장 검사는 유지합니다. 소유 메모리 fixture 비교에서 변수 조회 비용이 17~48% 감소했지만 이 수치는 실게임 FPS나 전체 처리 시간의 개선율이 아닙니다.
 
@@ -143,17 +141,15 @@ Do not open legacy events `16` or `19` through the console on a player country: 
 
 ### Compatibility and verification
 
-The current experimental engine is **0.6.8.40**. This combined data update changes state assignments for 19 provinces relative to the preceding public release. Three state mergers reduce the number of physical states from 1,246 to 1,243. The completed Balkan correction places Blato and Orasac in Ragusa, Debre-i Bala in North Macedonia, and Dragash in Kosovo. Orasac (province 7277) now uses hills terrain instead of Dubrovnik's urban terrain. Province geometry and ownership remain unchanged. Physical state definitions and the runtime state table agree for all 6,940 land provinces.
+The current experimental engine is **0.6.8.40**. This data update rebalances bonuses associated with 19 national values. It revises 28 existing inventions and adds 21 inventions that separate land warfare, naval warfare, production, education and administration. New unlock conditions preserve the original prerequisites and do not grant the transferred effects earlier than before.
 
-The Korean political screen has 33 corrected text keys across 54 rows, plus five state names across six rows. The English option includes the corresponding new state names and revised education-budget warnings, secret-ballot description and opposition-activity labels. Education warnings now describe the existing player-only civilized-country requirement, minimum two states and 1,000,000 POPs, inclusive literacy/spending thresholds, and education-efficiency/prestige penalties. These are text corrections and do not change the policy effects.
+German militarism retains gun power +2 and hull +1 for both battleships and dreadnoughts. Its production bonuses are transferred to German Industrial Leap. Effects are checked for duplicate or missing ownership after redistribution. Static checks cover 241 numeric modifiers, precision, prerequisite references and factory-input bounds. These checks do not certify gameplay balance.
 
-Prussian victory over Austria through an accepted hegemony peace settlement now annexes Hanover, Hesse-Kassel, Nassau and Frankfurt and grants Prussian cores. Fourteen provinces in Schleswig and Holstein receive core claims, with Austrian-administered and relevant ducal territory transferred to Prussia. Other eligible German minor states become Prussian satellites after their former overlord ties are cleared. Austria remains independent. Fourteen offline acceptance checks cover victory routing, target scope, former-overlord handling, exclusions and duplicate execution. The settlement has not yet been reproduced in the actual game. Its six text entries and the Austrian victory/defeat script are synchronized across the Korean and English options.
+Korean and English localization is synchronized. All 49 relevant English invention descriptions include the reviewed role summary and exact numeric effects. Signs, percentages, percentage-point changes and day counts were compared with the Korean descriptions, and unrelated language assets are unchanged.
 
-Three Korean Chartist-rally strings across six rows are corrected, including the police-suppression option that had been mistranslated. The existing event effects are unchanged.
+The regenerated map cache is included. All 1,752 cache files match the producer's completed rebuild, the cache signature matches, and the producer confirmed that the game loaded the new cache. The engine DLL, TGO, full Hangul fonts and overwrite-only installer remain unchanged. Close the game completely before updating and restart afterwards. This release is intended for a new campaign and does not include personal saves or save-conversion tools.
 
-The engine DLL, full Hangul fonts, TGO, verified map cache and overwrite-only installer are unchanged. Close the game completely before updating, then start a new campaign. The package does not convert existing campaigns and contains no personal saves. Existing saves have not been certified for the revised state layout.
-
-Installed-file hashes, state-table consistency, the four additional state assignments, the single terrain edit, Korean/English text structure and map-cache signatures were verified. Unchanged components retain their preceding validation. Actual new-campaign startup, in-game text/UI display, save/reload and two-PC multiplayer still need confirmation.
+Actual invention tooltips, campaign balance, save/reload and two-PC multiplayer remain unverified. Existing historical limitations are retained below.
 
 Features inherited from the preceding package remain available. It includes the military/air scheduling changes and separates native midnight date, military and air work into successive frames while retaining once-only processing. Repeated native saved-variable lookups reuse a bounded path inside each lookup object. Current memory, owner/date and saved-value checks remain in place. A controlled owned-memory fixture measured 17–48% lower variable-lookup cost; this is **not a measured live-game FPS or total simulation improvement**.
 
